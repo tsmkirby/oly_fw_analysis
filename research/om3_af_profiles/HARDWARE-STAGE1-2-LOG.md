@@ -160,6 +160,22 @@ names against your camera's menu.
 | Birds | | |
 | Dogs & Cats | | |
 
+### G2b. Does a stock AF-ON setting ignore Subject Detect?
+
+Set Subject Detect to Human (or any class), then try each AF-ON operation
+setting in the AEL/AFL menu. Write down the exact menu names and options you
+see. This tests the owner's belief that one stock setting already disregards
+Subject Detect for AF-ON.
+
+| AEL/AFL setting (exact menu text) | AF-ON: detection frame shown? Focuses on subject or on the AF target? | Clip |
+|---|---|---|
+| | | |
+| | | |
+| | | |
+
+Also photograph the AEL/AFL menu page and the AF target selection screen: the
+new AF-ON AF zone option is meant to sit beside these.
+
 ### G3. Display paths with AF-ON held
 
 | Test | Observation | Clip |

@@ -2,6 +2,26 @@
 
 User requirement, clarified 31 October 2026: reuse the camera's existing AF target/zone choices, with an independent target profile for each button. Keep the current shared S-AF/C-AF setting.
 
+## Requirement revision, 10 November 2026 (supersedes the AF Home approach)
+
+The owner revised the requirement:
+
+- **The main problem is the AF area, not Subject Detect.** The owner believes one of the stock AF-ON operation settings already disregards Subject Detect. This is unverified: confirm it in hardware stage 2 (log section G2) and statically. If confirmed, the feature should rely on that stock setting rather than bypass detection itself.
+- **A new menu option, not AF Home.** Add an **AF-ON AF zone** option to the menu that sets the operation of shutter half-press and AF-ON (the AEL/AFL operation setting). AF-ON then has a fully independent target profile: zone type, size and position, with the same choices the stock AF target control offers.
+- **No sharing with AF Home.** AF Home keeps its stock meaning and settings. The AF-ON profile must not read or write the AF Home settings.
+
+**Effect on the current prototype.** The prototype reads the AF Home settings (`MODE_AF_HOME_AREA_*`) as the AF-ON profile and adds no menu. Its button-path work still applies: wrappers, profile switching on press and release, owned state, task-context mutex and placement. The source of the AF-ON profile does not; it must be replaced. Previous evidence about AF Home profile reading does not establish the new design.
+
+Research notes for this revision: [AFON-MENU-RESEARCH.md](AFON-MENU-RESEARCH.md) (started 10 November).
+
+**New work this requires:**
+1. **Menu item.** Find the stock menu tables, item handlers and text resources for the AEL/AFL operation page, and how an item is added without disturbing existing items. This is new GUI code and resource data.
+2. **Target editor.** Reuse the stock AF target selection screen to edit the AF-ON profile instead of the normal target, including size, position, orientation-specific targets and the custom target sizes (`MODE_AF_AREA_SIZE_*_CUSTOM_*`).
+3. **Persistent setting.** Store the AF-ON profile so it survives power-off, and decide how it behaves with reset, custom modes (C1–C4), settings save/load, and backup files from OM Workspace or OI.Share. Earlier designs avoided persistent setting writes; this one cannot.
+4. **Display.** Show the AF-ON target while AF-ON is in control.
+
+The risk is higher than the AF Home design. Menu, resource and settings-storage changes reach code that runs at boot (settings load) and into stored data, which the hardware plan treats as the riskier category. The hardware plan's stages 4–7 must account for this before any image is built.
+
 ## Installation constraint, corrected 1 November 2026
 
 The user intends to load the extension from an SD card, keeping the camera intact. Their earlier selection of “USB only” answered an incomplete options list and must not be treated as excluding SD installation. USB remains available.
