@@ -250,8 +250,10 @@ page is not modified.
 ### How stored settings work
 
 - **Keys.** Settings are addressed by a 16-bit **key**: `slot << 4 | type`.
-  The low 3 bits are the width (1, 2 or 4 bytes); bit 3 means signed
-  (`0x60063a20`).
+  Distinguish the typed accessor (`0x60063a20`, tests signed bit 3 and masks
+  with 7) from the area packing helper (`0x60061333`, masks with 3 and
+  maps zero to 4). The latter gives the stored widths 1, 2 or 4 for this
+  table. For example, `0x6bcd` stores one byte per element, not five.
 - **Registry.** `0x600624d3` finds a key's runtime record in one of two RAM
   registries (`0xa32a990c`/`0xa32b190c`, 8 bytes per slot). Indexed reads are
   **not** bounds-checked.
