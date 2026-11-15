@@ -384,9 +384,154 @@ backups would not carry the AF-ON profile.
 **Recommendation:** follow the PEN-F method first. Prove ownership of a
 candidate (start with `0x5b82` or `0x5b52`) before studying a new key.
 
-Before choosing a new key, the registration/save path needs study: how bank 7 is sized,
-saved, check-summed and loaded, and what a stock image does when it loads a
-settings record with an extra key. That decides whether option 2 is viable.
+Before choosing a new key, test stock-to-modified and modified-to-stock
+loads against the packed layout below. In particular, determine how to
+initialize a new field on a checksum-valid stock save, and whether stock
+save, reset and backup preserve or overwrite it.
+
+### Bank 7 initialization, validity and fallback
+
+Verified for stock OM-3 E147 1.1 / main build 1100. These are CPU addresses
+in decoded main component `0100` (base `0x60021020`, SHA-256
+`5e8d376e9111a44ac0352f26030d7c1b17026d42c45f3600cfa02a0e8c5b7d59`).
+
+- **Stock descriptor.** At `0x600627bf..0x6006282c`, initialization creates
+  the bank-7 descriptor at the pointer held in `0xa32bb920`. It takes area
+  ID `0x000c` from the first halfword at `0x600e4be4`; the ROM defaults
+  records begin eight bytes later at `0x600e4bec`. The descriptor stores
+  source slot A = `0xa36fd280`, **slot B = null**, live RAM =
+  `0x62920700`, and byte length `0x40000`. The selection helper supports
+  two copies in general; this stock initializer does not give bank 7 a
+  second source pointer.
+- **Per-copy validity.** `0x60060f69` passes each non-null source, its
+  byte length and the expected ID to `0x6006137a`. That routine checks
+  the unsigned halfword at offset 0 against the expected ID, then adds
+  **all 131,072 little-endian halfwords**, including the ID, checksum,
+  generation counter and last halfword. The final low 16 bits must be
+  zero. The validator returns 0 for valid and 1 for invalid. The area
+  header's checksum field is at +2: `0x60061422` stores the additive
+  complement computed by `0x6006142e`, which excludes that field. The
+  generation counter at +4 is a 32-bit word (`0x6006144c` increments it).
+- **Copy selection.** With one valid copy, `0x60060f69` selects it. With
+  two, the newer generation must be exactly one greater modulo 2^32
+  (including `0xffffffff -> 0`). Equal or non-adjacent generations go
+  to the same failure result (`0xfe`) as no valid copy. The generic
+  two-absent-pointer path returns `0xff` separately. For the stock
+  bank-7 descriptor, the ordinary decision is valid A or fallback.
+- **Boot path and what "reset" means.** Boot registration routine
+  `0x60062691` calls `0x60063afc` in load mode, which reaches
+  `0x60063dc0`. With the bank-7 flag at request +8 enabled, the call at
+  `0x60063e85` runs `0x600610d2`. On success the native copy loop
+  `0x6006148f` copies the entire selected area into live RAM and the
+  caller clears `0xa32bfb30`. On failure the caller copies A's +4
+  counter into live RAM (`0x60061107`), sets `0xa32bfb30=1`, and
+  dispatches defaults via `0x60062a60(7) -> 0x60062d28 -> 0x60062d93`.
+  This rebuilds the packed values from ROM at live +8 and rewrites the
+  live ID, then requests a runtime registry rebuild. It does **not**
+  clear the whole 256 KiB buffer or write a fresh flash area in this
+  branch.
+- **Layout and compatibility.** `0x600622b4..0x60062368` feeds the ROM
+  descriptor stream and a live payload pointer (`0x62920708`) to
+  `0x60062536`. In this mode it assigns value pointers in descriptor
+  order, aligning 2- and 4-byte entries, rather than reading keys from
+  the saved values. Walking the 1,215 stock ROM records puts the first
+  byte beyond the registered values at live +`0x39465`
+  (`0x62959b65`), matching the defaults routine's published end.
+  `0x6b9b` bytes then remain within the checksummed area; that is a
+  size calculation, not proof that the tail or any particular cell is
+  available. Inserting a descriptor before later values can change
+  their offsets. Appending leaves earlier offsets intact if the layout
+  is otherwise unchanged, but a checksum-valid old area can still be
+  accepted: the new field would read whatever is already at its offset.
+  The validator is not a schema or migration check. No added key,
+  reserved-tail ownership, save/restore compatibility or on-camera
+  behavior was proved.
+
+**Bounded execution.** [OM3Bank7BootProbe.java](../../scripts/OM3Bank7BootProbe.java)
+runs stock `0x60063dc0` with synthetic RAM copies and only the bank-7
+load flag enabled. The three stock-shaped cases (valid A, wrong ID with
+valid sum, and last-word corruption) and seven synthetic two-copy cases
+passed. The probe checks whole-area copying on success and, on fallback,
+the restored live ID, preserved A generation, ROM values start, published
+end, defaults flag, and unchanged poisoned tail. For the defaults routine
+it inherits the bounded multiply model; diagnostics and the post-load
+registry rebuild are intercepted. It does not run the physical boot chain
+or flash I/O. See [results](readiness/bank7-boot1/results.txt) and
+[source/input hashes](readiness/bank7-boot1/evidence-manifest.json).
+
+To repeat, use the existing Ghidra 12.2/JDK 25 workspace with the pinned
+MN10300 language and decoded payload imported at `0x60021020`. Run from
+the research root, create a fresh output directory, and invoke:
+
+```text
+analyzeHeadless ghidra-projects OM3_main_full -process 00_0100_50000020.decoded.bin -noanalysis -readOnly -scriptPath scripts -postScript OM3Bank7BootProbe.java path/to/output
+```
+
+For the static end calculation, start a ROM cursor at `0x600e4bec` and a
+live offset at 8. Read each little-endian `{u16 key, u16 count}` until a
+zero key. Compute `width = (key & 3) or 4`; advance the ROM cursor by
+`4 + count * width` rounded up to 4 bytes. Align the live offset to
+`width`, then add `count * width`. The zero-key record at
+`0x6011fe20` is not a value record.
+
+### OM-Emu cross-check and switching to stills
+
+Primary emulator for OM-3 UI work: [flatpanda/om-emu](https://github.com/flatpanda/om-emu).
+Independently verified on E147 1.1, revision
+[`4e4ec4ef`](https://github.com/flatpanda/om-emu/tree/4e4ec4ef084542a7e30eecce56970c7e09c123c9),
+with Node 26.12.1 and the pinned stock main/resource hashes. The local
+[Windows path patch](readiness/om-emu-e147/windows-fileurl.patch) only converts
+file URLs to Windows paths in two host helpers; it changes no emulation logic.
+
+**To switch the OM-3 from video to stills:** use the player's
+**Still / movie switch** and choose **stills**, position **2**. With the
+player focused, **U** steps through the positions; stop when the control
+shows **stills**. Positions 0 and 1 are both movie positions. This is a
+separate control from the exposure mode dial. With the player input API
+use `{"type":"switch","id":"still_movie","value":2}`; on the CLI use
+`switch:still_movie=2`. The following explicitly moves from video to stills
+in a clean E147 session (run from the OM-Emu checkout):
+
+```sh
+node emu/bin/fetch-fw.mjs --model E147 --bin /path/to/OLY_E_147_1100_0000_0000.BIN
+node emu/bin/session.mjs --model E147 --no-card wait:1500 switch:still_movie=1 wait:1000 switch:still_movie=2 wait:1000
+```
+
+The [upstream switch documentation](https://github.com/flatpanda/om-emu/blob/4e4ec4ef084542a7e30eecce56970c7e09c123c9/emu/README.md#L383-L394)
+and [upstream regression test](https://github.com/flatpanda/om-emu/blob/4e4ec4ef084542a7e30eecce56970c7e09c123c9/emu/test/test_smswitch.mjs)
+describe this input. Older E147 builds may start in video and lack the
+control; use a revision supporting `still_movie`. If a kept session and the
+switch label disagree, deliberately move to a movie position, then back to
+**stills**: the application updates its movie-mode setting on a switch event.
+A clean session on the tested revision starts at position 2.
+
+**Observed locally:** in the [live switch trace](readiness/om-emu-e147/switch-getter.jsonl),
+the firmware getter for setting 44 returned 0 at fresh start, 1 at position 1,
+1 at position 0, and 0 after switching back to position 2. Movement takes
+the stock `0x02021909` input event. The [CLI session](readiness/om-emu-e147/switch-session.jsonl)
+also passed with no memory pokes.
+
+**Bank 7:** [all ten equivalent cases](readiness/om-emu-e147/bank7.jsonl)
+passed on OM-Emu's CPU interpreter. As in the Ghidra experiment, the
+isolated runner supplies synthetic RAM copies and intercepts diagnostics
+and the registry rebuild. Separately, instruction coverage in the normal
+blank OM-Emu player session reached the stock registry bootstrap, bank-7
+load call, validator and defaults builder, and did not hit the bank-7
+valid-copy success branch. The bootstrap label `0x50041671` is OM-Emu's
+disassembly notation for runtime `0x60062691`. Normal startup still uses
+the lab's hardware models; these tests do not establish physical NAND
+behavior or modified/stock save compatibility.
+
+From the research root, run the [probe](../../scripts/om_emu_e147_probe.mjs)
+with either `bank7` (isolated cases) or `switch` (player startup and getter):
+
+```sh
+node scripts/om_emu_e147_probe.mjs tooling/om-emu analysis/decoded/00_0100_50000020.decoded.bin bank7
+node scripts/om_emu_e147_probe.mjs tooling/om-emu analysis/decoded/00_0100_50000020.decoded.bin switch
+```
+
+See the [evidence manifest](readiness/om-emu-e147/manifest.json) for the
+revision, input, probe and result hashes.
 
 ## 9. Next steps
 

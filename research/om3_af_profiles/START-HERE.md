@@ -1,5 +1,7 @@
 # Reading the OM-3 decompilation
 
+For OM-Emu on E147, see [switching to stills and reproducing the bank-7 checks](analysis/button-af/AFON-MENU-RESEARCH.md#om-emu-cross-check-and-switching-to-stills).
+
 The latest local continuation is in
 [the stage-0 verification record](HARDWARE-STAGE0-RECORD.md#completed-verification)
 (updated 9 November): task-context mutex repair, 28/28 profile edges, native
