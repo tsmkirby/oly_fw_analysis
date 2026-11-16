@@ -1,0 +1,94 @@
+diff --git a/emu/checks/lib/env.mjs b/emu/checks/lib/env.mjs
+index 230e35b..c8fd16c 100644
+--- a/emu/checks/lib/env.mjs
++++ b/emu/checks/lib/env.mjs
+@@ -1,3 +1,4 @@
++import { fileURLToPath } from 'node:url';
+ // The node side of a check: repository paths, the firmware image and resource block, sha256, the lab env the
+ // harness modules take (as bin/run.mjs builds it, without tracing: no session, so no Stats or harness digest), and the
+ // process conventions of a check (an exit with a message, a usage error, an uncaught error).
+@@ -15,7 +16,7 @@ import { coverageOption } from './coverage.mjs';
+ import { PatchRefused, readPatchText, applyPatches, patchLayout, mainPatches } from '../../src/fw/patch.mjs';
+ import { extractSource, decodeExtract } from '../../src/fw/nand.mjs';
+ 
+-export const REPO = path.resolve(new URL('../../../', import.meta.url).pathname);
++export const REPO = path.resolve(fileURLToPath(new URL('../../../', import.meta.url)));
+ // the checks' own fixtures: their pinned notes, the VSC register header and class tables, check_perf's P7 address list
+ // and P10a cases
+ export const FIXTURES = path.join(REPO, 'emu/checks/fixtures');
+diff --git a/emu/host/blobs.mjs b/emu/host/blobs.mjs
+index 181a8f6..7b0feec 100644
+--- a/emu/host/blobs.mjs
++++ b/emu/host/blobs.mjs
+@@ -1,3 +1,4 @@
++import { fileURLToPath } from 'node:url';
+ // A MODELS body's firmware files on disk: its .BIN's pin in BLOBS.sha256 and whether its unpacked files are there (the
+ // two blocks, src/fw/models.mjs romPath, resPath, and on a body that gives res_nand its NAND extract, nandPath). It
+ // reads src/fw/models.mjs only, never src/fw/model.mjs, so it answers for any model, not only the run's: --model list
+@@ -6,7 +7,7 @@ import fs from 'node:fs';
+ import path from 'node:path';
+ import { romPath, resPath, nandPath } from '../src/fw/models.mjs';
+ 
+-export const REPO = path.resolve(new URL('../../', import.meta.url).pathname);
++export const REPO = path.resolve(fileURLToPath(new URL('../../', import.meta.url)));
+ 
+ // A MODELS entry's .BIN as BLOBS.sha256 pins it: {rel (fw/... or fw/old/...), sha256}, or null
+ export function binPin(m) {
+diff --git a/emu/src/lab/camapp.mjs b/emu/src/lab/camapp.mjs
+index 48a594b..d9ec3f2 100644
+--- a/emu/src/lab/camapp.mjs
++++ b/emu/src/lab/camapp.mjs
+@@ -1810,6 +1810,8 @@ export class CamApp {
+     let bits = this.df_bits;
+     this.df_bits = 0;
+     while (intc.ipi_pending(CPU3)) {
++      const pending = intc.ipi_pending(CPU3);
++      if (pending & ~bit) throw new FirmwareError(`S-CPU3: unserved doorbell bits ${h8(pending & ~bit)} (ring [3][0] uses ${h8(bit)})`);
+       // the entries posted so far taken off and the doorbell acknowledged, then each served (an MDET post's service
+       // may post more: the next round takes those)
+       const w = lab.sim.read(wp, 1)[0], entries = [];
+@@ -1826,6 +1828,9 @@ export class CamApp {
+         } else if (this.mdet?.event_fn(fn)) {
+           this.log.push(['cpu3', `MDET event ${h8(fn)} ${h8(arg)}`]);
+           this.mdet.serve(arg, this.mdet.event_fn(fn));                             // S-MDETDL
++        } else if (this.research_cpu3_handlers?.has(fn)) {
++          // Explicit opt-in research delivery; unknown callbacks still fail.
++          this.research_cpu3_handlers.get(fn)(arg, nested);
+         } else {
+           throw new FirmwareError(`S-CPU3: ring [3][0] entry ${k}: function ${h8(fn)}, not DISP_FRAME's ${h8(runtime(CPU3_REMOTE_CALL))}${mdetFn === null ? '' : ` or MDET's ${h8(mdetFn)}`}`);
+         }
+diff --git a/emu/src/lab/rtos.mjs b/emu/src/lab/rtos.mjs
+index 665ef39..e0edd05 100644
+--- a/emu/src/lab/rtos.mjs
++++ b/emu/src/lab/rtos.mjs
+@@ -1,7 +1,7 @@
+ // Kernel-side stand-in for HLE sessions (RTOS wrapper stand-ins, error log,
+ // IRQ attach and its K-native observer, clock control, prints). Addresses are disassembly notation.
+-import { A } from '../fw/model.mjs';
+-import { ISR_CALLER, ISR_SP, FirmwareError, disasm, where } from './hle.mjs';
++import { A, MODEL } from '../fw/model.mjs';
++import { CORE_INDEX, ISR_CALLER, ISR_SP, FirmwareError, disasm, where } from './hle.mjs';
+ import { packRegs } from './sim.mjs';
+ import { RuntimeError, AssertionError } from './errors.mjs';
+ import { unpack } from '../util/bytes.mjs';
+@@ -103,13 +103,18 @@ export class Kernel {
+   }
+   _irq_attach_observer(hle, r) {
+     const irq = r.d0, handler = r.a0;
+-    this.irq_handlers.set(irq, handler);
++    const core = hle.sim.u32(CORE_INDEX) & 0xff;
++    // E147 6007602b passes CORE_INDEX to 6004f86e. Its four handler
++    // tables are selected at 6004f90f/929/943/95d, stride 0x590.
++    const tableBase = MODEL === 'E147' ? [0xa32600c0,0xa3260650,0xa3260be0,0xa3261170][core] : HANDLER_TABLE;
++    if (tableBase === undefined) throw new FirmwareError(`obs-irq_attach: invalid E147 core ${core}`);
++    if (MODEL !== 'E147' || core === 0) this.irq_handlers.set(irq, handler);
+     this.events.push(['irq_attach', `irq=${irq} level=${r.d1}`, where(handler), where(r.mdr)]);
+     const ra = r.mdr;
+     if (hle.hooks.has(ra)) throw new FirmwareError(`obs-irq_attach: return address ${where(ra)} is already hooked`);
+     const back = (hle2, r2) => {
+       hle2.hooks.delete(ra);
+-      const table = hle2.sim.u32(HANDLER_TABLE + 4 * irq);
++      const table = hle2.sim.u32(tableBase + 4 * irq);
+       if (s32(r2.d0) !== 0 || table !== handler) {
+         throw new FirmwareError(`attach(irq ${irq}, level ${r.d1}) from ${where(ra)}: returned ${s32(r2.d0)}, handler table 0x${fx(table, 8)}, want 0x${fx(handler, 8)}`);
+       }

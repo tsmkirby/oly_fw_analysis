@@ -533,22 +533,413 @@ node scripts/om_emu_e147_probe.mjs tooling/om-emu analysis/decoded/00_0100_50000
 See the [evidence manifest](readiness/om-emu-e147/manifest.json) for the
 revision, input, probe and result hashes.
 
+### Live stills integration and a bank-7 append experiment
+
+These runs use the same OM-Emu E147 revision and stock hashes as above.
+See [the run manifest](readiness/om-emu-af-integration1/manifest.json).
+No camera was accessed and no installable image was made.
+
+**What transferred from the previous prototype.** A matched pair of
+OM-Emu stills sessions ran stock and the exact 3,612-byte archived AF Home
+prototype change set (SHA-256 of the changed main component:
+`4a988c57d1a15d2465292a296bfd60dd690cc0c76dd60ae8165848f847c5b325`).
+The changes existed only in an OM-Emu overlay. Both sessions enabled
+component and native transaction paths, opened and closed the menu to
+restart through display, and tested AF-ON alone and during S1.
+
+- The overlay booted in the lab. Its native key IRQ hook ran and changed
+  the four shooting-table fields to the exact four wrappers. The installed
+  marker was 1; the feature mutex ID remained zero. This confirms the
+  placement and installation in this session, and that the interrupt
+  path did not create the feature mutex.
+- S1 in both sessions moved the stock shooting sequence phase
+  `101 -> 103 -> 101` (the lab supplies its documented TAKE-ready event).
+  The GUI received `0x01000002` and `0x01000003` while its shooting state
+  was `0x5101`. A pass-through observer at `0x610b9feb` saw those
+  events select rows **`0x61339090` and `0x613390a0`**, both
+  targeting `0x610aef37` in both sessions. The archived installer changes
+  other rows (`0x6131bd50` and `0x6131bd60` for S1), so these live
+  routes did not hit the feature.
+- AF-ON press/release produced UI_IN custom-key events
+  `0x0200000b` / `0x0201000b`. Neither session delivered corresponding
+  events to the observed GUI engine during those steps. Consequently
+  neither view exercised the AF-ON wrappers, queue-95 start, or its
+  acknowledgement during this sequence. This is a boundary in the
+  current setup, not evidence that AF-ON fails on the camera.
+- The upstream control hint's SID 1936 is **not** the E147 button
+  assignment: the exact E147 resource setting-name table names it
+  `MODE_RECENTLY_PLAY_CURSOR_PAGE_3`. OM-Emu's native setter refused
+  value 69 for it (allowed 1..7). Do not force this ID to make the
+  experiment pass. Several E147 custom-button IDs accept 69 or 9; that
+  does not establish which is used by the AF-ON body key.
+
+The [stock trace](readiness/om-emu-af-integration1/stock-final.jsonl) and
+[overlay trace](readiness/om-emu-af-integration1/overlay-final.jsonl) record
+each event and selected handler. The earlier 28/28 and native first LOCK_START
+remain evidence from the Ghidra shooting-context fixture (including state
+`0x5100` and supplied button events), not a live OM-Emu profile pass.
+The archived prototype still uses AF Home; neither run implements the
+revised independent menu, validates the overlay drawn by the camera, or
+establishes physical focus.
+
+**UI storage.** The native E147 string getter confirmed the page-27
+title at `0x1279` contains **AF Button** (the returned string includes
+icon tags). The [stock page records](readiness/om-emu-af-integration1/menu-layout.json)
+pin its descriptor at **`0x6158f0f8`**, with row pointer at
+`0x6158f0fc` and count at `0x6158f100`. The two 36-byte rows are
+at `0x6158dc44` and `0x6158dc68`, IDs 2154 and 2155. The
+next row at `0x6158dc8c` already belongs to page 28. A third row
+there would overwrite AF Home's first row.
+
+A candidate arrangement is a separate **108-byte** array with the
+two original rows and the new AF-ON row, referenced from page 27.
+Keep half press on the normal target control, keep AF Home unchanged,
+and use page 28's zone-choice list as a reference or source for matching
+options; its 10 entries alone do not prove coverage of all normal target
+or custom-size choices. The added row needs a distinct logical setting
+ID, a label/resource entry, and a routing decision for opening the
+target editor on the correct profile.
+
+The page descriptor is only one layer. Assembly at
+`0x61203b95..0x61203ba1` reads the page's row pointer and count.
+At `0x61203bec` the viewer resolves a setting ID through the list
+model (`0x6120310a -> 0x611f6add`), then the instruction at
+`0x61203c20` compares that ID with the 36-byte row's leading word.
+The selection path `0x61203e81` also calls the list model and resolves
+against the page records. This gives two things to validate: the
+expanded descriptor list and the producer of the visible IDs. The
+producer for a new row, text-resource placement, and target-editor
+writes have not been demonstrated. The string calls for the two stock
+row labels returned an icon/value fragment and null, respectively;
+that is not proof of their rendered labels or per-button AF behavior.
+
+**Settings storage.** The [append probe](readiness/om-emu-af-integration1/bank7-append.jsonl)
+calls stock `0x60062d93` (defaults), `0x60062536` (registry),
+`0x60061422` (checksum) and `0x6006137a` (validation) in
+OM-Emu. It copies the stock descriptor stream into scratch RAM, appends
+one experimental record of four words, and compares the registry byte
+for byte against stock except for that added entry. The new value
+address is **`0x62959b68`** (bank offset **`0x39468`**); the next
+free byte becomes **`0x62959b78`**. Four words are enough for a
+candidate version/validity word and one packed word per orientation
+(e.g. zone enum, size selector, position). Exact encoding and custom
+geometry still need testing. The experimental key was chosen from a
+slot absent in five scanned ROM streams; it is **not a production
+key reservation**.
+
+- A checksum-valid stock-shaped area kept its existing tail bytes
+  (`0x59595959`) when the new descriptor was registered. It did not
+  initialize the new field.
+- Extended defaults zeroed the new field, preserved the full stock
+  value prefix, and left the following bytes untouched.
+- The stock validator accepted a synthetic extended area with its
+  checksum correctly derived by stock code. The old stock registry
+  ignored the added value because its descriptor was absent.
+  This does not establish what saving, reset, custom modes, or backups
+  subsequently do to those bytes.
+
+The ROM stream cannot be enlarged in place just by replacing its
+terminator: after the zero key/count at `0x6011fe20`, the next word
+is already `6`, followed by other stock data. A design needs a new
+descriptor stream location or another way to register/default only
+the new records without changing the stock traversal. The runtime
+tail calculation and scratch proof do not establish exclusive ownership
+of that tail. Keep a distinct validity marker and reject unknown
+versions/invalid fields before ever using old data as a target.
+
+Reproduce locally from the research root using the stills section's
+OM-Emu setup:
+
+```sh
+node scripts/om_emu_af_player.mjs tooling/om-emu stock
+node scripts/om_emu_af_player.mjs tooling/om-emu overlay analysis/button-af/readiness/task-context-placement1/proposed-changed-bytes.csv
+node scripts/om_emu_bank7_append_probe.mjs tooling/om-emu analysis/decoded/00_0100_50000020.decoded.bin
+```
+
+### Live OM-Emu AF-ON input and dispatcher regression
+
+The live stills input test now reaches the firmware application for both
+buttons. The independent-profile test remains open. The experiment uses E147
+1.1 (`OLY_E_147_1100_0000_0000`) and OM-Emu
+`4e4ec4ef084542a7e30eecce56970c7e09c123c9` with the two local Windows
+path-handling fixes described above. The archived AF Home overlay is loaded in
+emulator memory for comparison. Its persistent-setting and menu behavior
+predates the independent AF-ON zone design.
+
+**Cause of the lost AF-ON edges.** The player initializes the released level
+for keys in its control map. E147's active matrix also contains an active-low
+`0x120b` key at group 1, byte 0, bit 3. It is missing from the released-level
+map, so the stock broker has it marked physically held and published at
+`0xa31f1f44`. Default AF-ON uses `0x000b` at group 1, byte 0, bit 1. Its
+press reaches `0x60414d9c`; the search at `0x60414cfb` finds the held
+`0x120b` entry and the remap returns zero. Release also returns zero on that
+setup. The later 75-entry broker filter is empty and receives the zero
+already returned by the remap.
+
+Two ways of clearing that conflict both restored AF-ON: a real player release
+of `0x120b` after startup, and registering that slot in the player's idle
+image before startup. The latter is the preferred test setup. It changes the
+virtual key level only. It preserves the default AF-ON binding, the broker
+and the normal application dispatch. Binding AF-ON to `0x120b` instead
+exercised a distinct custom button and read default assignment 3462 from
+setting 49. Setting that other button to 9 or 69 confirmed where its
+assignment came from. The default `0x000b` input already reads value 69
+(`0x45`), which E147's table at `0x612f20a8` maps to function `0x0a`.
+The exact setting ID supplying that default value remains open.
+
+**Native routes observed after the idle correction.** AF-ON down/up reach
+`0x60415e53` and emit the custom-button events `0x010000cc/cd` and
+`0x01000032/33`. In the default live run, the latter select
+`0x6131be80/90` while S1 is up and `0x6131c8f0/900` while it is held.
+The raw input sequences cover each button alone and both press/release
+orders. S1 reaches the native dispatcher and, in the default case, changes
+the modeled shooting phase 101 → 103 → 101 through fallback rows
+`0x61339090/a0`. While AF-ON remains held, S1 transitions also replay
+`0x01000032` without a fresh AF-ON press. A hook on the generic event has to
+distinguish AF-ON from other assigned buttons and repeated dispatch from a
+new ownership edge.
+
+The archived installer targets S1 rows `0x6131bd50/60` and AF-ON rows
+`0x6131c290/a0` (events `0x01050007/08`). In the default stills session
+none of those rows is selected. Selecting S-AF and setting its AF Button
+mode to firmware value 0 did select the archived S1 rows and execute both
+S1 wrappers, including native mutex creation. AF-ON reached stock
+`0x610a5620` through the custom-button route under that configuration.
+The start call comes from `0x610a267f` (mode argument 1, raw application
+event `0x01000032`). Observed releases reach `0x610a58c7` from the call
+ending at `0x610a2fd0`; the release immediately after the first AF start
+also selected a separate row, `0x6132add4`. Neither AF-ON wrapper ran.
+The S1 wrappers recorded held-edge changes and status 1, with owner
+still `0xff`, gate halfwords `0xa33ca314` and `0xa33ca2b8` both
+zero, and no published change to the ten-byte AF target. The bounded
+prototype had supplied `3` and `0x1700` at those gates. For live work,
+trace the native producers: the reset at `0x608fe2f5` writes phase
+`0x3000` and calls `0x609025cf`, which writes mode `0x0f7f`.
+Those reset values also fail the prototype's transition gates.
+
+Stock and overlay both completed a fresh S-AF mode 0 input sequence.
+Separate fresh stock sessions for S-AF modes 1–2 and C-AF modes 0–3
+all hit the `0x603f17f1` memory fault during a native setting write
+before measuring any button edges. A write while cycling modes after
+button input also hit it on both builds. Those are setting-configuration
+boundaries in this harness, with no result for the remaining modes.
+Neither the queue-95 start nor its downstream queue-94 lock start was
+observed in the completed sessions.
+
+Reproduction uses the [live probe](../../scripts/om_emu_af_live_probe.mjs)
+and [trace manifest](readiness/om-emu-af-live2/manifest.json). The last argument
+`idle-120b` sets the released state before boot. Use `raw` for the
+negative control, `release-120b` for the independent validation by key
+release, and `idle-120b:0:0` for a fresh S-AF / mode 0 session.
+
+```powershell
+$node = 'tooling/node-v26.12.1-win-x64/node.exe'
+$diff = 'analysis/button-af/readiness/task-context-placement1/proposed-changed-bytes.csv'
+& $node scripts/om_emu_af_live_probe.mjs tooling/om-emu stock - 0xb - raw
+& $node scripts/om_emu_af_live_probe.mjs tooling/om-emu stock - 0xb - idle-120b
+& $node scripts/om_emu_af_live_probe.mjs tooling/om-emu overlay $diff 0xb - idle-120b:0:0
+```
+
+### Live acceptance regression and third menu row
+
+The [acceptance runner](../../scripts/om_emu_af_acceptance.py) starts fresh
+OM-Emu player sessions. It checks native UI_IN and application events,
+ownership after each real button edge, restoration of the ten-byte AF consumer
+target, effective Subject Detect, saved SCP readback, shared AF mode, and
+execution at the queue-95 and queue-94 start points. The sequence includes
+each button alone and both press/release orders. The runner fails if any
+handoff scenario fails. The independent editor and persistence require
+separate acceptance once implemented.
+
+**Shutter regression fixed in the emulator overlay.** The archived
+task-context wrapper dropped the stock event on status 1, where no profile
+has been published. The candidate unlocks and forwards the event to the stock
+handler. Four live S1 edges reproduced the loss on the archive and reached
+stock on the candidate, in the call order lock → unlock → stock handler.
+The target state matched stock. Short conditional branches kept all wrappers
+inside the checked placement. The new decoded overlay has 3,617 changed
+bytes, SHA-256
+`9814e916300c915843f0f9429b482d4dbdf9ad034d789017740e28c75ef81a84`.
+The overlay is test input to OM-Emu. It remains based on the AF Home
+prototype. One replay also left the prototype's half-press latch set when a
+subsequent release selected a stock fallback row. The latch is therefore
+unsuitable as a physical button-state oracle across alternate dispatch rows.
+
+**Handoff failed.** The seven S-AF scenarios confirmed the requested
+SCP values by native readback and exercised real button inputs. The native
+AF consumer target remained zero, independent ownership was absent and
+neither AF worker stage was observed. See the
+[acceptance report](readiness/om-emu-af-acceptance1/primary-bank/report.json).
+
+The original C-AF configuration attempt passed a scalar as the second
+argument to a type-6 settings ID. Disassembly at `0x603f17d2` shows that the
+argument is a pointer to a group of 32-bit values. The scalar value 1
+accounts for the earlier read at address 1. With the pointer form, the
+requested value still does not read back as C-AF. The probe also selected
+the primary AF bank with the real Fn lever and attempted the native
+settings database setter for key `0xc021`, index 1. The requested value 1
+read back as 2 in the stored bank and 0 in the active setting.
+Independently, the live stock stills AF Mode menu displayed C-AF, but the
+confirmation key hit OM-Emu's event-storm guard at GUI state `0x0b02`.
+No C-AF button scenario was measured in those runs.
+
+**Page 27 requires a descriptor and a separate ID provider.** Starting from
+live stills and pressing MENU, the probe navigated to AF Button using the
+firmware-rendered text and native keys. Stock and the candidate showed the
+two priority rows. The viewer resolves each displayed ID using
+`0x6120310a` at the call from `0x61203bec`. The observed provider's virtual
+getter `0x611af938` reads a count at object `+0x48` and a pointer to
+16-bit IDs at `+0x54`. The count was 2 and the live list contained
+2154 and 2155.
+
+A RAM-only experiment relocated the page descriptor array, preserved the
+two stock entries and added a third descriptor using existing Subject Detect
+setting 1712 as a marker. Extending only the descriptor array still drew
+two rows. Extending the live provider and its parallel arrays too made the
+native viewer resolve ID 1712 and draw a third row. Both stock priority values
+stayed at 1. This establishes the rendering path and what must change to
+register a row. The borrowed setting was never edited or saved. Its visible
+label was the stock `@A02F@ Priority` string. A second experiment reached the
+same result by updating the source table only, leaving the native provider
+constructor to allocate and fill its arrays. The source record is
+`0x61529ce8` in the table at `0x61529ba4`, group `0x115`, with stock
+ID pointer `0x61529812` and count 2. Constructor `0x611afaa1` takes the
+count from record `+8` and copies from the pointer at `+4`. See the
+[source-table experiment](readiness/om-emu-af-acceptance1/stock-menu-source.jsonl).
+
+```powershell
+$run = 'analysis/button-af/readiness/om-emu-af-acceptance1'
+python scripts/om_emu_af_acceptance.py --candidate "$run/proposed-changed-bytes.csv" --out "$run/replay"
+$env:OM3_LIVE_AF_MENU = '1'
+$env:OM3_LIVE_AF_MENU_THIRD = 'descriptors' # Repeat with 'source' for both source tables.
+& tooling/node-v26.12.1-win-x64/node.exe scripts/om_emu_af_live_probe.mjs tooling/om-emu stock - 0xb - idle-120b
+Remove-Item Env:OM3_LIVE_AF_MENU,Env:OM3_LIVE_AF_MENU_THIRD
+```
+
+### Live native initialization and central button dispatch (2026-11-16)
+
+The new [bounded live report](readiness/om-emu-af-native1/matrix-cpu3-final/report.json)
+supersedes the mode-configuration and routing failures above, but does **not**
+establish full AF acceptance. Both S-AF and C-AF with Subject Detect Off pass
+the 12-edge profile handoff sequence. The other 12 mode/subject combinations
+stop at an unserved CPU3 kernel notification. Full acceptance is **0/14**:
+no run demonstrates both native queue-95 and queue-94 AF worker starts.
+
+Inputs are OM-3 1.1, build `OLY_E_147_1100_0000_0000`, decoded main SHA-256
+`5e8d376e9111a44ac0352f26030d7c1b17026d42c45f3600cfa02a0e8c5b7d59`,
+OM-Emu commit `4e4ec4ef084542a7e30eecce56970c7e09c123c9` with local changes.
+The report records all unpacked block hashes and tested source hashes; the
+[reproduction bundle](readiness/om-emu-af-native1/reproduction/README.md)
+preserves the scripts and emulator diff. Runtime addresses below use the
+`0x60021020` main-image base, not Ghidra's `0x50000000` notation.
+
+**Observed native bring-up.** Calling stock initializers `0x6071181e`,
+`0x608fe1b0`, then `0x609df7e4`, and activating native task 105 at
+`0x609df84d`, initializes the AF target and leaves TAKE_FOCUS waiting on
+queue 94. The probe checks the task identity and dormant state first. It
+does not write the target gates or supply AF completions. This is partial
+boot bring-up; TAKE_MAIN and TAKE_FUNC remain emulator stand-ins.
+
+**Observed button handoff.** The emulator-only
+[central-edge overlay](readiness/om-emu-af-native1/central-edge-v2.json)
+hooks the classifier call at `0x610bf5e2`. It recognizes S1 source 2/3 and
+AF-ON semantic `0x010000cc/cd` with physical source `0x01000032/33`, invokes
+the existing reconciliation, then preserves stock classification. The
+return path must restore MDR as well as registers. The previous handler-row
+redirection is disabled. In both Off cases, AF-ON wins while both buttons
+are held, both release orders restore ownership correctly, and each of
+the 12 edges invokes exactly one matching reconciliation. Native target
+records change from `[14,2,3,0,3,0,3,0,0,0]` to
+`[14,2,2,0,1,0,1,0,0,0]` and back. The
+[negative/stock controls](readiness/om-emu-af-native1/controls.json) exclude
+another physical button assigned function 69 and preserve the compared
+stock phase, GUI, settings and UI_IN values. This still uses the legacy AF
+Home profile provider, not the proposed separate profile settings.
+
+**C-AF selection corrected.** Type-6 settings require both a grouped pointer
+and the native menu-to-storage conversion. Raw focus value 1 is MF; public
+getter value 1 is C-AF. The probe calls converter `0x604050e5` before the
+native grouped setter and selects the primary bank through the real Fn
+lever. It asserts stored setting 289 and active setting 25 both read back
+as the requested public enum (S-AF 0, C-AF 1). Earlier raw-1 trials were not
+C-AF evidence.
+
+**CPU3 boundary isolated, not bypassed.** With opt-in modeled CPU3 delivery,
+native callback `0x608418fe` returns and clears the request byte, but posts
+doorbell bit 1 through cross-core kernel request routine `0x6004e699`
+(write at `0x6004e6ce`). This is not the function ring's bit 8. The deferred
+ring at `0xa32c1274` is empty; running deferred IRQ 53 would not service it.
+The emulator now reports an explicit unsupported boundary rather than
+spinning on the unserved bit. All 12 nonzero-SCP cases reproduce this
+boundary before completing their first measured button edge.
+
+Disassembly closes the receiving-object identity:
+
+- [Callback](readiness/om-emu-af-native1/cpu3-callback.txt) loads the halfword
+  at `0x6004367a` (`0x3003`) and calls notification wrapper `0x608909a5`.
+- [Notification wrapper](readiness/om-emu-af-native1/subject-notify.txt)
+  selects native task/interrupt event-flag setters `0x6004cd21/0x6004cd97`.
+- [Request task](readiness/om-emu-af-native1/subject-request-task.txt) at
+  `0x60841a6b`, task record `0x6003f15c` (ID `0x3004`), waits for bit 1
+  on that same flag, then consumes requests via `0x6084db1e`.
+- [Command 1](readiness/om-emu-af-native1/subject-command-one.txt) stores
+  the requested kind at `0xa33a1d14` and sets bit 2 on flag `0x3004`
+  (halfword `0x6004367c`). The adjacent
+  [loader task](readiness/om-emu-af-native1/subject-loader-task.txt), entry
+  `0x60842bde`, task ID `0x3005`, waits on that flag and calls `0x60842cf1`.
+
+The names MDET_DL_REQ and MDET_DL_LDL are inferred from adjacent task order,
+firmware strings and the existing E143 implementation; the E147 entry,
+flag and dispatch relationships above are direct disassembly observations.
+A returned callback is therefore not a completed Subject Detect operation.
+OM-Emu already models this CPU3 task/flag mechanism for E143 in
+`emu/src/lab/mdet.mjs`, but E147 has no corresponding validated model facts.
+Its address converter leaves unknown addresses unchanged; blindly applying
+the E143 configuration would silently reuse unverified addresses.
+
+Native CPU3 IRQ registration also exposed an observer defect: it checked
+CPU0's handler table. The local E147 correction validates the table selected
+by core register `0x8050` (bases `0xa32600c0`, `0xa3260650`, `0xa3260be0`,
+`0xa3261170`) and keeps CPU3 handlers out of CPU0 delivery. This allowed the
+native callback to return; it does not implement CPU3's kernel.
+
+An independent attempt to start native TAKE_FUNC/TAKE_MAIN reached their
+initialization dependency: the stock logger initializer writes
+`0x50003090`, currently mapped read-only in the emulator. See
+[trace](readiness/om-emu-af-native1/native-take-v2.jsonl). The mapping and
+boot prerequisites remain to be established; memory was not made writable
+to suppress the failure.
+
+**Limits.** The overlay edits a section-7 call site without packaging or
+placement proof. Its mutex covers reconciliation only. There is no separate
+profile editor, persistence acceptance, demonstrated sensor/lens AF cycle,
+or flashable image. Detection-Off handoff success proves routing and target
+restoration under these modeled conditions, not focus acquisition or
+Subject Detect bypass/restoration with a running detection engine.
+
 ## 9. Next steps
 
-1. Done in part (section 6): generic sub-pages are decoded and the
-   subject-priority page is page 27. Still open:
-   - trace the multi-row viewer's row iteration, to confirm it uses only the
-     page entry's pointer and count;
-   - decode the text-resource IDs (`0x06b1`, `0x282c`, `0x0f19`, `0x11c4`) to
-     confirm the labels;
-   - locate the dedicated AEL/AFL page viewer `0x61595b40`.
-2. Trace one reader of `0x606190b7`/key `0x90a1` to confirm it gates Subject
-   Detect per button.
-3. Map the bank layout of `0x99a1`, `0x5962`, `0x1dd1` and `0x9a41` (size per
-   bank, which indices are read) to look for safe spare cells.
-4. Trace the stock AF target selection screen's entry and its setting writes.
-5. On the camera (stage 2): photograph the AEL/AFL page, the page holding the
-   subject-priority setting, and the AF target screen.
-
-Scratch scripts used for sections 1–2 are reproducible from this note's tables;
-they read only the decoded stock main and resource components.
+1. Port the CPU3 request/loader service using independently verified E147
+   facts, beginning with flag `0x3003` and task `0x60841a6b`, then flag
+   `0x3004` and loader `0x60842bde`. Preserve event-flag wait/clear semantics
+   and execute native request bodies; do not substitute success for an
+   unsupported wait or acknowledge doorbell bit 1 without its service.
+   Verify driver initialization, learning-data dependencies and subsequent
+   LAF callbacks before claiming Subject Detect completion. Separately
+   resolve the native TAKE logger mapping/boot prerequisite and demonstrate
+   queue-95 and queue-94 worker entry. Rerun all 14 live cases, requiring
+   actual worker observations, both release orders, effective SCP mode,
+   native target records and frame overlay. Existing Off handoff checks
+   and C-AF configuration are regression controls, not open routing guesses.
+2. Register the new AF-ON zone setting in both page 27 source tables. Route
+   the stock target editor's reads and writes to the AF-ON profile while it
+   is being edited, then verify commit and cancel through player keys.
+3. Test a tagged profile through OM-Emu's kept E147 settings store and
+   falsify interference on stock reset/save and C1-C4 transitions. Prove the
+   descriptor placement/ownership, and trace named backup import/export.
+4. Trace `0x90a1` through the stock AF request and compare its two priorities
+   in scenarios where both native button routes are actually observed. A
+   separate settings ID on a menu row is not proof of AF behavior.
+5. On stock hardware, characterize the actual button assignment and AF Button
+   page and record the overlay and focus behavior. No firmware readiness
+   conclusion follows from the current tests.

@@ -1,0 +1,52 @@
+2026-11-15 06:21:41 INFO  (LoggingInitialization) Using log config file: jar:file:/C:/Dev/OM3-research/tooling/ghidra_12.2_PUBLIC/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml  
+2026-11-15 06:21:41 INFO  (LoggingInitialization) Using log file: analysis\button-af\readiness\om-emu-af-acceptance1\placement-retry.log  
+2026-11-15 06:21:41 DEBUG (GhidraObjectInputFilter) Including serial input filter: FileSystem/data/client.rmi.serial.filter  
+2026-11-15 06:21:41 INFO  (Preferences) Loading user preferences: C:\Dev\OM3-research\tooling\ghidra-user\settings\tsmki-ghidra\ghidra_12.2_PUBLIC\preferences  
+2026-11-15 06:21:41 INFO  (ClassSearcher) Searching for classes...  
+2026-11-15 06:21:42 INFO  (ClassSearcher) Class search complete (628 ms)  
+2026-11-15 06:21:42 INFO  (DefaultSSLContextInitializer) Initializing SSL Context  
+2026-11-15 06:21:42 INFO  (SecureRandomFactory) Initializing Random Number Generator...  
+2026-11-15 06:21:42 INFO  (SecureRandomFactory) Random Number Generator initialization complete: SHA1PRNG  
+2026-11-15 06:21:42 INFO  (DefaultTrustManagerFactory) Loaded 60 trusted CA certificates from the OS trust store.  
+2026-11-15 06:21:42 INFO  (DefaultTrustManagerFactory) Loaded 118 trusted CA certificates from the Java default trust store.  
+2026-11-15 06:21:42 INFO  (AnalyzeHeadless) Headless startup complete (1671 ms)  
+2026-11-15 06:21:42 INFO  (ClassSearcher) Class searcher loaded 60 extension points (19 false positives)  
+2026-11-15 06:21:42 INFO  (HeadlessAnalyzer) HEADLESS Script Paths:
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\SystemEmulation\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\Base\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\VersionTracking\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\BSim\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\PDB\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\PyGhidra\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\Swift\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Processors\JVM\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\MicrosoftCodeAnalyzer\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Debug\Debugger-rmi-trace\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Debug\Debugger\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\BytePatterns\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\WildcardAssembler\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\FunctionID\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Processors\Atmel\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Processors\DATA\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\FileFormats\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\Decompiler\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\DecompilerDependent\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Processors\8051\ghidra_scripts
+    C:\Dev\OM3-research\scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Processors\PIC\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\GnuDemangler\ghidra_scripts  
+2026-11-15 06:21:42 INFO  (HeadlessAnalyzer) HEADLESS: execution starts  
+2026-11-15 06:21:42 INFO  (HeadlessAnalyzer) Opening existing project: C:\Dev\OM3-research\ghidra-projects\OM3_main_full  
+2026-11-15 06:21:42 INFO  (HeadlessProject) Opening project: C:\Dev\OM3-research\ghidra-projects\OM3_main_full  
+2026-11-15 06:21:45 DEBUG (SleighLanguage) Took 201ms (26ms inside lock) to initialize language C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Extensions\MN10300\data\languages\mn103_mn10300.slaspec -> C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Extensions\MN10300\data\languages\mn103_mn10300.sla  
+2026-11-15 06:21:45 INFO  (HeadlessAnalyzer) REPORT: Processing read-only project file: /00_0100_50000020.decoded.bin  
+2026-11-15 06:21:45 INFO  (HeadlessAnalyzer) REPORT: Execute script: OM3TaskContextPlacementProbe.java 'analysis/button-af/readiness/om-emu-af-acceptance1'   
+2026-11-15 06:21:47 INFO  (HeadlessAnalyzer) SCRIPT: C:\Dev\OM3-research\scripts\OM3TaskContextPlacementProbe.java  
+2026-11-15 06:21:48 INFO  (GhidraScript) OM3TaskContextPlacementProbe.java> Stock decoded SHA256=5e8d376e9111a44ac0352f26030d7c1b17026d42c45f3600cfa02a0e8c5b7d59  
+2026-11-15 06:21:48 INFO  (GhidraScript) OM3TaskContextPlacementProbe.java> Proposed in-memory decoded SHA256=9814e916300c915843f0f9429b482d4dbdf9ad034d789017740e28c75ef81a84  
+2026-11-15 06:21:48 INFO  (GhidraScript) OM3TaskContextPlacementProbe.java> Changed bytes=3617; every byte justified; all changes confined to uncompressed sections 1/2/4; section 7 stock-identical; checksums not repaired; no image emitted  
+2026-11-15 06:21:48 WARN  (EmulatorHelper) Uninitialized register read at 70fff000: LIR  
+2026-11-15 06:21:48 WARN  (EmulatorHelper) Uninitialized register read at 70fff000: LAR  
+2026-11-15 06:21:48 INFO  (GhidraScript) OM3TaskContextPlacementProbe.java> FIXTURE:section-7 decoded bytes already supplied; bit 6 set explicitly (compressed loader not run)  
+2026-11-15 06:21:48 INFO  (GhidraScript) OM3TaskContextPlacementProbe.java> PASS proposed byte diff, disjoint placement, native sections 1/2/4 whole-load identity, deferred IRQ install, runtime redirect and task-context create-once; no normal-boot/hardware/packaging proof  
+2026-11-15 06:21:48 INFO  (HeadlessAnalyzer) REPORT: Discarding changes to the following read-only file: /00_0100_50000020.decoded.bin  

@@ -1,0 +1,259 @@
+AF-SEND-HELPER:60416fac D0=0000000a D1=00000001 A0=7004ff38 A1=60629950
+AF-TASK-SEND:mbf=1029 size=12 pc=6004d211 task=caller bytes=000000000100000038ff0470
+AF-TASK-RECEIVE-ATTEMPT:mbf=1029 timeout=ffffffff pending=1 task=caller
+AF-TASK-SEND:mbf=1030 size=12 pc=6004d211 task=caller bytes=010000000100000034ff0470
+AF-TASK-RECEIVE-ATTEMPT:mbf=1030 timeout=ffffffff pending=1 task=caller
+AF-TASK-RECEIVE-ATTEMPT:mbf=1031 timeout=ffffffff pending=0 task=caller
+MODEL:event-flag-wait-TIMEOUT:id=225 wait=80000002 timeout=5000 (no SCPU reply modelled as silence)
+AF-TASK-SEND:mbf=1031 size=12 pc=6004d211 task=caller bytes=feff0000010000008cfe0470
+AF-DAMAGE-LOG:code=0000 (stock damage_info recorder, logged not executed)
+AF-MODE-SETTING-READ:id=4501 index=0 pc=603c971b modelled=native-or-factory
+AF-MODE-SETTING-READ:id=4501 index=0 pc=605ac852 modelled=native-or-factory
+AF-MODE-SETTING-READ:id=8121 index=0 pc=605ac891 modelled=native-or-factory
+AF-MODE-SETTING-READ:id=4501 index=0 pc=605ac8a6 modelled=native-or-factory
+AF-RAW-MODE-GETTER:called pc=605aa38f flag62b0fde8=00
+AF-MODE-SETTING-READ:id=4501 index=0 pc=6031c0ff modelled=native-or-factory
+AF-MODE-SETTING-READ:id=c011 index=0 pc=6031c166 modelled=native-or-factory
+AF-RAW-MODE-CODE:record+2=03 (value returned by 6031c0eb)
+AF-MODE-SETTING-READ:id=4501 index=0 pc=605ac785 modelled=native-or-factory
+AF-MODE-SETTING-READ:id=4501 index=0 pc=605aa65e modelled=native-or-factory
+AF-MODE-SETTING-READ:id=4501 index=0 pc=605ac8fa modelled=native-or-factory
+AF-MODE-SETTING-READ:id=91b1 index=1 pc=605aa882 modelled=native-or-factory
+AF-MODE-SETTING-READ:id=91b1 index=4 pc=605aa89d modelled=native-or-factory
+AF-MODE-SETTING-READ:id=91b1 index=5 pc=605aa8b5 modelled=native-or-factory
+AF-MODE-SETTING-READ:id=91b1 index=6 pc=605aa8cd modelled=native-or-factory
+AF-MODE-SETTING-READ:id=4501 index=0 pc=605ac6c4 modelled=native-or-factory
+AF-MODE-RECORD:caller-ret=60570ab4 D0=7004fdc8 D1(rec)=7004fcd8 A0=7004fdd8 A1=7004fd6c sp=7004fcb0 rec[0..3f]=0000000000000000000000000000000000000000000000000000000000000000000000000000a506000003000000000000000470000000000000000000000000
+AF-MODE-RECORD-STACK-CODEPTRS:60570ab4@0 6006151a@24 6056304a@90 605aa32e@94 
+AF-REGISTRY-LOOKUP:key=03 pc=60570f9e A0=7004fc98
+AF-RAW-MODE-GETTER:called pc=605ac3a7 flag62b0fde8=00
+AF-MODE-SETTING-READ:id=4501 index=0 pc=6031c0ff modelled=native-or-factory
+AF-MODE-SETTING-READ:id=c011 index=0 pc=6031c166 modelled=native-or-factory
+AF-MODE-SETTING-READ:id=4501 index=0 pc=605ab101 modelled=native-or-factory
+AF-DAMAGE-LOG:code=0000 (stock damage_info recorder, logged not executed)
+AF-DAMAGE-LOG:code=0000 (stock damage_info recorder, logged not executed)
+AF-MODE-SETTING-READ:id=4501 index=0 pc=603c971b modelled=native-or-factory
+AF-MODE-SETTING-READ:id=4501 index=0 pc=605ac852 modelled=native-or-factory
+AF-MODE-SETTING-READ:id=8121 index=0 pc=605ac891 modelled=native-or-factory
+AF-MODE-SETTING-READ:id=4501 index=0 pc=605ac8a6 modelled=native-or-factory
+AF-RAW-MODE-GETTER:called pc=605aa38f flag62b0fde8=00
+AF-MODE-SETTING-READ:id=4501 index=0 pc=6031c0ff modelled=native-or-factory
+AF-MODE-SETTING-READ:id=c011 index=0 pc=6031c166 modelled=native-or-factory
+AF-RAW-MODE-CODE:record+2=03 (value returned by 6031c0eb)
+AF-MODE-SETTING-READ:id=4501 index=0 pc=605ac785 modelled=native-or-factory
+AF-MODE-SETTING-READ:id=4501 index=0 pc=605aa65e modelled=native-or-factory
+AF-MODE-SETTING-READ:id=4501 index=0 pc=605ac8fa modelled=native-or-factory
+AF-MODE-SETTING-READ:id=91b1 index=1 pc=605aa882 modelled=native-or-factory
+AF-MODE-SETTING-READ:id=91b1 index=4 pc=605aa89d modelled=native-or-factory
+AF-MODE-SETTING-READ:id=91b1 index=5 pc=605aa8b5 modelled=native-or-factory
+AF-MODE-SETTING-READ:id=91b1 index=6 pc=605aa8cd modelled=native-or-factory
+AF-MODE-SETTING-READ:id=4501 index=0 pc=605ac6c4 modelled=native-or-factory
+AF-MODE-RECORD:caller-ret=60570ab4 D0=7004fdc8 D1(rec)=7004fcd8 A0=7004fdd8 A1=7004fd6c sp=7004fcb0 rec[0..3f]=0000000000000000000000000000000000000000000000000000000000000000000000000000a506000003000000000000000470000000000000000000000000
+AF-MODE-RECORD-STACK-CODEPTRS:60570ab4@0 6006151a@24 6056304a@90 605aa32e@94 
+AF-REGISTRY-LOOKUP:key=03 pc=60570f9e A0=7004fc98
+AF-RAW-MODE-GETTER:called pc=605ac3a7 flag62b0fde8=00
+AF-MODE-SETTING-READ:id=4501 index=0 pc=6031c0ff modelled=native-or-factory
+AF-MODE-SETTING-READ:id=c011 index=0 pc=6031c166 modelled=native-or-factory
+AF-MODE-SETTING-READ:id=4501 index=0 pc=605ab101 modelled=native-or-factory
+AF-DAMAGE-LOG:code=0000 (stock damage_info recorder, logged not executed)
+AF-SEND-HELPER:60416fac D0=0000005f D1=0000001d A0=62a9704c A1=60629aae
+AF-TASK-SEND:mbf=95 size=16 pc=6004d211 task=caller bytes=unprovided
+AF-QUEUE-SEND:mbf=95 size=16
+AF-TASK-RECEIVE-ATTEMPT:mbf=95 timeout=ffffffff pending=1 task=95
+AF-CMD-DISPATCH:command=1d handler=603c641a request=0b040000010000001d0000004c70a962
+AF-CMD-COMMON-REPLY:D0=00000000 D1=00000000 A0=700fbfd4 A1=62a690d8
+AF-SEND-HELPER:60318c44 D0=0000040b D1=0000000c A0=700fbf98 A1=ffffffff
+AF-TASK-SEND:mbf=1035 size=12 pc=6004d211 task=95 bytes=00000f70010000004c70a962
+AF-TASK-RECEIVE-ATTEMPT:mbf=1035 timeout=ffffffff pending=1 task=caller
+AF-DAMAGE-LOG:code=0000 (stock damage_info recorder, logged not executed)
+AF-MODE-SETTING-READ:id=4501 index=0 pc=603c971b modelled=native-or-factory
+AF-MODE-SETTING-READ:id=4501 index=0 pc=605ac852 modelled=native-or-factory
+AF-MODE-SETTING-READ:id=8121 index=0 pc=605ac891 modelled=native-or-factory
+AF-MODE-SETTING-READ:id=4501 index=0 pc=605ac8a6 modelled=native-or-factory
+AF-RAW-MODE-GETTER:called pc=605aa38f flag62b0fde8=00
+AF-MODE-SETTING-READ:id=4501 index=0 pc=6031c0ff modelled=native-or-factory
+AF-MODE-SETTING-READ:id=c011 index=0 pc=6031c166 modelled=native-or-factory
+AF-RAW-MODE-CODE:record+2=03 (value returned by 6031c0eb)
+AF-MODE-SETTING-READ:id=4501 index=0 pc=605ac785 modelled=native-or-factory
+AF-MODE-SETTING-READ:id=4501 index=0 pc=605aa65e modelled=native-or-factory
+AF-MODE-SETTING-READ:id=4501 index=0 pc=605ac8fa modelled=native-or-factory
+AF-MODE-SETTING-READ:id=91b1 index=1 pc=605aa882 modelled=native-or-factory
+AF-MODE-SETTING-READ:id=91b1 index=4 pc=605aa89d modelled=native-or-factory
+AF-MODE-SETTING-READ:id=91b1 index=5 pc=605aa8b5 modelled=native-or-factory
+AF-MODE-SETTING-READ:id=91b1 index=6 pc=605aa8cd modelled=native-or-factory
+AF-MODE-SETTING-READ:id=4501 index=0 pc=605ac6c4 modelled=native-or-factory
+AF-MODE-RECORD:caller-ret=60570ab4 D0=7004fe00 D1(rec)=7004fd10 A0=7004fe10 A1=7004fda4 sp=7004fce8 rec[0..3f]=0000000000000000000000000000000000000000000000000000000000000000000000000000a506000003000000000000000470000000000000000000000000
+AF-MODE-RECORD-STACK-CODEPTRS:60570ab4@0 6006151a@24 6056304a@90 605aa32e@94 60dba922@98 
+AF-REGISTRY-LOOKUP:key=03 pc=60570f9e A0=7004fcd0
+AF-RAW-MODE-GETTER:called pc=605ac3a7 flag62b0fde8=00
+AF-MODE-SETTING-READ:id=4501 index=0 pc=6031c0ff modelled=native-or-factory
+AF-MODE-SETTING-READ:id=c011 index=0 pc=6031c166 modelled=native-or-factory
+AF-MODE-SETTING-READ:id=4501 index=0 pc=605ab101 modelled=native-or-factory
+AF-DAMAGE-LOG:code=0000 (stock damage_info recorder, logged not executed)
+AF-DAMAGE-LOG:code=0000 (stock damage_info recorder, logged not executed)
+AF-MODE-SETTING-READ:id=4501 index=0 pc=603c971b modelled=native-or-factory
+AF-MODE-SETTING-READ:id=4501 index=0 pc=605ac852 modelled=native-or-factory
+AF-MODE-SETTING-READ:id=8121 index=0 pc=605ac891 modelled=native-or-factory
+AF-MODE-SETTING-READ:id=4501 index=0 pc=605ac8a6 modelled=native-or-factory
+AF-RAW-MODE-GETTER:called pc=605aa38f flag62b0fde8=00
+AF-MODE-SETTING-READ:id=4501 index=0 pc=6031c0ff modelled=native-or-factory
+AF-MODE-SETTING-READ:id=c011 index=0 pc=6031c166 modelled=native-or-factory
+AF-RAW-MODE-CODE:record+2=03 (value returned by 6031c0eb)
+AF-MODE-SETTING-READ:id=4501 index=0 pc=605ac785 modelled=native-or-factory
+AF-MODE-SETTING-READ:id=4501 index=0 pc=605aa65e modelled=native-or-factory
+AF-MODE-SETTING-READ:id=4501 index=0 pc=605ac8fa modelled=native-or-factory
+AF-MODE-SETTING-READ:id=91b1 index=1 pc=605aa882 modelled=native-or-factory
+AF-MODE-SETTING-READ:id=91b1 index=4 pc=605aa89d modelled=native-or-factory
+AF-MODE-SETTING-READ:id=91b1 index=5 pc=605aa8b5 modelled=native-or-factory
+AF-MODE-SETTING-READ:id=91b1 index=6 pc=605aa8cd modelled=native-or-factory
+AF-MODE-SETTING-READ:id=4501 index=0 pc=605ac6c4 modelled=native-or-factory
+AF-MODE-RECORD:caller-ret=60570ab4 D0=7004fdf0 D1(rec)=7004fd00 A0=7004fe00 A1=7004fd94 sp=7004fcd8 rec[0..3f]=0000000000000000000000000000000000000000000000000000000000000000000000000000a506000003000000000000000470000000000000000000000000
+AF-MODE-RECORD-STACK-CODEPTRS:60570ab4@0 6006151a@24 6056304a@90 605aa32e@94 
+AF-REGISTRY-LOOKUP:key=03 pc=60570f9e A0=7004fcc0
+AF-RAW-MODE-GETTER:called pc=605ac3a7 flag62b0fde8=00
+AF-MODE-SETTING-READ:id=4501 index=0 pc=6031c0ff modelled=native-or-factory
+AF-MODE-SETTING-READ:id=c011 index=0 pc=6031c166 modelled=native-or-factory
+AF-MODE-SETTING-READ:id=4501 index=0 pc=605ab101 modelled=native-or-factory
+AF-DAMAGE-LOG:code=0000 (stock damage_info recorder, logged not executed)
+AF-MODE-SETTING-READ:id=c011 index=0 pc=6041a1fb modelled=native-or-factory
+AF-MODE-SETTING-READ:id=c011 index=0 pc=6041a1fb modelled=native-or-factory
+AF-MODE-SETTING-READ:id=c011 index=0 pc=6041a1fb modelled=native-or-factory
+AF-MODE-SETTING-READ:id=c011 index=0 pc=6041a1fb modelled=native-or-factory
+AF-MODE-SETTING-READ:id=c011 index=0 pc=6041a1fb modelled=native-or-factory
+AF-MODE-SETTING-READ:id=c011 index=0 pc=6041a1fb modelled=native-or-factory
+AF-MODE-SETTING-READ:id=c011 index=0 pc=6041a1fb modelled=native-or-factory
+AF-MODE-SETTING-READ:id=c011 index=0 pc=6041a1fb modelled=native-or-factory
+AF-MODE-SETTING-READ:id=c011 index=0 pc=6041a1fb modelled=native-or-factory
+AF-MODE-SETTING-READ:id=c011 index=0 pc=6041a1fb modelled=native-or-factory
+AF-MODE-SETTING-READ:id=c011 index=0 pc=6041a1fb modelled=native-or-factory
+AF-MODE-SETTING-READ:id=c011 index=0 pc=6041a1fb modelled=native-or-factory
+AF-MODE-SETTING-READ:id=c011 index=0 pc=6041a1fb modelled=native-or-factory
+AF-MODE-SETTING-READ:id=c011 index=0 pc=6041a1fb modelled=native-or-factory
+AF-MODE-SETTING-READ:id=c011 index=0 pc=6055969c modelled=native-or-factory
+AF-MODE-SETTING-READ:id=4501 index=0 pc=6055972a modelled=native-or-factory
+AF-MODE-SETTING-READ:id=8121 index=0 pc=6041a1fb modelled=native-or-factory
+AF-MODE-SETTING-READ:id=c011 index=0 pc=6041a1fb modelled=native-or-factory
+AF-MODE-SETTING-READ:id=c011 index=0 pc=6041a1fb modelled=native-or-factory
+AF-MODE-SETTING-READ:id=c011 index=0 pc=6041a1fb modelled=native-or-factory
+AF-MODE-SETTING-READ:id=c011 index=0 pc=6041a1fb modelled=native-or-factory
+AF-MODE-SETTING-READ:id=c011 index=0 pc=6041a1fb modelled=native-or-factory
+AF-MODE-SETTING-READ:id=c011 index=0 pc=6041a1fb modelled=native-or-factory
+AF-MODE-SETTING-READ:id=c011 index=0 pc=6041a1fb modelled=native-or-factory
+AF-MODE-SETTING-READ:id=c011 index=0 pc=6041a1fb modelled=native-or-factory
+AF-MODE-SETTING-READ:id=c011 index=0 pc=6041a1fb modelled=native-or-factory
+AF-MODE-SETTING-READ:id=c011 index=0 pc=6041a1fb modelled=native-or-factory
+AF-MODE-SETTING-READ:id=c011 index=0 pc=6041a1fb modelled=native-or-factory
+AF-MODE-SETTING-READ:id=c011 index=0 pc=6041a1fb modelled=native-or-factory
+AF-MODE-SETTING-READ:id=c011 index=0 pc=6041a1fb modelled=native-or-factory
+AF-MODE-SETTING-READ:id=c011 index=0 pc=6041a1fb modelled=native-or-factory
+AF-MODE-SETTING-READ:id=8121 index=0 pc=6041a1fb modelled=native-or-factory
+AF-TRACE-LOG site=609321ed D0=00000000 D1=00000000 A0=60a483dc A1=00000000 (native)
+AF-TRACE-LOG site=609322de D0=01000000 D1=00b31900 A0=60a483e5 A1=00000000 (native)
+AF-TRACE-LOG site=6091a3b1 D0=00000000 D1=00000000 A0=60a4403a A1=00000000 (native)
+AF-TRACE-LOG site=6091a424 D0=00000000 D1=00000000 A0=60a44043 A1=00000000 (native)
+AF-DEFAULTS returned; a33f3674=01 a33f3640=01 a33f364f=00
+AF-MODULE-INIT returned; worker context a33f3614=a33f2d5c a33f3618=a33f2d5c a33f361c=a33f2d90
+AF-TASK-SEND:mbf=94 size=16 pc=6004d211 task=caller bytes=unprovided
+AF-QUEUE-SEND:mbf=94 size=16
+AF-TASK-RECEIVE-ATTEMPT:mbf=94 timeout=ffffffff pending=1 task=94
+AF-TASK-SEND:mbf=1036 size=12 pc=6004d211 task=94 bytes=000000000100000000000000
+AF-TASK-RECEIVE-ATTEMPT:mbf=1036 timeout=ffffffff pending=1 task=caller
+AF-TASK-SEND:mbf=94 size=16 pc=6004d211 task=caller bytes=unprovided
+AF-QUEUE-SEND:mbf=94 size=16
+AF-TASK-RECEIVE-ATTEMPT:mbf=94 timeout=ffffffff pending=1 task=94
+AF-TASK-SEND:mbf=1037 size=12 pc=6004d211 task=94 bytes=00003fa30100000000000000
+AF-TASK-RECEIVE-ATTEMPT:mbf=1037 timeout=ffffffff pending=1 task=caller
+AF-TRACE-LOG site=60903fee D0=0f804001 D1=00000013 A0=60a3cfe9 A1=00000000 (native)
+AF-MODE-SETTING-READ:id=c011 index=0 pc=6041a1fb modelled=native-or-factory
+AF-CONSUMERS-QUIESCENT after matrix-edge=1 rounds=0
+AF-TRACE-LOG site=60903fee D0=0f804001 D1=00000013 A0=60a3cfe9 A1=00000000 (native)
+AF-TASK-SEND:mbf=95 size=16 pc=6004d211 task=caller bytes=06000000000001f02a00000020030270
+AF-QUEUE-SEND:mbf=95 size=16
+AF-TASK-RECEIVE-ATTEMPT:mbf=95 timeout=ffffffff pending=1 task=95
+AF-CMD-DISPATCH:command=2a handler=603c86d7 request=06000000000001f02a00000020030270
+AF-WORKER-SUBMIT command=100 packet=630000000000080000010000dcbe0f70 payload=700fbedc bytes=718d3c60000100000000000000000000000000008b8d3c6000000000000000000000000000020000000000000000000000000000000000000000000063000000 owner=2 subject=0
+AF-SEND-HELPER:60318c44 D0=0000005e D1=00000010 A0=700fbf18 A1=ffffffff
+AF-TASK-SEND:mbf=94 size=16 pc=6004d211 task=95 bytes=630000000000080000010000dcbe0f70
+AF-QUEUE-SEND:mbf=94 size=16
+AF-TASK-RECEIVE-ATTEMPT:mbf=94 timeout=ffffffff pending=1 task=94
+AF-CACHE-ACCESS task=94 owner=2 active-cache=a031ea00 bytes=0e020200010001000000 subject=0
+AF-TRACE-LOG site=60903fee D0=0f804001 D1=00000013 A0=60a3cfe9 A1=00000000 (native)
+AF-CACHE-ACCESS task=94 owner=2 active-cache=a031ea00 bytes=0e020200010001000000 subject=0
+AF-TRACE-LOG site=60903fee D0=0f804001 D1=00000013 A0=60a3cfe9 A1=00000000 (native)
+AF-TRACE-LOG site=608fe7b4 D0=00005100 D1=ffffffff A0=60a3b99f A1=00000271 (native)
+AF-DAMAGE-LOG:code=0000 (stock damage_info recorder, logged not executed)
+AF-SEND-HELPER:607117ac D0=0000005c D1=0000005d A0=00000000 A1=00000b00
+AF-INFINITE-WAIT flag=67 mask=00000001 pc=6004cea0 task=94 pending95=0 pending94=0; no completion producer supplied
+AF-TASK-SEND:mbf=99 size=12 pc=6004d211 task=94 bytes=00003fa300000800dcbe0f70
+AF-TASK-RECEIVE-ATTEMPT:mbf=99 timeout=ffffffff pending=1 task=95
+AF-CMD-COMMON-REPLY:D0=00000000 D1=00000000 A0=700fbfd4 A1=62a69118
+AF-SEND-HELPER:60318c44 D0=00000006 D1=0000000c A0=700fbf98 A1=ffffffff
+AF-CONSUMERS-QUIESCENT after matrix-edge=2 rounds=1
+AF-TRACE-LOG site=60903fee D0=0f804001 D1=00000013 A0=60a3cfe9 A1=00000000 (native)
+AF-MODE-SETTING-READ:id=91b1 index=1 pc=6041a1fb modelled=native-or-factory
+AF-MODE-SETTING-READ:id=91b1 index=1 pc=6041a1fb modelled=native-or-factory
+AF-MODE-SETTING-READ:id=91b1 index=1 pc=6041a1fb modelled=native-or-factory
+AF-MODE-SETTING-READ:id=c011 index=0 pc=6041a1fb modelled=native-or-factory
+AF-MODE-SETTING-READ:id=c011 index=0 pc=6041a1fb modelled=native-or-factory
+AF-MODE-SETTING-READ:id=c011 index=0 pc=6055969c modelled=native-or-factory
+AF-MODE-SETTING-READ:id=4501 index=0 pc=6055972a modelled=native-or-factory
+AF-MODE-SETTING-READ:id=c011 index=0 pc=6055969c modelled=native-or-factory
+AF-MODE-SETTING-READ:id=4501 index=0 pc=6055972a modelled=native-or-factory
+AF-DAMAGE-LOG:code=0000 (stock damage_info recorder, logged not executed)
+AF-CONSUMERS-QUIESCENT after matrix-edge=3 rounds=0
+AF-TRACE-LOG site=60903fee D0=0f804001 D1=00000013 A0=60a3cfe9 A1=00000000 (native)
+AF-CONSUMERS-QUIESCENT after matrix-edge=4 rounds=0
+AF-TRACE-LOG site=60903fee D0=0f804001 D1=00000013 A0=60a3cfe9 A1=00000000 (native)
+AF-MODE-SETTING-READ:id=c011 index=0 pc=6041a1fb modelled=native-or-factory
+AF-CONSUMERS-QUIESCENT after matrix-edge=5 rounds=0
+AF-TRACE-LOG site=60903fee D0=0f804001 D1=00000013 A0=60a3cfe9 A1=00000000 (native)
+AF-CONSUMERS-QUIESCENT after matrix-edge=6 rounds=0
+AF-TRACE-LOG site=60903fee D0=0f804001 D1=00000013 A0=60a3cfe9 A1=00000000 (native)
+AF-CONSUMERS-QUIESCENT after matrix-edge=7 rounds=0
+AF-TRACE-LOG site=60903fee D0=0f804001 D1=00000013 A0=60a3cfe9 A1=00000000 (native)
+AF-CONSUMERS-QUIESCENT after matrix-edge=8 rounds=0
+AF-TRACE-LOG site=60903fee D0=0f804001 D1=00000013 A0=60a3cfe9 A1=00000000 (native)
+AF-MODE-SETTING-READ:id=c011 index=0 pc=6041a1fb modelled=native-or-factory
+AF-CONSUMERS-QUIESCENT after matrix-edge=9 rounds=0
+AF-TRACE-LOG site=60903fee D0=0f804001 D1=00000013 A0=60a3cfe9 A1=00000000 (native)
+AF-CONSUMERS-QUIESCENT after matrix-edge=10 rounds=0
+AF-TRACE-LOG site=60903fee D0=0f804001 D1=00000013 A0=60a3cfe9 A1=00000000 (native)
+AF-CONSUMERS-QUIESCENT after matrix-edge=11 rounds=0
+AF-TRACE-LOG site=60903fee D0=0f804001 D1=00000013 A0=60a3cfe9 A1=00000000 (native)
+AF-CONSUMERS-QUIESCENT after matrix-edge=12 rounds=0
+AF-TRACE-LOG site=60903fee D0=0f804001 D1=00000013 A0=60a3cfe9 A1=00000000 (native)
+AF-MODE-SETTING-READ:id=c011 index=0 pc=6041a1fb modelled=native-or-factory
+AF-CONSUMERS-QUIESCENT after matrix-edge=13 rounds=0
+AF-TRACE-LOG site=60903fee D0=0f804001 D1=00000013 A0=60a3cfe9 A1=00000000 (native)
+AF-CONSUMERS-QUIESCENT after matrix-edge=14 rounds=0
+AF-TRACE-LOG site=60903fee D0=0f804001 D1=00000013 A0=60a3cfe9 A1=00000000 (native)
+AF-CONSUMERS-QUIESCENT after matrix-edge=15 rounds=0
+AF-TRACE-LOG site=60903fee D0=0f804001 D1=00000013 A0=60a3cfe9 A1=00000000 (native)
+AF-CONSUMERS-QUIESCENT after matrix-edge=16 rounds=0
+AF-TRACE-LOG site=60903fee D0=0f804001 D1=00000013 A0=60a3cfe9 A1=00000000 (native)
+AF-MODE-SETTING-READ:id=c011 index=0 pc=6041a1fb modelled=native-or-factory
+AF-CONSUMERS-QUIESCENT after matrix-edge=17 rounds=0
+AF-TRACE-LOG site=60903fee D0=0f804001 D1=00000013 A0=60a3cfe9 A1=00000000 (native)
+AF-CONSUMERS-QUIESCENT after matrix-edge=18 rounds=0
+AF-TRACE-LOG site=60903fee D0=0f804001 D1=00000013 A0=60a3cfe9 A1=00000000 (native)
+AF-CONSUMERS-QUIESCENT after matrix-edge=19 rounds=0
+AF-TRACE-LOG site=60903fee D0=0f804001 D1=00000013 A0=60a3cfe9 A1=00000000 (native)
+AF-CONSUMERS-QUIESCENT after matrix-edge=20 rounds=0
+AF-TRACE-LOG site=60903fee D0=0f804001 D1=00000013 A0=60a3cfe9 A1=00000000 (native)
+AF-MODE-SETTING-READ:id=c011 index=0 pc=6041a1fb modelled=native-or-factory
+AF-CONSUMERS-QUIESCENT after matrix-edge=21 rounds=0
+AF-TRACE-LOG site=60903fee D0=0f804001 D1=00000013 A0=60a3cfe9 A1=00000000 (native)
+AF-CONSUMERS-QUIESCENT after matrix-edge=22 rounds=0
+AF-TRACE-LOG site=60903fee D0=0f804001 D1=00000013 A0=60a3cfe9 A1=00000000 (native)
+AF-CONSUMERS-QUIESCENT after matrix-edge=23 rounds=0
+AF-TRACE-LOG site=60903fee D0=0f804001 D1=00000013 A0=60a3cfe9 A1=00000000 (native)
+AF-CONSUMERS-QUIESCENT after matrix-edge=24 rounds=0
+AF-TRACE-LOG site=60903fee D0=0f804001 D1=00000013 A0=60a3cfe9 A1=00000000 (native)
+AF-MODE-SETTING-READ:id=c011 index=0 pc=6041a1fb modelled=native-or-factory
+AF-CONSUMERS-QUIESCENT after matrix-edge=25 rounds=0
+AF-TRACE-LOG site=60903fee D0=0f804001 D1=00000013 A0=60a3cfe9 A1=00000000 (native)
+AF-CONSUMERS-QUIESCENT after matrix-edge=26 rounds=0
+AF-TRACE-LOG site=60903fee D0=0f804001 D1=00000013 A0=60a3cfe9 A1=00000000 (native)
+AF-CONSUMERS-QUIESCENT after matrix-edge=27 rounds=0
+AF-TRACE-LOG site=60903fee D0=0f804001 D1=00000013 A0=60a3cfe9 A1=00000000 (native)
+AF-CONSUMERS-QUIESCENT after matrix-edge=28 rounds=0

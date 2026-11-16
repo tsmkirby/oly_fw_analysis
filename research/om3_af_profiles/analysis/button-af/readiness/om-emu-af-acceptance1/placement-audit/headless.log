@@ -1,0 +1,72 @@
+2026-11-15 06:39:59 INFO  (LoggingInitialization) Using log config file: jar:file:/C:/Dev/OM3-research/tooling/ghidra_12.2_PUBLIC/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml  
+2026-11-15 06:39:59 INFO  (LoggingInitialization) Using log file: analysis\button-af\readiness\om-emu-af-acceptance1\placement-audit\headless.log  
+2026-11-15 06:39:59 DEBUG (GhidraObjectInputFilter) Including serial input filter: FileSystem/data/client.rmi.serial.filter  
+2026-11-15 06:39:59 INFO  (Preferences) Loading user preferences: C:\Dev\OM3-research\tooling\ghidra-user\settings\tsmki-ghidra\ghidra_12.2_PUBLIC\preferences  
+2026-11-15 06:39:59 INFO  (ClassSearcher) Searching for classes...  
+2026-11-15 06:39:59 INFO  (ClassSearcher) Class search complete (633 ms)  
+2026-11-15 06:39:59 INFO  (DefaultSSLContextInitializer) Initializing SSL Context  
+2026-11-15 06:39:59 INFO  (SecureRandomFactory) Initializing Random Number Generator...  
+2026-11-15 06:39:59 INFO  (SecureRandomFactory) Random Number Generator initialization complete: SHA1PRNG  
+2026-11-15 06:39:59 INFO  (DefaultTrustManagerFactory) Loaded 60 trusted CA certificates from the OS trust store.  
+2026-11-15 06:40:00 INFO  (DefaultTrustManagerFactory) Loaded 118 trusted CA certificates from the Java default trust store.  
+2026-11-15 06:40:00 INFO  (AnalyzeHeadless) Headless startup complete (1725 ms)  
+2026-11-15 06:40:00 INFO  (ClassSearcher) Class searcher loaded 60 extension points (19 false positives)  
+2026-11-15 06:40:00 INFO  (HeadlessAnalyzer) HEADLESS Script Paths:
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\SystemEmulation\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\Base\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\VersionTracking\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\BSim\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\PDB\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\PyGhidra\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\Swift\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Processors\JVM\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\MicrosoftCodeAnalyzer\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Debug\Debugger-rmi-trace\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Debug\Debugger\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\BytePatterns\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\WildcardAssembler\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\FunctionID\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Processors\Atmel\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Processors\DATA\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\FileFormats\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\Decompiler\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\DecompilerDependent\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Processors\8051\ghidra_scripts
+    C:\Dev\OM3-research\scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Processors\PIC\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\GnuDemangler\ghidra_scripts  
+2026-11-15 06:40:00 INFO  (HeadlessAnalyzer) HEADLESS: execution starts  
+2026-11-15 06:40:00 INFO  (HeadlessAnalyzer) Opening existing project: C:\Dev\OM3-research\ghidra-projects\OM3_main_full  
+2026-11-15 06:40:00 INFO  (HeadlessProject) Opening project: C:\Dev\OM3-research\ghidra-projects\OM3_main_full  
+2026-11-15 06:40:03 DEBUG (SleighLanguage) Took 168ms (32ms inside lock) to initialize language C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Extensions\MN10300\data\languages\mn103_mn10300.slaspec -> C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Extensions\MN10300\data\languages\mn103_mn10300.sla  
+2026-11-15 06:40:03 INFO  (HeadlessAnalyzer) REPORT: Processing read-only project file: /00_0100_50000020.decoded.bin  
+2026-11-15 06:40:03 INFO  (HeadlessAnalyzer) REPORT: Execute script: OM3TaskContextMutexProof.java 'analysis/button-af/readiness/om-emu-af-acceptance1/placement-audit'   
+2026-11-15 06:40:04 INFO  (HeadlessAnalyzer) SCRIPT: C:\Dev\OM3-research\scripts\OM3TaskContextMutexProof.java  
+2026-11-15 06:49:17 INFO  (GhidraScript) OM3TaskContextMutexProof.java> AUDITED live blocks=9 + ENSURE(66 B) + installer v4(105 B) + hook + 2 patched sites + table
+ACCESS-LOADED-BITS-UNCACHED-R      1
+ACCESS-STATE-UNCACHED-R            45
+ACCESS-STATE-UNCACHED-W            28
+ACCESS-STOCK-CACHED-R              2
+ACCESS-STOCK-UNCACHED-R            11
+REL-KNOWN-INSTALLER-TABLE-R        2
+REL-KNOWN-STATE-UNCACHED-R         4
+REL-KNOWN-STATE-UNCACHED-W         10
+REL-KNOWN-STOCK-UNCACHED-R         2
+REL-UNKNOWN-BASE                   42
+SPANS-BLOCK-END                    1
+STACK-ACCESS                       137
+TABLE-FIELD-SECTION7-CACHED-W      4
+TARGET-HOOK-RESUME                 1
+TARGET-NOT-FUNCTION-START          3
+TARGET-PLACED                      131
+TARGET-STOCK-FUNCTION              44  
+2026-11-15 06:49:25 INFO  (GhidraScript) OM3TaskContextMutexProof.java> BOUNDARY after modelled message-buffer create: java.lang.Exception: INTENTIONAL STOP after conditional mode sequence and bounded original AF-ON attempt; inspect mode-sequence-button-results.txt  
+2026-11-15 06:49:25 INFO  (GhidraScript) OM3TaskContextMutexProof.java> UNEXPECTED link-probe outcome: BOUNDARY after modelled 600303db: java.lang.Exception: INTENTIONAL STOP after conditional mode sequence and bounded original AF-ON attempt; inspect mode-sequence-button-results.txt  
+2026-11-15 06:49:25 INFO  (GhidraScript) OM3TaskContextMutexProof.java> AF-COMMAND-TASK PROBE (stock-reset scenario, silent SCPU; not a normal boot)
+task runs: {95=2, 94=4, 92=1}
+connection state=6 backend=62b76000 requested=62b76000
+state-12 handler entries: {msg=7002b050 vtable=60e6fc58 isA=60bbbbed=1, msg=7003e0d0 vtable=60e6fc58 isA=60bbbbed=1, msg=7003e180 vtable=60e6fc58 isA=60bbbbed=1}
+terminal outcome: BOUNDARY after modelled 600303db: java.lang.Exception: INTENTIONAL STOP after conditional mode sequence and bounded original AF-ON attempt; inspect mode-sequence-button-results.txt
+No reply, status or AF completion was supplied; see af-task-log.txt for every queue 94/95/96/99 exchange.
+  
+2026-11-15 06:49:25 INFO  (HeadlessAnalyzer) REPORT: Discarding changes to the following read-only file: /00_0100_50000020.decoded.bin  

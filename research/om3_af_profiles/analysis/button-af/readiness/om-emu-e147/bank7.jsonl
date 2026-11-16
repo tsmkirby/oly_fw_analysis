@@ -1,0 +1,12 @@
+{"model":"E147","main_sha256":"5e8d376e9111a44ac0352f26030d7c1b17026d42c45f3600cfa02a0e8c5b7d59","cpu_base":"0x60021020","mode":"bank7"}
+{"name":"stock shape: valid A, B absent","pass":true,"selected":"A","rebuilds":1}
+{"name":"stock shape: wrong ID despite zero sum","pass":true,"selected":"defaults","rebuilds":2}
+{"name":"stock shape: last halfword corruption","pass":true,"selected":"defaults","rebuilds":2}
+{"name":"synthetic A/B: only B valid","pass":true,"selected":"B","rebuilds":1}
+{"name":"synthetic A/B: B one generation newer","pass":true,"selected":"B","rebuilds":1}
+{"name":"synthetic A/B: A one generation newer","pass":true,"selected":"A","rebuilds":1}
+{"name":"synthetic A/B: equal generations","pass":true,"selected":"defaults","rebuilds":2}
+{"name":"synthetic A/B: gap of two","pass":true,"selected":"defaults","rebuilds":2}
+{"name":"synthetic A/B: wrap to zero","pass":true,"selected":"B","rebuilds":1}
+{"name":"synthetic A/B: neither valid","pass":true,"selected":"defaults","rebuilds":2}
+{"pass":true,"checks":10,"scope":"isolated stock instructions; synthetic RAM copies, diagnostics and registry rebuild intercepted; no NAND I/O"}

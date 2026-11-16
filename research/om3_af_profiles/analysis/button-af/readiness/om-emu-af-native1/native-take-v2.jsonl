@@ -1,0 +1,9 @@
+{"mode":"stock","afonCode":"0xb","setup":"idle-120b:0:0","step":"native-focus-init-begin","address":"6071181e"}
+{"mode":"stock","afonCode":"0xb","setup":"idle-120b:0:0","step":"native-focus-init-end","address":"6071181e","ret":1024}
+{"mode":"stock","afonCode":"0xb","setup":"idle-120b:0:0","step":"native-focus-init-begin","address":"608fe1b0"}
+{"mode":"stock","afonCode":"0xb","setup":"idle-120b:0:0","step":"native-focus-init-end","address":"608fe1b0","ret":0}
+{"mode":"stock","afonCode":"0xb","setup":"idle-120b:0:0","step":"native-focus-init-begin","address":"609df7e4"}
+{"mode":"stock","afonCode":"0xb","setup":"idle-120b:0:0","step":"native-focus-init-end","address":"609df7e4","ret":1}
+{"mode":"stock","afonCode":"0xb","setup":"idle-120b:0:0","step":"native-focus-task","tid":105,"state":4,"queue":94}
+{"mode":"stock","afonCode":"0xb","setup":"idle-120b:0:0","step":"native-take-init-begin","address":"6017e698"}
+{"mode":"stock","afonCode":"0xb","setup":"idle-120b:0:0","boundary":"FirmwareError: stopped at 0x6017e9b3 (disasm 0x5015d993) fault=2: om-emu: scpu command 0x20041001 pc 0x60070b3e #1 (reg0 0x00000000 e8 0x00000000 ec 0x00000000)\nom-emu: vsc ERROR UNWRITTEN pc 0xa2100400 ch 2 off 0x04e0 value 0x00000000 args 0x0 0x0 0x0\nom-emu: MN10300 trap reason=2 pc=0x6017e9b3 address=0x50003090\n    at PlayLab._loop1 (file:///C:/Dev/OM3-research/tooling/om-emu/emu/src/lab/hle.mjs:273:13)\n    at PlayLab._loop (file:///C:/Dev/OM3-research/tooling/om-emu/emu/src/lab/hle.mjs:227:23)\n    at PlayLab.call (file:///C:/Dev/OM3-research/tooling/om-emu/emu/src/lab/hle.mjs:216:17)\n    at file:///C:/Dev/OM3-research/scripts/om_emu_af_live_probe.mjs:106:18","hit":{"mutex_create":4,"key_irq":3,"display_set":2}}

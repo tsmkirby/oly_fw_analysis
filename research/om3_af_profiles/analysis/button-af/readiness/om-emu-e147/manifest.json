@@ -1,0 +1,24 @@
+{
+  "om_emu_commit": "4e4ec4ef084542a7e30eecce56970c7e09c123c9",
+  "node": "26.12.1",
+  "bank7_cases_passed": 10,
+  "switch_checks_passed": 4,
+  "blank_start_coverage": {
+    "registry_bootstrap": 1,
+    "load_dispatch": 1,
+    "bank7_load_call": 2,
+    "area_validator": 1,
+    "bank7_defaults_call": 2,
+    "bank7_load_success": 0,
+    "bank7_defaults": 2
+  },
+  "sha256": {
+    "scripts/om_emu_e147_probe.mjs": "82d0f05234ffbc2e9f176c805918fd00c41c188ce8f04bde14daeefee18767aa",
+    "analysis/decoded/00_0100_50000020.decoded.bin": "5e8d376e9111a44ac0352f26030d7c1b17026d42c45f3600cfa02a0e8c5b7d59",
+    "analysis/decoded/02_0106_458c0020.decoded.bin": "3d9fd4426b45fbe4b715599422af38c6d22392c08543a69f63c28291c5a0b059",
+    "analysis/button-af/readiness/om-emu-e147/windows-fileurl.patch": "fbc72c451099070a285050c419e6a2c61fb057a9d05c6955acb60a3b8a4509d5",
+    "analysis/button-af/readiness/om-emu-e147/bank7.jsonl": "041a807e4de11a4aeab2c695fe0ec823e1d9a129cb61d935120b396652515433",
+    "analysis/button-af/readiness/om-emu-e147/switch-getter.jsonl": "afcd7f3f9e303ac84e4d56c5bf8bbbc03ae26fc114cb6bf158a4f7e811a82efb",
+    "analysis/button-af/readiness/om-emu-e147/switch-session.jsonl": "f604bf6099fc90e45d174cfea7b743039fcd29f02d05ee9fce178d8c44b4aa51"
+  }
+}

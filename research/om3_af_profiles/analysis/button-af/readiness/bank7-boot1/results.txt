@@ -1,0 +1,10 @@
+PASS stock shape: valid A, B absent: A copied descriptor-slot=0 defaults=0 runtime-end=00000000
+PASS stock shape: wrong ID despite zero sum: default descriptor-slot=0 defaults=1 runtime-end=62959b65
+PASS stock shape: last halfword corruption: default descriptor-slot=0 defaults=1 runtime-end=62959b65
+PASS synthetic A/B: only B valid: B copied descriptor-slot=1 defaults=0 runtime-end=00000000
+PASS synthetic A/B: B one generation newer: B copied descriptor-slot=1 defaults=0 runtime-end=00000000
+PASS synthetic A/B: A one generation newer: A copied descriptor-slot=0 defaults=0 runtime-end=00000000
+PASS synthetic A/B: equal generations: default descriptor-slot=0 defaults=1 runtime-end=62959b65
+PASS synthetic A/B: gap of two: default descriptor-slot=0 defaults=1 runtime-end=62959b65
+PASS synthetic A/B: wrap to zero: B copied descriptor-slot=1 defaults=0 runtime-end=00000000
+PASS synthetic A/B: neither valid: default descriptor-slot=0 defaults=1 runtime-end=62959b65

@@ -1,0 +1,14 @@
+{
+  "entry": "0x6031eb80",
+  "bytes": 283,
+  "callsite": "0x610bf5e2",
+  "source_sha256": "8b4c1cea1511c77de136ee909e05dd63fd2aac6f8876f1a349b2509b4372bba4",
+  "base_overlay_sha256": "f523b903b6a6355a51a2162fc4868790dab935f16426699b7270ac52a7936859",
+  "decoded_sha256": "4d35d049ccf1646fc2f0dd25ba223d857d319930fc543e6240d99aea53c2617d",
+  "limitations": [
+    "legacy AF Home provider",
+    "no packaging or placement proof for section 7",
+    "lock spans reconciliation only; stock dispatcher runs after unlock",
+    "no retry or completion fabricated on admission failure"
+  ]
+}

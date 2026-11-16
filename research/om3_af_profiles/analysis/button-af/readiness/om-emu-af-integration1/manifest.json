@@ -1,0 +1,15 @@
+{
+  "om_emu_commit": "4e4ec4ef084542a7e30eecce56970c7e09c123c9",
+  "windows_host_patch": "../om-emu-e147/windows-fileurl.patch",
+  "scope": "Matched live stock/overlay E147 sessions, plus an isolated native registration/defaults probe; no hardware, installable patch, or positive live per-button profile switch.",
+  "sha256": {
+    "analysis/decoded/00_0100_50000020.decoded.bin": "5e8d376e9111a44ac0352f26030d7c1b17026d42c45f3600cfa02a0e8c5b7d59",
+    "analysis/button-af/readiness/task-context-placement1/proposed-changed-bytes.csv": "8843e4c2f758b4a148ab37927701bbd07f54fa4b35600bc6ddd3f9afa4368cec",
+    "scripts/om_emu_af_player.mjs": "d9095e5c554cc0506e6dee8792659ac0cb9e5ae4301b299e062945069e959cbb",
+    "scripts/om_emu_bank7_append_probe.mjs": "49b8a5c4379fae9cdb273cf30ba1e45b8cb1527c28de56b3efb061b59f19fe51",
+    "analysis/button-af/readiness/om-emu-af-integration1/stock-final.jsonl": "5f2f0f2bfea34a6de8bf5207410883455ac523355cf23a6e48e64437d1e47d16",
+    "analysis/button-af/readiness/om-emu-af-integration1/overlay-final.jsonl": "ed8eeae0e6faf48a686118a5bda4a54ae870dc0e25a1d58ca7cb189dfa3914cc",
+    "analysis/button-af/readiness/om-emu-af-integration1/bank7-append.jsonl": "c076763a1d90bc5c6fe772412c6d556ddee38abcf4a4dd2160efe79600cd840e",
+    "analysis/button-af/readiness/om-emu-af-integration1/menu-layout.json": "567e604db724599632ae9ddefbc8fe827ed01b68abfcef13a561acd9e62e1453"
+  }
+}

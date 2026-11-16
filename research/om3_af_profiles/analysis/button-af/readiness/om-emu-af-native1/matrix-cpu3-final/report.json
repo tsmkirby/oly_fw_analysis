@@ -1,0 +1,228 @@
+{
+  "firmware_build": "OLY_E_147_1100_0000_0000",
+  "firmware_sha256": {
+    "OLY_E_147_1100_0000_0000.BIN.blk00000000.OE.0100.bin": "5e8d376e9111a44ac0352f26030d7c1b17026d42c45f3600cfa02a0e8c5b7d59",
+    "OLY_E_147_1100_0000_0000.BIN.blk02000000.OE.0101.bin": "6d2bef74b4b2fa089f271529482f96505a170b91e79ab9b1a13f3ce8f7918226"
+  },
+  "om_emu_commit": "4e4ec4ef084542a7e30eecce56970c7e09c123c9",
+  "inputs_sha256": {
+    "C:\\Dev\\OM3-research\\scripts\\om_emu_af_native_acceptance.py": "b7c887025058899248142c0024a6a53594699179afda23d9867090b3a4baf17a",
+    "C:\\Dev\\OM3-research\\scripts\\om_emu_af_live_probe.mjs": "e11f4d0ee7594c24d69b309227ca3fff1c788ea6e2b20c97ce4ba82f090c4ad5",
+    "C:\\Dev\\OM3-research\\scripts\\om_emu_af_acceptance.py": "db31329550e66b8c53043296872c8442835dc7a4b55cb6e658787dadd817195b",
+    "C:\\Dev\\OM3-research\\analysis\\button-af\\readiness\\om-emu-af-native1\\central-edge-v2.csv": "bdae246da8f472b0442065d39efdb21b45ffaec47e97a78bc0c3337c6bc7c012",
+    "C:\\Dev\\OM3-research\\scripts\\om_emu_af_edge_overlay.py": "c02ade867b24f418dbfb3fb170d36ffff4a3740b88153cf679be982165b09f3b",
+    "C:\\Dev\\OM3-research\\tooling\\om-emu\\emu\\src\\lab\\camapp.mjs": "363891a90afc7e77e57abd1638e31f0a7badc09b81778e90ac8d42fb640b33f3",
+    "C:\\Dev\\OM3-research\\tooling\\om-emu\\emu\\src\\lab\\rtos.mjs": "ea7e06666d37aaa97d06142febdbe853d996f68705bcca35f7ff11b4c6ed4b5d",
+    "C:\\Dev\\OM3-research\\tooling\\om-emu\\emu\\checks\\lib\\env.mjs": "dbbfd2ab839d8ceb784c7df5c12d0d9a17898eba549b84e848a9cfb05b0d609b",
+    "C:\\Dev\\OM3-research\\tooling\\om-emu\\emu\\host\\blobs.mjs": "989e40c03f4794871d8441a72d7a27bcb6602f14060971ba2cf4ef96658a0bb2"
+  },
+  "native_initializers": [
+    "6071181e",
+    "608fe1b0",
+    "609df7e4"
+  ],
+  "cpu3_af_delivery": true,
+  "cases": [
+    {
+      "trace": "focus-0-subject-0.jsonl",
+      "sha256": "3dd48a6b908b7979c049a796911103fa124a2b3c960f2db86380234d58a0faa7",
+      "issues": [
+        "no observed native AF worker start through queues 95 and 94"
+      ],
+      "focus": 0,
+      "subject": 0,
+      "edges": 12,
+      "handoff_passed": true,
+      "full_passed": false
+    },
+    {
+      "trace": "focus-0-subject-1.jsonl",
+      "sha256": "39cb0158a4f40a55ad66098cd88d476fe4a66dd405f549c99c29ab0eeda89902",
+      "issues": [
+        "FirmwareError: S-CPU3: unserved doorbell bits 0x00000001 (ring [3][0] uses 0x00000008)",
+        "expected 12 ordered player edges, got 0",
+        "configuration or player failed before the first button edge"
+      ],
+      "focus": 0,
+      "subject": 1,
+      "edges": 0,
+      "handoff_passed": false,
+      "full_passed": false
+    },
+    {
+      "trace": "focus-0-subject-2.jsonl",
+      "sha256": "1556c3572e8ab8924f3880908d8e821fdf407b0bd718119dcd219bb9f44667a1",
+      "issues": [
+        "FirmwareError: S-CPU3: unserved doorbell bits 0x00000001 (ring [3][0] uses 0x00000008)",
+        "expected 12 ordered player edges, got 0",
+        "configuration or player failed before the first button edge"
+      ],
+      "focus": 0,
+      "subject": 2,
+      "edges": 0,
+      "handoff_passed": false,
+      "full_passed": false
+    },
+    {
+      "trace": "focus-0-subject-3.jsonl",
+      "sha256": "1093d581d921fe997231730973ff91ae42b51c2a6e9f9a913e5df9ac12f7a084",
+      "issues": [
+        "FirmwareError: S-CPU3: unserved doorbell bits 0x00000001 (ring [3][0] uses 0x00000008)",
+        "expected 12 ordered player edges, got 0",
+        "configuration or player failed before the first button edge"
+      ],
+      "focus": 0,
+      "subject": 3,
+      "edges": 0,
+      "handoff_passed": false,
+      "full_passed": false
+    },
+    {
+      "trace": "focus-0-subject-4.jsonl",
+      "sha256": "793495eda6f8e165bdf481042f487daa21dfb9400b5fdb8f7c75180a8e12aeef",
+      "issues": [
+        "FirmwareError: S-CPU3: unserved doorbell bits 0x00000001 (ring [3][0] uses 0x00000008)",
+        "expected 12 ordered player edges, got 0",
+        "configuration or player failed before the first button edge"
+      ],
+      "focus": 0,
+      "subject": 4,
+      "edges": 0,
+      "handoff_passed": false,
+      "full_passed": false
+    },
+    {
+      "trace": "focus-0-subject-5.jsonl",
+      "sha256": "8941af444f0732b22057b49c264919d5e95e3af15b134a6848d26f464f3d89ee",
+      "issues": [
+        "FirmwareError: S-CPU3: unserved doorbell bits 0x00000001 (ring [3][0] uses 0x00000008)",
+        "expected 12 ordered player edges, got 0",
+        "configuration or player failed before the first button edge"
+      ],
+      "focus": 0,
+      "subject": 5,
+      "edges": 0,
+      "handoff_passed": false,
+      "full_passed": false
+    },
+    {
+      "trace": "focus-0-subject-6.jsonl",
+      "sha256": "b8b5f1dd8eedda278bc112bfa621e527a9ed2a168ca388cdd2995719c8dba991",
+      "issues": [
+        "FirmwareError: S-CPU3: unserved doorbell bits 0x00000001 (ring [3][0] uses 0x00000008)",
+        "expected 12 ordered player edges, got 0",
+        "configuration or player failed before the first button edge"
+      ],
+      "focus": 0,
+      "subject": 6,
+      "edges": 0,
+      "handoff_passed": false,
+      "full_passed": false
+    },
+    {
+      "trace": "focus-1-subject-0.jsonl",
+      "sha256": "13dfe5ddb0241b2df33e89555fcb837917f306070c9e410f39f66a15d3b25e83",
+      "issues": [
+        "no observed native AF worker start through queues 95 and 94"
+      ],
+      "focus": 1,
+      "subject": 0,
+      "edges": 12,
+      "handoff_passed": true,
+      "full_passed": false
+    },
+    {
+      "trace": "focus-1-subject-1.jsonl",
+      "sha256": "9f63300c9d726eea516c74b1b15e795e90365754d50811704d43b86336ee0165",
+      "issues": [
+        "FirmwareError: S-CPU3: unserved doorbell bits 0x00000001 (ring [3][0] uses 0x00000008)",
+        "expected 12 ordered player edges, got 0",
+        "configuration or player failed before the first button edge"
+      ],
+      "focus": 1,
+      "subject": 1,
+      "edges": 0,
+      "handoff_passed": false,
+      "full_passed": false
+    },
+    {
+      "trace": "focus-1-subject-2.jsonl",
+      "sha256": "d2fda1219c5411b39b31e2abf8dc29bb2aac715e7c3cda5d679ced80ea7f3ee2",
+      "issues": [
+        "FirmwareError: S-CPU3: unserved doorbell bits 0x00000001 (ring [3][0] uses 0x00000008)",
+        "expected 12 ordered player edges, got 0",
+        "configuration or player failed before the first button edge"
+      ],
+      "focus": 1,
+      "subject": 2,
+      "edges": 0,
+      "handoff_passed": false,
+      "full_passed": false
+    },
+    {
+      "trace": "focus-1-subject-3.jsonl",
+      "sha256": "96c6a69a71fc6be690cd66185b2d972a204c417379eeb8f8db4f96b9dd30eb5f",
+      "issues": [
+        "FirmwareError: S-CPU3: unserved doorbell bits 0x00000001 (ring [3][0] uses 0x00000008)",
+        "expected 12 ordered player edges, got 0",
+        "configuration or player failed before the first button edge"
+      ],
+      "focus": 1,
+      "subject": 3,
+      "edges": 0,
+      "handoff_passed": false,
+      "full_passed": false
+    },
+    {
+      "trace": "focus-1-subject-4.jsonl",
+      "sha256": "194f75dfcfdedf6a33dd0d8b60cb83f611f9fe4d8fde920c1a42e5053f276fb1",
+      "issues": [
+        "FirmwareError: S-CPU3: unserved doorbell bits 0x00000001 (ring [3][0] uses 0x00000008)",
+        "expected 12 ordered player edges, got 0",
+        "configuration or player failed before the first button edge"
+      ],
+      "focus": 1,
+      "subject": 4,
+      "edges": 0,
+      "handoff_passed": false,
+      "full_passed": false
+    },
+    {
+      "trace": "focus-1-subject-5.jsonl",
+      "sha256": "81cd4125ae65fa63a8cbf1dce3ddc877923d8464c7110f0235c44cee56ea194c",
+      "issues": [
+        "FirmwareError: S-CPU3: unserved doorbell bits 0x00000001 (ring [3][0] uses 0x00000008)",
+        "expected 12 ordered player edges, got 0",
+        "configuration or player failed before the first button edge"
+      ],
+      "focus": 1,
+      "subject": 5,
+      "edges": 0,
+      "handoff_passed": false,
+      "full_passed": false
+    },
+    {
+      "trace": "focus-1-subject-6.jsonl",
+      "sha256": "77ad0b5759f4092e539fb957ca8996aca9c08917d84dcc31d6ebc6336bea9da4",
+      "issues": [
+        "FirmwareError: S-CPU3: unserved doorbell bits 0x00000001 (ring [3][0] uses 0x00000008)",
+        "expected 12 ordered player edges, got 0",
+        "configuration or player failed before the first button edge"
+      ],
+      "focus": 1,
+      "subject": 6,
+      "edges": 0,
+      "handoff_passed": false,
+      "full_passed": false
+    }
+  ],
+  "handoff_passed": 2,
+  "full_passed": 0,
+  "limitations": [
+    "legacy AF Home profile source, no independent editor",
+    "partial native boot; TAKE_MAIN and TAKE_FUNC still stand-ins",
+    "CPU3 IRQ delivery, when enabled, is a model scheduling the native callback",
+    "no full-worker claim without queue95 and queue94 observations",
+    "not a flashable firmware image"
+  ]
+}

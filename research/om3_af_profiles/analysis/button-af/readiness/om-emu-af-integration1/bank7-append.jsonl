@@ -1,0 +1,4 @@
+{"case":"append registers 4 words without moving any of the stock bank-7 entries","slot":"experimental 0xff8","profile_address":"0x62959b68","old_tail_word":"0x59595959","stock_validator_status":0}
+{"case":"stock validator and old registry accept the synthetic extended area without registering the added key","stock_validator_status":0,"pass":true}
+{"case":"extended defaults initialize only the appended words and retain the stock value prefix","new_end":"0x62959b78","pass":true}
+{"pass":true,"scope":"isolated native ROM registration/defaults, synthetic descriptor and RAM only; no save, reset, Workspace export, hardware or approved production key"}

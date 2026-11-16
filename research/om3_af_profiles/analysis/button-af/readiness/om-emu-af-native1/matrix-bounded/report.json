@@ -1,0 +1,228 @@
+{
+  "firmware_build": "OLY_E_147_1100_0000_0000",
+  "firmware_sha256": {
+    "OLY_E_147_1100_0000_0000.BIN.blk00000000.OE.0100.bin": "5e8d376e9111a44ac0352f26030d7c1b17026d42c45f3600cfa02a0e8c5b7d59",
+    "OLY_E_147_1100_0000_0000.BIN.blk02000000.OE.0101.bin": "6d2bef74b4b2fa089f271529482f96505a170b91e79ab9b1a13f3ce8f7918226"
+  },
+  "om_emu_commit": "4e4ec4ef084542a7e30eecce56970c7e09c123c9",
+  "inputs_sha256": {
+    "C:\\Dev\\OM3-research\\scripts\\om_emu_af_native_acceptance.py": "b7c887025058899248142c0024a6a53594699179afda23d9867090b3a4baf17a",
+    "C:\\Dev\\OM3-research\\scripts\\om_emu_af_live_probe.mjs": "761d10c78ed403ed6276267cd0155416b0ad3f191b13160d9141ae00af5fd178",
+    "C:\\Dev\\OM3-research\\scripts\\om_emu_af_acceptance.py": "db31329550e66b8c53043296872c8442835dc7a4b55cb6e658787dadd817195b",
+    "C:\\Dev\\OM3-research\\analysis\\button-af\\readiness\\om-emu-af-native1\\central-edge-v2.csv": "bdae246da8f472b0442065d39efdb21b45ffaec47e97a78bc0c3337c6bc7c012",
+    "C:\\Dev\\OM3-research\\scripts\\om_emu_af_edge_overlay.py": "c02ade867b24f418dbfb3fb170d36ffff4a3740b88153cf679be982165b09f3b",
+    "C:\\Dev\\OM3-research\\tooling\\om-emu\\emu\\src\\lab\\camapp.mjs": "1cbe38dd568acbb9f0312a3a10878858b49f0dbc153e7ab77761c7c45c2b0240",
+    "C:\\Dev\\OM3-research\\tooling\\om-emu\\emu\\src\\lab\\rtos.mjs": "ea7e06666d37aaa97d06142febdbe853d996f68705bcca35f7ff11b4c6ed4b5d",
+    "C:\\Dev\\OM3-research\\tooling\\om-emu\\emu\\checks\\lib\\env.mjs": "dbbfd2ab839d8ceb784c7df5c12d0d9a17898eba549b84e848a9cfb05b0d609b",
+    "C:\\Dev\\OM3-research\\tooling\\om-emu\\emu\\host\\blobs.mjs": "989e40c03f4794871d8441a72d7a27bcb6602f14060971ba2cf4ef96658a0bb2"
+  },
+  "native_initializers": [
+    "6071181e",
+    "608fe1b0",
+    "609df7e4"
+  ],
+  "cpu3_af_delivery": false,
+  "cases": [
+    {
+      "trace": "focus-0-subject-0.jsonl",
+      "sha256": "3dd48a6b908b7979c049a796911103fa124a2b3c960f2db86380234d58a0faa7",
+      "issues": [
+        "no observed native AF worker start through queues 95 and 94"
+      ],
+      "focus": 0,
+      "subject": 0,
+      "edges": 12,
+      "handoff_passed": true,
+      "full_passed": false
+    },
+    {
+      "trace": "focus-0-subject-1.jsonl",
+      "sha256": "4b6dd87ea2dbde77eab9f612baefbf6c47b4a3114d3818dc92be9a0d1e54258d",
+      "issues": [
+        "FirmwareError: S-CPU3: ring [3][0] entry 1: function 0x608418fe, not DISP_FRAME's 0x6004694c",
+        "expected 12 ordered player edges, got 0",
+        "configuration or player failed before the first button edge"
+      ],
+      "focus": 0,
+      "subject": 1,
+      "edges": 0,
+      "handoff_passed": false,
+      "full_passed": false
+    },
+    {
+      "trace": "focus-0-subject-2.jsonl",
+      "sha256": "2158d2ba3ea9d2fdd8ceee1cecc85f04c559aaf029aac2ae5f8dbab5256f9b7e",
+      "issues": [
+        "FirmwareError: S-CPU3: ring [3][0] entry 1: function 0x608418fe, not DISP_FRAME's 0x6004694c",
+        "expected 12 ordered player edges, got 0",
+        "configuration or player failed before the first button edge"
+      ],
+      "focus": 0,
+      "subject": 2,
+      "edges": 0,
+      "handoff_passed": false,
+      "full_passed": false
+    },
+    {
+      "trace": "focus-0-subject-3.jsonl",
+      "sha256": "8225a4bf0ba224aae2e97f0de06505561fa4cf9eb761aef8180018334af91455",
+      "issues": [
+        "FirmwareError: S-CPU3: ring [3][0] entry 1: function 0x608418fe, not DISP_FRAME's 0x6004694c",
+        "expected 12 ordered player edges, got 0",
+        "configuration or player failed before the first button edge"
+      ],
+      "focus": 0,
+      "subject": 3,
+      "edges": 0,
+      "handoff_passed": false,
+      "full_passed": false
+    },
+    {
+      "trace": "focus-0-subject-4.jsonl",
+      "sha256": "e1d23e4283e48792aceca44e27b1263d41295adff81ee25a293f38d63f194f98",
+      "issues": [
+        "FirmwareError: S-CPU3: ring [3][0] entry 1: function 0x608418fe, not DISP_FRAME's 0x6004694c",
+        "expected 12 ordered player edges, got 0",
+        "configuration or player failed before the first button edge"
+      ],
+      "focus": 0,
+      "subject": 4,
+      "edges": 0,
+      "handoff_passed": false,
+      "full_passed": false
+    },
+    {
+      "trace": "focus-0-subject-5.jsonl",
+      "sha256": "0ab93904cb35f7c71118c9beb7c45d0e11c23ef4b81ccf30531bfa125b3f123a",
+      "issues": [
+        "FirmwareError: S-CPU3: ring [3][0] entry 1: function 0x608418fe, not DISP_FRAME's 0x6004694c",
+        "expected 12 ordered player edges, got 0",
+        "configuration or player failed before the first button edge"
+      ],
+      "focus": 0,
+      "subject": 5,
+      "edges": 0,
+      "handoff_passed": false,
+      "full_passed": false
+    },
+    {
+      "trace": "focus-0-subject-6.jsonl",
+      "sha256": "0a8e1bb4fd41d78d11fb8b167aab693ab2cd2bc375eeb8200eac895961d32bc1",
+      "issues": [
+        "FirmwareError: S-CPU3: ring [3][0] entry 1: function 0x608418fe, not DISP_FRAME's 0x6004694c",
+        "expected 12 ordered player edges, got 0",
+        "configuration or player failed before the first button edge"
+      ],
+      "focus": 0,
+      "subject": 6,
+      "edges": 0,
+      "handoff_passed": false,
+      "full_passed": false
+    },
+    {
+      "trace": "focus-1-subject-0.jsonl",
+      "sha256": "13dfe5ddb0241b2df33e89555fcb837917f306070c9e410f39f66a15d3b25e83",
+      "issues": [
+        "no observed native AF worker start through queues 95 and 94"
+      ],
+      "focus": 1,
+      "subject": 0,
+      "edges": 12,
+      "handoff_passed": true,
+      "full_passed": false
+    },
+    {
+      "trace": "focus-1-subject-1.jsonl",
+      "sha256": "9c379b7b672c847b5ca9b28c5f24676054711aacd701e6749f811c38c58d6814",
+      "issues": [
+        "FirmwareError: S-CPU3: ring [3][0] entry 1: function 0x608418fe, not DISP_FRAME's 0x6004694c",
+        "expected 12 ordered player edges, got 0",
+        "configuration or player failed before the first button edge"
+      ],
+      "focus": 1,
+      "subject": 1,
+      "edges": 0,
+      "handoff_passed": false,
+      "full_passed": false
+    },
+    {
+      "trace": "focus-1-subject-2.jsonl",
+      "sha256": "b362c5cb43c065c2c5f61d23e470221164eaed52a4b306c87b55ea4bdeb253d6",
+      "issues": [
+        "FirmwareError: S-CPU3: ring [3][0] entry 1: function 0x608418fe, not DISP_FRAME's 0x6004694c",
+        "expected 12 ordered player edges, got 0",
+        "configuration or player failed before the first button edge"
+      ],
+      "focus": 1,
+      "subject": 2,
+      "edges": 0,
+      "handoff_passed": false,
+      "full_passed": false
+    },
+    {
+      "trace": "focus-1-subject-3.jsonl",
+      "sha256": "825c49b2e8f7d6d5e60eda7d00a558e8f14c831a8ade5f20018420e917edb761",
+      "issues": [
+        "FirmwareError: S-CPU3: ring [3][0] entry 1: function 0x608418fe, not DISP_FRAME's 0x6004694c",
+        "expected 12 ordered player edges, got 0",
+        "configuration or player failed before the first button edge"
+      ],
+      "focus": 1,
+      "subject": 3,
+      "edges": 0,
+      "handoff_passed": false,
+      "full_passed": false
+    },
+    {
+      "trace": "focus-1-subject-4.jsonl",
+      "sha256": "938576524161640f0ef1f36a1312c9bd21861f66b01228660a38e3aff37de21d",
+      "issues": [
+        "FirmwareError: S-CPU3: ring [3][0] entry 1: function 0x608418fe, not DISP_FRAME's 0x6004694c",
+        "expected 12 ordered player edges, got 0",
+        "configuration or player failed before the first button edge"
+      ],
+      "focus": 1,
+      "subject": 4,
+      "edges": 0,
+      "handoff_passed": false,
+      "full_passed": false
+    },
+    {
+      "trace": "focus-1-subject-5.jsonl",
+      "sha256": "23fc561fde639d5f6d7a521caf5631caf816b97370cacbcdccc04c554f614534",
+      "issues": [
+        "FirmwareError: S-CPU3: ring [3][0] entry 1: function 0x608418fe, not DISP_FRAME's 0x6004694c",
+        "expected 12 ordered player edges, got 0",
+        "configuration or player failed before the first button edge"
+      ],
+      "focus": 1,
+      "subject": 5,
+      "edges": 0,
+      "handoff_passed": false,
+      "full_passed": false
+    },
+    {
+      "trace": "focus-1-subject-6.jsonl",
+      "sha256": "f02ccc6665e63f975c26ca9889b4b7fff2e2d21d918f9b97d129f233714e97dd",
+      "issues": [
+        "FirmwareError: S-CPU3: ring [3][0] entry 1: function 0x608418fe, not DISP_FRAME's 0x6004694c",
+        "expected 12 ordered player edges, got 0",
+        "configuration or player failed before the first button edge"
+      ],
+      "focus": 1,
+      "subject": 6,
+      "edges": 0,
+      "handoff_passed": false,
+      "full_passed": false
+    }
+  ],
+  "handoff_passed": 2,
+  "full_passed": 0,
+  "limitations": [
+    "legacy AF Home profile source, no independent editor",
+    "partial native boot; TAKE_MAIN and TAKE_FUNC still stand-ins",
+    "CPU3 IRQ delivery, when enabled, is a model scheduling the native callback",
+    "no full-worker claim without queue95 and queue94 observations",
+    "not a flashable firmware image"
+  ]
+}

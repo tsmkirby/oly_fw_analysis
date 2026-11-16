@@ -1,0 +1,36 @@
+diff --git a/emu/checks/lib/env.mjs b/emu/checks/lib/env.mjs
+index 230e35b..c8fd16c 100644
+--- a/emu/checks/lib/env.mjs
++++ b/emu/checks/lib/env.mjs
+@@ -1,3 +1,4 @@
++import { fileURLToPath } from 'node:url';
+ // The node side of a check: repository paths, the firmware image and resource block, sha256, the lab env the
+ // harness modules take (as bin/run.mjs builds it, without tracing: no session, so no Stats or harness digest), and the
+ // process conventions of a check (an exit with a message, a usage error, an uncaught error).
+@@ -15,7 +16,7 @@ import { coverageOption } from './coverage.mjs';
+ import { PatchRefused, readPatchText, applyPatches, patchLayout, mainPatches } from '../../src/fw/patch.mjs';
+ import { extractSource, decodeExtract } from '../../src/fw/nand.mjs';
+ 
+-export const REPO = path.resolve(new URL('../../../', import.meta.url).pathname);
++export const REPO = path.resolve(fileURLToPath(new URL('../../../', import.meta.url)));
+ // the checks' own fixtures: their pinned notes, the VSC register header and class tables, check_perf's P7 address list
+ // and P10a cases
+ export const FIXTURES = path.join(REPO, 'emu/checks/fixtures');
+diff --git a/emu/host/blobs.mjs b/emu/host/blobs.mjs
+index 181a8f6..7b0feec 100644
+--- a/emu/host/blobs.mjs
++++ b/emu/host/blobs.mjs
+@@ -1,3 +1,4 @@
++import { fileURLToPath } from 'node:url';
+ // A MODELS body's firmware files on disk: its .BIN's pin in BLOBS.sha256 and whether its unpacked files are there (the
+ // two blocks, src/fw/models.mjs romPath, resPath, and on a body that gives res_nand its NAND extract, nandPath). It
+ // reads src/fw/models.mjs only, never src/fw/model.mjs, so it answers for any model, not only the run's: --model list
+@@ -6,7 +7,7 @@ import fs from 'node:fs';
+ import path from 'node:path';
+ import { romPath, resPath, nandPath } from '../src/fw/models.mjs';
+ 
+-export const REPO = path.resolve(new URL('../../', import.meta.url).pathname);
++export const REPO = path.resolve(fileURLToPath(new URL('../../', import.meta.url)));
+ 
+ // A MODELS entry's .BIN as BLOBS.sha256 pins it: {rel (fw/... or fw/old/...), sha256}, or null
+ export function binPin(m) {

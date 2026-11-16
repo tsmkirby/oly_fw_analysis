@@ -1,0 +1,1371 @@
+== live block 60a8f088<-700d0000 60a8f088 len=548 pinned=-
+   60a8f088 cff0           movm [d2,d3,a2,a3],(sp)
+   60a8f08a f8fea0         add -0x60,sp
+   60a8f08d fcc802000001   cmp 0x1000002,d0
+   60a8f093 c907           bne 0x60a8f09a
+   60a8f095 dc3e000000     jmp 0x60a8f0d3
+TARGET-PLACED 60a8f095 jmp 0x60a8f0d3
+   60a8f09a fcc803000001   cmp 0x1000003,d0
+   60a8f0a0 c907           bne 0x60a8f0a7
+   60a8f0a2 dc42000000     jmp 0x60a8f0e4
+TARGET-PLACED 60a8f0a2 jmp 0x60a8f0e4
+   60a8f0a7 fcc807000501   cmp 0x1050007,d0
+   60a8f0ad c907           bne 0x60a8f0b4
+   60a8f0af dc46000000     jmp 0x60a8f0f5
+TARGET-PLACED 60a8f0af jmp 0x60a8f0f5
+   60a8f0b4 fcc808000501   cmp 0x1050008,d0
+   60a8f0ba c907           bne 0x60a8f0c1
+   60a8f0bc dc4a000000     jmp 0x60a8f106
+TARGET-PLACED 60a8f0bc jmp 0x60a8f106
+   60a8f0c1 fcc800000000   cmp 0x0,d0
+   60a8f0c7 c907           bne 0x60a8f0ce
+   60a8f0c9 dc4e000000     jmp 0x60a8f117
+TARGET-PLACED 60a8f0c9 jmp 0x60a8f117
+   60a8f0ce dcdb010000     jmp 0x60a8f2a9
+TARGET-PLACED 60a8f0ce jmp 0x60a8f2a9
+   60a8f0d3 fccc01000000   mov 0x1,d0
+   60a8f0d9 fc8220e931a0   movbu d0,(0xa031e920)
+ACCESS-STATE-UNCACHED-W 60a8f0d9 movbu d0,(0xa031e920) addr=a031e920
+   60a8f0df dc38000000     jmp 0x60a8f117
+TARGET-PLACED 60a8f0df jmp 0x60a8f117
+   60a8f0e4 fccc00000000   mov 0x0,d0
+   60a8f0ea fc8220e931a0   movbu d0,(0xa031e920)
+ACCESS-STATE-UNCACHED-W 60a8f0ea movbu d0,(0xa031e920) addr=a031e920
+   60a8f0f0 dc27000000     jmp 0x60a8f117
+TARGET-PLACED 60a8f0f0 jmp 0x60a8f117
+   60a8f0f5 fccc01000000   mov 0x1,d0
+   60a8f0fb fc8221e931a0   movbu d0,(0xa031e921)
+ACCESS-STATE-UNCACHED-W 60a8f0fb movbu d0,(0xa031e921) addr=a031e921
+   60a8f101 dc16000000     jmp 0x60a8f117
+TARGET-PLACED 60a8f101 jmp 0x60a8f117
+   60a8f106 fccc00000000   mov 0x0,d0
+   60a8f10c fc8221e931a0   movbu d0,(0xa031e921)
+ACCESS-STATE-UNCACHED-W 60a8f10c movbu d0,(0xa031e921) addr=a031e921
+   60a8f112 dc05000000     jmp 0x60a8f117
+TARGET-PLACED 60a8f112 jmp 0x60a8f117
+   60a8f117 fca821e931a0   movbu (0xa031e921),d0
+ACCESS-STATE-UNCACHED-R 60a8f117 movbu (0xa031e921),d0 addr=a031e921
+   60a8f11d a000           cmp 0x0,d0
+   60a8f11f c807           beq 0x60a8f126
+   60a8f121 dc4a000000     jmp 0x60a8f16b
+TARGET-PLACED 60a8f121 jmp 0x60a8f16b
+   60a8f126 fca820e931a0   movbu (0xa031e920),d0
+ACCESS-STATE-UNCACHED-R 60a8f126 movbu (0xa031e920),d0 addr=a031e920
+   60a8f12c a000           cmp 0x0,d0
+   60a8f12e c907           bne 0x60a8f135
+   60a8f130 dc10000000     jmp 0x60a8f140
+TARGET-PLACED 60a8f130 jmp 0x60a8f140
+   60a8f135 fcce01000000   mov 0x1,d2
+   60a8f13b dc0b000000     jmp 0x60a8f146
+TARGET-PLACED 60a8f13b jmp 0x60a8f146
+   60a8f140 fcce00000000   mov 0x0,d2
+   60a8f146 fccc711e0000   mov 0x1e71,d0
+   60a8f14c fccd00000000   mov 0x0,d1
+   60a8f152 fcdc00000000   mov 0x0,a0
+   60a8f158 dd28425dffc00c call 0x60063380,[d2,d3],0xc
+TARGET-STOCK-FUNCTION 60a8f158 call 0x60063380,[d2,d3],0xc
+   60a8f15f 83             mov d0,d3
+   60a8f160 fca24ce931a0   mov (0xa031e94c),a2
+ACCESS-STATE-UNCACHED-R 60a8f160 mov (0xa031e94c),a2 addr=a031e94c
+   60a8f166 dc17000000     jmp 0x60a8f17d
+TARGET-PLACED 60a8f166 jmp 0x60a8f17d
+   60a8f16b fcce02000000   mov 0x2,d2
+   60a8f171 fccf00000000   mov 0x0,d3
+   60a8f177 fca25ce931a0   mov (0xa031e95c),a2
+ACCESS-STATE-UNCACHED-R 60a8f177 mov (0xa031e95c),a2 addr=a031e95c
+   60a8f17d fca825e931a0   movbu (0xa031e925),d0
+ACCESS-STATE-UNCACHED-R 60a8f17d movbu (0xa031e925),d0 addr=a031e925
+   60a8f183 a000           cmp 0x0,d0
+   60a8f185 c807           beq 0x60a8f18c
+   60a8f187 dc21000000     jmp 0x60a8f1a8
+TARGET-PLACED 60a8f187 jmp 0x60a8f1a8
+   60a8f18c fca824e931a0   movbu (0xa031e924),d0
+ACCESS-STATE-UNCACHED-R 60a8f18c movbu (0xa031e924),d0 addr=a031e924
+   60a8f192 a2             cmp d0,d2
+   60a8f193 c807           beq 0x60a8f19a
+   60a8f195 dc13000000     jmp 0x60a8f1a8
+TARGET-PLACED 60a8f195 jmp 0x60a8f1a8
+   60a8f19a fca823e931a0   movbu (0xa031e923),d0
+ACCESS-STATE-UNCACHED-R 60a8f19a movbu (0xa031e923),d0 addr=a031e923
+   60a8f1a0 a3             cmp d0,d3
+   60a8f1a1 c907           bne 0x60a8f1a8
+   60a8f1a3 dc06010000     jmp 0x60a8f2a9
+TARGET-PLACED 60a8f1a3 jmp 0x60a8f2a9
+   60a8f1a8 fca814a33ca3   movbu (0xa33ca314),d0
+ACCESS-STOCK-UNCACHED-R 60a8f1a8 movbu (0xa33ca314),d0 addr=a33ca314
+   60a8f1ae f8e003         and 0x3,d0
+   60a8f1b1 a003           cmp 0x3,d0
+   60a8f1b3 c807           beq 0x60a8f1ba
+   60a8f1b5 dcd2000000     jmp 0x60a8f287
+TARGET-PLACED 60a8f1b5 jmp 0x60a8f287
+   60a8f1ba fcacb8a23ca3   movhu (0xa33ca2b8),d0
+ACCESS-STOCK-UNCACHED-R 60a8f1ba movhu (0xa33ca2b8),d0 addr=a33ca2b8
+   60a8f1c0 fcc800300000   cmp 0x3000,d0
+   60a8f1c6 c907           bne 0x60a8f1cd
+   60a8f1c8 dcbf000000     jmp 0x60a8f287
+TARGET-PLACED 60a8f1c8 jmp 0x60a8f287
+   60a8f1cd fca8101d3aa3   movbu (0xa33a1d10),d0
+ACCESS-STOCK-UNCACHED-R 60a8f1cd movbu (0xa33a1d10),d0 addr=a33a1d10
+   60a8f1d3 a000           cmp 0x0,d0
+   60a8f1d5 c907           bne 0x60a8f1dc
+   60a8f1d7 dc27000000     jmp 0x60a8f1fe
+TARGET-PLACED 60a8f1d7 jmp 0x60a8f1fe
+   60a8f1dc fccc00000000   mov 0x0,d0
+   60a8f1e2 fcdc00000000   mov 0x0,a0
+   60a8f1e8 ddc510dbffa0a0 call 0x608402ad,[d2,a2],0xa0
+TARGET-STOCK-FUNCTION 60a8f1e8 call 0x608402ad,[d2,a2],0xa0
+   60a8f1ef fca8101d3aa3   movbu (0xa33a1d10),d0
+ACCESS-STOCK-UNCACHED-R 60a8f1ef movbu (0xa33a1d10),d0 addr=a33a1d10
+   60a8f1f5 a000           cmp 0x0,d0
+   60a8f1f7 c807           beq 0x60a8f1fe
+   60a8f1f9 dc99000000     jmp 0x60a8f292
+TARGET-PLACED 60a8f1f9 jmp 0x60a8f292
+   60a8f1fe fccc00000000   mov 0x0,d0
+   60a8f204 ddfafb93ffc010 call 0x603cedfe,[d2,d3],0x10
+TARGET-STOCK-FUNCTION 60a8f204 call 0x603cedfe,[d2,d3],0x10
+   60a8f20b 98             mov a2,a0
+   60a8f20c fc8028e931a0   mov a0,(0xa031e928)
+ACCESS-STATE-UNCACHED-W 60a8f20c mov a0,(0xa031e928) addr=a031e928
+   60a8f212 88             mov d2,d0
+   60a8f213 fc8224e931a0   movbu d0,(0xa031e924)
+ACCESS-STATE-UNCACHED-W 60a8f213 movbu d0,(0xa031e924) addr=a031e924
+   60a8f219 fccc03000000   mov 0x3,d0
+   60a8f21f ddd237e7ffb014 call 0x609029f1,[d2,a2,a3],0x14
+TARGET-STOCK-FUNCTION 60a8f21f call 0x609029f1,[d2,a2,a3],0x14
+   60a8f226 fcdc60e931a0   mov -0x5fce16a0,a0
+   60a8f22c dd4c02e7ff3018 call 0x608ff478,[a2,a3],0x18
+TARGET-STOCK-FUNCTION 60a8f22c call 0x608ff478,[a2,a3],0x18
+   60a8f233 8c             mov d3,d0
+   60a8f234 ddcafb93ffc010 call 0x603cedfe,[d2,d3],0x10
+TARGET-STOCK-FUNCTION 60a8f234 call 0x603cedfe,[d2,d3],0x10
+   60a8f23b af00           cmp 0x0,d3
+   60a8f23d c907           bne 0x60a8f244
+   60a8f23f dc30000000     jmp 0x60a8f26f
+TARGET-PLACED 60a8f23f jmp 0x60a8f26f
+   60a8f244 8c             mov d3,d0
+   60a8f245 fcdc00000000   mov 0x0,a0
+   60a8f24b dd640fdbffe0a4 call 0x608401af,[d2,d3,a2],0xa4
+TARGET-STOCK-FUNCTION 60a8f24b call 0x608401af,[d2,d3,a2],0xa4
+   60a8f252 fca8101d3aa3   movbu (0xa33a1d10),d0
+ACCESS-STOCK-UNCACHED-R 60a8f252 movbu (0xa33a1d10),d0 addr=a33a1d10
+   60a8f258 a001           cmp 0x1,d0
+   60a8f25a c807           beq 0x60a8f261
+   60a8f25c dc41000000     jmp 0x60a8f29d
+TARGET-PLACED 60a8f25c jmp 0x60a8f29d
+   60a8f261 fca8141d3aa3   movbu (0xa33a1d14),d0
+ACCESS-STOCK-UNCACHED-R 60a8f261 movbu (0xa33a1d14),d0 addr=a33a1d14
+   60a8f267 a3             cmp d0,d3
+   60a8f268 c807           beq 0x60a8f26f
+   60a8f26a dc33000000     jmp 0x60a8f29d
+TARGET-PLACED 60a8f26a jmp 0x60a8f29d
+   60a8f26f 8c             mov d3,d0
+   60a8f270 fc8223e931a0   movbu d0,(0xa031e923)
+ACCESS-STATE-UNCACHED-W 60a8f270 movbu d0,(0xa031e923) addr=a031e923
+   60a8f276 fccc00000000   mov 0x0,d0
+   60a8f27c fc8225e931a0   movbu d0,(0xa031e925)
+ACCESS-STATE-UNCACHED-W 60a8f27c movbu d0,(0xa031e925) addr=a031e925
+   60a8f282 dc27000000     jmp 0x60a8f2a9
+TARGET-PLACED 60a8f282 jmp 0x60a8f2a9
+   60a8f287 fccc01000000   mov 0x1,d0
+   60a8f28d dc16000000     jmp 0x60a8f2a3
+TARGET-PLACED 60a8f28d jmp 0x60a8f2a3
+   60a8f292 fccc02000000   mov 0x2,d0
+   60a8f298 dc0b000000     jmp 0x60a8f2a3
+TARGET-PLACED 60a8f298 jmp 0x60a8f2a3
+   60a8f29d fccc03000000   mov 0x3,d0
+   60a8f2a3 fc8225e931a0   movbu d0,(0xa031e925)
+ACCESS-STATE-UNCACHED-W 60a8f2a3 movbu d0,(0xa031e925) addr=a031e925
+   60a8f2a9 dff070         ret [d2,d3,a2,a3],0x70
+== live block 60a8f2ac<-700d0500 60a8f2ac len=926 pinned=-
+   60a8f2ac fca926e931a0   movbu (0xa031e926),d1
+ACCESS-STATE-UNCACHED-R 60a8f2ac movbu (0xa031e926),d1 addr=a031e926
+   60a8f2b2 a501           cmp 0x1,d1
+   60a8f2b4 c907           bne 0x60a8f2bb
+   60a8f2b6 dc08000000     jmp 0x60a8f2be
+TARGET-PLACED 60a8f2b6 jmp 0x60a8f2be
+   60a8f2bb df0000         ret [],0x0
+   60a8f2be cff0           movm [d2,d3,a2,a3],(sp)
+   60a8f2c0 f8fee0         add -0x20,sp
+   60a8f2c3 82             mov d0,d2
+   60a8f2c4 fca827e931a0   movbu (0xa031e927),d0
+ACCESS-STATE-UNCACHED-R 60a8f2c4 movbu (0xa031e927),d0 addr=a031e927
+   60a8f2ca a000           cmp 0x0,d0
+   60a8f2cc c807           beq 0x60a8f2d3
+   60a8f2ce dc6d030000     jmp 0x60a8f63b
+TARGET-PLACED 60a8f2ce jmp 0x60a8f63b
+   60a8f2d3 88             mov d2,d0
+   60a8f2d4 fcc802000001   cmp 0x1000002,d0
+   60a8f2da c907           bne 0x60a8f2e1
+   60a8f2dc dc3e000000     jmp 0x60a8f31a
+TARGET-PLACED 60a8f2dc jmp 0x60a8f31a
+   60a8f2e1 88             mov d2,d0
+   60a8f2e2 fcc803000001   cmp 0x1000003,d0
+   60a8f2e8 c907           bne 0x60a8f2ef
+   60a8f2ea dc41000000     jmp 0x60a8f32b
+TARGET-PLACED 60a8f2ea jmp 0x60a8f32b
+   60a8f2ef 88             mov d2,d0
+   60a8f2f0 fcc807000501   cmp 0x1050007,d0
+   60a8f2f6 c907           bne 0x60a8f2fd
+   60a8f2f8 dc44000000     jmp 0x60a8f33c
+TARGET-PLACED 60a8f2f8 jmp 0x60a8f33c
+   60a8f2fd 88             mov d2,d0
+   60a8f2fe fcc808000501   cmp 0x1050008,d0
+   60a8f304 c907           bne 0x60a8f30b
+   60a8f306 dc47000000     jmp 0x60a8f34d
+TARGET-PLACED 60a8f306 jmp 0x60a8f34d
+   60a8f30b 88             mov d2,d0
+   60a8f30c a000           cmp 0x0,d0
+   60a8f30e c907           bne 0x60a8f315
+   60a8f310 dc4e000000     jmp 0x60a8f35e
+TARGET-PLACED 60a8f310 jmp 0x60a8f35e
+   60a8f315 dc32030000     jmp 0x60a8f647
+TARGET-PLACED 60a8f315 jmp 0x60a8f647
+   60a8f31a fccc01000000   mov 0x1,d0
+   60a8f320 fc8220e931a0   movbu d0,(0xa031e920)
+ACCESS-STATE-UNCACHED-W 60a8f320 movbu d0,(0xa031e920) addr=a031e920
+   60a8f326 dc38000000     jmp 0x60a8f35e
+TARGET-PLACED 60a8f326 jmp 0x60a8f35e
+   60a8f32b fccc00000000   mov 0x0,d0
+   60a8f331 fc8220e931a0   movbu d0,(0xa031e920)
+ACCESS-STATE-UNCACHED-W 60a8f331 movbu d0,(0xa031e920) addr=a031e920
+   60a8f337 dc27000000     jmp 0x60a8f35e
+TARGET-PLACED 60a8f337 jmp 0x60a8f35e
+   60a8f33c fccc01000000   mov 0x1,d0
+   60a8f342 fc8221e931a0   movbu d0,(0xa031e921)
+ACCESS-STATE-UNCACHED-W 60a8f342 movbu d0,(0xa031e921) addr=a031e921
+   60a8f348 dc16000000     jmp 0x60a8f35e
+TARGET-PLACED 60a8f348 jmp 0x60a8f35e
+   60a8f34d fccc00000000   mov 0x0,d0
+   60a8f353 fc8221e931a0   movbu d0,(0xa031e921)
+ACCESS-STATE-UNCACHED-W 60a8f353 movbu d0,(0xa031e921) addr=a031e921
+   60a8f359 dc05000000     jmp 0x60a8f35e
+TARGET-PLACED 60a8f359 jmp 0x60a8f35e
+   60a8f35e fca825e931a0   movbu (0xa031e925),d0
+ACCESS-STATE-UNCACHED-R 60a8f35e movbu (0xa031e925),d0 addr=a031e925
+   60a8f364 a000           cmp 0x0,d0
+   60a8f366 c907           bne 0x60a8f36d
+   60a8f368 dc35000000     jmp 0x60a8f39d
+TARGET-PLACED 60a8f368 jmp 0x60a8f39d
+   60a8f36d a001           cmp 0x1,d0
+   60a8f36f c907           bne 0x60a8f376
+   60a8f371 dc2c000000     jmp 0x60a8f39d
+TARGET-PLACED 60a8f371 jmp 0x60a8f39d
+   60a8f376 a005           cmp 0x5,d0
+   60a8f378 c907           bne 0x60a8f37f
+   60a8f37a dc23000000     jmp 0x60a8f39d
+TARGET-PLACED 60a8f37a jmp 0x60a8f39d
+   60a8f37f fca8181c3aa3   movbu (0xa33a1c18),d0
+ACCESS-STOCK-UNCACHED-R 60a8f37f movbu (0xa33a1c18),d0 addr=a33a1c18
+   60a8f385 a000           cmp 0x0,d0
+   60a8f387 c807           beq 0x60a8f38e
+   60a8f389 dca7020000     jmp 0x60a8f630
+TARGET-PLACED 60a8f389 jmp 0x60a8f630
+   60a8f38e fca4d057f762   mov (0x62f757d0),d0
+ACCESS-STOCK-CACHED-R 60a8f38e mov (0x62f757d0),d0 addr=62f757d0
+   60a8f394 a000           cmp 0x0,d0
+   60a8f396 c807           beq 0x60a8f39d
+   60a8f398 dc98020000     jmp 0x60a8f630
+TARGET-PLACED 60a8f398 jmp 0x60a8f630
+   60a8f39d fccc01000000   mov 0x1,d0
+   60a8f3a3 fc8227e931a0   movbu d0,(0xa031e927)
+ACCESS-STATE-UNCACHED-W 60a8f3a3 movbu d0,(0xa031e927) addr=a031e927
+   60a8f3a9 ddd048f2ffe020 call 0x609b3c79,[d2,d3,a2],0x20
+TARGET-STOCK-FUNCTION 60a8f3a9 call 0x609b3c79,[d2,d3,a2],0x20
+   60a8f3b0 fca428e931a0   mov (0xa031e928),d0
+ACCESS-STATE-UNCACHED-R 60a8f3b0 mov (0xa031e928),d0 addr=a031e928
+   60a8f3b6 fcc8e0e931a0   cmp -0x5fce1620,d0
+   60a8f3bc c907           bne 0x60a8f3c3
+   60a8f3be dc10000000     jmp 0x60a8f3ce
+TARGET-PLACED 60a8f3be jmp 0x60a8f3ce
+   60a8f3c3 fcdde0e931a0   mov -0x5fce1620,a1
+   60a8f3c9 dc0b000000     jmp 0x60a8f3d4
+TARGET-PLACED 60a8f3c9 jmp 0x60a8f3d4
+   60a8f3ce fcddf0e931a0   mov -0x5fce1610,a1
+   60a8f3d4 f1d4           mov a1,d0
+   60a8f3d6 fc814ce931a0   mov d0,(0xa031e94c)
+ACCESS-STATE-UNCACHED-W 60a8f3d6 mov d0,(0xa031e94c) addr=a031e94c
+   60a8f3dc fcdce02c3fa3   mov -0x5cc0d320,a0
+   60a8f3e2 f060           movhu (a0),d0
+REL-KNOWN-STOCK-UNCACHED-R 60a8f3e2 movhu (a0),d0 addr=a33f2ce0
+   60a8f3e4 f071           movhu d0,(a1)
+REL-KNOWN-STATE-UNCACHED-W 60a8f3e4 movhu d0,(a1) addr=a031e9f0
+   60a8f3e6 2002           add 0x2,a0
+   60a8f3e8 2102           add 0x2,a1
+   60a8f3ea f060           movhu (a0),d0
+REL-UNKNOWN-BASE 60a8f3ea movhu (a0),d0
+   60a8f3ec f071           movhu d0,(a1)
+REL-UNKNOWN-BASE 60a8f3ec movhu d0,(a1)
+   60a8f3ee 2002           add 0x2,a0
+   60a8f3f0 2102           add 0x2,a1
+   60a8f3f2 f060           movhu (a0),d0
+REL-UNKNOWN-BASE 60a8f3f2 movhu (a0),d0
+   60a8f3f4 f071           movhu d0,(a1)
+REL-UNKNOWN-BASE 60a8f3f4 movhu d0,(a1)
+   60a8f3f6 2002           add 0x2,a0
+   60a8f3f8 2102           add 0x2,a1
+   60a8f3fa f060           movhu (a0),d0
+REL-UNKNOWN-BASE 60a8f3fa movhu (a0),d0
+   60a8f3fc f071           movhu d0,(a1)
+REL-UNKNOWN-BASE 60a8f3fc movhu d0,(a1)
+   60a8f3fe 2002           add 0x2,a0
+   60a8f400 2102           add 0x2,a1
+   60a8f402 f060           movhu (a0),d0
+REL-UNKNOWN-BASE 60a8f402 movhu (a0),d0
+   60a8f404 f071           movhu d0,(a1)
+REL-UNKNOWN-BASE 60a8f404 movhu d0,(a1)
+   60a8f406 2002           add 0x2,a0
+   60a8f408 2102           add 0x2,a1
+   60a8f40a fccc910e0000   mov 0xe91,d0
+   60a8f410 fccd03000000   mov 0x3,d1
+   60a8f416 fcdc00000000   mov 0x0,a0
+   60a8f41c dd643f5dffc00c call 0x60063380,[d2,d3],0xc
+TARGET-STOCK-FUNCTION 60a8f41c call 0x60063380,[d2,d3],0xc
+   60a8f423 4208           mov d0,(0x8,sp)
+STACK-ACCESS 60a8f423 mov d0,(0x8,sp)
+   60a8f425 fcce00000000   mov 0x0,d2
+   60a8f42b fccf00000000   mov 0x0,d3
+   60a8f431 fcccb11d0000   mov 0x1db1,d0
+   60a8f437 fccd00000000   mov 0x0,d1
+   60a8f43d fcdc00000000   mov 0x0,a0
+   60a8f443 dd3d3f5dffc00c call 0x60063380,[d2,d3],0xc
+TARGET-STOCK-FUNCTION 60a8f443 call 0x60063380,[d2,d3],0xc
+   60a8f44a a001           cmp 0x1,d0
+   60a8f44c c807           beq 0x60a8f453
+   60a8f44e dc2a000000     jmp 0x60a8f478
+TARGET-PLACED 60a8f44e jmp 0x60a8f478
+   60a8f453 5808           mov (0x8,sp),d0
+STACK-ACCESS 60a8f453 mov (0x8,sp),d0
+   60a8f455 a004           cmp 0x4,d0
+   60a8f457 c907           bne 0x60a8f45e
+   60a8f459 dc19000000     jmp 0x60a8f472
+TARGET-PLACED 60a8f459 jmp 0x60a8f472
+   60a8f45e a005           cmp 0x5,d0
+   60a8f460 c807           beq 0x60a8f467
+   60a8f462 dc16000000     jmp 0x60a8f478
+TARGET-PLACED 60a8f462 jmp 0x60a8f478
+   60a8f467 fcce02000000   mov 0x2,d2
+   60a8f46d dc0b000000     jmp 0x60a8f478
+TARGET-PLACED 60a8f46d jmp 0x60a8f478
+   60a8f472 fcce01000000   mov 0x1,d2
+   60a8f478 fcccc11d0000   mov 0x1dc1,d0
+   60a8f47e fccd00000000   mov 0x0,d1
+   60a8f484 fcdc00000000   mov 0x0,a0
+   60a8f48a ddf63e5dffc00c call 0x60063380,[d2,d3],0xc
+TARGET-STOCK-FUNCTION 60a8f48a call 0x60063380,[d2,d3],0xc
+   60a8f491 a001           cmp 0x1,d0
+   60a8f493 c807           beq 0x60a8f49a
+   60a8f495 dc2a000000     jmp 0x60a8f4bf
+TARGET-PLACED 60a8f495 jmp 0x60a8f4bf
+   60a8f49a 5808           mov (0x8,sp),d0
+STACK-ACCESS 60a8f49a mov (0x8,sp),d0
+   60a8f49c a004           cmp 0x4,d0
+   60a8f49e c907           bne 0x60a8f4a5
+   60a8f4a0 dc19000000     jmp 0x60a8f4b9
+TARGET-PLACED 60a8f4a0 jmp 0x60a8f4b9
+   60a8f4a5 a005           cmp 0x5,d0
+   60a8f4a7 c807           beq 0x60a8f4ae
+   60a8f4a9 dc16000000     jmp 0x60a8f4bf
+TARGET-PLACED 60a8f4a9 jmp 0x60a8f4bf
+   60a8f4ae fccf02000000   mov 0x2,d3
+   60a8f4b4 dc0b000000     jmp 0x60a8f4bf
+TARGET-PLACED 60a8f4b4 jmp 0x60a8f4bf
+   60a8f4b9 fccf01000000   mov 0x1,d3
+   60a8f4bf 88             mov d2,d0
+   60a8f4c0 8d             mov d3,d1
+   60a8f4c1 ddfa0100000000 call 0x60a8f6bb,[],0x0
+TARGET-PLACED 60a8f4c1 call 0x60a8f6bb,[],0x0
+   60a8f4c8 a000           cmp 0x0,d0
+   60a8f4ca c807           beq 0x60a8f4d1
+   60a8f4cc dc4d010000     jmp 0x60a8f619
+TARGET-PLACED 60a8f4cc jmp 0x60a8f619
+   60a8f4d1 fca428e931a0   mov (0xa031e928),d0
+ACCESS-STATE-UNCACHED-R 60a8f4d1 mov (0xa031e928),d0 addr=a031e928
+   60a8f4d7 fcc800ea31a0   cmp -0x5fce1600,d0
+   60a8f4dd c907           bne 0x60a8f4e4
+   60a8f4df dc10000000     jmp 0x60a8f4ef
+TARGET-PLACED 60a8f4df jmp 0x60a8f4ef
+   60a8f4e4 fcdd00ea31a0   mov -0x5fce1600,a1
+   60a8f4ea dc0b000000     jmp 0x60a8f4f5
+TARGET-PLACED 60a8f4ea jmp 0x60a8f4f5
+   60a8f4ef fcdd10ea31a0   mov -0x5fce15f0,a1
+   60a8f4f5 f1d4           mov a1,d0
+   60a8f4f7 fc815ce931a0   mov d0,(0xa031e95c)
+ACCESS-STATE-UNCACHED-W 60a8f4f7 mov d0,(0xa031e95c) addr=a031e95c
+   60a8f4fd fcdca0ea31a0   mov -0x5fce1560,a0
+   60a8f503 88             mov d2,d0
+   60a8f504 f8c004         asl 0x4,d0
+   60a8f507 f160           add d0,a0
+   60a8f509 f060           movhu (a0),d0
+REL-UNKNOWN-BASE 60a8f509 movhu (a0),d0
+   60a8f50b f071           movhu d0,(a1)
+REL-KNOWN-STATE-UNCACHED-W 60a8f50b movhu d0,(a1) addr=a031ea10
+   60a8f50d 2002           add 0x2,a0
+   60a8f50f 2102           add 0x2,a1
+   60a8f511 f060           movhu (a0),d0
+REL-UNKNOWN-BASE 60a8f511 movhu (a0),d0
+   60a8f513 f071           movhu d0,(a1)
+REL-UNKNOWN-BASE 60a8f513 movhu d0,(a1)
+   60a8f515 2002           add 0x2,a0
+   60a8f517 2102           add 0x2,a1
+   60a8f519 f060           movhu (a0),d0
+REL-UNKNOWN-BASE 60a8f519 movhu (a0),d0
+   60a8f51b f071           movhu d0,(a1)
+REL-UNKNOWN-BASE 60a8f51b movhu d0,(a1)
+   60a8f51d 2002           add 0x2,a0
+   60a8f51f 2102           add 0x2,a1
+   60a8f521 f060           movhu (a0),d0
+REL-UNKNOWN-BASE 60a8f521 movhu (a0),d0
+   60a8f523 f071           movhu d0,(a1)
+REL-UNKNOWN-BASE 60a8f523 movhu d0,(a1)
+   60a8f525 2002           add 0x2,a0
+   60a8f527 2102           add 0x2,a1
+   60a8f529 f060           movhu (a0),d0
+REL-UNKNOWN-BASE 60a8f529 movhu (a0),d0
+   60a8f52b f071           movhu d0,(a1)
+REL-UNKNOWN-BASE 60a8f52b movhu d0,(a1)
+   60a8f52d 2002           add 0x2,a0
+   60a8f52f 2102           add 0x2,a1
+   60a8f531 fca821e931a0   movbu (0xa031e921),d0
+ACCESS-STATE-UNCACHED-R 60a8f531 movbu (0xa031e921),d0 addr=a031e921
+   60a8f537 a000           cmp 0x0,d0
+   60a8f539 c907           bne 0x60a8f540
+   60a8f53b dc10000000     jmp 0x60a8f54b
+TARGET-PLACED 60a8f53b jmp 0x60a8f54b
+   60a8f540 fca45ce931a0   mov (0xa031e95c),d0
+ACCESS-STATE-UNCACHED-R 60a8f540 mov (0xa031e95c),d0 addr=a031e95c
+   60a8f546 dc0b000000     jmp 0x60a8f551
+TARGET-PLACED 60a8f546 jmp 0x60a8f551
+   60a8f54b fca44ce931a0   mov (0xa031e94c),d0
+ACCESS-STATE-UNCACHED-R 60a8f54b mov (0xa031e94c),d0 addr=a031e94c
+   60a8f551 f1e0           mov d0,a0
+   60a8f553 fcdd84a33ca3   mov -0x5cc35c7c,a1
+   60a8f559 f060           movhu (a0),d0
+REL-UNKNOWN-BASE 60a8f559 movhu (a0),d0
+   60a8f55b f065           movhu (a1),d1
+REL-KNOWN-STOCK-UNCACHED-R 60a8f55b movhu (a1),d1 addr=a33ca384
+   60a8f55d a4             cmp d1,d0
+   60a8f55e c807           beq 0x60a8f565
+   60a8f560 dc8f000000     jmp 0x60a8f5ef
+TARGET-PLACED 60a8f560 jmp 0x60a8f5ef
+   60a8f565 2002           add 0x2,a0
+   60a8f567 2102           add 0x2,a1
+   60a8f569 f060           movhu (a0),d0
+REL-UNKNOWN-BASE 60a8f569 movhu (a0),d0
+   60a8f56b f065           movhu (a1),d1
+REL-UNKNOWN-BASE 60a8f56b movhu (a1),d1
+   60a8f56d a4             cmp d1,d0
+   60a8f56e c807           beq 0x60a8f575
+   60a8f570 dc7f000000     jmp 0x60a8f5ef
+TARGET-PLACED 60a8f570 jmp 0x60a8f5ef
+   60a8f575 2002           add 0x2,a0
+   60a8f577 2102           add 0x2,a1
+   60a8f579 f060           movhu (a0),d0
+REL-UNKNOWN-BASE 60a8f579 movhu (a0),d0
+   60a8f57b f065           movhu (a1),d1
+REL-UNKNOWN-BASE 60a8f57b movhu (a1),d1
+   60a8f57d a4             cmp d1,d0
+   60a8f57e c807           beq 0x60a8f585
+   60a8f580 dc6f000000     jmp 0x60a8f5ef
+TARGET-PLACED 60a8f580 jmp 0x60a8f5ef
+   60a8f585 2002           add 0x2,a0
+   60a8f587 2102           add 0x2,a1
+   60a8f589 f060           movhu (a0),d0
+REL-UNKNOWN-BASE 60a8f589 movhu (a0),d0
+   60a8f58b f065           movhu (a1),d1
+REL-UNKNOWN-BASE 60a8f58b movhu (a1),d1
+   60a8f58d a4             cmp d1,d0
+   60a8f58e c807           beq 0x60a8f595
+   60a8f590 dc5f000000     jmp 0x60a8f5ef
+TARGET-PLACED 60a8f590 jmp 0x60a8f5ef
+   60a8f595 2002           add 0x2,a0
+   60a8f597 2102           add 0x2,a1
+   60a8f599 f060           movhu (a0),d0
+REL-UNKNOWN-BASE 60a8f599 movhu (a0),d0
+   60a8f59b f065           movhu (a1),d1
+REL-UNKNOWN-BASE 60a8f59b movhu (a1),d1
+   60a8f59d a4             cmp d1,d0
+   60a8f59e c807           beq 0x60a8f5a5
+   60a8f5a0 dc4f000000     jmp 0x60a8f5ef
+TARGET-PLACED 60a8f5a0 jmp 0x60a8f5ef
+   60a8f5a5 2002           add 0x2,a0
+   60a8f5a7 2102           add 0x2,a1
+   60a8f5a9 fca823e931a0   movbu (0xa031e923),d0
+ACCESS-STATE-UNCACHED-R 60a8f5a9 movbu (0xa031e923),d0 addr=a031e923
+   60a8f5af 83             mov d0,d3
+   60a8f5b0 a000           cmp 0x0,d0
+   60a8f5b2 c907           bne 0x60a8f5b9
+   60a8f5b4 dc27000000     jmp 0x60a8f5db
+TARGET-PLACED 60a8f5b4 jmp 0x60a8f5db
+   60a8f5b9 fca8101d3aa3   movbu (0xa33a1d10),d0
+ACCESS-STOCK-UNCACHED-R 60a8f5b9 movbu (0xa33a1d10),d0 addr=a33a1d10
+   60a8f5bf a001           cmp 0x1,d0
+   60a8f5c1 c807           beq 0x60a8f5c8
+   60a8f5c3 dc2c000000     jmp 0x60a8f5ef
+TARGET-PLACED 60a8f5c3 jmp 0x60a8f5ef
+   60a8f5c8 fca8141d3aa3   movbu (0xa33a1d14),d0
+ACCESS-STOCK-UNCACHED-R 60a8f5c8 movbu (0xa33a1d14),d0 addr=a33a1d14
+   60a8f5ce a3             cmp d0,d3
+   60a8f5cf c807           beq 0x60a8f5d6
+   60a8f5d1 dc1e000000     jmp 0x60a8f5ef
+TARGET-PLACED 60a8f5d1 jmp 0x60a8f5ef
+   60a8f5d6 dc25000000     jmp 0x60a8f5fb
+TARGET-PLACED 60a8f5d6 jmp 0x60a8f5fb
+   60a8f5db fca8101d3aa3   movbu (0xa33a1d10),d0
+ACCESS-STOCK-UNCACHED-R 60a8f5db movbu (0xa33a1d10),d0 addr=a33a1d10
+   60a8f5e1 a000           cmp 0x0,d0
+   60a8f5e3 c807           beq 0x60a8f5ea
+   60a8f5e5 dc0a000000     jmp 0x60a8f5ef
+TARGET-PLACED 60a8f5e5 jmp 0x60a8f5ef
+   60a8f5ea dc11000000     jmp 0x60a8f5fb
+TARGET-PLACED 60a8f5ea jmp 0x60a8f5fb
+   60a8f5ef fccc05000000   mov 0x5,d0
+   60a8f5f5 fc8225e931a0   movbu d0,(0xa031e925)
+ACCESS-STATE-UNCACHED-W 60a8f5f5 movbu d0,(0xa031e925) addr=a031e925
+   60a8f5fb fccc00000000   mov 0x0,d0
+   60a8f601 dd87faffff0000 call 0x60a8f088,[],0x0
+TARGET-PLACED 60a8f601 call 0x60a8f088,[],0x0
+   60a8f608 fccc00000000   mov 0x0,d0
+   60a8f60e fc8227e931a0   movbu d0,(0xa031e927)
+ACCESS-STATE-UNCACHED-W 60a8f60e movbu d0,(0xa031e927) addr=a031e927
+   60a8f614 dc33000000     jmp 0x60a8f647
+TARGET-PLACED 60a8f614 jmp 0x60a8f647
+   60a8f619 fccc00000000   mov 0x0,d0
+   60a8f61f fc8227e931a0   movbu d0,(0xa031e927)
+ACCESS-STATE-UNCACHED-W 60a8f61f movbu d0,(0xa031e927) addr=a031e927
+   60a8f625 fccc07000000   mov 0x7,d0
+   60a8f62b dc16000000     jmp 0x60a8f641
+TARGET-PLACED 60a8f62b jmp 0x60a8f641
+   60a8f630 fccc04000000   mov 0x4,d0
+   60a8f636 dc0b000000     jmp 0x60a8f641
+TARGET-PLACED 60a8f636 jmp 0x60a8f641
+   60a8f63b fccc06000000   mov 0x6,d0
+   60a8f641 fc8225e931a0   movbu d0,(0xa031e925)
+ACCESS-STATE-UNCACHED-W 60a8f641 movbu d0,(0xa031e925) addr=a031e925
+   60a8f647 dff030         ret [d2,d3,a2,a3],0x30
+== live block 607187a4<-700d1200 607187a4 len=43 pinned=-
+   607187a4 fca926e931a0   movbu (0xa031e926),d1
+ACCESS-STATE-UNCACHED-R 607187a4 movbu (0xa031e926),d1 addr=a031e926
+   607187aa a501           cmp 0x1,d1
+   607187ac c807           beq 0x607187b3
+   607187ae dc15000000     jmp 0x607187c3
+TARGET-PLACED 607187ae jmp 0x607187c3
+   607187b3 fca921e931a0   movbu (0xa031e921),d1
+ACCESS-STATE-UNCACHED-R 607187b3 movbu (0xa031e921),d1 addr=a031e921
+   607187b9 a501           cmp 0x1,d1
+   607187bb c807           beq 0x607187c2
+   607187bd dc06000000     jmp 0x607187c3
+TARGET-PLACED 607187bd jmp 0x607187c3
+   607187c2 00             clr d0
+   607187c3 83             mov d0,d3
+   607187c4 fcaaeba0a662   movbu (0x62a6a0eb),d2
+ACCESS-STOCK-CACHED-R 607187c4 movbu (0x62a6a0eb),d2 addr=62a6a0eb
+   607187ca dc3b66cbff     jmp 0x603cee05
+TARGET-NOT-FUNCTION-START 607187ca jmp 0x603cee05
+== live block 60a8f64a<-700d0f50 60a8f64a len=113 pinned=-
+   60a8f64a fca826e931a0   movbu (0xa031e926),d0
+ACCESS-STATE-UNCACHED-R 60a8f64a movbu (0xa031e926),d0 addr=a031e926
+   60a8f650 a001           cmp 0x1,d0
+   60a8f652 c807           beq 0x60a8f659
+   60a8f654 dc57000000     jmp 0x60a8f6ab
+TARGET-PLACED 60a8f654 jmp 0x60a8f6ab
+   60a8f659 fca824e931a0   movbu (0xa031e924),d0
+ACCESS-STATE-UNCACHED-R 60a8f659 movbu (0xa031e924),d0 addr=a031e924
+   60a8f65f a001           cmp 0x1,d0
+   60a8f661 c907           bne 0x60a8f668
+   60a8f663 dc0e000000     jmp 0x60a8f671
+TARGET-PLACED 60a8f663 jmp 0x60a8f671
+   60a8f668 a002           cmp 0x2,d0
+   60a8f66a c807           beq 0x60a8f671
+   60a8f66c dc3f000000     jmp 0x60a8f6ab
+TARGET-PLACED 60a8f66c jmp 0x60a8f6ab
+   60a8f671 fca428e931a0   mov (0xa031e928),d0
+ACCESS-STATE-UNCACHED-R 60a8f671 mov (0xa031e928),d0 addr=a031e928
+   60a8f677 fcc8e0e931a0   cmp -0x5fce1620,d0
+   60a8f67d c907           bne 0x60a8f684
+   60a8f67f dc37000000     jmp 0x60a8f6b6
+TARGET-PLACED 60a8f67f jmp 0x60a8f6b6
+   60a8f684 fcc8f0e931a0   cmp -0x5fce1610,d0
+   60a8f68a c907           bne 0x60a8f691
+   60a8f68c dc2a000000     jmp 0x60a8f6b6
+TARGET-PLACED 60a8f68c jmp 0x60a8f6b6
+   60a8f691 fcc800ea31a0   cmp -0x5fce1600,d0
+   60a8f697 c907           bne 0x60a8f69e
+   60a8f699 dc1d000000     jmp 0x60a8f6b6
+TARGET-PLACED 60a8f699 jmp 0x60a8f6b6
+   60a8f69e fcc810ea31a0   cmp -0x5fce15f0,d0
+   60a8f6a4 c907           bne 0x60a8f6ab
+   60a8f6a6 dc10000000     jmp 0x60a8f6b6
+TARGET-PLACED 60a8f6a6 jmp 0x60a8f6b6
+   60a8f6ab fca8ea2c3fa3   movbu (0xa33f2cea),d0
+ACCESS-STOCK-UNCACHED-R 60a8f6ab movbu (0xa33f2cea),d0 addr=a33f2cea
+   60a8f6b1 dc0745f2ff     jmp 0x609b3bb8
+TARGET-NOT-FUNCTION-START 60a8f6b1 jmp 0x609b3bb8
+   60a8f6b6 f1e0           mov d0,a0
+   60a8f6b8 df0004         ret [],0x4
+== live block 60a8f6bb<-700d0e00 60a8f6bb len=282 pinned=-
+   60a8f6bb cff0           movm [d2,d3,a2,a3],(sp)
+   60a8f6bd f8fee0         add -0x20,sp
+   60a8f6c0 82             mov d0,d2
+   60a8f6c1 aa00           cmp 0x0,d2
+   60a8f6c3 c907           bne 0x60a8f6ca
+   60a8f6c5 dc22000000     jmp 0x60a8f6e7
+TARGET-PLACED 60a8f6c5 jmp 0x60a8f6e7
+   60a8f6ca aa01           cmp 0x1,d2
+   60a8f6cc c907           bne 0x60a8f6d3
+   60a8f6ce dc24000000     jmp 0x60a8f6f2
+TARGET-PLACED 60a8f6ce jmp 0x60a8f6f2
+   60a8f6d3 aa02           cmp 0x2,d2
+   60a8f6d5 c907           bne 0x60a8f6dc
+   60a8f6d7 dc26000000     jmp 0x60a8f6fd
+TARGET-PLACED 60a8f6d7 jmp 0x60a8f6fd
+   60a8f6dc fccc01000000   mov 0x1,d0
+   60a8f6e2 dcf0000000     jmp 0x60a8f7d2
+TARGET-PLACED 60a8f6e2 jmp 0x60a8f7d2
+   60a8f6e7 fcdfa0ea31a0   mov -0x5fce1560,a3
+   60a8f6ed dc1b000000     jmp 0x60a8f708
+TARGET-PLACED 60a8f6ed jmp 0x60a8f708
+   60a8f6f2 fcdfb0ea31a0   mov -0x5fce1550,a3
+   60a8f6f8 dc10000000     jmp 0x60a8f708
+TARGET-PLACED 60a8f6f8 jmp 0x60a8f708
+   60a8f6fd fcdfc0ea31a0   mov -0x5fce1540,a3
+   60a8f703 dc05000000     jmp 0x60a8f708
+TARGET-PLACED 60a8f703 jmp 0x60a8f708
+   60a8f708 fccca19f0000   mov 0x9fa1,d0
+   60a8f70e 89             mov d2,d1
+   60a8f70f fcdc00000000   mov 0x0,a0
+   60a8f715 dd6b3c5dffc00c call 0x60063380,[d2,d3],0xc
+TARGET-STOCK-FUNCTION 60a8f715 call 0x60063380,[d2,d3],0xc
+   60a8f71c 3c             mov sp,a0
+   60a8f71d 2004           add 0x4,a0
+   60a8f71f ddae47f2ffe014 call 0x609b3ecd,[d2,d3,a2],0x14
+TARGET-NOT-FUNCTION-START 60a8f71f call 0x609b3ecd,[d2,d3,a2],0x14
+   60a8f726 f8b804         movbu (0x4,sp),d0
+STACK-ACCESS 60a8f726 movbu (0x4,sp),d0
+   60a8f729 f85302         movbu d0,(0x2,a3)
+REL-UNKNOWN-BASE 60a8f729 movbu d0,(0x2,a3)
+   60a8f72c f8b805         movbu (0x5,sp),d0
+STACK-ACCESS 60a8f72c movbu (0x5,sp),d0
+   60a8f72f f87304         movhu d0,(0x4,a3)
+REL-UNKNOWN-BASE 60a8f72f movhu d0,(0x4,a3)
+   60a8f732 f8b806         movbu (0x6,sp),d0
+STACK-ACCESS 60a8f732 movbu (0x6,sp),d0
+   60a8f735 f87306         movhu d0,(0x6,a3)
+REL-UNKNOWN-BASE 60a8f735 movhu d0,(0x6,a3)
+   60a8f738 f8b807         movbu (0x7,sp),d0
+STACK-ACCESS 60a8f738 movbu (0x7,sp),d0
+   60a8f73b f85308         movbu d0,(0x8,a3)
+REL-UNKNOWN-BASE 60a8f73b movbu d0,(0x8,a3)
+   60a8f73e fccca1df0000   mov 0xdfa1,d0
+   60a8f744 fccd00000000   mov 0x0,d1
+   60a8f74a fcdc00000000   mov 0x0,a0
+   60a8f750 dd303c5dffc00c call 0x60063380,[d2,d3],0xc
+TARGET-STOCK-FUNCTION 60a8f750 call 0x60063380,[d2,d3],0xc
+   60a8f757 f85303         movbu d0,(0x3,a3)
+REL-UNKNOWN-BASE 60a8f757 movbu d0,(0x3,a3)
+   60a8f75a fcccd2990000   mov 0x99d2,d0
+   60a8f760 8d             mov d3,d1
+   60a8f761 fcdc00000000   mov 0x0,a0
+   60a8f767 dd193c5dffc00c call 0x60063380,[d2,d3],0xc
+TARGET-STOCK-FUNCTION 60a8f767 call 0x60063380,[d2,d3],0xc
+   60a8f76e f073           movhu d0,(a3)
+REL-UNKNOWN-BASE 60a8f76e movhu d0,(a3)
+   60a8f770 fccc011e0000   mov 0x1e01,d0
+   60a8f776 fccd00000000   mov 0x0,d1
+   60a8f77c fcdc00000000   mov 0x0,a0
+   60a8f782 ddfe3b5dffc00c call 0x60063380,[d2,d3],0xc
+TARGET-STOCK-FUNCTION 60a8f782 call 0x60063380,[d2,d3],0xc
+   60a8f789 f85309         movbu d0,(0x9,a3)
+REL-UNKNOWN-BASE 60a8f789 movbu d0,(0x9,a3)
+   60a8f78c f84302         movbu (0x2,a3),d0
+REL-UNKNOWN-BASE 60a8f78c movbu (0x2,a3),d0
+   60a8f78f a002           cmp 0x2,d0
+   60a8f791 c907           bne 0x60a8f798
+   60a8f793 dc28000000     jmp 0x60a8f7bb
+TARGET-PLACED 60a8f793 jmp 0x60a8f7bb
+   60a8f798 a000           cmp 0x0,d0
+   60a8f79a c907           bne 0x60a8f7a1
+   60a8f79c dc27000000     jmp 0x60a8f7c3
+TARGET-PLACED 60a8f79c jmp 0x60a8f7c3
+   60a8f7a1 a003           cmp 0x3,d0
+   60a8f7a3 c807           beq 0x60a8f7aa
+   60a8f7a5 dc27000000     jmp 0x60a8f7cc
+TARGET-PLACED 60a8f7a5 jmp 0x60a8f7cc
+   60a8f7aa f86304         movhu (0x4,a3),d0
+REL-UNKNOWN-BASE 60a8f7aa movhu (0x4,a3),d0
+   60a8f7ad a003           cmp 0x3,d0
+   60a8f7af c807           beq 0x60a8f7b6
+   60a8f7b1 dc1b000000     jmp 0x60a8f7cc
+TARGET-PLACED 60a8f7b1 jmp 0x60a8f7cc
+   60a8f7b6 dc0d000000     jmp 0x60a8f7c3
+TARGET-PLACED 60a8f7b6 jmp 0x60a8f7c3
+   60a8f7bb fccc0e020000   mov 0x20e,d0
+   60a8f7c1 f073           movhu d0,(a3)
+REL-UNKNOWN-BASE 60a8f7c1 movhu d0,(a3)
+   60a8f7c3 fccc00000000   mov 0x0,d0
+   60a8f7c9 f85308         movbu d0,(0x8,a3)
+REL-UNKNOWN-BASE 60a8f7c9 movbu d0,(0x8,a3)
+   60a8f7cc fccc00000000   mov 0x0,d0
+   60a8f7d2 dff030         ret [d2,d3,a2,a3],0x30
+== live block 6031eb80<-700d2000 6031eb80 len=280 pinned=-
+   6031eb80 cff0           movm [d2,d3,a2,a3],(sp)
+   6031eb82 f8fee0         add -0x20,sp
+   6031eb85 4204           mov d0,(0x4,sp)
+STACK-ACCESS 6031eb85 mov d0,(0x4,sp)
+   6031eb87 4608           mov d1,(0x8,sp)
+STACK-ACCESS 6031eb87 mov d1,(0x8,sp)
+   6031eb89 430c           mov a0,(0xc,sp)
+STACK-ACCESS 6031eb89 mov a0,(0xc,sp)
+   6031eb8b 4710           mov a1,(0x10,sp)
+STACK-ACCESS 6031eb8b mov a1,(0x10,sp)
+   6031eb8d fca826e931a0   movbu (0xa031e926),d0
+ACCESS-STATE-UNCACHED-R 6031eb8d movbu (0xa031e926),d0 addr=a031e926
+   6031eb93 a001           cmp 0x1,d0
+   6031eb95 c807           beq 0x6031eb9c
+   6031eb97 dcc1000000     jmp 0x6031ec58
+TARGET-PLACED 6031eb97 jmp 0x6031ec58
+   6031eb9c dd34fffffff014 call 0x6031ead0,[d2,d3,a2,a3],0x14
+TARGET-PLACED 6031eb9c call 0x6031ead0,[d2,d3,a2,a3],0x14
+   6031eba3 a001           cmp 0x1,d0
+   6031eba5 c807           beq 0x6031ebac
+   6031eba7 dcb1000000     jmp 0x6031ec58
+TARGET-PLACED 6031eba7 jmp 0x6031ec58
+   6031ebac fca434e931a0   mov (0xa031e934),d0
+ACCESS-STATE-UNCACHED-R 6031ebac mov (0xa031e934),d0 addr=a031e934
+   6031ebb2 dd6037d1fff014 call 0x60032312,[d2,d3,a2,a3],0x14
+TARGET-STOCK-FUNCTION 6031ebb2 call 0x60032312,[d2,d3,a2,a3],0x14
+   6031ebb9 a000           cmp 0x0,d0
+   6031ebbb c807           beq 0x6031ebc2
+   6031ebbd dcbf000000     jmp 0x6031ec7c
+TARGET-PLACED 6031ebbd jmp 0x6031ec7c
+   6031ebc2 fcce10000000   mov 0x10,d2
+   6031ebc8 fccc02000001   mov 0x1000002,d0
+   6031ebce ddde0677000000 call 0x60a8f2ac,[],0x0
+TARGET-PLACED 6031ebce call 0x60a8f2ac,[],0x0
+   6031ebd5 fca825e931a0   movbu (0xa031e925),d0
+ACCESS-STATE-UNCACHED-R 6031ebd5 movbu (0xa031e925),d0 addr=a031e925
+   6031ebdb a000           cmp 0x0,d0
+   6031ebdd c83d           beq 0x6031ec1a
+   6031ebdf a001           cmp 0x1,d0
+   6031ebe1 c86a           beq 0x6031ec4b
+   6031ebe3 a004           cmp 0x4,d0
+   6031ebe5 c923           bne 0x6031ec08
+   6031ebe7 2aff           add -0x1,d2
+   6031ebe9 aa00           cmp 0x0,d2
+   6031ebeb c811           beq 0x6031ebfc
+   6031ebed fccc01000000   mov 0x1,d0
+   6031ebf3 dd8e29d1ffb010 call 0x60031581,[d2,a2,a3],0x10
+TARGET-STOCK-FUNCTION 6031ebf3 call 0x60031581,[d2,a2,a3],0x10
+   6031ebfa cace           bra 0x6031ebc8
+   6031ebfc fccc08000000   mov 0x8,d0
+   6031ec02 fc8225e931a0   movbu d0,(0xa031e925)
+ACCESS-STATE-UNCACHED-W 6031ec02 movbu d0,(0xa031e925) addr=a031e925
+   6031ec08 fca434e931a0   mov (0xa031e934),d0
+ACCESS-STATE-UNCACHED-R 6031ec08 mov (0xa031e934),d0 addr=a031e934
+   6031ec0e dd0d8dd1fff018 call 0x6003791b,[d2,d3,a2,a3],0x18
+TARGET-STOCK-FUNCTION 6031ec0e call 0x6003791b,[d2,d3,a2,a3],0x18
+   6031ec15 dc73000000     jmp 0x6031ec88
+TARGET-PLACED 6031ec15 jmp 0x6031ec88
+   6031ec1a 5804           mov (0x4,sp),d0
+STACK-ACCESS 6031ec1a mov (0x4,sp),d0
+   6031ec1c 5908           mov (0x8,sp),d1
+STACK-ACCESS 6031ec1c mov (0x8,sp),d1
+   6031ec1e 5c0c           mov (0xc,sp),a0
+STACK-ACCESS 6031ec1e mov (0xc,sp),a0
+   6031ec20 5d10           mov (0x10,sp),a1
+STACK-ACCESS 6031ec20 mov (0x10,sp),a1
+   6031ec22 5a2c           mov (0x2c,sp),d2
+STACK-ACCESS 6031ec22 mov (0x2c,sp),d2
+   6031ec24 5b28           mov (0x28,sp),d3
+STACK-ACCESS 6031ec24 mov (0x28,sp),d3
+   6031ec26 5e24           mov (0x24,sp),a2
+STACK-ACCESS 6031ec26 mov (0x24,sp),a2
+   6031ec28 5f20           mov (0x20,sp),a3
+STACK-ACCESS 6031ec28 mov (0x20,sp),a3
+   6031ec2a dd6da5d9000000 call 0x610b9197,[],0x0
+TARGET-STOCK-FUNCTION 6031ec2a call 0x610b9197,[],0x0
+   6031ec31 4204           mov d0,(0x4,sp)
+STACK-ACCESS 6031ec31 mov d0,(0x4,sp)
+   6031ec33 4608           mov d1,(0x8,sp)
+STACK-ACCESS 6031ec33 mov d1,(0x8,sp)
+   6031ec35 430c           mov a0,(0xc,sp)
+STACK-ACCESS 6031ec35 mov a0,(0xc,sp)
+   6031ec37 4710           mov a1,(0x10,sp)
+STACK-ACCESS 6031ec37 mov a1,(0x10,sp)
+   6031ec39 fca434e931a0   mov (0xa031e934),d0
+ACCESS-STATE-UNCACHED-R 6031ec39 mov (0xa031e934),d0 addr=a031e934
+   6031ec3f dddc8cd1fff018 call 0x6003791b,[d2,d3,a2,a3],0x18
+TARGET-STOCK-FUNCTION 6031ec3f call 0x6003791b,[d2,d3,a2,a3],0x18
+   6031ec46 dc42000000     jmp 0x6031ec88
+TARGET-PLACED 6031ec46 jmp 0x6031ec88
+   6031ec4b fca434e931a0   mov (0xa031e934),d0
+ACCESS-STATE-UNCACHED-R 6031ec4b mov (0xa031e934),d0 addr=a031e934
+   6031ec51 ddca8cd1fff018 call 0x6003791b,[d2,d3,a2,a3],0x18
+TARGET-STOCK-FUNCTION 6031ec51 call 0x6003791b,[d2,d3,a2,a3],0x18
+   6031ec58 5804           mov (0x4,sp),d0
+STACK-ACCESS 6031ec58 mov (0x4,sp),d0
+   6031ec5a 5908           mov (0x8,sp),d1
+STACK-ACCESS 6031ec5a mov (0x8,sp),d1
+   6031ec5c 5c0c           mov (0xc,sp),a0
+STACK-ACCESS 6031ec5c mov (0xc,sp),a0
+   6031ec5e 5d10           mov (0x10,sp),a1
+STACK-ACCESS 6031ec5e mov (0x10,sp),a1
+   6031ec60 5a2c           mov (0x2c,sp),d2
+STACK-ACCESS 6031ec60 mov (0x2c,sp),d2
+   6031ec62 5b28           mov (0x28,sp),d3
+STACK-ACCESS 6031ec62 mov (0x28,sp),d3
+   6031ec64 5e24           mov (0x24,sp),a2
+STACK-ACCESS 6031ec64 mov (0x24,sp),a2
+   6031ec66 5f20           mov (0x20,sp),a3
+STACK-ACCESS 6031ec66 mov (0x20,sp),a3
+   6031ec68 dd2fa5d9000000 call 0x610b9197,[],0x0
+TARGET-STOCK-FUNCTION 6031ec68 call 0x610b9197,[],0x0
+   6031ec6f 4204           mov d0,(0x4,sp)
+STACK-ACCESS 6031ec6f mov d0,(0x4,sp)
+   6031ec71 4608           mov d1,(0x8,sp)
+STACK-ACCESS 6031ec71 mov d1,(0x8,sp)
+   6031ec73 430c           mov a0,(0xc,sp)
+STACK-ACCESS 6031ec73 mov a0,(0xc,sp)
+   6031ec75 4710           mov a1,(0x10,sp)
+STACK-ACCESS 6031ec75 mov a1,(0x10,sp)
+   6031ec77 dc11000000     jmp 0x6031ec88
+TARGET-PLACED 6031ec77 jmp 0x6031ec88
+   6031ec7c fccc09000000   mov 0x9,d0
+   6031ec82 fc8225e931a0   movbu d0,(0xa031e925)
+ACCESS-STATE-UNCACHED-W 6031ec82 movbu d0,(0xa031e925) addr=a031e925
+   6031ec88 5804           mov (0x4,sp),d0
+STACK-ACCESS 6031ec88 mov (0x4,sp),d0
+   6031ec8a 5908           mov (0x8,sp),d1
+STACK-ACCESS 6031ec8a mov (0x8,sp),d1
+   6031ec8c 5c0c           mov (0xc,sp),a0
+STACK-ACCESS 6031ec8c mov (0xc,sp),a0
+   6031ec8e 5d10           mov (0x10,sp),a1
+STACK-ACCESS 6031ec8e mov (0x10,sp),a1
+   6031ec90 f8fe20         add 0x20,sp
+   6031ec93 cef0           movm (sp),[d2,d3,a2,a3]
+   6031ec95 df0000         ret [],0x0
+== live block 6031ec98<-700d2200 6031ec98 len=280 pinned=-
+   6031ec98 cff0           movm [d2,d3,a2,a3],(sp)
+   6031ec9a f8fee0         add -0x20,sp
+   6031ec9d 4204           mov d0,(0x4,sp)
+STACK-ACCESS 6031ec9d mov d0,(0x4,sp)
+   6031ec9f 4608           mov d1,(0x8,sp)
+STACK-ACCESS 6031ec9f mov d1,(0x8,sp)
+   6031eca1 430c           mov a0,(0xc,sp)
+STACK-ACCESS 6031eca1 mov a0,(0xc,sp)
+   6031eca3 4710           mov a1,(0x10,sp)
+STACK-ACCESS 6031eca3 mov a1,(0x10,sp)
+   6031eca5 fca826e931a0   movbu (0xa031e926),d0
+ACCESS-STATE-UNCACHED-R 6031eca5 movbu (0xa031e926),d0 addr=a031e926
+   6031ecab a001           cmp 0x1,d0
+   6031ecad c807           beq 0x6031ecb4
+   6031ecaf dcc1000000     jmp 0x6031ed70
+TARGET-PLACED 6031ecaf jmp 0x6031ed70
+   6031ecb4 dd1cfefffff014 call 0x6031ead0,[d2,d3,a2,a3],0x14
+TARGET-PLACED 6031ecb4 call 0x6031ead0,[d2,d3,a2,a3],0x14
+   6031ecbb a001           cmp 0x1,d0
+   6031ecbd c807           beq 0x6031ecc4
+   6031ecbf dcb1000000     jmp 0x6031ed70
+TARGET-PLACED 6031ecbf jmp 0x6031ed70
+   6031ecc4 fca434e931a0   mov (0xa031e934),d0
+ACCESS-STATE-UNCACHED-R 6031ecc4 mov (0xa031e934),d0 addr=a031e934
+   6031ecca dd4836d1fff014 call 0x60032312,[d2,d3,a2,a3],0x14
+TARGET-STOCK-FUNCTION 6031ecca call 0x60032312,[d2,d3,a2,a3],0x14
+   6031ecd1 a000           cmp 0x0,d0
+   6031ecd3 c807           beq 0x6031ecda
+   6031ecd5 dcbf000000     jmp 0x6031ed94
+TARGET-PLACED 6031ecd5 jmp 0x6031ed94
+   6031ecda fcce10000000   mov 0x10,d2
+   6031ece0 fccc03000001   mov 0x1000003,d0
+   6031ece6 ddc60577000000 call 0x60a8f2ac,[],0x0
+TARGET-PLACED 6031ece6 call 0x60a8f2ac,[],0x0
+   6031eced fca825e931a0   movbu (0xa031e925),d0
+ACCESS-STATE-UNCACHED-R 6031eced movbu (0xa031e925),d0 addr=a031e925
+   6031ecf3 a000           cmp 0x0,d0
+   6031ecf5 c83d           beq 0x6031ed32
+   6031ecf7 a001           cmp 0x1,d0
+   6031ecf9 c86a           beq 0x6031ed63
+   6031ecfb a004           cmp 0x4,d0
+   6031ecfd c923           bne 0x6031ed20
+   6031ecff 2aff           add -0x1,d2
+   6031ed01 aa00           cmp 0x0,d2
+   6031ed03 c811           beq 0x6031ed14
+   6031ed05 fccc01000000   mov 0x1,d0
+   6031ed0b dd7628d1ffb010 call 0x60031581,[d2,a2,a3],0x10
+TARGET-STOCK-FUNCTION 6031ed0b call 0x60031581,[d2,a2,a3],0x10
+   6031ed12 cace           bra 0x6031ece0
+   6031ed14 fccc08000000   mov 0x8,d0
+   6031ed1a fc8225e931a0   movbu d0,(0xa031e925)
+ACCESS-STATE-UNCACHED-W 6031ed1a movbu d0,(0xa031e925) addr=a031e925
+   6031ed20 fca434e931a0   mov (0xa031e934),d0
+ACCESS-STATE-UNCACHED-R 6031ed20 mov (0xa031e934),d0 addr=a031e934
+   6031ed26 ddf58bd1fff018 call 0x6003791b,[d2,d3,a2,a3],0x18
+TARGET-STOCK-FUNCTION 6031ed26 call 0x6003791b,[d2,d3,a2,a3],0x18
+   6031ed2d dc73000000     jmp 0x6031eda0
+TARGET-PLACED 6031ed2d jmp 0x6031eda0
+   6031ed32 5804           mov (0x4,sp),d0
+STACK-ACCESS 6031ed32 mov (0x4,sp),d0
+   6031ed34 5908           mov (0x8,sp),d1
+STACK-ACCESS 6031ed34 mov (0x8,sp),d1
+   6031ed36 5c0c           mov (0xc,sp),a0
+STACK-ACCESS 6031ed36 mov (0xc,sp),a0
+   6031ed38 5d10           mov (0x10,sp),a1
+STACK-ACCESS 6031ed38 mov (0x10,sp),a1
+   6031ed3a 5a2c           mov (0x2c,sp),d2
+STACK-ACCESS 6031ed3a mov (0x2c,sp),d2
+   6031ed3c 5b28           mov (0x28,sp),d3
+STACK-ACCESS 6031ed3c mov (0x28,sp),d3
+   6031ed3e 5e24           mov (0x24,sp),a2
+STACK-ACCESS 6031ed3e mov (0x24,sp),a2
+   6031ed40 5f20           mov (0x20,sp),a3
+STACK-ACCESS 6031ed40 mov (0x20,sp),a3
+   6031ed42 ddaea9d9000000 call 0x610b96f0,[],0x0
+TARGET-STOCK-FUNCTION 6031ed42 call 0x610b96f0,[],0x0
+   6031ed49 4204           mov d0,(0x4,sp)
+STACK-ACCESS 6031ed49 mov d0,(0x4,sp)
+   6031ed4b 4608           mov d1,(0x8,sp)
+STACK-ACCESS 6031ed4b mov d1,(0x8,sp)
+   6031ed4d 430c           mov a0,(0xc,sp)
+STACK-ACCESS 6031ed4d mov a0,(0xc,sp)
+   6031ed4f 4710           mov a1,(0x10,sp)
+STACK-ACCESS 6031ed4f mov a1,(0x10,sp)
+   6031ed51 fca434e931a0   mov (0xa031e934),d0
+ACCESS-STATE-UNCACHED-R 6031ed51 mov (0xa031e934),d0 addr=a031e934
+   6031ed57 ddc48bd1fff018 call 0x6003791b,[d2,d3,a2,a3],0x18
+TARGET-STOCK-FUNCTION 6031ed57 call 0x6003791b,[d2,d3,a2,a3],0x18
+   6031ed5e dc42000000     jmp 0x6031eda0
+TARGET-PLACED 6031ed5e jmp 0x6031eda0
+   6031ed63 fca434e931a0   mov (0xa031e934),d0
+ACCESS-STATE-UNCACHED-R 6031ed63 mov (0xa031e934),d0 addr=a031e934
+   6031ed69 ddb28bd1fff018 call 0x6003791b,[d2,d3,a2,a3],0x18
+TARGET-STOCK-FUNCTION 6031ed69 call 0x6003791b,[d2,d3,a2,a3],0x18
+   6031ed70 5804           mov (0x4,sp),d0
+STACK-ACCESS 6031ed70 mov (0x4,sp),d0
+   6031ed72 5908           mov (0x8,sp),d1
+STACK-ACCESS 6031ed72 mov (0x8,sp),d1
+   6031ed74 5c0c           mov (0xc,sp),a0
+STACK-ACCESS 6031ed74 mov (0xc,sp),a0
+   6031ed76 5d10           mov (0x10,sp),a1
+STACK-ACCESS 6031ed76 mov (0x10,sp),a1
+   6031ed78 5a2c           mov (0x2c,sp),d2
+STACK-ACCESS 6031ed78 mov (0x2c,sp),d2
+   6031ed7a 5b28           mov (0x28,sp),d3
+STACK-ACCESS 6031ed7a mov (0x28,sp),d3
+   6031ed7c 5e24           mov (0x24,sp),a2
+STACK-ACCESS 6031ed7c mov (0x24,sp),a2
+   6031ed7e 5f20           mov (0x20,sp),a3
+STACK-ACCESS 6031ed7e mov (0x20,sp),a3
+   6031ed80 dd70a9d9000000 call 0x610b96f0,[],0x0
+TARGET-STOCK-FUNCTION 6031ed80 call 0x610b96f0,[],0x0
+   6031ed87 4204           mov d0,(0x4,sp)
+STACK-ACCESS 6031ed87 mov d0,(0x4,sp)
+   6031ed89 4608           mov d1,(0x8,sp)
+STACK-ACCESS 6031ed89 mov d1,(0x8,sp)
+   6031ed8b 430c           mov a0,(0xc,sp)
+STACK-ACCESS 6031ed8b mov a0,(0xc,sp)
+   6031ed8d 4710           mov a1,(0x10,sp)
+STACK-ACCESS 6031ed8d mov a1,(0x10,sp)
+   6031ed8f dc11000000     jmp 0x6031eda0
+TARGET-PLACED 6031ed8f jmp 0x6031eda0
+   6031ed94 fccc09000000   mov 0x9,d0
+   6031ed9a fc8225e931a0   movbu d0,(0xa031e925)
+ACCESS-STATE-UNCACHED-W 6031ed9a movbu d0,(0xa031e925) addr=a031e925
+   6031eda0 5804           mov (0x4,sp),d0
+STACK-ACCESS 6031eda0 mov (0x4,sp),d0
+   6031eda2 5908           mov (0x8,sp),d1
+STACK-ACCESS 6031eda2 mov (0x8,sp),d1
+   6031eda4 5c0c           mov (0xc,sp),a0
+STACK-ACCESS 6031eda4 mov (0xc,sp),a0
+   6031eda6 5d10           mov (0x10,sp),a1
+STACK-ACCESS 6031eda6 mov (0x10,sp),a1
+   6031eda8 f8fe20         add 0x20,sp
+   6031edab cef0           movm (sp),[d2,d3,a2,a3]
+   6031edad df0000         ret [],0x0
+== live block 6031edb0<-700d2400 6031edb0 len=280 pinned=-
+   6031edb0 cff0           movm [d2,d3,a2,a3],(sp)
+   6031edb2 f8fee0         add -0x20,sp
+   6031edb5 4204           mov d0,(0x4,sp)
+STACK-ACCESS 6031edb5 mov d0,(0x4,sp)
+   6031edb7 4608           mov d1,(0x8,sp)
+STACK-ACCESS 6031edb7 mov d1,(0x8,sp)
+   6031edb9 430c           mov a0,(0xc,sp)
+STACK-ACCESS 6031edb9 mov a0,(0xc,sp)
+   6031edbb 4710           mov a1,(0x10,sp)
+STACK-ACCESS 6031edbb mov a1,(0x10,sp)
+   6031edbd fca826e931a0   movbu (0xa031e926),d0
+ACCESS-STATE-UNCACHED-R 6031edbd movbu (0xa031e926),d0 addr=a031e926
+   6031edc3 a001           cmp 0x1,d0
+   6031edc5 c807           beq 0x6031edcc
+   6031edc7 dcc1000000     jmp 0x6031ee88
+TARGET-PLACED 6031edc7 jmp 0x6031ee88
+   6031edcc dd04fdfffff014 call 0x6031ead0,[d2,d3,a2,a3],0x14
+TARGET-PLACED 6031edcc call 0x6031ead0,[d2,d3,a2,a3],0x14
+   6031edd3 a001           cmp 0x1,d0
+   6031edd5 c807           beq 0x6031eddc
+   6031edd7 dcb1000000     jmp 0x6031ee88
+TARGET-PLACED 6031edd7 jmp 0x6031ee88
+   6031eddc fca434e931a0   mov (0xa031e934),d0
+ACCESS-STATE-UNCACHED-R 6031eddc mov (0xa031e934),d0 addr=a031e934
+   6031ede2 dd3035d1fff014 call 0x60032312,[d2,d3,a2,a3],0x14
+TARGET-STOCK-FUNCTION 6031ede2 call 0x60032312,[d2,d3,a2,a3],0x14
+   6031ede9 a000           cmp 0x0,d0
+   6031edeb c807           beq 0x6031edf2
+   6031eded dcbf000000     jmp 0x6031eeac
+TARGET-PLACED 6031eded jmp 0x6031eeac
+   6031edf2 fcce10000000   mov 0x10,d2
+   6031edf8 fccc07000501   mov 0x1050007,d0
+   6031edfe ddae0477000000 call 0x60a8f2ac,[],0x0
+TARGET-PLACED 6031edfe call 0x60a8f2ac,[],0x0
+   6031ee05 fca825e931a0   movbu (0xa031e925),d0
+ACCESS-STATE-UNCACHED-R 6031ee05 movbu (0xa031e925),d0 addr=a031e925
+   6031ee0b a000           cmp 0x0,d0
+   6031ee0d c83d           beq 0x6031ee4a
+   6031ee0f a001           cmp 0x1,d0
+   6031ee11 c86a           beq 0x6031ee7b
+   6031ee13 a004           cmp 0x4,d0
+   6031ee15 c923           bne 0x6031ee38
+   6031ee17 2aff           add -0x1,d2
+   6031ee19 aa00           cmp 0x0,d2
+   6031ee1b c811           beq 0x6031ee2c
+   6031ee1d fccc01000000   mov 0x1,d0
+   6031ee23 dd5e27d1ffb010 call 0x60031581,[d2,a2,a3],0x10
+TARGET-STOCK-FUNCTION 6031ee23 call 0x60031581,[d2,a2,a3],0x10
+   6031ee2a cace           bra 0x6031edf8
+   6031ee2c fccc08000000   mov 0x8,d0
+   6031ee32 fc8225e931a0   movbu d0,(0xa031e925)
+ACCESS-STATE-UNCACHED-W 6031ee32 movbu d0,(0xa031e925) addr=a031e925
+   6031ee38 fca434e931a0   mov (0xa031e934),d0
+ACCESS-STATE-UNCACHED-R 6031ee38 mov (0xa031e934),d0 addr=a031e934
+   6031ee3e dddd8ad1fff018 call 0x6003791b,[d2,d3,a2,a3],0x18
+TARGET-STOCK-FUNCTION 6031ee3e call 0x6003791b,[d2,d3,a2,a3],0x18
+   6031ee45 dc73000000     jmp 0x6031eeb8
+TARGET-PLACED 6031ee45 jmp 0x6031eeb8
+   6031ee4a 5804           mov (0x4,sp),d0
+STACK-ACCESS 6031ee4a mov (0x4,sp),d0
+   6031ee4c 5908           mov (0x8,sp),d1
+STACK-ACCESS 6031ee4c mov (0x8,sp),d1
+   6031ee4e 5c0c           mov (0xc,sp),a0
+STACK-ACCESS 6031ee4e mov (0xc,sp),a0
+   6031ee50 5d10           mov (0x10,sp),a1
+STACK-ACCESS 6031ee50 mov (0x10,sp),a1
+   6031ee52 5a2c           mov (0x2c,sp),d2
+STACK-ACCESS 6031ee52 mov (0x2c,sp),d2
+   6031ee54 5b28           mov (0x28,sp),d3
+STACK-ACCESS 6031ee54 mov (0x28,sp),d3
+   6031ee56 5e24           mov (0x24,sp),a2
+STACK-ACCESS 6031ee56 mov (0x24,sp),a2
+   6031ee58 5f20           mov (0x20,sp),a3
+STACK-ACCESS 6031ee58 mov (0x20,sp),a3
+   6031ee5a ddd0a7d9000000 call 0x610b962a,[],0x0
+TARGET-STOCK-FUNCTION 6031ee5a call 0x610b962a,[],0x0
+   6031ee61 4204           mov d0,(0x4,sp)
+STACK-ACCESS 6031ee61 mov d0,(0x4,sp)
+   6031ee63 4608           mov d1,(0x8,sp)
+STACK-ACCESS 6031ee63 mov d1,(0x8,sp)
+   6031ee65 430c           mov a0,(0xc,sp)
+STACK-ACCESS 6031ee65 mov a0,(0xc,sp)
+   6031ee67 4710           mov a1,(0x10,sp)
+STACK-ACCESS 6031ee67 mov a1,(0x10,sp)
+   6031ee69 fca434e931a0   mov (0xa031e934),d0
+ACCESS-STATE-UNCACHED-R 6031ee69 mov (0xa031e934),d0 addr=a031e934
+   6031ee6f ddac8ad1fff018 call 0x6003791b,[d2,d3,a2,a3],0x18
+TARGET-STOCK-FUNCTION 6031ee6f call 0x6003791b,[d2,d3,a2,a3],0x18
+   6031ee76 dc42000000     jmp 0x6031eeb8
+TARGET-PLACED 6031ee76 jmp 0x6031eeb8
+   6031ee7b fca434e931a0   mov (0xa031e934),d0
+ACCESS-STATE-UNCACHED-R 6031ee7b mov (0xa031e934),d0 addr=a031e934
+   6031ee81 dd9a8ad1fff018 call 0x6003791b,[d2,d3,a2,a3],0x18
+TARGET-STOCK-FUNCTION 6031ee81 call 0x6003791b,[d2,d3,a2,a3],0x18
+   6031ee88 5804           mov (0x4,sp),d0
+STACK-ACCESS 6031ee88 mov (0x4,sp),d0
+   6031ee8a 5908           mov (0x8,sp),d1
+STACK-ACCESS 6031ee8a mov (0x8,sp),d1
+   6031ee8c 5c0c           mov (0xc,sp),a0
+STACK-ACCESS 6031ee8c mov (0xc,sp),a0
+   6031ee8e 5d10           mov (0x10,sp),a1
+STACK-ACCESS 6031ee8e mov (0x10,sp),a1
+   6031ee90 5a2c           mov (0x2c,sp),d2
+STACK-ACCESS 6031ee90 mov (0x2c,sp),d2
+   6031ee92 5b28           mov (0x28,sp),d3
+STACK-ACCESS 6031ee92 mov (0x28,sp),d3
+   6031ee94 5e24           mov (0x24,sp),a2
+STACK-ACCESS 6031ee94 mov (0x24,sp),a2
+   6031ee96 5f20           mov (0x20,sp),a3
+STACK-ACCESS 6031ee96 mov (0x20,sp),a3
+   6031ee98 dd92a7d9000000 call 0x610b962a,[],0x0
+TARGET-STOCK-FUNCTION 6031ee98 call 0x610b962a,[],0x0
+   6031ee9f 4204           mov d0,(0x4,sp)
+STACK-ACCESS 6031ee9f mov d0,(0x4,sp)
+   6031eea1 4608           mov d1,(0x8,sp)
+STACK-ACCESS 6031eea1 mov d1,(0x8,sp)
+   6031eea3 430c           mov a0,(0xc,sp)
+STACK-ACCESS 6031eea3 mov a0,(0xc,sp)
+   6031eea5 4710           mov a1,(0x10,sp)
+STACK-ACCESS 6031eea5 mov a1,(0x10,sp)
+   6031eea7 dc11000000     jmp 0x6031eeb8
+TARGET-PLACED 6031eea7 jmp 0x6031eeb8
+   6031eeac fccc09000000   mov 0x9,d0
+   6031eeb2 fc8225e931a0   movbu d0,(0xa031e925)
+ACCESS-STATE-UNCACHED-W 6031eeb2 movbu d0,(0xa031e925) addr=a031e925
+   6031eeb8 5804           mov (0x4,sp),d0
+STACK-ACCESS 6031eeb8 mov (0x4,sp),d0
+   6031eeba 5908           mov (0x8,sp),d1
+STACK-ACCESS 6031eeba mov (0x8,sp),d1
+   6031eebc 5c0c           mov (0xc,sp),a0
+STACK-ACCESS 6031eebc mov (0xc,sp),a0
+   6031eebe 5d10           mov (0x10,sp),a1
+STACK-ACCESS 6031eebe mov (0x10,sp),a1
+   6031eec0 f8fe20         add 0x20,sp
+   6031eec3 cef0           movm (sp),[d2,d3,a2,a3]
+   6031eec5 df0000         ret [],0x0
+== live block 6031eec8<-700d2600 6031eec8 len=280 pinned=-
+   6031eec8 cff0           movm [d2,d3,a2,a3],(sp)
+   6031eeca f8fee0         add -0x20,sp
+   6031eecd 4204           mov d0,(0x4,sp)
+STACK-ACCESS 6031eecd mov d0,(0x4,sp)
+   6031eecf 4608           mov d1,(0x8,sp)
+STACK-ACCESS 6031eecf mov d1,(0x8,sp)
+   6031eed1 430c           mov a0,(0xc,sp)
+STACK-ACCESS 6031eed1 mov a0,(0xc,sp)
+   6031eed3 4710           mov a1,(0x10,sp)
+STACK-ACCESS 6031eed3 mov a1,(0x10,sp)
+   6031eed5 fca826e931a0   movbu (0xa031e926),d0
+ACCESS-STATE-UNCACHED-R 6031eed5 movbu (0xa031e926),d0 addr=a031e926
+   6031eedb a001           cmp 0x1,d0
+   6031eedd c807           beq 0x6031eee4
+   6031eedf dcc1000000     jmp 0x6031efa0
+TARGET-PLACED 6031eedf jmp 0x6031efa0
+   6031eee4 ddecfbfffff014 call 0x6031ead0,[d2,d3,a2,a3],0x14
+TARGET-PLACED 6031eee4 call 0x6031ead0,[d2,d3,a2,a3],0x14
+   6031eeeb a001           cmp 0x1,d0
+   6031eeed c807           beq 0x6031eef4
+   6031eeef dcb1000000     jmp 0x6031efa0
+TARGET-PLACED 6031eeef jmp 0x6031efa0
+   6031eef4 fca434e931a0   mov (0xa031e934),d0
+ACCESS-STATE-UNCACHED-R 6031eef4 mov (0xa031e934),d0 addr=a031e934
+   6031eefa dd1834d1fff014 call 0x60032312,[d2,d3,a2,a3],0x14
+TARGET-STOCK-FUNCTION 6031eefa call 0x60032312,[d2,d3,a2,a3],0x14
+   6031ef01 a000           cmp 0x0,d0
+   6031ef03 c807           beq 0x6031ef0a
+   6031ef05 dcbf000000     jmp 0x6031efc4
+TARGET-PLACED 6031ef05 jmp 0x6031efc4
+   6031ef0a fcce10000000   mov 0x10,d2
+   6031ef10 fccc08000501   mov 0x1050008,d0
+   6031ef16 dd960377000000 call 0x60a8f2ac,[],0x0
+TARGET-PLACED 6031ef16 call 0x60a8f2ac,[],0x0
+   6031ef1d fca825e931a0   movbu (0xa031e925),d0
+ACCESS-STATE-UNCACHED-R 6031ef1d movbu (0xa031e925),d0 addr=a031e925
+   6031ef23 a000           cmp 0x0,d0
+   6031ef25 c83d           beq 0x6031ef62
+   6031ef27 a001           cmp 0x1,d0
+   6031ef29 c86a           beq 0x6031ef93
+   6031ef2b a004           cmp 0x4,d0
+   6031ef2d c923           bne 0x6031ef50
+   6031ef2f 2aff           add -0x1,d2
+   6031ef31 aa00           cmp 0x0,d2
+   6031ef33 c811           beq 0x6031ef44
+   6031ef35 fccc01000000   mov 0x1,d0
+   6031ef3b dd4626d1ffb010 call 0x60031581,[d2,a2,a3],0x10
+TARGET-STOCK-FUNCTION 6031ef3b call 0x60031581,[d2,a2,a3],0x10
+   6031ef42 cace           bra 0x6031ef10
+   6031ef44 fccc08000000   mov 0x8,d0
+   6031ef4a fc8225e931a0   movbu d0,(0xa031e925)
+ACCESS-STATE-UNCACHED-W 6031ef4a movbu d0,(0xa031e925) addr=a031e925
+   6031ef50 fca434e931a0   mov (0xa031e934),d0
+ACCESS-STATE-UNCACHED-R 6031ef50 mov (0xa031e934),d0 addr=a031e934
+   6031ef56 ddc589d1fff018 call 0x6003791b,[d2,d3,a2,a3],0x18
+TARGET-STOCK-FUNCTION 6031ef56 call 0x6003791b,[d2,d3,a2,a3],0x18
+   6031ef5d dc73000000     jmp 0x6031efd0
+TARGET-PLACED 6031ef5d jmp 0x6031efd0
+   6031ef62 5804           mov (0x4,sp),d0
+STACK-ACCESS 6031ef62 mov (0x4,sp),d0
+   6031ef64 5908           mov (0x8,sp),d1
+STACK-ACCESS 6031ef64 mov (0x8,sp),d1
+   6031ef66 5c0c           mov (0xc,sp),a0
+STACK-ACCESS 6031ef66 mov (0xc,sp),a0
+   6031ef68 5d10           mov (0x10,sp),a1
+STACK-ACCESS 6031ef68 mov (0x10,sp),a1
+   6031ef6a 5a2c           mov (0x2c,sp),d2
+STACK-ACCESS 6031ef6a mov (0x2c,sp),d2
+   6031ef6c 5b28           mov (0x28,sp),d3
+STACK-ACCESS 6031ef6c mov (0x28,sp),d3
+   6031ef6e 5e24           mov (0x24,sp),a2
+STACK-ACCESS 6031ef6e mov (0x24,sp),a2
+   6031ef70 5f20           mov (0x20,sp),a3
+STACK-ACCESS 6031ef70 mov (0x20,sp),a3
+   6031ef72 dde1a6d9000000 call 0x610b9653,[],0x0
+TARGET-STOCK-FUNCTION 6031ef72 call 0x610b9653,[],0x0
+   6031ef79 4204           mov d0,(0x4,sp)
+STACK-ACCESS 6031ef79 mov d0,(0x4,sp)
+   6031ef7b 4608           mov d1,(0x8,sp)
+STACK-ACCESS 6031ef7b mov d1,(0x8,sp)
+   6031ef7d 430c           mov a0,(0xc,sp)
+STACK-ACCESS 6031ef7d mov a0,(0xc,sp)
+   6031ef7f 4710           mov a1,(0x10,sp)
+STACK-ACCESS 6031ef7f mov a1,(0x10,sp)
+   6031ef81 fca434e931a0   mov (0xa031e934),d0
+ACCESS-STATE-UNCACHED-R 6031ef81 mov (0xa031e934),d0 addr=a031e934
+   6031ef87 dd9489d1fff018 call 0x6003791b,[d2,d3,a2,a3],0x18
+TARGET-STOCK-FUNCTION 6031ef87 call 0x6003791b,[d2,d3,a2,a3],0x18
+   6031ef8e dc42000000     jmp 0x6031efd0
+TARGET-PLACED 6031ef8e jmp 0x6031efd0
+   6031ef93 fca434e931a0   mov (0xa031e934),d0
+ACCESS-STATE-UNCACHED-R 6031ef93 mov (0xa031e934),d0 addr=a031e934
+   6031ef99 dd8289d1fff018 call 0x6003791b,[d2,d3,a2,a3],0x18
+TARGET-STOCK-FUNCTION 6031ef99 call 0x6003791b,[d2,d3,a2,a3],0x18
+   6031efa0 5804           mov (0x4,sp),d0
+STACK-ACCESS 6031efa0 mov (0x4,sp),d0
+   6031efa2 5908           mov (0x8,sp),d1
+STACK-ACCESS 6031efa2 mov (0x8,sp),d1
+   6031efa4 5c0c           mov (0xc,sp),a0
+STACK-ACCESS 6031efa4 mov (0xc,sp),a0
+   6031efa6 5d10           mov (0x10,sp),a1
+STACK-ACCESS 6031efa6 mov (0x10,sp),a1
+   6031efa8 5a2c           mov (0x2c,sp),d2
+STACK-ACCESS 6031efa8 mov (0x2c,sp),d2
+   6031efaa 5b28           mov (0x28,sp),d3
+STACK-ACCESS 6031efaa mov (0x28,sp),d3
+   6031efac 5e24           mov (0x24,sp),a2
+STACK-ACCESS 6031efac mov (0x24,sp),a2
+   6031efae 5f20           mov (0x20,sp),a3
+STACK-ACCESS 6031efae mov (0x20,sp),a3
+   6031efb0 dda3a6d9000000 call 0x610b9653,[],0x0
+TARGET-STOCK-FUNCTION 6031efb0 call 0x610b9653,[],0x0
+   6031efb7 4204           mov d0,(0x4,sp)
+STACK-ACCESS 6031efb7 mov d0,(0x4,sp)
+   6031efb9 4608           mov d1,(0x8,sp)
+STACK-ACCESS 6031efb9 mov d1,(0x8,sp)
+   6031efbb 430c           mov a0,(0xc,sp)
+STACK-ACCESS 6031efbb mov a0,(0xc,sp)
+   6031efbd 4710           mov a1,(0x10,sp)
+STACK-ACCESS 6031efbd mov a1,(0x10,sp)
+   6031efbf dc11000000     jmp 0x6031efd0
+TARGET-PLACED 6031efbf jmp 0x6031efd0
+   6031efc4 fccc09000000   mov 0x9,d0
+   6031efca fc8225e931a0   movbu d0,(0xa031e925)
+ACCESS-STATE-UNCACHED-W 6031efca movbu d0,(0xa031e925) addr=a031e925
+   6031efd0 5804           mov (0x4,sp),d0
+STACK-ACCESS 6031efd0 mov (0x4,sp),d0
+   6031efd2 5908           mov (0x8,sp),d1
+STACK-ACCESS 6031efd2 mov (0x8,sp),d1
+   6031efd4 5c0c           mov (0xc,sp),a0
+STACK-ACCESS 6031efd4 mov (0xc,sp),a0
+   6031efd6 5d10           mov (0x10,sp),a1
+STACK-ACCESS 6031efd6 mov (0x10,sp),a1
+   6031efd8 f8fe20         add 0x20,sp
+   6031efdb cef0           movm (sp),[d2,d3,a2,a3]
+   6031efdd df0000         ret [],0x0
+== ENSURE (task context, freed section-1 gap) 6031ead0 len=66 pinned=a3=a031e920@6031ead0
+   6031ead0 fcdf20e931a0   mov -0x5fce16e0,a3
+   6031ead6 f84311         movbu (0x11,a3),d0
+REL-KNOWN-STATE-UNCACHED-R 6031ead6 movbu (0x11,a3),d0 addr=a031e931
+   6031ead9 a001           cmp 0x1,d0
+   6031eadb c824           beq 0x6031eaff
+   6031eadd f8fef0         add -0x10,sp
+   6031eae0 8002           mov 0x2,d0
+   6031eae2 4204           mov d0,(0x4,sp)
+STACK-ACCESS 6031eae2 mov d0,(0x4,sp)
+   6031eae4 00             clr d0
+   6031eae5 4208           mov d0,(0x8,sp)
+STACK-ACCESS 6031eae5 mov d0,(0x8,sp)
+   6031eae7 3c             mov sp,a0
+   6031eae8 50             inc4 a0
+   6031eae9 dd701bd1ffa010 call 0x60030659,[d2,a2],0x10
+TARGET-STOCK-FUNCTION 6031eae9 call 0x60030659,[d2,a2],0x10
+   6031eaf0 f8fe10         add 0x10,sp
+   6031eaf3 a000           cmp 0x0,d0
+   6031eaf5 c30d           ble 0x6031eb02
+   6031eaf7 f81314         mov d0,(0x14,a3)
+REL-KNOWN-STATE-UNCACHED-W 6031eaf7 mov d0,(0x14,a3) addr=a031e934
+   6031eafa 8001           mov 0x1,d0
+   6031eafc f85311         movbu d0,(0x11,a3)
+REL-KNOWN-STATE-UNCACHED-W 6031eafc movbu d0,(0x11,a3) addr=a031e931
+   6031eaff dff014         ret [d2,d3,a2,a3],0x14
+   6031eb02 00             clr d0
+   6031eb03 f85306         movbu d0,(0x6,a3)
+REL-KNOWN-STATE-UNCACHED-W 6031eb03 movbu d0,(0x6,a3) addr=a031e926
+   6031eb06 f81314         mov d0,(0x14,a3)
+REL-KNOWN-STATE-UNCACHED-W 6031eb06 mov d0,(0x14,a3) addr=a031e934
+   6031eb09 8002           mov 0x2,d0
+   6031eb0b f85311         movbu d0,(0x11,a3)
+REL-KNOWN-STATE-UNCACHED-W 6031eb0b movbu d0,(0x11,a3) addr=a031e931
+   6031eb0e 00             clr d0
+   6031eb0f dff014         ret [d2,d3,a2,a3],0x14
+== installer v4 (interrupt context, freed section-1 gap) 6031eb12 len=105 pinned=a3=a031e920@6031eb14
+   6031eb12 cff0           movm [d2,d3,a2,a3],(sp)
+   6031eb14 fcdf20e931a0   mov -0x5fce16e0,a3
+   6031eb1a f81318         mov d0,(0x18,a3)
+REL-KNOWN-STATE-UNCACHED-W 6031eb1a mov d0,(0x18,a3) addr=a031e938
+   6031eb1d f83378         mov a0,(0x78,a3)
+REL-KNOWN-STATE-UNCACHED-W 6031eb1d mov a0,(0x78,a3) addr=a031e998
+   6031eb20 f8431c         movbu (0x1c,a3),d0
+REL-KNOWN-STATE-UNCACHED-R 6031eb20 movbu (0x1c,a3),d0 addr=a031e93c
+   6031eb23 a001           cmp 0x1,d0
+   6031eb25 c844           beq 0x6031eb69
+   6031eb27 fca490e52da3   mov (0xa32de590),d0
+ACCESS-LOADED-BITS-UNCACHED-R 6031eb27 mov (0xa32de590),d0 addr=a32de590
+   6031eb2d fce040000000   and 0x40,d0
+   6031eb33 c836           beq 0x6031eb69
+   6031eb35 fcded0877160   mov 0x607187d0,a2
+   6031eb3b 8f04           mov 0x4,d3
+   6031eb3d 7a             mov (a2),d2
+REL-KNOWN-INSTALLER-TABLE-R 6031eb3d mov (a2),d2 addr=607187d0
+   6031eb3e f1e8           mov d2,a0
+   6031eb40 70             mov (a0),d0
+REL-UNKNOWN-BASE 6031eb40 mov (a0),d0
+   6031eb41 f80a04         mov (0x4,a2),d2
+REL-KNOWN-INSTALLER-TABLE-R 6031eb41 mov (0x4,a2),d2 addr=607187d4
+   6031eb44 a8             cmp d2,d0
+   6031eb45 c808           beq 0x6031eb4d
+   6031eb47 f80a08         mov (0x8,a2),d2
+REL-UNKNOWN-BASE 6031eb47 mov (0x8,a2),d2
+   6031eb4a a8             cmp d2,d0
+   6031eb4b c91e           bne 0x6031eb69
+   6031eb4d 220c           add 0xc,a2
+   6031eb4f 2bff           add -0x1,d3
+   6031eb51 c9ec           bne 0x6031eb3d
+   6031eb53 22d0           add -0x30,a2
+   6031eb55 8f04           mov 0x4,d3
+   6031eb57 7a             mov (a2),d2
+REL-UNKNOWN-BASE 6031eb57 mov (a2),d2
+   6031eb58 f1e8           mov d2,a0
+   6031eb5a f80a08         mov (0x8,a2),d2
+REL-UNKNOWN-BASE 6031eb5a mov (0x8,a2),d2
+   6031eb5d 68             mov d2,(a0)
+REL-UNKNOWN-BASE 6031eb5d mov d2,(a0)
+   6031eb5e 220c           add 0xc,a2
+   6031eb60 2bff           add -0x1,d3
+   6031eb62 c9f5           bne 0x6031eb57
+   6031eb64 8001           mov 0x1,d0
+   6031eb66 f8531c         movbu d0,(0x1c,a3)
+REL-KNOWN-STATE-UNCACHED-W 6031eb66 movbu d0,(0x1c,a3) addr=a031e93c
+   6031eb69 f80318         mov (0x18,a3),d0
+REL-KNOWN-STATE-UNCACHED-R 6031eb69 mov (0x18,a3),d0 addr=a031e938
+   6031eb6c f82378         mov (0x78,a3),a0
+REL-KNOWN-STATE-UNCACHED-R 6031eb6c mov (0x78,a3),a0 addr=a031e998
+   6031eb6f cef0           movm (sp),[d2,d3,a2,a3]
+   6031eb71 cf20           movm [a2],(sp)
+   6031eb73 f8fef8         add -0x8,sp
+   6031eb76 dc8bbae5ff     jmp 0x6017a601
+TARGET-HOOK-RESUME 6031eb76 jmp 0x6017a601
+== hook (key-port callback prologue) 6017a5fc len=5 pinned=-
+   6017a5fc dc16451a00     jmp 0x6031eb12
+TARGET-PLACED 6017a5fc jmp 0x6031eb12
+== patched stock accessor 609b3bb2 len=9 pinned=-
+   609b3bb2 dc98ba0d00     jmp 0x60a8f64a
+TARGET-PLACED 609b3bb2 jmp 0x60a8f64a
+   609b3bb7 a3             cmp d0,d3
+   609b3bb8 a001           cmp 0x1,d0
+   609b3bba c907           bne 0x609b3bc1
+SPANS-BLOCK-END 609b3bba bne 0x609b3bc1
+== patched stock entry 603cedfe len=5 pinned=-
+   603cedfe dca6993400     jmp 0x607187a4
+TARGET-PLACED 603cedfe jmp 0x607187a4
+== installer table 607187d0 (section 2, read-only data, 48 B)
+   entry 0 field=6131bd5c stock=610b9197 wrapper=6031eb80 current=6031eb80
+TABLE-FIELD-SECTION7-CACHED-W entry 0 6131bd5c (installer store, core 0)
+   entry 1 field=6131bd6c stock=610b96f0 wrapper=6031ec98 current=6031ec98
+TABLE-FIELD-SECTION7-CACHED-W entry 1 6131bd6c (installer store, core 0)
+   entry 2 field=6131c29c stock=610b962a wrapper=6031edb0 current=6031edb0
+TABLE-FIELD-SECTION7-CACHED-W entry 2 6131c29c (installer store, core 0)
+   entry 3 field=6131c2ac stock=610b9653 wrapper=6031eec8 current=6031eec8
+TABLE-FIELD-SECTION7-CACHED-W entry 3 6131c2ac (installer store, core 0)

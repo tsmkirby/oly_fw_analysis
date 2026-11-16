@@ -1,0 +1,27 @@
+{
+  "probe": "OM3Bank7BootProbe",
+  "input_cpu_base": "0x60021020",
+  "scope": "Synthetic RAM area images and descriptor, stock bank-7 boot branch; diagnostics/registry rebuild modeled, bounded multiply inherited; no camera or flash I/O.",
+  "sha256": {
+    "analysis/decoded/00_0100_50000020.decoded.bin": "5e8d376e9111a44ac0352f26030d7c1b17026d42c45f3600cfa02a0e8c5b7d59",
+    "tooling/ghidra_12.2_PUBLIC/Ghidra/Extensions/MN10300/data/languages/mn103_base.sinc": "b955295524a6bdebb030e127d91296033d38aa22eeab4be3ac99a9bda2c76404",
+    "tooling/ghidra_12.2_PUBLIC/Ghidra/Extensions/MN10300/data/languages/mn103_mn10300.sla": "0892f3c043037685a90495fb98a6d8916359da3be113640906b25dfcd4538bb0",
+    "analysis/button-af/readiness/bank7-boot1/outcome.txt": "bd33393c5d09f8dd1d51c4131343fd3841570a8c2f852b3727e740267a92364c",
+    "analysis/button-af/readiness/bank7-boot1/results.txt": "f8f8e6b6993831e7a50297c5208f3c17e223022c5f621911e7aab923d6ab1e24",
+    "analysis/button-af/readiness/bank7-boot1/run.log": "da61f2229abaa91bd75c11cb91782a1f47487cd321b09509b59914f173cb6910",
+    "analysis/button-af/readiness/bank7-boot1/source-snapshot/OM3Bank7BootProbe.java": "ef9f21766f9ccab40455d7803061b97b47749c14b461263c69e612bea95826d5",
+    "analysis/button-af/readiness/bank7-boot1/source-snapshot/OM3FullShooting.java": "1246ace459309dccb0f251e3f8e6c85e6c71271c5c5fecfbbd9e68a947833407",
+    "analysis/button-af/readiness/bank7-boot1/source-snapshot/OM3GuardedAccessor.java": "e000865a9b5200a2b355e702cf2549979772eaa0cd62b45657e01d606b0f5147",
+    "analysis/button-af/readiness/bank7-boot1/source-snapshot/OM3GuardedResident.java": "ba1c4256dddda26ee6c141dd1774e189df75285fe6dea58c7dc0f6e2fbf6c80a",
+    "analysis/button-af/readiness/bank7-boot1/source-snapshot/OM3NativeFaults.java": "c994f79d560aae71b325c05b7fca6c26f929ab521411d02fa398747fd288c81e",
+    "analysis/button-af/readiness/bank7-boot1/source-snapshot/OM3NativeFlow.java": "4c1e76e9153494669b817fd7923ddeeaa4c170f91e2bf22178167bbde6d6d2d9",
+    "analysis/button-af/readiness/bank7-boot1/source-snapshot/OM3NativeHooks.java": "cd212c249340092f26ec8a7d1e1c5933ed9b8cf4f110a7e30bbf05f0b2ac0ed8",
+    "analysis/button-af/readiness/bank7-boot1/source-snapshot/OM3NativeLifecycle.java": "e7d15a9534f43bd0f3b5829e08336f698d05d3c4a3f145fabccc4a6ce6da62d1",
+    "analysis/button-af/readiness/bank7-boot1/source-snapshot/OM3NativeProfiles.java": "bfeca1d7ad2a965aa2d3507265a94ced94cfcfa4e57faf07b41b8316c398e58d",
+    "analysis/button-af/readiness/bank7-boot1/source-snapshot/OM3NativeQueue.java": "27460aa318d21b2e62dada1972baaea7bc99d838676e6f9a637b5f9cf81413ab",
+    "analysis/button-af/readiness/bank7-boot1/source-snapshot/OM3PackedRelocation.java": "ba9066bd53a97990c0c8d0473e805c766e9164cb44df82e2b23b4ec1598e67c9",
+    "analysis/button-af/readiness/bank7-boot1/source-snapshot/OM3ResidentProof.java": "9a1af27abd864111ff47b427a1fe210d3c211909983df2e62c0386e055bb16c7",
+    "analysis/button-af/readiness/bank7-boot1/source-snapshot/OM3RevisedProfiles.java": "501fd36b0945c24e71be16da1395abded4248c2d02cdb3848a63171842afb557",
+    "analysis/button-af/readiness/bank7-boot1/source-snapshot/OM3RevisionCoverage.java": "c931ee96b70307994681e6a9d86f340970c71fa7c21004f82d17a4b6ebd601b8"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "probe_sha256": "30613d9c93f4360627d3de71c35bc5e1f4608b356ba7c572815d94630ca50a93",
+  "archived_sha256": "8843e4c2f758b4a148ab37927701bbd07f54fa4b35600bc6ddd3f9afa4368cec",
+  "candidate_sha256": "f523b903b6a6355a51a2162fc4868790dab935f16426699b7270ac52a7936859",
+  "controls": {
+    "stock.jsonl": {
+      "trace": "stock.jsonl",
+      "sha256": "53404df683b67a038811a42b8ff106bc35edf2d4249894b754a0af88919b3cfd",
+      "issues": []
+    },
+    "archived.jsonl": {
+      "trace": "archived.jsonl",
+      "sha256": "847dff31f6cf5c0da3f50cc01cfcc2c028f907b92cee7da87e0c6273d7bbde18",
+      "issues": []
+    },
+    "candidate.jsonl": {
+      "trace": "candidate.jsonl",
+      "sha256": "0194c43a2bd3def6afbe852852426a9c52da6302a40a490033a33ddedf833078",
+      "issues": []
+    }
+  },
+  "stock_fallback": {
+    "tested_edges": 4,
+    "passed": true,
+    "issues": []
+  },
+  "profile_handoff": [],
+  "menu_and_persistence": "outside this runner; requires the independent AF-ON zone editor and storage"
+}

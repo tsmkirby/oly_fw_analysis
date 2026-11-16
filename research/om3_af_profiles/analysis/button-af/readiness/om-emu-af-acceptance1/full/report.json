@@ -1,0 +1,286 @@
+{
+  "probe_sha256": "30613d9c93f4360627d3de71c35bc5e1f4608b356ba7c572815d94630ca50a93",
+  "archived_sha256": "8843e4c2f758b4a148ab37927701bbd07f54fa4b35600bc6ddd3f9afa4368cec",
+  "candidate_sha256": "f523b903b6a6355a51a2162fc4868790dab935f16426699b7270ac52a7936859",
+  "controls": {
+    "stock.jsonl": {
+      "trace": "stock.jsonl",
+      "sha256": "735cac3d0a94e89d1f041e9ac468faf8b4a53d42e9e81ccb50a6becd6d739123",
+      "issues": []
+    },
+    "archived.jsonl": {
+      "trace": "archived.jsonl",
+      "sha256": "d430336cbfcc14c343b30982e6a224785aea51a2a0438e05bcfed9c86a30c8d6",
+      "issues": []
+    },
+    "candidate.jsonl": {
+      "trace": "candidate.jsonl",
+      "sha256": "18eed49d76478e1439ae32b13e9c458b35047952ff0c93d8c0fe5b62e7a9a14e",
+      "issues": []
+    }
+  },
+  "stock_fallback": {
+    "tested_edges": 4,
+    "passed": false,
+    "issues": [
+      "s1:down did not unlock before entering the stock handler: ['stock-half-down', 'unlock']",
+      "s1:up did not unlock before entering the stock handler: ['stock-half-up', 'unlock']",
+      "s1:down did not unlock before entering the stock handler: ['stock-half-down', 'unlock']",
+      "s1:up did not unlock before entering the stock handler: ['stock-half-up', 'unlock']"
+    ]
+  },
+  "profile_handoff": [
+    {
+      "trace": "focus-0-subject-0.jsonl",
+      "sha256": "18eed49d76478e1439ae32b13e9c458b35047952ff0c93d8c0fe5b62e7a9a14e",
+      "issues": [
+        "AF consumer target record is uninitialized",
+        "afon:down owner/status 255/0, wanted 2/0",
+        "afon:down owner/status 255/1, wanted 2/0",
+        "afon:up owner/status 255/0, wanted 0/0",
+        "afon:up owner/status 255/1, wanted 0/0",
+        "afon:up owner/status 255/1, wanted 1/0",
+        "both buttons left the same AF consumer target record",
+        "no observed native AF worker start through queues 95 and 94",
+        "s1:down owner/status 255/0, wanted 1/0",
+        "s1:down owner/status 255/1, wanted 1/0",
+        "s1:down owner/status 255/1, wanted 2/0",
+        "s1:up owner/status 255/0, wanted 0/0",
+        "s1:up owner/status 255/1, wanted 0/0",
+        "s1:up owner/status 255/1, wanted 2/0"
+      ],
+      "focus": 0,
+      "subject": 0,
+      "passed": false
+    },
+    {
+      "trace": "focus-0-subject-1.jsonl",
+      "sha256": "4047ef5cf138737052bcf3640ae2267bbe3f62a59d9d2e1670c3749b26102c15",
+      "issues": [
+        "AF consumer target record is uninitialized",
+        "afon:down owner/status 255/0, wanted 2/0",
+        "afon:down owner/status 255/1, wanted 2/0",
+        "afon:up owner/status 255/0, wanted 0/0",
+        "afon:up owner/status 255/1, wanted 0/0",
+        "afon:up owner/status 255/1, wanted 1/0",
+        "both buttons left the same AF consumer target record",
+        "effective Subject Detect disagrees with the active button",
+        "no observed native AF worker start through queues 95 and 94",
+        "s1:down owner/status 255/0, wanted 1/0",
+        "s1:down owner/status 255/1, wanted 1/0",
+        "s1:down owner/status 255/1, wanted 2/0",
+        "s1:up owner/status 255/0, wanted 0/0",
+        "s1:up owner/status 255/1, wanted 0/0",
+        "s1:up owner/status 255/1, wanted 2/0"
+      ],
+      "focus": 0,
+      "subject": 1,
+      "passed": false
+    },
+    {
+      "trace": "focus-0-subject-2.jsonl",
+      "sha256": "9572a975b2b33e4462856232df9b799fbb9032af4d35d34666d77912766191e5",
+      "issues": [
+        "AF consumer target record is uninitialized",
+        "afon:down owner/status 255/0, wanted 2/0",
+        "afon:down owner/status 255/1, wanted 2/0",
+        "afon:up owner/status 255/0, wanted 0/0",
+        "afon:up owner/status 255/1, wanted 0/0",
+        "afon:up owner/status 255/1, wanted 1/0",
+        "both buttons left the same AF consumer target record",
+        "effective Subject Detect disagrees with the active button",
+        "no observed native AF worker start through queues 95 and 94",
+        "s1:down owner/status 255/0, wanted 1/0",
+        "s1:down owner/status 255/1, wanted 1/0",
+        "s1:down owner/status 255/1, wanted 2/0",
+        "s1:up owner/status 255/0, wanted 0/0",
+        "s1:up owner/status 255/1, wanted 0/0",
+        "s1:up owner/status 255/1, wanted 2/0"
+      ],
+      "focus": 0,
+      "subject": 2,
+      "passed": false
+    },
+    {
+      "trace": "focus-0-subject-3.jsonl",
+      "sha256": "75cd730de082702b8fadc035f7f036e703897c595a22927ed4639b2ea80aff15",
+      "issues": [
+        "AF consumer target record is uninitialized",
+        "afon:down owner/status 255/0, wanted 2/0",
+        "afon:down owner/status 255/1, wanted 2/0",
+        "afon:up owner/status 255/0, wanted 0/0",
+        "afon:up owner/status 255/1, wanted 0/0",
+        "afon:up owner/status 255/1, wanted 1/0",
+        "both buttons left the same AF consumer target record",
+        "effective Subject Detect disagrees with the active button",
+        "no observed native AF worker start through queues 95 and 94",
+        "s1:down owner/status 255/0, wanted 1/0",
+        "s1:down owner/status 255/1, wanted 1/0",
+        "s1:down owner/status 255/1, wanted 2/0",
+        "s1:up owner/status 255/0, wanted 0/0",
+        "s1:up owner/status 255/1, wanted 0/0",
+        "s1:up owner/status 255/1, wanted 2/0"
+      ],
+      "focus": 0,
+      "subject": 3,
+      "passed": false
+    },
+    {
+      "trace": "focus-0-subject-4.jsonl",
+      "sha256": "801a4feb352c5a0e4b34d307f264cefb464ac63da00f01933faf60491a1b563e",
+      "issues": [
+        "AF consumer target record is uninitialized",
+        "afon:down owner/status 255/0, wanted 2/0",
+        "afon:down owner/status 255/1, wanted 2/0",
+        "afon:up owner/status 255/0, wanted 0/0",
+        "afon:up owner/status 255/1, wanted 0/0",
+        "afon:up owner/status 255/1, wanted 1/0",
+        "both buttons left the same AF consumer target record",
+        "effective Subject Detect disagrees with the active button",
+        "no observed native AF worker start through queues 95 and 94",
+        "s1:down owner/status 255/0, wanted 1/0",
+        "s1:down owner/status 255/1, wanted 1/0",
+        "s1:down owner/status 255/1, wanted 2/0",
+        "s1:up owner/status 255/0, wanted 0/0",
+        "s1:up owner/status 255/1, wanted 0/0",
+        "s1:up owner/status 255/1, wanted 2/0"
+      ],
+      "focus": 0,
+      "subject": 4,
+      "passed": false
+    },
+    {
+      "trace": "focus-0-subject-5.jsonl",
+      "sha256": "70aba6de75018b0b18dcdc83e46e429b261c08171c1059776c4692ba58b8228b",
+      "issues": [
+        "AF consumer target record is uninitialized",
+        "afon:down owner/status 255/0, wanted 2/0",
+        "afon:down owner/status 255/1, wanted 2/0",
+        "afon:up owner/status 255/0, wanted 0/0",
+        "afon:up owner/status 255/1, wanted 0/0",
+        "afon:up owner/status 255/1, wanted 1/0",
+        "both buttons left the same AF consumer target record",
+        "effective Subject Detect disagrees with the active button",
+        "no observed native AF worker start through queues 95 and 94",
+        "s1:down owner/status 255/0, wanted 1/0",
+        "s1:down owner/status 255/1, wanted 1/0",
+        "s1:down owner/status 255/1, wanted 2/0",
+        "s1:up owner/status 255/0, wanted 0/0",
+        "s1:up owner/status 255/1, wanted 0/0",
+        "s1:up owner/status 255/1, wanted 2/0"
+      ],
+      "focus": 0,
+      "subject": 5,
+      "passed": false
+    },
+    {
+      "trace": "focus-0-subject-6.jsonl",
+      "sha256": "8df18c64993ffd1ca139db4eb5a8d761cd507d7503cc23921b9641882992b6a1",
+      "issues": [
+        "AF consumer target record is uninitialized",
+        "afon:down owner/status 255/0, wanted 2/0",
+        "afon:down owner/status 255/1, wanted 2/0",
+        "afon:up owner/status 255/0, wanted 0/0",
+        "afon:up owner/status 255/1, wanted 0/0",
+        "afon:up owner/status 255/1, wanted 1/0",
+        "both buttons left the same AF consumer target record",
+        "effective Subject Detect disagrees with the active button",
+        "no observed native AF worker start through queues 95 and 94",
+        "s1:down owner/status 255/0, wanted 1/0",
+        "s1:down owner/status 255/1, wanted 1/0",
+        "s1:down owner/status 255/1, wanted 2/0",
+        "s1:up owner/status 255/0, wanted 0/0",
+        "s1:up owner/status 255/1, wanted 0/0",
+        "s1:up owner/status 255/1, wanted 2/0"
+      ],
+      "focus": 0,
+      "subject": 6,
+      "passed": false
+    },
+    {
+      "trace": "focus-1-subject-0.jsonl",
+      "sha256": "721902e2a8546cd80d71c8e5032cc45366e1660e156dbc7c3fc3da5f46f01bc5",
+      "issues": [
+        "FirmwareError: stopped at 0x603f17f1 (disasm 0x503d07d1) fault=3: om-emu: scpu command 0x20041001 pc 0x60070b3e #1 (reg0 0x00000000 e8 0x00000000 ec 0x00000000)",
+        "expected 12 ordered player edges, got 0",
+        "configuration or player failed before the first button edge"
+      ],
+      "focus": 1,
+      "subject": 0,
+      "passed": false
+    },
+    {
+      "trace": "focus-1-subject-1.jsonl",
+      "sha256": "721902e2a8546cd80d71c8e5032cc45366e1660e156dbc7c3fc3da5f46f01bc5",
+      "issues": [
+        "FirmwareError: stopped at 0x603f17f1 (disasm 0x503d07d1) fault=3: om-emu: scpu command 0x20041001 pc 0x60070b3e #1 (reg0 0x00000000 e8 0x00000000 ec 0x00000000)",
+        "expected 12 ordered player edges, got 0",
+        "configuration or player failed before the first button edge"
+      ],
+      "focus": 1,
+      "subject": 1,
+      "passed": false
+    },
+    {
+      "trace": "focus-1-subject-2.jsonl",
+      "sha256": "721902e2a8546cd80d71c8e5032cc45366e1660e156dbc7c3fc3da5f46f01bc5",
+      "issues": [
+        "FirmwareError: stopped at 0x603f17f1 (disasm 0x503d07d1) fault=3: om-emu: scpu command 0x20041001 pc 0x60070b3e #1 (reg0 0x00000000 e8 0x00000000 ec 0x00000000)",
+        "expected 12 ordered player edges, got 0",
+        "configuration or player failed before the first button edge"
+      ],
+      "focus": 1,
+      "subject": 2,
+      "passed": false
+    },
+    {
+      "trace": "focus-1-subject-3.jsonl",
+      "sha256": "721902e2a8546cd80d71c8e5032cc45366e1660e156dbc7c3fc3da5f46f01bc5",
+      "issues": [
+        "FirmwareError: stopped at 0x603f17f1 (disasm 0x503d07d1) fault=3: om-emu: scpu command 0x20041001 pc 0x60070b3e #1 (reg0 0x00000000 e8 0x00000000 ec 0x00000000)",
+        "expected 12 ordered player edges, got 0",
+        "configuration or player failed before the first button edge"
+      ],
+      "focus": 1,
+      "subject": 3,
+      "passed": false
+    },
+    {
+      "trace": "focus-1-subject-4.jsonl",
+      "sha256": "721902e2a8546cd80d71c8e5032cc45366e1660e156dbc7c3fc3da5f46f01bc5",
+      "issues": [
+        "FirmwareError: stopped at 0x603f17f1 (disasm 0x503d07d1) fault=3: om-emu: scpu command 0x20041001 pc 0x60070b3e #1 (reg0 0x00000000 e8 0x00000000 ec 0x00000000)",
+        "expected 12 ordered player edges, got 0",
+        "configuration or player failed before the first button edge"
+      ],
+      "focus": 1,
+      "subject": 4,
+      "passed": false
+    },
+    {
+      "trace": "focus-1-subject-5.jsonl",
+      "sha256": "721902e2a8546cd80d71c8e5032cc45366e1660e156dbc7c3fc3da5f46f01bc5",
+      "issues": [
+        "FirmwareError: stopped at 0x603f17f1 (disasm 0x503d07d1) fault=3: om-emu: scpu command 0x20041001 pc 0x60070b3e #1 (reg0 0x00000000 e8 0x00000000 ec 0x00000000)",
+        "expected 12 ordered player edges, got 0",
+        "configuration or player failed before the first button edge"
+      ],
+      "focus": 1,
+      "subject": 5,
+      "passed": false
+    },
+    {
+      "trace": "focus-1-subject-6.jsonl",
+      "sha256": "721902e2a8546cd80d71c8e5032cc45366e1660e156dbc7c3fc3da5f46f01bc5",
+      "issues": [
+        "FirmwareError: stopped at 0x603f17f1 (disasm 0x503d07d1) fault=3: om-emu: scpu command 0x20041001 pc 0x60070b3e #1 (reg0 0x00000000 e8 0x00000000 ec 0x00000000)",
+        "expected 12 ordered player edges, got 0",
+        "configuration or player failed before the first button edge"
+      ],
+      "focus": 1,
+      "subject": 6,
+      "passed": false
+    }
+  ],
+  "menu_and_persistence": "outside this runner; requires the independent AF-ON zone editor and storage"
+}

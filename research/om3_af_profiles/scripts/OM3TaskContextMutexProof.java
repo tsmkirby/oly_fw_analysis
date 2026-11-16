@@ -22,15 +22,37 @@ import java.util.*;
 public class OM3TaskContextMutexProof extends OM3LiveAccessAudit {
  static final long ENSURE=GAP;
  boolean inInterrupt=false;int ectx=0,taskCreates=0,ensureLen=0,v4Len=0;
+ static class WrapperAsm extends Asm {
+  final Map<Integer,String> shortBranches=new LinkedHashMap<>();
+  void branch(int opcode,String target){
+   shortBranches.put(b.size(),target);
+   x(opcode,0);
+  }
+  @Override byte[] finish()throws Exception {
+   byte[] result=super.finish();
+   for(var branch:shortBranches.entrySet()){
+    int origin=branch.getKey();
+    Integer target=labels.get(branch.getValue());
+    if(target==null||target-origin < -128||target-origin > 127)
+     throw new Exception("Wrapper branch out of range: "+branch.getValue());
+    result[origin+1]=(byte)(target-origin);
+   }
+   return result;
+  }
+ }
  // ---- wrapper: as OM3SerializedProfiles.wrapper, with the S+17 test replaced by a call to ENSURE
  @Override byte[] wrapper(long address,long event,long original)throws Exception {
-  Asm a=new Asm();a.x(0xcf,0xf0,0xf8,0xfe,0xe0);volatileStore(a);
+  WrapperAsm a=new WrapperAsm();a.x(0xcf,0xf0,0xf8,0xfe,0xe0);volatileStore(a);
   a.load8(S+6);a.x(0xa0,1);a.ne("stock");callAt(a,address,ENSURE,0xf0,0x14);a.x(0xa0,1);a.ne("stock");
   load32(a,S+20);callAt(a,address,0x60032312L,0xf0,0x14);a.x(0xa0,0);a.ne("reject");a.imm(2,16);
-  a.label("retry");a.imm(0,event);callAt(a,address,RECONCILE,0,0);a.load8(S+5);a.x(0xa0,0);a.eq("original");a.x(0xa0,4);a.ne("unlockReject");
-  a.x(0x2a,0xff,0xaa,0);a.eq("exhausted");a.imm(0,1);callAt(a,address,0x60031581L,0xb0,0x10);a.jump("retry");
+  a.label("retry");a.imm(0,event);callAt(a,address,RECONCILE,0,0);a.load8(S+5);a.x(0xa0,0);a.branch(0xc8,"original");
+  // Status 1 rejects the transition before publishing a target. Release the
+  // feature mutex and deliver the button edge to the stock handler.
+  a.x(0xa0,1);a.branch(0xc8,"unlockStock");a.x(0xa0,4);a.branch(0xc9,"unlockReject");
+  a.x(0x2a,0xff,0xaa,0);a.branch(0xc8,"exhausted");a.imm(0,1);callAt(a,address,0x60031581L,0xb0,0x10);a.branch(0xca,"retry");
   a.label("exhausted");a.imm(0,8);a.store8(S+5);a.label("unlockReject");load32(a,S+20);callAt(a,address,0x6003791bL,0xf0,0x18);a.jump("returnInputs");
   a.label("original");inputs(a);callAt(a,address,original,0,0);volatileStore(a);load32(a,S+20);callAt(a,address,0x6003791bL,0xf0,0x18);a.jump("returnInputs");
+  a.label("unlockStock");load32(a,S+20);callAt(a,address,0x6003791bL,0xf0,0x18);
   a.label("stock");inputs(a);callAt(a,address,original,0,0);volatileStore(a);a.jump("returnInputs");
   a.label("reject");a.imm(0,9);a.store8(S+5);a.label("returnInputs");volatileRestore(a);a.x(0xf8,0xfe,0x20,0xce,0xf0,0xdf,0,0);return a.finish();
  }

@@ -1,0 +1,74 @@
+MODEL:per-emulator-capture-state-reset
+STATE12-ENTER:router=62b7315c state=12 active=00000000 requested=62b76000 msg=7002b050 vtable=60e6fc58 isA=60bbbbed body=58fce6601b000000010000000000000000000000000000005c31b76200000000 task=caller
+STATE12-ISA:type=0x17 result=00000000
+STATE12-ISA:type=0x1b result=00000001
+STATE12-PATH:activate-requested-backend(60db3d96)
+STATE12-RETURN:D0=00000001
+AF-TASK-SEND:mbf=1029 size=12 pc=6004d211 task=caller bytes=000000000100000038ff0470
+AF-TASK-RECEIVE-ATTEMPT:mbf=1029 timeout=ffffffff pending=1 task=caller
+AF-TASK-SEND:mbf=1030 size=12 pc=6004d211 task=caller bytes=010000000100000034ff0470
+AF-TASK-RECEIVE-ATTEMPT:mbf=1030 timeout=ffffffff pending=1 task=caller
+AF-TASK-RECEIVE-ATTEMPT:mbf=1031 timeout=ffffffff pending=0 task=caller
+AF-TASK-SEND:mbf=1031 size=12 pc=6004d211 task=caller bytes=feff0000010000008cfe0470
+AF-TASK-SEND:mbf=95 size=16 pc=6004d211 task=caller bytes=unprovided
+MODEL:first-persistent-AF-task-entry queue=95
+AF-TASK-RECEIVE-ATTEMPT:mbf=95 timeout=ffffffff pending=1 task=95
+AF-CMD-DISPATCH:command=1d handler=603c641a request=0b040000010000001d0000004c70a962
+AF-CMD-COMMON-REPLY:D0=00000000 D1=00000000 A0=700fbfd4 A1=62a690d8
+AF-TASK-SEND:mbf=1035 size=12 pc=6004d211 task=95 bytes=00000f70010000004c70a962
+MODEL:stock-task-idle-on-own-queue:95
+MODEL:persistent-AF-task-idle queue=95
+AF-TASK-RECEIVE-ATTEMPT:mbf=1035 timeout=ffffffff pending=1 task=caller
+MODEL:memcpy-zero-length-no-op pc=60b2e818 dst=7003d8b0 src=70010b30
+MODEL:memcpy-zero-length-no-op pc=60b2e818 dst=7003dcd0 src=70010b30
+STATE12-ENTER:router=62b761f0 state=12 active=00000000 requested=62b71778 msg=7003e0d0 vtable=60e6fc58 isA=60bbbbed body=58fce6601b00000001000000000000000000000000000000f061b76200000000 task=caller
+STATE12-ISA:type=0x17 result=00000000
+STATE12-ISA:type=0x1b result=00000001
+STATE12-PATH:activate-requested-backend(60db3d96)
+STATE12-RETURN:D0=00000001
+STATE12-ENTER:router=62b75e5c state=12 active=00000000 requested=62b7637c msg=7003e180 vtable=60e6fc58 isA=60bbbbed body=58fce6601b000000010000000000000000000000000000005c5eb76200000000 task=caller
+STATE12-ISA:type=0x17 result=00000000
+STATE12-ISA:type=0x1b result=00000001
+STATE12-PATH:activate-requested-backend(60db3d96)
+STATE12-RETURN:D0=00000001
+AF-TASK-SEND:mbf=94 size=16 pc=6004d211 task=caller bytes=unprovided
+MODEL:first-persistent-AF-task-entry queue=94
+AF-TASK-RECEIVE-ATTEMPT:mbf=94 timeout=ffffffff pending=1 task=94
+AF-TASK-SEND:mbf=1036 size=12 pc=6004d211 task=94 bytes=000000000100000000000000
+MODEL:stock-task-idle-on-own-queue:94
+MODEL:persistent-AF-task-idle queue=94
+AF-TASK-RECEIVE-ATTEMPT:mbf=1036 timeout=ffffffff pending=1 task=caller
+AF-TASK-SEND:mbf=94 size=16 pc=6004d211 task=caller bytes=unprovided
+MODEL:resume-persistent-AF-task queue=94
+AF-TASK-RECEIVE-ATTEMPT:mbf=94 timeout=ffffffff pending=1 task=94
+AF-TASK-SEND:mbf=1037 size=12 pc=6004d211 task=94 bytes=00003fa30100000000000000
+MODEL:stock-task-idle-on-own-queue:94
+MODEL:persistent-AF-task-idle queue=94
+AF-TASK-RECEIVE-ATTEMPT:mbf=1037 timeout=ffffffff pending=1 task=caller
+AF-TASK-SEND:mbf=95 size=16 pc=6004d211 task=caller bytes=06000000000001f02a00000020030270
+MODEL:message-buffer-poll-timeout:id=6
+MODEL:resume-persistent-AF-task queue=95
+AF-TASK-RECEIVE-ATTEMPT:mbf=95 timeout=ffffffff pending=1 task=95
+AF-CMD-DISPATCH:command=2a handler=603c86d7 request=06000000000001f02a00000020030270
+AF-TASK-SEND:mbf=94 size=16 pc=6004d211 task=95 bytes=630000000000080000010000dcbe0f70
+MODEL:resume-persistent-AF-task queue=94
+AF-TASK-RECEIVE-ATTEMPT:mbf=94 timeout=ffffffff pending=1 task=94
+MODEL:first-persistent-AF-task-entry queue=92
+MODEL:stock-task-idle-on-own-queue:92
+MODEL:persistent-AF-task-idle queue=92
+MODEL:persistent-AF-task-idle queue=94
+MODEL:resume-persistent-AF-task queue=94
+AF-TASK-SEND:mbf=99 size=12 pc=6004d211 task=94 bytes=00003fa300000800dcbe0f70
+MODEL:stock-task-idle-on-own-queue:94
+MODEL:persistent-AF-task-idle queue=94
+AF-TASK-RECEIVE-ATTEMPT:mbf=99 timeout=ffffffff pending=1 task=95
+AF-CMD-COMMON-REPLY:D0=00000000 D1=00000000 A0=700fbfd4 A1=62a69118
+MODEL:stock-task-idle-on-own-queue:95
+MODEL:persistent-AF-task-idle queue=95
+MODEL:message-buffer-poll-timeout:id=6
+MODEL:message-buffer-poll-timeout:id=6
+MODEL:message-buffer-poll-timeout:id=6
+MODEL:message-buffer-poll-timeout:id=6
+MODEL:message-buffer-poll-timeout:id=6
+MODEL:message-buffer-poll-timeout:id=6
+MODEL:message-buffer-poll-timeout:id=6
