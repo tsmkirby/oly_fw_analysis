@@ -6,7 +6,7 @@ User requirement, clarified 31 October 2026: reuse the camera's existing AF targ
 
 The owner revised the requirement:
 
-- **The main problem is the AF area, not Subject Detect.** The owner believes one of the stock AF-ON operation settings already disregards Subject Detect. This is unverified: confirm it in hardware stage 2 (log section G2) and statically. If confirmed, the feature should rely on that stock setting rather than bypass detection itself.
+- **The main problem is the AF area, not Subject Detect.** **Confirmed by the owner on the stock camera (17 November 2026):** under **Menu > AF > 2. AF > AF Button**, AF-ON set to "Always tracks focus on the selected AF Target Point" disregards Subject Detect. The other option tracks a subject detected at the selected AF target point. The feature relies on this stock setting and adds no Subject Detect bypass of its own. The remaining problem is the independent AF-ON AF zone. Details: [AFON-MENU-RESEARCH.md](AFON-MENU-RESEARCH.md#stock-per-button-subject-detect-setting-likely-answer-to-the-owners-belief).
 - **A new menu option, not AF Home.** Add an **AF-ON AF zone** option to the menu that sets the operation of shutter half-press and AF-ON (the AEL/AFL operation setting). AF-ON then has a fully independent target profile: zone type, size and position, with the same choices the stock AF target control offers.
 - **No sharing with AF Home.** AF Home keeps its stock meaning and settings. The AF-ON profile must not read or write the AF Home settings.
 

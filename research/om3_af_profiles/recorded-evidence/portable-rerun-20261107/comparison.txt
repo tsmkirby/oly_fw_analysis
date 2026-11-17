@@ -1,0 +1,11 @@
+Comparison of the untracked portable-run copy with C:\Dev\OM3-research, 17 Nov 2026
+files: 90  SAME: 82  UNIQUE: 5  DIFFERENT: 3
+
+DIFFERENT  analysis/button-af/readiness/live-component/full-component-results.txt  -- one PASS line, timing 82.87 s; the workspace file accumulates five earlier PASS lines
+DIFFERENT  analysis/button-af/readiness/live-evidence-manifest.json  -- run identity, time and script list differ
+UNIQUE     analysis/button-af/readiness/live-runs/20261107-120222-858670/evidence-manifest.json
+UNIQUE     analysis/button-af/readiness/live-runs/20261107-120222-858670/phase-one.log
+UNIQUE     analysis/button-af/readiness/live-runs/20261107-120222-858670/phase-two.log
+UNIQUE     analysis/button-af/readiness/live-runs/20261107-120222-858670/source-hashes-before.json
+UNIQUE     analysis/button-af/readiness/live-runs/20261107-120222-858670/transport.log
+DIFFERENT  reference/tools/oly_container.py  -- line endings only (CR-stripped content identical)

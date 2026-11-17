@@ -38,11 +38,29 @@ They share one storage record. Its descriptor at `0x6062132c`/`0x60621340`
 gives 2 bytes, 1 byte per element, data `0x606190b7`. "RELEASE" is presumably
 the shutter button and "CUSTOM_SW" a custom (assigned) button such as AF-ON.
 That fits the owner's statement that a stock setting already makes AF-ON
-ignore Subject Detect. **Inference from names only:** its menu location,
-values and effect are unverified. Hardware log section G2b tests the effect.
-If it holds, the feature needs no Subject Detect bypass of its own, which
-removes the earlier open question in FEATURE-SPEC about reproducing complete
-"Subject Detect Off" behaviour.
+ignore Subject Detect.
+
+**Confirmed on hardware by the owner (17 November 2026), stock firmware.**
+The setting is at **Menu > AF > 2. AF > AF Button**. For AF-ON the two
+options are:
+
+- "Always tracks focus on the selected AF Target Point" (selected on the
+  owner's camera): AF-ON disregards Subject Detect;
+- "Tracks focus on the subject when it is detected at the selected AF target
+  point".
+
+The feature therefore needs no Subject Detect bypass of its own. The earlier
+open question in FEATURE-SPEC about reproducing complete "Subject Detect Off"
+behaviour, and the CPU3 detection service (section 8, live native
+initialization), are off the critical path. They remain relevant only as
+regression controls for half-press with detection enabled.
+
+Consistent with this, the live E147 AF Button page (page 27, title `0x1279`)
+shows two Priority rows with IDs 2154 and 2155 (see "Live acceptance
+regression and third menu row"). **Still open:** which row is the shutter
+and which is AF-ON, and which stored value means "Always tracks". A blank
+OM-Emu session reads 1 for both. Read the rendered option text in the live
+menu before relying on either mapping, for example in the acceptance runner.
 
 ### AF target settings (half-press profile today)
 

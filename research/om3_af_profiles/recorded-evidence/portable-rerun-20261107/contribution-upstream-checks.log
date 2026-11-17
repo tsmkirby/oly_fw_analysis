@@ -1,0 +1,68 @@
+Parsed 195 Python files; imported 127 tool modules.
+.........
+----------------------------------------------------------------------
+Ran 9 tests in 0.001s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.047s
+
+OK
+E..........E
+======================================================================
+ERROR: test_client (unittest.loader._FailedTest.test_client)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_client
+Traceback (most recent call last):
+  File "C:\Users\tsmki\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\unittest\loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsmki\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\unittest\loader.py", line 339, in _get_module_from_name
+    __import__(name)
+  File "C:\Dev\OM3-research\contribution\camera_client\tests\test_client.py", line 10, in <module>
+    from penf_wifi.__main__ import main, compare
+  File "C:\Dev\OM3-research\contribution\camera_client\penf_wifi\__main__.py", line 7, in <module>
+    from .client import Camera
+  File "C:\Dev\OM3-research\contribution\camera_client\penf_wifi\client.py", line 5, in <module>
+    from .storage import now
+  File "C:\Dev\OM3-research\contribution\camera_client\penf_wifi\storage.py", line 3, in <module>
+    import fcntl
+ModuleNotFoundError: No module named 'fcntl'
+
+
+======================================================================
+ERROR: test_workflow (unittest.loader._FailedTest.test_workflow)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_workflow
+Traceback (most recent call last):
+  File "C:\Users\tsmki\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\unittest\loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsmki\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\unittest\loader.py", line 339, in _get_module_from_name
+    __import__(name)
+  File "C:\Dev\OM3-research\contribution\camera_client\tests\test_workflow.py", line 11, in <module>
+    from penf_wifi.__main__ import main
+  File "C:\Dev\OM3-research\contribution\camera_client\penf_wifi\__main__.py", line 7, in <module>
+    from .client import Camera
+  File "C:\Dev\OM3-research\contribution\camera_client\penf_wifi\client.py", line 5, in <module>
+    from .storage import now
+  File "C:\Dev\OM3-research\contribution\camera_client\penf_wifi\storage.py", line 3, in <module>
+    import fcntl
+ModuleNotFoundError: No module named 'fcntl'
+
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.420s
+
+FAILED (errors=2)
+Traceback (most recent call last):
+  File "C:\Dev\OM3-research\contribution\tools\run_checks.py", line 53, in <module>
+    main()
+  File "C:\Dev\OM3-research\contribution\tools\run_checks.py", line 39, in main
+    run_tests(ROOT / "camera_client", "test_*.py")
+  File "C:\Dev\OM3-research\contribution\tools\run_checks.py", line 16, in run_tests
+    subprocess.run([sys.executable, "-m", "unittest", "discover", "-s", "tests",
+  File "C:\Users\tsmki\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['C:\\Users\\tsmki\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe', '-m', 'unittest', 'discover', '-s', 'tests', '-p', 'test_*.py']' returned non-zero exit status 1.

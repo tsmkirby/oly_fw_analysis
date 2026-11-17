@@ -1,0 +1,554 @@
+{
+  "main_sha256": "5e8d376e9111a44ac0352f26030d7c1b17026d42c45f3600cfa02a0e8c5b7d59",
+  "cpu_base": "0x60021020",
+  "menu_pages": {
+    "27": {
+      "descriptor": "0x6158f0f8",
+      "rows": [
+        {
+          "address": "0x6158dc44",
+          "id": 2154,
+          "kind": 12,
+          "label_id": "0x6b1",
+          "viewer": "0x6158aeb4",
+          "option_values": [
+            1,
+            0
+          ]
+        },
+        {
+          "address": "0x6158dc68",
+          "id": 2155,
+          "kind": 12,
+          "label_id": "0x282c",
+          "viewer": "0x6158aeb4",
+          "option_values": [
+            1,
+            0
+          ]
+        }
+      ]
+    },
+    "28": {
+      "descriptor": "0x6158f10c",
+      "rows": [
+        {
+          "address": "0x6158dc8c",
+          "id": 238,
+          "kind": 4,
+          "label_id": "0xdd2",
+          "viewer": "0x6158aeb4",
+          "option_values": [
+            0,
+            2,
+            1,
+            5,
+            3,
+            10,
+            6,
+            7,
+            8,
+            9
+          ]
+        },
+        {
+          "address": "0x6158dcb0",
+          "id": 1692,
+          "kind": 4,
+          "label_id": "0xdd3",
+          "viewer": "0x6158aeb4",
+          "option_values": [
+            0,
+            2,
+            1,
+            5,
+            3,
+            10,
+            6,
+            7,
+            8,
+            9
+          ]
+        },
+        {
+          "address": "0x6158dcd4",
+          "id": 1693,
+          "kind": 4,
+          "label_id": "0xdd4",
+          "viewer": "0x6158aeb4",
+          "option_values": [
+            0,
+            2,
+            1,
+            5,
+            3,
+            10,
+            6,
+            7,
+            8,
+            9
+          ]
+        }
+      ]
+    },
+    "29": {
+      "descriptor": "0x6158f120",
+      "rows": [
+        {
+          "address": "0x6158dcf8",
+          "id": 165,
+          "kind": 4,
+          "label_id": "0xdcf",
+          "viewer": "0x6158aeb4",
+          "option_values": []
+        },
+        {
+          "address": "0x6158dd1c",
+          "id": 1694,
+          "kind": 4,
+          "label_id": "0xdd0",
+          "viewer": "0x6158aeb4",
+          "option_values": []
+        },
+        {
+          "address": "0x6158dd40",
+          "id": 1695,
+          "kind": 4,
+          "label_id": "0xdd1",
+          "viewer": "0x6158aeb4",
+          "option_values": []
+        }
+      ]
+    }
+  },
+  "target_settings": {
+    "0x1dd1": {
+      "descriptor": "0x600e4f4c",
+      "count": 10,
+      "ui_ids": {
+        "0": [
+          1657
+        ],
+        "1": [
+          1658
+        ],
+        "2": [
+          1659
+        ],
+        "3": [
+          1660
+        ],
+        "4": [
+          1661
+        ],
+        "5": [
+          1662
+        ],
+        "6": [
+          1663
+        ],
+        "7": [
+          1664
+        ],
+        "8": [
+          1665
+        ],
+        "9": [
+          1666
+        ]
+      },
+      "unmapped_indices": []
+    },
+    "0x1de1": {
+      "descriptor": "0x600e4f5c",
+      "count": 8,
+      "ui_ids": {
+        "0": [
+          1667
+        ],
+        "1": [
+          1668
+        ],
+        "2": [
+          1669
+        ],
+        "3": [
+          1670
+        ],
+        "4": [
+          1671
+        ],
+        "5": [
+          1672
+        ],
+        "6": [
+          1673
+        ],
+        "7": [
+          1674
+        ]
+      },
+      "unmapped_indices": []
+    },
+    "0x5962": {
+      "descriptor": "0x600e575c",
+      "count": 6,
+      "ui_ids": {
+        "0": [
+          1338
+        ],
+        "1": [
+          1339
+        ],
+        "2": [
+          1646
+        ],
+        "3": [
+          1647
+        ],
+        "4": [
+          1648
+        ],
+        "5": [
+          1649
+        ]
+      },
+      "unmapped_indices": []
+    },
+    "0x5a11": {
+      "descriptor": "0x600e57c4",
+      "count": 11,
+      "ui_ids": {
+        "0": [
+          1362
+        ],
+        "1": [
+          1363
+        ],
+        "2": [
+          1364
+        ],
+        "3": [
+          1472
+        ],
+        "4": [
+          1652
+        ],
+        "5": [
+          1653
+        ],
+        "6": [
+          1654
+        ],
+        "7": [
+          1655
+        ],
+        "8": [
+          1656
+        ],
+        "9": [
+          1986
+        ],
+        "10": [
+          2144
+        ]
+      },
+      "unmapped_indices": []
+    },
+    "0x84d1": {
+      "descriptor": "0x600e5fe8",
+      "count": 1,
+      "ui_ids": {
+        "0": [
+          40
+        ]
+      },
+      "unmapped_indices": []
+    },
+    "0x88b2": {
+      "descriptor": "0x60117870",
+      "count": 1,
+      "ui_ids": {
+        "0": [
+          85
+        ]
+      },
+      "unmapped_indices": []
+    },
+    "0x90a1": {
+      "descriptor": "0x6011e790",
+      "count": 2,
+      "ui_ids": {
+        "0": [
+          2154
+        ],
+        "1": [
+          2155
+        ]
+      },
+      "unmapped_indices": []
+    },
+    "0x90d1": {
+      "descriptor": "0x6011e7a8",
+      "count": 8,
+      "ui_ids": {
+        "0": [
+          240
+        ],
+        "1": [
+          1873
+        ],
+        "2": [
+          1874
+        ],
+        "3": [
+          1875
+        ],
+        "4": [
+          1876
+        ],
+        "5": [
+          1877
+        ],
+        "6": [
+          1899
+        ],
+        "7": [
+          1900
+        ]
+      },
+      "unmapped_indices": []
+    },
+    "0x99a1": {
+      "descriptor": "0x6011ebdc",
+      "count": 8,
+      "ui_ids": {
+        "0": [
+          163
+        ],
+        "1": [
+          1333
+        ],
+        "2": [
+          1642
+        ],
+        "3": [
+          1643
+        ],
+        "4": [
+          1644
+        ],
+        "5": [
+          1645
+        ],
+        "6": [
+          1716
+        ],
+        "7": [
+          1717
+        ]
+      },
+      "unmapped_indices": []
+    },
+    "0x99d2": {
+      "descriptor": "0x6011ebf8",
+      "count": 3,
+      "ui_ids": {
+        "0": [
+          165
+        ],
+        "1": [
+          1694
+        ],
+        "2": [
+          1695
+        ]
+      },
+      "unmapped_indices": []
+    },
+    "0x9a41": {
+      "descriptor": "0x6011ec34",
+      "count": 1,
+      "ui_ids": {
+        "0": [
+          1803
+        ]
+      },
+      "unmapped_indices": []
+    },
+    "0x9fa1": {
+      "descriptor": "0x6011eed8",
+      "count": 3,
+      "ui_ids": {
+        "0": [
+          238
+        ],
+        "1": [
+          1692
+        ],
+        "2": [
+          1693
+        ]
+      },
+      "unmapped_indices": []
+    },
+    "0xdfa1": {
+      "descriptor": "0x6011f314",
+      "count": 1,
+      "ui_ids": {
+        "0": [
+          517
+        ]
+      },
+      "unmapped_indices": []
+    }
+  },
+  "queue95_dispatch_base": "0x6031e224",
+  "queue95_handlers": [
+    "0x603179e1",
+    "0x603c5210",
+    "0x603c5206",
+    "0x603c524c",
+    "0x603c530d",
+    "0x60317a35",
+    "0x60317a35",
+    "0x603c5206",
+    "0x603c5206",
+    "0x603c5206",
+    "0x603c5206",
+    "0x603c5206",
+    "0x603c5206",
+    "0x606ff7fc",
+    "0x603c531b",
+    "0x603c5378",
+    "0x603c5378",
+    "0x603c5378",
+    "0x603c53f1",
+    "0x603c546a",
+    "0x603c5206",
+    "0x603c5206",
+    "0x603c54a3",
+    "0x603c54fc",
+    "0x603c5539",
+    "0x606ff84e",
+    "0x603c55a7",
+    "0x603c5a80",
+    "0x603c5d6a",
+    "0x603c641a",
+    "0x603c7de8",
+    "0x603c8138",
+    "0x603c843d",
+    "0x603c845a",
+    "0x603c8479",
+    "0x603c84e8",
+    "0x603c8557",
+    "0x603c8571",
+    "0x603c520c",
+    "0x603c520c",
+    "0x603c8641",
+    "0x603c868a",
+    "0x603c86d7",
+    "0x603c8af3",
+    "0x603c8d14",
+    "0x603c8f5d",
+    "0x603c8fda",
+    "0x603c5206",
+    "0x603c859b",
+    "0x603c85f0",
+    "0x60700576",
+    "0x607005a4",
+    "0x603c5206",
+    "0x603c5206",
+    "0x603c5206",
+    "0x603c5206",
+    "0x603c5206",
+    "0x603c5206",
+    "0x603c5206",
+    "0x603c79a8",
+    "0x603c7cf0",
+    "0x603c5206",
+    "0x603c5206",
+    "0x603c5206",
+    "0x603c5206",
+    "0x603c5206",
+    "0x603c5206",
+    "0x603c5206",
+    "0x60317a35",
+    "0x60317a35",
+    "0x603c558d",
+    "0x603c5206",
+    "0x603c5206",
+    "0x603c5206",
+    "0x603c5e49",
+    "0x603c61f6",
+    "0x603c5206",
+    "0x603c5206",
+    "0x603c520c",
+    "0x603c520c",
+    "0x603c77cd",
+    "0x603c9024",
+    "0x603c5206",
+    "0x603c9099",
+    "0x603c92d5",
+    "0x603c9059",
+    "0x603c5206",
+    "0x603c5206",
+    "0x603c5206",
+    "0x603c5206",
+    "0x603c7bcb",
+    "0x603c9421",
+    "0x603c9532"
+  ],
+  "subject_detect_enum": [
+    {
+      "value": 0,
+      "name": "MODE_SUBJECT_DETECT_OFF"
+    },
+    {
+      "value": 1,
+      "name": "MODE_SUBJECT_DETECT_MOTOR_SPORTS"
+    },
+    {
+      "value": 2,
+      "name": "MODE_SUBJECT_DETECT_AIRPLANE"
+    },
+    {
+      "value": 3,
+      "name": "MODE_SUBJECT_DETECT_TRAIN"
+    },
+    {
+      "value": 4,
+      "name": "MODE_SUBJECT_DETECT_BIRD"
+    },
+    {
+      "value": 5,
+      "name": "MODE_SUBJECT_DETECT_ANIMAL"
+    },
+    {
+      "value": 6,
+      "name": "MODE_SUBJECT_DETECT_HUMAN"
+    }
+  ],
+  "human_bank": {
+    "resource_sha256": "3d9fd4426b45fbe4b715599422af38c6d22392c08543a69f63c28291c5a0b059",
+    "offset": "0x6a7f7e0",
+    "bytes": 9383936,
+    "sha256": "80f8477268bfed5e4576d5b8c12cecf9a14c45d34a5dbb4463c64c5ac8b2cdcb"
+  },
+  "queue95_envelope": {
+    "reply_queue_word": 6,
+    "correlation_word": "0x0",
+    "command": "0x2a",
+    "payload_pointer": "0x70001000",
+    "handler": "0x603c86d7",
+    "exempt_from_context_0x94_deferral": false,
+    "kind_word": 5,
+    "flags_word": "0x4",
+    "reply": {
+      "status_u16": "0x0",
+      "padding": "0000",
+      "correlation_word": "0x0",
+      "payload_pointer": "0x70001000"
+    }
+  }
+}

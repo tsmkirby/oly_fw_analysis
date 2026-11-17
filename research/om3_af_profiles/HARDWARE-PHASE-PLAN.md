@@ -181,7 +181,9 @@ section loading and checksum coverage for the real component.
   press, AF-ON press, AF-ON release, half release, each for SCP 0–6), plus
   repeated AF-ON presses.
   - Half press: normal target, and Subject Detect follows SCP.
-  - AF-ON: AF Home target, with Subject Detect bypassed.
+  - AF-ON: its own saved AF-ON zone (not AF Home), with Subject Detect
+    disregarded by the stock AF Button setting "Always tracks focus on the
+    selected AF Target Point" (confirmed on stock hardware, 17 November 2026).
   - Release restores the previous state.
 - Also check:
   - **Gate 2:** orientation, target editing and display.

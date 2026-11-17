@@ -1,0 +1,234 @@
+INFO  Using log config file: jar:file:/C:/Dev/OM3-research/tooling/ghidra_12.2_PUBLIC/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml (LoggingInitialization)  
+INFO  Using log file: C:\Dev\OM3-research\contribution\research\om3_af_profiles\analysis\button-af\readiness\live-runs\20261107-120222-858670\phase-one.log (LoggingInitialization)  
+INFO  Loading user preferences: C:\Dev\OM3-research\tooling\ghidra-user\settings\tsmki-ghidra\ghidra_12.2_PUBLIC\preferences (Preferences)  
+INFO  Searching for classes... (ClassSearcher)  
+INFO  Class search complete (627 ms) (ClassSearcher)  
+INFO  Initializing SSL Context (DefaultSSLContextInitializer)  
+INFO  Initializing Random Number Generator... (SecureRandomFactory)  
+INFO  Random Number Generator initialization complete: SHA1PRNG (SecureRandomFactory)  
+INFO  Loaded 60 trusted CA certificates from the OS trust store. (DefaultTrustManagerFactory)  
+INFO  Loaded 118 trusted CA certificates from the Java default trust store. (DefaultTrustManagerFactory)  
+INFO  Headless startup complete (1686 ms) (AnalyzeHeadless)  
+INFO  Class searcher loaded 60 extension points (19 false positives) (ClassSearcher)  
+INFO  HEADLESS Script Paths:
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\SystemEmulation\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\Base\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\VersionTracking\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\BSim\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\PDB\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\PyGhidra\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\Swift\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Processors\JVM\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\MicrosoftCodeAnalyzer\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Debug\Debugger-rmi-trace\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Debug\Debugger\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\BytePatterns\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\WildcardAssembler\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\FunctionID\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Processors\Atmel\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Processors\DATA\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\FileFormats\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\Decompiler\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\DecompilerDependent\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Processors\8051\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Processors\PIC\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\GnuDemangler\ghidra_scripts
+    C:\Dev\OM3-research\contribution\research\om3_af_profiles\scripts (HeadlessAnalyzer)  
+INFO  HEADLESS: execution starts (HeadlessAnalyzer)  
+INFO  Opening existing project: C:\Dev\OM3-research\ghidra-projects\OM3_main_full (HeadlessAnalyzer)  
+INFO  Opening project: C:\Dev\OM3-research\ghidra-projects\OM3_main_full (HeadlessProject)  
+INFO  REPORT: Processing read-only project file: /00_0100_50000020.decoded.bin (HeadlessAnalyzer)  
+INFO  REPORT: Execute script: OM3CoreRAMSettingsProof.java 'analysis/button-af/readiness/integration'  (HeadlessAnalyzer)  
+INFO  SCRIPT: C:\Dev\OM3-research\contribution\research\om3_af_profiles\scripts\OM3CoreRAMSettingsProof.java (HeadlessAnalyzer)  
+INFO  OM3CoreRAMSettingsProof.java> CORE RAM SETTINGS: 11 PASS (GhidraScript)  
+INFO  REPORT: Execute script: OM3LiveProfiles.java 'analysis/button-af/readiness/live-profiles'  (HeadlessAnalyzer)  
+INFO  SCRIPT: C:\Dev\OM3-research\contribution\research\om3_af_profiles\scripts\OM3LiveProfiles.java (HeadlessAnalyzer)  
+INFO  OM3LiveProfiles.java> LIVE PROFILES: 15 PASS; physical orientation source, original bodies, display and camera boot excluded (GhidraScript)  
+INFO  REPORT: Execute script: OM3LiveShooting.java 'analysis/button-af/readiness/live-shooting'  (HeadlessAnalyzer)  
+INFO  SCRIPT: C:\Dev\OM3-research\contribution\research\om3_af_profiles\scripts\OM3LiveShooting.java (HeadlessAnalyzer)  
+INFO  OM3LiveShooting.java> RETURNED original handler 610b9197 under heap/create models and supplied shooting context; downstream AF completion not asserted (GhidraScript)  
+INFO  OM3LiveShooting.java> BOUNDARY original handler 610b962a with bounded OS heap/create models, pc=60dd896d: java.lang.Exception: Semaphore would block id=1016, timeout=3e8 (GhidraScript)  
+INFO  OM3LiveShooting.java> BOUNDARY original handler 610b9653 with bounded OS heap/create models, pc=60dd896d: java.lang.Exception: Semaphore would block id=1033, timeout=3e8 (GhidraScript)  
+INFO  OM3LiveShooting.java> RETURNED original handler 610b96f0 under heap/create models and supplied shooting context; downstream AF completion not asserted (GhidraScript)  
+INFO  REPORT: Execute script: OM3LiveShootingErrors.java 'analysis/button-af/readiness/live-shooting-errors'  (HeadlessAnalyzer)  
+INFO  SCRIPT: C:\Dev\OM3-research\contribution\research\om3_af_profiles\scripts\OM3LiveShootingErrors.java (HeadlessAnalyzer)  
+INFO  OM3LiveShootingErrors.java> RETURNED original handler 610b9197 under heap/create models and supplied shooting context; downstream AF completion not asserted (GhidraScript)  
+INFO  OM3LiveShootingErrors.java> BOUNDARY original handler 610b962a with bounded OS heap/create models, pc=60dd896d: java.lang.Exception: Stock response wait retried after two injected negative results; receiving-task response still required (GhidraScript)  
+INFO  OM3LiveShootingErrors.java> BOUNDARY original handler 610b9653 with bounded OS heap/create models, pc=60dd896d: java.lang.Exception: Stock response wait retried after two injected negative results; receiving-task response still required (GhidraScript)  
+INFO  OM3LiveShootingErrors.java> RETURNED original handler 610b96f0 under heap/create models and supplied shooting context; downstream AF completion not asserted (GhidraScript)  
+INFO  REPORT: Execute script: OM3LiveDispatch.java 'analysis/button-af/readiness/live-dispatch'  (HeadlessAnalyzer)  
+INFO  SCRIPT: C:\Dev\OM3-research\contribution\research\om3_af_profiles\scripts\OM3LiveDispatch.java (HeadlessAnalyzer)  
+INFO  OM3LiveDispatch.java> RETURNED original handler 610b9197 under heap/create models and supplied shooting context; downstream AF completion not asserted (GhidraScript)  
+INFO  OM3LiveDispatch.java> RETURNED original handler 610b962a under heap/create models and supplied shooting context; downstream AF completion not asserted (GhidraScript)  
+INFO  OM3LiveDispatch.java> RETURNED original handler 610b9653 under heap/create models and supplied shooting context; downstream AF completion not asserted (GhidraScript)  
+INFO  OM3LiveDispatch.java> RETURNED original handler 610b96f0 under heap/create models and supplied shooting context; downstream AF completion not asserted (GhidraScript)  
+INFO  REPORT: Execute script: OM3ReceiverStartupProof.java 'analysis/button-af/readiness/receiver-startup'  (HeadlessAnalyzer)  
+INFO  SCRIPT: C:\Dev\OM3-research\contribution\research\om3_af_profiles\scripts\OM3ReceiverStartupProof.java (HeadlessAnalyzer)  
+INFO  OM3ReceiverStartupProof.java> RETURNED original handler 610b9197 under heap/create models and supplied shooting context; downstream AF completion not asserted (GhidraScript)  
+INFO  OM3ReceiverStartupProof.java> BOUNDARY original handler 610b962a with bounded OS heap/create models, pc=60dd896d: java.lang.Exception: Semaphore would block id=1031, timeout=3e8 (GhidraScript)  
+INFO  OM3ReceiverStartupProof.java> BOUNDARY original handler 610b9653 with bounded OS heap/create models, pc=60dd896d: java.lang.Exception: Semaphore would block id=1034, timeout=3e8 (GhidraScript)  
+INFO  OM3ReceiverStartupProof.java> RETURNED original handler 610b96f0 under heap/create models and supplied shooting context; downstream AF completion not asserted (GhidraScript)  
+INFO  REPORT: Execute script: OM3StockReceiverControl.java 'analysis/button-af/readiness/stock-receiver-control'  (HeadlessAnalyzer)  
+INFO  SCRIPT: C:\Dev\OM3-research\contribution\research\om3_af_profiles\scripts\OM3StockReceiverControl.java (HeadlessAnalyzer)  
+INFO  OM3StockReceiverControl.java> RETURNED original handler 610b9197 under heap/create models and supplied shooting context; downstream AF completion not asserted (GhidraScript)  
+INFO  OM3StockReceiverControl.java> BOUNDARY original handler 610b962a with bounded OS heap/create models, pc=60dd896d: java.lang.Exception: Semaphore would block id=1030, timeout=3e8 (GhidraScript)  
+INFO  OM3StockReceiverControl.java> BOUNDARY original handler 610b9653 with bounded OS heap/create models, pc=60dd896d: java.lang.Exception: Semaphore would block id=1033, timeout=3e8 (GhidraScript)  
+INFO  OM3StockReceiverControl.java> RETURNED original handler 610b96f0 under heap/create models and supplied shooting context; downstream AF completion not asserted (GhidraScript)  
+INFO  REPORT: Execute script: OM3CaptureConnectedProof.java 'analysis/button-af/readiness/capture-connected'  (HeadlessAnalyzer)  
+INFO  SCRIPT: C:\Dev\OM3-research\contribution\research\om3_af_profiles\scripts\OM3CaptureConnectedProof.java (HeadlessAnalyzer)  
+ERROR Emulation failure at 600303f5: 00_0100_50000020.decoded.bin (EmulatorHelper) java.lang.IllegalStateException: Unprovided startup read 97f00004 at 600303f5
+	at OM3ReceiverStartupProof$1.uninitializedRead(OM3ReceiverStartupProof.java:13)
+	at ghidra.app.emulator.EmulatorHelper.uninitializedRead(EmulatorHelper.java:735)
+	at ghidra.pcode.memstate.MemoryBank.getChunk(MemoryBank.java:254)
+	at ghidra.pcode.memstate.DefaultMemoryState.getChunk(DefaultMemoryState.java:105)
+	at ghidra.app.emulator.FilteredMemoryState.getChunk(FilteredMemoryState.java:35)
+	at ghidra.pcode.memstate.AbstractMemoryState.getValue(AbstractMemoryState.java:146)
+	at ghidra.pcode.emulate.Emulate.executeLoad(Emulate.java:592)
+	at ghidra.pcode.emulate.Emulate.executeCurrentOp(Emulate.java:529)
+	at ghidra.pcode.emulate.Emulate.executeInstruction(Emulate.java:439)
+	at ghidra.app.emulator.DefaultEmulator.executeInstruction(DefaultEmulator.java:367)
+	at ghidra.app.emulator.EmulatorHelper.executeInstruction(EmulatorHelper.java:543)
+	at ghidra.app.emulator.EmulatorHelper.step(EmulatorHelper.java:598)
+	at OM3FullShooting.runNative(OM3FullShooting.java:74)
+	at OM3LiveDispatch.scheduled(OM3LiveDispatch.java:23)
+	at OM3CaptureConnectedProof.beforeOriginal(OM3CaptureConnectedProof.java:24)
+	at OM3FullShooting.shootingRun(OM3FullShooting.java:51)
+	at OM3LiveShooting.run(OM3LiveShooting.java:24)
+	at OM3CaptureConnectedProof.run(OM3CaptureConnectedProof.java:8)
+	at ghidra.app.script.GhidraScript.executeNormal(GhidraScript.java:460)
+	at ghidra.app.script.GhidraScript.doExecute(GhidraScript.java:314)
+	at ghidra.app.script.GhidraScript.execute(GhidraScript.java:290)
+	at ghidra.app.util.headless.HeadlessAnalyzer.runScript(HeadlessAnalyzer.java:597)
+	at ghidra.app.util.headless.HeadlessAnalyzer.runScriptsList(HeadlessAnalyzer.java:949)
+	at ghidra.app.util.headless.HeadlessAnalyzer.analyzeProgram(HeadlessAnalyzer.java:1107)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processFileNoImport(HeadlessAnalyzer.java:1206)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processFolderNoImport(HeadlessAnalyzer.java:1376)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processNoImport(HeadlessAnalyzer.java:1405)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processLocal(HeadlessAnalyzer.java:461)
+	at ghidra.app.util.headless.AnalyzeHeadless.launch(AnalyzeHeadless.java:211)
+	at ghidra.GhidraLauncher.launch(GhidraLauncher.java:78)
+	at ghidra.Ghidra.main(Ghidra.java:41)
+ 
+INFO  OM3CaptureConnectedProof.java> BOUNDARY native capture initialization requires unprovided kernel task/object state; this is not a passing AF integration test (GhidraScript)  
+INFO  REPORT: Execute script: OM3NativeCodecProof.java 'analysis/button-af/readiness/live-component'  (HeadlessAnalyzer)  
+INFO  SCRIPT: C:\Dev\OM3-research\contribution\research\om3_af_profiles\scripts\OM3NativeCodecProof.java (HeadlessAnalyzer)  
+INFO  OM3NativeCodecProof.java> NATIVE CODEC: 3 PASS (GhidraScript)  
+INFO  REPORT: Execute script: OM3MutexOwnershipProof.java 'analysis/button-af/readiness/live-component'  (HeadlessAnalyzer)  
+INFO  SCRIPT: C:\Dev\OM3-research\contribution\research\om3_af_profiles\scripts\OM3MutexOwnershipProof.java (HeadlessAnalyzer)  
+INFO  OM3MutexOwnershipProof.java> MUTEX OWNERSHIP: 2 PASS (GhidraScript)  
+INFO  REPORT: Discarding changes to the following read-only file: /00_0100_50000020.decoded.bin (HeadlessAnalyzer)  
+{
+  "stock_sha256": "8c133084414533159f587bf46bfb4152714c4074312a47c8d8503e33d605696d",
+  "integrated_payload_sha256": "961f3dbb7049fb2653edb19f3bf840919651f911a23c64636985a6a637b6450a",
+  "native_validator_fixture_sha256": "6a3424f1417950c55708bd3d7e49ccea8a574240af671dd555c979e9a6104dfd",
+  "full_container_in_memory_sha256": "b485d214bf9821fc56e1f4f29826214a7e0cca954441a7cd952c3cdd82438537",
+  "component_count": 6,
+  "full_container_bytes": 240517120,
+  "unchanged_other_components": true,
+  "metadata_and_lengths_preserved": true,
+  "encode_decode_identical": true,
+  "unrepaired_checksum_rejected": true,
+  "changed_byte_count": 3543,
+  "saved_installable_update": false,
+  "scope": "Host parser/encoding proof of exact integrated hooks, constructor, data and code. Decoded fixture only. No update-service admission, boot, flash, physical NVM or recovery proof."
+}
+{
+  "integrated_payload_sha256": "961f3dbb7049fb2653edb19f3bf840919651f911a23c64636985a6a637b6450a",
+  "checker_sha256": "b9ed27ced1a9a8273a4f6db980562fbce7e922d57115ad1da0f855a2d3c597f3",
+  "changed_bytes": 3543,
+  "code_blocks": 9,
+  "all_changes_within_explicit_ranges": true,
+  "original_descriptor_targets_verified": true,
+  "relocated_descriptor_targets_verified": true,
+  "constructor_count_and_table_verified": true,
+  "relative_hooks_verified": true,
+  "initialization_failure_disables_feature": true,
+  "scope": "Byte placement and fingerprints only; no startup, SD admission, focus, flash or recovery assertion"
+}
+INFO  Using log config file: jar:file:/C:/Dev/OM3-research/tooling/ghidra_12.2_PUBLIC/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml (LoggingInitialization)  
+INFO  Using log file: C:\Dev\OM3-research\contribution\research\om3_af_profiles\analysis\button-af\readiness\live-runs\20261107-120222-858670\phase-two.log (LoggingInitialization)  
+INFO  Loading user preferences: C:\Dev\OM3-research\tooling\ghidra-user\settings\tsmki-ghidra\ghidra_12.2_PUBLIC\preferences (Preferences)  
+INFO  Searching for classes... (ClassSearcher)  
+INFO  Class search complete (631 ms) (ClassSearcher)  
+INFO  Initializing SSL Context (DefaultSSLContextInitializer)  
+INFO  Initializing Random Number Generator... (SecureRandomFactory)  
+INFO  Random Number Generator initialization complete: SHA1PRNG (SecureRandomFactory)  
+INFO  Loaded 60 trusted CA certificates from the OS trust store. (DefaultTrustManagerFactory)  
+INFO  Loaded 118 trusted CA certificates from the Java default trust store. (DefaultTrustManagerFactory)  
+INFO  Headless startup complete (1654 ms) (AnalyzeHeadless)  
+INFO  Class searcher loaded 60 extension points (19 false positives) (ClassSearcher)  
+INFO  HEADLESS Script Paths:
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\SystemEmulation\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\Base\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\VersionTracking\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\BSim\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\PDB\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\PyGhidra\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\Swift\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Processors\JVM\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\MicrosoftCodeAnalyzer\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Debug\Debugger-rmi-trace\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Debug\Debugger\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\BytePatterns\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\WildcardAssembler\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\FunctionID\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Processors\Atmel\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Processors\DATA\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\FileFormats\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\Decompiler\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\DecompilerDependent\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Processors\8051\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Processors\PIC\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\GnuDemangler\ghidra_scripts
+    C:\Dev\OM3-research\contribution\research\om3_af_profiles\scripts (HeadlessAnalyzer)  
+INFO  HEADLESS: execution starts (HeadlessAnalyzer)  
+INFO  Opening existing project: C:\Dev\OM3-research\ghidra-projects\OM3_main_full (HeadlessAnalyzer)  
+INFO  Opening project: C:\Dev\OM3-research\ghidra-projects\OM3_main_full (HeadlessProject)  
+INFO  REPORT: Processing read-only project file: /00_0100_50000020.decoded.bin (HeadlessAnalyzer)  
+INFO  REPORT: Execute script: OM3FullComponentProof.java 'analysis/button-af/readiness/live-component' 'integrated'  (HeadlessAnalyzer)  
+INFO  SCRIPT: C:\Dev\OM3-research\contribution\research\om3_af_profiles\scripts\OM3FullComponentProof.java (HeadlessAnalyzer)  
+INFO  OM3FullComponentProof.java> PASS full 33554432-byte decoded main component: integrated, native validator result=0, native full checksum calls=1, seconds=82.8733015; no device/update-service/boot/flash assertion (GhidraScript)  
+Verified exact-source offline evidence, native error cleanup and stock/extension receiver boundaries. NOT READY TO FLASH.
+INFO  Using log config file: jar:file:/C:/Dev/OM3-research/tooling/ghidra_12.2_PUBLIC/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml (LoggingInitialization)  
+INFO  Using log file: C:\Dev\OM3-research\contribution\research\om3_af_profiles\analysis\button-af\readiness\live-runs\20261107-120222-858670\transport.log (LoggingInitialization)  
+INFO  Loading user preferences: C:\Dev\OM3-research\tooling\ghidra-user\settings\tsmki-ghidra\ghidra_12.2_PUBLIC\preferences (Preferences)  
+INFO  Searching for classes... (ClassSearcher)  
+INFO  Class search complete (630 ms) (ClassSearcher)  
+INFO  Initializing SSL Context (DefaultSSLContextInitializer)  
+INFO  Initializing Random Number Generator... (SecureRandomFactory)  
+INFO  Random Number Generator initialization complete: SHA1PRNG (SecureRandomFactory)  
+INFO  Loaded 60 trusted CA certificates from the OS trust store. (DefaultTrustManagerFactory)  
+INFO  Loaded 118 trusted CA certificates from the Java default trust store. (DefaultTrustManagerFactory)  
+INFO  Headless startup complete (1675 ms) (AnalyzeHeadless)  
+INFO  Class searcher loaded 60 extension points (19 false positives) (ClassSearcher)  
+INFO  HEADLESS Script Paths:
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\SystemEmulation\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\Base\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\VersionTracking\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\BSim\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\PDB\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\PyGhidra\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\Swift\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Processors\JVM\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\MicrosoftCodeAnalyzer\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Debug\Debugger-rmi-trace\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Debug\Debugger\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\BytePatterns\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\WildcardAssembler\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\FunctionID\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Processors\Atmel\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Processors\DATA\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\FileFormats\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\Decompiler\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\DecompilerDependent\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Processors\8051\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Processors\PIC\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\GnuDemangler\ghidra_scripts
+    C:\Dev\OM3-research\contribution\research\om3_af_profiles\scripts (HeadlessAnalyzer)  
+INFO  HEADLESS: execution starts (HeadlessAnalyzer)  
+INFO  Opening existing project: C:\Dev\OM3-research\ghidra-projects\OM3_main_full (HeadlessAnalyzer)  
+INFO  Opening project: C:\Dev\OM3-research\ghidra-projects\OM3_main_full (HeadlessProject)  
+INFO  REPORT: Processing read-only project file: /00_0100_50000020.decoded.bin (HeadlessAnalyzer)  
+INFO  REPORT: Execute script: OM3CaptureTransportProof.java 'analysis/button-af/readiness/capture-transport'  (HeadlessAnalyzer)  
+INFO  SCRIPT: C:\Dev\OM3-research\contribution\research\om3_af_profiles\scripts\OM3CaptureTransportProof.java (HeadlessAnalyzer)  
+Completed bounded offline suites and preserved boundaries. NOT READY TO FLASH.
