@@ -16,6 +16,16 @@ scripts comprise its execution suite. Historical reports in this directory and
 `analysis/button-af/FEATURE-SPEC.md` describe different checkpoints. Do not add
 their test counts together or interpret a BOUNDARY as a successful feature test.
 
+## Current design (17 November 2026)
+
+The design has moved on from the 7 November prototype preserved here. AF-ON gets its
+own saved AF-ON zone profile, set from a new row on the AF Button page (page 27);
+AF Home is no longer used for AF-ON (10 November). On the stock camera, Menu > AF >
+2. AF > AF Button with AF-ON set to "Always tracks focus on the selected AF Target
+Point" already disregards Subject Detect, so the extension adds no bypass of its own
+(owner, 17 November). See [PROJECT-STATE.md](PROJECT-STATE.md) and
+[FEATURE-SPEC.md](analysis/button-af/FEATURE-SPEC.md). Readiness remains NO-GO.
+
 ## Hardware phase (added 10 November 2026)
 
 [HARDWARE-PHASE-PLAN.md](HARDWARE-PHASE-PLAN.md) sets out staged camera work,

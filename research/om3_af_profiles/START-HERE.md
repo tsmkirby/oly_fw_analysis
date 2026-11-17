@@ -1,5 +1,10 @@
 # Reading the OM-3 decompilation
 
+**Project status and the next task:** [PROJECT-STATE.md](PROJECT-STATE.md).
+Current design (17 November 2026): AF-ON gets its own saved zone profile from a
+new AF Button (page 27) row; AF Home is not used; Subject Detect for AF-ON is
+handled by the stock AF Button setting. Readiness: NO-GO.
+
 For OM-Emu on E147, see [switching to stills and reproducing the bank-7 checks](analysis/button-af/AFON-MENU-RESEARCH.md#om-emu-cross-check-and-switching-to-stills).
 
 The latest local continuation is in
@@ -10,7 +15,9 @@ results under documented fixtures; no installable image exists.
 
 For the current independent AF-button profile investigation, read the
 [feature specification and findings](analysis/button-af/FEATURE-SPEC.md#current-evidence-and-limits)
-and its linked evidence manifests. Updated 7 November 2026: the research
+and its linked evidence manifests (the 7 November checkpoint describes the
+superseded AF Home prototype; read the 10 and 17 November revisions at the top of
+that file first). Updated 7 November 2026: the research
 prototype is not ready for installation; no camera has been flashed.
 The later gate-closure review, its probe index and the AF request-path findings
 are in [AF-GAP-CLOSURE-ASSESSMENT.md](AF-GAP-CLOSURE-ASSESSMENT.md).

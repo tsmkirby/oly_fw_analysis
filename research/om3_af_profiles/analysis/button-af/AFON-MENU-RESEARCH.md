@@ -935,7 +935,32 @@ or flashable image. Detection-Off handoff success proves routing and target
 restoration under these modeled conditions, not focus acquisition or
 Subject Detect bypass/restoration with a running detection engine.
 
-## 9. Next steps
+## 9. Next steps (reordered 17 November 2026)
+
+The owner's stock-hardware confirmation (section 1) takes the CPU3 detection
+service off the critical path. Task IDs match [PROJECT-STATE.md](../../PROJECT-STATE.md).
+
+1. **T1: page-27 row and value mapping.** Establish which of rows 2154/2155
+   (`MODE_AF_SUBJECT_PRIORITY_RELEASE` / `_CUSTOM_SW`, key `0x90a1` indices 0/1)
+   the camera presents for the shutter button and for AF-ON, and which stored
+   value means "Always tracks focus on the selected AF Target Point". Use the
+   firmware-rendered text and native readback, not the blank-session value 1.
+   (Was the "Still open" item in section 1 and the first half of old step 4.)
+2. **T2: storage ownership.** Prove or reject stock-unreachable cells in `0x5b82`,
+   then `0x5b52`, by enumerating every reader and writer (section 8,
+   "Not yet proven"). Owner chooses the storage option from the result.
+3. **T3: AF-ON zone row and editor routing.** This is old step 2: register the row
+   in both page-27 source tables and route the stock target editor to the AF-ON
+   profile, verifying commit and cancel through player keys. Persistence tests
+   (old step 3) follow once T2's storage decision is made.
+4. Trace `0x90a1` through the stock AF request (rest of old step 4).
+5. **Deferred, regression only:** port the CPU3 request/loader service and the TAKE
+   logger prerequisite (old step 1). Needed only for half press with Subject Detect
+   enabled as a regression control, not for AF-ON.
+6. Hardware (owner): stage-2 item G2b was answered on 17 November. The remaining
+   stage-1/2 observations stay with the owner (old step 5).
+
+### Previous ordering (16 November 2026), kept for reference
 
 1. Port the CPU3 request/loader service using independently verified E147
    facts, beginning with flag `0x3003` and task `0x60841a6b`, then flag

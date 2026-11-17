@@ -34,6 +34,13 @@ Plan installation around SD, but retain separate readiness requirements for vali
 
 ## Required behavior
 
+> **Status, 17 November 2026.** These bullets are the 31 October requirement, kept
+> for history. Two parts are superseded by the revision above: AF-ON's profile is
+> its own saved AF-ON zone (not AF Home, not a reused stock target), and AF-ON's
+> Subject Detect behaviour comes from the stock AF Button setting rather than from
+> a firmware bypass. Half press following the SCP choice and the shared S-AF/C-AF
+> setting still apply.
+
 - Shutter half-press uses its assigned stock AF target/zone and the Subject Detect choice currently selected in the SCP. If that choice is Off, use normal stock AF behavior.
 - AF-ON uses its independently assigned stock AF target/zone and behaves as though Subject Detect were Off, using the current S-AF/C-AF setting.
 - Both profiles offer the camera-supported target choices, including their normal position, size and custom-target behavior where applicable. Exact names and available combinations must come from the stock controls.
@@ -50,6 +57,13 @@ Give AF-ON precedence while both controls are held, so pressing the shutter to c
 Retain both target profiles and the SCP Subject Detect selection. Update the displayed AF target to reflect the active profile. Define target movement, orientation, C-AF transitions, focus lock, full shutter press, bursts and custom-mode recall through the stock mechanisms. Avoid persistent setting writes on each button transition.
 
 ## Current evidence and limits
+
+> **Status, 17 November 2026.** This section is the 7 November checkpoint of the
+> AF Home prototype. Its profile source and Subject Detect bypass are superseded.
+> Its wrappers, profile switching, owned state, task-context mutex, placement and
+> NO-GO findings still apply. The current continuation point is in
+> [PROJECT-STATE.md](../../PROJECT-STATE.md) and
+> [AFON-MENU-RESEARCH.md §9](AFON-MENU-RESEARCH.md#9-next-steps-reordered-17-november-2026).
 
 Documentation checkpoint: 7 November 2026, at the user's request to document the work so far. Investigation stopped at this checkpoint. The requested firmware extension is not finished; the findings below distinguish a tested mechanism from an installable, working camera feature.
 
@@ -117,11 +131,16 @@ The [latest prototype report](../../AF-PROFILE-PROTOTYPE.md) describes 18 bounde
 
 The ten-byte target record can feed the active geometry cache. Native UI lookup identifies the relevant setting keys, but the UI target type (`MODE_AF_AREA_TYPE`, key `0x99a1`) differs from internal `MODE_AF_AREA` (`0x84d1`). Stock target selection must use the correct conversion and refresh paths, rather than copying a dropdown value directly into the internal record.
 
-`MODE_SUBJECT_DETECT` maps to key `0x1e71`, index 0. The examined subject-selection enable/disable paths at `0x609024d2` and `0x609025aa` establish selection-control primitives. Disabling selection through that helper has not been shown to reproduce all behavior of the stock Subject Detect Off setting. AF-ON requires the latter behavior, including normal target selection and fallback.
+`MODE_SUBJECT_DETECT` maps to key `0x1e71`, index 0. The examined subject-selection enable/disable paths at `0x609024d2` and `0x609025aa` establish selection-control primitives. Disabling selection through that helper has not been shown to reproduce all behavior of the stock Subject Detect Off setting. AF-ON requires the latter behavior, including normal target selection and fallback. (Superseded 17 November 2026: AF-ON relies on the stock AF Button setting "Always tracks focus on the selected AF Target Point", so reproducing complete Subject Detect Off in firmware is no longer required for AF-ON.)
 
 The tested narrow/wide geometry fixtures are synthetic. They are not proof of captured stock Single/All presets. The full shooting transaction-to-worker trace, cache/snapshot synchronization, installation, boot and recovery remain unresolved.
 
 ## Next implementation investigations
+
+> **Status, 17 November 2026.** Item 2 is superseded (stock AF Button setting).
+> Item 1 continues as task T3 (AF-ON zone editor routing). Item 3's
+> button-ownership work remains relevant. Current ordering:
+> [AFON-MENU-RESEARCH.md §9](AFON-MENU-RESEARCH.md#9-next-steps-reordered-17-november-2026).
 
 1. Recover the stock zone/type conversion and refresh sequence for the supported target choices, including custom targets and position handling.
 2. Compare Subject Detect Off with enabled detection through the AF request and selection paths; identify how to apply the complete Off behavior per active AF-ON request while retaining the SCP choice.
