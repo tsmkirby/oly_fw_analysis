@@ -127,6 +127,16 @@ A fixture pass, a native result and a physical result are reported separately an
 | `C:\Dev\OM3-tasks\<ID>\ws` | Disposable execution workspace per task | Grok writes `work\` (and `om-emu\` if the brief allows); Sol read-only |
 | `tasks\<ID>\` | Task record: brief, STATUS, harvested runs, decision | Opus only |
 
+**Primary boundary: Windows integrity levels.** The Cursor CLI's own sandbox is macOS/Linux
+only (T0 attempt 1). Grok therefore runs as a Low-integrity copy of the CLI
+(`C:\Dev\OM3-tasks\_agent`, built by `orchestration\Initialize-AgentRuntime.ps1`), and every
+process it starts inherits Low integrity. Windows refuses Low-integrity writes to anything
+labelled Medium, which is the default for all user files. Only the agent's home and the task's
+`work\`, `state\`, `projects\` and `om-emu\` are labelled Low. Your sign-in
+(`%APPDATA%\Cursor\auth.json`) is read in place, never copied.
+Verified without the agent on 17 Nov: research tree, task root, user profile and other
+`C:\Dev` projects all refused; Ghidra headless works at Low.
+
 Run sequence (`orchestration\Invoke-Grok.ps1`, `Invoke-Sol.ps1`):
 1. Pre-checks: pins, archive sync, no open Ghidra project.
 2. Build the task workspace with copies of the pinned inputs, a private Ghidra project copy
@@ -147,12 +157,22 @@ the workspace is still write-denied. Run
 It removes the rules and verifies that writing works again.
 
 **Residual risks (documented, not hidden):**
-- A file owner can always rewrite an ACL, so a deliberate attacker inside the agent could
-  remove the rule. Mitigations: `icacls`/`Set-Acl` are denied in the Cursor rules; the
-  rule's presence is checked before unlock; the snapshot audit still runs.
-- The snapshot audit cannot see in-place edits inside the heavy generated trees, but the OS
-  lock covers them.
-- Cursor sandbox coverage outside the workspace and outside the lock is measured by T0 (6g/6h).
+- **Read access.** A Low-integrity process can still *read* anything the user can, including
+  tokens in the user profile. Network access is also unrestricted. This is inherent to running
+  a cloud agent as this user; no secret material is placed in task workspaces.
+- The ACL lock alone could be removed by a process at the owner's integrity level; the agent
+  runs at Low, which cannot modify a DACL on Medium objects. The rule's presence is still
+  checked before unlock, and the snapshot audit still runs.
+- The snapshot audit cannot see in-place edits inside the heavy generated trees, but both
+  the integrity boundary and the ACL lock cover them.
+
+**Incident, 17 Nov 2026 (resolved).** While preparing labels, a recursive `icacls /grant /T`
+on `C:\Dev\OM3-tasks` followed the task workspaces' `ref\` junctions into the research tree
+and added an explicit Full Control entry for the owner's account to its 4,545 directories.
+No file contents changed, and the account already had Modify there. All 4,545 entries were
+removed (the five `tooling\python-deps` directories with their own pre-existing ACLs were
+left untouched), and sampled ACLs match their original shape. Rule since then: no recursive
+ACL or label operation on any tree containing a junction; the scripts check for this and refuse.
 
 ## 10. Reference pins
 
@@ -180,6 +200,7 @@ It removes the rules and verifies that writing works again.
 | 2026-11-17 | Phase 1 approved: archive commit (local), untracked folder kept with a local exclude, push guards, PR #19 drafts archived, documents reconciled, orchestration installed | Owner | session |
 | 2026-11-17 | Autonomy after T0; completion conditions A/B; approval boundaries as in §7; stage 1 and container copies unconfirmed | Owner | session |
 | 2026-11-17 | Isolation: disposable per-task workspaces + OS deny-write lock + Cursor sandbox + audit; no unrestricted flags | Opus (owner requirement) | §9 |
+| 2026-11-17 | Cursor sandbox unavailable on Windows; Grok runs at Low integrity instead, with a Cursor allow list naming the needed programs | Opus | T0 attempts 1–2; §9 |
 
 ## 12. Session resumption checklist (Opus)
 

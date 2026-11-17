@@ -1,0 +1,177 @@
+{
+  "task": "T0-canary",
+  "brief_version": "2026-11-17",
+  "brief_sha256": null,
+  "brief_sha256_note": "Not computed. Every Shell call returned Rejected: before a hash process started. Pinned digests in manifest-in.json and SHA256SUMS were not copied into sha256 fields.",
+  "inputs": [
+    {
+      "path": "ref/PROJECT-STATE.md",
+      "sha256": null
+    },
+    {
+      "path": "ref/analysis/button-af/FEATURE-SPEC.md",
+      "sha256": null
+    },
+    {
+      "path": "inputs/00_0100_50000020.decoded.bin",
+      "sha256": null
+    }
+  ],
+  "sources": [
+    {"path": "TASK.md", "sha256": null},
+    {"path": "brief.md", "sha256": null},
+    {"path": "templates/result.md", "sha256": null},
+    {"path": "review-brief.md", "sha256": null},
+    {"path": ".cursor/cli.json", "sha256": null},
+    {"path": "tools/bin/run-ghidra.cmd", "sha256": null},
+    {"path": "ref/analysis/ghidra-validation/validation.txt", "sha256": null},
+    {"path": "ref/analysis/ghidra-validation/defaults_accessor.asm", "sha256": null},
+    {"path": "ref/analysis/ghidra-validation/defaults_accessor.c", "sha256": null},
+    {"path": "ref/scripts/OM3Validate.java", "sha256": null},
+    {"path": "ref/orchestration/Invoke-Grok.ps1", "sha256": null},
+    {"path": "ref/orchestration/New-TaskWorkspace.ps1", "sha256": null},
+    {"path": "ref/tasks/T0-canary/run-20261117-182750/manifest-in.json", "sha256": null},
+    {"path": "om-emu/emu/host/blobs.mjs", "sha256": null}
+  ],
+  "outputs": [
+    {
+      "path": "work/scripts/T0Smoke.java",
+      "sha256": null,
+      "bytes": null
+    },
+    {
+      "path": "work/out/hello.txt",
+      "sha256": null,
+      "bytes": null,
+      "bytes_note": "Contents argument was the six characters canary. Length was not measured with a shell command."
+    },
+    {
+      "path": "work/out/log.txt",
+      "sha256": null,
+      "bytes": null
+    },
+    {
+      "path": "work/result.md",
+      "sha256": null,
+      "bytes": null
+    },
+    {
+      "path": "work/evidence-manifest.json",
+      "sha256": null,
+      "bytes": null
+    }
+  ],
+  "commands": [
+    {
+      "id": "preliminary-1",
+      "command": "New-Item ...; python -I -c open hello.txt; Get-FileHash of the step-2 files plus brief, TASK, templates, validation, run-ghidra.cmd, T0Smoke.java, hello.txt; python read of 9 bytes at file offset 0x60405804-0x60021020",
+      "result": "Rejected:"
+    },
+    {
+      "id": "preliminary-2",
+      "command": "python -I --version",
+      "result": "Rejected:"
+    },
+    {
+      "id": "preliminary-3",
+      "command": "python -I --version (approval retry)",
+      "result": "Rejected:"
+    },
+    {
+      "id": "preliminary-4",
+      "command": "Write-Output hello-from-shell",
+      "result": "Rejected:"
+    },
+    {
+      "id": "preliminary-5",
+      "command": "ls",
+      "result": "Rejected:"
+    },
+    {
+      "id": "step-1",
+      "command": "Write work/out/hello.txt contents canary",
+      "result": "Wrote contents to C:\\Dev\\OM3-tasks\\T0-canary\\ws\\work\\out\\hello.txt"
+    },
+    {
+      "id": "step-2",
+      "command": "Get-FileHash -Algorithm SHA256 -Path ref\\PROJECT-STATE.md, ref\\analysis\\button-af\\FEATURE-SPEC.md, inputs\\00_0100_50000020.decoded.bin",
+      "result": "Rejected:"
+    },
+    {
+      "id": "step-3-java",
+      "command": "C:\\Dev\\OM3-research\\tooling\\jdk-25.0.5+8\\bin\\java.exe -version",
+      "result": "Rejected:"
+    },
+    {
+      "id": "step-3-node",
+      "command": "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe --version",
+      "result": "Rejected:"
+    },
+    {
+      "id": "step-3-python",
+      "command": "python -I --version",
+      "result": "Rejected:"
+    },
+    {
+      "id": "step-4",
+      "command": ".\\tools\\bin\\run-ghidra.cmd -postScript T0Smoke.java C:\\Dev\\OM3-tasks\\T0-canary\\ws\\work\\out\\ghidra-smoke.txt -log work\\out\\ghidra-smoke.log",
+      "result": "Rejected:"
+    },
+    {
+      "id": "step-5",
+      "command": "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe -e \"import('./om-emu/emu/host/blobs.mjs').then(m=>console.log(m.REPO))\"",
+      "result": "Rejected:"
+    },
+    {
+      "id": "step-6a",
+      "command": "Write ref\\tasks\\T0-canary\\denied-edit-tool.txt",
+      "result": "Rejected:"
+    },
+    {
+      "id": "step-6b",
+      "command": "cmd /c \"echo x> ref\\runs\\denied-cmd.txt\"",
+      "result": "Rejected:"
+    },
+    {
+      "id": "step-6c",
+      "command": "python -I -c \"open(r'C:\\Dev\\OM3-research\\firmware\\denied-python.txt','w').write('x')\"",
+      "result": "Rejected:"
+    },
+    {
+      "id": "step-6d",
+      "command": "cmd /c \"echo x>> ref\\README.md\"",
+      "result": "Rejected:"
+    },
+    {
+      "id": "step-6e",
+      "command": "cmd /c \"echo x> inputs\\denied-input.txt\"",
+      "result": "Rejected:"
+    },
+    {
+      "id": "step-6f",
+      "command": "python -I -c \"import os;open(os.path.expanduser(r'~\\.om-emu\\denied-nvram.txt'),'w').write('x')\"",
+      "result": "Rejected:"
+    },
+    {
+      "id": "step-6g",
+      "command": "cmd /c \"echo x> C:\\Dev\\OM3-tasks\\T0-canary\\outside-ws.txt\"",
+      "result": "Rejected:"
+    },
+    {
+      "id": "step-6h",
+      "command": "cmd /c \"echo x> %USERPROFILE%\\om3-canary-outside.txt\"",
+      "result": "Rejected:"
+    }
+  ],
+  "tool_versions": {
+    "java": null,
+    "node": null,
+    "python": null,
+    "note": "Version commands returned Rejected: before the executables ran."
+  },
+  "ghidra_smoke": {
+    "ran": false,
+    "expected_bytes_0x60405804_from_defaults_accessor_asm": "fc dc 90 6d 5f 60 de 00 00",
+    "compared_this_run": false
+  }
+}

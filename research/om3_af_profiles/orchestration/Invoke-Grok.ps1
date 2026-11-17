@@ -66,15 +66,34 @@ $prompt = "Read TASK.md and then brief.md in this folder completely, and carry o
           "Section 0 of the brief overrides everything else. Write only under work. " +
           "Finish by making sure work/result.md and work/evidence-manifest.json exist."
 $cliArgs += ('"' + $prompt + '"')
+
+# Low-integrity launch (Initialize-AgentRuntime.ps1): the CLI and everything it starts can
+# write only to Low-labelled folders (the agent home and the workspace's work/state/projects/om-emu).
+$rt = Get-Content -Raw "$TasksRoot\_agent\runtime.json" | ConvertFrom-Json
+if (((icacls "$($rt.cli)\node.exe") -join ' ') -notmatch 'Low Mandatory Level') { Fail 'agent runtime node.exe is not labelled Low; run Initialize-AgentRuntime.ps1' }
+if ((Sha "$($rt.cli)\node.exe") -ne $rt.node_sha256) { Fail 'agent runtime node.exe changed since it was built' }
+$launcher = Join-Path $tr "launch-$stamp.cmd"
+@"
+@echo off
+set "USERPROFILE=$($rt.home)"
+set "HOME=$($rt.home)"
+set "LOCALAPPDATA=$($rt.home)\AppData\Local"
+set "NODE_COMPILE_CACHE=$($rt.home)\AppData\Local\cursor-compile-cache"
+set "CURSOR_INVOKED_AS=agent.cmd"
+set "TEMP=$ws\state\tmp"
+set "TMP=$ws\state\tmp"
+set "OM_EMU_NVRAM=off"
+set "PYTHONDONTWRITEBYTECODE=1"
+set "JAVA_HOME=$($manIn.jdk)"
+cd /d "$ws"
+"$($rt.cli)\node.exe" "$($rt.cli)\index.js" $($cliArgs -join ' ') > "$tr\grok-$stamp.out.json" 2> "$tr\grok-$stamp.err.txt"
+exit /b %ERRORLEVEL%
+"@ | Set-Content -Encoding ascii $launcher
+$Agent = "$($rt.cli)\node.exe (Low integrity, via $launcher)"
 $done = $false; $p = $null; $start = Get-Date
 try {
   if (-not $lockOk) { throw "lock failed: $($lockOut -join '; ')" }
-  $env:OM_EMU_NVRAM = 'off'
-  $env:PYTHONDONTWRITEBYTECODE = '1'
-  $env:JAVA_HOME = $manIn.jdk
-  $env:TEMP = "$ws\state\tmp"; $env:TMP = "$ws\state\tmp"
-  $p = Start-Process -FilePath $Agent -ArgumentList $cliArgs -WorkingDirectory $ws -NoNewWindow -PassThru `
-         -RedirectStandardOutput "$tr\grok-$stamp.out.json" -RedirectStandardError "$tr\grok-$stamp.err.txt"
+  $p = Start-Process -FilePath "$env:SystemRoot\System32\cmd.exe" -ArgumentList @('/c', "`"$launcher`"") -WorkingDirectory $ws -NoNewWindow -PassThru
   $null = $p.Handle                     # Windows PowerShell 5.1 reports no ExitCode unless the handle is opened
   $done = $p.WaitForExit($TimeoutMinutes * 60 * 1000)
   if (-not $done) { & taskkill.exe /PID $p.Id /T /F | Out-Null }

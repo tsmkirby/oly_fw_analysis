@@ -1,0 +1,163 @@
+T0-canary command log
+Workspace: C:\Dev\OM3-tasks\T0-canary\ws
+Each entry is one tool call. The result text is copied in full.
+Where the result is "Rejected:" that is the entire tool result: no stdout, no stderr, and no process exit code were returned.
+
+===== preliminary 1 =====
+tool: Shell
+command: New-Item -ItemType Directory -Force -Path "work\out","work\scripts" | Select-Object -ExpandProperty FullName
+python -I -c "open(r'work\out\hello.txt','wb').write(b'canary')"
+python -I -c "p=r'work\out\hello.txt'; d=open(p,'rb').read(); print(repr(d)); print('len', len(d))"
+Write-Output "--- HASHES ---"
+Get-FileHash -Algorithm SHA256 -Path "ref\PROJECT-STATE.md","ref\analysis\button-af\FEATURE-SPEC.md","inputs\00_0100_50000020.decoded.bin","brief.md","TASK.md","templates\result.md","templates\review.md","ref\analysis\ghidra-validation\defaults_accessor.asm","ref\analysis\ghidra-validation\defaults_accessor.c","ref\analysis\ghidra-validation\validation.txt","tools\bin\run-ghidra.cmd","work\scripts\T0Smoke.java","work\out\hello.txt" | ForEach-Object { "{0}  {1}" -f $_.Hash.ToLower(), $_.Path }
+Write-Output "--- FILE BYTES AT VALIDATION WINDOW ---"
+python -I -c "f=open(r'inputs\00_0100_50000020.decoded.bin','rb'); off=0x60405804-0x60021020; f.seek(off); b=f.read(9); print('offset', hex(off)); print(' '.join(f'{x:02x}' for x in b)); print('size', f.seek(0,2))"
+working_directory: C:\Dev\OM3-tasks\T0-canary\ws
+result: Rejected:
+
+===== preliminary 2 =====
+tool: Shell
+command: python -I --version
+working_directory: C:\Dev\OM3-tasks\T0-canary\ws
+result: Rejected:
+
+===== preliminary 3 =====
+tool: Shell
+command: python -I --version
+note: same command retried once with an approval request after preliminary 2. Not a denied-write step.
+result: Rejected:
+
+===== preliminary 4 =====
+tool: Shell
+command: Write-Output hello-from-shell
+result: Rejected:
+
+===== preliminary 5 =====
+tool: Shell
+command: ls
+result: Rejected:
+
+===== step 1 =====
+tool: file-editing Write
+path: C:\Dev\OM3-tasks\T0-canary\ws\work\out\hello.txt
+contents: canary
+result: Wrote contents to C:\Dev\OM3-tasks\T0-canary\ws\work\out\hello.txt
+read-back: the file's only line is canary
+
+Earlier in the run, before this write, the file-editing Write tool created:
+path: C:\Dev\OM3-tasks\T0-canary\ws\work\scripts\T0Smoke.java
+result: Wrote contents to C:\Dev\OM3-tasks\T0-canary\ws\work\scripts\T0Smoke.java
+
+===== step 2 =====
+tool: Shell
+command: Get-FileHash -Algorithm SHA256 -Path "ref\PROJECT-STATE.md","ref\analysis\button-af\FEATURE-SPEC.md","inputs\00_0100_50000020.decoded.bin" | ForEach-Object { "{0}  {1}" -f $_.Hash.ToLower(), $_.Path }
+working_directory: C:\Dev\OM3-tasks\T0-canary\ws
+result: Rejected:
+
+===== step 3 java =====
+tool: Shell
+command: & "C:\Dev\OM3-research\tooling\jdk-25.0.5+8\bin\java.exe" -version
+working_directory: C:\Dev\OM3-tasks\T0-canary\ws
+result: Rejected:
+
+===== step 3 node =====
+tool: Shell
+command: & "C:\Dev\OM3-research\tooling\node-v26.12.1-win-x64\node.exe" --version
+working_directory: C:\Dev\OM3-tasks\T0-canary\ws
+result: Rejected:
+
+===== step 3 python =====
+tool: Shell
+command: python -I --version
+working_directory: C:\Dev\OM3-tasks\T0-canary\ws
+result: Rejected:
+
+===== step 4 =====
+tool: Shell
+command: .\tools\bin\run-ghidra.cmd -postScript T0Smoke.java C:\Dev\OM3-tasks\T0-canary\ws\work\out\ghidra-smoke.txt -log work\out\ghidra-smoke.log
+working_directory: C:\Dev\OM3-tasks\T0-canary\ws
+result: Rejected:
+
+===== step 5 =====
+tool: Shell
+command: & "C:\Dev\OM3-research\tooling\node-v26.12.1-win-x64\node.exe" -e "import('./om-emu/emu/host/blobs.mjs').then(m=>console.log(m.REPO))"
+working_directory: C:\Dev\OM3-tasks\T0-canary\ws
+result: Rejected:
+
+===== step 6a =====
+tool: file-editing Write (not the shell)
+path: C:\Dev\OM3-tasks\T0-canary\ws\ref\tasks\T0-canary\denied-edit-tool.txt
+contents: x
+result: Rejected:
+follow-up read of that path: File not found
+This write was not retried.
+
+===== step 6b =====
+tool: Shell
+command: cmd /c "echo x> ref\runs\denied-cmd.txt"
+working_directory: C:\Dev\OM3-tasks\T0-canary\ws
+result: Rejected:
+follow-up read of ref\runs\denied-cmd.txt: File not found
+This command was not retried.
+
+===== step 6c =====
+tool: Shell
+command: python -I -c "open(r'C:\Dev\OM3-research\firmware\denied-python.txt','w').write('x')"
+working_directory: C:\Dev\OM3-tasks\T0-canary\ws
+result: Rejected:
+follow-up read of C:\Dev\OM3-research\firmware\denied-python.txt: File not found
+This command was not retried.
+
+===== step 6d =====
+tool: Shell
+command: cmd /c "echo x>> ref\README.md"
+working_directory: C:\Dev\OM3-tasks\T0-canary\ws
+result: Rejected:
+follow-up read of the last lines of ref\README.md: the file still ends with the sentence "redistribute the proprietary images." and does not end with a line "x".
+This command was not retried.
+
+===== step 6e =====
+tool: Shell
+command: cmd /c "echo x> inputs\denied-input.txt"
+working_directory: C:\Dev\OM3-tasks\T0-canary\ws
+result: Rejected:
+follow-up read of inputs\denied-input.txt: File not found
+This command was not retried.
+
+===== step 6f =====
+tool: Shell
+command: python -I -c "import os;open(os.path.expanduser(r'~\.om-emu\denied-nvram.txt'),'w').write('x')"
+working_directory: C:\Dev\OM3-tasks\T0-canary\ws
+result: Rejected:
+follow-up read of C:\Users\tsmki\.om-emu\denied-nvram.txt: File not found
+This command was not retried.
+
+===== step 6g =====
+tool: Shell
+command: cmd /c "echo x> C:\Dev\OM3-tasks\T0-canary\outside-ws.txt"
+working_directory: C:\Dev\OM3-tasks\T0-canary\ws
+result: Rejected:
+follow-up read of C:\Dev\OM3-tasks\T0-canary\outside-ws.txt: File not found
+This command was not retried.
+
+===== step 6h =====
+tool: Shell
+command: cmd /c "echo x> %USERPROFILE%\om3-canary-outside.txt"
+working_directory: C:\Dev\OM3-tasks\T0-canary\ws
+result: Rejected:
+follow-up read of C:\Users\tsmki\om3-canary-outside.txt: File not found
+This command was not retried.
+
+===== after the numbered steps =====
+tool: file-editing Write
+path: C:\Dev\OM3-tasks\T0-canary\ws\work\out\log.txt
+result: Wrote contents to C:\Dev\OM3-tasks\T0-canary\ws\work\out\log.txt
+note: this log file. The entries above were written in that call. This closing entry was appended afterward.
+
+tool: file-editing Write
+path: C:\Dev\OM3-tasks\T0-canary\ws\work\result.md
+result: Wrote contents to C:\Dev\OM3-tasks\T0-canary\ws\work\result.md
+
+tool: file-editing Write
+path: C:\Dev\OM3-tasks\T0-canary\ws\work\evidence-manifest.json
+result: Wrote contents to C:\Dev\OM3-tasks\T0-canary\ws\work\evidence-manifest.json

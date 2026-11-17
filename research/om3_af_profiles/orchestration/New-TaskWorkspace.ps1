@@ -21,6 +21,7 @@ param(
   [Parameter(Mandatory)] [string] $Task,
   [switch] $Ghidra,
   [switch] $OmEmu,
+  [switch] $Rebuild,     # set an existing workspace aside as ws-superseded-<stamp> (never deleted) and build a new one
   [string] $Root = 'C:\Dev\OM3-research',
   [string] $TasksRoot = 'C:\Dev\OM3-tasks'
 )
@@ -32,8 +33,12 @@ function Invoke-Git { $old = $ErrorActionPreference; $ErrorActionPreference = 'C
 $rec = Join-Path $Root "tasks\$Task"
 if (-not (Test-Path "$rec\brief.md")) { throw "missing $rec\brief.md" }
 $tr = Join-Path $TasksRoot $Task
-if (Test-Path $tr) { throw "$tr exists; task workspaces are never reused (create a new task ID or remove it deliberately)" }
 $ws = Join-Path $tr 'ws'
+if (Test-Path $ws) {
+  if (-not $Rebuild) { throw "$ws exists; use -Rebuild to set it aside and build a new one" }
+  Rename-Item $ws ("ws-superseded-" + (Get-Date).ToString('yyyyMMdd-HHmmss'))
+  if (Test-Path "$tr\manifest-in.json") { Rename-Item "$tr\manifest-in.json" ("manifest-in-superseded-" + (Get-Date).ToString('yyyyMMdd-HHmmss') + '.json') }
+}
 foreach ($d in 'work\out', 'work\scripts', 'inputs', 'state\tmp', 'tools', '.cursor') { New-Item -ItemType Directory -Force (Join-Path $ws $d) | Out-Null }
 
 Copy-Item "$rec\brief.md" "$ws\brief.md"
@@ -101,11 +106,24 @@ if ($OmEmu) {
   $emuInfo = [pscustomobject]@{ path = 'om-emu'; head = $head; local_diff_sha256 = $dh }
 }
 
-# Workspace-local Cursor permissions (defence in depth; the ACL lock is the enforcing layer).
+# Workspace-local Cursor permissions. The enforcing write boundary is the operating system:
+# the agent runs at Low integrity (Initialize-AgentRuntime.ps1) and only the folders labelled
+# below are writable to it. The allow list therefore names the programs the work needs.
+# Patterns are globs matched against the command or its base executable (Cursor CLI matchesShell).
 @'
 {
   "permissions": {
-    "allow": [],
+    "allow": [
+      "Shell(python)", "Shell(python.exe)", "Shell(py)",
+      "Shell(*node.exe)", "Shell(node)",
+      "Shell(*java.exe)", "Shell(java)",
+      "Shell(*run-ghidra.cmd)", "Shell(tools\\bin\\run-ghidra.cmd)", "Shell(.\\tools\\bin\\run-ghidra.cmd)",
+      "Shell(cmd)", "Shell(whoami)", "Shell(certutil)", "Shell(findstr)", "Shell(where)",
+      "Shell(ls)", "Shell(dir)", "Shell(type)", "Shell(rg)",
+      "Shell(Get-FileHash)", "Shell(Get-Content)", "Shell(Get-ChildItem)", "Shell(Get-Item)",
+      "Shell(Select-String)", "Shell(Measure-Object)", "Shell(Test-Path)", "Shell(Format-Hex)",
+      "Shell(Write-Output)", "Shell(Set-Location)", "Shell(cd)"
+    ],
     "deny": [
       "Write(ref/**)",
       "Write(inputs/**)",
@@ -127,6 +145,21 @@ if ($OmEmu) {
 }
 '@ | Set-Content -Encoding ascii "$ws\.cursor\cli.json"
 
+# Integrity labels: only these folders become writable to the Low-integrity agent. Everything
+# else in the workspace (ref\ junction, inputs\, tools\, templates\, brief.md, TASK.md, the
+# root itself) keeps the default Medium label and is therefore read-only to the agent.
+# Recursive labelling is refused if a folder contains a junction (lesson of 17 Nov 2026: a
+# recursive icacls followed the ref\ junction into the research tree).
+# Setting a label needs WRITE_OWNER: C:\Dev\OM3-tasks carries an inheritable Full Control
+# grant for this user (set once, 17 Nov 2026), so no ACL change is made here.
+$writable = @('work', 'state') + @(foreach ($d in 'projects', 'om-emu') { if (Test-Path (Join-Path $ws $d)) { $d } })
+foreach ($d in $writable) {
+  $p = Join-Path $ws $d
+  if (Get-ChildItem $p -Recurse -Force -Attributes ReparsePoint -ErrorAction SilentlyContinue) { throw "reparse point inside $p; refusing recursive operations" }
+  icacls $p /setintegritylevel '(OI)(CI)low' /T /C /Q | Out-Null
+  if (((icacls $p) -join ' ') -notmatch 'Low Mandatory Level') { throw "label not applied to $p" }
+}
+
 $jdk = "$Root\tooling\jdk-25.0.5+8"; $node = "$Root\tooling\node-v26.12.1-win-x64\node.exe"
 $taskMd = @"
 # Execution workspace for $Task
@@ -140,11 +173,15 @@ You are in a disposable copy made for this task. Read ``brief.md`` first; sectio
 | ``inputs\`` | Hash-verified copies of decoded main and resource 0106 | read-only (enforced) |
 | ``projects\`` | Private copy of Ghidra project OM3_main_full | use with ``-readOnly -noanalysis`` |
 | ``om-emu\`` | Private copy of OM-Emu at the pinned commit with its local changes | you may modify it if the brief allows; every change is diffed afterwards |
-| ``tools\ghidra\`` | Ghidra launcher for this workspace (settings in ``state\ghidra-user``) | read-only |
-| ``templates\`` | result/review templates | read |
+| ``state\`` | Ghidra settings/cache and TEMP for this workspace | written by tools |
+| ``tools\`` | Ghidra launcher (``tools\bin\run-ghidra.cmd``) | read-only |
+| ``templates\`` | result/review templates | read-only |
 
 Paths in the research documents such as ``scripts/...`` or ``analysis/...`` are under ``ref\``.
-Writes anywhere else fail with "Access is denied". That is intended: do not try to work around it, and report it if it blocks the task.
+You run at Windows **Low integrity**: only ``work\``, ``state\``, ``projects\`` and ``om-emu\``
+are writable to you and to every program you start. Everything else (this folder's root, the
+rest of the disk, the user profile) refuses writes with "Access is denied". That is intended:
+do not try to work around it, and report it if it blocks the task.
 
 Ghidra headless: use the launcher, which already supplies the project copy, program,
 ``-noanalysis -readOnly`` and the script path (``work\scripts`` first, then ``ref\scripts``).

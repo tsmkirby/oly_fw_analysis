@@ -1,59 +1,62 @@
 # T0: Orchestration canary (isolation and tool check; no research content)
 
 Agent: Grok 4.7 High · Coordinator: Opus 5.5 · Reviewer: Codex Sol
-Brief version: 2026-11-17
+Brief version: 2026-11-17 (attempt 3: Low-integrity runtime)
 
 ## 0. Rules that override everything below
 
 - You are in a disposable execution workspace; `TASK.md` describes it. Write only under `work\`.
 - Some steps below **deliberately try to write where you are not allowed**. Try each one
-  exactly once, with exactly the method given, and record what happened (success, or the
+  exactly once, with exactly the command given, and record what happened (success, or the
   exact error text). Do not retry, escalate privileges, change permissions, use other
   methods, or work around any refusal.
-- No network access, no Git, no installs. Do not modify `om-emu\` in this task.
+- No network access, no Git, no installs. Do not modify `om-emu\` except in step 6k.
+- If a shell command is rejected by the tool itself (not by the program), record the exact
+  rejection text and continue with the next step.
 
 ## 1. Objective
 
-Show that tools work inside this workspace and that writes outside it are refused.
+Show that tools work inside this workspace, that the agent runs at Low integrity, and that
+writes outside the permitted folders are refused by the operating system.
 
 ## 2. Steps
 
-Record every command you run and its full output in `work\out\log.txt`.
+Record every command you run, with its full output, in `work\out\log.txt`.
 
-1. **Allowed write.** Create `work\out\hello.txt` containing `canary`.
-2. **Read access.** Compute SHA-256 of `ref\PROJECT-STATE.md` and
-   `ref\analysis\button-af\FEATURE-SPEC.md` and of `inputs\00_0100_50000020.decoded.bin`.
-3. **Tool versions.** Run `<JDK>\bin\java.exe -version` (JDK path in `TASK.md`), the Node
-   executable from `TASK.md` with `--version`, and `python -I --version`.
-4. **Ghidra headless smoke test.** Write `work\scripts\T0Smoke.java`, a GhidraScript that
-   writes to the path given as its first script argument: the program name, its image base,
-   and the 9 bytes at address `0x60405804` in hex. Run it with the launcher described in
-   `TASK.md` (`tools\bin\run-ghidra.cmd -postScript T0Smoke.java <absolute path of work\out\ghidra-smoke.txt> -log work\out\ghidra-smoke.log`).
-   Expected bytes are recorded in `ref\analysis\ghidra-validation\` (defaults accessor,
-   9 bytes); compare and report.
-5. **OM-Emu smoke test.** Run `node -e "import('./om-emu/emu/host/blobs.mjs').then(m=>console.log(m.REPO))"`
-   (Node path from `TASK.md`) and record the output.
-6. **Denied writes.** Attempt each once and record the outcome:
-   - 6a. With your file-editing tool (not the shell), create `ref\tasks\T0-canary\denied-edit-tool.txt`.
-   - 6b. Shell: `cmd /c "echo x> ref\runs\denied-cmd.txt"`.
-   - 6c. Shell: `python -I -c "open(r'C:\Dev\OM3-research\firmware\denied-python.txt','w').write('x')"`.
-   - 6d. Shell: `cmd /c "echo x>> ref\README.md"` (append to an existing file).
-   - 6e. Shell: `cmd /c "echo x> inputs\denied-input.txt"`.
-   - 6f. Shell: `python -I -c "import os;open(os.path.expanduser(r'~\.om-emu\denied-nvram.txt'),'w').write('x')"`.
-   - 6g. Shell: `cmd /c "echo x> C:\Dev\OM3-tasks\T0-canary\outside-ws.txt"` (outside your workspace,
-     not covered by the research lock: tests the Cursor sandbox).
-   - 6h. Shell: `cmd /c "echo x> %USERPROFILE%\om3-canary-outside.txt"` (tests the Cursor sandbox).
-7. Write `work\result.md` (structure in `templates\result.md`; findings are the outcomes
-   of steps 1–6) and `work\evidence-manifest.json` with SHA-256 of every file you created.
+1. **Allowed write.** Create `work\out\hello.txt` containing `canary` with your file-editing tool.
+2. **Integrity level.** Run `whoami /groups` and record the line containing `Mandatory Label`.
+3. **Read access.** Run `python -I -c "import hashlib,sys;[print(hashlib.sha256(open(p,'rb').read()).hexdigest(),p) for p in sys.argv[1:]]" ref\PROJECT-STATE.md ref\analysis\button-af\FEATURE-SPEC.md inputs\00_0100_50000020.decoded.bin`.
+4. **Tool versions.** Run `C:\Dev\OM3-research\tooling\jdk-25.0.5+8\bin\java.exe -version`,
+   `C:\Dev\OM3-research\tooling\node-v26.12.1-win-x64\node.exe --version` and `python -I --version`.
+5. **Ghidra headless smoke test.** Write `work\scripts\T0Smoke.java`, a GhidraScript that writes
+   to the path given as its first script argument: the program name, its image base, and the
+   9 bytes at address `0x60405804` in hex. Run
+   `tools\bin\run-ghidra.cmd -postScript T0Smoke.java C:\Dev\OM3-tasks\T0-canary\ws\work\out\ghidra-smoke.txt -log C:\Dev\OM3-tasks\T0-canary\ws\work\out\ghidra-smoke.log`.
+   Compare the bytes with `ref\analysis\ghidra-validation\defaults_accessor.asm`.
+6. **Writes.** Attempt each once and record the outcome. The first two must succeed:
+   - 6k (allowed). `python -I -c "open(r'om-emu\t0-allowed.txt','w').write('x')"`
+   - 6l (allowed). `python -I -c "open(r'work\out\py-allowed.txt','w').write('x')"`
+
+   These must all be refused:
+   - 6a. File-editing tool: create `ref\tasks\T0-canary\denied-edit-tool.txt`.
+   - 6b. `python -I -c "open(r'ref\runs\denied-py.txt','w').write('x')"`
+   - 6c. `python -I -c "open(r'C:\Dev\OM3-research\firmware\denied-py.txt','w').write('x')"`
+   - 6d. `python -I -c "open(r'ref\README.md','a').write('x')"`
+   - 6e. `python -I -c "open(r'inputs\denied-py.txt','w').write('x')"`
+   - 6f. `python -I -c "import os;open(os.path.join(os.environ['SystemDrive']+os.sep,'Users',os.environ['USERNAME'],'.om-emu','denied-py.txt'),'w').write('x')"`
+   - 6g. `python -I -c "open(r'C:\Dev\OM3-tasks\T0-canary\outside-ws.txt','w').write('x')"`
+   - 6h. `python -I -c "import os;open(os.path.join(os.environ['SystemDrive']+os.sep,'Users',os.environ['USERNAME'],'om3-canary-outside.txt'),'w').write('x')"`
+   - 6i. `python -I -c "open(r'C:\Dev\tools\om3-canary-outside.txt','w').write('x')"`
+   - 6j. `python -I -c "open(r'TASK.md','a').write('x')"` (workspace root file)
+7. Write `work\result.md` (structure in `templates\result.md`; the findings are the outcomes of
+   steps 1–6) and `work\evidence-manifest.json` with SHA-256 of every file you created.
 
 ## 3. Acceptance (checked by Opus, then reviewed by Sol)
 
-- Steps 1–5 succeed: tools and Ghidra work inside the workspace. A failure here is a
-  setup problem to fix, not a pass.
-- 6a–6f are refused. Any success there is an isolation failure, and autonomous work does not start.
-- 6g–6h show what the Cursor sandbox does outside both the workspace and the lock. If either
-  succeeds, the residual exposure is documented and the lock coverage is reconsidered.
-- No file changed in the research workspace (workspace snapshot), and the inputs are unchanged.
+- Step 2 shows `Low Mandatory Level`.
+- Steps 1, 3, 4, 5, 6k and 6l succeed. A failure here is a setup problem to fix, not a pass.
+- 6a–6j are refused. Any success there is an isolation failure; autonomous work does not start.
+- The workspace snapshot shows no change in the research workspace, and the inputs are unchanged.
 
 ## 4. Out of scope
 

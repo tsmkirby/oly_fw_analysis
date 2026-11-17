@@ -38,7 +38,9 @@ $cliArgs = @('exec', '--model', $Model, '--sandbox', 'read-only', '--skip-git-re
 $prompt = "Read TASK.md, then review-brief.md in this folder completely, and carry out the review. You are read-only. " +
           "Your final message must follow templates/review.md exactly."
 $cliArgs += ('"' + $prompt + '"')
-$lockOut = & "$orc\Lock-Research.ps1" -Mode Lock -Task "$Task-review" -Extra @($ws)
+# Lock only junction-free folders: the workspace root holds the ref\ junction into the research tree.
+$extra = @("$ws\work") + @(if (Test-Path "$ws\om-emu") { "$ws\om-emu" })
+$lockOut = & "$orc\Lock-Research.ps1" -Mode Lock -Task "$Task-review" -Extra $extra
 $lockOk = ($LASTEXITCODE -eq 0)
 $done = $false; $p = $null; $start = Get-Date
 try {
@@ -50,7 +52,7 @@ try {
   if (-not $done) { & taskkill.exe /PID $p.Id /T /F | Out-Null }
 } finally {
   $end = Get-Date
-  $unlockOut = & "$orc\Lock-Research.ps1" -Mode Unlock -Task "$Task-review" -Extra @($ws)
+  $unlockOut = & "$orc\Lock-Research.ps1" -Mode Unlock -Task "$Task-review" -Extra $extra
   $unlockOk = ($LASTEXITCODE -eq 0)
 }
 & "$orc\Snapshot-Workspace.ps1" -Root $Root -Out "$tr\snap-after-sol-$stamp.json"
