@@ -23,7 +23,9 @@ $ar = Join-Path $Worktree 'research\om3_af_profiles'
 if (Test-Path 'C:\Dev\OM3-tasks\.research-lock.json') { Write-Error 'research is locked (agent run in progress)'; exit 2 }
 if (Invoke-Git -C $Worktree status --porcelain) { Write-Error 'archive worktree has uncommitted changes; resolve first'; exit 2 }
 
-$adapted = @('README.md', 'scripts\decode_om3_queue95.py')
+$adapted = @('README.md', 'scripts\decode_om3_queue95.py',
+  # archived once, unchanged, under recorded-evidence\pr19\ (17 Nov 2026)
+  'om3-concise-pr-description.md', 'om3-draft-pr-body.md')
 $sel = @()
 $sel += Get-ChildItem $Root -File -Filter *.md
 $sel += Get-ChildItem "$Root\analysis\button-af" -File -Filter *.md
