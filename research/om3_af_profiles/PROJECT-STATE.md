@@ -142,7 +142,8 @@ Run sequence (`orchestration\Invoke-Grok.ps1`, `Invoke-Sol.ps1`):
 
 **Recovery after a crash during a run:** if `C:\Dev\OM3-tasks\.research-lock.json` exists,
 the workspace is still write-denied. Run
-`powershell -File C:\Dev\OM3-research\orchestration\Lock-Research.ps1 -Mode Unlock`.
+`powershell -NoProfile -ExecutionPolicy Bypass -File C:\Dev\OM3-research\orchestration\Lock-Research.ps1 -Mode Unlock`
+(the machine's execution policy blocks plain `powershell -File`).
 It removes the rules and verifies that writing works again.
 
 **Residual risks (documented, not hidden):**
