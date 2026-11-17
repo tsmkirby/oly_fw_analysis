@@ -1,0 +1,23 @@
+﻿{
+    "task":  "T0-canary",
+    "agent":  "grok",
+    "model":  "grok-4.7-high",
+    "brief_sha256":  "a8c923923863a2da0813fbda41ed5c5e5d4b3594693ce292e25b68ca5023a261",
+    "command":  "C:\\Users\\tsmki\\AppData\\Local\\cursor-agent\\agent.cmd -p --model grok-4.7-high --output-format json --trust --workspace C:\\Dev\\OM3-tasks\\T0-canary\\ws --sandbox enabled \"Read TASK.md and then brief.md in this folder completely, and carry out the brief exactly. Section 0 of the brief overrides everything else. Write only under work. Finish by making sure work/result.md and work/evidence-manifest.json exist.\"",
+    "sandbox":  true,
+    "started":  "2026-11-17T18:25:45.1439604-05:00",
+    "ended":  "2026-11-17T18:25:47.3421839-05:00",
+    "timed_out":  false,
+    "exit_code":  null,
+    "lock_ok":  true,
+    "lock_output":  "locked 12 targets in 12.6 s; probe failures: 0",
+    "unlock_ok":  true,
+    "unlock_output":  "unlocked; rules that had disappeared while locked: 0; probe failures: 0",
+    "workspace_unchanged":  false,
+    "inputs_unchanged":  true,
+    "harvested":  [
+
+                  ],
+    "usage":  null,
+    "ok":  false
+}

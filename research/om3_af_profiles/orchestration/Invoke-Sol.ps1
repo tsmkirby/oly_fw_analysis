@@ -45,6 +45,7 @@ try {
   if (-not $lockOk) { throw "lock failed: $($lockOut -join '; ')" }
   $p = Start-Process -FilePath $Codex -ArgumentList $cliArgs -WorkingDirectory $ws -NoNewWindow -PassThru `
          -RedirectStandardOutput "$tr\sol-$stamp.events.jsonl" -RedirectStandardError "$tr\sol-$stamp.err.txt"
+  $null = $p.Handle                     # Windows PowerShell 5.1 reports no ExitCode unless the handle is opened
   $done = $p.WaitForExit($TimeoutMinutes * 60 * 1000)
   if (-not $done) { & taskkill.exe /PID $p.Id /T /F | Out-Null }
 } finally {

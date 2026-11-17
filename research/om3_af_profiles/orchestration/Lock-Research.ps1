@@ -80,7 +80,10 @@ $ReadProbes = @('C:\Dev\OM3-research\README.md', 'C:\Dev\OM3-research\ghidra-pro
 
 function Report([bool]$expectLocked) {
   $bad = @()
-  foreach ($d in $CreateProbes) { if (Test-Path -LiteralPath $d) { $ok = Try-Create $d; if ($ok -eq $expectLocked) { $bad += "create $(if($ok){'ALLOWED'}else{'DENIED'}) in $d" } } }
+  # After unlocking, creation is probed only in runs\: a probe file changes its folder's
+  # timestamp, which the snapshot audit reports for summarised trees (T0, 17 Nov 2026).
+  $dirs = if ($expectLocked) { $CreateProbes } else { @('C:\Dev\OM3-research\runs') }
+  foreach ($d in $dirs) { if (Test-Path -LiteralPath $d) { $ok = Try-Create $d; if ($ok -eq $expectLocked) { $bad += "create $(if($ok){'ALLOWED'}else{'DENIED'}) in $d" } } }
   foreach ($f in $WriteProbes) { if (Test-Path -LiteralPath $f) { $ok = Try-OpenWrite $f; if ($ok -eq $expectLocked) { $bad += "open-for-write $(if($ok){'ALLOWED'}else{'DENIED'}) $f" } } }
   foreach ($f in $ReadProbes) { if (-not (Try-Read $f)) { $bad += "read DENIED $f" } }
   return ,$bad

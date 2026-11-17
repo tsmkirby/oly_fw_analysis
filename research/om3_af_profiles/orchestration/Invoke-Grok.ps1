@@ -6,7 +6,9 @@ Layers, in order of strength:
      workspace's supplied inputs are write-denied for this user during the run (Lock-Research.ps1).
   2. Location: Grok's workspace is C:\Dev\OM3-tasks\<Task>\ws, outside the research tree;
      the research is reached through the read-only ref\ junction.
-  3. Cursor: --sandbox enabled and the workspace's .cursor\cli.json deny rules.
+  3. Cursor: the workspace's .cursor\cli.json deny rules (allowlist mode). The Cursor sandbox is
+     unavailable on Windows ("Sandbox requires macOS or Linux", T0 run 20261117-182512), so the OS
+     lock is the enforcing layer here.
   4. Audit: workspace snapshot before/after, input re-hash, lock-rule presence check, OM-Emu diff.
 No unrestricted flags (--force/--yolo) are used.
 #>
@@ -15,7 +17,7 @@ param(
   [switch] $Ghidra,
   [switch] $OmEmu,
   [int] $TimeoutMinutes = 180,
-  [switch] $NoSandbox,                 # only if T0 shows the Cursor sandbox breaks required tools; recorded in the run log
+  [switch] $NoSandbox,                 # Cursor's sandbox is macOS/Linux only (T0, 17 Nov 2026); on Windows it is never requested
   [string] $Root = 'C:\Dev\OM3-research',
   [string] $TasksRoot = 'C:\Dev\OM3-tasks'
 )
@@ -58,7 +60,8 @@ $extra = @("$ws\inputs", "$ws\templates") + @(foreach ($d in "$ws\tools\ghidra\s
 $lockOut = & "$orc\Lock-Research.ps1" -Mode Lock -Task $Task -Extra $extra
 $lockOk = ($LASTEXITCODE -eq 0)
 $cliArgs = @('-p', '--model', $Model, '--output-format', 'json', '--trust', '--workspace', $ws)
-if (-not $NoSandbox) { $cliArgs += @('--sandbox', 'enabled') }
+$useSandbox = (-not $NoSandbox) -and ($env:OS -ne 'Windows_NT')
+if ($useSandbox) { $cliArgs += @('--sandbox', 'enabled') }
 $prompt = "Read TASK.md and then brief.md in this folder completely, and carry out the brief exactly. " +
           "Section 0 of the brief overrides everything else. Write only under work. " +
           "Finish by making sure work/result.md and work/evidence-manifest.json exist."
@@ -72,6 +75,7 @@ try {
   $env:TEMP = "$ws\state\tmp"; $env:TMP = "$ws\state\tmp"
   $p = Start-Process -FilePath $Agent -ArgumentList $cliArgs -WorkingDirectory $ws -NoNewWindow -PassThru `
          -RedirectStandardOutput "$tr\grok-$stamp.out.json" -RedirectStandardError "$tr\grok-$stamp.err.txt"
+  $null = $p.Handle                     # Windows PowerShell 5.1 reports no ExitCode unless the handle is opened
   $done = $p.WaitForExit($TimeoutMinutes * 60 * 1000)
   if (-not $done) { & taskkill.exe /PID $p.Id /T /F | Out-Null }
 } finally {
@@ -111,7 +115,7 @@ $ok = $done -and ($p.ExitCode -eq 0) -and $lockOk -and $unlockOk -and $wsClean -
       (Test-Path "$ws\work\result.md") -and (Test-Path "$ws\work\evidence-manifest.json")
 [pscustomobject]@{
   task = $Task; agent = 'grok'; model = $Model; brief_sha256 = (Sha "$rec\brief.md")
-  command = "$Agent $($cliArgs -join ' ')"; sandbox = (-not $NoSandbox)
+  command = "$Agent $($cliArgs -join ' ')"; cursor_sandbox = $useSandbox
   started = $start.ToString('o'); ended = $end.ToString('o'); timed_out = (-not $done)
   exit_code = $(if ($done -and $p) { $p.ExitCode } else { $null })
   lock_ok = $lockOk; lock_output = $lockOut; unlock_ok = $unlockOk; unlock_output = $unlockOut
