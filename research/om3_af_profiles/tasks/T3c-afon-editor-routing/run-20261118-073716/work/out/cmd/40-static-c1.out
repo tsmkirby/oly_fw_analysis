@@ -1,0 +1,33 @@
+image_bytes=33554368 base=0x60021020
+== row 2154 and the overlay third row ==
+2154 0x6158dc44 id=0x086a kind=12 label=0x06b1 opts=0x6158ba04 n=2 alt=0x00000000 altn=0
+  raw 6a0800000c00b106b4ae586104ba58610200000000000000b4ae58610000000000000000
+  opt[0] 0x6158ba04 value=1 kind=4 text=0x127b ptr=0x6158aeb4 raw 0100000004007b12b4ae5861
+  opt[1] 0x6158ba10 value=0 kind=4 text=0x124f ptr=0x6158aeb4 raw 0000000004004f12b4ae5861
+2155 0x6158dc68 id=0x086b kind=12 label=0x282c opts=0x6158ba04 n=2 alt=0x00000000 altn=0
+  raw 6b0800000c002c28b4ae586104ba58610200000000000000b4ae58610000000000000000
+  opt[0] 0x6158ba04 value=1 kind=4 text=0x127b ptr=0x6158aeb4 raw 0100000004007b12b4ae5861
+  opt[1] 0x6158ba10 value=0 kind=4 text=0x124f ptr=0x6158aeb4 raw 0000000004004f12b4ae5861
+overlay-3d6f 0x6031e978 id=0xffffffff kind=65535 label=0xffff opts=0xffffffff n=4294967295 alt=0xffffffff altn=4294967295
+  raw ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+page28-0 0x6158dc8c id=0x00ee kind=4 label=0x0dd2 opts=0x6158ba1c n=10 alt=0x6158ba1c altn=10
+  raw ee0000000400d20db4ae58611cba58610a00000000000000b4ae58611cba58610a000000
+  opt[0] 0x6158ba1c value=0 kind=12 text=0x23a3 ptr=0x6158aeb4 raw 000000000c00a323b4ae5861
+  opt[1] 0x6158ba28 value=2 kind=12 text=0x028a ptr=0x6158aeb4 raw 020000000c008a02b4ae5861
+  opt[2] 0x6158ba34 value=1 kind=12 text=0x064a ptr=0x6158aeb4 raw 010000000c004a06b4ae5861
+  opt[3] 0x6158ba40 value=5 kind=12 text=0x23a4 ptr=0x6158aeb4 raw 050000000c00a423b4ae5861
+  opt[4] 0x6158ba4c value=3 kind=12 text=0x19b5 ptr=0x6158aeb4 raw 030000000c00b519b4ae5861
+  opt[5] 0x6158ba58 value=10 kind=12 text=0x23a5 ptr=0x6158aeb4 raw 0a0000000c00a523b4ae5861
+  opt[6] 0x6158ba64 value=6 kind=12 text=0x23a6 ptr=0x6158aeb4 raw 060000000c00a623b4ae5861
+  opt[7] 0x6158ba70 value=7 kind=12 text=0x23a7 ptr=0x6158aeb4 raw 070000000c00a723b4ae5861
+  opt[8] 0x6158ba7c value=8 kind=12 text=0x23a8 ptr=0x6158aeb4 raw 080000000c00a823b4ae5861
+  opt[9] 0x6158ba88 value=9 kind=12 text=0x23a9 ptr=0x6158aeb4 raw 090000000c00a923b4ae5861
+== free bytes after the T3a overlay, section 1 ends 0x6031f000 ==
+leading_ff_from_0x6031e9b4=1612 first_non_ff=None
+head32 ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+== direct calls to the OK-path functions ==
+call_count=0
+== opcode scan inside FUN_6124f6c7 (316 bytes); Ghidra listing is authoritative ==
+  call16 site=0x6124f6cb target=0x61252031
+  call32 site=0x6124f716 target=0x612970e8
+
