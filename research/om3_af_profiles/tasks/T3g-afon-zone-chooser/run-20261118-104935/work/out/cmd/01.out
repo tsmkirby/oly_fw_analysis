@@ -1,0 +1,134 @@
+table 0x6061912c records 1712 stride 20 end 0x606216ec
+2154 on a record boundary: True
+238 on a record boundary: True
+2154 index 1664
+238 index 1430
+== 2154 descriptor ==
+  addr 0x6062132c raw 6a088000b7906160000000000200010000010000
+  +00 u16 id 2154 (0x086a)
+  +02 u16 flags 0x0080
+  +04 u32 value-table 0x606190b7
+  +08 u32 second-pointer 0x00000000
+  +0c u16 byte-count 2
+  +0e u16 stride 1
+  +10 u32 tail 0x00000100  byte+11 type 1
+  elements byte-count/stride = 2
+  value bytes 0001
+  values [0, 1]
+  24 bytes before the table 464748494a4b4c4d4e4f505152535455565758595a5f0001
+== UI 238 descriptor ==
+  addr 0x606200e4 raw ee008000b1786160000000000a00010000010000
+  +00 u16 id 238 (0x00ee)
+  +02 u16 flags 0x0080
+  +04 u32 value-table 0x606178b1
+  +08 u32 second-pointer 0x00000000
+  +0c u16 byte-count 10
+  +0e u16 stride 1
+  +10 u32 tail 0x00000100  byte+11 type 1
+  elements byte-count/stride = 10
+  value bytes 00010203050a06070809
+  values [0, 1, 2, 3, 5, 10, 6, 7, 8, 9]
+  24 bytes before the table 1b2127010203040501020304050607080001000100010001
+== record after 2154 ==
+  addr 0x60621340 raw 6b088000b7906160000000000200010000010000
+  +00 u16 id 2155 (0x086b)
+  +02 u16 flags 0x0080
+  +04 u32 value-table 0x606190b7
+  +08 u32 second-pointer 0x00000000
+  +0c u16 byte-count 2
+  +0e u16 stride 1
+  +10 u32 tail 0x00000100  byte+11 type 1
+  elements byte-count/stride = 2
+  value bytes 0001
+  values [0, 1]
+  24 bytes before the table 464748494a4b4c4d4e4f505152535455565758595a5f0001
+== record after 238 ==
+  addr 0x606200f8 raw 9c068000b1786160000000000a00010000010000
+  +00 u16 id 1692 (0x069c)
+  +02 u16 flags 0x0080
+  +04 u32 value-table 0x606178b1
+  +08 u32 second-pointer 0x00000000
+  +0c u16 byte-count 10
+  +0e u16 stride 1
+  +10 u32 tail 0x00000100  byte+11 type 1
+  elements byte-count/stride = 10
+  value bytes 00010203050a06070809
+  values [0, 1, 2, 3, 5, 10, 6, 7, 8, 9]
+  24 bytes before the table 1b2127010203040501020304050607080001000100010001
+== record before 238 ==
+  addr 0x606200d0 raw 9b068000af786160000000000200010000010000
+  +00 u16 id 1691 (0x069b)
+  +02 u16 flags 0x0080
+  +04 u32 value-table 0x606178af
+  +08 u32 second-pointer 0x00000000
+  +0c u16 byte-count 2
+  +0e u16 stride 1
+  +10 u32 tail 0x00000100  byte+11 type 1
+  elements byte-count/stride = 2
+  value bytes 0001
+  values [0, 1]
+  24 bytes before the table 13171b212701020304050102030405060708000100010001
+== records sharing 2154's value table ==
+  id 2154 bytes 2 stride 1 second 0x0 type 1 at 0x6062132c
+  id 2155 bytes 2 stride 1 second 0x0 type 1 at 0x60621340
+== records sharing 238's value table ==
+  id 238 name MODE_AF_HOME_AREA_TYPE bytes 10 stride 1 second 0x0 type 1 at 0x606200e4
+  id 1692 name MODE_AF_HOME_AREA_TYPE_CCW bytes 10 stride 1 second 0x0 type 1 at 0x606200f8
+  id 1693 name MODE_AF_HOME_AREA_TYPE_CW bytes 10 stride 1 second 0x0 type 1 at 0x6062010c
+stride histogram 1:1039, 2:527, 64:146
+records with a non-zero +08 pointer 146
+== names and keys ==
+  id 238 name MODE_AF_HOME_AREA_TYPE map 0x60625914 raw a19f0000 key 0x9fa1 index 0
+    name slot raw 4d4f44455f41465f484f4d455f415245415f54595045000000000000000000000000000000000000000000000000000000000000
+  id 1692 name MODE_AF_HOME_AREA_TYPE_CCW map 0x60626fcc raw a19f0100 key 0x9fa1 index 1
+    name slot raw 4d4f44455f41465f484f4d455f415245415f545950455f4343570000000000000000000000000000000000000000000000000000
+  id 1693 name MODE_AF_HOME_AREA_TYPE_CW map 0x60626fd0 raw a19f0200 key 0x9fa1 index 2
+    name slot raw 4d4f44455f41465f484f4d455f415245415f545950455f4357000000000000000000000000000000000000000000000000000000
+  id 2154 name MODE_AF_SUBJECT_PRIORITY_RELEASE map 0x60627704 raw a1900000 key 0x90a1 index 0
+    name slot raw 4d4f44455f41465f5355424a4543545f5052494f524954595f52454c454153450000000000000000000000000000000000000000
+  id 2155 name MODE_AF_SUBJECT_PRIORITY_CUSTOM_SW map 0x60627708 raw a1900100 key 0x90a1 index 1
+    name slot raw 4d4f44455f41465f5355424a4543545f5052494f524954595f435553544f4d5f5357000000000000000000000000000000000000
+  id 163 name MODE_AF_AREA_TYPE map 0x606257e8 raw a1990000 key 0x99a1 index 0
+    name slot raw 4d4f44455f41465f415245415f545950450000000000000000000000000000000000000000000000000000000000000000000000
+== option records ==
+priority 0x6158ba04
+  [0] 0x6158ba04 raw 0100000004007b12b4ae5861 value 1 kind 4 id 0x127b ptr 0x6158aeb4
+  [1] 0x6158ba10 raw 0000000004004f12b4ae5861 value 0 kind 4 id 0x124f ptr 0x6158aeb4
+zone 0x6158ba1c
+  [0] 0x6158ba1c raw 000000000c00a323b4ae5861 value 0 kind 12 id 0x23a3 ptr 0x6158aeb4
+  [1] 0x6158ba28 raw 020000000c008a02b4ae5861 value 2 kind 12 id 0x028a ptr 0x6158aeb4
+  [2] 0x6158ba34 raw 010000000c004a06b4ae5861 value 1 kind 12 id 0x064a ptr 0x6158aeb4
+  [3] 0x6158ba40 raw 050000000c00a423b4ae5861 value 5 kind 12 id 0x23a4 ptr 0x6158aeb4
+  [4] 0x6158ba4c raw 030000000c00b519b4ae5861 value 3 kind 12 id 0x19b5 ptr 0x6158aeb4
+  [5] 0x6158ba58 raw 0a0000000c00a523b4ae5861 value 10 kind 12 id 0x23a5 ptr 0x6158aeb4
+  [6] 0x6158ba64 raw 060000000c00a623b4ae5861 value 6 kind 12 id 0x23a6 ptr 0x6158aeb4
+  [7] 0x6158ba70 raw 070000000c00a723b4ae5861 value 7 kind 12 id 0x23a7 ptr 0x6158aeb4
+  [8] 0x6158ba7c raw 080000000c00a823b4ae5861 value 8 kind 12 id 0x23a8 ptr 0x6158aeb4
+  [9] 0x6158ba88 raw 090000000c00a923b4ae5861 value 9 kind 12 id 0x23a9 ptr 0x6158aeb4
+zone option values [0, 2, 1, 5, 3, 10, 6, 7, 8, 9]
+238 value-table bytes [0, 1, 2, 3, 5, 10, 6, 7, 8, 9]
+238 table equals zone values in order: False
+238 table as a set equals zone values: True
+page27 row0 0x6158dc44 raw 6a0800000c00b106b4ae586104ba58610200000000000000b4ae58610000000000000000
+  +00 id 2154 +04 kind 12 +06 label 0x06b1 +08 class 0x6158aeb4
+  +0c options 0x6158ba04 +10 count 2 +14 0x00000000
+  +18 class 0x6158aeb4 +1c alternate 0x00000000 +20 alternate-count 0
+page27 row1 0x6158dc68 raw 6b0800000c002c28b4ae586104ba58610200000000000000b4ae58610000000000000000
+  +00 id 2155 +04 kind 12 +06 label 0x282c +08 class 0x6158aeb4
+  +0c options 0x6158ba04 +10 count 2 +14 0x00000000
+  +18 class 0x6158aeb4 +1c alternate 0x00000000 +20 alternate-count 0
+page28 row0 UI238 0x6158dc8c raw ee0000000400d20db4ae58611cba58610a00000000000000b4ae58611cba58610a000000
+  +00 id 238 +04 kind 4 +06 label 0x0dd2 +08 class 0x6158aeb4
+  +0c options 0x6158ba1c +10 count 10 +14 0x00000000
+  +18 class 0x6158aeb4 +1c alternate 0x6158ba1c +20 alternate-count 10
+== one stride-0x40 record ==
+  addr 0x6061912c raw c10c8000ec1c6060cc096060c003400000060000
+  +00 u16 id 3265 (0x0cc1)
+  +02 u16 flags 0x0080
+  +04 u32 value-table 0x60601cec
+  +08 u32 second-pointer 0x606009cc
+  +0c u16 byte-count 960
+  +0e u16 stride 64
+  +10 u32 tail 0x00000600  byte+11 type 6
+  elements byte-count/stride = 15
+done

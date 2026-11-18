@@ -1021,7 +1021,21 @@ emulator only.
     With both, OK opens the native chooser, confirm calls the setter with `(0x3D6F, 1)` and the RAM
     profile byte changes, cancel does not change it, and 2154/2155 are untouched.
   - The chooser's contents follow the editor descriptor, not the row's option list; the row list only
-    sets the glyph drawn on the row. The ten-zone chooser is not yet shown.
+    sets the glyph drawn on the row.
+- **Editor descriptor (T3g).** 20-byte records in a table at `0x6061912c` (1712 records, hashed into 128
+  buckets).
+  - Fields: ID, flags, value-table pointer, a second pointer, byte count, stride and type.
+  - With stride 1, the byte count is the number of slots, and the committed value is
+    `table[cursor index]`.
+  - UI 238 `MODE_AF_HOME_AREA_TYPE` (key `0x9fa1`) has values `00 01 02 03 05 0a 06 07 08 09`.
+  - **With a clone of UI 238's descriptor (EMULATOR-ONLY),** the AF-ON row opens a ten-slot chooser and
+    commits zone values (3; 2 then 5) into the RAM profile. Cancel does not commit.
+  - A partial acceptance passed, compared against a stock control:
+    - full-cell readbacks are identical, and pages 25–27 render;
+    - after a native save, the M and E stores are byte-identical, and the profile returns to its default
+      in a new session.
+  - **The faces are wrong:** values 0 and 1 show the priority strings, and the other slots are blank. The
+    chooser's face source has not yet been traced.
 - **For a final firmware.** A final firmware needs:
   - a page-27 action record for the AF-ON row, with an editor binding of its own (the array is about
     10 KB, which needs a placement plan) and a registered editor descriptor;
