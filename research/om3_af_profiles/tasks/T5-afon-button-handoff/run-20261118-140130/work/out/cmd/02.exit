@@ -1,0 +1,16 @@
+{
+  "status": 0,
+  "signal": null,
+  "error": null,
+  "start": "2026-11-18T19:15:23.326Z",
+  "end": "2026-11-18T19:15:27.667Z",
+  "spawn": "cmd.exe /d /c tools\\bin\\run-ghidra.cmd -postScript DisasmRangesK1.java work\\out\\static-windows-k1.json 60a8f6bb 100 work\\out\\disasm-home-k1.txt 6031eb80 90 work\\out\\disasm-stub-k1.txt 6031ead0 80 work\\out\\disasm-ensure-k1.txt 609b3ecd 45 work\\out\\disasm-converter-k1.txt 610bf5e2 4 work\\out\\disasm-callsite-k1.txt 60a8f2ac 40 work\\out\\disasm-reconcile-head-k1.txt -log work\\out\\ghidra-k1.log",
+  "wrapper_sha256": "e00170efc367d0ed4c145db59bd6a84738688554f6904980ea382f6494325d15",
+  "scripts": [
+    {
+      "path": "DisasmRangesK1.java",
+      "sha256": "e411dc295baa29319a03e06f3bc6152b5fc495c5f509fc09c81ac1e128fb829c",
+      "bytes": 3351
+    }
+  ]
+}

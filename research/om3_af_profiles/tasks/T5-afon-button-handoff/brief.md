@@ -97,3 +97,38 @@ scripts, tables, JSONL and screenshots.
 - The size and position editor (T3b).
 - Storage and packaging (T4).
 - Hardware.
+
+## 5. Correction round (Opus, after Sol's review `run-20261118-145847-review`: REJECT)
+
+Your previous work is in `work\`. Sol's full review is `audit\previous-review.md`. Do **not** start over.
+The combined overlay (Z + relocated central-edge), the 15-byte profile swap at `0x60a8f708`, and the
+P1–P3 edge records are confirmed; reuse them byte for byte. Save every new script, table, JSONL and
+screenshot under a **new, unique name** (`-c1` suffix onward); never overwrite a file a run used or wrote.
+At most four new experiment versions in total.
+
+1. **Section-7 bytes (coordinator amendment).** The three bytes `0x610bf5e3`–`0x610bf5e5` are the call
+   site of the inherited, already accepted EMULATOR-ONLY central-edge hook. They are **permitted** as an
+   EMULATOR-ONLY runtime call-site patch. In `out\overlay-changed-bytes-c1.csv` add a `section` column for
+   every row, mark these three rows `section 7, EMULATOR-ONLY runtime call-site patch (inherited
+   central-edge)`, and add a script that computes each row's section from the section table and fails if
+   any other row lies in section 6 or 7. Their native placement is a T4 question; say so.
+2. **Acceptance, fully asserted.** Re-run acceptance as one table-driven runner (new name) that asserts
+   after **every** navigation key, every edge, the save, and the reopen:
+   - candidate: two fresh sessions, each choosing zone A through the menu, 12 edges, changing to zone B,
+     12 edges, native save, new session on that store, AF-ON press asserting the default-zone target;
+   - **matched control**: a no-overlay session that performs the *same* menu navigation (opening page 27
+     and its rows, cancelling where the candidate commits the AF-ON row) and the same edges, save and
+     reopen, with every control target asserted as a literal value;
+   - screenshot errors fatal (`fatalShots:true`); the store comparison is against the matched control;
+     the run must end `ok:true`. A failed assertion ends the run with `ok:false`; report it as such.
+3. **Chooser header.** Assert the chooser's header glyph identity independently of the help sentence
+   (for example the header's resource or glyph ID, or a pixel hash of the header region compared with the
+   T3j reference). `pageTitle()` must not derive the header from the help text.
+4. **P4.** Re-run P4 with a legacy `0x9fa1` value whose zone differs from the profile's zone, so the two
+   providers are distinguishable, with per-edge target, owner and invariant assertions and a matching
+   no-overlay control. Otherwise narrow the P4 claim to what was shown.
+5. **Records.** Repair the manifest: correct the unresolved `DisasmRangesK1.java` path; add the consumed
+   T3j overlay CSV and acceptance table and the promoted overlay CSV; include every command record through
+   the last one (account for command 41 correctly). Correct the PASS and completeness wording in
+   `result.md` §3, §5 and §8. Keep the overlay-versus-stock distinction explicit (findings 1–2 are overlay
+   listings). Refresh the manifest last.

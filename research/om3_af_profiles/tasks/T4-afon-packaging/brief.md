@@ -75,3 +75,36 @@ per item labelled as such); bounded listings; `out\cmd\`; scripts.
 ## 4. Out of scope
 
 Building or testing an installer, any image, storage choice, and hardware.
+
+## 5. Correction round (Opus, after Sol's review `run-20261118-150331-review`: REJECT)
+
+Your previous work is in `work\`. Sol's full review is `audit\previous-review.md`. Do **not** start over;
+the confirmed measurements stand. Save every new script and output under a **new, unique name** (`-c1`
+suffix onward); never overwrite a file a run used or wrote. Write the corrected answers to
+`out\packaging-c1.md` and update `result.md`.
+
+**New evidence allowed (one change of approach).** Besides static analysis you may run your private
+OM-Emu copy on the **stock** image (no overlay, `OM_EMU_NVRAM` off) with read/write/execute watchpoints,
+through the command wrapper, to answer items 1 and 5. Patch nothing; log every hit with its PC.
+
+1. **Duplicate binding `0x615c6234`.** Withdraw the unconditional reuse. Either show no reader reaches it
+   (for example a stock OM-Emu run with a read watch on `0x615c6234`–`0x615c624b` and on the directory
+   entry `0x615cc934`–`0x615cc93b` from boot through opening pages 25–28 and their editors, plus a static
+   search for computed indexing into the array), stating exactly which paths were exercised, or keep it as
+   a labelled conditional hypothesis with binding placement unresolved.
+2. **Face patch.** Replace the five-byte proposal at `0x611f7f42` with a control-flow-preserving design that
+   accounts for the incoming `bne` at `0x611f7f3e` → `0x611f7f44`. Give its listing and bytes.
+3. **Budget, separated.** Tabulate separately: changed image bytes; reserved resident space; runtime
+   destinations; helper code. Budget the eight-byte hash node separately (376 bytes with the node, within
+   the existing 452-byte span, before additional code).
+4. **Unsized code.** Give each of installer, getter/setter stubs, face helper, node initialization and
+   bucket publication, and runtime code-patch synchronization (instruction-cache concerns for section-7
+   code patches) a size, or mark it explicitly as an unresolved quantity. Do not claim a complete total.
+5. **Bound and order.** Limit checksum and decompression conclusions to the code actually listed (complete
+   the flash-entry and flash-read listings through their callees, or label the rest unexamined). Establish,
+   by the watchpoint run or by listing the caller chain of `0x6040476d`, the order of: descriptor build
+   (`FUN_60405865`), the key-port hook point `0x6017a5fc`, and the first menu access to the binding
+   directory. If it is not established, say so.
+6. **Wording.** Replace "no owned region exists" with "no qualifying region was established"; keep Q6 and
+   the archived-placement conflict open. Fix the head-copy call address (`0x60021187`) and remove listing
+   ranges that start inside instructions (`0x60045f70`, `0x60046040`). Refresh the manifest last.

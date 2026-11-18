@@ -1,0 +1,1733 @@
+[
+  {
+    "id": "baseline",
+    "lane": "main",
+    "shared": true,
+    "key": null,
+    "action": "baseline",
+    "controlStep": "baseline",
+    "expect": {
+      "title": "Y/M/D",
+      "highlight": null,
+      "invariant": true,
+      "readback": {
+        "profile": 0,
+        "profileCached": 0,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "shooting",
+        "slotValue": null,
+        "helpId": null,
+        "glyph": null,
+        "saves": null,
+        "cells": {
+          "k90a1": [
+            1,
+            1
+          ],
+          "k1dd1": [
+            27,
+            39,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "k99a1": [
+            2,
+            0,
+            2,
+            0,
+            2,
+            0,
+            5,
+            5
+          ],
+          "k9a41": 0,
+          "k5962": [
+            526,
+            526,
+            526,
+            526,
+            526,
+            526
+          ],
+          "home": {
+            "0x99d2": [
+              526,
+              526,
+              526
+            ],
+            "0x9fa1": [
+              0,
+              0,
+              0
+            ],
+            "0xdfa1": [
+              0
+            ],
+            "0x1ea1": [
+              0
+            ],
+            "0x9ec1": [
+              0
+            ],
+            "0x9ed1": [
+              1
+            ],
+            "0x9ee1": [
+              0
+            ],
+            "0x9ef1": [
+              0
+            ],
+            "0x59b1": [
+              0
+            ]
+          },
+          "originally": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "profileControl": 255,
+        "profileCachedControl": 255,
+        "glyphControl": null
+      },
+      "helpText": null
+    }
+  },
+  {
+    "id": "menu",
+    "lane": "main",
+    "shared": true,
+    "key": "menu",
+    "action": null,
+    "controlStep": "menu",
+    "expect": {
+      "title": "1.Card/Folder/File",
+      "highlight": "Card Formatting",
+      "invariant": true,
+      "readback": {
+        "profile": 0,
+        "profileCached": 0,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": null,
+        "helpId": null,
+        "glyph": null,
+        "saves": null,
+        "cells": null,
+        "profileControl": 255,
+        "profileCachedControl": 255,
+        "glyphControl": null
+      },
+      "helpText": null
+    }
+  },
+  {
+    "id": "left-0",
+    "lane": "main",
+    "shared": true,
+    "key": "left",
+    "action": null,
+    "controlStep": "left-0",
+    "expect": {
+      "title": "5.Grid/Other Displays",
+      "highlight": "@A02C@Grid Settings",
+      "invariant": true,
+      "readback": {
+        "profile": 0,
+        "profileCached": 0,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": null,
+        "helpId": null,
+        "glyph": null,
+        "saves": null,
+        "cells": null,
+        "profileControl": 255,
+        "profileCachedControl": 255,
+        "glyphControl": null
+      },
+      "helpText": null
+    }
+  },
+  {
+    "id": "left-1",
+    "lane": "main",
+    "shared": true,
+    "key": "left",
+    "action": null,
+    "controlStep": "left-1",
+    "expect": {
+      "title": "4.Information",
+      "highlight": "EVF Style",
+      "invariant": true,
+      "readback": {
+        "profile": 0,
+        "profileCached": 0,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": null,
+        "helpId": null,
+        "glyph": null,
+        "saves": null,
+        "cells": null,
+        "profileControl": 255,
+        "profileCachedControl": 255,
+        "glyphControl": null
+      },
+      "helpText": null
+    }
+  },
+  {
+    "id": "left-2",
+    "lane": "main",
+    "shared": true,
+    "key": "left",
+    "action": null,
+    "controlStep": "left-2",
+    "expect": {
+      "title": "3.Live View",
+      "highlight": "@A02C@LV Mode",
+      "invariant": true,
+      "readback": {
+        "profile": 0,
+        "profileCached": 0,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": null,
+        "helpId": null,
+        "glyph": null,
+        "saves": null,
+        "cells": null,
+        "profileControl": 255,
+        "profileCachedControl": 255,
+        "glyphControl": null
+      },
+      "helpText": null
+    }
+  },
+  {
+    "id": "left-3",
+    "lane": "main",
+    "shared": true,
+    "key": "left",
+    "action": null,
+    "controlStep": "left-3",
+    "expect": {
+      "title": "2.Operations",
+      "highlight": "LV Close Up Mode",
+      "invariant": true,
+      "readback": {
+        "profile": 0,
+        "profileCached": 0,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": null,
+        "helpId": null,
+        "glyph": null,
+        "saves": null,
+        "cells": null,
+        "profileControl": 255,
+        "profileCachedControl": 255,
+        "glyphControl": null
+      },
+      "helpText": null
+    }
+  },
+  {
+    "id": "left-4",
+    "lane": "main",
+    "shared": true,
+    "key": "left",
+    "action": null,
+    "controlStep": "left-4",
+    "expect": {
+      "title": "1.Operations",
+      "highlight": "Button Settings",
+      "invariant": true,
+      "readback": {
+        "profile": 0,
+        "profileCached": 0,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": null,
+        "helpId": null,
+        "glyph": null,
+        "saves": null,
+        "cells": null,
+        "profileControl": 255,
+        "profileCachedControl": 255,
+        "glyphControl": null
+      },
+      "helpText": null
+    }
+  },
+  {
+    "id": "left-5",
+    "lane": "main",
+    "shared": true,
+    "key": "left",
+    "action": null,
+    "controlStep": "left-5",
+    "expect": {
+      "title": "3.Displays",
+      "highlight": "@A01C@",
+      "invariant": true,
+      "readback": {
+        "profile": 0,
+        "profileCached": 0,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": null,
+        "helpId": null,
+        "glyph": null,
+        "saves": null,
+        "cells": null,
+        "profileControl": 255,
+        "profileCachedControl": 255,
+        "glyphControl": null
+      },
+      "helpText": null
+    }
+  },
+  {
+    "id": "left-6",
+    "lane": "main",
+    "shared": true,
+    "key": "left",
+    "action": null,
+    "controlStep": "left-6",
+    "expect": {
+      "title": "2.Operations",
+      "highlight": "@A037@@A035@Function",
+      "invariant": true,
+      "readback": {
+        "profile": 0,
+        "profileCached": 0,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": null,
+        "helpId": null,
+        "glyph": null,
+        "saves": null,
+        "cells": null,
+        "profileControl": 255,
+        "profileCachedControl": 255,
+        "glyphControl": null
+      },
+      "helpText": null
+    }
+  },
+  {
+    "id": "left-7",
+    "lane": "main",
+    "shared": true,
+    "key": "left",
+    "action": null,
+    "controlStep": "left-7",
+    "expect": {
+      "title": "1.File",
+      "highlight": "@A009@",
+      "invariant": true,
+      "readback": {
+        "profile": 0,
+        "profileCached": 0,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": null,
+        "helpId": null,
+        "glyph": null,
+        "saves": null,
+        "cells": null,
+        "profileControl": 255,
+        "profileCachedControl": 255,
+        "glyphControl": null
+      },
+      "helpText": null
+    }
+  },
+  {
+    "id": "left-8",
+    "lane": "main",
+    "shared": true,
+    "key": "left",
+    "action": null,
+    "controlStep": "left-8",
+    "expect": {
+      "title": "6.Shooting Assist",
+      "highlight": "Center Marker",
+      "invariant": true,
+      "readback": {
+        "profile": 0,
+        "profileCached": 0,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": null,
+        "helpId": null,
+        "glyph": null,
+        "saves": null,
+        "cells": null,
+        "profileControl": 255,
+        "profileCachedControl": 255,
+        "glyphControl": null
+      },
+      "helpText": null
+    }
+  },
+  {
+    "id": "left-9",
+    "lane": "main",
+    "shared": true,
+    "key": "left",
+    "action": null,
+    "controlStep": "left-9",
+    "expect": {
+      "title": "5.Sound Recording/Connection",
+      "highlight": "Sound Recording Settings",
+      "invariant": true,
+      "readback": {
+        "profile": 0,
+        "profileCached": 0,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": null,
+        "helpId": null,
+        "glyph": null,
+        "saves": null,
+        "cells": null,
+        "profileControl": 255,
+        "profileCachedControl": 255,
+        "glyphControl": null
+      },
+      "helpText": null
+    }
+  },
+  {
+    "id": "left-10",
+    "lane": "main",
+    "shared": true,
+    "key": "left",
+    "action": null,
+    "controlStep": "left-10",
+    "expect": {
+      "title": "4.Image Stabilizer",
+      "highlight": "@A027@Image Stabilizer",
+      "invariant": true,
+      "readback": {
+        "profile": 0,
+        "profileCached": 0,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": null,
+        "helpId": null,
+        "glyph": null,
+        "saves": null,
+        "cells": null,
+        "profileControl": 255,
+        "profileCachedControl": 255,
+        "glyphControl": null
+      },
+      "helpText": null
+    }
+  },
+  {
+    "id": "left-11",
+    "lane": "main",
+    "shared": true,
+    "key": "left",
+    "action": null,
+    "controlStep": "left-11",
+    "expect": {
+      "title": "3.ISO/Noise Reduction",
+      "highlight": "@A03E@ISO-A Upper/Default",
+      "invariant": true,
+      "readback": {
+        "profile": 0,
+        "profileCached": 0,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": null,
+        "helpId": null,
+        "glyph": null,
+        "saves": null,
+        "cells": null,
+        "profileControl": 255,
+        "profileCachedControl": 255,
+        "glyphControl": null
+      },
+      "helpText": null
+    }
+  },
+  {
+    "id": "left-12",
+    "lane": "main",
+    "shared": true,
+    "key": "left",
+    "action": null,
+    "controlStep": "left-12",
+    "expect": {
+      "title": "2.Picture Mode/WB",
+      "highlight": "@A027@Picture Mode",
+      "invariant": true,
+      "readback": {
+        "profile": 0,
+        "profileCached": 0,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": null,
+        "helpId": null,
+        "glyph": null,
+        "saves": null,
+        "cells": null,
+        "profileControl": 255,
+        "profileCachedControl": 255,
+        "glyphControl": null
+      },
+      "helpText": null
+    }
+  },
+  {
+    "id": "left-13",
+    "lane": "main",
+    "shared": true,
+    "key": "left",
+    "action": null,
+    "controlStep": "left-13",
+    "expect": {
+      "title": "1.Basic Settings/Image Quality",
+      "highlight": "@A027@Custom Mode",
+      "invariant": true,
+      "readback": {
+        "profile": 0,
+        "profileCached": 0,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": null,
+        "helpId": null,
+        "glyph": null,
+        "saves": null,
+        "cells": null,
+        "profileControl": 255,
+        "profileCachedControl": 255,
+        "glyphControl": null
+      },
+      "helpText": null
+    }
+  },
+  {
+    "id": "left-14",
+    "lane": "main",
+    "shared": true,
+    "key": "left",
+    "action": null,
+    "controlStep": "left-14",
+    "expect": {
+      "title": "7.MF",
+      "highlight": "MF Assist",
+      "invariant": true,
+      "readback": {
+        "profile": 0,
+        "profileCached": 0,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": null,
+        "helpId": null,
+        "glyph": null,
+        "saves": null,
+        "cells": null,
+        "profileControl": 255,
+        "profileCachedControl": 255,
+        "glyphControl": null
+      },
+      "helpText": null
+    }
+  },
+  {
+    "id": "left-15",
+    "lane": "main",
+    "shared": true,
+    "key": "left",
+    "action": null,
+    "controlStep": "left-15",
+    "expect": {
+      "title": "6.AF Target Settings & Operations",
+      "highlight": "@A02C@AF Target Mode Settings",
+      "invariant": true,
+      "readback": {
+        "profile": 0,
+        "profileCached": 0,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": null,
+        "helpId": null,
+        "glyph": null,
+        "saves": null,
+        "cells": null,
+        "profileControl": 255,
+        "profileCachedControl": 255,
+        "glyphControl": null
+      },
+      "helpText": null
+    }
+  },
+  {
+    "id": "left-16",
+    "lane": "main",
+    "shared": true,
+    "key": "left",
+    "action": null,
+    "controlStep": "left-16",
+    "expect": {
+      "title": "5.Movie AF",
+      "highlight": "@A027@AF Mode",
+      "invariant": true,
+      "readback": {
+        "profile": 0,
+        "profileCached": 0,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": null,
+        "helpId": null,
+        "glyph": null,
+        "saves": null,
+        "cells": null,
+        "profileControl": 255,
+        "profileCachedControl": 255,
+        "glyphControl": null
+      },
+      "helpText": null
+    }
+  },
+  {
+    "id": "left-17",
+    "lane": "main",
+    "shared": true,
+    "key": "left",
+    "action": null,
+    "controlStep": "left-17",
+    "expect": {
+      "title": "4.AF",
+      "highlight": "@A02C@C-AF Sensitivity",
+      "invariant": true,
+      "readback": {
+        "profile": 0,
+        "profileCached": 0,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": null,
+        "helpId": null,
+        "glyph": null,
+        "saves": null,
+        "cells": null,
+        "profileControl": 255,
+        "profileCachedControl": 255,
+        "glyphControl": null
+      },
+      "helpText": null
+    }
+  },
+  {
+    "id": "left-18",
+    "lane": "main",
+    "shared": true,
+    "key": "left",
+    "action": null,
+    "controlStep": "left-18",
+    "expect": {
+      "title": "3.AF",
+      "highlight": "AF Illuminator",
+      "invariant": true,
+      "readback": {
+        "profile": 0,
+        "profileCached": 0,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": null,
+        "helpId": null,
+        "glyph": null,
+        "saves": null,
+        "cells": null,
+        "profileControl": 255,
+        "profileCachedControl": 255,
+        "glyphControl": null
+      },
+      "helpText": null
+    }
+  },
+  {
+    "id": "left-19",
+    "lane": "main",
+    "shared": true,
+    "key": "left",
+    "action": null,
+    "controlStep": "left-19",
+    "expect": {
+      "title": "2.AF",
+      "highlight": "Subject Detection",
+      "invariant": true,
+      "readback": {
+        "profile": 0,
+        "profileCached": 0,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": null,
+        "helpId": null,
+        "glyph": null,
+        "saves": null,
+        "cells": null,
+        "profileControl": 255,
+        "profileCachedControl": 255,
+        "glyphControl": null
+      },
+      "helpText": null
+    }
+  },
+  {
+    "id": "down-caf",
+    "lane": "main",
+    "shared": true,
+    "key": "down",
+    "action": null,
+    "controlStep": "down-caf",
+    "expect": {
+      "title": "2.AF",
+      "highlight": "@A065@C-AF Setting",
+      "invariant": true,
+      "readback": {
+        "profile": 0,
+        "profileCached": 0,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": null,
+        "helpId": null,
+        "glyph": null,
+        "saves": null,
+        "cells": null,
+        "profileControl": 255,
+        "profileCachedControl": 255,
+        "glyphControl": null
+      },
+      "helpText": null
+    }
+  },
+  {
+    "id": "down-afbutton",
+    "lane": "main",
+    "shared": true,
+    "key": "down",
+    "action": null,
+    "controlStep": "down-afbutton",
+    "expect": {
+      "title": "2.AF",
+      "highlight": "@A02C@@A065@AF Button",
+      "invariant": true,
+      "readback": {
+        "profile": 0,
+        "profileCached": 0,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": null,
+        "helpId": null,
+        "glyph": null,
+        "saves": null,
+        "cells": null,
+        "profileControl": 255,
+        "profileCachedControl": 255,
+        "glyphControl": null
+      },
+      "helpText": null
+    }
+  },
+  {
+    "id": "page27",
+    "lane": "main",
+    "shared": true,
+    "key": "ok",
+    "action": null,
+    "controlStep": "page27",
+    "expect": {
+      "title": "@A02C@@A065@AF Button",
+      "highlight": "@A066@ Priority",
+      "invariant": true,
+      "readback": {
+        "profile": 0,
+        "profileCached": 0,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": null,
+        "helpId": null,
+        "glyph": {
+          "value": 0,
+          "id": 9123
+        },
+        "saves": null,
+        "cells": null,
+        "profileControl": 255,
+        "profileCachedControl": 255,
+        "glyphControl": null
+      },
+      "helpText": null
+    }
+  },
+  {
+    "id": "2154-open",
+    "lane": "main",
+    "shared": true,
+    "key": "ok",
+    "action": null,
+    "controlStep": "2154-open",
+    "expect": {
+      "title": "glyph-header",
+      "highlight": "@A066@ Priority",
+      "invariant": true,
+      "readback": {
+        "profile": 0,
+        "profileCached": 0,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": 1,
+        "helpId": 4732,
+        "glyph": null,
+        "saves": null,
+        "cells": null,
+        "profileControl": 255,
+        "profileCachedControl": 255,
+        "glyphControl": null
+      },
+      "helpText": "When a specified subject is detected at\r\nthe selected AF target position, AF is\r\nperformed on the detected subject."
+    }
+  },
+  {
+    "id": "2154-cancel",
+    "lane": "main",
+    "shared": true,
+    "key": "menu",
+    "action": null,
+    "controlStep": "2154-cancel",
+    "expect": {
+      "title": "@A02C@@A065@AF Button",
+      "highlight": "@A066@ Priority",
+      "invariant": true,
+      "readback": {
+        "profile": 0,
+        "profileCached": 0,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": null,
+        "helpId": null,
+        "glyph": {
+          "value": 0,
+          "id": 9123
+        },
+        "saves": null,
+        "cells": null,
+        "profileControl": 255,
+        "profileCachedControl": 255,
+        "glyphControl": null
+      },
+      "helpText": null
+    }
+  },
+  {
+    "id": "down-2155",
+    "lane": "main",
+    "shared": true,
+    "key": "down",
+    "action": null,
+    "controlStep": "down-2155",
+    "expect": {
+      "title": "@A02C@@A065@AF Button",
+      "highlight": "@A066@ Priority",
+      "invariant": true,
+      "readback": {
+        "profile": 0,
+        "profileCached": 0,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": null,
+        "helpId": null,
+        "glyph": {
+          "value": 0,
+          "id": 9123
+        },
+        "saves": null,
+        "cells": null,
+        "profileControl": 255,
+        "profileCachedControl": 255,
+        "glyphControl": null
+      },
+      "helpText": null
+    }
+  },
+  {
+    "id": "2155-open",
+    "lane": "main",
+    "shared": true,
+    "key": "ok",
+    "action": null,
+    "controlStep": "2155-open",
+    "expect": {
+      "title": "glyph-header",
+      "highlight": "@A066@ Priority",
+      "invariant": true,
+      "readback": {
+        "profile": 0,
+        "profileCached": 0,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": 1,
+        "helpId": 4732,
+        "glyph": null,
+        "saves": null,
+        "cells": null,
+        "profileControl": 255,
+        "profileCachedControl": 255,
+        "glyphControl": null
+      },
+      "helpText": "When a specified subject is detected at\r\nthe selected AF target position, AF is\r\nperformed on the detected subject."
+    }
+  },
+  {
+    "id": "2155-cancel",
+    "lane": "main",
+    "shared": true,
+    "key": "menu",
+    "action": null,
+    "controlStep": "2155-cancel",
+    "expect": {
+      "title": "@A02C@@A065@AF Button",
+      "highlight": "@A066@ Priority",
+      "invariant": true,
+      "readback": {
+        "profile": 0,
+        "profileCached": 0,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": null,
+        "helpId": null,
+        "glyph": {
+          "value": 0,
+          "id": 9123
+        },
+        "saves": null,
+        "cells": null,
+        "profileControl": 255,
+        "profileCachedControl": 255,
+        "glyphControl": null
+      },
+      "helpText": null
+    }
+  },
+  {
+    "id": "zone-row",
+    "lane": "main",
+    "shared": false,
+    "key": "down",
+    "action": null,
+    "controlStep": null,
+    "expect": {
+      "title": "@A02C@@A065@AF Button",
+      "highlight": "@A040@AF Target Mode",
+      "invariant": true,
+      "readback": {
+        "profile": 0,
+        "profileCached": 0,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": null,
+        "helpId": null,
+        "glyph": {
+          "value": 0,
+          "id": 9123
+        },
+        "saves": null,
+        "cells": null
+      },
+      "helpText": null
+    }
+  },
+  {
+    "id": "zone-open",
+    "lane": "main",
+    "shared": false,
+    "key": "ok",
+    "action": null,
+    "controlStep": null,
+    "expect": {
+      "title": "glyph-header",
+      "highlight": 9123,
+      "invariant": true,
+      "readback": {
+        "profile": 0,
+        "profileCached": 0,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": 0,
+        "helpId": 424,
+        "glyph": null,
+        "saves": null,
+        "cells": null
+      },
+      "helpText": "Choose the AF target area."
+    }
+  },
+  {
+    "id": "zone-right-1",
+    "lane": "main",
+    "shared": false,
+    "key": "right",
+    "action": null,
+    "controlStep": null,
+    "expect": {
+      "title": "glyph-header",
+      "highlight": 1610,
+      "invariant": true,
+      "readback": {
+        "profile": 0,
+        "profileCached": 0,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": 1,
+        "helpId": 424,
+        "glyph": null,
+        "saves": null,
+        "cells": null
+      },
+      "helpText": "Choose the AF target area."
+    }
+  },
+  {
+    "id": "zone-right-2",
+    "lane": "main",
+    "shared": false,
+    "key": "right",
+    "action": null,
+    "controlStep": null,
+    "expect": {
+      "title": "glyph-header",
+      "highlight": 650,
+      "invariant": true,
+      "readback": {
+        "profile": 0,
+        "profileCached": 0,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": 2,
+        "helpId": 424,
+        "glyph": null,
+        "saves": null,
+        "cells": null
+      },
+      "helpText": "Choose the AF target area."
+    }
+  },
+  {
+    "id": "zone-right-3",
+    "lane": "main",
+    "shared": false,
+    "key": "right",
+    "action": null,
+    "controlStep": null,
+    "expect": {
+      "title": "glyph-header",
+      "highlight": 6581,
+      "invariant": true,
+      "readback": {
+        "profile": 0,
+        "profileCached": 0,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": 3,
+        "helpId": 424,
+        "glyph": null,
+        "saves": null,
+        "cells": null
+      },
+      "helpText": "Choose the AF target area."
+    }
+  },
+  {
+    "id": "zone-right-4",
+    "lane": "main",
+    "shared": false,
+    "key": "right",
+    "action": null,
+    "controlStep": null,
+    "expect": {
+      "title": "glyph-header",
+      "highlight": 9124,
+      "invariant": true,
+      "readback": {
+        "profile": 0,
+        "profileCached": 0,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": 5,
+        "helpId": 424,
+        "glyph": null,
+        "saves": null,
+        "cells": null
+      },
+      "helpText": "Choose the AF target area."
+    }
+  },
+  {
+    "id": "zone-right-5",
+    "lane": "main",
+    "shared": false,
+    "key": "right",
+    "action": null,
+    "controlStep": null,
+    "expect": {
+      "title": "glyph-header",
+      "highlight": 9125,
+      "invariant": true,
+      "readback": {
+        "profile": 0,
+        "profileCached": 0,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": 10,
+        "helpId": 424,
+        "glyph": null,
+        "saves": null,
+        "cells": null
+      },
+      "helpText": "Choose the AF target area."
+    }
+  },
+  {
+    "id": "zone-right-6",
+    "lane": "main",
+    "shared": false,
+    "key": "right",
+    "action": null,
+    "controlStep": null,
+    "expect": {
+      "title": "glyph-header",
+      "highlight": 9126,
+      "invariant": true,
+      "readback": {
+        "profile": 0,
+        "profileCached": 0,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": 6,
+        "helpId": 424,
+        "glyph": null,
+        "saves": null,
+        "cells": null
+      },
+      "helpText": "Choose the AF target area."
+    }
+  },
+  {
+    "id": "zone-right-7",
+    "lane": "main",
+    "shared": false,
+    "key": "right",
+    "action": null,
+    "controlStep": null,
+    "expect": {
+      "title": "glyph-header",
+      "highlight": 9127,
+      "invariant": true,
+      "readback": {
+        "profile": 0,
+        "profileCached": 0,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": 7,
+        "helpId": 424,
+        "glyph": null,
+        "saves": null,
+        "cells": null
+      },
+      "helpText": "Choose the AF target area."
+    }
+  },
+  {
+    "id": "zone-right-8",
+    "lane": "main",
+    "shared": false,
+    "key": "right",
+    "action": null,
+    "controlStep": null,
+    "expect": {
+      "title": "glyph-header",
+      "highlight": 9128,
+      "invariant": true,
+      "readback": {
+        "profile": 0,
+        "profileCached": 0,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": 8,
+        "helpId": 424,
+        "glyph": null,
+        "saves": null,
+        "cells": null
+      },
+      "helpText": "Choose the AF target area."
+    }
+  },
+  {
+    "id": "zone-right-9",
+    "lane": "main",
+    "shared": false,
+    "key": "right",
+    "action": null,
+    "controlStep": null,
+    "expect": {
+      "title": "glyph-header",
+      "highlight": 9129,
+      "invariant": true,
+      "readback": {
+        "profile": 0,
+        "profileCached": 0,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": 9,
+        "helpId": 424,
+        "glyph": null,
+        "saves": null,
+        "cells": null
+      },
+      "helpText": "Choose the AF target area."
+    }
+  },
+  {
+    "id": "zone-cancel-c4",
+    "lane": "main",
+    "shared": false,
+    "key": "menu",
+    "action": null,
+    "controlStep": null,
+    "expect": {
+      "title": "@A02C@@A065@AF Button",
+      "highlight": "@A040@AF Target Mode",
+      "invariant": true,
+      "readback": {
+        "profile": 0,
+        "profileCached": 0,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": null,
+        "helpId": null,
+        "glyph": {
+          "value": 0,
+          "id": 9123
+        },
+        "saves": null,
+        "cells": null
+      },
+      "helpText": null
+    }
+  },
+  {
+    "id": "zone-reopen",
+    "lane": "main",
+    "shared": false,
+    "key": "ok",
+    "action": null,
+    "controlStep": null,
+    "expect": {
+      "title": "glyph-header",
+      "highlight": 9123,
+      "invariant": true,
+      "readback": {
+        "profile": 0,
+        "profileCached": 0,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": 0,
+        "helpId": 424,
+        "glyph": null,
+        "saves": null,
+        "cells": null
+      },
+      "helpText": "Choose the AF target area."
+    }
+  },
+  {
+    "id": "commit2-right-1",
+    "lane": "main",
+    "shared": false,
+    "key": "right",
+    "action": null,
+    "controlStep": null,
+    "expect": {
+      "title": "glyph-header",
+      "highlight": 1610,
+      "invariant": true,
+      "readback": {
+        "profile": 0,
+        "profileCached": 0,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": 1,
+        "helpId": 424,
+        "glyph": null,
+        "saves": null,
+        "cells": null
+      },
+      "helpText": "Choose the AF target area."
+    }
+  },
+  {
+    "id": "commit2-right-2",
+    "lane": "main",
+    "shared": false,
+    "key": "right",
+    "action": null,
+    "controlStep": null,
+    "expect": {
+      "title": "glyph-header",
+      "highlight": 650,
+      "invariant": true,
+      "readback": {
+        "profile": 0,
+        "profileCached": 0,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": 2,
+        "helpId": 424,
+        "glyph": null,
+        "saves": null,
+        "cells": null
+      },
+      "helpText": "Choose the AF target area."
+    }
+  },
+  {
+    "id": "commit-2",
+    "lane": "main",
+    "shared": false,
+    "key": "ok",
+    "action": null,
+    "controlStep": null,
+    "expect": {
+      "title": "@A02C@@A065@AF Button",
+      "highlight": "@A040@AF Target Mode",
+      "invariant": true,
+      "readback": {
+        "profile": 2,
+        "profileCached": 2,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": 2,
+        "helpId": 424,
+        "glyph": {
+          "value": 2,
+          "id": 650
+        },
+        "saves": null,
+        "cells": null
+      },
+      "helpText": null
+    }
+  },
+  {
+    "id": "reopen-2",
+    "lane": "main",
+    "shared": false,
+    "key": "ok",
+    "action": null,
+    "controlStep": null,
+    "expect": {
+      "title": "glyph-header",
+      "highlight": 650,
+      "invariant": true,
+      "readback": {
+        "profile": 2,
+        "profileCached": 2,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": 2,
+        "helpId": 424,
+        "glyph": null,
+        "saves": null,
+        "cells": null
+      },
+      "helpText": "Choose the AF target area."
+    }
+  },
+  {
+    "id": "commit9-right-3",
+    "lane": "main",
+    "shared": false,
+    "key": "right",
+    "action": null,
+    "controlStep": null,
+    "expect": {
+      "title": "glyph-header",
+      "highlight": 6581,
+      "invariant": true,
+      "readback": {
+        "profile": 2,
+        "profileCached": 2,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": 3,
+        "helpId": 424,
+        "glyph": null,
+        "saves": null,
+        "cells": null
+      },
+      "helpText": "Choose the AF target area."
+    }
+  },
+  {
+    "id": "commit9-right-4",
+    "lane": "main",
+    "shared": false,
+    "key": "right",
+    "action": null,
+    "controlStep": null,
+    "expect": {
+      "title": "glyph-header",
+      "highlight": 9124,
+      "invariant": true,
+      "readback": {
+        "profile": 2,
+        "profileCached": 2,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": 5,
+        "helpId": 424,
+        "glyph": null,
+        "saves": null,
+        "cells": null
+      },
+      "helpText": "Choose the AF target area."
+    }
+  },
+  {
+    "id": "commit9-right-5",
+    "lane": "main",
+    "shared": false,
+    "key": "right",
+    "action": null,
+    "controlStep": null,
+    "expect": {
+      "title": "glyph-header",
+      "highlight": 9125,
+      "invariant": true,
+      "readback": {
+        "profile": 2,
+        "profileCached": 2,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": 10,
+        "helpId": 424,
+        "glyph": null,
+        "saves": null,
+        "cells": null
+      },
+      "helpText": "Choose the AF target area."
+    }
+  },
+  {
+    "id": "commit9-right-6",
+    "lane": "main",
+    "shared": false,
+    "key": "right",
+    "action": null,
+    "controlStep": null,
+    "expect": {
+      "title": "glyph-header",
+      "highlight": 9126,
+      "invariant": true,
+      "readback": {
+        "profile": 2,
+        "profileCached": 2,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": 6,
+        "helpId": 424,
+        "glyph": null,
+        "saves": null,
+        "cells": null
+      },
+      "helpText": "Choose the AF target area."
+    }
+  },
+  {
+    "id": "commit9-right-7",
+    "lane": "main",
+    "shared": false,
+    "key": "right",
+    "action": null,
+    "controlStep": null,
+    "expect": {
+      "title": "glyph-header",
+      "highlight": 9127,
+      "invariant": true,
+      "readback": {
+        "profile": 2,
+        "profileCached": 2,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": 7,
+        "helpId": 424,
+        "glyph": null,
+        "saves": null,
+        "cells": null
+      },
+      "helpText": "Choose the AF target area."
+    }
+  },
+  {
+    "id": "commit9-right-8",
+    "lane": "main",
+    "shared": false,
+    "key": "right",
+    "action": null,
+    "controlStep": null,
+    "expect": {
+      "title": "glyph-header",
+      "highlight": 9128,
+      "invariant": true,
+      "readback": {
+        "profile": 2,
+        "profileCached": 2,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": 8,
+        "helpId": 424,
+        "glyph": null,
+        "saves": null,
+        "cells": null
+      },
+      "helpText": "Choose the AF target area."
+    }
+  },
+  {
+    "id": "commit9-right-9",
+    "lane": "main",
+    "shared": false,
+    "key": "right",
+    "action": null,
+    "controlStep": null,
+    "expect": {
+      "title": "glyph-header",
+      "highlight": 9129,
+      "invariant": true,
+      "readback": {
+        "profile": 2,
+        "profileCached": 2,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": 9,
+        "helpId": 424,
+        "glyph": null,
+        "saves": null,
+        "cells": null
+      },
+      "helpText": "Choose the AF target area."
+    }
+  },
+  {
+    "id": "commit-9",
+    "lane": "main",
+    "shared": false,
+    "key": "ok",
+    "action": null,
+    "controlStep": null,
+    "expect": {
+      "title": "@A02C@@A065@AF Button",
+      "highlight": "@A040@AF Target Mode",
+      "invariant": true,
+      "readback": {
+        "profile": 9,
+        "profileCached": 9,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": 9,
+        "helpId": 424,
+        "glyph": {
+          "value": 9,
+          "id": 9129
+        },
+        "saves": null,
+        "cells": null
+      },
+      "helpText": null
+    }
+  }
+]

@@ -1,22 +1,19 @@
-﻿# T4 review brief (Codex Sol, read-only)
+﻿# T4 correction review (Codex Sol, read-only)
 
-Read `TASK.md`, `brief.md`, `work\result.md`, `work\evidence-manifest.json` and `work\out\packaging.md`,
-then the listings, `work\out\cmd\` and `audit\`.
+Read `brief.md` §5 (the correction list), your previous review in `audit\previous-review.md`, the updated
+`work\result.md`, `work\out\packaging-c1.md`, `work\evidence-manifest.json`, the new listings, any OM-Emu
+watchpoint logs, `work\out\cmd\` and `audit\`. For each of corrections 1–6 report DONE / NOT DONE / WRONG /
+BLOCKED (honestly reported), with evidence. Then re-grade the six questions of brief §2.
 
-For each of the six questions in brief §2, report one of: ANSWERED (supported), ANSWERED (overstated),
-NOT ANSWERED or WRONG, with evidence. In particular, check:
-
-1. **Section 7.** Check the compression format, the loader and the checksum claims against the listings.
-   Check the listings against `inputs\00_0100_50000020.decoded.bin`
-   (offset = address − `0x60021020`).
-2. **Unused binding records.** Check every claim that a binding record is spare or unused. Each one needs
-   proof, not absence of a search hit.
-3. **Owned space.** Check every claim of owned space against the standard in `HARDWARE-STAGE0-RECORD.md`.
-4. **Pointer locations.** Check the face-table and descriptor-table pointer locations.
-5. **Native routing sites.** Check the native value-routing sites and their sizes.
-6. **Byte budget.** Check the byte budget and the alignment rules.
-
-Recommendations must be labelled as recommendations. No storage decision may be implied.
+In particular:
+- if a watchpoint run is claimed, check that it used the stock image with no overlay and NVRAM off, what it
+  covered (boot, pages 25–28, editors), and whether it supports "no reader" or only "no reader on the
+  exercised paths";
+- check the new face design's control flow against the listing bytes, including the branch into
+  `0x611f7f44`;
+- check that the budget separates the four categories and that no total is claimed as complete;
+- check the ordering evidence and the bounded checksum wording;
+- check new listings against `inputs\00_0100_50000020.decoded.bin` (offset = address − `0x60021020`).
 
 Recompute every manifest hash. Use PowerShell (Python is not on your PATH). Do not run Ghidra or OM-Emu.
 Give the verdict in the structure of `templates\review.md`.
