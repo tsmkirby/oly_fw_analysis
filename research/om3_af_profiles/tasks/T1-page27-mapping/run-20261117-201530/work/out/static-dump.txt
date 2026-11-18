@@ -1,0 +1,292 @@
+main_bytes=33554368 sha256=5e8d376e9111a44ac0352f26030d7c1b17026d42c45f3600cfa02a0e8c5b7d59 match=True
+res_bytes=143523776 sha256=3d9fd4426b45fbe4b715599422af38c6d22392c08543a69f63c28291c5a0b059 match=True
+cpu_base=0x60021020
+
+== page table 0x6158ee8c stride 20, pages 25-29 ==
+page 25 descriptor=0x6158f0d0 rows=0x6158dbb4 count=2 state=0x6158af88 handler=0x6158b0b0
+  raw 19000000b4db58610200000088af5861b0b05861
+  row[0] 0x6158dbb4 raw a90700000400a106b4ae5861ecb958610200000000000000b4ae5861ecb9586102000000
+    +00 setting_id=1961 +04 kind=4 +06 id=0x06a1 +08 ptr=0x6158aeb4
+    +0c options=0x6158b9ec +10 count=2 +14=0x00000000 +18=0x6158aeb4 +1c=0x6158b9ec +20=2
+    opt[0] 0x6158b9ec raw 000000000400f00fb4ae5861 value=0 kind=4 id=0x0ff0 ptr=0x6158aeb4
+    opt[1] 0x6158b9f8 raw 010000000400f20fb4ae5861 value=1 kind=4 id=0x0ff2 ptr=0x6158aeb4
+  row[1] 0x6158dbd8 raw aa07000004002b12b4ae5861ecb958610200000000000000b4ae5861ecb9586102000000
+    +00 setting_id=1962 +04 kind=4 +06 id=0x122b +08 ptr=0x6158aeb4
+    +0c options=0x6158b9ec +10 count=2 +14=0x00000000 +18=0x6158aeb4 +1c=0x6158b9ec +20=2
+    opt[0] 0x6158b9ec raw 000000000400f00fb4ae5861 value=0 kind=4 id=0x0ff0 ptr=0x6158aeb4
+    opt[1] 0x6158b9f8 raw 010000000400f20fb4ae5861 value=1 kind=4 id=0x0ff2 ptr=0x6158aeb4
+  title record 0x6158af88 raw 0400c411b4ae58610400900b kind=4 id=0x11c4 ptr=0x6158aeb4
+page 26 descriptor=0x6158f0e4 rows=0x6158dbfc count=2 state=0x6158af90 handler=0x6158b0b0
+  raw 1a000000fcdb58610200000090af5861b0b05861
+  row[0] 0x6158dbfc raw 4f0000000400a106b4ae5861c8b058610200000000000000b4ae5861c8b0586102000000
+    +00 setting_id=79 +04 kind=4 +06 id=0x06a1 +08 ptr=0x6158aeb4
+    +0c options=0x6158b0c8 +10 count=2 +14=0x00000000 +18=0x6158aeb4 +1c=0x6158b0c8 +20=2
+    opt[0] 0x6158b0c8 raw 000000000400b405b4ae5861 value=0 kind=4 id=0x05b4 ptr=0x6158aeb4
+    opt[1] 0x6158b0d4 raw 010000000400c600b4ae5861 value=1 kind=4 id=0x00c6 ptr=0x6158aeb4
+  row[1] 0x6158dc20 raw 5000000004002b12b4ae5861c8b058610200000000000000b4ae5861c8b0586102000000
+    +00 setting_id=80 +04 kind=4 +06 id=0x122b +08 ptr=0x6158aeb4
+    +0c options=0x6158b0c8 +10 count=2 +14=0x00000000 +18=0x6158aeb4 +1c=0x6158b0c8 +20=2
+    opt[0] 0x6158b0c8 raw 000000000400b405b4ae5861 value=0 kind=4 id=0x05b4 ptr=0x6158aeb4
+    opt[1] 0x6158b0d4 raw 010000000400c600b4ae5861 value=1 kind=4 id=0x00c6 ptr=0x6158aeb4
+  title record 0x6158af90 raw 0400900bb4ae586104007912 kind=4 id=0x0b90 ptr=0x6158aeb4
+page 27 descriptor=0x6158f0f8 rows=0x6158dc44 count=2 state=0x6158af98 handler=0x6158b0b0
+  raw 1b00000044dc58610200000098af5861b0b05861
+  row[0] 0x6158dc44 raw 6a0800000c00b106b4ae586104ba58610200000000000000b4ae58610000000000000000
+    +00 setting_id=2154 +04 kind=12 +06 id=0x06b1 +08 ptr=0x6158aeb4
+    +0c options=0x6158ba04 +10 count=2 +14=0x00000000 +18=0x6158aeb4 +1c=0x00000000 +20=0
+    opt[0] 0x6158ba04 raw 0100000004007b12b4ae5861 value=1 kind=4 id=0x127b ptr=0x6158aeb4
+    opt[1] 0x6158ba10 raw 0000000004004f12b4ae5861 value=0 kind=4 id=0x124f ptr=0x6158aeb4
+  row[1] 0x6158dc68 raw 6b0800000c002c28b4ae586104ba58610200000000000000b4ae58610000000000000000
+    +00 setting_id=2155 +04 kind=12 +06 id=0x282c +08 ptr=0x6158aeb4
+    +0c options=0x6158ba04 +10 count=2 +14=0x00000000 +18=0x6158aeb4 +1c=0x00000000 +20=0
+    opt[0] 0x6158ba04 raw 0100000004007b12b4ae5861 value=1 kind=4 id=0x127b ptr=0x6158aeb4
+    opt[1] 0x6158ba10 raw 0000000004004f12b4ae5861 value=0 kind=4 id=0x124f ptr=0x6158aeb4
+  title record 0x6158af98 raw 04007912b4ae58610400a40d kind=4 id=0x1279 ptr=0x6158aeb4
+page 28 descriptor=0x6158f10c rows=0x6158dc8c count=3 state=0x6158afa0 handler=0x6158b0b0
+  raw 1c0000008cdc586103000000a0af5861b0b05861
+  row[0] 0x6158dc8c raw ee0000000400d20db4ae58611cba58610a00000000000000b4ae58611cba58610a000000
+    +00 setting_id=238 +04 kind=4 +06 id=0x0dd2 +08 ptr=0x6158aeb4
+    +0c options=0x6158ba1c +10 count=10 +14=0x00000000 +18=0x6158aeb4 +1c=0x6158ba1c +20=10
+    opt[0] 0x6158ba1c raw 000000000c00a323b4ae5861 value=0 kind=12 id=0x23a3 ptr=0x6158aeb4
+    opt[1] 0x6158ba28 raw 020000000c008a02b4ae5861 value=2 kind=12 id=0x028a ptr=0x6158aeb4
+    opt[2] 0x6158ba34 raw 010000000c004a06b4ae5861 value=1 kind=12 id=0x064a ptr=0x6158aeb4
+    opt[3] 0x6158ba40 raw 050000000c00a423b4ae5861 value=5 kind=12 id=0x23a4 ptr=0x6158aeb4
+    opt[4] 0x6158ba4c raw 030000000c00b519b4ae5861 value=3 kind=12 id=0x19b5 ptr=0x6158aeb4
+    opt[5] 0x6158ba58 raw 0a0000000c00a523b4ae5861 value=10 kind=12 id=0x23a5 ptr=0x6158aeb4
+    opt[6] 0x6158ba64 raw 060000000c00a623b4ae5861 value=6 kind=12 id=0x23a6 ptr=0x6158aeb4
+    opt[7] 0x6158ba70 raw 070000000c00a723b4ae5861 value=7 kind=12 id=0x23a7 ptr=0x6158aeb4
+    opt[8] 0x6158ba7c raw 080000000c00a823b4ae5861 value=8 kind=12 id=0x23a8 ptr=0x6158aeb4
+    opt[9] 0x6158ba88 raw 090000000c00a923b4ae5861 value=9 kind=12 id=0x23a9 ptr=0x6158aeb4
+  row[1] 0x6158dcb0 raw 9c0600000400d30db4ae58611cba58610a00000000000000b4ae58611cba58610a000000
+    +00 setting_id=1692 +04 kind=4 +06 id=0x0dd3 +08 ptr=0x6158aeb4
+    +0c options=0x6158ba1c +10 count=10 +14=0x00000000 +18=0x6158aeb4 +1c=0x6158ba1c +20=10
+    opt[0] 0x6158ba1c raw 000000000c00a323b4ae5861 value=0 kind=12 id=0x23a3 ptr=0x6158aeb4
+    opt[1] 0x6158ba28 raw 020000000c008a02b4ae5861 value=2 kind=12 id=0x028a ptr=0x6158aeb4
+    opt[2] 0x6158ba34 raw 010000000c004a06b4ae5861 value=1 kind=12 id=0x064a ptr=0x6158aeb4
+    opt[3] 0x6158ba40 raw 050000000c00a423b4ae5861 value=5 kind=12 id=0x23a4 ptr=0x6158aeb4
+    opt[4] 0x6158ba4c raw 030000000c00b519b4ae5861 value=3 kind=12 id=0x19b5 ptr=0x6158aeb4
+    opt[5] 0x6158ba58 raw 0a0000000c00a523b4ae5861 value=10 kind=12 id=0x23a5 ptr=0x6158aeb4
+    opt[6] 0x6158ba64 raw 060000000c00a623b4ae5861 value=6 kind=12 id=0x23a6 ptr=0x6158aeb4
+    opt[7] 0x6158ba70 raw 070000000c00a723b4ae5861 value=7 kind=12 id=0x23a7 ptr=0x6158aeb4
+    opt[8] 0x6158ba7c raw 080000000c00a823b4ae5861 value=8 kind=12 id=0x23a8 ptr=0x6158aeb4
+    opt[9] 0x6158ba88 raw 090000000c00a923b4ae5861 value=9 kind=12 id=0x23a9 ptr=0x6158aeb4
+  row[2] 0x6158dcd4 raw 9d0600000400d40db4ae58611cba58610a00000000000000b4ae58611cba58610a000000
+    +00 setting_id=1693 +04 kind=4 +06 id=0x0dd4 +08 ptr=0x6158aeb4
+    +0c options=0x6158ba1c +10 count=10 +14=0x00000000 +18=0x6158aeb4 +1c=0x6158ba1c +20=10
+    opt[0] 0x6158ba1c raw 000000000c00a323b4ae5861 value=0 kind=12 id=0x23a3 ptr=0x6158aeb4
+    opt[1] 0x6158ba28 raw 020000000c008a02b4ae5861 value=2 kind=12 id=0x028a ptr=0x6158aeb4
+    opt[2] 0x6158ba34 raw 010000000c004a06b4ae5861 value=1 kind=12 id=0x064a ptr=0x6158aeb4
+    opt[3] 0x6158ba40 raw 050000000c00a423b4ae5861 value=5 kind=12 id=0x23a4 ptr=0x6158aeb4
+    opt[4] 0x6158ba4c raw 030000000c00b519b4ae5861 value=3 kind=12 id=0x19b5 ptr=0x6158aeb4
+    opt[5] 0x6158ba58 raw 0a0000000c00a523b4ae5861 value=10 kind=12 id=0x23a5 ptr=0x6158aeb4
+    opt[6] 0x6158ba64 raw 060000000c00a623b4ae5861 value=6 kind=12 id=0x23a6 ptr=0x6158aeb4
+    opt[7] 0x6158ba70 raw 070000000c00a723b4ae5861 value=7 kind=12 id=0x23a7 ptr=0x6158aeb4
+    opt[8] 0x6158ba7c raw 080000000c00a823b4ae5861 value=8 kind=12 id=0x23a8 ptr=0x6158aeb4
+    opt[9] 0x6158ba88 raw 090000000c00a923b4ae5861 value=9 kind=12 id=0x23a9 ptr=0x6158aeb4
+  title record 0x6158afa0 raw 0400a40db4ae58610400a50d kind=4 id=0x0da4 ptr=0x6158aeb4
+page 29 descriptor=0x6158f120 rows=0x6158dcf8 count=3 state=0x6158afa8 handler=0x6158b0b0
+  raw 1d000000f8dc586103000000a8af5861b0b05861
+  row[0] 0x6158dcf8 raw a50000000400cf0db4ae5861000000000000000000000000b4ae58610000000000000000
+    +00 setting_id=165 +04 kind=4 +06 id=0x0dcf +08 ptr=0x6158aeb4
+    +0c options=0x00000000 +10 count=0 +14=0x00000000 +18=0x6158aeb4 +1c=0x00000000 +20=0
+  row[1] 0x6158dd1c raw 9e0600000400d00db4ae5861000000000000000000000000b4ae58610000000000000000
+    +00 setting_id=1694 +04 kind=4 +06 id=0x0dd0 +08 ptr=0x6158aeb4
+    +0c options=0x00000000 +10 count=0 +14=0x00000000 +18=0x6158aeb4 +1c=0x00000000 +20=0
+  row[2] 0x6158dd40 raw 9f0600000400d10db4ae5861000000000000000000000000b4ae58610000000000000000
+    +00 setting_id=1695 +04 kind=4 +06 id=0x0dd1 +08 ptr=0x6158aeb4
+    +0c options=0x00000000 +10 count=0 +14=0x00000000 +18=0x6158aeb4 +1c=0x00000000 +20=0
+  title record 0x6158afa8 raw 0400a50db4ae58610400030f kind=4 id=0x0da5 ptr=0x6158aeb4
+
+== UI id map 0x6062555c (u16 key, u16 index) for 2154 and 2155 ==
+id 2154 map 0x60627704 raw a1900000 key=0x90a1 index=0
+id 2155 map 0x60627708 raw a1900100 key=0x90a1 index=1
+id 2156 map 0x6062770c raw b1900000 key=0x90b1 index=0
+id 2157 map 0x60627710 raw b1900100 key=0x90b1 index=1
+
+== setting names in resource 0106 offset 0x28803f0 stride 52 ==
+id 2154 res+0x289b978 name='MODE_AF_SUBJECT_PRIORITY_RELEASE' raw 4d4f44455f41465f5355424a4543545f5052494f524954595f52454c454153450000000000000000000000000000000000000000
+id 2155 res+0x289b9ac name='MODE_AF_SUBJECT_PRIORITY_CUSTOM_SW' raw 4d4f44455f41465f5355424a4543545f5052494f524954595f435553544f4d5f5357000000000000000000000000000000000000
+
+== bank-7 registration walk, key 0x90a1 ==
+records=1215 end=0x6011fe20
+key 0x90a1 descriptor=0x6011e790 count=2 width=1 raw a19002000000
+
+== bytes at 0x60621300 (small-setting descriptors, 64 bytes) ==
+0001000097008000b490616000000000010001000001000074088000b59061600000000002000100000100006a088000b79061600000000002000100000100006b088000b79061600000000002000100000100006c088000b990616000000000
+== bytes at 0x606190a0 (claimed data 0x606190b7, 32 bytes) ==
+4748494a4b4c4d4e4f505152535455565758595a5f000100010001000100010001010203020100000100010001000100
+
+== button function table 0x612f20a8, 80 x 16, entries whose +0 is 69 or whose +4 is 0x0a ==
+  [2] 0x612f20c8 raw 450000000a0000004500000000000000 key=69 fn=0xa +8=0x45 alt=0x0
+  [33] 0x612f22b8 raw 510d000045000000800c000000000000 key=3409 fn=0x45 +8=0xc80 alt=0x0
+  [35] 0x612f22d8 raw 0900000032000000800c000000000000 key=9 fn=0x32 +8=0xc80 alt=0x0
+
+== u16 pair 2154,2155 (6a 08 6b 08) and u32 pair ==
+  u16pair file+0x5d9970 addr=0x605fa990 context 6a086b086c086d086e086f0870087108
+  u16pair file+0x5da0f0 addr=0x605fb110 context 6a086b0876087a087b087c087f089508
+  u16pair file+0x5dad10 addr=0x605fbd30 context 6a086b086c086d086e086f0875087608
+  u16pair file+0x5db96a addr=0x605fc98a context 6a086b086c086d086e086f0875087608
+  u16pair file+0x5dc54a addr=0x605fd56a context 6a086b086c086d086e086f0875087608
+  u16pair file+0x5dd10c addr=0x605fe12c context 6a086b086c086d086e086f0875087608
+  u16pair file+0x5deea8 addr=0x605ffec8 context 6a086b086c086d086e086f0875087608
+  u16pair file+0x15087f2 addr=0x61529812 context 6a086b08ee009c069d06a5009e069f06
+  u16pair file+0x150c886 addr=0x6152d8a6 context 6a086b084e075007f607c2011f042004
+  u16pair file+0x19ddfae addr=0x619fefce context 6a086b086c086d086e086f0870087108
+u16 pair hits shown=10
+  u32pair file+0x5c30d0 addr=0x605e40f0
+  u32pair file+0x5c49b0 addr=0x605e59d0
+  u32pair file+0x5c6290 addr=0x605e72b0
+  u32pair file+0x5c7b70 addr=0x605e8b90
+  u32pair file+0x5c9450 addr=0x605ea470
+  u32pair file+0x5cad30 addr=0x605ebd50
+  u32pair file+0x5cc610 addr=0x605ed630
+  u32pair file+0x5cdef0 addr=0x605eef10
+  u32pair file+0x5cf7d0 addr=0x605f07f0
+  u32pair file+0x5d10b0 addr=0x605f20d0
+  u32pair file+0x5d2990 addr=0x605f39b0
+  u32pair file+0x5d4270 addr=0x605f5290
+  u32pair file+0x5d5b50 addr=0x605f6b70
+
+== immediate-looking 0x90a1 (preceded by 2c/2d/2e/2f) and all u16 0x90a1 sites, capped ==
+  DATA addr=0x6002494d prev=0xc4 context 5908a1c4a19000dff028f044
+  DATA addr=0x6011e790 prev=0x00 context 00000000a190020000000000
+  DATA addr=0x60136e04 prev=0xfc context eb9862fca190eb9862f0f189
+  DATA addr=0x6017a724 prev=0xfc context adc82dfca190a02da37004fa
+  DATA addr=0x60184986 prev=0xfc context 01c80ffca190139d62b500c8
+  DATA addr=0x601baa5b prev=0xfc context 04c80ffca190c7a462b500c8
+  DATA addr=0x601bf0c8 prev=0xfc context 01c80ffca190d1a462b500c8
+  DATA addr=0x601c3c41 prev=0xfc context f81058fca190d2a462fca094
+  DATA addr=0x601c3d2c prev=0xfc context f81058fca190d2a462fca094
+  DATA addr=0x601c3e17 prev=0xfc context f81058fca190d2a462fca094
+  DATA addr=0x601c3f02 prev=0xfc context f81058fca190d2a462fca094
+  DATA addr=0x601fc405 prev=0xfc context 01c868fca190f4a562b500c8
+  DATA addr=0x6021e9d8 prev=0xbb context 58a599bba1900bb5fa7e3c42
+  DATA addr=0x6047378a prev=0x18 context 04600818a19000c946995171
+  DATA addr=0x604930ca prev=0x00 context d0590400a19000c32f04ba00
+  DATA addr=0x6056fed0 prev=0xfc context 83f485fca1909f6e60fca9e5
+  DATA addr=0x60627704 prev=0x00 context f17f0100a1900000a1900100
+  DATA addr=0x60627708 prev=0x00 context a1900000a1900100b1900000
+  DATA addr=0x606fefd7 prev=0x58 context a020a158a190a1c8a100a238
+  DATA addr=0x607cade0 prev=0x8e context 858c948ea19006f8e49ac47c
+  DATA addr=0x607e7088 prev=0x70 context 0c490170a19022770ff911ca
+  IMM addr=0x607eb7ab opcode=0x2f raw 2fa1906020f661
+  DATA addr=0x607f061d prev=0xf7 context f45d73f7a190563bbc600eaf
+  DATA addr=0x607f6411 prev=0xfd context 4b6bbefda190aa3472c9eebf
+  DATA addr=0x607f6a14 prev=0xb2 context c3fd21b2a1907c16945b2998
+  DATA addr=0x607ff02b prev=0x39 context 7b242d39a19063ed37522c74
+imm_sites=1 data_sites=56
+
+== UTF-16 hits in resource 0106 ==
+[@A066@] count_shown=0
+[@A02F@] count_shown=0
+[@A0BF@] count_shown=0
+[@A02C@] count_shown=0
+[@A065@] count_shown=0
+[@A052@] count_shown=0
+[Always tracks] count_shown=0
+[AF Target Point] count_shown=0
+[AF Button] count_shown=0
+[ Priority] count_shown=0
+[shutter] count_shown=0
+[AF-ON] count_shown=0
+[Subject] count_shown=0
+
+== UTF-16 hits in res block OLY_E_147_1100_0000_0000.BIN.blk02000000.OE.0101.bin bytes=60817344 sha256=6d2bef74b4b2fa089f271529482f96505a170b91e79ab9b1a13f3ce8f7918226 ==
+[@A066@] count_shown=8
+  blk+0x11c6ac '@A066@调整曝光补偿'
+  blk+0x11c6c6 '@A066@: 开始或停止短片拍摄'
+  blk+0x11c9c2 '更改防抖模式。\r\n@A065@和@A066@用于横向移动相机拍摄。'
+  blk+0x120d4a '@A066@：按切换到Live Guide\r\n模式，再按返回。'
+  blk+0x120d8a '@A066@：更改x1/x2。'
+  blk+0x1218c0 '@A066@ 4张'
+  blk+0x122aa6 '按@A066@切换@A02A@或@A02B@功能。'
+  blk+0x122ad8 '@A066@: AEL/AFL'
+[@A02F@] count_shown=8
+  blk+0x11fe56 '@A02E@@A02F@'
+  blk+0x11fe70 '@A030@@A02F@'
+  blk+0x11fe8a '@A031@@A02F@'
+  blk+0x11fed8 '@A023@@A02F@'
+  blk+0x120d1a '按@A01D@切换@A02F@或@A030@功能。'
+  blk+0x122380 '按@A011@切换@A02E@或@A02F@功能。'
+  blk+0x1259fe '@A040@@A02F@'
+  blk+0x126538 '按@A08C@切换@A02F@或@A030@功能。'
+[@A0BF@] count_shown=8
+  blk+0x121d14 '@A0BF@'
+  blk+0x123da8 '@A0BF@/Value'
+  blk+0x146086 '@A0BF@'
+  blk+0x148134 '@A0BF@/Value'
+  blk+0x171cdc '@A0BF@'
+  blk+0x176002 '@A0BF@/Value'
+  blk+0x1beee8 '@A0BF@'
+  blk+0x1c38ce '@A0BF@/Value'
+[@A02C@] count_shown=8
+  blk+0x11c156 '@A02C@'
+  blk+0x11d7e8 '按@A024@按钮拍摄@A02C@'
+  blk+0x11fd60 '取消@A02C@'
+  blk+0x120652 '按@A01E@按钮拍摄@A02C@'
+  blk+0x122f8e '按@A072@按钮拍摄@A02C@'
+  blk+0x126426 '按@A08C@按钮拍摄@A02C@'
+  blk+0x12b7b2 '@A02C@存储卡已满'
+  blk+0x12b7e2 '@A02C@/@A02D@存储卡已满'
+[@A065@] count_shown=8
+  blk+0x11c9b4 '更改防抖模式。\r\n@A065@和@A066@用于横向移动相机拍摄。'
+  blk+0x125962 '@A065@ 3张'
+  blk+0x12598a '@A065@ 2张'
+  blk+0x12a83e '@A065@线框效果@A050@'
+  blk+0x139b26 '@A02C@@A065@AF 按钮'
+  blk+0x139c30 '@A065@C-AF 设置'
+  blk+0x139c8c '@A02C@@A065@C-AF 区域'
+  blk+0x139cb4 '@A027@@A065@C-AF 区域'
+[@A052@] count_shown=8
+  blk+0x1221ca '使用连续拍摄@A052@时，\r\n设定在一秒钟内拍摄的照片数量。'
+  blk+0x12a75c '@A05E@针孔相机效果@A052@'
+  blk+0x12a90e '@A06B@古典@A052@'
+  blk+0x12a974 '@A06E@部分取色@A052@'
+  blk+0x12b244 'ART6@A052@'
+  blk+0x12b374 'ART13@A052@'
+  blk+0x12b3bc 'ART14@A052@'
+  blk+0x1356bc '@A022@@A052@ 水平仪'
+[Always tracks] count_shown=0
+[AF Target Point] count_shown=4
+  blk+0x230052 'AF Target Point'
+  blk+0x2308fc '@A040@AF Target Point'
+  blk+0x230928 '@A041@AF Target Point'
+  blk+0x230954 '@A042@AF Target Point'
+[AF Button] count_shown=2
+  blk+0x23abfc '@A030@Face & Eye AF Button'
+  blk+0x247856 '@A02C@@A065@AF Button'
+[ Priority] count_shown=8
+  blk+0x164e86 'Nast. Priority'
+  blk+0x203810 'Aperture Priority'
+  blk+0x203f9e '@A008@Face Priority'
+  blk+0x203fba 'Face Priority Off'
+  blk+0x203fde 'Face Priority On'
+  blk+0x204828 'C-AF Release Priority'
+  blk+0x204854 'S-AF Release Priority'
+  blk+0x204b70 'Shutter Priority'
+[shutter] count_shown=8
+  blk+0x2062e8 'If On is selected, auto focus\r\nwill work before pressing\r\nshutter button.'
+  blk+0x207002 'Choose the delay between\r\nthe shutter button being\r\npressed and released.'
+  blk+0x207080 'Choose the fastest shutter\r\nspeed available\r\nwhen a flash is fired.'
+  blk+0x207108 'Choose the slowest shutter\r\nspeed available\r\nwhen a flash is fired.'
+  blk+0x209d14 'Sets the aperture and\r\nshutter speed automatically.'
+  blk+0x209d94 'Set the shutter speed manually.'
+  blk+0x209df0 'Set the aperture and\r\nshutter speed manually.'
+  blk+0x20a38a 'Not take a picture\r\nwhen movie recording ends\r\nby pressing shutter button.'
+[AF-ON] count_shown=8
+  blk+0x13934a 'AF-ON'
+  blk+0x15d5f4 'AF-ON'
+  blk+0x1a7868 'AF-ON'
+  blk+0x1fab4e 'AF-ON'
+  blk+0x2469e6 'AF-ON'
+  blk+0x296e9e 'AF-ON'
+  blk+0x2e584a 'AF-ON'
+  blk+0x338a56 'AF-ON'
+[Subject] count_shown=7
+  blk+0x230580 '@A003@Tracking Subject'
+  blk+0x2305ca 'Subject not specified.'
+  blk+0x23eacc 'Press to switch\r\nSubject Detection On/Off.\r\nTurn the dial while pressing the button\r\nto change the setting.'
+  blk+0x241ec4 'Subject Detection'
+  blk+0x241f00 'Subject Detection Off'
+  blk+0x247fc6 'Subject Detection AF'
+  blk+0x24829c 'Subject Selection'

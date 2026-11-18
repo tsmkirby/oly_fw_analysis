@@ -1,0 +1,72 @@
+Glyph evidence for the AF Button page. Stock string table in the OM-Emu
+resource block
+om-emu\unpacked\E147\OLY_E_147_1100_0000_0000.BIN.blk02000000.OE.0101.bin.
+String IDs were assigned by walking UTF-16 strings from the known string
+0x1279 at block offset 0x24783e. The walk lands on three strings the live
+getter also returns, so the IDs between those anchors are the packed table:
+  0x124f "@A02F@ Priority"
+  0x1279 "@A02C@@A065@AF Button"
+  0x127b "@A066@ Priority"
+The same strings, including the help lines, were returned by the stock
+getter A(0x510bb079) during the toggle runs. See labels.json.
+
+@A066@ and @A02F@ are the option glyphs, shared by both rows
+  Value 1 selects string 0x127b "@A066@ Priority".
+  Value 0 selects string 0x124f "@A02F@ Priority".
+  They are not the row labels. On a blank session both rows render
+  "@A066@ Priority" because both stored values are 1. The row labels are
+  images (kind 12) and do not appear in the text log.
+
+Help shown by the option editor, tied to the highlight rather than only
+to the packed order
+  While value 1 is current, the editor draws
+  "When a specified subject is detected at the selected AF target position,
+  AF is performed on the detected subject."
+  That is string 0x127c, the string packed immediately after 0x127b.
+  After Right moves the highlight to "@A02F@ Priority", and before OK
+  commits, the editor draws
+  "AF is always performed at the selected AF target position."
+  That is string 0x127d.
+  The face-priority help packed after 0x124f is a different sentence
+  (0x1250, face or eye, selected AF target). The AF Button editor showed
+  0x127d, not 0x1250.
+
+What the glyphs mean on this page
+  @A066@ Priority (value 1, help 0x127c): AF is performed on the detected
+  subject when that subject is at the selected AF target.
+  @A02F@ Priority (value 0, help 0x127d): AF is always performed at the
+  selected AF target position.
+  The same @A02F@ string is reused by the face-priority pair:
+    0x124d "@A04E@ Priority", help 0x124e, AF position set to the detected face or eye
+    0x124f "@A02F@ Priority", help 0x1250, AF position set to the selected AF target
+  Elsewhere @A066@ is a reused button mark (AEL/AFL, video start/stop,
+  ISO/WB). Those other sentences do not identify the AF Button option.
+  The option help does.
+
+@A0BF@
+  The Latin-leaning scan found 18 strings, and every one is "@A0BF@/Value"
+  (glyph-scan.txt lines 422-440). The string getter returns that text for
+  string id 0x06b1 and returns null for 0x282c. Those are string-table
+  lookups of the same numbers as the page-27 image ids. Kind 12 does not
+  use the string table, so "@A0BF@/Value" is not a page-27 row label.
+
+@A052@ is the shutter button
+  String 0x11c4, returned by the getter: "@A02C@AF by half-pressing @A052@".
+  Neighbouring English strings in the block:
+    blk+0x241148 "AF starts when @A052@ is half-pressed. Stop by releasing the button."
+    blk+0x245566 "AEL by half-pressing @A052@"
+    blk+0x24559e "@A02C@AF by half-pressing @A052@"
+  The page-27 row images are 0x06b1 and 0x282c, not this string.
+
+@A049@ is the other button named by the page
+  String 0x127a, returned in full by the getter on the second toggle runs:
+  "Set the focus position when a specified subject is detected.
+  Settings can be configured separately for the shutter button and @A049@ button."
+  Other English strings that use the same glyph (string-ids.txt):
+    blk+0x24100c "AF starts with @A049@. Stop by releasing the button."
+    blk+0x241078 "AF starts with @A049@. Continues even if you release the button. Stop by pressing the button again."
+    blk+0x242640 "Use the @A049@ button to set whether to use S-AF when in MF."
+    blk+0x23ac36 "@A049@ in MF mode"
+    blk+0x227442 "@A049@Settings"
+  The page help names exactly two buttons, and the page has exactly two rows.
+  See afon-binding.txt for what that does and does not settle.

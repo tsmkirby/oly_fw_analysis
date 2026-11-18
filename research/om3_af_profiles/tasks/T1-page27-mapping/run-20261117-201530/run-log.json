@@ -1,0 +1,160 @@
+﻿{
+    "task":  "T1-page27-mapping",
+    "agent":  "grok",
+    "model":  "grok-4.7-high",
+    "brief_sha256":  "2b93668a4e2406dee816766638b150787063180f6fcce934c34b91f61d79f3bc",
+    "command":  "C:\\Dev\\OM3-tasks\\_agent\\cli\\node.exe (Low integrity, via C:\\Dev\\OM3-tasks\\T1-page27-mapping\\launch-20261117-201530.cmd) -p --model grok-4.7-high --output-format json --trust --workspace C:\\Dev\\OM3-tasks\\T1-page27-mapping\\ws \"Read TASK.md and then brief.md in this folder completely, and carry out the brief exactly. Section 0 of the brief overrides everything else. Write only under work. Finish by making sure work/result.md and work/evidence-manifest.json exist.\"",
+    "cursor_sandbox":  false,
+    "started":  "2026-11-17T20:16:12.2724502-05:00",
+    "ended":  "2026-11-17T20:45:58.3304791-05:00",
+    "timed_out":  false,
+    "exit_code":  0,
+    "lock_ok":  true,
+    "lock_output":  "locked 12 targets in 15.1 s; probe failures: 0",
+    "unlock_ok":  true,
+    "unlock_output":  "unlocked; rules that had disappeared while locked: 0; probe failures: 0",
+    "workspace_unchanged":  true,
+    "inputs_unchanged":  true,
+    "harvested":  [
+                      {
+                          "path":  "evidence-manifest.json",
+                          "bytes":  6716,
+                          "sha256":  "6883dbf5c7399b487273f880f090f57d23c93b0acddd11ad381cbcb448fa300c",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "proposed-doc-patch.md",
+                          "bytes":  2243,
+                          "sha256":  "3ebcd658c2b9284a9ba2c079fc8ff215ce23716c6784db23ceecebd3a406e6f3",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "result.md",
+                          "bytes":  15138,
+                          "sha256":  "dd82438fed4c320b39a52fb388c58d7a4b2c19a4bc83fe205ce3580d592ddd2a",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\afon-binding.txt",
+                          "bytes":  2944,
+                          "sha256":  "ac85c392512daa4921ddbe318de32c2b2558fc1194bd63e0a73227d8511a9738",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\glyph-scan.txt",
+                          "bytes":  147008,
+                          "sha256":  "7db27491d13e397878796097db75754a32ec8062699d3d752028241c4a4fd747",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\glyphs.txt",
+                          "bytes":  3974,
+                          "sha256":  "737746770502882f79b754cb08e403d3f04799295253d0441219395d45a5687f",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\labels.json",
+                          "bytes":  1212,
+                          "sha256":  "a4b57242f9068e6069eee2d15f68677fe7c1668c090f0934c5676f7bdf7dc1f7",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\menu-toggle-a-first.jsonl",
+                          "bytes":  8013,
+                          "sha256":  "70c8382ed3b180b1a7875f5ff82d0b78aa9dab7e3348da0af2fd779df1604bc1",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\menu-toggle-a.jsonl",
+                          "bytes":  7993,
+                          "sha256":  "a7a9786c7b1f657eb93678467a23f18907d7162b2908c036e44f563a713005fb",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\menu-toggle-b-first.jsonl",
+                          "bytes":  8013,
+                          "sha256":  "2f5d2b2880bc2fbad9c758420b47fbe56aef2c69f1e9e5c5d4c5a06399077777",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\menu-toggle-b.jsonl",
+                          "bytes":  7993,
+                          "sha256":  "36ced3a60886aa4a103f18deee4e2cf21199e9f4ef396a3df0f3a3eaa5c59045",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\menu-toggle-control.jsonl",
+                          "bytes":  3766,
+                          "sha256":  "129d53d449b234e0c48c31b86b63a552d4a79f61854083f3506f9358d081e0e1",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\menu-toggle.jsonl",
+                          "bytes":  35778,
+                          "sha256":  "d4918a403b62a2094ab4f96c26e347c28d1117456b75d26ca385c492dadd7e73",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\page27-rows.txt",
+                          "bytes":  6152,
+                          "sha256":  "e46b3900c1628696994f208e961add316eedf753d41d6256252c3d66ce3dea16",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\readers-0x90a1.txt",
+                          "bytes":  4025,
+                          "sha256":  "89382f2ddbd87240d0c7e0244c6ff5e5a8983e080f34fbd182f3e00491381b6d",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\static-dump.txt",
+                          "bytes":  17975,
+                          "sha256":  "0c022998f368004ce70b6aa17252a78a83e256c4c9f2bd200eec9c8605753cf0",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\string-ids.txt",
+                          "bytes":  11072,
+                          "sha256":  "2456c574b74deb4ef22e8095c5d468477581af675825341054cf570b0c6d3610",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "scripts\\assemble_outputs.py",
+                          "bytes":  4958,
+                          "sha256":  "2a0c49b5463cb48de35dd1ea9582435d187ce3d3bdff12015b9bffc670e24634",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "scripts\\dump_page27.py",
+                          "bytes":  8082,
+                          "sha256":  "d05ef0b95b3381841472b1535e93f57a84d78836e1818c15d919759ea3ab76c2",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "scripts\\glyph_scan.py",
+                          "bytes":  3729,
+                          "sha256":  "9e304fd70efb1488d881e93c3d8fcc5b8c8ea0f8c8a5fcc82aeca8baf0b1ef7f",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "scripts\\page27_probe.mjs",
+                          "bytes":  6342,
+                          "sha256":  "8138cfc3a41c3e515e0dd760a2c7a530ec47d49b32d29a7d9f314f324ee947bc",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "scripts\\string_ids.py",
+                          "bytes":  3144,
+                          "sha256":  "2d602d5490e0cd5a30e7893e13abc709126cdfa0ef5ddcdad354f03cd2750d68",
+                          "copied":  true
+                      }
+                  ],
+    "usage":  {
+                  "inputTokens":  579610,
+                  "outputTokens":  124344,
+                  "cacheReadTokens":  14930432,
+                  "cacheWriteTokens":  0,
+                  "reasoningTokens":  76152
+              },
+    "ok":  true
+}

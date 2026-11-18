@@ -144,3 +144,28 @@ which is corrected.
 
 AF Home; any Subject Detect bypass; CPU3/MDET work; adding the AF-ON zone row (T3);
 storage ownership (T2); any overlay or candidate image; editing existing scripts or documents.
+
+## 11. Correction round (Opus, after Sol's review `run-20261117-204643-review`: ACCEPT-WITH-CORRECTIONS)
+
+Your previous work is still in `work\`. Do **not** redo the investigation. Make only these
+corrections, then update `work\result.md` and `work\evidence-manifest.json` (rehash every changed file):
+
+1. Mark Q1 **UNRESOLVED** (state the shutter = 2154 / `@A049@` button = 2155 mapping as an
+   INFERRED claim with its evidence). State Q2 directly: **1 = detected-subject priority;
+   0 = always the selected AF target position**.
+2. The probe versions that produced `menu-toggle-*-first.jsonl` and the control's label-ID set were
+   overwritten. Disclose this as a reproducibility deviation in section 12. Then either add a script
+   in `work\scripts\` that reproduces those runs exactly, or state plainly that it cannot be
+   reproduced. Make `out\labels.json` list every label ID touched in any run, including `0xff0`,
+   `0xff2`, `0x5b4` and `0xc6`.
+3. Replace the selected instructions in `out\page27-rows.txt` with **complete** bounded listings
+   (every instruction, with address and bytes) for each claimed range: `0x611c782f`, `0x611c7785`,
+   `0x61203a81` and the call site in `0x61204088`. Give the start, end and byte count of each range,
+   and use `tools\bin\run-ghidra.cmd` with a read-only listing script.
+4. In `out\readers-0x90a1.txt`, correct the pointer that follows the 2155 descriptor at
+   `0x60621340` to **`0x606190b7`** (not `0x606190b9`), after checking it yourself in the bytes.
+5. Reconcile the NVRAM statement with `OM_EMU_NVRAM=off`. Describe the correction to §6 as a
+   kind/meaning interpretation (kind 12 = image id; kind 4 = string id), not as a demonstrated
+   field-offset shift.
+6. Optional: give the initial and the successful repeats distinct run IDs; note that the control
+   checks navigation to the page without opening the editors.

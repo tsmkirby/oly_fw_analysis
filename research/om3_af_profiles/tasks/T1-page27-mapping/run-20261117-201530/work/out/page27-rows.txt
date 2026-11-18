@@ -1,0 +1,115 @@
+Page 27 row and option records, stock E147 1.1 decoded main.
+CPU base 0x60021020. File offset = CPU address - 0x60021020.
+Bytes below are little-endian, copied from inputs\00_0100_50000020.decoded.bin
+(sha256 5e8d376e9111a44ac0352f26030d7c1b17026d42c45f3600cfa02a0e8c5b7d59).
+
+36-byte row, confirmed by the viewer, not by field order alone
+  +0x00 u32 setting id
+  +0x04 u16 kind
+  +0x06 u16 id. Kind 3 or 12: IMAGE id. Kind 1, 2, or 4: STRING id.
+  +0x08 u32 class pointer (0x6158aeb4 on these pages)
+  +0x0c u32 options pointer
+  +0x10 u32 count. The viewer reads it as u16.
+  +0x14 u32 0
+  +0x18 u32 class pointer again (0x6158aeb4)
+  +0x1c u32 alternate options pointer. 0 on page 27.
+  +0x20 u32 alternate count. 0 on page 27.
+
+12-byte option record
+  +0x00 u32 stored value
+  +0x04 u16 kind
+  +0x06 u16 id (string id when kind is 4)
+  +0x08 u32 class pointer
+
+Page descriptor 0x6158f0f8, file+0x0156e0d8, 20 bytes
+  1b000000 44dc5861 02000000 98af5861 b0b05861
+  page id 27, rows 0x6158dc44, count 2, title record 0x6158af98, handler 0x6158b0b0
+
+Row 0 at 0x6158dc44, file+0x0156cc24, 36 bytes
+  6a080000 0c00 b106 b4ae5861 04ba5861 02000000 00000000 b4ae5861 00000000 00000000
+  setting 2154, kind 12 IMAGE, image id 0x06b1, class 0x6158aeb4
+  options 0x6158ba04, count 2, +0x14 = 0, +0x18 = 0x6158aeb4, alternate pointer 0, alternate count 0
+
+Row 1 at 0x6158dc68, file+0x0156cc48, 36 bytes
+  6b080000 0c00 2c28 b4ae5861 04ba5861 02000000 00000000 b4ae5861 00000000 00000000
+  setting 2155, kind 12 IMAGE, image id 0x282c, class 0x6158aeb4
+  same options pointer 0x6158ba04, count 2, alternate pointer 0, alternate count 0
+
+Shared options at 0x6158ba04, file+0x0156a9e4, 24 bytes
+  opt0 0x6158ba04  01000000 0400 7b12 b4ae5861
+       value 1, kind 4 STRING, string id 0x127b, class 0x6158aeb4
+  opt1 0x6158ba10  00000000 0400 4f12 b4ae5861
+       value 0, kind 4 STRING, string id 0x124f, class 0x6158aeb4
+
+Title record 0x6158af98, file+0x01569f78, 8 bytes
+  0400 7912 b4ae5861
+  kind 4 STRING, string id 0x1279, class 0x6158aeb4
+  The next title starts at 0x6158afa0 (page 28, string id 0x0da4). A 12-byte
+  window overlaps that next record.
+
+Comparison, same table, so the kind field is not page-27-specific
+  Page 25 row 0 at 0x6158dbb4: kind 4, string id 0x06a1 ("S-AF"), options values 0 then 1.
+  Page 26 row 0 at 0x6158dbfc: kind 4, string id 0x06a1, options values 0 then 1.
+  Pages 25, 26, and 28 copy the primary options pointer into +0x1c and the count into +0x20.
+  Page 27 leaves +0x1c and +0x20 zero. Both of its rows share one option list.
+
+Viewer code that fixes the field positions
+  Descriptor copy 0x611c782f, 101 bytes (0x65), through the ret at 0x611c7891.
+  File+0x011c680f. Called with A1 = row+4 and D0 = destination.
+    611c7834  f062      movhu (A2),D0          kind = u16 at source+0
+    611c7836  f073      movhu D0,(A3)          stored at dest+0
+    611c7838  a003      cmp 0x3,D0
+    611c783e  a00c      cmp 0xc,D0             kind 3 or 12:
+    611c7842  f86202    movhu (0x2,A2),D0      image id = u16 at source+2
+    611c7845  f87302    movhu D0,(0x2,A3)      stored at dest+2
+    611c784a  a004      cmp 0x4,D0             kind 4, 1, or 2:
+    611c7856  f86202    movhu (0x2,A2),D0      string id = u16 at source+2
+    611c7859  f87304    movhu D0,(0x4,A3)      stored at dest+4
+  Kind 12 therefore does not pass the id at +6 to the string getter.
+
+  Option matcher 0x611c7785, 170 bytes (0xAA), next function 0x611c782f.
+  File+0x011c6765.
+    611c7791  f9160c    udfu01 0xc,D2          stride 12
+    611c7797  7a        mov (A2),D2            value at record+0
+    611c7798  a8        cmp D2,D0              compare with the current setting
+    611c779f  f062      movhu (A2),D0          kind at record+4
+    kinds 3, 12, 8, 7 copy the halfword at record+6 as an image id
+    kinds 4, 1, 2, 10, 11, 9 copy that halfword as a string id
+
+  Row match inside 0x61203a81. Listing 0x61203b95-0x61203ca7, 275 bytes.
+  File+0x011e2b75 for 275 bytes.
+    61203b95  fa20e813  mov (0x13e8,A0),A0     page pointer
+    61203b99  f80004    mov (0x4,A0),D0        row base = page+4
+    61203b9e  f86008    movhu (0x8,A0),D0      count = u16 at page+8
+    61203bec  cd1ef5f01c call 0x6120310a       current list-model setting id -> D2
+    61203bf5  f91724    udfu01 0x24,D3         index * 36
+    61203c1f  73        mov (A3),D0            u32 at row+index*36
+    61203c20  a2        cmp D0,D2
+    61203c2f  51        inc4 A1                A1 = row+4
+    61203c32  ddfd3bfcffb014 call 0x611c782f   copy the row descriptor
+    61203c50  f8270c    mov (0xc,A3),A1        options pointer at row+0xc
+    61203c54  f86710    movhu (0x10,A3),D1     count at row+0x10
+    61203c76  900c      mov 0xc,A0
+    61203c78  f17c      add A3,A0              the other branch also uses row+0xc
+    61203c8b  f86710    movhu (0x10,A3),D1
+    61203ca3  cdc203f020 call 0x61204065
+  0x61204088 calls 0x611c7785. The drawn option text comes from the +0xc list.
+  Page 27's +0x1c is zero, so it is not the list that produced the text.
+
+Live confirmation of the same offsets, stock OM-Emu, hook on 0x611c782f
+  src 0x6158af98 kind 4 id 4729 (0x1279)   title
+  src 0x6158dc48 kind 12 id 1713 (0x06b1)  row 0 + 4
+  src 0x6158dc6c kind 12 id 10284 (0x282c) row 1 + 4
+  Recorded in menu-toggle-control.jsonl step descriptor-copies, and repeated
+  on both toggle runs.
+
+Section 6 of AFON-MENU-RESEARCH
+  Confirmed: stride 36; setting id at +0; kind at +4; id at +6; class pointer
+  at +8; options pointer at +0xc; count at +0x10; option records of 12 bytes
+  as value, kind, id, pointer; page 27 values 1 then 0; label ids 0x127b then
+  0x124f; both rows share that list; the row ids are 2154 then 2155.
+  Corrected: kind 12 makes +6 an image id. 0x06b1 and 0x282c are the row
+  images. 0x127b and 0x124f are the option strings "@A066@ Priority" and
+  "@A02F@ Priority", not row names and not on/off. The off-by-one reading
+  is rejected by 0x611c782f and 0x611c7785. Page 27 has no alternate option
+  list. The title record is 8 bytes.
