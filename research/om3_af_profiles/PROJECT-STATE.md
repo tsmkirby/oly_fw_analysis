@@ -143,8 +143,9 @@ Run sequence (`orchestration\Invoke-Grok.ps1`, `Invoke-Sol.ps1`):
    and launcher, and a private OM-Emu copy.
 3. **OS lock:** a deny-write rule for this user on the research tree, the archive worktree,
    `~\.om-emu` and the workspace's supplied inputs.
-4. Run the agent: Cursor `--sandbox enabled`, workspace-local deny rules, `OM_EMU_NVRAM=off`,
-   TEMP inside the workspace.
+4. Run the agent at Low integrity, with Cursor's allow list and deny rules (Cursor's own
+   sandbox is unavailable on Windows, so it is not used), `OM_EMU_NVRAM=off`, TEMP inside the
+   workspace, and the pinned tools on PATH (`java`, `node26`).
 5. Unlock, always (in a `finally` block).
 6. Audit: rule still present before unlock, workspace snapshot unchanged, inputs re-hashed,
    OM-Emu diff.

@@ -1,7 +1,7 @@
 # T0: Orchestration canary (isolation and tool check; no research content)
 
 Agent: Grok 4.7 High · Coordinator: Opus 5.5 · Reviewer: Codex Sol
-Brief version: 2026-11-17 (attempt 5: corrections after Sol's review of attempt 4)
+Brief version: 2026-11-17 (attempt 6: `Get-Command` is now allowed; complete output capture, after Sol's review of attempt 5)
 
 ## 0. Rules that override everything below
 
@@ -21,7 +21,10 @@ writes outside the permitted folders are refused by the operating system.
 
 ## 2. Steps
 
-Record every command you run, with its full output, in `work\out\log.txt`.
+Record every command you run, with its **completed** output and exit code, in `work\out\log.txt`,
+appending each entry after the command finishes. Never log a command before it has run. The final
+hashing commands (step 7) are recorded in `work\result.md` with their outputs; `log.txt` itself
+is hashed last.
 
 1. **Allowed write.** Create `work\out\hello.txt` containing `canary` with your file-editing tool.
 2. **Integrity level.** Run `whoami /groups` and record the line containing `Mandatory Label`.

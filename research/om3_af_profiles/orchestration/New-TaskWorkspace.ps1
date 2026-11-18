@@ -125,7 +125,7 @@ New-Item -ItemType Directory -Force "$ws\tools\bin" | Out-Null
       "Shell(*run-ghidra.cmd)", "Shell(tools\\bin\\run-ghidra.cmd)", "Shell(.\\tools\\bin\\run-ghidra.cmd)",
       "Shell(cmd)", "Shell(whoami)", "Shell(certutil)", "Shell(findstr)", "Shell(where)",
       "Shell(ls)", "Shell(dir)", "Shell(type)", "Shell(rg)",
-      "Shell(Get-FileHash)", "Shell(Get-Content)", "Shell(Get-ChildItem)", "Shell(Get-Item)",
+      "Shell(Get-FileHash)", "Shell(Get-Content)", "Shell(Get-ChildItem)", "Shell(Get-Item)", "Shell(Get-Command)",
       "Shell(Select-String)", "Shell(Measure-Object)", "Shell(Test-Path)", "Shell(Format-Hex)",
       "Shell(Write-Output)", "Shell(Set-Location)", "Shell(cd)"
     ],

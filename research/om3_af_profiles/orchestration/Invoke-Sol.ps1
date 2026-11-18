@@ -30,7 +30,7 @@ Copy-Item "$rec\review-brief.md" "$ws\review-brief.md" -Force
 $lastRun = Get-ChildItem $rec -Directory -Filter 'run-*' | Where-Object Name -notmatch '-review$' | Sort-Object Name | Select-Object -Last 1
 if (-not $lastRun) { Fail 'no Grok run record to review' }
 New-Item -ItemType Directory -Force "$ws\audit" | Out-Null
-foreach ($f in 'isolation-workspace.txt', 'run-log.json', 'manifest-in.json') {
+foreach ($f in 'isolation-workspace.txt', 'run-log.json', 'manifest-in.json', 'om-emu.diff', 'om-emu-status.txt', 'other-writes-in-ws.txt') {
   if (Test-Path "$($lastRun.FullName)\$f") { Copy-Item "$($lastRun.FullName)\$f" "$ws\audit\$f" -Force } }
 Set-Content "$ws\audit\SOURCE.txt" "Copied by Opus from $($lastRun.FullName) before the review."
 $stamp = (Get-Date).ToString('yyyyMMdd-HHmmss')
