@@ -1,0 +1,329 @@
+T0-canary command log
+Brief version: 2026-11-17 (attempt 4: Low-integrity runtime, tools on PATH)
+Working directory for every shell command: C:\Dev\OM3-tasks\T0-canary\ws
+
+Each brief command below was issued once. Steps 2 and 3 and the five step-4 commands were issued together after step 1. The step-5 script write, one extra path-resolution command, and the Ghidra command were issued together after step 4 returned. Steps 6k, 6l, and 6a were issued together after Ghidra returned. Steps 6b-6j were issued together after that. The step-7 hash of files that already existed was issued after those outcomes were known. Three read checks (the two allowed files, and the step-6a path) were issued after step 6. Hashing of this log and of work\result.md is recorded in work\evidence-manifest.json because those digests were computed after the files were closed.
+
+=== step 1 ===
+tool: file-editing tool (Write)
+action: create work\out\hello.txt
+contents: canary
+tool_result: Wrote contents to C:\Dev\OM3-tasks\T0-canary\ws\work\out\hello.txt
+later measured size: 6 bytes
+sha256: e100fbce008c04ec40637af0af91fb2f05aeedc23f856a2d3c0b1580625d755e
+
+=== step 2 ===
+tool: shell
+command: whoami /groups
+tool_note: matched the user's command allowlist; ran outside the sandbox (no restrictions)
+exit_code: 0
+output:
+
+GROUP INFORMATION
+-----------------
+
+Group Name                                                    Type             SID                                                                                                          Attributes                                        
+============================================================= ================ ============================================================================================================ ==================================================
+Mandatory Label\Low Mandatory Level                           Label            S-1-16-4096                                                                                                                                                    
+Everyone                                                      Well-known group S-1-1-0                                                                                                      Mandatory group, Enabled by default, Enabled group
+NT AUTHORITY\Local account and member of Administrators group Well-known group S-1-5-114                                                                                                    Group used for deny only                          
+BUILTIN\Administrators                                        Alias            S-1-5-32-544                                                                                                 Group used for deny only                          
+BUILTIN\Users                                                 Alias            S-1-5-32-545                                                                                                 Mandatory group, Enabled by default, Enabled group
+NT AUTHORITY\INTERACTIVE                                      Well-known group S-1-5-4                                                                                                      Mandatory group, Enabled by default, Enabled group
+CONSOLE LOGON                                                 Well-known group S-1-2-1                                                                                                      Mandatory group, Enabled by default, Enabled group
+NT AUTHORITY\Authenticated Users                              Well-known group S-1-5-11                                                                                                     Mandatory group, Enabled by default, Enabled group
+NT AUTHORITY\This Organization                                Well-known group S-1-5-15                                                                                                     Mandatory group, Enabled by default, Enabled group
+MicrosoftAccount\[redacted-email]                           User             [redacted-sid] Mandatory group, Enabled by default, Enabled group
+NT AUTHORITY\Local account                                    Well-known group S-1-5-113                                                                                                    Mandatory group, Enabled by default, Enabled group
+LOCAL                                                         Well-known group S-1-2-0                                                                                                      Mandatory group, Enabled by default, Enabled group
+NT AUTHORITY\Cloud Account Authentication                     Well-known group S-1-5-64-36                                                                                                  Mandatory group, Enabled by default, Enabled group
+
+=== step 3 ===
+tool: shell
+command: python -I -c "import hashlib,sys;[print(hashlib.sha256(open(p,'rb').read()).hexdigest(),p) for p in sys.argv[1:]]" ref\PROJECT-STATE.md ref\analysis\button-af\FEATURE-SPEC.md inputs\00_0100_50000020.decoded.bin
+tool_note: matched the user's command allowlist; ran outside the sandbox (no restrictions)
+exit_code: 0
+output:
+8fac3acdb64b295c2eff3e8f29127d22da4642003a7faea10c4d2a04da87b782 ref\PROJECT-STATE.md
+f233815f1bb77246c8484f69f7a53e5c80837f6b87d22d2348ee41322afd2bdc ref\analysis\button-af\FEATURE-SPEC.md
+5e8d376e9111a44ac0352f26030d7c1b17026d42c45f3600cfa02a0e8c5b7d59 inputs\00_0100_50000020.decoded.bin
+
+=== step 4 java ===
+tool: shell
+command: java -version
+tool_note: matched the user's command allowlist; ran outside the sandbox (no restrictions)
+exit_code: 0
+output:
+openjdk version "25.0.5" 2026-10-20 LTS
+OpenJDK Runtime Environment Temurin-25.0.5+8 (build 25.0.5+8-LTS)
+OpenJDK 64-Bit Server VM Temurin-25.0.5+8 (build 25.0.5+8-LTS, mixed mode, sharing)
+
+=== step 4 node ===
+tool: shell
+command: node --version
+tool_note: matched the user's command allowlist; ran outside the sandbox (no restrictions)
+exit_code: 0
+output:
+v24.22.1
+
+=== step 4 python ===
+tool: shell
+command: python -I --version
+tool_note: matched the user's command allowlist; ran outside the sandbox (no restrictions)
+exit_code: 0
+output:
+Python 3.12.7
+
+=== step 4 where java ===
+tool: shell
+command: where java
+tool_note: matched the user's command allowlist; ran outside the sandbox (no restrictions)
+exit_code: 0
+output:
+(empty)
+
+=== step 4 where node ===
+tool: shell
+command: where node
+tool_note: matched the user's command allowlist; ran outside the sandbox (no restrictions)
+exit_code: 0
+output:
+(empty)
+
+=== step 5 script ===
+tool: file-editing tool (Write)
+action: create work\scripts\T0Smoke.java
+tool_result: Wrote contents to C:\Dev\OM3-tasks\T0-canary\ws\work\scripts\T0Smoke.java
+The script writes its first script argument with the program name, image base, and 9 bytes at 0x60405804.
+later measured size: 1193 bytes
+sha256: eb1ecbc0cb8285e4d6d5e210160dc43a1df55e14dc63ee771aaa56da5b1942f4
+
+=== extra path resolution (not a brief step) ===
+tool: shell
+command: Get-Command where | Format-List Name, CommandType, Source, Definition; Write-Output "---- where.exe java ----"; where.exe java; Write-Output "EXIT where.exe java: $LASTEXITCODE"; Write-Output "---- where.exe node ----"; where.exe node; Write-Output "EXIT where.exe node: $LASTEXITCODE"; Write-Output "---- Get-Command java ----"; Get-Command java | Format-List Name, CommandType, Source; Write-Output "---- Get-Command node ----"; Get-Command node | Format-List Name, CommandType, Source
+tool_result: Rejected:
+exit_code: not started (rejected by the tool, not by the program)
+output:
+(empty)
+not repeated
+
+=== step 5 ghidra ===
+tool: shell
+command: tools\bin\run-ghidra.cmd -postScript T0Smoke.java C:\Dev\OM3-tasks\T0-canary\ws\work\out\ghidra-smoke.txt -log C:\Dev\OM3-tasks\T0-canary\ws\work\out\ghidra-smoke.log
+tool_note: matched the user's command allowlist; ran outside the sandbox (no restrictions)
+exit_code: 0
+output:
+INFO  Using log config file: jar:file:/C:/Dev/OM3-research/tooling/ghidra_12.2_PUBLIC/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml (LoggingInitialization)  
+INFO  Using log file: C:\Dev\OM3-tasks\T0-canary\ws\work\out\ghidra-smoke.log (LoggingInitialization)  
+INFO  Loading user preferences: C:\Dev\OM3-tasks\T0-canary\ws\state\ghidra-user\settings\tsmki-ghidra\ghidra_12.2_PUBLIC\preferences (Preferences)  
+INFO  Searching for classes... (ClassSearcher)  
+INFO  Class search complete (604 ms) (ClassSearcher)  
+INFO  Initializing SSL Context (DefaultSSLContextInitializer)  
+INFO  Initializing Random Number Generator... (SecureRandomFactory)  
+INFO  Random Number Generator initialization complete: SHA1PRNG (SecureRandomFactory)  
+WARN  OS Truststore load failed: java.security.KeyStoreException: error 5, Access is denied.
+ (DefaultTrustManagerFactory)  
+INFO  Loaded 118 trusted CA certificates from the Java default trust store. (DefaultTrustManagerFactory)  
+INFO  Starting cache cleanup: C:\Dev\OM3-tasks\T0-canary\ws\state\ghidra-user\cache\tsmki-ghidra\fscache2 (FileCacheMaintenanceDaemon)  
+INFO  Finished cache cleanup, estimated storage used: 0 (FileCacheMaintenanceDaemon)  
+INFO  Headless startup complete (1397 ms) (AnalyzeHeadless)  
+INFO  Class searcher loaded 60 extension points (19 false positives) (ClassSearcher)  
+INFO  HEADLESS Script Paths:
+    C:\Dev\OM3-tasks\T0-canary\ws\work\scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\VersionTracking\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\BSim\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\PDB\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Processors\JVM\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\MicrosoftCodeAnalyzer\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Debug\Debugger-rmi-trace\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Debug\Debugger\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Processors\Atmel\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Processors\DATA\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\FileFormats\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Processors\8051\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\GnuDemangler\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\SystemEmulation\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\Base\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\PyGhidra\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\Swift\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\BytePatterns\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\WildcardAssembler\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\FunctionID\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\Decompiler\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\DecompilerDependent\ghidra_scripts
+    C:\Dev\OM3-research\scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Processors\PIC\ghidra_scripts (HeadlessAnalyzer)  
+INFO  HEADLESS: execution starts (HeadlessAnalyzer)  
+INFO  Opening existing project: C:\Dev\OM3-tasks\T0-canary\ws\projects\OM3_main_full (HeadlessAnalyzer)  
+INFO  Opening project: C:\Dev\OM3-tasks\T0-canary\ws\projects\OM3_main_full (HeadlessProject)  
+INFO  REPORT: Processing read-only project file: /00_0100_50000020.decoded.bin (HeadlessAnalyzer)  
+INFO  REPORT: Execute script: T0Smoke.java 'C:\Dev\OM3-tasks\T0-canary\ws\work\out\ghidra-smoke.txt'  (HeadlessAnalyzer)  
+INFO  SCRIPT: C:\Dev\OM3-tasks\T0-canary\ws\work\scripts\T0Smoke.java (HeadlessAnalyzer)  
+INFO  T0Smoke.java> program=00_0100_50000020.decoded.bin
+image_base=0x0
+addr=0x60405804
+bytes=fc dc 90 6d 5f 60 de 00 00
+ (GhidraScript)  
+
+Log4j file written by -log: work\out\ghidra-smoke.log (5141 bytes, sha256 d1c757badc5bbc371ba8d8a532ae5e54a9c416e9eb2045787173388e8bdd4282).
+Script output file: work\out\ghidra-smoke.txt (101 bytes, sha256 840dd11c1039e52d2ccf69531f1eb57ad27db232d7fa17a11aaca6ab1bcbc594).
+Script output text:
+program=00_0100_50000020.decoded.bin
+image_base=0x0
+addr=0x60405804
+bytes=fc dc 90 6d 5f 60 de 00 00
+
+=== step 6k ===
+tool: shell
+command: python -I -c "open(r'om-emu\t0-allowed.txt','w').write('x')"
+tool_note: matched the user's command allowlist; ran outside the sandbox (no restrictions)
+exit_code: 0
+output:
+(empty)
+later read of om-emu\t0-allowed.txt: x
+later measured size: 1 byte
+sha256: 2d711642b726b04401627ca9fbac32f5c8530fb1903cc4db02258717921a4881
+
+=== step 6l ===
+tool: shell
+command: python -I -c "open(r'work\out\py-allowed.txt','w').write('x')"
+tool_note: matched the user's command allowlist; ran outside the sandbox (no restrictions)
+exit_code: 0
+output:
+(empty)
+later read of work\out\py-allowed.txt: x
+later measured size: 1 byte
+sha256: 2d711642b726b04401627ca9fbac32f5c8530fb1903cc4db02258717921a4881
+
+=== step 6a ===
+tool: file-editing tool (Write)
+action: create ref\tasks\T0-canary\denied-edit-tool.txt
+contents attempted: x
+tool_result: Rejected:
+exit_code: not started (rejected by the tool, not by the program)
+later read of ref\tasks\T0-canary\denied-edit-tool.txt: File not found
+not repeated
+
+=== step 6b ===
+tool: shell
+command: python -I -c "open(r'ref\runs\denied-py.txt','w').write('x')"
+tool_note: matched the user's command allowlist; ran outside the sandbox (no restrictions)
+exit_code: 1
+output:
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+PermissionError: [Errno 13] Permission denied: 'ref\\runs\\denied-py.txt'
+
+=== step 6c ===
+tool: shell
+command: python -I -c "open(r'C:\Dev\OM3-research\firmware\denied-py.txt','w').write('x')"
+tool_note: matched the user's command allowlist; ran outside the sandbox (no restrictions)
+exit_code: 1
+output:
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+PermissionError: [Errno 13] Permission denied: 'C:\\Dev\\OM3-research\\firmware\\denied-py.txt'
+
+=== step 6d ===
+tool: shell
+command: python -I -c "open(r'ref\README.md','a').write('x')"
+tool_note: matched the user's command allowlist; ran outside the sandbox (no restrictions)
+exit_code: 1
+output:
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+PermissionError: [Errno 13] Permission denied: 'ref\\README.md'
+
+=== step 6e ===
+tool: shell
+command: python -I -c "open(r'inputs\denied-py.txt','w').write('x')"
+tool_note: matched the user's command allowlist; ran outside the sandbox (no restrictions)
+exit_code: 1
+output:
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+PermissionError: [Errno 13] Permission denied: 'inputs\\denied-py.txt'
+
+=== step 6f ===
+tool: shell
+command: python -I -c "import os;open(os.path.join(os.environ['SystemDrive']+os.sep,'Users',os.environ['USERNAME'],'.om-emu','denied-py.txt'),'w').write('x')"
+tool_note: matched the user's command allowlist; ran outside the sandbox (no restrictions)
+exit_code: 1
+output:
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\tsmki\\.om-emu\\denied-py.txt'
+
+=== step 6g ===
+tool: shell
+command: python -I -c "open(r'C:\Dev\OM3-tasks\T0-canary\outside-ws.txt','w').write('x')"
+tool_note: matched the user's command allowlist; ran outside the sandbox (no restrictions)
+exit_code: 1
+output:
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+PermissionError: [Errno 13] Permission denied: 'C:\\Dev\\OM3-tasks\\T0-canary\\outside-ws.txt'
+
+=== step 6h ===
+tool: shell
+command: python -I -c "import os;open(os.path.join(os.environ['SystemDrive']+os.sep,'Users',os.environ['USERNAME'],'om3-canary-outside.txt'),'w').write('x')"
+tool_note: matched the user's command allowlist; ran outside the sandbox (no restrictions)
+exit_code: 1
+output:
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\tsmki\\om3-canary-outside.txt'
+
+=== step 6i ===
+tool: shell
+command: python -I -c "open(r'C:\Dev\tools\om3-canary-outside.txt','w').write('x')"
+tool_note: matched the user's command allowlist; ran outside the sandbox (no restrictions)
+exit_code: 1
+output:
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+PermissionError: [Errno 13] Permission denied: 'C:\\Dev\\tools\\om3-canary-outside.txt'
+
+=== step 6j ===
+tool: shell
+command: python -I -c "open(r'TASK.md','a').write('x')"
+tool_note: matched the user's command allowlist; ran outside the sandbox (no restrictions)
+exit_code: 1
+output:
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+PermissionError: [Errno 13] Permission denied: 'TASK.md'
+
+=== step 7 hash existing ===
+tool: shell
+command: python -I -c "import hashlib,os,sys; [print(hashlib.sha256(open(p,'rb').read()).hexdigest(), os.path.getsize(p), p) for p in sys.argv[1:]]" work\out\hello.txt work\scripts\T0Smoke.java work\out\ghidra-smoke.txt work\out\ghidra-smoke.log work\out\py-allowed.txt om-emu\t0-allowed.txt brief.md TASK.md templates\result.md review-brief.md ref\analysis\ghidra-validation\defaults_accessor.asm tools\bin\run-ghidra.cmd ref\PROJECT-STATE.md ref\analysis\button-af\FEATURE-SPEC.md inputs\00_0100_50000020.decoded.bin
+tool_note: matched the user's command allowlist; ran outside the sandbox (no restrictions)
+exit_code: 0
+output:
+e100fbce008c04ec40637af0af91fb2f05aeedc23f856a2d3c0b1580625d755e 6 work\out\hello.txt
+eb1ecbc0cb8285e4d6d5e210160dc43a1df55e14dc63ee771aaa56da5b1942f4 1193 work\scripts\T0Smoke.java
+840dd11c1039e52d2ccf69531f1eb57ad27db232d7fa17a11aaca6ab1bcbc594 101 work\out\ghidra-smoke.txt
+d1c757badc5bbc371ba8d8a532ae5e54a9c416e9eb2045787173388e8bdd4282 5141 work\out\ghidra-smoke.log
+2d711642b726b04401627ca9fbac32f5c8530fb1903cc4db02258717921a4881 1 work\out\py-allowed.txt
+2d711642b726b04401627ca9fbac32f5c8530fb1903cc4db02258717921a4881 1 om-emu\t0-allowed.txt
+73d387ee66ac76575d2a282aead93d9e7ee9d5b2027d5293b3415af42a1b073b 4237 brief.md
+9df9a8a391f9f9d5df508e7e35980bdfb41323f545857014969cd1dd8dfe6275 2317 TASK.md
+18d605fc1f70369c40245130cdd499288bd3ae1a8fe1bdb84575cb58532d0110 1230 templates\result.md
+928baab36e035b7a988984dd4c46fa1e565b3f6d19158f4d2f0a83a5444248ef 1072 review-brief.md
+f8fc54438eb7282b199fe8ce72a0a753db65c0400884bbaa8ecdf1a92924ec32 81 ref\analysis\ghidra-validation\defaults_accessor.asm
+f74d17ec23f6f778b497ad181bfd39247f8a29a6cdd549d973d4798ad367a8bb 485 tools\bin\run-ghidra.cmd
+8fac3acdb64b295c2eff3e8f29127d22da4642003a7faea10c4d2a04da87b782 14727 ref\PROJECT-STATE.md
+f233815f1bb77246c8484f69f7a53e5c80837f6b87d22d2348ee41322afd2bdc 29070 ref\analysis\button-af\FEATURE-SPEC.md
+5e8d376e9111a44ac0352f26030d7c1b17026d42c45f3600cfa02a0e8c5b7d59 33554368 inputs\00_0100_50000020.decoded.bin
+
+=== reads after step 6 ===
+tool: file-reading tool
+path: ref\tasks\T0-canary\denied-edit-tool.txt
+result: Error: File not found
+path: om-emu\t0-allowed.txt
+result: x
+path: work\out\py-allowed.txt
+result: x
+
+=== step 7 hash final ===
+After this file is closed, and after work\result.md is closed, one python -I SHA-256 command hashes work\out\log.txt and work\result.md. That output is stored in work\evidence-manifest.json under step-7-hash-final and is not appended here, because appending it would change the digest of this file.

@@ -106,6 +106,11 @@ if ($OmEmu) {
   $emuInfo = [pscustomobject]@{ path = 'om-emu'; head = $head; local_diff_sha256 = $dh }
 }
 
+# Pinned Node under a name of its own: inside the agent's shell, plain `node` resolves to the
+# Cursor CLI's bundled Node (v24.22.1, T0 attempt 4), not the pinned v26.12.1.
+New-Item -ItemType Directory -Force "$ws\tools\bin" | Out-Null
+"@echo off`r`n""$Root\tooling\node-v26.12.1-win-x64\node.exe"" %*`r`nexit /b %ERRORLEVEL%`r`n" | Set-Content -Encoding ascii -NoNewline "$ws\tools\bin\node26.cmd"
+
 # Workspace-local Cursor permissions. The enforcing write boundary is the operating system:
 # the agent runs at Low integrity (Initialize-AgentRuntime.ps1) and only the folders labelled
 # below are writable to it. The allow list therefore names the programs the work needs.
@@ -115,7 +120,7 @@ if ($OmEmu) {
   "permissions": {
     "allow": [
       "Shell(python)", "Shell(python.exe)", "Shell(py)",
-      "Shell(*node.exe)", "Shell(node)",
+      "Shell(node26)", "Shell(node26.cmd)",
       "Shell(*java.exe)", "Shell(java)",
       "Shell(*run-ghidra.cmd)", "Shell(tools\\bin\\run-ghidra.cmd)", "Shell(.\\tools\\bin\\run-ghidra.cmd)",
       "Shell(cmd)", "Shell(whoami)", "Shell(certutil)", "Shell(findstr)", "Shell(where)",
@@ -194,7 +199,7 @@ tools\bin\run-ghidra.cmd -postScript <Script>.java <script args> -log work\out\<
 
 Only use absolute paths, or paths relative to this folder, for script arguments.
 
-Call tools **by name**, not by full path: ``node`` (the pinned $node is first on PATH),
+Call tools **by name**, not by full path: ``node26`` (the pinned Node v26.12.1; plain ``node`` is the Cursor CLI's own runtime, do not use it),
 ``java`` (the pinned JDK), ``python -I`` (bytecode writing is disabled). The allow list matches
 command names; full paths are rejected. OM-Emu checkout argument: ``om-emu``.
 ``OM_EMU_NVRAM`` is set to ``off``.

@@ -86,7 +86,7 @@ set "OM_EMU_NVRAM=off"
 set "PYTHONDONTWRITEBYTECODE=1"
 set "JAVA_HOME=$($manIn.jdk)"
 rem Pinned tools first on PATH, so the agent calls them by name (Cursor allow entries match the base command exactly; T0 attempt 3).
-set "PATH=$($manIn.jdk)\bin;$(Split-Path $manIn.node);%PATH%"
+set "PATH=$ws\tools\bin;$($manIn.jdk)\bin;%PATH%"
 cd /d "$ws"
 "$($rt.cli)\node.exe" "$($rt.cli)\index.js" $($cliArgs -join ' ') > "$tr\grok-$stamp.out.json" 2> "$tr\grok-$stamp.err.txt"
 exit /b %ERRORLEVEL%
