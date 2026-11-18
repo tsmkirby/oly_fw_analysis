@@ -1,0 +1,25 @@
+﻿{
+    "task":  "T3j-afon-acceptance-assertions",
+    "created_utc":  "2026-11-18T18:25:54.3030131Z",
+    "workspace":  "C:\\Dev\\OM3-tasks\\T3j-afon-acceptance-assertions\\ws",
+    "brief_sha256":  "3fc9e4ae1a4a0ef662b4fa10a2894ef3541a535d3c5ff19f9c865e81689946ff",
+    "inputs":  [
+                   {
+                       "path":  "inputs/00_0100_50000020.decoded.bin",
+                       "sha256":  "5e8d376e9111a44ac0352f26030d7c1b17026d42c45f3600cfa02a0e8c5b7d59"
+                   },
+                   {
+                       "path":  "inputs/02_0106_458c0020.decoded.bin",
+                       "sha256":  "3d9fd4426b45fbe4b715599422af38c6d22392c08543a69f63c28291c5a0b059"
+                   }
+               ],
+    "ghidra":  null,
+    "om_emu":  {
+                   "path":  "om-emu",
+                   "head":  "4e4ec4ef084542a7e30eecce56970c7e09c123c9",
+                   "local_diff_sha256":  "61cd13270e82f9bc5236c36c945783defda4c97a2e99f93b75f11da521877702"
+               },
+    "ref":  "C:\\Dev\\OM3-research",
+    "jdk":  "C:\\Dev\\OM3-research\\tooling\\jdk-25.0.5+8",
+    "node":  "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe"
+}

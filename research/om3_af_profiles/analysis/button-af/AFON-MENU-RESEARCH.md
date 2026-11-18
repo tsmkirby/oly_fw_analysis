@@ -1043,12 +1043,18 @@ emulator only.
   - **With a private record for `0x3D6F`** (count 10, faces `0x6158ba1c`), the chooser shows the ten zones:
     All, Single, Small, Cross, Mid, Large, C1–C4. Confirm commits the zone value, and cancel does not.
   - **Stores after a save** are byte-identical to the stock control's.
-  - **Open:**
-    - a ten-entry help list (the current one is two entries, so the help reader overruns it);
-    - an access violation when cancelling from C4;
-    - the row's own label;
-    - assertions at every step;
-    - page 28.
+- **Complete as an emulator prototype (T3i and T3j, Sol-accepted).**
+  - A ten-entry help list was added, using stock `0x01a8`, "Choose the AF target area.".
+  - The row shows its own label "AF Target Mode" and the current zone's glyph.
+  - A table-driven acceptance passed: 281 steps, each with an exact assertion, 0 failures. It covered:
+    - exact commits of 2 and 9;
+    - a cancel from C4;
+    - full-cell checks against a stock control;
+    - pages 25–28;
+    - byte-identical stores after a save.
+  - The T3h access violation did not reproduce; its cause is unknown.
+  - Evidence and the component table are in
+    [readiness/t3-afon-zone-row](readiness/t3-afon-zone-row/README.md).
 - **For a final firmware.** A final firmware needs:
   - a page-27 action record for the AF-ON row, with an editor binding of its own (the array is about
     10 KB, which needs a placement plan) and a registered editor descriptor;

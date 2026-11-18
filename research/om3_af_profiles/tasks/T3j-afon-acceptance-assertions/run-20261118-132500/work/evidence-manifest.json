@@ -1,0 +1,5503 @@
+{
+  "task": "T3j",
+  "brief_sha256": "3fc9e4ae1a4a0ef662b4fa10a2894ef3541a535d3c5ff19f9c865e81689946ff",
+  "brief_hashed": "later",
+  "inputs": [
+    {
+      "path": "inputs/00_0100_50000020.decoded.bin",
+      "sha256": "5e8d376e9111a44ac0352f26030d7c1b17026d42c45f3600cfa02a0e8c5b7d59",
+      "bytes": 33554368,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json",
+        "work/out/probe-reopen-session.jsonl#helper-hashes",
+        "work/out/probe-session-control.jsonl#helper-hashes",
+        "work/out/probe-session-cprobe.jsonl#helper-hashes",
+        "work/out/probe-session-p28-control.jsonl#helper-hashes",
+        "work/out/probe-session-p28-cprobe.jsonl#helper-hashes",
+        "work/out/session-j1-c1.jsonl#helper-hashes",
+        "work/out/session-j1-c2.jsonl#helper-hashes",
+        "work/out/session-j1-control.jsonl#helper-hashes",
+        "work/out/session-j1-p28-c1.jsonl#helper-hashes",
+        "work/out/session-j1-p28-c2.jsonl#helper-hashes",
+        "work/out/session-j1-p28-control.jsonl#helper-hashes",
+        "work/out/session-j1-reopen-c1.jsonl#helper-hashes",
+        "work/out/session-j1-reopen-c2.jsonl#helper-hashes"
+      ],
+      "later_sha256": "5e8d376e9111a44ac0352f26030d7c1b17026d42c45f3600cfa02a0e8c5b7d59",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "inputs/02_0106_458c0020.decoded.bin",
+      "sha256": "3d9fd4426b45fbe4b715599422af38c6d22392c08543a69f63c28291c5a0b059",
+      "bytes": 143523776,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json",
+        "work/out/probe-reopen-session.jsonl#helper-hashes",
+        "work/out/probe-session-control.jsonl#helper-hashes",
+        "work/out/probe-session-cprobe.jsonl#helper-hashes",
+        "work/out/probe-session-p28-control.jsonl#helper-hashes",
+        "work/out/probe-session-p28-cprobe.jsonl#helper-hashes",
+        "work/out/session-j1-c1.jsonl#helper-hashes",
+        "work/out/session-j1-c2.jsonl#helper-hashes",
+        "work/out/session-j1-control.jsonl#helper-hashes",
+        "work/out/session-j1-p28-c1.jsonl#helper-hashes",
+        "work/out/session-j1-p28-c2.jsonl#helper-hashes",
+        "work/out/session-j1-p28-control.jsonl#helper-hashes",
+        "work/out/session-j1-reopen-c1.jsonl#helper-hashes",
+        "work/out/session-j1-reopen-c2.jsonl#helper-hashes"
+      ],
+      "later_sha256": "3d9fd4426b45fbe4b715599422af38c6d22392c08543a69f63c28291c5a0b059",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/checks/lib/args.mjs",
+      "sha256": "6c99d21aad6340f2b7c72c5c63f33b7287d04dab798adedc23f1cf705ab92ad8",
+      "bytes": 4766,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "6c99d21aad6340f2b7c72c5c63f33b7287d04dab798adedc23f1cf705ab92ad8",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/checks/lib/coverage.mjs",
+      "sha256": "e6e3d409d7766e8d5b55d473523355a7dda4b2a4dba1bda984ca170411109ee7",
+      "bytes": 4549,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "e6e3d409d7766e8d5b55d473523355a7dda4b2a4dba1bda984ca170411109ee7",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/checks/lib/env.mjs",
+      "sha256": "dbbfd2ab839d8ceb784c7df5c12d0d9a17898eba549b84e848a9cfb05b0d609b",
+      "bytes": 12178,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json",
+        "work/out/probe-reopen-session.jsonl#helper-hashes",
+        "work/out/probe-session-control.jsonl#helper-hashes",
+        "work/out/probe-session-cprobe.jsonl#helper-hashes",
+        "work/out/probe-session-p28-control.jsonl#helper-hashes",
+        "work/out/probe-session-p28-cprobe.jsonl#helper-hashes",
+        "work/out/session-j1-c1.jsonl#helper-hashes",
+        "work/out/session-j1-c2.jsonl#helper-hashes",
+        "work/out/session-j1-control.jsonl#helper-hashes",
+        "work/out/session-j1-p28-c1.jsonl#helper-hashes",
+        "work/out/session-j1-p28-c2.jsonl#helper-hashes",
+        "work/out/session-j1-p28-control.jsonl#helper-hashes",
+        "work/out/session-j1-reopen-c1.jsonl#helper-hashes",
+        "work/out/session-j1-reopen-c2.jsonl#helper-hashes"
+      ],
+      "later_sha256": "dbbfd2ab839d8ceb784c7df5c12d0d9a17898eba549b84e848a9cfb05b0d609b",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/checks/lib/errors.mjs",
+      "sha256": "4c01fc5ac9167e751e6f9f1f013d61c56600e3af668db8ee305f79718e213c79",
+      "bytes": 1846,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "4c01fc5ac9167e751e6f9f1f013d61c56600e3af668db8ee305f79718e213c79",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/checks/lib/png.mjs",
+      "sha256": "77d52d420a15ac8005ab9ac39e1d09d7df2a2650ece690813e511ac03ce6db99",
+      "bytes": 5493,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json",
+        "work/out/probe-reopen-session.jsonl#helper-hashes",
+        "work/out/probe-session-control.jsonl#helper-hashes",
+        "work/out/probe-session-cprobe.jsonl#helper-hashes",
+        "work/out/probe-session-p28-control.jsonl#helper-hashes",
+        "work/out/probe-session-p28-cprobe.jsonl#helper-hashes",
+        "work/out/session-j1-c1.jsonl#helper-hashes",
+        "work/out/session-j1-c2.jsonl#helper-hashes",
+        "work/out/session-j1-control.jsonl#helper-hashes",
+        "work/out/session-j1-p28-c1.jsonl#helper-hashes",
+        "work/out/session-j1-p28-c2.jsonl#helper-hashes",
+        "work/out/session-j1-p28-control.jsonl#helper-hashes",
+        "work/out/session-j1-reopen-c1.jsonl#helper-hashes",
+        "work/out/session-j1-reopen-c2.jsonl#helper-hashes"
+      ],
+      "later_sha256": "77d52d420a15ac8005ab9ac39e1d09d7df2a2650ece690813e511ac03ce6db99",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/host/nvram.mjs",
+      "sha256": "352f7765f0426706553ab6c3453048ff37c0d3e1fd274ceda18c8a37fd7b2071",
+      "bytes": 5126,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json",
+        "work/out/probe-reopen-session.jsonl#helper-hashes",
+        "work/out/probe-session-control.jsonl#helper-hashes",
+        "work/out/probe-session-cprobe.jsonl#helper-hashes",
+        "work/out/probe-session-p28-control.jsonl#helper-hashes",
+        "work/out/probe-session-p28-cprobe.jsonl#helper-hashes",
+        "work/out/session-j1-c1.jsonl#helper-hashes",
+        "work/out/session-j1-c2.jsonl#helper-hashes",
+        "work/out/session-j1-control.jsonl#helper-hashes",
+        "work/out/session-j1-p28-c1.jsonl#helper-hashes",
+        "work/out/session-j1-p28-c2.jsonl#helper-hashes",
+        "work/out/session-j1-p28-control.jsonl#helper-hashes",
+        "work/out/session-j1-reopen-c1.jsonl#helper-hashes",
+        "work/out/session-j1-reopen-c2.jsonl#helper-hashes"
+      ],
+      "later_sha256": "352f7765f0426706553ab6c3453048ff37c0d3e1fd274ceda18c8a37fd7b2071",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/refs/errors.mjs",
+      "sha256": "fff1f2065bbdb2797f3f998fabeb2a0353b88451bc252e4d3ad74025ab164aca",
+      "bytes": 809,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "fff1f2065bbdb2797f3f998fabeb2a0353b88451bc252e4d3ad74025ab164aca",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/scenarios/bind.mjs",
+      "sha256": "5809e36b04e3fa0983e85c104070e3639ee85c965f25d0bddc0165533ee5fedc",
+      "bytes": 1979,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "5809e36b04e3fa0983e85c104070e3639ee85c965f25d0bddc0165533ee5fedc",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/scenarios/session_replay.mjs",
+      "sha256": "83d2afc6accf98d0cad951803af7f42319ec7858a9c9cc1a018622357c02b133",
+      "bytes": 25927,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json",
+        "work/out/probe-reopen-session.jsonl#helper-hashes",
+        "work/out/probe-session-control.jsonl#helper-hashes",
+        "work/out/probe-session-cprobe.jsonl#helper-hashes",
+        "work/out/probe-session-p28-control.jsonl#helper-hashes",
+        "work/out/probe-session-p28-cprobe.jsonl#helper-hashes",
+        "work/out/session-j1-c1.jsonl#helper-hashes",
+        "work/out/session-j1-c2.jsonl#helper-hashes",
+        "work/out/session-j1-control.jsonl#helper-hashes",
+        "work/out/session-j1-p28-c1.jsonl#helper-hashes",
+        "work/out/session-j1-p28-c2.jsonl#helper-hashes",
+        "work/out/session-j1-p28-control.jsonl#helper-hashes",
+        "work/out/session-j1-reopen-c1.jsonl#helper-hashes",
+        "work/out/session-j1-reopen-c2.jsonl#helper-hashes"
+      ],
+      "later_sha256": "83d2afc6accf98d0cad951803af7f42319ec7858a9c9cc1a018622357c02b133",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/core/cores.mjs",
+      "sha256": "c40e61d8cb1c6d5660968bc3780591fe58b070d39346b33aacb1f8253cf3bfa0",
+      "bytes": 14575,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "c40e61d8cb1c6d5660968bc3780591fe58b070d39346b33aacb1f8253cf3bfa0",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/core/cpu.mjs",
+      "sha256": "94f3caf73745b17dceca437299b6c711aee0efe51c9ab7c872d5b1e6c599521e",
+      "bytes": 33769,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json",
+        "work/out/probe-reopen-session.jsonl#helper-hashes",
+        "work/out/probe-session-control.jsonl#helper-hashes",
+        "work/out/probe-session-cprobe.jsonl#helper-hashes",
+        "work/out/probe-session-p28-control.jsonl#helper-hashes",
+        "work/out/probe-session-p28-cprobe.jsonl#helper-hashes",
+        "work/out/session-j1-c1.jsonl#helper-hashes",
+        "work/out/session-j1-c2.jsonl#helper-hashes",
+        "work/out/session-j1-control.jsonl#helper-hashes",
+        "work/out/session-j1-p28-c1.jsonl#helper-hashes",
+        "work/out/session-j1-p28-c2.jsonl#helper-hashes",
+        "work/out/session-j1-p28-control.jsonl#helper-hashes",
+        "work/out/session-j1-reopen-c1.jsonl#helper-hashes",
+        "work/out/session-j1-reopen-c2.jsonl#helper-hashes"
+      ],
+      "later_sha256": "94f3caf73745b17dceca437299b6c711aee0efe51c9ab7c872d5b1e6c599521e",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/core/interp.mjs",
+      "sha256": "660e09091fc99db584104cd8e98d6050fe517e204fa2c747d0aa72e1423f9aa2",
+      "bytes": 40485,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json",
+        "work/out/probe-reopen-session.jsonl#helper-hashes",
+        "work/out/probe-session-control.jsonl#helper-hashes",
+        "work/out/probe-session-cprobe.jsonl#helper-hashes",
+        "work/out/probe-session-p28-control.jsonl#helper-hashes",
+        "work/out/probe-session-p28-cprobe.jsonl#helper-hashes",
+        "work/out/session-j1-c1.jsonl#helper-hashes",
+        "work/out/session-j1-c2.jsonl#helper-hashes",
+        "work/out/session-j1-control.jsonl#helper-hashes",
+        "work/out/session-j1-p28-c1.jsonl#helper-hashes",
+        "work/out/session-j1-p28-c2.jsonl#helper-hashes",
+        "work/out/session-j1-p28-control.jsonl#helper-hashes",
+        "work/out/session-j1-reopen-c1.jsonl#helper-hashes",
+        "work/out/session-j1-reopen-c2.jsonl#helper-hashes"
+      ],
+      "later_sha256": "660e09091fc99db584104cd8e98d6050fe517e204fa2c747d0aa72e1423f9aa2",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/core/m4/boot.mjs",
+      "sha256": "064782160d72244f025941957757c5c0becac5cbc2baf272c93124a4b025c2ab",
+      "bytes": 2475,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "064782160d72244f025941957757c5c0becac5cbc2baf272c93124a4b025c2ab",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/core/m4/bus.mjs",
+      "sha256": "7d40173941ce9136e055f5d68a3904d7e13bcb100afe076c99e62c5f04daff2b",
+      "bytes": 5865,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "7d40173941ce9136e055f5d68a3904d7e13bcb100afe076c99e62c5f04daff2b",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/core/m4/cpu.mjs",
+      "sha256": "64ddeaecf9402af3d04cbf232b99036fd1b87a637300b5ab0db6db4eafb655b8",
+      "bytes": 38527,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "64ddeaecf9402af3d04cbf232b99036fd1b87a637300b5ab0db6db4eafb655b8",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/core/m4/dcache.mjs",
+      "sha256": "5c1cd23048a7d5c693bc626abbcc1057d29bc4214c96bb9d05d71674ebf472cf",
+      "bytes": 3444,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "5c1cd23048a7d5c693bc626abbcc1057d29bc4214c96bb9d05d71674ebf472cf",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/core/m4/decode.mjs",
+      "sha256": "a5400b0d56fbec796452aa7d93817cb4e97d28604f75048aef9a0d2008b9616d",
+      "bytes": 41153,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "a5400b0d56fbec796452aa7d93817cb4e97d28604f75048aef9a0d2008b9616d",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/core/m4/errors.mjs",
+      "sha256": "e4552273413b00095c7536a9e490c3c1b70428a9da88b4ec8087dccc5e0b517b",
+      "bytes": 894,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "e4552273413b00095c7536a9e490c3c1b70428a9da88b4ec8087dccc5e0b517b",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/core/m4/periph/adc.mjs",
+      "sha256": "d986c043c73a0ffcfcac748224516520cd909f297bca97fca0479c0e18da2ab3",
+      "bytes": 5729,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "d986c043c73a0ffcfcac748224516520cd909f297bca97fca0479c0e18da2ab3",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/core/m4/periph/board.mjs",
+      "sha256": "96452848d86624d9c569fdca46fa3ef015ae4c1847f31ae24da561ed54d9d4b6",
+      "bytes": 2077,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "96452848d86624d9c569fdca46fa3ef015ae4c1847f31ae24da561ed54d9d4b6",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/core/m4/periph/dma.mjs",
+      "sha256": "0013b012879e42f249776e8d0a91db465d84312f967751994fdcfb78aeef931f",
+      "bytes": 6520,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "0013b012879e42f249776e8d0a91db465d84312f967751994fdcfb78aeef931f",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/core/m4/periph/exti.mjs",
+      "sha256": "3ccca80728f6a95d651bee8fbdea6eebff4cf0c839073198e7a39465a2f7f572",
+      "bytes": 5980,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "3ccca80728f6a95d651bee8fbdea6eebff4cf0c839073198e7a39465a2f7f572",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/core/m4/periph/flash.mjs",
+      "sha256": "8a1b09f4465f05ed8853a08be72081635257fc9e47e5b475820d0b49cb1b5a85",
+      "bytes": 13217,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "8a1b09f4465f05ed8853a08be72081635257fc9e47e5b475820d0b49cb1b5a85",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/core/m4/periph/gpio.mjs",
+      "sha256": "4f2bd672f826e915f4dc628e39d156d7bc05f4ad1291b1121eebc780665025f9",
+      "bytes": 7331,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "4f2bd672f826e915f4dc628e39d156d7bc05f4ad1291b1121eebc780665025f9",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/core/m4/periph/i2c.mjs",
+      "sha256": "db2ed90a75f8f23fa8119eceb74641e1faf0c840f0e5b412297bed3fe27fed42",
+      "bytes": 15064,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "db2ed90a75f8f23fa8119eceb74641e1faf0c840f0e5b412297bed3fe27fed42",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/core/m4/periph/pwr.mjs",
+      "sha256": "e665b6f771874170fb13346b85389d8969d5106f116ab80c32689c293e32f179",
+      "bytes": 2976,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "e665b6f771874170fb13346b85389d8969d5106f116ab80c32689c293e32f179",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/core/m4/periph/rcc.mjs",
+      "sha256": "28649dbcca9e0006c0c518d23ca488544d48d15f5443dd8d40fb40954745cd70",
+      "bytes": 9103,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "28649dbcca9e0006c0c518d23ca488544d48d15f5443dd8d40fb40954745cd70",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/core/m4/periph/regs.mjs",
+      "sha256": "a159b2f84183d50cccb9445f435ebb2955bada803f994b7ffb9e2ea29262ee1e",
+      "bytes": 2837,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "a159b2f84183d50cccb9445f435ebb2955bada803f994b7ffb9e2ea29262ee1e",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/core/m4/periph/rtc.mjs",
+      "sha256": "3edf5249203b6230e69e423e50953d9611db7a1bf780fc93ad42f2bd71965107",
+      "bytes": 12634,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "3edf5249203b6230e69e423e50953d9611db7a1bf780fc93ad42f2bd71965107",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/core/m4/periph/sched.mjs",
+      "sha256": "a683cedc35145ccd001f22c4031f6fd4942e9bfd38d00c0a99db7b3e78923e4c",
+      "bytes": 4354,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "a683cedc35145ccd001f22c4031f6fd4942e9bfd38d00c0a99db7b3e78923e4c",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/core/m4/periph/spi.mjs",
+      "sha256": "388e0f06c7c1c6ce9400efd78e1d3d8f3249a424cdf192f5fd7bb039ce2dba5f",
+      "bytes": 5146,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "388e0f06c7c1c6ce9400efd78e1d3d8f3249a424cdf192f5fd7bb039ce2dba5f",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/core/m4/periph/stm32l4.mjs",
+      "sha256": "1beb26e4d57bcfc8996e5b4c0ef04f6d94c3e9e4de4952d056904c6698a9aef5",
+      "bytes": 25042,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "1beb26e4d57bcfc8996e5b4c0ef04f6d94c3e9e4de4952d056904c6698a9aef5",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/core/m4/periph/tim.mjs",
+      "sha256": "a3d74c5c2eb63bc9759899ba528a0c0519bb64b0a101d67b44cee85963f21f72",
+      "bytes": 19535,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "a3d74c5c2eb63bc9759899ba528a0c0519bb64b0a101d67b44cee85963f21f72",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/core/m4/periph/usart.mjs",
+      "sha256": "5f3ff52bf755043637af356f2516524a13e2ac5d706772d73791eb32508a3396",
+      "bytes": 10349,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "5f3ff52bf755043637af356f2516524a13e2ac5d706772d73791eb32508a3396",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/core/m4/periph/usb.mjs",
+      "sha256": "e9cd406f7666cc4b85ae2e4fc9c1830a66f62bc60747f443498dcaf65d349c0a",
+      "bytes": 2042,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "e9cd406f7666cc4b85ae2e4fc9c1830a66f62bc60747f443498dcaf65d349c0a",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/core/m4/sys.mjs",
+      "sha256": "e97b9371d3e8eea59cea3d87c08b39eca3ae16e35539f8ce4f2ca785cec81a3b",
+      "bytes": 16370,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "e97b9371d3e8eea59cea3d87c08b39eca3ae16e35539f8ce4f2ca785cec81a3b",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/core/mem.mjs",
+      "sha256": "adfe9bca23723f22b490c99047b6ad32c291f495492c98138d1da3c20ab5a676",
+      "bytes": 23219,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "adfe9bca23723f22b490c99047b6ad32c291f495492c98138d1da3c20ab5a676",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/debug/call.mjs",
+      "sha256": "74bffd86020ec1c6f3eca732fd4a41aaa7dcfba2d4670a094449918d84a44186",
+      "bytes": 22586,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "74bffd86020ec1c6f3eca732fd4a41aaa7dcfba2d4670a094449918d84a44186",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/debug/debugger.mjs",
+      "sha256": "a24ce644ab922457a843c868076aa21e72007e78086fda75fd88119a79da4705",
+      "bytes": 24393,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "a24ce644ab922457a843c868076aa21e72007e78086fda75fd88119a79da4705",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/debug/live.mjs",
+      "sha256": "c19050fd773dc1f46b9f7c0c3669ada12b1293dab93599206913022c62a87e49",
+      "bytes": 28766,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "c19050fd773dc1f46b9f7c0c3669ada12b1293dab93599206913022c62a87e49",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/debug/protocol.mjs",
+      "sha256": "5eff055d29372fb46aecda2c09c6ba94538d7026ad585e15abe06ccbd1f259ea",
+      "bytes": 21791,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "5eff055d29372fb46aecda2c09c6ba94538d7026ad585e15abe06ccbd1f259ea",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/debug/regs.mjs",
+      "sha256": "2e620e185508bf19008cf97cc33ae188222e7461e0b3f1811bf304fdb7b422d7",
+      "bytes": 866,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "2e620e185508bf19008cf97cc33ae188222e7461e0b3f1811bf304fdb7b422d7",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/debug/snapshot.mjs",
+      "sha256": "24e51e3811a58d55051caeb7507707cfb51001cb9b5355d27bc20c8c0c98ab54",
+      "bytes": 5970,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "24e51e3811a58d55051caeb7507707cfb51001cb9b5355d27bc20c8c0c98ab54",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/debug/trace.mjs",
+      "sha256": "92b3ed83780771c6011d1521ab018dee0fda5f604522acdbdd624a25bdf32bab",
+      "bytes": 4456,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "92b3ed83780771c6011d1521ab018dee0fda5f604522acdbdd624a25bdf32bab",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/dev/audio.mjs",
+      "sha256": "2a41fcd1bd0152e5b2b54f3cad314a7e77c5741787d761d69df9e023d41ad571",
+      "bytes": 17201,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "2a41fcd1bd0152e5b2b54f3cad314a7e77c5741787d761d69df9e023d41ad571",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/dev/bus.mjs",
+      "sha256": "e537c4ed7e90f6bc2b4a7fef2a35d856af5ffc5ae446ee9336a87e5b4e6e397f",
+      "bytes": 8291,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "e537c4ed7e90f6bc2b4a7fef2a35d856af5ffc5ae446ee9336a87e5b4e6e397f",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/dev/camfe.mjs",
+      "sha256": "69a9fde49796f27fac8454565b69c281f670659decb6655fb0ad7c5ef2c3057c",
+      "bytes": 13697,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "69a9fde49796f27fac8454565b69c281f670659decb6655fb0ad7c5ef2c3057c",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/dev/dml.mjs",
+      "sha256": "cb8761cb0d5531eb4e7ff46fb3c1cba535afcf6719220ca670ec3c94d9b0a890",
+      "bytes": 8744,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "cb8761cb0d5531eb4e7ff46fb3c1cba535afcf6719220ca670ec3c94d9b0a890",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/dev/dpc.mjs",
+      "sha256": "adf00b0157638de3c7f2885957b4542ef0b8a1bcac8c7649546a0658cfb89f32",
+      "bytes": 2629,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "adf00b0157638de3c7f2885957b4542ef0b8a1bcac8c7649546a0658cfb89f32",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/dev/ems1.mjs",
+      "sha256": "68deb7a62e8d6d7d1fb11e49baed979dcf01012e07074ec19bf4e8c39db9d371",
+      "bytes": 11974,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "68deb7a62e8d6d7d1fb11e49baed979dcf01012e07074ec19bf4e8c39db9d371",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/dev/engine.mjs",
+      "sha256": "2164dcaa278792e3b64675e9ee02dcefa0a6c03afbe7d2738d013da0bfa18059",
+      "bytes": 21611,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "2164dcaa278792e3b64675e9ee02dcefa0a6c03afbe7d2738d013da0bfa18059",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/dev/hdmi.mjs",
+      "sha256": "80497c3a89e39ecd641f4fcc5e67ebb2028893fb3b86edffb91b50b115449e8c",
+      "bytes": 16254,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "80497c3a89e39ecd641f4fcc5e67ebb2028893fb3b86edffb91b50b115449e8c",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/dev/imgpipe.mjs",
+      "sha256": "924001331674b9e6642c2c9c052fe75a4aff78d8a16f41dd2e2191046ef94daa",
+      "bytes": 25971,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "924001331674b9e6642c2c9c052fe75a4aff78d8a16f41dd2e2191046ef94daa",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/dev/imgpro.mjs",
+      "sha256": "275680322384425d95a05c39178a70091ed8d3ff897ae04ab504004029066664",
+      "bytes": 13544,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "275680322384425d95a05c39178a70091ed8d3ff897ae04ab504004029066664",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/dev/intc.mjs",
+      "sha256": "85b6b7d21652ac1a057e19fdc1e214154ac52bceec47a8f4afdac1661788dada",
+      "bytes": 15228,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "85b6b7d21652ac1a057e19fdc1e214154ac52bceec47a8f4afdac1661788dada",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/dev/lensssc.mjs",
+      "sha256": "e96b83c864f901ca1811a447f5f88fb1ff0b9ee87972555fe2678e420fd6a34d",
+      "bytes": 12839,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "e96b83c864f901ca1811a447f5f88fb1ff0b9ee87972555fe2678e420fd6a34d",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/dev/linkpins.mjs",
+      "sha256": "cbc3e7a5fca33012a2344800016eb8e9f63d723f381dc13deb4ce52e66e3c1d5",
+      "bytes": 7211,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "cbc3e7a5fca33012a2344800016eb8e9f63d723f381dc13deb4ce52e66e3c1d5",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/dev/pdt.mjs",
+      "sha256": "9377aa4bfd22964c40c672c44f7eb48c5955e5faa6f98a44525497afecb716c9",
+      "bytes": 9847,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "9377aa4bfd22964c40c672c44f7eb48c5955e5faa6f98a44525497afecb716c9",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/dev/scpu.mjs",
+      "sha256": "69198b7be16fb24d32968553888ee551ba0f6d227688bba434203e5c834fd5cb",
+      "bytes": 9454,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "69198b7be16fb24d32968553888ee551ba0f6d227688bba434203e5c834fd5cb",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/dev/stub.mjs",
+      "sha256": "b87a757f0e57823fc46a89020060cc38a6361d24a0498450bdc3047fb9419a3d",
+      "bytes": 4079,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "b87a757f0e57823fc46a89020060cc38a6361d24a0498450bdc3047fb9419a3d",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/dev/timer.mjs",
+      "sha256": "b03f10e8d4d622d3fb2fcd6b8b39943c69c98d17241dd4e5026c338fbe0b4739",
+      "bytes": 10301,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "b03f10e8d4d622d3fb2fcd6b8b39943c69c98d17241dd4e5026c338fbe0b4739",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/dev/vsc.mjs",
+      "sha256": "38de0fa08a4ff6197c60868c6b893d46775908ccf9389f1d1ddcc5f6b6342602",
+      "bytes": 31927,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "38de0fa08a4ff6197c60868c6b893d46775908ccf9389f1d1ddcc5f6b6342602",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/dev/vsccompose.mjs",
+      "sha256": "ba3da9916f999ca91b4c1b9857c13f95239628be334e58478154e682aa05971c",
+      "bytes": 33867,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "ba3da9916f999ca91b4c1b9857c13f95239628be334e58478154e682aa05971c",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/dev/vsccompose2.mjs",
+      "sha256": "234572564acef358dd7084d35ca624d62312c42f005ef9c3dcb314fcc1a4d638",
+      "bytes": 18331,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "234572564acef358dd7084d35ca624d62312c42f005ef9c3dcb314fcc1a4d638",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/dev/vscregs.mjs",
+      "sha256": "d29e6661e27212b466035b13ca9ceb9f2bcbafe8026328659d65382f0b806265",
+      "bytes": 3828,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "d29e6661e27212b466035b13ca9ceb9f2bcbafe8026328659d65382f0b806265",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/fw/board.mjs",
+      "sha256": "6a02f7c74bee6f0b6409c57c3ee78c62e16280794ee55557edb42d2f723d7875",
+      "bytes": 39911,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "6a02f7c74bee6f0b6409c57c3ee78c62e16280794ee55557edb42d2f723d7875",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/fw/expand.mjs",
+      "sha256": "e2575f5a4c8ecb79764a31ae01223ab718e7ddc266c00bd88bbf0008dabd1d7d",
+      "bytes": 3148,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "e2575f5a4c8ecb79764a31ae01223ab718e7ddc266c00bd88bbf0008dabd1d7d",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/fw/facts.mjs",
+      "sha256": "3f938574a7cc589dd227584066e726039009678c4f51fa8175437badfc1c4c17",
+      "bytes": 509333,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "3f938574a7cc589dd227584066e726039009678c4f51fa8175437badfc1c4c17",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/fw/image.mjs",
+      "sha256": "657e9a447ea8035f17115708121e1ad8e71c08f8f5ef1aefb107ccf3a73621d8",
+      "bytes": 2077,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "657e9a447ea8035f17115708121e1ad8e71c08f8f5ef1aefb107ccf3a73621d8",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/fw/labfw.mjs",
+      "sha256": "3efbe7112a2917fbf77c3a57b704296bd730676f1921d24c427f40225ecfb083",
+      "bytes": 4276,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "3efbe7112a2917fbf77c3a57b704296bd730676f1921d24c427f40225ecfb083",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/fw/model.mjs",
+      "sha256": "f080e7e9c91bf3baa5136c7b8aeb6b0e0c4c8378d89f361a47e87aac4e902a44",
+      "bytes": 4718,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json",
+        "work/out/probe-reopen-session.jsonl#helper-hashes",
+        "work/out/probe-session-control.jsonl#helper-hashes",
+        "work/out/probe-session-cprobe.jsonl#helper-hashes",
+        "work/out/probe-session-p28-control.jsonl#helper-hashes",
+        "work/out/probe-session-p28-cprobe.jsonl#helper-hashes",
+        "work/out/session-j1-c1.jsonl#helper-hashes",
+        "work/out/session-j1-c2.jsonl#helper-hashes",
+        "work/out/session-j1-control.jsonl#helper-hashes",
+        "work/out/session-j1-p28-c1.jsonl#helper-hashes",
+        "work/out/session-j1-p28-c2.jsonl#helper-hashes",
+        "work/out/session-j1-p28-control.jsonl#helper-hashes",
+        "work/out/session-j1-reopen-c1.jsonl#helper-hashes",
+        "work/out/session-j1-reopen-c2.jsonl#helper-hashes"
+      ],
+      "later_sha256": "f080e7e9c91bf3baa5136c7b8aeb6b0e0c4c8378d89f361a47e87aac4e902a44",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/fw/models.mjs",
+      "sha256": "115c8349e4f0aadbe56f24638db4e195ca3ba59739c64607eb5b34e4e14db3db",
+      "bytes": 125036,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "115c8349e4f0aadbe56f24638db4e195ca3ba59739c64607eb5b34e4e14db3db",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/fw/nand.mjs",
+      "sha256": "1c7751b4db88c7874eb4c86d33185f6279ced1cd2f7bddbae4a2dea37fe3b5dd",
+      "bytes": 20696,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "1c7751b4db88c7874eb4c86d33185f6279ced1cd2f7bddbae4a2dea37fe3b5dd",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/fw/olyfw.mjs",
+      "sha256": "a1c02f4ded0c3624ac017d97eb1ca59e6ca5dd407bcc0854722d7c126c9ef246",
+      "bytes": 5786,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "a1c02f4ded0c3624ac017d97eb1ca59e6ca5dd407bcc0854722d7c126c9ef246",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/fw/overrides-E122.mjs",
+      "sha256": "6bff3bc7d875f7424165e6737ecd50c4a4ebb8d1dc4dd4d42b9431b5982b0602",
+      "bytes": 4046,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "6bff3bc7d875f7424165e6737ecd50c4a4ebb8d1dc4dd4d42b9431b5982b0602",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/fw/overrides-E144.mjs",
+      "sha256": "cc98ffd4ed9eac44c6a8c58c31010b67c72eef618d09e93cf97e442b3f5bd307",
+      "bytes": 25687,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "cc98ffd4ed9eac44c6a8c58c31010b67c72eef618d09e93cf97e442b3f5bd307",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/fw/patch.mjs",
+      "sha256": "bb9434c31fc8e494daa7dd05321bf5835b51aae6bfdbbd981d7151b445375d3b",
+      "bytes": 19035,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "bb9434c31fc8e494daa7dd05321bf5835b51aae6bfdbbd981d7151b445375d3b",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/fw/ports.mjs",
+      "sha256": "6c81c9955e9baba6c165ed3affb69fd5208bb44e6a9dba5dc6094935074ce0b0",
+      "bytes": 1076335,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "6c81c9955e9baba6c165ed3affb69fd5208bb44e6a9dba5dc6094935074ce0b0",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/fw/resprefix.mjs",
+      "sha256": "612c87c0dd722ee031685dd5c70bf14e113d094f2e3a66677dfbe4b8c14c6372",
+      "bytes": 2144,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "612c87c0dd722ee031685dd5c70bf14e113d094f2e3a66677dfbe4b8c14c6372",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/fw/sections.mjs",
+      "sha256": "e8e55f2820a7db8426f0172882a34c90c611a7a6b2d848904cd55739d45d6250",
+      "bytes": 8601,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "e8e55f2820a7db8426f0172882a34c90c611a7a6b2d848904cd55739d45d6250",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/acc.mjs",
+      "sha256": "48c508462bb4e8cf94b893315d079b9d08248956f06c040be1ed4e3503122062",
+      "bytes": 15789,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "48c508462bb4e8cf94b893315d079b9d08248956f06c040be1ed4e3503122062",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/audio.mjs",
+      "sha256": "9b1edfc267afe2c915cbecf4d9fc7bc78003f7f19ef799fd4c738ae1d4e2ff4b",
+      "bytes": 8006,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "9b1edfc267afe2c915cbecf4d9fc7bc78003f7f19ef799fd4c738ae1d4e2ff4b",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/audiohw.mjs",
+      "sha256": "c8b414b7217647d696c67aa84ffd273680d325f0119576aa480416791932d705",
+      "bytes": 13787,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "c8b414b7217647d696c67aa84ffd273680d325f0119576aa480416791932d705",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/camapp.mjs",
+      "sha256": "363891a90afc7e77e57abd1638e31f0a7badc09b81778e90ac8d42fb640b33f3",
+      "bytes": 232107,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "363891a90afc7e77e57abd1638e31f0a7badc09b81778e90ac8d42fb640b33f3",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/charger.mjs",
+      "sha256": "f0a2426fb249f9f675c0d22d6e49126fd53a88541dbd6637f6a5bbe4e0212982",
+      "bytes": 3046,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "f0a2426fb249f9f675c0d22d6e49126fd53a88541dbd6637f6a5bbe4e0212982",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/cpu2.mjs",
+      "sha256": "9a6877013f48a51f56a94bb1185d827c50b8d427b2db375d0d6a3964f0736666",
+      "bytes": 24107,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "9a6877013f48a51f56a94bb1185d827c50b8d427b2db375d0d6a3964f0736666",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/display.mjs",
+      "sha256": "7b34ff5b05fef9c7ca1d33fe771e4158387298fd02b28372afd36bf5f0d501bb",
+      "bytes": 91058,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json",
+        "work/out/probe-reopen-session.jsonl#helper-hashes",
+        "work/out/probe-session-control.jsonl#helper-hashes",
+        "work/out/probe-session-cprobe.jsonl#helper-hashes",
+        "work/out/probe-session-p28-control.jsonl#helper-hashes",
+        "work/out/probe-session-p28-cprobe.jsonl#helper-hashes",
+        "work/out/session-j1-c1.jsonl#helper-hashes",
+        "work/out/session-j1-c2.jsonl#helper-hashes",
+        "work/out/session-j1-control.jsonl#helper-hashes",
+        "work/out/session-j1-p28-c1.jsonl#helper-hashes",
+        "work/out/session-j1-p28-c2.jsonl#helper-hashes",
+        "work/out/session-j1-p28-control.jsonl#helper-hashes",
+        "work/out/session-j1-reopen-c1.jsonl#helper-hashes",
+        "work/out/session-j1-reopen-c2.jsonl#helper-hashes"
+      ],
+      "later_sha256": "7b34ff5b05fef9c7ca1d33fe771e4158387298fd02b28372afd36bf5f0d501bb",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/dispq.mjs",
+      "sha256": "4821c3b1eb64f4b25f40ed80bcf2c14aea5b166148efa3dda35b3d978537b4a4",
+      "bytes": 2427,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "4821c3b1eb64f4b25f40ed80bcf2c14aea5b166148efa3dda35b3d978537b4a4",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/edid.mjs",
+      "sha256": "416d945d868a7d8c53cc0085179733a25fccb82f88e1d6cbd0fe7add32b4d051",
+      "bytes": 2948,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "416d945d868a7d8c53cc0085179733a25fccb82f88e1d6cbd0fe7add32b4d051",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/errors.mjs",
+      "sha256": "2fd7139bceb60f0ad31c428f7ed9f69235af4bc76cda823b1bb9c6dcea45fe10",
+      "bytes": 1204,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "2fd7139bceb60f0ad31c428f7ed9f69235af4bc76cda823b1bb9c6dcea45fe10",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/hle.mjs",
+      "sha256": "5648a293d1f6ede0eda8e29d4dc9e6f683210a28935b02b4e6c0af2a03da0520",
+      "bytes": 18565,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "5648a293d1f6ede0eda8e29d4dc9e6f683210a28935b02b4e6c0af2a03da0520",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/irq.mjs",
+      "sha256": "8fec8ed6abe08a9b83845eae044fc3fcc43f2e339f95d872489152b4de9c072f",
+      "bytes": 10200,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "8fec8ed6abe08a9b83845eae044fc3fcc43f2e339f95d872489152b4de9c072f",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/jpeg.mjs",
+      "sha256": "b54cfe0eb9655371f282fd1e3565b92dfce2500538b805bf0d082de002b97554",
+      "bytes": 14285,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "b54cfe0eb9655371f282fd1e3565b92dfce2500538b805bf0d082de002b97554",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/kernel.mjs",
+      "sha256": "6ceee4bf9962892c0d025be0d70a92ccbb53cdb0ef009b5b9e312586302f47f8",
+      "bytes": 22251,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "6ceee4bf9962892c0d025be0d70a92ccbb53cdb0ef009b5b9e312586302f47f8",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/lens.mjs",
+      "sha256": "b92b12d381f3389fa8802f1e9ef3bde4291c45e8cb386619ff6fcf25099a96e5",
+      "bytes": 11978,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "b92b12d381f3389fa8802f1e9ef3bde4291c45e8cb386619ff6fcf25099a96e5",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/lensmcu.mjs",
+      "sha256": "52eb5614952c45f8f648db3cda980019bf9d1fe79334e48bbc3a183a443eabdc",
+      "bytes": 13566,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "52eb5614952c45f8f648db3cda980019bf9d1fe79334e48bbc3a183a443eabdc",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/mdet.mjs",
+      "sha256": "89c61056df82fe1a159e684cdee0810af38d60c986ab0bf33a6e90e1c504bdde",
+      "bytes": 45695,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "89c61056df82fe1a159e684cdee0810af38d60c986ab0bf33a6e90e1c504bdde",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/media.mjs",
+      "sha256": "373ceb78980f1c9a7098d56b573e86b00595392fe4e5a69e7c93af970a6ef248",
+      "bytes": 25418,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "373ceb78980f1c9a7098d56b573e86b00595392fe4e5a69e7c93af970a6ef248",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/menu.mjs",
+      "sha256": "f1fbb65e5a9d30e90ac4eb5565ad6852733d4ae20ff3a3de590d916cf4ec4e94",
+      "bytes": 85212,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "f1fbb65e5a9d30e90ac4eb5565ad6852733d4ae20ff3a3de590d916cf4ec4e94",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/menudata.mjs",
+      "sha256": "1cfdf906d143bea38e730040b2f062b3b3d46b35ba361b58dfd5b01db15531da",
+      "bytes": 17067,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "1cfdf906d143bea38e730040b2f062b3b3d46b35ba361b58dfd5b01db15531da",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/menuwalk.mjs",
+      "sha256": "d91eeba2e912d05d4a11081bd5846f53b60cbf1578e0733e3289bac8b47706f1",
+      "bytes": 10985,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json",
+        "work/out/probe-reopen-session.jsonl#helper-hashes",
+        "work/out/probe-session-control.jsonl#helper-hashes",
+        "work/out/probe-session-cprobe.jsonl#helper-hashes",
+        "work/out/probe-session-p28-control.jsonl#helper-hashes",
+        "work/out/probe-session-p28-cprobe.jsonl#helper-hashes",
+        "work/out/session-j1-c1.jsonl#helper-hashes",
+        "work/out/session-j1-c2.jsonl#helper-hashes",
+        "work/out/session-j1-control.jsonl#helper-hashes",
+        "work/out/session-j1-p28-c1.jsonl#helper-hashes",
+        "work/out/session-j1-p28-c2.jsonl#helper-hashes",
+        "work/out/session-j1-p28-control.jsonl#helper-hashes",
+        "work/out/session-j1-reopen-c1.jsonl#helper-hashes",
+        "work/out/session-j1-reopen-c2.jsonl#helper-hashes"
+      ],
+      "later_sha256": "d91eeba2e912d05d4a11081bd5846f53b60cbf1578e0733e3289bac8b47706f1",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/nav.mjs",
+      "sha256": "f0062a533f6caf7a37e600364a0d645ffa184deb7892c385b9bba5f58390baef",
+      "bytes": 28926,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "f0062a533f6caf7a37e600364a0d645ffa184deb7892c385b9bba5f58390baef",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/nvramdoc.mjs",
+      "sha256": "597148fdec863af46873a53ab5380a553fcda3a82499da2548f527eed28fffba",
+      "bytes": 6245,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "597148fdec863af46873a53ab5380a553fcda3a82499da2548f527eed28fffba",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/osd.mjs",
+      "sha256": "a0887531c74d890dca3a12b26d7aea57009da602ffbb6fff8382f89a119176b8",
+      "bytes": 21528,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "a0887531c74d890dca3a12b26d7aea57009da602ffbb6fff8382f89a119176b8",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/osdfmt.mjs",
+      "sha256": "8d5945aeca6a9ec80099c8a3c48ea90580f4c87399e6bcc593f2f0782a263248",
+      "bytes": 4699,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "8d5945aeca6a9ec80099c8a3c48ea90580f4c87399e6bcc593f2f0782a263248",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/patchaudit.mjs",
+      "sha256": "18b946321244d4473f904314ba558e9f3c92e330f6dd502863974773bf349b74",
+      "bytes": 12584,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "18b946321244d4473f904314ba558e9f3c92e330f6dd502863974773bf349b74",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/play.mjs",
+      "sha256": "ac4221021017ba3facacb5db7b1600f2704291136b72c24fefee3b9f8ed092a8",
+      "bytes": 184297,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json",
+        "work/out/probe-reopen-session.jsonl#helper-hashes",
+        "work/out/probe-session-control.jsonl#helper-hashes",
+        "work/out/probe-session-cprobe.jsonl#helper-hashes",
+        "work/out/probe-session-p28-control.jsonl#helper-hashes",
+        "work/out/probe-session-p28-cprobe.jsonl#helper-hashes",
+        "work/out/session-j1-c1.jsonl#helper-hashes",
+        "work/out/session-j1-c2.jsonl#helper-hashes",
+        "work/out/session-j1-control.jsonl#helper-hashes",
+        "work/out/session-j1-p28-c1.jsonl#helper-hashes",
+        "work/out/session-j1-p28-c2.jsonl#helper-hashes",
+        "work/out/session-j1-p28-control.jsonl#helper-hashes",
+        "work/out/session-j1-reopen-c1.jsonl#helper-hashes",
+        "work/out/session-j1-reopen-c2.jsonl#helper-hashes"
+      ],
+      "later_sha256": "ac4221021017ba3facacb5db7b1600f2704291136b72c24fefee3b9f8ed092a8",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/player.mjs",
+      "sha256": "bfd861245f1a3d3b2d19a48966b410e979def2ae7cb62c5dde86e31eb03e1404",
+      "bytes": 82293,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json",
+        "work/out/probe-reopen-session.jsonl#helper-hashes",
+        "work/out/probe-session-control.jsonl#helper-hashes",
+        "work/out/probe-session-cprobe.jsonl#helper-hashes",
+        "work/out/probe-session-p28-control.jsonl#helper-hashes",
+        "work/out/probe-session-p28-cprobe.jsonl#helper-hashes",
+        "work/out/session-j1-c1.jsonl#helper-hashes",
+        "work/out/session-j1-c2.jsonl#helper-hashes",
+        "work/out/session-j1-control.jsonl#helper-hashes",
+        "work/out/session-j1-p28-c1.jsonl#helper-hashes",
+        "work/out/session-j1-p28-c2.jsonl#helper-hashes",
+        "work/out/session-j1-p28-control.jsonl#helper-hashes",
+        "work/out/session-j1-reopen-c1.jsonl#helper-hashes",
+        "work/out/session-j1-reopen-c2.jsonl#helper-hashes"
+      ],
+      "later_sha256": "bfd861245f1a3d3b2d19a48966b410e979def2ae7cb62c5dde86e31eb03e1404",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/playmod.mjs",
+      "sha256": "56f5802c85ac55f4c5ecbee290384620826c62a1fde6d6bce4b4704aa95bfad8",
+      "bytes": 14600,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "56f5802c85ac55f4c5ecbee290384620826c62a1fde6d6bce4b4704aa95bfad8",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/power.mjs",
+      "sha256": "ec16f3c8dfbd67a7802e9718ce930e00d2889b0e5dc37fc7e040a255ea92f549",
+      "bytes": 17507,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "ec16f3c8dfbd67a7802e9718ce930e00d2889b0e5dc37fc7e040a255ea92f549",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/rec.mjs",
+      "sha256": "830d220debed119b5183391ce0d629de368369609ccbfafef14dd27bdf4643f4",
+      "bytes": 62226,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "830d220debed119b5183391ce0d629de368369609ccbfafef14dd27bdf4643f4",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/resnand.mjs",
+      "sha256": "c58d5d251c32f05d247ab8914551202c474e793bcdb2062ce61d2617fbc17462",
+      "bytes": 12700,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "c58d5d251c32f05d247ab8914551202c474e793bcdb2062ce61d2617fbc17462",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/resources.mjs",
+      "sha256": "122450c256d8ef188f77a8e323ba92a28a6102f9033b4634e3c77c36dd066002",
+      "bytes": 14110,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "122450c256d8ef188f77a8e323ba92a28a6102f9033b4634e3c77c36dd066002",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/rtos.mjs",
+      "sha256": "ea7e06666d37aaa97d06142febdbe853d996f68705bcca35f7ff11b4c6ed4b5d",
+      "bytes": 7071,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "ea7e06666d37aaa97d06142febdbe853d996f68705bcca35f7ff11b4c6ed4b5d",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/scene.mjs",
+      "sha256": "a842e60f803bc8b88113e1484e864235b5e2f9014dabb831210fd5cb9c8e9366",
+      "bytes": 20424,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "a842e60f803bc8b88113e1484e864235b5e2f9014dabb831210fd5cb9c8e9366",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/scpudev.mjs",
+      "sha256": "c93ce9ced00ba5effba9dedf61ac54d3ca437533f2fd8c899273d273ec5dfc6c",
+      "bytes": 40483,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "c93ce9ced00ba5effba9dedf61ac54d3ca437533f2fd8c899273d273ec5dfc6c",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/scpulink.mjs",
+      "sha256": "3df7584565d3b873e4cbf8fe0050364efe14ae383a4bff5d2dcc9251946ddb96",
+      "bytes": 10470,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "3df7584565d3b873e4cbf8fe0050364efe14ae383a4bff5d2dcc9251946ddb96",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/scpum4.mjs",
+      "sha256": "8b7d7fcb1473963f775a2f6742fb2236ef2309ddbaa47d98e7edc41692867514",
+      "bytes": 16575,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "8b7d7fcb1473963f775a2f6742fb2236ef2309ddbaa47d98e7edc41692867514",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/sdcard.mjs",
+      "sha256": "4f81b26b7158dff6bedbd7e88e10fe6293a4c6cea643b498ab98ff7041e7828e",
+      "bytes": 15367,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "4f81b26b7158dff6bedbd7e88e10fe6293a4c6cea643b498ab98ff7041e7828e",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/settings_ids.mjs",
+      "sha256": "9c395cbd29b04f7e3a4cc1c34332c6f3c4327b28b9ed45db969e9589758b1f78",
+      "bytes": 2242,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "9c395cbd29b04f7e3a4cc1c34332c6f3c4327b28b9ed45db969e9589758b1f78",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/shoe.mjs",
+      "sha256": "d6675b13346890962de1eec8930f763312f7f7d59ccb5b869a0607bf03840e98",
+      "bytes": 10854,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "d6675b13346890962de1eec8930f763312f7f7d59ccb5b869a0607bf03840e98",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/shuttersnd.mjs",
+      "sha256": "f4e81e625dcbaa0807d5ac67dfc246ad791f314c5ae9fd7f44192d12728fbc63",
+      "bytes": 5762,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "f4e81e625dcbaa0807d5ac67dfc246ad791f314c5ae9fd7f44192d12728fbc63",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/sim.mjs",
+      "sha256": "aab4081dcfc9fb63ca8e84f7f100f84a0ce6dc91a633595cb05446a5d480e6be",
+      "bytes": 16409,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "aab4081dcfc9fb63ca8e84f7f100f84a0ce6dc91a633595cb05446a5d480e6be",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/sio.mjs",
+      "sha256": "f0716ec9f3b3fbcffce75fa186a53f387ab1c336726595bfedc62119b4a9627b",
+      "bytes": 9980,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "f0716ec9f3b3fbcffce75fa186a53f387ab1c336726595bfedc62119b4a9627b",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/soundres.mjs",
+      "sha256": "a2c6dd3df56db40e95822cdb973bfe25efad7f049828626964c88886ff6aa8e9",
+      "bytes": 6887,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "a2c6dd3df56db40e95822cdb973bfe25efad7f049828626964c88886ff6aa8e9",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/storage.mjs",
+      "sha256": "f5ea0a36b9c78f0a05a5e0f5e45f53ee5f4d076019fab8ee41c2d9e8c4d37d9c",
+      "bytes": 50163,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "f5ea0a36b9c78f0a05a5e0f5e45f53ee5f4d076019fab8ee41c2d9e8c4d37d9c",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/subject.mjs",
+      "sha256": "a5bd078b39c2f8594b13f564e5086eb56e8f22bbcdbac115e226e19220b5b317",
+      "bytes": 13781,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "a5bd078b39c2f8594b13f564e5086eb56e8f22bbcdbac115e226e19220b5b317",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/take.mjs",
+      "sha256": "8c6dc9cc84ee43a46e22d542f79bb6a5138b9ed686f089b0e17d7c500f66d4ee",
+      "bytes": 65265,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "8c6dc9cc84ee43a46e22d542f79bb6a5138b9ed686f089b0e17d7c500f66d4ee",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/text.mjs",
+      "sha256": "e27b2d3781feab8d9eb3f49b0cc73524a9312913f85a4131358156a9770a1357",
+      "bytes": 22116,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "e27b2d3781feab8d9eb3f49b0cc73524a9312913f85a4131358156a9770a1357",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/touchpanel.mjs",
+      "sha256": "72f93c8bc053f159ec14a20b4dbcf0fabc189c01f79fde7a06efea160743e9de",
+      "bytes": 6610,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "72f93c8bc053f159ec14a20b4dbcf0fabc189c01f79fde7a06efea160743e9de",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/windows.mjs",
+      "sha256": "d18038a30d2f87e3abf6098cd943f35ff4202c6bb3a954d0f7ed1d9c8d28189f",
+      "bytes": 1265,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "d18038a30d2f87e3abf6098cd943f35ff4202c6bb3a954d0f7ed1d9c8d28189f",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/wm8946.mjs",
+      "sha256": "4ae26e3647e049fc3bc72163aa978ffc36a0966125b8370dab44827cdfee67bd",
+      "bytes": 8976,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "4ae26e3647e049fc3bc72163aa978ffc36a0966125b8370dab44827cdfee67bd",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/machine.mjs",
+      "sha256": "9c10e396d122722a486fa73dedabb0c19ad45033c59c172ec6bcaa37d031cd63",
+      "bytes": 33745,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "9c10e396d122722a486fa73dedabb0c19ad45033c59c172ec6bcaa37d031cd63",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/util/bytes.mjs",
+      "sha256": "86707333d72877e35b374bfd39f3d6af2b716437c73df46929e74b460af985be",
+      "bytes": 6115,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "86707333d72877e35b374bfd39f3d6af2b716437c73df46929e74b460af985be",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/util/equal.mjs",
+      "sha256": "31d47358a57d40bc4d67b9a077a8c05e6c4f1fe7a92de33f8eb538d75ead238e",
+      "bytes": 1471,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "31d47358a57d40bc4d67b9a077a8c05e6c4f1fe7a92de33f8eb538d75ead238e",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/util/hex.mjs",
+      "sha256": "d48bffb45373a94b8d1c824aa46d7a93665f282ee8a563370d698b1a53237c33",
+      "bytes": 489,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "d48bffb45373a94b8d1c824aa46d7a93665f282ee8a563370d698b1a53237c33",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/util/parse.mjs",
+      "sha256": "b0754de377324528b15d6588dbe1d634649cbefd68754bf6b0b114beee3ddfd7",
+      "bytes": 1807,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "b0754de377324528b15d6588dbe1d634649cbefd68754bf6b0b114beee3ddfd7",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/util/show.mjs",
+      "sha256": "58a20ae76e473414c3b0a0075eb362f7a1cf4c968b3feef64659f0473515e076",
+      "bytes": 1724,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "58a20ae76e473414c3b0a0075eb362f7a1cf4c968b3feef64659f0473515e076",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/util/tally.mjs",
+      "sha256": "33f495d217ff46a5e2e1bb74a3cb319b2db374e8bd3d37dfef75da9a6864ed26",
+      "bytes": 896,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "33f495d217ff46a5e2e1bb74a3cb319b2db374e8bd3d37dfef75da9a6864ed26",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/util/tracejson.mjs",
+      "sha256": "52a0e82cd086dee77069600061f3d478fbf4ac447c75173dc53e97365f0e4e77",
+      "bytes": 3871,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "52a0e82cd086dee77069600061f3d478fbf4ac447c75173dc53e97365f0e4e77",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/unpacked/E147/OLY_E_147_1100_0000_0000.BIN.blk00000000.OE.0100.bin",
+      "sha256": "5e8d376e9111a44ac0352f26030d7c1b17026d42c45f3600cfa02a0e8c5b7d59",
+      "bytes": 33554368,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/probe-reopen-session.jsonl#helper-hashes",
+        "work/out/probe-session-control.jsonl#helper-hashes",
+        "work/out/probe-session-cprobe.jsonl#helper-hashes",
+        "work/out/probe-session-p28-control.jsonl#helper-hashes",
+        "work/out/probe-session-p28-cprobe.jsonl#helper-hashes",
+        "work/out/session-j1-c1.jsonl#helper-hashes",
+        "work/out/session-j1-c2.jsonl#helper-hashes",
+        "work/out/session-j1-control.jsonl#helper-hashes",
+        "work/out/session-j1-p28-c1.jsonl#helper-hashes",
+        "work/out/session-j1-p28-c2.jsonl#helper-hashes",
+        "work/out/session-j1-p28-control.jsonl#helper-hashes",
+        "work/out/session-j1-reopen-c1.jsonl#helper-hashes",
+        "work/out/session-j1-reopen-c2.jsonl#helper-hashes"
+      ],
+      "later_sha256": "5e8d376e9111a44ac0352f26030d7c1b17026d42c45f3600cfa02a0e8c5b7d59",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/unpacked/E147/OLY_E_147_1100_0000_0000.BIN.blk02000000.OE.0101.bin",
+      "sha256": "6d2bef74b4b2fa089f271529482f96505a170b91e79ab9b1a13f3ce8f7918226",
+      "bytes": 60817344,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/probe-reopen-session.jsonl#helper-hashes",
+        "work/out/probe-session-control.jsonl#helper-hashes",
+        "work/out/probe-session-cprobe.jsonl#helper-hashes",
+        "work/out/probe-session-p28-control.jsonl#helper-hashes",
+        "work/out/probe-session-p28-cprobe.jsonl#helper-hashes",
+        "work/out/session-j1-c1.jsonl#helper-hashes",
+        "work/out/session-j1-c2.jsonl#helper-hashes",
+        "work/out/session-j1-control.jsonl#helper-hashes",
+        "work/out/session-j1-p28-c1.jsonl#helper-hashes",
+        "work/out/session-j1-p28-c2.jsonl#helper-hashes",
+        "work/out/session-j1-p28-control.jsonl#helper-hashes",
+        "work/out/session-j1-reopen-c1.jsonl#helper-hashes",
+        "work/out/session-j1-reopen-c2.jsonl#helper-hashes"
+      ],
+      "later_sha256": "6d2bef74b4b2fa089f271529482f96505a170b91e79ab9b1a13f3ce8f7918226",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "ref/tasks/T3a-afon-zone-row/run-20261118-053855/work/out/overlay-changed-bytes.csv",
+      "sha256": "ff14ccafef13d99eae88c5e742ddb304598c31bb01c1257fe71f922c4b3536d2",
+      "bytes": 8107,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json",
+        "work/out/probe-reopen-session.jsonl#helper-hashes",
+        "work/out/probe-session-control.jsonl#helper-hashes",
+        "work/out/probe-session-cprobe.jsonl#helper-hashes",
+        "work/out/probe-session-p28-control.jsonl#helper-hashes",
+        "work/out/probe-session-p28-cprobe.jsonl#helper-hashes",
+        "work/out/session-j1-c1.jsonl#helper-hashes",
+        "work/out/session-j1-c2.jsonl#helper-hashes",
+        "work/out/session-j1-control.jsonl#helper-hashes",
+        "work/out/session-j1-p28-c1.jsonl#helper-hashes",
+        "work/out/session-j1-p28-c2.jsonl#helper-hashes",
+        "work/out/session-j1-p28-control.jsonl#helper-hashes",
+        "work/out/session-j1-reopen-c1.jsonl#helper-hashes",
+        "work/out/session-j1-reopen-c2.jsonl#helper-hashes"
+      ],
+      "later_sha256": "ff14ccafef13d99eae88c5e742ddb304598c31bb01c1257fe71f922c4b3536d2",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "ref/tasks/T3i-afon-zone-acceptance/run-20261118-123315/work/out/overlay-changed-bytes.csv",
+      "sha256": "bcabf4130c7122703376a0dd48abcfe31e28a19f702b90b4e9bcf1a72623a422",
+      "bytes": 32758,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_sha256": "bcabf4130c7122703376a0dd48abcfe31e28a19f702b90b4e9bcf1a72623a422",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "TASK.md",
+      "sha256": "2c18bcf487887a874275ccb50c05aa8e167f1e02908f4aa4468c6f9582bee7f0",
+      "bytes": 2339,
+      "hashed": "later"
+    },
+    {
+      "path": "brief.md",
+      "sha256": "3fc9e4ae1a4a0ef662b4fa10a2894ef3541a535d3c5ff19f9c865e81689946ff",
+      "bytes": 4482,
+      "hashed": "later"
+    },
+    {
+      "path": "templates/result.md",
+      "sha256": "18d605fc1f70369c40245130cdd499288bd3ae1a8fe1bdb84575cb58532d0110",
+      "bytes": 1230,
+      "hashed": "later"
+    },
+    {
+      "path": "ref/tasks/T3i-afon-zone-acceptance/brief.md",
+      "sha256": "2e6159a45c5a9e51f894eb68a12c501bc6e1becf461f6863e952b7768a4a19b7",
+      "bytes": 5565,
+      "hashed": "later"
+    },
+    {
+      "path": "ref/tasks/T3i-afon-zone-acceptance/decision.md",
+      "sha256": "b7ec6fbc5e4e897fef57490e2682ec171a4b6bc5411fa94c3a5d01162b5a706a",
+      "bytes": 2734,
+      "hashed": "later"
+    },
+    {
+      "path": "ref/tasks/T3i-afon-zone-acceptance/run-20261118-131729-review/review.md",
+      "sha256": "1a91a8bf45a5055ba887fa1acecbb5ec44968ebd6eeb53fd8574ff9982bd0eca",
+      "bytes": 15446,
+      "hashed": "later"
+    },
+    {
+      "path": "ref/tasks/T3i-afon-zone-acceptance/run-20261118-123315/work/result.md",
+      "sha256": "66ae9764e59db88f2981756c9e45b6591653d6d1f102953f756ed991aea751f9",
+      "bytes": 9620,
+      "hashed": "later"
+    },
+    {
+      "path": "ref/tasks/T3i-afon-zone-acceptance/run-20261118-123315/work/scripts/accept_i1.mjs",
+      "sha256": "72bf13278c1e919d6a2f16d26effcbc478858606fdec01adf2e8d3be5901924d",
+      "bytes": 18800,
+      "hashed": "later"
+    },
+    {
+      "path": "ref/tasks/T3i-afon-zone-acceptance/run-20261118-123315/work/scripts/zone_session_i1.mjs",
+      "sha256": "f9b784c8de3ed13c6bada555689e7bec6283ddcf6b4d546475a54a17b242b043",
+      "bytes": 21795,
+      "hashed": "later"
+    },
+    {
+      "path": "ref/tasks/T3i-afon-zone-acceptance/run-20261118-123315/work/scripts/run_logged.mjs",
+      "sha256": "e00170efc367d0ed4c145db59bd6a84738688554f6904980ea382f6494325d15",
+      "bytes": 4095,
+      "hashed": "later"
+    },
+    {
+      "path": "ref/tasks/T3i-afon-zone-acceptance/run-20261118-123315/work/scripts/write_manifest_i1.py",
+      "sha256": "224e011ba2ed877057838b2ba50cc0521a514a6dd2e0718bc564e89717802473",
+      "bytes": 6694,
+      "hashed": "later"
+    },
+    {
+      "path": "ref/tasks/T3h-afon-zone-faces/run-20261118-113413/work/out/faces.md",
+      "sha256": "374b065e175ce6d0b0423efc4d04693165dcaf3290f94dbd3bb8176e811a068b",
+      "bytes": 6170,
+      "hashed": "later"
+    },
+    {
+      "path": "ref/analysis/button-af/AFON-MENU-RESEARCH.md",
+      "sha256": "bddc8e5b63f80edbc4f8ca1c5e17b930bfde37da4d75185603c058eb6426bb9b",
+      "bytes": 63956,
+      "hashed": "later"
+    },
+    {
+      "path": "ref/tasks/T3c-afon-editor-routing/run-20261118-073716/work/scripts/route_page_a3.mjs",
+      "sha256": "bc87a18d1a7c336fa1d676c0b0bffa5ec30d1395871525f56fb19df8d17f6564",
+      "bytes": 7623,
+      "hashed": "later"
+    }
+  ],
+  "sources": [
+    {
+      "path": "work/scripts/accept_runner_j1.mjs",
+      "sha256": "583b381157db462fb98abaf914f11f9489025c90636462c9c83c65e7fcee0f0e",
+      "bytes": 12213,
+      "hashed": "execution",
+      "execution_sha256": "583b381157db462fb98abaf914f11f9489025c90636462c9c83c65e7fcee0f0e",
+      "execution_where": [
+        "work/out/import-inventory-j1.json",
+        "work/out/cmd/08.exit"
+      ],
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "work/scripts/accept_table_j1.json",
+      "sha256": "427447df088904ad1b2e9f2d20d6f9e39e0df19bc7777d4711cb454f55eb3308",
+      "bytes": 67975,
+      "hashed": "execution",
+      "execution_sha256": "427447df088904ad1b2e9f2d20d6f9e39e0df19bc7777d4711cb454f55eb3308",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "work/scripts/build_table_j1.mjs",
+      "sha256": "36b4276b991c00ef8c65e08d17b2300ae633ba8d4f3332b917aa85954d59d823",
+      "bytes": 4724,
+      "hashed": "execution",
+      "execution_sha256": "36b4276b991c00ef8c65e08d17b2300ae633ba8d4f3332b917aa85954d59d823",
+      "execution_where": [
+        "work/out/cmd/07.exit"
+      ],
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "work/scripts/check_probe_j0.mjs",
+      "sha256": "bc4a6fe3213c75c649d97adec89adea2f4096b47f561b4f641b6bfd3d2d669a8",
+      "bytes": 1070,
+      "hashed": "execution",
+      "execution_sha256": "bc4a6fe3213c75c649d97adec89adea2f4096b47f561b4f641b6bfd3d2d669a8",
+      "execution_where": [
+        "work/out/cmd/05.exit"
+      ],
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "work/scripts/dump_steps_j0.py",
+      "sha256": "ad31179f1678729be923d65d9d4e416b9a2b6e0f03b2ba499a4d2d3c65f73d64",
+      "bytes": 1362,
+      "hashed": "execution",
+      "execution_sha256": "ad31179f1678729be923d65d9d4e416b9a2b6e0f03b2ba499a4d2d3c65f73d64",
+      "execution_where": [
+        "work/out/cmd/01.exit"
+      ],
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "work/scripts/observe_j1.mjs",
+      "sha256": "2a0da805e99fdaa838be4f74941a0eebec9534f5c38382fc33e2402d6a3a7bdc",
+      "bytes": 6904,
+      "hashed": "execution",
+      "execution_sha256": "2a0da805e99fdaa838be4f74941a0eebec9534f5c38382fc33e2402d6a3a7bdc",
+      "execution_where": [
+        "work/out/import-inventory-j1.json"
+      ],
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "work/scripts/probe_j1.mjs",
+      "sha256": "9879e64310a500bd38db649c3aa814e6ba065f65d335b32f9b60c5ebebf6d757",
+      "bytes": 2950,
+      "hashed": "execution",
+      "execution_sha256": "9879e64310a500bd38db649c3aa814e6ba065f65d335b32f9b60c5ebebf6d757",
+      "execution_where": [
+        "work/out/cmd/03.exit"
+      ],
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "work/scripts/probe_reopen_j1.mjs",
+      "sha256": "0fa2d3e9a35e58b99a87c312dc8df346c68794fcbd9f3da6393b9cd83f343d0e",
+      "bytes": 1665,
+      "hashed": "execution",
+      "execution_sha256": "0fa2d3e9a35e58b99a87c312dc8df346c68794fcbd9f3da6393b9cd83f343d0e",
+      "execution_where": [
+        "work/out/cmd/06.exit"
+      ],
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "work/scripts/run_logged.mjs",
+      "sha256": "e00170efc367d0ed4c145db59bd6a84738688554f6904980ea382f6494325d15",
+      "bytes": 4095,
+      "hashed": "later"
+    },
+    {
+      "path": "work/scripts/stats_j1.py",
+      "sha256": "e2861b7bfb47a1b6dd6cf09c105a34dc0214ddda35efeb73350242e6709c496d",
+      "bytes": 864,
+      "hashed": "execution",
+      "execution_sha256": "e2861b7bfb47a1b6dd6cf09c105a34dc0214ddda35efeb73350242e6709c496d",
+      "execution_where": [
+        "work/out/cmd/09.exit"
+      ],
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "work/scripts/summarize_probe_j0.py",
+      "sha256": "29605c301ebc1b174c675aeb9bbced5571a3c31187cec9034c9214f35fa8ce3c",
+      "bytes": 1798,
+      "hashed": "execution",
+      "execution_sha256": "29605c301ebc1b174c675aeb9bbced5571a3c31187cec9034c9214f35fa8ce3c",
+      "execution_where": [
+        "work/out/cmd/04.exit"
+      ],
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "work/scripts/title_check_j0.mjs",
+      "sha256": "3540c93d7fd3fd05e4dc01f6a48480eb17ea81c2fb541b57c1b04aea4bbcee38",
+      "bytes": 536,
+      "hashed": "execution",
+      "execution_sha256": "3540c93d7fd3fd05e4dc01f6a48480eb17ea81c2fb541b57c1b04aea4bbcee38",
+      "execution_where": [
+        "work/out/cmd/02.exit"
+      ],
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "work/scripts/write_manifest_j1.py",
+      "sha256": "27cbde44d12cdf96e528db412c2215c37b2f1d9f5ef4603cefb98e7041b3ff4d",
+      "bytes": 6891,
+      "hashed": "later"
+    },
+    {
+      "path": "work/scripts/zone_session_j1.mjs",
+      "sha256": "f9b784c8de3ed13c6bada555689e7bec6283ddcf6b4d546475a54a17b242b043",
+      "bytes": 21795,
+      "hashed": "execution",
+      "execution_sha256": "f9b784c8de3ed13c6bada555689e7bec6283ddcf6b4d546475a54a17b242b043",
+      "execution_where": [
+        "work/out/import-inventory-j1.json",
+        "work/out/probe-reopen-session.jsonl#helper-hashes",
+        "work/out/probe-session-control.jsonl#helper-hashes",
+        "work/out/probe-session-cprobe.jsonl#helper-hashes",
+        "work/out/probe-session-p28-control.jsonl#helper-hashes",
+        "work/out/probe-session-p28-cprobe.jsonl#helper-hashes",
+        "work/out/session-j1-c1.jsonl#helper-hashes",
+        "work/out/session-j1-c2.jsonl#helper-hashes",
+        "work/out/session-j1-control.jsonl#helper-hashes",
+        "work/out/session-j1-p28-c1.jsonl#helper-hashes",
+        "work/out/session-j1-p28-c2.jsonl#helper-hashes",
+        "work/out/session-j1-p28-control.jsonl#helper-hashes",
+        "work/out/session-j1-reopen-c1.jsonl#helper-hashes",
+        "work/out/session-j1-reopen-c2.jsonl#helper-hashes"
+      ],
+      "later_matches": true,
+      "conflicts": []
+    }
+  ],
+  "outputs": [
+    {
+      "path": "work/out/accept-j1-c1-2154-cancel.png",
+      "sha256": "0348f40d7d6ea86f7b2cd357479346408bd1abd5e3b6d559f08311fba77d214f",
+      "bytes": 11241,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c1-2154-open.png",
+      "sha256": "b2b69826bcf5ce521ee62af194056ce3fe97b74728969a8b13dad0fedbe4c457",
+      "bytes": 15551,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c1-2155-cancel.png",
+      "sha256": "baf31dfa6ac1c29c65ff4346ce9738c2863615a4091b3ac7a29f28cb7f69534d",
+      "bytes": 11234,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c1-2155-open.png",
+      "sha256": "b7bf9fbc7f5d32fd59ed8812492207a1f0a9c496a6621a2536c0dfb092791717",
+      "bytes": 16206,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c1-back25.png",
+      "sha256": "b93a8b013f989c1c351976a42b432aa7f18388d4e8a440a4263f940fe1c339d4",
+      "bytes": 16824,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c1-back26.png",
+      "sha256": "155fc09df6ec7ac7e93b785086d3f3e5bac97107c0939255c5e9ed5211a10d44",
+      "bytes": 16878,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c1-baseline.png",
+      "sha256": "ff0a276eb6db88237146b9b048a0faecf263ac295aaa0d1a8a1ef4697177a9de",
+      "bytes": 6799,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c1-commit-2.png",
+      "sha256": "daefddd1bb789ae829a7db98abebd8b8e4e21d8aefade0161db2bf0bf55c47a1",
+      "bytes": 11297,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c1-commit-9.png",
+      "sha256": "d878620b8e3cc0e3266811ce1135b79cd75f9cd8aa3d285633c62021c52c2ed5",
+      "bytes": 11138,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c1-commit2-right-1.png",
+      "sha256": "890dfa2216bc67928874f9b817bf25beae5917c2eaa0242c8cc1ee64a6e22da5",
+      "bytes": 12877,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c1-commit2-right-2.png",
+      "sha256": "e1426dff00d629cd80f553a3dc610c5a240a6f6b62f3fceb706d5a980dd447d9",
+      "bytes": 12766,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c1-commit9-right-3.png",
+      "sha256": "1e845a4397a02d0c226ada364b34f30195477586f30f31d10e1d0808f92f9286",
+      "bytes": 12873,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c1-commit9-right-4.png",
+      "sha256": "d82afc1ad170528ad33364caa4a03b9e7e76260ad8cabd2bb4c20134a216d0ae",
+      "bytes": 12794,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c1-commit9-right-5.png",
+      "sha256": "e747b4b4a001f567c4fc617113f01bd95b74a335d4e981844a6ed1f47e71f7f7",
+      "bytes": 12776,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c1-commit9-right-6.png",
+      "sha256": "42e7754f739b2fa510cd03c7ba160982613805e0594c5511a4426ac6e75978c2",
+      "bytes": 9836,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c1-commit9-right-7.png",
+      "sha256": "17fdd18d5aeed9933b903b3b053818f3df562ab993613d7ff3feec96b118041e",
+      "bytes": 10148,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c1-commit9-right-8.png",
+      "sha256": "9faa3460e71a5d01506b6a99d7fcc57f6547335cad9569a1d59b08e828ccbfb9",
+      "bytes": 9831,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c1-commit9-right-9.png",
+      "sha256": "54ccece0a4263dffd8e60f09efb7b035724db438c407d5e6d7fd01ee1f059202",
+      "bytes": 9335,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c1-down-2155.png",
+      "sha256": "baf31dfa6ac1c29c65ff4346ce9738c2863615a4091b3ac7a29f28cb7f69534d",
+      "bytes": 11234,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c1-down-afbutton.png",
+      "sha256": "8243424b6d851082ee7486a92aca5de26a7756d177a0debc1c2ed461ce778a70",
+      "bytes": 13243,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c1-down-caf.png",
+      "sha256": "a55731cd5649322de917b11c90daab7c38020e3ef4cf3ec1320344f30bfcbcc4",
+      "bytes": 13214,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c1-down26-0.png",
+      "sha256": "39ccc862b87c7d841c93e0d32e20a53a7ea541fa1684047067b0ad766fe0c759",
+      "bytes": 16875,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c1-down26-1.png",
+      "sha256": "d6b99cf2fec8e06494fa04de8b6f7a6cc04447f52abcd0f8b937cdc28c61a2af",
+      "bytes": 16783,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c1-down26-2.png",
+      "sha256": "b93a8b013f989c1c351976a42b432aa7f18388d4e8a440a4263f940fe1c339d4",
+      "bytes": 16824,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c1-down26-3.png",
+      "sha256": "0cfaa67c5f25c7cc8cc60bb1625944fb86c0943b875792dbfbce9facd32f3a9d",
+      "bytes": 16832,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c1-down26-4.png",
+      "sha256": "155fc09df6ec7ac7e93b785086d3f3e5bac97107c0939255c5e9ed5211a10d44",
+      "bytes": 16878,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c1-down27-0.png",
+      "sha256": "a55731cd5649322de917b11c90daab7c38020e3ef4cf3ec1320344f30bfcbcc4",
+      "bytes": 13214,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c1-down27-1.png",
+      "sha256": "8243424b6d851082ee7486a92aca5de26a7756d177a0debc1c2ed461ce778a70",
+      "bytes": 13243,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c1-exit-0.png",
+      "sha256": "8243424b6d851082ee7486a92aca5de26a7756d177a0debc1c2ed461ce778a70",
+      "bytes": 13243,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c1-exit-1.png",
+      "sha256": "a27f7259f5fc911ec6dc03675e5100c88163d55b671eba4c27b9d2dcb581e591",
+      "bytes": 14926,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c1-leave-27.png",
+      "sha256": "8243424b6d851082ee7486a92aca5de26a7756d177a0debc1c2ed461ce778a70",
+      "bytes": 13243,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c1-left-0.png",
+      "sha256": "dcaca24e6d0790189ef076631128a252731ed9e1feda703516d226e07e753560",
+      "bytes": 18944,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c1-left-1.png",
+      "sha256": "c6a699de5d1857525e7a00e94d53936e4c067cb0c05654ec518bb6ba2aef0970",
+      "bytes": 16636,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c1-left-10.png",
+      "sha256": "b258d5a935d701fadc164dcc0ebc84e2b6e9fd0b37f0afb2d24bbaef2a18cbfa",
+      "bytes": 11513,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c1-left-11.png",
+      "sha256": "2fa322003891566e5a88a86cb62a7448e067ff1b12f748c715a6ceeadac7dac7",
+      "bytes": 14923,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c1-left-12.png",
+      "sha256": "26958b4832108564c475fa0163c82c762a0ff77f560b8142a4ab4268d66dbd38",
+      "bytes": 16383,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c1-left-13.png",
+      "sha256": "3436dd3d7db5e60bc892f6fe30db98d614f9dbed77ee20fd82187ed3ad8188a2",
+      "bytes": 22020,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c1-left-14.png",
+      "sha256": "f5d92ea55199e18af55dab08f21ba941dc4fdb2ce4430069a624c1f7c6ba7877",
+      "bytes": 15655,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c1-left-15.png",
+      "sha256": "e8ac865af9f59a330ecbba1e9aada16968d56055d969d6eb162d097d0471b14d",
+      "bytes": 19547,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c1-left-16.png",
+      "sha256": "1cb12e9973912ca72bd164b70e9e9ad3cb279607f475df9dd769d7002365ff0e",
+      "bytes": 12687,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c1-left-17.png",
+      "sha256": "71af34cb1ea60a5a7e5357645e556edc5f1cca45513c29b2aac3143c80fa96c1",
+      "bytes": 15604,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c1-left-18.png",
+      "sha256": "e43643c600ba0c5b6bcba0a45c8b4192afa0381f59d8ac772a68cca5b8407fd3",
+      "bytes": 9931,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c1-left-19.png",
+      "sha256": "36c90ea2e5286d10da6471788be6b16514f18000301844857f4450fde3f8ad91",
+      "bytes": 13155,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c1-left-2.png",
+      "sha256": "cbac7ce631f21d8211ee968b33d6e5137ec2dea5bb36fa2c88d6877104f17124",
+      "bytes": 17134,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c1-left-3.png",
+      "sha256": "85cff2f79ef134552e12b123687f29ed7d7e124bec54b00b1ee384e3caf9ebe0",
+      "bytes": 15461,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c1-left-4.png",
+      "sha256": "1b63c462c0f711f6eb84bcd1009b10d3df572164c7318189f732f058a9fa4644",
+      "bytes": 13107,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c1-left-5.png",
+      "sha256": "80db5b503ccf3eecf9149fd3baaf62bfe48c92f9538e9a01a3d1aff67c83418a",
+      "bytes": 12782,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c1-left-6.png",
+      "sha256": "29d07d70dc92f25cf30dec0c0c26f6b105c3f64437c064b7f6fc836c22667b79",
+      "bytes": 18139,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c1-left-7.png",
+      "sha256": "318f49f1de68251aff8bb558924aa7d7663258a7fc31da4897147b884ed3f77c",
+      "bytes": 8869,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c1-left-8.png",
+      "sha256": "fb44be426d751d77e45cf33927fc46b96bb50e1b38958489cc9fc02414659e6e",
+      "bytes": 15931,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c1-left-9.png",
+      "sha256": "46358a19276604963631e8ea04de0336f3420c5dc6f436159598144f2a74cf4b",
+      "bytes": 15320,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c1-menu.png",
+      "sha256": "542ed40b758684c43091a6fd9b1f1634cf1e5084f6cfa9a93c3cbeda0cec9715",
+      "bytes": 14163,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c1-page1-af.png",
+      "sha256": "83fb81e3ff0b470b57502d17e3747e6d6ec2557a94d6d2b76d2e05182ffcb761",
+      "bytes": 16855,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c1-page2-af.png",
+      "sha256": "36c90ea2e5286d10da6471788be6b16514f18000301844857f4450fde3f8ad91",
+      "bytes": 13155,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c1-page25.png",
+      "sha256": "ea7f10aeec71a626d0836cc686eccff529128dd311767251e8e459bf92d03ad4",
+      "bytes": 9069,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c1-page26.png",
+      "sha256": "9f8d72cfcae1ecb890b830285ae675ba270c3e409e092c2e1cf47498cb853339",
+      "bytes": 8225,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c1-page27-return.png",
+      "sha256": "0348f40d7d6ea86f7b2cd357479346408bd1abd5e3b6d559f08311fba77d214f",
+      "bytes": 11241,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c1-page27.png",
+      "sha256": "0348f40d7d6ea86f7b2cd357479346408bd1abd5e3b6d559f08311fba77d214f",
+      "bytes": 11241,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c1-reopen-2.png",
+      "sha256": "b928e09c4963102b0a3baa8bccc89fe4b3dba7ccb667a5d72ef5ca8c54f1ad33",
+      "bytes": 12589,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c1-save.png",
+      "sha256": "dc7badd44f4699885052b49ab01cc24dbf6c4270009958ed79a2a3ab22d077eb",
+      "bytes": 15867,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c1-up25-0.png",
+      "sha256": "0cfaa67c5f25c7cc8cc60bb1625944fb86c0943b875792dbfbce9facd32f3a9d",
+      "bytes": 16832,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c1-up25-1.png",
+      "sha256": "b93a8b013f989c1c351976a42b432aa7f18388d4e8a440a4263f940fe1c339d4",
+      "bytes": 16824,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c1-zone-2155.png",
+      "sha256": "baf31dfa6ac1c29c65ff4346ce9738c2863615a4091b3ac7a29f28cb7f69534d",
+      "bytes": 11234,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c1-zone-cancel-c4.png",
+      "sha256": "ad8c5a381161a2572b32cbeee49ef1cf27d4efec8a066ed6c4a8d6b77806b2d6",
+      "bytes": 11221,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c1-zone-open.png",
+      "sha256": "44448279d6ef4a09df1887df0813b762a67d9fdac99b4106e6bb3f2db1225718",
+      "bytes": 12640,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c1-zone-reopen.png",
+      "sha256": "44448279d6ef4a09df1887df0813b762a67d9fdac99b4106e6bb3f2db1225718",
+      "bytes": 12640,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c1-zone-right-1.png",
+      "sha256": "890dfa2216bc67928874f9b817bf25beae5917c2eaa0242c8cc1ee64a6e22da5",
+      "bytes": 12877,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c1-zone-right-2.png",
+      "sha256": "e1426dff00d629cd80f553a3dc610c5a240a6f6b62f3fceb706d5a980dd447d9",
+      "bytes": 12766,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c1-zone-right-3.png",
+      "sha256": "28d417330f5072023ad12d61d58913ce412cc96a1d14a3d3b9f4a1ef9ddb6884",
+      "bytes": 12904,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c1-zone-right-4.png",
+      "sha256": "c6e1de51d23d95adf3566015d726acd86f7e5c91d681228dc190e9acf08d11c4",
+      "bytes": 12826,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c1-zone-right-5.png",
+      "sha256": "1c569cc9c63fb8eda625489d90c704d2e9d55726aecab5c93101795cec95cc8f",
+      "bytes": 12806,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c1-zone-right-6.png",
+      "sha256": "42e7754f739b2fa510cd03c7ba160982613805e0594c5511a4426ac6e75978c2",
+      "bytes": 9836,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c1-zone-right-7.png",
+      "sha256": "17fdd18d5aeed9933b903b3b053818f3df562ab993613d7ff3feec96b118041e",
+      "bytes": 10148,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c1-zone-right-8.png",
+      "sha256": "9faa3460e71a5d01506b6a99d7fcc57f6547335cad9569a1d59b08e828ccbfb9",
+      "bytes": 9831,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c1-zone-right-9.png",
+      "sha256": "54ccece0a4263dffd8e60f09efb7b035724db438c407d5e6d7fd01ee1f059202",
+      "bytes": 9335,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c1-zone-row.png",
+      "sha256": "ad8c5a381161a2572b32cbeee49ef1cf27d4efec8a066ed6c4a8d6b77806b2d6",
+      "bytes": 11221,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c2-2154-cancel.png",
+      "sha256": "0348f40d7d6ea86f7b2cd357479346408bd1abd5e3b6d559f08311fba77d214f",
+      "bytes": 11241,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c2-2154-open.png",
+      "sha256": "b2b69826bcf5ce521ee62af194056ce3fe97b74728969a8b13dad0fedbe4c457",
+      "bytes": 15551,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c2-2155-cancel.png",
+      "sha256": "baf31dfa6ac1c29c65ff4346ce9738c2863615a4091b3ac7a29f28cb7f69534d",
+      "bytes": 11234,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c2-2155-open.png",
+      "sha256": "b7bf9fbc7f5d32fd59ed8812492207a1f0a9c496a6621a2536c0dfb092791717",
+      "bytes": 16206,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c2-back25.png",
+      "sha256": "b93a8b013f989c1c351976a42b432aa7f18388d4e8a440a4263f940fe1c339d4",
+      "bytes": 16824,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c2-back26.png",
+      "sha256": "155fc09df6ec7ac7e93b785086d3f3e5bac97107c0939255c5e9ed5211a10d44",
+      "bytes": 16878,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c2-baseline.png",
+      "sha256": "ff0a276eb6db88237146b9b048a0faecf263ac295aaa0d1a8a1ef4697177a9de",
+      "bytes": 6799,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c2-commit-2.png",
+      "sha256": "daefddd1bb789ae829a7db98abebd8b8e4e21d8aefade0161db2bf0bf55c47a1",
+      "bytes": 11297,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c2-commit-9.png",
+      "sha256": "d878620b8e3cc0e3266811ce1135b79cd75f9cd8aa3d285633c62021c52c2ed5",
+      "bytes": 11138,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c2-commit2-right-1.png",
+      "sha256": "890dfa2216bc67928874f9b817bf25beae5917c2eaa0242c8cc1ee64a6e22da5",
+      "bytes": 12877,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c2-commit2-right-2.png",
+      "sha256": "e1426dff00d629cd80f553a3dc610c5a240a6f6b62f3fceb706d5a980dd447d9",
+      "bytes": 12766,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c2-commit9-right-3.png",
+      "sha256": "1e845a4397a02d0c226ada364b34f30195477586f30f31d10e1d0808f92f9286",
+      "bytes": 12873,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c2-commit9-right-4.png",
+      "sha256": "d82afc1ad170528ad33364caa4a03b9e7e76260ad8cabd2bb4c20134a216d0ae",
+      "bytes": 12794,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c2-commit9-right-5.png",
+      "sha256": "e747b4b4a001f567c4fc617113f01bd95b74a335d4e981844a6ed1f47e71f7f7",
+      "bytes": 12776,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c2-commit9-right-6.png",
+      "sha256": "42e7754f739b2fa510cd03c7ba160982613805e0594c5511a4426ac6e75978c2",
+      "bytes": 9836,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c2-commit9-right-7.png",
+      "sha256": "17fdd18d5aeed9933b903b3b053818f3df562ab993613d7ff3feec96b118041e",
+      "bytes": 10148,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c2-commit9-right-8.png",
+      "sha256": "9faa3460e71a5d01506b6a99d7fcc57f6547335cad9569a1d59b08e828ccbfb9",
+      "bytes": 9831,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c2-commit9-right-9.png",
+      "sha256": "54ccece0a4263dffd8e60f09efb7b035724db438c407d5e6d7fd01ee1f059202",
+      "bytes": 9335,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c2-down-2155.png",
+      "sha256": "baf31dfa6ac1c29c65ff4346ce9738c2863615a4091b3ac7a29f28cb7f69534d",
+      "bytes": 11234,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c2-down-afbutton.png",
+      "sha256": "8243424b6d851082ee7486a92aca5de26a7756d177a0debc1c2ed461ce778a70",
+      "bytes": 13243,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c2-down-caf.png",
+      "sha256": "a55731cd5649322de917b11c90daab7c38020e3ef4cf3ec1320344f30bfcbcc4",
+      "bytes": 13214,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c2-down26-0.png",
+      "sha256": "39ccc862b87c7d841c93e0d32e20a53a7ea541fa1684047067b0ad766fe0c759",
+      "bytes": 16875,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c2-down26-1.png",
+      "sha256": "d6b99cf2fec8e06494fa04de8b6f7a6cc04447f52abcd0f8b937cdc28c61a2af",
+      "bytes": 16783,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c2-down26-2.png",
+      "sha256": "b93a8b013f989c1c351976a42b432aa7f18388d4e8a440a4263f940fe1c339d4",
+      "bytes": 16824,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c2-down26-3.png",
+      "sha256": "0cfaa67c5f25c7cc8cc60bb1625944fb86c0943b875792dbfbce9facd32f3a9d",
+      "bytes": 16832,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c2-down26-4.png",
+      "sha256": "155fc09df6ec7ac7e93b785086d3f3e5bac97107c0939255c5e9ed5211a10d44",
+      "bytes": 16878,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c2-down27-0.png",
+      "sha256": "a55731cd5649322de917b11c90daab7c38020e3ef4cf3ec1320344f30bfcbcc4",
+      "bytes": 13214,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c2-down27-1.png",
+      "sha256": "8243424b6d851082ee7486a92aca5de26a7756d177a0debc1c2ed461ce778a70",
+      "bytes": 13243,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c2-exit-0.png",
+      "sha256": "8243424b6d851082ee7486a92aca5de26a7756d177a0debc1c2ed461ce778a70",
+      "bytes": 13243,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c2-exit-1.png",
+      "sha256": "a27f7259f5fc911ec6dc03675e5100c88163d55b671eba4c27b9d2dcb581e591",
+      "bytes": 14926,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c2-leave-27.png",
+      "sha256": "8243424b6d851082ee7486a92aca5de26a7756d177a0debc1c2ed461ce778a70",
+      "bytes": 13243,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c2-left-0.png",
+      "sha256": "dcaca24e6d0790189ef076631128a252731ed9e1feda703516d226e07e753560",
+      "bytes": 18944,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c2-left-1.png",
+      "sha256": "c6a699de5d1857525e7a00e94d53936e4c067cb0c05654ec518bb6ba2aef0970",
+      "bytes": 16636,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c2-left-10.png",
+      "sha256": "b258d5a935d701fadc164dcc0ebc84e2b6e9fd0b37f0afb2d24bbaef2a18cbfa",
+      "bytes": 11513,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c2-left-11.png",
+      "sha256": "2fa322003891566e5a88a86cb62a7448e067ff1b12f748c715a6ceeadac7dac7",
+      "bytes": 14923,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c2-left-12.png",
+      "sha256": "26958b4832108564c475fa0163c82c762a0ff77f560b8142a4ab4268d66dbd38",
+      "bytes": 16383,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c2-left-13.png",
+      "sha256": "3436dd3d7db5e60bc892f6fe30db98d614f9dbed77ee20fd82187ed3ad8188a2",
+      "bytes": 22020,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c2-left-14.png",
+      "sha256": "f5d92ea55199e18af55dab08f21ba941dc4fdb2ce4430069a624c1f7c6ba7877",
+      "bytes": 15655,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c2-left-15.png",
+      "sha256": "e8ac865af9f59a330ecbba1e9aada16968d56055d969d6eb162d097d0471b14d",
+      "bytes": 19547,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c2-left-16.png",
+      "sha256": "1cb12e9973912ca72bd164b70e9e9ad3cb279607f475df9dd769d7002365ff0e",
+      "bytes": 12687,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c2-left-17.png",
+      "sha256": "71af34cb1ea60a5a7e5357645e556edc5f1cca45513c29b2aac3143c80fa96c1",
+      "bytes": 15604,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c2-left-18.png",
+      "sha256": "e43643c600ba0c5b6bcba0a45c8b4192afa0381f59d8ac772a68cca5b8407fd3",
+      "bytes": 9931,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c2-left-19.png",
+      "sha256": "36c90ea2e5286d10da6471788be6b16514f18000301844857f4450fde3f8ad91",
+      "bytes": 13155,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c2-left-2.png",
+      "sha256": "cbac7ce631f21d8211ee968b33d6e5137ec2dea5bb36fa2c88d6877104f17124",
+      "bytes": 17134,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c2-left-3.png",
+      "sha256": "85cff2f79ef134552e12b123687f29ed7d7e124bec54b00b1ee384e3caf9ebe0",
+      "bytes": 15461,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c2-left-4.png",
+      "sha256": "1b63c462c0f711f6eb84bcd1009b10d3df572164c7318189f732f058a9fa4644",
+      "bytes": 13107,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c2-left-5.png",
+      "sha256": "80db5b503ccf3eecf9149fd3baaf62bfe48c92f9538e9a01a3d1aff67c83418a",
+      "bytes": 12782,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c2-left-6.png",
+      "sha256": "29d07d70dc92f25cf30dec0c0c26f6b105c3f64437c064b7f6fc836c22667b79",
+      "bytes": 18139,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c2-left-7.png",
+      "sha256": "318f49f1de68251aff8bb558924aa7d7663258a7fc31da4897147b884ed3f77c",
+      "bytes": 8869,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c2-left-8.png",
+      "sha256": "fb44be426d751d77e45cf33927fc46b96bb50e1b38958489cc9fc02414659e6e",
+      "bytes": 15931,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c2-left-9.png",
+      "sha256": "46358a19276604963631e8ea04de0336f3420c5dc6f436159598144f2a74cf4b",
+      "bytes": 15320,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c2-menu.png",
+      "sha256": "542ed40b758684c43091a6fd9b1f1634cf1e5084f6cfa9a93c3cbeda0cec9715",
+      "bytes": 14163,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c2-page1-af.png",
+      "sha256": "83fb81e3ff0b470b57502d17e3747e6d6ec2557a94d6d2b76d2e05182ffcb761",
+      "bytes": 16855,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c2-page2-af.png",
+      "sha256": "36c90ea2e5286d10da6471788be6b16514f18000301844857f4450fde3f8ad91",
+      "bytes": 13155,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c2-page25.png",
+      "sha256": "ea7f10aeec71a626d0836cc686eccff529128dd311767251e8e459bf92d03ad4",
+      "bytes": 9069,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c2-page26.png",
+      "sha256": "9f8d72cfcae1ecb890b830285ae675ba270c3e409e092c2e1cf47498cb853339",
+      "bytes": 8225,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c2-page27-return.png",
+      "sha256": "0348f40d7d6ea86f7b2cd357479346408bd1abd5e3b6d559f08311fba77d214f",
+      "bytes": 11241,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c2-page27.png",
+      "sha256": "0348f40d7d6ea86f7b2cd357479346408bd1abd5e3b6d559f08311fba77d214f",
+      "bytes": 11241,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c2-reopen-2.png",
+      "sha256": "b928e09c4963102b0a3baa8bccc89fe4b3dba7ccb667a5d72ef5ca8c54f1ad33",
+      "bytes": 12589,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c2-save.png",
+      "sha256": "dc7badd44f4699885052b49ab01cc24dbf6c4270009958ed79a2a3ab22d077eb",
+      "bytes": 15867,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c2-up25-0.png",
+      "sha256": "0cfaa67c5f25c7cc8cc60bb1625944fb86c0943b875792dbfbce9facd32f3a9d",
+      "bytes": 16832,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c2-up25-1.png",
+      "sha256": "b93a8b013f989c1c351976a42b432aa7f18388d4e8a440a4263f940fe1c339d4",
+      "bytes": 16824,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c2-zone-2155.png",
+      "sha256": "baf31dfa6ac1c29c65ff4346ce9738c2863615a4091b3ac7a29f28cb7f69534d",
+      "bytes": 11234,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c2-zone-cancel-c4.png",
+      "sha256": "ad8c5a381161a2572b32cbeee49ef1cf27d4efec8a066ed6c4a8d6b77806b2d6",
+      "bytes": 11221,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c2-zone-open.png",
+      "sha256": "44448279d6ef4a09df1887df0813b762a67d9fdac99b4106e6bb3f2db1225718",
+      "bytes": 12640,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c2-zone-reopen.png",
+      "sha256": "44448279d6ef4a09df1887df0813b762a67d9fdac99b4106e6bb3f2db1225718",
+      "bytes": 12640,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c2-zone-right-1.png",
+      "sha256": "890dfa2216bc67928874f9b817bf25beae5917c2eaa0242c8cc1ee64a6e22da5",
+      "bytes": 12877,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c2-zone-right-2.png",
+      "sha256": "e1426dff00d629cd80f553a3dc610c5a240a6f6b62f3fceb706d5a980dd447d9",
+      "bytes": 12766,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c2-zone-right-3.png",
+      "sha256": "28d417330f5072023ad12d61d58913ce412cc96a1d14a3d3b9f4a1ef9ddb6884",
+      "bytes": 12904,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c2-zone-right-4.png",
+      "sha256": "c6e1de51d23d95adf3566015d726acd86f7e5c91d681228dc190e9acf08d11c4",
+      "bytes": 12826,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c2-zone-right-5.png",
+      "sha256": "1c569cc9c63fb8eda625489d90c704d2e9d55726aecab5c93101795cec95cc8f",
+      "bytes": 12806,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c2-zone-right-6.png",
+      "sha256": "42e7754f739b2fa510cd03c7ba160982613805e0594c5511a4426ac6e75978c2",
+      "bytes": 9836,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c2-zone-right-7.png",
+      "sha256": "17fdd18d5aeed9933b903b3b053818f3df562ab993613d7ff3feec96b118041e",
+      "bytes": 10148,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c2-zone-right-8.png",
+      "sha256": "9faa3460e71a5d01506b6a99d7fcc57f6547335cad9569a1d59b08e828ccbfb9",
+      "bytes": 9831,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c2-zone-right-9.png",
+      "sha256": "54ccece0a4263dffd8e60f09efb7b035724db438c407d5e6d7fd01ee1f059202",
+      "bytes": 9335,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-c2-zone-row.png",
+      "sha256": "ad8c5a381161a2572b32cbeee49ef1cf27d4efec8a066ed6c4a8d6b77806b2d6",
+      "bytes": 11221,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-control-2154-cancel.png",
+      "sha256": "cbea240f3677e9156da433ca416c601754ec9d399479bcc312b1f9b2b27feb4b",
+      "bytes": 8951,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-control-2154-open.png",
+      "sha256": "b2b69826bcf5ce521ee62af194056ce3fe97b74728969a8b13dad0fedbe4c457",
+      "bytes": 15551,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-control-2155-cancel.png",
+      "sha256": "2933991e9ccdee477ec7832b76ec2c4ad1011818ab9ba68557824951d55e724c",
+      "bytes": 8942,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-control-2155-open.png",
+      "sha256": "b7bf9fbc7f5d32fd59ed8812492207a1f0a9c496a6621a2536c0dfb092791717",
+      "bytes": 16206,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-control-back25.png",
+      "sha256": "b93a8b013f989c1c351976a42b432aa7f18388d4e8a440a4263f940fe1c339d4",
+      "bytes": 16824,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-control-back26.png",
+      "sha256": "155fc09df6ec7ac7e93b785086d3f3e5bac97107c0939255c5e9ed5211a10d44",
+      "bytes": 16878,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-control-baseline.png",
+      "sha256": "ff0a276eb6db88237146b9b048a0faecf263ac295aaa0d1a8a1ef4697177a9de",
+      "bytes": 6799,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-control-down-2155.png",
+      "sha256": "2933991e9ccdee477ec7832b76ec2c4ad1011818ab9ba68557824951d55e724c",
+      "bytes": 8942,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-control-down-afbutton.png",
+      "sha256": "8243424b6d851082ee7486a92aca5de26a7756d177a0debc1c2ed461ce778a70",
+      "bytes": 13243,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-control-down-caf.png",
+      "sha256": "a55731cd5649322de917b11c90daab7c38020e3ef4cf3ec1320344f30bfcbcc4",
+      "bytes": 13214,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-control-down26-0.png",
+      "sha256": "39ccc862b87c7d841c93e0d32e20a53a7ea541fa1684047067b0ad766fe0c759",
+      "bytes": 16875,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-control-down26-1.png",
+      "sha256": "d6b99cf2fec8e06494fa04de8b6f7a6cc04447f52abcd0f8b937cdc28c61a2af",
+      "bytes": 16783,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-control-down26-2.png",
+      "sha256": "b93a8b013f989c1c351976a42b432aa7f18388d4e8a440a4263f940fe1c339d4",
+      "bytes": 16824,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-control-down26-3.png",
+      "sha256": "0cfaa67c5f25c7cc8cc60bb1625944fb86c0943b875792dbfbce9facd32f3a9d",
+      "bytes": 16832,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-control-down26-4.png",
+      "sha256": "155fc09df6ec7ac7e93b785086d3f3e5bac97107c0939255c5e9ed5211a10d44",
+      "bytes": 16878,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-control-down27-0.png",
+      "sha256": "a55731cd5649322de917b11c90daab7c38020e3ef4cf3ec1320344f30bfcbcc4",
+      "bytes": 13214,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-control-down27-1.png",
+      "sha256": "8243424b6d851082ee7486a92aca5de26a7756d177a0debc1c2ed461ce778a70",
+      "bytes": 13243,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-control-exit-0.png",
+      "sha256": "8243424b6d851082ee7486a92aca5de26a7756d177a0debc1c2ed461ce778a70",
+      "bytes": 13243,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-control-exit-1.png",
+      "sha256": "a27f7259f5fc911ec6dc03675e5100c88163d55b671eba4c27b9d2dcb581e591",
+      "bytes": 14926,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-control-leave-27.png",
+      "sha256": "8243424b6d851082ee7486a92aca5de26a7756d177a0debc1c2ed461ce778a70",
+      "bytes": 13243,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-control-left-0.png",
+      "sha256": "dcaca24e6d0790189ef076631128a252731ed9e1feda703516d226e07e753560",
+      "bytes": 18944,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-control-left-1.png",
+      "sha256": "c6a699de5d1857525e7a00e94d53936e4c067cb0c05654ec518bb6ba2aef0970",
+      "bytes": 16636,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-control-left-10.png",
+      "sha256": "b258d5a935d701fadc164dcc0ebc84e2b6e9fd0b37f0afb2d24bbaef2a18cbfa",
+      "bytes": 11513,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-control-left-11.png",
+      "sha256": "2fa322003891566e5a88a86cb62a7448e067ff1b12f748c715a6ceeadac7dac7",
+      "bytes": 14923,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-control-left-12.png",
+      "sha256": "26958b4832108564c475fa0163c82c762a0ff77f560b8142a4ab4268d66dbd38",
+      "bytes": 16383,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-control-left-13.png",
+      "sha256": "3436dd3d7db5e60bc892f6fe30db98d614f9dbed77ee20fd82187ed3ad8188a2",
+      "bytes": 22020,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-control-left-14.png",
+      "sha256": "f5d92ea55199e18af55dab08f21ba941dc4fdb2ce4430069a624c1f7c6ba7877",
+      "bytes": 15655,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-control-left-15.png",
+      "sha256": "e8ac865af9f59a330ecbba1e9aada16968d56055d969d6eb162d097d0471b14d",
+      "bytes": 19547,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-control-left-16.png",
+      "sha256": "1cb12e9973912ca72bd164b70e9e9ad3cb279607f475df9dd769d7002365ff0e",
+      "bytes": 12687,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-control-left-17.png",
+      "sha256": "71af34cb1ea60a5a7e5357645e556edc5f1cca45513c29b2aac3143c80fa96c1",
+      "bytes": 15604,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-control-left-18.png",
+      "sha256": "e43643c600ba0c5b6bcba0a45c8b4192afa0381f59d8ac772a68cca5b8407fd3",
+      "bytes": 9931,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-control-left-19.png",
+      "sha256": "36c90ea2e5286d10da6471788be6b16514f18000301844857f4450fde3f8ad91",
+      "bytes": 13155,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-control-left-2.png",
+      "sha256": "cbac7ce631f21d8211ee968b33d6e5137ec2dea5bb36fa2c88d6877104f17124",
+      "bytes": 17134,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-control-left-3.png",
+      "sha256": "85cff2f79ef134552e12b123687f29ed7d7e124bec54b00b1ee384e3caf9ebe0",
+      "bytes": 15461,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-control-left-4.png",
+      "sha256": "1b63c462c0f711f6eb84bcd1009b10d3df572164c7318189f732f058a9fa4644",
+      "bytes": 13107,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-control-left-5.png",
+      "sha256": "80db5b503ccf3eecf9149fd3baaf62bfe48c92f9538e9a01a3d1aff67c83418a",
+      "bytes": 12782,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-control-left-6.png",
+      "sha256": "29d07d70dc92f25cf30dec0c0c26f6b105c3f64437c064b7f6fc836c22667b79",
+      "bytes": 18139,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-control-left-7.png",
+      "sha256": "318f49f1de68251aff8bb558924aa7d7663258a7fc31da4897147b884ed3f77c",
+      "bytes": 8869,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-control-left-8.png",
+      "sha256": "fb44be426d751d77e45cf33927fc46b96bb50e1b38958489cc9fc02414659e6e",
+      "bytes": 15931,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-control-left-9.png",
+      "sha256": "46358a19276604963631e8ea04de0336f3420c5dc6f436159598144f2a74cf4b",
+      "bytes": 15320,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-control-menu.png",
+      "sha256": "542ed40b758684c43091a6fd9b1f1634cf1e5084f6cfa9a93c3cbeda0cec9715",
+      "bytes": 14163,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-control-page1-af.png",
+      "sha256": "83fb81e3ff0b470b57502d17e3747e6d6ec2557a94d6d2b76d2e05182ffcb761",
+      "bytes": 16855,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-control-page2-af.png",
+      "sha256": "36c90ea2e5286d10da6471788be6b16514f18000301844857f4450fde3f8ad91",
+      "bytes": 13155,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-control-page25.png",
+      "sha256": "ea7f10aeec71a626d0836cc686eccff529128dd311767251e8e459bf92d03ad4",
+      "bytes": 9069,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-control-page26.png",
+      "sha256": "9f8d72cfcae1ecb890b830285ae675ba270c3e409e092c2e1cf47498cb853339",
+      "bytes": 8225,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-control-page27-return.png",
+      "sha256": "cbea240f3677e9156da433ca416c601754ec9d399479bcc312b1f9b2b27feb4b",
+      "bytes": 8951,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-control-page27.png",
+      "sha256": "cbea240f3677e9156da433ca416c601754ec9d399479bcc312b1f9b2b27feb4b",
+      "bytes": 8951,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-control-save.png",
+      "sha256": "dc7badd44f4699885052b49ab01cc24dbf6c4270009958ed79a2a3ab22d077eb",
+      "bytes": 15867,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-control-up25-0.png",
+      "sha256": "0cfaa67c5f25c7cc8cc60bb1625944fb86c0943b875792dbfbce9facd32f3a9d",
+      "bytes": 16832,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-control-up25-1.png",
+      "sha256": "b93a8b013f989c1c351976a42b432aa7f18388d4e8a440a4263f940fe1c339d4",
+      "bytes": 16824,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-p28-c1-p28-arm.png",
+      "sha256": "ff0a276eb6db88237146b9b048a0faecf263ac295aaa0d1a8a1ef4697177a9de",
+      "bytes": 6799,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-p28-c1-p28-down-0.png",
+      "sha256": "a55731cd5649322de917b11c90daab7c38020e3ef4cf3ec1320344f30bfcbcc4",
+      "bytes": 13214,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-p28-c1-p28-down-1.png",
+      "sha256": "8243424b6d851082ee7486a92aca5de26a7756d177a0debc1c2ed461ce778a70",
+      "bytes": 13243,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-p28-c1-p28-left-0.png",
+      "sha256": "dcaca24e6d0790189ef076631128a252731ed9e1feda703516d226e07e753560",
+      "bytes": 18944,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-p28-c1-p28-left-1.png",
+      "sha256": "c6a699de5d1857525e7a00e94d53936e4c067cb0c05654ec518bb6ba2aef0970",
+      "bytes": 16636,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-p28-c1-p28-left-10.png",
+      "sha256": "b258d5a935d701fadc164dcc0ebc84e2b6e9fd0b37f0afb2d24bbaef2a18cbfa",
+      "bytes": 11513,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-p28-c1-p28-left-11.png",
+      "sha256": "2fa322003891566e5a88a86cb62a7448e067ff1b12f748c715a6ceeadac7dac7",
+      "bytes": 14923,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-p28-c1-p28-left-12.png",
+      "sha256": "26958b4832108564c475fa0163c82c762a0ff77f560b8142a4ab4268d66dbd38",
+      "bytes": 16383,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-p28-c1-p28-left-13.png",
+      "sha256": "3436dd3d7db5e60bc892f6fe30db98d614f9dbed77ee20fd82187ed3ad8188a2",
+      "bytes": 22020,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-p28-c1-p28-left-14.png",
+      "sha256": "f5d92ea55199e18af55dab08f21ba941dc4fdb2ce4430069a624c1f7c6ba7877",
+      "bytes": 15655,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-p28-c1-p28-left-15.png",
+      "sha256": "e8ac865af9f59a330ecbba1e9aada16968d56055d969d6eb162d097d0471b14d",
+      "bytes": 19547,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-p28-c1-p28-left-16.png",
+      "sha256": "1cb12e9973912ca72bd164b70e9e9ad3cb279607f475df9dd769d7002365ff0e",
+      "bytes": 12687,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-p28-c1-p28-left-17.png",
+      "sha256": "71af34cb1ea60a5a7e5357645e556edc5f1cca45513c29b2aac3143c80fa96c1",
+      "bytes": 15604,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-p28-c1-p28-left-18.png",
+      "sha256": "e43643c600ba0c5b6bcba0a45c8b4192afa0381f59d8ac772a68cca5b8407fd3",
+      "bytes": 9931,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-p28-c1-p28-left-19.png",
+      "sha256": "36c90ea2e5286d10da6471788be6b16514f18000301844857f4450fde3f8ad91",
+      "bytes": 13155,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-p28-c1-p28-left-2.png",
+      "sha256": "cbac7ce631f21d8211ee968b33d6e5137ec2dea5bb36fa2c88d6877104f17124",
+      "bytes": 17134,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-p28-c1-p28-left-3.png",
+      "sha256": "85cff2f79ef134552e12b123687f29ed7d7e124bec54b00b1ee384e3caf9ebe0",
+      "bytes": 15461,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-p28-c1-p28-left-4.png",
+      "sha256": "1b63c462c0f711f6eb84bcd1009b10d3df572164c7318189f732f058a9fa4644",
+      "bytes": 13107,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-p28-c1-p28-left-5.png",
+      "sha256": "80db5b503ccf3eecf9149fd3baaf62bfe48c92f9538e9a01a3d1aff67c83418a",
+      "bytes": 12782,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-p28-c1-p28-left-6.png",
+      "sha256": "29d07d70dc92f25cf30dec0c0c26f6b105c3f64437c064b7f6fc836c22667b79",
+      "bytes": 18139,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-p28-c1-p28-left-7.png",
+      "sha256": "318f49f1de68251aff8bb558924aa7d7663258a7fc31da4897147b884ed3f77c",
+      "bytes": 8869,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-p28-c1-p28-left-8.png",
+      "sha256": "fb44be426d751d77e45cf33927fc46b96bb50e1b38958489cc9fc02414659e6e",
+      "bytes": 15931,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-p28-c1-p28-left-9.png",
+      "sha256": "46358a19276604963631e8ea04de0336f3420c5dc6f436159598144f2a74cf4b",
+      "bytes": 15320,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-p28-c1-p28-menu.png",
+      "sha256": "542ed40b758684c43091a6fd9b1f1634cf1e5084f6cfa9a93c3cbeda0cec9715",
+      "bytes": 14163,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-p28-c1-p28-open.png",
+      "sha256": "323c520025df7782d862ee88529371ac597bf105be9d08c0388e1b0df5bc5350",
+      "bytes": 13013,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-p28-c2-p28-arm.png",
+      "sha256": "ff0a276eb6db88237146b9b048a0faecf263ac295aaa0d1a8a1ef4697177a9de",
+      "bytes": 6799,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-p28-c2-p28-down-0.png",
+      "sha256": "a55731cd5649322de917b11c90daab7c38020e3ef4cf3ec1320344f30bfcbcc4",
+      "bytes": 13214,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-p28-c2-p28-down-1.png",
+      "sha256": "8243424b6d851082ee7486a92aca5de26a7756d177a0debc1c2ed461ce778a70",
+      "bytes": 13243,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-p28-c2-p28-left-0.png",
+      "sha256": "dcaca24e6d0790189ef076631128a252731ed9e1feda703516d226e07e753560",
+      "bytes": 18944,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-p28-c2-p28-left-1.png",
+      "sha256": "c6a699de5d1857525e7a00e94d53936e4c067cb0c05654ec518bb6ba2aef0970",
+      "bytes": 16636,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-p28-c2-p28-left-10.png",
+      "sha256": "b258d5a935d701fadc164dcc0ebc84e2b6e9fd0b37f0afb2d24bbaef2a18cbfa",
+      "bytes": 11513,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-p28-c2-p28-left-11.png",
+      "sha256": "2fa322003891566e5a88a86cb62a7448e067ff1b12f748c715a6ceeadac7dac7",
+      "bytes": 14923,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-p28-c2-p28-left-12.png",
+      "sha256": "26958b4832108564c475fa0163c82c762a0ff77f560b8142a4ab4268d66dbd38",
+      "bytes": 16383,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-p28-c2-p28-left-13.png",
+      "sha256": "3436dd3d7db5e60bc892f6fe30db98d614f9dbed77ee20fd82187ed3ad8188a2",
+      "bytes": 22020,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-p28-c2-p28-left-14.png",
+      "sha256": "f5d92ea55199e18af55dab08f21ba941dc4fdb2ce4430069a624c1f7c6ba7877",
+      "bytes": 15655,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-p28-c2-p28-left-15.png",
+      "sha256": "e8ac865af9f59a330ecbba1e9aada16968d56055d969d6eb162d097d0471b14d",
+      "bytes": 19547,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-p28-c2-p28-left-16.png",
+      "sha256": "1cb12e9973912ca72bd164b70e9e9ad3cb279607f475df9dd769d7002365ff0e",
+      "bytes": 12687,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-p28-c2-p28-left-17.png",
+      "sha256": "71af34cb1ea60a5a7e5357645e556edc5f1cca45513c29b2aac3143c80fa96c1",
+      "bytes": 15604,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-p28-c2-p28-left-18.png",
+      "sha256": "e43643c600ba0c5b6bcba0a45c8b4192afa0381f59d8ac772a68cca5b8407fd3",
+      "bytes": 9931,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-p28-c2-p28-left-19.png",
+      "sha256": "36c90ea2e5286d10da6471788be6b16514f18000301844857f4450fde3f8ad91",
+      "bytes": 13155,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-p28-c2-p28-left-2.png",
+      "sha256": "cbac7ce631f21d8211ee968b33d6e5137ec2dea5bb36fa2c88d6877104f17124",
+      "bytes": 17134,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-p28-c2-p28-left-3.png",
+      "sha256": "85cff2f79ef134552e12b123687f29ed7d7e124bec54b00b1ee384e3caf9ebe0",
+      "bytes": 15461,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-p28-c2-p28-left-4.png",
+      "sha256": "1b63c462c0f711f6eb84bcd1009b10d3df572164c7318189f732f058a9fa4644",
+      "bytes": 13107,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-p28-c2-p28-left-5.png",
+      "sha256": "80db5b503ccf3eecf9149fd3baaf62bfe48c92f9538e9a01a3d1aff67c83418a",
+      "bytes": 12782,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-p28-c2-p28-left-6.png",
+      "sha256": "29d07d70dc92f25cf30dec0c0c26f6b105c3f64437c064b7f6fc836c22667b79",
+      "bytes": 18139,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-p28-c2-p28-left-7.png",
+      "sha256": "318f49f1de68251aff8bb558924aa7d7663258a7fc31da4897147b884ed3f77c",
+      "bytes": 8869,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-p28-c2-p28-left-8.png",
+      "sha256": "fb44be426d751d77e45cf33927fc46b96bb50e1b38958489cc9fc02414659e6e",
+      "bytes": 15931,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-p28-c2-p28-left-9.png",
+      "sha256": "46358a19276604963631e8ea04de0336f3420c5dc6f436159598144f2a74cf4b",
+      "bytes": 15320,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-p28-c2-p28-menu.png",
+      "sha256": "542ed40b758684c43091a6fd9b1f1634cf1e5084f6cfa9a93c3cbeda0cec9715",
+      "bytes": 14163,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-p28-c2-p28-open.png",
+      "sha256": "323c520025df7782d862ee88529371ac597bf105be9d08c0388e1b0df5bc5350",
+      "bytes": 13013,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-p28-control-p28-arm.png",
+      "sha256": "ff0a276eb6db88237146b9b048a0faecf263ac295aaa0d1a8a1ef4697177a9de",
+      "bytes": 6799,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-p28-control-p28-down-0.png",
+      "sha256": "a55731cd5649322de917b11c90daab7c38020e3ef4cf3ec1320344f30bfcbcc4",
+      "bytes": 13214,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-p28-control-p28-down-1.png",
+      "sha256": "8243424b6d851082ee7486a92aca5de26a7756d177a0debc1c2ed461ce778a70",
+      "bytes": 13243,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-p28-control-p28-left-0.png",
+      "sha256": "dcaca24e6d0790189ef076631128a252731ed9e1feda703516d226e07e753560",
+      "bytes": 18944,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-p28-control-p28-left-1.png",
+      "sha256": "c6a699de5d1857525e7a00e94d53936e4c067cb0c05654ec518bb6ba2aef0970",
+      "bytes": 16636,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-p28-control-p28-left-10.png",
+      "sha256": "b258d5a935d701fadc164dcc0ebc84e2b6e9fd0b37f0afb2d24bbaef2a18cbfa",
+      "bytes": 11513,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-p28-control-p28-left-11.png",
+      "sha256": "2fa322003891566e5a88a86cb62a7448e067ff1b12f748c715a6ceeadac7dac7",
+      "bytes": 14923,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-p28-control-p28-left-12.png",
+      "sha256": "26958b4832108564c475fa0163c82c762a0ff77f560b8142a4ab4268d66dbd38",
+      "bytes": 16383,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-p28-control-p28-left-13.png",
+      "sha256": "3436dd3d7db5e60bc892f6fe30db98d614f9dbed77ee20fd82187ed3ad8188a2",
+      "bytes": 22020,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-p28-control-p28-left-14.png",
+      "sha256": "f5d92ea55199e18af55dab08f21ba941dc4fdb2ce4430069a624c1f7c6ba7877",
+      "bytes": 15655,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-p28-control-p28-left-15.png",
+      "sha256": "e8ac865af9f59a330ecbba1e9aada16968d56055d969d6eb162d097d0471b14d",
+      "bytes": 19547,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-p28-control-p28-left-16.png",
+      "sha256": "1cb12e9973912ca72bd164b70e9e9ad3cb279607f475df9dd769d7002365ff0e",
+      "bytes": 12687,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-p28-control-p28-left-17.png",
+      "sha256": "71af34cb1ea60a5a7e5357645e556edc5f1cca45513c29b2aac3143c80fa96c1",
+      "bytes": 15604,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-p28-control-p28-left-18.png",
+      "sha256": "e43643c600ba0c5b6bcba0a45c8b4192afa0381f59d8ac772a68cca5b8407fd3",
+      "bytes": 9931,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-p28-control-p28-left-19.png",
+      "sha256": "36c90ea2e5286d10da6471788be6b16514f18000301844857f4450fde3f8ad91",
+      "bytes": 13155,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-p28-control-p28-left-2.png",
+      "sha256": "cbac7ce631f21d8211ee968b33d6e5137ec2dea5bb36fa2c88d6877104f17124",
+      "bytes": 17134,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-p28-control-p28-left-3.png",
+      "sha256": "85cff2f79ef134552e12b123687f29ed7d7e124bec54b00b1ee384e3caf9ebe0",
+      "bytes": 15461,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-p28-control-p28-left-4.png",
+      "sha256": "1b63c462c0f711f6eb84bcd1009b10d3df572164c7318189f732f058a9fa4644",
+      "bytes": 13107,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-p28-control-p28-left-5.png",
+      "sha256": "80db5b503ccf3eecf9149fd3baaf62bfe48c92f9538e9a01a3d1aff67c83418a",
+      "bytes": 12782,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-p28-control-p28-left-6.png",
+      "sha256": "29d07d70dc92f25cf30dec0c0c26f6b105c3f64437c064b7f6fc836c22667b79",
+      "bytes": 18139,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-p28-control-p28-left-7.png",
+      "sha256": "318f49f1de68251aff8bb558924aa7d7663258a7fc31da4897147b884ed3f77c",
+      "bytes": 8869,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-p28-control-p28-left-8.png",
+      "sha256": "fb44be426d751d77e45cf33927fc46b96bb50e1b38958489cc9fc02414659e6e",
+      "bytes": 15931,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-p28-control-p28-left-9.png",
+      "sha256": "46358a19276604963631e8ea04de0336f3420c5dc6f436159598144f2a74cf4b",
+      "bytes": 15320,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-p28-control-p28-menu.png",
+      "sha256": "542ed40b758684c43091a6fd9b1f1634cf1e5084f6cfa9a93c3cbeda0cec9715",
+      "bytes": 14163,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-p28-control-p28-open.png",
+      "sha256": "323c520025df7782d862ee88529371ac597bf105be9d08c0388e1b0df5bc5350",
+      "bytes": 13013,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-reopen-c1-reopen.png",
+      "sha256": "dc7badd44f4699885052b49ab01cc24dbf6c4270009958ed79a2a3ab22d077eb",
+      "bytes": 15867,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1-reopen-c2-reopen.png",
+      "sha256": "dc7badd44f4699885052b49ab01cc24dbf6c4270009958ed79a2a3ab22d077eb",
+      "bytes": 15867,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-j1.jsonl",
+      "sha256": "d12262ecf8dd3837f69f5c0480c48d6abbbd65fe85feb24dab17a1d87eb793ef",
+      "bytes": 263400,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/01.cmd.txt",
+      "sha256": "4423600782fba76f199dc2fc1ffa2d285fc28d0cbf9aef5539565eff824ff34e",
+      "bytes": 340,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/01.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/01.exit",
+      "sha256": "ddc59e815bd3bc691df062c71d3f334f8bb20a23b8d2f13f12a6a4d88a5dbb33",
+      "bytes": 454,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/01.out",
+      "sha256": "80f2d5bac33cdebee6535f3bd64298dbadbd083b7723b76eeef1aa940240f741",
+      "bytes": 32004,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/02.cmd.txt",
+      "sha256": "8608c7bf29c859f72ff9a34945b5cf2076c39d4808c7b0ad9b14f53170c2cb04",
+      "bytes": 391,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/02.err",
+      "sha256": "996741973fb4438af5f3c6f2977b227dd799cb83b80a43db05302b5c6083833e",
+      "bytes": 528,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/02.exit",
+      "sha256": "d2943c1a2c2ba03494ad4595554ed61b3037df9c92b8d2b7b13de0153fec9ae6",
+      "bytes": 511,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/02.out",
+      "sha256": "ad0ac65fa3167847b190bfc8f1a27171bbe2a05dc68e6c50786650ca35d67ee7",
+      "bytes": 2228,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/03.cmd.txt",
+      "sha256": "56bc9e269a3e436e389816d9cd1c552505f8416fcf68af85a063548ab5c8f80b",
+      "bytes": 388,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/03.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/03.exit",
+      "sha256": "e801bc4546746243dc318148db7d8c0bcce8dc397f79c06de1a08732b5614ea0",
+      "bytes": 507,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/03.out",
+      "sha256": "d3af9686f901cf3aa22cbda797be035fa3d6aef5425351ae5b3e0e4c898faac1",
+      "bytes": 159054,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/04.cmd.txt",
+      "sha256": "8ff3f8d0424b0c3c583257880977b172f091d289590fc8a179c565c07be22e37",
+      "bytes": 355,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/04.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/04.exit",
+      "sha256": "68db9c925385514cc1940d3d8d65ad56c8f8ade11f415992897ab33226465be2",
+      "bytes": 464,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/04.out",
+      "sha256": "cbbef8d458f99871e9e838894df93de5299fa8fb8e3b59733fb276083f8b890c",
+      "bytes": 24055,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/05.cmd.txt",
+      "sha256": "e0cfef104e5294fd6f0462c5df55ac0c9218a95d11e843787f6a43954e92bba6",
+      "bytes": 392,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/05.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/05.exit",
+      "sha256": "29f3d1161ea5876640343a8385ac356701bf5b36ff1cef566f1f97bce117a1b1",
+      "bytes": 512,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/05.out",
+      "sha256": "db4e5dc16d005685130904f8d38bfa90b2bf0edc39c8f924186d7ffa99004b52",
+      "bytes": 109,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/06.cmd.txt",
+      "sha256": "ef5e7f246204772e1abc10671378459befc244543667dc6b9d3d7113641292cb",
+      "bytes": 409,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/06.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/06.exit",
+      "sha256": "5b5d399bb0807f3ddc7e06a9f199da463af42d45390396808f594bb23fefb465",
+      "bytes": 521,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/06.out",
+      "sha256": "ee739ade13753df1ea5b4313a1bcaf173e47e3d13123793b0e7d757fb3a6ab9f",
+      "bytes": 5551,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/07.cmd.txt",
+      "sha256": "7e626e951876b158587ab06f514b3ece46b9b340bd2b2e11ae25b0a07d1427f8",
+      "bytes": 392,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/07.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/07.exit",
+      "sha256": "af44fd8dd99e268afdadf3088a74f348ef8683c2af7a6e1999c3cbc85c72a6ae",
+      "bytes": 512,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/07.out",
+      "sha256": "9a0f6c70071532393853c9a71bb396f20e9075328de3388b82cecc3015d9ca6f",
+      "bytes": 67,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/08.cmd.txt",
+      "sha256": "8bd3c748612b60dee1078857d7b49f65672104cf831c4542e8dfed647ee97db3",
+      "bytes": 413,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/08.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/08.exit",
+      "sha256": "23c03edf25cc0e5bbccfeb03755f7163eeda6479403ed5c10c459e5ca56ff039",
+      "bytes": 524,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/08.out",
+      "sha256": "fcafdde522d1b5f6e88ec5b2c8552fcf29a61512d993b24b6a2612ba5197ac04",
+      "bytes": 304113,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/09.cmd.txt",
+      "sha256": "ca4aad2e3b796c118917cc8a6886ad71211d9bc2aa936f01128c0a24e22cbac6",
+      "bytes": 324,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/09.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/09.exit",
+      "sha256": "390fa3f525bac3c1ad15e22f118027fd389b4e752f677fe3015bc138e2032242",
+      "bytes": 443,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/09.out",
+      "sha256": "5152df9528f8073e8e5ed457ec80b356a4de8b63904005ca12d4bdf8d442e013",
+      "bytes": 242,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/10.cmd.txt",
+      "sha256": "4a58ec1fe2030a85f7509b3cef5f62c4bfef153c323ba1cf11513441ca562af3",
+      "bytes": 352,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/import-inventory-j1.json",
+      "sha256": "b58e9d5090046f5f9d33b875ca7a31f9ff91e8936b34260e3729333e62f36063",
+      "bytes": 32083,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/nvram-j1-c1.json",
+      "sha256": "1f3e34e35d1f4d2f41d65921a5cd9106c7d8dcf7e837aca099c5af2e0233736c",
+      "bytes": 611828,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/nvram-j1-c2.json",
+      "sha256": "1f3e34e35d1f4d2f41d65921a5cd9106c7d8dcf7e837aca099c5af2e0233736c",
+      "bytes": 611828,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/nvram-j1-control.json",
+      "sha256": "1f3e34e35d1f4d2f41d65921a5cd9106c7d8dcf7e837aca099c5af2e0233736c",
+      "bytes": 611828,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/nvram-j1-p28-c1.json",
+      "sha256": "8290aee9c3b2fd71e371d7df87728399a4d06c1a44299f3131b97a2dc65c79d4",
+      "bytes": 611826,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/nvram-j1-p28-c2.json",
+      "sha256": "8290aee9c3b2fd71e371d7df87728399a4d06c1a44299f3131b97a2dc65c79d4",
+      "bytes": 611826,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/nvram-j1-p28-control.json",
+      "sha256": "8290aee9c3b2fd71e371d7df87728399a4d06c1a44299f3131b97a2dc65c79d4",
+      "bytes": 611826,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/nvram-probe-c1.json",
+      "sha256": "1f3e34e35d1f4d2f41d65921a5cd9106c7d8dcf7e837aca099c5af2e0233736c",
+      "bytes": 611828,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/nvram-probe-control.json",
+      "sha256": "1f3e34e35d1f4d2f41d65921a5cd9106c7d8dcf7e837aca099c5af2e0233736c",
+      "bytes": 611828,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/nvram-probe-p28-c1.json",
+      "sha256": "8290aee9c3b2fd71e371d7df87728399a4d06c1a44299f3131b97a2dc65c79d4",
+      "bytes": 611826,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/nvram-probe-p28-control.json",
+      "sha256": "8290aee9c3b2fd71e371d7df87728399a4d06c1a44299f3131b97a2dc65c79d4",
+      "bytes": 611826,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/overlay-accept-j1-c1.csv",
+      "sha256": "bcabf4130c7122703376a0dd48abcfe31e28a19f702b90b4e9bcf1a72623a422",
+      "bytes": 32758,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/overlay-accept-j1-c2.csv",
+      "sha256": "bcabf4130c7122703376a0dd48abcfe31e28a19f702b90b4e9bcf1a72623a422",
+      "bytes": 32758,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/overlay-accept-j1-p28-c1.csv",
+      "sha256": "bcabf4130c7122703376a0dd48abcfe31e28a19f702b90b4e9bcf1a72623a422",
+      "bytes": 32758,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/overlay-accept-j1-p28-c2.csv",
+      "sha256": "bcabf4130c7122703376a0dd48abcfe31e28a19f702b90b4e9bcf1a72623a422",
+      "bytes": 32758,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/overlay-accept-j1-reopen-c1.csv",
+      "sha256": "bcabf4130c7122703376a0dd48abcfe31e28a19f702b90b4e9bcf1a72623a422",
+      "bytes": 32758,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/overlay-accept-j1-reopen-c2.csv",
+      "sha256": "bcabf4130c7122703376a0dd48abcfe31e28a19f702b90b4e9bcf1a72623a422",
+      "bytes": 32758,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/overlay-changed-bytes.csv",
+      "sha256": "bcabf4130c7122703376a0dd48abcfe31e28a19f702b90b4e9bcf1a72623a422",
+      "bytes": 32758,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/overlay-probe-cprobe.csv",
+      "sha256": "bcabf4130c7122703376a0dd48abcfe31e28a19f702b90b4e9bcf1a72623a422",
+      "bytes": 32758,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/overlay-probe-p28-cprobe.csv",
+      "sha256": "bcabf4130c7122703376a0dd48abcfe31e28a19f702b90b4e9bcf1a72623a422",
+      "bytes": 32758,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/overlay-probe-reopen.csv",
+      "sha256": "bcabf4130c7122703376a0dd48abcfe31e28a19f702b90b4e9bcf1a72623a422",
+      "bytes": 32758,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-control-2154-cancel.png",
+      "sha256": "cbea240f3677e9156da433ca416c601754ec9d399479bcc312b1f9b2b27feb4b",
+      "bytes": 8951,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-control-2154-open.png",
+      "sha256": "b2b69826bcf5ce521ee62af194056ce3fe97b74728969a8b13dad0fedbe4c457",
+      "bytes": 15551,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-control-2155-cancel.png",
+      "sha256": "2933991e9ccdee477ec7832b76ec2c4ad1011818ab9ba68557824951d55e724c",
+      "bytes": 8942,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-control-2155-open.png",
+      "sha256": "b7bf9fbc7f5d32fd59ed8812492207a1f0a9c496a6621a2536c0dfb092791717",
+      "bytes": 16206,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-control-back25.png",
+      "sha256": "b93a8b013f989c1c351976a42b432aa7f18388d4e8a440a4263f940fe1c339d4",
+      "bytes": 16824,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-control-back26.png",
+      "sha256": "155fc09df6ec7ac7e93b785086d3f3e5bac97107c0939255c5e9ed5211a10d44",
+      "bytes": 16878,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-control-baseline.png",
+      "sha256": "ff0a276eb6db88237146b9b048a0faecf263ac295aaa0d1a8a1ef4697177a9de",
+      "bytes": 6799,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-control-down-2155.png",
+      "sha256": "2933991e9ccdee477ec7832b76ec2c4ad1011818ab9ba68557824951d55e724c",
+      "bytes": 8942,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-control-down-afbutton.png",
+      "sha256": "8243424b6d851082ee7486a92aca5de26a7756d177a0debc1c2ed461ce778a70",
+      "bytes": 13243,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-control-down-caf.png",
+      "sha256": "a55731cd5649322de917b11c90daab7c38020e3ef4cf3ec1320344f30bfcbcc4",
+      "bytes": 13214,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-control-down26-0.png",
+      "sha256": "39ccc862b87c7d841c93e0d32e20a53a7ea541fa1684047067b0ad766fe0c759",
+      "bytes": 16875,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-control-down26-1.png",
+      "sha256": "d6b99cf2fec8e06494fa04de8b6f7a6cc04447f52abcd0f8b937cdc28c61a2af",
+      "bytes": 16783,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-control-down26-2.png",
+      "sha256": "b93a8b013f989c1c351976a42b432aa7f18388d4e8a440a4263f940fe1c339d4",
+      "bytes": 16824,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-control-down26-3.png",
+      "sha256": "0cfaa67c5f25c7cc8cc60bb1625944fb86c0943b875792dbfbce9facd32f3a9d",
+      "bytes": 16832,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-control-down26-4.png",
+      "sha256": "155fc09df6ec7ac7e93b785086d3f3e5bac97107c0939255c5e9ed5211a10d44",
+      "bytes": 16878,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-control-down27-0.png",
+      "sha256": "a55731cd5649322de917b11c90daab7c38020e3ef4cf3ec1320344f30bfcbcc4",
+      "bytes": 13214,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-control-down27-1.png",
+      "sha256": "8243424b6d851082ee7486a92aca5de26a7756d177a0debc1c2ed461ce778a70",
+      "bytes": 13243,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-control-exit-0.png",
+      "sha256": "8243424b6d851082ee7486a92aca5de26a7756d177a0debc1c2ed461ce778a70",
+      "bytes": 13243,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-control-exit-1.png",
+      "sha256": "a27f7259f5fc911ec6dc03675e5100c88163d55b671eba4c27b9d2dcb581e591",
+      "bytes": 14926,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-control-leave-27.png",
+      "sha256": "8243424b6d851082ee7486a92aca5de26a7756d177a0debc1c2ed461ce778a70",
+      "bytes": 13243,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-control-left-0.png",
+      "sha256": "dcaca24e6d0790189ef076631128a252731ed9e1feda703516d226e07e753560",
+      "bytes": 18944,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-control-left-1.png",
+      "sha256": "c6a699de5d1857525e7a00e94d53936e4c067cb0c05654ec518bb6ba2aef0970",
+      "bytes": 16636,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-control-left-10.png",
+      "sha256": "b258d5a935d701fadc164dcc0ebc84e2b6e9fd0b37f0afb2d24bbaef2a18cbfa",
+      "bytes": 11513,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-control-left-11.png",
+      "sha256": "2fa322003891566e5a88a86cb62a7448e067ff1b12f748c715a6ceeadac7dac7",
+      "bytes": 14923,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-control-left-12.png",
+      "sha256": "26958b4832108564c475fa0163c82c762a0ff77f560b8142a4ab4268d66dbd38",
+      "bytes": 16383,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-control-left-13.png",
+      "sha256": "3436dd3d7db5e60bc892f6fe30db98d614f9dbed77ee20fd82187ed3ad8188a2",
+      "bytes": 22020,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-control-left-14.png",
+      "sha256": "f5d92ea55199e18af55dab08f21ba941dc4fdb2ce4430069a624c1f7c6ba7877",
+      "bytes": 15655,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-control-left-15.png",
+      "sha256": "e8ac865af9f59a330ecbba1e9aada16968d56055d969d6eb162d097d0471b14d",
+      "bytes": 19547,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-control-left-16.png",
+      "sha256": "1cb12e9973912ca72bd164b70e9e9ad3cb279607f475df9dd769d7002365ff0e",
+      "bytes": 12687,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-control-left-17.png",
+      "sha256": "71af34cb1ea60a5a7e5357645e556edc5f1cca45513c29b2aac3143c80fa96c1",
+      "bytes": 15604,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-control-left-18.png",
+      "sha256": "e43643c600ba0c5b6bcba0a45c8b4192afa0381f59d8ac772a68cca5b8407fd3",
+      "bytes": 9931,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-control-left-19.png",
+      "sha256": "36c90ea2e5286d10da6471788be6b16514f18000301844857f4450fde3f8ad91",
+      "bytes": 13155,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-control-left-2.png",
+      "sha256": "cbac7ce631f21d8211ee968b33d6e5137ec2dea5bb36fa2c88d6877104f17124",
+      "bytes": 17134,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-control-left-3.png",
+      "sha256": "85cff2f79ef134552e12b123687f29ed7d7e124bec54b00b1ee384e3caf9ebe0",
+      "bytes": 15461,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-control-left-4.png",
+      "sha256": "1b63c462c0f711f6eb84bcd1009b10d3df572164c7318189f732f058a9fa4644",
+      "bytes": 13107,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-control-left-5.png",
+      "sha256": "80db5b503ccf3eecf9149fd3baaf62bfe48c92f9538e9a01a3d1aff67c83418a",
+      "bytes": 12782,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-control-left-6.png",
+      "sha256": "29d07d70dc92f25cf30dec0c0c26f6b105c3f64437c064b7f6fc836c22667b79",
+      "bytes": 18139,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-control-left-7.png",
+      "sha256": "318f49f1de68251aff8bb558924aa7d7663258a7fc31da4897147b884ed3f77c",
+      "bytes": 8869,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-control-left-8.png",
+      "sha256": "fb44be426d751d77e45cf33927fc46b96bb50e1b38958489cc9fc02414659e6e",
+      "bytes": 15931,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-control-left-9.png",
+      "sha256": "46358a19276604963631e8ea04de0336f3420c5dc6f436159598144f2a74cf4b",
+      "bytes": 15320,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-control-menu.png",
+      "sha256": "542ed40b758684c43091a6fd9b1f1634cf1e5084f6cfa9a93c3cbeda0cec9715",
+      "bytes": 14163,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-control-page1-af.png",
+      "sha256": "83fb81e3ff0b470b57502d17e3747e6d6ec2557a94d6d2b76d2e05182ffcb761",
+      "bytes": 16855,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-control-page2-af.png",
+      "sha256": "36c90ea2e5286d10da6471788be6b16514f18000301844857f4450fde3f8ad91",
+      "bytes": 13155,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-control-page25.png",
+      "sha256": "ea7f10aeec71a626d0836cc686eccff529128dd311767251e8e459bf92d03ad4",
+      "bytes": 9069,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-control-page26.png",
+      "sha256": "9f8d72cfcae1ecb890b830285ae675ba270c3e409e092c2e1cf47498cb853339",
+      "bytes": 8225,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-control-page27-return.png",
+      "sha256": "cbea240f3677e9156da433ca416c601754ec9d399479bcc312b1f9b2b27feb4b",
+      "bytes": 8951,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-control-page27.png",
+      "sha256": "cbea240f3677e9156da433ca416c601754ec9d399479bcc312b1f9b2b27feb4b",
+      "bytes": 8951,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-control-save.png",
+      "sha256": "dc7badd44f4699885052b49ab01cc24dbf6c4270009958ed79a2a3ab22d077eb",
+      "bytes": 15867,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-control-up25-0.png",
+      "sha256": "0cfaa67c5f25c7cc8cc60bb1625944fb86c0943b875792dbfbce9facd32f3a9d",
+      "bytes": 16832,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-control-up25-1.png",
+      "sha256": "b93a8b013f989c1c351976a42b432aa7f18388d4e8a440a4263f940fe1c339d4",
+      "bytes": 16824,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-cprobe-2154-cancel.png",
+      "sha256": "0348f40d7d6ea86f7b2cd357479346408bd1abd5e3b6d559f08311fba77d214f",
+      "bytes": 11241,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-cprobe-2154-open.png",
+      "sha256": "b2b69826bcf5ce521ee62af194056ce3fe97b74728969a8b13dad0fedbe4c457",
+      "bytes": 15551,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-cprobe-2155-cancel.png",
+      "sha256": "baf31dfa6ac1c29c65ff4346ce9738c2863615a4091b3ac7a29f28cb7f69534d",
+      "bytes": 11234,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-cprobe-2155-open.png",
+      "sha256": "b7bf9fbc7f5d32fd59ed8812492207a1f0a9c496a6621a2536c0dfb092791717",
+      "bytes": 16206,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-cprobe-back25.png",
+      "sha256": "b93a8b013f989c1c351976a42b432aa7f18388d4e8a440a4263f940fe1c339d4",
+      "bytes": 16824,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-cprobe-back26.png",
+      "sha256": "155fc09df6ec7ac7e93b785086d3f3e5bac97107c0939255c5e9ed5211a10d44",
+      "bytes": 16878,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-cprobe-baseline.png",
+      "sha256": "ff0a276eb6db88237146b9b048a0faecf263ac295aaa0d1a8a1ef4697177a9de",
+      "bytes": 6799,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-cprobe-commit-2.png",
+      "sha256": "daefddd1bb789ae829a7db98abebd8b8e4e21d8aefade0161db2bf0bf55c47a1",
+      "bytes": 11297,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-cprobe-commit-9.png",
+      "sha256": "d878620b8e3cc0e3266811ce1135b79cd75f9cd8aa3d285633c62021c52c2ed5",
+      "bytes": 11138,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-cprobe-commit2-right-1.png",
+      "sha256": "890dfa2216bc67928874f9b817bf25beae5917c2eaa0242c8cc1ee64a6e22da5",
+      "bytes": 12877,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-cprobe-commit2-right-2.png",
+      "sha256": "e1426dff00d629cd80f553a3dc610c5a240a6f6b62f3fceb706d5a980dd447d9",
+      "bytes": 12766,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-cprobe-commit9-right-3.png",
+      "sha256": "1e845a4397a02d0c226ada364b34f30195477586f30f31d10e1d0808f92f9286",
+      "bytes": 12873,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-cprobe-commit9-right-4.png",
+      "sha256": "d82afc1ad170528ad33364caa4a03b9e7e76260ad8cabd2bb4c20134a216d0ae",
+      "bytes": 12794,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-cprobe-commit9-right-5.png",
+      "sha256": "e747b4b4a001f567c4fc617113f01bd95b74a335d4e981844a6ed1f47e71f7f7",
+      "bytes": 12776,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-cprobe-commit9-right-6.png",
+      "sha256": "42e7754f739b2fa510cd03c7ba160982613805e0594c5511a4426ac6e75978c2",
+      "bytes": 9836,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-cprobe-commit9-right-7.png",
+      "sha256": "17fdd18d5aeed9933b903b3b053818f3df562ab993613d7ff3feec96b118041e",
+      "bytes": 10148,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-cprobe-commit9-right-8.png",
+      "sha256": "9faa3460e71a5d01506b6a99d7fcc57f6547335cad9569a1d59b08e828ccbfb9",
+      "bytes": 9831,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-cprobe-commit9-right-9.png",
+      "sha256": "54ccece0a4263dffd8e60f09efb7b035724db438c407d5e6d7fd01ee1f059202",
+      "bytes": 9335,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-cprobe-down-2155.png",
+      "sha256": "baf31dfa6ac1c29c65ff4346ce9738c2863615a4091b3ac7a29f28cb7f69534d",
+      "bytes": 11234,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-cprobe-down-afbutton.png",
+      "sha256": "8243424b6d851082ee7486a92aca5de26a7756d177a0debc1c2ed461ce778a70",
+      "bytes": 13243,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-cprobe-down-caf.png",
+      "sha256": "a55731cd5649322de917b11c90daab7c38020e3ef4cf3ec1320344f30bfcbcc4",
+      "bytes": 13214,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-cprobe-down26-0.png",
+      "sha256": "39ccc862b87c7d841c93e0d32e20a53a7ea541fa1684047067b0ad766fe0c759",
+      "bytes": 16875,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-cprobe-down26-1.png",
+      "sha256": "d6b99cf2fec8e06494fa04de8b6f7a6cc04447f52abcd0f8b937cdc28c61a2af",
+      "bytes": 16783,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-cprobe-down26-2.png",
+      "sha256": "b93a8b013f989c1c351976a42b432aa7f18388d4e8a440a4263f940fe1c339d4",
+      "bytes": 16824,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-cprobe-down26-3.png",
+      "sha256": "0cfaa67c5f25c7cc8cc60bb1625944fb86c0943b875792dbfbce9facd32f3a9d",
+      "bytes": 16832,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-cprobe-down26-4.png",
+      "sha256": "155fc09df6ec7ac7e93b785086d3f3e5bac97107c0939255c5e9ed5211a10d44",
+      "bytes": 16878,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-cprobe-down27-0.png",
+      "sha256": "a55731cd5649322de917b11c90daab7c38020e3ef4cf3ec1320344f30bfcbcc4",
+      "bytes": 13214,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-cprobe-down27-1.png",
+      "sha256": "8243424b6d851082ee7486a92aca5de26a7756d177a0debc1c2ed461ce778a70",
+      "bytes": 13243,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-cprobe-exit-0.png",
+      "sha256": "8243424b6d851082ee7486a92aca5de26a7756d177a0debc1c2ed461ce778a70",
+      "bytes": 13243,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-cprobe-exit-1.png",
+      "sha256": "a27f7259f5fc911ec6dc03675e5100c88163d55b671eba4c27b9d2dcb581e591",
+      "bytes": 14926,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-cprobe-leave-27.png",
+      "sha256": "8243424b6d851082ee7486a92aca5de26a7756d177a0debc1c2ed461ce778a70",
+      "bytes": 13243,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-cprobe-left-0.png",
+      "sha256": "dcaca24e6d0790189ef076631128a252731ed9e1feda703516d226e07e753560",
+      "bytes": 18944,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-cprobe-left-1.png",
+      "sha256": "c6a699de5d1857525e7a00e94d53936e4c067cb0c05654ec518bb6ba2aef0970",
+      "bytes": 16636,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-cprobe-left-10.png",
+      "sha256": "b258d5a935d701fadc164dcc0ebc84e2b6e9fd0b37f0afb2d24bbaef2a18cbfa",
+      "bytes": 11513,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-cprobe-left-11.png",
+      "sha256": "2fa322003891566e5a88a86cb62a7448e067ff1b12f748c715a6ceeadac7dac7",
+      "bytes": 14923,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-cprobe-left-12.png",
+      "sha256": "26958b4832108564c475fa0163c82c762a0ff77f560b8142a4ab4268d66dbd38",
+      "bytes": 16383,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-cprobe-left-13.png",
+      "sha256": "3436dd3d7db5e60bc892f6fe30db98d614f9dbed77ee20fd82187ed3ad8188a2",
+      "bytes": 22020,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-cprobe-left-14.png",
+      "sha256": "f5d92ea55199e18af55dab08f21ba941dc4fdb2ce4430069a624c1f7c6ba7877",
+      "bytes": 15655,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-cprobe-left-15.png",
+      "sha256": "e8ac865af9f59a330ecbba1e9aada16968d56055d969d6eb162d097d0471b14d",
+      "bytes": 19547,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-cprobe-left-16.png",
+      "sha256": "1cb12e9973912ca72bd164b70e9e9ad3cb279607f475df9dd769d7002365ff0e",
+      "bytes": 12687,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-cprobe-left-17.png",
+      "sha256": "71af34cb1ea60a5a7e5357645e556edc5f1cca45513c29b2aac3143c80fa96c1",
+      "bytes": 15604,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-cprobe-left-18.png",
+      "sha256": "e43643c600ba0c5b6bcba0a45c8b4192afa0381f59d8ac772a68cca5b8407fd3",
+      "bytes": 9931,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-cprobe-left-19.png",
+      "sha256": "36c90ea2e5286d10da6471788be6b16514f18000301844857f4450fde3f8ad91",
+      "bytes": 13155,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-cprobe-left-2.png",
+      "sha256": "cbac7ce631f21d8211ee968b33d6e5137ec2dea5bb36fa2c88d6877104f17124",
+      "bytes": 17134,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-cprobe-left-3.png",
+      "sha256": "85cff2f79ef134552e12b123687f29ed7d7e124bec54b00b1ee384e3caf9ebe0",
+      "bytes": 15461,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-cprobe-left-4.png",
+      "sha256": "1b63c462c0f711f6eb84bcd1009b10d3df572164c7318189f732f058a9fa4644",
+      "bytes": 13107,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-cprobe-left-5.png",
+      "sha256": "80db5b503ccf3eecf9149fd3baaf62bfe48c92f9538e9a01a3d1aff67c83418a",
+      "bytes": 12782,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-cprobe-left-6.png",
+      "sha256": "29d07d70dc92f25cf30dec0c0c26f6b105c3f64437c064b7f6fc836c22667b79",
+      "bytes": 18139,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-cprobe-left-7.png",
+      "sha256": "318f49f1de68251aff8bb558924aa7d7663258a7fc31da4897147b884ed3f77c",
+      "bytes": 8869,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-cprobe-left-8.png",
+      "sha256": "fb44be426d751d77e45cf33927fc46b96bb50e1b38958489cc9fc02414659e6e",
+      "bytes": 15931,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-cprobe-left-9.png",
+      "sha256": "46358a19276604963631e8ea04de0336f3420c5dc6f436159598144f2a74cf4b",
+      "bytes": 15320,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-cprobe-menu.png",
+      "sha256": "542ed40b758684c43091a6fd9b1f1634cf1e5084f6cfa9a93c3cbeda0cec9715",
+      "bytes": 14163,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-cprobe-page1-af.png",
+      "sha256": "83fb81e3ff0b470b57502d17e3747e6d6ec2557a94d6d2b76d2e05182ffcb761",
+      "bytes": 16855,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-cprobe-page2-af.png",
+      "sha256": "36c90ea2e5286d10da6471788be6b16514f18000301844857f4450fde3f8ad91",
+      "bytes": 13155,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-cprobe-page25.png",
+      "sha256": "ea7f10aeec71a626d0836cc686eccff529128dd311767251e8e459bf92d03ad4",
+      "bytes": 9069,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-cprobe-page26.png",
+      "sha256": "9f8d72cfcae1ecb890b830285ae675ba270c3e409e092c2e1cf47498cb853339",
+      "bytes": 8225,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-cprobe-page27-return.png",
+      "sha256": "0348f40d7d6ea86f7b2cd357479346408bd1abd5e3b6d559f08311fba77d214f",
+      "bytes": 11241,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-cprobe-page27.png",
+      "sha256": "0348f40d7d6ea86f7b2cd357479346408bd1abd5e3b6d559f08311fba77d214f",
+      "bytes": 11241,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-cprobe-reopen-2.png",
+      "sha256": "b928e09c4963102b0a3baa8bccc89fe4b3dba7ccb667a5d72ef5ca8c54f1ad33",
+      "bytes": 12589,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-cprobe-save.png",
+      "sha256": "dc7badd44f4699885052b49ab01cc24dbf6c4270009958ed79a2a3ab22d077eb",
+      "bytes": 15867,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-cprobe-up25-0.png",
+      "sha256": "0cfaa67c5f25c7cc8cc60bb1625944fb86c0943b875792dbfbce9facd32f3a9d",
+      "bytes": 16832,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-cprobe-up25-1.png",
+      "sha256": "b93a8b013f989c1c351976a42b432aa7f18388d4e8a440a4263f940fe1c339d4",
+      "bytes": 16824,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-cprobe-zone-2155.png",
+      "sha256": "baf31dfa6ac1c29c65ff4346ce9738c2863615a4091b3ac7a29f28cb7f69534d",
+      "bytes": 11234,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-cprobe-zone-cancel-c4.png",
+      "sha256": "ad8c5a381161a2572b32cbeee49ef1cf27d4efec8a066ed6c4a8d6b77806b2d6",
+      "bytes": 11221,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-cprobe-zone-open.png",
+      "sha256": "44448279d6ef4a09df1887df0813b762a67d9fdac99b4106e6bb3f2db1225718",
+      "bytes": 12640,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-cprobe-zone-reopen.png",
+      "sha256": "44448279d6ef4a09df1887df0813b762a67d9fdac99b4106e6bb3f2db1225718",
+      "bytes": 12640,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-cprobe-zone-right-1.png",
+      "sha256": "890dfa2216bc67928874f9b817bf25beae5917c2eaa0242c8cc1ee64a6e22da5",
+      "bytes": 12877,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-cprobe-zone-right-2.png",
+      "sha256": "e1426dff00d629cd80f553a3dc610c5a240a6f6b62f3fceb706d5a980dd447d9",
+      "bytes": 12766,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-cprobe-zone-right-3.png",
+      "sha256": "28d417330f5072023ad12d61d58913ce412cc96a1d14a3d3b9f4a1ef9ddb6884",
+      "bytes": 12904,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-cprobe-zone-right-4.png",
+      "sha256": "c6e1de51d23d95adf3566015d726acd86f7e5c91d681228dc190e9acf08d11c4",
+      "bytes": 12826,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-cprobe-zone-right-5.png",
+      "sha256": "1c569cc9c63fb8eda625489d90c704d2e9d55726aecab5c93101795cec95cc8f",
+      "bytes": 12806,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-cprobe-zone-right-6.png",
+      "sha256": "42e7754f739b2fa510cd03c7ba160982613805e0594c5511a4426ac6e75978c2",
+      "bytes": 9836,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-cprobe-zone-right-7.png",
+      "sha256": "17fdd18d5aeed9933b903b3b053818f3df562ab993613d7ff3feec96b118041e",
+      "bytes": 10148,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-cprobe-zone-right-8.png",
+      "sha256": "9faa3460e71a5d01506b6a99d7fcc57f6547335cad9569a1d59b08e828ccbfb9",
+      "bytes": 9831,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-cprobe-zone-right-9.png",
+      "sha256": "54ccece0a4263dffd8e60f09efb7b035724db438c407d5e6d7fd01ee1f059202",
+      "bytes": 9335,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-cprobe-zone-row.png",
+      "sha256": "ad8c5a381161a2572b32cbeee49ef1cf27d4efec8a066ed6c4a8d6b77806b2d6",
+      "bytes": 11221,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-j1.jsonl",
+      "sha256": "81362a9ea8af902a4441347f12bd7df3be338eb1f3ae5ea0f0c7c2f35de07756",
+      "bytes": 139343,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-p28-control-p28-arm.png",
+      "sha256": "ff0a276eb6db88237146b9b048a0faecf263ac295aaa0d1a8a1ef4697177a9de",
+      "bytes": 6799,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-p28-control-p28-down-0.png",
+      "sha256": "a55731cd5649322de917b11c90daab7c38020e3ef4cf3ec1320344f30bfcbcc4",
+      "bytes": 13214,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-p28-control-p28-down-1.png",
+      "sha256": "8243424b6d851082ee7486a92aca5de26a7756d177a0debc1c2ed461ce778a70",
+      "bytes": 13243,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-p28-control-p28-left-0.png",
+      "sha256": "dcaca24e6d0790189ef076631128a252731ed9e1feda703516d226e07e753560",
+      "bytes": 18944,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-p28-control-p28-left-1.png",
+      "sha256": "c6a699de5d1857525e7a00e94d53936e4c067cb0c05654ec518bb6ba2aef0970",
+      "bytes": 16636,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-p28-control-p28-left-10.png",
+      "sha256": "b258d5a935d701fadc164dcc0ebc84e2b6e9fd0b37f0afb2d24bbaef2a18cbfa",
+      "bytes": 11513,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-p28-control-p28-left-11.png",
+      "sha256": "2fa322003891566e5a88a86cb62a7448e067ff1b12f748c715a6ceeadac7dac7",
+      "bytes": 14923,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-p28-control-p28-left-12.png",
+      "sha256": "26958b4832108564c475fa0163c82c762a0ff77f560b8142a4ab4268d66dbd38",
+      "bytes": 16383,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-p28-control-p28-left-13.png",
+      "sha256": "3436dd3d7db5e60bc892f6fe30db98d614f9dbed77ee20fd82187ed3ad8188a2",
+      "bytes": 22020,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-p28-control-p28-left-14.png",
+      "sha256": "f5d92ea55199e18af55dab08f21ba941dc4fdb2ce4430069a624c1f7c6ba7877",
+      "bytes": 15655,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-p28-control-p28-left-15.png",
+      "sha256": "e8ac865af9f59a330ecbba1e9aada16968d56055d969d6eb162d097d0471b14d",
+      "bytes": 19547,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-p28-control-p28-left-16.png",
+      "sha256": "1cb12e9973912ca72bd164b70e9e9ad3cb279607f475df9dd769d7002365ff0e",
+      "bytes": 12687,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-p28-control-p28-left-17.png",
+      "sha256": "71af34cb1ea60a5a7e5357645e556edc5f1cca45513c29b2aac3143c80fa96c1",
+      "bytes": 15604,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-p28-control-p28-left-18.png",
+      "sha256": "e43643c600ba0c5b6bcba0a45c8b4192afa0381f59d8ac772a68cca5b8407fd3",
+      "bytes": 9931,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-p28-control-p28-left-19.png",
+      "sha256": "36c90ea2e5286d10da6471788be6b16514f18000301844857f4450fde3f8ad91",
+      "bytes": 13155,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-p28-control-p28-left-2.png",
+      "sha256": "cbac7ce631f21d8211ee968b33d6e5137ec2dea5bb36fa2c88d6877104f17124",
+      "bytes": 17134,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-p28-control-p28-left-3.png",
+      "sha256": "85cff2f79ef134552e12b123687f29ed7d7e124bec54b00b1ee384e3caf9ebe0",
+      "bytes": 15461,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-p28-control-p28-left-4.png",
+      "sha256": "1b63c462c0f711f6eb84bcd1009b10d3df572164c7318189f732f058a9fa4644",
+      "bytes": 13107,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-p28-control-p28-left-5.png",
+      "sha256": "80db5b503ccf3eecf9149fd3baaf62bfe48c92f9538e9a01a3d1aff67c83418a",
+      "bytes": 12782,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-p28-control-p28-left-6.png",
+      "sha256": "29d07d70dc92f25cf30dec0c0c26f6b105c3f64437c064b7f6fc836c22667b79",
+      "bytes": 18139,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-p28-control-p28-left-7.png",
+      "sha256": "318f49f1de68251aff8bb558924aa7d7663258a7fc31da4897147b884ed3f77c",
+      "bytes": 8869,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-p28-control-p28-left-8.png",
+      "sha256": "fb44be426d751d77e45cf33927fc46b96bb50e1b38958489cc9fc02414659e6e",
+      "bytes": 15931,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-p28-control-p28-left-9.png",
+      "sha256": "46358a19276604963631e8ea04de0336f3420c5dc6f436159598144f2a74cf4b",
+      "bytes": 15320,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-p28-control-p28-menu.png",
+      "sha256": "542ed40b758684c43091a6fd9b1f1634cf1e5084f6cfa9a93c3cbeda0cec9715",
+      "bytes": 14163,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-p28-control-p28-open.png",
+      "sha256": "323c520025df7782d862ee88529371ac597bf105be9d08c0388e1b0df5bc5350",
+      "bytes": 13013,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-p28-cprobe-p28-arm.png",
+      "sha256": "ff0a276eb6db88237146b9b048a0faecf263ac295aaa0d1a8a1ef4697177a9de",
+      "bytes": 6799,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-p28-cprobe-p28-down-0.png",
+      "sha256": "a55731cd5649322de917b11c90daab7c38020e3ef4cf3ec1320344f30bfcbcc4",
+      "bytes": 13214,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-p28-cprobe-p28-down-1.png",
+      "sha256": "8243424b6d851082ee7486a92aca5de26a7756d177a0debc1c2ed461ce778a70",
+      "bytes": 13243,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-p28-cprobe-p28-left-0.png",
+      "sha256": "dcaca24e6d0790189ef076631128a252731ed9e1feda703516d226e07e753560",
+      "bytes": 18944,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-p28-cprobe-p28-left-1.png",
+      "sha256": "c6a699de5d1857525e7a00e94d53936e4c067cb0c05654ec518bb6ba2aef0970",
+      "bytes": 16636,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-p28-cprobe-p28-left-10.png",
+      "sha256": "b258d5a935d701fadc164dcc0ebc84e2b6e9fd0b37f0afb2d24bbaef2a18cbfa",
+      "bytes": 11513,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-p28-cprobe-p28-left-11.png",
+      "sha256": "2fa322003891566e5a88a86cb62a7448e067ff1b12f748c715a6ceeadac7dac7",
+      "bytes": 14923,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-p28-cprobe-p28-left-12.png",
+      "sha256": "26958b4832108564c475fa0163c82c762a0ff77f560b8142a4ab4268d66dbd38",
+      "bytes": 16383,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-p28-cprobe-p28-left-13.png",
+      "sha256": "3436dd3d7db5e60bc892f6fe30db98d614f9dbed77ee20fd82187ed3ad8188a2",
+      "bytes": 22020,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-p28-cprobe-p28-left-14.png",
+      "sha256": "f5d92ea55199e18af55dab08f21ba941dc4fdb2ce4430069a624c1f7c6ba7877",
+      "bytes": 15655,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-p28-cprobe-p28-left-15.png",
+      "sha256": "e8ac865af9f59a330ecbba1e9aada16968d56055d969d6eb162d097d0471b14d",
+      "bytes": 19547,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-p28-cprobe-p28-left-16.png",
+      "sha256": "1cb12e9973912ca72bd164b70e9e9ad3cb279607f475df9dd769d7002365ff0e",
+      "bytes": 12687,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-p28-cprobe-p28-left-17.png",
+      "sha256": "71af34cb1ea60a5a7e5357645e556edc5f1cca45513c29b2aac3143c80fa96c1",
+      "bytes": 15604,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-p28-cprobe-p28-left-18.png",
+      "sha256": "e43643c600ba0c5b6bcba0a45c8b4192afa0381f59d8ac772a68cca5b8407fd3",
+      "bytes": 9931,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-p28-cprobe-p28-left-19.png",
+      "sha256": "36c90ea2e5286d10da6471788be6b16514f18000301844857f4450fde3f8ad91",
+      "bytes": 13155,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-p28-cprobe-p28-left-2.png",
+      "sha256": "cbac7ce631f21d8211ee968b33d6e5137ec2dea5bb36fa2c88d6877104f17124",
+      "bytes": 17134,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-p28-cprobe-p28-left-3.png",
+      "sha256": "85cff2f79ef134552e12b123687f29ed7d7e124bec54b00b1ee384e3caf9ebe0",
+      "bytes": 15461,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-p28-cprobe-p28-left-4.png",
+      "sha256": "1b63c462c0f711f6eb84bcd1009b10d3df572164c7318189f732f058a9fa4644",
+      "bytes": 13107,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-p28-cprobe-p28-left-5.png",
+      "sha256": "80db5b503ccf3eecf9149fd3baaf62bfe48c92f9538e9a01a3d1aff67c83418a",
+      "bytes": 12782,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-p28-cprobe-p28-left-6.png",
+      "sha256": "29d07d70dc92f25cf30dec0c0c26f6b105c3f64437c064b7f6fc836c22667b79",
+      "bytes": 18139,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-p28-cprobe-p28-left-7.png",
+      "sha256": "318f49f1de68251aff8bb558924aa7d7663258a7fc31da4897147b884ed3f77c",
+      "bytes": 8869,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-p28-cprobe-p28-left-8.png",
+      "sha256": "fb44be426d751d77e45cf33927fc46b96bb50e1b38958489cc9fc02414659e6e",
+      "bytes": 15931,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-p28-cprobe-p28-left-9.png",
+      "sha256": "46358a19276604963631e8ea04de0336f3420c5dc6f436159598144f2a74cf4b",
+      "bytes": 15320,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-p28-cprobe-p28-menu.png",
+      "sha256": "542ed40b758684c43091a6fd9b1f1634cf1e5084f6cfa9a93c3cbeda0cec9715",
+      "bytes": 14163,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-p28-cprobe-p28-open.png",
+      "sha256": "323c520025df7782d862ee88529371ac597bf105be9d08c0388e1b0df5bc5350",
+      "bytes": 13013,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-reopen-j1.jsonl",
+      "sha256": "82b69f62aa01f8fd15d7376cf639c65baf5f4843c1269bb390c84ecde109f9c6",
+      "bytes": 515,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-reopen-reopen.png",
+      "sha256": "dc7badd44f4699885052b49ab01cc24dbf6c4270009958ed79a2a3ab22d077eb",
+      "bytes": 15867,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-reopen-session.jsonl",
+      "sha256": "db87f1716b1ddf376982438286afa6f05d6ec170870feeb14d7d216cc96ef83e",
+      "bytes": 5036,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-session-control.jsonl",
+      "sha256": "26fe0c48deb5821949b5664441941412f6766227d831d5e31a5f39143e400368",
+      "bytes": 4076,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-session-cprobe.jsonl",
+      "sha256": "111fad9515105d84ee92b6ab0827533f841dd095dce40bda567398c107b3e335",
+      "bytes": 5055,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-session-p28-control.jsonl",
+      "sha256": "aa22a6b175127db41fed1c25346eb40156bce85d166f4256571cf18d0e784f00",
+      "bytes": 4794,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/probe-session-p28-cprobe.jsonl",
+      "sha256": "f8e4f3bd3b632b124d242817cd87edb6e3d7e14a1a61da50d218275ac211e96d",
+      "bytes": 5786,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/session-j1-c1.jsonl",
+      "sha256": "4fbfe94bdf02dd5b7d3ff5d9a61fab3e79fb040b940c77d46c5b1408ca1e6b01",
+      "bytes": 5056,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/session-j1-c2.jsonl",
+      "sha256": "9a3a083826e65122095081eff7d98e5c4f96f18426f362f84777ef64febd07bf",
+      "bytes": 5057,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/session-j1-control.jsonl",
+      "sha256": "00b8efa3ce258aa1ba38f4e97c8883e39fa9e597e6a2120dc15c7a809588be9f",
+      "bytes": 4027,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/session-j1-p28-c1.jsonl",
+      "sha256": "8c8e7ff1a639a24f0cadcb3c3a0fa31d9085c1f66d2df73f0eb90ec03d8de033",
+      "bytes": 5788,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/session-j1-p28-c2.jsonl",
+      "sha256": "45fbbb7ee1e399bb85cd1db488dfe992ba9cd3ca0ed951f166239a7a1a478e51",
+      "bytes": 5788,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/session-j1-p28-control.jsonl",
+      "sha256": "3993ebf313c43bf32a2a3d09697ce264f7edbd7b47ba5ce694debcb83544cffb",
+      "bytes": 4757,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/session-j1-reopen-c1.jsonl",
+      "sha256": "b22cd5142179709c6ce5178b02ae4fb2002a5ed736de22a970219994ae232e16",
+      "bytes": 5120,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/session-j1-reopen-c2.jsonl",
+      "sha256": "8e5432393d49e9e25bcda7622b14e3f20b7b5e1e718bb15c02e0474d5682bc6e",
+      "bytes": 5120,
+      "hashed": "later"
+    },
+    {
+      "path": "work/result.md",
+      "sha256": "008af57aedd8c151ddb580931f71dc459eba436310ae0af7a9daa739777486af",
+      "bytes": 9512,
+      "hashed": "later"
+    }
+  ],
+  "commands": [
+    {
+      "id": "01",
+      "spawn": "python -I work/scripts/dump_steps_j0.py",
+      "status": 0,
+      "start": "2026-11-18T18:32:17.405Z",
+      "end": "2026-11-18T18:32:17.457Z",
+      "exit_file": "work/out/cmd/01.exit",
+      "hashed": "later"
+    },
+    {
+      "id": "02",
+      "spawn": "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe work/scripts/title_check_j0.mjs",
+      "status": 1,
+      "start": "2026-11-18T18:40:41.713Z",
+      "end": "2026-11-18T18:40:41.756Z",
+      "exit_file": "work/out/cmd/02.exit",
+      "hashed": "later"
+    },
+    {
+      "id": "03",
+      "spawn": "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe work/scripts/probe_j1.mjs om-emu",
+      "status": 0,
+      "start": "2026-11-18T18:40:53.223Z",
+      "end": "2026-11-18T18:42:19.487Z",
+      "exit_file": "work/out/cmd/03.exit",
+      "hashed": "later"
+    },
+    {
+      "id": "04",
+      "spawn": "python -I work/scripts/summarize_probe_j0.py",
+      "status": 0,
+      "start": "2026-11-18T18:42:30.999Z",
+      "end": "2026-11-18T18:42:31.048Z",
+      "exit_file": "work/out/cmd/04.exit",
+      "hashed": "later"
+    },
+    {
+      "id": "05",
+      "spawn": "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe work/scripts/check_probe_j0.mjs",
+      "status": 0,
+      "start": "2026-11-18T18:43:46.511Z",
+      "end": "2026-11-18T18:43:46.567Z",
+      "exit_file": "work/out/cmd/05.exit",
+      "hashed": "later"
+    },
+    {
+      "id": "06",
+      "spawn": "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe work/scripts/probe_reopen_j1.mjs om-emu",
+      "status": 0,
+      "start": "2026-11-18T18:43:51.560Z",
+      "end": "2026-11-18T18:43:56.845Z",
+      "exit_file": "work/out/cmd/06.exit",
+      "hashed": "later"
+    },
+    {
+      "id": "07",
+      "spawn": "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe work/scripts/build_table_j1.mjs",
+      "status": 0,
+      "start": "2026-11-18T18:47:37.752Z",
+      "end": "2026-11-18T18:47:37.795Z",
+      "exit_file": "work/out/cmd/07.exit",
+      "hashed": "later"
+    },
+    {
+      "id": "08",
+      "spawn": "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe work/scripts/accept_runner_j1.mjs om-emu",
+      "status": 0,
+      "start": "2026-11-18T18:48:10.891Z",
+      "end": "2026-11-18T18:50:35.257Z",
+      "exit_file": "work/out/cmd/08.exit",
+      "hashed": "later"
+    },
+    {
+      "id": "09",
+      "spawn": "python -I work/scripts/stats_j1.py",
+      "status": 0,
+      "start": "2026-11-18T18:51:13.218Z",
+      "end": "2026-11-18T18:51:13.271Z",
+      "exit_file": "work/out/cmd/09.exit",
+      "hashed": "later"
+    },
+    {
+      "id": "10",
+      "spawn": "python -I work/scripts/write_manifest_j1.py",
+      "status": null,
+      "note": "This process. The wrapper writes work/out/cmd/10.out, 10.err, and 10.exit after the manifest file is closed, so those three files are not entries above. work/out/cmd/10.cmd.txt is written by the wrapper before this process starts and is an output if it already exists."
+    }
+  ],
+  "tool_versions": {
+    "node26": "[WinError 2] The system cannot find the file specified",
+    "python": "Python 3.12.7"
+  },
+  "note": "Execution hashes of emulator modules, including transitive static imports, were taken before the acceptance sessions and stored in work/out/import-inventory-j1.json. Session helper-hashes add the unpacked firmware resources and the session module again, at session start. later hashes were taken by this script. The manifest file itself is not an output entry. The profile byte is RAM only. No firmware image was written."
+}
