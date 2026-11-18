@@ -1,19 +1,21 @@
-# T2b review brief (Codex Sol, read-only)
+﻿# T2b correction review (Codex Sol, read-only)
 
-You reviewed T2 twice; your reviews are in `ref\tasks\T2-cell-ownership\run-*-review\review.md`.
-T2b closes your open items. Read `TASK.md`, `brief.md`, `work\result.md`,
-`work\evidence-manifest.json`, `work\out\INDEX.md` and `work\out\verdict-v3.md`, then the tables,
-listings and dynamic logs they cite, and the audit copies in `audit\`.
+Read `brief.md` §7 (the correction list), your previous review in `audit\previous-review.md`, and
+the updated `work\result.md`, `work\evidence-manifest.json`, `work\out\INDEX.md`,
+`work\out\verdict-v4.md`, `work\out\candidates-5b82-v4.tsv` and `work\out\uses-5b82-v4.tsv`, plus the
+new listings. For each of corrections 1–5, report DONE / NOT DONE / WRONG, with evidence.
 
-For each of brief §4 items 1–5, report DONE / NOT DONE / WRONG with evidence. In particular:
+In particular:
+- verify each setter-source trace of item 1 from the listings and the raw bytes, including any
+  table dump;
+- verify the `0x607135ad` lineage;
+- spot-check at least 15 rows of `candidates-5b82-v4.tsv` against the raw bytes, including the five
+  that you named;
+- check that the command log holds real output.
 
-- spot-check at least 15 candidate dispositions in `candidates-5b82-v3.tsv` against the raw bytes;
-- verify the caller/source analysis of `0x6183dcee`, `0x6183cc7d`/`0x60063567` and `0x600630a3`
-  from the listings;
-- verify the two debug-table dispatchers and their classification;
-- confirm that the cursor-page steps actually completed in both repeats (or are honestly BOUNDARY);
-- recompute every manifest hash.
+Recompute every manifest hash. Use PowerShell; Python is not on your PATH. Do not run Ghidra or
+OM-Emu. Give the verdict in the structure of `templates\review.md`.
 
-Use PowerShell (Python is not on your PATH). Do not run Ghidra or OM-Emu. Give the overall verdict
-in the structure of `templates\review.md`, and state whether the OWNABLE-for-normal-use
-classification (if claimed) meets brief §6.
+OWNABLE for normal use requires that no unresolved writer can reach the unnamed cells outside the
+explicitly classified reset/default and adjustment/debug paths. If the result keeps UNRESOLVED, say
+whether that is now justified by a specific, bounded residual list.

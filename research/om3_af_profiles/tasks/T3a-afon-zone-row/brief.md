@@ -100,3 +100,54 @@ JSONL logs with rendered texts and readbacks, and screenshots if the player can 
 The target-position editor, size and custom size (T3b); persistence; any change to page 28/29
 or AF Home; the AF-ON button behaviour itself (profile switching on press, which comes later);
 any hardware step.
+
+## 7. Correction round (Opus, after Sol's review `run-20261118-053253-review`: REJECT)
+
+Your previous work is in `work\`. Sol's full review is `audit\previous-review.md`. Do **not**
+start over. The row, the label, UI ID `0x3D6F`, the 140-byte overlay and the runtime redirects
+are confirmed; reuse them. Save every new script and screenshot under a **new, unique name**
+(`-v12` onward, one name per experiment); never overwrite a file that a run has used or written.
+
+1. **Measure the stock zone editor first.** Open page 28 in a stock session (no overlay), with native
+   keys, and open its zone-type row. Log:
+   - the list type `0x61203470` / `0x6120345d` returns;
+   - the object at model+`0x58` and its kind;
+   - the functions entered on OK (an entry trace like v11);
+   - the chooser's rendered texts or images and a screenshot.
+
+   This is the reference editor for list `0x6158ba1c`.
+2. **Open that editor from the new row.** Make OK on the `0x3D6F` row open the editor from item 1, with
+   the 10 records of `0x6158ba1c`. Prefer native data, meaning the row's kind/class fields or a
+   list-model object cloned from page 28's into the owned section-1 tail (as overlay bytes).
+   Otherwise use an `EMULATOR-ONLY` hook at the narrowest point. Selecting and confirming must
+   reach the setter for `0x3D6F` and store the value in the RAM byte; Cancel must not.
+   - If page 27's viewer cannot host that editor without code, say so with evidence.
+   - State the smallest native change that would host it.
+   - After at most **four** experiment versions on this item, stop and report it as BLOCKED with
+     the evidence. Do not keep trying.
+3. **Acceptance (brief §4) if item 2 works.** Run two fresh sessions and an equivalent stock control.
+   - Each session asserts its state after every step: the expected page title or highlighted row
+     text, and the expected readback. A failed assertion ends the run with `ok:false`.
+   - Exercise both stock rows in both the candidate and the control, with the same key sequence.
+   - Read back all 10 cells of `0x1dd1`, plus `0x99a1`, `0x9a41`, `0x5962` and every
+     `MODE_AF_HOME_AREA_*` key, before and after each AF-ON action.
+   - Account for the `[3,3]`→`[27,39]` menu-entry change by comparing against the control at the
+     same step.
+   - Render pages 25, 26 and 28 in both.
+   - For the persistence check, set `OM_EMU_NVRAM` to a file under `work\out\` (a separate file for
+     each run: candidate and control), do a native save, and start a new session on that file.
+     Compare the two stores byte by byte, and show that the profile byte returns to the default.
+4. **Corrections to the result.**
+   - Downgrade the earlier PASS statements to their sampled or no-op scope.
+   - Record the unintended Subject Detection navigation (v2–v4) and the v9 exception.
+   - Correct the v11 count (14).
+   - Remove the unsupported source comments about page 28's type and about `0xA70F` being
+     unregistered, or prove them.
+   - State that the earlier kind-7 screenshot was overwritten. Keep the claim only if you
+     reproduce it under a new name.
+5. **Records.**
+   - Record every command with its real exit code and its final JSONL line.
+   - A terminal `done` is not acceptance; report acceptance only from the assertions in item 3.
+   - Refresh the manifest last.
+
+If item 2 is BLOCKED, deliver items 1, 4 and 5 and the evidence for item 2. Do not run item 3.

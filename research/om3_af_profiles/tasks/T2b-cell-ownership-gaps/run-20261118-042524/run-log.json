@@ -1,0 +1,140 @@
+﻿{
+    "task":  "T2b-cell-ownership-gaps",
+    "batch":  [
+                  "T2b-cell-ownership-gaps",
+                  "T3a-afon-zone-row"
+              ],
+    "agent":  "grok",
+    "model":  "grok-4.7-high",
+    "brief_sha256":  "593c01e243b14532e020f460a386bf08ba11dcde694d2aee76c0b5075b63e9fe",
+    "command":  "C:\\Dev\\OM3-tasks\\_agent\\cli\\node.exe (Low integrity, via C:\\Dev\\OM3-tasks\\T2b-cell-ownership-gaps\\launch-20261118-042524.cmd) -p --model grok-4.7-high --output-format json --trust --workspace C:\\Dev\\OM3-tasks\\T2b-cell-ownership-gaps\\ws \"Read TASK.md and then brief.md in this folder completely, and carry out the brief exactly. Section 0 of the brief overrides everything else. Write only under work. Finish by making sure work/result.md and work/evidence-manifest.json exist.\"",
+    "cursor_sandbox":  false,
+    "started":  "2026-11-18T04:26:06.5934284-05:00",
+    "ended":  "2026-11-18T05:27:11.8341954-05:00",
+    "timed_out":  false,
+    "exit_code":  0,
+    "lock_ok":  true,
+    "lock_output":  "locked 16 targets in 10.4 s; probe failures: 0",
+    "unlock_ok":  true,
+    "unlock_output":  "unlocked; rules that had disappeared while locked: 0; probe failures: 0",
+    "workspace_unchanged":  true,
+    "inputs_unchanged":  true,
+    "harvested":  [
+                      {
+                          "path":  "evidence-manifest.json",
+                          "bytes":  7956,
+                          "sha256":  "73be542a3a1f4cd1e051479fe6b70929ff278daddcb793e6aa4e538443ef8e7f",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "result.md",
+                          "bytes":  9844,
+                          "sha256":  "155efd5988c3f8ec197476b3aeed3b9c8554d2e94b3ecb87d31c3717252a40b0",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\candidates-5b82-v3.tsv",
+                          "bytes":  39480,
+                          "sha256":  "fb8b3829bbf2a6d63c83f85b29f977341b51474174a1c0654496b1869a9969b5",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\close-5b82-v2.txt",
+                          "bytes":  9485,
+                          "sha256":  "dce834dadc39414c9251892ff028580e9a30d621f27b2dff478f2307b68b2140",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\command-log.txt",
+                          "bytes":  1415,
+                          "sha256":  "34af20b1c6c0e63ccbaf8f7c49eff406cfa2a4abecb311a9a19532091f6d9be2",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cursor-pages-v1.txt",
+                          "bytes":  3967,
+                          "sha256":  "6e5d324805a611c7412910fc468f181f654380d420a2b55b965c0ca813c4bace",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\fillers-5b82-v1.txt",
+                          "bytes":  25754,
+                          "sha256":  "285d214a281c64862acfc08f70b1ccc685ab4fdd2a379134e6449daa38c0da43",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\INDEX.md",
+                          "bytes":  1639,
+                          "sha256":  "39ab075d0e027a0e5119e8fca983056e2a103e60895caae0ca0b8d8329aac77f",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\listings-5b82-v3.txt",
+                          "bytes":  20938,
+                          "sha256":  "a191bd622e91f36626849fb699c9ca6cea3fdd570a793772b7766edbdbafa9c6",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\listings-adj-thunks-v1.txt",
+                          "bytes":  2029,
+                          "sha256":  "3a98d60356b277d359a0b7ff6282a3845aef9d31f23c038f94431449e0759dc7",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\routes-5b82-v1.txt",
+                          "bytes":  25934,
+                          "sha256":  "0e8461e984acf6626170708e4d6e733738a8e14af6d971e732770a82aaa56eef",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\uses-5b82-v3.tsv",
+                          "bytes":  6549,
+                          "sha256":  "298cb9bc67d9dd28a685425d5a9012b283e72121f81966b678c190b47ba46c5d",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\verdict-v3.md",
+                          "bytes":  9108,
+                          "sha256":  "38ba7cd8bc564c67af9cba969fa6dfd6a5fe986c8aa31f5583d51327551bc48b",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "scripts\\close_5b82_v1.py",
+                          "bytes":  15553,
+                          "sha256":  "4e1a756805a2771daaa0bebb6c38a75fa30b05cba991033090397c0f5dbe38f2",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "scripts\\close_5b82_v2.py",
+                          "bytes":  13470,
+                          "sha256":  "9616f6957f3203cfde94ba1063ea77ff3f6c6f6cabb12c0dfbb6d606db427fe8",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "scripts\\fillers_5b82_v1.py",
+                          "bytes":  3869,
+                          "sha256":  "5d16d7326518508b301f84cc339a137d6b7424e3d3cc2cfc7998c664a1d8cabd",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "scripts\\manifest_5b82_v1.py",
+                          "bytes":  5096,
+                          "sha256":  "16bf41e207f271cba83d91327768f826ec2df0d65619a875eb523952bd601ff7",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "scripts\\routes_5b82_v1.py",
+                          "bytes":  16674,
+                          "sha256":  "65ddf1d46c78ca6d29c239a8b7158fa9c18f989fdf5afa8f01822e5a72dc1abf",
+                          "copied":  true
+                      }
+                  ],
+    "usage":  {
+                  "inputTokens":  720022,
+                  "outputTokens":  171223,
+                  "cacheReadTokens":  16634752,
+                  "cacheWriteTokens":  0,
+                  "reasoningTokens":  111760
+              },
+    "ok":  true
+}

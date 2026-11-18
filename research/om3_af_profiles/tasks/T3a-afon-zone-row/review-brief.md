@@ -1,25 +1,24 @@
-# T3a review brief (Codex Sol, read-only)
+﻿# T3a correction review (Codex Sol, read-only)
 
-Read `TASK.md`, `brief.md`, `work\result.md`, `work\evidence-manifest.json`, `work\out\design.md`,
-`work\out\overlay-changed-bytes.csv`, the JSONL logs and the audit copies in `audit\` (including
-`om-emu.diff` against the pinned diff). Use PowerShell (Python is not on your PATH). Do not run
-Ghidra or OM-Emu.
+Read `brief.md` §7 (the correction list), your previous review in `audit\previous-review.md`, the
+updated `work\result.md`, `work\evidence-manifest.json`, `work\out\design.md` and
+`work\out\overlay-changed-bytes.csv`, the new JSONL logs and screenshots, and the audit copies in
+`audit\`. For each of corrections 1–5, report DONE / NOT DONE / WRONG / BLOCKED (honestly reported),
+with evidence.
 
-Check each acceptance item of brief §4:
-- three rows rendered, with the label;
-- the option list equals page 28's zone list (check the bytes at `0x6158ba1c`);
-- the store and cancel behaviour, by native readback;
-- stock rows unchanged against the control;
-- the half-press target settings and AF Home cells unchanged;
-- the stores byte-identical after a save and a new session;
-- other viewer pages unchanged.
+In particular:
+- check that the page-28 reference measurement was made on a stock session;
+- if the editor opens from the new row, confirm from the screenshots and logs that it shows the
+  10 zone options, that confirm writes the RAM byte, and that cancel does not;
+- check that both acceptance sessions passed every assertion and that the control used the same
+  key sequence;
+- verify the full-cell readbacks, the page 25/26/28 renders and the byte-by-byte store comparison;
+- re-verify every new or changed overlay byte against `inputs\00_0100_50000020.decoded.bin`
+  (offset = address − `0x60021020`), and that none lies in sections 6 or 7;
+- confirm that every emulator-side hook is labelled `EMULATOR-ONLY` and that none is presented as
+  native;
+- if item 2 is reported BLOCKED, judge whether the evidence supports that, and whether the stated
+  smallest native change follows from it.
 
-In both repeats, confirm that every step actually completed.
-
-Verify every overlay byte's "old" value against `inputs\00_0100_50000020.decoded.bin`
-(offset = address − `0x60021020`), and that no overlay byte lies in a compressed section (sections 6
-and 7 are compressed). Check the UI ID's "unused" claim against the four UI-ID maps. Confirm every
-emulator-side hook is labelled `EMULATOR-ONLY`, and that the result does not present hook-based
-behaviour as native.
-
-Recompute every manifest hash. Give the verdict in the structure of `templates\review.md`.
+Recompute every manifest hash. Use PowerShell (Python is not on your PATH). Do not run Ghidra or
+OM-Emu. Give the verdict in the structure of `templates\review.md`.

@@ -1,0 +1,44 @@
+T2b command log. Each block is the completed stdout and the exit code.
+Full script output lives in the named file.
+
+command: python -I -c "import os; os.makedirs('work/scripts', exist_ok=True); os.makedirs('work/out', exist_ok=True); print('ok')"
+exit: 0
+stdout:
+ok
+
+command: python -I work\scripts\routes_5b82_v1.py
+exit: 0
+stdout:
+wrote work\out\routes-5b82-v1.txt lines 524
+listings work\out\listings-5b82-v3.txt checked 572 mismatches 0
+cursor work\out\cursor-pages-v1.txt
+DONE
+output file: work/out/routes-5b82-v1.txt, work/out/listings-5b82-v3.txt, work/out/cursor-pages-v1.txt
+
+command: python -I work\scripts\close_5b82_v1.py
+exit: -1073741819
+stdout:
+(empty; the process faulted while retaining the whole listing)
+The script was not overwritten. close_5b82_v2.py is the replacement.
+
+command: python -I work\scripts\close_5b82_v2.py
+exit: 0
+stdout:
+scanning
+scan done 4805945 kept 9070 bad 0
+pointer scan
+wrote work\out\close-5b82-v2.txt
+rows 150 UNRESOLVED 2
+DONE
+output file: work/out/close-5b82-v2.txt, work/out/candidates-5b82-v3.tsv
+
+command: python -I work\scripts\fillers_5b82_v1.py
+exit: 0
+stdout:
+sites 64 saved 64
+wrote work\out\fillers-5b82-v1.txt
+output file: work/out/fillers-5b82-v1.txt
+
+command: python -I work\scripts\manifest_5b82_v1.py
+exit: 0
+stdout: this script writes work/evidence-manifest.json and this log, then prints the manifest path.

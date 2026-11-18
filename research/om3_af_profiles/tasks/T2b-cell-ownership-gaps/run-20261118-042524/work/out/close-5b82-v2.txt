@@ -1,0 +1,237 @@
+instructions in listing 4805945 kept 9070 mismatches 0
+== aligned u16 0x5b82 ==
+  0x600e5874 not an instruction operand  window 825b100000000000
+  0x601b1bd4 inside insn 0x601b1bd2 +2 bytes dd7c825b00b010 call 0x60769e4e,[d2,a2,a3],0x10
+  0x6020217a inside insn 0x60202179 +1 bytes fc825ba72da3 movbu D0,(0xa32da75b)
+  0x6030ac1c inside insn 0x6030ac1b +1 bytes fc825b649962 movbu D0,(0x6299645b)
+  0x6030ac50 inside insn 0x6030ac4f +1 bytes fc825b649962 movbu D0,(0x6299645b)
+  0x6030ac80 inside insn 0x6030ac7f +1 bytes fc825b649962 movbu D0,(0x6299645b)
+  0x6057f43c inside insn 0x6057f43c +0 bytes 82 mov D0,D2
+  0x60590a44 inside insn 0x60590a43 +1 bytes fc825be9b062 movbu D0,(0x62b0e95b)
+  0x605952fc inside insn 0x605952fc +0 bytes 82 mov D0,D2
+  0x606274e0 not an instruction operand  window 825b0500625b0600
+  0x60627518 not an instruction operand  window 825b0c00625b0d00
+  0x60627524 not an instruction operand  window 825b0d00625b0e00
+  0x607c69f4 not an instruction operand  window 825bb7927c5daffb
+  0x607cb986 not an instruction operand  window 825b0d537ea5eff2
+  0x60856974 inside insn 0x60856973 +1 bytes fc825b4c3aa3 movbu D0,(0xa33a4c5b)
+  0x60856a4c inside insn 0x60856a4b +1 bytes fc825b4c3aa3 movbu D0,(0xa33a4c5b)
+  0x6085ba42 inside insn 0x6085ba41 +1 bytes fc825b4c3aa3 movbu D0,(0xa33a4c5b)
+  0x6085ba5a inside insn 0x6085ba59 +1 bytes fc825b4c3aa3 movbu D0,(0xa33a4c5b)
+  0x6085c33c inside insn 0x6085c33b +1 bytes fc825b4c3aa3 movbu D0,(0xa33a4c5b)
+  0x60860006 inside insn 0x60860005 +1 bytes fc825b4c3aa3 movbu D0,(0xa33a4c5b)
+  0x6086cbd8 inside insn 0x6086cbd7 +1 bytes fc825b4c3aa3 movbu D0,(0xa33a4c5b)
+  0x6087a8e0 inside insn 0x6087a8df +1 bytes fc825bcf3aa3 movbu D0,(0xa33acf5b)
+  0x609aa986 inside insn 0x609aa986 +0 bytes 82 mov D0,D2
+  0x60b4d6c8 inside insn 0x60b4d6c7 +1 bytes dd825bfeff3014 call 0x60b33249,[a2,a3],0x14
+  0x60bd0ad6 inside insn 0x60bd0ad4 +2 bytes fccc825be760 mov 0x60e75b82,D0
+  0x60c575a2 inside insn 0x60c575a1 +1 bytes cd825ba00c call 0x60c5d123,[d2,a2],0xc
+  0x60e29138 not an instruction operand  window 825bb5607947e260
+  0x6108f9ba inside insn 0x6108f9b9 +1 bytes cd825b0000 call 0x6109553b,[],0x0
+  0x611aeb7c inside insn 0x611aeb7c +0 bytes 82 mov D0,D2
+  0x615fbdb0 not an instruction operand  window 825b296107800000
+  0x618309c4 inside insn 0x618309c3 +1 bytes cd825bf018 call 0x61836545,[d2,d3,a2,a3],0x18
+
+== control flow of mov 0x5b8,REG ==
+0x6007f39b 2cb805 mov 0x5b8,D0 -> D0
+  use 0x6007f3d5 fd1440420f00 udfu01 0xf4240,D0
+0x604df354 25b805 mov 0x5b8,A1 -> A1
+  add 0x604df357 f17d add A3,A1
+0x608f8614 2cb805 mov 0x5b8,D0 -> D0
+  use 0x608f8617 420c mov D0,(0xc,sp)
+0x60cc0c5a 2cb805 mov 0x5b8,D0 -> D0
+  arg 0x60cc0c5d ddb88675ff0004 call 0x60419315,[],0x4
+0x60cebcac 2cb805 mov 0x5b8,D0 -> D0
+  arg 0x60cebcaf dd66d672ff0004 call 0x60419315,[],0x4
+0x60d68d49 24b805 mov 0x5b8,A0 -> A0
+  add 0x60d68d4c f178 add A2,A0
+0x60d68d56 24b805 mov 0x5b8,A0 -> A0
+  add 0x60d68d59 f178 add A2,A0
+0x61102019 25b805 mov 0x5b8,A1 -> A1
+  add 0x6110201c f179 add A2,A1
+0x6118bf47 24b805 mov 0x5b8,A0 -> A0
+  add 0x6118bf4a f178 add A2,A0
+0x6118c058 24b805 mov 0x5b8,A0 -> A0
+  add 0x6118c05b f178 add A2,A0
+0x6118c10e 25b805 mov 0x5b8,A1 -> A1
+  add 0x6118c111 f179 add A2,A1
+0x61195d1d 27b805 mov 0x5b8,A3 -> A3
+  add 0x61195d22 f16b add D2,A3
+0x61195d7f 26b805 mov 0x5b8,A2 -> A2
+  add 0x61195d82 f16a add D2,A2
+0x61195dc1 26b805 mov 0x5b8,A2 -> A2
+  add 0x61195dc4 f16a add D2,A2
+0x61195e4e 26b805 mov 0x5b8,A2 -> A2
+  add 0x61195e51 f16a add D2,A2
+0x61195ec2 26b805 mov 0x5b8,A2 -> A2
+  add 0x61195ec5 f16a add D2,A2
+0x61195ee7 26b805 mov 0x5b8,A2 -> A2
+  add 0x61195eea f16a add D2,A2
+0x61195f36 26b805 mov 0x5b8,A2 -> A2
+  add 0x61195f39 f16a add D2,A2
+0x61195fc3 26b805 mov 0x5b8,A2 -> A2
+  add 0x61195fc6 f16a add D2,A2
+0x611fcdcc 2db805 mov 0x5b8,D1 -> D1
+  add 0x611fcdcf f159 add A2,D1
+0x61206ef6 2cb805 mov 0x5b8,D0 -> D0
+  add 0x61206ef9 f158 add A2,D0
+0x612072f3 24b805 mov 0x5b8,A0 -> A0
+  add 0x612072fd f178 add A2,A0
+0x6128c262 2fb805 mov 0x5b8,D3 -> D3
+  add 0x6128c265 eb add D2,D3
+0x6128c9c0 26b805 mov 0x5b8,A2 -> A2
+  add 0x6128c9c6 f16a add D2,A2
+0x612c37f0 2cb805 mov 0x5b8,D0 -> D0
+  add 0x612c37f3 ec add D3,D0
+0x616cd897 24b805 mov 0x5b8,A0 -> A0
+  add 0x616cd89a f17c add A3,A0
+0x616cf1d0 25b805 mov 0x5b8,A1 -> A1
+  add 0x616cf1d3 f171 add A0,A1
+0x616ddb03 2db805 mov 0x5b8,D1 -> D1
+  arg 0x616ddb0c dd213efcfff090 call 0x616a192d,[d2,d3,a2,a3],0x90
+0x616e369a 24b805 mov 0x5b8,A0 -> A0
+  add 0x616e369d f17c add A3,A0
+
+UI-map dword for UI id 0x5b8 at 0x60626c3c = d14b0100
+
+== thunk gap 0x6183bced..0x6183be06 ==
+  0x6183bced cc3101 rel16 -> 0x6183be1e
+  0x6183bcf0 98
+  0x6183bcf1 cdea012010 rel16 -> 0x6183bedb
+  0x6183bcf6 cc4901 rel16 -> 0x6183be3f
+  0x6183bcf9 98
+  0x6183bcfa cd4c02b010 rel16 -> 0x6183bf46
+  0x6183bcff cc4001 rel16 -> 0x6183be3f
+  0x6183bd02 98
+  0x6183bd03 cd7502b010 rel16 -> 0x6183bf78
+  0x6183bd08 cc3701 rel16 -> 0x6183be3f
+  0x6183bd0b 98
+  0x6183bd0c cd9e022008 rel16 -> 0x6183bfaa
+  0x6183bd11 cc2e01 rel16 -> 0x6183be3f
+  0x6183bd14 98
+  0x6183bd15 cdb6022008 rel16 -> 0x6183bfcb
+  0x6183bd1a cc2501 rel16 -> 0x6183be3f
+  0x6183bd1d 98
+  0x6183bd1e cdc802b014 rel16 -> 0x6183bfe6
+  0x6183bd23 cc1c01 rel16 -> 0x6183be3f
+  0x6183bd26 9528
+  0x6183bd28 f179
+  0x6183bd2a 00
+  0x6183bd2b 61
+  0x6183bd2c f80204
+  0x6183bd2f f80608
+  0x6183bd32 f80a0c
+  0x6183bd35 1d
+  0x6183bd36 4604
+  0x6183bd38 1e
+  0x6183bd39 4a08
+  0x6183bd3b f8222c
+  0x6183bd3e 2230
+  0x6183bd40 4b0c
+  0x6183bd42 1c
+  0x6183bd43 04
+  0x6183bd44 cdcd0df070 rel16 -> 0x6183cb11
+  0x6183bd49 ca23
+  0x6183bd4b f80204
+  0x6183bd4e f80a08
+  0x6183bd51 f8060c
+  0x6183bd54 1e
+  0x6183bd55 4a04
+  0x6183bd57 1d
+  0x6183bd58 4608
+  0x6183bd5a f80624
+  0x6183bd5d f8222c
+  0x6183bd60 460c
+  0x6183bd62 2230
+  0x6183bd64 1c
+  0x6183bd65 99
+  0x6183bd66 04
+  0x6183bd67 cd160ff06c rel16 -> 0x6183cc7d
+  0x6183bd6c 04
+  0x6183bd6d f87602
+  0x6183bd70 1c
+  0x6183bd71 ccc800 rel16 -> 0x6183be39
+  0x6183bd74 98
+  0x6183bd75 cd7010f01c rel16 -> 0x6183cde5
+  0x6183bd7a ccc500 rel16 -> 0x6183be3f
+  0x6183bd7d 98
+  0x6183bd7e cdcb10f01c rel16 -> 0x6183ce49
+  0x6183bd83 ccbc00 rel16 -> 0x6183be3f
+  0x6183bd86 98
+  0x6183bd87 cd5112f08c rel16 -> 0x6183cfd8
+  0x6183bd8c ccb300 rel16 -> 0x6183be3f
+  0x6183bd8f 98
+  0x6183bd90 cdd119f034 rel16 -> 0x6183d761
+  0x6183bd95 ccaa00 rel16 -> 0x6183be3f
+  0x6183bd98 98
+  0x6183bd99 cd631cf04c rel16 -> 0x6183d9fc
+  0x6183bd9e cca100 rel16 -> 0x6183be3f
+  0x6183bda1 98
+  0x6183bda2 cd061df048 rel16 -> 0x6183daa8
+  0x6183bda7 cc9800 rel16 -> 0x6183be3f
+  0x6183bdaa 98
+  0x6183bdab cda71d2008 rel16 -> 0x6183db52
+  0x6183bdb0 cc8f00 rel16 -> 0x6183be3f
+  0x6183bdb3 98
+  0x6183bdb4 cd471ef014 rel16 -> 0x6183dbfb
+  0x6183bdb9 cc8600 rel16 -> 0x6183be3f
+  0x6183bdbc 98
+  0x6183bdbd cd851ef064 rel16 -> 0x6183dc42
+  0x6183bdc2 ca7d
+  0x6183bdc4 98
+  0x6183bdc5 cdd01e2058 rel16 -> 0x6183dc95
+  0x6183bdca ca75
+  0x6183bdcc 98
+  0x6183bdcd cd7901b010 rel16 -> 0x6183bf46
+  0x6183bdd2 ca6c
+  0x6183bdd4 98
+  0x6183bdd5 cda301b010 rel16 -> 0x6183bf78
+  0x6183bdda ca64
+  0x6183bddc 98
+  0x6183bddd cdcd012008 rel16 -> 0x6183bfaa
+  0x6183bde2 ca5c
+  0x6183bde4 98
+  0x6183bde5 cde6012008 rel16 -> 0x6183bfcb
+  0x6183bdea ca54
+  0x6183bdec ca3a
+  0x6183bdee 98
+  0x6183bdef cdff1ef010 rel16 -> 0x6183dcee
+  0x6183bdf4 ca4b
+  0x6183bdf6 98
+  0x6183bdf7 cd6f37f010 rel16 -> 0x6183f566
+  0x6183bdfc ca43
+  0x6183bdfe 98
+  0x6183bdff cd315af010 rel16 -> 0x61841830
+  0x6183be04 ca3b
+
+== FUN_603c2a6b ROM keys, 13 records of 10 bytes at 0x605af01c ==
+  [0] 0x605af01c 0xc5f2 f2c592aaa2aab2aaa1ab
+  [1] 0x605af026 0xc612 12c692aaa2aab2aac1ab
+  [2] 0x605af030 0xc632 32c692aaa2aab2aaf1ab
+  [3] 0x605af03a 0xc662 62c692aaa2aab2aae1ab
+  [4] 0x605af044 0xc652 52c692aaa2aab2aa11ac
+  [5] 0x605af04e 0xc682 82c692aaa2aab2aa21ac
+  [6] 0x605af058 0xc692 92c692aaa2aab2aa31ac
+  [7] 0x605af062 0xc6a2 a2c692aaa2aab2aa41ac
+  [8] 0x605af06c 0xc6b2 b2c692aaa2aab2aa91ab
+  [9] 0x605af076 0xc602 02c692aaa2aab2aab1ab
+  [10] 0x605af080 0xc622 22c692aaa2aab2aad1ab
+  [11] 0x605af08a 0xc642 42c692aaa2aab2aa01ac
+  [12] 0x605af094 0xc672 72c692aaa2aab2aa81ab
+0x5b82 present: False
+
+== data islands ==
+0x607c69f4 previous FUN_60773458 body ends 0x60773486 next entry FUN_607e80a3 at 0x607e80a3
+  gap 0x60773486..0x607e80a3 (478237 bytes)
+  +/-32 7524048c848e873c27fa3b09b85646a530a65f49dd5b9f0314e21abe39a6734e825bb7927c5daffbcf74e9595b769614347e151a4c162dd0d84ed87d21f7cfb9
+0x607cb986 previous FUN_60773458 body ends 0x60773486 next entry FUN_607e80a3 at 0x607e80a3
+  gap 0x60773486..0x607e80a3 (478237 bytes)
+  +/-32 07916d730f9d09654611cd242f7dbbfff5cfa9cf5e3389cc09799eadc7957d86825b0d537ea5eff246e7626c057a3ecf27f32697a723d011f2381cc20b36efcd
+  pointers into gap of 0x607c69f4 (first 6): 0x6007dee0->0x6078dd60 0x601a6718->0x607bdd04 0x601b18cc->0x607ddd98 0x601b665c->0x6079dd00 0x601c5e34->0x6077dcfc 0x602041f0->0x607bccfc
+  pointers into gap of 0x607cb986 (first 6): 0x6007dee0->0x6078dd60 0x601a6718->0x607bdd04 0x601b18cc->0x607ddd98 0x601b665c->0x6079dd00 0x601c5e34->0x6077dcfc 0x602041f0->0x607bccfc
+
+absolute dwords equal to the island addresses or the gap starts:
+  0x607c69f4 hits 0 
+  0x60773486 hits 0 
+  0x607cb986 hits 0 
+

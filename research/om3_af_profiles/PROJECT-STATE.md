@@ -8,8 +8,14 @@ Last updated: 2026-11-17 (Phase 1 preparation).
 
 ## 1. Continuation point
 
-- **Now:** T2b (closing T2's open storage items) and T3a (AF-ON zone row, RAM-only profile) run
-  concurrently, as the owner directed on 18 Nov. T2 closed as UNRESOLVED after two Sol rejections.
+- **Now:** correction rounds of T2b and T3a run concurrently, one each per the loop rule. Sol
+  rejected both first rounds (18 Nov).
+  - **T2b:** `0x5b82` is still UNRESOLVED. The parameter routes and debug dispatchers are
+    classified; five record-driven one-cell setters are open.
+  - **T3a:** the third row draws and native keys reach it. It uses label `0x0DD2` "AF Target Mode",
+    UI ID `0x3D6F`, and 140 overlay bytes in the section-1 tail. OK does not open the 10-zone
+    chooser, because page 27's list model is type 1.
+  - T2 closed as UNRESOLVED after two Sol rejections.
 - **T1 outcome:** on page 27, value 0 = "always the selected AF target" and value 1 =
   detected-subject priority. The top row is 2154 = `0x90a1[0]` and the bottom row is
   2155 = `0x90a1[1]`. Which row is the shutter (inference: top) and the AF-ON key binding are open.
@@ -61,8 +67,8 @@ The autonomous programme ends at either of these:
 | T0 | Isolation and tool canary | **Accepted (qualified)**, attempt 7 | [decision](tasks/T0-canary/decision.md) |
 | T1 | Page-27 row and value mapping | **Accepted** (value meaning and row↔storage settled; Q1/Q3 open) | [decision](tasks/T1-page27-mapping/decision.md) |
 | T2 | Ownership proof for unclaimed cells `0x5b82` / `0x5b52` | **Closed: UNRESOLVED** (two Sol rejections; escalated) | [decision](tasks/T2-cell-ownership/decision.md) |
-| T2b | Close Sol's open items for `0x5b82` | Running (concurrently with T3a) | [tasks/T2b-cell-ownership-gaps](tasks/T2b-cell-ownership-gaps/brief.md) |
-| T3a | AF-ON zone row on page 27, RAM-only profile (OM-Emu) | Running (concurrently with T2b) | [tasks/T3a-afon-zone-row](tasks/T3a-afon-zone-row/brief.md) |
+| T2b | Close Sol's open items for `0x5b82` | Correction round (run 1 rejected by Sol) | [tasks/T2b-cell-ownership-gaps](tasks/T2b-cell-ownership-gaps/brief.md) |
+| T3a | AF-ON zone row on page 27, RAM-only profile (OM-Emu) | Correction round (run 1 rejected by Sol) | [tasks/T3a-afon-zone-row](tasks/T3a-afon-zone-row/brief.md) |
 | T3b | AF-ON target-position editor routing | Queued after T3a | AFON-MENU-RESEARCH §9 |
 | — | Beyond T3: persistence, display, hook point (Q4), acceptance matrix | Planned by Opus as results arrive | §2 |
 | — | CPU3 request/loader port | Deferred; regression only | AFON-MENU-RESEARCH §9 item 5 |
@@ -211,6 +217,7 @@ ACL or label operation on any tree containing a junction; the scripts check for 
 | 2026-11-17 | Cursor sandbox unavailable on Windows; Grok runs at Low integrity instead, with a Cursor allow list naming the needed programs | Opus | T0 attempts 1–2; §9 |
 | 2026-11-18 | After T2's second rejection: run T2b (Sol's open items only) and, alongside it, T3a with a RAM-only AF-ON profile; persistence decided later | Owner | session |
 | 2026-11-18 | Concurrent Grok runs: one lock window per batch, a separate Low-labelled agent home per task | Opus | `orchestration\Invoke-Grok.ps1` |
+| 2026-11-18 | Sol rejected the first runs of T2b and T3a; one correction round each. T2b: trace the open setter sources. T3a: measure page 28's editor and route the new row to it (at most four experiments, then BLOCKED). | Opus | brief §7 of each |
 
 ## 12. Session resumption checklist (Opus)
 

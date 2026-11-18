@@ -1,0 +1,45 @@
+listings-adj-thunks-v1
+Image: inputs/00_0100_50000020.decoded.bin, base 0x60021020.
+The bytes below sit between the indirect jump at 0x6183bceb and the error path at 0x6183be06.
+all-functions.asm does not list them, because FUN_6183bc55 ends that basic block at jmp (A1).
+Lengths and mnemonics are the encodings already used elsewhere in all-functions.asm.
+Each raw field was checked against the image.
+
+Outer command 0x9007, thunk 0x6183bd4b. A2 is still the adjustment record from FUN_6183bc55.
+0x6183bd4b  f80204      mov (0x4,A2),D0
+0x6183bd4e  f80a08      mov (0x8,A2),D2
+0x6183bd51  f8060c      mov (0xc,A2),D1
+0x6183bd54  1e          exthu D2
+0x6183bd55  4a04        mov D2,(0x4,sp)
+0x6183bd57  1d          exthu D1
+0x6183bd58  4608        mov D1,(0x8,sp)
+0x6183bd5a  f80624      mov (0x24,A2),D1
+0x6183bd5d  f8222c      mov (0x2c,A2),A0
+0x6183bd60  460c        mov D1,(0xc,sp)
+0x6183bd62  2230        add 0x30,A2
+0x6183bd64  1c          exthu D0
+0x6183bd65  99          mov A2,A1
+0x6183bd66  04          clr D1
+0x6183bd67  cd160ff06c  call 0x6183cc7d,[...],0x6c
+0x6183bd6c  04          clr D1
+0x6183bd6d  f87602      movhu D1,(0x2,A2)
+0x6183bd70  1c          exthu D0
+0x6183bd71  ccc800      jmp 0x6183be39
+
+D0 at the call is the zero-extended word loaded from record+4. Nothing in between writes D0.
+clr D1 clears the second argument. A0 is record+0x2c. A1 is record+0x30.
+
+Outer command 0x9029, thunk 0x6183bdee. Passes the record through.
+0x6183bdee  98          mov A2,A0
+0x6183bdef  cdff1ef010  call 0x6183dcee
+
+Outer command 0x902b, thunk 0x6183bdfe. Passes the record through.
+0x6183bdfe  98          mov A2,A0
+0x6183bdff  cd315af010  call 0x61841830
+
+Same encoding family, already listed and byte-checked in listings-5b82-v3.txt:
+0x61841e85  f80008  mov (0x8,A0),D0     key
+0x61841e88  f8040c  mov (0xc,A0),D1
+0x61841e99  f8202c  mov (0x2c,A0),A0    source
+0x61841ea7  99      mov A2,A1           status halfword at record+0x30
+0x61841ea8  cdd5adf06c  call 0x6183cc7d

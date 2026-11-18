@@ -86,3 +86,41 @@ NVRAM files.
 - Otherwise the verdict is UNRESOLVED or NOT OWNABLE, with the specific path.
 - Every claim cites bytes or listings that can be rechecked against
   `inputs\00_0100_50000020.decoded.bin` (offset = address − `0x60021020`).
+
+## 7. Correction round (Opus, after Sol's review `run-20261118-052742-review`: REJECT)
+
+Your previous work is in `work\`. Sol's full review is `audit\previous-review.md`. Do **not**
+start over. Keep every earlier script and output. Save new versions under new names (`-v4`).
+The verdict stays **UNRESOLVED** unless item 1 closes every open setter source.
+
+1. **The open setter sources (the substantive item).** For each one-cell setter still open, trace the key
+   and index back to their origin, with a bounded listing for every step. Do this for
+   `FUN_60196ee3` (`0x60196f73`), the sibling calls in `FUN_601971f5` and `FUN_601972f1`,
+   `FUN_601eff7a` (`0x601effc8`) and `FUN_6041ab1d` (`0x6041ab71`).
+   - Where the key comes from a table, give the table's address and bounds, and dump every entry's
+     key and index. State whether `0x5b82` appears, and with which index.
+   - Where it comes from the caller, follow every caller.
+   - Classify each setter: *cannot name 0x5b82*, *names 0x5b82 index N only* (and is N named or
+     unnamed?), or UNRESOLVED (with the exact gap).
+2. **Correct the `0x607135ad` lineage.** Sol shows that A2 receives `0xfa64` at `0x607135ef` and that
+   A3 is copied from A2 at `0x6071365d`. Verify this from the listing. Remove the group from the
+   blocker list if it holds, and update the result, the verdict and `uses-5b82-v4.tsv`.
+3. **Candidate dispositions.** In `candidates-5b82-v4.tsv`, fix every row whose exclusion rests
+   on "first use", "unaligned data byte" or "no function coverage":
+   - extend the trace until the value is consumed in a way that cannot become key `0x5b82`, or
+     give the concrete structure and its bounds;
+   - otherwise mark the row UNRESOLVED.
+
+   Sol named `0x6128c262` (`add D2,D3`), `0x608f8614` (stack store), `0x60539e07`, `0x607c8e19`
+   and `0x607e2ef9`. Check all 29 `mov 0x5b8` rows under the same standard, and replace the
+   blanket PASS with a per-row status.
+4. **Route and replay wording.** Keep the parameter routes and debug dispatchers as classified.
+   Do not describe replay-source closure as complete while any setter feeding the wrappers is
+   still open.
+5. **Records.**
+   - Record the actual stdout, stderr and exit code of every command, including the manifest script.
+     Do not describe intended behaviour in place of output.
+   - Refresh `out\INDEX.md` (`verdict-v4.md`).
+   - Refresh the manifest last, then log its own run.
+
+Cursor pages stay BOUNDARY; do not spend this round on them. No OM-Emu sessions are needed.

@@ -1,0 +1,231 @@
+{
+  "task": "T2b-cell-ownership-gaps",
+  "brief_sha256": "593c01e243b14532e020f460a386bf08ba11dcde694d2aee76c0b5075b63e9fe",
+  "inputs": [
+    {
+      "path": "inputs/00_0100_50000020.decoded.bin",
+      "sha256": "5e8d376e9111a44ac0352f26030d7c1b17026d42c45f3600cfa02a0e8c5b7d59",
+      "bytes": 33554368
+    },
+    {
+      "path": "inputs/02_0106_458c0020.decoded.bin",
+      "sha256": "3d9fd4426b45fbe4b715599422af38c6d22392c08543a69f63c28291c5a0b059",
+      "bytes": 143523776
+    }
+  ],
+  "sources": [
+    {
+      "path": "brief.md",
+      "sha256": "593c01e243b14532e020f460a386bf08ba11dcde694d2aee76c0b5075b63e9fe",
+      "bytes": 5197
+    },
+    {
+      "path": "TASK.md",
+      "sha256": "890adf02d2661968085ee2f751a45380c2e161ac02a8d64ca7cf8ad199bca5d9",
+      "bytes": 2332
+    },
+    {
+      "path": "templates/result.md",
+      "sha256": "18d605fc1f70369c40245130cdd499288bd3ae1a8fe1bdb84575cb58532d0110",
+      "bytes": 1230
+    },
+    {
+      "path": "ref/tasks/T2-cell-ownership/run-20261117-224756-review/review.md",
+      "sha256": "e435684297a6bd8ea07e594384c3152fedda65368137488f36c3d7df5b75a0c0",
+      "bytes": 11596
+    },
+    {
+      "path": "ref/tasks/T2-cell-ownership/run-20261117-220544/work/out/candidates-5b82.tsv",
+      "sha256": "d7f52c13e86fd3e60bbef8fc7492f93bbfa8599160be63e6dc5dae4d4b3af39f",
+      "bytes": 40229
+    },
+    {
+      "path": "ref/tasks/T2-cell-ownership/run-20261117-220544/work/out/uses-5b82-v2.tsv",
+      "sha256": "c01b475ea5b61214c7623e87bde473e4be3e06877927ffdf39ca6bb95f492ad0",
+      "bytes": 7409
+    },
+    {
+      "path": "ref/tasks/T2-cell-ownership/run-20261117-220544/work/out/dynamic-5b82-mark-w.jsonl",
+      "sha256": "24d6b80bf144852116c867032a56e14b0d2d2bec20d9947a9531b2e9345b3613",
+      "bytes": 16703
+    },
+    {
+      "path": "ref/tasks/T2-cell-ownership/run-20261117-220544/work/out/dynamic-5b82-mark-x.jsonl",
+      "sha256": "388506c0bd3bd7a54fa5847c589816c4f30921d3375c76b0ae9c1c901ed16fa9",
+      "bytes": 16703
+    },
+    {
+      "path": "ref/tasks/T2-cell-ownership/run-20261117-220544/work/out/dynamic-5b82-control-p.jsonl",
+      "sha256": "22493deb2e57a29868fb43d85c31f76a24b33e34b793b584fb8874c3802e3c51",
+      "bytes": 15018
+    },
+    {
+      "path": "ref/analysis/decompiled-main/all-functions.asm",
+      "sha256": "05206563da9c5eab6da8b84a0591de0a0db9e560d02b6b5a6c59cf9fffa5517e",
+      "bytes": 152061096
+    },
+    {
+      "path": "ref/analysis/decompiled-main/functions.tsv",
+      "sha256": "b439b20c846a9474038932b1d26e0abe8eb0514f06aa7ab00898aa22283339e0",
+      "bytes": 5510509
+    },
+    {
+      "path": "ref/analysis/decompiled-main/calls.tsv",
+      "sha256": "841e35914d2d1cf947919ad12f8cb17e96d457884e23adc23e2557be57dbcd86",
+      "bytes": 12592054
+    },
+    {
+      "path": "ref/analysis/decompiled-main/functions/6183cc7d.c",
+      "sha256": "fbfb8c505d15fd55ffee2f6568f9f3132ab6bc064f0307744f9b3f3438d2d0f9",
+      "bytes": 3629
+    },
+    {
+      "path": "ref/analysis/decompiled-main/functions/603c2731.c",
+      "sha256": "ad07cae2ef6bcae9de87cd29a5af4d8bcfc66a077bbdff807b220db1f8a46746",
+      "bytes": 4323
+    },
+    {
+      "path": "ref/analysis/decompiled-main/functions/6006bf7f.c",
+      "sha256": "b0e04213d4ebad2ebc197a94930b0997de1657a54089abc51ef028f6b65f70a2",
+      "bytes": 10865
+    },
+    {
+      "path": "ref/analysis/decompiled-main/functions/60196ee3.c",
+      "sha256": "86d9f89494c2f30d505d6e83ef2b13f613ff16523e1a457887b3bd7e4427a6a3",
+      "bytes": 11400
+    },
+    {
+      "path": "ref/analysis/decompiled-main/functions/618c97a2.c",
+      "sha256": "9e53878ff8f3cd8c23a2164eccbc79ad3b63a7a9de5d29a6b734d14d1f4e7ef7",
+      "bytes": 3676
+    },
+    {
+      "path": "ref/analysis/decompiled-main/functions/604193ca.c",
+      "sha256": "b01d35604f900c6998ff32d2eab4f583625bfd8f0f530a599258560e4c9c255c",
+      "bytes": 430
+    },
+    {
+      "path": "ref/analysis/decompiled-main/functions/616a192d.c",
+      "sha256": "6efc4033c145ec37ebc0f4878f7d136d4412ca31285a44b2e94f357e903b315e",
+      "bytes": 1645
+    }
+  ],
+  "outputs": [
+    {
+      "path": "work/out/candidates-5b82-v3.tsv",
+      "sha256": "fb8b3829bbf2a6d63c83f85b29f977341b51474174a1c0654496b1869a9969b5",
+      "bytes": 39480
+    },
+    {
+      "path": "work/out/close-5b82-v2.txt",
+      "sha256": "dce834dadc39414c9251892ff028580e9a30d621f27b2dff478f2307b68b2140",
+      "bytes": 9485
+    },
+    {
+      "path": "work/out/command-log.txt",
+      "sha256": "34af20b1c6c0e63ccbaf8f7c49eff406cfa2a4abecb311a9a19532091f6d9be2",
+      "bytes": 1415
+    },
+    {
+      "path": "work/out/cursor-pages-v1.txt",
+      "sha256": "6e5d324805a611c7412910fc468f181f654380d420a2b55b965c0ca813c4bace",
+      "bytes": 3967
+    },
+    {
+      "path": "work/out/fillers-5b82-v1.txt",
+      "sha256": "285d214a281c64862acfc08f70b1ccc685ab4fdd2a379134e6449daa38c0da43",
+      "bytes": 25754
+    },
+    {
+      "path": "work/out/INDEX.md",
+      "sha256": "39ab075d0e027a0e5119e8fca983056e2a103e60895caae0ca0b8d8329aac77f",
+      "bytes": 1639
+    },
+    {
+      "path": "work/out/listings-5b82-v3.txt",
+      "sha256": "a191bd622e91f36626849fb699c9ca6cea3fdd570a793772b7766edbdbafa9c6",
+      "bytes": 20938
+    },
+    {
+      "path": "work/out/listings-adj-thunks-v1.txt",
+      "sha256": "3a98d60356b277d359a0b7ff6282a3845aef9d31f23c038f94431449e0759dc7",
+      "bytes": 2029
+    },
+    {
+      "path": "work/out/routes-5b82-v1.txt",
+      "sha256": "0e8461e984acf6626170708e4d6e733738a8e14af6d971e732770a82aaa56eef",
+      "bytes": 25934
+    },
+    {
+      "path": "work/out/uses-5b82-v3.tsv",
+      "sha256": "298cb9bc67d9dd28a685425d5a9012b283e72121f81966b678c190b47ba46c5d",
+      "bytes": 6549
+    },
+    {
+      "path": "work/out/verdict-v3.md",
+      "sha256": "38ba7cd8bc564c67af9cba969fa6dfd6a5fe986c8aa31f5583d51327551bc48b",
+      "bytes": 9108
+    },
+    {
+      "path": "work/result.md",
+      "sha256": "155efd5988c3f8ec197476b3aeed3b9c8554d2e94b3ecb87d31c3717252a40b0",
+      "bytes": 9844
+    },
+    {
+      "path": "work/scripts/close_5b82_v1.py",
+      "sha256": "4e1a756805a2771daaa0bebb6c38a75fa30b05cba991033090397c0f5dbe38f2",
+      "bytes": 15553
+    },
+    {
+      "path": "work/scripts/close_5b82_v2.py",
+      "sha256": "9616f6957f3203cfde94ba1063ea77ff3f6c6f6cabb12c0dfbb6d606db427fe8",
+      "bytes": 13470
+    },
+    {
+      "path": "work/scripts/fillers_5b82_v1.py",
+      "sha256": "5d16d7326518508b301f84cc339a137d6b7424e3d3cc2cfc7998c664a1d8cabd",
+      "bytes": 3869
+    },
+    {
+      "path": "work/scripts/manifest_5b82_v1.py",
+      "sha256": "16bf41e207f271cba83d91327768f826ec2df0d65619a875eb523952bd601ff7",
+      "bytes": 5096
+    },
+    {
+      "path": "work/scripts/routes_5b82_v1.py",
+      "sha256": "65ddf1d46c78ca6d29c239a8b7158fa9c18f989fdf5afa8f01822e5a72dc1abf",
+      "bytes": 16674
+    }
+  ],
+  "commands": [
+    {
+      "command": "python -I work\\scripts\\routes_5b82_v1.py",
+      "exit": 0,
+      "output": "work/out/routes-5b82-v1.txt"
+    },
+    {
+      "command": "python -I work\\scripts\\close_5b82_v1.py",
+      "exit": -1073741819,
+      "output": null,
+      "note": "access violation; script kept; no output file"
+    },
+    {
+      "command": "python -I work\\scripts\\close_5b82_v2.py",
+      "exit": 0,
+      "output": "work/out/close-5b82-v2.txt"
+    },
+    {
+      "command": "python -I work\\scripts\\fillers_5b82_v1.py",
+      "exit": 0,
+      "output": "work/out/fillers-5b82-v1.txt"
+    },
+    {
+      "command": "python -I work\\scripts\\manifest_5b82_v1.py",
+      "exit": 0,
+      "output": "work/evidence-manifest.json"
+    }
+  ],
+  "tool_versions": {
+    "python": "3.12.7 (tags/v3.12.7:0b05ead, Oct  1 2024, 03:06:41) [MSC v.1941 64 bit (AMD64)]"
+  }
+}

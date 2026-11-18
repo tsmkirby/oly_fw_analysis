@@ -1,0 +1,108 @@
+main bytes 33554368 res bytes 143523776
+section descriptors at 0x60029b28, 12 bytes, index = section-1
+  sec 1 0x60029b28 004013600030115000000000 w0=0x60134000 w1=0x50113000 w2=0x0 compressed=0
+  sec 2 0x60029b34 00a83b600098395000000000 w0=0x603ba800 w1=0x50399800 w2=0x0 compressed=0
+  sec 3 0x60029b40 00a875600098735000000000 w0=0x6075a800 w1=0x50739800 w2=0x0 compressed=0
+  sec 4 0x60029b4c 008082600070805000000000 w0=0x60828000 w1=0x50807000 w2=0x0 compressed=0
+  sec 5 0x60029b58 0080ad600070ab5000000000 w0=0x60ad8000 w1=0x50ab7000 w2=0x0 compressed=0
+  sec 6 0x60029b64 00c0ad6000b0ab5001000000 w0=0x60adc000 w1=0x50abb000 w2=0x1 compressed=1
+  sec 7 0x60029b70 00f0036100e0015101000000 w0=0x6103f000 w1=0x5101e000 w2=0x1 compressed=1
+  sec 8 0x60029b7c 00e8696100d8675100000000 w0=0x6169e800 w1=0x5167d800 w2=0x0 compressed=0
+  sec 9 0x60029b88 0090806100807e5100000000 w0=0x61809000 w1=0x517e8000 w2=0x0 compressed=0
+  sec 10 0x60029b94 00d09f6100c09d5100000000 w0=0x619fd000 w1=0x519dc000 w2=0x0 compressed=0
+known ends: s1 0x6031f000 s2 0x60718800 s4 0x60a8f800 s7 0x6164b000
+page 27 descriptor 0x6158f0f8
+  1b00000044dc58610200000098af5861b0b05861
+  page 27 rows 0x6158dc44 count 2 title 0x6158af98
+page 28 descriptor 0x6158f10c
+  1c0000008cdc586103000000a0af5861b0b05861
+  page 28 rows 0x6158dc8c count 3 title 0x6158afa0
+page 27 rows
+  row 0x6158dc44 6a0800000c00b106b4ae586104ba58610200000000000000b4ae58610000000000000000
+    sid 2154 kind 12 label 0x6b1 class 0x6158aeb4 opt 0x6158ba04 count 2 zero 0x0 class2 0x6158aeb4 alt 0x0 altn 0
+  row 0x6158dc68 6b0800000c002c28b4ae586104ba58610200000000000000b4ae58610000000000000000
+    sid 2155 kind 12 label 0x282c class 0x6158aeb4 opt 0x6158ba04 count 2 zero 0x0 class2 0x6158aeb4 alt 0x0 altn 0
+page 28 rows
+  row 0x6158dc8c ee0000000400d20db4ae58611cba58610a00000000000000b4ae58611cba58610a000000
+    sid 238 kind 4 label 0xdd2 class 0x6158aeb4 opt 0x6158ba1c count 10 zero 0x0 class2 0x6158aeb4 alt 0x6158ba1c altn 10
+  row 0x6158dcb0 9c0600000400d30db4ae58611cba58610a00000000000000b4ae58611cba58610a000000
+    sid 1692 kind 4 label 0xdd3 class 0x6158aeb4 opt 0x6158ba1c count 10 zero 0x0 class2 0x6158aeb4 alt 0x6158ba1c altn 10
+  row 0x6158dcd4 9d0600000400d40db4ae58611cba58610a00000000000000b4ae58611cba58610a000000
+    sid 1693 kind 4 label 0xdd4 class 0x6158aeb4 opt 0x6158ba1c count 10 zero 0x0 class2 0x6158aeb4 alt 0x6158ba1c altn 10
+zone list 0x6158ba1c
+  bytes 000000000c00a323b4ae5861020000000c008a02b4ae5861010000000c004a06b4ae5861050000000c00a423b4ae5861030000000c00b519b4ae58610a0000000c00a523b4ae5861060000000c00a623b4ae5861070000000c00a723b4ae5861080000000c00a823b4ae5861090000000c00a923b4ae5861
+  opt 0 0x6158ba1c value 0 kind 12 label 0x23a3 class 0x6158aeb4
+  opt 1 0x6158ba28 value 2 kind 12 label 0x28a class 0x6158aeb4
+  opt 2 0x6158ba34 value 1 kind 12 label 0x64a class 0x6158aeb4
+  opt 3 0x6158ba40 value 5 kind 12 label 0x23a4 class 0x6158aeb4
+  opt 4 0x6158ba4c value 3 kind 12 label 0x19b5 class 0x6158aeb4
+  opt 5 0x6158ba58 value 10 kind 12 label 0x23a5 class 0x6158aeb4
+  opt 6 0x6158ba64 value 6 kind 12 label 0x23a6 class 0x6158aeb4
+  opt 7 0x6158ba70 value 7 kind 12 label 0x23a7 class 0x6158aeb4
+  opt 8 0x6158ba7c value 8 kind 12 label 0x23a8 class 0x6158aeb4
+  opt 9 0x6158ba88 value 9 kind 12 label 0x23a9 class 0x6158aeb4
+page 28 first row option list vs 0x6158ba1c
+  first row opt 0x6158ba1c count 10 same True
+source record 0x61529ce8
+  15010000129852610200000016010000
+  +0 0x115 +4 0x61529812 +8 2 +12 0x116
+  id list 0x61529812 6a086b08ee009c06
+tail 0x6031e920 first 16 ffffffffffffffffffffffffffffffff
+tail all ff True
+MAP low ids 0x0-0x8cf nonzero 2256 first 0x6062555c last 0x60627898
+MAP 3000 ids 0xbb8-0xbe6 nonzero 47 first 0x6062789c last 0x60627954
+MAP 4000 ids 0xfa0-0xfb6 nonzero 23 first 0x60627984 last 0x606279b0
+MAP 4500 ids 0x1194-0x11a9 nonzero 21 first 0x60627958 last 0x60627982
+MAP 10000 ids 0x2710-0x2756 nonzero 71 first 0x606279b2 last 0x60627aca
+MAP 15000 ids 0x3a98-0x3c5f nonzero 456 first 0x60627ace last 0x606281ea
+mapped ids 2874 zero slots inside ranges 1
+spot 2154 ('low', 37025, 0, 1617065732)
+spot 2155 ('low', 37025, 1, 1617065736)
+spot 163 ('low', 39329, 0, 1617057768)
+spot 238 ('low', 40865, 0, 1617058068)
+spot 165 ('low', 39378, 0, 1617057776)
+spot 1712 ('low', 7793, 0, 1617063964)
+gap candidates (outside every map range)
+no fully quiet gap id
+  id 0x900 (2304) u32 2418 u16 6416 mov16 71 mov32 0 mapped False
+  id 0xa70 (2672) u32 16 u16 682 mov16 7 mov32 0 mapped False
+  id 0xa71 (2673) u32 7 u16 180 mov16 3 mov32 0 mapped False
+  id 0xb00 (2816) u32 1559 u16 4711 mov16 101 mov32 0 mapped False
+  id 0xb70 (2928) u32 21 u16 90 mov16 11 mov32 0 mapped False
+  id 0x1388 (5000) u32 193 u16 621 mov16 131 mov32 0 mapped False
+  id 0x1600 (5632) u32 760 u16 3997 mov16 35 mov32 0 mapped False
+  id 0x2000 (8192) u32 2101 u16 29231 mov16 620 mov32 0 mapped False
+  id 0x5000 (20480) u32 985 u16 6800 mov16 107 mov32 0 mapped False
+utf16 hits in main and resource
+  'Single' main -0x1 res -0x1
+  'All' main -0x1 res 0x189edb3
+  'Small' main -0x1 res -0x1
+  'Cross' main -0x1 res -0x1
+  'Middle' main -0x1 res -0x1
+  'Large' main -0x1 res -0x1
+  'Custom' main -0x1 res -0x1
+  'AF Target' main -0x1 res -0x1
+  'Target' main -0x1 res -0x1
+  'Zone' main -0x1 res -0x1
+  'AF Area' main -0x1 res -0x1
+  'AF-ON' main -0x1 res -0x1
+  'Home' main -0x1 res -0x1
+  'Group' main -0x1 res -0x1
+  'Spot' main -0x1 res -0x1
+page guess 25 0x6158f0d0 id 25 rows 0x6158dbb4 count 2 title 0x6158af88
+  row 0x6158dbb4 a90700000400a106b4ae5861ecb958610200000000000000b4ae5861ecb9586102000000
+    sid 1961 kind 4 label 0x6a1 class 0x6158aeb4 opt 0x6158b9ec count 2 zero 0x0 class2 0x6158aeb4 alt 0x6158b9ec altn 2
+  row 0x6158dbd8 aa07000004002b12b4ae5861ecb958610200000000000000b4ae5861ecb9586102000000
+    sid 1962 kind 4 label 0x122b class 0x6158aeb4 opt 0x6158b9ec count 2 zero 0x0 class2 0x6158aeb4 alt 0x6158b9ec altn 2
+page guess 26 0x6158f0e4 id 26 rows 0x6158dbfc count 2 title 0x6158af90
+  row 0x6158dbfc 4f0000000400a106b4ae5861c8b058610200000000000000b4ae5861c8b0586102000000
+    sid 79 kind 4 label 0x6a1 class 0x6158aeb4 opt 0x6158b0c8 count 2 zero 0x0 class2 0x6158aeb4 alt 0x6158b0c8 altn 2
+  row 0x6158dc20 5000000004002b12b4ae5861c8b058610200000000000000b4ae5861c8b0586102000000
+    sid 80 kind 4 label 0x122b class 0x6158aeb4 opt 0x6158b0c8 count 2 zero 0x0 class2 0x6158aeb4 alt 0x6158b0c8 altn 2
+page guess 29 0x6158f120 id 29 rows 0x6158dcf8 count 3 title 0x6158afa8
+  row 0x6158dcf8 a50000000400cf0db4ae5861000000000000000000000000b4ae58610000000000000000
+    sid 165 kind 4 label 0xdcf class 0x6158aeb4 opt 0x0 count 0 zero 0x0 class2 0x6158aeb4 alt 0x0 altn 0
+  row 0x6158dd1c 9e0600000400d00db4ae5861000000000000000000000000b4ae58610000000000000000
+    sid 1694 kind 4 label 0xdd0 class 0x6158aeb4 opt 0x0 count 0 zero 0x0 class2 0x6158aeb4 alt 0x0 altn 0
+  row 0x6158dd40 9f0600000400d10db4ae5861000000000000000000000000b4ae58610000000000000000
+    sid 1695 kind 4 label 0xdd1 class 0x6158aeb4 opt 0x0 count 0 zero 0x0 class2 0x6158aeb4 alt 0x0 altn 0
