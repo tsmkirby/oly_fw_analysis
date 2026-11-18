@@ -1,0 +1,1550 @@
+listing instructions kept 1793 mismatches 0
+
+== absolute dwords and relative call encodings ==
+pointer 0x601972f1 dwords none
+pointer 0x60196ee3 dwords none
+pointer 0x601971f5 dwords none
+pointer 0x6041ab1d dwords none
+pointer 0x601eff7a dwords none
+rel-call scan for 0x601972f1 (no asm caller)
+  0x60195a1f cd rel16 cdd218f03c
+
+== table 0x6035a038 count 0x7a stride 8 (key u16, index u16, cache u32) ==
+bounds 0x6035a038 .. 0x6035a408 exclusive
+  [  0] 0x6035a038 key 0x80a1 index     0 cache 0x00000000 
+  [  1] 0x6035a040 key 0x30fa index     0 cache 0x00000000 
+  [  2] 0x6035a048 key 0x30ea index     0 cache 0x00000000 
+  [  3] 0x6035a050 key 0x310a index     0 cache 0x00000000 
+  [  4] 0x6035a058 key 0x9132 index     0 cache 0x00000000 
+  [  5] 0x6035a060 key 0x96c1 index     0 cache 0x00000000 
+  [  6] 0x6035a068 key 0x9dd1 index     0 cache 0x00000000 
+  [  7] 0x6035a070 key 0x9dea index     0 cache 0x00000000 
+  [  8] 0x6035a078 key 0x8d91 index     0 cache 0x00000000 
+  [  9] 0x6035a080 key 0x9481 index     0 cache 0x00000000 
+  [ 10] 0x6035a088 key 0x2981 index     0 cache 0x00000000 
+  [ 11] 0x6035a090 key 0xeee1 index     0 cache 0x00000000 
+  [ 12] 0x6035a098 key 0xef09 index     0 cache 0x00000000 
+  [ 13] 0x6035a0a0 key 0xef09 index     1 cache 0x00000000 
+  [ 14] 0x6035a0a8 key 0xef19 index     0 cache 0x00000000 
+  [ 15] 0x6035a0b0 key 0xef19 index     1 cache 0x00000000 
+  [ 16] 0x6035a0b8 key 0x8372 index     0 cache 0x00000000 
+  [ 17] 0x6035a0c0 key 0xc011 index     0 cache 0x00000000 
+  [ 18] 0x6035a0c8 key 0x9699 index     0 cache 0x00000000 
+  [ 19] 0x6035a0d0 key 0x80ba index     0 cache 0x00000000 
+  [ 20] 0x6035a0d8 key 0xc021 index     0 cache 0x00000000 
+  [ 21] 0x6035a0e0 key 0x91b1 index     0 cache 0x00000000 
+  [ 22] 0x6035a0e8 key 0xee81 index     0 cache 0x00000000 
+  [ 23] 0x6035a0f0 key 0x810a index     0 cache 0x00000000 
+  [ 24] 0x6035a0f8 key 0x9a9a index     0 cache 0x00000000 
+  [ 25] 0x6035a100 key 0x80da index     0 cache 0x00000000 
+  [ 26] 0x6035a108 key 0xedf1 index     0 cache 0x00000000 
+  [ 27] 0x6035a110 key 0x2871 index     0 cache 0x00000000 
+  [ 28] 0x6035a118 key 0x4501 index     0 cache 0x00000000 
+  [ 29] 0x6035a120 key 0x8f31 index     0 cache 0x00000000 
+  [ 30] 0x6035a128 key 0x8191 index     0 cache 0x00000000 
+  [ 31] 0x6035a130 key 0x85a1 index     0 cache 0x00000000 
+  [ 32] 0x6035a138 key 0x8f41 index     0 cache 0x00000000 
+  [ 33] 0x6035a140 key 0x83a1 index     0 cache 0x00000000 
+  [ 34] 0x6035a148 key 0x9ff1 index     0 cache 0x00000000 
+  [ 35] 0x6035a150 key 0x8e92 index     0 cache 0x00000000 
+  [ 36] 0x6035a158 key 0x9ea1 index     0 cache 0x00000000 
+  [ 37] 0x6035a160 key 0x9e01 index     0 cache 0x00000000 
+  [ 38] 0x6035a168 key 0x9e11 index     0 cache 0x00000000 
+  [ 39] 0x6035a170 key 0x9e21 index     0 cache 0x00000000 
+  [ 40] 0x6035a178 key 0x9e31 index     0 cache 0x00000000 
+  [ 41] 0x6035a180 key 0x6fd1 index     0 cache 0x00000000 
+  [ 42] 0x6035a188 key 0xd521 index     0 cache 0x00000000 
+  [ 43] 0x6035a190 key 0xd511 index     0 cache 0x00000000 
+  [ 44] 0x6035a198 key 0x9eb1 index     0 cache 0x00000000 
+  [ 45] 0x6035a1a0 key 0x9b21 index     0 cache 0x00000000 
+  [ 46] 0x6035a1a8 key 0x9e7a index     0 cache 0x00000000 
+  [ 47] 0x6035a1b0 key 0x9e8a index     0 cache 0x00000000 
+  [ 48] 0x6035a1b8 key 0x9e9a index     0 cache 0x00000000 
+  [ 49] 0x6035a1c0 key 0x6ffa index     0 cache 0x00000000 
+  [ 50] 0x6035a1c8 key 0x9e4a index     0 cache 0x00000000 
+  [ 51] 0x6035a1d0 key 0x9e5a index     0 cache 0x00000000 
+  [ 52] 0x6035a1d8 key 0x9e6a index     0 cache 0x00000000 
+  [ 53] 0x6035a1e0 key 0x6fea index     0 cache 0x00000000 
+  [ 54] 0x6035a1e8 key 0x8571 index     0 cache 0x00000000 
+  [ 55] 0x6035a1f0 key 0x8181 index     0 cache 0x00000000 
+  [ 56] 0x6035a1f8 key 0x94a1 index     0 cache 0x00000000 
+  [ 57] 0x6035a200 key 0x8892 index     0 cache 0x00000000 
+  [ 58] 0x6035a208 key 0x98d1 index     0 cache 0x00000000 
+  [ 59] 0x6035a210 key 0x8eb9 index     0 cache 0x00000000 
+  [ 60] 0x6035a218 key 0x9961 index     0 cache 0x00000000 
+  [ 61] 0x6035a220 key 0xf101 index     0 cache 0x00000000 
+  [ 62] 0x6035a228 key 0x72e1 index     0 cache 0x00000000 
+  [ 63] 0x6035a230 key 0x97d1 index     0 cache 0x00000000 
+  [ 64] 0x6035a238 key 0x77c2 index     0 cache 0x00000000 
+  [ 65] 0x6035a240 key 0x45b1 index     0 cache 0x00000000 
+  [ 66] 0x6035a248 key 0x9321 index     0 cache 0x00000000 
+  [ 67] 0x6035a250 key 0x64a1 index     0 cache 0x00000000 
+  [ 68] 0x6035a258 key 0xf0c1 index     0 cache 0x00000000 
+  [ 69] 0x6035a260 key 0x1e31 index     0 cache 0x00000000 
+  [ 70] 0x6035a268 key 0xa07a index     0 cache 0x00000000 
+  [ 71] 0x6035a270 key 0xc0ba index     0 cache 0x00000000 
+  [ 72] 0x6035a278 key 0x9fea index     0 cache 0x00000000 
+  [ 73] 0x6035a280 key 0xd07a index     0 cache 0x00000000 
+  [ 74] 0x6035a288 key 0xc4da index     0 cache 0x00000000 
+  [ 75] 0x6035a290 key 0xc0d1 index     0 cache 0x00000000 
+  [ 76] 0x6035a298 key 0x1ef1 index     0 cache 0x00000000 
+  [ 77] 0x6035a2a0 key 0xc56a index     0 cache 0x00000000 
+  [ 78] 0x6035a2a8 key 0xd4d2 index     0 cache 0x00000000 
+  [ 79] 0x6035a2b0 key 0xb7f2 index     0 cache 0x00000000 
+  [ 80] 0x6035a2b8 key 0xb812 index     0 cache 0x00000000 
+  [ 81] 0x6035a2c0 key 0xb802 index     0 cache 0x00000000 
+  [ 82] 0x6035a2c8 key 0xb822 index     0 cache 0x00000000 
+  [ 83] 0x6035a2d0 key 0xb832 index     0 cache 0x00000000 
+  [ 84] 0x6035a2d8 key 0xb842 index     0 cache 0x00000000 
+  [ 85] 0x6035a2e0 key 0xb852 index     0 cache 0x00000000 
+  [ 86] 0x6035a2e8 key 0xb862 index     0 cache 0x00000000 
+  [ 87] 0x6035a2f0 key 0xb722 index     0 cache 0x00000000 
+  [ 88] 0x6035a2f8 key 0xb742 index     0 cache 0x00000000 
+  [ 89] 0x6035a300 key 0xb732 index     0 cache 0x00000000 
+  [ 90] 0x6035a308 key 0xb752 index     0 cache 0x00000000 
+  [ 91] 0x6035a310 key 0xb762 index     0 cache 0x00000000 
+  [ 92] 0x6035a318 key 0xb872 index     0 cache 0x00000000 
+  [ 93] 0x6035a320 key 0xd4e2 index     0 cache 0x00000000 
+  [ 94] 0x6035a328 key 0xd77a index     0 cache 0x00000000 
+  [ 95] 0x6035a330 key 0xb782 index     0 cache 0x00000000 
+  [ 96] 0x6035a338 key 0xb772 index     0 cache 0x00000000 
+  [ 97] 0x6035a340 key 0xb7a2 index     0 cache 0x00000000 
+  [ 98] 0x6035a348 key 0xb792 index     0 cache 0x00000000 
+  [ 99] 0x6035a350 key 0xb7c2 index     0 cache 0x00000000 
+  [100] 0x6035a358 key 0xb7b2 index     0 cache 0x00000000 
+  [101] 0x6035a360 key 0xb7e2 index     0 cache 0x00000000 
+  [102] 0x6035a368 key 0xb7d2 index     0 cache 0x00000000 
+  [103] 0x6035a370 key 0xb892 index     0 cache 0x00000000 
+  [104] 0x6035a378 key 0xb882 index     0 cache 0x00000000 
+  [105] 0x6035a380 key 0x6452 index     0 cache 0x00000000 
+  [106] 0x6035a388 key 0x6452 index     1 cache 0x00000000 
+  [107] 0x6035a390 key 0x6452 index     2 cache 0x00000000 
+  [108] 0x6035a398 key 0x6452 index     3 cache 0x00000000 
+  [109] 0x6035a3a0 key 0x6452 index     4 cache 0x00000000 
+  [110] 0x6035a3a8 key 0x63a4 index     0 cache 0x00000000 
+  [111] 0x6035a3b0 key 0xd592 index     0 cache 0x00000000 
+  [112] 0x6035a3b8 key 0x7b64 index     0 cache 0x00000000 
+  [113] 0x6035a3c0 key 0x7b74 index     0 cache 0x00000000 
+  [114] 0x6035a3c8 key 0x7b74 index     1 cache 0x00000000 
+  [115] 0x6035a3d0 key 0x7b74 index     2 cache 0x00000000 
+  [116] 0x6035a3d8 key 0x7b74 index     3 cache 0x00000000 
+  [117] 0x6035a3e0 key 0x7b74 index     0 cache 0x00000000 
+  [118] 0x6035a3e8 key 0x7b74 index     1 cache 0x00000000 
+  [119] 0x6035a3f0 key 0x7b74 index     2 cache 0x00000000 
+  [120] 0x6035a3f8 key 0x7b74 index     3 cache 0x00000000 
+  [121] 0x6035a400 key 0x7b74 index     9 cache 0x00000000 
+distinct keys 108
+0x5b82 occurrences none
+first byte past bound 0x6035a408 68232d6028212d60
+
+== table 0x60242324 count 0x3d stride 0x9c ==
+bounds 0x60242324 .. 0x60244850 exclusive (indices 0..0x3c)
+record 0x3d would start at 0x60244850 (one past the searched range)
+idx va u16+0 u16+2 u16+2e u32+0c u32+14 u16+48 u16+2c
+  [00] 0x60242324 001e 0000 7054 00000000 0000003e 000a 0000
+  [01] 0x602423c0 001e 0000 17a4 00000000 0000003e 0000 0000
+  [02] 0x6024245c 0000 0000 7054 00000000 0000003e 0000 0000
+  [03] 0x602424f8 0001 0000 7054 00000000 0000003e 0000 0000
+  [04] 0x60242594 0000 0000 1534 00000004 0000003e 0000 1544
+  [05] 0x60242630 0019 0000 1534 00000004 0000003e 0000 1544
+  [06] 0x602426cc 0002 0000 7054 00000000 0000003e 0010 0000
+  [07] 0x60242768 0002 0000 17a4 00000000 0000003e 0004 0000
+  [08] 0x60242804 0003 0000 7054 00000000 0000003e 0010 0000
+  [09] 0x602428a0 0003 0000 17a4 00000000 0000003e 0004 0000
+  [0a] 0x6024293c 0003 0000 1594 00000004 0000003e 0000 15a4
+  [0b] 0x602429d8 001a 0000 1594 00000004 0000003e 0000 15a4
+  [0c] 0x60242a74 0004 0000 7054 00000000 0000003e 0012 0000
+  [0d] 0x60242b10 0005 0000 7054 00000000 0000003e 0012 0000
+  [0e] 0x60242bac 0006 0000 7054 00000000 0000003e 0012 0000
+  [0f] 0x60242c48 0007 0000 7054 00000000 0000003e 0012 0000
+  [10] 0x60242ce4 0008 0000 7054 00000000 0000003e 000e 0000
+  [11] 0x60242d80 0008 0000 17a4 00000000 0000003e 0002 0000
+  [12] 0x60242e1c 0009 0000 7054 00000000 0000003e 000e 0000
+  [13] 0x60242eb8 0009 0000 17a4 00000000 0000003e 0002 0000
+  [14] 0x60242f54 000a 0000 7054 00000000 0000003e 000e 0000
+  [15] 0x60242ff0 000a 0000 17a4 00000000 0000003e 0002 0000
+  [16] 0x6024308c 000b 0000 7054 00000000 0000003e 000e 0000
+  [17] 0x60243128 000b 0000 17a4 00000000 0000003e 0002 0000
+  [18] 0x602431c4 000a 0000 1554 00000004 0000003e 0000 1564
+  [19] 0x60243260 001b 0000 1554 00000004 0000003e 0000 1564
+  [1a] 0x602432fc 000c 0000 7054 00000000 0000003e 0002 0000
+  [1b] 0x60243398 000d 0000 7054 00000000 0000003e 0002 0000
+  [1c] 0x60243434 000e 0000 7054 00000000 0000003e 0002 0000
+  [1d] 0x602434d0 000f 0000 7054 00000000 0000003e 0002 0000
+  [1e] 0x6024356c 000c 0000 7054 00000000 0000003e 0004 0000
+  [1f] 0x60243608 000d 0000 7054 00000000 0000003e 0004 0000
+  [20] 0x602436a4 000e 0000 7054 00000000 0000003e 0004 0000
+  [21] 0x60243740 000f 0000 7054 00000000 0000003e 0008 0000
+  [22] 0x602437dc 000f 0000 7054 00000002 0000003e 0008 0000
+  [23] 0x60243878 000c 0000 15f4 00000004 0000003e 0000 1604
+  [24] 0x60243914 001c 0000 15f4 00000004 0000003e 0000 1604
+  [25] 0x602439b0 0010 0000 7054 00000000 0000003e 0006 0000
+  [26] 0x60243a4c 0010 0000 7054 00000005 0000003e 0006 0000
+  [27] 0x60243ae8 0011 0000 7054 00000000 0000003e 000a 0000
+  [28] 0x60243b84 0011 0000 17a4 00000000 0000003e 0000 0000
+  [29] 0x60243c20 0012 0000 7054 00000000 0000003e 000a 0000
+  [2a] 0x60243cbc 0012 0000 17a4 00000000 0000003e 0000 0000
+  [2b] 0x60243d58 0012 0000 1614 00000004 0000003e 0000 1624
+  [2c] 0x60243df4 0013 0000 7054 00000005 0000003e 000a 0000
+  [2d] 0x60243e90 0013 0000 17a4 00000005 0000003e 0000 0000
+  [2e] 0x60243f2c 0014 0000 7054 00000005 0000003e 000a 0000
+  [2f] 0x60243fc8 0014 0000 17a4 00000005 0000003e 0000 0000
+  [30] 0x60244064 0015 0000 7054 00000000 0000003e 000a 0000
+  [31] 0x60244100 0015 0000 17a4 00000000 0000003e 0000 0000
+  [32] 0x6024419c 0016 0000 7054 00000000 0000003e 000a 0000
+  [33] 0x60244238 0016 0000 17a4 00000000 0000003e 0000 0000
+  [34] 0x602442d4 0017 0000 7054 00000000 0000003e 0006 0000
+  [35] 0x60244370 0018 0000 7054 00000002 0000003e 0004 0000
+  [36] 0x6024440c 0018 0000 15d4 00000004 0000003e 0000 15e4
+  [37] 0x602444a8 001d 0000 7054 00000005 0000003e 000a 0000
+  [38] 0x60244544 001d 0000 17a4 00000005 0000003e 0000 0000
+  [39] 0x602445e0 001d 0000 7054 00000005 0000003e 000c 0000
+  [3a] 0x6024467c 001f 0000 7054 00000000 0000003e 000a 0000
+  [3b] 0x60244718 001f 0000 17a4 00000000 0000003e 0000 0000
+  [3c] 0x602447b4 001f 0000 7054 00000000 0000003e 000c 0000
+  [3d] 0x60244850 0009 002d 02f5 00ed00cd 01710151 01a5 02d5 PAST
+u16 0x5b82 inside the 0x3d records: none
+next-link outside 0..0x3c and not 0x3e: none
+
+== listing counts ==
+  FUN_6019525a instructions 73 mismatches 0
+  FUN_60195aa7 instructions 5 mismatches 0
+  FUN_60196ecc instructions 4 mismatches 0
+  FUN_60196ee3 instructions 348 mismatches 0
+  FUN_601971f5 instructions 107 mismatches 0
+  FUN_601972f1 instructions 394 mismatches 0
+  FUN_6019766d instructions 65 mismatches 0
+  FUN_6019782e instructions 4 mismatches 0
+  FUN_6019783a instructions 14 mismatches 0
+  FUN_601efec0 instructions 16 mismatches 0
+  FUN_601eff7a instructions 48 mismatches 0
+  FUN_6041ab1d instructions 38 mismatches 0
+  FUN_607135ad instructions 138 mismatches 0
+
+== calls of FUN_60063431 inside the kept setter functions ==
+-- call 0x60196f7b in FUN_60196ee3 bytes ddb6c4ecfff028
+  0x60196f5e ba00 cmp 0x0,A2
+  0x60196f60 c905 bne 0x60196f65
+  0x60196f62 cc8200 jmp 0x60196fe4
+  0x60196f65 580c mov (0xc,sp),D0
+  0x60196f67 2826 add 0x26,D0
+  0x60196f69 4214 mov D0,(0x14,sp)
+  0x60196f6b 5c10 mov (0x10,sp),A0
+  0x60196f6d f8bd1c movhu (0x1c,sp),D1
+  0x60196f70 f80c10 mov (0x10,A0),D3
+  0x60196f73 f060 movhu (A0),D0
+  0x60196f75 f006 mov (A2),A1
+  0x60196f77 ed add D3,D1
+  0x60196f78 1d exthu D1
+  0x60196f79 9000 mov 0x0,A0
+  0x60196f7b ddb6c4ecfff028 call 0x60063431,[d2,d3,a2,a3],0x28
+-- call 0x60196fcf in FUN_60196ee3 bytes dd62c4ecfff028
+  0x60196fb0 f20c and D3,D0
+  0x60196fb2 f108 sub D2,D0
+  0x60196fb4 f20c and D3,D0
+  0x60196fb6 fce100c0ffff and -0x4000,D1
+  0x60196fbc f214 or D1,D0
+  0x60196fbe 62 mov D0,(A2)
+  0x60196fbf 5c0c mov (0xc,sp),A0
+  0x60196fc1 f8bd20 movhu (0x20,sp),D1
+  0x60196fc4 f80c10 mov (0x10,A0),D3
+  0x60196fc7 f1e1 mov D0,A1
+  0x60196fc9 f060 movhu (A0),D0
+  0x60196fcb ed add D3,D1
+  0x60196fcc 1d exthu D1
+  0x60196fcd 9000 mov 0x0,A0
+  0x60196fcf dd62c4ecfff028 call 0x60063431,[d2,d3,a2,a3],0x28
+-- call 0x60197009 in FUN_60196ee3 bytes dd28c4ecfff028
+  0x60196fec ba00 cmp 0x0,A2
+  0x60196fee c905 bne 0x60196ff3
+  0x60196ff0 cca001 jmp 0x60197190
+  0x60196ff3 580c mov (0xc,sp),D0
+  0x60196ff5 2826 add 0x26,D0
+  0x60196ff7 4214 mov D0,(0x14,sp)
+  0x60196ff9 5c10 mov (0x10,sp),A0
+  0x60196ffb f8bd1e movhu (0x1e,sp),D1
+  0x60196ffe f80c18 mov (0x18,A0),D3
+  0x60197001 f060 movhu (A0),D0
+  0x60197003 f006 mov (A2),A1
+  0x60197005 ed add D3,D1
+  0x60197006 1d exthu D1
+  0x60197007 9000 mov 0x0,A0
+  0x60197009 dd28c4ecfff028 call 0x60063431,[d2,d3,a2,a3],0x28
+-- call 0x6019705d in FUN_60196ee3 bytes ddd4c3ecfff028
+  0x6019703e f20c and D3,D0
+  0x60197040 f108 sub D2,D0
+  0x60197042 f20c and D3,D0
+  0x60197044 fce100c0ffff and -0x4000,D1
+  0x6019704a f214 or D1,D0
+  0x6019704c 62 mov D0,(A2)
+  0x6019704d 5c0c mov (0xc,sp),A0
+  0x6019704f f8bd22 movhu (0x22,sp),D1
+  0x60197052 f80c18 mov (0x18,A0),D3
+  0x60197055 f1e1 mov D0,A1
+  0x60197057 f060 movhu (A0),D0
+  0x60197059 ed add D3,D1
+  0x6019705a 1d exthu D1
+  0x6019705b 9000 mov 0x0,A0
+  0x6019705d ddd4c3ecfff028 call 0x60063431,[d2,d3,a2,a3],0x28
+-- call 0x60197099 in FUN_60196ee3 bytes dd98c3ecfff028
+  0x6019707c ba00 cmp 0x0,A2
+  0x6019707e c905 bne 0x60197083
+  0x60197080 cc8200 jmp 0x60197102
+  0x60197083 580c mov (0xc,sp),D0
+  0x60197085 2826 add 0x26,D0
+  0x60197087 4214 mov D0,(0x14,sp)
+  0x60197089 5c10 mov (0x10,sp),A0
+  0x6019708b f8bd1c movhu (0x1c,sp),D1
+  0x6019708e f80c10 mov (0x10,A0),D3
+  0x60197091 f060 movhu (A0),D0
+  0x60197093 f006 mov (A2),A1
+  0x60197095 ed add D3,D1
+  0x60197096 1d exthu D1
+  0x60197097 9000 mov 0x0,A0
+  0x60197099 dd98c3ecfff028 call 0x60063431,[d2,d3,a2,a3],0x28
+-- call 0x601970ed in FUN_60196ee3 bytes dd44c3ecfff028
+  0x601970ce f20c and D3,D0
+  0x601970d0 f108 sub D2,D0
+  0x601970d2 f20c and D3,D0
+  0x601970d4 fce100c0ffff and -0x4000,D1
+  0x601970da f214 or D1,D0
+  0x601970dc 62 mov D0,(A2)
+  0x601970dd 5c0c mov (0xc,sp),A0
+  0x601970df f8bd20 movhu (0x20,sp),D1
+  0x601970e2 f80c10 mov (0x10,A0),D3
+  0x601970e5 f1e1 mov D0,A1
+  0x601970e7 f060 movhu (A0),D0
+  0x601970e9 ed add D3,D1
+  0x601970ea 1d exthu D1
+  0x601970eb 9000 mov 0x0,A0
+  0x601970ed dd44c3ecfff028 call 0x60063431,[d2,d3,a2,a3],0x28
+-- call 0x60197127 in FUN_60196ee3 bytes dd0ac3ecfff028
+  0x6019710a ba00 cmp 0x0,A2
+  0x6019710c c905 bne 0x60197111
+  0x6019710e cc8200 jmp 0x60197190
+  0x60197111 580c mov (0xc,sp),D0
+  0x60197113 2826 add 0x26,D0
+  0x60197115 4214 mov D0,(0x14,sp)
+  0x60197117 5c10 mov (0x10,sp),A0
+  0x60197119 f8bd1e movhu (0x1e,sp),D1
+  0x6019711c f80c18 mov (0x18,A0),D3
+  0x6019711f f060 movhu (A0),D0
+  0x60197121 f006 mov (A2),A1
+  0x60197123 ed add D3,D1
+  0x60197124 1d exthu D1
+  0x60197125 9000 mov 0x0,A0
+  0x60197127 dd0ac3ecfff028 call 0x60063431,[d2,d3,a2,a3],0x28
+-- call 0x6019717b in FUN_60196ee3 bytes ddb6c2ecfff028
+  0x6019715c f20c and D3,D0
+  0x6019715e f108 sub D2,D0
+  0x60197160 f20c and D3,D0
+  0x60197162 fce100c0ffff and -0x4000,D1
+  0x60197168 f214 or D1,D0
+  0x6019716a 62 mov D0,(A2)
+  0x6019716b 5c0c mov (0xc,sp),A0
+  0x6019716d f8bd22 movhu (0x22,sp),D1
+  0x60197170 f80c18 mov (0x18,A0),D3
+  0x60197173 f1e1 mov D0,A1
+  0x60197175 f060 movhu (A0),D0
+  0x60197177 ed add D3,D1
+  0x60197178 1d exthu D1
+  0x60197179 9000 mov 0x0,A0
+  0x6019717b ddb6c2ecfff028 call 0x60063431,[d2,d3,a2,a3],0x28
+-- call 0x601971a3 in FUN_60196ee3 bytes dd8ec2ecfff028
+  0x60197186 f89322 movhu D0,(0x22,sp)
+  0x60197189 f82a10 mov (0x10,A2),A2
+  0x6019718c ba00 cmp 0x0,A2
+  0x6019718e c989 bne 0x60197117
+  0x60197190 5f10 mov (0x10,sp),A3
+  0x60197192 5e10 mov (0x10,sp),A2
+  0x60197194 231c add 0x1c,A3
+  0x60197196 77 mov (A3),D1
+  0x60197197 f8be1c movhu (0x1c,sp),D2
+  0x6019719a 2202 add 0x2,A2
+  0x6019719c f062 movhu (A2),D0
+  0x6019719e f1e9 mov D2,A1
+  0x601971a0 1d exthu D1
+  0x601971a1 9000 mov 0x0,A0
+  0x601971a3 dd8ec2ecfff028 call 0x60063431,[d2,d3,a2,a3],0x28
+-- call 0x601971b6 in FUN_60196ee3 bytes dd7bc2ecfff028
+  0x60197197 f8be1c movhu (0x1c,sp),D2
+  0x6019719a 2202 add 0x2,A2
+  0x6019719c f062 movhu (A2),D0
+  0x6019719e f1e9 mov D2,A1
+  0x601971a0 1d exthu D1
+  0x601971a1 9000 mov 0x0,A0
+  0x601971a3 dd8ec2ecfff028 call 0x60063431,[d2,d3,a2,a3],0x28
+  0x601971aa 77 mov (A3),D1
+  0x601971ab f8be1e movhu (0x1e,sp),D2
+  0x601971ae f062 movhu (A2),D0
+  0x601971b0 f1e9 mov D2,A1
+  0x601971b2 44 inc D1
+  0x601971b3 1d exthu D1
+  0x601971b4 9000 mov 0x0,A0
+  0x601971b6 dd7bc2ecfff028 call 0x60063431,[d2,d3,a2,a3],0x28
+-- call 0x601971d7 in FUN_60196ee3 bytes dd5ac2ecfff028
+  0x601971bd 5c18 mov (0x18,sp),A0
+  0x601971bf 70 mov (A0),D0
+  0x601971c0 a03e cmp 0x3e,D0
+  0x601971c2 c82f beq 0x601971f1
+  0x601971c4 5e0c mov (0xc,sp),A2
+  0x601971c6 5f0c mov (0xc,sp),A3
+  0x601971c8 221c add 0x1c,A2
+  0x601971ca 76 mov (A2),D1
+  0x601971cb f8be20 movhu (0x20,sp),D2
+  0x601971ce 2302 add 0x2,A3
+  0x601971d0 f063 movhu (A3),D0
+  0x601971d2 f1e9 mov D2,A1
+  0x601971d4 1d exthu D1
+  0x601971d5 9000 mov 0x0,A0
+  0x601971d7 dd5ac2ecfff028 call 0x60063431,[d2,d3,a2,a3],0x28
+-- call 0x601971ea in FUN_60196ee3 bytes dd47c2ecfff028
+  0x601971cb f8be20 movhu (0x20,sp),D2
+  0x601971ce 2302 add 0x2,A3
+  0x601971d0 f063 movhu (A3),D0
+  0x601971d2 f1e9 mov D2,A1
+  0x601971d4 1d exthu D1
+  0x601971d5 9000 mov 0x0,A0
+  0x601971d7 dd5ac2ecfff028 call 0x60063431,[d2,d3,a2,a3],0x28
+  0x601971de 76 mov (A2),D1
+  0x601971df f8be22 movhu (0x22,sp),D2
+  0x601971e2 f063 movhu (A3),D0
+  0x601971e4 f1e9 mov D2,A1
+  0x601971e6 44 inc D1
+  0x601971e7 1d exthu D1
+  0x601971e8 9000 mov 0x0,A0
+  0x601971ea dd47c2ecfff028 call 0x60063431,[d2,d3,a2,a3],0x28
+-- call 0x601972a6 in FUN_601971f5 bytes dd8bc1ecfff028
+  0x60197283 420c mov D0,(0xc,sp)
+  0x60197285 fccc0030230a mov 0xa233000,D0
+  0x6019728b dd4354feffe060 call 0x6017c6ce,[d2,d3,a2],0x60
+  0x60197292 5c20 mov (0x20,sp),A0
+  0x60197294 7e mov (A2),D3
+  0x60197295 f064 movhu (A0),D1
+  0x60197297 5c1c mov (0x1c,sp),A0
+  0x60197299 5a10 mov (0x10,sp),D2
+  0x6019729b f060 movhu (A0),D0
+  0x6019729d f15d add A3,D1
+  0x6019729f 1d exthu D1
+  0x601972a0 f21e or D3,D2
+  0x601972a2 f1e9 mov D2,A1
+  0x601972a4 9000 mov 0x0,A0
+  0x601972a6 dd8bc1ecfff028 call 0x60063431,[d2,d3,a2,a3],0x28
+-- call 0x601972e6 in FUN_601971f5 bytes dd4bc1ecfff028
+  0x601972be cc6fff jmp 0x6019722d
+  0x601972c1 8001 mov 0x1,D0
+  0x601972c3 4204 mov D0,(0x4,sp)
+  0x601972c5 4e08 mov D3,(0x8,sp)
+  0x601972c7 fccc0030230a mov 0xa233000,D0
+  0x601972cd 2d2f01 mov 0x12f,D1
+  0x601972d0 ddfe53feffe060 call 0x6017c6ce,[d2,d3,a2],0x60
+  0x601972d7 5c1c mov (0x1c,sp),A0
+  0x601972d9 1e exthu D2
+  0x601972da f86002 movhu (0x2,A0),D0
+  0x601972dd 5c14 mov (0x14,sp),A0
+  0x601972df f1e9 mov D2,A1
+  0x601972e1 f86448 movhu (0x48,A0),D1
+  0x601972e4 9000 mov 0x0,A0
+  0x601972e6 dd4bc1ecfff028 call 0x60063431,[d2,d3,a2,a3],0x28
+-- call 0x60197394 in FUN_601972f1 bytes dd9dc0ecfff028
+  0x60197377 ba00 cmp 0x0,A2
+  0x60197379 c905 bne 0x6019737e
+  0x6019737b cc8200 jmp 0x601973fd
+  0x6019737e 580c mov (0xc,sp),D0
+  0x60197380 2826 add 0x26,D0
+  0x60197382 4214 mov D0,(0x14,sp)
+  0x60197384 5c10 mov (0x10,sp),A0
+  0x60197386 f8bd24 movhu (0x24,sp),D1
+  0x60197389 f80c10 mov (0x10,A0),D3
+  0x6019738c f060 movhu (A0),D0
+  0x6019738e f006 mov (A2),A1
+  0x60197390 ed add D3,D1
+  0x60197391 1d exthu D1
+  0x60197392 9000 mov 0x0,A0
+  0x60197394 dd9dc0ecfff028 call 0x60063431,[d2,d3,a2,a3],0x28
+-- call 0x601973e8 in FUN_601972f1 bytes dd49c0ecfff028
+  0x601973c9 f20c and D3,D0
+  0x601973cb f108 sub D2,D0
+  0x601973cd f20c and D3,D0
+  0x601973cf fce100c0ffff and -0x4000,D1
+  0x601973d5 f214 or D1,D0
+  0x601973d7 62 mov D0,(A2)
+  0x601973d8 5c0c mov (0xc,sp),A0
+  0x601973da f8bd28 movhu (0x28,sp),D1
+  0x601973dd f80c10 mov (0x10,A0),D3
+  0x601973e0 f1e1 mov D0,A1
+  0x601973e2 f060 movhu (A0),D0
+  0x601973e4 ed add D3,D1
+  0x601973e5 1d exthu D1
+  0x601973e6 9000 mov 0x0,A0
+  0x601973e8 dd49c0ecfff028 call 0x60063431,[d2,d3,a2,a3],0x28
+-- call 0x6019743b in FUN_601972f1 bytes ddf6bfecfff028
+  0x6019741f 2826 add 0x26,D0
+  0x60197421 4218 mov D0,(0x18,sp)
+  0x60197423 580c mov (0xc,sp),D0
+  0x60197425 2804 add 0x4,D0
+  0x60197427 421c mov D0,(0x1c,sp)
+  0x60197429 5c10 mov (0x10,sp),A0
+  0x6019742b f8bd26 movhu (0x26,sp),D1
+  0x6019742e f80c18 mov (0x18,A0),D3
+  0x60197431 5c14 mov (0x14,sp),A0
+  0x60197433 f006 mov (A2),A1
+  0x60197435 f060 movhu (A0),D0
+  0x60197437 ed add D3,D1
+  0x60197438 1d exthu D1
+  0x60197439 9000 mov 0x0,A0
+  0x6019743b ddf6bfecfff028 call 0x60063431,[d2,d3,a2,a3],0x28
+-- call 0x60197491 in FUN_601972f1 bytes dda0bfecfff028
+  0x60197472 f108 sub D2,D0
+  0x60197474 f20c and D3,D0
+  0x60197476 fce100c0ffff and -0x4000,D1
+  0x6019747c f214 or D1,D0
+  0x6019747e 62 mov D0,(A2)
+  0x6019747f 5c0c mov (0xc,sp),A0
+  0x60197481 f8bd2a movhu (0x2a,sp),D1
+  0x60197484 f80c18 mov (0x18,A0),D3
+  0x60197487 5c1c mov (0x1c,sp),A0
+  0x60197489 f1e1 mov D0,A1
+  0x6019748b f060 movhu (A0),D0
+  0x6019748d ed add D3,D1
+  0x6019748e 1d exthu D1
+  0x6019748f 9000 mov 0x0,A0
+  0x60197491 dda0bfecfff028 call 0x60063431,[d2,d3,a2,a3],0x28
+-- call 0x601974d8 in FUN_601972f1 bytes dd59bfecfff028
+  0x601974bb ba00 cmp 0x0,A2
+  0x601974bd c905 bne 0x601974c2
+  0x601974bf cc8200 jmp 0x60197541
+  0x601974c2 580c mov (0xc,sp),D0
+  0x601974c4 2826 add 0x26,D0
+  0x601974c6 4214 mov D0,(0x14,sp)
+  0x601974c8 5c10 mov (0x10,sp),A0
+  0x601974ca f8bd24 movhu (0x24,sp),D1
+  0x601974cd f80c10 mov (0x10,A0),D3
+  0x601974d0 f060 movhu (A0),D0
+  0x601974d2 f006 mov (A2),A1
+  0x601974d4 ed add D3,D1
+  0x601974d5 1d exthu D1
+  0x601974d6 9000 mov 0x0,A0
+  0x601974d8 dd59bfecfff028 call 0x60063431,[d2,d3,a2,a3],0x28
+-- call 0x6019752c in FUN_601972f1 bytes dd05bfecfff028
+  0x6019750d f20c and D3,D0
+  0x6019750f f108 sub D2,D0
+  0x60197511 f20c and D3,D0
+  0x60197513 fce100c0ffff and -0x4000,D1
+  0x60197519 f214 or D1,D0
+  0x6019751b 62 mov D0,(A2)
+  0x6019751c 5c0c mov (0xc,sp),A0
+  0x6019751e f8bd28 movhu (0x28,sp),D1
+  0x60197521 f80c10 mov (0x10,A0),D3
+  0x60197524 f1e1 mov D0,A1
+  0x60197526 f060 movhu (A0),D0
+  0x60197528 ed add D3,D1
+  0x60197529 1d exthu D1
+  0x6019752a 9000 mov 0x0,A0
+  0x6019752c dd05bfecfff028 call 0x60063431,[d2,d3,a2,a3],0x28
+-- call 0x6019757f in FUN_601972f1 bytes ddb2beecfff028
+  0x60197563 2826 add 0x26,D0
+  0x60197565 4218 mov D0,(0x18,sp)
+  0x60197567 580c mov (0xc,sp),D0
+  0x60197569 2804 add 0x4,D0
+  0x6019756b 421c mov D0,(0x1c,sp)
+  0x6019756d 5c10 mov (0x10,sp),A0
+  0x6019756f f8bd26 movhu (0x26,sp),D1
+  0x60197572 f80c18 mov (0x18,A0),D3
+  0x60197575 5c14 mov (0x14,sp),A0
+  0x60197577 f006 mov (A2),A1
+  0x60197579 f060 movhu (A0),D0
+  0x6019757b ed add D3,D1
+  0x6019757c 1d exthu D1
+  0x6019757d 9000 mov 0x0,A0
+  0x6019757f ddb2beecfff028 call 0x60063431,[d2,d3,a2,a3],0x28
+-- call 0x601975d5 in FUN_601972f1 bytes dd5cbeecfff028
+  0x601975b6 f108 sub D2,D0
+  0x601975b8 f20c and D3,D0
+  0x601975ba fce100c0ffff and -0x4000,D1
+  0x601975c0 f214 or D1,D0
+  0x601975c2 62 mov D0,(A2)
+  0x601975c3 5c0c mov (0xc,sp),A0
+  0x601975c5 f8bd2a movhu (0x2a,sp),D1
+  0x601975c8 f80c18 mov (0x18,A0),D3
+  0x601975cb 5c1c mov (0x1c,sp),A0
+  0x601975cd f1e1 mov D0,A1
+  0x601975cf f060 movhu (A0),D0
+  0x601975d1 ed add D3,D1
+  0x601975d2 1d exthu D1
+  0x601975d3 9000 mov 0x0,A0
+  0x601975d5 dd5cbeecfff028 call 0x60063431,[d2,d3,a2,a3],0x28
+-- call 0x60197601 in FUN_601972f1 bytes dd30beecfff028
+  0x601975e3 f82a10 mov (0x10,A2),A2
+  0x601975e6 ba00 cmp 0x0,A2
+  0x601975e8 c985 bne 0x6019756d
+  0x601975ea 5c10 mov (0x10,sp),A0
+  0x601975ec 2002 add 0x2,A0
+  0x601975ee f060 movhu (A0),D0
+  0x601975f0 a000 cmp 0x0,D0
+  0x601975f2 c816 beq 0x60197608
+  0x601975f4 5c10 mov (0x10,sp),A0
+  0x601975f6 f8be24 movhu (0x24,sp),D2
+  0x601975f9 f8041c mov (0x1c,A0),D1
+  0x601975fc f1e9 mov D2,A1
+  0x601975fe 1d exthu D1
+  0x601975ff 9000 mov 0x0,A0
+  0x60197601 dd30beecfff028 call 0x60063431,[d2,d3,a2,a3],0x28
+-- call 0x6019761f in FUN_601972f1 bytes dd12beecfff028
+  0x601975fe 1d exthu D1
+  0x601975ff 9000 mov 0x0,A0
+  0x60197601 dd30beecfff028 call 0x60063431,[d2,d3,a2,a3],0x28
+  0x60197608 5c10 mov (0x10,sp),A0
+  0x6019760a 2006 add 0x6,A0
+  0x6019760c f060 movhu (A0),D0
+  0x6019760e a000 cmp 0x0,D0
+  0x60197610 c816 beq 0x60197626
+  0x60197612 5c10 mov (0x10,sp),A0
+  0x60197614 f8be26 movhu (0x26,sp),D2
+  0x60197617 f8041c mov (0x1c,A0),D1
+  0x6019761a f1e9 mov D2,A1
+  0x6019761c 1d exthu D1
+  0x6019761d 9000 mov 0x0,A0
+  0x6019761f dd12beecfff028 call 0x60063431,[d2,d3,a2,a3],0x28
+-- call 0x60197644 in FUN_601972f1 bytes ddedbdecfff028
+  0x60197628 70 mov (A0),D0
+  0x60197629 a03e cmp 0x3e,D0
+  0x6019762b c83e beq 0x60197669
+  0x6019762d 5c0c mov (0xc,sp),A0
+  0x6019762f 2002 add 0x2,A0
+  0x60197631 f060 movhu (A0),D0
+  0x60197633 a000 cmp 0x0,D0
+  0x60197635 c816 beq 0x6019764b
+  0x60197637 5c0c mov (0xc,sp),A0
+  0x60197639 f8be28 movhu (0x28,sp),D2
+  0x6019763c f8041c mov (0x1c,A0),D1
+  0x6019763f f1e9 mov D2,A1
+  0x60197641 1d exthu D1
+  0x60197642 9000 mov 0x0,A0
+  0x60197644 ddedbdecfff028 call 0x60063431,[d2,d3,a2,a3],0x28
+-- call 0x60197662 in FUN_601972f1 bytes ddcfbdecfff028
+  0x60197641 1d exthu D1
+  0x60197642 9000 mov 0x0,A0
+  0x60197644 ddedbdecfff028 call 0x60063431,[d2,d3,a2,a3],0x28
+  0x6019764b 5c0c mov (0xc,sp),A0
+  0x6019764d 2006 add 0x6,A0
+  0x6019764f f060 movhu (A0),D0
+  0x60197651 a000 cmp 0x0,D0
+  0x60197653 c816 beq 0x60197669
+  0x60197655 5c0c mov (0xc,sp),A0
+  0x60197657 f8be2a movhu (0x2a,sp),D2
+  0x6019765a f8041c mov (0x1c,A0),D1
+  0x6019765d f1e9 mov D2,A1
+  0x6019765f 1d exthu D1
+  0x60197660 9000 mov 0x0,A0
+  0x60197662 ddcfbdecfff028 call 0x60063431,[d2,d3,a2,a3],0x28
+-- call 0x601effcf in FUN_601eff7a bytes dd6234e7fff028
+  0x601effab 4204 mov D0,(0x4,sp)
+  0x601effad 2c7101 mov 0x171,D0
+  0x601effb0 4208 mov D0,(0x8,sp)
+  0x601effb2 4e0c mov D3,(0xc,sp)
+  0x601effb4 8014 mov 0x14,D0
+  0x601effb6 4210 mov D0,(0x10,sp)
+  0x601effb8 fccc15060024 mov 0x24000615,D0
+  0x601effbe 8501 mov 0x1,D1
+  0x601effc0 dd948ae7fff070 call 0x60068a54,[d2,d3,a2,a3],0x70
+  0x601effc7 77 mov (A3),D1
+  0x601effc8 f062 movhu (A2),D0
+  0x601effca f1e4 mov D1,A0
+  0x601effcc 5d14 mov (0x14,sp),A1
+  0x601effce 89 mov D2,D1
+  0x601effcf dd6234e7fff028 call 0x60063431,[d2,d3,a2,a3],0x28
+-- call 0x6041ab7a in FUN_6041ab1d bytes ddb788c4fff028
+  0x6041ab55 4e0c mov D3,(0xc,sp)
+  0x6041ab57 581c mov (0x1c,sp),D0
+  0x6041ab59 8506 mov 0x6,D1
+  0x6041ab5b fcdc35000f00 mov 0xf0035,A0
+  0x6041ab61 4210 mov D0,(0x10,sp)
+  0x6041ab63 00 clr D0
+  0x6041ab64 4214 mov D0,(0x14,sp)
+  0x6041ab66 8002 mov 0x2,D0
+  0x6041ab68 9501 mov 0x1,A1
+  0x6041ab6a ddb029fffff088 call 0x6040d51a,[d2,d3,a2,a3],0x88
+  0x6041ab71 f8bc20 movhu (0x20,sp),D0
+  0x6041ab74 f8bd22 movhu (0x22,sp),D1
+  0x6041ab77 5d1c mov (0x1c,sp),A1
+  0x6041ab79 9c mov A3,A0
+  0x6041ab7a ddb788c4fff028 call 0x60063431,[d2,d3,a2,a3],0x28
+-- call 0x607135ca in FUN_607135ad bytes dd67fe94fff028
+  0x607135ad 4304 mov A0,(0x4,sp)
+  0x607135af fca040619962 mov (0x62996140),A0
+  0x607135b5 f89308 movhu D0,(0x8,sp)
+  0x607135b8 b000 cmp 0x0,A0
+  0x607135ba c905 bne 0x607135bf
+  0x607135bc cccb01 jmp 0x60713787
+  0x607135bf 8510 mov 0x10,D1
+  0x607135c1 fccc64fa0000 mov 0xfa64,D0
+  0x607135c7 250011 mov 0x1100,A1
+  0x607135ca dd67fe94fff028 call 0x60063431,[d2,d3,a2,a3],0x28
+-- call 0x607135fc in FUN_607135ad bytes dd35fe94fff028
+  0x607135ca dd67fe94fff028 call 0x60063431,[d2,d3,a2,a3],0x28
+  0x607135d1 fca154619962 mov (0x62996154),A1
+  0x607135d7 fcae62619962 movhu (0x62996162),D2
+  0x607135dd f84d11 movbu (0x11,A1),D3
+  0x607135e0 f84110 movbu (0x10,A1),D0
+  0x607135e3 f8c210 asl 0x10,D2
+  0x607135e6 f8c308 asl 0x8,D3
+  0x607135e9 f21e or D3,D2
+  0x607135eb f212 or D0,D2
+  0x607135ed f1e9 mov D2,A1
+  0x607135ef 2664fa mov 0xfa64,A2
+  0x607135f2 f1d8 mov A2,D0
+  0x607135f4 fca040619962 mov (0x62996140),A0
+  0x607135fa 8511 mov 0x11,D1
+  0x607135fc dd35fe94fff028 call 0x60063431,[d2,d3,a2,a3],0x28
+-- call 0x60713615 in FUN_607135ad bytes dd1cfe94fff028
+  0x607135e6 f8c308 asl 0x8,D3
+  0x607135e9 f21e or D3,D2
+  0x607135eb f212 or D0,D2
+  0x607135ed f1e9 mov D2,A1
+  0x607135ef 2664fa mov 0xfa64,A2
+  0x607135f2 f1d8 mov A2,D0
+  0x607135f4 fca040619962 mov (0x62996140),A0
+  0x607135fa 8511 mov 0x11,D1
+  0x607135fc dd35fe94fff028 call 0x60063431,[d2,d3,a2,a3],0x28
+  0x60713603 fcae64619962 movhu (0x62996164),D2
+  0x60713609 f1d8 mov A2,D0
+  0x6071360b f1e9 mov D2,A1
+  0x6071360d fca040619962 mov (0x62996140),A0
+  0x60713613 8512 mov 0x12,D1
+  0x60713615 dd1cfe94fff028 call 0x60063431,[d2,d3,a2,a3],0x28
+-- call 0x6071363e in FUN_607135ad bytes ddf3fd94fff028
+  0x60713609 f1d8 mov A2,D0
+  0x6071360b f1e9 mov D2,A1
+  0x6071360d fca040619962 mov (0x62996140),A0
+  0x60713613 8512 mov 0x12,D1
+  0x60713615 dd1cfe94fff028 call 0x60063431,[d2,d3,a2,a3],0x28
+  0x6071361c fca054619962 mov (0x62996154),A0
+  0x60713622 cdf5f70000 call 0x60712e17,[],0x0
+  0x60713627 fcae60619962 movhu (0x62996160),D2
+  0x6071362d f8c010 asl 0x10,D0
+  0x60713630 f218 or D2,D0
+  0x60713632 f1e1 mov D0,A1
+  0x60713634 f1d8 mov A2,D0
+  0x60713636 fca040619962 mov (0x62996140),A0
+  0x6071363c 8513 mov 0x13,D1
+  0x6071363e ddf3fd94fff028 call 0x60063431,[d2,d3,a2,a3],0x28
+-- call 0x60713679 in FUN_607135ad bytes ddb8fd94fff028
+  0x6071364b fcac6c619962 movhu (0x6299616c),D0
+  0x60713651 fcae6a619962 movhu (0x6299616a),D2
+  0x60713657 fcad68619962 movhu (0x62996168),D1
+  0x6071365d 9b mov A2,A3
+  0x6071365e f8c318 asl 0x18,D3
+  0x60713661 f8c010 asl 0x10,D0
+  0x60713664 f213 or D0,D3
+  0x60713666 f8c208 asl 0x8,D2
+  0x60713669 f21b or D2,D3
+  0x6071366b f217 or D1,D3
+  0x6071366d f1ed mov D3,A1
+  0x6071366f f1dc mov A3,D0
+  0x60713671 fca040619962 mov (0x62996140),A0
+  0x60713677 8514 mov 0x14,D1
+  0x60713679 ddb8fd94fff028 call 0x60063431,[d2,d3,a2,a3],0x28
+-- call 0x607136b7 in FUN_607135ad bytes dd7afd94fff028
+  0x6071368c fcaf72619962 movhu (0x62996172),D3
+  0x60713692 fcad70619962 movhu (0x62996170),D1
+  0x60713698 f8c018 asl 0x18,D0
+  0x6071369b f1e5 mov D1,A1
+  0x6071369d f8c210 asl 0x10,D2
+  0x607136a0 f218 or D2,D0
+  0x607136a2 f8c308 asl 0x8,D3
+  0x607136a5 f21c or D3,D0
+  0x607136a7 f1d6 mov A1,D2
+  0x607136a9 f218 or D2,D0
+  0x607136ab f1e1 mov D0,A1
+  0x607136ad f1dc mov A3,D0
+  0x607136af fca040619962 mov (0x62996140),A0
+  0x607136b5 8515 mov 0x15,D1
+  0x607136b7 dd7afd94fff028 call 0x60063431,[d2,d3,a2,a3],0x28
+-- call 0x607136fa in FUN_607135ad bytes dd37fd94fff028
+  0x607136d9 f1e5 mov D1,A1
+  0x607136db f8c010 asl 0x10,D0
+  0x607136de f213 or D0,D3
+  0x607136e0 f8c208 asl 0x8,D2
+  0x607136e3 f21b or D2,D3
+  0x607136e5 f1d4 mov A1,D0
+  0x607136e7 f213 or D0,D3
+  0x607136e9 f1ed mov D3,A1
+  0x607136eb f1dc mov A3,D0
+  0x607136ed 3e mov sp,A2
+  0x607136ee 220c add 0xc,A2
+  0x607136f0 fca040619962 mov (0x62996140),A0
+  0x607136f6 f1de mov A3,D2
+  0x607136f8 8516 mov 0x16,D1
+  0x607136fa dd37fd94fff028 call 0x60063431,[d2,d3,a2,a3],0x28
+-- call 0x60713720 in FUN_607135ad bytes dd11fd94fff028
+  0x607136f0 fca040619962 mov (0x62996140),A0
+  0x607136f6 f1de mov A3,D2
+  0x607136f8 8516 mov 0x16,D1
+  0x607136fa dd37fd94fff028 call 0x60063431,[d2,d3,a2,a3],0x28
+  0x60713701 98 mov A2,A0
+  0x60713702 dd4132a4ff0004 call 0x60156943,[],0x4
+  0x60713709 3c mov sp,A0
+  0x6071370a 2018 add 0x18,A0
+  0x6071370c 99 mov A2,A1
+  0x6071370d ddaf34a4ff8004 call 0x60156bbc,[d2],0x4
+  0x60713714 5d18 mov (0x18,sp),A1
+  0x60713716 f1dc mov A3,D0
+  0x60713718 fca040619962 mov (0x62996140),A0
+  0x6071371e 8517 mov 0x17,D1
+  0x60713720 dd11fd94fff028 call 0x60063431,[d2,d3,a2,a3],0x28
+-- call 0x60713737 in FUN_607135ad bytes ddfafc94fff028
+  0x60713702 dd4132a4ff0004 call 0x60156943,[],0x4
+  0x60713709 3c mov sp,A0
+  0x6071370a 2018 add 0x18,A0
+  0x6071370c 99 mov A2,A1
+  0x6071370d ddaf34a4ff8004 call 0x60156bbc,[d2],0x4
+  0x60713714 5d18 mov (0x18,sp),A1
+  0x60713716 f1dc mov A3,D0
+  0x60713718 fca040619962 mov (0x62996140),A0
+  0x6071371e 8517 mov 0x17,D1
+  0x60713720 dd11fd94fff028 call 0x60063431,[d2,d3,a2,a3],0x28
+  0x60713727 f1dc mov A3,D0
+  0x60713729 fca148619962 mov (0x62996148),A1
+  0x6071372f fca040619962 mov (0x62996140),A0
+  0x60713735 8518 mov 0x18,D1
+  0x60713737 ddfafc94fff028 call 0x60063431,[d2,d3,a2,a3],0x28
+-- call 0x60713754 in FUN_607135ad bytes ddddfc94fff028
+  0x60713720 dd11fd94fff028 call 0x60063431,[d2,d3,a2,a3],0x28
+  0x60713727 f1dc mov A3,D0
+  0x60713729 fca148619962 mov (0x62996148),A1
+  0x6071372f fca040619962 mov (0x62996140),A0
+  0x60713735 8518 mov 0x18,D1
+  0x60713737 ddfafc94fff028 call 0x60063431,[d2,d3,a2,a3],0x28
+  0x6071373e 5c04 mov (0x4,sp),A0
+  0x60713740 f86014 movhu (0x14,A0),D0
+  0x60713743 cd3afb0000 call 0x6071327d,[],0x0
+  0x60713748 14 extbu D0
+  0x60713749 f1e1 mov D0,A1
+  0x6071374b 88 mov D2,D0
+  0x6071374c fca040619962 mov (0x62996140),A0
+  0x60713752 8519 mov 0x19,D1
+  0x60713754 ddddfc94fff028 call 0x60063431,[d2,d3,a2,a3],0x28
+-- call 0x60713780 in FUN_607135ad bytes ddb1fc94fff028
+  0x60713760 c812 beq 0x60713772
+  0x60713762 a002 cmp 0x2,D0
+  0x60713764 c80e beq 0x60713772
+  0x60713766 a003 cmp 0x3,D0
+  0x60713768 c80a beq 0x60713772
+  0x6071376a a004 cmp 0x4,D0
+  0x6071376c c806 beq 0x60713772
+  0x6071376e a005 cmp 0x5,D0
+  0x60713770 c902 bne 0x60713772
+  0x60713772 88 mov D2,D0
+  0x60713773 f8be08 movhu (0x8,sp),D2
+  0x60713776 fca040619962 mov (0x62996140),A0
+  0x6071377c f1e9 mov D2,A1
+  0x6071377e 851a mov 0x1a,D1
+  0x60713780 ddb1fc94fff028 call 0x60063431,[d2,d3,a2,a3],0x28
+
+== caller windows ==
+-- callers of 0x601eff7a : 14 in the asm listing
+  site 0x601d8078 dd027f0100f028 call 0x601eff7a,[d2,d3,a2,a3],0x28
+    0x601d804b a001 cmp 0x1,D0
+    0x601d804d c818 beq 0x601d8065
+    0x601d804f fcac24320460 movhu (0x60043224),D0
+    0x601d8055 04 clr D1
+    0x601d8056 18 exth D0
+    0x601d8057 9002 mov 0x2,A0
+    0x601d8059 dd6473e7fff048 call 0x6004f3bd,[d2,d3,a2,a3],0x48
+    0x601d8060 8003 mov 0x3,D0
+    0x601d8062 ccda00 jmp 0x601d813c
+    0x601d8065 802d mov 0x2d,D0
+    0x601d8067 dd897e01008018 call 0x601efef0,[d2],0x18
+    0x601d806e 82 mov D0,D2
+    0x601d806f 8b mov D2,D3
+    0x601d8070 17 extbu D3
+    0x601d8071 af01 cmp 0x1,D3
+    0x601d8073 c90c bne 0x601d807f
+    0x601d8075 802d mov 0x2d,D0
+    0x601d8077 04 clr D1
+    0x601d8078 dd027f0100f028 call 0x601eff7a,[d2,d3,a2,a3],0x28
+
+  site 0x601d80df dd9b7e0100f028 call 0x601eff7a,[d2,d3,a2,a3],0x28
+    0x601d80a6 dd5f56e7ff8008 call 0x6004d705,[d2],0x8
+    0x601d80ad 8002 mov 0x2,D0
+    0x601d80af 04 clr D1
+    0x601d80b0 9000 mov 0x0,A0
+    0x601d80b2 9501 mov 0x1,A1
+    0x601d80b4 dd40880100f02c call 0x601f08f4,[d2,d3,a2,a3],0x2c
+    0x601d80bb 2cf401 mov 0x1f4,D0
+    0x601d80be dd4756e7ff8008 call 0x6004d705,[d2],0x8
+    0x601d80c5 fcac24320460 movhu (0x60043224),D0
+    0x601d80cb 8503 mov 0x3,D1
+    0x601d80cd 18 exth D0
+    0x601d80ce 9000 mov 0x0,A0
+    0x601d80d0 dded72e7fff048 call 0x6004f3bd,[d2,d3,a2,a3],0x48
+    0x601d80d7 af01 cmp 0x1,D3
+    0x601d80d9 c90d bne 0x601d80e6
+    0x601d80db 802d mov 0x2d,D0
+    0x601d80dd 16 extbu D2
+    0x601d80de 89 mov D2,D1
+    0x601d80df dd9b7e0100f028 call 0x601eff7a,[d2,d3,a2,a3],0x28
+
+  site 0x601d81ab ddcf7d0100f028 call 0x601eff7a,[d2,d3,a2,a3],0x28
+    0x601d8180 a500 cmp 0x0,D1
+    0x601d8182 c806 beq 0x601d8188
+    0x601d8184 a502 cmp 0x2,D1
+    0x601d8186 c95a bne 0x601d81e0
+    0x601d8188 f8bd08 movhu (0x8,sp),D1
+    0x601d818b a510 cmp 0x10,D1
+    0x601d818d c306 ble 0x601d8193
+    0x601d818f 00 clr D0
+    0x601d8190 f89308 movhu D0,(0x8,sp)
+    0x601d8193 f8bd0e movhu (0xe,sp),D1
+    0x601d8196 a51e cmp 0x1e,D1
+    0x601d8198 c306 ble 0x601d819e
+    0x601d819a 00 clr D0
+    0x601d819b f8930e movhu D0,(0xe,sp)
+    0x601d819e f8bd08 movhu (0x8,sp),D1
+    0x601d81a1 a500 cmp 0x0,D1
+    0x601d81a3 c811 beq 0x601d81b4
+    0x601d81a5 fcccd2d40000 mov 0xd4d2,D0
+    0x601d81ab ddcf7d0100f028 call 0x601eff7a,[d2,d3,a2,a3],0x28
+
+  site 0x601d8515 dd657a0100f028 call 0x601eff7a,[d2,d3,a2,a3],0x28
+    0x601d84e8 2005 add 0x5,A0
+    0x601d84ea f040 movbu (A0),D0
+    0x601d84ec 3d mov sp,A1
+    0x601d84ed 2134 add 0x34,A1
+    0x601d84ef 4724 mov A1,(0x24,sp)
+    0x601d84f1 f89334 movhu D0,(0x34,sp)
+    0x601d84f4 f84001 movbu (0x1,A0),D0
+    0x601d84f7 f89336 movhu D0,(0x36,sp)
+    0x601d84fa f84002 movbu (0x2,A0),D0
+    0x601d84fd f89338 movhu D0,(0x38,sp)
+    0x601d8500 802d mov 0x2d,D0
+    0x601d8502 ddee7901008018 call 0x601efef0,[d2],0x18
+    0x601d8509 f89230 movbu D0,(0x30,sp)
+    0x601d850c 14 extbu D0
+    0x601d850d a000 cmp 0x0,D0
+    0x601d850f c90d bne 0x601d851c
+    0x601d8511 802d mov 0x2d,D0
+    0x601d8513 8501 mov 0x1,D1
+    0x601d8515 dd657a0100f028 call 0x601eff7a,[d2,d3,a2,a3],0x28
+
+  site 0x601d85f0 dd8a790100f028 call 0x601eff7a,[d2,d3,a2,a3],0x28
+    0x601d85bd 1c exthu D0
+    0x601d85be a001 cmp 0x1,D0
+    0x601d85c0 c8d4 beq 0x601d8594
+    0x601d85c2 ddc99100000004 call 0x601e178b,[],0x4
+    0x601d85c9 1c exthu D0
+    0x601d85ca a000 cmp 0x0,D0
+    0x601d85cc c90e bne 0x601d85da
+    0x601d85ce dd869000000004 call 0x601e1654,[],0x4
+    0x601d85d5 1c exthu D0
+    0x601d85d6 a001 cmp 0x1,D0
+    0x601d85d8 c824 beq 0x601d85fc
+    0x601d85da fcac24320460 movhu (0x60043224),D0
+    0x601d85e0 04 clr D1
+    0x601d85e1 18 exth D0
+    0x601d85e2 9002 mov 0x2,A0
+    0x601d85e4 ddd96de7fff048 call 0x6004f3bd,[d2,d3,a2,a3],0x48
+    0x601d85eb f8b930 movbu (0x30,sp),D1
+    0x601d85ee 802d mov 0x2d,D0
+    0x601d85f0 dd8a790100f028 call 0x601eff7a,[d2,d3,a2,a3],0x28
+
+  site 0x601d88ca ddb0760100f028 call 0x601eff7a,[d2,d3,a2,a3],0x28
+    0x601d888e dd66800100f02c call 0x601f08f4,[d2,d3,a2,a3],0x2c
+    0x601d8895 8006 mov 0x6,D0
+    0x601d8897 dd6e4ee7ff8008 call 0x6004d705,[d2],0x8
+    0x601d889e fcac24320460 movhu (0x60043224),D0
+    0x601d88a4 8503 mov 0x3,D1
+    0x601d88a6 18 exth D0
+    0x601d88a7 9000 mov 0x0,A0
+    0x601d88a9 dd146be7fff048 call 0x6004f3bd,[d2,d3,a2,a3],0x48
+    0x601d88b0 5c2c mov (0x2c,sp),A0
+    0x601d88b2 f060 movhu (A0),D0
+    0x601d88b4 a000 cmp 0x0,D0
+    0x601d88b6 c90f bne 0x601d88c5
+    0x601d88b8 2c0301 mov 0x103,D0
+    0x601d88bb 9000 mov 0x0,A0
+    0x601d88bd 91 mov A0,A1
+    0x601d88be dd2d8201000004 call 0x601f0aeb,[],0x4
+    0x601d88c5 f8b930 movbu (0x30,sp),D1
+    0x601d88c8 802d mov 0x2d,D0
+    0x601d88ca ddb0760100f028 call 0x601eff7a,[d2,d3,a2,a3],0x28
+
+  site 0x601e0704 dd76f80000f028 call 0x601eff7a,[d2,d3,a2,a3],0x28
+    0x601e06c4 cc4a02 jmp 0x601e090e
+    0x601e06c7 f82308 mov (0x8,A3),A0
+    0x601e06ca fccc9ff9a661 mov 0x61a6f99f,D0
+    0x601e06d0 4204 mov D0,(0x4,sp)
+    0x601e06d2 3d mov sp,A1
+    0x601e06d3 2134 add 0x34,A1
+    0x601e06d5 4708 mov A1,(0x8,sp)
+    0x601e06d7 dd989ee6ff000c call 0x6004a56f,[],0xc
+    0x601e06de fcdca2f9a661 mov 0x61a6f9a2,A0
+    0x601e06e4 5834 mov (0x34,sp),D0
+    0x601e06e6 dd7338e4ffa018 call 0x60023f59,[d2,a2],0x18
+    0x601e06ed dd4fb683010000 call 0x61a1bd3c,[],0x0
+    0x601e06f4 803f mov 0x3f,D0
+    0x601e06f6 ddfaf700008018 call 0x601efef0,[d2],0x18
+    0x601e06fd 14 extbu D0
+    0x601e06fe 4218 mov D0,(0x18,sp)
+    0x601e0700 803f mov 0x3f,D0
+    0x601e0702 8501 mov 0x1,D1
+    0x601e0704 dd76f80000f028 call 0x601eff7a,[d2,d3,a2,a3],0x28
+
+  site 0x601e07db dd9ff70000f028 call 0x601eff7a,[d2,d3,a2,a3],0x28
+    0x601e07b0 cd677d801c call 0x601e8517,[d2],0x1c
+    0x601e07b5 0c clr D3
+    0x601e07b6 14 extbu D0
+    0x601e07b7 ac cmp D3,D0
+    0x601e07b8 c904 bne 0x601e07bc
+    0x601e07ba 8f01 mov 0x1,D3
+    0x601e07bc 8c mov D3,D0
+    0x601e07bd 14 extbu D0
+    0x601e07be a000 cmp 0x0,D0
+    0x601e07c0 c949 bne 0x601e0809
+    0x601e07c2 801f mov 0x1f,D0
+    0x601e07c4 dd2cf700008018 call 0x601efef0,[d2],0x18
+    0x601e07cb f1e3 mov D0,A3
+    0x601e07cd 8023 mov 0x23,D0
+    0x601e07cf dd21f700008018 call 0x601efef0,[d2],0x18
+    0x601e07d6 82 mov D0,D2
+    0x601e07d7 801f mov 0x1f,D0
+    0x601e07d9 8501 mov 0x1,D1
+    0x601e07db dd9ff70000f028 call 0x601eff7a,[d2,d3,a2,a3],0x28
+
+  site 0x601e07e6 dd94f70000f028 call 0x601eff7a,[d2,d3,a2,a3],0x28
+    0x601e07b7 ac cmp D3,D0
+    0x601e07b8 c904 bne 0x601e07bc
+    0x601e07ba 8f01 mov 0x1,D3
+    0x601e07bc 8c mov D3,D0
+    0x601e07bd 14 extbu D0
+    0x601e07be a000 cmp 0x0,D0
+    0x601e07c0 c949 bne 0x601e0809
+    0x601e07c2 801f mov 0x1f,D0
+    0x601e07c4 dd2cf700008018 call 0x601efef0,[d2],0x18
+    0x601e07cb f1e3 mov D0,A3
+    0x601e07cd 8023 mov 0x23,D0
+    0x601e07cf dd21f700008018 call 0x601efef0,[d2],0x18
+    0x601e07d6 82 mov D0,D2
+    0x601e07d7 801f mov 0x1f,D0
+    0x601e07d9 8501 mov 0x1,D1
+    0x601e07db dd9ff70000f028 call 0x601eff7a,[d2,d3,a2,a3],0x28
+    0x601e07e2 8023 mov 0x23,D0
+    0x601e07e4 850a mov 0xa,D1
+    0x601e07e6 dd94f70000f028 call 0x601eff7a,[d2,d3,a2,a3],0x28
+
+  site 0x601e08c6 ddb4f60000f028 call 0x601eff7a,[d2,d3,a2,a3],0x28
+    0x601e088e 4204 mov D0,(0x4,sp)
+    0x601e0890 2c6202 mov 0x262,D0
+    0x601e0893 4208 mov D0,(0x8,sp)
+    0x601e0895 fcac9e2f0460 movhu (0x60042f9e),D0
+    0x601e089b 8501 mov 0x1,D1
+    0x601e089d 18 exth D0
+    0x601e089e 9000 mov 0x0,A0
+    0x601e08a0 fcddfff8a661 mov 0x61a6f8ff,A1
+    0x601e08a6 dd47ee0000b024 call 0x601ef6ed,[d2,a2,a3],0x24
+    0x601e08ad dd92b483010000 call 0x61a1bd3f,[],0x0
+    0x601e08b4 fabc2401 movhu (0x124,sp),D0
+    0x601e08b8 f8ec02 btst 0x2,D0
+    0x601e08bb c81c beq 0x601e08d7
+    0x601e08bd 17 extbu D3
+    0x601e08be af00 cmp 0x0,D3
+    0x601e08c0 c917 bne 0x601e08d7
+    0x601e08c2 801f mov 0x1f,D0
+    0x601e08c4 f1dd mov A3,D1
+    0x601e08c6 ddb4f60000f028 call 0x601eff7a,[d2,d3,a2,a3],0x28
+
+  site 0x601e08d0 ddaaf60000f028 call 0x601eff7a,[d2,d3,a2,a3],0x28
+    0x601e0895 fcac9e2f0460 movhu (0x60042f9e),D0
+    0x601e089b 8501 mov 0x1,D1
+    0x601e089d 18 exth D0
+    0x601e089e 9000 mov 0x0,A0
+    0x601e08a0 fcddfff8a661 mov 0x61a6f8ff,A1
+    0x601e08a6 dd47ee0000b024 call 0x601ef6ed,[d2,a2,a3],0x24
+    0x601e08ad dd92b483010000 call 0x61a1bd3f,[],0x0
+    0x601e08b4 fabc2401 movhu (0x124,sp),D0
+    0x601e08b8 f8ec02 btst 0x2,D0
+    0x601e08bb c81c beq 0x601e08d7
+    0x601e08bd 17 extbu D3
+    0x601e08be af00 cmp 0x0,D3
+    0x601e08c0 c917 bne 0x601e08d7
+    0x601e08c2 801f mov 0x1f,D0
+    0x601e08c4 f1dd mov A3,D1
+    0x601e08c6 ddb4f60000f028 call 0x601eff7a,[d2,d3,a2,a3],0x28
+    0x601e08cd 8023 mov 0x23,D0
+    0x601e08cf 89 mov D2,D1
+    0x601e08d0 ddaaf60000f028 call 0x601eff7a,[d2,d3,a2,a3],0x28
+
+  site 0x601e0905 dd75f60000f028 call 0x601eff7a,[d2,d3,a2,a3],0x28
+    0x601e08c4 f1dd mov A3,D1
+    0x601e08c6 ddb4f60000f028 call 0x601eff7a,[d2,d3,a2,a3],0x28
+    0x601e08cd 8023 mov 0x23,D0
+    0x601e08cf 89 mov D2,D1
+    0x601e08d0 ddaaf60000f028 call 0x601eff7a,[d2,d3,a2,a3],0x28
+    0x601e08d7 fcac24320460 movhu (0x60043224),D0
+    0x601e08dd 8503 mov 0x3,D1
+    0x601e08df 18 exth D0
+    0x601e08e0 9000 mov 0x0,A0
+    0x601e08e2 dddbeae6fff048 call 0x6004f3bd,[d2,d3,a2,a3],0x48
+    0x601e08e9 2c0301 mov 0x103,D0
+    0x601e08ec 9000 mov 0x0,A0
+    0x601e08ee 91 mov A0,A1
+    0x601e08ef cdd1caf058 call 0x601dd3c0,[d2,d3,a2,a3],0x58
+    0x601e08f4 fcdcbcf8a661 mov 0x61a6f8bc,A0
+    0x601e08fa dd6e34e4ff301c call 0x60023d68,[a2,a3],0x1c
+    0x601e0901 5918 mov (0x18,sp),D1
+    0x601e0903 803f mov 0x3f,D0
+    0x601e0905 dd75f60000f028 call 0x601eff7a,[d2,d3,a2,a3],0x28
+
+  site 0x601e641b dd5f9b0000f028 call 0x601eff7a,[d2,d3,a2,a3],0x28
+    0x601e13d9 fcdcacf9a661 mov 0x61a6f9ac,A0
+    0x601e13df 1c exthu D0
+    0x601e13e0 dd792be4ffa018 call 0x60023f59,[d2,a2],0x18
+    0x601e13e7 ca1c bra 0x601e1403
+    0x601e13e9 fcdcc0f9a661 mov 0x61a6f9c0,A0
+    0x601e13ef dd7929e4ff301c call 0x60023d68,[a2,a3],0x1c
+    0x601e13f6 fcdccef9a661 mov 0x61a6f9ce,A0
+    0x601e13fc dd6c29e4ff301c call 0x60023d68,[a2,a3],0x1c
+    0x601e1403 00 clr D0
+    0x601e1404 ca14 bra 0x601e1418
+    0x601e1406 fcdcaee12c60 mov 0x602ce1ae,A0
+    0x601e140c dd5c29e4ff301c call 0x60023d68,[a2,a3],0x1c
+    0x601e1413 cd0c002008 call 0x601e141f,[a2],0x8
+    0x601e1418 fafe6c02 add 0x26c,sp
+    0x601e141c dff010 ret [d2,d3,a2,a3],0x10
+    0x601e6412 806e mov 0x6e,D0
+    0x601e6414 08 clr D2
+    0x601e6415 fca59424a562 mov (0x62a52494),D1
+    0x601e641b dd5f9b0000f028 call 0x601eff7a,[d2,d3,a2,a3],0x28
+
+  site 0x601e72c1 ddb98c0000f028 call 0x601eff7a,[d2,d3,a2,a3],0x28
+    0x601e7286 fc8f4024a562 movhu D3,(0x62a52440)
+    0x601e728c a2 cmp D0,D2
+    0x601e728d c905 bne 0x601e7292
+    0x601e728f cc9600 jmp 0x601e7325
+    0x601e7292 fca85928a562 movbu (0x62a52859),D0
+    0x601e7298 a000 cmp 0x0,D0
+    0x601e729a c82e beq 0x601e72c8
+    0x601e729c fcad0828a562 movhu (0x62a52808),D1
+    0x601e72a2 a500 cmp 0x0,D1
+    0x601e72a4 c824 beq 0x601e72c8
+    0x601e72a6 fcac0624a562 movhu (0x62a52406),D0
+    0x601e72ac a1 cmp D0,D1
+    0x601e72ad c81b beq 0x601e72c8
+    0x601e72af fcacf027a562 movhu (0x62a527f0),D0
+    0x601e72b5 a000 cmp 0x0,D0
+    0x601e72b7 c911 bne 0x601e72c8
+    0x601e72b9 fcad0624a562 movhu (0x62a52406),D1
+    0x601e72bf 806f mov 0x6f,D0
+    0x601e72c1 ddb98c0000f028 call 0x601eff7a,[d2,d3,a2,a3],0x28
+
+-- callers of 0x6041ab1d : 9 in the asm listing
+  site 0x6040c6a7 dd76e40000f034 call 0x6041ab1d,[d2,d3,a2,a3],0x34
+    0x6040c66e dd8befc3ff0000 call 0x6004b5f9,[],0x0
+    0x6040c675 a000 cmp 0x0,D0
+    0x6040c677 c910 bne 0x6040c687
+    0x6040c679 2c9403 mov 0x394,D0
+    0x6040c67c 9000 mov 0x0,A0
+    0x6040c67e 04 clr D1
+    0x6040c67f fce600000001 or 0x1000000,D2
+    0x6040c685 ca20 bra 0x6040c6a5
+    0x6040c687 9c mov A3,A0
+    0x6040c688 fcddab256260 mov 0x606225ab,A1
+    0x6040c68e dd6befc3ff0000 call 0x6004b5f9,[],0x0
+    0x6040c695 a000 cmp 0x0,D0
+    0x6040c697 c943 bne 0x6040c6da
+    0x6040c699 2c9403 mov 0x394,D0
+    0x6040c69c 9000 mov 0x0,A0
+    0x6040c69e 04 clr D1
+    0x6040c69f fce600000003 or 0x3000000,D2
+    0x6040c6a5 f1e9 mov D2,A1
+    0x6040c6a7 dd76e40000f034 call 0x6041ab1d,[d2,d3,a2,a3],0x34
+
+  site 0x60af08db dd42a292fff034 call 0x6041ab1d,[d2,d3,a2,a3],0x34
+    0x60713772 88 mov D2,D0
+    0x60713773 f8be08 movhu (0x8,sp),D2
+    0x60713776 fca040619962 mov (0x62996140),A0
+    0x6071377c f1e9 mov D2,A1
+    0x6071377e 851a mov 0x1a,D1
+    0x60713780 ddb1fc94fff028 call 0x60063431,[d2,d3,a2,a3],0x28
+    0x60713787 8001 mov 0x1,D0
+    0x60713789 fc8244619962 movbu D0,(0x62996144)
+    0x6071378f dff02c ret [d2,d3,a2,a3],0x2c
+    0x60af08c9 08 clr D2
+    0x60af08ca a8 cmp D2,D0
+    0x60af08cb c804 beq 0x60af08cf
+    0x60af08cd 8a01 mov 0x1,D2
+    0x60af08cf fcccc1ba0000 mov 0xbac1,D0
+    0x60af08d5 9000 mov 0x0,A0
+    0x60af08d7 04 clr D1
+    0x60af08d8 16 extbu D2
+    0x60af08d9 f1e9 mov D2,A1
+    0x60af08db dd42a292fff034 call 0x6041ab1d,[d2,d3,a2,a3],0x34
+
+  site 0x60b30044 ddd9aa8efff034 call 0x6041ab1d,[d2,d3,a2,a3],0x34
+    0x60b30004 dd4d6b8dffe034 call 0x60406b51,[d2,d3,a2],0x34
+    0x60b3000b f8021c mov (0x1c,A2),D0
+    0x60b3000e f80634 mov (0x34,A2),D1
+    0x60b30011 dd71018cff0004 call 0x603f0182,[],0x4
+    0x60b30018 2c8e04 mov 0x48e,D0
+    0x60b3001b dd82038cff0004 call 0x603f039d,[],0x4
+    0x60b30022 82 mov D0,D2
+    0x60b30023 89 mov D2,D1
+    0x60b30024 2c8e04 mov 0x48e,D0
+    0x60b30027 dd36988eff0004 call 0x6041985d,[],0x4
+    0x60b3002e 89 mov D2,D1
+    0x60b3002f 1e exthu D2
+    0x60b30030 2c8e04 mov 0x48e,D0
+    0x60b30033 dd35938effc00c call 0x60419368,[d2,d3],0xc
+    0x60b3003a fcccc1bb0000 mov 0xbbc1,D0
+    0x60b30040 9000 mov 0x0,A0
+    0x60b30042 91 mov A0,A1
+    0x60b30043 04 clr D1
+    0x60b30044 ddd9aa8efff034 call 0x6041ab1d,[d2,d3,a2,a3],0x34
+
+  site 0x60b9d0a2 dd7bda87fff034 call 0x6041ab1d,[d2,d3,a2,a3],0x34
+    0x60b30168 aa00 cmp 0x0,D2
+    0x60b3016a c80b beq 0x60b30175
+    0x60b3016c fccc010000f0 mov -0xfffffff,D0
+    0x60b30172 f81238 mov D0,(0x38,A2)
+    0x60b30175 dd480a91ff801c call 0x60440bbd,[d2],0x1c
+    0x60b3017c f80238 mov (0x38,A2),D0
+    0x60b3017f dfa014 ret [d2,a2],0x14
+    0x60b9d089 93 mov A0,A3
+    0x60b9d08a 2c9429 mov 0x2994,D0
+    0x60b9d08d 9000 mov 0x0,A0
+    0x60b9d08f 04 clr D1
+    0x60b9d090 dd69d187ff0004 call 0x6041a1f9,[],0x4
+    0x60b9d097 a000 cmp 0x0,D0
+    0x60b9d099 c810 beq 0x60b9d0a9
+    0x60b9d09b 2c9429 mov 0x2994,D0
+    0x60b9d09e 9000 mov 0x0,A0
+    0x60b9d0a0 04 clr D1
+    0x60b9d0a1 91 mov A0,A1
+    0x60b9d0a2 dd7bda87fff034 call 0x6041ab1d,[d2,d3,a2,a3],0x34
+
+  site 0x60b9dc24 ddf9ce87fff034 call 0x6041ab1d,[d2,d3,a2,a3],0x34
+    0x60b9d0d9 f1d0 mov A0,D0
+    0x60b9d0db 99 mov A2,A1
+    0x60b9d0dc 9c mov A3,A0
+    0x60b9d0dd ddefc523003010 call 0x60dd96cc,[a2,a3],0x10
+    0x60b9d0e4 f1e8 mov D2,A0
+    0x60b9d0e6 dd06ad23000000 call 0x60dd7dec,[],0x0
+    0x60b9d0ed dfb01c ret [d2,a2,a3],0x1c
+    0x60b9dc0a 92 mov A0,A2
+    0x60b9dc0b 82 mov D0,D2
+    0x60b9dc0c aa03 cmp 0x3,D2
+    0x60b9dc0e c409 bcs 0x60b9dc17
+    0x60b9dc10 cd7afb3014 call 0x60b9d78a,[a2,a3],0x14
+    0x60b9dc15 ca1c bra 0x60b9dc31
+    0x60b9dc17 cdbbfb3014 call 0x60b9d7d2,[a2,a3],0x14
+    0x60b9dc1c 2c9429 mov 0x2994,D0
+    0x60b9dc1f 9000 mov 0x0,A0
+    0x60b9dc21 04 clr D1
+    0x60b9dc22 f1e9 mov D2,A1
+    0x60b9dc24 ddf9ce87fff034 call 0x6041ab1d,[d2,d3,a2,a3],0x34
+
+  site 0x60b9f5a6 dd77b587fff034 call 0x6041ab1d,[d2,d3,a2,a3],0x34
+    0x60b9f57b 8012 mov 0x12,D0
+    0x60b9f57d f82508 mov (0x8,A1),A1
+    0x60b9f580 f0f1 calls (A1)
+    0x60b9f582 a8 cmp D2,D0
+    0x60b9f583 c874 beq 0x60b9f5f7
+    0x60b9f585 fa07b000 mov (0xb0,A3),D1
+    0x60b9f589 fac92d01 cmp 0x12d,D1
+    0x60b9f58d c96a bne 0x60b9f5f7
+    0x60b9f58f 2c9429 mov 0x2994,D0
+    0x60b9f592 9000 mov 0x0,A0
+    0x60b9f594 89 mov D2,D1
+    0x60b9f595 dd64ac87ff0004 call 0x6041a1f9,[],0x4
+    0x60b9f59c a8 cmp D2,D0
+    0x60b9f59d c810 beq 0x60b9f5ad
+    0x60b9f59f 2c9429 mov 0x2994,D0
+    0x60b9f5a2 9000 mov 0x0,A0
+    0x60b9f5a4 89 mov D2,D1
+    0x60b9f5a5 91 mov A0,A1
+    0x60b9f5a6 dd77b587fff034 call 0x6041ab1d,[d2,d3,a2,a3],0x34
+
+  site 0x61a23f3e dddf6b9ffef034 call 0x6041ab1d,[d2,d3,a2,a3],0x34
+    0x60b9f5f7 aa00 cmp 0x0,D2
+    0x60b9f5f9 c909 bne 0x60b9f602
+    0x60b9f5fb 9c mov A3,A0
+    0x60b9f5fc cd00f1a00c call 0x60b9e6fc,[d2,a2],0xc
+    0x60b9f601 82 mov D0,D2
+    0x60b9f602 88 mov D2,D0
+    0x60b9f603 dff020 ret [d2,d3,a2,a3],0x20
+    0x61a23f27 2cb41c mov 0x1cb4,D0
+    0x61a23f2a dd026f9ffec020 call 0x6041ae2c,[d2,d3],0x20
+    0x61a23f31 83 mov D0,D3
+    0x61a23f32 08 clr D2
+    0x61a23f33 ab cmp D2,D3
+    0x61a23f34 c715 bls 0x61a23f49
+    0x61a23f36 2cb41c mov 0x1cb4,D0
+    0x61a23f39 9000 mov 0x0,A0
+    0x61a23f3b 89 mov D2,D1
+    0x61a23f3c 1d exthu D1
+    0x61a23f3d 91 mov A0,A1
+    0x61a23f3e dddf6b9ffef034 call 0x6041ab1d,[d2,d3,a2,a3],0x34
+
+  site 0x61a23f82 dd9b6b9ffef034 call 0x6041ab1d,[d2,d3,a2,a3],0x34
+    0x61a23f64 d9 lne
+    0x61a23f65 1f exthu D3
+    0x61a23f66 8e mov D3,D2
+    0x61a23f67 f9020f udf00 0xf,D2
+    0x61a23f6a 48 inc D2
+    0x61a23f6b f1ea mov D2,A2
+    0x61a23f6d 8001 mov 0x1,D0
+    0x61a23f6f af04 cmp 0x4,D3
+    0x61a23f71 c808 beq 0x61a23f79
+    0x61a23f73 4c inc D3
+    0x61a23f74 f9030f udf00 0xf,D3
+    0x61a23f77 8c mov D3,D0
+    0x61a23f78 40 inc D0
+    0x61a23f79 9000 mov 0x0,A0
+    0x61a23f7b 04 clr D1
+    0x61a23f7c 1c exthu D0
+    0x61a23f7d f1e1 mov D0,A1
+    0x61a23f7f 2cb41c mov 0x1cb4,D0
+    0x61a23f82 dd9b6b9ffef034 call 0x6041ab1d,[d2,d3,a2,a3],0x34
+
+  site 0x61a23f9f dd7e6b9ffef034 call 0x6041ab1d,[d2,d3,a2,a3],0x34
+    0x61a23f7d f1e1 mov D0,A1
+    0x61a23f7f 2cb41c mov 0x1cb4,D0
+    0x61a23f82 dd9b6b9ffef034 call 0x6041ab1d,[d2,d3,a2,a3],0x34
+    0x61a23f89 08 clr D2
+    0x61a23f8a 0c clr D3
+    0x61a23f8b f1d8 mov A2,D0
+    0x61a23f8d 1c exthu D0
+    0x61a23f8e f1e2 mov D0,A2
+    0x61a23f90 1e exthu D2
+    0x61a23f91 56 asl2 D2
+    0x61a23f92 3c mov sp,A0
+    0x61a23f93 50 inc4 A0
+    0x61a23f94 f398 mov (D2,A0),A1
+    0x61a23f96 2cb41c mov 0x1cb4,D0
+    0x61a23f99 9000 mov 0x0,A0
+    0x61a23f9b f1d9 mov A2,D1
+    0x61a23f9d ed add D3,D1
+    0x61a23f9e 1d exthu D1
+    0x61a23f9f dd7e6b9ffef034 call 0x6041ab1d,[d2,d3,a2,a3],0x34
+
+-- callers of 0x60196ee3 : 1 in the asm listing
+  site 0x601956ef cdf417f034 call 0x60196ee3,[d2,d3,a2,a3],0x34
+    0x601956c7 f8683a movhu (0x3a,A0),D2
+    0x601956ca 4a18 mov D2,(0x18,sp)
+    0x601956cc f86830 movhu (0x30,A0),D2
+    0x601956cf f15e add A3,D2
+    0x601956d1 1e exthu D2
+    0x601956d2 4a1c mov D2,(0x1c,sp)
+    0x601956d4 5c4c mov (0x4c,sp),A0
+    0x601956d6 78 mov (A0),D2
+    0x601956d7 1e exthu D2
+    0x601956d8 4a20 mov D2,(0x20,sp)
+    0x601956da 5c64 mov (0x64,sp),A0
+    0x601956dc cd1225f040 call 0x60197bee,[d2,d3,a2,a3],0x40
+    0x601956e1 f89380 movhu D0,(0x80,sp)
+    0x601956e4 f8bd80 movhu (0x80,sp),D1
+    0x601956e7 a500 cmp 0x0,D1
+    0x601956e9 c90e bne 0x601956f7
+    0x601956eb 5c70 mov (0x70,sp),A0
+    0x601956ed 5850 mov (0x50,sp),D0
+    0x601956ef cdf417f034 call 0x60196ee3,[d2,d3,a2,a3],0x34
+
+-- callers of 0x601971f5 : 1 in the asm listing
+  site 0x6019581f cdd619f034 call 0x601971f5,[d2,d3,a2,a3],0x34
+    0x601957fa 5c48 mov (0x48,sp),A0
+    0x601957fc f064 movhu (A0),D1
+    0x601957fe 5c40 mov (0x40,sp),A0
+    0x60195800 f150 add A0,D0
+    0x60195802 1c exthu D0
+    0x60195803 4204 mov D0,(0x4,sp)
+    0x60195805 8032 mov 0x32,D0
+    0x60195807 4208 mov D0,(0x8,sp)
+    0x60195809 5850 mov (0x50,sp),D0
+    0x6019580b 5c4c mov (0x4c,sp),A0
+    0x6019580d cdef24f080 call 0x60197cfc,[d2,d3,a2,a3],0x80
+    0x60195812 f1e2 mov D0,A2
+    0x60195814 f1d8 mov A2,D0
+    0x60195816 1c exthu D0
+    0x60195817 a000 cmp 0x0,D0
+    0x60195819 c90d bne 0x60195826
+    0x6019581b 5850 mov (0x50,sp),D0
+    0x6019581d f1ec mov D3,A0
+    0x6019581f cdd619f034 call 0x601971f5,[d2,d3,a2,a3],0x34
+
+-- callers of 0x601972f1 : 0 in the asm listing
+-- callers of 0x60195424 : 1 in the asm listing
+  site 0x60194b79 cdab08f094 call 0x60195424,[d2,d3,a2,a3],0x94
+    0x60194b55 cc9500 jmp 0x60194bea
+    0x60194b58 a007 cmp 0x7,D0
+    0x60194b5a c973 bne 0x60194bcd
+    0x60194b5c 00 clr D0
+    0x60194b5d f85203 movbu D0,(0x3,A2)
+    0x60194b60 3d mov sp,A1
+    0x60194b61 2114 add 0x14,A1
+    0x60194b63 cdf706f024 call 0x6019525a,[d2,d3,a2,a3],0x24
+    0x60194b68 83 mov D0,D3
+    0x60194b69 8d mov D3,D1
+    0x60194b6a 1d exthu D1
+    0x60194b6b a500 cmp 0x0,D1
+    0x60194b6d c914 bne 0x60194b81
+    0x60194b6f f8622c movhu (0x2c,A2),D0
+    0x60194b72 a000 cmp 0x0,D0
+    0x60194b74 c90d bne 0x60194b81
+    0x60194b76 98 mov A2,A0
+    0x60194b77 5814 mov (0x14,sp),D0
+    0x60194b79 cdab08f094 call 0x60195424,[d2,d3,a2,a3],0x94
+
+
+== FUN_607135ad in order (A2/A3/D0 lines marked) ==
+  0x607135ad 4304 mov A0,(0x4,sp)
+  0x607135af fca040619962 mov (0x62996140),A0
+  0x607135b5 f89308 movhu D0,(0x8,sp)
+  0x607135b8 b000 cmp 0x0,A0
+  0x607135ba c905 bne 0x607135bf
+  0x607135bc cccb01 jmp 0x60713787
+  0x607135bf 8510 mov 0x10,D1
+  0x607135c1 fccc64fa0000 mov 0xfa64,D0
+  0x607135c7 250011 mov 0x1100,A1
+  0x607135ca dd67fe94fff028 call 0x60063431,[d2,d3,a2,a3],0x28 <<
+  0x607135d1 fca154619962 mov (0x62996154),A1
+  0x607135d7 fcae62619962 movhu (0x62996162),D2
+  0x607135dd f84d11 movbu (0x11,A1),D3
+  0x607135e0 f84110 movbu (0x10,A1),D0
+  0x607135e3 f8c210 asl 0x10,D2
+  0x607135e6 f8c308 asl 0x8,D3
+  0x607135e9 f21e or D3,D2
+  0x607135eb f212 or D0,D2
+  0x607135ed f1e9 mov D2,A1
+  0x607135ef 2664fa mov 0xfa64,A2 <<
+  0x607135f2 f1d8 mov A2,D0 <<
+  0x607135f4 fca040619962 mov (0x62996140),A0
+  0x607135fa 8511 mov 0x11,D1
+  0x607135fc dd35fe94fff028 call 0x60063431,[d2,d3,a2,a3],0x28 <<
+  0x60713603 fcae64619962 movhu (0x62996164),D2
+  0x60713609 f1d8 mov A2,D0 <<
+  0x6071360b f1e9 mov D2,A1
+  0x6071360d fca040619962 mov (0x62996140),A0
+  0x60713613 8512 mov 0x12,D1
+  0x60713615 dd1cfe94fff028 call 0x60063431,[d2,d3,a2,a3],0x28 <<
+  0x6071361c fca054619962 mov (0x62996154),A0
+  0x60713622 cdf5f70000 call 0x60712e17,[],0x0 <<
+  0x60713627 fcae60619962 movhu (0x62996160),D2
+  0x6071362d f8c010 asl 0x10,D0
+  0x60713630 f218 or D2,D0
+  0x60713632 f1e1 mov D0,A1
+  0x60713634 f1d8 mov A2,D0 <<
+  0x60713636 fca040619962 mov (0x62996140),A0
+  0x6071363c 8513 mov 0x13,D1
+  0x6071363e ddf3fd94fff028 call 0x60063431,[d2,d3,a2,a3],0x28 <<
+  0x60713645 fcaf6e619962 movhu (0x6299616e),D3
+  0x6071364b fcac6c619962 movhu (0x6299616c),D0
+  0x60713651 fcae6a619962 movhu (0x6299616a),D2
+  0x60713657 fcad68619962 movhu (0x62996168),D1
+  0x6071365d 9b mov A2,A3 <<
+  0x6071365e f8c318 asl 0x18,D3
+  0x60713661 f8c010 asl 0x10,D0
+  0x60713664 f213 or D0,D3
+  0x60713666 f8c208 asl 0x8,D2
+  0x60713669 f21b or D2,D3
+  0x6071366b f217 or D1,D3
+  0x6071366d f1ed mov D3,A1
+  0x6071366f f1dc mov A3,D0 <<
+  0x60713671 fca040619962 mov (0x62996140),A0
+  0x60713677 8514 mov 0x14,D1
+  0x60713679 ddb8fd94fff028 call 0x60063431,[d2,d3,a2,a3],0x28 <<
+  0x60713680 fcac76619962 movhu (0x62996176),D0
+  0x60713686 fcae74619962 movhu (0x62996174),D2
+  0x6071368c fcaf72619962 movhu (0x62996172),D3
+  0x60713692 fcad70619962 movhu (0x62996170),D1
+  0x60713698 f8c018 asl 0x18,D0
+  0x6071369b f1e5 mov D1,A1
+  0x6071369d f8c210 asl 0x10,D2
+  0x607136a0 f218 or D2,D0
+  0x607136a2 f8c308 asl 0x8,D3
+  0x607136a5 f21c or D3,D0
+  0x607136a7 f1d6 mov A1,D2
+  0x607136a9 f218 or D2,D0
+  0x607136ab f1e1 mov D0,A1
+  0x607136ad f1dc mov A3,D0 <<
+  0x607136af fca040619962 mov (0x62996140),A0
+  0x607136b5 8515 mov 0x15,D1
+  0x607136b7 dd7afd94fff028 call 0x60063431,[d2,d3,a2,a3],0x28 <<
+  0x607136be fcaf7e619962 movhu (0x6299617e),D3
+  0x607136c4 fcac7c619962 movhu (0x6299617c),D0
+  0x607136ca fcae7a619962 movhu (0x6299617a),D2
+  0x607136d0 fcad78619962 movhu (0x62996178),D1
+  0x607136d6 f8c318 asl 0x18,D3
+  0x607136d9 f1e5 mov D1,A1
+  0x607136db f8c010 asl 0x10,D0
+  0x607136de f213 or D0,D3
+  0x607136e0 f8c208 asl 0x8,D2
+  0x607136e3 f21b or D2,D3
+  0x607136e5 f1d4 mov A1,D0
+  0x607136e7 f213 or D0,D3
+  0x607136e9 f1ed mov D3,A1
+  0x607136eb f1dc mov A3,D0 <<
+  0x607136ed 3e mov sp,A2 <<
+  0x607136ee 220c add 0xc,A2 <<
+  0x607136f0 fca040619962 mov (0x62996140),A0
+  0x607136f6 f1de mov A3,D2 <<
+  0x607136f8 8516 mov 0x16,D1
+  0x607136fa dd37fd94fff028 call 0x60063431,[d2,d3,a2,a3],0x28 <<
+  0x60713701 98 mov A2,A0 <<
+  0x60713702 dd4132a4ff0004 call 0x60156943,[],0x4 <<
+  0x60713709 3c mov sp,A0
+  0x6071370a 2018 add 0x18,A0
+  0x6071370c 99 mov A2,A1 <<
+  0x6071370d ddaf34a4ff8004 call 0x60156bbc,[d2],0x4 <<
+  0x60713714 5d18 mov (0x18,sp),A1
+  0x60713716 f1dc mov A3,D0 <<
+  0x60713718 fca040619962 mov (0x62996140),A0
+  0x6071371e 8517 mov 0x17,D1
+  0x60713720 dd11fd94fff028 call 0x60063431,[d2,d3,a2,a3],0x28 <<
+  0x60713727 f1dc mov A3,D0 <<
+  0x60713729 fca148619962 mov (0x62996148),A1
+  0x6071372f fca040619962 mov (0x62996140),A0
+  0x60713735 8518 mov 0x18,D1
+  0x60713737 ddfafc94fff028 call 0x60063431,[d2,d3,a2,a3],0x28 <<
+  0x6071373e 5c04 mov (0x4,sp),A0
+  0x60713740 f86014 movhu (0x14,A0),D0
+  0x60713743 cd3afb0000 call 0x6071327d,[],0x0 <<
+  0x60713748 14 extbu D0
+  0x60713749 f1e1 mov D0,A1
+  0x6071374b 88 mov D2,D0
+  0x6071374c fca040619962 mov (0x62996140),A0
+  0x60713752 8519 mov 0x19,D1
+  0x60713754 ddddfc94fff028 call 0x60063431,[d2,d3,a2,a3],0x28 <<
+  0x6071375b f8bc08 movhu (0x8,sp),D0
+  0x6071375e a001 cmp 0x1,D0
+  0x60713760 c812 beq 0x60713772
+  0x60713762 a002 cmp 0x2,D0
+  0x60713764 c80e beq 0x60713772
+  0x60713766 a003 cmp 0x3,D0
+  0x60713768 c80a beq 0x60713772
+  0x6071376a a004 cmp 0x4,D0
+  0x6071376c c806 beq 0x60713772
+  0x6071376e a005 cmp 0x5,D0
+  0x60713770 c902 bne 0x60713772
+  0x60713772 88 mov D2,D0
+  0x60713773 f8be08 movhu (0x8,sp),D2
+  0x60713776 fca040619962 mov (0x62996140),A0
+  0x6071377c f1e9 mov D2,A1
+  0x6071377e 851a mov 0x1a,D1
+  0x60713780 ddb1fc94fff028 call 0x60063431,[d2,d3,a2,a3],0x28 <<
+  0x60713787 8001 mov 0x1,D0
+  0x60713789 fc8244619962 movbu D0,(0x62996144)
+  0x6071378f dff02c ret [d2,d3,a2,a3],0x2c
+
+== Sol lineage bytes ==
+  0x607135ef 2664faf1d8fc
+  0x6071365d 9bf8c318
+  0x60196f73 f060
+  0x601effc8 f062
+  0x6041ab71 f8bc20f8bd225d1c
+  0x601972da f860025c
+
+== stores in FUN_601efec0 / FUN_601eff7a / FUN_601efff9 ==
+  0x601effa7 f013 mov A0,(A3)
+  0x601f0017 f012 mov A0,(A2)
+

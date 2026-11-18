@@ -1,0 +1,270 @@
+{
+  "task": "T2b-cell-ownership-gaps",
+  "brief_sha256": "12aef2cb8375f25ffec7dfbb83166727f92392a7c2f3d339f3860aa3374690b2",
+  "inputs": [
+    {
+      "path": "inputs/00_0100_50000020.decoded.bin",
+      "sha256": "5e8d376e9111a44ac0352f26030d7c1b17026d42c45f3600cfa02a0e8c5b7d59",
+      "bytes": 33554368
+    },
+    {
+      "path": "inputs/02_0106_458c0020.decoded.bin",
+      "sha256": "3d9fd4426b45fbe4b715599422af38c6d22392c08543a69f63c28291c5a0b059",
+      "bytes": 143523776
+    }
+  ],
+  "sources": [
+    {
+      "path": "brief.md",
+      "sha256": "12aef2cb8375f25ffec7dfbb83166727f92392a7c2f3d339f3860aa3374690b2",
+      "bytes": 7723
+    },
+    {
+      "path": "TASK.md",
+      "sha256": "890adf02d2661968085ee2f751a45380c2e161ac02a8d64ca7cf8ad199bca5d9",
+      "bytes": 2332
+    },
+    {
+      "path": "templates/result.md",
+      "sha256": "18d605fc1f70369c40245130cdd499288bd3ae1a8fe1bdb84575cb58532d0110",
+      "bytes": 1230
+    },
+    {
+      "path": "audit/previous-review.md",
+      "sha256": "d4d582de4e5dc3e60085aa70c0fd9522a7a960efa92fe2bece616b9342eeddf1",
+      "bytes": 11648
+    },
+    {
+      "path": "ref/analysis/decompiled-main/all-functions.asm",
+      "sha256": "05206563da9c5eab6da8b84a0591de0a0db9e560d02b6b5a6c59cf9fffa5517e",
+      "bytes": 152061096
+    }
+  ],
+  "outputs": [
+    {
+      "path": "work/out/candidates-5b82-v3.tsv",
+      "sha256": "fb8b3829bbf2a6d63c83f85b29f977341b51474174a1c0654496b1869a9969b5",
+      "bytes": 39480
+    },
+    {
+      "path": "work/out/candidates-5b82-v4.tsv",
+      "sha256": "268c38a87613f746b00f863814d0647e426533710d38402a382deeb86a8e0a92",
+      "bytes": 38331
+    },
+    {
+      "path": "work/out/close-5b82-v2.txt",
+      "sha256": "dce834dadc39414c9251892ff028580e9a30d621f27b2dff478f2307b68b2140",
+      "bytes": 9485
+    },
+    {
+      "path": "work/out/close-5b82-v4.txt",
+      "sha256": "fe79fc3697387886795fff512a7a49da01cb57d139fc95c40028c10bf344e3b6",
+      "bytes": 41967
+    },
+    {
+      "path": "work/out/command-log.txt",
+      "sha256": "2c71d9e0f41ddf8099fa44e5a80981ff667d11280ed13cb33c3389c8bbff027a",
+      "bytes": 4625
+    },
+    {
+      "path": "work/out/cursor-pages-v1.txt",
+      "sha256": "6e5d324805a611c7412910fc468f181f654380d420a2b55b965c0ca813c4bace",
+      "bytes": 3967
+    },
+    {
+      "path": "work/out/fa64-d2-v1.txt",
+      "sha256": "f2c0550163fc5a1e16ddf043763672b31a289c336ed72ffb41124701889bf0c9",
+      "bytes": 2534
+    },
+    {
+      "path": "work/out/fa64-stubs-v1.txt",
+      "sha256": "765d2a56012f71bf9581912e6eac244d53c8c147bfc7a798e52f5b7a3fc92262",
+      "bytes": 871
+    },
+    {
+      "path": "work/out/fillers-5b82-v1.txt",
+      "sha256": "285d214a281c64862acfc08f70b1ccc685ab4fdd2a379134e6449daa38c0da43",
+      "bytes": 25754
+    },
+    {
+      "path": "work/out/INDEX.md",
+      "sha256": "1f712a2b658bda2ad1d40032866dc1f0662211686d5ca11e5a1fccb660fb9178",
+      "bytes": 2200
+    },
+    {
+      "path": "work/out/listings-5b82-v3.txt",
+      "sha256": "a191bd622e91f36626849fb699c9ca6cea3fdd570a793772b7766edbdbafa9c6",
+      "bytes": 20938
+    },
+    {
+      "path": "work/out/listings-adj-thunks-v1.txt",
+      "sha256": "3a98d60356b277d359a0b7ff6282a3845aef9d31f23c038f94431449e0759dc7",
+      "bytes": 2029
+    },
+    {
+      "path": "work/out/listings-setters-v1.txt",
+      "sha256": "4c5c5fb4fced7b6137018b17dfbbea4e262ebf4e8cd6c5fe55c7da97deed06d7",
+      "bytes": 41703
+    },
+    {
+      "path": "work/out/records-5b82-v4.txt",
+      "sha256": "d093504692b5b9d86cc3536e4f75671fd2d0fa672231ee97df4e4f5bff90d45e",
+      "bytes": 2356
+    },
+    {
+      "path": "work/out/routes-5b82-v1.txt",
+      "sha256": "0e8461e984acf6626170708e4d6e733738a8e14af6d971e732770a82aaa56eef",
+      "bytes": 25934
+    },
+    {
+      "path": "work/out/setters-5b82-v1.txt",
+      "sha256": "74c3caf562d85188293ea0c6aef0fcf581cbb6dbb2987864d32860d3a730f520",
+      "bytes": 62993
+    },
+    {
+      "path": "work/out/setters-5b82-v2.txt",
+      "sha256": "dd54cbec67e363c08f02c83833c1ffc7b76399cdd464771444f243f0b41d9aeb",
+      "bytes": 5787
+    },
+    {
+      "path": "work/out/uses-5b82-v3.tsv",
+      "sha256": "298cb9bc67d9dd28a685425d5a9012b283e72121f81966b678c190b47ba46c5d",
+      "bytes": 6549
+    },
+    {
+      "path": "work/out/uses-5b82-v4.tsv",
+      "sha256": "6472d9f7628781906ace7c1baec97c6ab8a1033ef87bc4596868200d16b23c3f",
+      "bytes": 8404
+    },
+    {
+      "path": "work/out/verdict-v3.md",
+      "sha256": "38ba7cd8bc564c67af9cba969fa6dfd6a5fe986c8aa31f5583d51327551bc48b",
+      "bytes": 9108
+    },
+    {
+      "path": "work/out/verdict-v4.md",
+      "sha256": "4319b17982537ed5a57f40ab999d0c758fc4b0eafed5d0c27f5784f684991f9b",
+      "bytes": 10091
+    },
+    {
+      "path": "work/result.md",
+      "sha256": "7a14d6f219a1caf4576477dc2eb4a6a9c87cfc88548fbeba65add5b10d397b20",
+      "bytes": 8359
+    },
+    {
+      "path": "work/scripts/candidates_5b82_v4.py",
+      "sha256": "3596289e200ce01dd61b7381e8d4d7495e28a6cfaf4ef02c314d74209bca9f53",
+      "bytes": 20936
+    },
+    {
+      "path": "work/scripts/close_5b82_v1.py",
+      "sha256": "4e1a756805a2771daaa0bebb6c38a75fa30b05cba991033090397c0f5dbe38f2",
+      "bytes": 15553
+    },
+    {
+      "path": "work/scripts/close_5b82_v2.py",
+      "sha256": "9616f6957f3203cfde94ba1063ea77ff3f6c6f6cabb12c0dfbb6d606db427fe8",
+      "bytes": 13470
+    },
+    {
+      "path": "work/scripts/fa64_d2_v1.py",
+      "sha256": "f605afe4d7533e61196d398abe691211c106dd5311dc7362b77f889df651856b",
+      "bytes": 3298
+    },
+    {
+      "path": "work/scripts/fa64_stubs_v1.py",
+      "sha256": "04d66acb9e5ddcdeee02aaf5f6d3976e1a736ce93952258631222a7348a79998",
+      "bytes": 894
+    },
+    {
+      "path": "work/scripts/fillers_5b82_v1.py",
+      "sha256": "5d16d7326518508b301f84cc339a137d6b7424e3d3cc2cfc7998c664a1d8cabd",
+      "bytes": 3869
+    },
+    {
+      "path": "work/scripts/manifest_5b82_v1.py",
+      "sha256": "16bf41e207f271cba83d91327768f826ec2df0d65619a875eb523952bd601ff7",
+      "bytes": 5096
+    },
+    {
+      "path": "work/scripts/manifest_5b82_v2.py",
+      "sha256": "1a87476192310b1181ae24bf7b02bc2114a177412c94396fd5615287f993f310",
+      "bytes": 5513
+    },
+    {
+      "path": "work/scripts/patch_5b82_v1.py",
+      "sha256": "59dfd5d378c0da08075a5e71b507a0677eac33ff5cb4108e0de370853f911145",
+      "bytes": 1445
+    },
+    {
+      "path": "work/scripts/records_5b82_v4.py",
+      "sha256": "1025986d656730ac39e626b1e1c8fcd19c5262740d4d0f563cc5a01655ec0b4b",
+      "bytes": 13924
+    },
+    {
+      "path": "work/scripts/routes_5b82_v1.py",
+      "sha256": "65ddf1d46c78ca6d29c239a8b7158fa9c18f989fdf5afa8f01822e5a72dc1abf",
+      "bytes": 16674
+    },
+    {
+      "path": "work/scripts/setters_5b82_v1.py",
+      "sha256": "f74e4c9dec9de9e057bdfb722ac42a8b3a3817e0d2c49324e27df7b383c9e1c7",
+      "bytes": 13496
+    },
+    {
+      "path": "work/scripts/setters_5b82_v2.py",
+      "sha256": "c8618fb5f1bd5deda493247d98e6f5d55b20544f8f4520d4b3e52baf5af1e719",
+      "bytes": 5583
+    }
+  ],
+  "commands": [
+    {
+      "command": "python -I -c \"print('ok')\"",
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "command": "python -I work\\scripts\\setters_5b82_v1.py",
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "command": "python -I work\\scripts\\candidates_5b82_v4.py",
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "command": "python -I work\\scripts\\setters_5b82_v2.py",
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "command": "python -I work\\scripts\\fa64_d2_v1.py",
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "command": "python -I work\\scripts\\fa64_stubs_v1.py",
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "command": "python -I work\\scripts\\records_5b82_v4.py",
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "command": "python -I work\\scripts\\patch_5b82_v1.py",
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "command": "python -I work\\scripts\\manifest_5b82_v2.py",
+      "exit": 0,
+      "stderr": ""
+    }
+  ],
+  "tool_versions": {
+    "python": "3.12.7 (tags/v3.12.7:0b05ead, Oct  1 2024, 03:06:41) [MSC v.1941 64 bit (AMD64)]"
+  }
+}

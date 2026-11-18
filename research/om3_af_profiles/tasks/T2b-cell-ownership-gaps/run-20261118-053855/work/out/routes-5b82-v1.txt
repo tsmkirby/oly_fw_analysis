@@ -1,0 +1,530 @@
+routes 0x5b82 v1
+image bytes 33554368 sha prefix 5e8d376e9111a44a
+byte check base 0x60021020
+
+== outer command table 0x61953548 .. 0x61953648 ==
+FUN_6183bc55 reads the record halfword at +0, subtracts 0x1001, and walks this table
+only when the halfword at RAM 0x62d31d10 equals 1.
+entry bytes at the reader 0x6183bcb9: fac2ffeffcdd48359561801ff208f8c0
+  cmd 0x9021  table-id 0x8020  thunk 0x6183bd98  bytes 98cd631cf04ccca10098cd06
+  cmd 0x1002  table-id 0x0001  thunk 0x6183bced  bytes cc310198cdea012010cc4901
+  cmd 0x1003  table-id 0x0002  thunk 0x6183bcf0  bytes 98cdea012010cc490198cd4c
+  cmd 0x9022  table-id 0x8021  thunk 0x6183bda1  bytes 98cd061df048cc980098cda7
+  cmd 0x9005  table-id 0x8004  thunk 0x6183bd1d  bytes 98cdc802b014cc1c019528f1
+  cmd 0x9006  table-id 0x8005  thunk 0x6183bd26  bytes 9528f1790061f80204f80608
+  cmd 0x9007  table-id 0x8006  thunk 0x6183bd4b  bytes f80204f80a08f8060c1e4a04
+  cmd 0x9023  table-id 0x8022  thunk 0x6183bdaa  bytes 98cda71d2008cc8f0098cd47
+  cmd 0x9025  table-id 0x8024  thunk 0x6183bdb3  bytes 98cd471ef014cc860098cd85
+  cmd 0x9026  table-id 0x8025  thunk 0x6183bdbc  bytes 98cd851ef064ca7d98cdd01e
+  cmd 0x9027  table-id 0x8026  thunk 0x6183bdc4  bytes 98cdd01e2058ca7598cd7901
+  cmd 0x9029  table-id 0x8028  thunk 0x6183bdee  bytes 98cdff1ef010ca4b98cd6f37
+  cmd 0x900d  table-id 0x800c  thunk 0x6183bd74  bytes 98cd7010f01cccc50098cdcb
+  cmd 0x902a  table-id 0x8029  thunk 0x6183bdf6  bytes 98cd6f37f010ca4398cd315a
+  cmd 0x902b  table-id 0x802a  thunk 0x6183bdfe  bytes 98cd315af010ca3b22302c05
+  cmd 0x9030  table-id 0x802f  thunk 0x6183bdcc  bytes 98cd7901b010ca6c98cda301
+  cmd 0x9031  table-id 0x8030  thunk 0x6183bdd4  bytes 98cda301b010ca6498cdcd01
+  cmd 0x9032  table-id 0x8031  thunk 0x6183bddc  bytes 98cdcd012008ca5c98cde601
+  cmd 0x9013  table-id 0x8012  thunk 0x6183bd7d  bytes 98cdcb10f01cccbc0098cd51
+  cmd 0x1014  table-id 0x0013  thunk 0x6183bcf9  bytes 98cd4c02b010cc400198cd75
+  cmd 0x1015  table-id 0x0014  thunk 0x6183bd02  bytes 98cd7502b010cc370198cd9e
+  cmd 0x1016  table-id 0x0015  thunk 0x6183bd0b  bytes 98cd9e022008cc2e0198cdb6
+  cmd 0x1017  table-id 0x0016  thunk 0x6183bd14  bytes 98cdb6022008cc250198cdc8
+  cmd 0x9015  table-id 0x8014  thunk 0x6183bd86  bytes 98cd5112f08cccb30098cdd1
+  cmd 0x9033  table-id 0x8032  thunk 0x6183bde4  bytes 98cde6012008ca54ca3a98cd
+  cmd 0x9034  table-id 0x8033  thunk 0x6183bdec  bytes ca3a98cdff1ef010ca4b98cd
+  cmd 0x1001  table-id 0x0000  thunk 0x6183be06  bytes 22302c0520ca281efaca0210
+  cmd 0x1001  table-id 0x0000  thunk 0x6183be06  bytes 22302c0520ca281efaca0210
+  cmd 0x1001  table-id 0x0000  thunk 0x6183be06  bytes 22302c0520ca281efaca0210
+  cmd 0x901e  table-id 0x801d  thunk 0x6183bd8f  bytes 98cdd119f034ccaa0098cd63
+  cmd 0x1001  table-id 0x0000  thunk 0x6183be06  bytes 22302c0520ca281efaca0210
+  cmd 0x1001  table-id 0x0000  thunk 0x6183be06  bytes 22302c0520ca281efaca0210
+
+== thunk calls (rel16 from the thunk entry) ==
+  cmd 0x9021 thunk 0x6183bd98 call-at 0x6183bd99 dest 0x6183d9fc raw 98cd631cf04c
+  cmd 0x1002 thunk 0x6183bced call-at 0x6183bcf1 dest 0x6183bedb raw cc310198cdea012010
+  cmd 0x1003 thunk 0x6183bcf0 call-at 0x6183bcf1 dest 0x6183bedb raw 98cdea012010
+  cmd 0x9022 thunk 0x6183bda1 call-at 0x6183bda2 dest 0x6183daa8 raw 98cd061df048
+  cmd 0x9005 thunk 0x6183bd1d call-at 0x6183bd1e dest 0x6183bfe6 raw 98cdc802b014
+  cmd 0x9006 thunk 0x6183bd26 call-at - dest - raw 9528f1790061f80204f80608
+  cmd 0x9007 thunk 0x6183bd4b call-at - dest - raw f80204f80a08f8060c1e4a04
+  cmd 0x9023 thunk 0x6183bdaa call-at 0x6183bdab dest 0x6183db52 raw 98cda71d2008
+  cmd 0x9025 thunk 0x6183bdb3 call-at 0x6183bdb4 dest 0x6183dbfb raw 98cd471ef014
+  cmd 0x9026 thunk 0x6183bdbc call-at 0x6183bdbd dest 0x6183dc42 raw 98cd851ef064
+  cmd 0x9027 thunk 0x6183bdc4 call-at 0x6183bdc5 dest 0x6183dc95 raw 98cdd01e2058
+  cmd 0x9029 thunk 0x6183bdee call-at 0x6183bdef dest 0x6183dcee raw 98cdff1ef010
+  cmd 0x900d thunk 0x6183bd74 call-at 0x6183bd75 dest 0x6183cde5 raw 98cd7010f01c
+  cmd 0x902a thunk 0x6183bdf6 call-at 0x6183bdf7 dest 0x6183f566 raw 98cd6f37f010
+  cmd 0x902b thunk 0x6183bdfe call-at 0x6183bdff dest 0x61841830 raw 98cd315af010
+  cmd 0x9030 thunk 0x6183bdcc call-at 0x6183bdcd dest 0x6183bf46 raw 98cd7901b010
+  cmd 0x9031 thunk 0x6183bdd4 call-at 0x6183bdd5 dest 0x6183bf78 raw 98cda301b010
+  cmd 0x9032 thunk 0x6183bddc call-at 0x6183bddd dest 0x6183bfaa raw 98cdcd012008
+  cmd 0x9013 thunk 0x6183bd7d call-at 0x6183bd7e dest 0x6183ce49 raw 98cdcb10f01c
+  cmd 0x1014 thunk 0x6183bcf9 call-at 0x6183bcfa dest 0x6183bf46 raw 98cd4c02b010
+  cmd 0x1015 thunk 0x6183bd02 call-at 0x6183bd03 dest 0x6183bf78 raw 98cd7502b010
+  cmd 0x1016 thunk 0x6183bd0b call-at 0x6183bd0c dest 0x6183bfaa raw 98cd9e022008
+  cmd 0x1017 thunk 0x6183bd14 call-at 0x6183bd15 dest 0x6183bfcb raw 98cdb6022008
+  cmd 0x9015 thunk 0x6183bd86 call-at 0x6183bd87 dest 0x6183cfd8 raw 98cd5112f08c
+  cmd 0x9033 thunk 0x6183bde4 call-at 0x6183bde5 dest 0x6183bfcb raw 98cde6012008
+  cmd 0x9034 thunk 0x6183bdec call-at 0x6183bdef dest 0x6183dcee raw ca3a98cdff1ef010
+  cmd 0x901e thunk 0x6183bd8f call-at 0x6183bd90 dest 0x6183d761 raw 98cdd119f034
+
+== inner switch of FUN_6183dcee, table 0x619536d4, command = index + 2 ==
+load of the table: 0x6183dd26 bytes fcdcd4369561f380
+  inner 2 -> 0x6183dd30
+  inner 3 -> 0x6183dd97
+  inner 4 -> 0x6183ddc4
+  inner 5 -> 0x6183de8d
+  inner 6 -> 0x6183dea4
+  inner 7 -> 0x6183dee6
+  inner 8 -> 0x6183df09
+  inner 9 -> 0x6183df4b
+  inner 10 -> 0x6183f161
+  inner 11 -> 0x6183f161
+  inner 12 -> 0x6183dfc1
+  inner 13 -> 0x6183e064
+  inner 14 -> 0x6183e1ee
+  inner 15 -> 0x6183e1f8
+  inner 16 -> 0x6183f161
+  inner 17 -> 0x6183f161
+  inner 18 -> 0x6183e22c
+  inner 19 -> 0x6183e2d2
+  inner 20 -> 0x6183f161
+  inner 21 -> 0x6183f161
+  inner 22 -> 0x6183f161
+  inner 23 -> 0x6183f161
+  inner 24 -> 0x6183f161
+  inner 25 -> 0x6183e495
+  inner 26 -> 0x6183f161
+  inner 27 -> 0x6183e7c6
+  inner 28 -> 0x6183e7d0
+  inner 29 -> 0x6183f161
+  inner 30 -> 0x6183f161
+  inner 31 -> 0x6183f161
+  inner 32 -> 0x6183e808
+  inner 33 -> 0x6183e845
+  inner 34 -> 0x6183f161
+  inner 35 -> 0x6183f161
+  inner 36 -> 0x6183f161
+  inner 37 -> 0x6183f161
+  inner 38 -> 0x6183f161
+  inner 39 -> 0x6183f161
+  inner 40 -> 0x6183f161
+  inner 41 -> 0x6183f161
+  inner 42 -> 0x6183f161
+  inner 43 -> 0x6183f161
+  inner 44 -> 0x6183f161
+  inner 45 -> 0x6183e887
+  inner 46 -> 0x6183f161
+  inner 47 -> 0x6183f161
+  inner 48 -> 0x6183f161
+  inner 49 -> 0x6183f161
+  inner 50 -> 0x6183f161
+  inner 51 -> 0x6183f161
+  inner 52 -> 0x6183e942
+  inner 53 -> 0x6183e991  KEY-FROM-RECORD then FUN_60063962
+  inner 54 -> 0x6183e9c9
+  inner 55 -> 0x6183f161
+  inner 56 -> 0x6183e9d3
+  inner 57 -> 0x6183e9dd
+  inner 58 -> 0x6183e9f9
+  inner 59 -> 0x6183ea69
+  inner 60 -> 0x6183ead7
+  inner 61 -> 0x6183ebe3
+  inner 62 -> 0x6183f161
+  inner 63 -> 0x6183f161
+  inner 64 -> 0x6183ec43
+  inner 65 -> 0x6183ec7a
+  inner 66 -> 0x6183ecc2
+  inner 67 -> 0x6183f161
+  inner 68 -> 0x6183f161
+  inner 69 -> 0x6183f161
+  inner 70 -> 0x6183ed1e
+  inner 71 -> 0x6183ed28
+  inner 72 -> 0x6183ed32
+  inner 73 -> 0x6183ed48
+  inner 74 -> 0x6183ed5e
+  inner 75 -> 0x6183ee9b
+  inner 76 -> 0x6183eff7
+
+== inner switch of FUN_61841830, table 0x6195394c, command = index + 4 ==
+load of the table: 0x61841868 bytes fcdc4c399561f380
+  inner 4 -> 0x61841872
+  inner 5 -> 0x61841956
+  inner 6 -> 0x618419b6
+  inner 7 -> 0x61842661
+  inner 8 -> 0x618419c0
+  inner 9 -> 0x618419ca
+  inner 10 -> 0x61841a79
+  inner 11 -> 0x61842661
+  inner 12 -> 0x61841b03
+  inner 13 -> 0x61842661
+  inner 14 -> 0x61841b87
+  inner 15 -> 0x61841bc8
+  inner 16 -> 0x61841ce1
+  inner 17 -> 0x61841d33
+  inner 18 -> 0x61841e83  SPAN: key from record+8, call FUN_6183cc7d
+  inner 19 -> 0x61841eba
+  inner 20 -> 0x61841fac
+  inner 21 -> 0x61841ec4
+  inner 22 -> 0x61842037
+  inner 23 -> 0x61842040
+  inner 24 -> 0x61842063
+  inner 25 -> 0x618420be
+  inner 26 -> 0x61842104
+  inner 27 -> 0x61842155
+  inner 28 -> 0x618423d8
+
+== key load at 0x6183e9b5 (inner command 53) ==
+0x6183e991..0x6183e9c8 bytes follow in the listing
+record+8 halfword -> D2 -> FUN_60063356; if the lookup returns non-null, D2 -> FUN_60063962
+FUN_60063962 queues type 4 or calls FUN_6006398b, which copies the ROM default (zeros for 0x5b82).
+
+== span call at 0x61841ea8 (inner command 18) ==
+0x61841e85 mov (0x8,A0),D0 then exthu: key is the low halfword of record+8
+0x61841e88 mov (0xc,A0),D1 then exthu: second argument
+0x61841e99 mov (0x2c,A0),A0: source pointer is the dword at record+0x2c
+FUN_6183cc7d calls FUN_6006327f(key). Bank 7 returns 7, which is not 5, 8, or 9,
+so a type-2 key (0x5b82 & 7 == 2) reaches FUN_60063567 and the span copy.
+
+== relative calls to the handler entries ==
+  dcee 0x6183dcee calls 1
+    from 0x6183bdef opcode 0xcd rel16 bytes cdff1ef010ca
+  1830 0x61841830 calls 1
+    from 0x6183bdff opcode 0xcd rel16 bytes cd315af010ca
+  cc7d 0x6183cc7d calls 2
+    from 0x6183bd67 opcode 0xcd rel16 bytes cd160ff06c04
+    from 0x61841ea8 opcode 0xcd rel16 bytes cdd5adf06c1c
+  dispatcher 0x6183bc55 calls 3
+    from 0x6183ba41 opcode 0xcd rel16 bytes cd1402a018f0
+    from 0x61a0e662 opcode 0xdd rel32 bytes ddf3d5e2ffa0
+    from 0x61a0e6cb opcode 0xdd rel32 bytes dd8ad5e2ffa0
+  adj-loop 0x6183b9aa calls 0
+  dbg1 0x60215a26 calls 1
+    from 0x60215922 opcode 0xcd rel16 bytes cd0401f014fc
+  dbg2 0x6021818d calls 2
+    from 0x60218227 opcode 0xcd rel16 bytes cd66fff014df
+    from 0x602182b9 opcode 0xcd rel16 bytes cdd4fef014fc
+  dbg1-parent 0x602158a8 calls 4
+    from 0x602155f6 opcode 0xcd rel16 bytes cdb202f010a0
+    from 0x6021561b opcode 0xcd rel16 bytes cd8d02f01082
+    from 0x6021564b opcode 0xcd rel16 bytes cd5d02f01082
+    from 0x6021567d opcode 0xcd rel16 bytes cd2b02f01082
+  dbg1-grand 0x6021552a calls 1
+    from 0x6021550d opcode 0xcd rel16 bytes cd1d00f014ca
+  shell-exec 0x602181e3 calls 2
+    from 0x61841cd2 opcode 0xdd rel32 bytes dd11659dfea0
+    from 0x618c9894 opcode 0xdd rel32 bytes dd4fe994fea0
+  shell-task 0x6021822f calls 0
+
+== absolute pointers to the adjustment loop and the shell task ==
+  adj-loop 0x6183b9aa at 0x6003915c
+  shell-task 0x6021822f at 0x6003a170 0x6003d39c 0x6003ea7c 0x6003f2b8
+  dbgall-handler 0x602154af at 0x602ec498 0x602eda6c
+  prm-handler 0x600619a9 at 0x602ec448 0x602eda1c
+task slot 0x6003915c context dwords:
+  0x60039140 0x618bc6f6
+  0x60039144 0x00000037
+  0x60039148 0x00001000
+  0x6003914c 0x00000000
+  0x60039150 0x00000005
+  0x60039154 0x00000000
+  0x60039158 0x00000000
+  0x6003915c 0x6183b9aa
+  0x60039160 0x00000037
+  0x60039164 0x00001000
+  0x60039168 0x00000000
+  0x6003916c 0x00000006
+  0x60039170 0x00000000
+  0x60039174 0x00000000
+  0x60039178 0x618b52b7
+  0x6003917c 0x00000037
+
+== flag 0x62d31d10 ==
+FUN_60f1a6a8 returns that halfword. Bytes at 0x60f1a6a8: fcac101dd362de0000
+cleared by FUN_6183bbeb (movhu 0). Bytes at 0x6183bbec: fc83101dd362
+written from D0 by FUN_6183bbf5. Bytes at 0x6183bbf5: fc83101dd362
+FUN_6183be43, the ungated command 0x1002 handler, does mov 0x1,D0 then calls FUN_6183bbf5.
+bytes at 0x6183be63: 8001cd90fd0000cd
+FUN_6183bedb calls FUN_6183bbf5(0), clearing the flag, when the flag is already 1.
+
+== debug command tables, 0x3f entries of 8 bytes (name, handler) ==
+  dispatcher FUN_60215a26 base 0x602ec3d4
+    [0] 0x602ec3d4 name echo handler 0x602180d4
+    [1] 0x602ec3dc name help handler 0x6021810d
+    [2] 0x602ec3e4 name lens handler 0x60141ee0
+    [3] 0x602ec3ec name aud handler 0x61a49a90
+    [4] 0x602ec3f4 name cam handler 0x61a10a01
+    [5] 0x602ec3fc name bas handler 0x6104131c
+    [6] 0x602ec404 name pwr handler 0x61a06456
+    [7] 0x602ec40c name bc handler 0x6016270e
+    [8] 0x602ec414 name take handler 0x603c45f0
+    [9] 0x602ec41c name stbd handler 0x601e028e
+    [10] 0x602ec424 name per handler 0x61a08d84
+    [11] 0x602ec42c name res handler 0x601d7a5d
+    [12] 0x602ec434 name app handler 0x6040c2cf
+    [13] 0x602ec43c name usb handler 0x6105ba94
+    [14] 0x602ec444 name prm handler 0x600619a9  PRM
+    [15] 0x602ec44c name flash handler 0x6005ebc7
+    [16] 0x602ec454 name rec handler 0x61a30023
+    [17] 0x602ec45c name file handler 0x608cfeab
+    [18] 0x602ec464 name sc handler 0x60155a4a
+    [19] 0x602ec46c name exp handler 0x6056338b
+    [20] 0x602ec474 name dbg handler 0x61a06c88
+    [21] 0x602ec47c name ui handler 0x61a0f2e9
+    [22] 0x602ec484 name mec handler 0x61a0c8fa
+    [23] 0x602ec48c name fcs handler 0x61a42afa
+    [24] 0x602ec494 name dbgall handler 0x602154af
+    [25] 0x602ec49c name dbgall2 handler 0x6021551c
+    [26] 0x602ec4a4 name sdet handler 0x60531ae5
+    [27] 0x602ec4ac name osd handler 0x610437e9
+    [28] 0x602ec4b4 name mdet handler 0x61a3b6a1
+    [29] 0x602ec4bc name play handler 0x61a4e347
+    [30] 0x602ec4c4 name mddyna handler 0x6107b09d
+    [31] 0x602ec4cc name disp handler 0x601f65de
+    [32] 0x602ec4d4 name tpc handler 0x618bc230
+    [33] 0x602ec4dc name sdk handler 0x60ae7c4d
+    [34] 0x602ec4e4 name efct handler 0x61067e17
+    [35] 0x602ec4ec name buff handler 0x61a2d960
+    [36] 0x602ec4f4 name api handler 0x6040c322
+    [37] 0x602ec4fc name c3d handler 0x6104e260
+    [38] 0x602ec504 name sync handler 0x6082adb7
+    [39] 0x602ec50c name usr handler 0x60215a71
+    [40] 0x602ec514 name damage handler 0x601d38c3
+    [41] 0x602ec51c name spc handler 0x61054caf
+    [42] 0x602ec524 name mcon handler 0x61a232b2
+    [43] 0x602ec52c name wifi handler 0x6181a880
+    [44] 0x602ec534 name qr handler 0x6181a16c
+    [45] 0x602ec53c name olis handler 0x60893791
+    [46] 0x602ec544 name mvr handler 0x61a241eb
+    [47] 0x602ec54c name pos handler 0x61813f8b
+    [48] 0x602ec554 name avm handler 0x60535e78
+    [49] 0x602ec55c name iseq handler 0x61a3bbdd
+    [50] 0x602ec564 name img handler 0x604a2a1b
+    [51] 0x602ec56c name movp handler 0x61a505ff
+    [52] 0x602ec574 name md_sve handler 0x6107b11a
+    [53] 0x602ec57c name digizoom handler 0x604583c1
+    [54] 0x602ec584 name zoom handler 0x603bb58b
+    [55] 0x602ec58c name move handler 0x61a53bbc
+    [56] 0x602ec594 name albm handler 0x608f3ece
+    [57] 0x602ec59c name ems handler 0x61a1bc12
+    [58] 0x602ec5a4 name syscall handler 0x600579a0
+    [59] 0x602ec5ac name sys handler 0x60059a1d
+    [60] 0x602ec5b4 name ictlog handler 0x619339e3
+    [61] 0x602ec5bc name ble handler 0x619305c3
+    [62] 0x602ec5c4 name gps handler 0x61933e74
+  dispatcher FUN_6021818d base 0x602ed9a8
+    [0] 0x602ed9a8 name echo handler 0x602180d4
+    [1] 0x602ed9b0 name help handler 0x6021810d
+    [2] 0x602ed9b8 name lens handler 0x60141ee0
+    [3] 0x602ed9c0 name aud handler 0x61a49a90
+    [4] 0x602ed9c8 name cam handler 0x61a10a01
+    [5] 0x602ed9d0 name bas handler 0x6104131c
+    [6] 0x602ed9d8 name pwr handler 0x61a06456
+    [7] 0x602ed9e0 name bc handler 0x6016270e
+    [8] 0x602ed9e8 name take handler 0x603c45f0
+    [9] 0x602ed9f0 name stbd handler 0x601e028e
+    [10] 0x602ed9f8 name per handler 0x61a08d84
+    [11] 0x602eda00 name res handler 0x601d7a5d
+    [12] 0x602eda08 name app handler 0x6040c2cf
+    [13] 0x602eda10 name usb handler 0x6105ba94
+    [14] 0x602eda18 name prm handler 0x600619a9  PRM
+    [15] 0x602eda20 name flash handler 0x6005ebc7
+    [16] 0x602eda28 name rec handler 0x61a30023
+    [17] 0x602eda30 name file handler 0x608cfeab
+    [18] 0x602eda38 name sc handler 0x60155a4a
+    [19] 0x602eda40 name exp handler 0x6056338b
+    [20] 0x602eda48 name dbg handler 0x61a06c88
+    [21] 0x602eda50 name ui handler 0x61a0f2e9
+    [22] 0x602eda58 name mec handler 0x61a0c8fa
+    [23] 0x602eda60 name fcs handler 0x61a42afa
+    [24] 0x602eda68 name dbgall handler 0x602154af
+    [25] 0x602eda70 name dbgall2 handler 0x6021551c
+    [26] 0x602eda78 name sdet handler 0x60531ae5
+    [27] 0x602eda80 name osd handler 0x610437e9
+    [28] 0x602eda88 name mdet handler 0x61a3b6a1
+    [29] 0x602eda90 name play handler 0x61a4e347
+    [30] 0x602eda98 name mddyna handler 0x6107b09d
+    [31] 0x602edaa0 name disp handler 0x601f65de
+    [32] 0x602edaa8 name tpc handler 0x618bc230
+    [33] 0x602edab0 name sdk handler 0x60ae7c4d
+    [34] 0x602edab8 name efct handler 0x61067e17
+    [35] 0x602edac0 name buff handler 0x61a2d960
+    [36] 0x602edac8 name api handler 0x6040c322
+    [37] 0x602edad0 name c3d handler 0x6104e260
+    [38] 0x602edad8 name sync handler 0x6082adb7
+    [39] 0x602edae0 name usr handler 0x60215a71
+    [40] 0x602edae8 name damage handler 0x601d38c3
+    [41] 0x602edaf0 name spc handler 0x61054caf
+    [42] 0x602edaf8 name mcon handler 0x61a232b2
+    [43] 0x602edb00 name wifi handler 0x6181a880
+    [44] 0x602edb08 name qr handler 0x6181a16c
+    [45] 0x602edb10 name olis handler 0x60893791
+    [46] 0x602edb18 name mvr handler 0x61a241eb
+    [47] 0x602edb20 name pos handler 0x61813f8b
+    [48] 0x602edb28 name avm handler 0x60535e78
+    [49] 0x602edb30 name iseq handler 0x61a3bbdd
+    [50] 0x602edb38 name img handler 0x604a2a1b
+    [51] 0x602edb40 name movp handler 0x61a505ff
+    [52] 0x602edb48 name md_sve handler 0x6107b11a
+    [53] 0x602edb50 name digizoom handler 0x604583c1
+    [54] 0x602edb58 name zoom handler 0x603bb58b
+    [55] 0x602edb60 name move handler 0x61a53bbc
+    [56] 0x602edb68 name albm handler 0x608f3ece
+    [57] 0x602edb70 name ems handler 0x61a1bc12
+    [58] 0x602edb78 name syscall handler 0x600579a0
+    [59] 0x602edb80 name sys handler 0x60059a1d
+    [60] 0x602edb88 name ictlog handler 0x619339e3
+    [61] 0x602edb90 name ble handler 0x619305c3
+    [62] 0x602edb98 name gps handler 0x61933e74
+
+shell strings:
+  0x602edbbf u_shell
+  0x602edbdb Tsk_USHL
+  0x602edbc7 unknown Command.
+
+  0x619531e5 S_SHELL
+  0x602ecdbe [ dbgall ]: Execute Command >> [ %s ].
+
+  0x602ecde6 [ dbgall ]: found invalid command. skip this command.
+
+  0x602ece45 [ dbgall ]: dbgall_usr_do_com. unknown Command.
+
+  0x6195332a [adj] opData is NULL
+
+  0x61953340 [adj] NOT TAKE_FUNC_COM_INIT
+
+
+== callers of the transaction enqueue FUN_60063116 ==
+  caller 0x60063431 site 0x600634d9 bytes cd3dfcf030ca
+  caller 0x60063567 site 0x60063668 bytes cdaefaf030ca
+  caller 0x60063962 site 0x6006397b bytes cd9bf7f030ca
+three sites. Type immediate is the mov to D0 immediately before each call:
+  0x600634d2 mov 0x1,D0  bytes 8001  then call at 0x600634d9  (one cell)
+  0x60063666 mov 0x2,D0  bytes 8002  then call at 0x60063668  (span)
+  0x60063979 mov 0x4,D0  bytes 8004  then call at 0x6006397b  (whole-key default)
+
+== FUN_600630a3 replay ==
+installed by mov 0x600630a3,A0 at 0x600631cd bytes fcdca3300660
+type 1 -> FUN_600634ee, type 2 -> FUN_60063684, type 4 -> FUN_6006398b
+bytes of the three compares are in the listing
+
+== straight-line key immediate before calls of the three fillers ==
+asm instructions scanned 4805945
+  setter FUN_60063431 sites 250  {'imm': 193, 'RUNTIME': 57}
+    immediates: 0x374 0x1cb4 0x1eba 0x1eca 0x1eda 0x2122 0x2262 0x2271 0x2382 0x23b2 0x23e2 0x2412 0x2751 0x28ca 0x2af4 0x3172 0x3192 0x31a2 0x3391 0x3451 0x3811 0x3821 0x3f6a 0x3f7a 0x3f8a 0x3f9a 0x46c1 0x46e1 0x46f4 0x4701 0x4921 0x4f41 0x4f51 0x4f6a 0x4f71 0x52b1 0x5611 0x7552 0x7682 0x8344 0x85d4 0x85e1 0x8b54 0x8b64 0x8cf4 0x8d01 0x9091 0x9271 0xa011 0xa07a 0xa081 0xa142 0xa152 0xac81 0xc021 0xc082 0xc0a2 0xc0ba 0xc0ca 0xc10a 0xc12a 0xc2ca 0xc2da 0xc2ea 0xc321 0xc36a 0xc4ba 0xc512 0xc57a 0xc58a 0xc59a 0xc5aa 0xc999 0xcc42 0xcc52 0xcc62 0xcc72 0xcc82 0xcc92 0xcca2 0xccb2 0xccd2 0xcdb1 0xcdca 0xcdda 0xce0a 0xd06a 0xd4e2 0xdac4 0xe831 0xea41 0xf41a 0xf9c2 0xf9d2 0xfa64 0xfae1 0xfaf1 0xfb02 0xfb11 0xfb21 0xfb34 0xfb41 0xfb54 0xfb61
+    runtime sites 57
+      0x60061c46 call 0x60063431,[d2,d3,a2,a3],0x28
+      0x6006c28f call 0x60063431,[d2,d3,a2,a3],0x28
+      0x6006c2be call 0x60063431,[d2,d3,a2,a3],0x28
+      0x6006c2ed call 0x60063431,[d2,d3,a2,a3],0x28
+      0x6006c31c call 0x60063431,[d2,d3,a2,a3],0x28
+      0x60196f7b call 0x60063431,[d2,d3,a2,a3],0x28
+      0x60196fcf call 0x60063431,[d2,d3,a2,a3],0x28
+      0x60197009 call 0x60063431,[d2,d3,a2,a3],0x28
+      0x6019705d call 0x60063431,[d2,d3,a2,a3],0x28
+      0x60197099 call 0x60063431,[d2,d3,a2,a3],0x28
+      0x601970ed call 0x60063431,[d2,d3,a2,a3],0x28
+      0x60197127 call 0x60063431,[d2,d3,a2,a3],0x28
+      0x6019717b call 0x60063431,[d2,d3,a2,a3],0x28
+      0x601971a3 call 0x60063431,[d2,d3,a2,a3],0x28
+      0x601971b6 call 0x60063431,[d2,d3,a2,a3],0x28
+      0x601971d7 call 0x60063431,[d2,d3,a2,a3],0x28
+      0x601971ea call 0x60063431,[d2,d3,a2,a3],0x28
+      0x601972a6 call 0x60063431,[d2,d3,a2,a3],0x28
+      0x601972e6 call 0x60063431,[d2,d3,a2,a3],0x28
+      0x60197394 call 0x60063431,[d2,d3,a2,a3],0x28
+      0x601973e8 call 0x60063431,[d2,d3,a2,a3],0x28
+      0x6019743b call 0x60063431,[d2,d3,a2,a3],0x28
+      0x60197491 call 0x60063431,[d2,d3,a2,a3],0x28
+      0x601974d8 call 0x60063431,[d2,d3,a2,a3],0x28
+      0x6019752c call 0x60063431,[d2,d3,a2,a3],0x28
+      0x6019757f call 0x60063431,[d2,d3,a2,a3],0x28
+      0x601975d5 call 0x60063431,[d2,d3,a2,a3],0x28
+      0x60197601 call 0x60063431,[d2,d3,a2,a3],0x28
+      0x6019761f call 0x60063431,[d2,d3,a2,a3],0x28
+      0x60197644 call 0x60063431,[d2,d3,a2,a3],0x28
+      0x60197662 call 0x60063431,[d2,d3,a2,a3],0x28
+      0x601effcf call 0x60063431,[d2,d3,a2,a3],0x28
+      0x603c2862 call 0x60063431,[d2,d3,a2,a3],0x28
+      0x603c2875 call 0x60063431,[d2,d3,a2,a3],0x28
+      0x603c2888 call 0x60063431,[d2,d3,a2,a3],0x28
+      0x603c289b call 0x60063431,[d2,d3,a2,a3],0x28
+      0x604193c0 call 0x60063431,[d2,d3,a2,a3],0x28
+      0x6041ab7a call 0x60063431,[d2,d3,a2,a3],0x28
+      0x60713387 call 0x60063431,[d2,d3,a2,a3],0x28
+      0x607133a0 call 0x60063431,[d2,d3,a2,a3],0x28
+      0x607133c9 call 0x60063431,[d2,d3,a2,a3],0x28
+      0x60713404 call 0x60063431,[d2,d3,a2,a3],0x28
+      0x60713441 call 0x60063431,[d2,d3,a2,a3],0x28
+      0x6071347e call 0x60063431,[d2,d3,a2,a3],0x28
+      0x607134a4 call 0x60063431,[d2,d3,a2,a3],0x28
+      0x607134bb call 0x60063431,[d2,d3,a2,a3],0x28
+      0x607135fc call 0x60063431,[d2,d3,a2,a3],0x28
+      0x60713615 call 0x60063431,[d2,d3,a2,a3],0x28
+      0x6071363e call 0x60063431,[d2,d3,a2,a3],0x28
+      0x60713679 call 0x60063431,[d2,d3,a2,a3],0x28
+      0x607136b7 call 0x60063431,[d2,d3,a2,a3],0x28
+      0x607136fa call 0x60063431,[d2,d3,a2,a3],0x28
+      0x60713720 call 0x60063431,[d2,d3,a2,a3],0x28
+      0x60713737 call 0x60063431,[d2,d3,a2,a3],0x28
+      0x60713754 call 0x60063431,[d2,d3,a2,a3],0x28
+      0x60713780 call 0x60063431,[d2,d3,a2,a3],0x28
+      0x6183ce25 call 0x60063431,[d2,d3,a2,a3],0x28
+  span FUN_60063567 sites 31  {'imm': 30, 'RUNTIME': 1}
+    immediates: 0x2281 0x2291 0x22a1 0x22b1 0x22c1 0x22d1 0x22e1 0x22f1 0x2301 0x2311 0x2321 0x2331 0x2341 0x2351 0x2361 0x2371 0x2392 0x23a2 0x23c2 0x23f2 0x2402 0x2422 0x2432 0x4711 0xce41 0xce51 0xce61 0xce71 0xce81 0xce91
+    runtime sites 1
+      0x6183cd6e call 0x60063567,[d2,d3,a2,a3],0x2c
+  default FUN_60063962 sites 26  {'RUNTIME': 6, 'imm': 20}
+    immediates: 0x4689 0x4691 0x46a9 0x46b1 0x46c1 0x46d9 0x46e1 0x46f4 0x4701 0x8072 0xac81 0xd4d2 0xd4e2 0xf9b1 0xf9c2 0xf9d2
+    runtime sites 6
+      0x60061d50 call 0x60063962,[d2],0x1c
+      0x603c2a74 call 0x60063962,[d2],0x1c
+      0x604193fe call 0x60063962,[d2],0x1c
+      0x6041abdf call 0x60063962,[d2],0x1c
+      0x6183e9b5 call 0x60063962,[d2],0x1c
+      0x61843f71 call 0x60063962,[d2],0x1c
+
+filler call sites whose straight-line D0 immediate is 0x5b82: 0
+
+== aligned u16 0x5b82 in the image ==
+  0x600e5874 next 0x0010 window 825b100000000000
+  0x601b1bd4 next 0xb000 window 825b00b010811da5
+  0x6020217a next 0x2da7 window 825ba72da3f8e101
+  0x6030ac1c next 0x9964 window 825b64996214a8c1
+  0x6030ac50 next 0x9964 window 825b6499628001fc
+  0x6030ac80 next 0x9964 window 825b64996214a8c3
+  0x6057f43c next 0x2c24 window 825b242cfe004204
+  0x60590a44 next 0xb0e9 window 825be9b0628002fc
+  0x605952fc next 0x5c1c window 825b1c5c28eff16c
+  0x606274e0 next 0x0005 window 825b0500625b0600
+  0x60627518 next 0x000c window 825b0c00625b0d00
+  0x60627524 next 0x000d window 825b0d00625b0e00
+  0x607c69f4 next 0x92b7 window 825bb7927c5daffb
+  0x607cb986 next 0x530d window 825b0d537ea5eff2
+  0x60856974 next 0x3a4c window 825b4c3aa3dd0ea0
+  0x60856a4c next 0x3a4c window 825b4c3aa3dd369f
+  0x6085ba42 next 0x3a4c window 825b4c3aa3fca85c
+  0x6085ba5a next 0x3a4c window 825b4c3aa316aa00
+  0x6085c33c next 0x3a4c window 825b4c3aa3fca44c
+  0x60860006 next 0x3a4c window 825b4c3aa3ca66fc
+  0x6086cbd8 next 0x3a4c window 825b4c3aa3fca44c
+  0x6087a8e0 next 0x3acf window 825bcf3aa3fa0120
+  0x609aa986 next 0x5c3c window 825b3c5c382c0080
+  0x60b4d6c8 next 0xfffe window 825bfeff3014fcdc
+  0x60bd0ad6 next 0x60e7 window 825be7604204f8bc
+  0x60c575a2 next 0x0ca0 window 825ba00c5c18cd36
+  0x60e29138 next 0x60b5 window 825bb5607947e260
+  0x6108f9ba next 0x0000 window 825b0000a01ec914
+  0x611aeb7c next 0xdb04 window 825b04db1df8c103
+  0x615fbdb0 next 0x6129 window 825b296107800000
+  0x618309c4 next 0x18f0 window 825bf01892802185
+aligned count 31
+
+== two aligned data coincidences ==
+  0x607c69f4 u16 0x5b82 next 0x92b7 dword 0x92b75b82
+    -32..+32 7524048c848e873c27fa3b09b85646a530a65f49dd5b9f0314e21abe39a6734e825bb7927c5daffbcf74e9595b769614347e151a4c162dd0d84ed87d21f7cfb9
+    pointers to this address: none
+  0x607cb986 u16 0x5b82 next 0x530d dword 0x530d5b82
+    -32..+32 07916d730f9d09654611cd242f7dbbfff5cfa9cf5e3389cc09799eadc7957d86825b0d537ea5eff246e7626c057a3ecf27f32697a723d011f2381cc20b36efcd
+    pointers to this address: none
+

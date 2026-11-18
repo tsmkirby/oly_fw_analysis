@@ -1,0 +1,159 @@
+command: python -I -c "print('ok')"
+exit: 0
+stderr: (empty)
+stdout:
+ok
+----
+command: python -I work\scripts\setters_5b82_v1.py
+exit: 0
+stderr: (empty)
+stdout:
+scanning listings
+scan 4805945 kept 1793 bad 0
+second scan for callers 15
+wrote C:\Dev\OM3-tasks\T2b-cell-ownership-gaps\ws\work\out\setters-5b82-v1.txt
+wrote C:\Dev\OM3-tasks\T2b-cell-ownership-gaps\ws\work\out\listings-setters-v1.txt
+calls setter 39
+DONE
+----
+command: python -I work\scripts\candidates_5b82_v4.py
+exit: 0
+stderr: (empty)
+stdout:
+pass 1
+pass 2 callees 69
+kept 26419 mismatches 0
+wrote C:\Dev\OM3-tasks\T2b-cell-ownership-gaps\ws\work\out\close-5b82-v4.txt
+rows 150 UNRESOLVED 15
+DONE
+----
+command: python -I work\scripts\setters_5b82_v2.py
+exit: 0
+stderr: (empty)
+stdout:
+wrote C:\Dev\OM3-tasks\T2b-cell-ownership-gaps\ws\work\out\setters-5b82-v2.txt
+wild [(61, 24183121, 83952853)]
+key 5b82 False
+DONE
+----
+command: python -I work\scripts\fa64_d2_v1.py
+exit: 0
+stderr: (empty)
+stdout:
+handlers 17 bad 0
+DONE
+----
+command: python -I work\scripts\fa64_stubs_v1.py
+exit: 0
+stderr: (empty)
+stdout:
+stub bytes 0x607132b6..0x607132fb
+  0x607132b6 8070ca3f
+  0x607132ba 8071ca3b
+  0x607132be 8072ca37
+  0x607132c2 8073ca33
+  0x607132c6 8074ca2f
+  0x607132ca 8075ca2b
+  0x607132ce 8076ca27
+  0x607132d2 8077ca23
+  0x607132d6 8060ca1f
+  0x607132da 8061ca1b
+  0x607132de 8062ca17
+  0x607132e2 8063ca13
+  0x607132e6 8064ca0f
+  0x607132ea 8065ca0b
+  0x607132ee 8066ca07
+  0x607132f2 8067ca03
+  0x607132f6 0014de00
+  0x607132fa 00811d80
+nonzero ids:
+  id 0x1 -> 0x607132b6
+  id 0x2 -> 0x607132ba
+  id 0x3 -> 0x607132be
+  id 0x4 -> 0x607132c2
+  id 0x5 -> 0x607132c6
+  id 0x6 -> 0x607132ca
+  id 0x7 -> 0x607132ce
+  id 0x8 -> 0x607132d2
+  id 0x1001 -> 0x607132d6
+  id 0x1002 -> 0x607132da
+  id 0x1003 -> 0x607132de
+  id 0x1004 -> 0x607132e2
+  id 0x1005 -> 0x607132e6
+  id 0x1006 -> 0x607132ea
+  id 0x1007 -> 0x607132ee
+  id 0x1008 -> 0x607132f2
+
+DONE
+----
+command: python -I work\scripts\records_5b82_v4.py
+exit: 0
+stderr: (empty)
+stdout:
+== key load before each FUN_60063431 in 0x60196ee3..0x6019766d ==
+  call 0x60196f7b key (1612279667, 'movhu (A0),D0')
+  call 0x60196fcf key (1612279753, 'movhu (A0),D0')
+  call 0x60197009 key (1612279809, 'movhu (A0),D0')
+  call 0x6019705d key (1612279895, 'movhu (A0),D0')
+  call 0x60197099 key (1612279953, 'movhu (A0),D0')
+  call 0x601970ed key (1612280039, 'movhu (A0),D0')
+  call 0x60197127 key (1612280095, 'movhu (A0),D0')
+  call 0x6019717b key (1612280181, 'movhu (A0),D0')
+  call 0x601971a3 key (1612280220, 'movhu (A2),D0') OTHER
+  call 0x601971b6 key (1612280238, 'movhu (A2),D0') OTHER
+  call 0x601971d7 key (1612280272, 'movhu (A3),D0') OTHER
+  call 0x601971ea key (1612280290, 'movhu (A3),D0') OTHER
+  call 0x601972a6 key (1612280475, 'movhu (A0),D0')
+  call 0x601972e6 key (1612280538, 'movhu (0x2,A0),D0')
+  call 0x60197394 key (1612280716, 'movhu (A0),D0')
+  call 0x601973e8 key (1612280802, 'movhu (A0),D0')
+  call 0x6019743b key (1612280885, 'movhu (A0),D0')
+  call 0x60197491 key (1612280971, 'movhu (A0),D0')
+  call 0x601974d8 key (1612281040, 'movhu (A0),D0')
+  call 0x6019752c key (1612281126, 'movhu (A0),D0')
+  call 0x6019757f key (1612281209, 'movhu (A0),D0')
+  call 0x601975d5 key (1612281295, 'movhu (A0),D0')
+  call 0x60197601 key (1612281326, 'movhu (A0),D0')
+  call 0x6019761f key (1612281356, 'movhu (A0),D0')
+  call 0x60197644 key (1612281393, 'movhu (A0),D0')
+  call 0x60197662 key (1612281423, 'movhu (A0),D0')
+setter calls 26 other-key-loads 4
+== address-constant runs ==
+  0x60e29138 dword 0x60b55b82 run 0x60e27318..0x60e2b104 (15852 bytes) raw 825bb560
+  0x615fbdb0 dword 0x61295b82 run 0x615fbdb0..0x615fbdb4 (4 bytes) raw 825b2961
+  0x615b9d54 dword 0x615b823c run 0x615b9d54..0x615b9d58 (4 bytes) raw 3c825b61
+  0x615b9d90 dword 0x615b823c run 0x615b9d90..0x615b9d94 (4 bytes) raw 3c825b61
+product 0x5b8 * 0xf4240 = 0x5742de00 low16 0xde00
+string 0x60a39f0d [%-12s: %4d] albm_main_search_filehandle_picno()
+string 0x60a3a6cd albm_main.c
+string 0x617c31d7 CAvpiVenHEVCCodec.cpp
+map 0x60626c3c d14b0100
+stub 0x607132b6 8070ca3f bra-target-check
+bytes 0x607135ef 2664fa
+bytes 0x6071365d 9b
+bytes 0x607136f6 f1de
+bytes 0x6071374b 88
+gap-call 0x60195a1f cdd218f03c
+tableA 0x5b82 False
+tableB 0x5b82 False
+candidates rows 150 mov-fixed 29 unresolved-marked 5
+uses rows 35
+
+DONE
+----
+command: python -I work\scripts\patch_5b82_v1.py
+exit: 0
+stderr: (empty)
+stdout:
+product replacements 1
+uses replacements 1
+DONE
+----
+command: python -I work\scripts\manifest_5b82_v2.py
+exit: 0
+stderr: (empty)
+stdout:
+manifest outputs work/evidence-manifest.json
+command-log records this stdout
+DONE
+----

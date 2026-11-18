@@ -8,14 +8,13 @@ Last updated: 2026-11-17 (Phase 1 preparation).
 
 ## 1. Continuation point
 
-- **Now:** correction rounds of T2b and T3a run concurrently, one each per the loop rule. Sol
-  rejected both first rounds (18 Nov).
-  - **T2b:** `0x5b82` is still UNRESOLVED. The parameter routes and debug dispatchers are
-    classified; five record-driven one-cell setters are open.
-  - **T3a:** the third row draws and native keys reach it. It uses label `0x0DD2` "AF Target Mode",
-    UI ID `0x3D6F`, and 140 overlay bytes in the section-1 tail. OK does not open the 10-zone
-    chooser, because page 27's list model is type 1.
-  - T2 closed as UNRESOLVED after two Sol rejections.
+- **Now:** T3c is running (route the AF-ON zone row to a stock editor; measure first). T2b and T3a
+  are closed (18 Nov).
+  - **T2b:** UNRESOLVED. The `0x5b82` line was rejected four times. The storage question is with the
+    owner (Q7).
+  - **T3a:** BLOCKED. The row draws and native keys reach it (label `0x0DD2` "AF Target Mode", UI ID
+    `0x3D6F`, 140 overlay bytes in the section-1 tail), but OK opens no editor. Page 28 never appears
+    in the OM-3 menu.
 - **T1 outcome:** on page 27, value 0 = "always the selected AF target" and value 1 =
   detected-subject priority. The top row is 2154 = `0x90a1[0]` and the bottom row is
   2155 = `0x90a1[1]`. Which row is the shutter (inference: top) and the AF-ON key binding are open.
@@ -67,9 +66,10 @@ The autonomous programme ends at either of these:
 | T0 | Isolation and tool canary | **Accepted (qualified)**, attempt 7 | [decision](tasks/T0-canary/decision.md) |
 | T1 | Page-27 row and value mapping | **Accepted** (value meaning and row↔storage settled; Q1/Q3 open) | [decision](tasks/T1-page27-mapping/decision.md) |
 | T2 | Ownership proof for unclaimed cells `0x5b82` / `0x5b52` | **Closed: UNRESOLVED** (two Sol rejections; escalated) | [decision](tasks/T2-cell-ownership/decision.md) |
-| T2b | Close Sol's open items for `0x5b82` | Correction round (run 1 rejected by Sol) | [tasks/T2b-cell-ownership-gaps](tasks/T2b-cell-ownership-gaps/brief.md) |
-| T3a | AF-ON zone row on page 27, RAM-only profile (OM-Emu) | Correction round (run 1 rejected by Sol) | [tasks/T3a-afon-zone-row](tasks/T3a-afon-zone-row/brief.md) |
-| T3b | AF-ON target-position editor routing | Queued after T3a | AFON-MENU-RESEARCH §9 |
+| T2b | Close Sol's open items for `0x5b82` | **Closed: UNRESOLVED** (two Sol rejections; storage escalated, Q7) | [decision](tasks/T2b-cell-ownership-gaps/decision.md) |
+| T3a | AF-ON zone row on page 27, RAM-only profile (OM-Emu) | **Closed: BLOCKED** (row drawn; no editor opens; two Sol rejections) | [decision](tasks/T3a-afon-zone-row/decision.md) |
+| T3c | Route the zone row to a stock editor: measure the editor dispatch and pages 28/29, then prototype R1 | Running | [tasks/T3c-afon-editor-routing](tasks/T3c-afon-editor-routing/brief.md) |
+| T3b | AF-ON target-position editor routing | Queued after T3c (uses T3c's R2 measurement) | AFON-MENU-RESEARCH §9 |
 | — | Beyond T3: persistence, display, hook point (Q4), acceptance matrix | Planned by Opus as results arrive | §2 |
 | — | CPU3 request/loader port | Deferred; regression only | AFON-MENU-RESEARCH §9 item 5 |
 
@@ -77,8 +77,8 @@ The autonomous programme ends at either of these:
 
 | Blocker | Blocks | Needs | Source |
 |---|---|---|---|
-| No proven storage for the AF-ON profile | Persistence | T2; storage choice (see §7 rule) | AFON-MENU-RESEARCH §8 |
-| Page-27 row/value meaning unknown | Acceptance runner configuration; T3 | T1 | AFON-MENU-RESEARCH §1 |
+| No proven storage for the AF-ON profile | Persistence (not the RAM-only UI work) | **Owner decision, Q7** | T2/T2b decisions; AFON-MENU-RESEARCH §8 |
+| The AF-ON row opens no editor | T3 acceptance | T3c | T3a decision |
 | No CPU3 service in OM-Emu; TAKE logger maps `0x50003090` read-only | Detection-on regression cases | Deferred work | AFON-MENU-RESEARCH §8 |
 | Repeated AF-ON presses blocked by the display-completion fixture | Stress evidence | Stock display state; stage-2 G1 | Stage-0 record, "Next work" #1 |
 | Gate 1 secondary-chip reply; gate 4 updater and recovery | GO | Hardware stages | AF-GAP-CLOSURE-ASSESSMENT gate table |
@@ -96,6 +96,21 @@ The autonomous programme ends at either of these:
   `0x610bf5e2` (section 7, no placement proof). Phase-plan stage 6 still assumes the table redirect.
 - **Q5.** Does the AF-ON position editor need a second row (page-29 pattern)? *T3.*
 - **Q6.** Section-4 tail run-time use; secondary-CPU/DMA ownership of the reserved tails.
+- **Q7. Storage for the AF-ON profile. *Owner decision* (escalated 18 Nov).**
+  - **What is established.** The unnamed cells of `0x5b82` (26 bytes) fit the 18-byte CRC layout. Custom
+    Mode C1 does not store this key, so the profile would be global, not per custom mode. The default and
+    reset paths write zeros, which decode as "no profile". The factory adjustment and debug paths can
+    write any key and are classified as not normal operation.
+  - **What is unresolved.** After four Sol reviews, the following are still open: a few data occurrences
+    of `0x5b82` whose structure is unidentified, the key fields +0x50/+0x52 of one setter table, and
+    three `mov 0x5b8` explanations.
+  - **Options.**
+    - (a) Accept `0x5b82` with that residual risk; the CRC protects against misreading.
+    - (b) Commission a different storage approach, for example a new registered key or another owned area.
+      This is larger work and needs its own research.
+    - (c) Keep the profile RAM-only, resetting at power-on. This contradicts FEATURE-SPEC's persistence
+      requirement.
+  - The offline UI work does not depend on this choice.
 
 ## 7. Operating rules (owner, 17 Nov)
 
@@ -218,6 +233,7 @@ ACL or label operation on any tree containing a junction; the scripts check for 
 | 2026-11-18 | After T2's second rejection: run T2b (Sol's open items only) and, alongside it, T3a with a RAM-only AF-ON profile; persistence decided later | Owner | session |
 | 2026-11-18 | Concurrent Grok runs: one lock window per batch, a separate Low-labelled agent home per task | Opus | `orchestration\Invoke-Grok.ps1` |
 | 2026-11-18 | Sol rejected the first runs of T2b and T3a; one correction round each. T2b: trace the open setter sources. T3a: measure page 28's editor and route the new row to it (at most four experiments, then BLOCKED). | Opus | brief §7 of each |
+| 2026-11-18 | Both correction rounds rejected. T2b is closed as UNRESOLVED, and storage is escalated to the owner in writing (Q7). T3a is closed as BLOCKED. T3c is a different approach: measure the stock editor dispatch and pages 28/29, then prototype the row→editor route (R1). | Opus | T2b/T3a decision.md |
 
 ## 12. Session resumption checklist (Opus)
 

@@ -1,0 +1,804 @@
+{
+  "task": "T3a-afon-zone-row",
+  "brief_sha256": "fa122eca4e445ed6f672c5412aec532bc4b012af4a6731c00877c960a5c3b887",
+  "inputs": [
+    {
+      "path": "inputs/00_0100_50000020.decoded.bin",
+      "sha256": "5e8d376e9111a44ac0352f26030d7c1b17026d42c45f3600cfa02a0e8c5b7d59"
+    },
+    {
+      "path": "inputs/02_0106_458c0020.decoded.bin",
+      "sha256": "3d9fd4426b45fbe4b715599422af38c6d22392c08543a69f63c28291c5a0b059"
+    }
+  ],
+  "sources": [
+    {
+      "path": "brief.md",
+      "sha256": "fa122eca4e445ed6f672c5412aec532bc4b012af4a6731c00877c960a5c3b887"
+    },
+    {
+      "path": "TASK.md",
+      "sha256": "b6e86f688335adde7f814ab4881165c143dc2a8f103cfec4b3546ad37d537a35"
+    },
+    {
+      "path": "ref/PROJECT-STATE.md",
+      "sha256": "e9c2613db3320a5fde29cc34f999bc9dfb879ceeffb457930be13b019a1d1863"
+    },
+    {
+      "path": "ref/analysis/button-af/AFON-MENU-RESEARCH.md",
+      "sha256": "dc0099205a85e7f0a7dbea40fd96627737abb94ff09e3bb934fdbdb514f1ec31"
+    },
+    {
+      "path": "ref/HARDWARE-STAGE0-RECORD.md",
+      "sha256": "53c725620759c10dbe49d8e7568ab8ad9aa15f7d02844dd0c49ac1892a46abde"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "work/out/afon-cancel-v14.png",
+      "sha256": "8243424b6d851082ee7486a92aca5de26a7756d177a0debc1c2ed461ce778a70",
+      "bytes": 13243
+    },
+    {
+      "path": "work/out/afon-chooser-v1.png",
+      "sha256": "b7bf9fbc7f5d32fd59ed8812492207a1f0a9c496a6621a2536c0dfb092791717",
+      "bytes": 16206
+    },
+    {
+      "path": "work/out/afon-chooser-v10.png",
+      "sha256": "5c2455c784a5d7d1880f9427dccb78d591532b4eada96410204bb5db314c985d",
+      "bytes": 9868
+    },
+    {
+      "path": "work/out/afon-chooser-v11.png",
+      "sha256": "ad8c5a381161a2572b32cbeee49ef1cf27d4efec8a066ed6c4a8d6b77806b2d6",
+      "bytes": 11221
+    },
+    {
+      "path": "work/out/afon-chooser-v2.png",
+      "sha256": "ad8c5a381161a2572b32cbeee49ef1cf27d4efec8a066ed6c4a8d6b77806b2d6",
+      "bytes": 11221
+    },
+    {
+      "path": "work/out/afon-chooser-v3.png",
+      "sha256": "ad8c5a381161a2572b32cbeee49ef1cf27d4efec8a066ed6c4a8d6b77806b2d6",
+      "bytes": 11221
+    },
+    {
+      "path": "work/out/afon-chooser-v4.png",
+      "sha256": "ad8c5a381161a2572b32cbeee49ef1cf27d4efec8a066ed6c4a8d6b77806b2d6",
+      "bytes": 11221
+    },
+    {
+      "path": "work/out/afon-chooser-v5.png",
+      "sha256": "ad8c5a381161a2572b32cbeee49ef1cf27d4efec8a066ed6c4a8d6b77806b2d6",
+      "bytes": 11221
+    },
+    {
+      "path": "work/out/afon-chooser-v6.png",
+      "sha256": "ad8c5a381161a2572b32cbeee49ef1cf27d4efec8a066ed6c4a8d6b77806b2d6",
+      "bytes": 11221
+    },
+    {
+      "path": "work/out/afon-chooser-v7.png",
+      "sha256": "0348f40d7d6ea86f7b2cd357479346408bd1abd5e3b6d559f08311fba77d214f",
+      "bytes": 11241
+    },
+    {
+      "path": "work/out/afon-chooser-v8.png",
+      "sha256": "4bbebb9b3fbae4490b0e0c6a20c93b31de3f7cbb116770462837176e07a27762",
+      "bytes": 10961
+    },
+    {
+      "path": "work/out/afon-chooser-v9.png",
+      "sha256": "f69dae79abbf0e9b4a3d40644010e73bb29bde1e5b4c5f93b77946be2f9b3f3c",
+      "bytes": 10471
+    },
+    {
+      "path": "work/out/afon-confirm-v14.png",
+      "sha256": "b2b69826bcf5ce521ee62af194056ce3fe97b74728969a8b13dad0fedbe4c457",
+      "bytes": 15551
+    },
+    {
+      "path": "work/out/afon-confirm-v15.png",
+      "sha256": "b2b69826bcf5ce521ee62af194056ce3fe97b74728969a8b13dad0fedbe4c457",
+      "bytes": 15551
+    },
+    {
+      "path": "work/out/afon-down-v14.png",
+      "sha256": "0348f40d7d6ea86f7b2cd357479346408bd1abd5e3b6d559f08311fba77d214f",
+      "bytes": 11241
+    },
+    {
+      "path": "work/out/afon-down-v15.png",
+      "sha256": "348f4162260b8835d9864b04bf669015f5462bff7a3c332b984daa48233e9339",
+      "bytes": 10358
+    },
+    {
+      "path": "work/out/afon-kind0-v13.png",
+      "sha256": "6a84fe756af69e9e9a28f4f94fde5b1575271b6a55b9f2edfeb652abd124a907",
+      "bytes": 10559
+    },
+    {
+      "path": "work/out/afon-kind3-v13.png",
+      "sha256": "3471b5be487d05c8c7783ca928719fc72d0177c853b2c921a86536bf3961dd0a",
+      "bytes": 10962
+    },
+    {
+      "path": "work/out/afon-kind3-v16.png",
+      "sha256": "4bbebb9b3fbae4490b0e0c6a20c93b31de3f7cbb116770462837176e07a27762",
+      "bytes": 10961
+    },
+    {
+      "path": "work/out/afon-kind5-v13.png",
+      "sha256": "3471b5be487d05c8c7783ca928719fc72d0177c853b2c921a86536bf3961dd0a",
+      "bytes": 10962
+    },
+    {
+      "path": "work/out/afon-kind5-v16.png",
+      "sha256": "4bbebb9b3fbae4490b0e0c6a20c93b31de3f7cbb116770462837176e07a27762",
+      "bytes": 10961
+    },
+    {
+      "path": "work/out/afon-open-v14.png",
+      "sha256": "6a84fe756af69e9e9a28f4f94fde5b1575271b6a55b9f2edfeb652abd124a907",
+      "bytes": 10559
+    },
+    {
+      "path": "work/out/afon-open-v15.png",
+      "sha256": "6a84fe756af69e9e9a28f4f94fde5b1575271b6a55b9f2edfeb652abd124a907",
+      "bytes": 10559
+    },
+    {
+      "path": "work/out/afon-page-v1.png",
+      "sha256": "0348f40d7d6ea86f7b2cd357479346408bd1abd5e3b6d559f08311fba77d214f",
+      "bytes": 11241
+    },
+    {
+      "path": "work/out/afon-page-v10.png",
+      "sha256": "0348f40d7d6ea86f7b2cd357479346408bd1abd5e3b6d559f08311fba77d214f",
+      "bytes": 11241
+    },
+    {
+      "path": "work/out/afon-page-v11.png",
+      "sha256": "0348f40d7d6ea86f7b2cd357479346408bd1abd5e3b6d559f08311fba77d214f",
+      "bytes": 11241
+    },
+    {
+      "path": "work/out/afon-page-v13.png",
+      "sha256": "ad8c5a381161a2572b32cbeee49ef1cf27d4efec8a066ed6c4a8d6b77806b2d6",
+      "bytes": 11221
+    },
+    {
+      "path": "work/out/afon-page-v2.png",
+      "sha256": "0348f40d7d6ea86f7b2cd357479346408bd1abd5e3b6d559f08311fba77d214f",
+      "bytes": 11241
+    },
+    {
+      "path": "work/out/afon-page-v3.png",
+      "sha256": "0348f40d7d6ea86f7b2cd357479346408bd1abd5e3b6d559f08311fba77d214f",
+      "bytes": 11241
+    },
+    {
+      "path": "work/out/afon-page-v4.png",
+      "sha256": "0348f40d7d6ea86f7b2cd357479346408bd1abd5e3b6d559f08311fba77d214f",
+      "bytes": 11241
+    },
+    {
+      "path": "work/out/afon-page-v5.png",
+      "sha256": "0348f40d7d6ea86f7b2cd357479346408bd1abd5e3b6d559f08311fba77d214f",
+      "bytes": 11241
+    },
+    {
+      "path": "work/out/afon-page-v6.png",
+      "sha256": "0348f40d7d6ea86f7b2cd357479346408bd1abd5e3b6d559f08311fba77d214f",
+      "bytes": 11241
+    },
+    {
+      "path": "work/out/afon-page-v7.png",
+      "sha256": "0348f40d7d6ea86f7b2cd357479346408bd1abd5e3b6d559f08311fba77d214f",
+      "bytes": 11241
+    },
+    {
+      "path": "work/out/afon-page-v8.png",
+      "sha256": "0348f40d7d6ea86f7b2cd357479346408bd1abd5e3b6d559f08311fba77d214f",
+      "bytes": 11241
+    },
+    {
+      "path": "work/out/afon-page-v9.png",
+      "sha256": "0348f40d7d6ea86f7b2cd357479346408bd1abd5e3b6d559f08311fba77d214f",
+      "bytes": 11241
+    },
+    {
+      "path": "work/out/design-v12.md",
+      "sha256": "c0aeddb9a6bad40c583bd6b23c787ab3acc51e739dce947876b6c289876e01e6",
+      "bytes": 4931
+    },
+    {
+      "path": "work/out/design.md",
+      "sha256": "ccc2f9ef60070d20b2ca1ed8f94fe1106937f9a83413cc15793680a9e8b16a55",
+      "bytes": 7230
+    },
+    {
+      "path": "work/out/discover-kind1.jsonl",
+      "sha256": "a7f63cc99a5f20a9069ac11e2dcbddf0b7dafd6193b2da5d5beaa0db14fc5131",
+      "bytes": 6115
+    },
+    {
+      "path": "work/out/discover-v1.jsonl",
+      "sha256": "b7579bc000fa888d92ea56b27353570fd2eb6161fcd716a4e28ece21461273f1",
+      "bytes": 3914
+    },
+    {
+      "path": "work/out/discover-v10.jsonl",
+      "sha256": "bc482b9a2daa684fda489d4dd604291c5e281b16c0f3b8fdc1c62bd103233e52",
+      "bytes": 6848
+    },
+    {
+      "path": "work/out/discover-v10b.jsonl",
+      "sha256": "ac3c4efcf6c31e0663a2356a78ff018c1cbad1575c285517908e20bd5ae3d63e",
+      "bytes": 7043
+    },
+    {
+      "path": "work/out/discover-v10c.jsonl",
+      "sha256": "fbd1cd011fcb9450071f84ba3c21d5cec10a3233ffbf397a59b398af45e9d9f4",
+      "bytes": 7158
+    },
+    {
+      "path": "work/out/discover-v11.jsonl",
+      "sha256": "d9a826173a5674df4f14784261ead1322560461338f970a268f546eb820529d7",
+      "bytes": 5567
+    },
+    {
+      "path": "work/out/discover-v13.jsonl",
+      "sha256": "9ef04d3d8632786692824559732a1be2ebbef545d04e973ce4265e94c7944bfb",
+      "bytes": 1670
+    },
+    {
+      "path": "work/out/discover-v14.jsonl",
+      "sha256": "baef8e9a095f1d987608e6f2083f193e7b3149db36e408b294937746409d90b4",
+      "bytes": 2228
+    },
+    {
+      "path": "work/out/discover-v15.jsonl",
+      "sha256": "e99a755d073b414bdea471daa67bf1957ecbe94aa28aad4a774622ba00e463ca",
+      "bytes": 1121
+    },
+    {
+      "path": "work/out/discover-v16.jsonl",
+      "sha256": "403e33ac587506ac58ecb65d74572ef8ee6ddc4549e4f17b4487b3f724825541",
+      "bytes": 1427
+    },
+    {
+      "path": "work/out/discover-v2.jsonl",
+      "sha256": "3dbd5a11d9ebb5abac63fcbc72d5d6f4fb1f58201fd86375d0d1c07f0a3a5450",
+      "bytes": 8639
+    },
+    {
+      "path": "work/out/discover-v3.jsonl",
+      "sha256": "2ce529a91d444458711d367812f32c4c371fd4e98d7e6b6d941c675a497603b3",
+      "bytes": 8903
+    },
+    {
+      "path": "work/out/discover-v4.jsonl",
+      "sha256": "9ea6e368ee3ad4ee5ad53bbfa7b772e65c8034ceb4f4441159bf41b9881cf0ca",
+      "bytes": 8903
+    },
+    {
+      "path": "work/out/discover-v5.jsonl",
+      "sha256": "e52219d60d9ef2c57c3085ca684b2254df1c4377a7d4e67d810867da63af2d90",
+      "bytes": 7951
+    },
+    {
+      "path": "work/out/discover-v6.jsonl",
+      "sha256": "6e611bcc91a8a38ce8c5c6a7f17938f1f74387ac8d1f6a9cb34502b8db80a865",
+      "bytes": 6021
+    },
+    {
+      "path": "work/out/discover-v7.jsonl",
+      "sha256": "caacb178d4383780dc446592faf6b281662ba410b2006579e179210865ec5fa0",
+      "bytes": 7048
+    },
+    {
+      "path": "work/out/discover-v8.jsonl",
+      "sha256": "87f30d8c946d2fc6076c4d79f74c377c5f83b69e2fcdad27b45a99883f853b32",
+      "bytes": 6961
+    },
+    {
+      "path": "work/out/discover-v9.jsonl",
+      "sha256": "bd922632b67203d6a8f75c07b5c21bb015af0514d20e1e150a89a1c4f1b7477c",
+      "bytes": 5874
+    },
+    {
+      "path": "work/out/overlay-changed-bytes.csv",
+      "sha256": "ff14ccafef13d99eae88c5e742ddb304598c31bb01c1257fe71f922c4b3536d2",
+      "bytes": 8107
+    },
+    {
+      "path": "work/out/siblings-up-v10.jsonl",
+      "sha256": "d8a3d29a95d5d9b82a1abc05a990794857ee3d3ea856fa78850836de92359a5e",
+      "bytes": 4599
+    },
+    {
+      "path": "work/out/siblings-v10.jsonl",
+      "sha256": "5962eb8f87d2caec86755dfa28fe75071afe3158b6bd2876a441b8cd8995ad16",
+      "bytes": 5689
+    },
+    {
+      "path": "work/out/static-afon-v1.txt",
+      "sha256": "cf45e003fbe086f95de1e49bbeb5fe7fd4420258598d626ba9ee76f121352b37",
+      "bytes": 7221
+    },
+    {
+      "path": "work/out/static-afon-v2.txt",
+      "sha256": "5e53dcd333d180516cf0aa84f9fe1685c5ea157cd65116ab82e6ac1b75701556",
+      "bytes": 860
+    },
+    {
+      "path": "work/out/stock-chooser-v12.png",
+      "sha256": "c3f3b63beb2ba0e05124165036221450bbbc9afe2068602f8ce80fdc95e461c2",
+      "bytes": 18464
+    },
+    {
+      "path": "work/out/stock-chooser-v12c.png",
+      "sha256": "b1b727183233a152e00069a815ffbe0ded0fef428944bd5ada4d150933d299fc",
+      "bytes": 10207
+    },
+    {
+      "path": "work/out/stock-chooser-v12g.png",
+      "sha256": "77f3175a37e0419cfbd47dd759e361da6f66aea4942788c66dd14385a3b96a0b",
+      "bytes": 13625
+    },
+    {
+      "path": "work/out/stock-page28-v12.jsonl",
+      "sha256": "d39445abd90dc8dad2b7e2b5274f6539ab72b0bfefb658feeac5bd4a642eaf12",
+      "bytes": 10400
+    },
+    {
+      "path": "work/out/stock-page28-v12.png",
+      "sha256": "1e298a1e8b7ba7874eb715d9610fa2a93e91eb08d0d2d0044260938b460862a2",
+      "bytes": 18598
+    },
+    {
+      "path": "work/out/stock-page28-v12b.jsonl",
+      "sha256": "3364f2ff4abcbe35c35f70f56636082c354b2f8623f53e590a295afa58f04d5e",
+      "bytes": 9060
+    },
+    {
+      "path": "work/out/stock-page28-v12c.jsonl",
+      "sha256": "844b05b66ccb70d4c1181634d59489cb5999925a71ab7bac8d6d4514584d8d99",
+      "bytes": 2918
+    },
+    {
+      "path": "work/out/stock-page28-v12c.png",
+      "sha256": "0c4ee32f31bcae9e4c3491c8afc9cd311e5ec4dadf88435b4b7b5b978774810a",
+      "bytes": 10044
+    },
+    {
+      "path": "work/out/stock-page28-v12d.jsonl",
+      "sha256": "97faf21f0ea8274a7972b23b1d5ccf83d49a207cb80ef354834c542401c8f882",
+      "bytes": 3965
+    },
+    {
+      "path": "work/out/stock-page28-v12e.jsonl",
+      "sha256": "ea52a82b5993397d6e0a8e9460103840b0084720ebd2164d92e0fbd59e7d394b",
+      "bytes": 3740
+    },
+    {
+      "path": "work/out/stock-zone-v12f.jsonl",
+      "sha256": "a729c8e685b0f2865711ca18af3bc1d26da98c811516a7fe2437835719e84357",
+      "bytes": 555
+    },
+    {
+      "path": "work/out/stock-zone-v12g.jsonl",
+      "sha256": "279a4877f1d7e62e6d5ad1d8f1fb89127dfa21b107c89566ab05183ff3a5e117",
+      "bytes": 1704
+    },
+    {
+      "path": "work/result.md",
+      "sha256": "bad83f2e840a38c21db51ad8239b45a8a85448e7b8f0321e36d44680fb9e145e",
+      "bytes": 18008
+    },
+    {
+      "path": "work/scripts/afon_zone_probe_v1.mjs",
+      "sha256": "bde1a7d433f47429e91e303b82acfb8d7fcf6b9f5f20ca951c133feea1cace7e",
+      "bytes": 9770
+    },
+    {
+      "path": "work/scripts/afon_zone_probe_v10.mjs",
+      "sha256": "25d284a197893a653955f12122deae179fecaeae796d1f1eac00fc363ab2c022",
+      "bytes": 16832
+    },
+    {
+      "path": "work/scripts/afon_zone_probe_v11.mjs",
+      "sha256": "393b7c367e10380c9fa110507fbd0a29d700772d4ba7392c745ee5cb8b824ac8",
+      "bytes": 12255
+    },
+    {
+      "path": "work/scripts/afon_zone_probe_v12.mjs",
+      "sha256": "33505eb02923132f3be990ce333c853c19a49c3b780a33d359a628c0f56ebf3f",
+      "bytes": 11564
+    },
+    {
+      "path": "work/scripts/afon_zone_probe_v12b.mjs",
+      "sha256": "71e32528f2b9db8449cb705559e31692c916a7d56896bfc122890c8373e151e1",
+      "bytes": 10158
+    },
+    {
+      "path": "work/scripts/afon_zone_probe_v12c.mjs",
+      "sha256": "61a83630dda5912284d921589ff6f2ba5c4f46b08b1c3ca3715691b9099a6089",
+      "bytes": 7977
+    },
+    {
+      "path": "work/scripts/afon_zone_probe_v12d.mjs",
+      "sha256": "4c46d85e825b81025b4f40ee125d0e77d5ed7256b7631ba49fa9ba163c332e2e",
+      "bytes": 8126
+    },
+    {
+      "path": "work/scripts/afon_zone_probe_v12e.mjs",
+      "sha256": "b8d80fd5fbdba36c5b51d62a26a11a4e5380054b57b71a7741f3261eba7c25f0",
+      "bytes": 8683
+    },
+    {
+      "path": "work/scripts/afon_zone_probe_v12f.mjs",
+      "sha256": "665ed6f028c1ae9a2ec58e3bf2f6f6bcaad88803122ff97e4a3c02a13fe9bf28",
+      "bytes": 7912
+    },
+    {
+      "path": "work/scripts/afon_zone_probe_v12g.mjs",
+      "sha256": "515bd3aef7c8efa2f4f310312afc7c92a810108b3298664d68d26b5bbb438156",
+      "bytes": 7531
+    },
+    {
+      "path": "work/scripts/afon_zone_probe_v13.mjs",
+      "sha256": "e5814f09a449a4da69c946e23cf247c9e8ea115602f9fb5b767f1e89672ce14b",
+      "bytes": 8183
+    },
+    {
+      "path": "work/scripts/afon_zone_probe_v14.mjs",
+      "sha256": "04f4eca580248c7e98d855545b7c40021751634cbf02f903e825be7aaaee6079",
+      "bytes": 9062
+    },
+    {
+      "path": "work/scripts/afon_zone_probe_v15.mjs",
+      "sha256": "f4e99d840db6dcdf21a84d1cf69217846f3baf4dd2bc0961748870642c117a4e",
+      "bytes": 7540
+    },
+    {
+      "path": "work/scripts/afon_zone_probe_v16.mjs",
+      "sha256": "595bada4a527bf582b4b4ea275996983e17df53064080d3daadc650c2ad87454",
+      "bytes": 7946
+    },
+    {
+      "path": "work/scripts/afon_zone_probe_v2.mjs",
+      "sha256": "c70e1b731daff0d6954726eb1b8e79fedaeb5d48a258e5aef31d4c144d39c551",
+      "bytes": 10741
+    },
+    {
+      "path": "work/scripts/afon_zone_probe_v3.mjs",
+      "sha256": "284b7f9dbd760787d692e6477898ce088cba223965d80e897c90792331d8c2ab",
+      "bytes": 11512
+    },
+    {
+      "path": "work/scripts/afon_zone_probe_v4.mjs",
+      "sha256": "38bbd88e4543d85e2a85d6a41a8ac048530077a28ad40eec4e5f16cdd1cafab7",
+      "bytes": 11959
+    },
+    {
+      "path": "work/scripts/afon_zone_probe_v5.mjs",
+      "sha256": "b53e48a1b0c64a8168e3d8a5ed622db35d1f87379d233035ae947c931ba7067b",
+      "bytes": 12186
+    },
+    {
+      "path": "work/scripts/afon_zone_probe_v6.mjs",
+      "sha256": "e9b8fc82177e61703bdf64dcb10c8b129d967c9f83038bcfa2b6c0096b9b3b3b",
+      "bytes": 13655
+    },
+    {
+      "path": "work/scripts/afon_zone_probe_v7.mjs",
+      "sha256": "01a2c624439404a5d60b29f1ec0970c1c5ccab61233d9ee0a3c233969517c683",
+      "bytes": 14817
+    },
+    {
+      "path": "work/scripts/afon_zone_probe_v8.mjs",
+      "sha256": "fae1c6226b846bcfdc45ca7a2b28f008999b96b01e9c29e590748ce3326d4ed8",
+      "bytes": 14744
+    },
+    {
+      "path": "work/scripts/afon_zone_probe_v9.mjs",
+      "sha256": "a532a99b2af893af9d8d1ac340dadb2aae75ca17f375832b6359f172cd0f5216",
+      "bytes": 15642
+    },
+    {
+      "path": "work/scripts/build_manifest_v12.py",
+      "sha256": "f172455ba0c2ef707490e242646edec0a114ee280706e4a1d1923d4f4f61002d",
+      "bytes": 6930
+    },
+    {
+      "path": "work/scripts/build_overlay_v1.py",
+      "sha256": "068486ccfd70783c1974b329bc637d9724680b9da92b13c82f55f905648e336f",
+      "bytes": 1946
+    },
+    {
+      "path": "work/scripts/build_overlay_v2.py",
+      "sha256": "1e969cc929d11b609f03717feee68b805c1714fd7589214e7af59574229fefe1",
+      "bytes": 1748
+    },
+    {
+      "path": "work/scripts/make_probe_v12g.py",
+      "sha256": "d30c8d2e22bcab08e766a3c352dbc395e0bfba76d3dc8e53a694b546124bf6a4",
+      "bytes": 1534
+    },
+    {
+      "path": "work/scripts/make_probe_v2.py",
+      "sha256": "3ac062d241d23629240aa55e9ee3865e78dfa1e54c413bb82e66428e0ecba86e",
+      "bytes": 2485
+    },
+    {
+      "path": "work/scripts/make_probe_v3.py",
+      "sha256": "3ab3631ec3ee5e0c5b1c9578e034c038bdf4e87b50b94dd5b2bad8b84e796321",
+      "bytes": 1401
+    },
+    {
+      "path": "work/scripts/make_probe_v4.py",
+      "sha256": "fbf69535ce0bc7c942fbd1be637c7c31fe15664d7266525b612e5666162157ad",
+      "bytes": 1324
+    },
+    {
+      "path": "work/scripts/make_probe_v5.py",
+      "sha256": "f2eaec3a677847326fc7ab2adf86a7f29fa2f11ad4f0e10e3a377ebe00e1eb60",
+      "bytes": 1535
+    },
+    {
+      "path": "work/scripts/make_probe_v6.py",
+      "sha256": "5bd54bf7e4c86e06e089c715c309fa69473180d15464914abc7e6d9c16078621",
+      "bytes": 3365
+    },
+    {
+      "path": "work/scripts/static_afon_v1.py",
+      "sha256": "dddfce3719ba81eb6def9864ae15a3975fca1c3076e539095040abd2c7034e5c",
+      "bytes": 7198
+    },
+    {
+      "path": "work/scripts/static_afon_v2.py",
+      "sha256": "b3007865e6d8c95e0bde942f2be3433f8f9a34d219291fa15dcd66c0dd11ff21",
+      "bytes": 3160
+    },
+    {
+      "path": "work/scripts/static_page28_v12.py",
+      "sha256": "81d4c15f26bbc3a51b2c133d6456d2e8915be5078bc56c04bfe1c2dbfa26e94e",
+      "bytes": 2018
+    },
+    {
+      "path": "work/scripts/static_page28_v12b.py",
+      "sha256": "5e76172427e7edd398c02bbeadddd76ae8888fd42713e290f26e9e88a117a3fe",
+      "bytes": 2688
+    },
+    {
+      "path": "work/scripts/static_page28_v12c.py",
+      "sha256": "02f0065769041264c417714662e9e91a91e43c254b1090292eb075d6aca9aeb5",
+      "bytes": 1591
+    },
+    {
+      "path": "work/scripts/static_page28_v12d.py",
+      "sha256": "05b4579ccc449f6143bcf036fa275621fa31b1a21919d40552c1d5c6cfc187e3",
+      "bytes": 1046
+    }
+  ],
+  "commands": [
+    {
+      "cmd": "python -I work/scripts/static_afon_v1.py",
+      "exit": null,
+      "final": null,
+      "exit_note": "shell exit not retained from the earlier session"
+    },
+    {
+      "cmd": "python -I work/scripts/static_afon_v2.py",
+      "exit": null,
+      "final": null,
+      "exit_note": "shell exit not retained from the earlier session"
+    },
+    {
+      "cmd": "python -I work/scripts/build_overlay_v2.py",
+      "exit": null,
+      "final": null,
+      "exit_note": "shell exit not retained from the earlier session"
+    },
+    {
+      "cmd": "node26 work/scripts/afon_zone_probe_v1.mjs om-emu discover work/out/discover-v1.jsonl",
+      "exit": null,
+      "final": "{\"mode\":\"discover\",\"hook\":\"EMULATOR-ONLY\",\"step\":\"done\",\"ok\":true,\"profile\":{\"uncached\":0,\"cached\":0,\"head\":[0,167,1,0]},\"cells\":{\"zone\":[2,0,2,0,2,0,5,5],\"size\":0,\"position\":[526,526,526,526,526,526],\"custom\":[27,39],\"homeArea\":[0,0,0],\"homePos\":[526,526,526],\"homeSize\":0,\"homeFlag\":0,\"priority\":[1,0],\"ui\":{\"id2154\":1,\"id2155\":0,\"area\":2,\"homeArea\":0}}}",
+      "exit_note": "shell exit not retained from the earlier session"
+    },
+    {
+      "cmd": "node26 work/scripts/afon_zone_probe_v2.mjs om-emu discover work/out/discover-v2.jsonl",
+      "exit": null,
+      "final": "{\"mode\":\"discover\",\"hook\":\"EMULATOR-ONLY\",\"step\":\"done\",\"ok\":true,\"profile\":{\"uncached\":0,\"cached\":0,\"head\":[0,167,1,0]},\"cells\":{\"zone\":[2,0,2,0,2,0,5,5],\"size\":0,\"position\":[526,526,526,526,526,526],\"custom\":[27,39],\"homeArea\":[0,0,0],\"homePos\":[526,526,526],\"homeSize\":0,\"homeFlag\":0,\"priority\":[1,1],\"ui\":{\"id2154\":1,\"id2155\":1,\"area\":2,\"homeArea\":0}}}",
+      "exit_note": "shell exit not retained from the earlier session"
+    },
+    {
+      "cmd": "node26 work/scripts/afon_zone_probe_v3.mjs om-emu discover work/out/discover-v3.jsonl",
+      "exit": null,
+      "final": "{\"mode\":\"discover\",\"hook\":\"EMULATOR-ONLY\",\"step\":\"done\",\"ok\":true,\"profile\":{\"uncached\":0,\"cached\":0,\"head\":[0,167,1,0]},\"cells\":{\"zone\":[2,0,2,0,2,0,5,5],\"size\":0,\"position\":[526,526,526,526,526,526],\"custom\":[27,39],\"homeArea\":[0,0,0],\"homePos\":[526,526,526],\"homeSize\":0,\"homeFlag\":0,\"priority\":[1,1],\"ui\":{\"id2154\":1,\"id2155\":1,\"area\":2,\"homeArea\":0}}}",
+      "exit_note": "shell exit not retained from the earlier session"
+    },
+    {
+      "cmd": "node26 work/scripts/afon_zone_probe_v4.mjs om-emu discover work/out/discover-v4.jsonl",
+      "exit": null,
+      "final": "{\"mode\":\"discover\",\"hook\":\"EMULATOR-ONLY\",\"step\":\"done\",\"ok\":true,\"profile\":{\"uncached\":0,\"cached\":0,\"head\":[0,167,1,0]},\"cells\":{\"zone\":[2,0,2,0,2,0,5,5],\"size\":0,\"position\":[526,526,526,526,526,526],\"custom\":[27,39],\"homeArea\":[0,0,0],\"homePos\":[526,526,526],\"homeSize\":0,\"homeFlag\":0,\"priority\":[1,1],\"ui\":{\"id2154\":1,\"id2155\":1,\"area\":2,\"homeArea\":0}}}",
+      "exit_note": "shell exit not retained from the earlier session"
+    },
+    {
+      "cmd": "node26 work/scripts/afon_zone_probe_v5.mjs om-emu discover work/out/discover-v5.jsonl",
+      "exit": null,
+      "final": "{\"mode\":\"discover\",\"hook\":\"EMULATOR-ONLY\",\"step\":\"done\",\"ok\":true,\"profile\":{\"uncached\":0,\"cached\":0,\"head\":[0,167,1,0]},\"cells\":{\"zone\":[2,0,2,0,2,0,5,5],\"size\":0,\"position\":[526,526,526,526,526,526],\"custom\":[27,39],\"homeArea\":[0,0,0],\"homePos\":[526,526,526],\"homeSize\":0,\"homeFlag\":0,\"priority\":[1,0],\"ui\":{\"id2154\":1,\"id2155\":0,\"area\":2,\"homeArea\":0}}}",
+      "exit_note": "shell exit not retained from the earlier session"
+    },
+    {
+      "cmd": "node26 work/scripts/afon_zone_probe_v6.mjs om-emu discover work/out/discover-v6.jsonl",
+      "exit": null,
+      "final": "{\"mode\":\"discover\",\"hook\":\"EMULATOR-ONLY\",\"step\":\"done\",\"ok\":true,\"profile\":{\"uncached\":0,\"cached\":0,\"head\":[0,167,1,0]},\"cells\":{\"zone\":[2,0,2,0,2,0,5,5],\"size\":0,\"position\":[526,526,526,526,526,526],\"custom\":[27,39],\"homeArea\":[0,0,0],\"homePos\":[526,526,526],\"homeSize\":0,\"homeFlag\":0,\"priority\":[1,1],\"ui\":{\"id2154\":1,\"id2155\":1,\"area\":2,\"homeArea\":0}}}",
+      "exit_note": "shell exit not retained from the earlier session"
+    },
+    {
+      "cmd": "node26 work/scripts/afon_zone_probe_v7.mjs om-emu discover work/out/discover-v7.jsonl",
+      "exit": null,
+      "final": "{\"mode\":\"discover\",\"hook\":\"EMULATOR-ONLY\",\"step\":\"done\",\"ok\":true,\"profile\":{\"uncached\":0,\"cached\":0,\"head\":[0,167,1,0]},\"cells\":{\"zone\":[2,0,2,0,2,0,5,5],\"size\":0,\"position\":[526,526,526,526,526,526],\"custom\":[27,39],\"homeArea\":[0,0,0],\"homePos\":[526,526,526],\"homeSize\":0,\"homeFlag\":0,\"priority\":[1,1],\"ui\":{\"id2154\":1,\"id2155\":1,\"area\":2,\"homeArea\":0}}}",
+      "exit_note": "shell exit not retained from the earlier session"
+    },
+    {
+      "cmd": "node26 work/scripts/afon_zone_probe_v8.mjs om-emu discover work/out/discover-v8.jsonl",
+      "exit": null,
+      "final": "{\"mode\":\"discover\",\"hook\":\"EMULATOR-ONLY\",\"step\":\"done\",\"ok\":true,\"profile\":{\"uncached\":0,\"cached\":0,\"head\":[0,167,1,0]},\"cells\":{\"zone\":[2,0,2,0,2,0,5,5],\"size\":0,\"position\":[526,526,526,526,526,526],\"custom\":[27,39],\"homeArea\":[0,0,0],\"homePos\":[526,526,526],\"homeSize\":0,\"homeFlag\":0,\"priority\":[1,1],\"ui\":{\"id2154\":1,\"id2155\":1,\"area\":2,\"homeArea\":0}}}",
+      "exit_note": "shell exit not retained from the earlier session"
+    },
+    {
+      "cmd": "node26 work/scripts/afon_zone_probe_v9.mjs om-emu discover work/out/discover-v9.jsonl",
+      "exit": null,
+      "final": "{\"mode\":\"discover\",\"hook\":\"EMULATOR-ONLY\",\"step\":\"boundary\",\"error\":\"TypeError: t.includes is not a function\\n    at file:///C:/Dev/OM3-tasks/T3a-afon-zone-row/ws/work/scripts/afon_zone_probe_v9.mjs:359:49\\n    at Array.some (<anonymous>)\\n    at file:///C:/Dev/OM3-tasks/T3a-afon-zone-row/ws/work/scripts/afon_zone_probe_v9.mjs:359:35\"}",
+      "exit_note": "shell exit not retained from the earlier session"
+    },
+    {
+      "cmd": "node26 work/scripts/afon_zone_probe_v10.mjs om-emu discover work/out/discover-v10.jsonl",
+      "exit": null,
+      "final": "{\"mode\":\"discover\",\"hook\":\"EMULATOR-ONLY\",\"step\":\"done\",\"ok\":true,\"profile\":{\"uncached\":0,\"cached\":0,\"head\":[0,167,1,0]},\"cells\":{\"zone\":[2,0,2,0,2,0,5,5],\"size\":0,\"position\":[526,526,526,526,526,526],\"custom\":[27,39],\"homeArea\":[0,0,0],\"homePos\":[526,526,526],\"homeSize\":0,\"homeFlag\":0,\"priority\":[1,1],\"ui\":{\"id2154\":1,\"id2155\":1,\"area\":2,\"homeArea\":0}}}",
+      "exit_note": "shell exit not retained from the earlier session"
+    },
+    {
+      "cmd": "node26 work/scripts/afon_zone_probe_v10.mjs om-emu control work/out/siblings-v10.jsonl",
+      "exit": null,
+      "final": "{\"mode\":\"control\",\"hook\":\"EMULATOR-ONLY\",\"step\":\"done\",\"ok\":true,\"profile\":{\"uncached\":255,\"cached\":255,\"head\":[255,255,255,255]},\"cells\":{\"zone\":[2,0,2,0,2,0,5,5],\"size\":0,\"position\":[526,526,526,526,526,526],\"custom\":[27,39],\"homeArea\":[0,0,0],\"homePos\":[526,526,526],\"homeSize\":0,\"homeFlag\":0,\"priority\":[1,1],\"ui\":{\"id2154\":1,\"id2155\":1,\"area\":2,\"homeArea\":0}}}",
+      "exit_note": "shell exit not retained from the earlier session"
+    },
+    {
+      "cmd": "node26 work/scripts/afon_zone_probe_v10.mjs om-emu control work/out/siblings-up-v10.jsonl",
+      "exit": null,
+      "final": "{\"mode\":\"control\",\"hook\":\"EMULATOR-ONLY\",\"step\":\"done\",\"ok\":true,\"profile\":{\"uncached\":255,\"cached\":255,\"head\":[255,255,255,255]},\"cells\":{\"zone\":[2,0,2,0,2,0,5,5],\"size\":0,\"position\":[526,526,526,526,526,526],\"custom\":[27,39],\"homeArea\":[0,0,0],\"homePos\":[526,526,526],\"homeSize\":0,\"homeFlag\":0,\"priority\":[1,1],\"ui\":{\"id2154\":1,\"id2155\":1,\"area\":2,\"homeArea\":0}}}",
+      "exit_note": "shell exit not retained from the earlier session"
+    },
+    {
+      "cmd": "node26 work/scripts/afon_zone_probe_v10.mjs om-emu discover work/out/discover-v10b.jsonl",
+      "exit": null,
+      "final": "{\"mode\":\"discover\",\"hook\":\"EMULATOR-ONLY\",\"step\":\"done\",\"ok\":true,\"profile\":{\"uncached\":0,\"cached\":0,\"head\":[0,167,1,0]},\"cells\":{\"zone\":[2,0,2,0,2,0,5,5],\"size\":0,\"position\":[526,526,526,526,526,526],\"custom\":[27,39],\"homeArea\":[0,0,0],\"homePos\":[526,526,526],\"homeSize\":0,\"homeFlag\":0,\"priority\":[1,1],\"ui\":{\"id2154\":1,\"id2155\":1,\"area\":2,\"homeArea\":0}}}",
+      "exit_note": "shell exit not retained from the earlier session"
+    },
+    {
+      "cmd": "node26 work/scripts/afon_zone_probe_v10.mjs om-emu discover work/out/discover-v10c.jsonl",
+      "exit": null,
+      "final": "{\"mode\":\"discover\",\"hook\":\"EMULATOR-ONLY\",\"step\":\"done\",\"ok\":true,\"profile\":{\"uncached\":0,\"cached\":0,\"head\":[0,167,1,0]},\"cells\":{\"zone\":[2,0,2,0,2,0,5,5],\"size\":0,\"position\":[526,526,526,526,526,526],\"custom\":[27,39],\"homeArea\":[0,0,0],\"homePos\":[526,526,526],\"homeSize\":0,\"homeFlag\":0,\"priority\":[1,1],\"ui\":{\"id2154\":1,\"id2155\":1,\"area\":2,\"homeArea\":0}}}",
+      "exit_note": "shell exit not retained from the earlier session"
+    },
+    {
+      "cmd": "node26 work/scripts/afon_zone_probe_v10.mjs om-emu discover work/out/discover-kind1.jsonl",
+      "exit": null,
+      "final": "{\"mode\":\"discover\",\"hook\":\"EMULATOR-ONLY\",\"step\":\"done\",\"ok\":true,\"profile\":{\"uncached\":0,\"cached\":0,\"head\":[0,167,1,0]},\"cells\":{\"zone\":[2,0,2,0,2,0,5,5],\"size\":0,\"position\":[526,526,526,526,526,526],\"custom\":[27,39],\"homeArea\":[0,0,0],\"homePos\":[526,526,526],\"homeSize\":0,\"homeFlag\":0,\"priority\":[1,1],\"ui\":{\"id2154\":1,\"id2155\":1,\"area\":2,\"homeArea\":0}}}",
+      "exit_note": "shell exit not retained from the earlier session"
+    },
+    {
+      "cmd": "node26 work/scripts/afon_zone_probe_v11.mjs om-emu discover work/out/discover-v11.jsonl",
+      "exit": null,
+      "final": "{\"mode\":\"discover\",\"hook\":\"EMULATOR-ONLY\",\"step\":\"done\",\"ok\":true,\"profile\":{\"uncached\":0,\"cached\":0,\"head\":[0,167,1,0]},\"cells\":{\"zone\":[2,0,2,0,2,0,5,5],\"size\":0,\"position\":[526,526,526,526,526,526],\"custom\":[27,39],\"homeArea\":[0,0,0],\"homePos\":[526,526,526],\"homeSize\":0,\"homeFlag\":0,\"priority\":[1,1],\"ui\":{\"id2154\":1,\"id2155\":1,\"area\":2,\"homeArea\":0}}}",
+      "exit_note": "shell exit not retained from the earlier session"
+    },
+    {
+      "cmd": "python -I work/scripts/static_page28_v12.py",
+      "exit": 0,
+      "final": null,
+      "final_note": "console only; stdout was not retained"
+    },
+    {
+      "cmd": "python -I work/scripts/static_page28_v12b.py",
+      "exit": 0,
+      "final": null,
+      "final_note": "console only; stdout was not retained"
+    },
+    {
+      "cmd": "python -I work/scripts/static_page28_v12c.py",
+      "exit": 0,
+      "final": null,
+      "final_note": "console only; stdout was not retained"
+    },
+    {
+      "cmd": "python -I work/scripts/static_page28_v12d.py",
+      "exit": 0,
+      "final": null,
+      "final_note": "console only; stdout was not retained"
+    },
+    {
+      "cmd": "node26 work/scripts/afon_zone_probe_v12.mjs om-emu stock work/out/stock-page28-v12.jsonl",
+      "exit": 0,
+      "final": "{\"mode\":\"stock\",\"hook\":\"observe\",\"step\":\"done\",\"ok\":false,\"sawTitle\":false,\"sawRow\":false,\"opened\":true,\"measured\":true}"
+    },
+    {
+      "cmd": "node26 work/scripts/afon_zone_probe_v12b.mjs om-emu stock work/out/stock-page28-v12b.jsonl",
+      "exit": 1,
+      "final": "{\"mode\":\"stock\",\"hook\":\"observe\",\"step\":\"boundary\",\"error\":\"MenuWalkError: menu walk: none of the goals in the list the cursor is in ([\\\"@A027@AF Mode\\\",\\\"@A027@C-AF Speed\\\",\\\"@A027@C-AF Sensitivity\\\"])\\n    at MenuWalk.to (file:///C:/Dev/OM3-tasks/T3a-afon-zone-row/ws/om-emu/emu/src/lab/menuwalk.mjs:144:36)\\n    at file:///C:/Dev/OM3-tasks/T3a-afon-zone-row/ws/work/scripts/afon_zone_probe_v12b.mjs:188:10\"}"
+    },
+    {
+      "cmd": "node26 work/scripts/afon_zone_probe_v12c.mjs om-emu stock work/out/stock-page28-v12c.jsonl",
+      "exit": 0,
+      "final": "{\"mode\":\"stock\",\"hook\":\"observe\",\"step\":\"done\",\"ok\":false,\"onPage28\":false,\"measured\":true,\"pageDump\":null,\"pagesSeen\":[]}"
+    },
+    {
+      "cmd": "node26 work/scripts/afon_zone_probe_v12d.mjs om-emu stock work/out/stock-page28-v12d.jsonl",
+      "exit": 0,
+      "final": "{\"mode\":\"stock\",\"hook\":\"observe\",\"step\":\"done\",\"ok\":false,\"reason\":\"no visited row built group 0x116 or page 28\",\"groups\":[{\"phase\":\"visit-0\",\"group\":364,\"obj\":\"0x6247a300\"},{\"phase\":\"visit-1\",\"group\":341,\"obj\":\"0x6247a300\"},{\"phase\":\"visit-2\",\"group\":342,\"obj\":\"0x6247a0a0\"},{\"phase\":\"visit-3\",\"group\":280,\"obj\":\"0x6247a0a0\"},{\"phase\":\"visit-4\",\"group\":281,\"obj\":\"0x6247a0a0\"}],\"pages\":[{\"phase\":\"visit-3\",\"page\":\"0x6158f134\",\"id\":30},{\"phase\":\"visit-4\",\"page\":\"0x6158f148\",\"id\":31}]}"
+    },
+    {
+      "cmd": "node26 work/scripts/afon_zone_probe_v12e.mjs om-emu stock work/out/stock-page28-v12e.jsonl",
+      "exit": 0,
+      "final": "{\"mode\":\"stock\",\"hook\":\"observe\",\"step\":\"done\",\"ok\":false,\"reason\":\"page 28 not opened from the AF menu rows\",\"groups\":[{\"phase\":\"visit-1\",\"group\":311},{\"phase\":\"visit-5\",\"group\":327},{\"phase\":\"visit-6\",\"group\":277},{\"phase\":\"visit-8\",\"group\":275},{\"phase\":\"visit-9\",\"group\":276}],\"pages\":[{\"phase\":\"visit-1\",\"page\":\"0x6158f350\",\"id\":61},{\"phase\":\"visit-6\",\"page\":\"0x6158f0f8\",\"id\":27},{\"phase\":\"visit-8\",\"page\":\"0x6158f0d0\",\"id\":25},{\"phase\":\"visit-9\",\"page\":\"0x6158f0e4\",\"id\":26}]}"
+    },
+    {
+      "cmd": "node26 work/scripts/afon_zone_probe_v12f.mjs om-emu stock work/out/stock-zone-v12f.jsonl",
+      "exit": 1,
+      "final": "{\"mode\":\"stock\",\"hook\":\"observe\",\"step\":\"boundary\",\"error\":\"PlayError: AF / metering: not wired (0x1225 is not in E147's UI_IN tables)\\n    at PlaySession.key (file:///C:/Dev/OM3-tasks/T3a-afon-zone-row/ws/om-emu/emu/src/lab/play.mjs:1612:41)\\n    at key (file:///C:/Dev/OM3-tasks/T3a-afon-zone-row/ws/work/scripts/afon_zone_probe_v12f.mjs:100:29)\\n    at press (file:///C:/Dev/OM3-tasks/T3a-afon-zone-row/ws/work/scripts/afon_zone_probe_v12f.mjs:101:26)\\n    at file:///C:/Dev/OM3-tasks/T3a-afon-zone-row/ws/work/scripts/afon_zone_probe_v12f.mjs:104:3\"}"
+    },
+    {
+      "cmd": "python -I work/scripts/make_probe_v12g.py",
+      "exit": 0,
+      "final": null,
+      "final_note": "no log file"
+    },
+    {
+      "cmd": "node26 work/scripts/afon_zone_probe_v12g.mjs om-emu stock work/out/stock-zone-v12g.jsonl",
+      "exit": 0,
+      "final": "{\"mode\":\"stock\",\"hook\":\"observe\",\"step\":\"done\",\"ok\":false,\"page28\":false,\"measured\":true}"
+    },
+    {
+      "cmd": "node26 work/scripts/afon_zone_probe_v13.mjs om-emu discover work/out/discover-v13.jsonl",
+      "exit": 0,
+      "final": "{\"mode\":\"discover\",\"hook\":\"EMULATOR-ONLY\",\"step\":\"done\",\"ok\":false,\"profile\":0,\"note\":\"screenshots decide whether any kind drew the zone list; ok is not acceptance\"}"
+    },
+    {
+      "cmd": "node26 work/scripts/afon_zone_probe_v14.mjs om-emu discover work/out/discover-v14.jsonl",
+      "exit": 0,
+      "final": "{\"mode\":\"discover\",\"hook\":\"EMULATOR-ONLY\",\"step\":\"done\",\"ok\":false,\"profile\":0,\"sets\":[]}"
+    },
+    {
+      "cmd": "node26 work/scripts/afon_zone_probe_v15.mjs om-emu discover work/out/discover-v15.jsonl",
+      "exit": 0,
+      "final": "{\"mode\":\"discover\",\"hook\":\"EMULATOR-ONLY\",\"step\":\"done\",\"ok\":false,\"profile\":0,\"sets\":[]}"
+    },
+    {
+      "cmd": "node26 work/scripts/afon_zone_probe_v16.mjs om-emu discover work/out/discover-v16.jsonl",
+      "exit": 0,
+      "final": "{\"mode\":\"discover\",\"hook\":\"EMULATOR-ONLY\",\"step\":\"done\",\"ok\":false,\"profile\":0,\"sets\":[],\"note\":\"fourth experiment; setter must have fired to count as open\"}"
+    },
+    {
+      "cmd": "python -I work/scripts/build_manifest_v12.py",
+      "exit": 0,
+      "final": null,
+      "final_note": "no log file"
+    }
+  ],
+  "tool_versions": {
+    "node26": "v26.12.1",
+    "python": "3.12.7"
+  },
+  "notes": [
+    "Item 2 is BLOCKED. Brief section 4 was not run. A terminal done line is not acceptance.",
+    "work/out/overlay-changed-bytes.csv and work/out/design.md were not rewritten. work/out/design-v12.md is the correction.",
+    "Shell exits are recorded for the correction-round commands. Earlier-round shell exits were not retained; final JSONL lines are quoted from the logs."
+  ]
+}

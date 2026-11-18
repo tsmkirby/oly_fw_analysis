@@ -1,0 +1,71 @@
+entries 32
+distinct handlers 17
+  0x60718658 id 0x0 handler 0x607132f6
+  0x60718660 id 0x1 handler 0x607132b6
+  0x60718668 id 0x2 handler 0x607132ba
+  0x60718670 id 0x3 handler 0x607132be
+  0x60718678 id 0x4 handler 0x607132c2
+  0x60718680 id 0x5 handler 0x607132c6
+  0x60718688 id 0x6 handler 0x607132ca
+  0x60718690 id 0x7 handler 0x607132ce
+  0x60718698 id 0x8 handler 0x607132d2
+  0x607186a0 id 0x1001 handler 0x607132d6
+  0x607186a8 id 0x1002 handler 0x607132da
+  0x607186b0 id 0x1003 handler 0x607132de
+  0x607186b8 id 0x1004 handler 0x607132e2
+  0x607186c0 id 0x1005 handler 0x607132e6
+  0x607186c8 id 0x1006 handler 0x607132ea
+  0x607186d0 id 0x1007 handler 0x607132ee
+  0x607186d8 id 0x1008 handler 0x607132f2
+  0x607186e0 id 0x0 handler 0x607132f6
+  0x607186e8 id 0x0 handler 0x607132f6
+  0x607186f0 id 0x0 handler 0x607132f6
+  0x607186f8 id 0x0 handler 0x607132f6
+  0x60718700 id 0x0 handler 0x607132f6
+  0x60718708 id 0x0 handler 0x607132f6
+  0x60718710 id 0x0 handler 0x607132f6
+  0x60718718 id 0x0 handler 0x607132f6
+  0x60718720 id 0x0 handler 0x607132f6
+  0x60718728 id 0x0 handler 0x607132f6
+  0x60718730 id 0x0 handler 0x607132f6
+  0x60718738 id 0x0 handler 0x607132f6
+  0x60718740 id 0x0 handler 0x607132f6
+  0x60718748 id 0x0 handler 0x607132f6
+  0x60718750 id 0x0 handler 0x607132f6
+NO FUNCTION 607132b6
+NO FUNCTION 607132ba
+NO FUNCTION 607132be
+NO FUNCTION 607132c2
+NO FUNCTION 607132c6
+NO FUNCTION 607132ca
+NO FUNCTION 607132ce
+NO FUNCTION 607132d2
+NO FUNCTION 607132d6
+NO FUNCTION 607132da
+NO FUNCTION 607132de
+NO FUNCTION 607132e2
+NO FUNCTION 607132e6
+NO FUNCTION 607132ea
+NO FUNCTION 607132ee
+NO FUNCTION 607132f2
+NO FUNCTION 607132f6
+
+== D2 / ret / jmp inside each handler ==
+0x607132b6 ? preserves writes 0 rets none
+0x607132ba ? preserves writes 0 rets none
+0x607132be ? preserves writes 0 rets none
+0x607132c2 ? preserves writes 0 rets none
+0x607132c6 ? preserves writes 0 rets none
+0x607132ca ? preserves writes 0 rets none
+0x607132ce ? preserves writes 0 rets none
+0x607132d2 ? preserves writes 0 rets none
+0x607132d6 ? preserves writes 0 rets none
+0x607132da ? preserves writes 0 rets none
+0x607132de ? preserves writes 0 rets none
+0x607132e2 ? preserves writes 0 rets none
+0x607132e6 ? preserves writes 0 rets none
+0x607132ea ? preserves writes 0 rets none
+0x607132ee ? preserves writes 0 rets none
+0x607132f2 ? preserves writes 0 rets none
+0x607132f6 ? preserves writes 0 rets none
+handlers that write D2 without a d2 ret: none

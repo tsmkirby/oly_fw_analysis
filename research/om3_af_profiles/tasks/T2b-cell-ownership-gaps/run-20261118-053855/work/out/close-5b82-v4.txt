@@ -1,0 +1,1090 @@
+instructions kept 26419 mismatches 0
+== extended mov 0x5b8 traces ==
+0x6007f39b 2cb805 mov 0x5b8,D0 -> UNRESOLVED (path ends without a demonstrated non-key consumer: return)
+  path return
+    0x6007f39e ca37 bra 0x6007f3d5
+    0x6007f3d5 fd1440420f00 udfu01 0xf4240,D0
+    0x6007f3db de0000 retf [],0x0
+0x604df354 25b805 mov 0x5b8,A1 -> not a key (terminal consumed)
+  path consumed
+    0x604df357 f17d add A3,A1
+    0x604df359 fcdc646c6660 mov 0x60666c64,A0
+    0x604df35f db setlb
+    0x604df360 1d exthu D1
+    0x604df361 e5 add D1,D1
+    0x604df362 f484 movhu (D1,A0),D0
+    0x604df364 48 inc D2
+    0x604df365 f4c5 movhu D0,(D1,A1)
+    0x604df367 89 mov D2,D1
+    0x604df368 1e exthu D2
+    0x604df369 aa02 cmp 0x2,D2
+    0x604df36b d4 lcs
+    0x604df36c 04 clr D1
+    0x604df36d 08 clr D2
+    0x604df36e 25bc05 mov 0x5bc,A1
+0x608f8614 2cb805 mov 0x5b8,D0 -> not a key (terminal consumed,consumed,consumed,consumed)
+  path consumed
+    0x608f8617 420c mov D0,(0xc,sp)
+    0x608f8619 cd4fb8308c call 0x608f3e68,[a2,a3],0x8c pass [('D0', ('imm', 1464))]
+    0x608f3e68 enter 0x608f3e68
+    0x608f3e68 3e mov sp,A2
+    0x608f3e69 52 inc4 A2
+    0x608f3e6a 98 mov A2,A0
+    0x608f3e6b 5d90 mov (0x90,sp),A1
+    0x608f3e6d 3f mov sp,A3
+    0x608f3e6e f1dc mov A3,D0
+  path consumed
+    0x608f8617 420c mov D0,(0xc,sp)
+    0x608f8619 cd4fb8308c call 0x608f3e68,[a2,a3],0x8c pass [('D0', ('imm', 1464))]
+    0x608f861e fcacd45d3660 movhu (0x60365dd4),D0
+    0x608f8624 a000 cmp 0x0,D0
+    0x608f8626 c805 beq 0x608f862b
+    0x608f8628 ccad1e jmp 0x608fa4d5
+    0x608fa4d5 fcaccc5b3660 movhu (0x60365bcc),D0
+    0x608fa4db a003 cmp 0x3,D0
+    0x608fa4dd c205 bge 0x608fa4e2
+    0x608fa4e2 fccc51a7a360 mov 0x60a3a751,D0
+    0x608fa4e8 4204 mov D0,(0x4,sp)
+    0x608fa4ea fccccda6a360 mov 0x60a3a6cd,D0
+    0x608fa4f0 4208 mov D0,(0x8,sp)
+    0x608fa4f2 2cf401 mov 0x1f4,D0
+    0x608fa4f5 420c mov D0,(0xc,sp)
+  path consumed
+    0x608f8617 420c mov D0,(0xc,sp)
+    0x608f8619 cd4fb8308c call 0x608f3e68,[a2,a3],0x8c pass [('D0', ('imm', 1464))]
+    0x608f861e fcacd45d3660 movhu (0x60365dd4),D0
+    0x608f8624 a000 cmp 0x0,D0
+    0x608f8626 c805 beq 0x608f862b
+    0x608f8628 ccad1e jmp 0x608fa4d5
+    0x608fa4d5 fcaccc5b3660 movhu (0x60365bcc),D0
+    0x608fa4db a003 cmp 0x3,D0
+    0x608fa4dd c205 bge 0x608fa4e2
+    0x608fa4df cccdcd jmp 0x608f72ac
+    0x608f72ac 00 clr D0
+    0x608f72ad fc83d65d3660 movhu D0,(0x60365dd6)
+    0x608f72b3 5c2c mov (0x2c,sp),A0
+    0x608f72b5 cdda6ca018 call 0x608fdf8f,[d2,a2],0x18
+    0x608f72ba fcaccc5b3660 movhu (0x60365bcc),D0
+    0x608f72c0 a002 cmp 0x2,D0
+    0x608f72c2 c020 blt 0x608f72e2
+    0x608f72c4 fcccd9a6a360 mov 0x60a3a6d9,D0
+    ... 5 more
+  path consumed
+    0x608f8617 420c mov D0,(0xc,sp)
+    0x608f8619 cd4fb8308c call 0x608f3e68,[a2,a3],0x8c pass [('D0', ('imm', 1464))]
+    0x608f861e fcacd45d3660 movhu (0x60365dd4),D0
+    0x608f8624 a000 cmp 0x0,D0
+    0x608f8626 c805 beq 0x608f862b
+    0x608f8628 ccad1e jmp 0x608fa4d5
+    0x608fa4d5 fcaccc5b3660 movhu (0x60365bcc),D0
+    0x608fa4db a003 cmp 0x3,D0
+    0x608fa4dd c205 bge 0x608fa4e2
+    0x608fa4df cccdcd jmp 0x608f72ac
+    0x608f72ac 00 clr D0
+    0x608f72ad fc83d65d3660 movhu D0,(0x60365dd6)
+    0x608f72b3 5c2c mov (0x2c,sp),A0
+    0x608f72b5 cdda6ca018 call 0x608fdf8f,[d2,a2],0x18
+    0x608f72ba fcaccc5b3660 movhu (0x60365bcc),D0
+    0x608f72c0 a002 cmp 0x2,D0
+    0x608f72c2 c020 blt 0x608f72e2
+    0x608f72e2 5854 mov (0x54,sp),D0
+    ... 18 more
+0x60cc0c5a 2cb805 mov 0x5b8,D0 -> not a key (terminal ui-id)
+  path ui-id
+    0x60cc0c5d ddb88675ff0004 call 0x60419315,[],0x4 pass [('D0', ('imm', 1464))]
+0x60cebcac 2cb805 mov 0x5b8,D0 -> not a key (terminal ui-id)
+  path ui-id
+    0x60cebcaf dd66d672ff0004 call 0x60419315,[],0x4 pass [('D0', ('imm', 1464))]
+0x60d68d49 24b805 mov 0x5b8,A0 -> not a key (terminal dead-at-ret)
+  path dead-at-ret
+    0x60d68d4c f178 add A2,A0
+    0x60d68d4e f060 movhu (A0),D0
+    0x60d68d50 fae0ff0f and 0xfff,D0
+    0x60d68d54 ca0d bra 0x60d68d61
+    0x60d68d61 f070 movhu D0,(A0)
+    0x60d68d63 f06b movhu (A3),D2
+    0x60d68d65 f86304 movhu (0x4,A3),D0
+    0x60d68d68 fad2ac05 add 0x5ac,A2
+    0x60d68d6c f066 movhu (A2),D1
+    0x60d68d6e e2 add D0,D2
+    0x60d68d6f 19 exth D1
+    0x60d68d70 80ff mov -0x1,D0
+    0x60d68d72 e8 add D2,D0
+    0x60d68d73 a4 cmp D1,D0
+    0x60d68d74 c00a blt 0x60d68d7e
+    0x60d68d7e f060 movhu (A0),D0
+    0x60d68d80 fae40001 or 0x100,D0
+    0x60d68d84 f070 movhu D0,(A0)
+    ... 26 more
+0x60d68d56 24b805 mov 0x5b8,A0 -> not a key (terminal dead-at-ret)
+  path dead-at-ret
+    0x60d68d59 f178 add A2,A0
+    0x60d68d5b f060 movhu (A0),D0
+    0x60d68d5d fae40010 or 0x1000,D0
+    0x60d68d61 f070 movhu D0,(A0)
+    0x60d68d63 f06b movhu (A3),D2
+    0x60d68d65 f86304 movhu (0x4,A3),D0
+    0x60d68d68 fad2ac05 add 0x5ac,A2
+    0x60d68d6c f066 movhu (A2),D1
+    0x60d68d6e e2 add D0,D2
+    0x60d68d6f 19 exth D1
+    0x60d68d70 80ff mov -0x1,D0
+    0x60d68d72 e8 add D2,D0
+    0x60d68d73 a4 cmp D1,D0
+    0x60d68d74 c00a blt 0x60d68d7e
+    0x60d68d7e f060 movhu (A0),D0
+    0x60d68d80 fae40001 or 0x100,D0
+    0x60d68d84 f070 movhu D0,(A0)
+    0x60d68d86 9502 mov 0x2,A1
+    ... 25 more
+0x61102019 25b805 mov 0x5b8,A1 -> not a key (terminal consumed)
+  path consumed
+    0x6110201c f179 add A2,A1
+    0x6110201e f075 movhu D1,(A1)
+    0x61102020 2d9603 mov 0x396,D1
+    0x61102023 f87504 movhu D1,(0x4,A1)
+    0x61102026 f87106 movhu D0,(0x6,A1)
+    0x61102029 8016 mov 0x16,D0
+    0x6110202b 2d400b mov 0xb40,D1
+    0x6110202e 9500 mov 0x0,A1
+0x6118bf47 24b805 mov 0x5b8,A0 -> UNRESOLVED (path ends without a demonstrated non-key consumer: dead,callee-missing,dead,dead-at-ret)
+  path dead
+    0x6118bf4a f178 add A2,A0
+    0x6118bf4c 8562 mov 0x62,D1
+    0x6118bf4e dd5e16f4ff0004 call 0x610cd5ac,[],0x4 pass [('A0', ('der', 'add', 'A2,A0', ('imm', 1464)))]
+  path callee-missing
+    0x6118bf4a f178 add A2,A0
+    0x6118bf4c 8562 mov 0x62,D1
+    0x6118bf4e dd5e16f4ff0004 call 0x610cd5ac,[],0x4 pass [('A0', ('der', 'add', 'A2,A0', ('imm', 1464)))]
+    0x610cd5ac enter 0x610cd5ac
+    0x610cd5ac 91 mov A0,A1
+    0x610cd5ad fca0e4f63660 mov (0x6036f6e4),A0
+    0x610cd5b3 b000 cmp 0x0,A0
+    0x610cd5b5 c905 bne 0x610cd5ba
+    0x610cd5ba 1c exthu D0
+    0x610cd5bb cd0201f014 call 0x610cd6bd,[d2,d3,a2,a3],0x14 pass [('A1', ('der', 'add', 'A2,A0', ('imm', 1464)))]
+  path dead
+    0x6118bf4a f178 add A2,A0
+    0x6118bf4c 8562 mov 0x62,D1
+    0x6118bf4e dd5e16f4ff0004 call 0x610cd5ac,[],0x4 pass [('A0', ('der', 'add', 'A2,A0', ('imm', 1464)))]
+    0x610cd5ac enter 0x610cd5ac
+    0x610cd5ac 91 mov A0,A1
+    0x610cd5ad fca0e4f63660 mov (0x6036f6e4),A0
+    0x610cd5b3 b000 cmp 0x0,A0
+    0x610cd5b5 c905 bne 0x610cd5ba
+    0x610cd5ba 1c exthu D0
+    0x610cd5bb cd0201f014 call 0x610cd6bd,[d2,d3,a2,a3],0x14 pass [('A1', ('der', 'add', 'A2,A0', ('imm', 1464)))]
+  path dead-at-ret
+    0x6118bf4a f178 add A2,A0
+    0x6118bf4c 8562 mov 0x62,D1
+    0x6118bf4e dd5e16f4ff0004 call 0x610cd5ac,[],0x4 pass [('A0', ('der', 'add', 'A2,A0', ('imm', 1464)))]
+    0x610cd5ac enter 0x610cd5ac
+    0x610cd5ac 91 mov A0,A1
+    0x610cd5ad fca0e4f63660 mov (0x6036f6e4),A0
+    0x610cd5b3 b000 cmp 0x0,A0
+    0x610cd5b5 c905 bne 0x610cd5ba
+    0x610cd5b7 00 clr D0
+    0x610cd5b8 ca09 bra 0x610cd5c1
+    0x610cd5c1 df0004 ret [],0x4
+0x6118c058 24b805 mov 0x5b8,A0 -> UNRESOLVED (path ends without a demonstrated non-key consumer: dead,callee-missing,dead,dead-at-ret)
+  path dead
+    0x6118c05b f178 add A2,A0
+    0x6118c05d 8562 mov 0x62,D1
+    0x6118c05f dd4d15f4ff0004 call 0x610cd5ac,[],0x4 pass [('A0', ('der', 'add', 'A2,A0', ('imm', 1464)))]
+  path callee-missing
+    0x6118c05b f178 add A2,A0
+    0x6118c05d 8562 mov 0x62,D1
+    0x6118c05f dd4d15f4ff0004 call 0x610cd5ac,[],0x4 pass [('A0', ('der', 'add', 'A2,A0', ('imm', 1464)))]
+    0x610cd5ac enter 0x610cd5ac
+    0x610cd5ac 91 mov A0,A1
+    0x610cd5ad fca0e4f63660 mov (0x6036f6e4),A0
+    0x610cd5b3 b000 cmp 0x0,A0
+    0x610cd5b5 c905 bne 0x610cd5ba
+    0x610cd5ba 1c exthu D0
+    0x610cd5bb cd0201f014 call 0x610cd6bd,[d2,d3,a2,a3],0x14 pass [('A1', ('der', 'add', 'A2,A0', ('imm', 1464)))]
+  path dead
+    0x6118c05b f178 add A2,A0
+    0x6118c05d 8562 mov 0x62,D1
+    0x6118c05f dd4d15f4ff0004 call 0x610cd5ac,[],0x4 pass [('A0', ('der', 'add', 'A2,A0', ('imm', 1464)))]
+    0x610cd5ac enter 0x610cd5ac
+    0x610cd5ac 91 mov A0,A1
+    0x610cd5ad fca0e4f63660 mov (0x6036f6e4),A0
+    0x610cd5b3 b000 cmp 0x0,A0
+    0x610cd5b5 c905 bne 0x610cd5ba
+    0x610cd5ba 1c exthu D0
+    0x610cd5bb cd0201f014 call 0x610cd6bd,[d2,d3,a2,a3],0x14 pass [('A1', ('der', 'add', 'A2,A0', ('imm', 1464)))]
+  path dead-at-ret
+    0x6118c05b f178 add A2,A0
+    0x6118c05d 8562 mov 0x62,D1
+    0x6118c05f dd4d15f4ff0004 call 0x610cd5ac,[],0x4 pass [('A0', ('der', 'add', 'A2,A0', ('imm', 1464)))]
+    0x610cd5ac enter 0x610cd5ac
+    0x610cd5ac 91 mov A0,A1
+    0x610cd5ad fca0e4f63660 mov (0x6036f6e4),A0
+    0x610cd5b3 b000 cmp 0x0,A0
+    0x610cd5b5 c905 bne 0x610cd5ba
+    0x610cd5b7 00 clr D0
+    0x610cd5b8 ca09 bra 0x610cd5c1
+    0x610cd5c1 df0004 ret [],0x4
+0x6118c10e 25b805 mov 0x5b8,A1 -> UNRESOLVED (path ends without a demonstrated non-key consumer: dead,callee-missing,dead-at-ret)
+  path dead
+    0x6118c111 f179 add A2,A1
+    0x6118c113 2de803 mov 0x3e8,D1
+    0x6118c116 f159 add A2,D1
+    0x6118c118 00 clr D0
+    0x6118c119 cd0800f01c call 0x6118c121,[d2,d3,a2,a3],0x1c pass [('A1', ('der', 'add', 'A2,A1', ('imm', 1464)))]
+  path callee-missing
+    0x6118c111 f179 add A2,A1
+    0x6118c113 2de803 mov 0x3e8,D1
+    0x6118c116 f159 add A2,D1
+    0x6118c118 00 clr D0
+    0x6118c119 cd0800f01c call 0x6118c121,[d2,d3,a2,a3],0x1c pass [('A1', ('der', 'add', 'A2,A1', ('imm', 1464)))]
+    0x6118c121 enter 0x6118c121
+    0x6118c121 82 mov D0,D2
+    0x6118c122 4304 mov A0,(0x4,sp)
+    0x6118c124 96 mov A1,A2
+    0x6118c125 f1e7 mov D1,A3
+    0x6118c127 00 clr D0
+    0x6118c128 f89308 movhu D0,(0x8,sp)
+    0x6118c12b dd6414f7ff0000 call 0x610fd58f,[],0x0 pass [('A1', ('der', 'add', 'A2,A1', ('imm', 1464)))]
+  path dead-at-ret
+    0x6118c111 f179 add A2,A1
+    0x6118c113 2de803 mov 0x3e8,D1
+    0x6118c116 f159 add A2,D1
+    0x6118c118 00 clr D0
+    0x6118c119 cd0800f01c call 0x6118c121,[d2,d3,a2,a3],0x1c pass [('A1', ('der', 'add', 'A2,A1', ('imm', 1464)))]
+    0x6118c121 enter 0x6118c121
+    0x6118c121 82 mov D0,D2
+    0x6118c122 4304 mov A0,(0x4,sp)
+    0x6118c124 96 mov A1,A2
+    0x6118c125 f1e7 mov D1,A3
+    0x6118c127 00 clr D0
+    0x6118c128 f89308 movhu D0,(0x8,sp)
+    0x6118c12b dd6414f7ff0000 call 0x610fd58f,[],0x0 pass [('A1', ('der', 'add', 'A2,A1', ('imm', 1464)))]
+    0x6118c132 14 extbu D0
+    0x6118c133 a000 cmp 0x0,D0
+    0x6118c135 c807 beq 0x6118c13c
+    0x6118c13c f84f24 movbu (0x24,A3),D3
+    0x6118c13f 8c mov D3,D0
+    ... 13 more
+0x61195d1d 27b805 mov 0x5b8,A3 -> not a key (terminal dead-at-ret)
+  path dead-at-ret
+    0x61195d20 f1e0 mov D0,A0
+    0x61195d22 f16b add D2,A3
+    0x61195d24 00 clr D0
+    0x61195d25 dd974e0f00e010 call 0x6128abbc,[d2,d3,a2],0x10
+    0x61195d2c f003 mov (A3),A0
+    0x61195d2e dd51291000f014 call 0x6129867f,[d2,d3,a2,a3],0x14
+    0x61195d35 73 mov (A3),D0
+    0x61195d36 f1e0 mov D0,A0
+    0x61195d38 00 clr D0
+    0x61195d39 dd834e0f00e010 call 0x6128abbc,[d2,d3,a2],0x10
+    0x61195d40 dff020 ret [d2,d3,a2,a3],0x20
+0x61195d7f 26b805 mov 0x5b8,A2 -> not a key (terminal consumed)
+  path consumed
+    0x61195d82 f16a add D2,A2
+    0x61195d84 72 mov (A2),D0
+    0x61195d85 27bc05 mov 0x5bc,A3
+    0x61195d88 f1e0 mov D0,A0
+    0x61195d8a ddf5281000f014 call 0x6129867f,[d2,d3,a2,a3],0x14
+    0x61195d91 72 mov (A2),D0
+    0x61195d92 f16b add D2,A3
+    0x61195d94 f1e0 mov D0,A0
+    0x61195d96 00 clr D0
+    0x61195d97 dd254e0f00e010 call 0x6128abbc,[d2,d3,a2],0x10
+    0x61195d9e 73 mov (A3),D0
+    0x61195d9f fcde2e654961 mov 0x6149652e,A2
+0x61195dc1 26b805 mov 0x5b8,A2 -> not a key (terminal consumed)
+  path consumed
+    0x61195dc4 f16a add D2,A2
+    0x61195dc6 72 mov (A2),D0
+    0x61195dc7 f1e0 mov D0,A0
+    0x61195dc9 8001 mov 0x1,D0
+    0x61195dcb dd154e0f00a00c call 0x6128abe0,[d2,a2],0xc
+    0x61195dd2 72 mov (A2),D0
+    0x61195dd3 f1e0 mov D0,A0
+    0x61195dd5 8001 mov 0x1,D0
+    0x61195dd7 dd1b560f00f020 call 0x6128b3f2,[d2,d3,a2,a3],0x20
+    0x61195dde 72 mov (A2),D0
+    0x61195ddf f1e0 mov D0,A0
+    0x61195de1 2cf401 mov 0x1f4,D0
+    0x61195de4 dd4b281000c010 call 0x6129862f,[d2,d3],0x10
+    0x61195deb a000 cmp 0x0,D0
+    0x61195ded c80e beq 0x61195dfb
+    0x61195dfb 580c mov (0xc,sp),D0
+    0x61195dfd a000 cmp 0x0,D0
+    0x61195dff c826 beq 0x61195e25
+    ... 10 more
+0x61195e4e 26b805 mov 0x5b8,A2 -> not a key (terminal consumed)
+  path consumed
+    0x61195e51 f16a add D2,A2
+    0x61195e53 72 mov (A2),D0
+    0x61195e54 27bc05 mov 0x5bc,A3
+    0x61195e57 f1e0 mov D0,A0
+    0x61195e59 00 clr D0
+    0x61195e5a dd864d0f00a00c call 0x6128abe0,[d2,a2],0xc
+    0x61195e61 72 mov (A2),D0
+    0x61195e62 f16b add D2,A3
+    0x61195e64 f1e0 mov D0,A0
+    0x61195e66 00 clr D0
+    0x61195e67 dd8b550f00f020 call 0x6128b3f2,[d2,d3,a2,a3],0x20
+    0x61195e6e f002 mov (A2),A0
+    0x61195e70 dd0f281000f014 call 0x6129867f,[d2,d3,a2,a3],0x14
+    0x61195e77 72 mov (A2),D0
+    0x61195e78 fcde2e654961 mov 0x6149652e,A2
+0x61195ec2 26b805 mov 0x5b8,A2 -> not a key (terminal consumed)
+  path consumed
+    0x61195ec5 f16a add D2,A2
+    0x61195ec7 76 mov (A2),D1
+    0x61195ec8 f84101 movbu (0x1,A1),D0
+    0x61195ecb f1e4 mov D1,A0
+    0x61195ecd dd134d0f00a00c call 0x6128abe0,[d2,a2],0xc
+    0x61195ed4 72 mov (A2),D0
+    0x61195ed5 f1e0 mov D0,A0
+    0x61195ed7 00 clr D0
+    0x61195ed8 dd1a550f00f020 call 0x6128b3f2,[d2,d3,a2,a3],0x20
+    0x61195edf ca08 bra 0x61195ee7
+    0x61195ee7 26b805 mov 0x5b8,A2
+0x61195ee7 26b805 mov 0x5b8,A2 -> not a key (terminal consumed)
+  path consumed
+    0x61195eea f16a add D2,A2
+    0x61195eec f002 mov (A2),A0
+    0x61195eee dd91271000f014 call 0x6129867f,[d2,d3,a2,a3],0x14
+    0x61195ef5 72 mov (A2),D0
+    0x61195ef6 27bc05 mov 0x5bc,A3
+    0x61195ef9 f1e0 mov D0,A0
+    0x61195efb f16b add D2,A3
+    0x61195efd 8001 mov 0x1,D0
+    0x61195eff ddbd4c0f00e010 call 0x6128abbc,[d2,d3,a2],0x10
+    0x61195f06 77 mov (A3),D1
+    0x61195f07 00 clr D0
+    0x61195f08 f1e4 mov D1,A0
+    0x61195f0a dde8540f00f020 call 0x6128b3f2,[d2,d3,a2,a3],0x20
+    0x61195f11 77 mov (A3),D1
+    0x61195f12 fcde2e654961 mov 0x6149652e,A2
+0x61195f36 26b805 mov 0x5b8,A2 -> not a key (terminal consumed)
+  path consumed
+    0x61195f39 f16a add D2,A2
+    0x61195f3b 72 mov (A2),D0
+    0x61195f3c f1e0 mov D0,A0
+    0x61195f3e 800b mov 0xb,D0
+    0x61195f40 dda04c0f00a00c call 0x6128abe0,[d2,a2],0xc
+    0x61195f47 72 mov (A2),D0
+    0x61195f48 f1e0 mov D0,A0
+    0x61195f4a 8001 mov 0x1,D0
+    0x61195f4c dda6540f00f020 call 0x6128b3f2,[d2,d3,a2,a3],0x20
+    0x61195f53 72 mov (A2),D0
+    0x61195f54 f1e0 mov D0,A0
+    0x61195f56 2cf401 mov 0x1f4,D0
+    0x61195f59 ddd6261000c010 call 0x6129862f,[d2,d3],0x10
+    0x61195f60 a000 cmp 0x0,D0
+    0x61195f62 c80e beq 0x61195f70
+    0x61195f70 580c mov (0xc,sp),D0
+    0x61195f72 a000 cmp 0x0,D0
+    0x61195f74 c826 beq 0x61195f9a
+    ... 11 more
+0x61195fc3 26b805 mov 0x5b8,A2 -> not a key (terminal consumed)
+  path consumed
+    0x61195fc6 f16a add D2,A2
+    0x61195fc8 72 mov (A2),D0
+    0x61195fc9 27bc05 mov 0x5bc,A3
+    0x61195fcc f1e0 mov D0,A0
+    0x61195fce ddb1261000f014 call 0x6129867f,[d2,d3,a2,a3],0x14
+    0x61195fd5 72 mov (A2),D0
+    0x61195fd6 f16b add D2,A3
+    0x61195fd8 f1e0 mov D0,A0
+    0x61195fda 00 clr D0
+    0x61195fdb dde14b0f00e010 call 0x6128abbc,[d2,d3,a2],0x10
+    0x61195fe2 73 mov (A3),D0
+    0x61195fe3 fcde2e654961 mov 0x6149652e,A2
+0x611fcdcc 2db805 mov 0x5b8,D1 -> not a key (terminal dead-at-ret,dead-at-ret)
+  path dead-at-ret
+    0x611fcdcf f159 add A2,D1
+    0x611fcdd1 f1e5 mov D1,A1
+    0x611fcdd3 00 clr D0
+    0x611fcdd4 f051 movbu D0,(A1)
+    0x611fcdd6 27b905 mov 0x5b9,A3
+    0x611fcdd9 f17b add A2,A3
+    0x611fcddb f053 movbu D0,(A3)
+    0x611fcddd 25bc05 mov 0x5bc,A1
+    0x611fcde0 f179 add A2,A1
+    0x611fcde2 f051 movbu D0,(A1)
+    0x611fcde4 fa52ba05 movbu D0,(0x5ba,A2)
+    0x611fcde8 fa52bd05 movbu D0,(0x5bd,A2)
+    0x611fcdec aa02 cmp 0x2,D2
+    0x611fcdee c823 beq 0x611fce11
+    0x611fce11 dff01c ret [d2,d3,a2,a3],0x1c
+  path dead-at-ret
+    0x611fcdcf f159 add A2,D1
+    0x611fcdd1 f1e5 mov D1,A1
+    0x611fcdd3 00 clr D0
+    0x611fcdd4 f051 movbu D0,(A1)
+    0x611fcdd6 27b905 mov 0x5b9,A3
+    0x611fcdd9 f17b add A2,A3
+    0x611fcddb f053 movbu D0,(A3)
+    0x611fcddd 25bc05 mov 0x5bc,A1
+    0x611fcde0 f179 add A2,A1
+    0x611fcde2 f051 movbu D0,(A1)
+    0x611fcde4 fa52ba05 movbu D0,(0x5ba,A2)
+    0x611fcde8 fa52bd05 movbu D0,(0x5bd,A2)
+    0x611fcdec aa02 cmp 0x2,D2
+    0x611fcdee c823 beq 0x611fce11
+    0x611fcdf0 5e08 mov (0x8,sp),A2
+    0x611fcdf2 f8be04 movhu (0x4,sp),D2
+    0x611fcdf5 f05a movbu D2,(A2)
+    0x611fcdf7 f8bc06 movhu (0x6,sp),D0
+    ... 12 more
+0x61206ef6 2cb805 mov 0x5b8,D0 -> UNRESOLVED (path ends without a demonstrated non-key consumer: depth)
+  path depth
+    0x61206ef9 f158 add A2,D0
+    0x61206efb 25be08 mov 0x8be,A1
+    0x61206efe f179 add A2,A1
+    0x61206f00 27b708 mov 0x8b7,A3
+    0x61206f03 f17b add A2,A3
+    0x61206f05 db setlb
+    0x61206f06 5c38 mov (0x38,sp),A0
+    0x61206f08 1f exthu D3
+    0x61206f09 04 clr D1
+    0x61206f0a f45c movbu D1,(D3,A0)
+    0x61206f0c 5c28 mov (0x28,sp),A0
+    0x61206f0e f45c movbu D1,(D3,A0)
+    0x61206f10 8d mov D3,D1
+    0x61206f11 f9157c udfu01 0x7c,D1
+    0x61206f14 98 mov A2,A0
+    0x61206f15 f164 add D1,A0
+    0x61206f17 04 clr D1
+    0x61206f18 f074 movhu D1,(A0)
+    ... 43 more
+0x612072f3 24b805 mov 0x5b8,A0 -> not a key (terminal consumed,consumed,dead-at-ret,consumed,consumed,dead,consumed,dead)
+  path consumed
+    0x612072f6 ca05 bra 0x612072fb
+    0x612072fb 5904 mov (0x4,sp),D1
+    0x612072fd f178 add A2,A0
+    0x612072ff 8001 mov 0x1,D0
+    0x61207301 f444 movbu D0,(D1,A0)
+    0x61207303 cc2201 jmp 0x61207425
+    0x61207425 f8bc2e movhu (0x2e,sp),D0
+    0x61207428 a001 cmp 0x1,D0
+    0x6120742a c80f beq 0x61207439
+    0x61207439 f8bc2c movhu (0x2c,sp),D0
+    0x6120743c 24be08 mov 0x8be,A0
+  path consumed
+    0x612072f6 ca05 bra 0x612072fb
+    0x612072fb 5904 mov (0x4,sp),D1
+    0x612072fd f178 add A2,A0
+    0x612072ff 8001 mov 0x1,D0
+    0x61207301 f444 movbu D0,(D1,A0)
+    0x61207303 cc2201 jmp 0x61207425
+    0x61207425 f8bc2e movhu (0x2e,sp),D0
+    0x61207428 a001 cmp 0x1,D0
+    0x6120742a c80f beq 0x61207439
+    0x6120742c a002 cmp 0x2,D0
+    0x6120742e c804 beq 0x61207432
+    0x61207432 580c mov (0xc,sp),D0
+    0x61207434 5914 mov (0x14,sp),D1
+    0x61207436 a4 cmp D1,D0
+    0x61207437 c917 bne 0x6120744e
+    0x6120744e f8bc2c movhu (0x2c,sp),D0
+    0x61207451 24be08 mov 0x8be,A0
+  path dead-at-ret
+    0x612072f6 ca05 bra 0x612072fb
+    0x612072fb 5904 mov (0x4,sp),D1
+    0x612072fd f178 add A2,A0
+    0x612072ff 8001 mov 0x1,D0
+    0x61207301 f444 movbu D0,(D1,A0)
+    0x61207303 cc2201 jmp 0x61207425
+    0x61207425 f8bc2e movhu (0x2e,sp),D0
+    0x61207428 a001 cmp 0x1,D0
+    0x6120742a c80f beq 0x61207439
+    0x6120742c a002 cmp 0x2,D0
+    0x6120742e c804 beq 0x61207432
+    0x61207430 ca33 bra 0x61207463
+    0x61207463 590c mov (0xc,sp),D1
+    0x61207465 5818 mov (0x18,sp),D0
+    0x61207467 5a20 mov (0x20,sp),D2
+    0x61207469 44 inc D1
+    0x6120746a 40 inc D0
+    0x6120746b f8932c movhu D0,(0x2c,sp)
+    ... 13 more
+  path consumed
+    0x612072f6 ca05 bra 0x612072fb
+    0x612072fb 5904 mov (0x4,sp),D1
+    0x612072fd f178 add A2,A0
+    0x612072ff 8001 mov 0x1,D0
+    0x61207301 f444 movbu D0,(D1,A0)
+    0x61207303 cc2201 jmp 0x61207425
+    0x61207425 f8bc2e movhu (0x2e,sp),D0
+    0x61207428 a001 cmp 0x1,D0
+    0x6120742a c80f beq 0x61207439
+    0x6120742c a002 cmp 0x2,D0
+    0x6120742e c804 beq 0x61207432
+    0x61207430 ca33 bra 0x61207463
+    0x61207463 590c mov (0xc,sp),D1
+    0x61207465 5818 mov (0x18,sp),D0
+    0x61207467 5a20 mov (0x20,sp),D2
+    0x61207469 44 inc D1
+    0x6120746a 40 inc D0
+    0x6120746b f8932c movhu D0,(0x2c,sp)
+    ... 13 more
+  path consumed
+    0x612072f6 ca05 bra 0x612072fb
+    0x612072fb 5904 mov (0x4,sp),D1
+    0x612072fd f178 add A2,A0
+    0x612072ff 8001 mov 0x1,D0
+    0x61207301 f444 movbu D0,(D1,A0)
+    0x61207303 cc2201 jmp 0x61207425
+    0x61207425 f8bc2e movhu (0x2e,sp),D0
+    0x61207428 a001 cmp 0x1,D0
+    0x6120742a c80f beq 0x61207439
+    0x6120742c a002 cmp 0x2,D0
+    0x6120742e c804 beq 0x61207432
+    0x61207430 ca33 bra 0x61207463
+    0x61207463 590c mov (0xc,sp),D1
+    0x61207465 5818 mov (0x18,sp),D0
+    0x61207467 5a20 mov (0x20,sp),D2
+    0x61207469 44 inc D1
+    0x6120746a 40 inc D0
+    0x6120746b f8932c movhu D0,(0x2c,sp)
+    ... 15 more
+  path dead
+    0x612072f6 ca05 bra 0x612072fb
+    0x612072fb 5904 mov (0x4,sp),D1
+    0x612072fd f178 add A2,A0
+    0x612072ff 8001 mov 0x1,D0
+    0x61207301 f444 movbu D0,(D1,A0)
+    0x61207303 cc2201 jmp 0x61207425
+    0x61207425 f8bc2e movhu (0x2e,sp),D0
+    0x61207428 a001 cmp 0x1,D0
+    0x6120742a c80f beq 0x61207439
+    0x6120742c a002 cmp 0x2,D0
+    0x6120742e c804 beq 0x61207432
+    0x61207430 ca33 bra 0x61207463
+    0x61207463 590c mov (0xc,sp),D1
+    0x61207465 5818 mov (0x18,sp),D0
+    0x61207467 5a20 mov (0x20,sp),D2
+    0x61207469 44 inc D1
+    0x6120746a 40 inc D0
+    0x6120746b f8932c movhu D0,(0x2c,sp)
+    ... 13 more
+  path consumed
+    0x612072f6 ca05 bra 0x612072fb
+    0x612072fb 5904 mov (0x4,sp),D1
+    0x612072fd f178 add A2,A0
+    0x612072ff 8001 mov 0x1,D0
+    0x61207301 f444 movbu D0,(D1,A0)
+    0x61207303 cc2201 jmp 0x61207425
+    0x61207425 f8bc2e movhu (0x2e,sp),D0
+    0x61207428 a001 cmp 0x1,D0
+    0x6120742a c80f beq 0x61207439
+    0x6120742c a002 cmp 0x2,D0
+    0x6120742e c804 beq 0x61207432
+    0x61207430 ca33 bra 0x61207463
+    0x61207463 590c mov (0xc,sp),D1
+    0x61207465 5818 mov (0x18,sp),D0
+    0x61207467 5a20 mov (0x20,sp),D2
+    0x61207469 44 inc D1
+    0x6120746a 40 inc D0
+    0x6120746b f8932c movhu D0,(0x2c,sp)
+    ... 14 more
+  path dead
+    0x612072f6 ca05 bra 0x612072fb
+    0x612072fb 5904 mov (0x4,sp),D1
+    0x612072fd f178 add A2,A0
+    0x612072ff 8001 mov 0x1,D0
+    0x61207301 f444 movbu D0,(D1,A0)
+    0x61207303 cc2201 jmp 0x61207425
+    0x61207425 f8bc2e movhu (0x2e,sp),D0
+    0x61207428 a001 cmp 0x1,D0
+    0x6120742a c80f beq 0x61207439
+    0x6120742c a002 cmp 0x2,D0
+    0x6120742e c804 beq 0x61207432
+    0x61207430 ca33 bra 0x61207463
+    0x61207463 590c mov (0xc,sp),D1
+    0x61207465 5818 mov (0x18,sp),D0
+    0x61207467 5a20 mov (0x20,sp),D2
+    0x61207469 44 inc D1
+    0x6120746a 40 inc D0
+    0x6120746b f8932c movhu D0,(0x2c,sp)
+    ... 13 more
+0x6128c262 2fb805 mov 0x5b8,D3 -> UNRESOLVED (path ends without a demonstrated non-key consumer: dead-at-ret,callee-missing,dead-at-ret,dead-at-ret,dead-at-ret)
+  path dead-at-ret
+    0x6128c265 eb add D2,D3
+    0x6128c266 8c mov D3,D0
+    0x6128c267 ddc8b5f3ffb014 call 0x611c782f,[d2,a2,a3],0x14 pass [('D0', ('der', 'add', 'D2,D3', ('imm', 1464)))]
+    0x6128c26e f002 mov (A2),A0
+    0x6128c270 fac2d408 add 0x8d4,D2
+    0x6128c274 f8240c mov (0xc,A0),A1
+    0x6128c277 9c mov A3,A0
+    0x6128c278 2110 add 0x10,A1
+    0x6128c27a 88 mov D2,D0
+    0x6128c27b ddb4b5f3ffb014 call 0x611c782f,[d2,a2,a3],0x14
+    0x6128c282 f002 mov (A2),A0
+    0x6128c284 f82010 mov (0x10,A0),A0
+    0x6128c287 b000 cmp 0x0,A0
+    0x6128c289 c83b beq 0x6128c2c4
+    0x6128c2c4 8001 mov 0x1,D0
+    0x6128c2c6 f1ec mov D3,A0
+    0x6128c2c8 f87006 movhu D0,(0x6,A0)
+    0x6128c2cb f1e8 mov D2,A0
+    ... 7 more
+  path callee-missing
+    0x6128c265 eb add D2,D3
+    0x6128c266 8c mov D3,D0
+    0x6128c267 ddc8b5f3ffb014 call 0x611c782f,[d2,a2,a3],0x14 pass [('D0', ('der', 'add', 'D2,D3', ('imm', 1464)))]
+    0x611c782f enter 0x611c782f
+    0x611c782f 96 mov A1,A2
+    0x611c7830 4304 mov A0,(0x4,sp)
+    0x611c7832 f1e3 mov D0,A3
+    0x611c7834 f062 movhu (A2),D0
+    0x611c7836 f073 movhu D0,(A3)
+    0x611c7838 a003 cmp 0x3,D0
+    0x611c783a c808 beq 0x611c7842
+    0x611c7842 f86202 movhu (0x2,A2),D0
+    0x611c7845 f87302 movhu D0,(0x2,A3)
+    0x611c7848 f063 movhu (A3),D0
+    0x611c784a a004 cmp 0x4,D0
+    0x611c784c c80a beq 0x611c7856
+    0x611c7856 f86202 movhu (0x2,A2),D0
+    0x611c7859 f87304 movhu D0,(0x4,A3)
+    ... 9 more
+  path dead-at-ret
+    0x6128c265 eb add D2,D3
+    0x6128c266 8c mov D3,D0
+    0x6128c267 ddc8b5f3ffb014 call 0x611c782f,[d2,a2,a3],0x14 pass [('D0', ('der', 'add', 'D2,D3', ('imm', 1464)))]
+    0x611c782f enter 0x611c782f
+    0x611c782f 96 mov A1,A2
+    0x611c7830 4304 mov A0,(0x4,sp)
+    0x611c7832 f1e3 mov D0,A3
+    0x611c7834 f062 movhu (A2),D0
+    0x611c7836 f073 movhu D0,(A3)
+    0x611c7838 a003 cmp 0x3,D0
+    0x611c783a c808 beq 0x611c7842
+    0x611c7842 f86202 movhu (0x2,A2),D0
+    0x611c7845 f87302 movhu D0,(0x2,A3)
+    0x611c7848 f063 movhu (A3),D0
+    0x611c784a a004 cmp 0x4,D0
+    0x611c784c c80a beq 0x611c7856
+    0x611c7856 f86202 movhu (0x2,A2),D0
+    0x611c7859 f87304 movhu D0,(0x4,A3)
+    ... 10 more
+  path dead-at-ret
+    0x6128c265 eb add D2,D3
+    0x6128c266 8c mov D3,D0
+    0x6128c267 ddc8b5f3ffb014 call 0x611c782f,[d2,a2,a3],0x14 pass [('D0', ('der', 'add', 'D2,D3', ('imm', 1464)))]
+    0x611c782f enter 0x611c782f
+    0x611c782f 96 mov A1,A2
+    0x611c7830 4304 mov A0,(0x4,sp)
+    0x611c7832 f1e3 mov D0,A3
+    0x611c7834 f062 movhu (A2),D0
+    0x611c7836 f073 movhu D0,(A3)
+    0x611c7838 a003 cmp 0x3,D0
+    0x611c783a c808 beq 0x611c7842
+    0x611c7842 f86202 movhu (0x2,A2),D0
+    0x611c7845 f87302 movhu D0,(0x2,A3)
+    0x611c7848 f063 movhu (A3),D0
+    0x611c784a a004 cmp 0x4,D0
+    0x611c784c c80a beq 0x611c7856
+    0x611c7856 f86202 movhu (0x2,A2),D0
+    0x611c7859 f87304 movhu D0,(0x4,A3)
+    ... 19 more
+  path dead-at-ret
+    0x6128c265 eb add D2,D3
+    0x6128c266 8c mov D3,D0
+    0x6128c267 ddc8b5f3ffb014 call 0x611c782f,[d2,a2,a3],0x14 pass [('D0', ('der', 'add', 'D2,D3', ('imm', 1464)))]
+    0x611c782f enter 0x611c782f
+    0x611c782f 96 mov A1,A2
+    0x611c7830 4304 mov A0,(0x4,sp)
+    0x611c7832 f1e3 mov D0,A3
+    0x611c7834 f062 movhu (A2),D0
+    0x611c7836 f073 movhu D0,(A3)
+    0x611c7838 a003 cmp 0x3,D0
+    0x611c783a c808 beq 0x611c7842
+    0x611c7842 f86202 movhu (0x2,A2),D0
+    0x611c7845 f87302 movhu D0,(0x2,A3)
+    0x611c7848 f063 movhu (A3),D0
+    0x611c784a a004 cmp 0x4,D0
+    0x611c784c c80a beq 0x611c7856
+    0x611c7856 f86202 movhu (0x2,A2),D0
+    0x611c7859 f87304 movhu D0,(0x4,A3)
+    ... 27 more
+0x6128c9c0 26b805 mov 0x5b8,A2 -> UNRESOLVED (path ends without a demonstrated non-key consumer: dead-at-ret,callee-missing,dead-at-ret,dead-at-ret,dead-at-ret)
+  path dead-at-ret
+    0x6128c9c3 f80024 mov (0x24,A0),D0
+    0x6128c9c6 f16a add D2,A2
+    0x6128c9c8 5c08 mov (0x8,sp),A0
+    0x6128c9ca 9510 mov 0x10,A1
+    0x6128c9cc f161 add D0,A1
+    0x6128c9ce f1d8 mov A2,D0
+    0x6128c9d0 dd5faef3ffb014 call 0x611c782f,[d2,a2,a3],0x14 pass [('D0', ('der', 'add', 'D2,A2', ('imm', 1464)))]
+    0x6128c9d7 5c0c mov (0xc,sp),A0
+    0x6128c9d9 00 clr D0
+    0x6128c9da f87006 movhu D0,(0x6,A0)
+    0x6128c9dd f1ec mov D3,A0
+    0x6128c9df f87006 movhu D0,(0x6,A0)
+    0x6128c9e2 f87206 movhu D0,(0x6,A2)
+    0x6128c9e5 f003 mov (A3),A0
+    0x6128c9e7 f82024 mov (0x24,A0),A0
+    0x6128c9ea b000 cmp 0x0,A0
+    0x6128c9ec c84a beq 0x6128ca36
+    0x6128ca36 dff024 ret [d2,d3,a2,a3],0x24
+  path callee-missing
+    0x6128c9c3 f80024 mov (0x24,A0),D0
+    0x6128c9c6 f16a add D2,A2
+    0x6128c9c8 5c08 mov (0x8,sp),A0
+    0x6128c9ca 9510 mov 0x10,A1
+    0x6128c9cc f161 add D0,A1
+    0x6128c9ce f1d8 mov A2,D0
+    0x6128c9d0 dd5faef3ffb014 call 0x611c782f,[d2,a2,a3],0x14 pass [('D0', ('der', 'add', 'D2,A2', ('imm', 1464)))]
+    0x611c782f enter 0x611c782f
+    0x611c782f 96 mov A1,A2
+    0x611c7830 4304 mov A0,(0x4,sp)
+    0x611c7832 f1e3 mov D0,A3
+    0x611c7834 f062 movhu (A2),D0
+    0x611c7836 f073 movhu D0,(A3)
+    0x611c7838 a003 cmp 0x3,D0
+    0x611c783a c808 beq 0x611c7842
+    0x611c7842 f86202 movhu (0x2,A2),D0
+    0x611c7845 f87302 movhu D0,(0x2,A3)
+    0x611c7848 f063 movhu (A3),D0
+    ... 13 more
+  path dead-at-ret
+    0x6128c9c3 f80024 mov (0x24,A0),D0
+    0x6128c9c6 f16a add D2,A2
+    0x6128c9c8 5c08 mov (0x8,sp),A0
+    0x6128c9ca 9510 mov 0x10,A1
+    0x6128c9cc f161 add D0,A1
+    0x6128c9ce f1d8 mov A2,D0
+    0x6128c9d0 dd5faef3ffb014 call 0x611c782f,[d2,a2,a3],0x14 pass [('D0', ('der', 'add', 'D2,A2', ('imm', 1464)))]
+    0x611c782f enter 0x611c782f
+    0x611c782f 96 mov A1,A2
+    0x611c7830 4304 mov A0,(0x4,sp)
+    0x611c7832 f1e3 mov D0,A3
+    0x611c7834 f062 movhu (A2),D0
+    0x611c7836 f073 movhu D0,(A3)
+    0x611c7838 a003 cmp 0x3,D0
+    0x611c783a c808 beq 0x611c7842
+    0x611c7842 f86202 movhu (0x2,A2),D0
+    0x611c7845 f87302 movhu D0,(0x2,A3)
+    0x611c7848 f063 movhu (A3),D0
+    ... 14 more
+  path dead-at-ret
+    0x6128c9c3 f80024 mov (0x24,A0),D0
+    0x6128c9c6 f16a add D2,A2
+    0x6128c9c8 5c08 mov (0x8,sp),A0
+    0x6128c9ca 9510 mov 0x10,A1
+    0x6128c9cc f161 add D0,A1
+    0x6128c9ce f1d8 mov A2,D0
+    0x6128c9d0 dd5faef3ffb014 call 0x611c782f,[d2,a2,a3],0x14 pass [('D0', ('der', 'add', 'D2,A2', ('imm', 1464)))]
+    0x611c782f enter 0x611c782f
+    0x611c782f 96 mov A1,A2
+    0x611c7830 4304 mov A0,(0x4,sp)
+    0x611c7832 f1e3 mov D0,A3
+    0x611c7834 f062 movhu (A2),D0
+    0x611c7836 f073 movhu D0,(A3)
+    0x611c7838 a003 cmp 0x3,D0
+    0x611c783a c808 beq 0x611c7842
+    0x611c7842 f86202 movhu (0x2,A2),D0
+    0x611c7845 f87302 movhu D0,(0x2,A3)
+    0x611c7848 f063 movhu (A3),D0
+    ... 23 more
+  path dead-at-ret
+    0x6128c9c3 f80024 mov (0x24,A0),D0
+    0x6128c9c6 f16a add D2,A2
+    0x6128c9c8 5c08 mov (0x8,sp),A0
+    0x6128c9ca 9510 mov 0x10,A1
+    0x6128c9cc f161 add D0,A1
+    0x6128c9ce f1d8 mov A2,D0
+    0x6128c9d0 dd5faef3ffb014 call 0x611c782f,[d2,a2,a3],0x14 pass [('D0', ('der', 'add', 'D2,A2', ('imm', 1464)))]
+    0x611c782f enter 0x611c782f
+    0x611c782f 96 mov A1,A2
+    0x611c7830 4304 mov A0,(0x4,sp)
+    0x611c7832 f1e3 mov D0,A3
+    0x611c7834 f062 movhu (A2),D0
+    0x611c7836 f073 movhu D0,(A3)
+    0x611c7838 a003 cmp 0x3,D0
+    0x611c783a c808 beq 0x611c7842
+    0x611c7842 f86202 movhu (0x2,A2),D0
+    0x611c7845 f87302 movhu D0,(0x2,A3)
+    0x611c7848 f063 movhu (A3),D0
+    ... 31 more
+0x612c37f0 2cb805 mov 0x5b8,D0 -> UNRESOLVED (path ends without a demonstrated non-key consumer: dead-at-ret,callee-missing,dead,dead-at-ret,depth)
+  path dead-at-ret
+    0x612c37f3 ec add D3,D0
+    0x612c37f4 f1e2 mov D0,A2
+    0x612c37f6 99 mov A2,A1
+    0x612c37f7 94 mov A1,A0
+    0x612c37f8 db setlb
+    0x612c37f9 00 clr D0
+    0x612c37fa f053 movbu D0,(A3)
+    0x612c37fc 430c mov A0,(0xc,sp)
+    0x612c37fe f1e8 mov D2,A0
+    0x612c3800 f040 movbu (A0),D0
+    0x612c3802 5c0c mov (0xc,sp),A0
+    0x612c3804 a1 cmp D0,D1
+    0x612c3805 c922 bne 0x612c3827
+    0x612c3827 8002 mov 0x2,D0
+    0x612c3829 f050 movbu D0,(A0)
+    0x612c382b 800b mov 0xb,D0
+    0x612c382d f85001 movbu D0,(0x1,A0)
+    0x612c3830 44 inc D1
+    ... 17 more
+  path callee-missing
+    0x612c37f3 ec add D3,D0
+    0x612c37f4 f1e2 mov D0,A2
+    0x612c37f6 99 mov A2,A1
+    0x612c37f7 94 mov A1,A0
+    0x612c37f8 db setlb
+    0x612c37f9 00 clr D0
+    0x612c37fa f053 movbu D0,(A3)
+    0x612c37fc 430c mov A0,(0xc,sp)
+    0x612c37fe f1e8 mov D2,A0
+    0x612c3800 f040 movbu (A0),D0
+    0x612c3802 5c0c mov (0xc,sp),A0
+    0x612c3804 a1 cmp D0,D1
+    0x612c3805 c922 bne 0x612c3827
+    0x612c3827 8002 mov 0x2,D0
+    0x612c3829 f050 movbu D0,(A0)
+    0x612c382b 800b mov 0xb,D0
+    0x612c382d f85001 movbu D0,(0x1,A0)
+    0x612c3830 44 inc D1
+    ... 17 more
+  path dead
+    0x612c37f3 ec add D3,D0
+    0x612c37f4 f1e2 mov D0,A2
+    0x612c37f6 99 mov A2,A1
+    0x612c37f7 94 mov A1,A0
+    0x612c37f8 db setlb
+    0x612c37f9 00 clr D0
+    0x612c37fa f053 movbu D0,(A3)
+    0x612c37fc 430c mov A0,(0xc,sp)
+    0x612c37fe f1e8 mov D2,A0
+    0x612c3800 f040 movbu (A0),D0
+    0x612c3802 5c0c mov (0xc,sp),A0
+    0x612c3804 a1 cmp D0,D1
+    0x612c3805 c922 bne 0x612c3827
+    0x612c3827 8002 mov 0x2,D0
+    0x612c3829 f050 movbu D0,(A0)
+    0x612c382b 800b mov 0xb,D0
+    0x612c382d f85001 movbu D0,(0x1,A0)
+    0x612c3830 44 inc D1
+    ... 17 more
+  path dead-at-ret
+    0x612c37f3 ec add D3,D0
+    0x612c37f4 f1e2 mov D0,A2
+    0x612c37f6 99 mov A2,A1
+    0x612c37f7 94 mov A1,A0
+    0x612c37f8 db setlb
+    0x612c37f9 00 clr D0
+    0x612c37fa f053 movbu D0,(A3)
+    0x612c37fc 430c mov A0,(0xc,sp)
+    0x612c37fe f1e8 mov D2,A0
+    0x612c3800 f040 movbu (A0),D0
+    0x612c3802 5c0c mov (0xc,sp),A0
+    0x612c3804 a1 cmp D0,D1
+    0x612c3805 c922 bne 0x612c3827
+    0x612c3827 8002 mov 0x2,D0
+    0x612c3829 f050 movbu D0,(A0)
+    0x612c382b 800b mov 0xb,D0
+    0x612c382d f85001 movbu D0,(0x1,A0)
+    0x612c3830 44 inc D1
+    ... 36 more
+  path depth
+    0x612c37f3 ec add D3,D0
+    0x612c37f4 f1e2 mov D0,A2
+    0x612c37f6 99 mov A2,A1
+    0x612c37f7 94 mov A1,A0
+    0x612c37f8 db setlb
+    0x612c37f9 00 clr D0
+    0x612c37fa f053 movbu D0,(A3)
+    0x612c37fc 430c mov A0,(0xc,sp)
+    0x612c37fe f1e8 mov D2,A0
+    0x612c3800 f040 movbu (A0),D0
+    0x612c3802 5c0c mov (0xc,sp),A0
+    0x612c3804 a1 cmp D0,D1
+    0x612c3805 c922 bne 0x612c3827
+    0x612c3827 8002 mov 0x2,D0
+    0x612c3829 f050 movbu D0,(A0)
+    0x612c382b 800b mov 0xb,D0
+    0x612c382d f85001 movbu D0,(0x1,A0)
+    0x612c3830 44 inc D1
+    ... 43 more
+0x616cd897 24b805 mov 0x5b8,A0 -> not a key (terminal consumed)
+  path consumed
+    0x616cd89a f17c add A3,A0
+    0x616cd89c 70 mov (A0),D0
+    0x616cd89d 40 inc D0
+    0x616cd89e 60 mov D0,(A0)
+    0x616cd89f f8e001 and 0x1,D0
+    0x616cd8a2 60 mov D0,(A0)
+    0x616cd8a3 fa03c405 mov (0x5c4,A3),D0
+    0x616cd8a7 24c805 mov 0x5c8,A0
+0x616cf1d0 25b805 mov 0x5b8,A1 -> UNRESOLVED (path ends without a demonstrated non-key consumer: dead-at-ret,depth)
+  path dead-at-ret
+    0x616cf1d3 f171 add A0,A1
+    0x616cf1d5 4708 mov A1,(0x8,sp)
+    0x616cf1d7 71 mov (A1),D0
+    0x616cf1d8 8501 mov 0x1,D1
+    0x616cf1da 4600 mov D1,(sp)
+    0x616cf1dc 25c405 mov 0x5c4,A1
+    0x616cf1df f171 add A0,A1
+    0x616cf1e1 470c mov A1,(0xc,sp)
+    0x616cf1e3 f104 sub D1,D0
+    0x616cf1e5 2802 add 0x2,D0
+    0x616cf1e7 f204 and D1,D0
+    0x616cf1e9 75 mov (A1),D1
+    0x616cf1ea a501 cmp 0x1,D1
+    0x616cf1ec c505 bhi 0x616cf1f1
+    0x616cf1ee def024 retf [d2,d3,a2,a3],0x24
+  path depth
+    0x616cf1d3 f171 add A0,A1
+    0x616cf1d5 4708 mov A1,(0x8,sp)
+    0x616cf1d7 71 mov (A1),D0
+    0x616cf1d8 8501 mov 0x1,D1
+    0x616cf1da 4600 mov D1,(sp)
+    0x616cf1dc 25c405 mov 0x5c4,A1
+    0x616cf1df f171 add A0,A1
+    0x616cf1e1 470c mov A1,(0xc,sp)
+    0x616cf1e3 f104 sub D1,D0
+    0x616cf1e5 2802 add 0x2,D0
+    0x616cf1e7 f204 and D1,D0
+    0x616cf1e9 75 mov (A1),D1
+    0x616cf1ea a501 cmp 0x1,D1
+    0x616cf1ec c505 bhi 0x616cf1f1
+    0x616cf1f1 257005 mov 0x570,A1
+    0x616cf1f4 f171 add A0,A1
+    0x616cf1f6 4704 mov A1,(0x4,sp)
+    0x616cf1f8 f9000c udf00 0xc,D0
+    ... 43 more
+0x616ddb03 2db805 mov 0x5b8,D1 -> UNRESOLVED (path ends without a demonstrated non-key consumer: dead,dead-at-ret,callee-missing,dead)
+  path dead
+    0x616ddb06 fcddd7317c61 mov 0x617c31d7,A1
+    0x616ddb0c dd213efcfff090 call 0x616a192d,[d2,d3,a2,a3],0x90 pass [('D1', ('imm', 1464))]
+  path dead-at-ret
+    0x616ddb06 fcddd7317c61 mov 0x617c31d7,A1
+    0x616ddb0c dd213efcfff090 call 0x616a192d,[d2,d3,a2,a3],0x90 pass [('D1', ('imm', 1464))]
+    0x616a192d enter 0x616a192d
+    0x616a192d 92 mov A0,A2
+    0x616a192e 9028 mov 0x28,A0
+    0x616a1930 f178 add A2,A0
+    0x616a1932 78 mov (A0),D2
+    0x616a1933 fccf000000c0 mov -0x40000000,D3
+    0x616a1939 f20e and D3,D2
+    0x616a193b ae cmp D3,D2
+    0x616a193c c906 bne 0x616a1942
+    0x616a193e 70 mov (A0),D0
+    0x616a193f dff090 ret [d2,d3,a2,a3],0x90
+  path callee-missing
+    0x616ddb06 fcddd7317c61 mov 0x617c31d7,A1
+    0x616ddb0c dd213efcfff090 call 0x616a192d,[d2,d3,a2,a3],0x90 pass [('D1', ('imm', 1464))]
+    0x616a192d enter 0x616a192d
+    0x616a192d 92 mov A0,A2
+    0x616a192e 9028 mov 0x28,A0
+    0x616a1930 f178 add A2,A0
+    0x616a1932 78 mov (A0),D2
+    0x616a1933 fccf000000c0 mov -0x40000000,D3
+    0x616a1939 f20e and D3,D2
+    0x616a193b ae cmp D3,D2
+    0x616a193c c906 bne 0x616a1942
+    0x616a1942 3c mov sp,A0
+    0x616a1943 200c add 0xc,A0
+    0x616a1945 4308 mov A0,(0x8,sp)
+    0x616a1947 cdb703b020 call 0x616a1cfe,[d2,a2,a3],0x20 pass [('D1', ('imm', 1464))]
+  path dead
+    0x616ddb06 fcddd7317c61 mov 0x617c31d7,A1
+    0x616ddb0c dd213efcfff090 call 0x616a192d,[d2,d3,a2,a3],0x90 pass [('D1', ('imm', 1464))]
+    0x616a192d enter 0x616a192d
+    0x616a192d 92 mov A0,A2
+    0x616a192e 9028 mov 0x28,A0
+    0x616a1930 f178 add A2,A0
+    0x616a1932 78 mov (A0),D2
+    0x616a1933 fccf000000c0 mov -0x40000000,D3
+    0x616a1939 f20e and D3,D2
+    0x616a193b ae cmp D3,D2
+    0x616a193c c906 bne 0x616a1942
+    0x616a1942 3c mov sp,A0
+    0x616a1943 200c add 0xc,A0
+    0x616a1945 4308 mov A0,(0x8,sp)
+    0x616a1947 cdb703b020 call 0x616a1cfe,[d2,a2,a3],0x20 pass [('D1', ('imm', 1464))]
+0x616e369a 24b805 mov 0x5b8,A0 -> not a key (terminal consumed,consumed)
+  path consumed
+    0x616e369d f17c add A3,A0
+    0x616e369f 70 mov (A0),D0
+    0x616e36a0 267005 mov 0x570,A2
+    0x616e36a3 f17e add A3,A2
+    0x616e36a5 f9140c udfu01 0xc,D0
+    0x616e36a8 f332 mov (D0,A2),D3
+    0x616e36aa f80364 mov (0x64,A3),D0
+    0x616e36ad 2b08 add 0x8,D3
+    0x616e36af a000 cmp 0x0,D0
+    0x616e36b1 c831 beq 0x616e36e2
+    0x616e36b3 fa232801 mov (0x128,A3),A0
+  path consumed
+    0x616e369d f17c add A3,A0
+    0x616e369f 70 mov (A0),D0
+    0x616e36a0 267005 mov 0x570,A2
+    0x616e36a3 f17e add A3,A2
+    0x616e36a5 f9140c udfu01 0xc,D0
+    0x616e36a8 f332 mov (D0,A2),D3
+    0x616e36aa f80364 mov (0x64,A3),D0
+    0x616e36ad 2b08 add 0x8,D3
+    0x616e36af a000 cmp 0x0,D0
+    0x616e36b1 c831 beq 0x616e36e2
+    0x616e36e2 70 mov (A0),D0
+    0x616e36e3 8501 mov 0x1,D1
+    0x616e36e5 f104 sub D1,D0
+    0x616e36e7 2802 add 0x2,D0
+    0x616e36e9 f204 and D1,D0
+    0x616e36eb f9000c udf00 0xc,D0
+    0x616e36ee f302 mov (D0,A2),D0
+    0x616e36f0 9a08 mov 0x8,A2
+    ... 2 more
+
+UI-map dword for UI id 0x5b8 at 0x60626c3c bytes d14b0100
+  key 0x4bd1 index 1
+
+== unaligned and address-constant rows ==
+0x60539e07 prev FUN_60539a46 end 0x60539b04 next FUN_6053a020 at 0x6053a020
+  window a3fa43c600fc825ae82ea3fa43c700fc825be82ea3fa43c800fc825ce82ea3fa43c900fc825de82ea3fa63ca00fc835e
+  aligned u16 at 0x60539e06 = 0x82fc  u16 at hit = 0x-001
+  dword at 0x60539e04 = 0x82fc00c7 bytes c700fc82
+  no pointer run at the containing dword
+  image dwords pointing here: none
+0x607c8e19 prev FUN_60773458 end 0x60773486 next FUN_607e80a3 at 0x607e80a3
+  window 3fa91bacf3943a19ab7fde9b9241d99f825bc8a2cea5f2eb036f3d34702f15b3d2305d256095e54172cb9831ca0ad3c4
+  aligned u16 at 0x607c8e18 = 0x829f  u16 at hit = 0x-001
+  dword at 0x607c8e18 = 0xc85b829f bytes 9f825bc8
+  no pointer run at the containing dword
+  image dwords pointing here: none
+0x607e2ef9 prev FUN_60773458 end 0x60773486 next FUN_607e80a3 at 0x607e80a3
+  window 97b5e1c6f609ee0d58764231d7b2740f825b196ef929661f554e0b41da4b82d33e508c274422c49a043541cade204e12
+  aligned u16 at 0x607e2ef8 = 0x820f  u16 at hit = 0x-001
+  dword at 0x607e2ef8 = 0x195b820f bytes 0f825b19
+  no pointer run at the containing dword
+  image dwords pointing here: none
+0x60e29138 prev FUN_60e130e8 end 0x60e13423 next FUN_60eca812 at 0x60eca812
+  window 6047e260785ab5606c47e2607047e260825bb5607947e2607d47e260b75bb5608a47e2601d2ce2605a5cb5608e47e260
+  aligned u16 at 0x60e29138 = 0x5b82  u16 at hit = 0x5b82
+  dword at 0x60e29138 = 0x60b55b82 bytes 825bb560
+  pointer run 0x60e29034..0x60e2923c (520 bytes) this dword 0x60b55b82
+  image dwords pointing here: none
+0x615fbdb0 prev FUN_615e41c7 end 0x615e432a next FUN_6161942a at 0x6161942a
+  window 725b2961058000007a5b296106800000825b2961078000008a5b296100000000905b296100000000905b296100000000
+  aligned u16 at 0x615fbdb0 = 0x5b82  u16 at hit = 0x5b82
+  dword at 0x615fbdb0 = 0x61295b82 bytes 825b2961
+  pointer run 0x615fbdb0..0x615fbdb4 (4 bytes) this dword 0x61295b82
+  image dwords pointing here: none
+0x615b9d55 prev FUN_615512b4 end 0x615512db next FUN_615e41c7 at 0x615e41c7
+  window 0000000200000000000000000000003c825b6108000000040000000000000000000000fc7d5b61080000000900000000
+  aligned u16 at 0x615b9d54 = 0x823c  u16 at hit = 0x-001
+  dword at 0x615b9d54 = 0x615b823c bytes 3c825b61
+  pointer run 0x615b9d54..0x615b9d58 (4 bytes) this dword 0x615b823c
+  image dwords pointing here: none
+0x615b9d91 prev FUN_615512b4 end 0x615512db next FUN_615e41c7 at 0x615e41c7
+  window 0000000300000000000000000000003c825b61080000000100000000000000000000005c845b61080000000200000000
+  aligned u16 at 0x615b9d90 = 0x823c  u16 at hit = 0x-001
+  dword at 0x615b9d90 = 0x615b823c bytes 3c825b61
+  pointer run 0x615b9d90..0x615b9d94 (4 bytes) this dword 0x615b823c
+  image dwords pointing here: none
+
+mov rows 29
+UNRESOLVED rows in v4 15
+

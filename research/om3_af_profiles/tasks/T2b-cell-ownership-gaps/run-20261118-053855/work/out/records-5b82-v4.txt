@@ -1,0 +1,48 @@
+== key load before each FUN_60063431 in 0x60196ee3..0x6019766d ==
+  call 0x60196f7b key (1612279667, 'movhu (A0),D0')
+  call 0x60196fcf key (1612279753, 'movhu (A0),D0')
+  call 0x60197009 key (1612279809, 'movhu (A0),D0')
+  call 0x6019705d key (1612279895, 'movhu (A0),D0')
+  call 0x60197099 key (1612279953, 'movhu (A0),D0')
+  call 0x601970ed key (1612280039, 'movhu (A0),D0')
+  call 0x60197127 key (1612280095, 'movhu (A0),D0')
+  call 0x6019717b key (1612280181, 'movhu (A0),D0')
+  call 0x601971a3 key (1612280220, 'movhu (A2),D0') OTHER
+  call 0x601971b6 key (1612280238, 'movhu (A2),D0') OTHER
+  call 0x601971d7 key (1612280272, 'movhu (A3),D0') OTHER
+  call 0x601971ea key (1612280290, 'movhu (A3),D0') OTHER
+  call 0x601972a6 key (1612280475, 'movhu (A0),D0')
+  call 0x601972e6 key (1612280538, 'movhu (0x2,A0),D0')
+  call 0x60197394 key (1612280716, 'movhu (A0),D0')
+  call 0x601973e8 key (1612280802, 'movhu (A0),D0')
+  call 0x6019743b key (1612280885, 'movhu (A0),D0')
+  call 0x60197491 key (1612280971, 'movhu (A0),D0')
+  call 0x601974d8 key (1612281040, 'movhu (A0),D0')
+  call 0x6019752c key (1612281126, 'movhu (A0),D0')
+  call 0x6019757f key (1612281209, 'movhu (A0),D0')
+  call 0x601975d5 key (1612281295, 'movhu (A0),D0')
+  call 0x60197601 key (1612281326, 'movhu (A0),D0')
+  call 0x6019761f key (1612281356, 'movhu (A0),D0')
+  call 0x60197644 key (1612281393, 'movhu (A0),D0')
+  call 0x60197662 key (1612281423, 'movhu (A0),D0')
+setter calls 26 other-key-loads 4
+== address-constant runs ==
+  0x60e29138 dword 0x60b55b82 run 0x60e27318..0x60e2b104 (15852 bytes) raw 825bb560
+  0x615fbdb0 dword 0x61295b82 run 0x615fbdb0..0x615fbdb4 (4 bytes) raw 825b2961
+  0x615b9d54 dword 0x615b823c run 0x615b9d54..0x615b9d58 (4 bytes) raw 3c825b61
+  0x615b9d90 dword 0x615b823c run 0x615b9d90..0x615b9d94 (4 bytes) raw 3c825b61
+product 0x5b8 * 0xf4240 = 0x5742de00 low16 0xde00
+string 0x60a39f0d [%-12s: %4d] albm_main_search_filehandle_picno()
+string 0x60a3a6cd albm_main.c
+string 0x617c31d7 CAvpiVenHEVCCodec.cpp
+map 0x60626c3c d14b0100
+stub 0x607132b6 8070ca3f bra-target-check
+bytes 0x607135ef 2664fa
+bytes 0x6071365d 9b
+bytes 0x607136f6 f1de
+bytes 0x6071374b 88
+gap-call 0x60195a1f cdd218f03c
+tableA 0x5b82 False
+tableB 0x5b82 False
+candidates rows 150 mov-fixed 29 unresolved-marked 5
+uses rows 35
