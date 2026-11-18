@@ -1,7 +1,7 @@
 # T0: Orchestration canary (isolation and tool check; no research content)
 
 Agent: Grok 4.7 High · Coordinator: Opus 5.5 · Reviewer: Codex Sol
-Brief version: 2026-11-17 (attempt 6: `Get-Command` is now allowed; complete output capture, after Sol's review of attempt 5)
+Brief version: 2026-11-17 (attempt 7: path checks in allow-listable form; complete output capture)
 
 ## 0. Rules that override everything below
 
@@ -30,7 +30,10 @@ is hashed last.
 2. **Integrity level.** Run `whoami /groups` and record the line containing `Mandatory Label`.
 3. **Read access.** Run `python -I -c "import hashlib,sys;[print(hashlib.sha256(open(p,'rb').read()).hexdigest(),p) for p in sys.argv[1:]]" ref\PROJECT-STATE.md ref\analysis\button-af\FEATURE-SPEC.md inputs\00_0100_50000020.decoded.bin`.
 4. **Tool versions and paths.** Run `java -version`, `node26 --version` and `python -I --version`,
-   then `(Get-Command java).Source`, `(Get-Command node26).Source` and `(Get-Command python).Source`.
+   then `where.exe java`, `where.exe node26`, `where.exe python` and
+   `Get-Command java,node26,python | Format-List Name,Source`.
+   (Attempt 6: the form `(Get-Command x).Source` is rejected by Cursor, because a command
+   starting with a parenthesis cannot match an allow entry. Do not use it.)
    Expected: Java 25.0.5 under `C:\Dev\OM3-research\tooling\jdk-25.0.5+8\`; Node v26.12.1 through
    `tools\bin\node26.cmd`. Plain `node` is the Cursor CLI's own runtime; do not use it.
 5. **Ghidra headless smoke test.** Write `work\scripts\T0Smoke.java`, a GhidraScript that writes
