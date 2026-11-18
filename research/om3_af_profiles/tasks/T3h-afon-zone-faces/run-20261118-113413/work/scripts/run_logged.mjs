@@ -1,0 +1,112 @@
+// Command record wrapper, version h1.
+// Spawns one program and writes the command line, stdout, stderr, the real
+// exit status, and the SHA-256 of each script file the command runs.
+// Usage: node26 work/scripts/run_logged.mjs NN program arg...
+// node26 is a .cmd, so a Node program is started with process.execPath.
+// Any other .cmd or .bat is started with cmd.exe /d /c.
+import { spawnSync } from 'node:child_process';
+import { createHash } from 'node:crypto';
+import { existsSync, mkdirSync, readFileSync, statSync, writeFileSync } from 'node:fs';
+import { basename, resolve } from 'node:path';
+
+const [nn, program, ...args] = process.argv.slice(2);
+if (!nn || !program) {
+  process.stderr.write('usage: node26 work/scripts/run_logged.mjs NN program arg...\n');
+  process.exit(2);
+}
+const dir = resolve('work/out/cmd');
+mkdirSync(dir, { recursive: true });
+const started = new Date().toISOString();
+const requested = [program, ...args].join(' ');
+
+function quoteCmd(s) {
+  if (!/[\s"&|<>^]/.test(s)) return s;
+  return `"${s.replace(/"/g, '""')}"`;
+}
+
+function existingFile(p) {
+  const name = basename(p);
+  const candidates = [p, resolve(p), resolve('work/scripts', p), resolve('work/scripts', name)];
+  for (const c of candidates) {
+    try {
+      if (existsSync(c) && statSync(c).isFile()) return resolve(c);
+    } catch { /* not a file */ }
+  }
+  return null;
+}
+
+function scriptRecords(program, args) {
+  const all = [program, ...args];
+  const named = [];
+  for (let i = 0; i < all.length; i++) {
+    if (all[i] === '-postScript' && all[i + 1]) named.push(all[i + 1]);
+    if (/\.(py|mjs|js|java)$/i.test(all[i])) named.push(all[i]);
+  }
+  const out = [];
+  const seen = new Set();
+  for (const p of named) {
+    const abs = existingFile(p);
+    if (!abs || seen.has(abs)) continue;
+    seen.add(abs);
+    const data = readFileSync(abs);
+    out.push({
+      path: p,
+      file: abs,
+      sha256: createHash('sha256').update(data).digest('hex'),
+      bytes: data.length,
+    });
+  }
+  return out;
+}
+
+const scripts = scriptRecords(program, args);
+const wrapperBytes = readFileSync(resolve('work/scripts/run_logged.mjs'));
+const wrapperSha = createHash('sha256').update(wrapperBytes).digest('hex');
+
+const lower = program.toLowerCase();
+const isNode = lower === 'node26' || lower === 'node26.cmd' || lower.endsWith('\\node26.cmd') || lower.endsWith('/node26.cmd');
+const isCmd = !isNode && (lower.endsWith('.cmd') || lower.endsWith('.bat'));
+let spawnProgram;
+let spawnArgs;
+let verbatim = false;
+if (isNode) {
+  spawnProgram = process.execPath;
+  spawnArgs = args;
+} else if (isCmd) {
+  spawnProgram = 'cmd.exe';
+  spawnArgs = ['/d', '/c', [program, ...args].map(quoteCmd).join(' ')];
+  verbatim = true;
+} else {
+  spawnProgram = program;
+  spawnArgs = args;
+}
+const spawnLine = [spawnProgram, ...spawnArgs].join(' ');
+const scriptLines = scripts.length
+  ? scripts.map((s) => `script: ${s.path}\nscript_sha256: ${s.sha256}\nscript_bytes: ${s.bytes}`).join('\n')
+  : 'script: none\nscript_sha256: none';
+writeFileSync(
+  resolve(dir, `${nn}.cmd.txt`),
+  `start ${started}\nrequested: ${requested}\n${spawnLine}\nwrapper_sha256: ${wrapperSha}\n${scriptLines}\n`,
+  'utf8',
+);
+const result = spawnSync(spawnProgram, spawnArgs, {
+  shell: false,
+  windowsHide: true,
+  windowsVerbatimArguments: verbatim,
+  maxBuffer: 128 * 1024 * 1024,
+});
+writeFileSync(resolve(dir, `${nn}.out`), result.stdout ?? Buffer.alloc(0));
+writeFileSync(resolve(dir, `${nn}.err`), result.stderr ?? Buffer.alloc(0));
+const record = {
+  status: result.status,
+  signal: result.signal,
+  error: result.error ? String(result.error) : null,
+  start: started,
+  end: new Date().toISOString(),
+  spawn: spawnLine,
+  wrapper_sha256: wrapperSha,
+  scripts: scripts.map(({ path, sha256, bytes }) => ({ path, sha256, bytes })),
+};
+writeFileSync(resolve(dir, `${nn}.exit`), JSON.stringify(record, null, 2) + '\n', 'utf8');
+if (result.error) process.exit(1);
+process.exit(result.status === null ? 1 : result.status);

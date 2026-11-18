@@ -1034,8 +1034,21 @@ emulator only.
     - full-cell readbacks are identical, and pages 25–27 render;
     - after a native save, the M and E stores are byte-identical, and the profile returns to its default
       in a new session.
-  - **The faces are wrong:** values 0 and 1 show the priority strings, and the other slots are blank. The
-    chooser's face source has not yet been traced.
+  - **The faces are wrong:** values 0 and 1 show the priority strings, and the other slots are blank.
+- **Chooser faces (T3h).** The chooser draws its faces from a **face table** at `0x6037bedc`: 96 records,
+  stride `0x24`.
+  - Each record holds the count (+8), the face list (+`0xc`) and the help list (+`0x10`).
+  - A record is selected by the halfword at binding-record +`0x10`. For 2154 that is key `0x2d`, record 76:
+    count 2, faces `0x61575880`.
+  - **With a private record for `0x3D6F`** (count 10, faces `0x6158ba1c`), the chooser shows the ten zones:
+    All, Single, Small, Cross, Mid, Large, C1–C4. Confirm commits the zone value, and cancel does not.
+  - **Stores after a save** are byte-identical to the stock control's.
+  - **Open:**
+    - a ten-entry help list (the current one is two entries, so the help reader overruns it);
+    - an access violation when cancelling from C4;
+    - the row's own label;
+    - assertions at every step;
+    - page 28.
 - **For a final firmware.** A final firmware needs:
   - a page-27 action record for the AF-ON row, with an editor binding of its own (the array is about
     10 KB, which needs a placement plan) and a registered editor descriptor;
