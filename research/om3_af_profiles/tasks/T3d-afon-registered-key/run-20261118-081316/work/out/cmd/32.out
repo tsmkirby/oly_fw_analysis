@@ -1,0 +1,16 @@
+{"step": "k4-hook", "explanation": "K1 did not open the chooser. The deciding compare reads the selected provider id, not the mapped key. Forcing that compare to succeed for 0x3D6F against the first page-27 record, and changing nothing else, makes OK return D0=4 and open the two-option chooser whose list pointer is already in the row. Confirm is not expected to write 0x5b82, because this run does not give 0x3D6F a map entry."}
+{"step": "before-ok", "highlight": "@A02F@ Priority"}
+after chooser=True returnD0=[4] cmpD0=[4, 0] highlight=None
+texts: When a specified subject is detected at
+the selected AF target position, AF is
+performed on the detected subject. | @A066@ Priority | @A02F@ Priority
+match: [{"site": "table-call", "count": 2, "key1Half": 1}, {"part": "match", "site": "row-token", "d0": 2}, {"part": "match", "site": "key2", "d0": 15727}, {"part": "match", "site": "key1", "d0": 15727}, {"part": "match", "site": "record-hit", "record": "0x6150c514", "w0": "0x1", "h4": 2154, "h6": 0, "fn": "0x0", "fnName": null, "bytes": "010000006a0800000000000008000000e301000000000000"}, {"part": "match", "site": "table-return", "d0": 4}]
+getter: [{"fn": "compare", "id": 15727, "record": "0x6150c514", "forced": true}]
+parts: {"rowRefresh": [], "chooserConstruction": ["chooser-refresh", "chooser-body", "chooser-widgets", "chooser-refresh", "chooser-body", "chooser-widgets", "chooser-refresh", "chooser-body", "chooser-widgets", "chooser-refresh", "chooser-body", "chooser-widgets", "chooser-refresh", "chooser-body", "chooser-widgets", "chooser-body", "chooser-body", "chooser-body", "chooser-body", "chooser-body", "chooser-body", "chooser-body", "chooser-body", "chooser-body", "chooser-body", "chooser-body", "chooser-body", "chooser-body", "chooser-body"], "inputFocus": ["after-focus-call", "after-focus-call", "after-focus-call", "after-focus-call", "after-focus-call"]}
+write kinds: {"mapped-getter": 13, "index-getter": 13, "store-63380": 14, "registry": 14, "descriptor": 26}
+setter/store: []
+cells 5b82 [0, 0, 0, 0, 0, 3200, 0, 0, 0, 0, 0, 0, 3200, 3200, 0, 0]
+cells 90a1 [1, 1]
+{"step": "cancel", "highlight": "@A02F@ Priority", "writeKinds": {"mapped-getter": 13, "index-getter": 13, "store-63380": 14, "registry": 14, "descriptor": 26}, "setter": [], "k5b82": [0, 0, 0, 0, 0, 3200, 0, 0, 0, 0, 0, 0, 3200, 3200, 0, 0], "k90a1": [1, 1], "texts": ["@A02C@@A065@AF Button", "@A066@ Priority", "@A066@ Priority", "@A02F@ Priority"]}
+{"step": "confirm", "highlight": "@A02F@ Priority", "writeKinds": {"mapped-getter": 13, "index-getter": 13, "store-63380": 14, "registry": 14, "descriptor": 26, "store-63431": 2, "setter": 1}, "setter": [{"part": "commit", "fn": "store-63431", "d0": 35668, "d1": 2154, "d2": 2154, "a0": "0x62952724", "a1": "0x1", "a3": "0x0", "mdr": "0x6041987e", "caller": "FUN_6041985d"}, {"part": "commit", "fn": "setter", "d0": 2154, "d1": 1, "d2": 2154, "a0": "0xa2952724", "a1": "0x1", "a3": "0x0", "mdr": "0x6041937c", "caller": "FUN_60419368"}, {"part": "commit", "fn": "store-63431", "d0": 37025, "d1": 0, "d2": 2154, "a0": "0x0", "a1": "0x1", "a3": "0x0", "mdr": "0x604193c7", "caller": "FUN_6041937f"}], "k5b82": [0, 0, 0, 0, 0, 3200, 0, 0, 0, 0, 0, 0, 3200, 3200, 0, 0], "k90a1": [1, 1], "texts": ["@A02C@@A065@AF Button", "@A066@ Priority", "@A066@ Priority", "@A02F@ Priority"]}
+{"step": "done", "chooser": true}

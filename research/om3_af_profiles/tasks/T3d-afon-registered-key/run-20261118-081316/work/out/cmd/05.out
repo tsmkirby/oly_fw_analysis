@@ -1,0 +1,52 @@
+step overlay label=in-memory overlay: T3a bytes with the third row replaced by stock 2154 and id 0x3D6F error=None
+step redirects label=EMULATOR-ONLY section-7 pointer writes error=None
+step cells-before label=None error=None
+step page label=None error=None
+== 2154 returnD0=[4] cmpD0=[4, 0] cmpD2=[0, 0]
+  before highlight='@A066@ Priority'
+  after texts=['When a specified subject is detected at\r\nthe selected AF target position, AF is\r\nperformed on the detected subject.', '@A066@ Priority', '@A02F@ Priority']
+  61203082 at50=0x6120308d FUN_6120308d d0=36876
+  6120308d obj=0x6247a270 vt=0x6151346c slot0=0x6119a2be FUN_6119a2be
+    objWords=['0x6151346c', '0x0', '0x0', '0x0', '0x0', '0x900d', '0x0', '0x0', '0x0', '0x0', '0x0', '0x0', '0x0', '0x611a0f19', '0x611a1031', '0x611a1149']
+  return d0=4 d2=0
+  reads 7
+    descriptor d0=1448 d1=1 a0=0x6242c3d0 caller=FUN_6040547b mdr=0x60405481
+    mapped-getter d0=1448 d1=6000 a0=0x62460668 caller=FUN_6041931e mdr=0x60419343
+    index-getter d0=1448 d1=0 a0=0x62460668 caller=FUN_6041931e mdr=0x6041934a
+    store-63380 d0=22849 d1=0 a0=0x0 caller=FUN_6041a1f9 mdr=0x6041a202
+    registry d0=22849 d1=0 a0=0x0 caller=FUN_60063380 mdr=0x6006338c
+    descriptor d0=1448 d1=1 a0=0x62920bee caller=FUN_6040547b mdr=0x60405481
+    descriptor d0=1448 d1=1 a0=0x6061f414 caller=FUN_6040547b mdr=0x60405481
+== 2155 returnD0=[4] cmpD0=[4, 0] cmpD2=[0, 0]
+  before highlight='@A066@ Priority'
+  after texts=['When a specified subject is detected at\r\nthe selected AF target position, AF is\r\nperformed on the detected subject.', '@A066@ Priority', '@A02F@ Priority']
+  61203082 at50=0x6120308d FUN_6120308d d0=36876
+  6120308d obj=0x6247a270 vt=0x6151346c slot0=0x6119a2be FUN_6119a2be
+    objWords=['0x6151346c', '0x0', '0x0', '0x0', '0x0', '0x9007', '0x0', '0x0', '0x0', '0x0', '0x0', '0x0', '0x0', '0x611a0f19', '0x611a1031', '0x611a1149']
+  return d0=4 d2=0
+  reads 7
+    descriptor d0=1448 d1=1 a0=0x6242c3d0 caller=FUN_6040547b mdr=0x60405481
+    mapped-getter d0=1448 d1=6000 a0=0x62460668 caller=FUN_6041931e mdr=0x60419343
+    index-getter d0=1448 d1=0 a0=0x62460668 caller=FUN_6041931e mdr=0x6041934a
+    store-63380 d0=22849 d1=0 a0=0x0 caller=FUN_6041a1f9 mdr=0x6041a202
+    registry d0=22849 d1=0 a0=0x0 caller=FUN_60063380 mdr=0x6006338c
+    descriptor d0=1448 d1=1 a0=0x62920bee caller=FUN_6040547b mdr=0x60405481
+    descriptor d0=1448 d1=1 a0=0x6061f414 caller=FUN_6040547b mdr=0x60405481
+== 3d6f returnD0=[1] cmpD0=[1, 0] cmpD2=[0, 0]
+  before highlight='@A02F@ Priority'
+  after texts=['@A066@ Priority', '@A066@ Priority', '@A02F@ Priority', '@A02C@@A065@AF Button']
+  61203082 at50=0x6120308d FUN_6120308d d0=36876
+  6120308d obj=0x6247a270 vt=0x6151346c slot0=0x6119a2be FUN_6119a2be
+    objWords=['0x6151346c', '0x0', '0x0', '0x0', '0x0', '0x9007', '0x0', '0x0', '0x0', '0x0', '0x0', '0x0', '0x0', '0x611a0f19', '0x611a1031', '0x611a1149']
+  return d0=1 d2=0
+  reads 7
+    descriptor d0=1448 d1=1 a0=0x6242c3d0 caller=FUN_6040547b mdr=0x60405481
+    mapped-getter d0=1448 d1=6000 a0=0x62460668 caller=FUN_6041931e mdr=0x60419343
+    index-getter d0=1448 d1=0 a0=0x62460668 caller=FUN_6041931e mdr=0x6041934a
+    store-63380 d0=22849 d1=0 a0=0x0 caller=FUN_6041a1f9 mdr=0x6041a202
+    registry d0=22849 d1=0 a0=0x0 caller=FUN_60063380 mdr=0x6006338c
+    descriptor d0=1448 d1=1 a0=0x62920bee caller=FUN_6040547b mdr=0x60405481
+    descriptor d0=1448 d1=1 a0=0x6061f414 caller=FUN_6040547b mdr=0x60405481
+step boundary label=None error=C-AF Setting tab missing
+step cells-after label=None error=None
+

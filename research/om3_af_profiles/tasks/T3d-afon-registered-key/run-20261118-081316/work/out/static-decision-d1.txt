@@ -1,0 +1,36 @@
+work/out/disasm-2631-d1.txt: checked 130 mismatches 0
+work/out/disasm-2747-d1.txt: checked 50 mismatches 0
+work/out/disasm-1ab9-d1.txt: checked 90 mismatches 0
+work/out/disasm-182e-d1.txt: checked 40 mismatches 0
+work/out/disasm-1229-d1.txt: checked 90 mismatches 0
+work/out/disasm-13c0-d1.txt: checked 140 mismatches 0
+work/out/disasm-3082-d1.txt: checked 12 mismatches 0
+work/out/disasm-308d-d1.txt: checked 20 mismatches 0
+sections:
+  0 dest=0x60134000 src=0x50113000 flag=0x0
+  1 dest=0x603ba800 src=0x50399800 flag=0x0
+  2 dest=0x6075a800 src=0x50739800 flag=0x0
+  3 dest=0x60828000 src=0x50807000 flag=0x0
+  4 dest=0x60ad8000 src=0x50ab7000 flag=0x0
+  5 dest=0x60adc000 src=0x50abb000 flag=0x1
+  6 dest=0x6103f000 src=0x5101e000 flag=0x1
+  7 dest=0x6169e800 src=0x5167d800 flag=0x0
+  8 dest=0x61809000 src=0x517e8000 flag=0x0
+  9 dest=0x619fd000 src=0x519dc000 flag=0x0
+addr 0x611a26e1 section (6, 1627648000, 1, 1634330624)
+addr 0x611a277e section (6, 1627648000, 1, 1634330624)
+addr 0x611a182e section (6, 1627648000, 1, 1634330624)
+addr 0x611a1ab9 section (6, 1627648000, 1, 1634330624)
+addr 0x6150c514 section (6, 1627648000, 1, 1634330624)
+addr 0x6150c4cc section (6, 1627648000, 1, 1634330624)
+addr 0x6062555c section (1, 1614522368, 0, 1618323456)
+addr 0x60419446 section (1, 1614522368, 0, 1618323456)
+pointers to table 0x6150c514: 0x6150f5f0
+image table 0x6150c514: 010000006a0800000000000008000000e301000000000000010000006b0800000000000008000000e401000000000000
+image table 0x6150c4cc: 010000006c0800000000000008000000e001000000000000010000006d0800000000000008000000e101000000000000010000009d0800000000000008000000e201000000000000
+map0 id 2154 at 0x60627704 key=0x90a1 index=0
+0x3D6F=15727 map0 limit 0x8d0=2256 map3 end 0x3c5f=15455
+decideReads 2154: [('descriptor', 1448), ('index-getter', 1448), ('mapped-getter', 1448), ('registry', 22849), ('store-63380', 22849)]
+decideReads 2155: [('descriptor', 1448), ('index-getter', 1448), ('mapped-getter', 1448), ('registry', 22849), ('store-63380', 22849)]
+decideReads 3d6f: [('descriptor', 1448), ('index-getter', 1448), ('mapped-getter', 1448), ('registry', 22849), ('store-63380', 22849)]
+decideReads caf-area: [('descriptor', 1448), ('index-getter', 1448), ('mapped-getter', 1448), ('registry', 22849), ('store-63380', 22849)]

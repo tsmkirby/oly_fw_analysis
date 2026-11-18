@@ -1,0 +1,186 @@
+image_bytes=33554368 base=0x60021020
+formula: absolute_target = BASE + file_offset + displacement
+old formula, for comparison: file_offset + displacement, then compared with an absolute address
+== bytes at the chain ==
+FUN_6119a2be 0x6119a2be cff0f8fec0868393004220f81f14f81b18fca540d43760a1c8082cf401f87320dd3c9299ff0004f0048041f8254cf0f1
+FUN_61203082 0x61203082 f8fefcf82450f0f1df0004cfc0f8fefc
+FUN_6120308d 0x6120308d cfc0f8fefc2058788300a2c80bf1e88cf004f005f0f1dfc00ccff0f8fefc9383
+== vtable 0x6158ae0c, 32 slots ==
+  +0x00 0x6119a2be FUN_6119a2be
+  +0x04 0x6119a117 
+  +0x08 0x6119a11b 
+  +0x0c 0x6119a12b 
+  +0x10 0x6119a11f 
+  +0x14 0x6119a123 
+  +0x18 0x6119a12f 
+  +0x1c 0x6119a133 FUN_6119a133
+  +0x20 0x6119a13b 
+  +0x24 0x6119a145 FUN_6119a145
+  +0x28 0x6119a150 
+  +0x2c 0x61202dc9 FUN_61202dc9
+  +0x30 0x6119a140 
+  +0x34 0x61203620 FUN_61203620
+  +0x38 0x6119a127 
+  +0x3c 0x6119a137 
+  +0x40 0x61202faa FUN_61202faa
+  +0x44 0x61202fce FUN_61202fce
+  +0x48 0x61202ff2 FUN_61202ff2
+  +0x4c 0x61203016 FUN_61203016
+  +0x50 0x6119aca3 
+  +0x54 0x6119aca7 
+  +0x58 0x6119acab 
+  +0x5c 0x6119acaf 
+  +0x60 0x6120303a FUN_6120303a
+  +0x64 0x6120305e FUN_6120305e
+  +0x68 0x61203082 FUN_61203082
+  +0x6c 0x612030a6 FUN_612030a6
+  +0x70 0x61203105 FUN_61203105
+  +0x74 0x61203186 FUN_61203186
+  +0x78 0x611f6b99 
+  +0x7c 0x612031fd FUN_612031fd
+== vtable 0x6158fb4c, 8 slots ==
+  +0x00 0x61203816 FUN_61203816
+  +0x04 0x612037d0 FUN_612037d0
+  +0x08 0x611c78c4 
+  +0x0c 0x00000000 
+  +0x10 0x11b10004 
+  +0x14 0x6158fb58 
+  +0x18 0x0c690004 
+  +0x1c 0x6158fb58 
+== section descriptors at 0x60029b28, 10 rows of 12 ==
+  row 1 0x60029b28 dest=0x60134000 src=0x50113000 word=0x00000000 raw 004013600030115000000000
+  row 2 0x60029b34 dest=0x603ba800 src=0x50399800 word=0x00000000 raw 00a83b600098395000000000
+  row 3 0x60029b40 dest=0x6075a800 src=0x50739800 word=0x00000000 raw 00a875600098735000000000
+  row 4 0x60029b4c dest=0x60828000 src=0x50807000 word=0x00000000 raw 008082600070805000000000
+  row 5 0x60029b58 dest=0x60ad8000 src=0x50ab7000 word=0x00000000 raw 0080ad600070ab5000000000
+  row 6 0x60029b64 dest=0x60adc000 src=0x50abb000 word=0x00000001 raw 00c0ad6000b0ab5001000000
+  row 7 0x60029b70 dest=0x6103f000 src=0x5101e000 word=0x00000001 raw 00f0036100e0015101000000
+  row 8 0x60029b7c dest=0x6169e800 src=0x5167d800 word=0x00000000 raw 00e8696100d8675100000000
+  row 9 0x60029b88 dest=0x61809000 src=0x517e8000 word=0x00000000 raw 0090806100807e5100000000
+  row 10 0x60029b94 dest=0x619fd000 src=0x519dc000 word=0x00000000 raw 00d09f6100c09d5100000000
+== UI map slot for 2154 and whether 0x3D6F has a slot ==
+  id 2154 map0 0x60627704 key=0x90a1 index=0
+  range below-2256 ids 0..2255 table 0x6062555c holds_0x3D6F=False
+  range 3000-3046 ids 3000..3046 table 0x606249bc holds_0x3D6F=False
+  range 10000-10070 ids 10000..10070 table 0x6061dd72 holds_0x3D6F=False
+  range 15000-15455 ids 15000..15455 table 0x6061906e holds_0x3D6F=False
+  0x3D6F is 15727. The mapped getter returns 0 past 15455 (0x3c5f).
+== direct calls, absolute target against absolute target ==
+new_call_count=604 old_call_count=0
+target 0x600624d3 FUN_600624d3 sites=10 inside_function=10
+  call16 site=0x60063280 in FUN_6006327f bytes cd53f28014
+  call16 site=0x60063357 in FUN_60063356 bytes cd7cf18014
+  call16 site=0x6006336e in FUN_6006336d bytes cd65f18014
+  call16 site=0x60063387 in FUN_60063380 bytes cd4cf18014
+  call16 site=0x600633a6 in FUN_600633a2 bytes cd2df18014
+  call16 site=0x60063401 in FUN_600633ff bytes cdd2f08014
+  call16 site=0x60063488 in FUN_60063431 bytes cd4bf08014
+  call16 site=0x600635c3 in FUN_60063567 bytes cd10ef8014
+  call16 site=0x600636f1 in FUN_600636ec bytes cde2ed8014
+  call16 site=0x6006398e in FUN_6006398b bytes cd45eb8014
+target 0x60063431 FUN_60063431 sites=366 inside_function=257
+  call16 site=0x60060817 in FUN_600607c7 bytes cd1a2cf028
+  call16 site=0x60061c46 in FUN_600619a9 bytes cdeb17f028
+  call32 site=0x6006c1e8 in FUN_6006bf7f bytes dd4972fffff028
+  call32 site=0x6006c1f7 in FUN_6006bf7f bytes dd3a72fffff028
+  call32 site=0x6006c206 in FUN_6006bf7f bytes dd2b72fffff028
+  call32 site=0x6006c219 in FUN_6006bf7f bytes dd1872fffff028
+  call32 site=0x6006c28f in FUN_6006bf7f bytes dda271fffff028
+  call32 site=0x6006c2be in FUN_6006bf7f bytes dd7371fffff028
+  call32 site=0x6006c2ed in FUN_6006bf7f bytes dd4471fffff028
+  call32 site=0x6006c31c in FUN_6006bf7f bytes dd1571fffff028
+  call32 site=0x6006c381 in FUN_6006bf7f bytes ddb070fffff028
+  call32 site=0x6006c39e in FUN_6006bf7f bytes dd9370fffff028
+  call32 site=0x6006c3bb in FUN_6006bf7f bytes dd7670fffff028
+  call32 site=0x6006c3d8 in FUN_6006bf7f bytes dd5970fffff028
+  call32 site=0x60071b9f in FUN_60071b82 bytes dd9218fffff028
+  call32 site=0x60071bc6 in FUN_60071ba9 bytes dd6b18fffff028
+  call32 site=0x60071c3c in FUN_60071c09 bytes ddf517fffff028
+  call32 site=0x6013a8dc in FUN_6013a8c6 bytes dd558bf2fff028
+  call32 site=0x6015048b in FUN_601503c3 bytes dda62ff1fff028
+  call32 site=0x601504ec in FUN_601503c3 bytes dd452ff1fff028
+  call32 site=0x60150515 in FUN_601503c3 bytes dd1c2ff1fff028
+  call32 site=0x601545b8 in FUN_6015457d bytes dd79eef0fff028
+  call32 site=0x60154615 in FUN_6015457d bytes dd1ceef0fff028
+  call32 site=0x6015463c in FUN_6015457d bytes ddf5edf0fff028
+  ... 233 more
+target 0x604058bc FUN_604058bc sites=1 inside_function=1
+  call16 site=0x6040547c in FUN_6040547b bytes cd40040000
+target 0x6041937f FUN_6041937f sites=4 inside_function=4
+  call16 site=0x60419377 in FUN_60419368 bytes cd0800e014
+  call16 site=0x60419cae in FUN_60419c7d bytes cdd1f6e014
+  call16 site=0x60419cf5 in FUN_60419c7d bytes cd8af6e014
+  call16 site=0x60419d3e in FUN_60419c7d bytes cd41f6e014
+target 0x60419446 FUN_60419446 sites=4 inside_function=4
+  call16 site=0x6041933e in FUN_6041931e bytes cd0801f01c
+  call16 site=0x604193a3 in FUN_6041937f bytes cda300f01c
+  call16 site=0x604193f4 in FUN_604193ca bytes cd5200f01c
+  call16 site=0x60419428 in FUN_60419408 bytes cd1e00f01c
+target 0x60419696 FUN_60419696 sites=3 inside_function=3
+  call16 site=0x60419345 in FUN_6041931e bytes cd51030000
+  call16 site=0x604193aa in FUN_6041937f bytes cdec020000
+  call16 site=0x6041942f in FUN_60419408 bytes cd67020000
+target 0x610cdebf FUN_610cdebf sites=6 inside_function=0
+  call32 site=0x61154f2a in outside-body bytes dd958ff7ff2008
+  call32 site=0x61154f7a in outside-body bytes dd458ff7ff2008
+  call32 site=0x61163a8e in outside-body bytes dd31a4f6ff2008
+  call32 site=0x61163bbd in outside-body bytes dd02a3f6ff2008
+  call32 site=0x61164460 in outside-body bytes dd5f9af6ff2008
+  call32 site=0x611644a6 in outside-body bytes dd199af6ff2008
+target 0x610cdf05 FUN_610cdf05 sites=3 inside_function=3
+  call16 site=0x610cde86 in FUN_610cde73 bytes cd7f00f01c
+  call16 site=0x610cded4 in FUN_610cdebf bytes cd3100f01c
+  call32 site=0x6129748c in FUN_6129744a bytes dd796ae3fff01c
+target 0x610e2536 FUN_610e2536 sites=1 inside_function=1
+  call32 site=0x610cdf91 in FUN_610cdf05 bytes dda5450100300c
+target 0x61204065 FUN_61204065 sites=20 inside_function=20
+  call16 site=0x61203ca3 in FUN_61203a81 bytes cdc203f020
+  call16 site=0x612041c5 in FUN_61204092 bytes cda0fef020
+  call16 site=0x612041f5 in FUN_612041cd bytes cd70fef020
+  call16 site=0x612042a0 in FUN_61204278 bytes cdc5fdf020
+  call16 site=0x6120434b in FUN_61204323 bytes cd1afdf020
+  call16 site=0x612043f6 in FUN_612043ce bytes cd6ffcf020
+  call16 site=0x612044a1 in FUN_61204479 bytes cdc4fbf020
+  call16 site=0x61204657 in FUN_61204524 bytes cd0efaf020
+  call16 site=0x61204687 in FUN_6120465f bytes cddef9f020
+  call16 site=0x61204732 in FUN_6120470a bytes cd33f9f020
+  call16 site=0x612047dd in FUN_612047b5 bytes cd88f8f020
+  call16 site=0x61204888 in FUN_61204860 bytes cdddf7f020
+  call16 site=0x61204933 in FUN_6120490b bytes cd32f7f020
+  call16 site=0x61204e9a in FUN_61204e30 bytes cdcbf1f020
+  call16 site=0x61204ff6 in FUN_61204f83 bytes cd6ff0f020
+  call16 site=0x61205106 in FUN_61205013 bytes cd5feff020
+  call16 site=0x6120520a in FUN_6120519f bytes cd5beef020
+  call16 site=0x6120538d in FUN_61205212 bytes cdd8ecf020
+  call16 site=0x612053ee in FUN_61205395 bytes cd77ecf020
+  call16 site=0x6120542b in FUN_612053f6 bytes cd3aecf020
+target 0x6124f6c7 FUN_6124f6c7 sites=185 inside_function=162
+  call16 site=0x6124e47b in FUN_6124e448 bytes cd4c12f040
+  call16 site=0x6124e8a8 in FUN_6124e864 bytes cd1f0ef040
+  call16 site=0x6124e9af in FUN_6124e941 bytes cd180df040
+  call16 site=0x61255036 in FUN_61254f79 bytes cd91a6f040
+  call16 site=0x612550a4 in FUN_61254f79 bytes cd23a6f040
+  call16 site=0x61255647 in FUN_6125563c bytes cd80a0f040
+  call16 site=0x6125565b in FUN_61255650 bytes cd6ca0f040
+  call16 site=0x6125566f in FUN_61255664 bytes cd58a0f040
+  call16 site=0x61255683 in FUN_61255678 bytes cd44a0f040
+  call16 site=0x61255697 in FUN_6125568c bytes cd30a0f040
+  call16 site=0x612556ab in FUN_612556a0 bytes cd1ca0f040
+  call16 site=0x612556bf in FUN_612556b4 bytes cd08a0f040
+  call16 site=0x612556d3 in FUN_612556c8 bytes cdf49ff040
+  call16 site=0x61255703 in FUN_612556dc bytes cdc49ff040
+  call16 site=0x61255d85 in FUN_61255d5f bytes cd4299f040
+  call16 site=0x61256234 in FUN_6125612f bytes cd9394f040
+  call16 site=0x6125624c in FUN_6125612f bytes cd7b94f040
+  call16 site=0x61256264 in FUN_6125612f bytes cd6394f040
+  call16 site=0x6125627c in FUN_6125612f bytes cd4b94f040
+  call16 site=0x61256292 in FUN_6125612f bytes cd3594f040
+  call16 site=0x61256344 in FUN_6125612f bytes cd8393f040
+  call16 site=0x61256423 in FUN_6125612f bytes cda492f040
+  call16 site=0x61256435 in FUN_6125612f bytes cd9292f040
+  call16 site=0x61256571 in FUN_6125612f bytes cd5691f040
+  ... 138 more
+target 0x61252031 known-call-from-dispatch sites=1 inside_function=1
+  call16 site=0x6124f6cb in FUN_6124f6c7 bytes cd6629f010
+sanity 0x6124f6cb bytes cd6629f010 disp=10598 absolute_target=0x61252031
+

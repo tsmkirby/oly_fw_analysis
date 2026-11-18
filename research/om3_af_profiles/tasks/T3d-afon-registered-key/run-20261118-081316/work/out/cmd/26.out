@@ -1,0 +1,16 @@
+overlay {"step": "overlay", "changed": 140, "valueHooks": false, "descriptorLink": false}
+redirects {"step": "redirects", "page27": {"at": "0x6158f0fc", "before": "44dc586102000000", "after": "30e9316003000000"}, "source": {"at": "0x61529cec", "before": "1298526102000000", "after": "28e9316003000000"}}
+cells-before {"step": "cells-before", "k5b82": [0, 0, 0, 0, 0, 3200, 0, 0, 0, 0, 0, 0, 3200, 3200, 0, 0], "k90a1": [1, 1]}
+k1-hook {"step": "k1-hook", "explanation": "The item-1 decision opens the chooser if the selected UI id resolves to a registered settings key. Returning key 0x5b82 and index 0 from the mapped getter and the index getter, only for UI id 0x3D6F, then makes OK return D0=4 and open the two-option chooser of list 0x6158ba04. Confirm would write 0x5b82 index 0 through the native setter, and cancel would not.", "change": "two EMULATOR-ONLY hooks, and nothing else, against the E1 baseline"}
+before highlight=@A02F@ Priority file=C:\Dev\OM3-tasks\T3d-afon-registered-key\ws\work\out\exp-k1-d1-3d6f-before.png
+before texts: @A066@ Priority | @A066@ Priority | @A02F@ Priority | @A02C@@A065@AF Button
+before cells {"k5b82": [0, 0, 0, 0, 0, 3200, 0, 0, 0, 0, 0, 0, 3200, 3200, 0, 0], "k90a1": [1, 1], "k1dd1": [27, 39, 3, 3, 3, 3, 3, 3, 3, 3], "k99a1": [2, 0, 2, 0, 2, 0, 5, 5], "k9a41": 0, "k5962": [526, 526, 526, 526, 526, 526], "modeAfHome_99d2": [526, 526, 526], "modeAfHomeArea_9fa1": [0, 0, 0], "modeAfHomeAreaTarget_dfa1": 0, "modeAfHomeState_1ea1": 0}
+after highlight=@A02F@ Priority chooser=False returnD0=[1] cmpD0=[1, 0] cmpD2=[0, 0]
+after texts: @A066@ Priority | @A066@ Priority | @A02F@ Priority | @A02C@@A065@AF Button
+getter []
+match [{"site": "table-call", "count": 2, "key1Half": 1}, {"part": "match", "site": "row-token", "d0": 2}, {"part": "match", "site": "key2", "d0": 15727}, {"part": "match", "site": "key1", "d0": 15727}, {"part": "match", "site": "table-return", "d0": 0}]
+parts {"rowRefresh": [], "chooserConstruction": [], "inputFocus": [], "commit": []}
+decideReads []
+after cells {"k5b82": [0, 0, 0, 0, 0, 3200, 0, 0, 0, 0, 0, 0, 3200, 3200, 0, 0], "k90a1": [1, 1], "k1dd1": [27, 39, 3, 3, 3, 3, 3, 3, 3, 3], "k99a1": [2, 0, 2, 0, 2, 0, 5, 5], "k9a41": 0, "k5962": [526, 526, 526, 526, 526, 526], "modeAfHome_99d2": [526, 526, 526], "modeAfHomeArea_9fa1": [0, 0, 0], "modeAfHomeAreaTarget_dfa1": 0, "modeAfHomeState_1ea1": 0}
+no-chooser {"step": "no-chooser", "note": "OK left D0 at 1 and did not open a chooser, so there is no confirm and no cancel to press.", "cells": {"k5b82": [0, 0, 0, 0, 0, 3200, 0, 0, 0, 0, 0, 0, 3200, 3200, 0, 0], "k90a1": [1, 1], "k1dd1": [27, 39, 3, 3, 3, 3, 3, 3, 3, 3], "k99a1": [2, 0, 2, 0, 2, 0, 5, 5], "k9a41": 0, "k5962": [526, 526, 526, 526, 526, 526], "modeAfHome_99d2": [526, 526, 526], "modeAfHomeArea_9fa1": [0, 0, 0], "modeAfHomeAreaTarget_dfa1": 0, "modeAfHomeState_1ea1": 0}}
+done {"step": "done", "measured": true, "ok": false, "chooser": false}

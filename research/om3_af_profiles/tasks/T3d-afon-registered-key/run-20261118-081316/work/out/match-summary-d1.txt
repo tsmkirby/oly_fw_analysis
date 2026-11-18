@@ -1,0 +1,36 @@
+== 2154 returnD0=[4] cmpD0=[4, 0] highlight=@A066@ Priority
+  table-call count=2 table=0x6150c514 obj=0x6247a270 key1Half=1 records=2
+    [0] w0=0x1 h4=2154 h6=0 fn=0x0 None
+    [1] w0=0x1 h4=2155 h6=0 fn=0x0 None
+  {"site":"row-token","d0":0}
+  {"site":"key2","d0":2154}
+  {"site":"key1","d0":2154}
+  {"site":"record-hit","record":"0x6150c514","w0":"0x1","h4":2154,"h6":0,"fn":"0x0","fnName":null,"bytes":"010000006a0800000000000008000000e301000000000000"}
+  {"site":"table-return","d0":4}
+== 2155 returnD0=[4] cmpD0=[4, 0] highlight=@A066@ Priority
+  table-call count=2 table=0x6150c514 obj=0x6247a270 key1Half=1 records=2
+    [0] w0=0x1 h4=2154 h6=0 fn=0x0 None
+    [1] w0=0x1 h4=2155 h6=0 fn=0x0 None
+  {"site":"row-token","d0":1}
+  {"site":"key2","d0":2155}
+  {"site":"key1","d0":2155}
+  {"site":"record-hit","record":"0x6150c52c","w0":"0x1","h4":2155,"h6":0,"fn":"0x0","fnName":null,"bytes":"010000006b0800000000000008000000e401000000000000"}
+  {"site":"table-return","d0":4}
+== 3d6f returnD0=[1] cmpD0=[1, 0] highlight=@A02F@ Priority
+  table-call count=2 table=0x6150c514 obj=0x6247a270 key1Half=1 records=2
+    [0] w0=0x1 h4=2154 h6=0 fn=0x0 None
+    [1] w0=0x1 h4=2155 h6=0 fn=0x0 None
+  {"site":"row-token","d0":2}
+  {"site":"key2","d0":15727}
+  {"site":"key1","d0":15727}
+  {"site":"table-return","d0":0}
+== caf-area returnD0=[4] cmpD0=[4, 0] highlight=@A02C@@A065@C-AF Area
+  table-call count=3 table=0x6150c4cc obj=0x6247a270 key1Half=1 records=3
+    [0] w0=0x1 h4=2156 h6=0 fn=0x0 None
+    [1] w0=0x1 h4=2157 h6=0 fn=0x0 None
+    [2] w0=0x1 h4=2205 h6=0 fn=0x0 None
+  {"site":"row-token","d0":0}
+  {"site":"key2","d0":2156}
+  {"site":"key1","d0":2156}
+  {"site":"record-hit","record":"0x6150c4cc","w0":"0x1","h4":2156,"h6":0,"fn":"0x0","fnName":null,"bytes":"010000006c0800000000000008000000e001000000000000"}
+  {"site":"table-return","d0":4}

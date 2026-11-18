@@ -1,0 +1,77 @@
+step overlay error=None texts=None
+step redirects error=None texts=None
+step cells-before error=None texts=None
+step page error=None texts=['@A066@ Priority', '@A066@ Priority', '@A02F@ Priority', '@A02C@@A065@AF Button']
+== 2154 returnD0=[4] cmpD0=[4, 0]
+  before='@A066@ Priority' after0='When a specified subject is detected at\r\nthe selected AF tar'
+  {'site': 'field-50', 'd0': 273, 'obj': '0x6247a270', 'at4c': '0x611a1229'}
+  decide-call d0=36876 target=0x611a1229 FUN_611a1229 field50=0x111 field4c=0x611a1229 a0=0x6247a270
+  {'site': 'decide-entry', 'd0': 36876, 'd1': 0, 'name': 'FUN_611a1229', 'a0': '0x6247a270', 'a1': '0x611a1229'}
+  {'site': 'decide-return', 'd0': 4, 'd1': 0}
+  {'site': 'return-d0', 'd0': 4, 'd1': 0}
+  {'site': 'cmp-1', 'd0': 4, 'd1': 1648861968}
+  {'site': 'cmp-1', 'd0': 0, 'd1': 1648870848}
+  decideReads 7
+    descriptor d0=1448 d1=1 caller=FUN_6040547b mdr=0x60405481
+    mapped-getter d0=1448 d1=6000 caller=FUN_6041931e mdr=0x60419343
+    index-getter d0=1448 d1=0 caller=FUN_6041931e mdr=0x6041934a
+    store-63380 d0=22849 d1=0 caller=FUN_6041a1f9 mdr=0x6041a202
+    registry d0=22849 d1=0 caller=FUN_60063380 mdr=0x6006338c
+    descriptor d0=1448 d1=1 caller=FUN_6040547b mdr=0x60405481
+    descriptor d0=1448 d1=1 caller=FUN_6040547b mdr=0x60405481
+== 2155 returnD0=[4] cmpD0=[4, 0]
+  before='@A066@ Priority' after0='When a specified subject is detected at\r\nthe selected AF tar'
+  {'site': 'field-50', 'd0': 273, 'obj': '0x6247a270', 'at4c': '0x611a1229'}
+  decide-call d0=36876 target=0x611a1229 FUN_611a1229 field50=0x111 field4c=0x611a1229 a0=0x6247a270
+  {'site': 'decide-entry', 'd0': 36876, 'd1': 0, 'name': 'FUN_611a1229', 'a0': '0x6247a270', 'a1': '0x611a1229'}
+  {'site': 'decide-return', 'd0': 4, 'd1': 0}
+  {'site': 'return-d0', 'd0': 4, 'd1': 0}
+  {'site': 'cmp-1', 'd0': 4, 'd1': 1648861968}
+  {'site': 'cmp-1', 'd0': 0, 'd1': 1648870848}
+  decideReads 7
+    descriptor d0=1448 d1=1 caller=FUN_6040547b mdr=0x60405481
+    mapped-getter d0=1448 d1=6000 caller=FUN_6041931e mdr=0x60419343
+    index-getter d0=1448 d1=0 caller=FUN_6041931e mdr=0x6041934a
+    store-63380 d0=22849 d1=0 caller=FUN_6041a1f9 mdr=0x6041a202
+    registry d0=22849 d1=0 caller=FUN_60063380 mdr=0x6006338c
+    descriptor d0=1448 d1=1 caller=FUN_6040547b mdr=0x60405481
+    descriptor d0=1448 d1=1 caller=FUN_6040547b mdr=0x60405481
+== 3d6f returnD0=[1] cmpD0=[1, 0]
+  before='@A02F@ Priority' after0='@A066@ Priority'
+  {'site': 'field-50', 'd0': 273, 'obj': '0x6247a270', 'at4c': '0x611a1229'}
+  decide-call d0=36876 target=0x611a1229 FUN_611a1229 field50=0x111 field4c=0x611a1229 a0=0x6247a270
+  {'site': 'decide-entry', 'd0': 36876, 'd1': 0, 'name': 'FUN_611a1229', 'a0': '0x6247a270', 'a1': '0x611a1229'}
+  {'site': 'decide-return', 'd0': 1, 'd1': 0}
+  {'site': 'return-d0', 'd0': 1, 'd1': 0}
+  {'site': 'cmp-1', 'd0': 1, 'd1': 1648861968}
+  {'site': 'field-50', 'd0': 273, 'obj': '0x6247a270', 'at4c': '0x611a1229'}
+  decide-call d0=36877 target=0x611a1229 FUN_611a1229 field50=0x111 field4c=0x611a1229 a0=0x6247a270
+  {'site': 'decide-entry', 'd0': 36877, 'd1': 0, 'name': 'FUN_611a1229', 'a0': '0x6247a270', 'a1': '0x611a1229'}
+  {'site': 'decide-return', 'd0': 0, 'd1': 99}
+  {'site': 'cmp-1', 'd0': 0, 'd1': 1648861968}
+  decideReads 7
+    descriptor d0=1448 d1=1 caller=FUN_6040547b mdr=0x60405481
+    mapped-getter d0=1448 d1=6000 caller=FUN_6041931e mdr=0x60419343
+    index-getter d0=1448 d1=0 caller=FUN_6041931e mdr=0x6041934a
+    store-63380 d0=22849 d1=0 caller=FUN_6041a1f9 mdr=0x6041a202
+    registry d0=22849 d1=0 caller=FUN_60063380 mdr=0x6006338c
+    descriptor d0=1448 d1=1 caller=FUN_6040547b mdr=0x60405481
+    descriptor d0=1448 d1=1 caller=FUN_6040547b mdr=0x60405481
+== caf-area returnD0=[4] cmpD0=[4, 0]
+  before='@A02C@@A065@C-AF Area' after0='After focusing on the subject once,\r\nkeeps focusing on and t'
+  {'site': 'field-50', 'd0': 324, 'obj': '0x6247a270', 'at4c': '0x611a48d8'}
+  decide-call d0=36876 target=0x611a48d8 FUN_611a48d8 field50=0x144 field4c=0x611a48d8 a0=0x6247a270
+  {'site': 'decide-entry', 'd0': 36876, 'd1': 0, 'name': 'FUN_611a48d8', 'a0': '0x6247a270', 'a1': '0x611a48d8'}
+  {'site': 'decide-return', 'd0': 4, 'd1': 0}
+  {'site': 'return-d0', 'd0': 4, 'd1': 0}
+  {'site': 'cmp-1', 'd0': 4, 'd1': 1648874480}
+  {'site': 'cmp-1', 'd0': 0, 'd1': 1648870848}
+  decideReads 7
+    descriptor d0=1448 d1=1 caller=FUN_6040547b mdr=0x60405481
+    mapped-getter d0=1448 d1=6000 caller=FUN_6041931e mdr=0x60419343
+    index-getter d0=1448 d1=0 caller=FUN_6041931e mdr=0x6041934a
+    store-63380 d0=22849 d1=0 caller=FUN_6041a1f9 mdr=0x6041a202
+    registry d0=22849 d1=0 caller=FUN_60063380 mdr=0x6006338c
+    descriptor d0=1448 d1=1 caller=FUN_6040547b mdr=0x60405481
+    descriptor d0=1448 d1=1 caller=FUN_6040547b mdr=0x60405481
+step cells-after error=None texts=None

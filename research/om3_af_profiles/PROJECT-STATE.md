@@ -8,9 +8,11 @@ Last updated: 2026-11-17 (Phase 1 preparation).
 
 ## 1. Continuation point
 
-- **Now:** T3d is running. It tests whether a native row needs a registered settings key. T3c found that
-  the viewer opens an editor only for IDs that map to a key, which **links the menu row to the storage
-  decision Q7**. T2b, T3a and T3c are closed (18 Nov).
+- **Now:** T3e is running. It gives the AF-ON row its own record in the page-27 action table, then
+  tests confirm and cancel into the RAM profile and the 10-zone list.
+  - T3d showed that this table, not a registered key, decides whether OK opens a chooser.
+  - Storage (Q7) is not a prerequisite for the UI prototype.
+  - T2b, T3a, T3c and T3d are closed (18 Nov).
   - **T2b:** UNRESOLVED. The `0x5b82` line was rejected four times. The storage question is with the
     owner (Q7).
   - **T3a:** BLOCKED. The row draws and native keys reach it (label `0x0DD2` "AF Target Mode", UI ID
@@ -70,7 +72,8 @@ The autonomous programme ends at either of these:
 | T2b | Close Sol's open items for `0x5b82` | **Closed: UNRESOLVED** (two Sol rejections; storage escalated, Q7) | [decision](tasks/T2b-cell-ownership-gaps/decision.md) |
 | T3a | AF-ON zone row on page 27, RAM-only profile (OM-Emu) | **Closed: BLOCKED** (row drawn; no editor opens; two Sol rejections) | [decision](tasks/T3a-afon-zone-row/decision.md) |
 | T3c | Route the zone row to a stock editor: measure the editor dispatch and pages 28/29, then prototype R1 | **Closed: BLOCKED** (two Sol rejections; substance confirmed). Dispatch branch `0x6124f7d4`: D0=4 for stock rows, 1 for `0x3D6F`. Provider ID decides (E4). Pages 28/29 dead on OM-3 | [decision](tasks/T3c-afon-editor-routing/decision.md) |
-| T3d | Registered-key hypothesis: `0x3D6F` → registered key cell (EMULATOR-ONLY, `0x5b82[0]`) — does the native chooser open and commit? | Running | [tasks/T3d-afon-registered-key](tasks/T3d-afon-registered-key/brief.md) | [tasks/T3c-afon-editor-routing](tasks/T3c-afon-editor-routing/brief.md) |
+| T3d | Registered-key hypothesis: `0x3D6F` → registered key cell (EMULATOR-ONLY, `0x5b82[0]`) — does the native chooser open and commit? | **Closed: hypothesis refuted; finding accepted (qualified).** The page-27 action table (`0x6150f5f0`, 24-byte records, UI ID at +4, compare `0x611a26e1`) decides | [decision](tasks/T3d-afon-registered-key/decision.md) |
+| T3e | Own action record for `0x3D6F`; confirm/cancel into the RAM profile; then the zone list; acceptance | Running | [tasks/T3e-afon-action-record](tasks/T3e-afon-action-record/brief.md) | [tasks/T3c-afon-editor-routing](tasks/T3c-afon-editor-routing/brief.md) |
 | T3b | AF-ON target-position editor routing | Queued after T3c (uses T3c's R2 measurement) | AFON-MENU-RESEARCH §9 |
 | — | Beyond T3: persistence, display, hook point (Q4), acceptance matrix | Planned by Opus as results arrive | §2 |
 | — | CPU3 request/loader port | Deferred; regression only | AFON-MENU-RESEARCH §9 item 5 |
@@ -112,10 +115,11 @@ The autonomous programme ends at either of these:
       This is larger work and needs its own research.
     - (c) Keep the profile RAM-only, resetting at power-on. This contradicts FEATURE-SPEC's persistence
       requirement.
-  - **Update 18 Nov (T3c):** the menu row probably *does* depend on this choice. The native viewer
-    opened an editor only for UI IDs that resolve to a registered key, so a RAM-only value behind an
-    unmapped ID did not get a chooser. T3d tests this offline by mapping the row to `0x5b82[0]`, which is
-    an emulator experiment and not a choice.
+  - **Update 18 Nov (T3c):** I suspected the menu row depends on this choice.
+  - **Corrected by T3d (confirmed by Sol):** mapping the row to a registered key alone did **not** open the
+    chooser. What decides is a page-27 action table: 24-byte records keyed by UI ID, at `0x6150f5f0`,
+    count 2, compared at `0x611a26e1`. The menu row needs an action record, so the storage choice is
+    again not a prerequisite for the UI prototype.
 
 ## 7. Operating rules (owner, 17 Nov)
 
@@ -190,6 +194,10 @@ the workspace is still write-denied. Run
 (the machine's execution policy blocks plain `powershell -File`).
 It removes the rules and verifies that writing works again.
 
+**Coordinator rule (18 Nov).** Opus makes no edits under the research tree while a Grok or Sol run is
+active. The snapshot audit counts any such edit as a violation, and one did: see the T3d review
+`audit-note.md`.
+
 **Residual risks (documented, not hidden):**
 - **Read access.** A Low-integrity process can still *read* anything the user can, including
   tokens in the user profile. Network access is also unrestricted. This is inherent to running
@@ -241,6 +249,8 @@ ACL or label operation on any tree containing a junction; the scripts check for 
 | 2026-11-18 | Both correction rounds rejected. T2b is closed as UNRESOLVED, and storage is escalated to the owner in writing (Q7). T3a is closed as BLOCKED. T3c is a different approach: measure the stock editor dispatch and pages 28/29, then prototype the row→editor route (R1). | Opus | T2b/T3a decision.md |
 | 2026-11-18 | Sol rejected the first T3c run. Correction round: isolated experiments. E1 is row 2154 copied with only the ID changed. E2 is a text zone list built from the stock zone-name strings, because the stock chooser rows use text options and the dead page-28 rows use images. | Opus | T3c brief §7 |
 | 2026-11-18 | T3c correction rejected on wording only. Closed as BLOCKED, with Sol's qualifications applied in decision.md. T3d tests the registered-key hypothesis offline. | Opus | T3c decision.md |
+| 2026-11-18 | T3d refuted the registered-key hypothesis: the page-27 action table decides. Accepted with Sol's qualifications, without a correction round. The evidence gaps (uncapped traces, compare operands, the `*_ORIGINALLY` cells) are mandatory in T3e. | Opus | T3d decision.md |
+| 2026-11-18 | Audit flag in the T3d review: the coordinator edited PROJECT-STATE during the run. New rule: no coordinator edits under the research tree while an agent run is active. | Opus | T3d review `audit-note.md`; §9 |
 
 ## 12. Session resumption checklist (Opus)
 
