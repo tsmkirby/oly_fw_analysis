@@ -1,0 +1,36 @@
+address	function	kind	access	index_source	classification	evidence
+0x600e5874	bank7 registration record	b	read	count 16, width 2, payload 32 zero bytes	bulk-carry source (the record the defaults walker and the area image both use)	listings-5b82.txt header bytes 825b1000 then 32 zero bytes; only aligned key+count pair
+0x606274e0	UI map 0 id 2017 MODE_COLORTONE_TOY_PHOTO_TYPE3_CURSOR	b	read	stored index 5	named-index only	bytes 825b0500
+0x60627518	UI map 0 id 2031 MODE_COLORTONE_VINTAGE_TYPE3_CURSOR	b	read	stored index 12	named-index only	bytes 825b0c00
+0x60627524	UI map 0 id 2034 MODE_COLORTONE_PARTCOLOR_TYPE3_CURSOR	b	read	stored index 13	named-index only	bytes 825b0d00
+0x60419446	FUN_60419446	b	read	UI id selects the map entry; returns the stored key	named-index only	listings-5b82.txt function 60419446; no immediate 0x5b82
+0x60419696	FUN_60419696	b	read	same map entry; returns the stored index	named-index only	listings-5b82.txt function 60419696
+0x60419408	FUN_60419408	b	read	calls 60419446 then 60419696 then the getter	named-index only	listings-5b82.txt function 60419408
+0x6041931e	FUN_6041931e	b	read	calls 60419446 then 60419696 then the getter	named-index only	listings-5b82.txt function 6041931e
+0x60419315	FUN_60419315	b	read	tail into 6041931e	named-index only	listings-5b82.txt function 60419315
+0x601886f7	FUN_60188683	b	read	immediate UI id 0x7ef (2031), not an index	named-index only	listings window 601886f7 mov 0x7ef
+0x603cd465	FUN_603cd3dd	b	read	immediate UI id 0x7ef	named-index only	listings window 603cd465
+0x603cd472	FUN_603cd3dd	b	read	immediate UI id 0x7ef	named-index only	listings window 603cd472
+0x6042e20c	FUN_6042e1d7	b	read	mov 0x7ef,D0 then call 0x60416fac with a menu table	named-index only	listings window 6042e20c
+0x604800c0	FUN_6047f9f4	b	read	mov 0x7f2,D0 as a menu-builder argument beside 0x7d9 and 0x7e8	named-index only	listings window 604800c0
+0x60c930ea	FUN_60c927ff	b	read	immediate UI id 0x7ef	named-index only	listings window 60c930ea
+0x60c93115	FUN_60c927ff	b	read	immediate UI id 0x7f2	named-index only	listings window 60c93115
+0x617046b7	FUN_61703f34	b	read	mov 0x7e1,A1 then jmp 0x61704c7d (menu registration)	named-index only	listings window 617046b7
+0x61709e27	FUN_617093df	b	read	immediate UI id 0x7e1	named-index only	listings window 61709e27
+0x61709e67	FUN_617093df	b	read	immediate UI id 0x7ef	named-index only	listings window 61709e67
+0x6173b56f	FUN_6173b537	b	read	mov 0x7e1,D1 as a menu argument	named-index only	listings window 6173b56f
+0x60063380	FUN_60063380	a	read	index is the caller's D1; no site passes key 0x5b82 as an immediate	generic getter; reaches this key only with an index the caller supplies	listings function 60063380; native read used by the probe
+0x60063431	FUN_60063431	a	write	index is the caller's D1; value in A1	generic setter; the probe is the only caller that passes 0x5b82	listings function 60063431
+0x600634ee	FUN_600634ee	a	write	index times width 2	store used by the setter	listings function 600634ee
+0x60063a20	FUN_60063a20	a	read	index times width	typed read used by the getter	listings function 60063a20
+0x600633ff	FUN_600633ff	c	read	whole key; count from the registry	bulk carry of one key; key is an argument, never the immediate 0x5b82	listings function 600633ff
+0x600633a2	FUN_600633a2	c	write	whole key; count from the registry	bulk carry of one key; key is an argument	listings function 600633a2
+0x60063684	FUN_60063684	c	copy	span given by the caller	bulk carry of a span; no immediate 0x5b82	listings function 60063684
+0x6006148f	FUN_6006148f	c	copy	whole area image, every index	bulk carry	listings function 6006148f; called from 600610fe
+0x600610d2	FUN_600610d2	c	copy	calls 6006148f when the area checks out	bulk carry of a valid bank image, including these cells	listings function 600610d2
+0x60062d93	FUN_60062d93	c	write	index 0 through count-1 from each registration record	bulk clear-or-rewrite to the ROM defaults (zeros for this key)	listings function 60062d93
+0x60062d28	FUN_60062d28	c	write	calls 60062d93(0x40000) for bank 7	bulk clear-or-rewrite of the whole bank-7 image	listings function 60062d28
+0x60062a60	FUN_60062a60	c	write	bank id in D0; 7 selects 60062d28	bulk clear-or-rewrite only when the caller passes bank 7	listings function 60062a60
+0x60063eb0	FUN_60063dc0	c	write	immediate mov 0x7,D0 then call 60062a60	bulk clear-or-rewrite; taken only after the bank-7 area check fails	listings window 60063eb2 bytes 8007 cdaeebc00c
+0x60062fe5	FUN_60062fe5	c	write	calls 60062d93(0x40000), then returns a size	bulk clear-or-rewrite as a side effect of the size helper	listings function 60062fe5
+0x600619a9	FUN_600619a9	c	write	prmdbg commands; set_def passes a bank id to 60062a60; size calls 60062fe5	bulk clear-or-rewrite from the debug console only; no direct caller	listings function 600619a9; pointers at 0x602ec448 and 0x602eda1c

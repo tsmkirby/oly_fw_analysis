@@ -1,0 +1,370 @@
+﻿{
+    "task":  "T2-cell-ownership",
+    "agent":  "grok",
+    "model":  "grok-4.7-high",
+    "brief_sha256":  "23cf4fa104ac04b52f34103903d393459cd39cc91a3d11905e8fe69ba911ef51",
+    "command":  "C:\\Dev\\OM3-tasks\\_agent\\cli\\node.exe (Low integrity, via C:\\Dev\\OM3-tasks\\T2-cell-ownership\\launch-20261117-211410.cmd) -p --model grok-4.7-high --output-format json --trust --workspace C:\\Dev\\OM3-tasks\\T2-cell-ownership\\ws \"Read TASK.md and then brief.md in this folder completely, and carry out the brief exactly. Section 0 of the brief overrides everything else. Write only under work. Finish by making sure work/result.md and work/evidence-manifest.json exist.\"",
+    "cursor_sandbox":  false,
+    "started":  "2026-11-17T21:14:56.6986411-05:00",
+    "ended":  "2026-11-17T21:58:56.0638650-05:00",
+    "timed_out":  false,
+    "exit_code":  0,
+    "lock_ok":  true,
+    "lock_output":  "locked 12 targets in 17.2 s; probe failures: 0",
+    "unlock_ok":  true,
+    "unlock_output":  "unlocked; rules that had disappeared while locked: 0; probe failures: 0",
+    "workspace_unchanged":  true,
+    "inputs_unchanged":  true,
+    "harvested":  [
+                      {
+                          "path":  "evidence-manifest.json",
+                          "bytes":  17292,
+                          "sha256":  "008d15e8edc7fd418161027cbf9053528bba5b83316b3d0ce8e2fcc66b76cb5a",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "result.md",
+                          "bytes":  10286,
+                          "sha256":  "d81f462a0a233e8372555c0ee2cb64c6239dc735347a73516e27acda14cde224",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\dynamic-5b82-control.jsonl",
+                          "bytes":  23072,
+                          "sha256":  "b6d815c0fbba70952023f3c2d9b55d22ea9f7113fbcc69d0c05a3e25f10d4cb7",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\dynamic-5b82-mark-a.jsonl",
+                          "bytes":  13633,
+                          "sha256":  "c0c5abbcb86ccc9f2ebfbe8e50967bf254575706f9f13d09f3943ad9f976296a",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\dynamic-5b82-mark-b.jsonl",
+                          "bytes":  28501,
+                          "sha256":  "0d3fa5396a1db26d475110e22a808c1fdaff1e1972380b056cff178dc47544cd",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\dynamic-5b82-mark-c.jsonl",
+                          "bytes":  6228,
+                          "sha256":  "6342ee070385ac848f436fc49dc7bddc31f7b85ab10ee41ca5ea3fc0d5989554",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\dynamic-5b82-mark-d.jsonl",
+                          "bytes":  6422,
+                          "sha256":  "2650cd99b10e284a0d8e164bc7ad121c815202cef0fa256bfadb06bb6650e05f",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\dynamic-5b82-mark-e.jsonl",
+                          "bytes":  6239,
+                          "sha256":  "ab63d9586a50339ffb4061e22e9e7a77122fea6cdbadc12898741ee32903039c",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\dynamic-5b82-mark-f.jsonl",
+                          "bytes":  12472,
+                          "sha256":  "b9ef8d38d513ed1c2a5bd90864153aef198f13d67e5fecb7d4d90512416cdbb7",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\dynamic-5b82-mark-g.jsonl",
+                          "bytes":  11981,
+                          "sha256":  "44b857429f3c366a6cf54f57b0f91a56b394482e08daad6f74917ccdd67f8611",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\dynamic-5b82-mark-h.jsonl",
+                          "bytes":  12154,
+                          "sha256":  "83f2e399d586aa5ab84f020e56f95e984aed7fcdde6ea4b06e3e67706b10b6a7",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\dynamic-5b82-mark-i.jsonl",
+                          "bytes":  17101,
+                          "sha256":  "34254ab9dc8a83c6d71811bf12a2af33d89b96b4a71a4783155940af76635ccd",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\dynamic-5b82-mark-j.jsonl",
+                          "bytes":  17220,
+                          "sha256":  "2d3cb5e89fb7af6e29edaa51ccd886d15f1a9353b2dacf223e3f922b406930f3",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\dynamic-5b82-mark-k.jsonl",
+                          "bytes":  18647,
+                          "sha256":  "1580126c6b3625daf3b83a82cec15e8d5a6a397e3f88bef35c1b54a7eccd96e0",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\dynamic-5b82-mark-l.jsonl",
+                          "bytes":  15241,
+                          "sha256":  "1d92af02a8c6df9f9ee34cf855d42a38c60459bc8b3764667267bae40893cc06",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\dynamic-5b82-mark-m.jsonl",
+                          "bytes":  15861,
+                          "sha256":  "69acd547e34b9f7f50f36eb70b5db28f0f5fe7195985b2ae46f6e73674ef4021",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\dynamic-5b82-mark-n.jsonl",
+                          "bytes":  28501,
+                          "sha256":  "77c8a4e0dd729d0a3d33e1586670afc4cb48b8d7dcc470bd618b128ac5713299",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\listings-5b82.txt",
+                          "bytes":  65118,
+                          "sha256":  "b7cc5bd368ae9efcb33d6f37004343698f2ef6541ffa1b9bf3e465836302f77c",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\nvram-5b82-control.json",
+                          "bytes":  611828,
+                          "sha256":  "893ae52da09bfeab475b19d8feab70bbf3501c173cbad60033bc229cafb56579",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\nvram-5b82-mark-a.json",
+                          "bytes":  611828,
+                          "sha256":  "9e45dfb06694d6baf2068b03c5aa3c60aeeaf637f211e251885ff7bff214dff8",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\nvram-5b82-mark-b.json",
+                          "bytes":  611828,
+                          "sha256":  "4754a14ed74a4a0b4547b8bcd289fa3db9cffe793f1745d6e6c1d30ceee66118",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\nvram-5b82-mark-c.json",
+                          "bytes":  611828,
+                          "sha256":  "e407f83996500b67db2ef1173c403d312c654a142b86bbc6668a7c8f0df5e2c0",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\nvram-5b82-mark-d.json",
+                          "bytes":  611828,
+                          "sha256":  "59c825d4716ea8d9bf0dba67217383601b4f8338a21595be6c543b37822855c5",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\nvram-5b82-mark-e.json",
+                          "bytes":  611828,
+                          "sha256":  "e4e4e9c535e4138a9968209eee9d52f05674ba24416d7def5cf4f475b3d22831",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\nvram-5b82-mark-f.json",
+                          "bytes":  611828,
+                          "sha256":  "248c3e132c14ca707abd099c48a0a9ad9b57acac24f95b33ff68d0960dd1de75",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\nvram-5b82-mark-g.json",
+                          "bytes":  611828,
+                          "sha256":  "248c3e132c14ca707abd099c48a0a9ad9b57acac24f95b33ff68d0960dd1de75",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\nvram-5b82-mark-h.json",
+                          "bytes":  611828,
+                          "sha256":  "5c2281a99234c0d154e649ef7c2a529de73f85118b9f3356d1aac27b2228fe2c",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\nvram-5b82-mark-i.json",
+                          "bytes":  611828,
+                          "sha256":  "c5ad29a86415249e015bcfad457ac26e7c7ec6193e415e257ac1284ff4bcd1b9",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\nvram-5b82-mark-j.json",
+                          "bytes":  611828,
+                          "sha256":  "c5ad29a86415249e015bcfad457ac26e7c7ec6193e415e257ac1284ff4bcd1b9",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\nvram-5b82-mark-k.json",
+                          "bytes":  611828,
+                          "sha256":  "c5ad29a86415249e015bcfad457ac26e7c7ec6193e415e257ac1284ff4bcd1b9",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\nvram-5b82-mark-l.json",
+                          "bytes":  611828,
+                          "sha256":  "c5ad29a86415249e015bcfad457ac26e7c7ec6193e415e257ac1284ff4bcd1b9",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\nvram-5b82-mark-m.json",
+                          "bytes":  611828,
+                          "sha256":  "c5ad29a86415249e015bcfad457ac26e7c7ec6193e415e257ac1284ff4bcd1b9",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\nvram-5b82-mark-n.json",
+                          "bytes":  611828,
+                          "sha256":  "4754a14ed74a4a0b4547b8bcd289fa3db9cffe793f1745d6e6c1d30ceee66118",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\scan-keys-v2.txt",
+                          "bytes":  136126,
+                          "sha256":  "11cf6e4e50964b7975d02e94f68ba7c9b8eec44a556e350cf9c46c37f3a68f4f",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\uses-5b82.tsv",
+                          "bytes":  4902,
+                          "sha256":  "42f37c48709f035a737ac264b5edf52a925be70e7c016290347d4147dc049e6b",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\verdict.md",
+                          "bytes":  4469,
+                          "sha256":  "471cf50380439e97817be9bc13fdbcd6db370dd6afc5eab524152ea440dd120c",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "scripts\\build_manifest_v1.py",
+                          "bytes":  5929,
+                          "sha256":  "e8a6167d47c64c5523a31146699299c851a7fd9657e9351cd54143f2d94d8d29",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "scripts\\build_manifest_v2.py",
+                          "bytes":  6200,
+                          "sha256":  "514c95cad9494475edf1d1bf4dbd07aee168693a8b3b43815a096a83ece2f884",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "scripts\\dump_strings_v1.py",
+                          "bytes":  631,
+                          "sha256":  "2555bd5ca571923d2c101a1508dfd23e7a3f7212cc37bf1082c3bd417df59598",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "scripts\\extract_listings_v1.py",
+                          "bytes":  4065,
+                          "sha256":  "c676221e9bc4e4bb64f5b2f62c7d3b0d7fce19384052af941e133699efe5ae69",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "scripts\\find_menu_strings_v1.py",
+                          "bytes":  592,
+                          "sha256":  "310908979165ebd81b5fb56671d00283b159cc072340f4d0817228e2e5018bdd",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "scripts\\own_5b82_v1.mjs",
+                          "bytes":  9927,
+                          "sha256":  "e3c6f1491b8aa06a4341955a148f0e4684402f559c9b032264ed35c35613cf24",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "scripts\\own_5b82_v10.mjs",
+                          "bytes":  8858,
+                          "sha256":  "973057f386e88478a8efa86b3c51012e382e9c29b697388f243f4301884032d7",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "scripts\\own_5b82_v11.mjs",
+                          "bytes":  8796,
+                          "sha256":  "e79f5cf836c78e09a44886d084fb30a1dad1c31e3992df1d2a27c4c2b6e239dd",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "scripts\\own_5b82_v12.mjs",
+                          "bytes":  8324,
+                          "sha256":  "a129b95d964fe3494803b71ffe60d08a23f56e306cb231d9e044d363e064d7df",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "scripts\\own_5b82_v13.mjs",
+                          "bytes":  8566,
+                          "sha256":  "a06a6277b6b0e0e2dc4f9e0e2647106c30a856b6f50e204158f9a7c8622b9994",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "scripts\\own_5b82_v2.mjs",
+                          "bytes":  11055,
+                          "sha256":  "7da8508b5bca6fa961c7a64b26a4bbb9288bd13ac5301fc035be635cdfdda624",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "scripts\\own_5b82_v3.mjs",
+                          "bytes":  7767,
+                          "sha256":  "22127a7f80a6d1e17457ec4cd2e5594946d405ff1d516ec61893ab1a3b844ca2",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "scripts\\own_5b82_v4.mjs",
+                          "bytes":  8861,
+                          "sha256":  "97c656594f87c869f294f36bc90fa7f0af293ffa6c59c382e16dbd0d38bd4b72",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "scripts\\own_5b82_v5.mjs",
+                          "bytes":  8781,
+                          "sha256":  "1ad4e90e51528ed75f6ac1266f8de2ecdefac424d9fe8257f2d3f9734ea3e464",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "scripts\\own_5b82_v6.mjs",
+                          "bytes":  8788,
+                          "sha256":  "650bdaa563cae9c1ead0c46d422a02be3c1a4f541d980eff96d1bff5d91ffad8",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "scripts\\own_5b82_v7.mjs",
+                          "bytes":  8763,
+                          "sha256":  "03b8448c5bdddb352de677956ba01f410a53435ffb94209063133a43e8c048aa",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "scripts\\own_5b82_v8.mjs",
+                          "bytes":  8680,
+                          "sha256":  "52c6a1d6bb2f907d283576b51674b3e650edb718ac1bc00c65f695e3d5659b55",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "scripts\\own_5b82_v9.mjs",
+                          "bytes":  8676,
+                          "sha256":  "52f0f619005aed37e35c1ec3043be225fb331adf09ab848855004b4c0b670d7a",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "scripts\\scan_keys_v1.py",
+                          "bytes":  18163,
+                          "sha256":  "8fb1b20cadb6a44c4a29402c6cfb40167fbb3bb8e75467830e0cfa531e9f9b0a",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "scripts\\scan_keys_v2.py",
+                          "bytes":  18178,
+                          "sha256":  "0ad7d5cb1c1b3351cbbbc1e007d5f8a34fa61fa2c120e3d99935cd2cd83617ca",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "scripts\\summarize_dyn_v1.py",
+                          "bytes":  733,
+                          "sha256":  "62c1a3e47611e5417845bab8da05656670773eb86f9ab80294a4c9a044177e0f",
+                          "copied":  true
+                      }
+                  ],
+    "usage":  {
+                  "inputTokens":  225536,
+                  "outputTokens":  27076,
+                  "cacheReadTokens":  6228096,
+                  "cacheWriteTokens":  0,
+                  "reasoningTokens":  12706
+              },
+    "ok":  true
+}

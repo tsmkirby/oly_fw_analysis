@@ -1,0 +1,2006 @@
+scan_keys_v2
+main bytes 33554368 sha256 5e8d376e9111a44ac0352f26030d7c1b17026d42c45f3600cfa02a0e8c5b7d59
+res  bytes 143523776 sha256 3d9fd4426b45fbe4b715599422af38c6d22392c08543a69f63c28291c5a0b059
+names 2915 component_offset 0x28803f0 stride 52
+
+## registration tables
+table 0x60095584 records 452 zero-key at 0x600b8f50
+table 0x600b8f54 records 544 zero-key at 0x600bb5e0
+table 0x600bb5ec records 128 zero-key at 0x600bda6c
+table 0x600bda78 records 204 zero-key at 0x600e4b54
+table 0x600e4bec records 1215 zero-key at 0x6011fe20
+registered distinct keys 2543
+
+## target registration records
+key 0x5b52 table 0x600e4bec record 0x600e5808 count 16 width 2 payload 0x600e580c len 32 next 0x600e582c
+  header bytes 525b1000
+  payload hex 0000000000000000000000000000000000000000000000000000000000000000
+  u16 values [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+key 0x5b82 table 0x600e4bec record 0x600e5874 count 16 width 2 payload 0x600e5878 len 32 next 0x600e5898
+  header bytes 825b1000
+  payload hex 0000000000000000000000000000000000000000000000000000000000000000
+  u16 values [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+key 0xf5e1 table 0x600e4bec record 0x6011fa30 count 25 width 1 payload 0x6011fa34 len 25 next 0x6011fa50
+  header bytes e1f51900
+  payload hex 00000000000000000000000000000000000000000000000000
+  u8 values [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+key 0xf5f1 table 0x600e4bec record 0x6011fa50 count 25 width 1 payload 0x6011fa54 len 25 next 0x6011fa70
+  header bytes f1f51900
+  payload hex 00000000000000000000000000000000000000000000000000
+  u8 values [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+## map sanity
+2154 entry 0x60627704 key 0x90a1 index 0 tag map0
+2155 entry 0x60627708 key 0x90a1 index 1 tag map0
+
+## every map/halfword slot whose key is a target
+key 0x5b82 named slots 3
+  id 2017 index 5 entry 0x606274e0 map0 MODE_COLORTONE_TOY_PHOTO_TYPE3_CURSOR
+  id 2031 index 12 entry 0x60627518 map0 MODE_COLORTONE_VINTAGE_TYPE3_CURSOR
+  id 2034 index 13 entry 0x60627524 map0 MODE_COLORTONE_PARTCOLOR_TYPE3_CURSOR
+key 0x5b52 named slots 4
+  id 2009 index 1 entry 0x606274c0 map0 MODE_COLORTONE_FANTASIC_FOCUS_CURSOR
+  id 2012 index 3 entry 0x606274cc map0 MODE_COLORTONE_LIGHT_TONE_CURSOR
+  id 2022 index 8 entry 0x606274f4 map0 MODE_COLORTONE_GENTLE_SEPIA_CURSOR
+  id 2037 index 15 entry 0x60627530 map0 MODE_COLORTONE_PLACAME_CURSOR
+key 0xf5f1 named slots 3
+  id 872 index 5 entry 0x606262fc map0 MODE_ART_EFFECT_HYBRID_TOY_PHOTO_TYPE3
+  id 879 index 21 entry 0x60626318 map0 MODE_ART_EFFECT_HYBRID_VINTAGE_TYPE3
+  id 881 index 22 entry 0x60626320 map0 MODE_ART_EFFECT_HYBRID_PARTCOLOR_TYPE3
+key 0xf5e1 named slots 12
+  id 868 index 0 entry 0x606262ec map0 MODE_ART_EFFECT_HYBRID_POPART_TYPE2
+  id 869 index 2 entry 0x606262f0 map0 MODE_ART_EFFECT_HYBRID_DAYDREAM_TYPE2
+  id 870 index 4 entry 0x606262f4 map0 MODE_ART_EFFECT_HYBRID_ROUGH_MONOCHROME_TYPE2
+  id 871 index 5 entry 0x606262f8 map0 MODE_ART_EFFECT_HYBRID_TOY_PHOTO_TYPE2
+  id 873 index 6 entry 0x60626300 map0 MODE_ART_EFFECT_HYBRID_MINIATURE_TYPE2
+  id 874 index 7 entry 0x60626304 map0 MODE_ART_EFFECT_HYBRID_CROSS_PROCESS_TYPE2
+  id 875 index 9 entry 0x60626308 map0 MODE_ART_EFFECT_HYBRID_DRAMATIC_TONE_TYPE2
+  id 876 index 19 entry 0x6062630c map0 MODE_ART_EFFECT_HYBRID_LIGNE_CLAIR_TYPE2
+  id 877 index 20 entry 0x60626310 map0 MODE_ART_EFFECT_HYBRID_PASTEL_TYPE2
+  id 878 index 21 entry 0x60626314 map0 MODE_ART_EFFECT_HYBRID_VINTAGE_TYPE2
+  id 880 index 22 entry 0x6062631c map0 MODE_ART_EFFECT_HYBRID_PARTCOLOR_TYPE2
+  id 1462 index 23 entry 0x60626c34 map0 MODE_ART_EFFECT_HYBRID_BLEACH_BYPASS_TYPE2
+
+## COLORTONE cursor and ART_EFFECT hybrid ids
+  id 111 key 0x9481 index 0 entry 0x60625718 MODE_COLORTONE
+  id 369 key 0x44d1 index 0 entry 0x60625b20 MODE_ART_EFFECT_HYBRID_POPART
+  id 370 key 0x44d1 index 4 entry 0x60625b24 MODE_ART_EFFECT_HYBRID_ROUGH_MONOCHROME
+  id 371 key 0x44d1 index 5 entry 0x60625b28 MODE_ART_EFFECT_HYBRID_TOY_PHOTO
+  id 372 key 0x44d1 index 9 entry 0x60625b2c MODE_ART_EFFECT_HYBRID_DRAMATIC_TONE
+  id 373 key 0x44d1 index 1 entry 0x60625b30 MODE_ART_EFFECT_HYBRID_FANTASIC_FOCUS
+  id 374 key 0x44d1 index 2 entry 0x60625b34 MODE_ART_EFFECT_HYBRID_DAYDREAM
+  id 375 key 0x44d1 index 7 entry 0x60625b38 MODE_ART_EFFECT_HYBRID_CROSS_PROCESS
+  id 376 key 0x44d1 index 8 entry 0x60625b3c MODE_ART_EFFECT_HYBRID_GENTLE_SEPIA
+  id 377 key 0x44d1 index 3 entry 0x60625b40 MODE_ART_EFFECT_HYBRID_LIGHT_TONE
+  id 378 key 0x44d1 index 6 entry 0x60625b44 MODE_ART_EFFECT_HYBRID_MINIATURE
+  id 379 key 0x44d1 index 19 entry 0x60625b48 MODE_ART_EFFECT_HYBRID_LIGNE_CLAIR
+  id 466 key 0x44d1 index 20 entry 0x60625ca4 MODE_ART_EFFECT_HYBRID_PASTEL
+  id 658 key 0x44d1 index 21 entry 0x60625fa4 MODE_ART_EFFECT_HYBRID_VINTAGE
+  id 660 key 0x44d1 index 22 entry 0x60625fac MODE_ART_EFFECT_HYBRID_PARTCOLOR
+  id 867 key 0xf5d1 index 0 entry 0x606262e8 MODE_ART_EFFECT
+  id 868 key 0xf5e1 index 0 entry 0x606262ec MODE_ART_EFFECT_HYBRID_POPART_TYPE2 TARGET
+  id 869 key 0xf5e1 index 2 entry 0x606262f0 MODE_ART_EFFECT_HYBRID_DAYDREAM_TYPE2 TARGET
+  id 870 key 0xf5e1 index 4 entry 0x606262f4 MODE_ART_EFFECT_HYBRID_ROUGH_MONOCHROME_TYPE2 TARGET
+  id 871 key 0xf5e1 index 5 entry 0x606262f8 MODE_ART_EFFECT_HYBRID_TOY_PHOTO_TYPE2 TARGET
+  id 872 key 0xf5f1 index 5 entry 0x606262fc MODE_ART_EFFECT_HYBRID_TOY_PHOTO_TYPE3 TARGET
+  id 873 key 0xf5e1 index 6 entry 0x60626300 MODE_ART_EFFECT_HYBRID_MINIATURE_TYPE2 TARGET
+  id 874 key 0xf5e1 index 7 entry 0x60626304 MODE_ART_EFFECT_HYBRID_CROSS_PROCESS_TYPE2 TARGET
+  id 875 key 0xf5e1 index 9 entry 0x60626308 MODE_ART_EFFECT_HYBRID_DRAMATIC_TONE_TYPE2 TARGET
+  id 876 key 0xf5e1 index 19 entry 0x6062630c MODE_ART_EFFECT_HYBRID_LIGNE_CLAIR_TYPE2 TARGET
+  id 877 key 0xf5e1 index 20 entry 0x60626310 MODE_ART_EFFECT_HYBRID_PASTEL_TYPE2 TARGET
+  id 878 key 0xf5e1 index 21 entry 0x60626314 MODE_ART_EFFECT_HYBRID_VINTAGE_TYPE2 TARGET
+  id 879 key 0xf5f1 index 21 entry 0x60626318 MODE_ART_EFFECT_HYBRID_VINTAGE_TYPE3 TARGET
+  id 880 key 0xf5e1 index 22 entry 0x6062631c MODE_ART_EFFECT_HYBRID_PARTCOLOR_TYPE2 TARGET
+  id 881 key 0xf5f1 index 22 entry 0x60626320 MODE_ART_EFFECT_HYBRID_PARTCOLOR_TYPE3 TARGET
+  id 1461 key 0x44d1 index 23 entry 0x60626c30 MODE_ART_EFFECT_HYBRID_BLEACH_BYPASS
+  id 1462 key 0xf5e1 index 23 entry 0x60626c34 MODE_ART_EFFECT_HYBRID_BLEACH_BYPASS_TYPE2 TARGET
+  id 1475 key 0x44d1 index 24 entry 0x60626c68 MODE_ART_EFFECT_HYBRID_PLACAME
+  id 1992 key 0x5b42 index 1 entry 0x6062747c MODE_COLORTONE_I_FINISH_CURSOR
+  id 1993 key 0x5b42 index 2 entry 0x60627480 MODE_COLORTONE_VIVID_CURSOR
+  id 1994 key 0x5b42 index 3 entry 0x60627484 MODE_COLORTONE_NATURAL_CURSOR
+  id 1995 key 0x5b42 index 4 entry 0x60627488 MODE_COLORTONE_FLAT_CURSOR
+  id 1996 key 0x5b42 index 5 entry 0x6062748c MODE_COLORTONE_SOFT_CURSOR
+  id 1997 key 0x5b42 index 6 entry 0x60627490 MODE_COLORTONE_MONOCHROME_CURSOR
+  id 1998 key 0x5b42 index 7 entry 0x60627494 MODE_COLORTONE_CUSTOM_CURSOR
+  id 1999 key 0x5b42 index 8 entry 0x60627498 MODE_COLORTONE_CUSTOM_I_FINISH_CURSOR
+  id 2000 key 0x5b42 index 9 entry 0x6062749c MODE_COLORTONE_CUSTOM_VIVID_CURSOR
+  id 2001 key 0x5b42 index 10 entry 0x606274a0 MODE_COLORTONE_CUSTOM_NATURAL_CURSOR
+  id 2002 key 0x5b42 index 11 entry 0x606274a4 MODE_COLORTONE_CUSTOM_FLAT_CURSOR
+  id 2003 key 0x5b42 index 12 entry 0x606274a8 MODE_COLORTONE_CUSTOM_SOFT_CURSOR
+  id 2004 key 0x5b42 index 13 entry 0x606274ac MODE_COLORTONE_CUSTOM_MONOCHROME_CURSOR
+  id 2005 key 0x5b42 index 14 entry 0x606274b0 MODE_COLORTONE_UNDERWATER_CURSOR
+  id 2006 key 0x5b42 index 15 entry 0x606274b4 MODE_COLORTONE_COLOR_CREATOR_CURSOR
+  id 2007 key 0x5b62 index 0 entry 0x606274b8 MODE_COLORTONE_POPART_TYPE1_CURSOR
+  id 2008 key 0x5b72 index 0 entry 0x606274bc MODE_COLORTONE_POPART_TYPE2_CURSOR
+  id 2009 key 0x5b52 index 1 entry 0x606274c0 MODE_COLORTONE_FANTASIC_FOCUS_CURSOR TARGET
+  id 2010 key 0x5b62 index 2 entry 0x606274c4 MODE_COLORTONE_DAYDREAM_TYPE1_CURSOR
+  id 2011 key 0x5b72 index 2 entry 0x606274c8 MODE_COLORTONE_DAYDREAM_TYPE2_CURSOR
+  id 2012 key 0x5b52 index 3 entry 0x606274cc MODE_COLORTONE_LIGHT_TONE_CURSOR TARGET
+  id 2013 key 0x5b62 index 4 entry 0x606274d0 MODE_COLORTONE_ROUGH_MONOCHRO_TYPE1_CURSOR
+  id 2014 key 0x5b72 index 4 entry 0x606274d4 MODE_COLORTONE_ROUGH_MONOCHRO_TYPE2_CURSOR
+  id 2015 key 0x5b62 index 5 entry 0x606274d8 MODE_COLORTONE_TOY_PHOTO_TYPE1_CURSOR
+  id 2016 key 0x5b72 index 5 entry 0x606274dc MODE_COLORTONE_TOY_PHOTO_TYPE2_CURSOR
+  id 2017 key 0x5b82 index 5 entry 0x606274e0 MODE_COLORTONE_TOY_PHOTO_TYPE3_CURSOR TARGET
+  id 2018 key 0x5b62 index 6 entry 0x606274e4 MODE_COLORTONE_MINIATURE_TYPE1_CURSOR
+  id 2019 key 0x5b72 index 6 entry 0x606274e8 MODE_COLORTONE_MINIATURE_TYPE2_CURSOR
+  id 2020 key 0x5b62 index 7 entry 0x606274ec MODE_COLORTONE_CROSS_PROCESS_TYPE1_CURSOR
+  id 2021 key 0x5b72 index 7 entry 0x606274f0 MODE_COLORTONE_CROSS_PROCESS_TYPE2_CURSOR
+  id 2022 key 0x5b52 index 8 entry 0x606274f4 MODE_COLORTONE_GENTLE_SEPIA_CURSOR TARGET
+  id 2023 key 0x5b62 index 9 entry 0x606274f8 MODE_COLORTONE_DRAMATIC_TONE_TYPE1_CURSOR
+  id 2024 key 0x5b72 index 9 entry 0x606274fc MODE_COLORTONE_DRAMATIC_TONE_TYPE2_CURSOR
+  id 2025 key 0x5b62 index 10 entry 0x60627500 MODE_COLORTONE_LIGNE_CLAIR_TYPE1_CURSOR
+  id 2026 key 0x5b72 index 10 entry 0x60627504 MODE_COLORTONE_LIGNE_CLAIR_TYPE2_CURSOR
+  id 2027 key 0x5b62 index 11 entry 0x60627508 MODE_COLORTONE_PASTEL_TYPE1_CURSOR
+  id 2028 key 0x5b72 index 11 entry 0x6062750c MODE_COLORTONE_PASTEL_TYPE2_CURSOR
+  id 2029 key 0x5b62 index 12 entry 0x60627510 MODE_COLORTONE_VINTAGE_TYPE1_CURSOR
+  id 2030 key 0x5b72 index 12 entry 0x60627514 MODE_COLORTONE_VINTAGE_TYPE2_CURSOR
+  id 2031 key 0x5b82 index 12 entry 0x60627518 MODE_COLORTONE_VINTAGE_TYPE3_CURSOR TARGET
+  id 2032 key 0x5b62 index 13 entry 0x6062751c MODE_COLORTONE_PARTCOLOR_TYPE1_CURSOR
+  id 2033 key 0x5b72 index 13 entry 0x60627520 MODE_COLORTONE_PARTCOLOR_TYPE2_CURSOR
+  id 2034 key 0x5b82 index 13 entry 0x60627524 MODE_COLORTONE_PARTCOLOR_TYPE3_CURSOR TARGET
+  id 2035 key 0x5b62 index 14 entry 0x60627528 MODE_COLORTONE_BLEACH_BYPASS_TYPE1_CURSOR
+  id 2036 key 0x5b72 index 14 entry 0x6062752c MODE_COLORTONE_BLEACH_BYPASS_TYPE2_CURSOR
+  id 2037 key 0x5b52 index 15 entry 0x60627530 MODE_COLORTONE_PLACAME_CURSOR TARGET
+  id 2148 key 0x5b42 index 0 entry 0x606276ec MODE_COLORTONE_CURSOR
+
+## instruction immediates (876)
+patterns: mov imm16 opcodes 24-27/2C-2F; FA imm16 subops C0-C3,C8-CB,D0-D3,D8-DB,E0-EF,FC,FD,FE; FC imm32 subops C0-EF,FE
+wanted imm16: keys, slots 05b8/05b5/0f5f/0f5e, masked 5b80/5b50/f5f0/f5e0, 5b00, named UI ids [868, 869, 870, 871, 872, 873, 874, 875, 876, 877, 878, 879, 880, 881, 1462, 2009, 2012, 2017, 2022, 2031, 2034, 2037, 2148]
+  0x60062691 fc.imm32 value 0x60095584 bytes fccc84550960 FUN_60062691 0x60062691+0
+  0x6006269d fc.imm32 value 0x600b8f54 bytes fccc548f0b60 FUN_60062691 0x60062691+12
+  0x6006b625 mov.imm16 value 0x5b5 bytes 2cb505 FUN_6006b51b 0x6006b51b+266
+  0x6006b66c mov.imm16 value 0x5b6 bytes 2cb605 FUN_6006b51b 0x6006b51b+337
+  0x60071e1b fa.imm16 value 0xf5f bytes fac85f0f FUN_60071e0c 0x60071e0c+15
+  0x60071e2f fa.imm16 value 0xf5f bytes fac85f0f FUN_60071e0c 0x60071e0c+35
+  0x60071e43 fa.imm16 value 0xf5f bytes fac85f0f FUN_60071e0c 0x60071e0c+55
+  0x60072381 mov.imm16 value 0x371 bytes 2d7103 FUN_6007235a 0x6007235a+39
+  0x60076a52 mov.imm16 value 0x367 bytes 2c6703 FUN_600769b3 0x600769b3+159
+  0x6007aef2 fc.imm32 value 0x60125b52 bytes fcdc525b1260 FUN_6007ae32 0x6007ae32+192
+  0x6007f39b mov.imm16 value 0x5b8 bytes 2cb805 FUN_6007f366 0x6007f366+53
+  0x60094885 mov.imm16 value 0x5b00 bytes 2e005b not-in-function
+  0x600948a5 mov.imm16 value 0x5b00 bytes 2e005b not-in-function
+  0x60094efd mov.imm16 value 0x5b00 bytes 2e005b not-in-function
+  0x6013661b fa.imm16 value 0x7dc bytes fafedc07 FUN_60136600 0x60136600+27
+  0x6014e148 fa.imm16 value 0x5b80 bytes fad0805b FUN_6014e13b 0x6014e13b+13
+  0x6015711f mov.imm16 value 0x5b5 bytes 2fb505 FUN_601570fc 0x601570fc+35
+  0x601581d4 mov.imm16 value 0x364 bytes 2d6403 not-in-function
+  0x60166540 fc.imm32 value 0x6022f5e1 bytes fcdce1f52260 FUN_60165ff2 0x60165ff2+1358
+  0x60176795 mov.imm16 value 0x368 bytes 2c6803 FUN_6017677b 0x6017677b+26
+  0x601886f7 mov.imm16 value 0x7ef bytes 2cef07 FUN_60188683 0x60188683+116
+  0x6018cb23 mov.imm16 value 0x36b bytes 2d6b03 FUN_6018cae9 0x6018cae9+58
+  0x6018d06f mov.imm16 value 0x5b6 bytes 2db605 FUN_6018d034 0x6018d034+59
+  0x6018ed1d mov.imm16 value 0x364 bytes 246403 FUN_6018eb4c 0x6018eb4c+465
+  0x60198bad mov.imm16 value 0x36e bytes 2d6e03 not-in-function
+  0x6019fbde mov.imm16 value 0x368 bytes 246803 FUN_6019f3d1 0x6019f3d1+2061
+  0x6019fbec mov.imm16 value 0x370 bytes 247003 FUN_6019f3d1 0x6019f3d1+2075
+  0x6019fe61 mov.imm16 value 0x5b80 bytes 2c805b FUN_6019f3d1 0x6019f3d1+2704
+  0x601a6f39 mov.imm16 value 0x5b5 bytes 2cb505 FUN_601a6a6a 0x601a6a6a+1231
+  0x601acbf5 mov.imm16 value 0x370 bytes 2d7003 FUN_601acbec 0x601acbec+9
+  0x601adb88 mov.imm16 value 0x367 bytes 2d6703 FUN_601ad917 0x601ad917+625
+  0x601b220c mov.imm16 value 0x5b50 bytes 25505b FUN_601b217e 0x601b217e+142
+  0x601be1a3 mov.imm16 value 0xf5e bytes 2d5e0f FUN_601be17a 0x601be17a+41
+  0x601c341f fa.imm16 value 0x370 bytes fad07003 FUN_601c3415 0x601c3415+10
+  0x601c4bbb mov.imm16 value 0x365 bytes 2d6503 FUN_601c4af4 0x601c4af4+199
+  0x601c4fd2 mov.imm16 value 0x364 bytes 246403 FUN_601c4af4 0x601c4af4+1246
+  0x601c543c mov.imm16 value 0x864 bytes 246408 FUN_601c4af4 0x601c4af4+2376
+  0x601dc8ec mov.imm16 value 0x5b6 bytes 2cb605 FUN_601dc890 0x601dc890+92
+  0x60207531 mov.imm16 value 0x364 bytes 2c6403 FUN_60207504 0x60207504+45
+  0x602150d7 mov.imm16 value 0x368 bytes 2c6803 FUN_60214f5e 0x60214f5e+377
+  0x602d1a36 mov.imm16 value 0x5b00 bytes 2e005b not-in-function
+  0x602d2c2b mov.imm16 value 0x5b00 bytes 2e005b not-in-function
+  0x602d2cf1 mov.imm16 value 0x5b00 bytes 2e005b not-in-function
+  0x602d2d35 mov.imm16 value 0x5b00 bytes 2e005b not-in-function
+  0x602f570b mov.imm16 value 0x864 bytes 246408 FUN_602f546a 0x602f546a+673
+  0x602f6293 fa.imm16 value 0x5b80 bytes fac0805b FUN_602f6265 0x602f6265+46
+  0x602f6606 mov.imm16 value 0x7dc bytes 24dc07 FUN_602f65d5 0x602f65d5+49
+  0x603182b0 mov.imm16 value 0x365 bytes 2c6503 not-in-function
+  0x603cd465 mov.imm16 value 0x7ef bytes 2cef07 FUN_603cd3dd 0x603cd3dd+136
+  0x603cd472 mov.imm16 value 0x7ef bytes 2cef07 FUN_603cd3dd 0x603cd3dd+149
+  0x603ce2e7 mov.imm16 value 0x5b00 bytes 2c005b FUN_603ce1cf 0x603ce1cf+280
+  0x603ce32a mov.imm16 value 0x5b00 bytes 2c005b FUN_603ce1cf 0x603ce1cf+347
+  0x603d115a fa.imm16 value 0x370 bytes fad17003 FUN_603d0fe2 0x603d0fe2+376
+  0x603d4fa2 fc.imm32 value 0x603d5b52 bytes fccc525b3d60 not-in-function
+  0x603d59af mov.imm16 value 0x367 bytes 2c6703 FUN_603d5966 0x603d5966+73
+  0x603d59b9 mov.imm16 value 0x367 bytes 2c6703 FUN_603d5966 0x603d5966+83
+  0x603d71b2 fc.imm32 value 0xf5f1 bytes fcddf1f50000 FUN_603d71ae 0x603d71ae+4
+  0x603da00f mov.imm16 value 0x370 bytes 2c7003 FUN_603d9ff6 0x603d9ff6+25
+  0x603dc058 mov.imm16 value 0x365 bytes 2c6503 FUN_603dbfb7 0x603dbfb7+161
+  0x603eba8d mov.imm16 value 0x366 bytes 2c6603 FUN_603eb9a4 0x603eb9a4+233
+  0x603ef494 mov.imm16 value 0x864 bytes 2d6408 FUN_603ef463 0x603ef463+49
+  0x603ef49f mov.imm16 value 0x864 bytes 2c6408 FUN_603ef463 0x603ef463+60
+  0x604035de mov.imm16 value 0x364 bytes 246403 FUN_604032a4 0x604032a4+826
+  0x604035fa mov.imm16 value 0x365 bytes 246503 FUN_604032a4 0x604032a4+854
+  0x60403636 mov.imm16 value 0x366 bytes 246603 FUN_604032a4 0x604032a4+914
+  0x60403672 mov.imm16 value 0x367 bytes 246703 FUN_604032a4 0x604032a4+974
+  0x60403680 mov.imm16 value 0x368 bytes 246803 FUN_604032a4 0x604032a4+988
+  0x6040369c mov.imm16 value 0x369 bytes 246903 FUN_604032a4 0x604032a4+1016
+  0x604036b8 mov.imm16 value 0x36a bytes 246a03 FUN_604032a4 0x604032a4+1044
+  0x604036f3 mov.imm16 value 0x36b bytes 246b03 FUN_604032a4 0x604032a4+1103
+  0x60403738 mov.imm16 value 0x36c bytes 246c03 FUN_604032a4 0x604032a4+1172
+  0x60403753 mov.imm16 value 0x36d bytes 246d03 FUN_604032a4 0x604032a4+1199
+  0x6040376d mov.imm16 value 0x36e bytes 246e03 FUN_604032a4 0x604032a4+1225
+  0x6040377a mov.imm16 value 0x36f bytes 246f03 FUN_604032a4 0x604032a4+1238
+  0x60403794 mov.imm16 value 0x370 bytes 247003 FUN_604032a4 0x604032a4+1264
+  0x604037a1 mov.imm16 value 0x371 bytes 247103 FUN_604032a4 0x604032a4+1277
+  0x604037ae mov.imm16 value 0x5b5 bytes 24b505 FUN_604032a4 0x604032a4+1290
+  0x604037bb mov.imm16 value 0x5b6 bytes 24b605 FUN_604032a4 0x604032a4+1303
+  0x60419456 fc.imm32 value 0x6062555c bytes fcdc5c556260 FUN_60419446 0x60419446+16
+  0x604194b1 fc.imm32 value 0x6062789c bytes fcd09c786260 FUN_60419446 0x60419446+107
+  0x6041950d fc.imm32 value 0x60627984 bytes fcc084796260 FUN_60419446 0x60419446+199
+  0x60419573 fc.imm32 value 0x60627958 bytes fcc058796260 FUN_60419446 0x60419446+301
+  0x604195da fc.imm32 value 0x606279b2 bytes fcd0b2796260 FUN_60419446 0x60419446+404
+  0x60419636 fc.imm32 value 0x60627ace bytes fcd0ce7a6260 FUN_60419446 0x60419446+496
+  0x604196a2 fc.imm32 value 0x6062555c bytes fcc05c556260 FUN_60419696 0x60419696+12
+  0x604196be fc.imm32 value 0x6062789c bytes fcd09c786260 FUN_60419696 0x60419696+40
+  0x604196d7 fc.imm32 value 0x606279b2 bytes fcc0b2796260 FUN_60419696 0x60419696+65
+  0x604196f6 fc.imm32 value 0x60627ace bytes fcd0ce7a6260 FUN_60419696 0x60419696+96
+  0x6042e20c mov.imm16 value 0x7ef bytes 2cef07 FUN_6042e1d7 0x6042e1d7+53
+  0x604592cc mov.imm16 value 0x7e6 bytes 2de607 FUN_604592a8 0x604592a8+36
+  0x60459daf mov.imm16 value 0x370 bytes 2d7003 FUN_60459bf3 0x60459bf3+444
+  0x6046c133 mov.imm16 value 0x36c bytes 2d6c03 FUN_6046c0eb 0x6046c0eb+72
+  0x60480058 mov.imm16 value 0x7d9 bytes 2cd907 FUN_6047f9f4 0x6047f9f4+1636
+  0x604800c0 mov.imm16 value 0x7f2 bytes 2cf207 FUN_6047f9f4 0x6047f9f4+1740
+  0x60482f32 mov.imm16 value 0x368 bytes 2c6803 FUN_60482d15 0x60482d15+541
+  0x60482f76 mov.imm16 value 0x371 bytes 2d7103 FUN_60482d15 0x60482d15+609
+  0x60486a26 mov.imm16 value 0x370 bytes 2d7003 FUN_604869fb 0x604869fb+43
+  0x6049ea06 mov.imm16 value 0x368 bytes 246803 FUN_6049e943 0x6049e943+195
+  0x604a405e mov.imm16 value 0x370 bytes 277003 FUN_604a4041 0x604a4041+29
+  0x604a44c1 mov.imm16 value 0x368 bytes 246803 FUN_604a43fe 0x604a43fe+195
+  0x604a6b49 fa.imm16 value 0x864 bytes fac16408 FUN_604a6afe 0x604a6afe+75
+  0x604a7d5e fa.imm16 value 0x864 bytes fac06408 FUN_604a7cd6 0x604a7cd6+136
+  0x604b08e0 mov.imm16 value 0x368 bytes 246803 FUN_604b065e 0x604b065e+642
+  0x604b08f4 mov.imm16 value 0x370 bytes 247003 FUN_604b065e 0x604b065e+662
+  0x604b2a53 mov.imm16 value 0x368 bytes 246803 FUN_604b296f 0x604b296f+228
+  0x604b5f73 mov.imm16 value 0x368 bytes 246803 FUN_604b5ef8 0x604b5ef8+123
+  0x604b5f87 mov.imm16 value 0x370 bytes 257003 FUN_604b5ef8 0x604b5ef8+143
+  0x604bf909 mov.imm16 value 0x370 bytes 247003 FUN_604bf8a3 0x604bf8a3+102
+  0x604bfac7 mov.imm16 value 0x368 bytes 246803 FUN_604bfa2f 0x604bfa2f+152
+  0x604bfadb mov.imm16 value 0x370 bytes 257003 FUN_604bfa2f 0x604bfa2f+172
+  0x604c4d6b fa.imm16 value 0x366 bytes fac06603 FUN_604c4ceb 0x604c4ceb+128
+  0x604c5a55 mov.imm16 value 0x368 bytes 246803 FUN_604c5a0f 0x604c5a0f+70
+  0x604c5a79 mov.imm16 value 0x370 bytes 257003 FUN_604c5a0f 0x604c5a0f+106
+  0x604de2ad mov.imm16 value 0x366 bytes 276603 FUN_604ddef0 0x604ddef0+957
+  0x604df354 mov.imm16 value 0x5b8 bytes 25b805 FUN_604df2b9 0x604df2b9+155
+  0x6050268d fa.imm16 value 0x366 bytes fad26603 FUN_6050267d 0x6050267d+16
+  0x605027cd fa.imm16 value 0x368 bytes fad16803 FUN_6050267d 0x6050267d+336
+  0x6051a408 fa.imm16 value 0x368 bytes fac06803 FUN_6051a2f5 0x6051a2f5+275
+  0x60524ad3 fa.imm16 value 0x368 bytes fad26803 FUN_6051bfbc 0x6051bfbc+35607
+  0x60524aff fa.imm16 value 0x368 bytes fad26803 FUN_6051bfbc 0x6051bfbc+35651
+  0x6052f2fe mov.imm16 value 0x368 bytes 246803 FUN_6052f16d 0x6052f16d+401
+  0x60541087 mov.imm16 value 0x5b00 bytes 25005b FUN_60540f03 0x60540f03+388
+  0x605421c5 mov.imm16 value 0x36b bytes 2c6b03 FUN_605421a7 0x605421a7+30
+  0x60551dab mov.imm16 value 0x7e6 bytes 24e607 FUN_60551d7e 0x60551d7e+45
+  0x6055332f mov.imm16 value 0x371 bytes 2d7103 FUN_605532e4 0x605532e4+75
+  0x60557796 mov.imm16 value 0x364 bytes 246403 FUN_60557784 0x60557784+18
+  0x605577af mov.imm16 value 0x365 bytes 246503 FUN_60557784 0x60557784+43
+  0x6055a257 mov.imm16 value 0x36b bytes 2d6b03 FUN_6055a22b 0x6055a22b+44
+  0x6055d4fc mov.imm16 value 0x36e bytes 246e03 FUN_6055d4d7 0x6055d4d7+37
+  0x60561b5e mov.imm16 value 0x369 bytes 246903 FUN_60561a3e 0x60561a3e+288
+  0x60561b71 mov.imm16 value 0x36e bytes 246e03 FUN_60561a3e 0x60561a3e+307
+  0x60563b0e mov.imm16 value 0x7e6 bytes 24e607 not-in-function
+  0x605697cf mov.imm16 value 0x368 bytes 246803 FUN_605694f3 0x605694f3+732
+  0x60588d99 fa.imm16 value 0x364 bytes fad06403 FUN_605887b9 0x605887b9+1504
+  0x605943bb mov.imm16 value 0x366 bytes 2d6603 FUN_6059434b 0x6059434b+112
+  0x60596d8a mov.imm16 value 0x36b bytes 2d6b03 FUN_60596d33 0x60596d33+87
+  0x6059c146 mov.imm16 value 0x36b bytes 2d6b03 FUN_6059c0a8 0x6059c0a8+158
+  0x606aaa96 mov.imm16 value 0x5b00 bytes 2d005b not-in-function
+  0x606e7366 mov.imm16 value 0x5b00 bytes 2c005b not-in-function
+  0x606ed8a2 mov.imm16 value 0x5b00 bytes 2d005b not-in-function
+  0x606edcaa mov.imm16 value 0x5b00 bytes 2c005b not-in-function
+  0x606edcc1 mov.imm16 value 0x5b00 bytes 2c005b not-in-function
+  0x606edcd8 mov.imm16 value 0x5b00 bytes 2c005b not-in-function
+  0x606edcef mov.imm16 value 0x5b00 bytes 2c005b not-in-function
+  0x606edd06 mov.imm16 value 0x5b00 bytes 2c005b not-in-function
+  0x606edd1d mov.imm16 value 0x5b00 bytes 2c005b not-in-function
+  0x606edd34 mov.imm16 value 0x5b00 bytes 2c005b not-in-function
+  0x606edd4b mov.imm16 value 0x5b00 bytes 2c005b not-in-function
+  0x606edd62 mov.imm16 value 0x5b00 bytes 2c005b not-in-function
+  0x606edd79 mov.imm16 value 0x5b00 bytes 2c005b not-in-function
+  0x606edd90 mov.imm16 value 0x5b00 bytes 2c005b not-in-function
+  0x606edda7 mov.imm16 value 0x5b00 bytes 2c005b not-in-function
+  0x606eddbe mov.imm16 value 0x5b00 bytes 2c005b not-in-function
+  0x606eddd5 mov.imm16 value 0x5b00 bytes 2c005b not-in-function
+  0x606eddec mov.imm16 value 0x5b00 bytes 2c005b not-in-function
+  0x606ede03 mov.imm16 value 0x5b00 bytes 2c005b not-in-function
+  0x606ede1a mov.imm16 value 0x5b00 bytes 2c005b not-in-function
+  0x606ede31 mov.imm16 value 0x5b00 bytes 2c005b not-in-function
+  0x606ede48 mov.imm16 value 0x5b00 bytes 2c005b not-in-function
+  0x606ede5f mov.imm16 value 0x5b00 bytes 2c005b not-in-function
+  0x606ede76 mov.imm16 value 0x5b00 bytes 2c005b not-in-function
+  0x606ede86 mov.imm16 value 0x5b00 bytes 2c005b not-in-function
+  0x606ede96 mov.imm16 value 0x5b00 bytes 2c005b not-in-function
+  0x606edeaa mov.imm16 value 0x5b00 bytes 2c005b not-in-function
+  0x606edebe mov.imm16 value 0x5b00 bytes 2c005b not-in-function
+  0x606eded3 mov.imm16 value 0x5b00 bytes 2c005b not-in-function
+  0x606edee8 mov.imm16 value 0x5b00 bytes 2c005b not-in-function
+  0x606edf01 mov.imm16 value 0x5b00 bytes 2c005b not-in-function
+  0x606edf1a mov.imm16 value 0x5b00 bytes 2c005b not-in-function
+  0x606edf2c mov.imm16 value 0x5b00 bytes 2c005b not-in-function
+  0x606edf40 mov.imm16 value 0x5b00 bytes 2c005b not-in-function
+  0x606ef713 mov.imm16 value 0x5b00 bytes 2d005b not-in-function
+  0x606ef732 mov.imm16 value 0x5b00 bytes 2c005b not-in-function
+  0x606f05dc mov.imm16 value 0x5b00 bytes 2c005b not-in-function
+  0x606f0649 mov.imm16 value 0x5b00 bytes 2c005b not-in-function
+  0x606f0827 mov.imm16 value 0x5b00 bytes 2c005b not-in-function
+  0x606f093d mov.imm16 value 0x5b00 bytes 2d005b not-in-function
+  0x606f0a20 mov.imm16 value 0x5b00 bytes 2d005b not-in-function
+  0x606f1801 mov.imm16 value 0x5b00 bytes 2c005b not-in-function
+  0x606f181e mov.imm16 value 0x5b00 bytes 2c005b not-in-function
+  0x606f183b mov.imm16 value 0x5b00 bytes 2c005b not-in-function
+  0x606f1858 mov.imm16 value 0x5b00 bytes 2c005b not-in-function
+  0x606f1875 mov.imm16 value 0x5b00 bytes 2c005b not-in-function
+  0x606f1892 mov.imm16 value 0x5b00 bytes 2c005b not-in-function
+  0x606f18af mov.imm16 value 0x5b00 bytes 2c005b not-in-function
+  0x606f18cc mov.imm16 value 0x5b00 bytes 2c005b not-in-function
+  0x606f1931 mov.imm16 value 0x5b00 bytes 2d005b not-in-function
+  0x606f4540 mov.imm16 value 0x5b00 bytes 2e005b not-in-function
+  0x60701fdf fa.imm16 value 0x370 bytes fad17003 FUN_60701fc5 0x60701fc5+26
+  0x60704da3 mov.imm16 value 0x36a bytes 2c6a03 FUN_60704d6c 0x60704d6c+55
+  0x6070ffc4 mov.imm16 value 0x36a bytes 2d6a03 FUN_6070fd09 0x6070fd09+699
+  0x607632b6 mov.imm16 value 0x368 bytes 256803 FUN_60763286 0x60763286+48
+  0x607632de mov.imm16 value 0x368 bytes 256803 FUN_60763286 0x60763286+88
+  0x607632f3 mov.imm16 value 0x368 bytes 256803 FUN_60763286 0x60763286+109
+  0x60763306 mov.imm16 value 0x368 bytes 256803 FUN_60763286 0x60763286+128
+  0x60763383 mov.imm16 value 0x370 bytes 257003 FUN_60763353 0x60763353+48
+  0x607633ab mov.imm16 value 0x370 bytes 257003 FUN_60763353 0x60763353+88
+  0x607633c0 mov.imm16 value 0x370 bytes 257003 FUN_60763353 0x60763353+109
+  0x607633d3 mov.imm16 value 0x370 bytes 257003 FUN_60763353 0x60763353+128
+  0x607f9fe2 mov.imm16 value 0x5b6 bytes 27b605 not-in-function
+  0x608045a9 mov.imm16 value 0x864 bytes 276408 not-in-function
+  0x608057d9 mov.imm16 value 0x5b5 bytes 2cb505 not-in-function
+  0x60838213 mov.imm16 value 0x7d9 bytes 2cd907 FUN_608381db 0x608381db+56
+  0x608382d3 mov.imm16 value 0x7f5 bytes 2cf507 FUN_6083829b 0x6083829b+56
+  0x60876203 mov.imm16 value 0x36a bytes 2c6a03 FUN_608761cb 0x608761cb+56
+  0x60891391 mov.imm16 value 0x364 bytes 2c6403 FUN_6089116d 0x6089116d+548
+  0x60892a9b mov.imm16 value 0x367 bytes 2c6703 FUN_6089221a 0x6089221a+2177
+  0x608aa821 mov.imm16 value 0x368 bytes 2d6803 FUN_608aa7fa 0x608aa7fa+39
+  0x608aab33 mov.imm16 value 0x366 bytes 256603 FUN_608aaae7 0x608aaae7+76
+  0x608ac0a3 mov.imm16 value 0x366 bytes 266603 FUN_608ac03a 0x608ac03a+105
+  0x608ad4e9 mov.imm16 value 0x365 bytes 2c6503 FUN_608ad4bb 0x608ad4bb+46
+  0x608af99e fa.imm16 value 0x7dc bytes fad0dc07 FUN_608af7cf 0x608af7cf+463
+  0x608b08f4 mov.imm16 value 0x5b00 bytes 2c005b FUN_608b08e5 0x608b08e5+15
+  0x608b0912 mov.imm16 value 0x5b00 bytes 2e005b FUN_608b08e5 0x608b08e5+45
+  0x608bdbb6 mov.imm16 value 0x368 bytes 246803 FUN_608bdb48 0x608bdb48+110
+  0x608bdc2e mov.imm16 value 0x368 bytes 266803 FUN_608bdc00 0x608bdc00+46
+  0x608dfb64 mov.imm16 value 0x7e6 bytes 24e607 FUN_608df1f2 0x608df1f2+2418
+  0x608dfb6e mov.imm16 value 0x7e6 bytes 2de607 FUN_608df1f2 0x608df1f2+2428
+  0x608ef200 mov.imm16 value 0x7f5 bytes 2df507 FUN_608ef0ac 0x608ef0ac+340
+  0x608f6a0c mov.imm16 value 0x364 bytes 2c6403 FUN_608f69e7 0x608f69e7+37
+  0x608f74b9 mov.imm16 value 0x368 bytes 2c6803 FUN_608f7267 0x608f7267+594
+  0x608f85f0 mov.imm16 value 0x5b5 bytes 2cb505 FUN_608f7267 0x608f7267+5001
+  0x608f8614 mov.imm16 value 0x5b8 bytes 2cb805 FUN_608f7267 0x608f7267+5037
+  0x60920d21 mov.imm16 value 0x5b5 bytes 2cb505 FUN_60920cfb 0x60920cfb+38
+  0x609362d8 fa.imm16 value 0x370 bytes fad07003 FUN_609361fc 0x609361fc+220
+  0x60937cff fa.imm16 value 0x7dc bytes fad1dc07 FUN_60937c56 0x60937c56+169
+  0x60937f48 fa.imm16 value 0x864 bytes fad16408 FUN_60937de2 0x60937de2+358
+  0x609381d0 mov.imm16 value 0x7dc bytes 25dc07 FUN_6093811a 0x6093811a+182
+  0x6093844d mov.imm16 value 0x864 bytes 256408 FUN_609382c6 0x609382c6+391
+  0x60938737 mov.imm16 value 0x7dc bytes 26dc07 FUN_60938679 0x60938679+190
+  0x60938a35 mov.imm16 value 0x864 bytes 266408 FUN_60938880 0x60938880+437
+  0x609398f1 fa.imm16 value 0x7dc bytes fac0dc07 FUN_60939838 0x60939838+185
+  0x60939c25 fa.imm16 value 0x864 bytes fad26408 FUN_60939aa6 0x60939aa6+383
+  0x6093b292 mov.imm16 value 0x368 bytes 256803 FUN_6093b037 0x6093b037+603
+  0x6093b2f0 mov.imm16 value 0x36c bytes 256c03 FUN_6093b037 0x6093b037+697
+  0x60944f5f mov.imm16 value 0x7dc bytes 24dc07 FUN_60944640 0x60944640+2335
+  0x6094624a fa.imm16 value 0x370 bytes fad17003 FUN_60946249 0x60946249+1
+  0x60946762 fa.imm16 value 0x370 bytes fad27003 FUN_609463bb 0x609463bb+935
+  0x60955c4b mov.imm16 value 0x368 bytes 2d6803 FUN_60955c3a 0x60955c3a+17
+  0x6096229e fa.imm16 value 0xf5e0 bytes fac0e0f5 FUN_60962296 0x60962296+8
+  0x60966f08 mov.imm16 value 0x5b5 bytes 2db505 FUN_60966c19 0x60966c19+751
+  0x60966f17 mov.imm16 value 0x5b5 bytes 2cb505 FUN_60966c19 0x60966c19+766
+  0x609845bc mov.imm16 value 0x36c bytes 2f6c03 FUN_60984552 0x60984552+106
+  0x60985082 mov.imm16 value 0x5b80 bytes 2c805b FUN_60984e3a 0x60984e3a+584
+  0x609a4bbb mov.imm16 value 0x5b5 bytes 2db505 FUN_609a4b71 0x609a4b71+74
+  0x609a863a mov.imm16 value 0x36e bytes 2d6e03 FUN_609a7b94 0x609a7b94+2726
+  0x609a864b mov.imm16 value 0x36e bytes 2c6e03 FUN_609a7b94 0x609a7b94+2743
+  0x609aa4b7 mov.imm16 value 0x370 bytes 2d7003 FUN_609aa478 0x609aa478+63
+  0x609aa4c8 mov.imm16 value 0x370 bytes 2c7003 FUN_609aa478 0x609aa478+80
+  0x609bef88 mov.imm16 value 0x370 bytes 247003 not-in-function
+  0x609bef8d mov.imm16 value 0x36c bytes 256c03 not-in-function
+  0x609cba2d fc.imm32 value 0x60a7f5f1 bytes fcdcf1f5a760 FUN_609cb36b 0x609cb36b+1730
+  0x609d6aab mov.imm16 value 0x5b5 bytes 25b505 not-in-function
+  0x609f1fd0 mov.imm16 value 0x5b00 bytes 2e005b not-in-function
+  0x609f1ff5 mov.imm16 value 0x5b00 bytes 2e005b not-in-function
+  0x60a3386b mov.imm16 value 0x5b00 bytes 2e005b not-in-function
+  0x60a5fa30 mov.imm16 value 0x5b00 bytes 2f005b not-in-function
+  0x60a5fa4f mov.imm16 value 0x5b00 bytes 2f005b not-in-function
+  0x60a5fdf2 mov.imm16 value 0x5b00 bytes 2f005b not-in-function
+  0x60a5fe11 mov.imm16 value 0x5b00 bytes 2f005b not-in-function
+  0x60a61ae9 mov.imm16 value 0x5b00 bytes 2f005b not-in-function
+  0x60a61b12 mov.imm16 value 0x5b00 bytes 2f005b not-in-function
+  0x60a7db7b mov.imm16 value 0x5b00 bytes 2f005b not-in-function
+  0x60a7dbb3 mov.imm16 value 0x5b00 bytes 2f005b not-in-function
+  0x60a7f60f mov.imm16 value 0x5b00 bytes 2f005b not-in-function
+  0x60a7f64e mov.imm16 value 0x5b00 bytes 2f005b not-in-function
+  0x60a7f685 mov.imm16 value 0x5b00 bytes 2f005b not-in-function
+  0x60a7f724 mov.imm16 value 0x5b00 bytes 2f005b not-in-function
+  0x60a7f84d mov.imm16 value 0x5b00 bytes 2f005b not-in-function
+  0x60a808be mov.imm16 value 0x5b00 bytes 2f005b not-in-function
+  0x60a808d3 mov.imm16 value 0x5b00 bytes 2f005b not-in-function
+  0x60a813d2 mov.imm16 value 0x5b00 bytes 2f005b not-in-function
+  0x60a813f8 mov.imm16 value 0x5b00 bytes 2f005b not-in-function
+  0x60a81445 mov.imm16 value 0x5b00 bytes 2f005b not-in-function
+  0x60ade7e4 mov.imm16 value 0x36e bytes 2c6e03 FUN_60ade7b5 0x60ade7b5+47
+  0x60aeabde mov.imm16 value 0x5b6 bytes 2cb605 FUN_60aea8da 0x60aea8da+772
+  0x60b07281 mov.imm16 value 0x368 bytes 2d6803 FUN_60b0727a 0x60b0727a+7
+  0x60b0dba3 mov.imm16 value 0x7d9 bytes 2dd907 FUN_60b0da13 0x60b0da13+400
+  0x60b0e8fc fa.imm16 value 0x36c bytes fad06c03 FUN_60b0e6c2 0x60b0e6c2+570
+  0x60b4f4b7 mov.imm16 value 0x368 bytes 256803 FUN_60b4f426 0x60b4f426+145
+  0x60b91a00 mov.imm16 value 0x367 bytes 2c6703 FUN_60b919ee 0x60b919ee+18
+  0x60b91a2d mov.imm16 value 0x36b bytes 2d6b03 FUN_60b919ee 0x60b919ee+63
+  0x60ba6ce5 mov.imm16 value 0xf5e1 bytes 26e1f5 FUN_60ba6c18 0x60ba6c18+205
+  0x60bad87d mov.imm16 value 0x36d bytes 2d6d03 FUN_60bad664 0x60bad664+537
+  0x60baf0f6 mov.imm16 value 0x367 bytes 2c6703 FUN_60baf05a 0x60baf05a+156
+  0x60bb358b mov.imm16 value 0x370 bytes 2d7003 FUN_60bb2b97 0x60bb2b97+2548
+  0x60bb483c mov.imm16 value 0x36a bytes 2c6a03 FUN_60bb4717 0x60bb4717+293
+  0x60bb4873 mov.imm16 value 0x371 bytes 2d7103 FUN_60bb4717 0x60bb4717+348
+  0x60bbc7ee mov.imm16 value 0x36d bytes 2d6d03 FUN_60bbc76e 0x60bbc76e+128
+  0x60bc0e37 fa.imm16 value 0x368 bytes fad06803 FUN_60bc0048 0x60bc0048+3567
+  0x60bc0e3d fa.imm16 value 0x368 bytes fad06803 FUN_60bc0048 0x60bc0048+3573
+  0x60bc0e45 fa.imm16 value 0x368 bytes fad06803 FUN_60bc0048 0x60bc0048+3581
+  0x60bc0e58 fa.imm16 value 0x370 bytes fad07003 FUN_60bc0048 0x60bc0048+3600
+  0x60bc0e5e fa.imm16 value 0x370 bytes fad07003 FUN_60bc0048 0x60bc0048+3606
+  0x60bc0e66 fa.imm16 value 0x370 bytes fad07003 FUN_60bc0048 0x60bc0048+3614
+  0x60bc26c0 mov.imm16 value 0x7f5 bytes 2cf507 FUN_60bc26a0 0x60bc26a0+32
+  0x60bc7d28 fa.imm16 value 0x7dc bytes fafedc07 FUN_60bc79ac 0x60bc79ac+892
+  0x60bca217 mov.imm16 value 0x5b6 bytes 2db605 FUN_60bca19e 0x60bca19e+121
+  0x60bd0ad4 fc.imm32 value 0x60e75b82 bytes fccc825be760 FUN_60bd0974 0x60bd0974+352
+  0x60bf29ad fa.imm16 value 0x36c bytes fad06c03 FUN_60bf2316 0x60bf2316+1687
+  0x60bf7d75 mov.imm16 value 0x366 bytes 2d6603 FUN_60bf7d45 0x60bf7d45+48
+  0x60bf7da4 mov.imm16 value 0x370 bytes 2d7003 FUN_60bf7d45 0x60bf7d45+95
+  0x60c04466 mov.imm16 value 0x364 bytes 276403 FUN_60c043fc 0x60c043fc+106
+  0x60c0446c mov.imm16 value 0x368 bytes 246803 FUN_60c043fc 0x60c043fc+112
+  0x60c073b1 mov.imm16 value 0x364 bytes 256403 FUN_60c0738d 0x60c0738d+36
+  0x60c073bd fa.imm16 value 0x368 bytes fad06803 FUN_60c0738d 0x60c0738d+48
+  0x60c078c2 mov.imm16 value 0x864 bytes 246408 FUN_60c077e9 0x60c077e9+217
+  0x60c07cc5 mov.imm16 value 0x864 bytes 246408 FUN_60c07b93 0x60c07b93+306
+  0x60c084c4 mov.imm16 value 0x36e bytes 2d6e03 FUN_60c0848f 0x60c0848f+53
+  0x60c095dd mov.imm16 value 0x7dc bytes 24dc07 FUN_60c095be 0x60c095be+31
+  0x60c09632 mov.imm16 value 0x7dc bytes 25dc07 FUN_60c09610 0x60c09610+34
+  0x60c096dc mov.imm16 value 0x7dc bytes 26dc07 not-in-function
+  0x60c0af52 fa.imm16 value 0x864 bytes fad16408 FUN_60c0aee4 0x60c0aee4+110
+  0x60c0b18e mov.imm16 value 0x864 bytes 256408 FUN_60c0b123 0x60c0b123+107
+  0x60c1d988 mov.imm16 value 0x7dc bytes 2ddc07 FUN_60c1d938 0x60c1d938+80
+  0x60c299e3 mov.imm16 value 0x364 bytes 266403 FUN_60c29923 0x60c29923+192
+  0x60c299e9 mov.imm16 value 0x368 bytes 246803 FUN_60c29923 0x60c29923+198
+  0x60c299f1 mov.imm16 value 0x36c bytes 2f6c03 FUN_60c29923 0x60c29923+206
+  0x60c299f8 mov.imm16 value 0x370 bytes 277003 FUN_60c29923 0x60c29923+213
+  0x60c2a46a mov.imm16 value 0x36c bytes 246c03 FUN_60c2a464 0x60c2a464+6
+  0x60c2a4ad mov.imm16 value 0x368 bytes 276803 FUN_60c2a464 0x60c2a464+73
+  0x60c2a515 mov.imm16 value 0x364 bytes 276403 FUN_60c2a464 0x60c2a464+177
+  0x60c2a5dc mov.imm16 value 0x364 bytes 246403 FUN_60c2a5db 0x60c2a5db+1
+  0x60c2a6a9 fa.imm16 value 0x36c bytes fac06c03 FUN_60c2a6a5 0x60c2a6a5+4
+  0x60c2a7f8 mov.imm16 value 0x36c bytes 246c03 FUN_60c2a7f5 0x60c2a7f5+3
+  0x60c2aa8e fa.imm16 value 0x368 bytes fac06803 FUN_60c2aa71 0x60c2aa71+29
+  0x60c2ad77 mov.imm16 value 0x364 bytes 256403 FUN_60c2ad53 0x60c2ad53+36
+  0x60c2ad83 mov.imm16 value 0x368 bytes 256803 FUN_60c2ad53 0x60c2ad53+48
+  0x60c2ad8f mov.imm16 value 0x36c bytes 256c03 FUN_60c2ad53 0x60c2ad53+60
+  0x60c2ad9b mov.imm16 value 0x370 bytes 257003 FUN_60c2ad53 0x60c2ad53+72
+  0x60c2b1c6 mov.imm16 value 0x36c bytes 276c03 FUN_60c2b1b3 0x60c2b1b3+19
+  0x60c2b68a mov.imm16 value 0x36c bytes 2e6c03 FUN_60c2b684 0x60c2b684+6
+  0x60c2bac8 fa.imm16 value 0x36c bytes fad36c03 FUN_60c2ba4c 0x60c2ba4c+124
+  0x60c3c4a9 mov.imm16 value 0x5b5 bytes 2cb505 FUN_60c3c492 0x60c3c492+23
+  0x60c3eed0 mov.imm16 value 0x5b5 bytes 2cb505 FUN_60c3eebf 0x60c3eebf+17
+  0x60c3eedb fa.imm16 value 0x5b5 bytes fac8b505 not-in-function
+  0x60c3fb76 mov.imm16 value 0x36c bytes 266c03 FUN_60c3fb6c 0x60c3fb6c+10
+  0x60c3ffa1 fa.imm16 value 0x368 bytes fad26803 FUN_60c3ff93 0x60c3ff93+14
+  0x60c3ffd3 fa.imm16 value 0x368 bytes fad26803 FUN_60c3ff93 0x60c3ff93+64
+  0x60c4004c fa.imm16 value 0x36c bytes fac06c03 FUN_60c4000e 0x60c4000e+62
+  0x60c4030c fa.imm16 value 0x36c bytes fad26c03 FUN_60c40306 0x60c40306+6
+  0x60c4bfe3 mov.imm16 value 0x864 bytes 2d6408 FUN_60c4bf81 0x60c4bf81+98
+  0x60c92f8d mov.imm16 value 0x7d9 bytes 2dd907 FUN_60c927ff 0x60c927ff+1934
+  0x60c92fd3 mov.imm16 value 0x7dc bytes 2ddc07 FUN_60c927ff 0x60c927ff+2004
+  0x60c9307a mov.imm16 value 0x7e6 bytes 2de607 FUN_60c927ff 0x60c927ff+2171
+  0x60c930ea mov.imm16 value 0x7ef bytes 2def07 FUN_60c927ff 0x60c927ff+2283
+  0x60c93115 mov.imm16 value 0x7f2 bytes 2df207 FUN_60c927ff 0x60c927ff+2326
+  0x60c94da3 mov.imm16 value 0x368 bytes 256803 not-in-function
+  0x60c94e2c mov.imm16 value 0x5b6 bytes 2db605 not-in-function
+  0x60ca6e4e mov.imm16 value 0x370 bytes 2c7003 FUN_60ca6e37 0x60ca6e37+23
+  0x60ca6ef8 mov.imm16 value 0x36f bytes 2c6f03 FUN_60ca6eaf 0x60ca6eaf+73
+  0x60ca7ced mov.imm16 value 0x36d bytes 2d6d03 FUN_60ca7cc9 0x60ca7cc9+36
+  0x60cae9f6 mov.imm16 value 0x368 bytes 246803 FUN_60cae9e4 0x60cae9e4+18
+  0x60caea15 mov.imm16 value 0x364 bytes 276403 FUN_60caea0a 0x60caea0a+11
+  0x60cb1603 mov.imm16 value 0x7dc bytes 24dc07 FUN_60cb15fd 0x60cb15fd+6
+  0x60cb1665 mov.imm16 value 0x7dc bytes 25dc07 FUN_60cb1664 0x60cb1664+1
+  0x60cb1a54 mov.imm16 value 0x7dc bytes 26dc07 FUN_60cb1a37 0x60cb1a37+29
+  0x60cb66f9 mov.imm16 value 0x7dc bytes 25dc07 FUN_60cb66ee 0x60cb66ee+11
+  0x60cb68c2 mov.imm16 value 0x7dc bytes 25dc07 FUN_60cb6892 0x60cb6892+48
+  0x60cb8c59 mov.imm16 value 0x370 bytes 247003 FUN_60cb8b94 0x60cb8b94+197
+  0x60cb8ce7 mov.imm16 value 0x370 bytes 247003 FUN_60cb8ccf 0x60cb8ccf+24
+  0x60cbd6a2 fa.imm16 value 0x364 bytes fac86403 not-in-function
+  0x60cbd6c0 mov.imm16 value 0x365 bytes 2c6503 FUN_60cbd6ae 0x60cbd6ae+18
+  0x60cbd6ce fa.imm16 value 0x365 bytes fac86503 not-in-function
+  0x60cbd6dc fa.imm16 value 0x366 bytes fac86603 not-in-function
+  0x60cbd6ea fa.imm16 value 0x367 bytes fac86703 not-in-function
+  0x60cbd707 mov.imm16 value 0x368 bytes 2c6803 FUN_60cbd6f6 0x60cbd6f6+17
+  0x60cbd712 fa.imm16 value 0x368 bytes fac86803 not-in-function
+  0x60cbd720 fa.imm16 value 0x369 bytes fac86903 not-in-function
+  0x60cbd72e fa.imm16 value 0x36a bytes fac86a03 not-in-function
+  0x60cbd74c mov.imm16 value 0x36b bytes 2c6b03 FUN_60cbd73a 0x60cbd73a+18
+  0x60cbd75a fa.imm16 value 0x36b bytes fac86b03 not-in-function
+  0x60cbd778 mov.imm16 value 0x36c bytes 2c6c03 FUN_60cbd766 0x60cbd766+18
+  0x60cbd786 fa.imm16 value 0x36c bytes fac86c03 not-in-function
+  0x60cbd7a3 mov.imm16 value 0x36d bytes 2c6d03 FUN_60cbd792 0x60cbd792+17
+  0x60cbd7ae fa.imm16 value 0x36d bytes fac86d03 not-in-function
+  0x60cbd7cb mov.imm16 value 0x36e bytes 2c6e03 FUN_60cbd7ba 0x60cbd7ba+17
+  0x60cbd7d6 fa.imm16 value 0x36e bytes fac86e03 not-in-function
+  0x60cbd7f3 mov.imm16 value 0x36f bytes 2c6f03 FUN_60cbd7e2 0x60cbd7e2+17
+  0x60cbd7fe fa.imm16 value 0x36f bytes fac86f03 not-in-function
+  0x60cbd81e mov.imm16 value 0x370 bytes 2c7003 FUN_60cbd80a 0x60cbd80a+20
+  0x60cbd837 fa.imm16 value 0x370 bytes fac87003 not-in-function
+  0x60cbd854 mov.imm16 value 0x371 bytes 2c7103 not-in-function
+  0x60cbd85f fa.imm16 value 0x371 bytes fac87103 not-in-function
+  0x60cc027f mov.imm16 value 0x7f5 bytes 2df507 FUN_60cc0241 0x60cc0241+62
+  0x60cc0c5a mov.imm16 value 0x5b8 bytes 2cb805 FUN_60cc08c2 0x60cc08c2+920
+  0x60cc2207 mov.imm16 value 0x36b bytes 2d6b03 FUN_60cc21f8 0x60cc21f8+15
+  0x60cc2219 mov.imm16 value 0x36c bytes 2d6c03 FUN_60cc21f8 0x60cc21f8+33
+  0x60cc3407 mov.imm16 value 0x364 bytes 266403 not-in-function
+  0x60ccae22 mov.imm16 value 0x364 bytes 2f6403 not-in-function
+  0x60ce1969 fa.imm16 value 0x364 bytes fad06403 not-in-function
+  0x60ce1977 fa.imm16 value 0x364 bytes fad16403 not-in-function
+  0x60cebcac mov.imm16 value 0x5b8 bytes 2cb805 FUN_60ceb96e 0x60ceb96e+830
+  0x60cf2d1b mov.imm16 value 0x364 bytes 266403 FUN_60cf2ac0 0x60cf2ac0+603
+  0x60cf9512 fa.imm16 value 0x368 bytes fad06803 not-in-function
+  0x60cf9520 fa.imm16 value 0x368 bytes fad16803 not-in-function
+  0x60cf9d4c fa.imm16 value 0x5b8 bytes fad2b805 not-in-function
+  0x60d029b8 mov.imm16 value 0x364 bytes 256403 FUN_60d029b2 0x60d029b2+6
+  0x60d053fc mov.imm16 value 0x864 bytes 256408 FUN_60d053f6 0x60d053f6+6
+  0x60d0545e mov.imm16 value 0x7dc bytes 25dc07 FUN_60d05458 0x60d05458+6
+  0x60d054c0 mov.imm16 value 0x36c bytes 256c03 FUN_60d054ba 0x60d054ba+6
+  0x60d05668 mov.imm16 value 0x370 bytes 257003 FUN_60d05662 0x60d05662+6
+  0x60d05684 mov.imm16 value 0x5b8 bytes 25b805 FUN_60d0567e 0x60d0567e+6
+  0x60d0c996 mov.imm16 value 0x364 bytes 266403 not-in-function
+  0x60d0e039 mov.imm16 value 0x36d bytes 2d6d03 FUN_60d0e02a 0x60d0e02a+15
+  0x60d0eb95 mov.imm16 value 0x364 bytes 266403 not-in-function
+  0x60d144ed mov.imm16 value 0xf5e bytes 2c5e0f not-in-function
+  0x60d17ee9 mov.imm16 value 0x364 bytes 276403 FUN_60d17ee3 0x60d17ee3+6
+  0x60d1c9a7 mov.imm16 value 0x36d bytes 2d6d03 not-in-function
+  0x60d1c9d0 mov.imm16 value 0x371 bytes 2d7103 not-in-function
+  0x60d1f026 mov.imm16 value 0x7f5 bytes 2df507 FUN_60d1ef2b 0x60d1ef2b+251
+  0x60d1f040 mov.imm16 value 0x7f5 bytes 2df507 FUN_60d1ef2b 0x60d1ef2b+277
+  0x60d22369 mov.imm16 value 0x36d bytes 2d6d03 not-in-function
+  0x60d2dcdf fc.imm32 value 0x60eef5f1 bytes fcccf1f5ee60 FUN_60d2dccc 0x60d2dccc+19
+  0x60d3d90a mov.imm16 value 0x7d9 bytes 24d907 FUN_60d3d8d8 0x60d3d8d8+50
+  0x60d3ffc2 mov.imm16 value 0x7d9 bytes 27d907 FUN_60d3fefa 0x60d3fefa+200
+  0x60d54a88 mov.imm16 value 0x370 bytes 2d7003 FUN_60d548ca 0x60d548ca+446
+  0x60d54ad7 mov.imm16 value 0x371 bytes 2d7103 FUN_60d548ca 0x60d548ca+525
+  0x60d5ecd7 mov.imm16 value 0x7e6 bytes 2de607 FUN_60d5ec75 0x60d5ec75+98
+  0x60d68821 mov.imm16 value 0x368 bytes 2c6803 FUN_60d68810 0x60d68810+17
+  0x60d688e6 fa.imm16 value 0x5b6 bytes fad1b605 FUN_60d68878 0x60d68878+110
+  0x60d68d49 mov.imm16 value 0x5b8 bytes 24b805 FUN_60d68d17 0x60d68d17+50
+  0x60d68d56 mov.imm16 value 0x5b8 bytes 24b805 FUN_60d68d17 0x60d68d17+63
+  0x60d68e06 mov.imm16 value 0x5b6 bytes 24b605 FUN_60d68dca 0x60d68dca+60
+  0x60d68ea4 fa.imm16 value 0x5b8 bytes fad3b805 FUN_60d68e38 0x60d68e38+108
+  0x60d6e272 mov.imm16 value 0x364 bytes 246403 FUN_60d6e129 0x60d6e129+329
+  0x60d6e2bd mov.imm16 value 0x364 bytes 246403 FUN_60d6e2ad 0x60d6e2ad+16
+  0x60d6e4e9 mov.imm16 value 0x364 bytes 246403 FUN_60d6e40a 0x60d6e40a+223
+  0x60d7c7bf mov.imm16 value 0x5b6 bytes 2eb605 not-in-function
+  0x60da2b69 mov.imm16 value 0x36b bytes 256b03 FUN_60da2a61 0x60da2a61+264
+  0x60da2d3f mov.imm16 value 0x370 bytes 277003 FUN_60da2d3c 0x60da2d3c+3
+  0x60db4ae3 mov.imm16 value 0x36a bytes 2d6a03 not-in-function
+  0x60db5c24 fa.imm16 value 0x364 bytes fac26403 not-in-function
+  0x60db5c69 fa.imm16 value 0x370 bytes fac27003 not-in-function
+  0x60db5ea1 mov.imm16 value 0x7dc bytes 2ddc07 not-in-function
+  0x60dcd631 mov.imm16 value 0x370 bytes 247003 FUN_60dcd5ea 0x60dcd5ea+71
+  0x60dcd68b mov.imm16 value 0x370 bytes 247003 FUN_60dcd67b 0x60dcd67b+16
+  0x60dcd6ea mov.imm16 value 0x370 bytes 2e7003 FUN_60dcd6d1 0x60dcd6d1+25
+  0x60dcd78b mov.imm16 value 0x370 bytes 257003 FUN_60dcd783 0x60dcd783+8
+  0x60dce2bc mov.imm16 value 0x368 bytes 2d6803 FUN_60dce283 0x60dce283+57
+  0x60ddd766 mov.imm16 value 0x5b00 bytes 2d005b not-in-function
+  0x60e1da6c mov.imm16 value 0x5b00 bytes 2e005b not-in-function
+  0x60e1daa2 mov.imm16 value 0x5b00 bytes 2e005b not-in-function
+  0x60e1dad8 mov.imm16 value 0x5b00 bytes 2e005b not-in-function
+  0x60e1db8c mov.imm16 value 0x5b00 bytes 2e005b not-in-function
+  0x60e1dbbf mov.imm16 value 0x5b00 bytes 2e005b not-in-function
+  0x60e1dbf4 mov.imm16 value 0x5b00 bytes 2e005b not-in-function
+  0x60e1dc34 mov.imm16 value 0x5b00 bytes 2e005b not-in-function
+  0x60e1dc72 mov.imm16 value 0x5b00 bytes 2e005b not-in-function
+  0x60e1dca5 mov.imm16 value 0x5b00 bytes 2e005b not-in-function
+  0x60e1dcd8 mov.imm16 value 0x5b00 bytes 2e005b not-in-function
+  0x60e1dd0d mov.imm16 value 0x5b00 bytes 2e005b not-in-function
+  0x60e709b4 mov.imm16 value 0x5b00 bytes 2e005b not-in-function
+  0x60e88b4f mov.imm16 value 0x5b00 bytes 2d005b not-in-function
+  0x60e88d8a mov.imm16 value 0x5b00 bytes 2d005b not-in-function
+  0x60e8f5f0 mov.imm16 value 0x5b00 bytes 2d005b not-in-function
+  0x60ec937a mov.imm16 value 0x5b00 bytes 2e005b not-in-function
+  0x60f16d6e mov.imm16 value 0x5b00 bytes 2d005b not-in-function
+  0x60f16eea mov.imm16 value 0x5b00 bytes 2d005b not-in-function
+  0x60f16fac mov.imm16 value 0x5b00 bytes 2d005b not-in-function
+  0x6105a0d6 mov.imm16 value 0x36e bytes 2c6e03 FUN_6105a0c3 0x6105a0c3+19
+  0x61061a17 mov.imm16 value 0x36b bytes 2c6b03 FUN_610619e3 0x610619e3+52
+  0x610623f6 mov.imm16 value 0x36f bytes 2c6f03 FUN_610620f6 0x610620f6+768
+  0x61064bc1 mov.imm16 value 0x371 bytes 2d7103 FUN_61064b0b 0x61064b0b+182
+  0x6108fcb0 mov.imm16 value 0x36f bytes 276f03 FUN_6108fca1 0x6108fca1+15
+  0x61091e44 mov.imm16 value 0x5b00 bytes 2e005b FUN_61091d45 0x61091d45+255
+  0x61094515 fa.imm16 value 0x5b00 bytes fac8005b FUN_610944f6 0x610944f6+31
+  0x610ac01b fa.imm16 value 0x5b00 bytes fac8005b FUN_610abff5 0x610abff5+38
+  0x610becbf fa.imm16 value 0x5b00 bytes fac8005b FUN_610beb04 0x610beb04+443
+  0x610bfb40 fa.imm16 value 0x5b00 bytes fac8005b FUN_610bfa2f 0x610bfa2f+273
+  0x610de781 mov.imm16 value 0x7dc bytes 27dc07 FUN_610de6e4 0x610de6e4+157
+  0x610dee65 mov.imm16 value 0x7dc bytes 2fdc07 FUN_610dee3e 0x610dee3e+39
+  0x610f2144 mov.imm16 value 0x7f2 bytes 24f207 FUN_610f1f96 0x610f1f96+430
+  0x610f2159 mov.imm16 value 0x7f2 bytes 24f207 FUN_610f1f96 0x610f1f96+451
+  0x610f6dfd fa.imm16 value 0x36c bytes fafe6c03 FUN_610f6834 0x610f6834+1481
+  0x610fe4a3 fa.imm16 value 0x5b8 bytes fad0b805 FUN_610fdd7c 0x610fdd7c+1831
+  0x61102019 mov.imm16 value 0x5b8 bytes 25b805 FUN_61101fcf 0x61101fcf+74
+  0x6110d468 fa.imm16 value 0x5b8 bytes fafeb805 not-in-function
+  0x61114be1 fa.imm16 value 0x5b8 bytes fad0b805 not-in-function
+  0x61116b62 fa.imm16 value 0x364 bytes fad06403 FUN_61116aec 0x61116aec+118
+  0x6111c524 mov.imm16 value 0x36c bytes 2d6c03 FUN_6111c4ec 0x6111c4ec+56
+  0x6111db24 mov.imm16 value 0x36c bytes 2c6c03 not-in-function
+  0x6111f648 mov.imm16 value 0x368 bytes 2c6803 not-in-function
+  0x6112044b mov.imm16 value 0x370 bytes 2c7003 not-in-function
+  0x61120484 mov.imm16 value 0x368 bytes 2c6803 not-in-function
+  0x611205a1 mov.imm16 value 0x368 bytes 2c6803 not-in-function
+  0x611266b2 mov.imm16 value 0x36c bytes 246c03 FUN_611266a9 0x611266a9+9
+  0x611266ef mov.imm16 value 0x36c bytes 246c03 FUN_611266d6 0x611266d6+25
+  0x61126733 mov.imm16 value 0x36c bytes 2e6c03 FUN_6112670c 0x6112670c+39
+  0x61126ff9 mov.imm16 value 0x370 bytes 247003 FUN_61126ff0 0x61126ff0+9
+  0x61127057 mov.imm16 value 0x370 bytes 247003 FUN_6112703e 0x6112703e+25
+  0x6112709d mov.imm16 value 0x370 bytes 2f7003 FUN_61127073 0x61127073+42
+  0x6112ed4b mov.imm16 value 0x370 bytes 247003 FUN_6112ed42 0x6112ed42+9
+  0x6112edd6 mov.imm16 value 0x370 bytes 247003 FUN_6112edbd 0x6112edbd+25
+  0x6112ee3d mov.imm16 value 0x370 bytes 2f7003 FUN_6112ee01 0x6112ee01+60
+  0x6112fa93 mov.imm16 value 0x364 bytes 246403 FUN_6112fa8a 0x6112fa8a+9
+  0x6112fad0 mov.imm16 value 0x364 bytes 246403 FUN_6112fab7 0x6112fab7+25
+  0x6112fb26 mov.imm16 value 0x364 bytes 246403 FUN_6112faed 0x6112faed+57
+  0x6113017b fa.imm16 value 0x364 bytes fac06403 FUN_6113005e 0x6113005e+285
+  0x611301df fa.imm16 value 0x370 bytes fac07003 FUN_6113005e 0x6113005e+385
+  0x611332a1 fa.imm16 value 0x5b8 bytes fad2b805 FUN_6113307e 0x6113307e+547
+  0x61134119 mov.imm16 value 0x370 bytes 247003 not-in-function
+  0x611342d2 mov.imm16 value 0x370 bytes 247003 FUN_611342bb 0x611342bb+23
+  0x61134332 mov.imm16 value 0x370 bytes 247003 FUN_61134319 0x61134319+25
+  0x6113439f mov.imm16 value 0x370 bytes 2e7003 FUN_61134372 0x61134372+45
+  0x61136202 mov.imm16 value 0x36c bytes 246c03 FUN_611361f9 0x611361f9+9
+  0x61136263 mov.imm16 value 0x36c bytes 246c03 FUN_6113624a 0x6113624a+25
+  0x611362ad mov.imm16 value 0x36c bytes 2f6c03 FUN_611362a4 0x611362a4+9
+  0x61136abc mov.imm16 value 0x368 bytes 246803 FUN_61136ab3 0x61136ab3+9
+  0x61136af8 mov.imm16 value 0x368 bytes 246803 FUN_61136adf 0x61136adf+25
+  0x61136b6c fa.imm16 value 0x368 bytes fad36803 FUN_61136b14 0x61136b14+88
+  0x61136be1 fa.imm16 value 0x370 bytes fad37003 FUN_61136b14 0x61136b14+205
+  0x61140cf7 mov.imm16 value 0x36c bytes 246c03 not-in-function
+  0x61140e9d mov.imm16 value 0x36c bytes 246c03 FUN_61140e6f 0x61140e6f+46
+  0x61140efa mov.imm16 value 0x36c bytes 246c03 FUN_61140ee3 0x61140ee3+23
+  0x611421ff fa.imm16 value 0x366 bytes fad26603 FUN_611421cd 0x611421cd+50
+  0x61142376 fa.imm16 value 0x367 bytes fac26703 FUN_611421cd 0x611421cd+425
+  0x611423ce fa.imm16 value 0x36b bytes fac26b03 FUN_611421cd 0x611421cd+513
+  0x61142426 fa.imm16 value 0x36f bytes fad36f03 FUN_611421cd 0x611421cd+601
+  0x61142cd2 fa.imm16 value 0x370 bytes fad07003 FUN_61142949 0x61142949+905
+  0x611438dc fa.imm16 value 0x36c bytes fac06c03 FUN_61143691 0x61143691+587
+  0x611447cc mov.imm16 value 0x370 bytes 247003 FUN_611447c3 0x611447c3+9
+  0x6114481a mov.imm16 value 0x370 bytes 247003 FUN_61144801 0x61144801+25
+  0x611448cf fa.imm16 value 0x370 bytes fad27003 FUN_61144837 0x61144837+152
+  0x611448fc fa.imm16 value 0x370 bytes fac27003 FUN_61144837 0x61144837+197
+  0x61146521 fa.imm16 value 0x368 bytes fad26803 FUN_611462c6 0x611462c6+603
+  0x6114ba3c mov.imm16 value 0x368 bytes 246803 FUN_6114ba07 0x6114ba07+53
+  0x6114baec mov.imm16 value 0x368 bytes 246803 FUN_6114ba86 0x6114ba86+102
+  0x6114bbeb mov.imm16 value 0x368 bytes 246803 FUN_6114bb09 0x6114bb09+226
+  0x6114de11 fa.imm16 value 0x36c bytes fac06c03 FUN_6114d3c3 0x6114d3c3+2638
+  0x6114e0a8 fa.imm16 value 0x36c bytes fac06c03 FUN_6114d3c3 0x6114d3c3+3301
+  0x6114e29c fa.imm16 value 0x36c bytes fac06c03 FUN_6114d3c3 0x6114d3c3+3801
+  0x6114e4f4 fa.imm16 value 0x36c bytes fac06c03 FUN_6114d3c3 0x6114d3c3+4401
+  0x6114e6e2 fa.imm16 value 0x36c bytes fac06c03 FUN_6114d3c3 0x6114d3c3+4895
+  0x6114e853 fa.imm16 value 0x36c bytes fac06c03 FUN_6114d3c3 0x6114d3c3+5264
+  0x6115419e mov.imm16 value 0x370 bytes 247003 FUN_61154195 0x61154195+9
+  0x611541ec mov.imm16 value 0x370 bytes 247003 FUN_611541d3 0x611541d3+25
+  0x61154297 mov.imm16 value 0x370 bytes 2f7003 FUN_61154209 0x61154209+142
+  0x611580ef fa.imm16 value 0x367 bytes fad36703 FUN_611557da 0x611557da+10517
+  0x61158978 fa.imm16 value 0x364 bytes fac06403 FUN_6115880c 0x6115880c+364
+  0x61158a1f mov.imm16 value 0x36c bytes 246c03 FUN_6115880c 0x6115880c+531
+  0x611592f4 fa.imm16 value 0x5b8 bytes fac0b805 FUN_6115880c 0x6115880c+2792
+  0x61159d5a fa.imm16 value 0x364 bytes fac06403 FUN_61159bff 0x61159bff+347
+  0x6115d3be mov.imm16 value 0x370 bytes 247003 FUN_6115d3b5 0x6115d3b5+9
+  0x6115d3fa mov.imm16 value 0x370 bytes 247003 FUN_6115d3e1 0x6115d3e1+25
+  0x6115d527 fa.imm16 value 0x370 bytes fad37003 FUN_6115d416 0x6115d416+273
+  0x6115f707 fa.imm16 value 0x5b8 bytes fad0b805 FUN_6115f495 0x6115f495+626
+  0x611665f5 mov.imm16 value 0x370 bytes 247003 FUN_611665e5 0x611665e5+16
+  0x611666e2 fa.imm16 value 0x370 bytes fad07003 FUN_611666da 0x611666da+8
+  0x611666fa fa.imm16 value 0x370 bytes fac07003 FUN_611666ef 0x611666ef+11
+  0x6116dd33 mov.imm16 value 0x364 bytes 246403 FUN_6116dd2a 0x6116dd2a+9
+  0x6116dd69 mov.imm16 value 0x364 bytes 246403 FUN_6116dd50 0x6116dd50+25
+  0x6116eb02 fa.imm16 value 0x36e bytes fad36e03 FUN_6116e8df 0x6116e8df+547
+  0x6116ef84 fa.imm16 value 0x36e bytes fad36e03 FUN_6116e8df 0x6116e8df+1701
+  0x6116f939 fa.imm16 value 0x36e bytes fad36e03 FUN_6116f734 0x6116f734+517
+  0x6116fcc0 fa.imm16 value 0x36e bytes fad36e03 FUN_6116f734 0x6116f734+1420
+  0x61170748 fa.imm16 value 0x36e bytes fad36e03 FUN_61170525 0x61170525+547
+  0x61170bca fa.imm16 value 0x36e bytes fad36e03 FUN_61170525 0x61170525+1701
+  0x61174e99 fa.imm16 value 0x368 bytes fad16803 FUN_6117465c 0x6117465c+2109
+  0x61174ef3 fa.imm16 value 0x370 bytes fafe7003 FUN_6117465c 0x6117465c+2199
+  0x61176127 fa.imm16 value 0x36c bytes fad16c03 FUN_6117588d 0x6117588d+2202
+  0x61176137 fa.imm16 value 0x364 bytes fad16403 FUN_6117588d 0x6117588d+2218
+  0x61176144 fa.imm16 value 0x364 bytes fad16403 FUN_6117588d 0x6117588d+2231
+  0x61178473 fa.imm16 value 0x370 bytes fad37003 FUN_6117835b 0x6117835b+280
+  0x6117f8c7 mov.imm16 value 0x368 bytes 2d6803 not-in-function
+  0x6117fa2e mov.imm16 value 0x368 bytes 2d6803 FUN_6117fa21 0x6117fa21+13
+  0x6117fa62 mov.imm16 value 0x368 bytes 2d6803 FUN_6117fa46 0x6117fa46+28
+  0x6118874d mov.imm16 value 0x370 bytes 247003 not-in-function
+  0x61188940 mov.imm16 value 0x370 bytes 247003 FUN_61188925 0x61188925+27
+  0x61188a82 mov.imm16 value 0x370 bytes 247003 FUN_61188a67 0x61188a67+27
+  0x61188d9f mov.imm16 value 0x370 bytes 2c7003 FUN_61188d92 0x61188d92+13
+  0x61188de6 mov.imm16 value 0x370 bytes 2d7003 FUN_61188dc7 0x61188dc7+31
+  0x61188ea4 mov.imm16 value 0x370 bytes 2c7003 FUN_61188e97 0x61188e97+13
+  0x61188ef1 mov.imm16 value 0x370 bytes 2c7003 FUN_61188ee4 0x61188ee4+13
+  0x61188f43 mov.imm16 value 0x370 bytes 2c7003 FUN_61188f2c 0x61188f2c+23
+  0x6118bd78 mov.imm16 value 0x5b8 bytes 24b805 not-in-function
+  0x6118bf47 mov.imm16 value 0x5b8 bytes 24b805 FUN_6118bed7 0x6118bed7+112
+  0x6118c058 mov.imm16 value 0x5b8 bytes 24b805 FUN_6118bfb6 0x6118bfb6+162
+  0x6118c10e mov.imm16 value 0x5b8 bytes 25b805 FUN_6118c106 0x6118c106+8
+  0x6118c820 fa.imm16 value 0x5b8 bytes fad3b805 FUN_6118c7df 0x6118c7df+65
+  0x6118cc93 fa.imm16 value 0x5b8 bytes fad2b805 FUN_6118cc4d 0x6118cc4d+70
+  0x61194ddd fa.imm16 value 0x370 bytes fad37003 FUN_61194d64 0x61194d64+121
+  0x61195d1d mov.imm16 value 0x5b8 bytes 27b805 FUN_61195c9a 0x61195c9a+131
+  0x61195d7f mov.imm16 value 0x5b8 bytes 26b805 FUN_61195c9a 0x61195c9a+229
+  0x61195dc1 mov.imm16 value 0x5b8 bytes 26b805 FUN_61195c9a 0x61195c9a+295
+  0x61195e4e mov.imm16 value 0x5b8 bytes 26b805 FUN_61195c9a 0x61195c9a+436
+  0x61195ec2 mov.imm16 value 0x5b8 bytes 26b805 FUN_61195c9a 0x61195c9a+552
+  0x61195ee7 mov.imm16 value 0x5b8 bytes 26b805 FUN_61195c9a 0x61195c9a+589
+  0x61195f36 mov.imm16 value 0x5b8 bytes 26b805 FUN_61195c9a 0x61195c9a+668
+  0x61195fc3 mov.imm16 value 0x5b8 bytes 26b805 FUN_61195c9a 0x61195c9a+809
+  0x6119ff26 mov.imm16 value 0x7e6 bytes 24e607 FUN_6119fef2 0x6119fef2+52
+  0x611ad6c3 mov.imm16 value 0x5b5 bytes 26b505 FUN_611ad5e7 0x611ad5e7+220
+  0x611c2ba1 mov.imm16 value 0x864 bytes 2c6408 FUN_611c2b9e 0x611c2b9e+3
+  0x611d081d fa.imm16 value 0x370 bytes fac07003 FUN_611d0751 0x611d0751+204
+  0x611d1eb0 fa.imm16 value 0x370 bytes fac07003 FUN_611d1e16 0x611d1e16+154
+  0x611e0104 mov.imm16 value 0x367 bytes 246703 FUN_611e0011 0x611e0011+243
+  0x611e4b0e mov.imm16 value 0x366 bytes 276603 FUN_611e4a9e 0x611e4a9e+112
+  0x611e4b2d mov.imm16 value 0x366 bytes 276603 FUN_611e4a9e 0x611e4a9e+143
+  0x611e6197 mov.imm16 value 0x367 bytes 246703 FUN_611e6109 0x611e6109+142
+  0x611ea48d mov.imm16 value 0x366 bytes 276603 FUN_611ea41d 0x611ea41d+112
+  0x611ea4ac mov.imm16 value 0x366 bytes 276603 FUN_611ea41d 0x611ea41d+143
+  0x611eb4cf mov.imm16 value 0x368 bytes 2d6803 FUN_611eb481 0x611eb481+78
+  0x611eb5e0 mov.imm16 value 0x368 bytes 2d6803 FUN_611eb55f 0x611eb55f+129
+  0x611eb68b mov.imm16 value 0x368 bytes 2d6803 FUN_611eb55f 0x611eb55f+300
+  0x611ecb14 mov.imm16 value 0x36f bytes 246f03 FUN_611eca5e 0x611eca5e+182
+  0x611ecb1b mov.imm16 value 0x367 bytes 246703 FUN_611eca5e 0x611eca5e+189
+  0x611ecb48 mov.imm16 value 0x36b bytes 246b03 FUN_611eca5e 0x611eca5e+234
+  0x611ed8b7 mov.imm16 value 0x370 bytes 2c7003 FUN_611ed848 0x611ed848+111
+  0x611ed9ba fa.imm16 value 0x370 bytes fac07003 FUN_611ed8f8 0x611ed8f8+194
+  0x611ee56b mov.imm16 value 0x36c bytes 2c6c03 FUN_611ee4f6 0x611ee4f6+117
+  0x611f2b2f fa.imm16 value 0x364 bytes fac06403 FUN_611f2b20 0x611f2b20+15
+  0x611f2b44 mov.imm16 value 0x364 bytes 2d6403 FUN_611f2b20 0x611f2b20+36
+  0x611f2b7a fa.imm16 value 0x36b bytes fac06b03 FUN_611f2b20 0x611f2b20+90
+  0x611f3392 mov.imm16 value 0x364 bytes 2d6403 FUN_611f336d 0x611f336d+37
+  0x611f339e mov.imm16 value 0x364 bytes 2d6403 FUN_611f336d 0x611f336d+49
+  0x611f33a1 fa.imm16 value 0x364 bytes fac06403 FUN_611f336d 0x611f336d+52
+  0x611f33b3 mov.imm16 value 0x364 bytes 2d6403 FUN_611f336d 0x611f336d+70
+  0x611fc853 mov.imm16 value 0x364 bytes 2d6403 FUN_611fc840 0x611fc840+19
+  0x611fc861 fa.imm16 value 0x364 bytes fac06403 FUN_611fc840 0x611fc840+33
+  0x611fc875 fa.imm16 value 0x36c bytes fac06c03 FUN_611fc840 0x611fc840+53
+  0x611fcdcc mov.imm16 value 0x5b8 bytes 2db805 FUN_611fcd82 0x611fcd82+74
+  0x611fdec4 mov.imm16 value 0x364 bytes 2d6403 FUN_611fdeae 0x611fdeae+22
+  0x611fded0 mov.imm16 value 0x364 bytes 2d6403 FUN_611fdeae 0x611fdeae+34
+  0x611fded3 fa.imm16 value 0x368 bytes fac06803 FUN_611fdeae 0x611fdeae+37
+  0x611fe7bf mov.imm16 value 0x364 bytes 2d6403 FUN_611fe7a7 0x611fe7a7+24
+  0x611fff61 mov.imm16 value 0x364 bytes 2d6403 FUN_611fff4d 0x611fff4d+20
+  0x611fff73 mov.imm16 value 0x364 bytes 2d6403 FUN_611fff4d 0x611fff4d+38
+  0x61203a8e mov.imm16 value 0x364 bytes 2d6403 FUN_61203a81 0x61203a81+13
+  0x61203a9a mov.imm16 value 0x364 bytes 2d6403 FUN_61203a81 0x61203a81+25
+  0x61203a9d fa.imm16 value 0x364 bytes fac06403 FUN_61203a81 0x61203a81+28
+  0x61203aaf mov.imm16 value 0x364 bytes 2d6403 FUN_61203a81 0x61203a81+46
+  0x61205895 fa.imm16 value 0x36c bytes fad26c03 FUN_612055ba 0x612055ba+731
+  0x61206ea2 mov.imm16 value 0x364 bytes 246403 FUN_61206e46 0x61206e46+92
+  0x61206ef6 mov.imm16 value 0x5b8 bytes 2cb805 FUN_61206e46 0x61206e46+176
+  0x61207186 mov.imm16 value 0x36c bytes 2d6c03 FUN_612070aa 0x612070aa+220
+  0x612071e8 mov.imm16 value 0x364 bytes 246403 FUN_612070aa 0x612070aa+318
+  0x612072f3 mov.imm16 value 0x5b8 bytes 24b805 FUN_612070aa 0x612070aa+585
+  0x61207eb4 fa.imm16 value 0x364 bytes fad26403 FUN_61207d68 0x61207d68+332
+  0x61209532 fa.imm16 value 0x36e bytes fac06e03 FUN_61209406 0x61209406+300
+  0x6120bdb3 mov.imm16 value 0x364 bytes 2d6403 FUN_6120bd80 0x6120bd80+51
+  0x6120bdc6 mov.imm16 value 0x364 bytes 2d6403 FUN_6120bd80 0x6120bd80+70
+  0x6120c16d mov.imm16 value 0x364 bytes 2d6403 FUN_6120c0ec 0x6120c0ec+129
+  0x61217ec4 mov.imm16 value 0x7f2 bytes 25f207 FUN_61217df8 0x61217df8+204
+  0x6122ed59 fa.imm16 value 0x368 bytes fad06803 FUN_6122dd0a 0x6122dd0a+4175
+  0x6122ed5f fa.imm16 value 0x368 bytes fad06803 FUN_6122dd0a 0x6122dd0a+4181
+  0x6122ed6d fa.imm16 value 0x368 bytes fad06803 FUN_6122dd0a 0x6122dd0a+4195
+  0x6122ed80 fa.imm16 value 0x370 bytes fad07003 FUN_6122dd0a 0x6122dd0a+4214
+  0x6122ed86 fa.imm16 value 0x370 bytes fad07003 FUN_6122dd0a 0x6122dd0a+4220
+  0x6122ed94 fa.imm16 value 0x370 bytes fad07003 FUN_6122dd0a 0x6122dd0a+4234
+  0x612362e7 mov.imm16 value 0x5b52 bytes 24525b FUN_61236129 0x61236129+446
+  0x6123acd6 mov.imm16 value 0x365 bytes 2c6503 FUN_6123abe8 0x6123abe8+238
+  0x61247d8f mov.imm16 value 0x36c bytes 2d6c03 FUN_61247d61 0x61247d61+46
+  0x61247e4b mov.imm16 value 0x370 bytes 2d7003 FUN_61247e3e 0x61247e3e+13
+  0x61249ab8 mov.imm16 value 0x36c bytes 2d6c03 not-in-function
+  0x6124a148 mov.imm16 value 0x36c bytes 2d6c03 not-in-function
+  0x6124acbd mov.imm16 value 0x370 bytes 2d7003 FUN_6124ac49 0x6124ac49+116
+  0x6124ad11 mov.imm16 value 0x370 bytes 2d7003 FUN_6124ad03 0x6124ad03+14
+  0x6124ad5b mov.imm16 value 0x370 bytes 2d7003 FUN_6124ad4d 0x6124ad4d+14
+  0x6124af20 mov.imm16 value 0x36c bytes 2d6c03 FUN_6124af08 0x6124af08+24
+  0x6124af74 mov.imm16 value 0x36c bytes 2d6c03 FUN_6124af08 0x6124af08+108
+  0x6125c00a mov.imm16 value 0x864 bytes 2c6408 FUN_6125bfbe 0x6125bfbe+76
+  0x6125c04a mov.imm16 value 0x864 bytes 2c6408 FUN_6125bfbe 0x6125bfbe+140
+  0x6125c091 mov.imm16 value 0x864 bytes 2c6408 FUN_6125bfbe 0x6125bfbe+211
+  0x6127c588 fa.imm16 value 0x368 bytes fafe6803 not-in-function
+  0x6128c262 mov.imm16 value 0x5b8 bytes 2fb805 FUN_6128c20b 0x6128c20b+87
+  0x6128c2f8 fa.imm16 value 0x5b8 bytes fac2b805 FUN_6128c20b 0x6128c20b+237
+  0x6128c91b fa.imm16 value 0x5b8 bytes fac2b805 FUN_6128c8af 0x6128c8af+108
+  0x6128c9c0 mov.imm16 value 0x5b8 bytes 26b805 FUN_6128c8af 0x6128c8af+273
+  0x6129087c mov.imm16 value 0x370 bytes 2d7003 FUN_6129080c 0x6129080c+112
+  0x6129d865 mov.imm16 value 0x36e bytes 246e03 not-in-function
+  0x612a0992 fa.imm16 value 0xf5e0 bytes fafee0f5 FUN_612a0992 0x612a0992+0
+  0x612a978a fc.imm32 value 0x6161f5e1 bytes fccce1f56161 FUN_612a9429 0x612a9429+865
+  0x612af343 mov.imm16 value 0x864 bytes 2c6408 FUN_612af320 0x612af320+35
+  0x612bb96d fa.imm16 value 0x367 bytes fad26703 FUN_612bb8e4 0x612bb8e4+137
+  0x612be7b3 mov.imm16 value 0x364 bytes 2d6403 FUN_612be7ad 0x612be7ad+6
+  0x612c37f0 mov.imm16 value 0x5b8 bytes 2cb805 FUN_612c37cd 0x612c37cd+35
+  0x612c3af9 fa.imm16 value 0x5b8 bytes fac2b805 not-in-function
+  0x612c8f37 fa.imm16 value 0x364 bytes fad06403 FUN_612c8f32 0x612c8f32+5
+  0x612c8f4b fa.imm16 value 0x368 bytes fad06803 FUN_612c8f32 0x612c8f32+25
+  0x612cdefb fa.imm16 value 0x370 bytes fac07003 FUN_612cde85 0x612cde85+118
+  0x612dffd7 mov.imm16 value 0x5b00 bytes 2e005b not-in-function
+  0x61361ffb mov.imm16 value 0x5b00 bytes 2c005b not-in-function
+  0x61364f1b mov.imm16 value 0x5b00 bytes 2c005b not-in-function
+  0x613650c4 mov.imm16 value 0x5b00 bytes 2e005b not-in-function
+  0x613651eb mov.imm16 value 0x5b00 bytes 2e005b not-in-function
+  0x613655ec mov.imm16 value 0x5b00 bytes 2e005b not-in-function
+  0x6136572b mov.imm16 value 0x5b00 bytes 2e005b not-in-function
+  0x61368f8b mov.imm16 value 0x5b00 bytes 2e005b not-in-function
+  0x613c0760 mov.imm16 value 0x5b00 bytes 2e005b not-in-function
+  0x613c0770 mov.imm16 value 0x5b00 bytes 2e005b not-in-function
+  0x613e52d2 mov.imm16 value 0x5b00 bytes 2c005b not-in-function
+  0x613e52e2 mov.imm16 value 0x5b00 bytes 2c005b not-in-function
+  0x613e52f2 mov.imm16 value 0x5b00 bytes 2c005b not-in-function
+  0x614da984 mov.imm16 value 0x5b00 bytes 2e005b not-in-function
+  0x61511a53 mov.imm16 value 0x5b00 bytes 2e005b not-in-function
+  0x61526520 mov.imm16 value 0x5b00 bytes 2e005b not-in-function
+  0x61526662 mov.imm16 value 0x5b00 bytes 2e005b not-in-function
+  0x61532e93 mov.imm16 value 0x5b00 bytes 2e005b not-in-function
+  0x615330b6 mov.imm16 value 0x5b00 bytes 2e005b not-in-function
+  0x61577e62 mov.imm16 value 0x5b00 bytes 27005b not-in-function
+  0x615a3441 mov.imm16 value 0x5b00 bytes 2e005b not-in-function
+  0x615b0976 mov.imm16 value 0x5b00 bytes 2e005b not-in-function
+  0x615b1007 mov.imm16 value 0x5b00 bytes 2e005b not-in-function
+  0x615d4a61 mov.imm16 value 0x5b00 bytes 2e005b not-in-function
+  0x615d6e44 mov.imm16 value 0x5b00 bytes 2e005b not-in-function
+  0x615e7758 mov.imm16 value 0x5b00 bytes 2e005b not-in-function
+  0x615e7796 mov.imm16 value 0x5b00 bytes 2e005b not-in-function
+  0x615e77ce mov.imm16 value 0x5b00 bytes 2e005b not-in-function
+  0x615e7814 mov.imm16 value 0x5b00 bytes 2e005b not-in-function
+  0x615e784e mov.imm16 value 0x5b00 bytes 2e005b not-in-function
+  0x615e7885 mov.imm16 value 0x5b00 bytes 2e005b not-in-function
+  0x615e78ca mov.imm16 value 0x5b00 bytes 2e005b not-in-function
+  0x615e7903 mov.imm16 value 0x5b00 bytes 2e005b not-in-function
+  0x615e793a mov.imm16 value 0x5b00 bytes 2e005b not-in-function
+  0x615e797f mov.imm16 value 0x5b00 bytes 2e005b not-in-function
+  0x615e79b8 mov.imm16 value 0x5b00 bytes 2e005b not-in-function
+  0x615fa4f6 mov.imm16 value 0x5b00 bytes 2e005b not-in-function
+  0x61600bd8 mov.imm16 value 0x5b00 bytes 2d005b not-in-function
+  0x6160d59a mov.imm16 value 0x5b00 bytes 2e005b not-in-function
+  0x6160d94a mov.imm16 value 0x5b00 bytes 2f005b not-in-function
+  0x616431d0 mov.imm16 value 0x5b00 bytes 2e005b not-in-function
+  0x616b5b37 mov.imm16 value 0x367 bytes 2d6703 FUN_616b582f 0x616b582f+776
+  0x616b5c79 mov.imm16 value 0x5b6 bytes 2db605 FUN_616b5c18 0x616b5c18+97
+  0x616c756b fa.imm16 value 0x370 bytes fad17003 FUN_616c7509 0x616c7509+98
+  0x616caceb mov.imm16 value 0x370 bytes 247003 FUN_616cab39 0x616cab39+434
+  0x616cb4d7 mov.imm16 value 0x366 bytes 2d6603 FUN_616cb386 0x616cb386+337
+  0x616cd897 mov.imm16 value 0x5b8 bytes 24b805 FUN_616cd78d 0x616cd78d+266
+  0x616ce143 fa.imm16 value 0x5b8 bytes fad0b805 FUN_616ce0fc 0x616ce0fc+71
+  0x616cf1d0 mov.imm16 value 0x5b8 bytes 25b805 FUN_616cf1c5 0x616cf1c5+11
+  0x616d09bd fa.imm16 value 0x370 bytes fad17003 FUN_616d095b 0x616d095b+98
+  0x616d31ba mov.imm16 value 0xf5f bytes 2d5f0f FUN_616d307e 0x616d307e+316
+  0x616ddb03 mov.imm16 value 0x5b8 bytes 2db805 FUN_616ddaee 0x616ddaee+21
+  0x616de266 fa.imm16 value 0x370 bytes fad17003 FUN_616de1e0 0x616de1e0+134
+  0x616e369a mov.imm16 value 0x5b8 bytes 24b805 FUN_616e3699 0x616e3699+1
+  0x616e3fe6 mov.imm16 value 0x371 bytes 2d7103 FUN_616e3fca 0x616e3fca+28
+  0x616ee9c0 fa.imm16 value 0x368 bytes fad16803 FUN_616ecca4 0x616ecca4+7452
+  0x616ee9f0 fa.imm16 value 0x368 bytes fad06803 FUN_616ecca4 0x616ecca4+7500
+  0x616eea2e fa.imm16 value 0x370 bytes fad17003 FUN_616ecca4 0x616ecca4+7562
+  0x616eea37 fa.imm16 value 0x370 bytes fad07003 FUN_616ecca4 0x616ecca4+7571
+  0x617046b7 mov.imm16 value 0x7e1 bytes 25e107 FUN_61703f34 0x61703f34+1923
+  0x6170471d mov.imm16 value 0x7f5 bytes 2df507 FUN_61703f34 0x61703f34+2025
+  0x61709e27 mov.imm16 value 0x7e1 bytes 2de107 FUN_617093df 0x617093df+2632
+  0x61709e67 mov.imm16 value 0x7ef bytes 2def07 FUN_617093df 0x617093df+2696
+  0x617141b9 mov.imm16 value 0x365 bytes 2d6503 FUN_61713a78 0x61713a78+1857
+  0x61714204 mov.imm16 value 0x36d bytes 2d6d03 FUN_61713a78 0x61713a78+1932
+  0x61715284 mov.imm16 value 0x7f5 bytes 2df507 FUN_61714c71 0x61714c71+1555
+  0x61732709 mov.imm16 value 0x364 bytes 2d6403 FUN_617326b9 0x617326b9+80
+  0x61732f93 fa.imm16 value 0x370 bytes fac07003 FUN_61732f1b 0x61732f1b+120
+  0x61736343 fa.imm16 value 0x368 bytes fad06803 FUN_617361da 0x617361da+361
+  0x6173693d fa.imm16 value 0x368 bytes fad06803 FUN_6173685c 0x6173685c+225
+  0x61737ce8 fa.imm16 value 0x370 bytes fad27003 FUN_61737cc7 0x61737cc7+33
+  0x61737f4e fa.imm16 value 0x370 bytes fad07003 FUN_61737f4e 0x61737f4e+0
+  0x61739707 fa.imm16 value 0x370 bytes fac37003 FUN_617396d5 0x617396d5+50
+  0x6173b56f mov.imm16 value 0x7e1 bytes 2de107 FUN_6173b537 0x6173b537+56
+  0x61740d07 fa.imm16 value 0x364 bytes fad16403 FUN_617400bb 0x617400bb+3148
+  0x61740d28 fa.imm16 value 0x36c bytes fad16c03 FUN_617400bb 0x617400bb+3181
+  0x61740d35 fa.imm16 value 0x36c bytes fad06c03 FUN_617400bb 0x617400bb+3194
+  0x61740e88 fa.imm16 value 0x364 bytes fad16403 FUN_617400bb 0x617400bb+3533
+  0x61740e95 fa.imm16 value 0x364 bytes fad06403 FUN_617400bb 0x617400bb+3546
+  0x61749125 mov.imm16 value 0x5b6 bytes 2db605 FUN_61749021 0x61749021+260
+  0x61750dc8 mov.imm16 value 0x36c bytes 2d6c03 FUN_61750a62 0x61750a62+870
+  0x61750dda mov.imm16 value 0x36e bytes 2d6e03 FUN_61750a62 0x61750a62+888
+  0x6175196d mov.imm16 value 0x7dc bytes 2ddc07 FUN_617518e8 0x617518e8+133
+  0x61761236 mov.imm16 value 0x370 bytes 2c7003 FUN_617611cb 0x617611cb+107
+  0x61766fd0 mov.imm16 value 0x366 bytes 2c6603 FUN_61766e39 0x61766e39+407
+  0x61767017 mov.imm16 value 0x36f bytes 2c6f03 FUN_61766e39 0x61766e39+478
+  0x6176ddec mov.imm16 value 0x36c bytes 2c6c03 FUN_6176ddb1 0x6176ddb1+59
+  0x6176f6a2 mov.imm16 value 0x36b bytes 2d6b03 FUN_6176f63b 0x6176f63b+103
+  0x61773266 mov.imm16 value 0x7f5 bytes 2df507 FUN_61773207 0x61773207+95
+  0x61782311 fa.imm16 value 0x36e bytes fad06e03 FUN_617822f1 0x617822f1+32
+  0x617c432a mov.imm16 value 0x5b00 bytes 2c005b not-in-function
+  0x61866394 fa.imm16 value 0x370 bytes fac27003 FUN_61864331 0x61864331+8291
+  0x61870c3e mov.imm16 value 0x370 bytes 247003 FUN_6186fb96 0x6186fb96+4264
+  0x61870cb0 mov.imm16 value 0x370 bytes 247003 FUN_6186fb96 0x6186fb96+4378
+  0x61870d17 mov.imm16 value 0x370 bytes 247003 FUN_6186fb96 0x6186fb96+4481
+  0x61870d80 mov.imm16 value 0x370 bytes 247003 FUN_6186fb96 0x6186fb96+4586
+  0x61870f4d mov.imm16 value 0x370 bytes 247003 FUN_6186fb96 0x6186fb96+5047
+  0x61870fcc mov.imm16 value 0x370 bytes 247003 FUN_6186fb96 0x6186fb96+5174
+  0x61871040 mov.imm16 value 0x370 bytes 247003 FUN_6186fb96 0x6186fb96+5290
+  0x618710b8 mov.imm16 value 0x370 bytes 247003 FUN_6186fb96 0x6186fb96+5410
+  0x6187ee0f mov.imm16 value 0x370 bytes 2e7003 FUN_6187dc59 0x6187dc59+4534
+  0x6187f726 mov.imm16 value 0x369 bytes 2d6903 FUN_6187f57e 0x6187f57e+424
+  0x6188013d mov.imm16 value 0x368 bytes 2d6803 FUN_6187f87f 0x6187f87f+2238
+  0x6188b6e5 mov.imm16 value 0x364 bytes 266403 FUN_6188b3a6 0x6188b3a6+831
+  0x6188b709 mov.imm16 value 0x368 bytes 276803 FUN_6188b3a6 0x6188b3a6+867
+  0x6188b955 mov.imm16 value 0x364 bytes 266403 FUN_6188b3a6 0x6188b3a6+1455
+  0x6189299e fa.imm16 value 0x366 bytes fad06603 FUN_618924da 0x618924da+1220
+  0x6189747e mov.imm16 value 0x36c bytes 246c03 FUN_618969ec 0x618969ec+2706
+  0x6189c5e0 fa.imm16 value 0x5b8 bytes fac0b805 FUN_6189ab55 0x6189ab55+6795
+  0x6189ddfc fa.imm16 value 0x5b8 bytes fad2b805 FUN_6189ab55 0x6189ab55+12967
+  0x618a7293 fa.imm16 value 0x370 bytes fac17003 FUN_618a6f8f 0x618a6f8f+772
+  0x618a9e3a mov.imm16 value 0x366 bytes 2c6603 FUN_618a6f8f 0x618a6f8f+11947
+  0x618aa809 mov.imm16 value 0x36e bytes 2c6e03 FUN_618a6f8f 0x618a6f8f+14458
+  0x618aaafe mov.imm16 value 0x36e bytes 2c6e03 FUN_618a6f8f 0x618a6f8f+15215
+  0x618aaecc mov.imm16 value 0x36c bytes 2c6c03 FUN_618a6f8f 0x618a6f8f+16189
+  0x618ab1f1 mov.imm16 value 0x36c bytes 2c6c03 FUN_618a6f8f 0x618a6f8f+16994
+  0x618ab2c3 mov.imm16 value 0x366 bytes 2c6603 FUN_618a6f8f 0x618a6f8f+17204
+  0x618ab6dd mov.imm16 value 0x366 bytes 2c6603 FUN_618a6f8f 0x618a6f8f+18254
+  0x618aba69 mov.imm16 value 0x7dc bytes 2cdc07 FUN_618a6f8f 0x618a6f8f+19162
+  0x618ad17b fa.imm16 value 0x366 bytes fad26603 FUN_618ac5da 0x618ac5da+2977
+  0x618ad1c0 fa.imm16 value 0x36c bytes fac26c03 FUN_618ac5da 0x618ac5da+3046
+  0x618e6137 fc.imm32 value 0xf5e1 bytes fccce1f50000 not-in-function
+  0x618e6177 fc.imm32 value 0xf5e1 bytes fccce1f50000 not-in-function
+  0x618e61b8 fc.imm32 value 0xf5e1 bytes fccce1f50000 not-in-function
+  0x618e61ee fc.imm32 value 0xf5e1 bytes fccce1f50000 not-in-function
+  0x618e61f6 fc.imm32 value 0xf5f1 bytes fcccf1f50000 not-in-function
+  0x618e6228 fc.imm32 value 0xf5e1 bytes fccce1f50000 not-in-function
+  0x618e625a fc.imm32 value 0xf5e1 bytes fccce1f50000 not-in-function
+  0x618e629b fc.imm32 value 0xf5e1 bytes fccce1f50000 not-in-function
+  0x618e62cd fc.imm32 value 0xf5e1 bytes fccce1f50000 not-in-function
+  0x618e62ff fc.imm32 value 0xf5e1 bytes fccce1f50000 not-in-function
+  0x618e6334 fc.imm32 value 0xf5e1 bytes fccce1f50000 not-in-function
+  0x618e633c fc.imm32 value 0xf5f1 bytes fcccf1f50000 not-in-function
+  0x618e6370 fc.imm32 value 0xf5e1 bytes fccce1f50000 not-in-function
+  0x618e6378 fc.imm32 value 0xf5f1 bytes fcccf1f50000 not-in-function
+  0x618e63b1 fc.imm32 value 0xf5e1 bytes fccce1f50000 not-in-function
+  0x618f7908 mov.imm16 value 0x5b6 bytes 2cb605 not-in-function
+  0x61901684 mov.imm16 value 0x36e bytes 2d6e03 not-in-function
+  0x61905e47 mov.imm16 value 0x36a bytes 2d6a03 FUN_61905e34 0x61905e34+19
+  0x6190d79f mov.imm16 value 0x5b5 bytes 2cb505 FUN_6190d48f 0x6190d48f+784
+  0x6190d7a8 mov.imm16 value 0x5b5 bytes 2cb505 FUN_6190d48f 0x6190d48f+793
+  0x61919307 mov.imm16 value 0x36c bytes 256c03 FUN_6191923b 0x6191923b+204
+  0x6191b01c mov.imm16 value 0x371 bytes 2c7103 FUN_6191ae64 0x6191ae64+440
+  0x6191b029 mov.imm16 value 0x371 bytes 2c7103 FUN_6191ae64 0x6191ae64+453
+  0x6191ca7b mov.imm16 value 0x36f bytes 2c6f03 FUN_6191c7a6 0x6191c7a6+725
+  0x6191ca88 mov.imm16 value 0x36f bytes 2c6f03 FUN_6191c7a6 0x6191c7a6+738
+  0x61920079 mov.imm16 value 0x366 bytes 2c6603 FUN_6191ffd6 0x6191ffd6+163
+  0x61920086 mov.imm16 value 0x366 bytes 2c6603 FUN_6191ffd6 0x6191ffd6+176
+  0x619200a5 mov.imm16 value 0x36b bytes 2c6b03 FUN_6191ffd6 0x6191ffd6+207
+  0x619200b2 mov.imm16 value 0x36b bytes 2c6b03 FUN_6191ffd6 0x6191ffd6+220
+  0x619200d7 mov.imm16 value 0x36e bytes 2d6e03 FUN_6191ffd6 0x6191ffd6+257
+  0x61922f81 mov.imm16 value 0x36a bytes 2d6a03 FUN_61922f74 0x61922f74+13
+  0x6192c1db mov.imm16 value 0x366 bytes 2c6603 FUN_6192b844 0x6192b844+2455
+  0x6192c1e8 mov.imm16 value 0x366 bytes 2c6603 FUN_6192b844 0x6192b844+2468
+  0x6197829f mov.imm16 value 0x5b00 bytes 2c005b not-in-function
+  0x61992a9f mov.imm16 value 0x5b00 bytes 2e005b not-in-function
+  0x61993324 mov.imm16 value 0x5b00 bytes 2e005b not-in-function
+  0x61993351 mov.imm16 value 0x5b00 bytes 2e005b not-in-function
+  0x61993373 mov.imm16 value 0x5b00 bytes 2e005b not-in-function
+  0x61993394 mov.imm16 value 0x5b00 bytes 2e005b not-in-function
+  0x61a2d43d mov.imm16 value 0x370 bytes 2d7003 FUN_61a2d424 0x61a2d424+25
+  0x61a335db mov.imm16 value 0x371 bytes 247103 FUN_61a335ca 0x61a335ca+17
+  0x61a37d1a mov.imm16 value 0x368 bytes 2c6803 FUN_61a36fa0 0x61a36fa0+3450
+  0x61a3846d mov.imm16 value 0x36c bytes 2c6c03 FUN_61a383de 0x61a383de+143
+  0x61a60ce0 mov.imm16 value 0x7dc bytes 2cdc07 not-in-function
+  0x61a6bc21 mov.imm16 value 0x5b00 bytes 2d005b not-in-function
+  0x61a8273b mov.imm16 value 0x5b00 bytes 2d005b not-in-function
+  0x61a82788 mov.imm16 value 0x5b00 bytes 2d005b not-in-function
+  0x61a83aaf mov.imm16 value 0x5b00 bytes 2d005b not-in-function
+  0x61a83b99 mov.imm16 value 0x5b00 bytes 2d005b not-in-function
+  0x61a895ba mov.imm16 value 0x5b00 bytes 2c005b not-in-function
+  0x61a895c8 mov.imm16 value 0x5b00 bytes 2c005b not-in-function
+  0x61a895d6 mov.imm16 value 0x5b00 bytes 2c005b not-in-function
+  0x61a895e4 mov.imm16 value 0x5b00 bytes 2c005b not-in-function
+  0x61a895f2 mov.imm16 value 0x5b00 bytes 2c005b not-in-function
+  0x61a89600 mov.imm16 value 0x5b00 bytes 2c005b not-in-function
+  0x61a8960e mov.imm16 value 0x5b00 bytes 2c005b not-in-function
+  0x61a8961c mov.imm16 value 0x5b00 bytes 2c005b not-in-function
+  0x61a8962a mov.imm16 value 0x5b00 bytes 2c005b not-in-function
+  0x61a89638 mov.imm16 value 0x5b00 bytes 2c005b not-in-function
+  0x61a8971a mov.imm16 value 0x5b00 bytes 2c005b not-in-function
+  0x61a89728 mov.imm16 value 0x5b00 bytes 2c005b not-in-function
+  0x61a89736 mov.imm16 value 0x5b00 bytes 2c005b not-in-function
+  0x61a89744 mov.imm16 value 0x5b00 bytes 2c005b not-in-function
+  0x61a89ce3 mov.imm16 value 0x5b00 bytes 2f005b not-in-function
+  0x61a8b3bc mov.imm16 value 0x5b00 bytes 2d005b not-in-function
+  0x61a8b40a mov.imm16 value 0x5b00 bytes 2d005b not-in-function
+  0x61a9d447 mov.imm16 value 0x5b00 bytes 2e005b not-in-function
+  0x61a9d47a mov.imm16 value 0x5b00 bytes 2e005b not-in-function
+  0x61a9d4ab mov.imm16 value 0x5b00 bytes 2e005b not-in-function
+  0x61a9d533 mov.imm16 value 0x5b00 bytes 2e005b not-in-function
+  0x61a9d55f mov.imm16 value 0x5b00 bytes 2e005b not-in-function
+  0x61a9d592 mov.imm16 value 0x5b00 bytes 2e005b not-in-function
+  0x61a9d5cd mov.imm16 value 0x5b00 bytes 2e005b not-in-function
+  0x61a9d603 mov.imm16 value 0x5b00 bytes 2e005b not-in-function
+  0x61a9f848 mov.imm16 value 0x5b00 bytes 2d005b not-in-function
+
+## split-immediate candidates (0)
+
+## aligned u16 occurrences of target keys
+key 0x5b82 aligned hits 31 (unaligned search is separate)
+  0x600e5874 next 16 REG-KEY - ctx 00000000825b100000000000
+  0x606274e0 next 5 MAP - ctx 725b0500825b0500625b0600
+  0x60627518 next 12 MAP - ctx 725b0c00825b0c00625b0d00
+  0x60627524 next 13 MAP - ctx 725b0d00825b0d00625b0e00
+  0x60bd0ad6 next 24807 FC32-LO FUN_60bd0974 ctx a00cfccc825be7604204f8bc
+  0x6108f9ba next 0 idx-like-0 - ctx 04f1dacd825b0000a01ec914
+  classified-or-nearby 6 plain-other 25
+  plain-other addresses 0x601b1bd4 0x6020217a 0x6030ac1c 0x6030ac50 0x6030ac80 0x6057f43c 0x60590a44 0x605952fc 0x607c69f4 0x607cb986 0x60856974 0x60856a4c 0x6085ba42 0x6085ba5a 0x6085c33c 0x60860006 0x6086cbd8 0x6087a8e0 0x609aa986 0x60b4d6c8 0x60c575a2 0x60e29138 0x611aeb7c 0x615fbdb0 0x618309c4
+key 0x5b52 aligned hits 80 (unaligned search is separate)
+  0x6007aef4 next 24594 FC32-LO FUN_6007ae32 ctx 301cfcdc525b1260dd708efa
+  0x600e5808 next 16 REG-KEY - ctx 00000000525b100000000000
+  0x603d4fa4 next 24637 FC32-LO - ctx 4204fccc525b3d604208fa46
+  0x606274c0 next 1 MAP - ctx 725b0000525b0100625b0200
+  0x606274cc next 3 MAP - ctx 725b0200525b0300625b0400
+  0x606274f4 next 8 MAP - ctx 725b0700525b0800625b0900
+  0x60627530 next 15 MAP - ctx 725b0e00525b0f00a1580000
+  0x60d44214 next 9 idx-like-9 FUN_60d441c6 ctx c83898dd525b09000000f004
+  0x612362e8 next 56161 MOV16 FUN_61236129 ctx 1afcdc24525b61db70a2c908
+  classified-or-nearby 9 plain-other 71
+  plain-other addresses 0x601b0f8c 0x601b0f9a 0x601b19ec 0x601b19fa 0x601b1dac 0x601b1dba 0x601b261a 0x601b2628 0x6022873c 0x60228966 0x6022899e 0x602289d6 0x6048722a 0x607d4964 0x607d4d54 0x607d4f4c 0x607d5144 0x607d533c 0x607d5534 0x607d70c4 0x607d74b4 0x607d7c94 0x607d8084 0x607d827c 0x607d8a5c 0x607d8c54 0x607d8e4c 0x607d9044 0x607d962c 0x607d9c14 0x607da004 0x607da1fc 0x607da3f4 0x607da5ec 0x607da7e4 0x607e3b8c 0x607e3f7c 0x607e4174 0x607e60f4 0x607e62ec 0x607e64e4 0x607e66dc 0x607e68d4 0x607ecf34 0x607ed324 0x607f4d32 0x60801d80 0x608ceefa 0x609ae162 0x60e0f2c6 0x60e11224 0x60e11236 0x60e11276 0x60e11288 0x60e59a0a 0x60e630fa 0x60e63110 0x60f27778 0x60f3d57c 0x60f44038 0x61236076 0x612360f6 0x61236950 0x6123791c 0x61302aec 0x6150780a 0x61507864 0x61565bcc 0x615fbd70 0x61a1e3e6 0x61a66af4
+key 0xf5f1 aligned hits 46 (unaligned search is separate)
+  0x6011fa50 next 25 REG-KEY - ctx 00000000f1f5190000000000
+  0x603d71b4 next 0 idx-like-0,FC32-LO FUN_603d71ae ctx f8fefcddf1f50000000092dd
+  0x606262fc next 5 MAP - ctx e1f50500f1f50500e1f50600
+  0x60626318 next 21 MAP - ctx e1f51500f1f51500e1f51600
+  0x60626320 next 22 MAP - ctx e1f51600f1f5160061dd0200
+  0x606e65f6 next 5 idx-like-5 - ctx 00000500f1f50500ffffffff
+  0x606e66f2 next 21 idx-like-21 - ctx 00000000f1f51500ffffffff
+  0x606e6728 next 22 idx-like-22 - ctx 00000000f1f51600ffffffff
+  0x6113b5cc next 20 idx-like-20 FUN_6113b47c ctx c90c98ddf1f51400e010ca16
+  0x6114319e next 0 idx-like-0 FUN_61142949 ctx 04807fcdf1f5000043505c04
+  0x618e61f8 next 0 idx-like-0,FC32-LO - ctx ca08fcccf1f5000090008505
+  0x618e633e next 0 idx-like-0,FC32-LO - ctx ca08fcccf1f5000090008515
+  0x618e637a next 0 idx-like-0,FC32-LO - ctx ca08fcccf1f5000090008516
+  classified-or-nearby 13 plain-other 33
+  plain-other addresses 0x60565b3e 0x609a65b2 0x60b8f19e 0x60b8f1c8 0x60b8f212 0x60b8f23e 0x60b8f4d6 0x60bab062 0x615a09b8 0x615a09bc 0x615a09c0 0x615a09c4 0x615a09c8 0x615a09cc 0x615a09d0 0x615a09d4 0x615a09d8 0x615a09fc 0x615a0a00 0x615a0a04 0x615a0a08 0x615a0a0c 0x615a0a10 0x615a0a14 0x615a0a18 0x615a0a1c 0x615a0a20 0x615a0a24 0x615a0a28 0x617422e6 0x617423b6 0x618d4778 0x61a20d34
+key 0xf5e1 aligned hits 54 (unaligned search is separate)
+  0x6011fa30 next 25 REG-KEY - ctx 00000000e1f5190000000000
+  0x60166542 next 24610 FC32-LO FUN_60165ff2 ctx 6204fcdce1f5226018dd1203
+  0x606262ec next 0 MAP - ctx d1f50000e1f50000e1f50200
+  0x606262f0 next 2 MAP - ctx e1f50000e1f50200e1f50400
+  0x606262f4 next 4 MAP - ctx e1f50200e1f50400e1f50500
+  0x606262f8 next 5 MAP - ctx e1f50400e1f50500f1f50500
+  0x60626300 next 6 MAP - ctx f1f50500e1f50600e1f50700
+  0x60626304 next 7 MAP - ctx e1f50600e1f50700e1f50900
+  0x60626308 next 9 MAP - ctx e1f50700e1f50900e1f51300
+  0x6062630c next 19 MAP - ctx e1f50900e1f51300e1f51400
+  0x60626310 next 20 MAP - ctx e1f51300e1f51400e1f51500
+  0x60626314 next 21 MAP - ctx e1f51400e1f51500f1f51500
+  0x6062631c next 22 MAP - ctx f1f51500e1f51600f1f51600
+  0x60626c34 next 23 MAP - ctx d1441700e1f51700d14b0000
+  0x606e6554 next 0 idx-like-0 - ctx 00000000e1f50000ffffffff
+  0x606e658a next 2 idx-like-2 - ctx 00000000e1f50200ffffffff
+  0x606e65c0 next 4 idx-like-4 - ctx 00000000e1f5040002000200
+  0x606e65e4 next 5 idx-like-5 - ctx 00000500e1f50500ffffffff
+  0x606e661a next 6 idx-like-6 - ctx 00000000e1f50600ffffffff
+  0x606e663e next 7 idx-like-7 - ctx 00000700e1f50700ffffffff
+  0x606e6674 next 9 idx-like-9 - ctx 00000000e1f5090003000300
+  0x606e6698 next 19 idx-like-19 - ctx 00000000e1f51300ffffffff
+  0x606e66bc next 20 idx-like-20 - ctx 00000000e1f51400ffffffff
+  0x606e66e0 next 21 idx-like-21 - ctx 00000000e1f51500ffffffff
+  0x606e6716 next 22 idx-like-22 - ctx 00000000e1f51600ffffffff
+  0x606e674c next 23 idx-like-23 - ctx 00000000e1f51700ffffffff
+  0x60ba6ce6 next 61695 MOV16 FUN_60ba6c18 ctx f17cdd26e1f5fff05498dd22
+  0x60d79cf6 next 5 idx-like-5 FUN_60d7999e ctx 27219cdde1f50500000408b0
+  0x612a978c next 24929 FC32-LO FUN_612a9429 ctx 4202fccce1f561614204ddfe
+  0x618e61ba next 0 idx-like-0,FC32-LO - ctx ca08fccce1f5000090008504
+  0x618e61f0 next 0 idx-like-0,FC32-LO - ctx ca10fccce1f50000ca08fccc
+  0x618e622a next 0 idx-like-0,FC32-LO - ctx ca08fccce1f5000090008506
+  0x618e625c next 0 idx-like-0,FC32-LO - ctx ca08fccce1f5000090008507
+  0x618e6336 next 0 idx-like-0,FC32-LO - ctx ca10fccce1f50000ca08fccc
+  0x618e6372 next 0 idx-like-0,FC32-LO - ctx ca10fccce1f50000ca08fccc
+  classified-or-nearby 35 plain-other 19
+  plain-other addresses 0x60024aba 0x604cf7fc 0x6053e7ce 0x6056ccdc 0x6056cd0c 0x60597fb0 0x607e6096 0x609b597c 0x60b892e4 0x60ba6fb0 0x60baa0ac 0x60baac70 0x60babbe6 0x60bac0fe 0x60c87e32 0x61182b1e 0x6119f6ce 0x611e738a 0x6174a478
+
+## repeated target-key halfwords (two in a row)
+  key 0x5b82 adjacent-pair count 0
+  key 0x5b52 adjacent-pair count 0
+  key 0xf5f1 adjacent-pair count 0
+  key 0xf5e1 adjacent-pair count 0
+
+## orphan key+count signatures outside walked records
+key 0x5b82 walked counts [16]
+  sig at 0x600e5874 known-record True ctx 825b100000000000
+key 0x5b52 walked counts [16]
+  sig at 0x600e5808 known-record True ctx 525b100000000000
+key 0xf5f1 walked counts [25]
+  sig at 0x6011fa50 known-record True ctx f1f5190000000000
+key 0xf5e1 walked counts [25]
+  sig at 0x6011fa30 known-record True ctx e1f5190000000000
+
+## u32 occurrences of named UI ids (and 2148, 867)
+id 867 MODE_ART_EFFECT u32 hits 62
+  0x60094863 - ctx a380d24f63030000005b666c6173685d5061636b
+  0x60565750 FUN_605656d4 ctx 5804dd6b630300000c149cddfaa43900c00c83dd
+  0x605e329c - ctx 6203000063030000640300006503000066030000
+  0x605e4b7c - ctx 6203000063030000640300006503000066030000
+  0x605e645c - ctx 6203000063030000640300006503000066030000
+  0x605e7d3c - ctx 6203000063030000640300006503000066030000
+  0x605e961c - ctx 6203000063030000640300006503000066030000
+  0x605eaefc - ctx 6203000063030000640300006503000066030000
+  0x605ec7dc - ctx 6203000063030000640300006503000066030000
+  0x605ee0bc - ctx 6203000063030000640300006503000066030000
+  0x605ef99c - ctx 6203000063030000640300006503000066030000
+  0x605f127c - ctx 6203000063030000640300006503000066030000
+  0x605f2b5c - ctx 6203000063030000640300006503000066030000
+  0x605f443c - ctx 6203000063030000640300006503000066030000
+  0x605f5d1c - ctx 6203000063030000640300006503000066030000
+  0x606fb1a1 - ctx f7ffff92630300008000000718000057f7ffff9e
+  0x6094d0ac FUN_6094d07e ctx dd00dd4d6303000000f0609e1852f8c00bf2d02d
+  0x609545d7 FUN_609545a9 ctx 0414dd806303000000cdf421000416aa00c909dd
+  0x60956e3d FUN_60956e2d ctx c909dd65630300000488df800800fc826280f262
+  0x60a2a534 - ctx d282a26063030000f182a260640300001283a260
+  0x60b974f0 FUN_60b974b8 ctx c91d98cd6303000098dd00a20100a048a8c80cfc
+  0x60bc74d4 FUN_60bc7484 ctx f1e0dd4463030000004230f1ecf000ddc6670300
+  0x60bc78b8 FUN_60bc787a ctx f1e4ddef6303000000f89328f1ec008524dd50b1
+  0x60da3968 FUN_60da3964 ctx 9208ddff6303000000b000c82698ddf363030000
+  0x60da3974 FUN_60da3964 ctx 2698ddf36303000000f00480fff82508f0f1a8c8
+  0x60da39e1 FUN_60da39dc ctx 1008dd866303000000b000c905cc87005c10dd76
+  0x60da39f1 FUN_60da39dc ctx 5c10dd766303000000f0042c3202f82508f0f1a8
+  0x60da3a07 FUN_60da39dc ctx 5c10dd606303000000925c10ddd99e0100000093
+  0x60da3a1b FUN_60da39dc ctx 5c10dd4c6303000000f004f8250cf0f1f8261c18
+  0x60e1c550 - ctx ccb2b260630300001fb4b2606403000034b5b260
+  0x60eb8b3c - ctx 9a4dc960630300007348c960640200008d4ac960
+  0x60ebb44c - ctx 98d0c9606303000028d0c960e4020000a3cfc960
+  0x60ebba4c - ctx 24dfc9606303000088dec9600000000024dfc960
+  0x6129d779 - ctx 8e01ddfc6303000004cc8901803fcc7f01dd5028
+  0x6135e3a2 - ctx 00000a01630300000000cd000000000000000100
+  0x6135e3b6 - ctx 00004001630300000000cd000000000000000100
+  0x6135e3ca - ctx 00000b046303000000002b030000000000000100
+  0x6135e3de - ctx 000041046303000000002b030000000000000100
+  0x6135e3f2 - ctx 00000c0163030000000030030000000000000200
+  0x6135e406 - ctx 0000490163030000000030030000000000000200
+  ... 22 more
+id 868 MODE_ART_EFFECT_HYBRID_POPART_TYPE2 u32 hits 46
+  0x600a8889 - ctx 000000d464030000000000000000000000000034
+  0x602466f0 - ctx 0000000064030000000000008c03000000000000
+  0x60247108 - ctx 0000000064030000020000008c03000000000000
+  0x60257951 - ctx 0000006064030000000000d08a030000000000f8
+  0x60258399 - ctx 0000006064030000000000d08a030000000000f8
+  0x6035a399 - ctx 00000052640300000000005264040000000000a4
+  0x605655f3 FUN_6056552d ctx 188cddc8640300000cfcad7291ab6283f8970cfc
+  0x605b8558 - ctx 0000000064030000000000000000000000000000
+  0x605e32a0 - ctx 6303000064030000650300006603000067030000
+  0x605e4b80 - ctx 6303000064030000650300006603000067030000
+  0x605e6460 - ctx 6303000064030000650300006603000067030000
+  0x605e7d40 - ctx 6303000064030000650300006603000067030000
+  0x605e9620 - ctx 6303000064030000650300006603000067030000
+  0x605eaf00 - ctx 6303000064030000650300006603000067030000
+  0x605ec7e0 - ctx 6303000064030000650300006603000067030000
+  0x605ee0c0 - ctx 6303000064030000650300006603000067030000
+  0x605ef9a0 - ctx 6303000064030000650300006603000067030000
+  0x605f1280 - ctx 6303000064030000650300006603000067030000
+  0x605f2b60 - ctx 6303000064030000650300006603000067030000
+  0x605f4440 - ctx 6303000064030000650300006603000067030000
+  0x605f5d20 - ctx 6303000064030000650300006603000067030000
+  0x6089934f FUN_60899347 ctx c81e88cd64030000800142044a08fccc0230130a
+  0x609560d8 FUN_609560c0 ctx c91bdd90640300000414a001c9068002ca048001
+  0x60a2a53c - ctx f182a260640300001283a260650300003583a260
+  0x60af89bf FUN_60af89bd ctx fefcdd7c6403000004df000400fa109400fa1098
+  0x60bc73a9 FUN_60bc7366 ctx f1e0dd6f64030000004218fccc7f28e76042044b
+  0x60da3873 FUN_60da3863 ctx 2598ddf46403000000f0042cf401f82508f0f1a8
+  0x60da38e0 FUN_60da38dc ctx 9208dd876403000000b000c82598dd7b64030000
+  0x60da38ec FUN_60da38dc ctx 2598dd7b6403000000f0042cf401f82508f0f1a8
+  0x60e1c558 - ctx 1fb4b2606403000034b5b2606503000010bab260
+  0x60eb8ba4 - ctx f755c960640300000856c96066030000ee56c960
+  0x6135e50a - ctx 000019016403000000004a000000000000000000
+  0x61374b18 - ctx 1286050064030000ffffffffffffffff62000000
+  0x61375540 - ctx 1286050064030000ffffffffffffffff62000000
+  0x6152378c - ctx d000000064030000d100000065030000d2000000
+  0x6152e858 - ctx b63c1b6164030000b63c1b6175010000b63c1b61
+  0x615365e0 - ctx 1e0000006403000009000000750100001f000000
+  0x61537ae8 - ctx 02006a0164030000090000007501000001006d01
+  0x6154c55c - ctx 1e0000006403000009000000750100001f000000
+  0x615ca08c - ctx 00000000640300001a0000006403000020000000
+  ... 6 more
+id 869 MODE_ART_EFFECT_HYBRID_DAYDREAM_TYPE2 u32 hits 67
+  0x605b860c - ctx 0000000065030000000000000000000000000000
+  0x605e32a4 - ctx 6403000065030000660300006703000068030000
+  0x605e4b84 - ctx 6403000065030000660300006703000068030000
+  0x605e6464 - ctx 6403000065030000660300006703000068030000
+  0x605e7d44 - ctx 6403000065030000660300006703000068030000
+  0x605e9624 - ctx 6403000065030000660300006703000068030000
+  0x605eaf04 - ctx 6403000065030000660300006703000068030000
+  0x605ec7e4 - ctx 6403000065030000660300006703000068030000
+  0x605ee0c4 - ctx 6403000065030000660300006703000068030000
+  0x605ef9a4 - ctx 6403000065030000660300006703000068030000
+  0x605f1284 - ctx 6403000065030000660300006703000068030000
+  0x605f2b64 - ctx 6403000065030000660300006703000068030000
+  0x605f4444 - ctx 6403000065030000660300006703000068030000
+  0x605f5d24 - ctx 6403000065030000660300006703000068030000
+  0x606a4924 - ctx 5d0400006503000084020000ab010000d2000000
+  0x606ac414 - ctx 5d0400006503000084020000ab010000d2000000
+  0x608ce829 FUN_608ce7e0 ctx eea260cd65030000a000c9329c9510f1692a1c88
+  0x60954633 FUN_60954623 ctx 0004dda46503000004dddac603000000dd4d1102
+  0x60a2a544 - ctx 1283a260650300003583a260660300005783a260
+  0x60bc7268 FUN_60bc7230 ctx dc02ddb065030000004218a000c806a0ffc9044f
+  0x60ccae8f - ctx 0198dde16503000000a065c82e98ddd565030000
+  0x60ccae9b - ctx 2e98ddd56503000000a06fc82298ddc965030000
+  0x60ccaea7 - ctx 2298ddc96503000000a070c81698ddbd65030000
+  0x60ccaeb3 - ctx 1698ddbd6503000000a06dc92ffa026003a000c9
+  0x60ccaf08 - ctx 2798dd686503000000a06fc80e98dd5c65030000
+  0x60ccaf14 - ctx 0e98dd5c6503000000a065c90ff1ec70a000c805
+  0x60da3775 FUN_60da3771 ctx 9208ddf26503000000b000c82598dde665030000
+  0x60da3781 FUN_60da3771 ctx 2598dde66503000000f0042cf401f82508f0f1a8
+  0x60da37ee FUN_60da37ea ctx 9208dd796503000000b000c82598dd6d65030000
+  0x60da37fa FUN_60da37ea ctx 2598dd6d6503000000f0042cf401f82508f0f1a8
+  0x60da3867 FUN_60da3863 ctx 9208dd006503000000b000c82598ddf464030000
+  0x60e1c560 - ctx 34b5b2606503000010bab260660300002fb7b260
+  0x60eb8b5c - ctx 9d43c960650300005f4ac960680300000c4ac960
+  0x60ebbec4 - ctx 5ee3c9606503000087e4c9602d020000a3e4c960
+  0x610e64e1 FUN_610e61c2 ctx f182ddf86503000000925c08dd9935feff00001c
+  0x610e6513 FUN_610e61c2 ctx b034ddc66503000000925c08dd6735feff00001c
+  0x610e65a9 FUN_610e6597 ctx b014dd306503000000f004fa25a802f0f118a001
+  0x6129d7d5 - ctx 3201ddd26503000004cc2d018044cc2301ddfb5a
+  0x6135e302 - ctx 0000020265030000000053000000000000000200
+  0x6135e316 - ctx 00000401650300000000ba000000000000000200
+  ... 27 more
+id 870 MODE_ART_EFFECT_HYBRID_ROUGH_MONOCHROME_TYPE2 u32 hits 50
+  0x60068f17 - ctx 034b08cd66030000fccc6f1b12604204fca4c036
+  0x60245ff9 - ctx 0000005066030000000000d88c03000000000018
+  0x605b86c0 - ctx 0000000066030000000000000000000000000000
+  0x605e32a8 - ctx 6503000066030000670300006803000069030000
+  0x605e4b88 - ctx 6503000066030000670300006803000069030000
+  0x605e6468 - ctx 6503000066030000670300006803000069030000
+  0x605e7d48 - ctx 6503000066030000670300006803000069030000
+  0x605e9628 - ctx 6503000066030000670300006803000069030000
+  0x605eaf08 - ctx 6503000066030000670300006803000069030000
+  0x605ec7e8 - ctx 6503000066030000670300006803000069030000
+  0x605ee0c8 - ctx 6503000066030000670300006803000069030000
+  0x605ef9a8 - ctx 6503000066030000670300006803000069030000
+  0x605f1288 - ctx 6503000066030000670300006803000069030000
+  0x605f2b68 - ctx 6503000066030000670300006803000069030000
+  0x605f4448 - ctx 6503000066030000670300006803000069030000
+  0x605f5d28 - ctx 6503000066030000670300006803000069030000
+  0x609545ba FUN_609545a9 ctx 0004dd1d6603000004dd1d8304000004dd385305
+  0x6095608e FUN_60956076 ctx 0462ddab6603000004f053cd800600042dd805dd
+  0x6095609f FUN_60956076 ctx d805dd916603000004f1e8f070dfb010ddc58803
+  0x60a2a54c - ctx 3583a260660300005783a260670300007883a260
+  0x60bc7152 FUN_60bc710a ctx f002ddc666030000003c2040008504ddb8b843ef
+  0x60bca4d0 FUN_60bca4b7 ctx a00cdde26603000004ddd03703000000f8931a26
+  0x60d889a8 FUN_60d88874 ctx 5c08dde7660300000099ddd1420300f0689cdd6b
+  0x60d889c2 FUN_60d88874 ctx 5c08dde2660300000099ddb7420300f0689cdd4a
+  0x60da3675 FUN_60da3671 ctx 9208ddf26603000000b000c82598dde666030000
+  0x60da3681 FUN_60da3671 ctx 2598dde66603000000f0042cf401f82508f0f1a8
+  0x60da36ee FUN_60da36ea ctx 9208dd796603000000b000c82598dd6d66030000
+  0x60da36fa FUN_60da36ea ctx 2598dd6d6603000000f0042cf401f82508f0f1a8
+  0x60e1c568 - ctx 10bab260660300002fb7b26067030000b9b5b260
+  0x60eb8bac - ctx 0856c96066030000ee56c960630200004357c960
+  0x60ebb4d4 - ctx 8bcfc960660300001ad0c9602e02000036d0c960
+  0x60ebbb04 - ctx c8ddc9606603000079dec9602e02000097dec960
+  0x610e640e FUN_610e61c2 ctx b034ddcb6603000000925c08dd6c36feff00001c
+  0x610e6431 FUN_610e61c2 ctx f010dda86603000000f004fa25e801f0f19c1cdd
+  0x610e644f FUN_610e61c2 ctx c83bdd8a6603000000925c08dd2b36feff00001c
+  0x610e64c5 FUN_610e61c2 ctx f010dd146603000000925c08ddb535feff00001c
+  0x61374bc0 - ctx fa8905006603000072030000740300006c000000
+  0x613755e8 - ctx fa8905006603000072030000740300006c000000
+  0x6152379c - ctx d200000066030000d300000067030000d4000000
+  0x6152e888 - ctx b63c1b6166030000b63c1b6173010000b63c1b61
+  ... 10 more
+id 871 MODE_ART_EFFECT_HYBRID_TOY_PHOTO_TYPE2 u32 hits 59
+  0x60246af1 - ctx 0000004c67030000000000e08d03000000000028
+  0x60249dd9 - ctx 0000004867030000000000e08d03000000000028
+  0x6024b269 - ctx 0000004867030000000000e08d03000000000028
+  0x6024c6f9 - ctx 0000004867030000000000e08d03000000000028
+  0x6024e5d1 - ctx 0000004867030000000000e08d03000000000028
+  0x6024f019 - ctx 0000004867030000000000e08d03000000000028
+  0x60253811 - ctx 0000005067030000000000e48d0300000000002c
+  0x605b8738 - ctx 0000000067030000000000000000000000000000
+  0x605e32ac - ctx 660300006703000068030000690300006a030000
+  0x605e4b8c - ctx 660300006703000068030000690300006a030000
+  0x605e646c - ctx 660300006703000068030000690300006a030000
+  0x605e7d4c - ctx 660300006703000068030000690300006a030000
+  0x605e962c - ctx 660300006703000068030000690300006a030000
+  0x605eaf0c - ctx 660300006703000068030000690300006a030000
+  0x605ec7ec - ctx 660300006703000068030000690300006a030000
+  0x605ee0cc - ctx 660300006703000068030000690300006a030000
+  0x605ef9ac - ctx 660300006703000068030000690300006a030000
+  0x605f128c - ctx 660300006703000068030000690300006a030000
+  0x605f2b6c - ctx 660300006703000068030000690300006a030000
+  0x605f444c - ctx 660300006703000068030000690300006a030000
+  0x605f5d2c - ctx 660300006703000068030000690300006a030000
+  0x606a42d4 - ctx 2b04000067030000b2020000f60100008f2b0000
+  0x606abdc4 - ctx 2b04000067030000b2020000f60100008f2b0000
+  0x6083ab8b FUN_6083ab7b ctx 421cddfc670300000092cdc469000093ddd77b04
+  0x60954681 FUN_60954649 ctx 0004ddfd670300000414a001c933dd86d8030000
+  0x60a2a554 - ctx 5783a260670300007883a260680300009483a260
+  0x60bc74e1 FUN_60bc7484 ctx f000ddc667030000003c203c4334852c8200dd26
+  0x60d888e9 FUN_60d88874 ctx 5c14dda6670300000099dd90430300f0689cdd2a
+  0x60d88903 FUN_60d88874 ctx 5c14dda1670300000099dd76430300f0689cdd09
+  0x60d8891d FUN_60d88874 ctx 5c20dd72670300000099dd5c430300f0689cddf6
+  0x60d88937 FUN_60d88874 ctx 5c20dd6d670300000099dd42430300f0689cddd5
+  0x60d88974 FUN_60d88874 ctx 5c0cdd1b670300000099dd05430300f0689cdd9f
+  0x60d8898e FUN_60d88874 ctx 5c0cdd16670300000099ddeb420300f0689cdd7e
+  0x60da3580 FUN_60da357c ctx 9208dde76703000000b000c82198dddb67030000
+  0x60da358c FUN_60da357c ctx 2198dddb6703000000f0042c6c01f82508f0f1a8
+  0x60da35ab FUN_60da357c ctx 2b98ddbc6703000000b000c82198ddb067030000
+  0x60da35b7 FUN_60da357c ctx 2198ddb06703000000f0042c6b01f82508f0f1a8
+  0x60da35fc FUN_60da35f8 ctx 9208dd6b6703000000b000c82598dd5f67030000
+  0x60da3608 FUN_60da35f8 ctx 2598dd5f6703000000f0042cf401f82508f0f1a8
+  0x60e1c570 - ctx 2fb7b26067030000b9b5b2606803000015afb260
+  ... 19 more
+id 872 MODE_ART_EFFECT_HYBRID_TOY_PHOTO_TYPE3 u32 hits 63
+  0x602455b1 - ctx 0000003868030000000000d88e03000000000030
+  0x60247509 - ctx 0000004068030000000000dc8e03000000000030
+  0x6024b930 - ctx 0300000068030000020000009003000000000000
+  0x60250ac0 - ctx 0200000068030000000000008803000003000000
+  0x60250ec1 - ctx 0000004068030000000000d88e03000000000030
+  0x60251508 - ctx 0200000068030000000000008803000003000000
+  0x60251909 - ctx 0000004068030000000000d88e03000000000030
+  0x60253410 - ctx 0000000068030000000000008c03000000000000
+  0x602589b0 - ctx 0200000068030000000000008c03000000000000
+  0x60258db1 - ctx 0000004068030000000000dc8e03000000000030
+  0x602b6d4a - ctx 9c142b0068030000000000000000000000000000
+  0x603705d0 - ctx 7087b962680300000000000000000000d88ab962
+  0x605b8774 - ctx 0000000068030000000000000000000000000000
+  0x605e32b0 - ctx 6703000068030000690300006a0300006b030000
+  0x605e4b90 - ctx 6703000068030000690300006a0300006b030000
+  0x605e6470 - ctx 6703000068030000690300006a0300006b030000
+  0x605e7d50 - ctx 6703000068030000690300006a0300006b030000
+  0x605e9630 - ctx 6703000068030000690300006a0300006b030000
+  0x605eaf10 - ctx 6703000068030000690300006a0300006b030000
+  0x605ec7f0 - ctx 6703000068030000690300006a0300006b030000
+  0x605ee0d0 - ctx 6703000068030000690300006a0300006b030000
+  0x605ef9b0 - ctx 6703000068030000690300006a0300006b030000
+  0x605f1290 - ctx 6703000068030000690300006a0300006b030000
+  0x605f2b70 - ctx 6703000068030000690300006a0300006b030000
+  0x605f4450 - ctx 6703000068030000690300006a0300006b030000
+  0x605f5d30 - ctx 6703000068030000690300006a0300006b030000
+  0x606f8938 - ctx 00800200680300003406000047ca190000800200
+  0x606fa848 - ctx 000001006803000078fcffff1d920b0000000100
+  0x6079ad2e - ctx 9c142b0068030000000000000000000000000000
+  0x60955c4c FUN_60955c3a ctx c915dd2d680300000482dd4e68030000048188ca
+  0x60955c54 FUN_60955c3a ctx 0482dd4e68030000048188ca25fa44e70200a501
+  0x60a2a55c - ctx 7883a260680300009483a26069030000b583a260
+  0x60cc8673 FUN_60cc8660 ctx 800fdd376803000000800798ddc16803002030df
+  0x60da3525 FUN_60da3521 ctx 9208dd426803000000b000c82598dd3668030000
+  0x60da3531 FUN_60da3521 ctx 2598dd366803000000f0042cf401f82508f0f1a8
+  0x60e1c578 - ctx b9b5b2606803000015afb260690300008daeb260
+  0x60eb8b64 - ctx 5f4ac960680300000c4ac96067020000b84ac960
+  0x61080978 FUN_61080907 ctx ff0004cd68030000a000c90d8002f072ca0680ff
+  0x610e6203 FUN_610e61c2 ctx f074ddd66803000000f004fa25a802f0f118a000
+  0x610e6228 FUN_610e61c2 ctx c832ddb16803000000f004fa25a802f0f118a001
+  ... 23 more
+id 873 MODE_ART_EFFECT_HYBRID_MINIATURE_TYPE2 u32 hits 48
+  0x605638fe FUN_6056382e ctx 7501dd2169030000004b044e085824f1dd420c58
+  0x605b87ec - ctx 0000000069030000000000000000000000000000
+  0x605e32b4 - ctx 68030000690300006a0300006b0300006c030000
+  0x605e4b94 - ctx 68030000690300006a0300006b0300006c030000
+  0x605e6474 - ctx 68030000690300006a0300006b0300006c030000
+  0x605e7d54 - ctx 68030000690300006a0300006b0300006c030000
+  0x605e9634 - ctx 68030000690300006a0300006b0300006c030000
+  0x605eaf14 - ctx 68030000690300006a0300006b0300006c030000
+  0x605ec7f4 - ctx 68030000690300006a0300006b0300006c030000
+  0x605ee0d4 - ctx 68030000690300006a0300006b0300006c030000
+  0x605ef9b4 - ctx 68030000690300006a0300006b0300006c030000
+  0x605f1294 - ctx 68030000690300006a0300006b0300006c030000
+  0x605f2b74 - ctx 68030000690300006a0300006b0300006c030000
+  0x605f4454 - ctx 68030000690300006a0300006b0300006c030000
+  0x605f5d34 - ctx 68030000690300006a0300006b0300006c030000
+  0x606e65f0 - ctx 61d20200690300000500f1f50500ffffffff71d2
+  0x60791ec1 - ctx 690300076903000000000000000000d60f0300d6
+  0x60a2a564 - ctx 9483a26069030000b583a2606a030000d683a260
+  0x60bc7389 FUN_60bc7366 ctx f002dd1e6903000000f8931472f1e0dd11690300
+  0x60bc7396 FUN_60bc7366 ctx f1e0dd116903000000f8931c72fcdea523e760f1
+  0x60bca1c0 FUN_60bca19e ctx a00cddf26903000004dde03a0300000082fa2294
+  0x60d76c90 - ctx c80add6c6903000004923cf1d22a14f1e800dd3d
+  0x60da33bf FUN_60da3343 ctx 5c08dda86903000000b000c905cc2f015c08dd98
+  0x60da33cf FUN_60da3343 ctx 5c08dd986903000000f0042c6b01f82508f0f1a8
+  0x60e1c580 - ctx 15afb260690300008daeb26000000000cebbb260
+  0x612655bc FUN_612655b4 ctx fc08dd7f69030000001ca8c93800dd8e1e060080
+  0x6126563a FUN_6126560e ctx 0000dd0a6903000000dd58a60300000400dd99a7
+  0x61374c4c - ctx 6a0c090069030000ffffffffffffffff75000000
+  0x61375674 - ctx 6a0c090069030000ffffffffffffffff75000000
+  0x61427dc8 - ctx 070000006903000000000000ffff000007000000
+  0x61427dec - ctx 070000006903000000000000ffff000007000000
+  0x61427e10 - ctx 070000006903000000000000ffff000007000000
+  0x61427e34 - ctx 070000006903000000000000ffff000007000000
+  0x61427e58 - ctx 070000006903000000000000ffff000007000000
+  0x61427e7c - ctx 070000006903000000000000ffff000007000000
+  0x61427ea0 - ctx 0700000069030000000000000000aa0180023600
+  0x615237b4 - ctx d500000069030000d60000006a030000d7000000
+  0x6152e8b0 - ctx b63c1b6169030000b63c1b6177010000b63c1b61
+  0x61536638 - ctx 2700000069030000280000007701000029000000
+  0x61537b40 - ctx 020051026903000001006e017701000002006e01
+  ... 8 more
+id 874 MODE_ART_EFFECT_HYBRID_CROSS_PROCESS_TYPE2 u32 hits 79
+  0x600ac2c8 - ctx 6b0300006a0300000000000070060000b0030000
+  0x600ac488 - ctx 6b0300006a0300000000000070060000b0030000
+  0x600ac648 - ctx 6b0300006a030000000000007006000070030000
+  0x600ac808 - ctx 6b0300006a030000000000007006000080030000
+  0x600ac9c8 - ctx 6b0300006a0300000000000070060000b0030000
+  0x600acb88 - ctx 6b0300006a030000000000007006000080030000
+  0x600acd48 - ctx 6b0300006a0300000000000080060000b0030000
+  0x600acf08 - ctx 6b0300006a0300000000000080060000b0030000
+  0x600ad0c8 - ctx 6b0300006a0300000000000080060000a0030000
+  0x600ad288 - ctx 6b0300006a0300000000000080060000a0030000
+  0x600ad448 - ctx 6b0300006a0300000000000080060000a0030000
+  0x6041920d - ctx 1772dd726a0300000818ca0d900091dd9c690300
+  0x6056c117 FUN_6056c08b ctx c823ddc06a03000004fca02896ab62ddb36a0300
+  0x6056c124 FUN_6056c08b ctx ab62ddb36a0300000400fc812496ab62fc812896
+  0x605b8864 - ctx 000000006a030000000000000000000000000000
+  0x605e32b8 - ctx 690300006a0300006b0300006c0300006d030000
+  0x605e4b98 - ctx 690300006a0300006b0300006c0300006d030000
+  0x605e6478 - ctx 690300006a0300006b0300006c0300006d030000
+  0x605e7d58 - ctx 690300006a0300006b0300006c0300006d030000
+  0x605e9638 - ctx 690300006a0300006b0300006c0300006d030000
+  0x605eaf18 - ctx 690300006a0300006b0300006c0300006d030000
+  0x605ec7f8 - ctx 690300006a0300006b0300006c0300006d030000
+  0x605ee0d8 - ctx 690300006a0300006b0300006c0300006d030000
+  0x605ef9b8 - ctx 690300006a0300006b0300006c0300006d030000
+  0x605f1298 - ctx 690300006a0300006b0300006c0300006d030000
+  0x605f2b78 - ctx 690300006a0300006b0300006c0300006d030000
+  0x605f4458 - ctx 690300006a0300006b0300006c0300006d030000
+  0x605f5d38 - ctx 690300006a0300006b0300006c0300006d030000
+  0x606f8c88 - ctx 008002006a0300009c17000047ba1100387a0200
+  0x60a2a56c - ctx b583a2606a030000d683a2606b030000f683a260
+  0x60a41c44 - ctx 1a0300006a03000033030000ad030000aa030000
+  0x60a424b4 - ctx 1a0300006a03000033030000ad030000aa030000
+  0x60a42d24 - ctx 1a0300006a03000033030000ad030000aa030000
+  0x60a42ff4 - ctx 1a0300006a03000033030000ad030000aa030000
+  0x60cca9a9 - ctx 039cddc76a03000000a06ec925fccc7ecaec6042
+  0x60cca9c5 - ctx 0c9cddab6a030000009cddeb6b03002008dff08c
+  0x60cca9f8 - ctx 8c9cdd786a03000000a06bc94d9c8008cdd0e000
+  0x60d76d82 - ctx c80addfa6a03000004923cf1d22a2cf1e800dd4b
+  0x60d885bc FUN_60d88547 ctx 5c14ddd36a0300000099ddbd460300f0689cdd57
+  0x60d885d6 FUN_60d88547 ctx 5c14ddce6a0300000099dda3460300f0689cdd36
+  ... 39 more
+id 875 MODE_ART_EFFECT_HYBRID_DRAMATIC_TONE_TYPE2 u32 hits 76
+  0x600ac2c4 - ctx e00e00006b0300006a0300000000000070060000
+  0x600ac484 - ctx f00e00006b0300006a0300000000000070060000
+  0x600ac644 - ctx f00d00006b0300006a0300000000000070060000
+  0x600ac804 - ctx 000e00006b0300006a0300000000000070060000
+  0x600ac9c4 - ctx f00e00006b0300006a0300000000000070060000
+  0x600acb84 - ctx 000e00006b0300006a0300000000000070060000
+  0x600acd44 - ctx f00e00006b0300006a0300000000000080060000
+  0x600acf04 - ctx f00e00006b0300006a0300000000000080060000
+  0x600ad0c4 - ctx a00e00006b0300006a0300000000000080060000
+  0x600ad284 - ctx a00e00006b0300006a0300000000000080060000
+  0x600ad444 - ctx a00e00006b0300006a0300000000000080060000
+  0x601230d0 - ctx 620300006b030000730300007b03000083030000
+  0x601248e4 - ctx 620300006b030000730300007b03000083030000
+  0x6047d222 FUN_6047d220 ctx 0004dddf6b03000000df000414ddf47c0200b010
+  0x60563100 FUN_605630fe ctx c014ddca6b03000004df0004ddb40503000004df
+  0x605b8918 - ctx 000000006b030000000000000000000000000000
+  0x605e32bc - ctx 6a0300006b0300006c0300006d0300006e030000
+  0x605e4b9c - ctx 6a0300006b0300006c0300006d0300006e030000
+  0x605e647c - ctx 6a0300006b0300006c0300006d0300006e030000
+  0x605e7d5c - ctx 6a0300006b0300006c0300006d0300006e030000
+  0x605e963c - ctx 6a0300006b0300006c0300006d0300006e030000
+  0x605eaf1c - ctx 6a0300006b0300006c0300006d0300006e030000
+  0x605ec7fc - ctx 6a0300006b0300006c0300006d0300006e030000
+  0x605ee0dc - ctx 6a0300006b0300006c0300006d0300006e030000
+  0x605ef9bc - ctx 6a0300006b0300006c0300006d0300006e030000
+  0x605f129c - ctx 6a0300006b0300006c0300006d0300006e030000
+  0x605f2b7c - ctx 6a0300006b0300006c0300006d0300006e030000
+  0x605f445c - ctx 6a0300006b0300006c0300006d0300006e030000
+  0x605f5d3c - ctx 6a0300006b0300006c0300006d0300006e030000
+  0x606a4044 - ctx 100400006b030000bf020000121f000028150000
+  0x606a48e8 - ctx 540400006b03000085020000b2010000d8000000
+  0x606abb34 - ctx 100400006b030000bf020000121f000028150000
+  0x606ac3d8 - ctx 540400006b03000085020000b2010000d8000000
+  0x60704bd2 FUN_60704b40 ctx 099c99cd6b0300009cdd1b19dafff020df302093
+  0x607b9f0d - ctx 6b0300976b030000000080000000002703030027
+  0x60969dab FUN_60969ce4 ctx 030cdd3c6b03000004fca4947ef462f1d124d441
+  0x60a2a574 - ctx d683a2606b030000f683a2606c0300001684a260
+  0x60b04778 FUN_60b04774 ctx 3e5298cd6b03000098cd5105000498cd62030000
+  0x60bc7146 FUN_60bc710a ctx f002dd616b03000000f89318f002ddc666030000
+  0x60da2708 - ctx a903ddd06b030000049a00b8c80add1766d8ff00
+  ... 36 more
+id 876 MODE_ART_EFFECT_HYBRID_LIGNE_CLAIR_TYPE2 u32 hits 78
+  0x602435e2 - ctx 6c03a0146c03000000000a000000640040004000
+  0x6024367e - ctx 6c03a0146c03000000000a000000640040004000
+  0x6024371a - ctx 6c03a0146c03000000000a000000640040004000
+  0x60243ac2 - ctx 6c03500a6c03000000000a000000640040004000
+  0x602443e6 - ctx 6c03a0146c03000000000a000000640040004000
+  0x60244482 - ctx 6c03a0146c03000000000a000000640040004000
+  0x6024449e - ctx 000001006c0300000000000000001d0000000000
+  0x60247b80 - ctx 000000006c030000000000009403000000000000
+  0x602485c8 - ctx 000000006c030000000000009203000000000000
+  0x602489c9 - ctx 0000007c6c0300000000004a93030000000000d0
+  0x60254058 - ctx 000000006c030000000000009403000000000000
+  0x6025d9b2 - ctx 28004c0a6c030000000000000000000000000000
+  0x6025da0e - ctx 280026056c030000000000000000000000000000
+  0x6025dda4 - ctx 280000006c030000000000000000000000000000
+  0x602b6e6e - ctx a01429006c030000000000000000000000000301
+  0x603ad55a - ctx 2900a0146c030000000000000000000000000000
+  0x603b184a - ctx 2900a0146c030000000000000000000000000000
+  0x603b3e8a - ctx 2900a0146c030000000000000000000000000000
+  0x603b481a - ctx 2900a0146c030000000000000000000000000000
+  0x603b6e5a - ctx 2900500a6c030000000000000000000000000000
+  0x6056334b FUN_60563348 ctx 0414dd7e6c03000000df0004dd986c0300000414
+  0x60563355 FUN_60563353 ctx 0004dd986c0300000414df00040414a001c90485
+  0x605b3fc8 - ctx 0d5f3e606c030000f55e3e60dc010000f95e3e60
+  0x605b8990 - ctx 000000006c030000000000000000000000000000
+  0x605e32c0 - ctx 6b0300006c0300006d0300006e0300006f030000
+  0x605e4ba0 - ctx 6b0300006c0300006d0300006e0300006f030000
+  0x605e6480 - ctx 6b0300006c0300006d0300006e0300006f030000
+  0x605e7d60 - ctx 6b0300006c0300006d0300006e0300006f030000
+  0x605e9640 - ctx 6b0300006c0300006d0300006e0300006f030000
+  0x605eaf20 - ctx 6b0300006c0300006d0300006e0300006f030000
+  0x605ec800 - ctx 6b0300006c0300006d0300006e0300006f030000
+  0x605ee0e0 - ctx 6b0300006c0300006d0300006e0300006f030000
+  0x605ef9c0 - ctx 6b0300006c0300006d0300006e0300006f030000
+  0x605f12a0 - ctx 6b0300006c0300006d0300006e0300006f030000
+  0x605f2b80 - ctx 6b0300006c0300006d0300006e0300006f030000
+  0x605f4460 - ctx 6b0300006c0300006d0300006e0300006f030000
+  0x605f5d40 - ctx 6b0300006c0300006d0300006e0300006f030000
+  0x606fb191 - ctx f7ffff9c6c0300008000009f17000090f7ffff92
+  0x6079ae52 - ctx a01429006c030000000000000000000000000301
+  0x609545cf FUN_609545a9 ctx 0000dd586c0300000414dd806303000000cdf421
+  ... 38 more
+id 877 MODE_ART_EFFECT_HYBRID_PASTEL_TYPE2 u32 hits 56
+  0x60247f81 - ctx 0000003c6d0300000000001294030000000000a2
+  0x6024bd31 - ctx 000000386d0300000000001094030000000000a0
+  0x60254459 - ctx 0000003c6d0300000000001094030000000000a0
+  0x602bee72 - ctx 6b0301006d030000000000000000000000000000
+  0x6056be64 FUN_6056bdf1 ctx c831dd736d03000004fca09c96ab62dd666d0300
+  0x6056be71 FUN_6056bdf1 ctx ab62dd666d0300000400fc819896ab62fc819c96
+  0x605b8a08 - ctx 000000006d030000000000000000000000000000
+  0x605e32c4 - ctx 6c0300006d0300006e0300006f03000070030000
+  0x605e4ba4 - ctx 6c0300006d0300006e0300006f03000070030000
+  0x605e6484 - ctx 6c0300006d0300006e0300006f03000070030000
+  0x605e7d64 - ctx 6c0300006d0300006e0300006f03000070030000
+  0x605e9644 - ctx 6c0300006d0300006e0300006f03000070030000
+  0x605eaf24 - ctx 6c0300006d0300006e0300006f03000070030000
+  0x605ec804 - ctx 6c0300006d0300006e0300006f03000070030000
+  0x605ee0e4 - ctx 6c0300006d0300006e0300006f03000070030000
+  0x605ef9c4 - ctx 6c0300006d0300006e0300006f03000070030000
+  0x605f12a4 - ctx 6c0300006d0300006e0300006f03000070030000
+  0x605f2b84 - ctx 6c0300006d0300006e0300006f03000070030000
+  0x605f4464 - ctx 6c0300006d0300006e0300006f03000070030000
+  0x605f5d44 - ctx 6c0300006d0300006e0300006f03000070030000
+  0x606a48ac - ctx 5f0400006d03000089020000b6010000e0000000
+  0x606ac39c - ctx 5f0400006d03000089020000b6010000e0000000
+  0x606fb798 - ctx 000002006d030000c8f6ffff3cab090000000200
+  0x607b41ae - ctx 6b0301006d030000000000000000000000000000
+  0x608293ff FUN_608293fc ctx 1c9208cd6d03000014a001c805ccc50098cdc708
+  0x608bfdfe FUN_608bfda3 ctx 301493cd6d030000f006f8bc1854f3f1ca04f3b0
+  0x60a2a584 - ctx 1684a2606d0300004184a2606e0300006c84a260
+  0x60bccba2 FUN_60bccb0f ctx 5d18ddec6d03000000421c5c14703cf1d22a34f1
+  0x60bccbb7 FUN_60bccb0f ctx f1e9ddb46d03000000835c14f1e9743ef1e4dd4d
+  0x60c93222 FUN_60c9320d ctx f1e0dd526d0300000482f002ddb658030000001c
+  0x60cca6b9 FUN_60cca57b ctx f1ecddb76d03000000f1ecddf76d0300300cdff0
+  0x60cca75b FUN_60cca57b ctx f1ecdd156d03000000a06bc805cca100f1ecfccc
+  0x60da2f9d FUN_60da2f99 ctx 9208ddca6d03000000b000c82598ddbe6d030000
+  0x60da2fa9 FUN_60da2f99 ctx 2598ddbe6d03000000f0042cf401f82508f0f1a8
+  0x60da3016 FUN_60da3012 ctx 9208dd516d03000000b000c82598dd456d030000
+  0x60da3022 FUN_60da3012 ctx 2598dd456d03000000f0042cf401f82508f0f1a8
+  0x60e1c5a0 - ctx eeb7b2606d03000063b0b26000000000cebbb260
+  0x60eb8b8c - ctx 244cc9606d030000b847c960680200008e4fc960
+  0x612617f5 - ctx c909ddfc6d0300000080148503dd1f550300e030
+  0x612618cf - ctx e030dd226d03000000f8bd04a50ec809f8bd04a5
+  ... 16 more
+id 878 MODE_ART_EFFECT_HYBRID_VINTAGE_TYPE2 u32 hits 45
+  0x601247bc - ctx 2e0300006e030000b70300000f04000077040000
+  0x60562f70 FUN_60562f6b ctx 0883dd636e0300000093dd26750300000092dd1d
+  0x60562ff7 - ctx b400dd026e03000000df0004cdf9060000df0004
+  0x605b8a80 - ctx 000000006e030000000000000000000000000000
+  0x605e32c8 - ctx 6d0300006e0300006f0300007003000071030000
+  0x605e4ba8 - ctx 6d0300006e0300006f0300007003000071030000
+  0x605e6488 - ctx 6d0300006e0300006f0300007003000071030000
+  0x605e7d68 - ctx 6d0300006e0300006f0300007003000071030000
+  0x605e9648 - ctx 6d0300006e0300006f0300007003000071030000
+  0x605eaf28 - ctx 6d0300006e0300006f0300007003000071030000
+  0x605ec808 - ctx 6d0300006e0300006f0300007003000071030000
+  0x605ee0e8 - ctx 6d0300006e0300006f0300007003000071030000
+  0x605ef9c8 - ctx 6d0300006e0300006f0300007003000071030000
+  0x605f12a8 - ctx 6d0300006e0300006f0300007003000071030000
+  0x605f2b88 - ctx 6d0300006e0300006f0300007003000071030000
+  0x605f4468 - ctx 6d0300006e0300006f0300007003000071030000
+  0x605f5d48 - ctx 6d0300006e0300006f0300007003000071030000
+  0x606a532c - ctx 5d0400006e0300008e020000ba010000e7000000
+  0x606f8948 - ctx 008002006e0300006806000014a6190000800200
+  0x60a2a58c - ctx 4184a2606e0300006c84a2606f0300009184a260
+  0x60da2eab FUN_60da2ea7 ctx 9208ddbc6e03000000b000c82598ddb06e030000
+  0x60da2eb7 FUN_60da2ea7 ctx 2598ddb06e03000000f0042cf401f82508f0f1a8
+  0x60da2f24 FUN_60da2f20 ctx 9208dd436e03000000b000c82598dd376e030000
+  0x60da2f30 FUN_60da2f20 ctx 2598dd376e03000000f0042cf401f82508f0f1a8
+  0x60dc2882 FUN_60dc2877 ctx f16060cd6e0300009000df0004f8fefcf8202ccd
+  0x60ebb8a4 - ctx 1ddbc9606e03000066d4c960000000001ddbc960
+  0x60ebbb1c - ctx 4edec9606e030000aedec96073030000c5dec960
+  0x610e5c02 FUN_610e5bc9 ctx c95fddd76e03000000f004f82508f0f15910181d
+  0x6126178e - ctx c909dd636e03000000dda3bdeaff000400dd78e9
+  0x6129d866 - ctx a100dd246e03000004cc9c002c1001cc91002c11
+  0x61374d80 - ctx 6a060a006e030000ffffffffffffffff84000000
+  0x613757a8 - ctx 6a060a006e030000ffffffffffffffff84000000
+  0x615237dc - ctx da0000006e030000db0000006f030000dc000000
+  0x6152e908 - ctx b63c1b616e030000b63c1b616f030000b63c1b61
+  0x61536690 - ctx 310000006e030000320000006f03000033000000
+  0x61537b98 - ctx 020091026e030000030091026f03000001009302
+  0x6154c60c - ctx 310000006e030000320000006f03000033000000
+  0x615ca29c - ctx 000000006e0300001a0000006e03000020000000
+  0x615ca2a4 - ctx 1a0000006e030000200000004d00000000000000
+  0x6187efc8 FUN_6187ee37 ctx 8001dd766e0300000010dfc0bc832c8c01dd1ccc
+  ... 5 more
+id 879 MODE_ART_EFFECT_HYBRID_VINTAGE_TYPE3 u32 hits 39
+  0x605b8abc - ctx 000000006f030000000000000000000000000000
+  0x605e32cc - ctx 6e0300006f030000700300007103000072030000
+  0x605e4bac - ctx 6e0300006f030000700300007103000072030000
+  0x605e648c - ctx 6e0300006f030000700300007103000072030000
+  0x605e7d6c - ctx 6e0300006f030000700300007103000072030000
+  0x605e964c - ctx 6e0300006f030000700300007103000072030000
+  0x605eaf2c - ctx 6e0300006f030000700300007103000072030000
+  0x605ec80c - ctx 6e0300006f030000700300007103000072030000
+  0x605ee0ec - ctx 6e0300006f030000700300007103000072030000
+  0x605ef9cc - ctx 6e0300006f030000700300007103000072030000
+  0x605f12ac - ctx 6e0300006f030000700300007103000072030000
+  0x605f2b8c - ctx 6e0300006f030000700300007103000072030000
+  0x605f446c - ctx 6e0300006f030000700300007103000072030000
+  0x605f5d4c - ctx 6e0300006f030000700300007103000072030000
+  0x606a4870 - ctx 5d0400006f0300008f020000bb010000e7000000
+  0x606ac360 - ctx 5d0400006f0300008f020000bb010000e7000000
+  0x60a2a594 - ctx 6c84a2606f0300009184a26070030000b684a260
+  0x60a62174 - ctx dd0200006f030000020400009404000027050000
+  0x60c91b07 FUN_60c91ae7 ctx f002dddb6f0300000042104e1400dd0159e5ffa0
+  0x60c91b1c FUN_60c91ae7 ctx f002ddc66f03000000a001c80ca007c837a008c8
+  0x60c91bc2 FUN_60c91ba2 ctx f1e0dd206f03000000421000dd4858e5ffa00cf0
+  0x60c91bd5 FUN_60c91ba2 ctx f002dd0d6f03000000a002c808a008c811ca1572
+  0x60da2db9 FUN_60da2db5 ctx 9208ddae6f03000000b000c82598dda26f030000
+  0x60da2dc5 FUN_60da2db5 ctx 2598dda26f03000000f0042cf401f82508f0f1a8
+  0x60da2e32 FUN_60da2e2e ctx 9208dd356f03000000b000c82598dd296f030000
+  0x60da2e3e FUN_60da2e2e ctx 2598dd296f03000000f0042cf401f82508f0f1a8
+  0x610e5ae1 FUN_610e5ac5 ctx 4208ddf86f03000000f004f82508f0f15908181d
+  0x61374d9c - ctx 6b060a006f030000ffffffffffffffff85000000
+  0x613757c4 - ctx 6b060a006f030000ffffffffffffffff85000000
+  0x615237e4 - ctx db0000006f030000dc00000070030000dd000000
+  0x6152e910 - ctx b63c1b616f030000b63c1b6194020000b63c1b61
+  0x61536698 - ctx 320000006f030000330000009402000034000000
+  0x61537ba0 - ctx 030091026f030000010093029402000002009302
+  0x6154c614 - ctx 320000006f030000330000009402000034000000
+  0x615ca2b4 - ctx 000000006f0300001a0000006f03000020000000
+  0x615ca2bc - ctx 1a0000006f030000200000004d00000000000000
+  0x616008e2 - ctx 5e004e006f0300000000c8005e004e0048070000
+  0x61990104 - ctx 6e0300006f0300006f0300007003000070030000
+  0x61990108 - ctx 6f0300006f030000700300007003000071030000
+id 880 MODE_ART_EFFECT_HYBRID_PARTCOLOR_TYPE2 u32 hits 70
+  0x6003eddc - ctx 0c00000070030000000000000520000000000000
+  0x600a5d00 - ctx 580000007003000070030000ffffffff00000000
+  0x600a5d04 - ctx 7003000070030000ffffffff00000000c0680400
+  0x600a5d18 - ctx 5800000070030000ffffffff00000000ffffffff
+  0x600a5de8 - ctx 58000000700300000a0000000f00ca0820000000
+  0x600ac61c - ctx 7006000070030000f0190000f00d000020050000
+  0x600ac638 - ctx 7006000070030000f0190000f00d00006b030000
+  0x600ac654 - ctx 7006000070030000f0190000f00d000090020000
+  0x600ac670 - ctx 7006000070030000f0190000f00d000048010000
+  0x600ac68c - ctx 7006000070030000f0190000f00d000000000000
+  0x600ac6a8 - ctx 7006000070030000f0190000f00d000000000000
+  0x600ac6c4 - ctx 7006000070030000f0190000f00d000000000000
+  0x600ad080 - ctx 2006000070030000001a0000a00e000052070000
+  0x600ad240 - ctx 2006000070030000001a0000a00e000052070000
+  0x600ad400 - ctx 2006000070030000001a0000a00e000052070000
+  0x60370330 - ctx 4015b962700300000000000000000000b018b962
+  0x60563131 FUN_60563123 ctx c80dddf77003000000a002c90b1688dd46760300
+  0x605b8b34 - ctx 0000000070030000000000000000000000000000
+  0x605e32d0 - ctx 6f03000070030000710300007203000073030000
+  0x605e4bb0 - ctx 6f03000070030000710300007203000073030000
+  0x605e6490 - ctx 6f03000070030000710300007203000073030000
+  0x605e7d70 - ctx 6f03000070030000710300007203000073030000
+  0x605e9650 - ctx 6f03000070030000710300007203000073030000
+  0x605eaf30 - ctx 6f03000070030000710300007203000073030000
+  0x605ec810 - ctx 6f03000070030000710300007203000073030000
+  0x605ee0f0 - ctx 6f03000070030000710300007203000073030000
+  0x605ef9d0 - ctx 6f03000070030000710300007203000073030000
+  0x605f12b0 - ctx 6f03000070030000710300007203000073030000
+  0x605f2b90 - ctx 6f03000070030000710300007203000073030000
+  0x605f4470 - ctx 6f03000070030000710300007203000073030000
+  0x605f5d50 - ctx 6f03000070030000710300007203000073030000
+  0x606e6250 - ctx 4002d002700300000000a0050000200700000000
+  0x60a03720 - ctx 580000007003000070030000ffffffff00000000
+  0x60a03724 - ctx 7003000070030000ffffffff00000000c0680400
+  0x60a03738 - ctx 5800000070030000ffffffff00000000ffffffff
+  0x60a03808 - ctx 58000000700300000a0000000f00ca0820000000
+  0x60a2a59c - ctx 9184a26070030000b684a26071030000dd84a260
+  0x60bc9b72 FUN_60bc94ca ctx 0000dd4070030000045d08f011dd555a05000004
+  0x60cd043a FUN_60cd0415 ctx 0202dd8c7003000000a000c81198fccc18150202
+  0x60cd0484 FUN_60cd045f ctx 0202dd427003000000a000c81198fccc18150202
+  ... 30 more
+id 881 MODE_ART_EFFECT_HYBRID_PARTCOLOR_TYPE3 u32 hits 45
+  0x600622fe FUN_6006229b ctx 2c0010cd71030000fcdc00550960ddf926fcff00
+  0x603db96d FUN_603db935 ctx ff0000cd71030000a000c90c800404dd5934ffff
+  0x60466114 FUN_60466112 ctx 000000cd7103000000cd7403000000fc83e467f5
+  0x60562c26 - ctx f042dde57103000000cad82e012e00dd027d0300
+  0x60563126 FUN_60563123 ctx 0482dd027103000000a001c80dddf77003000000
+  0x605b8b70 - ctx 0000000071030000000000000000000000000000
+  0x605e32d4 - ctx 7003000071030000720300007303000074030000
+  0x605e4bb4 - ctx 7003000071030000720300007303000074030000
+  0x605e6494 - ctx 7003000071030000720300007303000074030000
+  0x605e7d74 - ctx 7003000071030000720300007303000074030000
+  0x605e9654 - ctx 7003000071030000720300007303000074030000
+  0x605eaf34 - ctx 7003000071030000720300007303000074030000
+  0x605ec814 - ctx 7003000071030000720300007303000074030000
+  0x605ee0f4 - ctx 7003000071030000720300007303000074030000
+  0x605ef9d4 - ctx 7003000071030000720300007303000074030000
+  0x605f12b4 - ctx 7003000071030000720300007303000074030000
+  0x605f2b94 - ctx 7003000071030000720300007303000074030000
+  0x605f4474 - ctx 7003000071030000720300007303000074030000
+  0x605f5d54 - ctx 7003000071030000720300007303000074030000
+  0x606633f1 - ctx 0002000071030000000000000000000100000002
+  0x60663461 - ctx 0002000071030000000000000000000900020000
+  0x60a2a5a4 - ctx b684a26071030000dd84a260720300000485a260
+  0x60cd036e FUN_60cd0349 ctx 0202dd587103000000a000c81198fccc18150202
+  0x60cd03b8 FUN_60cd0393 ctx 0202dd0e7103000000a000c81198fccc18150202
+  0x60da24e7 - ctx 8100dda87103000004ca77cd2b100000ca70cde4
+  0x60dc57d7 FUN_60dc5625 ctx 40029ccd7103000058bca000c90cfab444029ccd
+  0x60e1c5c0 - ctx 17b8b26071030000afb5b260720300000cb4b260
+  0x6108a3c2 FUN_6108a305 ctx 102401cd710300008004cd8b040000ca0a9f20f1
+  0x610e58dd FUN_610e58c4 ctx c927ddfc7103000000f004fa255002f0f1cd5c00
+  0x61262148 FUN_61262121 ctx 0000dd0b7103000000a000c81058109889dd0571
+  0x61267253 - ctx c500dd5171030000043d51dd4975030000048f03
+  0x61374df0 - ctx 3b0e0a0071030000ffffffffffffffff88000000
+  0x61375818 - ctx 3b0e0a0071030000ffffffffffffffff88000000
+  0x615237f4 - ctx dd00000071030000ee000000b5050000ef000000
+  0x6152e928 - ctx b63c1b6171030000b63c1b61b5050000b63c1b61
+  0x615366b0 - ctx 35000000710300003d000000b50500003e000000
+  0x61537bb8 - ctx 03009302710300000100b405b50500000200b405
+  0x6154c62c - ctx 35000000710300003d000000b50500003e000000
+  0x615ca2fc - ctx 00000000710300001a0000007103000020000000
+  0x615ca304 - ctx 1a00000071030000200000004e00000000000000
+  ... 5 more
+id 897 MODE_COLORTONE_DIAL u32 hits 81
+  0x600e5dd1 - ctx 0100000a81030000000000000000001981010000
+  0x602d216c - ctx 1e000000810300001f0000004c03000021000000
+  0x6035d190 - ctx c0b62d6081030000cfb62d6082030000deb62d60
+  0x6035d5d0 - ctx cfc02d6081030000e3c02d6088030000f7c02d60
+  0x605dc508 - ctx 090000008103000006ba5d600100000082030000
+  0x605de8a8 - ctx 8c08000081030000800c0000800c0000800c0000
+  0x605de8bc - ctx 020000008103000003030000800c0000800c0000
+  0x605de8d4 - ctx 02000000810300005a000000800c0000800c0000
+  0x605de8ec - ctx 020000008103000092000000800c0000800c0000
+  0x605de904 - ctx 0200000081030000d8000000800c0000800c0000
+  0x605de91c - ctx 02000000810300004c050000800c0000800c0000
+  0x605de934 - ctx 0200000081030000a9020000800c0000800c0000
+  0x605de94c - ctx 0200000081030000bc050000800c0000800c0000
+  0x605de964 - ctx 020000008103000076080000800c0000800c0000
+  0x605de980 - ctx 8c08000081030000800c0000800c0000800c0000
+  0x605de994 - ctx 020000008103000003030000800c0000800c0000
+  0x605de9ac - ctx 02000000810300005a000000800c0000800c0000
+  0x605de9c4 - ctx 020000008103000092000000800c0000800c0000
+  0x605de9dc - ctx 0200000081030000d8000000800c0000800c0000
+  0x605de9f4 - ctx 02000000810300004c050000800c0000800c0000
+  0x605dea0c - ctx 0200000081030000a9020000800c0000800c0000
+  0x605dea24 - ctx 0200000081030000bc050000800c0000800c0000
+  0x605dea3c - ctx 020000008103000076080000800c0000800c0000
+  0x605dea58 - ctx 8c08000081030000800c0000800c0000800c0000
+  0x605dea6c - ctx 020000008103000003030000800c0000800c0000
+  0x605dea84 - ctx 02000000810300005a000000800c0000800c0000
+  0x605dea9c - ctx 020000008103000092000000800c0000800c0000
+  0x605deab4 - ctx 0200000081030000d8000000800c0000800c0000
+  0x605deacc - ctx 02000000810300004c050000800c0000800c0000
+  0x605deae4 - ctx 0200000081030000a9020000800c0000800c0000
+  0x605deafc - ctx 0200000081030000bc050000800c0000800c0000
+  0x605deb14 - ctx 020000008103000076080000800c0000800c0000
+  0x605deb30 - ctx 8c08000081030000800c0000800c0000800c0000
+  0x605deb44 - ctx 020000008103000003030000800c0000800c0000
+  0x605deb5c - ctx 02000000810300005a000000800c0000800c0000
+  0x605deb74 - ctx 020000008103000092000000800c0000800c0000
+  0x605deb8c - ctx 0200000081030000d8000000800c0000800c0000
+  0x605deba4 - ctx 02000000810300004c050000800c0000800c0000
+  0x605debbc - ctx 0200000081030000a9020000800c0000800c0000
+  0x605debd4 - ctx 0200000081030000bc050000800c0000800c0000
+  ... 41 more
+id 1462 MODE_ART_EFFECT_HYBRID_BLEACH_BYPASS_TYPE2 u32 hits 37
+  0x605b8be8 - ctx 00000000b6050000000000000000000000000000
+  0x605e3a3c - ctx b5050000b6050000b7050000b8050000b9050000
+  0x605e531c - ctx b5050000b6050000b7050000b8050000b9050000
+  0x605e6bfc - ctx b5050000b6050000b7050000b8050000b9050000
+  0x605e84dc - ctx b5050000b6050000b7050000b8050000b9050000
+  0x605e9dbc - ctx b5050000b6050000b7050000b8050000b9050000
+  0x605eb69c - ctx b5050000b6050000b7050000b8050000b9050000
+  0x605ecf7c - ctx b5050000b6050000b7050000b8050000b9050000
+  0x605ee85c - ctx b5050000b6050000b7050000b8050000b9050000
+  0x605f013c - ctx b5050000b6050000b7050000b8050000b9050000
+  0x605f1a1c - ctx b5050000b6050000b7050000b8050000b9050000
+  0x605f32fc - ctx b5050000b6050000b7050000b8050000b9050000
+  0x605f4bdc - ctx b5050000b6050000b7050000b8050000b9050000
+  0x605f64bc - ctx b5050000b6050000b7050000b8050000b9050000
+  0x606faa08 - ctx 00000100b60500003df9ffffdaf3090000000100
+  0x60c94e2d - ctx e00add2db605000008ccff14cc7809f1ecdd2b4f
+  0x60d7c742 - ctx f1e8dd9bb605000000f1d09c99f008f82a1cf0f2
+  0x60d7c7ab - ctx f1ecdd32b605000000f1d098f008f1e9f82a1cf0
+  0x60d7c7c0 - ctx f1ecdd2eb605000000ca26af00c80ff1ecb000c8
+  0x60d7dc6d FUN_60d7d994 ctx d42cdd6bb605000004bcc80b9ddd3560daff0004
+  0x60d7dc86 FUN_60d7d994 ctx 2c98dd52b60500000408b000c81a3e227c3d5185
+  0x60d7e6c0 FUN_60d7e6bc ctx 9208dda7b605000000b000c81f98dd9bb6050000
+  0x60d7e6cc FUN_60d7e6bc ctx 1f98dd9bb605000000f0042c2801f82508f0f1a8
+  0x60da9c77 - ctx 00ca3fcdb6050000ca38cd491f0000ca31cd1c16
+  0x611ad649 FUN_611ad5e7 ctx f0f2dd49b605000000a001c933f8b8eda001c929
+  0x61374e28 - ctx 22471600b6050000ffffffffffffffffb7000000
+  0x61375850 - ctx 22471600b6050000ffffffffffffffffb7000000
+  0x61523804 - ctx ef000000b6050000f0000000c305000000000100
+  0x615291a4 - ctx b505b405b605000007000600cc905261ee905261
+  0x6152e938 - ctx b63c1b61b6050000b63c1b61c3050000b63c1b61
+  0x615366c0 - ctx 3e000000b60500003f000000c305000039000000
+  0x61537bc8 - ctx 0200b405b60500003f000000c305000000000000
+  0x6154c63c - ctx 3e000000b60500003f000000c3050000feffffff
+  0x615ca32c - ctx 00000000b60500001a000000b605000020000000
+  0x615ca334 - ctx 1a000000b6050000200000005400000000000000
+  0x616a052e FUN_616a052c ctx f040dd59b605000000cd1b2200048100a1c20384
+  0x6185a983 FUN_61859262 ctx f063ddd1b60500000c5ca0fca1581838608001dd
+id 2009 MODE_COLORTONE_FANTASIC_FOCUS_CURSOR u32 hits 5
+  0x602bfc26 - ctx 000000bfd9070000000000000000000000000000
+  0x60d3d90b FUN_60d3d8d8 ctx 999cdd24d90700000000fa12c40498df3010cf20
+  0x60d3ff2f FUN_60d3fefa ctx 5c10ddbbd907000000935c10dd2e9e09000000f0
+  0x60d3ffc3 FUN_60d3fefa ctx 5c10dd27d907000000935c10dd9a9d09000000f0
+  0x61424868 - ctx 07000000d9070000ffff00000700000007000000
+id 2012 MODE_COLORTONE_LIGHT_TONE_CURSOR u32 hits 11
+  0x600ae504 - ctx 92caa100dc070000010000000f00000092caa100
+  0x606fba31 - ctx f5ffff69dc0700000002009305000013f5ffff69
+  0x60b36d10 FUN_60b36ccc ctx c128dd57dc070000042c9c11950089dd74e50700
+  0x60d3d55e FUN_60d3d55c ctx b020dd81dc07000004fcccd069ef606000f81018
+  0x60d5b699 FUN_60d5b23d ctx 890add3fdc07000004b8c80add6dfbe5ff000492
+  0x60d5c069 FUN_60d5c059 ctx 2598ddfedc07000000f0042cf401f82508f0f1a8
+  0x60d5c0d6 FUN_60d5c0d2 ctx 9208dd91dc07000000b000c82598dd85dc070000
+  0x60d5c0e2 FUN_60d5c0d2 ctx 2598dd85dc07000000f0042cf401f82508f0f1a8
+  0x610ba90e FUN_610ba8eb ctx 000009fcdc0700000bcd6a1300048002cd8b1200
+  0x6111bc34 - ctx 0492dd4bdc07000000f04098ddeb4018000000dd
+  0x61424898 - ctx 07000000dc070000ffff00000700000007000000
+id 2017 MODE_COLORTONE_TOY_PHOTO_TYPE3_CURSOR u32 hits 14
+  0x6052e75e FUN_6052e45a ctx 40f208fce1070000e0f8c003f214605c045d1420
+  0x609939e9 FUN_609938b8 ctx f8c407fce1070000e0fce0ffffff03f8c003f211
+  0x60993b29 FUN_609938b8 ctx f8c407fce1070000e0fce0ffffff03f8c003f211
+  0x60993b88 FUN_609938b8 ctx f8c407fce1070000e0fce0ffffff03f8c003f211
+  0x60b36865 FUN_60b36812 ctx c914dd02e1070000042c9c11dd4de10700c01482
+  0x60d5b117 FUN_60d5b0fc ctx 7509ddc1e10700000492fccc3ddcef6042044a08
+  0x60d5b192 FUN_60d5b0fc ctx 0a98dd32e107000004801cf1e82d8709dd38e107
+  0x60d5b1a0 FUN_60d5b0fc ctx 8709dd38e1070000049a00b8c80add6400e6ff00
+  0x60d5bb6a FUN_60d5bb66 ctx 9208ddfde107000000b000c82598ddf1e1070000
+  0x60d5bb76 FUN_60d5bb66 ctx 2598ddf1e107000000f0042cf401f82508f0f1a8
+  0x60d5bbe3 FUN_60d5bbdf ctx 9208dd84e107000000b000c82598dd78e1070000
+  0x60d5bbef FUN_60d5bbdf ctx 2598dd78e107000000f0042cf401f82508f0f1a8
+  0x60d5bc5c FUN_60d5bc58 ctx 9208dd0be107000000b000c82598ddffe0070000
+  0x614d1992 - ctx ee075f00e1070000000000000000000000000000
+id 2022 MODE_COLORTONE_GENTLE_SEPIA_CURSOR u32 hits 4
+  0x60249078 - ctx 00000000e6070000000000003e08000000000000
+  0x60249479 - ctx 00000018e6070000000000a03f0800000000001c
+  0x606f9788 - ctx 00000100e607000071f5ffffed77060000000100
+  0x60949047 - ctx 3c50dd69e607000004fca420363fa3f8ec02c809
+id 2031 MODE_COLORTONE_VINTAGE_TYPE3_CURSOR u32 hits 8
+  0x60190ade FUN_60190aa3 ctx 300050cdef070000ca31cd33000004ca2acd1a08
+  0x606a41d0 - ctx 24090000ef070000ee060000f505000019050000
+  0x606abcc0 - ctx 24090000ef070000ee060000f505000019050000
+  0x6094844d FUN_60948426 ctx 85ffddcdef07000004fca424363fa3f8ec01c811
+  0x6094879f - ctx 203cdd11ef07000004f82234ddb2ed07002008ca
+  0x60a620f8 - ctx 67070000ef07000076080000fe08000085090000
+  0x60d5a30c - ctx 5505ddccef07000004b8c80add6d32f3ff000492
+  0x60d5a376 - ctx 6c05dd62ef070000049a00b8c8165d14fccc8101
+id 2034 MODE_COLORTONE_PARTCOLOR_TYPE3_CURSOR u32 hits 7
+  0x606a3f78 - ctx ff080000f2070000170700005506000096050000
+  0x606a3ff0 - ctx 01090000f207000013070000390600007f050000
+  0x606aba68 - ctx ff080000f2070000170700005506000096050000
+  0x606abae0 - ctx 01090000f207000013070000390600007f050000
+  0x60d5a0d2 - ctx bc04dd06f2070000049a00b8c80add78ecdcff00
+  0x60d5aa83 FUN_60d5aa7f ctx 9308dde4f207000000b000c905cce2009cddd5f2
+  0x60d5aa92 FUN_60d5aa7f ctx 009cddd5f207000000f0042c6b01f82508f0f1a8
+id 2037 MODE_COLORTONE_PLACAME_CURSOR u32 hits 12
+  0x606a4158 - ctx 20090000f5070000ee060000040600002d050000
+  0x606a4194 - ctx 1f090000f5070000ea0600000006000021050000
+  0x606a4ab8 - ctx a6090000f50700008b0600005005000040040000
+  0x606a5268 - ctx 20090000f5070000ed060000040600002d050000
+  0x606a5358 - ctx a6090000f50700008a0600005005000040040000
+  0x606abc48 - ctx 20090000f5070000ee060000040600002d050000
+  0x606abc84 - ctx 1f090000f5070000ea0600000006000021050000
+  0x606ac5a8 - ctx a6090000f50700008b0600005005000040040000
+  0x60d5a845 FUN_60d5a841 ctx 9208dd22f507000000b000c82598dd16f5070000
+  0x60d5a851 FUN_60d5a841 ctx 2598dd16f507000000f0042cf401f82508f0f1a8
+  0x612ebaa3 - ctx 4000c980f50700000000080102ffffffffffffff
+  0x618d0a77 FUN_618d0a52 ctx 02c943cdf507000092800c3d51cd2607f0181ca8
+id 2148 MODE_COLORTONE_CURSOR u32 hits 6
+  0x60254c20 - ctx 000000006408000000000000c408000000000000
+  0x60599b84 FUN_60599b57 ctx f02098cd640800009cdd7df2fcfff010dff048cf
+  0x606aa430 - ctx 6508000064080000640800006308000063080000
+  0x606aa434 - ctx 6408000064080000630800006308000062080000
+  0x60baff64 FUN_60baff2b ctx 78f1edcd640800009020f1789564f16dcd570800
+  0x6152e740 - ctx ffd71b616408000014d81b611f00000045da1b61
+
+## resource 0106 byte scan
+key 0x5b82 raw hits 182 followed-by-u16<32-or-count 0
+key 0x5b52 raw hits 172 followed-by-u16<32-or-count 2
+  off 0x2c0509f next 22 ctx 525b1600f0ba6b40
+  off 0x315d285 next 3 ctx 525b03008bed2c7f
+key 0xf5f1 raw hits 266 followed-by-u16<32-or-count 6
+  off 0x296df0f next 3 ctx f1f50300aa600a51
+  off 0x297cd9b next 3 ctx f1f50300aa641a40
+  off 0x29921ef next 3 ctx f1f50300aa641240
+  off 0x2995e47 next 3 ctx f1f50300aa641240
+  off 0x2a0ab2b next 3 ctx f1f50300aae0079f
+  off 0x2b59a3f next 3 ctx f1f50300aac41a40
+key 0xf5e1 raw hits 204 followed-by-u16<32-or-count 9
+  off 0x7c6507 next 20 ctx e1f5140051400514
+  off 0x2d2cf1c next 0 ctx e1f5000000000000
+  off 0x313fc7a next 5 ctx e1f50500ca9a3b25
+  off 0x348abe7 next 21 ctx e1f51500ec6f7179
+  off 0x589b4a4 next 0 ctx e1f500004507e504
+  off 0x589b4ac next 0 ctx e1f500004507e504
+  off 0x589b4b4 next 0 ctx e1f500004507e504
+  off 0x589b4bc next 0 ctx e1f500005f050dfc
+  off 0x63f12c8 next 19 ctx e1f51300cfff72ff
+
+## decompiled export token scan
+file all-functions.asm
+  token 0x5b82 count 0
+  token 0x5b52 count 0
+  token 0xf5f1 count 0
+  token 0xf5e1 count 0
+  token 0x5b80 count 9
+    148855:6014e0f5	fa00805b	mov (0x5b80,A0),D0
+    148887:6014e148	fad0805b	add 0x5b80,A0
+    258921:6019fe61	2c805b	mov 0x5b80,D0
+    426644:602f389d	fa04805b	mov (0x5b80,A0),D1
+    430336:602f6293	fac0805b	add 0x5b80,D0
+    435008:602f8fe1	fa01805b	mov (0x5b80,A1),D0
+    435011:602f8fec	fa11805b	mov D0,(0x5b80,A1)
+    1210298:60591c1d	fa03805b	mov (0x5b80,A3),D0
+  token 0x5b8, count 97
+    107150:6007f39b	2cb805	mov 0x5b8,D0
+    937574:604df354	25b805	mov 0x5b8,A1
+    1049662:60521509	fa10b805	mov D0,(0x5b8,A0)
+    1609377:608f8614	2cb805	mov 0x5b8,D0
+    2424988:60c4ac6f	fa10b805	mov D0,(0x5b8,A0)
+    2429008:60c4db45	fa10b805	mov D0,(0x5b8,A0)
+    2429048:60c4db9d	fa13b805	mov D0,(0x5b8,A3)
+    2585772:60cc0c5a	2cb805	mov 0x5b8,D0
+  token 0x05b8 count 0
+file all-functions.c
+  token 0x5b82 count 0
+  token 0x5b52 count 0
+  token 0xf5f1 count 0
+  token 0xf5e1 count 0
+  token 0x5b80 count 11
+    140744:if ((iVar1 == 0) || ((*(uint *)(iVar1 + 0x5b80) & 0x40000000) == 0)) {
+    140774:((uVar1 = *(uint *)(extraout_A0 + 0x5b80), (uVar1 & 0x20) == 0 && ((uVar1 & 0x40) == 0)))) {
+    140799:(((*(uint *)(iVar1 + 0x5b80) & 0x20) == 0 && ((*(uint *)(iVar1 + 0x5b80) & 0x40) == 0)))) {
+    376724:return (*(uint *)(iVar1 + 0x5b80) & 0x80000000) != 0;
+    380325:if ((_DAT_a32c9c24 + 0x5b80U & 0x7f) != 0) {
+    382280:*(uint *)(_DAT_a32c9c24 + 0x5b80) =
+    382731:puVar8 = (uint *)(_DAT_a32c9c24 + 0x5b80);
+    382966:*(undefined4 *)(_DAT_a32c9c24 + 0xff00) = *(undefined4 *)(_DAT_a32c9c24 + 0x5b80);
+  token 0x5b8, count 0
+  token 0x05b8 count 0
+
+## calls.tsv caller counts
+  target 0x60419408 calls 18 from 5 functions
+    callers 603f03f0 603fe74d 60401f24 60b326de 618cf5b5
+  target 0x60063356 calls 483 from 92 functions
+  target 0x60063a20 calls 2 from 2 functions
+    callers 60063380 60063912
+  target 0x60063684 calls 2 from 2 functions
+    callers 600630a3 60063567
+  target 0x60062d28 calls 1 from 1 functions
+    callers 60062a60
+  target 0x600633a2 calls 17 from 12 functions
+    callers 600619a9 602029f0 60203150 6020380c 6020bc47 6181e7b5 6182165b 6192f0c5 6192f4ae 6192f98e 6192fb87 6192fcff
+  target 0x60062d93 calls 6 from 6 functions
+    callers 60062cc2 60062cf7 60062d28 60062fbb 60062fe5 60063015
+  target 0x600610d2 calls 2 from 1 functions
+    callers 60063dc0
+  target 0x600624d3 calls 10 from 10 functions
+    callers 6006327f 60063356 6006336d 60063380 600633a2 600633ff 60063431 60063567 600636ec 6006398b
+  target 0x60419696 calls 3 from 3 functions
+    callers 6041931e 6041937f 60419408
+  target 0x600633ff calls 23 from 20 functions
+    callers 600619a9 60405df6 6041a205 605623ef 608cd9af 60a8d2d7 60a8d416 60a8d4e5 60a8d512 6104d3ac 6180c628 6180f514 6181baaf 618268e2 6183cb11 618cb42f 618cf3c8 618d519a 618dbb9d 61a2336f
+  target 0x60419446 calls 4 from 4 functions
+    callers 6041931e 6041937f 604193ca 60419408
+  target 0x60063912 calls 3 from 3 functions
+    callers 600619a9 603c2731 60419408
+  target 0x60063380 calls 672 from 566 functions
+  target 0x60063431 calls 250 from 75 functions
+  target 0x60062536 calls 7 from 2 functions
+    callers 6006229b 60062492
+  target 0x600634ee calls 2 from 2 functions
+    callers 600630a3 60063431
+  target 0x6006148f calls 2 from 2 functions
+    callers 600610d2 60062ac1
+  target 0x600619a9 calls 0 from 0 functions
+    callers 

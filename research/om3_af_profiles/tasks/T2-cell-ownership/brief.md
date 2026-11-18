@@ -142,3 +142,52 @@ step), or BOUNDARY (the emulator cannot exercise it; say why).
 - Appending a new key (option 2; only if every candidate fails, and as a separate task).
 - Backup-file (OM Workspace) format changes. Do note whether the backup path includes the key.
 - Any hardware step.
+
+## 11. Correction round (Opus, after Sol's review `run-20261117-220006-review`: REJECT)
+
+Your previous work is still in `work\`; read `audit\previous-review.md` (Sol's full review). Do
+**not** start over. Keep every earlier script and output, and save new versions under new names.
+The verdict for `0x5b82` is **UNRESOLVED** until all of the following are done:
+
+1. **Disposition of every byte-pattern candidate.** For each of the 49 raw `82 5b` hits and each of
+   the `0x5b8` slot immediates (including the 29 `mov` sites) that Sol lists in the review, add
+   one row to `out\candidates-5b82.tsv`. Give the address, the containing function or data region
+   and the instruction (or data context), plus a disposition: *not code* (data/string/displacement,
+   with evidence), *other meaning* (a structure offset, other UI ID, etc., with evidence) or *key use*.
+   Move every *key use* into `uses-5b82.tsv` with a classification.
+2. **Trace the omitted routes**, each with a complete bounded listing and caller reachability for
+   UI IDs 2017, 2031 and 2034:
+   - `0x604193ca → 0x60419446 → 0x60063962 → 0x6006398b`. This is a whole-key operation using a
+     byte count from the registry count and width, with its source lookup
+     `0x60063a68 → 0x60061453`. What does it copy, from where, and which UI actions reach it for
+     these IDs (for example a per-setting default/reset)? If it can rewrite the unnamed cells,
+     say so plainly.
+   - `0x6041937f` (mapped setter): which index does it write?
+   - `0x60063684` and its callers `0x60063567` and `0x600630a3`: the indices, lengths and data sources.
+   - Also cover the debug handler `0x600619a9`. Show where its handler slots
+     (`0x602ec448`, `0x602eda1c`) are read and whether any non-debug path dispatches to them.
+     Absence of a direct caller is not enough.
+3. **Dynamic coverage**, repeated in two fresh marked sessions with a matching control:
+   - a completed C1 cycle: assign or save the current settings **to C1** with markers present,
+     change the live cells, then recall C1 and read back;
+   - the menu pages that edit cursors 2017, 2031 and 2034: open each, change its value through
+     the UI, and read back all 16 cells;
+   - a per-setting reset or default action on these settings, if one exists (from item 2).
+   Steps you cannot complete stay BOUNDARY, with the reason. Label the earlier deliberate `0x1111`
+   writes as probe-induced, not as firmware behaviour.
+4. **Capacity-accounted layout.**
+   - Determine the actual AF-ON profile fields and their stock widths from the stock AF target
+     settings: zone type, size and position per orientation (three orientations); custom size if
+     applicable.
+   - Propose a layout for the 13 cells (26 bytes) with a fixed magic, a version, a length, the
+     payload and an integrity check (for example a checksum or CRC over the payload). Make sure
+     all-zero and any stock-like content decode as "no profile".
+   - Give a byte-by-byte capacity table showing that it fits; or state that it does not fit, and by how much.
+5. **Verdict.** Classify the following explicitly, as OWNABLE / NOT OWNABLE / UNRESOLVED with
+   evidence:
+   - (a) normal use and persistence;
+   - (b) behaviour under each reset or default path found, including whether a reset would wipe the
+     profile (acceptable only if it decodes as "no profile");
+   - (c) the remaining gaps.
+6. **Complete logs.** Log every command with its completed output, and make the manifest and
+   result consistent.
