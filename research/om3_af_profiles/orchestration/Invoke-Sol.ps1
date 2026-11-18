@@ -26,6 +26,13 @@ if (-not (Test-Path "$ws\work\result.md")) { Fail 'no work\result.md to review' 
 if (-not (Test-Path "$rec\review-brief.md")) { Fail "missing $rec\review-brief.md" }
 if (Test-Path "$TasksRoot\.research-lock.json") { Fail 'already locked' }
 Copy-Item "$rec\review-brief.md" "$ws\review-brief.md" -Force
+# Audit copies for the reviewer (Sol's review of T0 attempt 4 asked for the snapshot comparison).
+$lastRun = Get-ChildItem $rec -Directory -Filter 'run-*' | Where-Object Name -notmatch '-review$' | Sort-Object Name | Select-Object -Last 1
+if (-not $lastRun) { Fail 'no Grok run record to review' }
+New-Item -ItemType Directory -Force "$ws\audit" | Out-Null
+foreach ($f in 'isolation-workspace.txt', 'run-log.json', 'manifest-in.json') {
+  if (Test-Path "$($lastRun.FullName)\$f") { Copy-Item "$($lastRun.FullName)\$f" "$ws\audit\$f" -Force } }
+Set-Content "$ws\audit\SOURCE.txt" "Copied by Opus from $($lastRun.FullName) before the review."
 $stamp = (Get-Date).ToString('yyyyMMdd-HHmmss')
 $runRec = Join-Path $rec "run-$stamp-review"
 New-Item -ItemType Directory -Force $runRec | Out-Null
@@ -45,7 +52,9 @@ $lockOk = ($LASTEXITCODE -eq 0)
 $done = $false; $p = $null; $start = Get-Date
 try {
   if (-not $lockOk) { throw "lock failed: $($lockOut -join '; ')" }
+  $emptyIn = Join-Path $tr 'empty-stdin.txt'; if (-not (Test-Path $emptyIn)) { New-Item -ItemType File $emptyIn | Out-Null }
   $p = Start-Process -FilePath $Codex -ArgumentList $cliArgs -WorkingDirectory $ws -NoNewWindow -PassThru `
+         -RedirectStandardInput $emptyIn `
          -RedirectStandardOutput "$tr\sol-$stamp.events.jsonl" -RedirectStandardError "$tr\sol-$stamp.err.txt"
   $null = $p.Handle                     # Windows PowerShell 5.1 reports no ExitCode unless the handle is opened
   $done = $p.WaitForExit($TimeoutMinutes * 60 * 1000)
