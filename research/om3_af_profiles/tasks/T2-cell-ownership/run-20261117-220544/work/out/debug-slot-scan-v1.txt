@@ -1,0 +1,25 @@
+debug handler slot scan
+image: inputs/00_0100_50000020.decoded.bin
+range searched for aligned u32 values: 0x602ec000 inclusive to 0x602ec500 exclusive
+
+The handler pointer value 0x600619a9 is stored at 0x602ec448 and 0x602eda1c.
+No aligned u32 in the image points at either slot address.
+The 75 aligned values that point into 0x602ec000..0x602ec500 are name bytes or
+other table entries. The ones that sit outside that range are:
+
+0x60214cc4 -> 0x602ec03d
+0x60214ec4 -> 0x602ec05a
+0x60214fc0 -> 0x602ec10a
+0x60215078 -> 0x602ec139
+0x60215138 -> 0x602ec14d
+0x602152b4 -> 0x602ec082
+0x602152c0 -> 0x602ec0ef
+0x602152c8 -> 0x602ec1f1
+0x6021532c -> 0x602ec221
+0x602154bc -> 0x602ec30d
+0x6035f458 -> 0x602ec33f
+0x6035f464 -> 0x602ec34d
+
+Those targets are odd, or not 8-aligned from the table base 0x602ec3d8, so they
+are not the handler slot. FUN_602180d4 loads 0x602edba0 and calls 0x60023deb.
+That reads a command-name string from the second table's string pool.

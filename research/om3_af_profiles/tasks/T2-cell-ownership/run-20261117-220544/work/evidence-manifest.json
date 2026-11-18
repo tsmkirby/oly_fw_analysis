@@ -1,0 +1,810 @@
+{
+  "task": "T2-cell-ownership",
+  "brief_sha256": "592f38639bbcda30b0959aff974378e290cc63691835da23534f455f13946981",
+  "inputs": [
+    {
+      "path": "inputs/00_0100_50000020.decoded.bin",
+      "sha256": "5e8d376e9111a44ac0352f26030d7c1b17026d42c45f3600cfa02a0e8c5b7d59",
+      "bytes": 33554368
+    },
+    {
+      "path": "inputs/02_0106_458c0020.decoded.bin",
+      "sha256": "3d9fd4426b45fbe4b715599422af38c6d22392c08543a69f63c28291c5a0b059",
+      "bytes": 143523776
+    }
+  ],
+  "sources": [
+    {
+      "path": "brief.md",
+      "sha256": "592f38639bbcda30b0959aff974378e290cc63691835da23534f455f13946981",
+      "bytes": 11977
+    },
+    {
+      "path": "TASK.md",
+      "sha256": "ac94a811259653799366e6efcb4b1b0f5b535ea392debda276f762c1e42dd9fb",
+      "bytes": 2326
+    },
+    {
+      "path": "templates/result.md",
+      "sha256": "18d605fc1f70369c40245130cdd499288bd3ae1a8fe1bdb84575cb58532d0110",
+      "bytes": 1230
+    },
+    {
+      "path": "ref/analysis/decompiled-main/functions/600619a9.c",
+      "sha256": "9967e0018813b5e8bb54929b11b36fa85e766cfc0add260924b57a70b9dc1d89",
+      "bytes": 18734
+    },
+    {
+      "path": "ref/analysis/decompiled-main/functions/60062d28.c",
+      "sha256": "e516c3c621ebb956055a8eab3fd23e80c9eda291a2b1061606d73fab5d3dcf43",
+      "bytes": 381
+    },
+    {
+      "path": "ref/analysis/decompiled-main/functions/60062d93.c",
+      "sha256": "3f71aa0c6315c33dbdb6c1b023d7aec34f77108c9c33eef778424c835670b796",
+      "bytes": 2513
+    },
+    {
+      "path": "ref/analysis/decompiled-main/functions/60062fe5.c",
+      "sha256": "b34b3a87823343a1b3745a5a13381524a412ecb98548915e69570c26177cbf99",
+      "bytes": 286
+    },
+    {
+      "path": "ref/analysis/decompiled-main/functions/60062a60.c",
+      "sha256": "07ab800b1ec4516b53ef78415f4d8efd1e04aa5ac47de041f51ac752c23be60d",
+      "bytes": 1426
+    },
+    {
+      "path": "ref/analysis/decompiled-main/functions/60063dc0.c",
+      "sha256": "97ccca9c7f9e4003060030e5892cbf207ea23efd59da26359d052be5055f1785",
+      "bytes": 5719
+    },
+    {
+      "path": "ref/analysis/decompiled-main/functions/60063380.c",
+      "sha256": "4c449155b930cf7ec1fba5cb1e1aaaed5fb3d45e5ffc39d544bcf5f48f55ae4a",
+      "bytes": 695
+    },
+    {
+      "path": "ref/analysis/decompiled-main/functions/60063431.c",
+      "sha256": "a26f8a6ab7ab8985b0bc3597eeedecdf0a2760701831f63b0904ae622bcfcc4a",
+      "bytes": 2782
+    },
+    {
+      "path": "ref/analysis/decompiled-main/functions/60419446.c",
+      "sha256": "1ad90c8a91bf8221a95fc04cc7784954b71a1d7e646fa788f5af5b0164986165",
+      "bytes": 3874
+    },
+    {
+      "path": "ref/analysis/decompiled-main/functions/60419696.c",
+      "sha256": "f98e0f89bd258e4db306cb21191a245e14f80c7fb713bd33667826ec37ec7106",
+      "bytes": 767
+    },
+    {
+      "path": "ref/analysis/decompiled-main/functions/604193ca.c",
+      "sha256": "b01d35604f900c6998ff32d2eab4f583625bfd8f0f530a599258560e4c9c255c",
+      "bytes": 430
+    },
+    {
+      "path": "ref/analysis/decompiled-main/functions/6041937f.c",
+      "sha256": "b1810f92902817beb32d8bf2dd899148163b392c82ada3dab3980f28c1658f74",
+      "bytes": 487
+    },
+    {
+      "path": "ref/analysis/decompiled-main/functions/60063962.c",
+      "sha256": "ddd59f8f7667b5abdba36bbc0f1efa63bdd43d19e649a9a3420833b46c0b6989",
+      "bytes": 335
+    },
+    {
+      "path": "ref/analysis/decompiled-main/functions/6006398b.c",
+      "sha256": "0f1bba571a0a5acfd5974b19b5126314d32b99d171e3030bafab6c5411dab734",
+      "bytes": 2208
+    },
+    {
+      "path": "ref/analysis/decompiled-main/functions/60063684.c",
+      "sha256": "2838076ca99786386279df415a9007cd1db82011be3d2fd31659d4b71c0df61a",
+      "bytes": 1017
+    },
+    {
+      "path": "ref/analysis/decompiled-main/functions/60063567.c",
+      "sha256": "378d75129c25b0fc75a3d39aa4845b57b60462a3a97cebaf065b60d2fb98d2ce",
+      "bytes": 4760
+    },
+    {
+      "path": "ref/analysis/decompiled-main/functions/600630a3.c",
+      "sha256": "fc5d588c52b1d2ab749cba576399713c0bbdb3dc37ad79b4aae11488b031ae4a",
+      "bytes": 1649
+    }
+  ],
+  "outputs": [
+    {
+      "path": "work/out/af-profile-fields-v1.txt",
+      "sha256": "9e2249e36ec7250a4300b0cdf72c63ebf04c566dfeb8b8cc0ec3475aabf6995c",
+      "bytes": 6340
+    },
+    {
+      "path": "work/out/c1-cycle-v21.txt",
+      "sha256": "7ec512a1277c3a25068a7ee74ff74f2f9ac309d97271c00437a83f8bc7087602",
+      "bytes": 1165
+    },
+    {
+      "path": "work/out/candidates-5b82.tsv",
+      "sha256": "d7f52c13e86fd3e60bbef8fc7492f93bbfa8599160be63e6dc5dae4d4b3af39f",
+      "bytes": 40229
+    },
+    {
+      "path": "work/out/classify-5b82-v1.txt",
+      "sha256": "b943e89e7257957836b58a54d4f4f6b3eb60ecc8b31b8abb8a217ba80f77d55e",
+      "bytes": 176395
+    },
+    {
+      "path": "work/out/debug-slot-scan-v1.txt",
+      "sha256": "66d61e77b20ec25387a8a39a04c2d2f12f6b9b989dbaa8ae40c2eacb38e3d15e",
+      "bytes": 985
+    },
+    {
+      "path": "work/out/dynamic-5b82-control-o.jsonl",
+      "sha256": "d900c68f804cea31233fe7d55339930cdd38d989dcb283d0fda8bebe4f12de80",
+      "bytes": 12744
+    },
+    {
+      "path": "work/out/dynamic-5b82-control-p.jsonl",
+      "sha256": "22493deb2e57a29868fb43d85c31f76a24b33e34b793b584fb8874c3802e3c51",
+      "bytes": 15018
+    },
+    {
+      "path": "work/out/dynamic-5b82-control.jsonl",
+      "sha256": "b6d815c0fbba70952023f3c2d9b55d22ea9f7113fbcc69d0c05a3e25f10d4cb7",
+      "bytes": 23072
+    },
+    {
+      "path": "work/out/dynamic-5b82-mark-a.jsonl",
+      "sha256": "c0c5abbcb86ccc9f2ebfbe8e50967bf254575706f9f13d09f3943ad9f976296a",
+      "bytes": 13633
+    },
+    {
+      "path": "work/out/dynamic-5b82-mark-b.jsonl",
+      "sha256": "0d3fa5396a1db26d475110e22a808c1fdaff1e1972380b056cff178dc47544cd",
+      "bytes": 28501
+    },
+    {
+      "path": "work/out/dynamic-5b82-mark-c.jsonl",
+      "sha256": "6342ee070385ac848f436fc49dc7bddc31f7b85ab10ee41ca5ea3fc0d5989554",
+      "bytes": 6228
+    },
+    {
+      "path": "work/out/dynamic-5b82-mark-d.jsonl",
+      "sha256": "2650cd99b10e284a0d8e164bc7ad121c815202cef0fa256bfadb06bb6650e05f",
+      "bytes": 6422
+    },
+    {
+      "path": "work/out/dynamic-5b82-mark-e.jsonl",
+      "sha256": "ab63d9586a50339ffb4061e22e9e7a77122fea6cdbadc12898741ee32903039c",
+      "bytes": 6239
+    },
+    {
+      "path": "work/out/dynamic-5b82-mark-f.jsonl",
+      "sha256": "b9ef8d38d513ed1c2a5bd90864153aef198f13d67e5fecb7d4d90512416cdbb7",
+      "bytes": 12472
+    },
+    {
+      "path": "work/out/dynamic-5b82-mark-g.jsonl",
+      "sha256": "44b857429f3c366a6cf54f57b0f91a56b394482e08daad6f74917ccdd67f8611",
+      "bytes": 11981
+    },
+    {
+      "path": "work/out/dynamic-5b82-mark-h.jsonl",
+      "sha256": "83f2e399d586aa5ab84f020e56f95e984aed7fcdde6ea4b06e3e67706b10b6a7",
+      "bytes": 12154
+    },
+    {
+      "path": "work/out/dynamic-5b82-mark-i.jsonl",
+      "sha256": "34254ab9dc8a83c6d71811bf12a2af33d89b96b4a71a4783155940af76635ccd",
+      "bytes": 17101
+    },
+    {
+      "path": "work/out/dynamic-5b82-mark-j.jsonl",
+      "sha256": "2d3cb5e89fb7af6e29edaa51ccd886d15f1a9353b2dacf223e3f922b406930f3",
+      "bytes": 17220
+    },
+    {
+      "path": "work/out/dynamic-5b82-mark-k.jsonl",
+      "sha256": "1580126c6b3625daf3b83a82cec15e8d5a6a397e3f88bef35c1b54a7eccd96e0",
+      "bytes": 18647
+    },
+    {
+      "path": "work/out/dynamic-5b82-mark-l.jsonl",
+      "sha256": "1d92af02a8c6df9f9ee34cf855d42a38c60459bc8b3764667267bae40893cc06",
+      "bytes": 15241
+    },
+    {
+      "path": "work/out/dynamic-5b82-mark-m.jsonl",
+      "sha256": "69acd547e34b9f7f50f36eb70b5db28f0f5fe7195985b2ae46f6e73674ef4021",
+      "bytes": 15861
+    },
+    {
+      "path": "work/out/dynamic-5b82-mark-n.jsonl",
+      "sha256": "77c8a4e0dd729d0a3d33e1586670afc4cb48b8d7dcc470bd618b128ac5713299",
+      "bytes": 28501
+    },
+    {
+      "path": "work/out/dynamic-5b82-mark-o.jsonl",
+      "sha256": "ae2c30031df8b271f2a108f3cc553558eeaddfdd3a1772b74ffacc482ad2e144",
+      "bytes": 10966
+    },
+    {
+      "path": "work/out/dynamic-5b82-mark-p.jsonl",
+      "sha256": "a64c89afe54be05c9766f9ea870d4de95cf03193064c3b3858cd15b0b7866d4c",
+      "bytes": 12675
+    },
+    {
+      "path": "work/out/dynamic-5b82-mark-q.jsonl",
+      "sha256": "8e5e7112cb475f15c1bf5871364e7fed3f5456f757ebc662baf9bd4987f48526",
+      "bytes": 12705
+    },
+    {
+      "path": "work/out/dynamic-5b82-mark-r.jsonl",
+      "sha256": "73d5396c0ebbb01d96fef183d9fb33c722c537c2d25ce3ba99b1da77ebe73c6b",
+      "bytes": 521
+    },
+    {
+      "path": "work/out/dynamic-5b82-mark-s.jsonl",
+      "sha256": "f49fcdb1916d46d3f87773893e6e491f246fd9eb4c9fb2d4244a035c2087c917",
+      "bytes": 17525
+    },
+    {
+      "path": "work/out/dynamic-5b82-mark-t.jsonl",
+      "sha256": "742c004344b3da99533f89855c66a20a624a0baad7d693fbf1270f41b759ca36",
+      "bytes": 13465
+    },
+    {
+      "path": "work/out/dynamic-5b82-mark-u.jsonl",
+      "sha256": "b2eee38d1d6b58158b70aaba9530c0042d4bbb64c30a0875a6aa019537d51c0e",
+      "bytes": 14195
+    },
+    {
+      "path": "work/out/dynamic-5b82-mark-v.jsonl",
+      "sha256": "3d7ba5ddf92d3c1432abdfa7df9a5dcc32a3ce40bee9daebdd93e21d20642015",
+      "bytes": 14195
+    },
+    {
+      "path": "work/out/dynamic-5b82-mark-w.jsonl",
+      "sha256": "24d6b80bf144852116c867032a56e14b0d2d2bec20d9947a9531b2e9345b3613",
+      "bytes": 16703
+    },
+    {
+      "path": "work/out/dynamic-5b82-mark-x.jsonl",
+      "sha256": "388506c0bd3bd7a54fa5847c589816c4f30921d3375c76b0ae9c1c901ed16fa9",
+      "bytes": 16703
+    },
+    {
+      "path": "work/out/listings-5b82-v2.txt",
+      "sha256": "7f2e6c1d0e6364025aae38046711c027745d1d45da32d6d1310dc35e76f47a11",
+      "bytes": 64381
+    },
+    {
+      "path": "work/out/listings-5b82.txt",
+      "sha256": "b7cc5bd368ae9efcb33d6f37004343698f2ef6541ffa1b9bf3e465836302f77c",
+      "bytes": 65118
+    },
+    {
+      "path": "work/out/nvram-5b82-control-o.json",
+      "sha256": "8290aee9c3b2fd71e371d7df87728399a4d06c1a44299f3131b97a2dc65c79d4",
+      "bytes": 611826
+    },
+    {
+      "path": "work/out/nvram-5b82-control-p.json",
+      "sha256": "eb4c2aee6745333db36f046a7d23072c8185ad8720c314a5fd8e2d49acec40ff",
+      "bytes": 611828
+    },
+    {
+      "path": "work/out/nvram-5b82-control.json",
+      "sha256": "893ae52da09bfeab475b19d8feab70bbf3501c173cbad60033bc229cafb56579",
+      "bytes": 611828
+    },
+    {
+      "path": "work/out/nvram-5b82-mark-a.json",
+      "sha256": "9e45dfb06694d6baf2068b03c5aa3c60aeeaf637f211e251885ff7bff214dff8",
+      "bytes": 611828
+    },
+    {
+      "path": "work/out/nvram-5b82-mark-b.json",
+      "sha256": "4754a14ed74a4a0b4547b8bcd289fa3db9cffe793f1745d6e6c1d30ceee66118",
+      "bytes": 611828
+    },
+    {
+      "path": "work/out/nvram-5b82-mark-c.json",
+      "sha256": "e407f83996500b67db2ef1173c403d312c654a142b86bbc6668a7c8f0df5e2c0",
+      "bytes": 611828
+    },
+    {
+      "path": "work/out/nvram-5b82-mark-d.json",
+      "sha256": "59c825d4716ea8d9bf0dba67217383601b4f8338a21595be6c543b37822855c5",
+      "bytes": 611828
+    },
+    {
+      "path": "work/out/nvram-5b82-mark-e.json",
+      "sha256": "e4e4e9c535e4138a9968209eee9d52f05674ba24416d7def5cf4f475b3d22831",
+      "bytes": 611828
+    },
+    {
+      "path": "work/out/nvram-5b82-mark-f.json",
+      "sha256": "248c3e132c14ca707abd099c48a0a9ad9b57acac24f95b33ff68d0960dd1de75",
+      "bytes": 611828
+    },
+    {
+      "path": "work/out/nvram-5b82-mark-g.json",
+      "sha256": "248c3e132c14ca707abd099c48a0a9ad9b57acac24f95b33ff68d0960dd1de75",
+      "bytes": 611828
+    },
+    {
+      "path": "work/out/nvram-5b82-mark-h.json",
+      "sha256": "5c2281a99234c0d154e649ef7c2a529de73f85118b9f3356d1aac27b2228fe2c",
+      "bytes": 611828
+    },
+    {
+      "path": "work/out/nvram-5b82-mark-i.json",
+      "sha256": "c5ad29a86415249e015bcfad457ac26e7c7ec6193e415e257ac1284ff4bcd1b9",
+      "bytes": 611828
+    },
+    {
+      "path": "work/out/nvram-5b82-mark-j.json",
+      "sha256": "c5ad29a86415249e015bcfad457ac26e7c7ec6193e415e257ac1284ff4bcd1b9",
+      "bytes": 611828
+    },
+    {
+      "path": "work/out/nvram-5b82-mark-k.json",
+      "sha256": "c5ad29a86415249e015bcfad457ac26e7c7ec6193e415e257ac1284ff4bcd1b9",
+      "bytes": 611828
+    },
+    {
+      "path": "work/out/nvram-5b82-mark-l.json",
+      "sha256": "c5ad29a86415249e015bcfad457ac26e7c7ec6193e415e257ac1284ff4bcd1b9",
+      "bytes": 611828
+    },
+    {
+      "path": "work/out/nvram-5b82-mark-m.json",
+      "sha256": "c5ad29a86415249e015bcfad457ac26e7c7ec6193e415e257ac1284ff4bcd1b9",
+      "bytes": 611828
+    },
+    {
+      "path": "work/out/nvram-5b82-mark-n.json",
+      "sha256": "4754a14ed74a4a0b4547b8bcd289fa3db9cffe793f1745d6e6c1d30ceee66118",
+      "bytes": 611828
+    },
+    {
+      "path": "work/out/nvram-5b82-mark-o.json",
+      "sha256": "22d41834ecf4575522689dfd14d9ad1bd1df5ca36ad562e1ec383165c6773af8",
+      "bytes": 611828
+    },
+    {
+      "path": "work/out/nvram-5b82-mark-p.json",
+      "sha256": "f4721724b010d25cd9b55b08e5cbcbb1e56a1f57f0c3204c9c89e75b787e979e",
+      "bytes": 611828
+    },
+    {
+      "path": "work/out/nvram-5b82-mark-q.json",
+      "sha256": "f4721724b010d25cd9b55b08e5cbcbb1e56a1f57f0c3204c9c89e75b787e979e",
+      "bytes": 611828
+    },
+    {
+      "path": "work/out/nvram-5b82-mark-r.json",
+      "sha256": "8290aee9c3b2fd71e371d7df87728399a4d06c1a44299f3131b97a2dc65c79d4",
+      "bytes": 611826
+    },
+    {
+      "path": "work/out/nvram-5b82-mark-s.json",
+      "sha256": "80f066ace7189dce507b7fa8496f9291cb923a7b155a47a88bcb8b5c22a72d05",
+      "bytes": 611828
+    },
+    {
+      "path": "work/out/nvram-5b82-mark-t.json",
+      "sha256": "8290aee9c3b2fd71e371d7df87728399a4d06c1a44299f3131b97a2dc65c79d4",
+      "bytes": 611826
+    },
+    {
+      "path": "work/out/nvram-5b82-mark-u.json",
+      "sha256": "8290aee9c3b2fd71e371d7df87728399a4d06c1a44299f3131b97a2dc65c79d4",
+      "bytes": 611826
+    },
+    {
+      "path": "work/out/nvram-5b82-mark-v.json",
+      "sha256": "8290aee9c3b2fd71e371d7df87728399a4d06c1a44299f3131b97a2dc65c79d4",
+      "bytes": 611826
+    },
+    {
+      "path": "work/out/nvram-5b82-mark-w.json",
+      "sha256": "eb4c2aee6745333db36f046a7d23072c8185ad8720c314a5fd8e2d49acec40ff",
+      "bytes": 611828
+    },
+    {
+      "path": "work/out/nvram-5b82-mark-x.json",
+      "sha256": "eb4c2aee6745333db36f046a7d23072c8185ad8720c314a5fd8e2d49acec40ff",
+      "bytes": 611828
+    },
+    {
+      "path": "work/out/scan-keys-v2.txt",
+      "sha256": "11cf6e4e50964b7975d02e94f68ba7c9b8eec44a556e350cf9c46c37f3a68f4f",
+      "bytes": 136126
+    },
+    {
+      "path": "work/out/uses-5b82-v2.tsv",
+      "sha256": "c01b475ea5b61214c7623e87bde473e4be3e06877927ffdf39ca6bb95f492ad0",
+      "bytes": 7409
+    },
+    {
+      "path": "work/out/uses-5b82.tsv",
+      "sha256": "42f37c48709f035a737ac264b5edf52a925be70e7c016290347d4147dc049e6b",
+      "bytes": 4902
+    },
+    {
+      "path": "work/out/verdict-v2.md",
+      "sha256": "4325251fa4660216ff3cda713d72355efd4f0c5520286d390221af273664b157",
+      "bytes": 5973
+    },
+    {
+      "path": "work/out/verdict.md",
+      "sha256": "471cf50380439e97817be9bc13fdbcd6db370dd6afc5eab524152ea440dd120c",
+      "bytes": 4469
+    },
+    {
+      "path": "work/result.md",
+      "sha256": "48e9728f5227a72c8eec4c31add907cd675bae3749c1a7f032d33c8fd63623fc",
+      "bytes": 8514
+    },
+    {
+      "path": "work/scripts/build_manifest_v1.py",
+      "sha256": "e8a6167d47c64c5523a31146699299c851a7fd9657e9351cd54143f2d94d8d29",
+      "bytes": 5929
+    },
+    {
+      "path": "work/scripts/build_manifest_v2.py",
+      "sha256": "514c95cad9494475edf1d1bf4dbd07aee168693a8b3b43815a096a83ece2f884",
+      "bytes": 6200
+    },
+    {
+      "path": "work/scripts/build_manifest_v3.py",
+      "sha256": "6bd4e8753de1ef0d860a1441c72cf5c1c646646f519ad6688f6fc7645cb7b84e",
+      "bytes": 9692
+    },
+    {
+      "path": "work/scripts/classify_5b82_v1.py",
+      "sha256": "0ba5bf5b8d2ef85518b9bb633641a758d54228558f4b1a69e54915b75d6b4992",
+      "bytes": 21514
+    },
+    {
+      "path": "work/scripts/dump_strings_v1.py",
+      "sha256": "2555bd5ca571923d2c101a1508dfd23e7a3f7212cc37bf1082c3bd417df59598",
+      "bytes": 631
+    },
+    {
+      "path": "work/scripts/extract_listings_v1.py",
+      "sha256": "c676221e9bc4e4bb64f5b2f62c7d3b0d7fce19384052af941e133699efe5ae69",
+      "bytes": 4065
+    },
+    {
+      "path": "work/scripts/find_menu_strings_v1.py",
+      "sha256": "310908979165ebd81b5fb56671d00283b159cc072340f4d0817228e2e5018bdd",
+      "bytes": 592
+    },
+    {
+      "path": "work/scripts/own_5b82_v1.mjs",
+      "sha256": "e3c6f1491b8aa06a4341955a148f0e4684402f559c9b032264ed35c35613cf24",
+      "bytes": 9927
+    },
+    {
+      "path": "work/scripts/own_5b82_v10.mjs",
+      "sha256": "973057f386e88478a8efa86b3c51012e382e9c29b697388f243f4301884032d7",
+      "bytes": 8858
+    },
+    {
+      "path": "work/scripts/own_5b82_v11.mjs",
+      "sha256": "e79f5cf836c78e09a44886d084fb30a1dad1c31e3992df1d2a27c4c2b6e239dd",
+      "bytes": 8796
+    },
+    {
+      "path": "work/scripts/own_5b82_v12.mjs",
+      "sha256": "a129b95d964fe3494803b71ffe60d08a23f56e306cb231d9e044d363e064d7df",
+      "bytes": 8324
+    },
+    {
+      "path": "work/scripts/own_5b82_v13.mjs",
+      "sha256": "a06a6277b6b0e0e2dc4f9e0e2647106c30a856b6f50e204158f9a7c8622b9994",
+      "bytes": 8566
+    },
+    {
+      "path": "work/scripts/own_5b82_v14.mjs",
+      "sha256": "c3850aa079f3a0eef78421efccb6dba61d63830bab46742dc5939eca932f3b7e",
+      "bytes": 11939
+    },
+    {
+      "path": "work/scripts/own_5b82_v15.mjs",
+      "sha256": "057f7a5c68a5b933d75e7f05fa554b1b751a13aa26198006a58c316714607200",
+      "bytes": 10266
+    },
+    {
+      "path": "work/scripts/own_5b82_v16.mjs",
+      "sha256": "96579c7c26c3737a34269c61428da714ab1830e42ba37de8ae294c73d7b163df",
+      "bytes": 10572
+    },
+    {
+      "path": "work/scripts/own_5b82_v17.mjs",
+      "sha256": "423427d6393479dd2eed56b804552162032ca514169f323dea0228944485b8e5",
+      "bytes": 11163
+    },
+    {
+      "path": "work/scripts/own_5b82_v18.mjs",
+      "sha256": "baa0051bc1e43ec77500d975be1580bfdfa702e83cbbc5238e8f1f1d06157bd1",
+      "bytes": 11167
+    },
+    {
+      "path": "work/scripts/own_5b82_v19.mjs",
+      "sha256": "92b4c9af42b7db8916eaaa1b7aa3e3728b53a87d5987f25fdb52f72c65a81135",
+      "bytes": 11088
+    },
+    {
+      "path": "work/scripts/own_5b82_v2.mjs",
+      "sha256": "7da8508b5bca6fa961c7a64b26a4bbb9288bd13ac5301fc035be635cdfdda624",
+      "bytes": 11055
+    },
+    {
+      "path": "work/scripts/own_5b82_v20.mjs",
+      "sha256": "97cd5b0957b99e38bd61895602f1c85b16b6def5a41949176dec49a84a9c748e",
+      "bytes": 11179
+    },
+    {
+      "path": "work/scripts/own_5b82_v21.mjs",
+      "sha256": "74707c68b212c5bfdfcb4edb1d13e7eb32edb75bbd0a4c0f0bbc2041698308f4",
+      "bytes": 11415
+    },
+    {
+      "path": "work/scripts/own_5b82_v3.mjs",
+      "sha256": "22127a7f80a6d1e17457ec4cd2e5594946d405ff1d516ec61893ab1a3b844ca2",
+      "bytes": 7767
+    },
+    {
+      "path": "work/scripts/own_5b82_v4.mjs",
+      "sha256": "97c656594f87c869f294f36bc90fa7f0af293ffa6c59c382e16dbd0d38bd4b72",
+      "bytes": 8861
+    },
+    {
+      "path": "work/scripts/own_5b82_v5.mjs",
+      "sha256": "1ad4e90e51528ed75f6ac1266f8de2ecdefac424d9fe8257f2d3f9734ea3e464",
+      "bytes": 8781
+    },
+    {
+      "path": "work/scripts/own_5b82_v6.mjs",
+      "sha256": "650bdaa563cae9c1ead0c46d422a02be3c1a4f541d980eff96d1bff5d91ffad8",
+      "bytes": 8788
+    },
+    {
+      "path": "work/scripts/own_5b82_v7.mjs",
+      "sha256": "03b8448c5bdddb352de677956ba01f410a53435ffb94209063133a43e8c048aa",
+      "bytes": 8763
+    },
+    {
+      "path": "work/scripts/own_5b82_v8.mjs",
+      "sha256": "52c6a1d6bb2f907d283576b51674b3e650edb718ac1bc00c65f695e3d5659b55",
+      "bytes": 8680
+    },
+    {
+      "path": "work/scripts/own_5b82_v9.mjs",
+      "sha256": "52f0f619005aed37e35c1ec3043be225fb331adf09ab848855004b4c0b670d7a",
+      "bytes": 8676
+    },
+    {
+      "path": "work/scripts/scan_keys_v1.py",
+      "sha256": "8fb1b20cadb6a44c4a29402c6cfb40167fbb3bb8e75467830e0cfa531e9f9b0a",
+      "bytes": 18163
+    },
+    {
+      "path": "work/scripts/scan_keys_v2.py",
+      "sha256": "0ad7d5cb1c1b3351cbbbc1e007d5f8a34fa61fa2c120e3d99935cd2cd83617ca",
+      "bytes": 18178
+    },
+    {
+      "path": "work/scripts/summarize_dyn_v1.py",
+      "sha256": "62c1a3e47611e5417845bab8da05656670773eb86f9ab80294a4c9a044177e0f",
+      "bytes": 733
+    }
+  ],
+  "commands": [
+    {
+      "command": "python -I work\\scripts\\scan_keys_v1.py work\\out\\scan-keys-v1.txt",
+      "exit": 1,
+      "note": "length assert 0x2000000 failed; image is 33554368 bytes; no output file"
+    },
+    {
+      "command": "python -I work\\scripts\\scan_keys_v2.py work\\out\\scan-keys-v2.txt",
+      "exit": 0,
+      "output": "work/out/scan-keys-v2.txt"
+    },
+    {
+      "command": "python -I work\\scripts\\dump_strings_v1.py",
+      "exit": 0
+    },
+    {
+      "command": "python -I work\\scripts\\find_menu_strings_v1.py",
+      "exit": 0
+    },
+    {
+      "command": "python -I work\\scripts\\extract_listings_v1.py",
+      "exit": 0,
+      "output": "work/out/listings-5b82.txt"
+    },
+    {
+      "command": "node26 work\\scripts\\own_5b82_v1.mjs om-emu mark work\\out\\dynamic-5b82-mark-a.jsonl work\\out\\nvram-5b82-mark-a.json",
+      "exit": 0,
+      "output": "work/out/dynamic-5b82-mark-a.jsonl"
+    },
+    {
+      "command": "node26 work\\scripts\\own_5b82_v2.mjs om-emu mark work\\out\\dynamic-5b82-mark-b.jsonl work\\out\\nvram-5b82-mark-b.json",
+      "exit": 0,
+      "output": "work/out/dynamic-5b82-mark-b.jsonl"
+    },
+    {
+      "command": "node26 work\\scripts\\own_5b82_v3.mjs om-emu mark work\\out\\dynamic-5b82-mark-c.jsonl work\\out\\nvram-5b82-mark-c.json",
+      "exit": 0,
+      "output": "work/out/dynamic-5b82-mark-c.jsonl"
+    },
+    {
+      "command": "node26 work\\scripts\\own_5b82_v4.mjs om-emu mark work\\out\\dynamic-5b82-mark-d.jsonl work\\out\\nvram-5b82-mark-d.json",
+      "exit": 0,
+      "output": "work/out/dynamic-5b82-mark-d.jsonl"
+    },
+    {
+      "command": "node26 work\\scripts\\own_5b82_v5.mjs om-emu mark work\\out\\dynamic-5b82-mark-e.jsonl work\\out\\nvram-5b82-mark-e.json",
+      "exit": 0,
+      "output": "work/out/dynamic-5b82-mark-e.jsonl"
+    },
+    {
+      "command": "node26 work\\scripts\\own_5b82_v6.mjs om-emu mark work\\out\\dynamic-5b82-mark-f.jsonl work\\out\\nvram-5b82-mark-f.json",
+      "exit": 0,
+      "output": "work/out/dynamic-5b82-mark-f.jsonl"
+    },
+    {
+      "command": "node26 work\\scripts\\own_5b82_v7.mjs om-emu mark work\\out\\dynamic-5b82-mark-g.jsonl work\\out\\nvram-5b82-mark-g.json",
+      "exit": 0,
+      "output": "work/out/dynamic-5b82-mark-g.jsonl"
+    },
+    {
+      "command": "node26 work\\scripts\\own_5b82_v8.mjs om-emu mark work\\out\\dynamic-5b82-mark-h.jsonl work\\out\\nvram-5b82-mark-h.json",
+      "exit": 0,
+      "output": "work/out/dynamic-5b82-mark-h.jsonl"
+    },
+    {
+      "command": "node26 work\\scripts\\own_5b82_v9.mjs om-emu mark work\\out\\dynamic-5b82-mark-i.jsonl work\\out\\nvram-5b82-mark-i.json",
+      "exit": 0,
+      "output": "work/out/dynamic-5b82-mark-i.jsonl"
+    },
+    {
+      "command": "node26 work\\scripts\\own_5b82_v10.mjs om-emu mark work\\out\\dynamic-5b82-mark-j.jsonl work\\out\\nvram-5b82-mark-j.json",
+      "exit": 0,
+      "output": "work/out/dynamic-5b82-mark-j.jsonl"
+    },
+    {
+      "command": "node26 work\\scripts\\own_5b82_v11.mjs om-emu mark work\\out\\dynamic-5b82-mark-k.jsonl work\\out\\nvram-5b82-mark-k.json",
+      "exit": 0,
+      "output": "work/out/dynamic-5b82-mark-k.jsonl"
+    },
+    {
+      "command": "node26 work\\scripts\\own_5b82_v12.mjs om-emu mark work\\out\\dynamic-5b82-mark-l.jsonl work\\out\\nvram-5b82-mark-l.json",
+      "exit": 0,
+      "output": "work/out/dynamic-5b82-mark-l.jsonl"
+    },
+    {
+      "command": "node26 work\\scripts\\own_5b82_v13.mjs om-emu mark work\\out\\dynamic-5b82-mark-m.jsonl work\\out\\nvram-5b82-mark-m.json",
+      "exit": 0,
+      "output": "work/out/dynamic-5b82-mark-m.jsonl"
+    },
+    {
+      "command": "node26 work\\scripts\\own_5b82_v2.mjs om-emu control work\\out\\dynamic-5b82-control.jsonl work\\out\\nvram-5b82-control.json",
+      "exit": 0,
+      "output": "work/out/dynamic-5b82-control.jsonl"
+    },
+    {
+      "command": "node26 work\\scripts\\own_5b82_v2.mjs om-emu mark work\\out\\dynamic-5b82-mark-n.jsonl work\\out\\nvram-5b82-mark-n.json",
+      "exit": 0,
+      "output": "work/out/dynamic-5b82-mark-n.jsonl"
+    },
+    {
+      "command": "python -I work\\scripts\\build_manifest_v1.py",
+      "exit": 1,
+      "note": "node26 was not visible to Python's CreateProcess; no manifest written"
+    },
+    {
+      "command": "node26 --version",
+      "exit": 0,
+      "note": "v26.12.1"
+    },
+    {
+      "command": "python --version",
+      "exit": 0,
+      "note": "Python 3.12.7"
+    },
+    {
+      "command": "python -I work\\scripts\\build_manifest_v2.py",
+      "exit": 0,
+      "output": "work/evidence-manifest.json"
+    },
+    {
+      "command": "python -I work\\scripts\\classify_5b82_v1.py",
+      "exit": 0,
+      "output": "work/out/classify-5b82-v1.txt"
+    },
+    {
+      "command": "node26 work\\scripts\\own_5b82_v14.mjs om-emu mark work\\out\\dynamic-5b82-mark-o.jsonl work\\out\\nvram-5b82-mark-o.json",
+      "exit": 0,
+      "output": "work/out/dynamic-5b82-mark-o.jsonl"
+    },
+    {
+      "command": "node26 work\\scripts\\own_5b82_v15.mjs om-emu mark work\\out\\dynamic-5b82-mark-p.jsonl work\\out\\nvram-5b82-mark-p.json",
+      "exit": 0,
+      "output": "work/out/dynamic-5b82-mark-p.jsonl",
+      "note": "the Custom Mode row found was the movie item and would not open"
+    },
+    {
+      "command": "node26 work\\scripts\\own_5b82_v16.mjs om-emu mark work\\out\\dynamic-5b82-mark-q.jsonl work\\out\\nvram-5b82-mark-q.json",
+      "exit": 0,
+      "output": "work/out/dynamic-5b82-mark-q.jsonl",
+      "note": "still_movie 2 still opened the movie Custom Mode item"
+    },
+    {
+      "command": "node26 work\\scripts\\own_5b82_v17.mjs om-emu mark work\\out\\dynamic-5b82-mark-r.jsonl work\\out\\nvram-5b82-mark-r.json",
+      "exit": 1,
+      "output": "work/out/dynamic-5b82-mark-r.jsonl",
+      "note": "mode_dial was sent as a dial input and was rejected"
+    },
+    {
+      "command": "node26 work\\scripts\\own_5b82_v18.mjs om-emu mark work\\out\\dynamic-5b82-mark-s.jsonl work\\out\\nvram-5b82-mark-s.json",
+      "exit": 0,
+      "output": "work/out/dynamic-5b82-mark-s.jsonl",
+      "note": "Assign confirmed; the recall search left the menu and did not find the row"
+    },
+    {
+      "command": "node26 work\\scripts\\own_5b82_v19.mjs om-emu mark work\\out\\dynamic-5b82-mark-t.jsonl work\\out\\nvram-5b82-mark-t.json",
+      "exit": 0,
+      "output": "work/out/dynamic-5b82-mark-t.jsonl",
+      "note": "Recall confirmed; the save was not posted"
+    },
+    {
+      "command": "node26 work\\scripts\\own_5b82_v20.mjs om-emu mark work\\out\\dynamic-5b82-mark-u.jsonl work\\out\\nvram-5b82-mark-u.json",
+      "exit": 0,
+      "output": "work/out/dynamic-5b82-mark-u.jsonl",
+      "note": "one of three sequential runs; save not posted"
+    },
+    {
+      "command": "node26 work\\scripts\\own_5b82_v20.mjs om-emu mark work\\out\\dynamic-5b82-mark-v.jsonl work\\out\\nvram-5b82-mark-v.json",
+      "exit": 0,
+      "output": "work/out/dynamic-5b82-mark-v.jsonl"
+    },
+    {
+      "command": "node26 work\\scripts\\own_5b82_v20.mjs om-emu control work\\out\\dynamic-5b82-control-o.jsonl work\\out\\nvram-5b82-control-o.json",
+      "exit": 0,
+      "output": "work/out/dynamic-5b82-control-o.jsonl"
+    },
+    {
+      "command": "node26 work\\scripts\\own_5b82_v21.mjs om-emu mark work\\out\\dynamic-5b82-mark-w.jsonl work\\out\\nvram-5b82-mark-w.json",
+      "exit": 0,
+      "output": "work/out/dynamic-5b82-mark-w.jsonl"
+    },
+    {
+      "command": "node26 work\\scripts\\own_5b82_v21.mjs om-emu mark work\\out\\dynamic-5b82-mark-x.jsonl work\\out\\nvram-5b82-mark-x.json",
+      "exit": 0,
+      "output": "work/out/dynamic-5b82-mark-x.jsonl"
+    },
+    {
+      "command": "node26 work\\scripts\\own_5b82_v21.mjs om-emu control work\\out\\dynamic-5b82-control-p.jsonl work\\out\\nvram-5b82-control-p.json",
+      "exit": 0,
+      "output": "work/out/dynamic-5b82-control-p.jsonl"
+    },
+    {
+      "command": "python -I work\\scripts\\build_manifest_v3.py",
+      "exit": 0,
+      "output": "work/evidence-manifest.json"
+    }
+  ],
+  "tool_versions": {
+    "node26": "v26.12.1",
+    "python": "Python 3.12.7"
+  }
+}

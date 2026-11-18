@@ -1,0 +1,48 @@
+address	function	kind	access	index_source	classification	evidence
+0x600e5874	bank7 registration record	b	read	count 16, width 2, payload 32 zero bytes	bulk-carry source (the record the defaults walker and the area image both use)	listings-5b82.txt header bytes 825b1000 then 32 zero bytes; only aligned key+count pair
+0x606274e0	UI map 0 id 2017 MODE_COLORTONE_TOY_PHOTO_TYPE3_CURSOR	b	read	stored index 5	named-index only	bytes 825b0500
+0x60627518	UI map 0 id 2031 MODE_COLORTONE_VINTAGE_TYPE3_CURSOR	b	read	stored index 12	named-index only	bytes 825b0c00
+0x60627524	UI map 0 id 2034 MODE_COLORTONE_PARTCOLOR_TYPE3_CURSOR	b	read	stored index 13	named-index only	bytes 825b0d00
+0x60419446	FUN_60419446	b	read	UI id selects the map entry; returns the stored key	named-index only	listings-5b82.txt function 60419446; no immediate 0x5b82
+0x60419696	FUN_60419696	b	read	same map entry; returns the stored index	named-index only	listings-5b82.txt function 60419696
+0x60419408	FUN_60419408	b	read	calls 60419446 then 60419696 then the getter	named-index only	listings-5b82.txt function 60419408
+0x6041931e	FUN_6041931e	b	read	calls 60419446 then 60419696 then the getter	named-index only	listings-5b82.txt function 6041931e
+0x60419315	FUN_60419315	b	read	tail into 6041931e	named-index only	listings-5b82.txt function 60419315
+0x601886f7	FUN_60188683	b	read	immediate UI id 0x7ef (2031), not an index	named-index only	listings window 601886f7 mov 0x7ef
+0x603cd465	FUN_603cd3dd	b	read	immediate UI id 0x7ef	named-index only	listings window 603cd465
+0x603cd472	FUN_603cd3dd	b	read	immediate UI id 0x7ef	named-index only	listings window 603cd472
+0x6042e20c	FUN_6042e1d7	b	read	mov 0x7ef,D0 then call 0x60416fac with a menu table	named-index only	listings window 6042e20c
+0x604800c0	FUN_6047f9f4	b	read	mov 0x7f2,D0 as a menu-builder argument beside 0x7d9 and 0x7e8	named-index only	listings window 604800c0
+0x60c930ea	FUN_60c927ff	b	read	immediate UI id 0x7ef	named-index only	listings window 60c930ea
+0x60c93115	FUN_60c927ff	b	read	immediate UI id 0x7f2	named-index only	listings window 60c93115
+0x617046b7	FUN_61703f34	b	read	mov 0x7e1,A1 then jmp 0x61704c7d (menu registration)	named-index only	listings window 617046b7
+0x61709e27	FUN_617093df	b	read	immediate UI id 0x7e1	named-index only	listings window 61709e27
+0x61709e67	FUN_617093df	b	read	immediate UI id 0x7ef	named-index only	listings window 61709e67
+0x6173b56f	FUN_6173b537	b	read	mov 0x7e1,D1 as a menu argument	named-index only	listings window 6173b56f
+0x60063380	FUN_60063380	a	read	index is the caller's D1; no site passes key 0x5b82 as an immediate	generic getter; reaches this key only with an index the caller supplies	listings function 60063380; native read used by the probe
+0x60063431	FUN_60063431	a	write	index is the caller's D1; value in A1	generic setter; the probe is the only caller that passes 0x5b82	listings function 60063431
+0x600634ee	FUN_600634ee	a	write	index times width 2	store used by the setter	listings function 600634ee
+0x60063a20	FUN_60063a20	a	read	index times width	typed read used by the getter	listings function 60063a20
+0x600633ff	FUN_600633ff	c	read	whole key; count from the registry	bulk carry of one key; key is an argument, never the immediate 0x5b82	listings function 600633ff
+0x600633a2	FUN_600633a2	c	write	whole key; count from the registry	bulk carry of one key; key is an argument	listings function 600633a2
+0x60063684	FUN_60063684	c	copy	span given by the caller	bulk carry of a span; no immediate 0x5b82	listings function 60063684
+0x6006148f	FUN_6006148f	c	copy	whole area image, every index	bulk carry	listings function 6006148f; called from 600610fe
+0x600610d2	FUN_600610d2	c	copy	calls 6006148f when the area checks out	bulk carry of a valid bank image, including these cells	listings function 600610d2
+0x60062d93	FUN_60062d93	c	write	index 0 through count-1 from each registration record	bulk clear-or-rewrite to the ROM defaults (zeros for this key)	listings function 60062d93
+0x60062d28	FUN_60062d28	c	write	calls 60062d93(0x40000) for bank 7	bulk clear-or-rewrite of the whole bank-7 image	listings function 60062d28
+0x60062a60	FUN_60062a60	c	write	bank id in D0; 7 selects 60062d28	bulk clear-or-rewrite only when the caller passes bank 7	listings function 60062a60
+0x60063eb0	FUN_60063dc0	c	write	immediate mov 0x7,D0 then call 60062a60	bulk clear-or-rewrite; taken only after the bank-7 area check fails	listings window 60063eb2 bytes 8007 cdaeebc00c
+0x60062fe5	FUN_60062fe5	c	write	calls 60062d93(0x40000), then returns a size	bulk clear-or-rewrite as a side effect of the size helper	listings function 60062fe5
+0x600619a9	FUN_600619a9	c	write	prmdbg commands; set_def passes a bank id to 60062a60; size calls 60062fe5	bulk clear-or-rewrite from the debug console only; no direct caller	listings function 600619a9; pointers at 0x602ec448 and 0x602eda1c
+0x6041937f	FUN_6041937f	a	write	UI id in D0, value in D1; index comes from the map entry	named-index only	listings-5b82-v2.txt function 6041937f; direct call in dynamic-5b82-mark-w.jsonl changes index 5, 12, or 13 only
+0x604193ca	FUN_604193ca	c	write	UI id in D0; calls 60063962 with the key and no index	bulk clear-or-rewrite of the whole key when called; not reached for UI ids 2017, 2031, 2034	listings-5b82-v2.txt function 604193ca; only caller is 618cfda1
+0x618cfda1	FUN_618cfda1	c	write	rejects D0 below 0x5001, then calls 604193ca with a hardcoded UI id	bulk clear-or-rewrite for other UI ids; the three cursor ids are not among them	listings-5b82-v2.txt function 618cfda1; 23 call sites; callers at 0x618d7e8c and 0x618d7e9b
+0x60063962	FUN_60063962	c	write	whole key; queues type 4 or calls 6006398b	bulk clear-or-rewrite to the ROM default	listings-5b82-v2.txt function 60063962
+0x6006398b	FUN_6006398b	c	write	byte count is width times count; two copies	bulk clear-or-rewrite; for 0x5b82 that is 32 zero bytes	listings-5b82-v2.txt function 6006398b; direct call via 604193ca in dynamic-5b82-mark-w.jsonl zeros all 16 cells
+0x60063a68	FUN_60063a68	c	read	finds the ROM default stream entry	bulk-carry source	listings-5b82-v2.txt function 60063a68
+0x60061453	FUN_60061453	c	read	walks the descriptor stream to the key and returns the default payload	bulk-carry source	listings-5b82-v2.txt function 60061453
+0x60063567	FUN_60063567	c	copy	calls 60063684; direct sites pass other keys; 0x6183cc7d passes a parameter key	bulk carry of a caller span; no static immediate 0x5b82; one parameter-key caller is not closed	listings-5b82-v2.txt function 60063567
+0x600630a3	FUN_600630a3	c	copy	transaction replay: type 1 one cell, type 2 a span, type 4 the whole-key default	bulk carry of whatever was queued; installed as a callback at 0x600631cd	listings-5b82-v2.txt function 600630a3
+0x6183dcee	FUN_6183dcee	c	write	at 0x6183e9b5 loads a key from a record and calls 60063962	bulk clear-or-rewrite of a key taken from a record; no static immediate 0x5b82; not closed	all-functions.asm at 0x6183e9b5
+0x602ec448	debug command table	c	read	holds the pointer 0x600619a9 beside the name flash.rec.file.sc.exp.db	debug-only bulk clear; no absolute pointer to this slot	classify-5b82-v1.txt slot dump; debug-slot-scan-v1.txt
+0x602eda1c	debug command table	c	read	second copy of the pointer 0x600619a9	debug-only bulk clear; no absolute pointer to this slot	classify-5b82-v1.txt; debug-slot-scan-v1.txt

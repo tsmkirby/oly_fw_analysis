@@ -8,7 +8,8 @@ Last updated: 2026-11-17 (Phase 1 preparation).
 
 ## 1. Continuation point
 
-- **Now:** T0 accepted (qualified) and T1 accepted. T2 (storage cell ownership) is running.
+- **Now:** T2b (closing T2's open storage items) and T3a (AF-ON zone row, RAM-only profile) run
+  concurrently, as the owner directed on 18 Nov. T2 closed as UNRESOLVED after two Sol rejections.
 - **T1 outcome:** on page 27, value 0 = "always the selected AF target" and value 1 =
   detected-subject priority. The top row is 2154 = `0x90a1[0]` and the bottom row is
   2155 = `0x90a1[1]`. Which row is the shutter (inference: top) and the AF-ON key binding are open.
@@ -59,8 +60,10 @@ The autonomous programme ends at either of these:
 |---|---|---|---|
 | T0 | Isolation and tool canary | **Accepted (qualified)**, attempt 7 | [decision](tasks/T0-canary/decision.md) |
 | T1 | Page-27 row and value mapping | **Accepted** (value meaning and row↔storage settled; Q1/Q3 open) | [decision](tasks/T1-page27-mapping/decision.md) |
-| T2 | Ownership proof for unclaimed cells `0x5b82` / `0x5b52` | Running | [tasks/T2-cell-ownership](tasks/T2-cell-ownership/brief.md) |
-| T3 | AF-ON zone row and editor routing (OM-Emu) | Queued | AFON-MENU-RESEARCH §9 |
+| T2 | Ownership proof for unclaimed cells `0x5b82` / `0x5b52` | **Closed: UNRESOLVED** (two Sol rejections; escalated) | [decision](tasks/T2-cell-ownership/decision.md) |
+| T2b | Close Sol's open items for `0x5b82` | Running (concurrently with T3a) | [tasks/T2b-cell-ownership-gaps](tasks/T2b-cell-ownership-gaps/brief.md) |
+| T3a | AF-ON zone row on page 27, RAM-only profile (OM-Emu) | Running (concurrently with T2b) | [tasks/T3a-afon-zone-row](tasks/T3a-afon-zone-row/brief.md) |
+| T3b | AF-ON target-position editor routing | Queued after T3a | AFON-MENU-RESEARCH §9 |
 | — | Beyond T3: persistence, display, hook point (Q4), acceptance matrix | Planned by Opus as results arrive | §2 |
 | — | CPU3 request/loader port | Deferred; regression only | AFON-MENU-RESEARCH §9 item 5 |
 
@@ -206,6 +209,8 @@ ACL or label operation on any tree containing a junction; the scripts check for 
 | 2026-11-17 | Autonomy after T0; completion conditions A/B; approval boundaries as in §7; stage 1 and container copies unconfirmed | Owner | session |
 | 2026-11-17 | Isolation: disposable per-task workspaces + OS deny-write lock + Cursor sandbox + audit; no unrestricted flags | Opus (owner requirement) | §9 |
 | 2026-11-17 | Cursor sandbox unavailable on Windows; Grok runs at Low integrity instead, with a Cursor allow list naming the needed programs | Opus | T0 attempts 1–2; §9 |
+| 2026-11-18 | After T2's second rejection: run T2b (Sol's open items only) and, alongside it, T3a with a RAM-only AF-ON profile; persistence decided later | Owner | session |
+| 2026-11-18 | Concurrent Grok runs: one lock window per batch, a separate Low-labelled agent home per task | Opus | `orchestration\Invoke-Grok.ps1` |
 
 ## 12. Session resumption checklist (Opus)
 

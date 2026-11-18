@@ -1,0 +1,20 @@
+C1 assign / live change / recall, then a posted save and a second session.
+Script: work/scripts/own_5b82_v21.mjs
+Logs: dynamic-5b82-mark-w.jsonl, dynamic-5b82-mark-x.jsonl, dynamic-5b82-control-p.jsonl
+
+Both marked runs and the control agree.
+
+Assign confirmed while the marked unnamed cells held the marker pattern and the
+control unnamed cells held 0. Named cells were 3200 in both.
+The probe then wrote the second pattern (49920 + index) into the 13 unnamed cells.
+Recall was confirmed with Yes. The live cells stayed on the second pattern.
+Three menu presses reached the shooting screen and posted one M save
+(session-1-end stores: E not posted, M not posted, M posted; file 611828 bytes).
+Session 2 loaded stores M and E and returned the second pattern in the unnamed
+cells and 3200 in the named cells.
+Recall did not restore the values that were present at Assign.
+
+After that readback, a direct call of FUN_6041937f for UI ids 2017, 2031, and
+2034 changed only indices 5, 12, and 13, each from 3200 to 8738.
+A direct call of FUN_604193ca for UI id 2017 then set all 16 cells to 0.
+The same call for 2031 and 2034 changed nothing further.

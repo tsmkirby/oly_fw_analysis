@@ -1,0 +1,62 @@
+af profile field widths
+main sha256 5e8d376e9111a44ac0352f26030d7c1b17026d42c45f3600cfa02a0e8c5b7d59
+
+map formula check: id 2154
+  entry 0x60627704 tag map0 bytes a1900000 key 0x90a1 index 0
+
+ui id -> key/index, and the registration record of that key
+id 40 MODE_AF_AREA                             map0 entry 0x606255fc bytes d1840000 key 0x84d1 index 0 width-from-key 1
+id 85 MODE_AF_FRAME                            map0 entry 0x606256b0 bytes b2880000 key 0x88b2 index 0 width-from-key 2
+id 163 MODE_AF_AREA_TYPE                        map0 entry 0x606257e8 bytes a1990000 key 0x99a1 index 0 width-from-key 1
+id 1338 MODE_AF_FRAME_POS                        map0 entry 0x60626a44 bytes 62590000 key 0x5962 index 0 width-from-key 2
+id 1642 orientation-or-custom-1642               map0 entry 0x60626f04 bytes a1990200 key 0x99a1 index 2 width-from-key 1
+id 1643 orientation-or-custom-1643               map0 entry 0x60626f08 bytes a1990300 key 0x99a1 index 3 width-from-key 1
+id 1644 orientation-or-custom-1644               map0 entry 0x60626f0c bytes a1990400 key 0x99a1 index 4 width-from-key 1
+id 1645 orientation-or-custom-1645               map0 entry 0x60626f10 bytes a1990500 key 0x99a1 index 5 width-from-key 1
+id 1646 orientation-or-custom-1646               map0 entry 0x60626f14 bytes 62590200 key 0x5962 index 2 width-from-key 2
+id 1647 orientation-or-custom-1647               map0 entry 0x60626f18 bytes 62590300 key 0x5962 index 3 width-from-key 2
+id 1648 orientation-or-custom-1648               map0 entry 0x60626f1c bytes 62590400 key 0x5962 index 4 width-from-key 2
+id 1649 orientation-or-custom-1649               map0 entry 0x60626f20 bytes 62590500 key 0x5962 index 5 width-from-key 2
+id 1657 MODE_AF_AREA_SIZE_VERTICAL               map0 entry 0x60626f40 bytes d11d0000 key 0x1dd1 index 0 width-from-key 1
+id 1658 MODE_AF_AREA_SIZE_HORIZONTAL             map0 entry 0x60626f44 bytes d11d0100 key 0x1dd1 index 1 width-from-key 1
+id 1659 orientation-or-custom-1659               map0 entry 0x60626f48 bytes d11d0200 key 0x1dd1 index 2 width-from-key 1
+id 1660 orientation-or-custom-1660               map0 entry 0x60626f4c bytes d11d0300 key 0x1dd1 index 3 width-from-key 1
+id 1661 orientation-or-custom-1661               map0 entry 0x60626f50 bytes d11d0400 key 0x1dd1 index 4 width-from-key 1
+id 1662 orientation-or-custom-1662               map0 entry 0x60626f54 bytes d11d0500 key 0x1dd1 index 5 width-from-key 1
+id 1663 orientation-or-custom-1663               map0 entry 0x60626f58 bytes d11d0600 key 0x1dd1 index 6 width-from-key 1
+id 1664 orientation-or-custom-1664               map0 entry 0x60626f5c bytes d11d0700 key 0x1dd1 index 7 width-from-key 1
+id 1665 orientation-or-custom-1665               map0 entry 0x60626f60 bytes d11d0800 key 0x1dd1 index 8 width-from-key 1
+id 1666 orientation-or-custom-1666               map0 entry 0x60626f64 bytes d11d0900 key 0x1dd1 index 9 width-from-key 1
+id 1667 orientation-or-custom-1667               map0 entry 0x60626f68 bytes e11d0000 key 0x1de1 index 0 width-from-key 1
+id 1668 orientation-or-custom-1668               map0 entry 0x60626f6c bytes e11d0100 key 0x1de1 index 1 width-from-key 1
+id 1669 orientation-or-custom-1669               map0 entry 0x60626f70 bytes e11d0200 key 0x1de1 index 2 width-from-key 1
+id 1670 orientation-or-custom-1670               map0 entry 0x60626f74 bytes e11d0300 key 0x1de1 index 3 width-from-key 1
+id 1671 orientation-or-custom-1671               map0 entry 0x60626f78 bytes e11d0400 key 0x1de1 index 4 width-from-key 1
+id 1672 orientation-or-custom-1672               map0 entry 0x60626f7c bytes e11d0500 key 0x1de1 index 5 width-from-key 1
+id 1673 orientation-or-custom-1673               map0 entry 0x60626f80 bytes e11d0600 key 0x1de1 index 6 width-from-key 1
+id 1674 orientation-or-custom-1674               map0 entry 0x60626f84 bytes e11d0700 key 0x1de1 index 7 width-from-key 1
+id 1803 MODE_AF_TARGET_SIZE                      map0 entry 0x60627188 bytes 419a0000 key 0x9a41 index 0 width-from-key 1
+
+registration records for those keys
+key 0x1dd1 width 1 uses [(1657, 0, 'MODE_AF_AREA_SIZE_VERTICAL'), (1658, 1, 'MODE_AF_AREA_SIZE_HORIZONTAL'), (1659, 2, 'orientation-or-custom-1659'), (1660, 3, 'orientation-or-custom-1660'), (1661, 4, 'orientation-or-custom-1661'), (1662, 5, 'orientation-or-custom-1662'), (1663, 6, 'orientation-or-custom-1663'), (1664, 7, 'orientation-or-custom-1664'), (1665, 8, 'orientation-or-custom-1665'), (1666, 9, 'orientation-or-custom-1666')]
+  table 0x600e4bec record 0x600e4f4c count 10 width 1 payload 00000000000000000000
+key 0x1de1 width 1 uses [(1667, 0, 'orientation-or-custom-1667'), (1668, 1, 'orientation-or-custom-1668'), (1669, 2, 'orientation-or-custom-1669'), (1670, 3, 'orientation-or-custom-1670'), (1671, 4, 'orientation-or-custom-1671'), (1672, 5, 'orientation-or-custom-1672'), (1673, 6, 'orientation-or-custom-1673'), (1674, 7, 'orientation-or-custom-1674')]
+  table 0x600e4bec record 0x600e4f5c count 8 width 1 payload 0000000000000000
+key 0x5962 width 2 uses [(1338, 0, 'MODE_AF_FRAME_POS'), (1646, 2, 'orientation-or-custom-1646'), (1647, 3, 'orientation-or-custom-1647'), (1648, 4, 'orientation-or-custom-1648'), (1649, 5, 'orientation-or-custom-1649')]
+  table 0x600e4bec record 0x600e575c count 6 width 2 payload 000000000000000000000000
+key 0x84d1 width 1 uses [(40, 0, 'MODE_AF_AREA')]
+  table 0x600e4bec record 0x600e5fe8 count 1 width 1 payload 00
+key 0x88b2 width 2 uses [(85, 0, 'MODE_AF_FRAME')]
+  table 0x600e4bec record 0x60117870 count 1 width 2 payload 0000
+key 0x99a1 width 1 uses [(163, 0, 'MODE_AF_AREA_TYPE'), (1642, 2, 'orientation-or-custom-1642'), (1643, 3, 'orientation-or-custom-1643'), (1644, 4, 'orientation-or-custom-1644'), (1645, 5, 'orientation-or-custom-1645')]
+  table 0x600e4bec record 0x6011ebdc count 8 width 1 payload 0000000000000000
+key 0x9a41 width 1 uses [(1803, 0, 'MODE_AF_TARGET_SIZE')]
+  table 0x600e4bec record 0x6011ec34 count 1 width 1 payload 00
+
+key 0x5b82 registration [(1611549676, 1611552884, 16, 2)]
+named cursor map entries
+  2017 TOY 0x606274e0 825b0500 key 0x5b82 index 5
+  2031 VINTAGE 0x60627518 825b0c00 key 0x5b82 index 12
+  2034 PARTCOLOR 0x60627524 825b0d00 key 0x5b82 index 13
+
+round-1 formula 0x6062555c+sid*4 for 2154 = 0x60627704
