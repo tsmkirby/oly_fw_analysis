@@ -1,0 +1,55 @@
+Question 3. Does setting 2155 bind to the physical AF-ON key in the stock
+default assignment, or to a generic custom-switch function that AF-ON happens
+to use?
+
+Answer: UNRESOLVED. The menu identity of the row is established. Which
+runtime input selects storage index 1 is not.
+
+What is established
+  Bottom row, cursor index 1, value box y=141, is UI ID 2155.
+  Resource name slot, 0106 offset 0x289b9ac, stride 52:
+    MODE_AF_SUBJECT_PRIORITY_CUSTOM_SW
+  UI-ID map 0x60627708: key 0x90a1, index 1. Raw a1900100.
+  Top row is 2155's pair, 2154 MODE_AF_SUBJECT_PRIORITY_RELEASE,
+  key 0x90a1 index 0.
+  Page help string 0x127a names the two settings as the shutter button and
+  the @A049@ button. @A049@ is the glyph in "AF starts with @A049@. Stop by
+  releasing the button." and in the latch variant, and in "Use the @A049@
+  button to set whether to use S-AF when in MF." See glyphs.txt.
+  The owner's 17 November observation, recorded in AFON-MENU-RESEARCH §1,
+  is that on the owner's camera the AF-ON choice "Always tracks focus on
+  the selected AF Target Point" makes AF-ON disregard Subject Detect.
+  This file does not add a claim about what the body does when a key is pressed.
+
+Assignment table, verified in this task
+  0x612f20a8, 0x50 entries of 16 bytes: +0 u32 assignment, +4 u32 function,
+  +8, +0xc alternate function.
+  Entry [2] at 0x612f20c8, file+0x012d10a8, 16 bytes:
+    45000000 0a000000 45000000 00000000
+    assignment 69 (0x45), function 0x0a, +8 = 0x45, alternate 0.
+  This is the only entry in that table whose assignment is 69 or whose
+  function is 0x0a.
+
+Previously established, not re-derived here
+  AFON-MENU-RESEARCH §8: the physical AF-ON key is UI_IN 0x000b, and the
+  default 0x000b input reads assignment 69, which this table maps to
+  function 0x0a. The same note says function 69 can be assigned to other
+  buttons. That support table was not re-walked in this task.
+
+What is missing
+  No instruction in the existing disassembly loads 0x90a1 as an immediate
+  and then reads index 0 or 1. The byte sequence 2f a1 90 at 0x607eb7ab
+  sits outside FUN_607eb669 (0x607eb669, 181 bytes, ends 0x607eb71d) and
+  has no instruction line in all-functions.asm.
+  None of the 18 direct calls of the UI-ID getter 0x60419408 passes 2154
+  or 2155 as an immediate. See readers-0x90a1.txt.
+  So this task did not see whether index 1 is chosen because the physical
+  key is 0x000b, because the assigned function is 0x0a, or because of a
+  distinct custom-switch id.
+
+What would settle it
+  The first AF-request reader of 0x90a1 index 1, and the compare that
+  picks index 1 rather than index 0: physical key 0x000b, or function 0x0a.
+  An owner-camera check would also settle it: assign function 0x0a to a
+  different button and give the AF-ON key another function, then see which
+  button follows the 2155 value. This task does not recommend a hardware step.

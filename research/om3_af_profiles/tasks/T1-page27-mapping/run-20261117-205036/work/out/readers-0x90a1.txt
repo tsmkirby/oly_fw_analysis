@@ -1,0 +1,87 @@
+Question 4. Leads only. No first reader of 0x90a1 index 0 or 1 on the AF
+request path was isolated. Addresses are CPU addresses in the E147 image
+(base 0x60021020).
+
+How a UI ID becomes the stored byte
+  Map base 0x6062555c, 4 bytes per id below 2256: u16 key, u16 index.
+    2154 at 0x60627704 raw a1900000  key 0x90a1 index 0
+    2155 at 0x60627708 raw a1900100  key 0x90a1 index 1
+    2156 at 0x6062770c is key 0x90b1 index 0, a different setting.
+  High-level UI-ID read: 0x60419408.
+    key lookup 0x60419446, index lookup 0x60419696, then 0x60063912.
+  Byte accessor used by the probe: 0x60063380(D0=key, D1=index, A0=0 or out),
+  which calls 0x60063a20.
+  Research dispatch 0x603f34ec is a table, not this direct reader.
+  Blank-session calls of 0x60063380(0x90a1, 0) and (0x90a1, 1) returned 1 and 1,
+  matching s.get(2154) and s.get(2155).
+
+Registration, not a live reader
+  Bank-7 record 0x6011e790, raw a19002000000.
+  key 0x90a1, count 2, width 1 (key & 3 == 1), payload bytes 00 00.
+  The blank-session read is 1, so the registration payload is not the value
+  the getter returns on an empty camera.
+
+Metadata records that contain the UI IDs, not shown being read on the AF path
+  0x6062132c bytes 6a088000, then pointer 0x606190b7.
+  0x60621340 bytes 6b088000, then pointer 0x606190b7.
+  Checked from the decoded main, not from the earlier note. The u32 at
+  0x60621340 is 0x0080086b (file order 6b088000). The next u32, at
+  0x60621344, is 0x606190b7 (file order b7906160). 0x606190b9 is the u32
+  at 0x60621358, after the following id word 6c088000 at 0x60621354
+  (2156, 0x086c). It does not follow the 2155 descriptor.
+  Recorded in work\out\pointer-0x60621340.txt. The same 96-byte window is
+  in static-dump.txt, and 48 bytes at 0x606190a0 are there as well.
+  These match the descriptors named in AFON-MENU-RESEARCH §1. This task did
+  not trace a caller.
+
+Data tables that contain the u16 pair 2154, 2155 (6a 08 6b 08)
+  0x61529812  menu provider ID list. Context 6a086b08ee009c069d06a5009e069f06.
+              Provider record 0x61529ce8. This is the page list, not the AF request.
+  0x6152d8a6  another list. Context 6a086b084e075007f607c2011f042004.
+              No caller was identified.
+  Consecutive-ID catalogs, likely save or debug lists, not a single-setting read:
+    0x605fa990, 0x605fb110, 0x605fbd30, 0x605fc98a, 0x605fd56a,
+    0x605fe12c, 0x605ffec8, 0x619fefce
+  u32 pairs of the same two IDs:
+    0x605e40f0, 0x605e59d0, 0x605e72b0, 0x605e8b90, 0x605ea470, 0x605ebd50,
+    0x605ed630, 0x605eef10, 0x605f07f0, 0x605f20d0, 0x605f39b0, 0x605f5290,
+    0x605f6b70
+
+Direct calls of 0x60419408 in all-functions.asm (18)
+  0x603f03f7  FUN_603f03f0, ID arrives in D0, compared with 0xbdb. Generic.
+  0x603fe74f
+  0x60401f27
+  0x60b32720  FUN_60b326de loops D3 from 0 through 0x8cf and logs. Not a 2154 reader.
+  0x618cf627  D0 is 3, inside a jump table. Not 2154.
+  0x618cf676, 0x618cf681, 0x618cf68b, 0x618cf698, 0x618cf6a5,
+  0x618cf6ec, 0x618cf737, 0x618cf742, 0x618cf7b2, 0x618cf81d,
+  0x618cf866, 0x618cf8ec, 0x618cf940
+  None of these call sites is preceded by mov 0x86a or mov 0x86b.
+
+Immediates 0x86a (2154) and 0x86b (2155) that are not getter calls
+  0x6054ddfd mov 0x86a,A0
+  0x6087d6d1 mov 0x86b,D0 then bra 0x6087d6e7
+  0x6088e643 mov 0x86a,D0 then stored to the stack
+  0x60b9c3f9 mov 0x86a,D0 then call 0x60ae7412
+  0x616dea6e mov 0x86a,D1
+  0x617049fc mov 0x86b,D1
+  0x61751aeb mov 0x86a,D1
+  0x6175e89a mov 0x86a,D0
+  0x617757c2 mov 0x86b,D1
+  No mov 0x90a1 instruction exists in all-functions.asm.
+
+AF start does not load this key
+  0x610a5620 (FUN_610a5620, 679 bytes) calls other readers with IDs 0x5ac and
+  0x5ab. It contains no reference to 0x90a1, 2154, or 2155.
+
+Not a reader
+  Bytes 2f a1 90 60 20 f6 61 at 0x607eb7ab. FUN_607eb669 covers
+  0x607eb669 for 181 bytes and ends at 0x607eb71d. The site is 0x8d bytes
+  past that end and is not an instruction start in the disassembly.
+
+Where a later pass should look
+  Callers that load a UI ID from 0x61529812 or 0x6152d8a6, or from one of the
+  0x605f catalogs, and then call 0x60419408 or 0x60063380 while handling the
+  AF request (the path under 0x610a5620 and the button handlers 0x610b9197
+  and 0x610b962a). The index choice, 0 for the shutter and 1 for the other
+  button, is the compare that would also settle question 3.

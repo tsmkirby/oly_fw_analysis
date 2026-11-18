@@ -62,6 +62,42 @@ and which is AF-ON, and which stored value means "Always tracks". A blank
 OM-Emu session reads 1 for both. Read the rendered option text in the live
 menu before relying on either mapping, for example in the acceptance runner.
 
+**T1 result (17 November 2026; Grok, accepted after Sol review).** Evidence:
+[readiness/t1-page27-mapping](readiness/t1-page27-mapping/result.md). Stock E147 1.1, OM-Emu with
+`OM_EMU_NVRAM=off`.
+
+- **Stored value meaning: settled.**
+  - **1 = detected-subject priority.** Option string `0x127b` "@A066@ Priority"; editor help
+    `0x127c`: "When a specified subject is detected at the selected AF target position, AF is
+    performed on the detected subject."
+  - **0 = always the selected AF target position.** Option string `0x124f` "@A02F@ Priority";
+    editor help `0x127d`: "AF is always performed at the selected AF target position."
+  - Value 0 is therefore the owner's "Always tracks focus on the selected AF Target Point".
+  - Evidence:
+    - option records at `0x6158ba04` (raw bytes);
+    - native-key menu changes in two fresh sessions, with rendered text, help text and native
+      readback;
+    - a control session that stayed 1/1.
+  - A blank session reads 1, 1, which is a runtime value: the registration payload at
+    `0x6011e790` is `00 00`.
+- **Row ↔ storage: settled.**
+  - The top screen row commits only UI ID 2154 = key `0x90a1` index 0.
+  - The bottom row commits only 2155 = `0x90a1` index 1.
+- **Which row is which button: UNRESOLVED (inference only).**
+  - The page help (`0x127a`) says the two settings are for the shutter button and the @A049@
+    button.
+  - The firmware names are `..._RELEASE` (2154) then `..._CUSTOM_SW` (2155).
+  - So 2154 = shutter and 2155 = @A049@ button is the inference.
+  - The row images (`0x06b1`, `0x282c`) were not decoded.
+  - Also open: whether 2155 follows the physical AF-ON key or the assignable function `0x0a`
+    that the default AF-ON assignment uses (value 69, table entry `0x612f20c8`).
+  - A one-glance check of the stock menu icons by the owner would settle the first part.
+- **Correction to §6.** The row offsets stand; their *meaning* was misread. Kind 12 means the
+  halfword at +6 is an **image** id (`0x06b1`, `0x282c`), and kind 4 means a string id.
+  `0x127b`/`0x124f` are the shared **option** strings, not row names, and not on/off.
+- **Lead list (no conclusion):** the first AF-path readers of `0x90a1` are listed in
+  [readers-0x90a1.txt](readiness/t1-page27-mapping/out/readers-0x90a1.txt).
+
 ### AF target settings (half-press profile today)
 
 | UI ID | Name | Key / index |
@@ -211,6 +247,12 @@ Relevant sub-pages:
 **Page 27 is the stock per-button Subject Detect page:** one row for the
 shutter button, one for the custom button. It strongly supports the owner's
 recollection. Its effect still needs the stage-2 check (log G2b).
+
+> **Corrected by T1 (17 Nov 2026).** In the page-27 row above, `0x06b1` and `0x282c` are row
+> **image** ids (kind 12), not text labels. `0x127b`/`0x124f` are the shared **option** strings:
+> value 1 = "@A066@ Priority" (detected-subject priority), value 0 = "@A02F@ Priority" (always the
+> selected AF target). They are not on/off. The offsets are unchanged. G2b was answered by the
+> owner on 17 Nov. See §1, "T1 result".
 
 **AEL/AFL rows.** `MODE_LOCK_SAF/CAF/MF` are not in the multi-row table. They
 appear as 12-byte records at `0x615978bc` and `0x61598cdc` (viewer

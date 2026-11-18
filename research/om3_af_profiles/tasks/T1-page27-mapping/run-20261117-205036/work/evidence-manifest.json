@@ -1,0 +1,253 @@
+{
+  "task": "T1-page27-mapping",
+  "brief_sha256": "4ddd1153118c8ac10d20e42a8603e78839c71931a43d08c130d5915a18076c1b",
+  "inputs": [
+    {
+      "path": "inputs\\00_0100_50000020.decoded.bin",
+      "sha256": "5e8d376e9111a44ac0352f26030d7c1b17026d42c45f3600cfa02a0e8c5b7d59"
+    },
+    {
+      "path": "inputs\\02_0106_458c0020.decoded.bin",
+      "sha256": "3d9fd4426b45fbe4b715599422af38c6d22392c08543a69f63c28291c5a0b059"
+    }
+  ],
+  "sources": [
+    {
+      "path": "brief.md",
+      "sha256": "4ddd1153118c8ac10d20e42a8603e78839c71931a43d08c130d5915a18076c1b"
+    },
+    {
+      "path": "ref\\PROJECT-STATE.md",
+      "sha256": "b7d245bb89fc1d7bcfbc3b5129d638350d501b714d4dafeb6f7992449318f112"
+    },
+    {
+      "path": "ref\\analysis\\button-af\\AFON-MENU-RESEARCH.md",
+      "sha256": "481747d7776d4c8d3a883136a53c3c73dfaae2414dfcff73a1ec41a3bdd44e5c"
+    },
+    {
+      "path": "ref\\analysis\\decompiled-main\\all-functions.asm",
+      "sha256": "05206563da9c5eab6da8b84a0591de0a0db9e560d02b6b5a6c59cf9fffa5517e"
+    },
+    {
+      "path": "ref\\analysis\\decompiled-main\\functions.tsv",
+      "sha256": "b439b20c846a9474038932b1d26e0abe8eb0514f06aa7ab00898aa22283339e0"
+    },
+    {
+      "path": "ref\\scripts\\om_emu_af_live_probe.mjs",
+      "sha256": "e11f4d0ee7594c24d69b309227ca3fff1c788ea6e2b20c97ce4ba82f090c4ad5"
+    },
+    {
+      "path": "om-emu\\unpacked\\E147\\OLY_E_147_1100_0000_0000.BIN.blk02000000.OE.0101.bin",
+      "sha256": "6d2bef74b4b2fa089f271529482f96505a170b91e79ab9b1a13f3ce8f7918226"
+    },
+    {
+      "path": "om-emu\\emu\\src\\lab\\menuwalk.mjs",
+      "sha256": "d91eeba2e912d05d4a11081bd5846f53b60cbf1578e0733e3289bac8b47706f1"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "work\\out\\afon-binding.txt",
+      "sha256": "ac85c392512daa4921ddbe318de32c2b2558fc1194bd63e0a73227d8511a9738",
+      "bytes": 2944
+    },
+    {
+      "path": "work\\out\\glyph-scan.txt",
+      "sha256": "7db27491d13e397878796097db75754a32ec8062699d3d752028241c4a4fd747",
+      "bytes": 147008
+    },
+    {
+      "path": "work\\out\\glyphs.txt",
+      "sha256": "737746770502882f79b754cb08e403d3f04799295253d0441219395d45a5687f",
+      "bytes": 3974
+    },
+    {
+      "path": "work\\out\\labels.json",
+      "sha256": "e9cef4ef0f5d0b0d08042862fa836f515cacde51bb65dec98ad417d9ebd17ee7",
+      "bytes": 2947
+    },
+    {
+      "path": "work\\out\\menu-toggle-a-first.jsonl",
+      "sha256": "70c8382ed3b180b1a7875f5ff82d0b78aa9dab7e3348da0af2fd779df1604bc1",
+      "bytes": 8013
+    },
+    {
+      "path": "work\\out\\menu-toggle-a.jsonl",
+      "sha256": "a7a9786c7b1f657eb93678467a23f18907d7162b2908c036e44f563a713005fb",
+      "bytes": 7993
+    },
+    {
+      "path": "work\\out\\menu-toggle-b-first.jsonl",
+      "sha256": "2f5d2b2880bc2fbad9c758420b47fbe56aef2c69f1e9e5c5d4c5a06399077777",
+      "bytes": 8013
+    },
+    {
+      "path": "work\\out\\menu-toggle-b.jsonl",
+      "sha256": "36ced3a60886aa4a103f18deee4e2cf21199e9f4ef396a3df0f3a3eaa5c59045",
+      "bytes": 7993
+    },
+    {
+      "path": "work\\out\\menu-toggle-control.jsonl",
+      "sha256": "129d53d449b234e0c48c31b86b63a552d4a79f61854083f3506f9358d081e0e1",
+      "bytes": 3766
+    },
+    {
+      "path": "work\\out\\menu-toggle.jsonl",
+      "sha256": "d4918a403b62a2094ab4f96c26e347c28d1117456b75d26ca385c492dadd7e73",
+      "bytes": 35778
+    },
+    {
+      "path": "work\\out\\page27-listing.log",
+      "sha256": "eeb2e7dd6659566ca9f4c59dc3c965056e0adf92f2dce625af2a5305ca6627b8",
+      "bytes": 5163
+    },
+    {
+      "path": "work\\out\\page27-listing.txt",
+      "sha256": "f5b19b5868a64bf531d45f1f5861b3601d4514290166e28953631799a759ffbd",
+      "bytes": 17997
+    },
+    {
+      "path": "work\\out\\page27-rows.txt",
+      "sha256": "311c7b3de0ddee11de911b41735abaa5944d7c35e39aa9733268ea116a4478a6",
+      "bytes": 24403
+    },
+    {
+      "path": "work\\out\\pointer-0x60621340.txt",
+      "sha256": "c64de5a1a531c998176f746e94e046341b5de9247745f10661409d5274f8f7d0",
+      "bytes": 1192
+    },
+    {
+      "path": "work\\out\\readers-0x90a1.txt",
+      "sha256": "75f20897816f52bfa5e8d93e43ce5a090787f36457156e99fabec8de0d84b77a",
+      "bytes": 4424
+    },
+    {
+      "path": "work\\out\\repro-a-first.jsonl",
+      "sha256": "70c8382ed3b180b1a7875f5ff82d0b78aa9dab7e3348da0af2fd779df1604bc1",
+      "bytes": 8013
+    },
+    {
+      "path": "work\\out\\repro-b-first.jsonl",
+      "sha256": "2f5d2b2880bc2fbad9c758420b47fbe56aef2c69f1e9e5c5d4c5a06399077777",
+      "bytes": 8013
+    },
+    {
+      "path": "work\\out\\repro-control.jsonl",
+      "sha256": "129d53d449b234e0c48c31b86b63a552d4a79f61854083f3506f9358d081e0e1",
+      "bytes": 3766
+    },
+    {
+      "path": "work\\out\\static-dump.txt",
+      "sha256": "0c022998f368004ce70b6aa17252a78a83e256c4c9f2bd200eec9c8605753cf0",
+      "bytes": 17975
+    },
+    {
+      "path": "work\\out\\string-ids.txt",
+      "sha256": "2456c574b74deb4ef22e8095c5d468477581af675825341054cf570b0c6d3610",
+      "bytes": 11072
+    },
+    {
+      "path": "work\\proposed-doc-patch.md",
+      "sha256": "584a738dea2eab1384ad756f9ed7244d661daa74b86fc6960e0bd72701846834",
+      "bytes": 2488
+    },
+    {
+      "path": "work\\result.md",
+      "sha256": "f34b280bd48a090ad42790ae1b3b8c90c0f936d7b48e19e426ae2217b7eea6f5",
+      "bytes": 19464
+    },
+    {
+      "path": "work\\scripts\\assemble_outputs.py",
+      "sha256": "566b3af09cc96388b859df0550a59acba9053dd589e8d73813a95078537d24f6",
+      "bytes": 7064
+    },
+    {
+      "path": "work\\scripts\\check_pointer.py",
+      "sha256": "ceb2ced3d55c60eeed71bcd7c74112cced80371ee05f8c07b83616a52f1e3e33",
+      "bytes": 1465
+    },
+    {
+      "path": "work\\scripts\\dump_page27.py",
+      "sha256": "d05ef0b95b3381841472b1535e93f57a84d78836e1818c15d919759ea3ab76c2",
+      "bytes": 8082
+    },
+    {
+      "path": "work\\scripts\\glyph_scan.py",
+      "sha256": "9e304fd70efb1488d881e93c3d8fcc5b8c8ea0f8c8a5fcc82aeca8baf0b1ef7f",
+      "bytes": 3729
+    },
+    {
+      "path": "work\\scripts\\page27_probe.mjs",
+      "sha256": "8138cfc3a41c3e515e0dd760a2c7a530ec47d49b32d29a7d9f314f324ee947bc",
+      "bytes": 6342
+    },
+    {
+      "path": "work\\scripts\\page27_probe_control.mjs",
+      "sha256": "ad338c16804b36687cb7502f203c803a8f478220b1aa7579283e27a4bc2f34fd",
+      "bytes": 6463
+    },
+    {
+      "path": "work\\scripts\\page27_probe_first.mjs",
+      "sha256": "955ee2957d19bdecff0812afe75da387c5a61ac5a4e9bd354484c83a10986d81",
+      "bytes": 6454
+    },
+    {
+      "path": "work\\scripts\\Page27List.java",
+      "sha256": "7e3a15c62a316e884389906f5020603843792dda9c16b550c20de0ad35b835ff",
+      "bytes": 4220
+    },
+    {
+      "path": "work\\scripts\\string_ids.py",
+      "sha256": "2d602d5490e0cd5a30e7893e13abc709126cdfa0ef5ddcdad354f03cd2750d68",
+      "bytes": 3144
+    }
+  ],
+  "commands": [
+    "python -I work\\scripts\\dump_page27.py",
+    "python -I work\\scripts\\glyph_scan.py",
+    "python -I work\\scripts\\string_ids.py",
+    "node26 work\\scripts\\page27_probe.mjs om-emu control work\\out\\menu-toggle-control.jsonl control",
+    "node26 work\\scripts\\page27_probe.mjs om-emu toggle work\\out\\menu-toggle-a.jsonl toggle-a",
+    "node26 work\\scripts\\page27_probe.mjs om-emu toggle work\\out\\menu-toggle-b.jsonl toggle-b",
+    "node26 work\\scripts\\page27_probe.mjs om-emu toggle work\\out\\menu-toggle-a.jsonl toggle-a",
+    "node26 work\\scripts\\page27_probe.mjs om-emu toggle work\\out\\menu-toggle-b.jsonl toggle-b",
+    "python -I work\\scripts\\assemble_outputs.py",
+    "python -I work\\scripts\\check_pointer.py",
+    "tools\\bin\\run-ghidra.cmd -postScript Page27List.java C:\\Dev\\OM3-tasks\\T1-page27-mapping\\ws\\work\\out\\page27-listing.txt -log work\\out\\page27-listing.log",
+    "node26 work\\scripts\\page27_probe_control.mjs om-emu control work\\out\\repro-control.jsonl control",
+    "node26 work\\scripts\\page27_probe_first.mjs om-emu toggle work\\out\\repro-a-first.jsonl toggle-a",
+    "node26 work\\scripts\\page27_probe_first.mjs om-emu toggle work\\out\\repro-b-first.jsonl toggle-b",
+    "python -I work\\scripts\\assemble_outputs.py",
+    "python -I work\\scripts\\assemble_outputs.py"
+  ],
+  "tool_versions": {
+    "node26": "v26.12.1",
+    "python": "Python 3.12.7",
+    "java": "openjdk version \"25.0.5\" 2026-10-20 LTS OpenJDK Runtime Environment Temurin-25.0.5+8 (build 25.0.5+8-LTS) OpenJDK 64-Bit Server VM Temurin-25.0.5+8 (build 25.0.5+8-LTS, mixed mode, sharing)"
+  },
+  "notes": {
+    "first_toggle_lines": {
+      "a": 14,
+      "b": 14
+    },
+    "menu_toggle_order": [
+      "menu-toggle-control.jsonl",
+      "menu-toggle-a-first.jsonl",
+      "menu-toggle-b-first.jsonl",
+      "menu-toggle-a.jsonl",
+      "menu-toggle-b.jsonl"
+    ],
+    "container_sha256_from_PROJECT-STATE_not_rehashed": "8c133084414533159f587bf46bfb4152714c4074312a47c8d8503e33d605696d",
+    "om_emu_pin_from_PROJECT-STATE": "4e4ec4ef084542a7e30eecce56970c7e09c123c9 + local patch 61cd1327\u20267702",
+    "manifest_lists_every_work_file_except_itself": true,
+    "OM_EMU_NVRAM": "off",
+    "correction_round": "run-20261117-204643-review",
+    "run_ids": {
+      "control": "menu-toggle-control.jsonl; editors not opened",
+      "toggle-a-first": "menu-toggle-a-first.jsonl; JSON run field toggle-a",
+      "toggle-b-first": "menu-toggle-b-first.jsonl; JSON run field toggle-b",
+      "toggle-a-repeat": "menu-toggle-a.jsonl; JSON run field toggle-a",
+      "toggle-b-repeat": "menu-toggle-b.jsonl; JSON run field toggle-b"
+    }
+  }
+}

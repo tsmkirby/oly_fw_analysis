@@ -8,8 +8,10 @@ Last updated: 2026-11-17 (Phase 1 preparation).
 
 ## 1. Continuation point
 
-- **Now:** T0 accepted (qualified; [decision](tasks/T0-canary/decision.md)). Autonomous software
-  research has started: T1 (page-27 row and value mapping) is running.
+- **Now:** T0 accepted (qualified) and T1 accepted. T2 (storage cell ownership) is running.
+- **T1 outcome:** on page 27, value 0 = "always the selected AF target" and value 1 =
+  detected-subject priority. The top row is 2154 = `0x90a1[0]` and the bottom row is
+  2155 = `0x90a1[1]`. Which row is the shutter (inference: top) and the AF-ON key binding are open.
 - **Last research result:** live OM-Emu native AF initialization and central button
   dispatch, 16 Nov ([AFON-MENU-RESEARCH.md §8](analysis/button-af/AFON-MENU-RESEARCH.md#live-native-initialization-and-central-button-dispatch-2026-11-16)).
 - **Last owner observation:** 17 Nov, stock AF Button setting
@@ -56,8 +58,8 @@ The autonomous programme ends at either of these:
 | ID | Task | Status | Record |
 |---|---|---|---|
 | T0 | Isolation and tool canary | **Accepted (qualified)**, attempt 7 | [decision](tasks/T0-canary/decision.md) |
-| T1 | Page-27 row and value mapping | Running | [tasks/T1-page27-mapping](tasks/T1-page27-mapping/brief.md) |
-| T2 | Ownership proof for unclaimed cells `0x5b82` / `0x5b52` | Queued | AFON-MENU-RESEARCH §8 |
+| T1 | Page-27 row and value mapping | **Accepted** (value meaning and row↔storage settled; Q1/Q3 open) | [decision](tasks/T1-page27-mapping/decision.md) |
+| T2 | Ownership proof for unclaimed cells `0x5b82` / `0x5b52` | Running | [tasks/T2-cell-ownership](tasks/T2-cell-ownership/brief.md) |
 | T3 | AF-ON zone row and editor routing (OM-Emu) | Queued | AFON-MENU-RESEARCH §9 |
 | — | Beyond T3: persistence, display, hook point (Q4), acceptance matrix | Planned by Opus as results arrive | §2 |
 | — | CPU3 request/loader port | Deferred; regression only | AFON-MENU-RESEARCH §9 item 5 |
@@ -77,7 +79,9 @@ The autonomous programme ends at either of these:
 - **Q1. Unconfirmed:** whether hardware stage 1 (stock re-flash rehearsal) was run. No log exists. *Owner.*
 - **Q2. Unconfirmed:** whether two off-camera copies of the stock container have been verified. *Owner.*
   Neither Q1 nor Q2 blocks offline work.
-- **Q3.** Which page-27 row is AF-ON, and which value means "Always tracks"? *T1.*
+- **Q3.** Value meaning settled by T1 (0 = always the selected target). Still open: which row is
+  the shutter and which the AF-ON button (inference: 2154 = shutter), and whether 2155 follows
+  the physical AF-ON key or function `0x0a`. *Owner glance at the menu icons; later hook task.*
 - **Q4.** Final hook point. The archived installer redirects rows `0x6131bd50`/`0x6131bd60`;
   the 16 Nov live S1 selected `0x61339090`/`0x613390a0`; the working emulator path hooks
   `0x610bf5e2` (section 7, no placement proof). Phase-plan stage 6 still assumes the table redirect.

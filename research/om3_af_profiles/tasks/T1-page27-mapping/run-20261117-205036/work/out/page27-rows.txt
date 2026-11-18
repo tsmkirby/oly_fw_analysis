@@ -1,0 +1,749 @@
+Page 27 row and option records, stock E147 1.1 decoded main.
+CPU base 0x60021020. File offset = CPU address - 0x60021020.
+Bytes below are little-endian, copied from inputs\00_0100_50000020.decoded.bin
+(sha256 5e8d376e9111a44ac0352f26030d7c1b17026d42c45f3600cfa02a0e8c5b7d59).
+
+36-byte row, confirmed by the viewer, not by field order alone
+  +0x00 u32 setting id
+  +0x04 u16 kind
+  +0x06 u16 id. Kind 3 or 12: IMAGE id. Kind 1, 2, or 4: STRING id.
+  +0x08 u32 class pointer (0x6158aeb4 on these pages)
+  +0x0c u32 options pointer
+  +0x10 u32 count. The viewer reads it as u16.
+  +0x14 u32 0
+  +0x18 u32 class pointer again (0x6158aeb4)
+  +0x1c u32 alternate options pointer. 0 on page 27.
+  +0x20 u32 alternate count. 0 on page 27.
+
+12-byte option record
+  +0x00 u32 stored value
+  +0x04 u16 kind
+  +0x06 u16 id (string id when kind is 4)
+  +0x08 u32 class pointer
+
+Page descriptor 0x6158f0f8, file+0x0156e0d8, 20 bytes
+  1b000000 44dc5861 02000000 98af5861 b0b05861
+  page id 27, rows 0x6158dc44, count 2, title record 0x6158af98, handler 0x6158b0b0
+
+Row 0 at 0x6158dc44, file+0x0156cc24, 36 bytes
+  6a080000 0c00 b106 b4ae5861 04ba5861 02000000 00000000 b4ae5861 00000000 00000000
+  setting 2154, kind 12 IMAGE, image id 0x06b1, class 0x6158aeb4
+  options 0x6158ba04, count 2, +0x14 = 0, +0x18 = 0x6158aeb4, alternate pointer 0, alternate count 0
+
+Row 1 at 0x6158dc68, file+0x0156cc48, 36 bytes
+  6b080000 0c00 2c28 b4ae5861 04ba5861 02000000 00000000 b4ae5861 00000000 00000000
+  setting 2155, kind 12 IMAGE, image id 0x282c, class 0x6158aeb4
+  same options pointer 0x6158ba04, count 2, alternate pointer 0, alternate count 0
+
+Shared options at 0x6158ba04, file+0x0156a9e4, 24 bytes
+  opt0 0x6158ba04  01000000 0400 7b12 b4ae5861
+       value 1, kind 4 STRING, string id 0x127b, class 0x6158aeb4
+  opt1 0x6158ba10  00000000 0400 4f12 b4ae5861
+       value 0, kind 4 STRING, string id 0x124f, class 0x6158aeb4
+
+Title record 0x6158af98, file+0x01569f78, 8 bytes
+  0400 7912 b4ae5861
+  kind 4 STRING, string id 0x1279, class 0x6158aeb4
+  The next title starts at 0x6158afa0 (page 28, string id 0x0da4). A 12-byte
+  window overlaps that next record.
+
+Comparison, same table, so the kind field is not page-27-specific
+  Page 25 row 0 at 0x6158dbb4: kind 4, string id 0x06a1 ("S-AF"), options values 0 then 1.
+  Page 26 row 0 at 0x6158dbfc: kind 4, string id 0x06a1, options values 0 then 1.
+  Pages 25, 26, and 28 copy the primary options pointer into +0x1c and the count into +0x20.
+  Page 27 leaves +0x1c and +0x20 zero. Both of its rows share one option list.
+
+Viewer ranges. Offsets below are confirmed. The correction is kind versus meaning, not a moved field.
+  Complete listings are appended. Each instruction line is address, raw bytes, Ghidra text.
+  Produced by tools\bin\run-ghidra.cmd -postScript Page27List.java, -readOnly -noanalysis.
+  The script's own file is work\out\page27-listing.txt. Ghidra reports image_base 0x0.
+  Addresses are the CPU addresses used in this task. File offset = CPU address - 0x60021020.
+
+  1. Option matcher FUN_611c7785
+     start 0x611c7785, end 0x611c782e inclusive, 170 bytes, 85 instructions.
+  2. Descriptor copy FUN_611c782f
+     start 0x611c782f, end 0x611c7893 inclusive, 101 bytes, 46 instructions.
+     The ret at 0x611c7891 is the last instruction (dfb014), occupying 0x611c7891 through 0x611c7893.
+  3. Row lookup FUN_61203a81, the whole function
+     start 0x61203a81, end 0x61203e80 inclusive, 1024 bytes, 468 instructions.
+     The window 0x61203b95-0x61203ca7 (275 bytes) sits inside this listing.
+  4. Call-site function FUN_61204065, containing the call at 0x61204088
+     start 0x61204065, end 0x61204091 inclusive, 45 bytes, 21 instructions.
+     0x61204088 is ddfd36fcfff018, call 0x611c7785. The next instruction is the ret at 0x6120408f.
+
+Kind and meaning, from those listings
+  The halfword at descriptor+0 is the kind. The halfword at descriptor+2 is the id.
+  On a 36-byte row that is row+4 and row+6. On a 12-byte option that is record+4 and record+6.
+  Kind chooses what the id means. It does not move the id to another offset.
+  FUN_611c782f loads the kind at 0x611c7834. Kind 3 (0x611c7838) or kind 12 (0x611c783e)
+  copies descriptor+2 to dest+2 at 0x611c7842 and 0x611c7845: an image id.
+  Kind 4 (0x611c784a), kind 1 (0x611c784e), or kind 2 (0x611c7852) copies the same
+  descriptor+2 halfword to dest+4 at 0x611c7856 and 0x611c7859: a string id.
+  FUN_611c7785 uses stride 12 at 0x611c7791, compares the u32 value at record+0
+  (0x611c7797, 0x611c7798), and loads the kind at record+4 (0x611c779f, after inc4).
+  Kinds 3, 12, 8, and 7 copy record+6 to dest+2 (0x611c77b7).
+  Kinds 4, 1, 2, 10, 11, and 9 copy record+6 to dest+4 (0x611c77d7).
+  FUN_61203a81 loads the page at 0x61203b95, the row base at page+4 (0x61203b99),
+  and the u16 count at page+8 (0x61203b9e). 0x61203bf5 multiplies the index by 36.
+  0x61203c1f compares the setting id at row+0. 0x61203c2f advances to row+4.
+  0x61203c32 calls 0x611c782f. 0x61203c50 loads the options pointer at row+0xc.
+  0x61203c54 loads the count at row+0x10. 0x61203ca3 calls 0x61204065.
+  Inside that function, 0x61204088 calls 0x611c7785. The drawn option text comes
+  from the +0xc list. Page 27's +0x1c is zero, so it is not the list that produced the text.
+
+Live confirmation of the same offsets, stock OM-Emu, hook on 0x611c782f
+  src 0x6158af98 kind 4 id 4729 (0x1279)   title
+  src 0x6158dc48 kind 12 id 1713 (0x06b1)  row 0 + 4
+  src 0x6158dc6c kind 12 id 10284 (0x282c) row 1 + 4
+  Recorded in menu-toggle-control.jsonl step descriptor-copies, and repeated
+  on both toggle runs.
+
+Section 6 of AFON-MENU-RESEARCH
+  Confirmed, and the offsets are unchanged: stride 36; setting id at +0;
+  kind at +4; id halfword at +6; class pointer at +8; options pointer at +0xc;
+  count at +0x10; option records of 12 bytes as value, kind, id, pointer;
+  page 27 values 1 then 0; ids 0x127b then 0x124f; both rows share that list;
+  the row setting ids are 2154 then 2155.
+  The correction is a kind/meaning reading, not a field-offset shift.
+  Kind 12 means the halfword at +6 is an image id. Kind 4 means that same
+  halfword is a string id. 0x06b1 and 0x282c are the row image ids.
+  0x127b and 0x124f are the option strings "@A066@ Priority" and
+  "@A02F@ Priority", not row names and not on/off. Page 27 has no alternate
+  option list. The title record is 8 bytes.
+
+Complete listing
+program=00_0100_50000020.decoded.bin
+image_base=0x0
+mode=existing-listing-then-pseudo
+RANGE start=0x611c7785 end=0x611c782e bytes=170
+611c7785 4304 mov A0,(0x4,sp)
+611c7787 08 clr D2
+611c7788 0c clr D3
+611c7789 a9 cmp D2,D1
+611c778a c505 bhi 0x611c778f
+611c778c dff018 ret [d2,d3,a2,a3],0x18
+611c778f db setlb
+611c7790 1e exthu D2
+611c7791 f9160c udfu01 0xc,D2
+611c7794 96 mov A1,A2
+611c7795 f16a add D2,A2
+611c7797 7a mov (A2),D2
+611c7798 a8 cmp D2,D0
+611c7799 c805 beq 0x611c779e
+611c779b cc8c00 jmp 0x611c7827
+611c779e 52 inc4 A2
+611c779f f062 movhu (A2),D0
+611c77a1 5f1c mov (0x1c,sp),A3
+611c77a3 a003 cmp 0x3,D0
+611c77a5 f073 movhu D0,(A3)
+611c77a7 c810 beq 0x611c77b7
+611c77a9 f063 movhu (A3),D0
+611c77ab a00c cmp 0xc,D0
+611c77ad c80a beq 0x611c77b7
+611c77af a008 cmp 0x8,D0
+611c77b1 c806 beq 0x611c77b7
+611c77b3 a007 cmp 0x7,D0
+611c77b5 c908 bne 0x611c77bd
+611c77b7 f86202 movhu (0x2,A2),D0
+611c77ba f87302 movhu D0,(0x2,A3)
+611c77bd f063 movhu (A3),D0
+611c77bf a004 cmp 0x4,D0
+611c77c1 c816 beq 0x611c77d7
+611c77c3 a001 cmp 0x1,D0
+611c77c5 c812 beq 0x611c77d7
+611c77c7 a002 cmp 0x2,D0
+611c77c9 c80e beq 0x611c77d7
+611c77cb a00a cmp 0xa,D0
+611c77cd c80a beq 0x611c77d7
+611c77cf a00b cmp 0xb,D0
+611c77d1 c806 beq 0x611c77d7
+611c77d3 a009 cmp 0x9,D0
+611c77d5 c908 bne 0x611c77dd
+611c77d7 f86202 movhu (0x2,A2),D0
+611c77da f87304 movhu D0,(0x4,A3)
+611c77dd f063 movhu (A3),D0
+611c77df a001 cmp 0x1,D0
+611c77e1 c822 beq 0x611c7803
+611c77e3 a002 cmp 0x2,D0
+611c77e5 c81e beq 0x611c7803
+611c77e7 a007 cmp 0x7,D0
+611c77e9 c81a beq 0x611c7803
+611c77eb a008 cmp 0x8,D0
+611c77ed c816 beq 0x611c7803
+611c77ef a005 cmp 0x5,D0
+611c77f1 c812 beq 0x611c7803
+611c77f3 a006 cmp 0x6,D0
+611c77f5 c80e beq 0x611c7803
+611c77f7 a00a cmp 0xa,D0
+611c77f9 c80a beq 0x611c7803
+611c77fb a00b cmp 0xb,D0
+611c77fd c806 beq 0x611c7803
+611c77ff a009 cmp 0x9,D0
+611c7801 c92b bne 0x611c782c
+611c7803 230c add 0xc,A3
+611c7805 9c mov A3,A0
+611c7806 00 clr D0
+611c7807 856e mov 0x6e,D1
+611c7809 dd0cb2e3eea008 call 0x50002a15,[d2,a2],0x8
+611c7810 52 inc4 A2
+611c7811 7a mov (A2),D2
+611c7812 f002 mov (A2),A0
+611c7814 dd1c3ee8fe0000 call 0x6004b630,[],0x0
+611c781b 5c04 mov (0x4,sp),A0
+611c781d 1c exthu D0
+611c781e 89 mov D2,D1
+611c781f 9d mov A3,A1
+611c7820 cd7400c008 call 0x611c7894,[d2,d3],0x8
+611c7825 ca07 bra 0x611c782c
+611c7827 4c inc D3
+611c7828 8e mov D3,D2
+611c7829 1f exthu D3
+611c782a a7 cmp D1,D3
+611c782b d4 lcs
+611c782c dff018 ret [d2,d3,a2,a3],0x18
+END instructions=85 covered=170
+
+RANGE start=0x611c782f end=0x611c7893 bytes=101
+611c782f 96 mov A1,A2
+611c7830 4304 mov A0,(0x4,sp)
+611c7832 f1e3 mov D0,A3
+611c7834 f062 movhu (A2),D0
+611c7836 f073 movhu D0,(A3)
+611c7838 a003 cmp 0x3,D0
+611c783a c808 beq 0x611c7842
+611c783c f063 movhu (A3),D0
+611c783e a00c cmp 0xc,D0
+611c7840 c908 bne 0x611c7848
+611c7842 f86202 movhu (0x2,A2),D0
+611c7845 f87302 movhu D0,(0x2,A3)
+611c7848 f063 movhu (A3),D0
+611c784a a004 cmp 0x4,D0
+611c784c c80a beq 0x611c7856
+611c784e a001 cmp 0x1,D0
+611c7850 c806 beq 0x611c7856
+611c7852 a002 cmp 0x2,D0
+611c7854 c908 bne 0x611c785c
+611c7856 f86202 movhu (0x2,A2),D0
+611c7859 f87304 movhu D0,(0x4,A3)
+611c785c f063 movhu (A3),D0
+611c785e a001 cmp 0x1,D0
+611c7860 c80e beq 0x611c786e
+611c7862 a002 cmp 0x2,D0
+611c7864 c80a beq 0x611c786e
+611c7866 a005 cmp 0x5,D0
+611c7868 c806 beq 0x611c786e
+611c786a a006 cmp 0x6,D0
+611c786c c925 bne 0x611c7891
+611c786e 52 inc4 A2
+611c786f 230c add 0xc,A3
+611c7871 9c mov A3,A0
+611c7872 00 clr D0
+611c7873 856e mov 0x6e,D1
+611c7875 dda0b1e3eea008 call 0x50002a15,[d2,a2],0x8
+611c787c 7a mov (A2),D2
+611c787d 72 mov (A2),D0
+611c787e f1e0 mov D0,A0
+611c7880 ddb03de8fe0000 call 0x6004b630,[],0x0
+611c7887 5c04 mov (0x4,sp),A0
+611c7889 1c exthu D0
+611c788a 89 mov D2,D1
+611c788b 9d mov A3,A1
+611c788c cd0800c008 call 0x611c7894,[d2,d3],0x8
+611c7891 dfb014 ret [d2,a2,a3],0x14
+END instructions=46 covered=101
+
+RANGE start=0x61203a81 end=0x61203e80 bytes=1024
+61203a81 4324 mov A0,(0x24,sp)
+61203a83 f1d0 mov A0,D0
+61203a85 fac0f013 add 0x13f0,D0
+61203a89 4220 mov D0,(0x20,sp)
+61203a8b f1e0 mov D0,A0
+61203a8d 00 clr D0
+61203a8e 2d6403 mov 0x364,D1
+61203a91 dd84efdfeea008 call 0x50002a15,[d2,a2],0x8
+61203a98 5820 mov (0x20,sp),D0
+61203a9a 2d6403 mov 0x364,D1
+61203a9d fac06403 add 0x364,D0
+61203aa1 4230 mov D0,(0x30,sp)
+61203aa3 f1e0 mov D0,A0
+61203aa5 00 clr D0
+61203aa6 dd6fefdfeea008 call 0x50002a15,[d2,a2],0x8
+61203aad 5820 mov (0x20,sp),D0
+61203aaf 2d6403 mov 0x364,D1
+61203ab2 fac01009 add 0x910,D0
+61203ab6 422c mov D0,(0x2c,sp)
+61203ab8 f1e0 mov D0,A0
+61203aba 00 clr D0
+61203abb dd5aefdfeea008 call 0x50002a15,[d2,a2],0x8
+61203ac2 5c20 mov (0x20,sp),A0
+61203ac4 00 clr D0
+61203ac5 fad01407 add 0x714,A0
+61203ac9 2d8c00 mov 0x8c,D1
+61203acc dd49efdfeea008 call 0x50002a15,[d2,a2],0x8
+61203ad3 5c20 mov (0x20,sp),A0
+61203ad5 00 clr D0
+61203ad6 fad0a007 add 0x7a0,A0
+61203ada 857e mov 0x7e,D1
+61203adc dd39efdfeea008 call 0x50002a15,[d2,a2],0x8
+61203ae3 5820 mov (0x20,sp),D0
+61203ae5 850e mov 0xe,D1
+61203ae7 fac0dc08 add 0x8dc,D0
+61203aeb 4260 mov D0,(0x60,sp)
+61203aed f1e0 mov D0,A0
+61203aef 00 clr D0
+61203af0 dd25efdfeea008 call 0x50002a15,[d2,a2],0x8
+61203af7 5820 mov (0x20,sp),D0
+61203af9 850e mov 0xe,D1
+61203afb fac0ea08 add 0x8ea,D0
+61203aff 425c mov D0,(0x5c,sp)
+61203b01 f1e0 mov D0,A0
+61203b03 00 clr D0
+61203b04 dd11efdfeea008 call 0x50002a15,[d2,a2],0x8
+61203b0b 5820 mov (0x20,sp),D0
+61203b0d 850e mov 0xe,D1
+61203b0f fac0740c add 0xc74,D0
+61203b13 4258 mov D0,(0x58,sp)
+61203b15 f1e0 mov D0,A0
+61203b17 00 clr D0
+61203b18 ddfdeedfeea008 call 0x50002a15,[d2,a2],0x8
+61203b1f 5820 mov (0x20,sp),D0
+61203b21 850e mov 0xe,D1
+61203b23 fac0f808 add 0x8f8,D0
+61203b27 4268 mov D0,(0x68,sp)
+61203b29 f1e0 mov D0,A0
+61203b2b 00 clr D0
+61203b2c dde9eedfeea008 call 0x50002a15,[d2,a2],0x8
+61203b33 5820 mov (0x20,sp),D0
+61203b35 8507 mov 0x7,D1
+61203b37 fac00609 add 0x906,D0
+61203b3b 4264 mov D0,(0x64,sp)
+61203b3d f1e0 mov D0,A0
+61203b3f 00 clr D0
+61203b40 ddd5eedfeea008 call 0x50002a15,[d2,a2],0x8
+61203b47 5824 mov (0x24,sp),D0
+61203b49 fac0e013 add 0x13e0,D0
+61203b4d f1e0 mov D0,A0
+61203b4f 4240 mov D0,(0x40,sp)
+61203b51 70 mov (A0),D0
+61203b52 f1e0 mov D0,A0
+61203b54 00 clr D0
+61203b55 cd1cf8f018 call 0x61203371,[d2,d3,a2,a3],0x18
+61203b5a 5c40 mov (0x40,sp),A0
+61203b5c 83 mov D0,D3
+61203b5d 70 mov (A0),D0
+61203b5e 1f exthu D3
+61203b5f f1e0 mov D0,A0
+61203b61 cd0ff90004 call 0x61203470,[],0x4
+61203b66 5c40 mov (0x40,sp),A0
+61203b68 82 mov D0,D2
+61203b69 70 mov (A0),D0
+61203b6a 1e exthu D2
+61203b6b f1e0 mov D0,A0
+61203b6d 00 clr D0
+61203b6e cd1df6f018 call 0x6120318b,[d2,d3,a2,a3],0x18
+61203b73 f8936e movhu D0,(0x6e,sp)
+61203b76 fcccf0f55861 mov 0x6158f5f0,D0
+61203b7c 4204 mov D0,(0x4,sp)
+61203b7e 4e50 mov D3,(0x50,sp)
+61203b80 4e08 mov D3,(0x8,sp)
+61203b82 4a4c mov D2,(0x4c,sp)
+61203b84 4a0c mov D2,(0xc,sp)
+61203b86 2cff01 mov 0x1ff,D0
+61203b89 4210 mov D0,(0x10,sp)
+61203b8b dd3bed08003008 call 0x612928c6,[a2,a3],0x8
+61203b92 5c24 mov (0x24,sp),A0
+61203b94 04 clr D1
+61203b95 fa20e813 mov (0x13e8,A0),A0
+61203b99 f80004 mov (0x4,A0),D0
+61203b9c 4254 mov D0,(0x54,sp)
+61203b9e f86008 movhu (0x8,A0),D0
+61203ba1 f8976c movhu D1,(0x6c,sp)
+61203ba4 4618 mov D1,(0x18,sp)
+61203ba6 5950 mov (0x50,sp),D1
+61203ba8 a500 cmp 0x0,D1
+61203baa c105 bgt 0x61203baf
+61203bac ccaf01 jmp 0x61203d5b
+61203baf 4248 mov D0,(0x48,sp)
+61203bb1 5824 mov (0x24,sp),D0
+61203bb3 fac0d413 add 0x13d4,D0
+61203bb7 423c mov D0,(0x3c,sp)
+61203bb9 f8bc6e movhu (0x6e,sp),D0
+61203bbc 4244 mov D0,(0x44,sp)
+61203bbe 5820 mov (0x20,sp),D0
+61203bc0 fac01e08 add 0x81e,D0
+61203bc4 4228 mov D0,(0x28,sp)
+61203bc6 5c24 mov (0x24,sp),A0
+61203bc8 f8bc6c movhu (0x6c,sp),D0
+61203bcb 0c clr D3
+61203bcc fa70ec13 movhu D0,(0x13ec,A0)
+61203bd0 00 clr D0
+61203bd1 4234 mov D0,(0x34,sp)
+61203bd3 5848 mov (0x48,sp),D0
+61203bd5 ac cmp D3,D0
+61203bd6 c105 bgt 0x61203bdb
+61203bd8 cc7201 jmp 0x61203d4a
+61203bdb f8bc6c movhu (0x6c,sp),D0
+61203bde f9147c udfu01 0x7c,D0
+61203be1 421c mov D0,(0x1c,sp)
+61203be3 5c40 mov (0x40,sp),A0
+61203be5 5918 mov (0x18,sp),D1
+61203be7 70 mov (A0),D0
+61203be8 1f exthu D3
+61203be9 f1e0 mov D0,A0
+61203beb 00 clr D0
+61203bec cd1ef5f01c call 0x6120310a,[d2,d3,a2,a3],0x1c
+61203bf1 5c40 mov (0x40,sp),A0
+61203bf3 82 mov D0,D2
+61203bf4 74 mov (A0),D1
+61203bf5 f91724 udfu01 0x24,D3
+61203bf8 f1e4 mov D1,A0
+61203bfa 5918 mov (0x18,sp),D1
+61203bfc 00 clr D0
+61203bfd cd05f6f01c call 0x61203202,[d2,d3,a2,a3],0x1c
+61203c02 1c exthu D0
+61203c03 4238 mov D0,(0x38,sp)
+61203c05 fccc47f65861 mov 0x6158f647,D0
+61203c0b 4204 mov D0,(0x4,sp)
+61203c0d 4a08 mov D2,(0x8,sp)
+61203c0f 2c1902 mov 0x219,D0
+61203c12 420c mov D0,(0xc,sp)
+61203c14 ddb2ec08003008 call 0x612928c6,[a2,a3],0x8
+61203c1b 5f54 mov (0x54,sp),A3
+61203c1d f16f add D3,A3
+61203c1f 73 mov (A3),D0
+61203c20 a2 cmp D0,D2
+61203c21 c805 beq 0x61203c26
+61203c23 cc8900 jmp 0x61203cac
+61203c26 5e20 mov (0x20,sp),A2
+61203c28 581c mov (0x1c,sp),D0
+61203c2a 5c24 mov (0x24,sp),A0
+61203c2c f162 add D0,A2
+61203c2e 9d mov A3,A1
+61203c2f 51 inc4 A1
+61203c30 f1d8 mov A2,D0
+61203c32 ddfd3bfcffb014 call 0x611c782f,[d2,a2,a3],0x14
+61203c39 00 clr D0
+61203c3a f81208 mov D0,(0x8,A2)
+61203c3d 5c3c mov (0x3c,sp),A0
+61203c3f 70 mov (A0),D0
+61203c40 a000 cmp 0x0,D0
+61203c42 c834 beq 0x61203c76
+61203c44 5c24 mov (0x24,sp),A0
+61203c46 fa008820 mov (0x2088,A0),D0
+61203c4a a000 cmp 0x0,D0
+61203c4c c90f bne 0x61203c5b
+61203c4e 5c3c mov (0x3c,sp),A0
+61203c50 f8270c mov (0xc,A3),A1
+61203c53 7c mov (A0),D3
+61203c54 f86710 movhu (0x10,A3),D1
+61203c57 5e30 mov (0x30,sp),A2
+61203c59 ca0d bra 0x61203c66
+61203c5b 5c3c mov (0x3c,sp),A0
+61203c5d f8270c mov (0xc,A3),A1
+61203c60 7c mov (A0),D3
+61203c61 f86710 movhu (0x10,A3),D1
+61203c64 5e2c mov (0x2c,sp),A2
+61203c66 581c mov (0x1c,sp),D0
+61203c68 1e exthu D2
+61203c69 f162 add D0,A2
+61203c6b 4b04 mov A2,(0x4,sp)
+61203c6d 5c24 mov (0x24,sp),A0
+61203c6f 88 mov D2,D0
+61203c70 f1ef mov D3,A3
+61203c72 f0f3 calls (A3)
+61203c74 ca34 bra 0x61203ca8
+61203c76 900c mov 0xc,A0
+61203c78 f17c add A3,A0
+61203c7a 70 mov (A0),D0
+61203c7b a000 cmp 0x0,D0
+61203c7d c82f beq 0x61203cac
+61203c7f 5d24 mov (0x24,sp),A1
+61203c81 fa018820 mov (0x2088,A1),D0
+61203c85 a000 cmp 0x0,D0
+61203c87 c90b bne 0x61203c92
+61203c89 f004 mov (A0),A1
+61203c8b f86710 movhu (0x10,A3),D1
+61203c8e 5e30 mov (0x30,sp),A2
+61203c90 ca09 bra 0x61203c99
+61203c92 f004 mov (A0),A1
+61203c94 f86710 movhu (0x10,A3),D1
+61203c97 5e2c mov (0x2c,sp),A2
+61203c99 581c mov (0x1c,sp),D0
+61203c9b 1e exthu D2
+61203c9c f162 add D0,A2
+61203c9e 4b04 mov A2,(0x4,sp)
+61203ca0 5c24 mov (0x24,sp),A0
+61203ca2 88 mov D2,D0
+61203ca3 cdc203f020 call 0x61204065,[d2,d3,a2,a3],0x20
+61203ca8 00 clr D0
+61203ca9 f81208 mov D0,(0x8,A2)
+61203cac 584c mov (0x4c,sp),D0
+61203cae a002 cmp 0x2,D0
+61203cb0 c90b bne 0x61203cbb
+61203cb2 5818 mov (0x18,sp),D0
+61203cb4 5944 mov (0x44,sp),D1
+61203cb6 a4 cmp D1,D0
+61203cb7 c80a beq 0x61203cc1
+61203cb9 ca5d bra 0x61203d16
+61203cbb 5838 mov (0x38,sp),D0
+61203cbd a000 cmp 0x0,D0
+61203cbf c926 bne 0x61203ce5
+61203cc1 5d20 mov (0x20,sp),A1
+61203cc3 f8bd6c movhu (0x6c,sp),D1
+61203cc6 8001 mov 0x1,D0
+61203cc8 86 mov D1,D2
+61203cc9 f9167c udfu01 0x7c,D2
+61203ccc f169 add D2,A1
+61203cce f87106 movhu D0,(0x6,A1)
+61203cd1 5d30 mov (0x30,sp),A1
+61203cd3 f1e8 mov D2,A0
+61203cd5 f171 add A0,A1
+61203cd7 f87106 movhu D0,(0x6,A1)
+61203cda 5a2c mov (0x2c,sp),D2
+61203cdc f168 add D2,A0
+61203cde f87006 movhu D0,(0x6,A0)
+61203ce1 805e mov 0x5e,D0
+61203ce3 ca55 bra 0x61203d38
+61203ce5 5818 mov (0x18,sp),D0
+61203ce7 5944 mov (0x44,sp),D1
+61203ce9 a4 cmp D1,D0
+61203cea c92c bne 0x61203d16
+61203cec f8bc6c movhu (0x6c,sp),D0
+61203cef 5c20 mov (0x20,sp),A0
+61203cf1 81 mov D0,D1
+61203cf2 f9157c udfu01 0x7c,D1
+61203cf5 f164 add D1,A0
+61203cf7 f1e5 mov D1,A1
+61203cf9 8508 mov 0x8,D1
+61203cfb f87406 movhu D1,(0x6,A0)
+61203cfe 5c30 mov (0x30,sp),A0
+61203d00 f174 add A1,A0
+61203d02 f87406 movhu D1,(0x6,A0)
+61203d05 592c mov (0x2c,sp),D1
+61203d07 f165 add D1,A1
+61203d09 8508 mov 0x8,D1
+61203d0b f87506 movhu D1,(0x6,A1)
+61203d0e 5c28 mov (0x28,sp),A0
+61203d10 8560 mov 0x60,D1
+61203d12 f450 movbu D1,(D0,A0)
+61203d14 ca28 bra 0x61203d3c
+61203d16 5d20 mov (0x20,sp),A1
+61203d18 f8bd6c movhu (0x6c,sp),D1
+61203d1b 8007 mov 0x7,D0
+61203d1d 86 mov D1,D2
+61203d1e f9167c udfu01 0x7c,D2
+61203d21 f169 add D2,A1
+61203d23 f87106 movhu D0,(0x6,A1)
+61203d26 5d30 mov (0x30,sp),A1
+61203d28 f1e8 mov D2,A0
+61203d2a f171 add A0,A1
+61203d2c f87106 movhu D0,(0x6,A1)
+61203d2f 5a2c mov (0x2c,sp),D2
+61203d31 f168 add D2,A0
+61203d33 f87006 movhu D0,(0x6,A0)
+61203d36 805f mov 0x5f,D0
+61203d38 5c28 mov (0x28,sp),A0
+61203d3a f444 movbu D0,(D1,A0)
+61203d3c 5b34 mov (0x34,sp),D3
+61203d3e 5948 mov (0x48,sp),D1
+61203d40 4c inc D3
+61203d41 1f exthu D3
+61203d42 4e34 mov D3,(0x34,sp)
+61203d44 a7 cmp D1,D3
+61203d45 c205 bge 0x61203d4a
+61203d47 cc9cfe jmp 0x61203be3
+61203d4a 5818 mov (0x18,sp),D0
+61203d4c 5950 mov (0x50,sp),D1
+61203d4e 40 inc D0
+61203d4f f8936c movhu D0,(0x6c,sp)
+61203d52 1c exthu D0
+61203d53 4218 mov D0,(0x18,sp)
+61203d55 a4 cmp D1,D0
+61203d56 c205 bge 0x61203d5b
+61203d58 cc6efe jmp 0x61203bc6
+61203d5b 00 clr D0
+61203d5c 08 clr D2
+61203d5d db setlb
+61203d5e 5c64 mov (0x64,sp),A0
+61203d60 1c exthu D0
+61203d61 48 inc D2
+61203d62 04 clr D1
+61203d63 f450 movbu D1,(D0,A0)
+61203d65 88 mov D2,D0
+61203d66 1e exthu D2
+61203d67 aa07 cmp 0x7,D2
+61203d69 d4 lcs
+61203d6a 5850 mov (0x50,sp),D0
+61203d6c 08 clr D2
+61203d6d 0c clr D3
+61203d6e ac cmp D3,D0
+61203d6f c105 bgt 0x61203d74
+61203d71 dff080 ret [d2,d3,a2,a3],0x80
+61203d74 5824 mov (0x24,sp),D0
+61203d76 fac08820 add 0x2088,D0
+61203d7a 4218 mov D0,(0x18,sp)
+61203d7c f8bc6e movhu (0x6e,sp),D0
+61203d7f f1e3 mov D0,A3
+61203d81 584c mov (0x4c,sp),D0
+61203d83 a002 cmp 0x2,D0
+61203d85 c957 bne 0x61203ddc
+61203d87 5e18 mov (0x18,sp),A2
+61203d89 72 mov (A2),D0
+61203d8a a000 cmp 0x0,D0
+61203d8c c942 bne 0x61203dce
+61203d8e 5c64 mov (0x64,sp),A0
+61203d90 1e exthu D2
+61203d91 f408 movbu (D2,A0),D0
+61203d93 a000 cmp 0x0,D0
+61203d95 c90d bne 0x61203da2
+61203d97 f1af cmp D3,A3
+61203d99 c85d beq 0x61203df6
+61203d9b 88 mov D2,D0
+61203d9c e0 add D0,D0
+61203d9d 04 clr D1
+61203d9e 5c60 mov (0x60,sp),A0
+61203da0 ca38 bra 0x61203dd8
+61203da2 f1af cmp D3,A3
+61203da4 c91f bne 0x61203dc3
+61203da6 5c5c mov (0x5c,sp),A0
+61203da8 88 mov D2,D0
+61203da9 e0 add D0,D0
+61203daa f160 add D0,A0
+61203dac 8502 mov 0x2,D1
+61203dae f054 movbu D1,(A0)
+61203db0 850b mov 0xb,D1
+61203db2 f85401 movbu D1,(0x1,A0)
+61203db5 5d68 mov (0x68,sp),A1
+61203db7 f161 add D0,A1
+61203db9 8002 mov 0x2,D0
+61203dbb f051 movbu D0,(A1)
+61203dbd f85501 movbu D1,(0x1,A1)
+61203dc0 cc9400 jmp 0x61203e54
+61203dc3 5c5c mov (0x5c,sp),A0
+61203dc5 88 mov D2,D0
+61203dc6 e0 add D0,D0
+61203dc7 04 clr D1
+61203dc8 f450 movbu D1,(D0,A0)
+61203dca 5c68 mov (0x68,sp),A0
+61203dcc ca0c bra 0x61203dd8
+61203dce f1af cmp D3,A3
+61203dd0 c874 beq 0x61203e44
+61203dd2 1e exthu D2
+61203dd3 88 mov D2,D0
+61203dd4 e0 add D0,D0
+61203dd5 04 clr D1
+61203dd6 5c58 mov (0x58,sp),A0
+61203dd8 f450 movbu D1,(D0,A0)
+61203dda ca7a bra 0x61203e54
+61203ddc 5e18 mov (0x18,sp),A2
+61203dde 72 mov (A2),D0
+61203ddf a000 cmp 0x0,D0
+61203de1 c950 bne 0x61203e31
+61203de3 5c64 mov (0x64,sp),A0
+61203de5 1e exthu D2
+61203de6 f408 movbu (D2,A0),D0
+61203de8 a000 cmp 0x0,D0
+61203dea c912 bne 0x61203dfc
+61203dec f1af cmp D3,A3
+61203dee c908 bne 0x61203df6
+61203df0 88 mov D2,D0
+61203df1 e0 add D0,D0
+61203df2 5c60 mov (0x60,sp),A0
+61203df4 ca46 bra 0x61203e3a
+61203df6 88 mov D2,D0
+61203df7 e0 add D0,D0
+61203df8 5c60 mov (0x60,sp),A0
+61203dfa ca4f bra 0x61203e49
+61203dfc f1af cmp D3,A3
+61203dfe c919 bne 0x61203e17
+61203e00 5d5c mov (0x5c,sp),A1
+61203e02 88 mov D2,D0
+61203e03 e0 add D0,D0
+61203e04 f161 add D0,A1
+61203e06 8501 mov 0x1,D1
+61203e08 f055 movbu D1,(A1)
+61203e0a 8505 mov 0x5,D1
+61203e0c f85501 movbu D1,(0x1,A1)
+61203e0f 5c68 mov (0x68,sp),A0
+61203e11 f160 add D0,A0
+61203e13 8001 mov 0x1,D0
+61203e15 ca17 bra 0x61203e2c
+61203e17 5d5c mov (0x5c,sp),A1
+61203e19 88 mov D2,D0
+61203e1a e0 add D0,D0
+61203e1b f161 add D0,A1
+61203e1d 8502 mov 0x2,D1
+61203e1f f055 movbu D1,(A1)
+61203e21 850b mov 0xb,D1
+61203e23 f85501 movbu D1,(0x1,A1)
+61203e26 5c68 mov (0x68,sp),A0
+61203e28 f160 add D0,A0
+61203e2a 8002 mov 0x2,D0
+61203e2c f050 movbu D0,(A0)
+61203e2e 84 mov D1,D0
+61203e2f ca22 bra 0x61203e51
+61203e31 f1af cmp D3,A3
+61203e33 c911 bne 0x61203e44
+61203e35 1e exthu D2
+61203e36 88 mov D2,D0
+61203e37 e0 add D0,D0
+61203e38 5c58 mov (0x58,sp),A0
+61203e3a f160 add D0,A0
+61203e3c 8001 mov 0x1,D0
+61203e3e f050 movbu D0,(A0)
+61203e40 8005 mov 0x5,D0
+61203e42 ca0f bra 0x61203e51
+61203e44 1e exthu D2
+61203e45 88 mov D2,D0
+61203e46 e0 add D0,D0
+61203e47 5c58 mov (0x58,sp),A0
+61203e49 f160 add D0,A0
+61203e4b 8002 mov 0x2,D0
+61203e4d f050 movbu D0,(A0)
+61203e4f 800b mov 0xb,D0
+61203e51 f85001 movbu D0,(0x1,A0)
+61203e54 fccc85f65861 mov 0x6158f685,D0
+61203e5a 4204 mov D0,(0x4,sp)
+61203e5c 72 mov (A2),D0
+61203e5d 4208 mov D0,(0x8,sp)
+61203e5f 4e0c mov D3,(0xc,sp)
+61203e61 5c64 mov (0x64,sp),A0
+61203e63 4c inc D3
+61203e64 f408 movbu (D2,A0),D0
+61203e66 8e mov D3,D2
+61203e67 4210 mov D0,(0x10,sp)
+61203e69 2c0a03 mov 0x30a,D0
+61203e6c 4214 mov D0,(0x14,sp)
+61203e6e dd58ea08003008 call 0x612928c6,[a2,a3],0x8
+61203e75 5850 mov (0x50,sp),D0
+61203e77 1f exthu D3
+61203e78 a3 cmp D0,D3
+61203e79 c205 bge 0x61203e7e
+61203e7b cc06ff jmp 0x61203d81
+61203e7e dff080 ret [d2,d3,a2,a3],0x80
+END instructions=468 covered=1024
+
+RANGE start=0x61204065 end=0x61204091 bytes=45
+61204065 4708 mov A1,(0x8,sp)
+61204067 82 mov D0,D2
+61204068 1e exthu D2
+61204069 93 mov A0,A3
+6120406a 87 mov D1,D3
+6120406b ddff2898ff0004 call 0x60b8696a,[],0x4
+61204072 3d mov sp,A1
+61204073 210c add 0xc,A1
+61204075 f008 mov (A0),A2
+61204077 88 mov D2,D0
+61204078 f82a0c mov (0xc,A2),A2
+6120407b 1f exthu D3
+6120407c f0f2 calls (A2)
+6120407e 5824 mov (0x24,sp),D0
+61204080 8d mov D3,D1
+61204081 4204 mov D0,(0x4,sp)
+61204083 580c mov (0xc,sp),D0
+61204085 5d08 mov (0x8,sp),A1
+61204087 9c mov A3,A0
+61204088 ddfd36fcfff018 call 0x611c7785,[d2,d3,a2,a3],0x18 CALLSITE
+6120408f dff020 ret [d2,d3,a2,a3],0x20
+END instructions=21 covered=45
+
