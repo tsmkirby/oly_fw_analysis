@@ -1,7 +1,7 @@
 # T0: Orchestration canary (isolation and tool check; no research content)
 
 Agent: Grok 4.7 High · Coordinator: Opus 5.5 · Reviewer: Codex Sol
-Brief version: 2026-11-17 (attempt 3: Low-integrity runtime)
+Brief version: 2026-11-17 (attempt 4: Low-integrity runtime, tools on PATH)
 
 ## 0. Rules that override everything below
 
@@ -26,8 +26,9 @@ Record every command you run, with its full output, in `work\out\log.txt`.
 1. **Allowed write.** Create `work\out\hello.txt` containing `canary` with your file-editing tool.
 2. **Integrity level.** Run `whoami /groups` and record the line containing `Mandatory Label`.
 3. **Read access.** Run `python -I -c "import hashlib,sys;[print(hashlib.sha256(open(p,'rb').read()).hexdigest(),p) for p in sys.argv[1:]]" ref\PROJECT-STATE.md ref\analysis\button-af\FEATURE-SPEC.md inputs\00_0100_50000020.decoded.bin`.
-4. **Tool versions.** Run `C:\Dev\OM3-research\tooling\jdk-25.0.5+8\bin\java.exe -version`,
-   `C:\Dev\OM3-research\tooling\node-v26.12.1-win-x64\node.exe --version` and `python -I --version`.
+4. **Tool versions.** Run `java -version`, `node --version` and `python -I --version`, then
+   `where java` and `where node` (the first result must be under `C:\Dev\OM3-research\tooling\`).
+   (Attempt 3: full-path calls were rejected by the allow list; tools are now on PATH.)
 5. **Ghidra headless smoke test.** Write `work\scripts\T0Smoke.java`, a GhidraScript that writes
    to the path given as its first script argument: the program name, its image base, and the
    9 bytes at address `0x60405804` in hex. Run

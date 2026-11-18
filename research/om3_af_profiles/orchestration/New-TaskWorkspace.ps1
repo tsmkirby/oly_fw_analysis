@@ -194,8 +194,10 @@ tools\bin\run-ghidra.cmd -postScript <Script>.java <script args> -log work\out\<
 
 Only use absolute paths, or paths relative to this folder, for script arguments.
 
-Node: ``$node``. OM-Emu checkout argument: ``om-emu``. ``OM_EMU_NVRAM`` is set to ``off``.
-Python: ``python -I`` (bytecode writing is disabled).
+Call tools **by name**, not by full path: ``node`` (the pinned $node is first on PATH),
+``java`` (the pinned JDK), ``python -I`` (bytecode writing is disabled). The allow list matches
+command names; full paths are rejected. OM-Emu checkout argument: ``om-emu``.
+``OM_EMU_NVRAM`` is set to ``off``.
 "@
 Set-Content -Encoding utf8 "$ws\TASK.md" $taskMd
 
