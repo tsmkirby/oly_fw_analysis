@@ -8,8 +8,9 @@ Last updated: 2026-11-17 (Phase 1 preparation).
 
 ## 1. Continuation point
 
-- **Now:** T3i is running. It closes the last gaps in the AF-ON zone row: help list, C4 crash, row label,
-  page 28, and exact per-key assertions.
+- **Now:** T3j is running. It reruns the acceptance as a table-driven run with an exact assertion on every
+  key. This is the last open item before the AF-ON zone row counts as a complete emulator prototype.
+  - T3i (accepted with corrections): the functional acceptance of the zone row is confirmed.
   - T3h (accepted with corrections): the ten zone faces render in the AF-ON chooser, commit to the RAM
     profile, and leave the stores byte-identical to the stock control's.
   - T3g (accepted with corrections): the AF-ON row opens a ten-slot chooser and commits zone values to
@@ -86,7 +87,8 @@ The autonomous programme ends at either of these:
 | T3f | Editor binding of its own: trace `0x611a01e8` (second word → editor → committed UI ID); commit `0x3D6F`; zone list; acceptance | **Accepted with corrections.** First own-value commit, `(0x3D6F, 1)` into the RAM byte (EMULATOR-ONLY, priority chooser). The binding array is at `0x615c540c` (416 records, section 7). The zone chooser is not yet shown | [decision](tasks/T3f-afon-editor-binding/decision.md) |
 | T3g | Ten-zone chooser: descriptor decoding; UI-238 descriptor clone; acceptance if zones commit | **Accepted with corrections.** The ten-slot chooser commits zone values to RAM. Partial acceptance passed, including byte-identical stores. The faces are wrong (two priority strings, otherwise blank) | [decision](tasks/T3g-afon-zone-chooser/decision.md) |
 | T3h | Trace the chooser's face source; render the ten zone faces; complete acceptance (assertions at every step; `*_ORIGINALLY` getter values) | **Accepted with corrections.** Face table at `0x6037bedc`; the ten zone faces render and commit; stores byte-identical. Acceptance partial: assertions, row label, page 28, and the C4 crash (help-list overrun) | [decision](tasks/T3h-afon-zone-faces/decision.md) |
-| T3i | Ten-record help list; isolate the C4 crash; restore the row label; page 28 by reference construction; complete acceptance with exact per-key assertions | Running | [tasks/T3i-afon-zone-acceptance](tasks/T3i-afon-zone-acceptance/brief.md) |
+| T3i | Ten-record help list; isolate the C4 crash; restore the row label; page 28 by reference construction; complete acceptance with exact per-key assertions | **Accepted with corrections.** Functional acceptance confirmed: label, help, exact commits 2/9, cancel from C4, page 28, identical stores. The C4 crash did not reproduce. Per-key assertions still open | [decision](tasks/T3i-afon-zone-acceptance/decision.md) |
+| T3j | Table-driven acceptance, exact assertion on every key; T3i configuration unchanged | Running | [tasks/T3j-afon-acceptance-assertions](tasks/T3j-afon-acceptance-assertions/brief.md) |
 | T4 (planned) | Packaging: placement of the binding array (about 10 KB), the action table and section-7 redirects (installer vs section edit), and the native value routing | After T3g | T3f decision | [tasks/T3c-afon-editor-routing](tasks/T3c-afon-editor-routing/brief.md) |
 | T3b | AF-ON target-position editor routing | Queued after T3c (uses T3c's R2 measurement) | AFON-MENU-RESEARCH §9 |
 | — | Beyond T3: persistence, display, hook point (Q4), acceptance matrix | Planned by Opus as results arrive | §2 |
@@ -269,6 +271,7 @@ ACL or label operation on any tree containing a junction; the scripts check for 
 | 2026-11-18 | T3f accepted with corrections; it made the first own-value commit. T3g briefed. T4 (packaging) is planned. | Opus | T3f decision.md |
 | 2026-11-18 | T3g accepted with corrections. The ten-slot zone commit works, but the acceptance is partial and the faces are wrong. T3h briefed. | Opus | T3g decision.md |
 | 2026-11-18 | T3h accepted with corrections: the ten zone faces render. The acceptance is still partial (assertions, label, page 28, C4 crash). T3i briefed to close it. | Opus | T3h decision.md |
+| 2026-11-18 | T3i accepted with corrections: the functional acceptance is confirmed. Per-key assertions were raised for the third time, so T3j is a narrow, table-driven acceptance task with no configuration change. | Opus | T3i decision.md |
 
 ## 12. Session resumption checklist (Opus)
 
