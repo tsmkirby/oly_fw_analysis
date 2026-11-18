@@ -68,7 +68,7 @@ The autonomous programme ends at either of these:
 | T2 | Ownership proof for unclaimed cells `0x5b82` / `0x5b52` | **Closed: UNRESOLVED** (two Sol rejections; escalated) | [decision](tasks/T2-cell-ownership/decision.md) |
 | T2b | Close Sol's open items for `0x5b82` | **Closed: UNRESOLVED** (two Sol rejections; storage escalated, Q7) | [decision](tasks/T2b-cell-ownership-gaps/decision.md) |
 | T3a | AF-ON zone row on page 27, RAM-only profile (OM-Emu) | **Closed: BLOCKED** (row drawn; no editor opens; two Sol rejections) | [decision](tasks/T3a-afon-zone-row/decision.md) |
-| T3c | Route the zone row to a stock editor: measure the editor dispatch and pages 28/29, then prototype R1 | Running | [tasks/T3c-afon-editor-routing](tasks/T3c-afon-editor-routing/brief.md) |
+| T3c | Route the zone row to a stock editor: measure the editor dispatch and pages 28/29, then prototype R1 | Correction round. Run 1 rejected by Sol: decision point not found, `FUN_611c7894` misread. Pages 28/29 are dead UI on OM-3. The round runs isolated experiments: setting ID vs text option list. | [tasks/T3c-afon-editor-routing](tasks/T3c-afon-editor-routing/brief.md) |
 | T3b | AF-ON target-position editor routing | Queued after T3c (uses T3c's R2 measurement) | AFON-MENU-RESEARCH §9 |
 | — | Beyond T3: persistence, display, hook point (Q4), acceptance matrix | Planned by Opus as results arrive | §2 |
 | — | CPU3 request/loader port | Deferred; regression only | AFON-MENU-RESEARCH §9 item 5 |
@@ -234,6 +234,7 @@ ACL or label operation on any tree containing a junction; the scripts check for 
 | 2026-11-18 | Concurrent Grok runs: one lock window per batch, a separate Low-labelled agent home per task | Opus | `orchestration\Invoke-Grok.ps1` |
 | 2026-11-18 | Sol rejected the first runs of T2b and T3a; one correction round each. T2b: trace the open setter sources. T3a: measure page 28's editor and route the new row to it (at most four experiments, then BLOCKED). | Opus | brief §7 of each |
 | 2026-11-18 | Both correction rounds rejected. T2b is closed as UNRESOLVED, and storage is escalated to the owner in writing (Q7). T3a is closed as BLOCKED. T3c is a different approach: measure the stock editor dispatch and pages 28/29, then prototype the row→editor route (R1). | Opus | T2b/T3a decision.md |
+| 2026-11-18 | Sol rejected the first T3c run. Correction round: isolated experiments. E1 is row 2154 copied with only the ID changed. E2 is a text zone list built from the stock zone-name strings, because the stock chooser rows use text options and the dead page-28 rows use images. | Opus | T3c brief §7 |
 
 ## 12. Session resumption checklist (Opus)
 

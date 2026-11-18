@@ -115,3 +115,70 @@ records), the scripts, the JSONL logs and the screenshots.
 - The AF-ON button behaviour.
 - Any change to AF Home behaviour.
 - Any hardware step.
+
+## 7. Correction round (Opus, after Sol's review `run-20261118-073208-review`: REJECT)
+
+Your previous work is in `work\`, and Sol's review is `audit\previous-review.md`. Do not start over. Keep
+every earlier file, and give every new script and output a new name (suffix `-c1`, `-c2`, and so on).
+
+**Opus's observation.** The bytes in `inputs\00_0100_50000020.decoded.bin` show the following:
+
+| Row | Row kind | Options | Option-record kind | Alternate list | OK opens a chooser |
+|---|---|---|---|---|---|
+| Stock row 2154 at `0x6158dc44` | 12 (image label `0x06b1`) | `0x6158ba04` (2 records) | **4** (text labels `0x127b` and `0x124f`) | null | yes |
+| Page 28's rows, and our row | 4 (text label `0x0DD2`) | `0x6158ba1c` (10 records) | **12** (images) | `0x6158ba1c` | no |
+
+None of the four prototypes used a **text** option list. They were cumulative and never isolated one
+change. The correction round therefore runs isolated experiments, each changing **one** thing against a
+stated baseline. At most **four** experiments, each with its own script:
+
+1. **E1, the setting ID only.** Make the new row a byte-exact copy of row 2154's 36 bytes, with only the
+   setting ID changed to `0x3D6F`. Keep the existing value hooks and redirects. Then check:
+   - Does OK open the two-option chooser?
+   - Is the setter called for `0x3D6F` on confirm, and not on cancel?
+   - Does the RAM byte change, and do 2154 and 2155 stay untouched?
+2. **If E1 opens a chooser, E2 tests a text zone list.** Build a new option list in the owned section-1
+   tail as overlay bytes: kind-4 records with the zone values of `0x6158ba1c` and **text** labels.
+   - Take the labels from the stock zone-name strings, for example the "AF Target Mode Settings"
+     checklist (group 364: All, Single, Cross, Mid, Large, C1, C2). Give each label's text ID and source
+     record.
+   - Only values that have a stock text label may be included. List any value that is left out.
+   - Point the E1 row at the new list, with its count. Then test:
+     - Does the chooser show those options, with readable text?
+     - Does confirm store the chosen value in the RAM byte?
+     - Does cancel leave it unchanged?
+3. **If E1 does not open a chooser, E3 tests a duplicate of the stock row.** Add a third row that is a
+   byte-exact copy of row 2154, including setting ID 2154. Does OK on that duplicate open the chooser?
+   - If it does, the setting ID is what decides. Find what the viewer needs for an ID: the value
+     descriptor, the mapped getter, the editor-descriptor bucket, or the registry, and compare 2154
+     with `0x3D6F` for each.
+   - If it does not, the row position or the provider decides.
+4. **E4** is free, to test the strongest remaining explanation. State that explanation first.
+
+For each experiment, record a snapshot immediately before and immediately after OK, and every settings
+write during OK (a write trace on the setter and on the store routines). Separate four things in the logs:
+row refresh, chooser construction, input focus, and commit.
+
+**Decision point (Sol's correction 1).** Using the E1–E3 traces, locate the first function where the
+paths for 2154 and `0x3D6F` diverge after OK. Give the values at that point for 2154, 2155, C-AF Area and
+`0x3D6F`.
+
+**If E2 works,** run the acceptance in §4, with the menu-entry pair in `0x1dd1` compared against the
+control at the same step.
+
+**Text corrections** (Sol's corrections 2–4 and 6):
+- Withdraw the reading of `FUN_611c7894` as an editor; it is a 26-byte buffer copy.
+- Turn the statements that a route is absent and that nothing was written into statements bounded by
+  what was searched and what was read back.
+- In result §9(2), name the specific chooser or refresh path (`FUN_610cdebf` → `FUN_610cdf05` →
+  `FUN_610e2536`), not the whole `0x610e` family.
+- Write labelling errata for each modified-session log and descriptor-link write, and keep observation
+  hooks separate from behaviour-changing hooks.
+
+**Command records (Sol's correction 5; required this time).**
+- First write `work\scripts\run_logged.mjs`. It takes an index `NN` and a command line, spawns the
+  command with `child_process.spawnSync` (no shell), and writes `work\out\cmd\NN.cmd.txt` (the command
+  line and start time), `NN.out`, `NN.err` and `NN.exit` (the real exit status and signal).
+- Run **every** later command as `node26 work\scripts\run_logged.mjs NN <program> <args...>`.
+- For the earlier runs, state that their output records are incomplete. Do not reconstruct them.
+- Refresh the manifest last, through the same wrapper.
