@@ -1,0 +1,15 @@
+THIRD 010000006f3d000000000000080000003d0e000000000000
+CHANGE third record second word 0x1e3 -> 0x0e3d
+2154-after TABLE [{'table': '0x6031ea00', 'count': 3, 'obj': '0x6247a270'}]
+  cmp D0 2154 D1 2154 A2 0x6031ea00 010000006a0800000000000008000000e301000000000000
+2155-after TABLE [{'table': '0x6031ea00', 'count': 3, 'obj': '0x6247a270'}]
+  cmp D0 2154 D1 2155 A2 0x6031ea00 010000006a0800000000000008000000e301000000000000
+  cmp D0 2155 D1 2155 A2 0x6031ea18 010000006b0800000000000008000000e401000000000000
+3d6f-after TABLE [{'table': '0x6031ea00', 'count': 3, 'obj': '0x6247a270'}]
+  cmp D0 2154 D1 15727 A2 0x6031ea00 010000006a0800000000000008000000e301000000000000
+  cmp D0 2155 D1 15727 A2 0x6031ea18 010000006b0800000000000008000000e401000000000000
+  cmp D0 15727 D1 15727 A2 0x6031ea30 010000006f3d000000000000080000003d0e000000000000
+STEP {"step": "3d6f-after", "highlight": "@A02F@ Priority", "error": null, "texts": ["@A066@ Priority", "@A066@ Priority", "@A02F@ Priority", "@A02C@@A065@AF Button"]}
+STEP {"step": "3d6f-cancel", "highlight": "@A02F@ Priority", "error": null, "texts": ["@A066@ Priority", "@A066@ Priority", "@A02F@ Priority", "@A02C@@A065@AF Button"]}
+STEP {"step": "3d6f-confirm", "highlight": "@A02F@ Priority", "error": null, "texts": ["@A066@ Priority", "@A066@ Priority", "@A02F@ Priority", "@A02C@@A065@AF Button"]}
+STEP {"step": "done", "highlight": null, "error": null, "questions": {"okOpensChooser": false, "confirmCallsSetterFor3d6f": "see 3d6f-confirm setters", "ramByteChanges": false, "cancelLeavesRam": true, "stock90a1Untouched": true}, "confirmProfile": 0, "cancelProfile": 0, "confirm90a1": [1, 1], "chooserOpen": false, "profileChanged": false, "texts": null}

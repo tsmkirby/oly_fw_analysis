@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "C:\Dev\OM3-tasks\T3e-afon-action-record\ws\work\scripts\static_second_words_e1.py", line 15, in <module>
+    key, ui, sub, handler, first, second, tail = struct.unpack_from("<IHHIII", BIN, o)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: not enough values to unpack (expected 7, got 6)

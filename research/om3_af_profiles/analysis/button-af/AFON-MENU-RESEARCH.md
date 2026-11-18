@@ -977,6 +977,45 @@ or flashable image. Detection-Off handoff success proves routing and target
 restoration under these modeled conditions, not focus acquisition or
 Subject Detect bypass/restoration with a running detection engine.
 
+### How a page-27 row opens its editor (T3a–T3e, 18 November 2026)
+
+These are OM-Emu prototype findings from agent tasks T3a, T3c, T3d and T3e. Each finding was reviewed by
+Codex Sol; details and qualifications are in `tasks/T3*/decision.md`. All changes were made in the
+emulator only.
+
+- **Third row.** A third row draws, and native Down presses reach it. It uses:
+  - UI ID `0x3D6F`, which is outside every UI-map range and absent from the immediate scans;
+  - label `0x0DD2` ("AF Target Mode");
+  - 140 overlay bytes in the section-1 tail, all stock `0xFF`;
+  - four section-7 runtime redirects: the page-27 row pointer and count, and the source record
+    pointer and count. (T3a)
+- **Pages 28 and 29 are dead UI on the OM-3.** Bounded searches found no native route to either page. When
+  built directly (reference construction), OK on their rows opens nothing. (T3a, T3c)
+- **The editor gate is the page-27 action table, not the row data or a registered key.**
+  - OK reaches the `0x900C` handler, which calls `FUN_611a2631`. That compares the provider UI ID with the
+    halfword at record+4 (`0x611a26e1`).
+  - A match returns 4, and the chooser opens through `FUN_610cdebf` → `FUN_610cdf05` → `FUN_610e2536`. No
+    match returns 1, and nothing opens.
+  - Copying stock row 2154 byte-exactly, with a new ID, still fails. (T3c E1)
+  - Mapping the ID to a registered key also fails. (T3d K1)
+- **Action record layout (24 bytes).**
+  - Fields: `+0` match key 1, `+4` UI ID, `+6` 0, `+8` handler 0, `+0xc` 8, `+0x10` second dispatch word,
+    `+0x14` callback 0.
+  - Page 27: `0x6150c514` (2154, `0x1e3`) and `0x6150c52c` (2155, `0x1e4`). C-AF Area: `0x6150c4cc`
+    (2156, `0x1e0`).
+  - The table's only literal pointer is at `0x6150f5f0`, followed by count 2, in **compressed section 7**.
+    (T3d, T3e)
+- **Own record.** A third record for `0x3D6F` in a relocated table (runtime redirect) opens a chooser.
+  However, with the second word `0x1e3` copied from 2154, confirm commits **UI 2154**, not `0x3D6F`. The
+  second word therefore selects the editor and its bound setting. With `0x0e3d`, nothing opens. The
+  conversion in vtable slot `0x611a01e8` is not yet traced. (T3e)
+- **For a final firmware.** A final firmware needs:
+  - a page-27 action record for the AF-ON row, with an editor binding of its own;
+  - the section-7 pointers and counts, changed in the section or redirected by a runtime installer;
+  - value routing for `0x3D6F`.
+
+  The storage choice (PROJECT-STATE Q7) is not a prerequisite for the UI prototype.
+
 ## 9. Next steps (reordered 17 November 2026)
 
 The owner's stock-hardware confirmation (section 1) takes the CPU3 detection
