@@ -1009,8 +1009,22 @@ emulator only.
   However, with the second word `0x1e3` copied from 2154, confirm commits **UI 2154**, not `0x3D6F`. The
   second word therefore selects the editor and its bound setting. With `0x0e3d`, nothing opens. The
   conversion in vtable slot `0x611a01e8` is not yet traced. (T3e)
+- **Editor binding (T3f).** The second word is an editor ID. `FUN_6124f4e5` looks it up in an array of
+  24-byte records (editor ID, `0x3b`, UI ID, `0x42`, a sequential word, 0) at `0x615c540c`, which holds
+  416 records. The array's directory entry is at `0x615cc934`, and both are in compressed section 7.
+  - Editor IDs: `0x1e0` → 2156, `0x1e1` → 2157, `0x1e2` → 2205, `0x1e3` → 2154, `0x1e4` → 2155.
+    `0x1e6` is free.
+  - **First own-value commit (EMULATOR-ONLY).** It used two things together:
+    - a relocated array with a record mapping `0x1e6` to `0x3D6F`;
+    - an editor descriptor for `0x3D6F`, cloned from 2154's and hash-registered.
+
+    With both, OK opens the native chooser, confirm calls the setter with `(0x3D6F, 1)` and the RAM
+    profile byte changes, cancel does not change it, and 2154/2155 are untouched.
+  - The chooser's contents follow the editor descriptor, not the row's option list; the row list only
+    sets the glyph drawn on the row. The ten-zone chooser is not yet shown.
 - **For a final firmware.** A final firmware needs:
-  - a page-27 action record for the AF-ON row, with an editor binding of its own;
+  - a page-27 action record for the AF-ON row, with an editor binding of its own (the array is about
+    10 KB, which needs a placement plan) and a registered editor descriptor;
   - the section-7 pointers and counts, changed in the section or redirected by a runtime installer;
   - value routing for `0x3D6F`.
 

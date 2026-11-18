@@ -1,0 +1,1765 @@
+﻿{
+    "task":  "T3f-afon-editor-binding",
+    "batch":  [
+                  "T3f-afon-editor-binding"
+              ],
+    "agent":  "grok",
+    "model":  "grok-4.7-high",
+    "brief_sha256":  "5ae2bdf30d8750ab90aa9575e06d09be235b61529c0340623fcee922ecd495b3",
+    "command":  "C:\\Dev\\OM3-tasks\\_agent\\cli\\node.exe (Low integrity, via C:\\Dev\\OM3-tasks\\T3f-afon-editor-binding\\launch-20261118-095558.cmd) -p --model grok-4.7-high --output-format json --trust --workspace C:\\Dev\\OM3-tasks\\T3f-afon-editor-binding\\ws \"Read TASK.md and then brief.md in this folder completely, and carry out the brief exactly. Section 0 of the brief overrides everything else. Write only under work. Finish by making sure work/result.md and work/evidence-manifest.json exist.\"",
+    "cursor_sandbox":  false,
+    "started":  "2026-11-18T09:56:52.4667419-05:00",
+    "ended":  "2026-11-18T10:41:47.0475196-05:00",
+    "timed_out":  false,
+    "exit_code":  0,
+    "lock_ok":  true,
+    "lock_output":  "locked 12 targets in 9.5 s; probe failures: 0",
+    "unlock_ok":  true,
+    "unlock_output":  "unlocked; rules that had disappeared while locked: 0; probe failures: 0",
+    "workspace_unchanged":  true,
+    "inputs_unchanged":  true,
+    "harvested":  [
+                      {
+                          "path":  "evidence-manifest.json",
+                          "bytes":  62689,
+                          "sha256":  "97609ce2ffa7f6b94f423c5b7215b32ab0e1360b53df701b6f9bc2aedaf35754",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "result.md",
+                          "bytes":  11746,
+                          "sha256":  "d5ef9b05e30d4385b619304da8201f6e41a51bb06783dcda219a34314bb90bd5",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\binding-directory-f1.txt",
+                          "bytes":  1884,
+                          "sha256":  "1648608f7f17dfd6b4bea0dcb204b9e5123947f60bd64afd01da977906b98ba7",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\binding-groups-f2.txt",
+                          "bytes":  1651,
+                          "sha256":  "ffb8f4452dfb6e5369948a64a10f53bd8adfd47ebb6c5694ebfbde76b775cbc6",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\binding-table-f1.txt",
+                          "bytes":  6599,
+                          "sha256":  "c44a9d30d1be5764f49aaedac8e032f0f21282decefd0cf8d29d239552d376fb",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\binding-tail-f1.txt",
+                          "bytes":  501,
+                          "sha256":  "c1828137b0bb9a264a52297f896aa0ab66ea59ccc93e4195e505eece63e2fcb4",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\binding-window-refs-f1.txt",
+                          "bytes":  6086,
+                          "sha256":  "f48a1e3c6fe5a584c0efb53f787ab74deb7aef4ce9fcd19eb1a8a4f03634c45d",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\binding.md",
+                          "bytes":  4830,
+                          "sha256":  "e567280a60502bf5abc7552123fe6854c811c47dbe8ab425efbafa78d32d5eb4",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\callers-f1.txt",
+                          "bytes":  172,
+                          "sha256":  "0ea677e8c88ce796ffc01444d217aa6ee51cec4da7e82e2dc093d01f1cbf5309",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cells-f1.txt",
+                          "bytes":  19458,
+                          "sha256":  "6a0c8338c7939e871d260471e3c57c7cc9be3b2d414274c7235c828429b4c126",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\descriptors-f1.txt",
+                          "bytes":  445,
+                          "sha256":  "99d73f254085f83f275810ab50fc93b69c90a31bd20781b9f9f713a72f56c921",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\design.md",
+                          "bytes":  5264,
+                          "sha256":  "f2740d6953a804ec9323b500bf93a769f93470db7a02abb2f6dedc09861b2600",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\disasm-01e8-f1.txt",
+                          "bytes":  1478,
+                          "sha256":  "11b94d26000bbbb158d83740a0b61bf8c65dae60025d6f46df82575cac246898",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\disasm-01ee-f1.txt",
+                          "bytes":  1215,
+                          "sha256":  "65ff59814925ccbbe6c06701881f8082b2b8009453d9937f3183cae3773f8e5c",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\disasm-3b1c-f1.txt",
+                          "bytes":  2422,
+                          "sha256":  "807b213dd63bd4b618953f0c31ec87d9d54207c2da4c5261ea05c8209e8edc4a",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\disasm-3bd0-f1.txt",
+                          "bytes":  1237,
+                          "sha256":  "2b28548c36f173be388f998eae28102d1f640be35773e275f0576ab2e10b0df9",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\disasm-3d90-f1.txt",
+                          "bytes":  2250,
+                          "sha256":  "228b24b4912fd6f3fd07cc8f3c0c293dd87cbc490cbb2c0288ae648aef2cebe1",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\disasm-3e70-f1.txt",
+                          "bytes":  1194,
+                          "sha256":  "8f72488115a53508b64244db56d7f62d5b80be0e798127045ded3b3766b64e72",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\disasm-e750-f1.txt",
+                          "bytes":  451,
+                          "sha256":  "490193e3a2ed2c3e41fa1ec35ea9c62e9d6f541ab956c64de31c2490595ef077",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\disasm-f11a-f1.txt",
+                          "bytes":  2184,
+                          "sha256":  "66b748a16afa00336a9c87e02be7d19ad4ff009426eaf926bec44fab6e917f18",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\disasm-f4e5-f1.txt",
+                          "bytes":  1851,
+                          "sha256":  "c190d4d1ecf742fb9d6ce7ac3c5dfdcfa57ed8bde12562c2ade5897182c77d14",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\exp-b1-f1-2154-after.png",
+                          "bytes":  9918,
+                          "sha256":  "8405ee5f169e6c8f5ddcfebf04605d0b6a9ba09f0c06a81cbd7812d3b7f650a0",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\exp-b1-f1-2154-before.png",
+                          "bytes":  9918,
+                          "sha256":  "8405ee5f169e6c8f5ddcfebf04605d0b6a9ba09f0c06a81cbd7812d3b7f650a0",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\exp-b1-f1-2154-cancel.png",
+                          "bytes":  9918,
+                          "sha256":  "8405ee5f169e6c8f5ddcfebf04605d0b6a9ba09f0c06a81cbd7812d3b7f650a0",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\exp-b1-f1-2155-after.png",
+                          "bytes":  9918,
+                          "sha256":  "8405ee5f169e6c8f5ddcfebf04605d0b6a9ba09f0c06a81cbd7812d3b7f650a0",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\exp-b1-f1-2155-before.png",
+                          "bytes":  9918,
+                          "sha256":  "8405ee5f169e6c8f5ddcfebf04605d0b6a9ba09f0c06a81cbd7812d3b7f650a0",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\exp-b1-f1-2155-cancel.png",
+                          "bytes":  9918,
+                          "sha256":  "8405ee5f169e6c8f5ddcfebf04605d0b6a9ba09f0c06a81cbd7812d3b7f650a0",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\exp-b1-f1-3d6f-after.png",
+                          "bytes":  9918,
+                          "sha256":  "8405ee5f169e6c8f5ddcfebf04605d0b6a9ba09f0c06a81cbd7812d3b7f650a0",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\exp-b1-f1-3d6f-before.png",
+                          "bytes":  9918,
+                          "sha256":  "8405ee5f169e6c8f5ddcfebf04605d0b6a9ba09f0c06a81cbd7812d3b7f650a0",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\exp-b1-f1-3d6f-cancel.png",
+                          "bytes":  9918,
+                          "sha256":  "8405ee5f169e6c8f5ddcfebf04605d0b6a9ba09f0c06a81cbd7812d3b7f650a0",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\exp-b1-f1-3d6f-chosen.png",
+                          "bytes":  9918,
+                          "sha256":  "8405ee5f169e6c8f5ddcfebf04605d0b6a9ba09f0c06a81cbd7812d3b7f650a0",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\exp-b1-f1-3d6f-confirm.png",
+                          "bytes":  9918,
+                          "sha256":  "8405ee5f169e6c8f5ddcfebf04605d0b6a9ba09f0c06a81cbd7812d3b7f650a0",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\exp-b1-f1-3d6f-reopen.png",
+                          "bytes":  9918,
+                          "sha256":  "8405ee5f169e6c8f5ddcfebf04605d0b6a9ba09f0c06a81cbd7812d3b7f650a0",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\exp-b1-f1.jsonl",
+                          "bytes":  116241,
+                          "sha256":  "8fcf768be9a2038142225b9e5056423dd271678397a45f506d72c508b9e3fa93",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\exp-b1-f2-2154-after.png",
+                          "bytes":  15551,
+                          "sha256":  "b2b69826bcf5ce521ee62af194056ce3fe97b74728969a8b13dad0fedbe4c457",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\exp-b1-f2-2154-before.png",
+                          "bytes":  9918,
+                          "sha256":  "8405ee5f169e6c8f5ddcfebf04605d0b6a9ba09f0c06a81cbd7812d3b7f650a0",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\exp-b1-f2-2154-cancel.png",
+                          "bytes":  9918,
+                          "sha256":  "8405ee5f169e6c8f5ddcfebf04605d0b6a9ba09f0c06a81cbd7812d3b7f650a0",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\exp-b1-f2-2155-after.png",
+                          "bytes":  16206,
+                          "sha256":  "b7bf9fbc7f5d32fd59ed8812492207a1f0a9c496a6621a2536c0dfb092791717",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\exp-b1-f2-2155-before.png",
+                          "bytes":  9912,
+                          "sha256":  "dd146d186bfed45c5be9d996d9eddcdeff6c88a67cc9ca18ce4a5206be2451d4",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\exp-b1-f2-2155-cancel.png",
+                          "bytes":  9912,
+                          "sha256":  "dd146d186bfed45c5be9d996d9eddcdeff6c88a67cc9ca18ce4a5206be2451d4",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\exp-b1-f2-3d6f-after.png",
+                          "bytes":  9882,
+                          "sha256":  "acc9d755f6593fb8a61328faaefa98e145a8f65f945616c4a32a11001c09578c",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\exp-b1-f2-3d6f-before.png",
+                          "bytes":  9923,
+                          "sha256":  "f13aa25ffc11ac21cabeb28815a7fbe0ad051efc3f1d8a191e434b97e6fc01e7",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\exp-b1-f2-3d6f-cancel.png",
+                          "bytes":  9923,
+                          "sha256":  "f13aa25ffc11ac21cabeb28815a7fbe0ad051efc3f1d8a191e434b97e6fc01e7",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\exp-b1-f2-3d6f-chosen.png",
+                          "bytes":  9882,
+                          "sha256":  "acc9d755f6593fb8a61328faaefa98e145a8f65f945616c4a32a11001c09578c",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\exp-b1-f2-3d6f-confirm.png",
+                          "bytes":  8980,
+                          "sha256":  "742ce75bd549315282c13463c8d012ccfb406daca06f1619c640a907a18924ff",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\exp-b1-f2-3d6f-reopen.png",
+                          "bytes":  9882,
+                          "sha256":  "acc9d755f6593fb8a61328faaefa98e145a8f65f945616c4a32a11001c09578c",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\exp-b1-f2.jsonl",
+                          "bytes":  149170,
+                          "sha256":  "dc1ef0b6248ba349b541d76f0eedf497560e5bf5e833da44b736174ee03cbfd4",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\exp-b2-f1-2154-after.png",
+                          "bytes":  15551,
+                          "sha256":  "b2b69826bcf5ce521ee62af194056ce3fe97b74728969a8b13dad0fedbe4c457",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\exp-b2-f1-2154-before.png",
+                          "bytes":  9517,
+                          "sha256":  "eda867157d5287010d8547a8c4df08aec6ae210f776c3a2d3b4853d6bb48d576",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\exp-b2-f1-2154-cancel.png",
+                          "bytes":  9517,
+                          "sha256":  "eda867157d5287010d8547a8c4df08aec6ae210f776c3a2d3b4853d6bb48d576",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\exp-b2-f1-2155-after.png",
+                          "bytes":  16206,
+                          "sha256":  "b7bf9fbc7f5d32fd59ed8812492207a1f0a9c496a6621a2536c0dfb092791717",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\exp-b2-f1-2155-before.png",
+                          "bytes":  9511,
+                          "sha256":  "c5f691eb4ee63ca0aa355498a637dde55f31ffa2cedd636ef20a031a10ac7652",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\exp-b2-f1-2155-cancel.png",
+                          "bytes":  9511,
+                          "sha256":  "c5f691eb4ee63ca0aa355498a637dde55f31ffa2cedd636ef20a031a10ac7652",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\exp-b2-f1-3d6f-after.png",
+                          "bytes":  12119,
+                          "sha256":  "36a4fced638bbfd85b54ed4ae4d11f0f3984e21a9f4cf327a354eaebe14789a2",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\exp-b2-f1-3d6f-before.png",
+                          "bytes":  9537,
+                          "sha256":  "1b3561ecb7674118c768879830819e3517b4e3263d7df1a42666b115b6b71832",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\exp-b2-f1-3d6f-cancel.png",
+                          "bytes":  9537,
+                          "sha256":  "1b3561ecb7674118c768879830819e3517b4e3263d7df1a42666b115b6b71832",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\exp-b2-f1-3d6f-chosen.png",
+                          "bytes":  15575,
+                          "sha256":  "3095c16324c66df569cea1211137f3ef91af2ad95e5e50aa08be6d1e5535e3a6",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\exp-b2-f1-3d6f-confirm.png",
+                          "bytes":  9779,
+                          "sha256":  "8ab7d0e7a00902e7f1f9baf257ff736542b9fa2ffeb8a7fca3768b9ac49f307f",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\exp-b2-f1-3d6f-reopen.png",
+                          "bytes":  12119,
+                          "sha256":  "36a4fced638bbfd85b54ed4ae4d11f0f3984e21a9f4cf327a354eaebe14789a2",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\exp-b2-f1.jsonl",
+                          "bytes":  144791,
+                          "sha256":  "d1fcce36246ecec11803c40ee5f8205cfd1fd46f1055bd554bbefbefeac90367",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\exp-b3-f1-2154-after.png",
+                          "bytes":  15551,
+                          "sha256":  "b2b69826bcf5ce521ee62af194056ce3fe97b74728969a8b13dad0fedbe4c457",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\exp-b3-f1-2154-before.png",
+                          "bytes":  9264,
+                          "sha256":  "0ef2b4a63dc83595d958ca5fb4f5c1eccbc72a3df2f62afd4203e239e5f2a0d9",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\exp-b3-f1-2154-cancel.png",
+                          "bytes":  9264,
+                          "sha256":  "0ef2b4a63dc83595d958ca5fb4f5c1eccbc72a3df2f62afd4203e239e5f2a0d9",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\exp-b3-f1-2155-after.png",
+                          "bytes":  16206,
+                          "sha256":  "b7bf9fbc7f5d32fd59ed8812492207a1f0a9c496a6621a2536c0dfb092791717",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\exp-b3-f1-2155-before.png",
+                          "bytes":  9257,
+                          "sha256":  "d1efb8cdf510ec7571bdd145dc8326c2fae7d7685b0ad1927c53145da7304c5f",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\exp-b3-f1-2155-cancel.png",
+                          "bytes":  9257,
+                          "sha256":  "d1efb8cdf510ec7571bdd145dc8326c2fae7d7685b0ad1927c53145da7304c5f",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\exp-b3-f1-3d6f-after.png",
+                          "bytes":  12119,
+                          "sha256":  "36a4fced638bbfd85b54ed4ae4d11f0f3984e21a9f4cf327a354eaebe14789a2",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\exp-b3-f1-3d6f-before.png",
+                          "bytes":  9283,
+                          "sha256":  "c3e47f0f5307f9de85fc4a8148cde4106875f6b58d5dbfb3281aa07e2af5b4ac",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\exp-b3-f1-3d6f-cancel.png",
+                          "bytes":  9283,
+                          "sha256":  "c3e47f0f5307f9de85fc4a8148cde4106875f6b58d5dbfb3281aa07e2af5b4ac",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\exp-b3-f1-3d6f-chosen.png",
+                          "bytes":  15575,
+                          "sha256":  "3095c16324c66df569cea1211137f3ef91af2ad95e5e50aa08be6d1e5535e3a6",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\exp-b3-f1-3d6f-confirm.png",
+                          "bytes":  8980,
+                          "sha256":  "742ce75bd549315282c13463c8d012ccfb406daca06f1619c640a907a18924ff",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\exp-b3-f1-3d6f-reopen.png",
+                          "bytes":  12119,
+                          "sha256":  "36a4fced638bbfd85b54ed4ae4d11f0f3984e21a9f4cf327a354eaebe14789a2",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\exp-b3-f1.jsonl",
+                          "bytes":  145201,
+                          "sha256":  "3dc3c711485250f5a8a35c70d8798d9557e0bfb1ceff1265d24e36be911551c1",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\exp-b4-f1-2154-after.png",
+                          "bytes":  15551,
+                          "sha256":  "b2b69826bcf5ce521ee62af194056ce3fe97b74728969a8b13dad0fedbe4c457",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\exp-b4-f1-2154-before.png",
+                          "bytes":  9918,
+                          "sha256":  "8405ee5f169e6c8f5ddcfebf04605d0b6a9ba09f0c06a81cbd7812d3b7f650a0",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\exp-b4-f1-2154-cancel.png",
+                          "bytes":  9918,
+                          "sha256":  "8405ee5f169e6c8f5ddcfebf04605d0b6a9ba09f0c06a81cbd7812d3b7f650a0",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\exp-b4-f1-2155-after.png",
+                          "bytes":  16206,
+                          "sha256":  "b7bf9fbc7f5d32fd59ed8812492207a1f0a9c496a6621a2536c0dfb092791717",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\exp-b4-f1-2155-before.png",
+                          "bytes":  9912,
+                          "sha256":  "dd146d186bfed45c5be9d996d9eddcdeff6c88a67cc9ca18ce4a5206be2451d4",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\exp-b4-f1-2155-cancel.png",
+                          "bytes":  9912,
+                          "sha256":  "dd146d186bfed45c5be9d996d9eddcdeff6c88a67cc9ca18ce4a5206be2451d4",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\exp-b4-f1-3d6f-after.png",
+                          "bytes":  12119,
+                          "sha256":  "36a4fced638bbfd85b54ed4ae4d11f0f3984e21a9f4cf327a354eaebe14789a2",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\exp-b4-f1-3d6f-before.png",
+                          "bytes":  9923,
+                          "sha256":  "f13aa25ffc11ac21cabeb28815a7fbe0ad051efc3f1d8a191e434b97e6fc01e7",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\exp-b4-f1-3d6f-cancel.png",
+                          "bytes":  9923,
+                          "sha256":  "f13aa25ffc11ac21cabeb28815a7fbe0ad051efc3f1d8a191e434b97e6fc01e7",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\exp-b4-f1-3d6f-chosen.png",
+                          "bytes":  15575,
+                          "sha256":  "3095c16324c66df569cea1211137f3ef91af2ad95e5e50aa08be6d1e5535e3a6",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\exp-b4-f1-3d6f-confirm.png",
+                          "bytes":  10078,
+                          "sha256":  "d35dc1a67b2a59e9d529e90cc763e4fba3ec3b21130fbce42ce7d4893ffca3cd",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\exp-b4-f1-3d6f-reopen.png",
+                          "bytes":  12119,
+                          "sha256":  "36a4fced638bbfd85b54ed4ae4d11f0f3984e21a9f4cf327a354eaebe14789a2",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\exp-b4-f1.jsonl",
+                          "bytes":  145283,
+                          "sha256":  "30da8f4eaa7faf13175d60246569f565c9bcecf5340872c2695e33045fda30fa",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\ghidra-disasm-f1.log",
+                          "bytes":  5179,
+                          "sha256":  "7c03a0c02779b550062cd5a0eb78abb7f1dbe7c728c15f9c1e4d220636e9b7e8",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\ghidra-lookup-f1.log",
+                          "bytes":  4807,
+                          "sha256":  "c3f90c683c2d6d66163601321479a444f123b821cf68fc99910e5d12e6210114",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\ghidra-tail-f1.log",
+                          "bytes":  4851,
+                          "sha256":  "ce95a89acf149cb0f683088abfb9a2434e6e42e665b220bf861fcadc1dda88b0",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\ghidra-xrefs-f1.log",
+                          "bytes":  4732,
+                          "sha256":  "8feb9de803a6362d152496ede4a4cedb376e51573947d07146b7f3d077183227",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\listing-check-f1.txt",
+                          "bytes":  558,
+                          "sha256":  "a8b37f3b58b81aa430318e2e3e0117cd690418f1d2e26447d78fedba0ef8ef4e",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\overlay-b1-f1.csv",
+                          "bytes":  713358,
+                          "sha256":  "e78dfa7aff13b59efcaa42b18b7d86352561d9d4127475d33ce0eb590a2a4a7f",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\overlay-b1-f2.csv",
+                          "bytes":  13110,
+                          "sha256":  "f8924674702e8386adf40f0db564901be221807a090f8931d22834bb1b755495",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\overlay-b2-f1.csv",
+                          "bytes":  13938,
+                          "sha256":  "1adc900978b79f75f47686d9f034e432420a802b8eee822cb3d73885f55d232a",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\overlay-b3-f1.csv",
+                          "bytes":  14942,
+                          "sha256":  "23b0241ed98de1113748fbb3b84d26627d9837a69b074b55cbbcf64748ad1036",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\overlay-b4-f1.csv",
+                          "bytes":  14330,
+                          "sha256":  "af1356b60bcff8d3a5700bfdeb19e829d86fb81b1e476110f8b511ddb914179f",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\overlay-changed-bytes.csv",
+                          "bytes":  14330,
+                          "sha256":  "af1356b60bcff8d3a5700bfdeb19e829d86fb81b1e476110f8b511ddb914179f",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\probe-ram-f1.jsonl",
+                          "bytes":  929,
+                          "sha256":  "9477c01f85aaff8cddb65054055a6bee1b7d4a80289c9c70be7f9dabe778287a",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\rows-priority-f1.txt",
+                          "bytes":  3548,
+                          "sha256":  "eb2d802834d30c3b0dd1c0781c6bf92ca2ffbb704db6165dd58a3f515e239b7b",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\scan-ids-f1.txt",
+                          "bytes":  12922,
+                          "sha256":  "54ea396d1ec0f1270182998739574fb3cf5ce07a8e0a32f2b59a49fe7f9ca8c7",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\summary-b1-f2.txt",
+                          "bytes":  4079,
+                          "sha256":  "c4f2cf4736df7feb7fca52a4f5b508bf7464849b2775d4c31a715b286a668407",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\summary-b2-f1.txt",
+                          "bytes":  1886,
+                          "sha256":  "de1bdc9a555641fe93ff5e2a779e09f2a98cb6f6a194996bf6b835a441131b7b",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\summary-b4-f1.txt",
+                          "bytes":  2928,
+                          "sha256":  "ce2f40d34f20a8846f08187fcdca8d364ab2d9f1286968b172021690a1ddd606",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\template-f2.txt",
+                          "bytes":  1653,
+                          "sha256":  "c40daf8b864747f6286371b551023f74e5564b8877c4ab083a7256416b1be372",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\trace-bind-f1.jsonl",
+                          "bytes":  3649,
+                          "sha256":  "3d7e9601691b835deec1ca7347df45215e2429b324a770717437b38226d116f7",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\xrefs-binding-f1.txt",
+                          "bytes":  120,
+                          "sha256":  "8a9c643dfe7527791f0d7f9a344aa806eff93ffb27763b32d1e73363135c5cdb",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\zone-text-f1.txt",
+                          "bytes":  2050,
+                          "sha256":  "dee0419b6c40c3cb32fea5188d89eec021d7f628bc10c642d468b2d767941321",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\01.cmd.txt",
+                          "bytes":  260,
+                          "sha256":  "2e518f3c2a16528d59e2f366f1404d6af53fe9ff15640fccceef530dfc03ba70",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\01.err",
+                          "bytes":  0,
+                          "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\01.exit",
+                          "bytes":  331,
+                          "sha256":  "7083a1707aaa8a64a3a0e1e106f6e1d3db79143bcaafa95480b7f7f5133c33fc",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\01.out",
+                          "bytes":  9,
+                          "sha256":  "b26441604894a1a4e4cac96bfb464737575d9b6a2e8b9d3e996283005bd67b37",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\02.cmd.txt",
+                          "bytes":  347,
+                          "sha256":  "b311ed666a8c3ddb0ef5e942a1b3ea54c4ceaff553631e04c977ec60536069ee",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\02.err",
+                          "bytes":  0,
+                          "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\02.exit",
+                          "bytes":  458,
+                          "sha256":  "5f75acf92ee9a470e49826237856ca4ab865be2aa6e92158e32268ab65c596fd",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\02.out",
+                          "bytes":  82,
+                          "sha256":  "a8cf75cca6ce4dafe498c5f552dd37588b0d64a15b09919cb20e959b2fc54e72",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\03.cmd.txt",
+                          "bytes":  334,
+                          "sha256":  "8e4288d86ce48185d87729f3fb7f58b1c827da5955056d31517dc3e19d64c2a3",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\03.err",
+                          "bytes":  0,
+                          "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\03.exit",
+                          "bytes":  450,
+                          "sha256":  "5440eb1098e96bb2f6fc597d552550deb16fd2fdf493e763556b4197f94e61b1",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\03.out",
+                          "bytes":  3706,
+                          "sha256":  "608293a702b07cbe1951e3c38ca0f3e56a875990d0388a0c107c1c717c99e02a",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\04.cmd.txt",
+                          "bytes":  768,
+                          "sha256":  "11bf057b5765b9e7fb4269a80c7c1a4212fcb121ba7875d10f9dcae703a9fa0f",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\04.err",
+                          "bytes":  0,
+                          "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\04.exit",
+                          "bytes":  682,
+                          "sha256":  "07d4137d99e8012c11e74ecde4d73aafdafeb25f446fbd39f5c00b7d7fe9cd86",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\04.out",
+                          "bytes":  4316,
+                          "sha256":  "bfc8ad8fc487f45c40e148db16f62384214af469f2c30f92cdd01ed6cd5df0c4",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\05.cmd.txt",
+                          "bytes":  352,
+                          "sha256":  "8f9e3f21c773301c833c5a09fe6c0a7a98e5c8545548da9ac8788f145854a74d",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\05.err",
+                          "bytes":  0,
+                          "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\05.exit",
+                          "bytes":  462,
+                          "sha256":  "47856f41e0617be74455f22cee6e82fa91d59e3aaa9cbfa1a63cc6e34fe688b1",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\05.out",
+                          "bytes":  6601,
+                          "sha256":  "77f354ea40e04920f30b1c9cebeb30e5eaf02932fc5a3c9f99b900b451f91c48",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\06.cmd.txt",
+                          "bytes":  361,
+                          "sha256":  "880997a265960a3429c2af3f3df31864b7ba97c59f1ce435795b06be2e6ea475",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\06.err",
+                          "bytes":  321,
+                          "sha256":  "bd614318a34afbf22fb0b41142354d4bb51b782b761e1717761ba4c387ed65c5",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\06.exit",
+                          "bytes":  468,
+                          "sha256":  "6a81765bd097957ecf6f982f49d143d5fe0ce8e3b9ce07553a6acbc2f2a482f2",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\06.out",
+                          "bytes":  0,
+                          "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\07.cmd.txt",
+                          "bytes":  361,
+                          "sha256":  "e51c5140232a227e60a3685b9d14390f4dae8bcbbf28be88bee98a77e0d7fd41",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\07.err",
+                          "bytes":  0,
+                          "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\07.exit",
+                          "bytes":  468,
+                          "sha256":  "b0790b9854430a7fd378c1883cd1764bf76f2eba1f11d3ccf8cad493812041ca",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\07.out",
+                          "bytes":  11,
+                          "sha256":  "46508f201953101dd74503f5b59f23fb3473fda3caa0e9873f9eb0899b25c63a",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\08.cmd.txt",
+                          "bytes":  357,
+                          "sha256":  "7ec2ee386fdb895a8da18834c1894e9e3ecdce83664ceefe3a8df2bc20dc8f1b",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\08.err",
+                          "bytes":  0,
+                          "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\08.exit",
+                          "bytes":  465,
+                          "sha256":  "1cab3da5aba494cd5c9167f65d0782b7a5fffc14186fa07d5e93ef24bd9ce390",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\08.out",
+                          "bytes":  10,
+                          "sha256":  "45536a98d7bc31390d9a9b50c682b3f805f1028dd2d74929a748a6721d042498",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\09.cmd.txt",
+                          "bytes":  485,
+                          "sha256":  "f609370e8a20cea337e88b880243bd8772078645a5ac0cefc55b14fcecea9f6d",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\09.err",
+                          "bytes":  0,
+                          "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\09.exit",
+                          "bytes":  531,
+                          "sha256":  "e446d96beffc4f0d6c8c6c8e2dd271aa507ea5a5b58d7166fcdb5027959518d1",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\09.out",
+                          "bytes":  3909,
+                          "sha256":  "2c6041caa74511394015f19392f9d71d526d5ce932ea1a607b51c9542e221e08",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\10.cmd.txt",
+                          "bytes":  345,
+                          "sha256":  "97a6d3762ed73c167d25d2814009667ca231263a529354a9f6770ef27087cb56",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\10.err",
+                          "bytes":  0,
+                          "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\10.exit",
+                          "bytes":  457,
+                          "sha256":  "996357f7652136b26318e14334ac6b8f162b64dc2f8a5ea6ca6554e9316e5433",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\10.out",
+                          "bytes":  174,
+                          "sha256":  "ef5d4a09a7d31b8b07f060834f678e44a2a72eba6175f7a4a046f8d9173755ef",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\11.cmd.txt",
+                          "bytes":  684,
+                          "sha256":  "b1906e5d09c9cec51d527f3de6ea187a901dd90306a936012e3ecb57dd47d8f1",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\11.err",
+                          "bytes":  0,
+                          "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\11.exit",
+                          "bytes":  638,
+                          "sha256":  "4dd5001b13a65d232ec223f53e68453ce5370f4116d18eb0a038fa924d813936",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\11.out",
+                          "bytes":  4028,
+                          "sha256":  "dc1df1479567e1c5618de206c43b3835a6e245ff3e08d19b400ab31bb9a4072c",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\12.cmd.txt",
+                          "bytes":  336,
+                          "sha256":  "79ab76f5f058900de7a5bb6aa1556e4da9b8f65110dbeeb24f809b38bbf8f5d6",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\12.err",
+                          "bytes":  0,
+                          "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\12.exit",
+                          "bytes":  451,
+                          "sha256":  "f32416ba0baf4f9b44f4f92505a9fbb590dbe5754f488d55045cd6bb78a828a9",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\12.out",
+                          "bytes":  10,
+                          "sha256":  "6bf38e01f7e20334223b93f71a306675576b02344839d1ba4960643fc243ee53",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\13.cmd.txt",
+                          "bytes":  462,
+                          "sha256":  "0871af6b30ae9437354c5b2c86c4ad7afc59d153cc5017caf38bf5bc3c48f75e",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\13.err",
+                          "bytes":  0,
+                          "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\13.exit",
+                          "bytes":  547,
+                          "sha256":  "5ad8fbaf6c5d2346a22bad8af2ff288ef8e8dff3d95072f942ae25414d0867e9",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\13.out",
+                          "bytes":  3649,
+                          "sha256":  "3d7e9601691b835deec1ca7347df45215e2429b324a770717437b38226d116f7",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\14.cmd.txt",
+                          "bytes":  358,
+                          "sha256":  "b27a77743cbe66f4025ca085022f5b9609f56c94b4cbc0660c83154173fb77ef",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\14.err",
+                          "bytes":  0,
+                          "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\14.exit",
+                          "bytes":  466,
+                          "sha256":  "8b1550bf6b77eaa6c8db945bc787f48f49773199e2af59e448b1a6de485b68ce",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\14.out",
+                          "bytes":  1886,
+                          "sha256":  "d9a5c6013c37bcfc54f51253ab7836650e247c2c1d3fd25a3fbf25893924ea7c",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\15.cmd.txt",
+                          "bytes":  608,
+                          "sha256":  "e550704912352d572e6e2035294aa27db93972f15cf9cdc9233524151e316a21",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\15.err",
+                          "bytes":  0,
+                          "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\15.exit",
+                          "bytes":  598,
+                          "sha256":  "b095bc35ab90a12b5b6e9d2db80f19601b43f0c554f01a3773f115cd7fcd28e2",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\15.out",
+                          "bytes":  3984,
+                          "sha256":  "f1d99a2dad70d51f29a2a541cd21a1374c4af5576395716c99e83d350d8b9aeb",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\16.cmd.txt",
+                          "bytes":  343,
+                          "sha256":  "d9188c0c4c4c8b0945c3c449e285ead67047bbbb86d958ef681be339694e75b9",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\16.err",
+                          "bytes":  0,
+                          "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\16.exit",
+                          "bytes":  456,
+                          "sha256":  "4189f4b8343d834fb68caba43445f578246a8f8e7859ef289109d2bbc8734497",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\16.out",
+                          "bytes":  503,
+                          "sha256":  "d55b9f74df15f28e875509f04a66c4ec5f4d3d3bf9239baadb17ac1607002180",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\17.cmd.txt",
+                          "bytes":  442,
+                          "sha256":  "c6a165127f6d69be0030ecd27c0d4bed069ea775cb4de86654cb12e1b82676da",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\17.err",
+                          "bytes":  0,
+                          "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\17.exit",
+                          "bytes":  535,
+                          "sha256":  "541d002189c4f20c6237461ec3a60b6f092e6782d6b9dff824c980bc7a466521",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\17.out",
+                          "bytes":  116241,
+                          "sha256":  "8fcf768be9a2038142225b9e5056423dd271678397a45f506d72c508b9e3fa93",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\18.cmd.txt",
+                          "bytes":  456,
+                          "sha256":  "0f2991c03f7d7276c8700b9214035dd9e38f50d5f0a7de826c49b3f9f14a0476",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\18.err",
+                          "bytes":  547,
+                          "sha256":  "fe21141af98ec005f8d64f5f9d71d489c5bf4f195c650e835db04bca38f56616",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\18.exit",
+                          "bytes":  543,
+                          "sha256":  "109f43c6727a521e8f65ae7a9820d5613daa270c74b1ac42489bcd5cdebdc7c6",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\18.out",
+                          "bytes":  0,
+                          "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\19.cmd.txt",
+                          "bytes":  456,
+                          "sha256":  "a852f375af05f743585b9fe706156db4db66c4a4c20a6f2f0271cab68851529f",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\19.err",
+                          "bytes":  0,
+                          "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\19.exit",
+                          "bytes":  543,
+                          "sha256":  "5aa1f7fd5ed25bdc8d9b7c53f1fd07a0a75b54efc75b9dc76ee9181394037d54",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\19.out",
+                          "bytes":  0,
+                          "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\20.cmd.txt",
+                          "bytes":  490,
+                          "sha256":  "3681e6010046e6fc706f5634f7a6561c22b6440a029e2226dc0a2406b5b85034",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\20.err",
+                          "bytes":  0,
+                          "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\20.exit",
+                          "bytes":  415,
+                          "sha256":  "493ccb9b84450bf84cc24aedba67bc28ac9c9afdee89bd61c498503893a81e31",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\20.out",
+                          "bytes":  0,
+                          "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\21.cmd.txt",
+                          "bytes":  442,
+                          "sha256":  "5b90a8c15c98e2538d6a160ad7f8607ee8052f9d73f803f8a82b4b2245b34fb0",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\21.err",
+                          "bytes":  0,
+                          "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\21.exit",
+                          "bytes":  535,
+                          "sha256":  "8aac94c70e2d0c2abd9ba71f342293a035833aa198099d23235c5104bd24daa5",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\21.out",
+                          "bytes":  149170,
+                          "sha256":  "dc1ef0b6248ba349b541d76f0eedf497560e5bf5e833da44b736174ee03cbfd4",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\22.cmd.txt",
+                          "bytes":  346,
+                          "sha256":  "24f667081b3e7d1d35e7a0301a92d16695a5f61371d938a2fdedabab0e6a0485",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\22.err",
+                          "bytes":  0,
+                          "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\22.exit",
+                          "bytes":  458,
+                          "sha256":  "657fc8f5ceffa6900d824fd9bdd39113b792edbe0e8c1c228994fc840eaf24d2",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\22.out",
+                          "bytes":  4079,
+                          "sha256":  "c4f2cf4736df7feb7fca52a4f5b508bf7464849b2775d4c31a715b286a668407",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\23.cmd.txt",
+                          "bytes":  358,
+                          "sha256":  "78f7dfe717715b2913fd7d20fdf62a9b14d51bd6e75eb1ce2c103a2ebe0c862b",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\23.err",
+                          "bytes":  0,
+                          "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\23.exit",
+                          "bytes":  466,
+                          "sha256":  "ed53d9a058d92511d0c693bf7671f66635daa3ea25a39b7fa9817f27a9381f17",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\23.out",
+                          "bytes":  445,
+                          "sha256":  "99d73f254085f83f275810ab50fc93b69c90a31bd20781b9f9f713a72f56c921",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\24.cmd.txt",
+                          "bytes":  490,
+                          "sha256":  "c9b4cbc0e30481036a0098fcc1e9e1d6e5f37609f3c9cda472210d26462672fb",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\24.err",
+                          "bytes":  0,
+                          "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\24.exit",
+                          "bytes":  415,
+                          "sha256":  "3d004b2e551f6b8c113b3831d1b5c872741068e023b718efebcffd52556d10c1",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\24.out",
+                          "bytes":  0,
+                          "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\25.cmd.txt",
+                          "bytes":  442,
+                          "sha256":  "5e2ddaff1cbd4e71e0b87eab90b8e1200ba7e020dd1d45d0688ace9abe8dc78f",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\25.err",
+                          "bytes":  0,
+                          "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\25.exit",
+                          "bytes":  535,
+                          "sha256":  "d964484bfcfacd4f40bf70ff7004d204e6c66896b2ad436fb2c2d31a7a8bec66",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\25.out",
+                          "bytes":  145283,
+                          "sha256":  "30da8f4eaa7faf13175d60246569f565c9bcecf5340872c2695e33045fda30fa",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\26.cmd.txt",
+                          "bytes":  346,
+                          "sha256":  "2db3ecefc08cbe6f1299d0ed59cc79c3ccbde57b6e7051503f40b1a593b9ff54",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\26.err",
+                          "bytes":  0,
+                          "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\26.exit",
+                          "bytes":  458,
+                          "sha256":  "cbb2828a931b00b9c187d9db0dc0c1003c646281a9ee0b50eb95b06903412580",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\26.out",
+                          "bytes":  9,
+                          "sha256":  "7af29ec71db93671edcfd8e3418cf91f1f0265fdf966f907ba4bd4ad10c5c1c5",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\27.cmd.txt",
+                          "bytes":  490,
+                          "sha256":  "0f69b305bf59f6c2a00d08598f3808340bb347518167ccee8b265276fc7f6664",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\27.err",
+                          "bytes":  0,
+                          "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\27.exit",
+                          "bytes":  415,
+                          "sha256":  "011ff1b0920161834c6b216b04ef2fc633145a6cbd948664a0d27c1f700bbb72",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\27.out",
+                          "bytes":  0,
+                          "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\28.cmd.txt",
+                          "bytes":  442,
+                          "sha256":  "6389cccb59d6679f9af41b486fef8f26ca830ac05b608824803817143e6bdd70",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\28.err",
+                          "bytes":  0,
+                          "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\28.exit",
+                          "bytes":  535,
+                          "sha256":  "8c46abf1ffd201f2a38897ec9738092b711a47faee2c18d579bd75222dbcae09",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\28.out",
+                          "bytes":  144791,
+                          "sha256":  "d1fcce36246ecec11803c40ee5f8205cfd1fd46f1055bd554bbefbefeac90367",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\29.cmd.txt",
+                          "bytes":  345,
+                          "sha256":  "753625080e5b032af49e320a9bae4bb1fde282f98c83fc3d7f8141956137985a",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\29.err",
+                          "bytes":  0,
+                          "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\29.exit",
+                          "bytes":  457,
+                          "sha256":  "928ed3166163d524934d67ad0d542d67dd5a579c1b1796843858a1dcb5871fd2",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\29.out",
+                          "bytes":  4,
+                          "sha256":  "9f2a59a60e65fbcd5a3e1b7248adf92890ce3a32b19e43fb4751c2657196de13",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\30.cmd.txt",
+                          "bytes":  349,
+                          "sha256":  "6f293a439be8432610d71ddc01d43d520242f2c612d676aa335709447902f056",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\30.err",
+                          "bytes":  401,
+                          "sha256":  "dab0f2e0f46b5a6c1e678c7704b3b8048aa7e848b49a18d4360f797004403838",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\30.exit",
+                          "bytes":  460,
+                          "sha256":  "4c1c4d53e178c258a880dca7a7b314d5ccf251c77a0405627b8bfd3310e336fb",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\30.out",
+                          "bytes":  0,
+                          "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\31.cmd.txt",
+                          "bytes":  401,
+                          "sha256":  "53cf9b703e18a8ade0926787be6360bcd1dc8cea8eb79dc193161e871f5103c4",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\31.err",
+                          "bytes":  0,
+                          "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\31.exit",
+                          "bytes":  518,
+                          "sha256":  "dd027f911a56ca3b193ce8841c323907f49e956a7824c1d1f1d7370042583f98",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\31.out",
+                          "bytes":  9,
+                          "sha256":  "29e33cf8bb38c47049e9992ad5191c033a1c522769c09d7991dff42b7b5f5070",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\32.cmd.txt",
+                          "bytes":  349,
+                          "sha256":  "a5aec737d116c9f66c9f698a54131656ab5cfc95db881ff2204ded60babb3c14",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\32.err",
+                          "bytes":  0,
+                          "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\32.exit",
+                          "bytes":  460,
+                          "sha256":  "d20b23b7d5a505f9f92b6a05525b3ade4fc2007d277006e3e3106113f3fad3a6",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\32.out",
+                          "bytes":  9,
+                          "sha256":  "3690c7d832640a9339e4176359ee2d8c273b9ef91c545d011c7a6e3fbce6697e",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\33.cmd.txt",
+                          "bytes":  490,
+                          "sha256":  "f1ef62faf28602b3c4ec50d57de881f54f31ef5279c485f4f67c9d0bb96070c0",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\33.err",
+                          "bytes":  0,
+                          "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\33.exit",
+                          "bytes":  415,
+                          "sha256":  "d5b1eae7f970fc54603b96ab1ca146fe4a58ca057122a166af76f0f6da5d518d",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\33.out",
+                          "bytes":  0,
+                          "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\34.cmd.txt",
+                          "bytes":  442,
+                          "sha256":  "9b710f3e6a937279fac4443317da6fa96b13c11c8e9a32b23b2b108cd5694560",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\34.err",
+                          "bytes":  0,
+                          "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\34.exit",
+                          "bytes":  535,
+                          "sha256":  "9b5d41bfa9f6892763fbd079f64ea231198de2442fe9b3fe73e00f1488c093fa",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\34.out",
+                          "bytes":  145201,
+                          "sha256":  "3dc3c711485250f5a8a35c70d8798d9557e0bfb1ceff1265d24e36be911551c1",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\35.cmd.txt",
+                          "bytes":  352,
+                          "sha256":  "054810d79b99d0625632c16728fb737b6eff767a857595a6790bef58d1ff918f",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\35.err",
+                          "bytes":  0,
+                          "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\35.exit",
+                          "bytes":  462,
+                          "sha256":  "50a0c92f3ce3bbea48016e64896c9b5c9a6c1da61a630838ebe37c6b95c6f269",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\35.out",
+                          "bytes":  558,
+                          "sha256":  "a8b37f3b58b81aa430318e2e3e0117cd690418f1d2e26447d78fedba0ef8ef4e",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\36.cmd.txt",
+                          "bytes":  349,
+                          "sha256":  "fd75b0217459aa1aec518bb987d87c02ac1f6e2a60f600765e17b94555f70044",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\36.err",
+                          "bytes":  0,
+                          "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\36.exit",
+                          "bytes":  460,
+                          "sha256":  "3852c1a73209414f28dbb870c159b4f1f42db9ad08fa420586a700f3bd400163",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\36.out",
+                          "bytes":  9,
+                          "sha256":  "017ed163c9cbb14eb124f207910793ae08f8c6908555fe4a5812e55b4de8e6c0",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\37.cmd.txt",
+                          "bytes":  532,
+                          "sha256":  "c1bf63edca5e23d7ef05b3b3bba7627a576e229f74de5cecf595110535d55e1f",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\37.err",
+                          "bytes":  0,
+                          "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\37.exit",
+                          "bytes":  436,
+                          "sha256":  "f8011b9950b520d8fbdb1563b241ebd7b9792e2dee4725887cc0743aa79d858c",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\37.out",
+                          "bytes":  7,
+                          "sha256":  "4378a8e2161f0afbf9a044f245d5730542a8accd2cad21e39e3d163a675a6587",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\38.cmd.txt",
+                          "bytes":  352,
+                          "sha256":  "d7486267bf8f36bc5a768f0af7187f53384d3f2684548b288a4d0c30d36703cc",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\38.err",
+                          "bytes":  0,
+                          "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\38.exit",
+                          "bytes":  462,
+                          "sha256":  "d22e661644048a85d3a364e52f88217864fe12dc87ee741ce96424c3bde62261",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\38.out",
+                          "bytes":  38,
+                          "sha256":  "a7af9046c5c4169cf38812813a4f30d5ad56f64582369fc47eb66966d672ce3f",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "scripts\\check_listings_f1.py",
+                          "bytes":  1358,
+                          "sha256":  "c657a635be90588e05e798d28b4db0369f3213b6b1e3314ceb2530a35c6f6e94",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "scripts\\decode_binding_f1.py",
+                          "bytes":  5147,
+                          "sha256":  "c2856817788a6ef206e80f1708ab92fb514d1983027f1e7b41b1e1e59f41213c",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "scripts\\decode_directory_f1.py",
+                          "bytes":  1371,
+                          "sha256":  "a0dac633c7871f6afd67ebb834eeea2cb4fa9655788c3940e8bd54936cb3171f",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "scripts\\decode_tail_f1.py",
+                          "bytes":  1769,
+                          "sha256":  "6455d713d12983f8d7077082ccd65f23a8d6305cd4c71f287e5bb86f54d5765f",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "scripts\\DisasmRangesF1.java",
+                          "bytes":  1351,
+                          "sha256":  "08cac17f27f077e70cd2a48102d44410124b37cc040663817add5a559d2b7f13",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "scripts\\dump_descriptors_f1.py",
+                          "bytes":  1125,
+                          "sha256":  "e44182a9e7c19ee6af7ee133c73b8783f8466ceae513385050b1a0e009722cc3",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "scripts\\dump_template_f1.py",
+                          "bytes":  1248,
+                          "sha256":  "e7f82613c0333764a2c69afe5882d9012582d019062119a3e3162a3aabd0d6e5",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "scripts\\dump_template_f2.py",
+                          "bytes":  1384,
+                          "sha256":  "2c558128f0e9dc35c2e4fcbc2f79af8833df47236d4b9c6604a730d880c93372",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "scripts\\exp_b1_f1.mjs",
+                          "bytes":  20968,
+                          "sha256":  "e12112c57cee94802edc7d6ab95a202a598e6680b3818114d576421d784ca183",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "scripts\\exp_b1_f2.mjs",
+                          "bytes":  20864,
+                          "sha256":  "b651b815f5c6ab22b227e157a56edd1d4b5e2b6d8bb825d18487826cbff2ece0",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "scripts\\exp_b2_f1.mjs",
+                          "bytes":  22167,
+                          "sha256":  "7c0007d726a11d3c239e3f22f668739f89a67bf58a4692893fc6e473829f9c23",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "scripts\\exp_b3_f1.mjs",
+                          "bytes":  23238,
+                          "sha256":  "908b3cf1c864d870b0bdbc4943a2c5c8279235347aceccf82823cd8a22958ffa",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "scripts\\exp_b4_f1.mjs",
+                          "bytes":  22202,
+                          "sha256":  "0684d1be75ae5e6aaa811f81e96c01be3a3773daea97788c9d2c0ca862bbfb76",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "scripts\\extract_cells_f1.py",
+                          "bytes":  1606,
+                          "sha256":  "892f834c697af5006a26728663d50cc8dc9b1adb99a1dc808a12ecc240f387a4",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "scripts\\find_binding_refs_f1.py",
+                          "bytes":  2937,
+                          "sha256":  "c0e3323aa5b517c11a13ef53bc479370df55478ec4a9859f76ca97c775060341",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "scripts\\find_binding_refs_f2.py",
+                          "bytes":  2480,
+                          "sha256":  "867c7175d5f4a58f8b2135c0789c0e8d13d5a0fb63e0bc56539783861814ba75",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "scripts\\find_callers_f1.py",
+                          "bytes":  817,
+                          "sha256":  "1230dc2ae6b30b47d779380e21ca04044990717fe91974c9c5056c3f4b1d706f",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "scripts\\find_rows_f1.py",
+                          "bytes":  949,
+                          "sha256":  "90d2f09431fe7a6c60818afa030e09d4989b2d7f3e387032bd5d6776253b30a9",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "scripts\\find_window_refs_f1.py",
+                          "bytes":  873,
+                          "sha256":  "fd2fca07eff5c92dad2f655691def6bf6c9689d5003aa75b61c38851359beab2",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "scripts\\find_zone_text_f1.mjs",
+                          "bytes":  1214,
+                          "sha256":  "230857f7e5bc53ec27d96d024b883e146260842f8b787bf506f1a489f64ec1b1",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "scripts\\print_version_f1.py",
+                          "bytes":  32,
+                          "sha256":  "377d481387f5939276dde15093ee643ce61a2205ac79908c23926b8e5a62aa42",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "scripts\\probe_ram_f1.mjs",
+                          "bytes":  2323,
+                          "sha256":  "bff83ac0962ffb059083f1add8e9d7ddfb061432935516771e74396dfa2d9bc7",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "scripts\\run_logged.mjs",
+                          "bytes":  4107,
+                          "sha256":  "5b99f2013e0122479a25fda0453c7a00417ee9e25fae6b99dfd0bd120377c224",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "scripts\\scan_ids_f1.py",
+                          "bytes":  4021,
+                          "sha256":  "7bff25bd6ee942dae482a5fcfd7afac2948a45cb32c49b559464e497da0f35db",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "scripts\\summarise_b1_f2.py",
+                          "bytes":  1581,
+                          "sha256":  "9c5698443dffed8331ed0645fff1026052375593f535f9b63b685cd5da1b3fbe",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "scripts\\summarise_b2_f1.py",
+                          "bytes":  920,
+                          "sha256":  "f74835356edb85191ff9d1daf86d33c98d840ca0d44827b2c50d1c7ed6d03953",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "scripts\\summarise_b4_f1.py",
+                          "bytes":  1243,
+                          "sha256":  "bd08282b71594226e8535c1196011c321b3ba9d45f9fb8c4c1f8e47c75ae717d",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "scripts\\trace_bind_f1.mjs",
+                          "bytes":  10156,
+                          "sha256":  "0687a2179ce1af4a73079e4d6b9a54aa8dac116f9d6641393bd1e4a7e67a6492",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "scripts\\write_manifest_f1.py",
+                          "bytes":  4635,
+                          "sha256":  "0bd04c53bd8b7d44d8c289fbe4cb53bf67de11aa0cb1f05955e8b6ffa9544ed3",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "scripts\\XrefsF1.java",
+                          "bytes":  1061,
+                          "sha256":  "5d3ac076f6e1097d04fff3e4b5c63c153a6ceaa96d3af1a55d473ab539589003",
+                          "copied":  true
+                      }
+                  ],
+    "usage":  {
+                  "inputTokens":  539907,
+                  "outputTokens":  167776,
+                  "cacheReadTokens":  21683584,
+                  "cacheWriteTokens":  0,
+                  "reasoningTokens":  94110
+              },
+    "ok":  true
+}

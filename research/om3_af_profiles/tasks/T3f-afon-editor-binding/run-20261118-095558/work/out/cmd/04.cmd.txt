@@ -1,0 +1,7 @@
+start 2026-11-18T15:03:05.493Z
+requested: tools\bin\run-ghidra.cmd -postScript DisasmRangesF1.java 611a01e8 48 work\out\disasm-01e8-f1.txt 611a01ee 40 work\out\disasm-01ee-f1.txt 6127e750 16 work\out\disasm-e750-f1.txt 61283bd0 40 work\out\disasm-3bd0-f1.txt -log work\out\ghidra-disasm-f1.log
+cmd.exe /d /c tools\bin\run-ghidra.cmd -postScript DisasmRangesF1.java 611a01e8 48 work\out\disasm-01e8-f1.txt 611a01ee 40 work\out\disasm-01ee-f1.txt 6127e750 16 work\out\disasm-e750-f1.txt 61283bd0 40 work\out\disasm-3bd0-f1.txt -log work\out\ghidra-disasm-f1.log
+wrapper_sha256: 5b99f2013e0122479a25fda0453c7a00417ee9e25fae6b99dfd0bd120377c224
+script: DisasmRangesF1.java
+script_sha256: 08cac17f27f077e70cd2a48102d44410124b37cc040663817add5a559d2b7f13
+script_bytes: 1351

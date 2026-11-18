@@ -1,0 +1,10 @@
+file:///C:/Dev/OM3-tasks/T3f-afon-editor-binding/ws/om-emu/emu/src/fw/patch.mjs:173
+  if (!patches.length) throw new PatchRefused('no patches');
+                             ^
+
+PatchRefused: no patches
+    at applyPatches (file:///C:/Dev/OM3-tasks/T3f-afon-editor-binding/ws/om-emu/emu/src/fw/patch.mjs:173:30)
+    at patchedFirmware (file:///C:/Dev/OM3-tasks/T3f-afon-editor-binding/ws/om-emu/emu/checks/lib/env.mjs:64:13)
+    at file:///C:/Dev/OM3-tasks/T3f-afon-editor-binding/ws/work/scripts/probe_ram_f1.mjs:13:12
+
+Node.js v26.12.1

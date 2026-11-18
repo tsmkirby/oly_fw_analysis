@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "C:\Dev\OM3-tasks\T3f-afon-editor-binding\ws\work\scripts\dump_template_f1.py", line 17, in <module>
+    value, kind, text, ptr = struct.unpack_from("<IHI I", rec)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+struct.error: unpack_from requires a buffer of at least 14 bytes for unpacking 14 bytes at offset 0 (actual buffer size is 12)

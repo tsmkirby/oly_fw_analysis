@@ -1,0 +1,16 @@
+{
+  "status": 0,
+  "signal": null,
+  "error": null,
+  "start": "2026-11-18T15:08:51.313Z",
+  "end": "2026-11-18T15:08:55.421Z",
+  "spawn": "cmd.exe /d /c tools\\bin\\run-ghidra.cmd -postScript XrefsF1.java work\\out\\xrefs-binding-f1.txt -log work\\out\\ghidra-xrefs-f1.log",
+  "wrapper_sha256": "5b99f2013e0122479a25fda0453c7a00417ee9e25fae6b99dfd0bd120377c224",
+  "scripts": [
+    {
+      "path": "XrefsF1.java",
+      "sha256": "5d3ac076f6e1097d04fff3e4b5c63c153a6ceaa96d3af1a55d473ab539589003",
+      "bytes": 1061
+    }
+  ]
+}

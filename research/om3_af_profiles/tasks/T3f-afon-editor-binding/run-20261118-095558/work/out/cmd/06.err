@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "C:\Dev\OM3-tasks\T3f-afon-editor-binding\ws\work\scripts\find_binding_refs_f1.py", line 50, in <module>
+    ident, z, a, ui, b, idx, tail = struct.unpack_from("<HHI III", BIN, o)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: not enough values to unpack (expected 7, got 6)
