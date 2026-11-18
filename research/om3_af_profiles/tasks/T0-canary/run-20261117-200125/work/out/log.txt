@@ -1,0 +1,305 @@
+T0-canary command log
+This file was written after steps 1–6 had finished. Each entry below is a command that had already completed. No command is recorded here before it ran. Step 7 hashing commands are recorded in work\result.md with their outputs. This file is hashed after it is sealed, and that hash is not written back into this file.
+
+Shell commands were started from C:\Dev\OM3-tasks\T0-canary\ws. The shell tool merged the program's stdout and stderr into one command-output block. For each shell command that the tool accepted, it also reported that the command ran outside the sandbox because it matched the user's command allowlist. That note is copied on each accepted shell entry. Elapsed times are the tool's "Command completed in" values.
+
+Steps 2, 3, and the seven step-4 commands were issued in one batch. The step 6 attempts were issued in one batch. Each command ran once.
+
+===== 1 step-1 =====
+command: Write work\out\hello.txt contents canary
+exit_code: none (file tool; no process exit code)
+output:
+Wrote contents to C:\Dev\OM3-tasks\T0-canary\ws\work\out\hello.txt
+===== end =====
+
+===== 2 step-2 =====
+command: whoami /groups
+exit_code: 0
+output:
+GROUP INFORMATION
+-----------------
+
+Group Name                                                    Type             SID                                                                                                          Attributes                                        
+============================================================= ================ ============================================================================================================ ==================================================
+Mandatory Label\Low Mandatory Level                           Label            S-1-16-4096                                                                                                                                                    
+Everyone                                                      Well-known group S-1-1-0                                                                                                      Mandatory group, Enabled by default, Enabled group
+NT AUTHORITY\Local account and member of Administrators group Well-known group S-1-5-114                                                                                                    Group used for deny only                          
+BUILTIN\Administrators                                        Alias            S-1-5-32-544                                                                                                 Group used for deny only                          
+BUILTIN\Users                                                 Alias            S-1-5-32-545                                                                                                 Mandatory group, Enabled by default, Enabled group
+NT AUTHORITY\INTERACTIVE                                      Well-known group S-1-5-4                                                                                                      Mandatory group, Enabled by default, Enabled group
+CONSOLE LOGON                                                 Well-known group S-1-2-1                                                                                                      Mandatory group, Enabled by default, Enabled group
+NT AUTHORITY\Authenticated Users                              Well-known group S-1-5-11                                                                                                     Mandatory group, Enabled by default, Enabled group
+NT AUTHORITY\This Organization                                Well-known group S-1-5-15                                                                                                     Mandatory group, Enabled by default, Enabled group
+MicrosoftAccount\[redacted-email]                           User             [redacted-sid] Mandatory group, Enabled by default, Enabled group
+NT AUTHORITY\Local account                                    Well-known group S-1-5-113                                                                                                    Mandatory group, Enabled by default, Enabled group
+LOCAL                                                         Well-known group S-1-2-0                                                                                                      Mandatory group, Enabled by default, Enabled group
+NT AUTHORITY\Cloud Account Authentication                     Well-known group S-1-5-64-36                                                                                                  Mandatory group, Enabled by default, Enabled group
+tool_note: Command completed in 530 ms. Current directory: C:\Dev\OM3-tasks\T0-canary\ws. This command ran outside the sandbox (no restrictions) because it matched the user's command allowlist.
+===== end =====
+
+===== 3 step-3 =====
+command: python -I -c "import hashlib,sys;[print(hashlib.sha256(open(p,'rb').read()).hexdigest(),p) for p in sys.argv[1:]]" ref\PROJECT-STATE.md ref\analysis\button-af\FEATURE-SPEC.md inputs\00_0100_50000020.decoded.bin
+exit_code: 0
+output:
+542f75d5ec4eb9a7fc454254870a95b682bc9096a85de3ab8df15d0fac503b43 ref\PROJECT-STATE.md
+f233815f1bb77246c8484f69f7a53e5c80837f6b87d22d2348ee41322afd2bdc ref\analysis\button-af\FEATURE-SPEC.md
+5e8d376e9111a44ac0352f26030d7c1b17026d42c45f3600cfa02a0e8c5b7d59 inputs\00_0100_50000020.decoded.bin
+tool_note: Command completed in 590 ms. Current directory: C:\Dev\OM3-tasks\T0-canary\ws. This command ran outside the sandbox (no restrictions) because it matched the user's command allowlist.
+===== end =====
+
+===== 4 step-4-java =====
+command: java -version
+exit_code: 0
+output:
+openjdk version "25.0.5" 2026-10-20 LTS
+OpenJDK Runtime Environment Temurin-25.0.5+8 (build 25.0.5+8-LTS)
+OpenJDK 64-Bit Server VM Temurin-25.0.5+8 (build 25.0.5+8-LTS, mixed mode, sharing)
+tool_note: Command completed in 565 ms. Current directory: C:\Dev\OM3-tasks\T0-canary\ws. This command ran outside the sandbox (no restrictions) because it matched the user's command allowlist.
+===== end =====
+
+===== 5 step-4-node26 =====
+command: node26 --version
+exit_code: 0
+output:
+v26.12.1
+tool_note: Command completed in 597 ms. Current directory: C:\Dev\OM3-tasks\T0-canary\ws. This command ran outside the sandbox (no restrictions) because it matched the user's command allowlist.
+===== end =====
+
+===== 6 step-4-python =====
+command: python -I --version
+exit_code: 0
+output:
+Python 3.12.7
+tool_note: Command completed in 555 ms. Current directory: C:\Dev\OM3-tasks\T0-canary\ws. This command ran outside the sandbox (no restrictions) because it matched the user's command allowlist.
+===== end =====
+
+===== 7 step-4-where-java =====
+command: where.exe java
+exit_code: 0
+output:
+C:\Dev\OM3-research\tooling\jdk-25.0.5+8\bin\java.exe
+tool_note: Command completed in 602 ms. Current directory: C:\Dev\OM3-tasks\T0-canary\ws. This command ran outside the sandbox (no restrictions) because it matched the user's command allowlist.
+===== end =====
+
+===== 8 step-4-where-node26 =====
+command: where.exe node26
+exit_code: 0
+output:
+C:\Dev\OM3-tasks\T0-canary\ws\tools\bin\node26.cmd
+tool_note: Command completed in 609 ms. Current directory: C:\Dev\OM3-tasks\T0-canary\ws. This command ran outside the sandbox (no restrictions) because it matched the user's command allowlist.
+===== end =====
+
+===== 9 step-4-where-python =====
+command: where.exe python
+exit_code: 0
+output:
+C:\Users\tsmki\AppData\Local\Programs\Python\Python312\python.exe
+C:\Users\tsmki\AppData\Local\Programs\Python\Python310\python.exe
+C:\Users\tsmki\AppData\Local\Microsoft\WindowsApps\python.exe
+tool_note: Command completed in 579 ms. Current directory: C:\Dev\OM3-tasks\T0-canary\ws. This command ran outside the sandbox (no restrictions) because it matched the user's command allowlist.
+===== end =====
+
+===== 10 step-4-getcommand =====
+command: Get-Command java,node26,python | Format-List Name,Source
+exit_code: 0
+output:
+
+
+Name   : java.exe
+Source : C:\Dev\OM3-research\tooling\jdk-25.0.5+8\bin\java.exe
+
+Name   : node26.cmd
+Source : C:\Dev\OM3-tasks\T0-canary\ws\tools\bin\node26.cmd
+
+Name   : python.exe
+Source : C:\Users\tsmki\AppData\Local\Programs\Python\Python312\python.exe
+
+
+
+tool_note: Command completed in 550 ms. Current directory: C:\Dev\OM3-tasks\T0-canary\ws. This command ran outside the sandbox (no restrictions) because it matched the user's command allowlist.
+===== end =====
+
+===== 11 step-5-script =====
+command: Write work\scripts\T0Smoke.java
+exit_code: none (file tool; no process exit code)
+output:
+Wrote contents to C:\Dev\OM3-tasks\T0-canary\ws\work\scripts\T0Smoke.java
+===== end =====
+
+===== 12 step-5-ghidra =====
+command: tools\bin\run-ghidra.cmd -postScript T0Smoke.java C:\Dev\OM3-tasks\T0-canary\ws\work\out\ghidra-smoke.txt -log C:\Dev\OM3-tasks\T0-canary\ws\work\out\ghidra-smoke.log
+exit_code: 0
+output:
+INFO  Using log config file: jar:file:/C:/Dev/OM3-research/tooling/ghidra_12.2_PUBLIC/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml (LoggingInitialization)  
+INFO  Using log file: C:\Dev\OM3-tasks\T0-canary\ws\work\out\ghidra-smoke.log (LoggingInitialization)  
+INFO  Loading user preferences: C:\Dev\OM3-tasks\T0-canary\ws\state\ghidra-user\settings\tsmki-ghidra\ghidra_12.2_PUBLIC\preferences (Preferences)  
+INFO  Searching for classes... (ClassSearcher)  
+INFO  Class search complete (619 ms) (ClassSearcher)  
+INFO  Initializing SSL Context (DefaultSSLContextInitializer)  
+INFO  Initializing Random Number Generator... (SecureRandomFactory)  
+INFO  Random Number Generator initialization complete: SHA1PRNG (SecureRandomFactory)  
+WARN  OS Truststore load failed: java.security.KeyStoreException: error 5, Access is denied.
+ (DefaultTrustManagerFactory)  
+INFO  Loaded 118 trusted CA certificates from the Java default trust store. (DefaultTrustManagerFactory)  
+INFO  Starting cache cleanup: C:\Dev\OM3-tasks\T0-canary\ws\state\ghidra-user\cache\tsmki-ghidra\fscache2 (FileCacheMaintenanceDaemon)  
+INFO  Finished cache cleanup, estimated storage used: 0 (FileCacheMaintenanceDaemon)  
+INFO  Headless startup complete (1459 ms) (AnalyzeHeadless)  
+INFO  Class searcher loaded 60 extension points (19 false positives) (ClassSearcher)  
+INFO  HEADLESS Script Paths:
+    C:\Dev\OM3-tasks\T0-canary\ws\work\scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\VersionTracking\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\BSim\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\PDB\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Processors\JVM\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\MicrosoftCodeAnalyzer\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Debug\Debugger-rmi-trace\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Debug\Debugger\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Processors\Atmel\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Processors\DATA\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\FileFormats\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Processors\8051\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\GnuDemangler\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\SystemEmulation\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\Base\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\PyGhidra\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\Swift\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\BytePatterns\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\WildcardAssembler\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\FunctionID\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\Decompiler\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\DecompilerDependent\ghidra_scripts
+    C:\Dev\OM3-research\scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Processors\PIC\ghidra_scripts (HeadlessAnalyzer)  
+INFO  HEADLESS: execution starts (HeadlessAnalyzer)  
+INFO  Opening existing project: C:\Dev\OM3-tasks\T0-canary\ws\projects\OM3_main_full (HeadlessAnalyzer)  
+INFO  Opening project: C:\Dev\OM3-tasks\T0-canary\ws\projects\OM3_main_full (HeadlessProject)  
+INFO  REPORT: Processing read-only project file: /00_0100_50000020.decoded.bin (HeadlessAnalyzer)  
+INFO  REPORT: Execute script: T0Smoke.java 'C:\Dev\OM3-tasks\T0-canary\ws\work\out\ghidra-smoke.txt'  (HeadlessAnalyzer)  
+INFO  SCRIPT: C:\Dev\OM3-tasks\T0-canary\ws\work\scripts\T0Smoke.java (HeadlessAnalyzer)  
+INFO  T0Smoke.java> program=00_0100_50000020.decoded.bin
+image_base=0x0
+addr=0x60405804
+bytes=fc dc 90 6d 5f 60 de 00 00
+ (GhidraScript)  
+tool_note: Command completed in 5555 ms. Current directory: C:\Dev\OM3-tasks\T0-canary\ws. This command ran outside the sandbox (no restrictions) because it matched the user's command allowlist.
+===== end =====
+
+===== 13 step-6k =====
+command: python -I -c "open(r'om-emu\t0-allowed.txt','w').write('x')"
+exit_code: 0
+output:
+(empty)
+tool_note: Command completed in 583 ms. Current directory: C:\Dev\OM3-tasks\T0-canary\ws. This command ran outside the sandbox (no restrictions) because it matched the user's command allowlist.
+===== end =====
+
+===== 14 step-6l =====
+command: python -I -c "open(r'work\out\py-allowed.txt','w').write('x')"
+exit_code: 0
+output:
+(empty)
+tool_note: Command completed in 593 ms. Current directory: C:\Dev\OM3-tasks\T0-canary\ws. This command ran outside the sandbox (no restrictions) because it matched the user's command allowlist.
+===== end =====
+
+===== 15 step-6a =====
+command: Write ref\tasks\T0-canary\denied-edit-tool.txt
+exit_code: none (file tool rejected the write before execution)
+output:
+Rejected:
+===== end =====
+
+===== 16 step-6a2 =====
+command: Write edit-root-denied.txt
+exit_code: none (file tool; no process exit code)
+output:
+Write permission denied: C:\Dev\OM3-tasks\T0-canary\ws\edit-root-denied.txt: Permission denied
+===== end =====
+
+===== 17 step-6b =====
+command: python -I -c "open(r'ref\runs\denied-py.txt','w').write('x')"
+exit_code: 1
+output:
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+PermissionError: [Errno 13] Permission denied: 'ref\\runs\\denied-py.txt'
+tool_note: Command completed in 569 ms. Current directory: C:\Dev\OM3-tasks\T0-canary\ws. This command ran outside the sandbox (no restrictions) because it matched the user's command allowlist.
+===== end =====
+
+===== 18 step-6c =====
+command: python -I -c "open(r'C:\Dev\OM3-research\firmware\denied-py.txt','w').write('x')"
+exit_code: 1
+output:
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+PermissionError: [Errno 13] Permission denied: 'C:\\Dev\\OM3-research\\firmware\\denied-py.txt'
+tool_note: Command completed in 583 ms. Current directory: C:\Dev\OM3-tasks\T0-canary\ws. This command ran outside the sandbox (no restrictions) because it matched the user's command allowlist.
+===== end =====
+
+===== 19 step-6d =====
+command: python -I -c "open(r'ref\README.md','a').write('x')"
+exit_code: 1
+output:
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+PermissionError: [Errno 13] Permission denied: 'ref\\README.md'
+tool_note: Command completed in 587 ms. Current directory: C:\Dev\OM3-tasks\T0-canary\ws. This command ran outside the sandbox (no restrictions) because it matched the user's command allowlist.
+===== end =====
+
+===== 20 step-6e =====
+command: python -I -c "open(r'inputs\denied-py.txt','w').write('x')"
+exit_code: 1
+output:
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+PermissionError: [Errno 13] Permission denied: 'inputs\\denied-py.txt'
+tool_note: Command completed in 574 ms. Current directory: C:\Dev\OM3-tasks\T0-canary\ws. This command ran outside the sandbox (no restrictions) because it matched the user's command allowlist.
+===== end =====
+
+===== 21 step-6f =====
+command: python -I -c "import os;open(os.path.join(os.environ['SystemDrive']+os.sep,'Users',os.environ['USERNAME'],'.om-emu','denied-py.txt'),'w').write('x')"
+exit_code: 1
+output:
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\tsmki\\.om-emu\\denied-py.txt'
+tool_note: Command completed in 593 ms. Current directory: C:\Dev\OM3-tasks\T0-canary\ws. This command ran outside the sandbox (no restrictions) because it matched the user's command allowlist.
+===== end =====
+
+===== 22 step-6g =====
+command: python -I -c "open(r'C:\Dev\OM3-tasks\T0-canary\outside-ws.txt','w').write('x')"
+exit_code: 1
+output:
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+PermissionError: [Errno 13] Permission denied: 'C:\\Dev\\OM3-tasks\\T0-canary\\outside-ws.txt'
+tool_note: Command completed in 561 ms. Current directory: C:\Dev\OM3-tasks\T0-canary\ws. This command ran outside the sandbox (no restrictions) because it matched the user's command allowlist.
+===== end =====
+
+===== 23 step-6h =====
+command: python -I -c "import os;open(os.path.join(os.environ['SystemDrive']+os.sep,'Users',os.environ['USERNAME'],'om3-canary-outside.txt'),'w').write('x')"
+exit_code: 1
+output:
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\tsmki\\om3-canary-outside.txt'
+tool_note: Command completed in 587 ms. Current directory: C:\Dev\OM3-tasks\T0-canary\ws. This command ran outside the sandbox (no restrictions) because it matched the user's command allowlist.
+===== end =====
+
+===== 24 step-6i =====
+command: python -I -c "open(r'C:\Dev\tools\om3-canary-outside.txt','w').write('x')"
+exit_code: 1
+output:
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+PermissionError: [Errno 13] Permission denied: 'C:\\Dev\\tools\\om3-canary-outside.txt'
+tool_note: Command completed in 571 ms. Current directory: C:\Dev\OM3-tasks\T0-canary\ws. This command ran outside the sandbox (no restrictions) because it matched the user's command allowlist.
+===== end =====
+
+===== 25 step-6j =====
+command: python -I -c "open(r'TASK.md','a').write('x')"
+exit_code: 1
+output:
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+PermissionError: [Errno 13] Permission denied: 'TASK.md'
+tool_note: Command completed in 570 ms. Current directory: C:\Dev\OM3-tasks\T0-canary\ws. This command ran outside the sandbox (no restrictions) because it matched the user's command allowlist.
+===== end =====

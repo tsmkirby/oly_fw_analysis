@@ -1,0 +1,76 @@
+﻿{
+    "task":  "T0-canary",
+    "agent":  "grok",
+    "model":  "grok-4.7-high",
+    "brief_sha256":  "35b85034a2b6fa50d71c0a137aaa2361ea6c31ffad85a1b42fa0796c076b9959",
+    "command":  "C:\\Dev\\OM3-tasks\\_agent\\cli\\node.exe (Low integrity, via C:\\Dev\\OM3-tasks\\T0-canary\\launch-20261117-200125.cmd) -p --model grok-4.7-high --output-format json --trust --workspace C:\\Dev\\OM3-tasks\\T0-canary\\ws \"Read TASK.md and then brief.md in this folder completely, and carry out the brief exactly. Section 0 of the brief overrides everything else. Write only under work. Finish by making sure work/result.md and work/evidence-manifest.json exist.\"",
+    "cursor_sandbox":  false,
+    "started":  "2026-11-17T20:01:57.9408458-05:00",
+    "ended":  "2026-11-17T20:11:48.4779011-05:00",
+    "timed_out":  false,
+    "exit_code":  0,
+    "lock_ok":  true,
+    "lock_output":  "locked 12 targets in 10.7 s; probe failures: 0",
+    "unlock_ok":  true,
+    "unlock_output":  "unlocked; rules that had disappeared while locked: 0; probe failures: 0",
+    "workspace_unchanged":  true,
+    "inputs_unchanged":  true,
+    "harvested":  [
+                      {
+                          "path":  "evidence-manifest.json",
+                          "bytes":  12941,
+                          "sha256":  "3de96858d54d70d1516fb9920604bdce102b9270e160bdcc36e598a9d7d36282",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "result.md",
+                          "bytes":  22258,
+                          "sha256":  "e2f09a6ab1b9575e51d1bd9d0da877d425032ed82fd7960e4030fbc5d4921895",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\ghidra-smoke.log",
+                          "bytes":  5142,
+                          "sha256":  "c4e3963567e042a0afcd59abee96e75d9514490cfddfb137b8e70f3d797e7901",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\ghidra-smoke.txt",
+                          "bytes":  101,
+                          "sha256":  "840dd11c1039e52d2ccf69531f1eb57ad27db232d7fa17a11aaca6ab1bcbc594",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\hello.txt",
+                          "bytes":  6,
+                          "sha256":  "e100fbce008c04ec40637af0af91fb2f05aeedc23f856a2d3c0b1580625d755e",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\log.txt",
+                          "bytes":  19403,
+                          "sha256":  "c3d2e15c785606f28abe6d462a8e1d8e5c6c13333cf5cf9ded8f71ee8a90fd3c",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\py-allowed.txt",
+                          "bytes":  1,
+                          "sha256":  "2d711642b726b04401627ca9fbac32f5c8530fb1903cc4db02258717921a4881",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "scripts\\T0Smoke.java",
+                          "bytes":  1193,
+                          "sha256":  "eb1ecbc0cb8285e4d6d5e210160dc43a1df55e14dc63ee771aaa56da5b1942f4",
+                          "copied":  true
+                      }
+                  ],
+    "usage":  {
+                  "inputTokens":  82417,
+                  "outputTokens":  48934,
+                  "cacheReadTokens":  842880,
+                  "cacheWriteTokens":  0,
+                  "reasoningTokens":  27307
+              },
+    "ok":  true
+}

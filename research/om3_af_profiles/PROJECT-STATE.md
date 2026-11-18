@@ -8,8 +8,8 @@ Last updated: 2026-11-17 (Phase 1 preparation).
 
 ## 1. Continuation point
 
-- **Now:** Phase 1 preparation done; T0 (isolation canary) next. If T0 passes, autonomous
-  software research starts at T1 (page-27 row and value mapping).
+- **Now:** T0 accepted (qualified; [decision](tasks/T0-canary/decision.md)). Autonomous software
+  research has started: T1 (page-27 row and value mapping) is running.
 - **Last research result:** live OM-Emu native AF initialization and central button
   dispatch, 16 Nov ([AFON-MENU-RESEARCH.md §8](analysis/button-af/AFON-MENU-RESEARCH.md#live-native-initialization-and-central-button-dispatch-2026-11-16)).
 - **Last owner observation:** 17 Nov, stock AF Button setting
@@ -55,8 +55,8 @@ The autonomous programme ends at either of these:
 
 | ID | Task | Status | Record |
 |---|---|---|---|
-| T0 | Isolation and tool canary | Ready | [tasks/T0-canary](tasks/T0-canary/brief.md) |
-| T1 | Page-27 row and value mapping | Brief drafted | tasks/T1-page27-mapping (installed after T0) |
+| T0 | Isolation and tool canary | **Accepted (qualified)**, attempt 7 | [decision](tasks/T0-canary/decision.md) |
+| T1 | Page-27 row and value mapping | Running | [tasks/T1-page27-mapping](tasks/T1-page27-mapping/brief.md) |
 | T2 | Ownership proof for unclaimed cells `0x5b82` / `0x5b52` | Queued | AFON-MENU-RESEARCH §8 |
 | T3 | AF-ON zone row and editor routing (OM-Emu) | Queued | AFON-MENU-RESEARCH §9 |
 | — | Beyond T3: persistence, display, hook point (Q4), acceptance matrix | Planned by Opus as results arrive | §2 |

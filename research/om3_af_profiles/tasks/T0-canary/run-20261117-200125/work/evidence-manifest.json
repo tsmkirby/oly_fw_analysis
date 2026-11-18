@@ -1,0 +1,299 @@
+{
+  "task": "T0-canary",
+  "brief_version": "2026-11-17 (attempt 7: path checks in allow-listable form; complete output capture)",
+  "brief_sha256": "35b85034a2b6fa50d71c0a137aaa2361ea6c31ffad85a1b42fa0796c076b9959",
+  "inputs": [
+    {
+      "path": "ref\\PROJECT-STATE.md",
+      "sha256": "542f75d5ec4eb9a7fc454254870a95b682bc9096a85de3ab8df15d0fac503b43",
+      "bytes": 14849
+    },
+    {
+      "path": "ref\\analysis\\button-af\\FEATURE-SPEC.md",
+      "sha256": "f233815f1bb77246c8484f69f7a53e5c80837f6b87d22d2348ee41322afd2bdc",
+      "bytes": 29070
+    },
+    {
+      "path": "inputs\\00_0100_50000020.decoded.bin",
+      "sha256": "5e8d376e9111a44ac0352f26030d7c1b17026d42c45f3600cfa02a0e8c5b7d59",
+      "bytes": 33554368
+    }
+  ],
+  "sources": [
+    {
+      "path": "brief.md",
+      "sha256": "35b85034a2b6fa50d71c0a137aaa2361ea6c31ffad85a1b42fa0796c076b9959",
+      "bytes": 5219
+    },
+    {
+      "path": "TASK.md",
+      "sha256": "844f1af505863cbc237b06c1540d720c899ff0ddbbb536ddf5f96d175dd5d3fe",
+      "bytes": 2318
+    },
+    {
+      "path": "templates\\result.md",
+      "sha256": "18d605fc1f70369c40245130cdd499288bd3ae1a8fe1bdb84575cb58532d0110",
+      "bytes": 1230
+    },
+    {
+      "path": "review-brief.md",
+      "sha256": "02e78eb244dca53aec4b1c2e458ef4ad9bc9060027966b4b74350d88432a8d9f",
+      "bytes": 1822
+    },
+    {
+      "path": "ref\\analysis\\ghidra-validation\\defaults_accessor.asm",
+      "sha256": "f8fc54438eb7282b199fe8ce72a0a753db65c0400884bbaa8ecdf1a92924ec32",
+      "bytes": 81
+    },
+    {
+      "path": "tools\\bin\\run-ghidra.cmd",
+      "sha256": "f74d17ec23f6f778b497ad181bfd39247f8a29a6cdd549d973d4798ad367a8bb",
+      "bytes": 485
+    },
+    {
+      "path": "tools\\bin\\node26.cmd",
+      "sha256": "0dc9aa6201773ae84c491264cc8fd4ef2084a6369337795b5b3657a5e14f3878",
+      "bytes": 98
+    }
+  ],
+  "outputs": [
+    {
+      "path": "work\\out\\hello.txt",
+      "sha256": "e100fbce008c04ec40637af0af91fb2f05aeedc23f856a2d3c0b1580625d755e",
+      "bytes": 6
+    },
+    {
+      "path": "work\\scripts\\T0Smoke.java",
+      "sha256": "eb1ecbc0cb8285e4d6d5e210160dc43a1df55e14dc63ee771aaa56da5b1942f4",
+      "bytes": 1193
+    },
+    {
+      "path": "work\\out\\ghidra-smoke.txt",
+      "sha256": "840dd11c1039e52d2ccf69531f1eb57ad27db232d7fa17a11aaca6ab1bcbc594",
+      "bytes": 101
+    },
+    {
+      "path": "work\\out\\ghidra-smoke.log",
+      "sha256": "c4e3963567e042a0afcd59abee96e75d9514490cfddfb137b8e70f3d797e7901",
+      "bytes": 5142
+    },
+    {
+      "path": "work\\out\\py-allowed.txt",
+      "sha256": "2d711642b726b04401627ca9fbac32f5c8530fb1903cc4db02258717921a4881",
+      "bytes": 1
+    },
+    {
+      "path": "om-emu\\t0-allowed.txt",
+      "sha256": "2d711642b726b04401627ca9fbac32f5c8530fb1903cc4db02258717921a4881",
+      "bytes": 1
+    },
+    {
+      "path": "work\\out\\log.txt",
+      "sha256": "c3d2e15c785606f28abe6d462a8e1d8e5c6c13333cf5cf9ded8f71ee8a90fd3c",
+      "bytes": 19403
+    },
+    {
+      "path": "work\\result.md",
+      "sha256": "e2f09a6ab1b9575e51d1bd9d0da877d425032ed82fd7960e4030fbc5d4921895",
+      "bytes": 22258
+    }
+  ],
+  "manifest_note": "work\\evidence-manifest.json is this file. Its own SHA-256 is not stored here, because embedding that digest would change it. The stdout of the hash of work\\result.md was e2f09a6ab1b9575e51d1bd9d0da877d425032ed82fd7960e4030fbc5d4921895 22258 work\\result.md, exit code 0.",
+  "commands": [
+    {
+      "id": "step-1",
+      "command": "Write work\\out\\hello.txt contents canary",
+      "exit_code": null,
+      "result": "Wrote contents to C:\\Dev\\OM3-tasks\\T0-canary\\ws\\work\\out\\hello.txt"
+    },
+    {
+      "id": "step-2",
+      "command": "whoami /groups",
+      "exit_code": 0,
+      "result": "Mandatory Label\\Low Mandatory Level SID S-1-16-4096; full output in work\\out\\log.txt entry 2"
+    },
+    {
+      "id": "step-3",
+      "command": "python -I -c \"import hashlib,sys;[print(hashlib.sha256(open(p,'rb').read()).hexdigest(),p) for p in sys.argv[1:]]\" ref\\PROJECT-STATE.md ref\\analysis\\button-af\\FEATURE-SPEC.md inputs\\00_0100_50000020.decoded.bin",
+      "exit_code": 0,
+      "result": "542f75d5ec4eb9a7fc454254870a95b682bc9096a85de3ab8df15d0fac503b43 ref\\PROJECT-STATE.md; f233815f1bb77246c8484f69f7a53e5c80837f6b87d22d2348ee41322afd2bdc ref\\analysis\\button-af\\FEATURE-SPEC.md; 5e8d376e9111a44ac0352f26030d7c1b17026d42c45f3600cfa02a0e8c5b7d59 inputs\\00_0100_50000020.decoded.bin"
+    },
+    {
+      "id": "step-4-java",
+      "command": "java -version",
+      "exit_code": 0,
+      "result": "openjdk version \"25.0.5\" 2026-10-20 LTS; OpenJDK Runtime Environment Temurin-25.0.5+8 (build 25.0.5+8-LTS); OpenJDK 64-Bit Server VM Temurin-25.0.5+8 (build 25.0.5+8-LTS, mixed mode, sharing)"
+    },
+    {
+      "id": "step-4-node26",
+      "command": "node26 --version",
+      "exit_code": 0,
+      "result": "v26.12.1"
+    },
+    {
+      "id": "step-4-python",
+      "command": "python -I --version",
+      "exit_code": 0,
+      "result": "Python 3.12.7"
+    },
+    {
+      "id": "step-4-where-java",
+      "command": "where.exe java",
+      "exit_code": 0,
+      "result": "C:\\Dev\\OM3-research\\tooling\\jdk-25.0.5+8\\bin\\java.exe"
+    },
+    {
+      "id": "step-4-where-node26",
+      "command": "where.exe node26",
+      "exit_code": 0,
+      "result": "C:\\Dev\\OM3-tasks\\T0-canary\\ws\\tools\\bin\\node26.cmd"
+    },
+    {
+      "id": "step-4-where-python",
+      "command": "where.exe python",
+      "exit_code": 0,
+      "result": "C:\\Users\\tsmki\\AppData\\Local\\Programs\\Python\\Python312\\python.exe; C:\\Users\\tsmki\\AppData\\Local\\Programs\\Python\\Python310\\python.exe; C:\\Users\\tsmki\\AppData\\Local\\Microsoft\\WindowsApps\\python.exe"
+    },
+    {
+      "id": "step-4-getcommand",
+      "command": "Get-Command java,node26,python | Format-List Name,Source",
+      "exit_code": 0,
+      "result": "Name=java.exe Source=C:\\Dev\\OM3-research\\tooling\\jdk-25.0.5+8\\bin\\java.exe; Name=node26.cmd Source=C:\\Dev\\OM3-tasks\\T0-canary\\ws\\tools\\bin\\node26.cmd; Name=python.exe Source=C:\\Users\\tsmki\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+    },
+    {
+      "id": "step-5-script",
+      "command": "Write work\\scripts\\T0Smoke.java",
+      "exit_code": null,
+      "result": "Wrote contents to C:\\Dev\\OM3-tasks\\T0-canary\\ws\\work\\scripts\\T0Smoke.java"
+    },
+    {
+      "id": "step-5-ghidra",
+      "command": "tools\\bin\\run-ghidra.cmd -postScript T0Smoke.java C:\\Dev\\OM3-tasks\\T0-canary\\ws\\work\\out\\ghidra-smoke.txt -log C:\\Dev\\OM3-tasks\\T0-canary\\ws\\work\\out\\ghidra-smoke.log",
+      "exit_code": 0,
+      "result": "program=00_0100_50000020.decoded.bin image_base=0x0 addr=0x60405804 bytes=fc dc 90 6d 5f 60 de 00 00"
+    },
+    {
+      "id": "step-6k",
+      "command": "python -I -c \"open(r'om-emu\\t0-allowed.txt','w').write('x')\"",
+      "exit_code": 0,
+      "result": "empty stdout; exit 0"
+    },
+    {
+      "id": "step-6l",
+      "command": "python -I -c \"open(r'work\\out\\py-allowed.txt','w').write('x')\"",
+      "exit_code": 0,
+      "result": "empty stdout; exit 0"
+    },
+    {
+      "id": "step-6a",
+      "command": "Write ref\\tasks\\T0-canary\\denied-edit-tool.txt",
+      "exit_code": null,
+      "result": "Rejected:"
+    },
+    {
+      "id": "step-6a2",
+      "command": "Write edit-root-denied.txt",
+      "exit_code": null,
+      "result": "Write permission denied: C:\\Dev\\OM3-tasks\\T0-canary\\ws\\edit-root-denied.txt: Permission denied"
+    },
+    {
+      "id": "step-6b",
+      "command": "python -I -c \"open(r'ref\\runs\\denied-py.txt','w').write('x')\"",
+      "exit_code": 1,
+      "result": "PermissionError: [Errno 13] Permission denied: 'ref\\\\runs\\\\denied-py.txt'"
+    },
+    {
+      "id": "step-6c",
+      "command": "python -I -c \"open(r'C:\\Dev\\OM3-research\\firmware\\denied-py.txt','w').write('x')\"",
+      "exit_code": 1,
+      "result": "PermissionError: [Errno 13] Permission denied: 'C:\\\\Dev\\\\OM3-research\\\\firmware\\\\denied-py.txt'"
+    },
+    {
+      "id": "step-6d",
+      "command": "python -I -c \"open(r'ref\\README.md','a').write('x')\"",
+      "exit_code": 1,
+      "result": "PermissionError: [Errno 13] Permission denied: 'ref\\\\README.md'"
+    },
+    {
+      "id": "step-6e",
+      "command": "python -I -c \"open(r'inputs\\denied-py.txt','w').write('x')\"",
+      "exit_code": 1,
+      "result": "PermissionError: [Errno 13] Permission denied: 'inputs\\\\denied-py.txt'"
+    },
+    {
+      "id": "step-6f",
+      "command": "python -I -c \"import os;open(os.path.join(os.environ['SystemDrive']+os.sep,'Users',os.environ['USERNAME'],'.om-emu','denied-py.txt'),'w').write('x')\"",
+      "exit_code": 1,
+      "result": "PermissionError: [Errno 13] Permission denied: 'C:\\\\Users\\\\tsmki\\\\.om-emu\\\\denied-py.txt'"
+    },
+    {
+      "id": "step-6g",
+      "command": "python -I -c \"open(r'C:\\Dev\\OM3-tasks\\T0-canary\\outside-ws.txt','w').write('x')\"",
+      "exit_code": 1,
+      "result": "PermissionError: [Errno 13] Permission denied: 'C:\\\\Dev\\\\OM3-tasks\\\\T0-canary\\\\outside-ws.txt'"
+    },
+    {
+      "id": "step-6h",
+      "command": "python -I -c \"import os;open(os.path.join(os.environ['SystemDrive']+os.sep,'Users',os.environ['USERNAME'],'om3-canary-outside.txt'),'w').write('x')\"",
+      "exit_code": 1,
+      "result": "PermissionError: [Errno 13] Permission denied: 'C:\\\\Users\\\\tsmki\\\\om3-canary-outside.txt'"
+    },
+    {
+      "id": "step-6i",
+      "command": "python -I -c \"open(r'C:\\Dev\\tools\\om3-canary-outside.txt','w').write('x')\"",
+      "exit_code": 1,
+      "result": "PermissionError: [Errno 13] Permission denied: 'C:\\\\Dev\\\\tools\\\\om3-canary-outside.txt'"
+    },
+    {
+      "id": "step-6j",
+      "command": "python -I -c \"open(r'TASK.md','a').write('x')\"",
+      "exit_code": 1,
+      "result": "PermissionError: [Errno 13] Permission denied: 'TASK.md'"
+    },
+    {
+      "id": "step-7-write-log",
+      "command": "Write work\\out\\log.txt",
+      "exit_code": null,
+      "result": "Wrote contents to C:\\Dev\\OM3-tasks\\T0-canary\\ws\\work\\out\\log.txt"
+    },
+    {
+      "id": "step-7-hash-existing",
+      "command": "python -I -c \"import hashlib,os,sys; [print(hashlib.sha256(open(p,'rb').read()).hexdigest(), os.path.getsize(p), p) for p in sys.argv[1:]]\" work\\out\\hello.txt work\\scripts\\T0Smoke.java work\\out\\ghidra-smoke.txt work\\out\\ghidra-smoke.log work\\out\\py-allowed.txt om-emu\\t0-allowed.txt brief.md TASK.md templates\\result.md review-brief.md ref\\analysis\\ghidra-validation\\defaults_accessor.asm tools\\bin\\run-ghidra.cmd tools\\bin\\node26.cmd ref\\PROJECT-STATE.md ref\\analysis\\button-af\\FEATURE-SPEC.md inputs\\00_0100_50000020.decoded.bin",
+      "exit_code": 0,
+      "result": "full stdout in work\\result.md section Step 7 hash output under step-7-hash-existing"
+    },
+    {
+      "id": "step-7-hash-log",
+      "command": "python -I -c \"import hashlib,os,sys; [print(hashlib.sha256(open(p,'rb').read()).hexdigest(), os.path.getsize(p), p) for p in sys.argv[1:]]\" work\\out\\log.txt",
+      "exit_code": 0,
+      "result": "c3d2e15c785606f28abe6d462a8e1d8e5c6c13333cf5cf9ded8f71ee8a90fd3c 19403 work\\out\\log.txt"
+    },
+    {
+      "id": "step-7-write-result",
+      "command": "Write work\\result.md",
+      "exit_code": null,
+      "result": "Wrote contents to C:\\Dev\\OM3-tasks\\T0-canary\\ws\\work\\result.md"
+    },
+    {
+      "id": "step-7-hash-result",
+      "command": "python -I -c \"import hashlib,os,sys; [print(hashlib.sha256(open(p,'rb').read()).hexdigest(), os.path.getsize(p), p) for p in sys.argv[1:]]\" work\\result.md",
+      "exit_code": 0,
+      "result": "stdout is the manifest outputs entry for work\\result.md; it is not pasted into this file"
+    },
+    {
+      "id": "step-7-write-manifest",
+      "command": "Write work\\evidence-manifest.json",
+      "exit_code": null,
+      "result": "Wrote contents to C:\\Dev\\OM3-tasks\\T0-canary\\ws\\work\\evidence-manifest.json"
+    }
+  ],
+  "tool_versions": {
+    "java": "openjdk version \"25.0.5\" 2026-10-20 LTS; OpenJDK Runtime Environment Temurin-25.0.5+8 (build 25.0.5+8-LTS); OpenJDK 64-Bit Server VM Temurin-25.0.5+8 (build 25.0.5+8-LTS, mixed mode, sharing)",
+    "java_source": "C:\\Dev\\OM3-research\\tooling\\jdk-25.0.5+8\\bin\\java.exe",
+    "node26": "v26.12.1",
+    "node26_source": "C:\\Dev\\OM3-tasks\\T0-canary\\ws\\tools\\bin\\node26.cmd",
+    "python": "Python 3.12.7",
+    "python_source": "C:\\Users\\tsmki\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+    "ghidra": "12.2 PUBLIC"
+  }
+}

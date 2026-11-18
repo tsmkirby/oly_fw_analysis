@@ -12,6 +12,8 @@ Brief version: 2026-11-17 · Workspace: Ghidra + OM-Emu
 - Ghidra: `tools\bin\run-ghidra.cmd` only (private project copy, `-readOnly -noanalysis`).
 - OM-Emu: use the private copy `om-emu` as the checkout argument. **Do not modify it in
   this task.** `OM_EMU_NVRAM` is `off` (blank camera); keep it that way.
+- Run Node as `node26` (the pinned v26.12.1). Plain `node` is the Cursor CLI's own runtime.
+  Call tools by name, and do not start a command with a parenthesis (the tool rejects it).
 - Stock firmware only: no overlay, candidate or patch of any kind is needed or allowed here.
 - No network, no Git, no ACL/permission commands, no installs. No firmware image,
   component or SD file. Make no hardware or flashing recommendation.
