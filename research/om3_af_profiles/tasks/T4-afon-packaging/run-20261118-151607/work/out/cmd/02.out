@@ -1,0 +1,58 @@
+== duplicate editor 0x216 records ==
+  index 62 0x615c59dc words ['0x216', '0x3b', '0x7b7', '0x42', '0x0', '0x0'] raw 160200003b000000b7070000420000000000000000000000
+    immediate hits 0 []
+  index 151 0x615c6234 words ['0x216', '0x3b', '0x7b7', '0x42', '0x0', '0x0'] raw 160200003b000000b7070000420000000000000000000000
+    immediate hits 0 []
+
+== directory and array immediates ==
+  0x615cc934 hits 3 ['0x6124f4f8', '0x6124f579', '0x6124f650']
+  0x615cc938 hits 0 []
+  0x615c540c hits 1 ['0x615cc938']
+  0x615c7b0c hits 1 ['0x615cc950']
+  0x615c6234 hits 0 []
+  0x615c59dc hits 0 []
+
+== face-table keys versus binding +16 ==
+  table keys 96 unique 96 duplicate table keys []
+  table keys with no binding +16: []
+  binding keys with no table record in the 96: [48, 49, 99, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 117, 118, 119, 121, 122, 123, 124, 125, 126, 127, 128, 139] count 26
+
+== descriptor-end immediate context (8 bytes before the immediate) ==
+  0x604048f7 fcd2ec166260
+  0x60404a9d fcd0ec166260
+  0x6040595c fcc0ec166260
+  0x60405a6c fcc0ec166260
+  0x60405b64 fcc0ec166260
+  0x60405c21 fcdcec166260
+  0x60405878 fcdf2c916160
+
+== table-base immediate context ==
+  0x60045ee9 fcd2289b026072dde6b0
+  0x60045f9a fcdc289b0260f9140cf3
+  0x60046097 fca4289b0260ddf3ae02
+
+== 0x60320000 immediate context ==
+  0x6136b9d6 0000640000006400000032603300b0a4
+
+== head window 0x600210e0..0x60021180 ==
+cd213900048001fccd801625a3fcdc00bc20009500cdfc26e010fcdc04570260cd01390004fccc94703860fc8198079662fcccd42b3a60fc819c079662fccc04383a60fc81a0079662fcccd4763ba0fc81a4079662fccc00901260fc8194079662cd562af020fca494079662fcdc000003a0fcdd00f00050fcc00000fd9ffccd00020100cdcb21f018fca498079662fcdc007035a0fcdd00603350fcc00090ca
+
+== bytes after face table as words ==
+  0x6037cc5c 0x611f844a
+  0x6037cc60 0x611f84da
+  0x6037cc64 0x611f81aa
+  0x6037cc68 0x611f8033
+  0x6037cc6c 0x0
+  0x6037cc70 0x611f8890
+  0x6037cc74 0x611f889d
+  0x6037cc78 0x0
+
+== 24 bytes at the key-8 / key-15 boundary as one record ==
+  0000000018000000000000001f0000000000000000000000 words ['0x0', '0x18', '0x0', '0x1f', '0x0', '0x0']
+
+== value-site first 12 bytes, instruction-sized groups left to the listing ==
+  0x6041931e 820042041e2d7017a6c014a6
+  0x6041937f f1e6820042041e2d7017a6c0
+  0x60419446 4304838e1eaa00c055facacf
+  0x60419696 1ca000c016fac8cf08c11054
+

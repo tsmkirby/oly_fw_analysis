@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "C:\Dev\OM3-tasks\T5-afon-button-handoff\ws\work\scripts\build_swap_k3.py", line 51, in <module>
+    main()
+  File "C:\Dev\OM3-tasks\T5-afon-button-handoff\ws\work\scripts\build_swap_k3.py", line 27, in main
+    got = bytes(int(by[AT + i]['proposed_byte'], 16) for i in range(20))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Dev\OM3-tasks\T5-afon-button-handoff\ws\work\scripts\build_swap_k3.py", line 27, in <genexpr>
+    got = bytes(int(by[AT + i]['proposed_byte'], 16) for i in range(20))
+                    ~~^^^^^^^^
+KeyError: 1621686041

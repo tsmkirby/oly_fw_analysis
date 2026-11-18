@@ -286,6 +286,7 @@ ACL or label operation on any tree containing a junction; the scripts check for 
 | 2026-11-18 | T3i accepted with corrections: the functional acceptance is confirmed. Per-key assertions were raised for the third time, so T3j is a narrow, table-driven acceptance task with no configuration change. | Opus | T3i decision.md |
 | 2026-11-18 | T3j accepted: the zone row is a complete EMULATOR-ONLY prototype. Its two harness defects are recorded, with no further round. Evidence promoted. T4 and T5 launched concurrently; T3b follows T5. | Opus | T3j decision.md |
 | 2026-11-18 | T5 and T4 round 1 rejected by Sol; one correction round each. Coordinator amendment: T5's three section-7 bytes `0x610bf5e3`–`0x610bf5e5` (call site of the accepted EMULATOR-ONLY central-edge hook) are permitted as a labelled emulator runtime patch; native placement is T4's question. T4 may use stock-image OM-Emu watchpoints (no overlay, NVRAM off) for reader completeness and init order. T4 also finds section 7 stored as plain bytes, challenging the stage-0 compression reading (pending review). | Opus | T5/T4 brief §5 |
+| 2026-11-18 | Correction runs `run-20261118-151607` (T5, T4) failed in 22 s before Grok started: `getaddrinfo ENOTFOUND api2.cursor.sh` (network outage). Isolation clean. Infrastructure failure, not a brief failure; relaunched with the same §5 briefs once DNS resolved. | Opus | run-20261118-151607 err |
 
 ## 12. Session resumption checklist (Opus)
 

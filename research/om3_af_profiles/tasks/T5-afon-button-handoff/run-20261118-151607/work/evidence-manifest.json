@@ -1,0 +1,5488 @@
+{
+  "task": "T5",
+  "brief_sha256": "e9f6e4b7b84a27cddf6637bca36a940212d0437ef7f41bc472899f673c379ee8",
+  "brief_hashed": "later",
+  "inputs": [
+    {
+      "path": "DisasmRangesK1.java",
+      "sha256": "e411dc295baa29319a03e06f3bc6152b5fc495c5f509fc09c81ac1e128fb829c",
+      "bytes": 3351,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/cmd/02.exit"
+      ],
+      "later_matches": null,
+      "note": "wrapper recorded a path that is not a file in this folder"
+    },
+    {
+      "path": "inputs/00_0100_50000020.decoded.bin",
+      "sha256": "5e8d376e9111a44ac0352f26030d7c1b17026d42c45f3600cfa02a0e8c5b7d59",
+      "bytes": 33554368,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json",
+        "work/out/session-accept-c1.jsonl#helper-hashes",
+        "work/out/session-accept-control.jsonl#helper-hashes",
+        "work/out/session-accept2-c1.jsonl#helper-hashes",
+        "work/out/session-accept2-control.jsonl#helper-hashes",
+        "work/out/session-accept3-c1.jsonl#helper-hashes",
+        "work/out/session-accept3-c2.jsonl#helper-hashes",
+        "work/out/session-accept3-control.jsonl#helper-hashes",
+        "work/out/session-k1-c1.jsonl#helper-hashes",
+        "work/out/session-k1-c2.jsonl#helper-hashes",
+        "work/out/session-k1-control-saf.jsonl#helper-hashes",
+        "work/out/session-k1-control.jsonl#helper-hashes",
+        "work/out/session-k3-control-saf.jsonl#helper-hashes",
+        "work/out/session-k3-p1.jsonl#helper-hashes",
+        "work/out/session-k4-control-saf.jsonl#helper-hashes",
+        "work/out/session-k4-p1.jsonl#helper-hashes",
+        "work/out/session-k5-control-caf.jsonl#helper-hashes",
+        "work/out/session-k5-control-saf.jsonl#helper-hashes",
+        "work/out/session-k5-p1.jsonl#helper-hashes",
+        "work/out/session-k5-p2.jsonl#helper-hashes",
+        "work/out/session-k6-control-caf.jsonl#helper-hashes",
+        "work/out/session-k6-control-saf.jsonl#helper-hashes",
+        "work/out/session-k6-p1.jsonl#helper-hashes",
+        "work/out/session-k6-p2.jsonl#helper-hashes",
+        "work/out/session-k6-p3.jsonl#helper-hashes",
+        "work/out/session-k6-p4.jsonl#helper-hashes",
+        "work/out/session-k7-p4.jsonl#helper-hashes",
+        "work/out/session-reopen-k1.jsonl#helper-hashes",
+        "work/out/session-store-k1.jsonl#helper-hashes"
+      ],
+      "later_sha256": "5e8d376e9111a44ac0352f26030d7c1b17026d42c45f3600cfa02a0e8c5b7d59",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "inputs/02_0106_458c0020.decoded.bin",
+      "sha256": "3d9fd4426b45fbe4b715599422af38c6d22392c08543a69f63c28291c5a0b059",
+      "bytes": 143523776,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json",
+        "work/out/session-accept-c1.jsonl#helper-hashes",
+        "work/out/session-accept-control.jsonl#helper-hashes",
+        "work/out/session-accept2-c1.jsonl#helper-hashes",
+        "work/out/session-accept2-control.jsonl#helper-hashes",
+        "work/out/session-accept3-c1.jsonl#helper-hashes",
+        "work/out/session-accept3-c2.jsonl#helper-hashes",
+        "work/out/session-accept3-control.jsonl#helper-hashes",
+        "work/out/session-k1-c1.jsonl#helper-hashes",
+        "work/out/session-k1-c2.jsonl#helper-hashes",
+        "work/out/session-k1-control-saf.jsonl#helper-hashes",
+        "work/out/session-k1-control.jsonl#helper-hashes",
+        "work/out/session-k3-control-saf.jsonl#helper-hashes",
+        "work/out/session-k3-p1.jsonl#helper-hashes",
+        "work/out/session-k4-control-saf.jsonl#helper-hashes",
+        "work/out/session-k4-p1.jsonl#helper-hashes",
+        "work/out/session-k5-control-caf.jsonl#helper-hashes",
+        "work/out/session-k5-control-saf.jsonl#helper-hashes",
+        "work/out/session-k5-p1.jsonl#helper-hashes",
+        "work/out/session-k5-p2.jsonl#helper-hashes",
+        "work/out/session-k6-control-caf.jsonl#helper-hashes",
+        "work/out/session-k6-control-saf.jsonl#helper-hashes",
+        "work/out/session-k6-p1.jsonl#helper-hashes",
+        "work/out/session-k6-p2.jsonl#helper-hashes",
+        "work/out/session-k6-p3.jsonl#helper-hashes",
+        "work/out/session-k6-p4.jsonl#helper-hashes",
+        "work/out/session-k7-p4.jsonl#helper-hashes",
+        "work/out/session-reopen-k1.jsonl#helper-hashes",
+        "work/out/session-store-k1.jsonl#helper-hashes"
+      ],
+      "later_sha256": "3d9fd4426b45fbe4b715599422af38c6d22392c08543a69f63c28291c5a0b059",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/checks/lib/args.mjs",
+      "sha256": "6c99d21aad6340f2b7c72c5c63f33b7287d04dab798adedc23f1cf705ab92ad8",
+      "bytes": 4766,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "6c99d21aad6340f2b7c72c5c63f33b7287d04dab798adedc23f1cf705ab92ad8",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/checks/lib/coverage.mjs",
+      "sha256": "e6e3d409d7766e8d5b55d473523355a7dda4b2a4dba1bda984ca170411109ee7",
+      "bytes": 4549,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "e6e3d409d7766e8d5b55d473523355a7dda4b2a4dba1bda984ca170411109ee7",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/checks/lib/env.mjs",
+      "sha256": "dbbfd2ab839d8ceb784c7df5c12d0d9a17898eba549b84e848a9cfb05b0d609b",
+      "bytes": 12178,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json",
+        "work/out/session-accept-c1.jsonl#helper-hashes",
+        "work/out/session-accept-control.jsonl#helper-hashes",
+        "work/out/session-accept2-c1.jsonl#helper-hashes",
+        "work/out/session-accept2-control.jsonl#helper-hashes",
+        "work/out/session-accept3-c1.jsonl#helper-hashes",
+        "work/out/session-accept3-c2.jsonl#helper-hashes",
+        "work/out/session-accept3-control.jsonl#helper-hashes",
+        "work/out/session-k1-c1.jsonl#helper-hashes",
+        "work/out/session-k1-c2.jsonl#helper-hashes",
+        "work/out/session-k1-control-saf.jsonl#helper-hashes",
+        "work/out/session-k1-control.jsonl#helper-hashes",
+        "work/out/session-k3-control-saf.jsonl#helper-hashes",
+        "work/out/session-k3-p1.jsonl#helper-hashes",
+        "work/out/session-k4-control-saf.jsonl#helper-hashes",
+        "work/out/session-k4-p1.jsonl#helper-hashes",
+        "work/out/session-k5-control-caf.jsonl#helper-hashes",
+        "work/out/session-k5-control-saf.jsonl#helper-hashes",
+        "work/out/session-k5-p1.jsonl#helper-hashes",
+        "work/out/session-k5-p2.jsonl#helper-hashes",
+        "work/out/session-k6-control-caf.jsonl#helper-hashes",
+        "work/out/session-k6-control-saf.jsonl#helper-hashes",
+        "work/out/session-k6-p1.jsonl#helper-hashes",
+        "work/out/session-k6-p2.jsonl#helper-hashes",
+        "work/out/session-k6-p3.jsonl#helper-hashes",
+        "work/out/session-k6-p4.jsonl#helper-hashes",
+        "work/out/session-k7-p4.jsonl#helper-hashes",
+        "work/out/session-reopen-k1.jsonl#helper-hashes",
+        "work/out/session-store-k1.jsonl#helper-hashes"
+      ],
+      "later_sha256": "dbbfd2ab839d8ceb784c7df5c12d0d9a17898eba549b84e848a9cfb05b0d609b",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/checks/lib/errors.mjs",
+      "sha256": "4c01fc5ac9167e751e6f9f1f013d61c56600e3af668db8ee305f79718e213c79",
+      "bytes": 1846,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "4c01fc5ac9167e751e6f9f1f013d61c56600e3af668db8ee305f79718e213c79",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/checks/lib/png.mjs",
+      "sha256": "77d52d420a15ac8005ab9ac39e1d09d7df2a2650ece690813e511ac03ce6db99",
+      "bytes": 5493,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json",
+        "work/out/session-accept-c1.jsonl#helper-hashes",
+        "work/out/session-accept-control.jsonl#helper-hashes",
+        "work/out/session-accept2-c1.jsonl#helper-hashes",
+        "work/out/session-accept2-control.jsonl#helper-hashes",
+        "work/out/session-accept3-c1.jsonl#helper-hashes",
+        "work/out/session-accept3-c2.jsonl#helper-hashes",
+        "work/out/session-accept3-control.jsonl#helper-hashes",
+        "work/out/session-k1-c1.jsonl#helper-hashes",
+        "work/out/session-k1-c2.jsonl#helper-hashes",
+        "work/out/session-k1-control-saf.jsonl#helper-hashes",
+        "work/out/session-k1-control.jsonl#helper-hashes",
+        "work/out/session-k3-control-saf.jsonl#helper-hashes",
+        "work/out/session-k3-p1.jsonl#helper-hashes",
+        "work/out/session-k4-control-saf.jsonl#helper-hashes",
+        "work/out/session-k4-p1.jsonl#helper-hashes",
+        "work/out/session-k5-control-caf.jsonl#helper-hashes",
+        "work/out/session-k5-control-saf.jsonl#helper-hashes",
+        "work/out/session-k5-p1.jsonl#helper-hashes",
+        "work/out/session-k5-p2.jsonl#helper-hashes",
+        "work/out/session-k6-control-caf.jsonl#helper-hashes",
+        "work/out/session-k6-control-saf.jsonl#helper-hashes",
+        "work/out/session-k6-p1.jsonl#helper-hashes",
+        "work/out/session-k6-p2.jsonl#helper-hashes",
+        "work/out/session-k6-p3.jsonl#helper-hashes",
+        "work/out/session-k6-p4.jsonl#helper-hashes",
+        "work/out/session-k7-p4.jsonl#helper-hashes",
+        "work/out/session-reopen-k1.jsonl#helper-hashes",
+        "work/out/session-store-k1.jsonl#helper-hashes"
+      ],
+      "later_sha256": "77d52d420a15ac8005ab9ac39e1d09d7df2a2650ece690813e511ac03ce6db99",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/host/nvram.mjs",
+      "sha256": "352f7765f0426706553ab6c3453048ff37c0d3e1fd274ceda18c8a37fd7b2071",
+      "bytes": 5126,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json",
+        "work/out/session-accept-c1.jsonl#helper-hashes",
+        "work/out/session-accept-control.jsonl#helper-hashes",
+        "work/out/session-accept2-c1.jsonl#helper-hashes",
+        "work/out/session-accept2-control.jsonl#helper-hashes",
+        "work/out/session-accept3-c1.jsonl#helper-hashes",
+        "work/out/session-accept3-c2.jsonl#helper-hashes",
+        "work/out/session-accept3-control.jsonl#helper-hashes",
+        "work/out/session-k1-c1.jsonl#helper-hashes",
+        "work/out/session-k1-c2.jsonl#helper-hashes",
+        "work/out/session-k1-control-saf.jsonl#helper-hashes",
+        "work/out/session-k1-control.jsonl#helper-hashes",
+        "work/out/session-k3-control-saf.jsonl#helper-hashes",
+        "work/out/session-k3-p1.jsonl#helper-hashes",
+        "work/out/session-k4-control-saf.jsonl#helper-hashes",
+        "work/out/session-k4-p1.jsonl#helper-hashes",
+        "work/out/session-k5-control-caf.jsonl#helper-hashes",
+        "work/out/session-k5-control-saf.jsonl#helper-hashes",
+        "work/out/session-k5-p1.jsonl#helper-hashes",
+        "work/out/session-k5-p2.jsonl#helper-hashes",
+        "work/out/session-k6-control-caf.jsonl#helper-hashes",
+        "work/out/session-k6-control-saf.jsonl#helper-hashes",
+        "work/out/session-k6-p1.jsonl#helper-hashes",
+        "work/out/session-k6-p2.jsonl#helper-hashes",
+        "work/out/session-k6-p3.jsonl#helper-hashes",
+        "work/out/session-k6-p4.jsonl#helper-hashes",
+        "work/out/session-k7-p4.jsonl#helper-hashes",
+        "work/out/session-reopen-k1.jsonl#helper-hashes",
+        "work/out/session-store-k1.jsonl#helper-hashes"
+      ],
+      "later_sha256": "352f7765f0426706553ab6c3453048ff37c0d3e1fd274ceda18c8a37fd7b2071",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/refs/errors.mjs",
+      "sha256": "fff1f2065bbdb2797f3f998fabeb2a0353b88451bc252e4d3ad74025ab164aca",
+      "bytes": 809,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "fff1f2065bbdb2797f3f998fabeb2a0353b88451bc252e4d3ad74025ab164aca",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/scenarios/bind.mjs",
+      "sha256": "5809e36b04e3fa0983e85c104070e3639ee85c965f25d0bddc0165533ee5fedc",
+      "bytes": 1979,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "5809e36b04e3fa0983e85c104070e3639ee85c965f25d0bddc0165533ee5fedc",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/scenarios/session_replay.mjs",
+      "sha256": "83d2afc6accf98d0cad951803af7f42319ec7858a9c9cc1a018622357c02b133",
+      "bytes": 25927,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json",
+        "work/out/session-accept-c1.jsonl#helper-hashes",
+        "work/out/session-accept-control.jsonl#helper-hashes",
+        "work/out/session-accept2-c1.jsonl#helper-hashes",
+        "work/out/session-accept2-control.jsonl#helper-hashes",
+        "work/out/session-accept3-c1.jsonl#helper-hashes",
+        "work/out/session-accept3-c2.jsonl#helper-hashes",
+        "work/out/session-accept3-control.jsonl#helper-hashes",
+        "work/out/session-k1-c1.jsonl#helper-hashes",
+        "work/out/session-k1-c2.jsonl#helper-hashes",
+        "work/out/session-k1-control-saf.jsonl#helper-hashes",
+        "work/out/session-k1-control.jsonl#helper-hashes",
+        "work/out/session-k3-control-saf.jsonl#helper-hashes",
+        "work/out/session-k3-p1.jsonl#helper-hashes",
+        "work/out/session-k4-control-saf.jsonl#helper-hashes",
+        "work/out/session-k4-p1.jsonl#helper-hashes",
+        "work/out/session-k5-control-caf.jsonl#helper-hashes",
+        "work/out/session-k5-control-saf.jsonl#helper-hashes",
+        "work/out/session-k5-p1.jsonl#helper-hashes",
+        "work/out/session-k5-p2.jsonl#helper-hashes",
+        "work/out/session-k6-control-caf.jsonl#helper-hashes",
+        "work/out/session-k6-control-saf.jsonl#helper-hashes",
+        "work/out/session-k6-p1.jsonl#helper-hashes",
+        "work/out/session-k6-p2.jsonl#helper-hashes",
+        "work/out/session-k6-p3.jsonl#helper-hashes",
+        "work/out/session-k6-p4.jsonl#helper-hashes",
+        "work/out/session-k7-p4.jsonl#helper-hashes",
+        "work/out/session-reopen-k1.jsonl#helper-hashes",
+        "work/out/session-store-k1.jsonl#helper-hashes"
+      ],
+      "later_sha256": "83d2afc6accf98d0cad951803af7f42319ec7858a9c9cc1a018622357c02b133",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/core/cores.mjs",
+      "sha256": "c40e61d8cb1c6d5660968bc3780591fe58b070d39346b33aacb1f8253cf3bfa0",
+      "bytes": 14575,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "c40e61d8cb1c6d5660968bc3780591fe58b070d39346b33aacb1f8253cf3bfa0",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/core/cpu.mjs",
+      "sha256": "94f3caf73745b17dceca437299b6c711aee0efe51c9ab7c872d5b1e6c599521e",
+      "bytes": 33769,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json",
+        "work/out/session-accept-c1.jsonl#helper-hashes",
+        "work/out/session-accept-control.jsonl#helper-hashes",
+        "work/out/session-accept2-c1.jsonl#helper-hashes",
+        "work/out/session-accept2-control.jsonl#helper-hashes",
+        "work/out/session-accept3-c1.jsonl#helper-hashes",
+        "work/out/session-accept3-c2.jsonl#helper-hashes",
+        "work/out/session-accept3-control.jsonl#helper-hashes",
+        "work/out/session-k1-c1.jsonl#helper-hashes",
+        "work/out/session-k1-c2.jsonl#helper-hashes",
+        "work/out/session-k1-control-saf.jsonl#helper-hashes",
+        "work/out/session-k1-control.jsonl#helper-hashes",
+        "work/out/session-k3-control-saf.jsonl#helper-hashes",
+        "work/out/session-k3-p1.jsonl#helper-hashes",
+        "work/out/session-k4-control-saf.jsonl#helper-hashes",
+        "work/out/session-k4-p1.jsonl#helper-hashes",
+        "work/out/session-k5-control-caf.jsonl#helper-hashes",
+        "work/out/session-k5-control-saf.jsonl#helper-hashes",
+        "work/out/session-k5-p1.jsonl#helper-hashes",
+        "work/out/session-k5-p2.jsonl#helper-hashes",
+        "work/out/session-k6-control-caf.jsonl#helper-hashes",
+        "work/out/session-k6-control-saf.jsonl#helper-hashes",
+        "work/out/session-k6-p1.jsonl#helper-hashes",
+        "work/out/session-k6-p2.jsonl#helper-hashes",
+        "work/out/session-k6-p3.jsonl#helper-hashes",
+        "work/out/session-k6-p4.jsonl#helper-hashes",
+        "work/out/session-k7-p4.jsonl#helper-hashes",
+        "work/out/session-reopen-k1.jsonl#helper-hashes",
+        "work/out/session-store-k1.jsonl#helper-hashes"
+      ],
+      "later_sha256": "94f3caf73745b17dceca437299b6c711aee0efe51c9ab7c872d5b1e6c599521e",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/core/interp.mjs",
+      "sha256": "660e09091fc99db584104cd8e98d6050fe517e204fa2c747d0aa72e1423f9aa2",
+      "bytes": 40485,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json",
+        "work/out/session-accept-c1.jsonl#helper-hashes",
+        "work/out/session-accept-control.jsonl#helper-hashes",
+        "work/out/session-accept2-c1.jsonl#helper-hashes",
+        "work/out/session-accept2-control.jsonl#helper-hashes",
+        "work/out/session-accept3-c1.jsonl#helper-hashes",
+        "work/out/session-accept3-c2.jsonl#helper-hashes",
+        "work/out/session-accept3-control.jsonl#helper-hashes",
+        "work/out/session-k1-c1.jsonl#helper-hashes",
+        "work/out/session-k1-c2.jsonl#helper-hashes",
+        "work/out/session-k1-control-saf.jsonl#helper-hashes",
+        "work/out/session-k1-control.jsonl#helper-hashes",
+        "work/out/session-k3-control-saf.jsonl#helper-hashes",
+        "work/out/session-k3-p1.jsonl#helper-hashes",
+        "work/out/session-k4-control-saf.jsonl#helper-hashes",
+        "work/out/session-k4-p1.jsonl#helper-hashes",
+        "work/out/session-k5-control-caf.jsonl#helper-hashes",
+        "work/out/session-k5-control-saf.jsonl#helper-hashes",
+        "work/out/session-k5-p1.jsonl#helper-hashes",
+        "work/out/session-k5-p2.jsonl#helper-hashes",
+        "work/out/session-k6-control-caf.jsonl#helper-hashes",
+        "work/out/session-k6-control-saf.jsonl#helper-hashes",
+        "work/out/session-k6-p1.jsonl#helper-hashes",
+        "work/out/session-k6-p2.jsonl#helper-hashes",
+        "work/out/session-k6-p3.jsonl#helper-hashes",
+        "work/out/session-k6-p4.jsonl#helper-hashes",
+        "work/out/session-k7-p4.jsonl#helper-hashes",
+        "work/out/session-reopen-k1.jsonl#helper-hashes",
+        "work/out/session-store-k1.jsonl#helper-hashes"
+      ],
+      "later_sha256": "660e09091fc99db584104cd8e98d6050fe517e204fa2c747d0aa72e1423f9aa2",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/core/m4/boot.mjs",
+      "sha256": "064782160d72244f025941957757c5c0becac5cbc2baf272c93124a4b025c2ab",
+      "bytes": 2475,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "064782160d72244f025941957757c5c0becac5cbc2baf272c93124a4b025c2ab",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/core/m4/bus.mjs",
+      "sha256": "7d40173941ce9136e055f5d68a3904d7e13bcb100afe076c99e62c5f04daff2b",
+      "bytes": 5865,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "7d40173941ce9136e055f5d68a3904d7e13bcb100afe076c99e62c5f04daff2b",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/core/m4/cpu.mjs",
+      "sha256": "64ddeaecf9402af3d04cbf232b99036fd1b87a637300b5ab0db6db4eafb655b8",
+      "bytes": 38527,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "64ddeaecf9402af3d04cbf232b99036fd1b87a637300b5ab0db6db4eafb655b8",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/core/m4/dcache.mjs",
+      "sha256": "5c1cd23048a7d5c693bc626abbcc1057d29bc4214c96bb9d05d71674ebf472cf",
+      "bytes": 3444,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "5c1cd23048a7d5c693bc626abbcc1057d29bc4214c96bb9d05d71674ebf472cf",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/core/m4/decode.mjs",
+      "sha256": "a5400b0d56fbec796452aa7d93817cb4e97d28604f75048aef9a0d2008b9616d",
+      "bytes": 41153,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "a5400b0d56fbec796452aa7d93817cb4e97d28604f75048aef9a0d2008b9616d",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/core/m4/errors.mjs",
+      "sha256": "e4552273413b00095c7536a9e490c3c1b70428a9da88b4ec8087dccc5e0b517b",
+      "bytes": 894,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "e4552273413b00095c7536a9e490c3c1b70428a9da88b4ec8087dccc5e0b517b",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/core/m4/periph/adc.mjs",
+      "sha256": "d986c043c73a0ffcfcac748224516520cd909f297bca97fca0479c0e18da2ab3",
+      "bytes": 5729,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "d986c043c73a0ffcfcac748224516520cd909f297bca97fca0479c0e18da2ab3",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/core/m4/periph/board.mjs",
+      "sha256": "96452848d86624d9c569fdca46fa3ef015ae4c1847f31ae24da561ed54d9d4b6",
+      "bytes": 2077,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "96452848d86624d9c569fdca46fa3ef015ae4c1847f31ae24da561ed54d9d4b6",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/core/m4/periph/dma.mjs",
+      "sha256": "0013b012879e42f249776e8d0a91db465d84312f967751994fdcfb78aeef931f",
+      "bytes": 6520,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "0013b012879e42f249776e8d0a91db465d84312f967751994fdcfb78aeef931f",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/core/m4/periph/exti.mjs",
+      "sha256": "3ccca80728f6a95d651bee8fbdea6eebff4cf0c839073198e7a39465a2f7f572",
+      "bytes": 5980,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "3ccca80728f6a95d651bee8fbdea6eebff4cf0c839073198e7a39465a2f7f572",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/core/m4/periph/flash.mjs",
+      "sha256": "8a1b09f4465f05ed8853a08be72081635257fc9e47e5b475820d0b49cb1b5a85",
+      "bytes": 13217,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "8a1b09f4465f05ed8853a08be72081635257fc9e47e5b475820d0b49cb1b5a85",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/core/m4/periph/gpio.mjs",
+      "sha256": "4f2bd672f826e915f4dc628e39d156d7bc05f4ad1291b1121eebc780665025f9",
+      "bytes": 7331,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "4f2bd672f826e915f4dc628e39d156d7bc05f4ad1291b1121eebc780665025f9",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/core/m4/periph/i2c.mjs",
+      "sha256": "db2ed90a75f8f23fa8119eceb74641e1faf0c840f0e5b412297bed3fe27fed42",
+      "bytes": 15064,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "db2ed90a75f8f23fa8119eceb74641e1faf0c840f0e5b412297bed3fe27fed42",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/core/m4/periph/pwr.mjs",
+      "sha256": "e665b6f771874170fb13346b85389d8969d5106f116ab80c32689c293e32f179",
+      "bytes": 2976,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "e665b6f771874170fb13346b85389d8969d5106f116ab80c32689c293e32f179",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/core/m4/periph/rcc.mjs",
+      "sha256": "28649dbcca9e0006c0c518d23ca488544d48d15f5443dd8d40fb40954745cd70",
+      "bytes": 9103,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "28649dbcca9e0006c0c518d23ca488544d48d15f5443dd8d40fb40954745cd70",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/core/m4/periph/regs.mjs",
+      "sha256": "a159b2f84183d50cccb9445f435ebb2955bada803f994b7ffb9e2ea29262ee1e",
+      "bytes": 2837,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "a159b2f84183d50cccb9445f435ebb2955bada803f994b7ffb9e2ea29262ee1e",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/core/m4/periph/rtc.mjs",
+      "sha256": "3edf5249203b6230e69e423e50953d9611db7a1bf780fc93ad42f2bd71965107",
+      "bytes": 12634,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "3edf5249203b6230e69e423e50953d9611db7a1bf780fc93ad42f2bd71965107",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/core/m4/periph/sched.mjs",
+      "sha256": "a683cedc35145ccd001f22c4031f6fd4942e9bfd38d00c0a99db7b3e78923e4c",
+      "bytes": 4354,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "a683cedc35145ccd001f22c4031f6fd4942e9bfd38d00c0a99db7b3e78923e4c",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/core/m4/periph/spi.mjs",
+      "sha256": "388e0f06c7c1c6ce9400efd78e1d3d8f3249a424cdf192f5fd7bb039ce2dba5f",
+      "bytes": 5146,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "388e0f06c7c1c6ce9400efd78e1d3d8f3249a424cdf192f5fd7bb039ce2dba5f",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/core/m4/periph/stm32l4.mjs",
+      "sha256": "1beb26e4d57bcfc8996e5b4c0ef04f6d94c3e9e4de4952d056904c6698a9aef5",
+      "bytes": 25042,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "1beb26e4d57bcfc8996e5b4c0ef04f6d94c3e9e4de4952d056904c6698a9aef5",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/core/m4/periph/tim.mjs",
+      "sha256": "a3d74c5c2eb63bc9759899ba528a0c0519bb64b0a101d67b44cee85963f21f72",
+      "bytes": 19535,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "a3d74c5c2eb63bc9759899ba528a0c0519bb64b0a101d67b44cee85963f21f72",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/core/m4/periph/usart.mjs",
+      "sha256": "5f3ff52bf755043637af356f2516524a13e2ac5d706772d73791eb32508a3396",
+      "bytes": 10349,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "5f3ff52bf755043637af356f2516524a13e2ac5d706772d73791eb32508a3396",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/core/m4/periph/usb.mjs",
+      "sha256": "e9cd406f7666cc4b85ae2e4fc9c1830a66f62bc60747f443498dcaf65d349c0a",
+      "bytes": 2042,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "e9cd406f7666cc4b85ae2e4fc9c1830a66f62bc60747f443498dcaf65d349c0a",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/core/m4/sys.mjs",
+      "sha256": "e97b9371d3e8eea59cea3d87c08b39eca3ae16e35539f8ce4f2ca785cec81a3b",
+      "bytes": 16370,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "e97b9371d3e8eea59cea3d87c08b39eca3ae16e35539f8ce4f2ca785cec81a3b",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/core/mem.mjs",
+      "sha256": "adfe9bca23723f22b490c99047b6ad32c291f495492c98138d1da3c20ab5a676",
+      "bytes": 23219,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "adfe9bca23723f22b490c99047b6ad32c291f495492c98138d1da3c20ab5a676",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/debug/call.mjs",
+      "sha256": "74bffd86020ec1c6f3eca732fd4a41aaa7dcfba2d4670a094449918d84a44186",
+      "bytes": 22586,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "74bffd86020ec1c6f3eca732fd4a41aaa7dcfba2d4670a094449918d84a44186",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/debug/debugger.mjs",
+      "sha256": "a24ce644ab922457a843c868076aa21e72007e78086fda75fd88119a79da4705",
+      "bytes": 24393,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "a24ce644ab922457a843c868076aa21e72007e78086fda75fd88119a79da4705",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/debug/live.mjs",
+      "sha256": "c19050fd773dc1f46b9f7c0c3669ada12b1293dab93599206913022c62a87e49",
+      "bytes": 28766,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "c19050fd773dc1f46b9f7c0c3669ada12b1293dab93599206913022c62a87e49",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/debug/protocol.mjs",
+      "sha256": "5eff055d29372fb46aecda2c09c6ba94538d7026ad585e15abe06ccbd1f259ea",
+      "bytes": 21791,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "5eff055d29372fb46aecda2c09c6ba94538d7026ad585e15abe06ccbd1f259ea",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/debug/regs.mjs",
+      "sha256": "2e620e185508bf19008cf97cc33ae188222e7461e0b3f1811bf304fdb7b422d7",
+      "bytes": 866,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "2e620e185508bf19008cf97cc33ae188222e7461e0b3f1811bf304fdb7b422d7",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/debug/snapshot.mjs",
+      "sha256": "24e51e3811a58d55051caeb7507707cfb51001cb9b5355d27bc20c8c0c98ab54",
+      "bytes": 5970,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "24e51e3811a58d55051caeb7507707cfb51001cb9b5355d27bc20c8c0c98ab54",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/debug/trace.mjs",
+      "sha256": "92b3ed83780771c6011d1521ab018dee0fda5f604522acdbdd624a25bdf32bab",
+      "bytes": 4456,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "92b3ed83780771c6011d1521ab018dee0fda5f604522acdbdd624a25bdf32bab",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/dev/audio.mjs",
+      "sha256": "2a41fcd1bd0152e5b2b54f3cad314a7e77c5741787d761d69df9e023d41ad571",
+      "bytes": 17201,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "2a41fcd1bd0152e5b2b54f3cad314a7e77c5741787d761d69df9e023d41ad571",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/dev/bus.mjs",
+      "sha256": "e537c4ed7e90f6bc2b4a7fef2a35d856af5ffc5ae446ee9336a87e5b4e6e397f",
+      "bytes": 8291,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "e537c4ed7e90f6bc2b4a7fef2a35d856af5ffc5ae446ee9336a87e5b4e6e397f",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/dev/camfe.mjs",
+      "sha256": "69a9fde49796f27fac8454565b69c281f670659decb6655fb0ad7c5ef2c3057c",
+      "bytes": 13697,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "69a9fde49796f27fac8454565b69c281f670659decb6655fb0ad7c5ef2c3057c",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/dev/dml.mjs",
+      "sha256": "cb8761cb0d5531eb4e7ff46fb3c1cba535afcf6719220ca670ec3c94d9b0a890",
+      "bytes": 8744,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "cb8761cb0d5531eb4e7ff46fb3c1cba535afcf6719220ca670ec3c94d9b0a890",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/dev/dpc.mjs",
+      "sha256": "adf00b0157638de3c7f2885957b4542ef0b8a1bcac8c7649546a0658cfb89f32",
+      "bytes": 2629,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "adf00b0157638de3c7f2885957b4542ef0b8a1bcac8c7649546a0658cfb89f32",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/dev/ems1.mjs",
+      "sha256": "68deb7a62e8d6d7d1fb11e49baed979dcf01012e07074ec19bf4e8c39db9d371",
+      "bytes": 11974,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "68deb7a62e8d6d7d1fb11e49baed979dcf01012e07074ec19bf4e8c39db9d371",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/dev/engine.mjs",
+      "sha256": "2164dcaa278792e3b64675e9ee02dcefa0a6c03afbe7d2738d013da0bfa18059",
+      "bytes": 21611,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "2164dcaa278792e3b64675e9ee02dcefa0a6c03afbe7d2738d013da0bfa18059",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/dev/hdmi.mjs",
+      "sha256": "80497c3a89e39ecd641f4fcc5e67ebb2028893fb3b86edffb91b50b115449e8c",
+      "bytes": 16254,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "80497c3a89e39ecd641f4fcc5e67ebb2028893fb3b86edffb91b50b115449e8c",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/dev/imgpipe.mjs",
+      "sha256": "924001331674b9e6642c2c9c052fe75a4aff78d8a16f41dd2e2191046ef94daa",
+      "bytes": 25971,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "924001331674b9e6642c2c9c052fe75a4aff78d8a16f41dd2e2191046ef94daa",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/dev/imgpro.mjs",
+      "sha256": "275680322384425d95a05c39178a70091ed8d3ff897ae04ab504004029066664",
+      "bytes": 13544,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "275680322384425d95a05c39178a70091ed8d3ff897ae04ab504004029066664",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/dev/intc.mjs",
+      "sha256": "85b6b7d21652ac1a057e19fdc1e214154ac52bceec47a8f4afdac1661788dada",
+      "bytes": 15228,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "85b6b7d21652ac1a057e19fdc1e214154ac52bceec47a8f4afdac1661788dada",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/dev/lensssc.mjs",
+      "sha256": "e96b83c864f901ca1811a447f5f88fb1ff0b9ee87972555fe2678e420fd6a34d",
+      "bytes": 12839,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "e96b83c864f901ca1811a447f5f88fb1ff0b9ee87972555fe2678e420fd6a34d",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/dev/linkpins.mjs",
+      "sha256": "cbc3e7a5fca33012a2344800016eb8e9f63d723f381dc13deb4ce52e66e3c1d5",
+      "bytes": 7211,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "cbc3e7a5fca33012a2344800016eb8e9f63d723f381dc13deb4ce52e66e3c1d5",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/dev/pdt.mjs",
+      "sha256": "9377aa4bfd22964c40c672c44f7eb48c5955e5faa6f98a44525497afecb716c9",
+      "bytes": 9847,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "9377aa4bfd22964c40c672c44f7eb48c5955e5faa6f98a44525497afecb716c9",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/dev/scpu.mjs",
+      "sha256": "69198b7be16fb24d32968553888ee551ba0f6d227688bba434203e5c834fd5cb",
+      "bytes": 9454,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "69198b7be16fb24d32968553888ee551ba0f6d227688bba434203e5c834fd5cb",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/dev/stub.mjs",
+      "sha256": "b87a757f0e57823fc46a89020060cc38a6361d24a0498450bdc3047fb9419a3d",
+      "bytes": 4079,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "b87a757f0e57823fc46a89020060cc38a6361d24a0498450bdc3047fb9419a3d",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/dev/timer.mjs",
+      "sha256": "b03f10e8d4d622d3fb2fcd6b8b39943c69c98d17241dd4e5026c338fbe0b4739",
+      "bytes": 10301,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "b03f10e8d4d622d3fb2fcd6b8b39943c69c98d17241dd4e5026c338fbe0b4739",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/dev/vsc.mjs",
+      "sha256": "38de0fa08a4ff6197c60868c6b893d46775908ccf9389f1d1ddcc5f6b6342602",
+      "bytes": 31927,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "38de0fa08a4ff6197c60868c6b893d46775908ccf9389f1d1ddcc5f6b6342602",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/dev/vsccompose.mjs",
+      "sha256": "ba3da9916f999ca91b4c1b9857c13f95239628be334e58478154e682aa05971c",
+      "bytes": 33867,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "ba3da9916f999ca91b4c1b9857c13f95239628be334e58478154e682aa05971c",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/dev/vsccompose2.mjs",
+      "sha256": "234572564acef358dd7084d35ca624d62312c42f005ef9c3dcb314fcc1a4d638",
+      "bytes": 18331,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "234572564acef358dd7084d35ca624d62312c42f005ef9c3dcb314fcc1a4d638",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/dev/vscregs.mjs",
+      "sha256": "d29e6661e27212b466035b13ca9ceb9f2bcbafe8026328659d65382f0b806265",
+      "bytes": 3828,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "d29e6661e27212b466035b13ca9ceb9f2bcbafe8026328659d65382f0b806265",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/fw/board.mjs",
+      "sha256": "6a02f7c74bee6f0b6409c57c3ee78c62e16280794ee55557edb42d2f723d7875",
+      "bytes": 39911,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "6a02f7c74bee6f0b6409c57c3ee78c62e16280794ee55557edb42d2f723d7875",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/fw/expand.mjs",
+      "sha256": "e2575f5a4c8ecb79764a31ae01223ab718e7ddc266c00bd88bbf0008dabd1d7d",
+      "bytes": 3148,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "e2575f5a4c8ecb79764a31ae01223ab718e7ddc266c00bd88bbf0008dabd1d7d",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/fw/facts.mjs",
+      "sha256": "3f938574a7cc589dd227584066e726039009678c4f51fa8175437badfc1c4c17",
+      "bytes": 509333,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "3f938574a7cc589dd227584066e726039009678c4f51fa8175437badfc1c4c17",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/fw/image.mjs",
+      "sha256": "657e9a447ea8035f17115708121e1ad8e71c08f8f5ef1aefb107ccf3a73621d8",
+      "bytes": 2077,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "657e9a447ea8035f17115708121e1ad8e71c08f8f5ef1aefb107ccf3a73621d8",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/fw/labfw.mjs",
+      "sha256": "3efbe7112a2917fbf77c3a57b704296bd730676f1921d24c427f40225ecfb083",
+      "bytes": 4276,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "3efbe7112a2917fbf77c3a57b704296bd730676f1921d24c427f40225ecfb083",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/fw/model.mjs",
+      "sha256": "f080e7e9c91bf3baa5136c7b8aeb6b0e0c4c8378d89f361a47e87aac4e902a44",
+      "bytes": 4718,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json",
+        "work/out/session-accept-c1.jsonl#helper-hashes",
+        "work/out/session-accept-control.jsonl#helper-hashes",
+        "work/out/session-accept2-c1.jsonl#helper-hashes",
+        "work/out/session-accept2-control.jsonl#helper-hashes",
+        "work/out/session-accept3-c1.jsonl#helper-hashes",
+        "work/out/session-accept3-c2.jsonl#helper-hashes",
+        "work/out/session-accept3-control.jsonl#helper-hashes",
+        "work/out/session-k1-c1.jsonl#helper-hashes",
+        "work/out/session-k1-c2.jsonl#helper-hashes",
+        "work/out/session-k1-control-saf.jsonl#helper-hashes",
+        "work/out/session-k1-control.jsonl#helper-hashes",
+        "work/out/session-k3-control-saf.jsonl#helper-hashes",
+        "work/out/session-k3-p1.jsonl#helper-hashes",
+        "work/out/session-k4-control-saf.jsonl#helper-hashes",
+        "work/out/session-k4-p1.jsonl#helper-hashes",
+        "work/out/session-k5-control-caf.jsonl#helper-hashes",
+        "work/out/session-k5-control-saf.jsonl#helper-hashes",
+        "work/out/session-k5-p1.jsonl#helper-hashes",
+        "work/out/session-k5-p2.jsonl#helper-hashes",
+        "work/out/session-k6-control-caf.jsonl#helper-hashes",
+        "work/out/session-k6-control-saf.jsonl#helper-hashes",
+        "work/out/session-k6-p1.jsonl#helper-hashes",
+        "work/out/session-k6-p2.jsonl#helper-hashes",
+        "work/out/session-k6-p3.jsonl#helper-hashes",
+        "work/out/session-k6-p4.jsonl#helper-hashes",
+        "work/out/session-k7-p4.jsonl#helper-hashes",
+        "work/out/session-reopen-k1.jsonl#helper-hashes",
+        "work/out/session-store-k1.jsonl#helper-hashes"
+      ],
+      "later_sha256": "f080e7e9c91bf3baa5136c7b8aeb6b0e0c4c8378d89f361a47e87aac4e902a44",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/fw/models.mjs",
+      "sha256": "115c8349e4f0aadbe56f24638db4e195ca3ba59739c64607eb5b34e4e14db3db",
+      "bytes": 125036,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "115c8349e4f0aadbe56f24638db4e195ca3ba59739c64607eb5b34e4e14db3db",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/fw/nand.mjs",
+      "sha256": "1c7751b4db88c7874eb4c86d33185f6279ced1cd2f7bddbae4a2dea37fe3b5dd",
+      "bytes": 20696,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "1c7751b4db88c7874eb4c86d33185f6279ced1cd2f7bddbae4a2dea37fe3b5dd",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/fw/olyfw.mjs",
+      "sha256": "a1c02f4ded0c3624ac017d97eb1ca59e6ca5dd407bcc0854722d7c126c9ef246",
+      "bytes": 5786,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "a1c02f4ded0c3624ac017d97eb1ca59e6ca5dd407bcc0854722d7c126c9ef246",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/fw/overrides-E122.mjs",
+      "sha256": "6bff3bc7d875f7424165e6737ecd50c4a4ebb8d1dc4dd4d42b9431b5982b0602",
+      "bytes": 4046,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "6bff3bc7d875f7424165e6737ecd50c4a4ebb8d1dc4dd4d42b9431b5982b0602",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/fw/overrides-E144.mjs",
+      "sha256": "cc98ffd4ed9eac44c6a8c58c31010b67c72eef618d09e93cf97e442b3f5bd307",
+      "bytes": 25687,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "cc98ffd4ed9eac44c6a8c58c31010b67c72eef618d09e93cf97e442b3f5bd307",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/fw/patch.mjs",
+      "sha256": "bb9434c31fc8e494daa7dd05321bf5835b51aae6bfdbbd981d7151b445375d3b",
+      "bytes": 19035,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "bb9434c31fc8e494daa7dd05321bf5835b51aae6bfdbbd981d7151b445375d3b",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/fw/ports.mjs",
+      "sha256": "6c81c9955e9baba6c165ed3affb69fd5208bb44e6a9dba5dc6094935074ce0b0",
+      "bytes": 1076335,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "6c81c9955e9baba6c165ed3affb69fd5208bb44e6a9dba5dc6094935074ce0b0",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/fw/resprefix.mjs",
+      "sha256": "612c87c0dd722ee031685dd5c70bf14e113d094f2e3a66677dfbe4b8c14c6372",
+      "bytes": 2144,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "612c87c0dd722ee031685dd5c70bf14e113d094f2e3a66677dfbe4b8c14c6372",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/fw/sections.mjs",
+      "sha256": "e8e55f2820a7db8426f0172882a34c90c611a7a6b2d848904cd55739d45d6250",
+      "bytes": 8601,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "e8e55f2820a7db8426f0172882a34c90c611a7a6b2d848904cd55739d45d6250",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/acc.mjs",
+      "sha256": "48c508462bb4e8cf94b893315d079b9d08248956f06c040be1ed4e3503122062",
+      "bytes": 15789,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "48c508462bb4e8cf94b893315d079b9d08248956f06c040be1ed4e3503122062",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/audio.mjs",
+      "sha256": "9b1edfc267afe2c915cbecf4d9fc7bc78003f7f19ef799fd4c738ae1d4e2ff4b",
+      "bytes": 8006,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "9b1edfc267afe2c915cbecf4d9fc7bc78003f7f19ef799fd4c738ae1d4e2ff4b",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/audiohw.mjs",
+      "sha256": "c8b414b7217647d696c67aa84ffd273680d325f0119576aa480416791932d705",
+      "bytes": 13787,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "c8b414b7217647d696c67aa84ffd273680d325f0119576aa480416791932d705",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/camapp.mjs",
+      "sha256": "363891a90afc7e77e57abd1638e31f0a7badc09b81778e90ac8d42fb640b33f3",
+      "bytes": 232107,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "363891a90afc7e77e57abd1638e31f0a7badc09b81778e90ac8d42fb640b33f3",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/charger.mjs",
+      "sha256": "f0a2426fb249f9f675c0d22d6e49126fd53a88541dbd6637f6a5bbe4e0212982",
+      "bytes": 3046,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "f0a2426fb249f9f675c0d22d6e49126fd53a88541dbd6637f6a5bbe4e0212982",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/cpu2.mjs",
+      "sha256": "9a6877013f48a51f56a94bb1185d827c50b8d427b2db375d0d6a3964f0736666",
+      "bytes": 24107,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "9a6877013f48a51f56a94bb1185d827c50b8d427b2db375d0d6a3964f0736666",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/display.mjs",
+      "sha256": "7b34ff5b05fef9c7ca1d33fe771e4158387298fd02b28372afd36bf5f0d501bb",
+      "bytes": 91058,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json",
+        "work/out/session-accept-c1.jsonl#helper-hashes",
+        "work/out/session-accept-control.jsonl#helper-hashes",
+        "work/out/session-accept2-c1.jsonl#helper-hashes",
+        "work/out/session-accept2-control.jsonl#helper-hashes",
+        "work/out/session-accept3-c1.jsonl#helper-hashes",
+        "work/out/session-accept3-c2.jsonl#helper-hashes",
+        "work/out/session-accept3-control.jsonl#helper-hashes",
+        "work/out/session-k1-c1.jsonl#helper-hashes",
+        "work/out/session-k1-c2.jsonl#helper-hashes",
+        "work/out/session-k1-control-saf.jsonl#helper-hashes",
+        "work/out/session-k1-control.jsonl#helper-hashes",
+        "work/out/session-k3-control-saf.jsonl#helper-hashes",
+        "work/out/session-k3-p1.jsonl#helper-hashes",
+        "work/out/session-k4-control-saf.jsonl#helper-hashes",
+        "work/out/session-k4-p1.jsonl#helper-hashes",
+        "work/out/session-k5-control-caf.jsonl#helper-hashes",
+        "work/out/session-k5-control-saf.jsonl#helper-hashes",
+        "work/out/session-k5-p1.jsonl#helper-hashes",
+        "work/out/session-k5-p2.jsonl#helper-hashes",
+        "work/out/session-k6-control-caf.jsonl#helper-hashes",
+        "work/out/session-k6-control-saf.jsonl#helper-hashes",
+        "work/out/session-k6-p1.jsonl#helper-hashes",
+        "work/out/session-k6-p2.jsonl#helper-hashes",
+        "work/out/session-k6-p3.jsonl#helper-hashes",
+        "work/out/session-k6-p4.jsonl#helper-hashes",
+        "work/out/session-k7-p4.jsonl#helper-hashes",
+        "work/out/session-reopen-k1.jsonl#helper-hashes",
+        "work/out/session-store-k1.jsonl#helper-hashes"
+      ],
+      "later_sha256": "7b34ff5b05fef9c7ca1d33fe771e4158387298fd02b28372afd36bf5f0d501bb",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/dispq.mjs",
+      "sha256": "4821c3b1eb64f4b25f40ed80bcf2c14aea5b166148efa3dda35b3d978537b4a4",
+      "bytes": 2427,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "4821c3b1eb64f4b25f40ed80bcf2c14aea5b166148efa3dda35b3d978537b4a4",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/edid.mjs",
+      "sha256": "416d945d868a7d8c53cc0085179733a25fccb82f88e1d6cbd0fe7add32b4d051",
+      "bytes": 2948,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "416d945d868a7d8c53cc0085179733a25fccb82f88e1d6cbd0fe7add32b4d051",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/errors.mjs",
+      "sha256": "2fd7139bceb60f0ad31c428f7ed9f69235af4bc76cda823b1bb9c6dcea45fe10",
+      "bytes": 1204,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "2fd7139bceb60f0ad31c428f7ed9f69235af4bc76cda823b1bb9c6dcea45fe10",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/hle.mjs",
+      "sha256": "5648a293d1f6ede0eda8e29d4dc9e6f683210a28935b02b4e6c0af2a03da0520",
+      "bytes": 18565,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "5648a293d1f6ede0eda8e29d4dc9e6f683210a28935b02b4e6c0af2a03da0520",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/irq.mjs",
+      "sha256": "8fec8ed6abe08a9b83845eae044fc3fcc43f2e339f95d872489152b4de9c072f",
+      "bytes": 10200,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "8fec8ed6abe08a9b83845eae044fc3fcc43f2e339f95d872489152b4de9c072f",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/jpeg.mjs",
+      "sha256": "b54cfe0eb9655371f282fd1e3565b92dfce2500538b805bf0d082de002b97554",
+      "bytes": 14285,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "b54cfe0eb9655371f282fd1e3565b92dfce2500538b805bf0d082de002b97554",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/kernel.mjs",
+      "sha256": "6ceee4bf9962892c0d025be0d70a92ccbb53cdb0ef009b5b9e312586302f47f8",
+      "bytes": 22251,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "6ceee4bf9962892c0d025be0d70a92ccbb53cdb0ef009b5b9e312586302f47f8",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/lens.mjs",
+      "sha256": "b92b12d381f3389fa8802f1e9ef3bde4291c45e8cb386619ff6fcf25099a96e5",
+      "bytes": 11978,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "b92b12d381f3389fa8802f1e9ef3bde4291c45e8cb386619ff6fcf25099a96e5",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/lensmcu.mjs",
+      "sha256": "52eb5614952c45f8f648db3cda980019bf9d1fe79334e48bbc3a183a443eabdc",
+      "bytes": 13566,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "52eb5614952c45f8f648db3cda980019bf9d1fe79334e48bbc3a183a443eabdc",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/mdet.mjs",
+      "sha256": "89c61056df82fe1a159e684cdee0810af38d60c986ab0bf33a6e90e1c504bdde",
+      "bytes": 45695,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "89c61056df82fe1a159e684cdee0810af38d60c986ab0bf33a6e90e1c504bdde",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/media.mjs",
+      "sha256": "373ceb78980f1c9a7098d56b573e86b00595392fe4e5a69e7c93af970a6ef248",
+      "bytes": 25418,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "373ceb78980f1c9a7098d56b573e86b00595392fe4e5a69e7c93af970a6ef248",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/menu.mjs",
+      "sha256": "f1fbb65e5a9d30e90ac4eb5565ad6852733d4ae20ff3a3de590d916cf4ec4e94",
+      "bytes": 85212,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "f1fbb65e5a9d30e90ac4eb5565ad6852733d4ae20ff3a3de590d916cf4ec4e94",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/menudata.mjs",
+      "sha256": "1cfdf906d143bea38e730040b2f062b3b3d46b35ba361b58dfd5b01db15531da",
+      "bytes": 17067,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "1cfdf906d143bea38e730040b2f062b3b3d46b35ba361b58dfd5b01db15531da",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/menuwalk.mjs",
+      "sha256": "d91eeba2e912d05d4a11081bd5846f53b60cbf1578e0733e3289bac8b47706f1",
+      "bytes": 10985,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json",
+        "work/out/session-accept-c1.jsonl#helper-hashes",
+        "work/out/session-accept-control.jsonl#helper-hashes",
+        "work/out/session-accept2-c1.jsonl#helper-hashes",
+        "work/out/session-accept2-control.jsonl#helper-hashes",
+        "work/out/session-accept3-c1.jsonl#helper-hashes",
+        "work/out/session-accept3-c2.jsonl#helper-hashes",
+        "work/out/session-accept3-control.jsonl#helper-hashes",
+        "work/out/session-k1-c1.jsonl#helper-hashes",
+        "work/out/session-k1-c2.jsonl#helper-hashes",
+        "work/out/session-k1-control-saf.jsonl#helper-hashes",
+        "work/out/session-k1-control.jsonl#helper-hashes",
+        "work/out/session-k3-control-saf.jsonl#helper-hashes",
+        "work/out/session-k3-p1.jsonl#helper-hashes",
+        "work/out/session-k4-control-saf.jsonl#helper-hashes",
+        "work/out/session-k4-p1.jsonl#helper-hashes",
+        "work/out/session-k5-control-caf.jsonl#helper-hashes",
+        "work/out/session-k5-control-saf.jsonl#helper-hashes",
+        "work/out/session-k5-p1.jsonl#helper-hashes",
+        "work/out/session-k5-p2.jsonl#helper-hashes",
+        "work/out/session-k6-control-caf.jsonl#helper-hashes",
+        "work/out/session-k6-control-saf.jsonl#helper-hashes",
+        "work/out/session-k6-p1.jsonl#helper-hashes",
+        "work/out/session-k6-p2.jsonl#helper-hashes",
+        "work/out/session-k6-p3.jsonl#helper-hashes",
+        "work/out/session-k6-p4.jsonl#helper-hashes",
+        "work/out/session-k7-p4.jsonl#helper-hashes",
+        "work/out/session-reopen-k1.jsonl#helper-hashes",
+        "work/out/session-store-k1.jsonl#helper-hashes"
+      ],
+      "later_sha256": "d91eeba2e912d05d4a11081bd5846f53b60cbf1578e0733e3289bac8b47706f1",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/nav.mjs",
+      "sha256": "f0062a533f6caf7a37e600364a0d645ffa184deb7892c385b9bba5f58390baef",
+      "bytes": 28926,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "f0062a533f6caf7a37e600364a0d645ffa184deb7892c385b9bba5f58390baef",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/nvramdoc.mjs",
+      "sha256": "597148fdec863af46873a53ab5380a553fcda3a82499da2548f527eed28fffba",
+      "bytes": 6245,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "597148fdec863af46873a53ab5380a553fcda3a82499da2548f527eed28fffba",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/osd.mjs",
+      "sha256": "a0887531c74d890dca3a12b26d7aea57009da602ffbb6fff8382f89a119176b8",
+      "bytes": 21528,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "a0887531c74d890dca3a12b26d7aea57009da602ffbb6fff8382f89a119176b8",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/osdfmt.mjs",
+      "sha256": "8d5945aeca6a9ec80099c8a3c48ea90580f4c87399e6bcc593f2f0782a263248",
+      "bytes": 4699,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "8d5945aeca6a9ec80099c8a3c48ea90580f4c87399e6bcc593f2f0782a263248",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/patchaudit.mjs",
+      "sha256": "18b946321244d4473f904314ba558e9f3c92e330f6dd502863974773bf349b74",
+      "bytes": 12584,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "18b946321244d4473f904314ba558e9f3c92e330f6dd502863974773bf349b74",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/play.mjs",
+      "sha256": "ac4221021017ba3facacb5db7b1600f2704291136b72c24fefee3b9f8ed092a8",
+      "bytes": 184297,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json",
+        "work/out/session-accept-c1.jsonl#helper-hashes",
+        "work/out/session-accept-control.jsonl#helper-hashes",
+        "work/out/session-accept2-c1.jsonl#helper-hashes",
+        "work/out/session-accept2-control.jsonl#helper-hashes",
+        "work/out/session-accept3-c1.jsonl#helper-hashes",
+        "work/out/session-accept3-c2.jsonl#helper-hashes",
+        "work/out/session-accept3-control.jsonl#helper-hashes",
+        "work/out/session-k1-c1.jsonl#helper-hashes",
+        "work/out/session-k1-c2.jsonl#helper-hashes",
+        "work/out/session-k1-control-saf.jsonl#helper-hashes",
+        "work/out/session-k1-control.jsonl#helper-hashes",
+        "work/out/session-k3-control-saf.jsonl#helper-hashes",
+        "work/out/session-k3-p1.jsonl#helper-hashes",
+        "work/out/session-k4-control-saf.jsonl#helper-hashes",
+        "work/out/session-k4-p1.jsonl#helper-hashes",
+        "work/out/session-k5-control-caf.jsonl#helper-hashes",
+        "work/out/session-k5-control-saf.jsonl#helper-hashes",
+        "work/out/session-k5-p1.jsonl#helper-hashes",
+        "work/out/session-k5-p2.jsonl#helper-hashes",
+        "work/out/session-k6-control-caf.jsonl#helper-hashes",
+        "work/out/session-k6-control-saf.jsonl#helper-hashes",
+        "work/out/session-k6-p1.jsonl#helper-hashes",
+        "work/out/session-k6-p2.jsonl#helper-hashes",
+        "work/out/session-k6-p3.jsonl#helper-hashes",
+        "work/out/session-k6-p4.jsonl#helper-hashes",
+        "work/out/session-k7-p4.jsonl#helper-hashes",
+        "work/out/session-reopen-k1.jsonl#helper-hashes",
+        "work/out/session-store-k1.jsonl#helper-hashes"
+      ],
+      "later_sha256": "ac4221021017ba3facacb5db7b1600f2704291136b72c24fefee3b9f8ed092a8",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/player.mjs",
+      "sha256": "bfd861245f1a3d3b2d19a48966b410e979def2ae7cb62c5dde86e31eb03e1404",
+      "bytes": 82293,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json",
+        "work/out/session-accept-c1.jsonl#helper-hashes",
+        "work/out/session-accept-control.jsonl#helper-hashes",
+        "work/out/session-accept2-c1.jsonl#helper-hashes",
+        "work/out/session-accept2-control.jsonl#helper-hashes",
+        "work/out/session-accept3-c1.jsonl#helper-hashes",
+        "work/out/session-accept3-c2.jsonl#helper-hashes",
+        "work/out/session-accept3-control.jsonl#helper-hashes",
+        "work/out/session-k1-c1.jsonl#helper-hashes",
+        "work/out/session-k1-c2.jsonl#helper-hashes",
+        "work/out/session-k1-control-saf.jsonl#helper-hashes",
+        "work/out/session-k1-control.jsonl#helper-hashes",
+        "work/out/session-k3-control-saf.jsonl#helper-hashes",
+        "work/out/session-k3-p1.jsonl#helper-hashes",
+        "work/out/session-k4-control-saf.jsonl#helper-hashes",
+        "work/out/session-k4-p1.jsonl#helper-hashes",
+        "work/out/session-k5-control-caf.jsonl#helper-hashes",
+        "work/out/session-k5-control-saf.jsonl#helper-hashes",
+        "work/out/session-k5-p1.jsonl#helper-hashes",
+        "work/out/session-k5-p2.jsonl#helper-hashes",
+        "work/out/session-k6-control-caf.jsonl#helper-hashes",
+        "work/out/session-k6-control-saf.jsonl#helper-hashes",
+        "work/out/session-k6-p1.jsonl#helper-hashes",
+        "work/out/session-k6-p2.jsonl#helper-hashes",
+        "work/out/session-k6-p3.jsonl#helper-hashes",
+        "work/out/session-k6-p4.jsonl#helper-hashes",
+        "work/out/session-k7-p4.jsonl#helper-hashes",
+        "work/out/session-reopen-k1.jsonl#helper-hashes",
+        "work/out/session-store-k1.jsonl#helper-hashes"
+      ],
+      "later_sha256": "bfd861245f1a3d3b2d19a48966b410e979def2ae7cb62c5dde86e31eb03e1404",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/playmod.mjs",
+      "sha256": "56f5802c85ac55f4c5ecbee290384620826c62a1fde6d6bce4b4704aa95bfad8",
+      "bytes": 14600,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "56f5802c85ac55f4c5ecbee290384620826c62a1fde6d6bce4b4704aa95bfad8",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/power.mjs",
+      "sha256": "ec16f3c8dfbd67a7802e9718ce930e00d2889b0e5dc37fc7e040a255ea92f549",
+      "bytes": 17507,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "ec16f3c8dfbd67a7802e9718ce930e00d2889b0e5dc37fc7e040a255ea92f549",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/rec.mjs",
+      "sha256": "830d220debed119b5183391ce0d629de368369609ccbfafef14dd27bdf4643f4",
+      "bytes": 62226,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "830d220debed119b5183391ce0d629de368369609ccbfafef14dd27bdf4643f4",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/resnand.mjs",
+      "sha256": "c58d5d251c32f05d247ab8914551202c474e793bcdb2062ce61d2617fbc17462",
+      "bytes": 12700,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "c58d5d251c32f05d247ab8914551202c474e793bcdb2062ce61d2617fbc17462",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/resources.mjs",
+      "sha256": "122450c256d8ef188f77a8e323ba92a28a6102f9033b4634e3c77c36dd066002",
+      "bytes": 14110,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "122450c256d8ef188f77a8e323ba92a28a6102f9033b4634e3c77c36dd066002",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/rtos.mjs",
+      "sha256": "ea7e06666d37aaa97d06142febdbe853d996f68705bcca35f7ff11b4c6ed4b5d",
+      "bytes": 7071,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "ea7e06666d37aaa97d06142febdbe853d996f68705bcca35f7ff11b4c6ed4b5d",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/scene.mjs",
+      "sha256": "a842e60f803bc8b88113e1484e864235b5e2f9014dabb831210fd5cb9c8e9366",
+      "bytes": 20424,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "a842e60f803bc8b88113e1484e864235b5e2f9014dabb831210fd5cb9c8e9366",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/scpudev.mjs",
+      "sha256": "c93ce9ced00ba5effba9dedf61ac54d3ca437533f2fd8c899273d273ec5dfc6c",
+      "bytes": 40483,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "c93ce9ced00ba5effba9dedf61ac54d3ca437533f2fd8c899273d273ec5dfc6c",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/scpulink.mjs",
+      "sha256": "3df7584565d3b873e4cbf8fe0050364efe14ae383a4bff5d2dcc9251946ddb96",
+      "bytes": 10470,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "3df7584565d3b873e4cbf8fe0050364efe14ae383a4bff5d2dcc9251946ddb96",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/scpum4.mjs",
+      "sha256": "8b7d7fcb1473963f775a2f6742fb2236ef2309ddbaa47d98e7edc41692867514",
+      "bytes": 16575,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "8b7d7fcb1473963f775a2f6742fb2236ef2309ddbaa47d98e7edc41692867514",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/sdcard.mjs",
+      "sha256": "4f81b26b7158dff6bedbd7e88e10fe6293a4c6cea643b498ab98ff7041e7828e",
+      "bytes": 15367,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "4f81b26b7158dff6bedbd7e88e10fe6293a4c6cea643b498ab98ff7041e7828e",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/settings_ids.mjs",
+      "sha256": "9c395cbd29b04f7e3a4cc1c34332c6f3c4327b28b9ed45db969e9589758b1f78",
+      "bytes": 2242,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "9c395cbd29b04f7e3a4cc1c34332c6f3c4327b28b9ed45db969e9589758b1f78",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/shoe.mjs",
+      "sha256": "d6675b13346890962de1eec8930f763312f7f7d59ccb5b869a0607bf03840e98",
+      "bytes": 10854,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "d6675b13346890962de1eec8930f763312f7f7d59ccb5b869a0607bf03840e98",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/shuttersnd.mjs",
+      "sha256": "f4e81e625dcbaa0807d5ac67dfc246ad791f314c5ae9fd7f44192d12728fbc63",
+      "bytes": 5762,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "f4e81e625dcbaa0807d5ac67dfc246ad791f314c5ae9fd7f44192d12728fbc63",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/sim.mjs",
+      "sha256": "aab4081dcfc9fb63ca8e84f7f100f84a0ce6dc91a633595cb05446a5d480e6be",
+      "bytes": 16409,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "aab4081dcfc9fb63ca8e84f7f100f84a0ce6dc91a633595cb05446a5d480e6be",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/sio.mjs",
+      "sha256": "f0716ec9f3b3fbcffce75fa186a53f387ab1c336726595bfedc62119b4a9627b",
+      "bytes": 9980,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "f0716ec9f3b3fbcffce75fa186a53f387ab1c336726595bfedc62119b4a9627b",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/soundres.mjs",
+      "sha256": "a2c6dd3df56db40e95822cdb973bfe25efad7f049828626964c88886ff6aa8e9",
+      "bytes": 6887,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "a2c6dd3df56db40e95822cdb973bfe25efad7f049828626964c88886ff6aa8e9",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/storage.mjs",
+      "sha256": "f5ea0a36b9c78f0a05a5e0f5e45f53ee5f4d076019fab8ee41c2d9e8c4d37d9c",
+      "bytes": 50163,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "f5ea0a36b9c78f0a05a5e0f5e45f53ee5f4d076019fab8ee41c2d9e8c4d37d9c",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/subject.mjs",
+      "sha256": "a5bd078b39c2f8594b13f564e5086eb56e8f22bbcdbac115e226e19220b5b317",
+      "bytes": 13781,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "a5bd078b39c2f8594b13f564e5086eb56e8f22bbcdbac115e226e19220b5b317",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/take.mjs",
+      "sha256": "8c6dc9cc84ee43a46e22d542f79bb6a5138b9ed686f089b0e17d7c500f66d4ee",
+      "bytes": 65265,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "8c6dc9cc84ee43a46e22d542f79bb6a5138b9ed686f089b0e17d7c500f66d4ee",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/text.mjs",
+      "sha256": "e27b2d3781feab8d9eb3f49b0cc73524a9312913f85a4131358156a9770a1357",
+      "bytes": 22116,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "e27b2d3781feab8d9eb3f49b0cc73524a9312913f85a4131358156a9770a1357",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/touchpanel.mjs",
+      "sha256": "72f93c8bc053f159ec14a20b4dbcf0fabc189c01f79fde7a06efea160743e9de",
+      "bytes": 6610,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "72f93c8bc053f159ec14a20b4dbcf0fabc189c01f79fde7a06efea160743e9de",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/windows.mjs",
+      "sha256": "d18038a30d2f87e3abf6098cd943f35ff4202c6bb3a954d0f7ed1d9c8d28189f",
+      "bytes": 1265,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "d18038a30d2f87e3abf6098cd943f35ff4202c6bb3a954d0f7ed1d9c8d28189f",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/lab/wm8946.mjs",
+      "sha256": "4ae26e3647e049fc3bc72163aa978ffc36a0966125b8370dab44827cdfee67bd",
+      "bytes": 8976,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "4ae26e3647e049fc3bc72163aa978ffc36a0966125b8370dab44827cdfee67bd",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/machine.mjs",
+      "sha256": "9c10e396d122722a486fa73dedabb0c19ad45033c59c172ec6bcaa37d031cd63",
+      "bytes": 33745,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "9c10e396d122722a486fa73dedabb0c19ad45033c59c172ec6bcaa37d031cd63",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/util/bytes.mjs",
+      "sha256": "86707333d72877e35b374bfd39f3d6af2b716437c73df46929e74b460af985be",
+      "bytes": 6115,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "86707333d72877e35b374bfd39f3d6af2b716437c73df46929e74b460af985be",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/util/equal.mjs",
+      "sha256": "31d47358a57d40bc4d67b9a077a8c05e6c4f1fe7a92de33f8eb538d75ead238e",
+      "bytes": 1471,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "31d47358a57d40bc4d67b9a077a8c05e6c4f1fe7a92de33f8eb538d75ead238e",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/util/hex.mjs",
+      "sha256": "d48bffb45373a94b8d1c824aa46d7a93665f282ee8a563370d698b1a53237c33",
+      "bytes": 489,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "d48bffb45373a94b8d1c824aa46d7a93665f282ee8a563370d698b1a53237c33",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/util/parse.mjs",
+      "sha256": "b0754de377324528b15d6588dbe1d634649cbefd68754bf6b0b114beee3ddfd7",
+      "bytes": 1807,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "b0754de377324528b15d6588dbe1d634649cbefd68754bf6b0b114beee3ddfd7",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/util/show.mjs",
+      "sha256": "58a20ae76e473414c3b0a0075eb362f7a1cf4c968b3feef64659f0473515e076",
+      "bytes": 1724,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "58a20ae76e473414c3b0a0075eb362f7a1cf4c968b3feef64659f0473515e076",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/util/tally.mjs",
+      "sha256": "33f495d217ff46a5e2e1bb74a3cb319b2db374e8bd3d37dfef75da9a6864ed26",
+      "bytes": 896,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "33f495d217ff46a5e2e1bb74a3cb319b2db374e8bd3d37dfef75da9a6864ed26",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/emu/src/util/tracejson.mjs",
+      "sha256": "52a0e82cd086dee77069600061f3d478fbf4ac447c75173dc53e97365f0e4e77",
+      "bytes": 3871,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_sha256": "52a0e82cd086dee77069600061f3d478fbf4ac447c75173dc53e97365f0e4e77",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/unpacked/E147/OLY_E_147_1100_0000_0000.BIN.blk00000000.OE.0100.bin",
+      "sha256": "5e8d376e9111a44ac0352f26030d7c1b17026d42c45f3600cfa02a0e8c5b7d59",
+      "bytes": 33554368,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/session-accept-c1.jsonl#helper-hashes",
+        "work/out/session-accept-control.jsonl#helper-hashes",
+        "work/out/session-accept2-c1.jsonl#helper-hashes",
+        "work/out/session-accept2-control.jsonl#helper-hashes",
+        "work/out/session-accept3-c1.jsonl#helper-hashes",
+        "work/out/session-accept3-c2.jsonl#helper-hashes",
+        "work/out/session-accept3-control.jsonl#helper-hashes",
+        "work/out/session-k1-c1.jsonl#helper-hashes",
+        "work/out/session-k1-c2.jsonl#helper-hashes",
+        "work/out/session-k1-control-saf.jsonl#helper-hashes",
+        "work/out/session-k1-control.jsonl#helper-hashes",
+        "work/out/session-k3-control-saf.jsonl#helper-hashes",
+        "work/out/session-k3-p1.jsonl#helper-hashes",
+        "work/out/session-k4-control-saf.jsonl#helper-hashes",
+        "work/out/session-k4-p1.jsonl#helper-hashes",
+        "work/out/session-k5-control-caf.jsonl#helper-hashes",
+        "work/out/session-k5-control-saf.jsonl#helper-hashes",
+        "work/out/session-k5-p1.jsonl#helper-hashes",
+        "work/out/session-k5-p2.jsonl#helper-hashes",
+        "work/out/session-k6-control-caf.jsonl#helper-hashes",
+        "work/out/session-k6-control-saf.jsonl#helper-hashes",
+        "work/out/session-k6-p1.jsonl#helper-hashes",
+        "work/out/session-k6-p2.jsonl#helper-hashes",
+        "work/out/session-k6-p3.jsonl#helper-hashes",
+        "work/out/session-k6-p4.jsonl#helper-hashes",
+        "work/out/session-k7-p4.jsonl#helper-hashes",
+        "work/out/session-reopen-k1.jsonl#helper-hashes",
+        "work/out/session-store-k1.jsonl#helper-hashes"
+      ],
+      "later_sha256": "5e8d376e9111a44ac0352f26030d7c1b17026d42c45f3600cfa02a0e8c5b7d59",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "om-emu/unpacked/E147/OLY_E_147_1100_0000_0000.BIN.blk02000000.OE.0101.bin",
+      "sha256": "6d2bef74b4b2fa089f271529482f96505a170b91e79ab9b1a13f3ce8f7918226",
+      "bytes": 60817344,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/session-accept-c1.jsonl#helper-hashes",
+        "work/out/session-accept-control.jsonl#helper-hashes",
+        "work/out/session-accept2-c1.jsonl#helper-hashes",
+        "work/out/session-accept2-control.jsonl#helper-hashes",
+        "work/out/session-accept3-c1.jsonl#helper-hashes",
+        "work/out/session-accept3-c2.jsonl#helper-hashes",
+        "work/out/session-accept3-control.jsonl#helper-hashes",
+        "work/out/session-k1-c1.jsonl#helper-hashes",
+        "work/out/session-k1-c2.jsonl#helper-hashes",
+        "work/out/session-k1-control-saf.jsonl#helper-hashes",
+        "work/out/session-k1-control.jsonl#helper-hashes",
+        "work/out/session-k3-control-saf.jsonl#helper-hashes",
+        "work/out/session-k3-p1.jsonl#helper-hashes",
+        "work/out/session-k4-control-saf.jsonl#helper-hashes",
+        "work/out/session-k4-p1.jsonl#helper-hashes",
+        "work/out/session-k5-control-caf.jsonl#helper-hashes",
+        "work/out/session-k5-control-saf.jsonl#helper-hashes",
+        "work/out/session-k5-p1.jsonl#helper-hashes",
+        "work/out/session-k5-p2.jsonl#helper-hashes",
+        "work/out/session-k6-control-caf.jsonl#helper-hashes",
+        "work/out/session-k6-control-saf.jsonl#helper-hashes",
+        "work/out/session-k6-p1.jsonl#helper-hashes",
+        "work/out/session-k6-p2.jsonl#helper-hashes",
+        "work/out/session-k6-p3.jsonl#helper-hashes",
+        "work/out/session-k6-p4.jsonl#helper-hashes",
+        "work/out/session-k7-p4.jsonl#helper-hashes",
+        "work/out/session-reopen-k1.jsonl#helper-hashes",
+        "work/out/session-store-k1.jsonl#helper-hashes"
+      ],
+      "later_sha256": "6d2bef74b4b2fa089f271529482f96505a170b91e79ab9b1a13f3ce8f7918226",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "ref/tasks/T3a-afon-zone-row/run-20261118-053855/work/out/overlay-changed-bytes.csv",
+      "sha256": "ff14ccafef13d99eae88c5e742ddb304598c31bb01c1257fe71f922c4b3536d2",
+      "bytes": 8107,
+      "hashed": "execution",
+      "execution_where": [
+        "work/out/session-accept-c1.jsonl#helper-hashes",
+        "work/out/session-accept-control.jsonl#helper-hashes",
+        "work/out/session-accept2-c1.jsonl#helper-hashes",
+        "work/out/session-accept2-control.jsonl#helper-hashes",
+        "work/out/session-accept3-c1.jsonl#helper-hashes",
+        "work/out/session-accept3-c2.jsonl#helper-hashes",
+        "work/out/session-accept3-control.jsonl#helper-hashes",
+        "work/out/session-k1-c1.jsonl#helper-hashes",
+        "work/out/session-k1-c2.jsonl#helper-hashes",
+        "work/out/session-k1-control-saf.jsonl#helper-hashes",
+        "work/out/session-k1-control.jsonl#helper-hashes",
+        "work/out/session-k3-control-saf.jsonl#helper-hashes",
+        "work/out/session-k3-p1.jsonl#helper-hashes",
+        "work/out/session-k4-control-saf.jsonl#helper-hashes",
+        "work/out/session-k4-p1.jsonl#helper-hashes",
+        "work/out/session-k5-control-caf.jsonl#helper-hashes",
+        "work/out/session-k5-control-saf.jsonl#helper-hashes",
+        "work/out/session-k5-p1.jsonl#helper-hashes",
+        "work/out/session-k5-p2.jsonl#helper-hashes",
+        "work/out/session-k6-control-caf.jsonl#helper-hashes",
+        "work/out/session-k6-control-saf.jsonl#helper-hashes",
+        "work/out/session-k6-p1.jsonl#helper-hashes",
+        "work/out/session-k6-p2.jsonl#helper-hashes",
+        "work/out/session-k6-p3.jsonl#helper-hashes",
+        "work/out/session-k6-p4.jsonl#helper-hashes",
+        "work/out/session-k7-p4.jsonl#helper-hashes",
+        "work/out/session-reopen-k1.jsonl#helper-hashes",
+        "work/out/session-store-k1.jsonl#helper-hashes"
+      ],
+      "later_sha256": "ff14ccafef13d99eae88c5e742ddb304598c31bb01c1257fe71f922c4b3536d2",
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "TASK.md",
+      "sha256": "72372d5771c45946770540a6531db3f70c5a0284347a671f1b5240e150beec91",
+      "bytes": 2331,
+      "hashed": "later"
+    },
+    {
+      "path": "brief.md",
+      "sha256": "e9f6e4b7b84a27cddf6637bca36a940212d0437ef7f41bc472899f673c379ee8",
+      "bytes": 5554,
+      "hashed": "later"
+    },
+    {
+      "path": "templates/result.md",
+      "sha256": "18d605fc1f70369c40245130cdd499288bd3ae1a8fe1bdb84575cb58532d0110",
+      "bytes": 1230,
+      "hashed": "later"
+    },
+    {
+      "path": "ref/tasks/T3j-afon-acceptance-assertions/brief.md",
+      "sha256": "3fc9e4ae1a4a0ef662b4fa10a2894ef3541a535d3c5ff19f9c865e81689946ff",
+      "bytes": 4482,
+      "hashed": "later"
+    },
+    {
+      "path": "ref/tasks/T3j-afon-acceptance-assertions/decision.md",
+      "sha256": "aa826a5ab9ade871aaf34227d3c7bdb3b7c5ba8b427d8535e540bd0753f728c8",
+      "bytes": 1924,
+      "hashed": "later"
+    },
+    {
+      "path": "ref/analysis/button-af/readiness/t3-afon-zone-row/design/T3i-design.md",
+      "sha256": "86bec4b42a1b2175197b4dbee5492f5a8683907ac9c46c1b89cbe207b9cdf99d",
+      "bytes": 5959,
+      "hashed": "later"
+    },
+    {
+      "path": "ref/analysis/button-af/readiness/t3-afon-zone-row/README.md",
+      "sha256": "e3b4574336f5c9a155f63869d0b85b9584b16f9974eaf7cb0f17fcb2cc2692e1",
+      "bytes": 4474,
+      "hashed": "later"
+    },
+    {
+      "path": "ref/analysis/button-af/AFON-MENU-RESEARCH.md",
+      "sha256": "4ec4b11846008089bdf47129b15bc190a712419d99c9fe0df1e679caf605ac6e",
+      "bytes": 64416,
+      "hashed": "later"
+    },
+    {
+      "path": "ref/AF-PROFILE-PROTOTYPE.md",
+      "sha256": "e798850abc759309ff9b153cfca040a2b12decd603e505337a5b5b1f1d056e06",
+      "bytes": 8255,
+      "hashed": "later"
+    },
+    {
+      "path": "ref/scripts/om_emu_af_edge_overlay.py",
+      "sha256": "c02ade867b24f418dbfb3fb170d36ffff4a3740b88153cf679be982165b09f3b",
+      "bytes": 5694,
+      "hashed": "later"
+    },
+    {
+      "path": "ref/scripts/om_emu_af_live_probe.mjs",
+      "sha256": "e11f4d0ee7594c24d69b309227ca3fff1c788ea6e2b20c97ce4ba82f090c4ad5",
+      "bytes": 24902,
+      "hashed": "later"
+    },
+    {
+      "path": "ref/analysis/button-af/readiness/om-emu-af-native1/central-edge-v2.csv",
+      "sha256": "bdae246da8f472b0442065d39efdb21b45ffaec47e97a78bc0c3337c6bc7c012",
+      "bytes": 177159,
+      "hashed": "later"
+    },
+    {
+      "path": "ref/analysis/button-af/readiness/om-emu-af-native1/central-edge-v2.json",
+      "sha256": "bacb71e5223f8accf86fa12da3ecb4bfd2d4b8927f3e8f79bb3505e447e4cc53",
+      "bytes": 597,
+      "hashed": "later"
+    },
+    {
+      "path": "ref/analysis/button-af/readiness/task-context-placement1/live-profile-relocation-map.txt",
+      "sha256": "70c22aa588dab6b222b37469dbacf3ca4f9c853b7633e4d74a00421ec220cd7d",
+      "bytes": 296,
+      "hashed": "later"
+    }
+  ],
+  "sources": [
+    {
+      "path": "work/scripts/accept_edges_k1.mjs",
+      "sha256": "7ab1a3cb09a79052a6b5d69ca0960695211ab9b33b8d6c36e34774161036fc2e",
+      "bytes": 8191,
+      "hashed": "execution",
+      "execution_sha256": "7ab1a3cb09a79052a6b5d69ca0960695211ab9b33b8d6c36e34774161036fc2e",
+      "execution_where": [
+        "work/out/cmd/30.exit"
+      ],
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "work/scripts/accept_edges_k2.mjs",
+      "sha256": "ed02e17366986b4d3a4e02fa6a8102352d7fd3e97000b2fcfc5a45ee7475e5ed",
+      "bytes": 9439,
+      "hashed": "execution",
+      "execution_sha256": "ed02e17366986b4d3a4e02fa6a8102352d7fd3e97000b2fcfc5a45ee7475e5ed",
+      "execution_where": [
+        "work/out/cmd/32.exit"
+      ],
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "work/scripts/accept_edges_k3.mjs",
+      "sha256": "9c5f109d90a0e48c57b8997e6681c27731d56b4035a9dce85d84eb757de82495",
+      "bytes": 9240,
+      "hashed": "execution",
+      "execution_sha256": "9c5f109d90a0e48c57b8997e6681c27731d56b4035a9dce85d84eb757de82495",
+      "execution_where": [
+        "work/out/cmd/34.exit"
+      ],
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "work/scripts/accept_page_k1.mjs",
+      "sha256": "c580cd887b995539baf995efc2410dcb02cb2e9bfc599d745c5346c18e167667",
+      "bytes": 9114,
+      "hashed": "execution",
+      "execution_sha256": "c580cd887b995539baf995efc2410dcb02cb2e9bfc599d745c5346c18e167667",
+      "execution_where": [
+        "work/out/import-inventory-k1.json",
+        "work/out/cmd/11.exit",
+        "work/out/cmd/13.exit"
+      ],
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "work/scripts/accept_reopen_k1.mjs",
+      "sha256": "6ff0e6d310f013a44eace9270babbbf34018ec5e6bf6adde1b28d4736cc80051",
+      "bytes": 3275,
+      "hashed": "execution",
+      "execution_sha256": "6ff0e6d310f013a44eace9270babbbf34018ec5e6bf6adde1b28d4736cc80051",
+      "execution_where": [
+        "work/out/cmd/36.exit"
+      ],
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "work/scripts/accept_store_k1.mjs",
+      "sha256": "acd1d4e14ee7055fe41c49902016f986def507eaa346d0db525cbd86abdc3b68",
+      "bytes": 2750,
+      "hashed": "execution",
+      "execution_sha256": "acd1d4e14ee7055fe41c49902016f986def507eaa346d0db525cbd86abdc3b68",
+      "execution_where": [
+        "work/out/cmd/37.exit"
+      ],
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "work/scripts/accept_table_k1.json",
+      "sha256": "85df8d1ed8c77c951d73876a2120ece27d3704c7f0dedc290d8e40297de279d5",
+      "bytes": 37574,
+      "hashed": "execution",
+      "execution_sha256": "85df8d1ed8c77c951d73876a2120ece27d3704c7f0dedc290d8e40297de279d5",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "work/scripts/build_overlay_k1.py",
+      "sha256": "0d85680404e1e4510120cbd62b99c4ac8a9cf41fb351fcef873b8e4301ac86bc",
+      "bytes": 10359,
+      "hashed": "execution",
+      "execution_sha256": "0d85680404e1e4510120cbd62b99c4ac8a9cf41fb351fcef873b8e4301ac86bc",
+      "execution_where": [
+        "work/out/cmd/05.exit"
+      ],
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "work/scripts/build_swap_k1.py",
+      "sha256": "9f109cf2421ecf8faf0a6ec6b1925015f90772f2aa81e187d5381e88e358c699",
+      "bytes": 2571,
+      "hashed": "execution",
+      "execution_sha256": "9f109cf2421ecf8faf0a6ec6b1925015f90772f2aa81e187d5381e88e358c699",
+      "execution_where": [
+        "work/out/cmd/07.exit"
+      ],
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "work/scripts/build_swap_k2.py",
+      "sha256": "ed933686a079c18fb094753c99acf518955db88056eb34e7a79ea56b08d53199",
+      "bytes": 2444,
+      "hashed": "execution",
+      "execution_sha256": "ed933686a079c18fb094753c99acf518955db88056eb34e7a79ea56b08d53199",
+      "execution_where": [
+        "work/out/cmd/10.exit"
+      ],
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "work/scripts/build_swap_k3.py",
+      "sha256": "acb19331fa792854a5a982b6fedbbc42385dd387de5113458679cea7c26fe3a0",
+      "bytes": 2328,
+      "hashed": "execution",
+      "execution_sha256": "acb19331fa792854a5a982b6fedbbc42385dd387de5113458679cea7c26fe3a0",
+      "execution_where": [
+        "work/out/cmd/12.exit"
+      ],
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "work/scripts/build_swap_k4.py",
+      "sha256": "363e9dbc3b838f047d40ad51f6a24a5b78efc2b853f8926d40b2d52c2f7c206e",
+      "bytes": 3462,
+      "hashed": "execution",
+      "execution_sha256": "363e9dbc3b838f047d40ad51f6a24a5b78efc2b853f8926d40b2d52c2f7c206e",
+      "execution_where": [
+        "work/out/cmd/14.exit"
+      ],
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "work/scripts/check_listings_k1.py",
+      "sha256": "386aa4776786cdb99dfd8f4257533ac3eef801493e58cca23f4d0ed4c65ce4b5",
+      "bytes": 1455,
+      "hashed": "execution",
+      "execution_sha256": "386aa4776786cdb99dfd8f4257533ac3eef801493e58cca23f4d0ed4c65ce4b5",
+      "execution_where": [
+        "work/out/cmd/04.exit"
+      ],
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "work/scripts/copy_session_k1.py",
+      "sha256": "2c1f2ff0e9916ee5a17eddcc4af749dd3932535a1d18594685976c31d3cbcf36",
+      "bytes": 583,
+      "hashed": "execution",
+      "execution_sha256": "2c1f2ff0e9916ee5a17eddcc4af749dd3932535a1d18594685976c31d3cbcf36",
+      "execution_where": [
+        "work/out/cmd/06.exit"
+      ],
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "work/scripts/diff_stores_k1.py",
+      "sha256": "fe62d49da913ec35f07cc99125d31b153b84bf0cde30e314f30a99e05e5033a8",
+      "bytes": 1225,
+      "hashed": "execution",
+      "execution_sha256": "fe62d49da913ec35f07cc99125d31b153b84bf0cde30e314f30a99e05e5033a8",
+      "execution_where": [
+        "work/out/cmd/35.exit"
+      ],
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "work/scripts/diff_stores_k2.py",
+      "sha256": "44ce55daa88563852cf8ece387b36c560dc3cf104ec4300a315df7e2087144ce",
+      "bytes": 906,
+      "hashed": "execution",
+      "execution_sha256": "44ce55daa88563852cf8ece387b36c560dc3cf104ec4300a315df7e2087144ce",
+      "execution_where": [
+        "work/out/cmd/38.exit"
+      ],
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "work/scripts/DisasmRangesK1.java",
+      "sha256": "e411dc295baa29319a03e06f3bc6152b5fc495c5f509fc09c81ac1e128fb829c",
+      "bytes": 3351,
+      "hashed": "later"
+    },
+    {
+      "path": "work/scripts/exp_edges_k1.mjs",
+      "sha256": "dad731404eeed64c70e9ef4fdbe91bb23c11e30b2c79e8c5b882762d8a907398",
+      "bytes": 10970,
+      "hashed": "execution",
+      "execution_sha256": "dad731404eeed64c70e9ef4fdbe91bb23c11e30b2c79e8c5b882762d8a907398",
+      "execution_where": [
+        "work/out/cmd/15.exit",
+        "work/out/cmd/16.exit"
+      ],
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "work/scripts/exp_edges_k2.mjs",
+      "sha256": "cef828220309b9a2a3b447ce78f7f8303e06e629386874fc943e51f186dc4864",
+      "bytes": 11366,
+      "hashed": "execution",
+      "execution_sha256": "cef828220309b9a2a3b447ce78f7f8303e06e629386874fc943e51f186dc4864",
+      "execution_where": [
+        "work/out/cmd/18.exit",
+        "work/out/cmd/19.exit"
+      ],
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "work/scripts/exp_edges_k3.mjs",
+      "sha256": "d40e395188dc9fb7b22d773433fb6a08560af3ebf1b08dc0a28c2f8c2b044d91",
+      "bytes": 11561,
+      "hashed": "execution",
+      "execution_sha256": "d40e395188dc9fb7b22d773433fb6a08560af3ebf1b08dc0a28c2f8c2b044d91",
+      "execution_where": [
+        "work/out/cmd/21.exit",
+        "work/out/cmd/22.exit"
+      ],
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "work/scripts/exp_edges_k4.mjs",
+      "sha256": "b711eb0810f7011e43725ecd521e13e5e6d83399d1e9b6fd9a08c9c264cd5e41",
+      "bytes": 11614,
+      "hashed": "execution",
+      "execution_sha256": "b711eb0810f7011e43725ecd521e13e5e6d83399d1e9b6fd9a08c9c264cd5e41",
+      "execution_where": [
+        "work/out/cmd/24.exit"
+      ],
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "work/scripts/exp_edges_k5.mjs",
+      "sha256": "d824d550086bee82e4d274e0d29a8c38a0f54cf37fd25d0f28b385a8a02a547c",
+      "bytes": 11489,
+      "hashed": "execution",
+      "execution_sha256": "d824d550086bee82e4d274e0d29a8c38a0f54cf37fd25d0f28b385a8a02a547c",
+      "execution_where": [
+        "work/out/cmd/26.exit"
+      ],
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "work/scripts/exp_edges_k6.mjs",
+      "sha256": "d7b0c089a4809eddae7b48b04858f4bedb85c66a41597c0ac6c2c239cb4a30c6",
+      "bytes": 11713,
+      "hashed": "execution",
+      "execution_sha256": "d7b0c089a4809eddae7b48b04858f4bedb85c66a41597c0ac6c2c239cb4a30c6",
+      "execution_where": [
+        "work/out/cmd/28.exit"
+      ],
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "work/scripts/exp_p4_k7.mjs",
+      "sha256": "7a880183c543db9fa0c391a07d999fc3ee7718cf429f23a3092e9a800be1044a",
+      "bytes": 6804,
+      "hashed": "execution",
+      "execution_sha256": "7a880183c543db9fa0c391a07d999fc3ee7718cf429f23a3092e9a800be1044a",
+      "execution_where": [
+        "work/out/cmd/29.exit"
+      ],
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "work/scripts/make_manifest_k2.py",
+      "sha256": "2b5087b2896b59dc080cbe9a046c0c8e5989857093af0115624ba7be16661f4d",
+      "bytes": 1099,
+      "hashed": "execution",
+      "execution_sha256": "2b5087b2896b59dc080cbe9a046c0c8e5989857093af0115624ba7be16661f4d",
+      "execution_where": [
+        "work/out/cmd/40.exit"
+      ],
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "work/scripts/make_table_k1.py",
+      "sha256": "7fce1127a724a729e0f22ed70d7f569293c4b1db1edf69015da65a160decdf5e",
+      "bytes": 1592,
+      "hashed": "execution",
+      "execution_sha256": "7fce1127a724a729e0f22ed70d7f569293c4b1db1edf69015da65a160decdf5e",
+      "execution_where": [
+        "work/out/cmd/08.exit"
+      ],
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "work/scripts/observe_k1.mjs",
+      "sha256": "a286555bdd7e4cb81a16c270db7ff3623a7e8fe0eede6862bd6686b876f3e122",
+      "bytes": 3517,
+      "hashed": "execution",
+      "execution_sha256": "a286555bdd7e4cb81a16c270db7ff3623a7e8fe0eede6862bd6686b876f3e122",
+      "execution_where": [
+        "work/out/import-inventory-k1.json"
+      ],
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "work/scripts/run_logged.mjs",
+      "sha256": "e00170efc367d0ed4c145db59bd6a84738688554f6904980ea382f6494325d15",
+      "bytes": 4095,
+      "hashed": "later"
+    },
+    {
+      "path": "work/scripts/scan_owned_k1.py",
+      "sha256": "d7fe00ad0649f586a2bebc0c82c2825ae2e83d951a93504313fcace8b1198441",
+      "bytes": 1948,
+      "hashed": "execution",
+      "execution_sha256": "d7fe00ad0649f586a2bebc0c82c2825ae2e83d951a93504313fcace8b1198441",
+      "execution_where": [
+        "work/out/cmd/03.exit"
+      ],
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "work/scripts/static_overlay_k1.py",
+      "sha256": "a921a6ef0530c531a95c5f495bdedc22c05249a2e90e161c48a8dbeef34ff112",
+      "bytes": 8316,
+      "hashed": "execution",
+      "execution_sha256": "a921a6ef0530c531a95c5f495bdedc22c05249a2e90e161c48a8dbeef34ff112",
+      "execution_where": [
+        "work/out/cmd/01.exit"
+      ],
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "work/scripts/write_manifest_k1.py",
+      "sha256": "bfc654ec1e36634757d5a9aa7bfb09dd653baeadf9410dbf526017920651ba33",
+      "bytes": 6634,
+      "hashed": "execution",
+      "execution_sha256": "bfc654ec1e36634757d5a9aa7bfb09dd653baeadf9410dbf526017920651ba33",
+      "execution_where": [
+        "work/out/cmd/39.exit"
+      ],
+      "later_matches": true,
+      "conflicts": []
+    },
+    {
+      "path": "work/scripts/write_manifest_k2.py",
+      "sha256": "f9516e9f68800ca8dd5547736c8decb95b3a80a02d6b95c1d2be3a0f96c469f6",
+      "bytes": 7044,
+      "hashed": "later"
+    },
+    {
+      "path": "work/scripts/zone_session_k1.mjs",
+      "sha256": "04cc1c3cc9d24a58e93cc8b1ea01f26f823c168be67d707333ceeb40bf359734",
+      "bytes": 24357,
+      "hashed": "execution",
+      "execution_sha256": "04cc1c3cc9d24a58e93cc8b1ea01f26f823c168be67d707333ceeb40bf359734",
+      "execution_where": [
+        "work/out/import-inventory-k1.json",
+        "work/out/session-accept-c1.jsonl#helper-hashes",
+        "work/out/session-accept-control.jsonl#helper-hashes",
+        "work/out/session-accept2-c1.jsonl#helper-hashes",
+        "work/out/session-accept2-control.jsonl#helper-hashes",
+        "work/out/session-accept3-c1.jsonl#helper-hashes",
+        "work/out/session-accept3-c2.jsonl#helper-hashes",
+        "work/out/session-accept3-control.jsonl#helper-hashes",
+        "work/out/session-k1-c1.jsonl#helper-hashes",
+        "work/out/session-k1-c2.jsonl#helper-hashes",
+        "work/out/session-k1-control-saf.jsonl#helper-hashes",
+        "work/out/session-k1-control.jsonl#helper-hashes",
+        "work/out/session-k3-control-saf.jsonl#helper-hashes",
+        "work/out/session-k3-p1.jsonl#helper-hashes",
+        "work/out/session-k4-control-saf.jsonl#helper-hashes",
+        "work/out/session-k4-p1.jsonl#helper-hashes",
+        "work/out/session-k5-control-caf.jsonl#helper-hashes",
+        "work/out/session-k5-control-saf.jsonl#helper-hashes",
+        "work/out/session-k5-p1.jsonl#helper-hashes",
+        "work/out/session-k5-p2.jsonl#helper-hashes",
+        "work/out/session-k6-control-caf.jsonl#helper-hashes",
+        "work/out/session-k6-control-saf.jsonl#helper-hashes",
+        "work/out/session-k6-p1.jsonl#helper-hashes",
+        "work/out/session-k6-p2.jsonl#helper-hashes",
+        "work/out/session-k6-p3.jsonl#helper-hashes",
+        "work/out/session-k6-p4.jsonl#helper-hashes",
+        "work/out/session-k7-p4.jsonl#helper-hashes",
+        "work/out/session-reopen-k1.jsonl#helper-hashes",
+        "work/out/session-store-k1.jsonl#helper-hashes",
+        "work/out/cmd/09.exit"
+      ],
+      "later_matches": true,
+      "conflicts": []
+    }
+  ],
+  "outputs": [
+    {
+      "path": "work/out/accept-edge-c1-zone-1.png",
+      "sha256": "890dfa2216bc67928874f9b817bf25beae5917c2eaa0242c8cc1ee64a6e22da5",
+      "bytes": 12877,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-edge-c1-zone-2.png",
+      "sha256": "9ec5a01baa6d41d30fc56b713dee7c549bb5214c2c77ef9968638a418b364f06",
+      "bytes": 14357,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-edges-k1.jsonl",
+      "sha256": "da173469746b9e5a195ec4d75e0b3bf7e9115a52ea09fa599dc63a06752c600d",
+      "bytes": 13903,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-edges-k2.jsonl",
+      "sha256": "cf9d77a700294d7c21f470ef1328fcc51f78054aab6f45c30c4454cd5dd9b4b5",
+      "bytes": 14004,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-edges-k3.jsonl",
+      "sha256": "bec35d1f3e3ee01b9d9e9c2b8dd3aaf3b104cdb01a96d3ce56f17c950eec47b8",
+      "bytes": 32989,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c1-2154-cancel.png",
+      "sha256": "0348f40d7d6ea86f7b2cd357479346408bd1abd5e3b6d559f08311fba77d214f",
+      "bytes": 11241,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c1-2154-open.png",
+      "sha256": "b2b69826bcf5ce521ee62af194056ce3fe97b74728969a8b13dad0fedbe4c457",
+      "bytes": 15551,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c1-2155-cancel.png",
+      "sha256": "baf31dfa6ac1c29c65ff4346ce9738c2863615a4091b3ac7a29f28cb7f69534d",
+      "bytes": 11234,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c1-2155-open.png",
+      "sha256": "b7bf9fbc7f5d32fd59ed8812492207a1f0a9c496a6621a2536c0dfb092791717",
+      "bytes": 16206,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c1-baseline.png",
+      "sha256": "ff0a276eb6db88237146b9b048a0faecf263ac295aaa0d1a8a1ef4697177a9de",
+      "bytes": 6799,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c1-commit-2.png",
+      "sha256": "daefddd1bb789ae829a7db98abebd8b8e4e21d8aefade0161db2bf0bf55c47a1",
+      "bytes": 11297,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c1-commit-9.png",
+      "sha256": "d878620b8e3cc0e3266811ce1135b79cd75f9cd8aa3d285633c62021c52c2ed5",
+      "bytes": 11138,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c1-commit2-right-1.png",
+      "sha256": "890dfa2216bc67928874f9b817bf25beae5917c2eaa0242c8cc1ee64a6e22da5",
+      "bytes": 12877,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c1-commit2-right-2.png",
+      "sha256": "e1426dff00d629cd80f553a3dc610c5a240a6f6b62f3fceb706d5a980dd447d9",
+      "bytes": 12766,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c1-commit9-right-3.png",
+      "sha256": "1e845a4397a02d0c226ada364b34f30195477586f30f31d10e1d0808f92f9286",
+      "bytes": 12873,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c1-commit9-right-4.png",
+      "sha256": "d82afc1ad170528ad33364caa4a03b9e7e76260ad8cabd2bb4c20134a216d0ae",
+      "bytes": 12794,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c1-commit9-right-5.png",
+      "sha256": "e747b4b4a001f567c4fc617113f01bd95b74a335d4e981844a6ed1f47e71f7f7",
+      "bytes": 12776,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c1-commit9-right-6.png",
+      "sha256": "42e7754f739b2fa510cd03c7ba160982613805e0594c5511a4426ac6e75978c2",
+      "bytes": 9836,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c1-commit9-right-7.png",
+      "sha256": "17fdd18d5aeed9933b903b3b053818f3df562ab993613d7ff3feec96b118041e",
+      "bytes": 10148,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c1-commit9-right-8.png",
+      "sha256": "9faa3460e71a5d01506b6a99d7fcc57f6547335cad9569a1d59b08e828ccbfb9",
+      "bytes": 9831,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c1-commit9-right-9.png",
+      "sha256": "54ccece0a4263dffd8e60f09efb7b035724db438c407d5e6d7fd01ee1f059202",
+      "bytes": 9335,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c1-down-2155.png",
+      "sha256": "baf31dfa6ac1c29c65ff4346ce9738c2863615a4091b3ac7a29f28cb7f69534d",
+      "bytes": 11234,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c1-down-afbutton.png",
+      "sha256": "8243424b6d851082ee7486a92aca5de26a7756d177a0debc1c2ed461ce778a70",
+      "bytes": 13243,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c1-down-caf.png",
+      "sha256": "a55731cd5649322de917b11c90daab7c38020e3ef4cf3ec1320344f30bfcbcc4",
+      "bytes": 13214,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c1-left-0.png",
+      "sha256": "dcaca24e6d0790189ef076631128a252731ed9e1feda703516d226e07e753560",
+      "bytes": 18944,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c1-left-1.png",
+      "sha256": "c6a699de5d1857525e7a00e94d53936e4c067cb0c05654ec518bb6ba2aef0970",
+      "bytes": 16636,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c1-left-10.png",
+      "sha256": "b258d5a935d701fadc164dcc0ebc84e2b6e9fd0b37f0afb2d24bbaef2a18cbfa",
+      "bytes": 11513,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c1-left-11.png",
+      "sha256": "2fa322003891566e5a88a86cb62a7448e067ff1b12f748c715a6ceeadac7dac7",
+      "bytes": 14923,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c1-left-12.png",
+      "sha256": "26958b4832108564c475fa0163c82c762a0ff77f560b8142a4ab4268d66dbd38",
+      "bytes": 16383,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c1-left-13.png",
+      "sha256": "3436dd3d7db5e60bc892f6fe30db98d614f9dbed77ee20fd82187ed3ad8188a2",
+      "bytes": 22020,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c1-left-14.png",
+      "sha256": "f5d92ea55199e18af55dab08f21ba941dc4fdb2ce4430069a624c1f7c6ba7877",
+      "bytes": 15655,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c1-left-15.png",
+      "sha256": "e8ac865af9f59a330ecbba1e9aada16968d56055d969d6eb162d097d0471b14d",
+      "bytes": 19547,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c1-left-16.png",
+      "sha256": "1cb12e9973912ca72bd164b70e9e9ad3cb279607f475df9dd769d7002365ff0e",
+      "bytes": 12687,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c1-left-17.png",
+      "sha256": "71af34cb1ea60a5a7e5357645e556edc5f1cca45513c29b2aac3143c80fa96c1",
+      "bytes": 15604,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c1-left-18.png",
+      "sha256": "e43643c600ba0c5b6bcba0a45c8b4192afa0381f59d8ac772a68cca5b8407fd3",
+      "bytes": 9931,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c1-left-19.png",
+      "sha256": "36c90ea2e5286d10da6471788be6b16514f18000301844857f4450fde3f8ad91",
+      "bytes": 13155,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c1-left-2.png",
+      "sha256": "cbac7ce631f21d8211ee968b33d6e5137ec2dea5bb36fa2c88d6877104f17124",
+      "bytes": 17134,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c1-left-3.png",
+      "sha256": "85cff2f79ef134552e12b123687f29ed7d7e124bec54b00b1ee384e3caf9ebe0",
+      "bytes": 15461,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c1-left-4.png",
+      "sha256": "1b63c462c0f711f6eb84bcd1009b10d3df572164c7318189f732f058a9fa4644",
+      "bytes": 13107,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c1-left-5.png",
+      "sha256": "80db5b503ccf3eecf9149fd3baaf62bfe48c92f9538e9a01a3d1aff67c83418a",
+      "bytes": 12782,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c1-left-6.png",
+      "sha256": "29d07d70dc92f25cf30dec0c0c26f6b105c3f64437c064b7f6fc836c22667b79",
+      "bytes": 18139,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c1-left-7.png",
+      "sha256": "318f49f1de68251aff8bb558924aa7d7663258a7fc31da4897147b884ed3f77c",
+      "bytes": 8869,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c1-left-8.png",
+      "sha256": "fb44be426d751d77e45cf33927fc46b96bb50e1b38958489cc9fc02414659e6e",
+      "bytes": 15931,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c1-left-9.png",
+      "sha256": "46358a19276604963631e8ea04de0336f3420c5dc6f436159598144f2a74cf4b",
+      "bytes": 15320,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c1-menu.png",
+      "sha256": "542ed40b758684c43091a6fd9b1f1634cf1e5084f6cfa9a93c3cbeda0cec9715",
+      "bytes": 14163,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c1-page27.png",
+      "sha256": "0348f40d7d6ea86f7b2cd357479346408bd1abd5e3b6d559f08311fba77d214f",
+      "bytes": 11241,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c1-reopen-2.png",
+      "sha256": "b928e09c4963102b0a3baa8bccc89fe4b3dba7ccb667a5d72ef5ca8c54f1ad33",
+      "bytes": 12589,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c1-zone-cancel-c4.png",
+      "sha256": "ad8c5a381161a2572b32cbeee49ef1cf27d4efec8a066ed6c4a8d6b77806b2d6",
+      "bytes": 11221,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c1-zone-open.png",
+      "sha256": "44448279d6ef4a09df1887df0813b762a67d9fdac99b4106e6bb3f2db1225718",
+      "bytes": 12640,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c1-zone-reopen.png",
+      "sha256": "44448279d6ef4a09df1887df0813b762a67d9fdac99b4106e6bb3f2db1225718",
+      "bytes": 12640,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c1-zone-right-1.png",
+      "sha256": "890dfa2216bc67928874f9b817bf25beae5917c2eaa0242c8cc1ee64a6e22da5",
+      "bytes": 12877,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c1-zone-right-2.png",
+      "sha256": "e1426dff00d629cd80f553a3dc610c5a240a6f6b62f3fceb706d5a980dd447d9",
+      "bytes": 12766,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c1-zone-right-3.png",
+      "sha256": "28d417330f5072023ad12d61d58913ce412cc96a1d14a3d3b9f4a1ef9ddb6884",
+      "bytes": 12904,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c1-zone-right-4.png",
+      "sha256": "c6e1de51d23d95adf3566015d726acd86f7e5c91d681228dc190e9acf08d11c4",
+      "bytes": 12826,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c1-zone-right-5.png",
+      "sha256": "1c569cc9c63fb8eda625489d90c704d2e9d55726aecab5c93101795cec95cc8f",
+      "bytes": 12806,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c1-zone-right-6.png",
+      "sha256": "42e7754f739b2fa510cd03c7ba160982613805e0594c5511a4426ac6e75978c2",
+      "bytes": 9836,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c1-zone-right-7.png",
+      "sha256": "17fdd18d5aeed9933b903b3b053818f3df562ab993613d7ff3feec96b118041e",
+      "bytes": 10148,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c1-zone-right-8.png",
+      "sha256": "9faa3460e71a5d01506b6a99d7fcc57f6547335cad9569a1d59b08e828ccbfb9",
+      "bytes": 9831,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c1-zone-right-9.png",
+      "sha256": "54ccece0a4263dffd8e60f09efb7b035724db438c407d5e6d7fd01ee1f059202",
+      "bytes": 9335,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c1-zone-row.png",
+      "sha256": "ad8c5a381161a2572b32cbeee49ef1cf27d4efec8a066ed6c4a8d6b77806b2d6",
+      "bytes": 11221,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c2-2154-cancel.png",
+      "sha256": "0348f40d7d6ea86f7b2cd357479346408bd1abd5e3b6d559f08311fba77d214f",
+      "bytes": 11241,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c2-2154-open.png",
+      "sha256": "b2b69826bcf5ce521ee62af194056ce3fe97b74728969a8b13dad0fedbe4c457",
+      "bytes": 15551,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c2-2155-cancel.png",
+      "sha256": "baf31dfa6ac1c29c65ff4346ce9738c2863615a4091b3ac7a29f28cb7f69534d",
+      "bytes": 11234,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c2-2155-open.png",
+      "sha256": "b7bf9fbc7f5d32fd59ed8812492207a1f0a9c496a6621a2536c0dfb092791717",
+      "bytes": 16206,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c2-baseline.png",
+      "sha256": "ff0a276eb6db88237146b9b048a0faecf263ac295aaa0d1a8a1ef4697177a9de",
+      "bytes": 6799,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c2-commit-2.png",
+      "sha256": "daefddd1bb789ae829a7db98abebd8b8e4e21d8aefade0161db2bf0bf55c47a1",
+      "bytes": 11297,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c2-commit-9.png",
+      "sha256": "d878620b8e3cc0e3266811ce1135b79cd75f9cd8aa3d285633c62021c52c2ed5",
+      "bytes": 11138,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c2-commit2-right-1.png",
+      "sha256": "890dfa2216bc67928874f9b817bf25beae5917c2eaa0242c8cc1ee64a6e22da5",
+      "bytes": 12877,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c2-commit2-right-2.png",
+      "sha256": "e1426dff00d629cd80f553a3dc610c5a240a6f6b62f3fceb706d5a980dd447d9",
+      "bytes": 12766,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c2-commit9-right-3.png",
+      "sha256": "1e845a4397a02d0c226ada364b34f30195477586f30f31d10e1d0808f92f9286",
+      "bytes": 12873,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c2-commit9-right-4.png",
+      "sha256": "d82afc1ad170528ad33364caa4a03b9e7e76260ad8cabd2bb4c20134a216d0ae",
+      "bytes": 12794,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c2-commit9-right-5.png",
+      "sha256": "e747b4b4a001f567c4fc617113f01bd95b74a335d4e981844a6ed1f47e71f7f7",
+      "bytes": 12776,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c2-commit9-right-6.png",
+      "sha256": "42e7754f739b2fa510cd03c7ba160982613805e0594c5511a4426ac6e75978c2",
+      "bytes": 9836,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c2-commit9-right-7.png",
+      "sha256": "17fdd18d5aeed9933b903b3b053818f3df562ab993613d7ff3feec96b118041e",
+      "bytes": 10148,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c2-commit9-right-8.png",
+      "sha256": "9faa3460e71a5d01506b6a99d7fcc57f6547335cad9569a1d59b08e828ccbfb9",
+      "bytes": 9831,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c2-commit9-right-9.png",
+      "sha256": "54ccece0a4263dffd8e60f09efb7b035724db438c407d5e6d7fd01ee1f059202",
+      "bytes": 9335,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c2-down-2155.png",
+      "sha256": "baf31dfa6ac1c29c65ff4346ce9738c2863615a4091b3ac7a29f28cb7f69534d",
+      "bytes": 11234,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c2-down-afbutton.png",
+      "sha256": "8243424b6d851082ee7486a92aca5de26a7756d177a0debc1c2ed461ce778a70",
+      "bytes": 13243,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c2-down-caf.png",
+      "sha256": "a55731cd5649322de917b11c90daab7c38020e3ef4cf3ec1320344f30bfcbcc4",
+      "bytes": 13214,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c2-left-0.png",
+      "sha256": "dcaca24e6d0790189ef076631128a252731ed9e1feda703516d226e07e753560",
+      "bytes": 18944,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c2-left-1.png",
+      "sha256": "c6a699de5d1857525e7a00e94d53936e4c067cb0c05654ec518bb6ba2aef0970",
+      "bytes": 16636,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c2-left-10.png",
+      "sha256": "b258d5a935d701fadc164dcc0ebc84e2b6e9fd0b37f0afb2d24bbaef2a18cbfa",
+      "bytes": 11513,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c2-left-11.png",
+      "sha256": "2fa322003891566e5a88a86cb62a7448e067ff1b12f748c715a6ceeadac7dac7",
+      "bytes": 14923,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c2-left-12.png",
+      "sha256": "26958b4832108564c475fa0163c82c762a0ff77f560b8142a4ab4268d66dbd38",
+      "bytes": 16383,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c2-left-13.png",
+      "sha256": "3436dd3d7db5e60bc892f6fe30db98d614f9dbed77ee20fd82187ed3ad8188a2",
+      "bytes": 22020,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c2-left-14.png",
+      "sha256": "f5d92ea55199e18af55dab08f21ba941dc4fdb2ce4430069a624c1f7c6ba7877",
+      "bytes": 15655,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c2-left-15.png",
+      "sha256": "e8ac865af9f59a330ecbba1e9aada16968d56055d969d6eb162d097d0471b14d",
+      "bytes": 19547,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c2-left-16.png",
+      "sha256": "1cb12e9973912ca72bd164b70e9e9ad3cb279607f475df9dd769d7002365ff0e",
+      "bytes": 12687,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c2-left-17.png",
+      "sha256": "71af34cb1ea60a5a7e5357645e556edc5f1cca45513c29b2aac3143c80fa96c1",
+      "bytes": 15604,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c2-left-18.png",
+      "sha256": "e43643c600ba0c5b6bcba0a45c8b4192afa0381f59d8ac772a68cca5b8407fd3",
+      "bytes": 9931,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c2-left-19.png",
+      "sha256": "36c90ea2e5286d10da6471788be6b16514f18000301844857f4450fde3f8ad91",
+      "bytes": 13155,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c2-left-2.png",
+      "sha256": "cbac7ce631f21d8211ee968b33d6e5137ec2dea5bb36fa2c88d6877104f17124",
+      "bytes": 17134,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c2-left-3.png",
+      "sha256": "85cff2f79ef134552e12b123687f29ed7d7e124bec54b00b1ee384e3caf9ebe0",
+      "bytes": 15461,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c2-left-4.png",
+      "sha256": "1b63c462c0f711f6eb84bcd1009b10d3df572164c7318189f732f058a9fa4644",
+      "bytes": 13107,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c2-left-5.png",
+      "sha256": "80db5b503ccf3eecf9149fd3baaf62bfe48c92f9538e9a01a3d1aff67c83418a",
+      "bytes": 12782,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c2-left-6.png",
+      "sha256": "29d07d70dc92f25cf30dec0c0c26f6b105c3f64437c064b7f6fc836c22667b79",
+      "bytes": 18139,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c2-left-7.png",
+      "sha256": "318f49f1de68251aff8bb558924aa7d7663258a7fc31da4897147b884ed3f77c",
+      "bytes": 8869,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c2-left-8.png",
+      "sha256": "fb44be426d751d77e45cf33927fc46b96bb50e1b38958489cc9fc02414659e6e",
+      "bytes": 15931,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c2-left-9.png",
+      "sha256": "46358a19276604963631e8ea04de0336f3420c5dc6f436159598144f2a74cf4b",
+      "bytes": 15320,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c2-menu.png",
+      "sha256": "542ed40b758684c43091a6fd9b1f1634cf1e5084f6cfa9a93c3cbeda0cec9715",
+      "bytes": 14163,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c2-page27.png",
+      "sha256": "0348f40d7d6ea86f7b2cd357479346408bd1abd5e3b6d559f08311fba77d214f",
+      "bytes": 11241,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c2-reopen-2.png",
+      "sha256": "b928e09c4963102b0a3baa8bccc89fe4b3dba7ccb667a5d72ef5ca8c54f1ad33",
+      "bytes": 12589,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c2-zone-cancel-c4.png",
+      "sha256": "ad8c5a381161a2572b32cbeee49ef1cf27d4efec8a066ed6c4a8d6b77806b2d6",
+      "bytes": 11221,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c2-zone-open.png",
+      "sha256": "44448279d6ef4a09df1887df0813b762a67d9fdac99b4106e6bb3f2db1225718",
+      "bytes": 12640,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c2-zone-reopen.png",
+      "sha256": "44448279d6ef4a09df1887df0813b762a67d9fdac99b4106e6bb3f2db1225718",
+      "bytes": 12640,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c2-zone-right-1.png",
+      "sha256": "890dfa2216bc67928874f9b817bf25beae5917c2eaa0242c8cc1ee64a6e22da5",
+      "bytes": 12877,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c2-zone-right-2.png",
+      "sha256": "e1426dff00d629cd80f553a3dc610c5a240a6f6b62f3fceb706d5a980dd447d9",
+      "bytes": 12766,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c2-zone-right-3.png",
+      "sha256": "28d417330f5072023ad12d61d58913ce412cc96a1d14a3d3b9f4a1ef9ddb6884",
+      "bytes": 12904,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c2-zone-right-4.png",
+      "sha256": "c6e1de51d23d95adf3566015d726acd86f7e5c91d681228dc190e9acf08d11c4",
+      "bytes": 12826,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c2-zone-right-5.png",
+      "sha256": "1c569cc9c63fb8eda625489d90c704d2e9d55726aecab5c93101795cec95cc8f",
+      "bytes": 12806,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c2-zone-right-6.png",
+      "sha256": "42e7754f739b2fa510cd03c7ba160982613805e0594c5511a4426ac6e75978c2",
+      "bytes": 9836,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c2-zone-right-7.png",
+      "sha256": "17fdd18d5aeed9933b903b3b053818f3df562ab993613d7ff3feec96b118041e",
+      "bytes": 10148,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c2-zone-right-8.png",
+      "sha256": "9faa3460e71a5d01506b6a99d7fcc57f6547335cad9569a1d59b08e828ccbfb9",
+      "bytes": 9831,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c2-zone-right-9.png",
+      "sha256": "54ccece0a4263dffd8e60f09efb7b035724db438c407d5e6d7fd01ee1f059202",
+      "bytes": 9335,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-c2-zone-row.png",
+      "sha256": "ad8c5a381161a2572b32cbeee49ef1cf27d4efec8a066ed6c4a8d6b77806b2d6",
+      "bytes": 11221,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-control-2154-cancel.png",
+      "sha256": "cbea240f3677e9156da433ca416c601754ec9d399479bcc312b1f9b2b27feb4b",
+      "bytes": 8951,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-control-2154-open.png",
+      "sha256": "b2b69826bcf5ce521ee62af194056ce3fe97b74728969a8b13dad0fedbe4c457",
+      "bytes": 15551,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-control-2155-cancel.png",
+      "sha256": "2933991e9ccdee477ec7832b76ec2c4ad1011818ab9ba68557824951d55e724c",
+      "bytes": 8942,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-control-2155-open.png",
+      "sha256": "b7bf9fbc7f5d32fd59ed8812492207a1f0a9c496a6621a2536c0dfb092791717",
+      "bytes": 16206,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-control-baseline.png",
+      "sha256": "ff0a276eb6db88237146b9b048a0faecf263ac295aaa0d1a8a1ef4697177a9de",
+      "bytes": 6799,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-control-down-2155.png",
+      "sha256": "2933991e9ccdee477ec7832b76ec2c4ad1011818ab9ba68557824951d55e724c",
+      "bytes": 8942,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-control-down-afbutton.png",
+      "sha256": "8243424b6d851082ee7486a92aca5de26a7756d177a0debc1c2ed461ce778a70",
+      "bytes": 13243,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-control-down-caf.png",
+      "sha256": "a55731cd5649322de917b11c90daab7c38020e3ef4cf3ec1320344f30bfcbcc4",
+      "bytes": 13214,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-control-left-0.png",
+      "sha256": "dcaca24e6d0790189ef076631128a252731ed9e1feda703516d226e07e753560",
+      "bytes": 18944,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-control-left-1.png",
+      "sha256": "c6a699de5d1857525e7a00e94d53936e4c067cb0c05654ec518bb6ba2aef0970",
+      "bytes": 16636,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-control-left-10.png",
+      "sha256": "b258d5a935d701fadc164dcc0ebc84e2b6e9fd0b37f0afb2d24bbaef2a18cbfa",
+      "bytes": 11513,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-control-left-11.png",
+      "sha256": "2fa322003891566e5a88a86cb62a7448e067ff1b12f748c715a6ceeadac7dac7",
+      "bytes": 14923,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-control-left-12.png",
+      "sha256": "26958b4832108564c475fa0163c82c762a0ff77f560b8142a4ab4268d66dbd38",
+      "bytes": 16383,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-control-left-13.png",
+      "sha256": "3436dd3d7db5e60bc892f6fe30db98d614f9dbed77ee20fd82187ed3ad8188a2",
+      "bytes": 22020,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-control-left-14.png",
+      "sha256": "f5d92ea55199e18af55dab08f21ba941dc4fdb2ce4430069a624c1f7c6ba7877",
+      "bytes": 15655,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-control-left-15.png",
+      "sha256": "e8ac865af9f59a330ecbba1e9aada16968d56055d969d6eb162d097d0471b14d",
+      "bytes": 19547,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-control-left-16.png",
+      "sha256": "1cb12e9973912ca72bd164b70e9e9ad3cb279607f475df9dd769d7002365ff0e",
+      "bytes": 12687,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-control-left-17.png",
+      "sha256": "71af34cb1ea60a5a7e5357645e556edc5f1cca45513c29b2aac3143c80fa96c1",
+      "bytes": 15604,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-control-left-18.png",
+      "sha256": "e43643c600ba0c5b6bcba0a45c8b4192afa0381f59d8ac772a68cca5b8407fd3",
+      "bytes": 9931,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-control-left-19.png",
+      "sha256": "36c90ea2e5286d10da6471788be6b16514f18000301844857f4450fde3f8ad91",
+      "bytes": 13155,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-control-left-2.png",
+      "sha256": "cbac7ce631f21d8211ee968b33d6e5137ec2dea5bb36fa2c88d6877104f17124",
+      "bytes": 17134,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-control-left-3.png",
+      "sha256": "85cff2f79ef134552e12b123687f29ed7d7e124bec54b00b1ee384e3caf9ebe0",
+      "bytes": 15461,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-control-left-4.png",
+      "sha256": "1b63c462c0f711f6eb84bcd1009b10d3df572164c7318189f732f058a9fa4644",
+      "bytes": 13107,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-control-left-5.png",
+      "sha256": "80db5b503ccf3eecf9149fd3baaf62bfe48c92f9538e9a01a3d1aff67c83418a",
+      "bytes": 12782,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-control-left-6.png",
+      "sha256": "29d07d70dc92f25cf30dec0c0c26f6b105c3f64437c064b7f6fc836c22667b79",
+      "bytes": 18139,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-control-left-7.png",
+      "sha256": "318f49f1de68251aff8bb558924aa7d7663258a7fc31da4897147b884ed3f77c",
+      "bytes": 8869,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-control-left-8.png",
+      "sha256": "fb44be426d751d77e45cf33927fc46b96bb50e1b38958489cc9fc02414659e6e",
+      "bytes": 15931,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-control-left-9.png",
+      "sha256": "46358a19276604963631e8ea04de0336f3420c5dc6f436159598144f2a74cf4b",
+      "bytes": 15320,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-control-menu.png",
+      "sha256": "542ed40b758684c43091a6fd9b1f1634cf1e5084f6cfa9a93c3cbeda0cec9715",
+      "bytes": 14163,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1-control-page27.png",
+      "sha256": "cbea240f3677e9156da433ca416c601754ec9d399479bcc312b1f9b2b27feb4b",
+      "bytes": 8951,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-k1.jsonl",
+      "sha256": "432ed8aa6911cb7ddfa64504048797e94821db81e9f1847b3fd6b2ee3daecf03",
+      "bytes": 144913,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-reopen-k1.jsonl",
+      "sha256": "ba023941cf31bab4e7322eba239fc7f01e4dbafc68f385813e681cad5f669ccd",
+      "bytes": 311,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-store-k1.jsonl",
+      "sha256": "9c546499425571accd98335040559d60f1d112cf5fc8373ae807fcd38e07304b",
+      "bytes": 177,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept2-edge-c1-zone-1.png",
+      "sha256": "890dfa2216bc67928874f9b817bf25beae5917c2eaa0242c8cc1ee64a6e22da5",
+      "bytes": 12877,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept3-edge-c1-zone-1.png",
+      "sha256": "890dfa2216bc67928874f9b817bf25beae5917c2eaa0242c8cc1ee64a6e22da5",
+      "bytes": 12877,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept3-edge-c1-zone-2.png",
+      "sha256": "8f0668a490f539e3e52adb807213629361b9f2a2a65219c9a5a2467a2e0902a6",
+      "bytes": 12788,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept3-edge-c2-zone-1.png",
+      "sha256": "890dfa2216bc67928874f9b817bf25beae5917c2eaa0242c8cc1ee64a6e22da5",
+      "bytes": 12877,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept3-edge-c2-zone-2.png",
+      "sha256": "8f0668a490f539e3e52adb807213629361b9f2a2a65219c9a5a2467a2e0902a6",
+      "bytes": 12788,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/01.cmd.txt",
+      "sha256": "6f6c4355e2188f36ea67af2868b60ea1eb76d68651044704f56fb71974ca6395",
+      "bytes": 352,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/01.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/01.exit",
+      "sha256": "f6eeb98eba07c13c5b8adddcc9591496e4d570a702a6ddfde7d65b8c887b0d59",
+      "bytes": 462,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/01.out",
+      "sha256": "2cf230f11f1709f47d50e7f718a05bf7e283d4990bd3951d0dea7390630f3ba8",
+      "bytes": 1288,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/02.cmd.txt",
+      "sha256": "d9855e8686570e0c0d7e4d8567a40dd4cd4ad3cc9c3312b4da74469baf9c2a05",
+      "bytes": 1020,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/02.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/02.exit",
+      "sha256": "a7b619691984df17dd058199469a41ca4dc2dc757be1aded59719613b404c6b5",
+      "bytes": 814,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/02.out",
+      "sha256": "9081c5552cde1132fd84b8a8a7808d85c453fbebfdfd617f2acf4b47f0369240",
+      "bytes": 4450,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/03.cmd.txt",
+      "sha256": "762b5e198b69eb3d04aeed9b2219a6aea9feb43cc87c4b9bc013eb067e182932",
+      "bytes": 340,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/03.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/03.exit",
+      "sha256": "50097999d03417998551685dac4a7b99559bd6d6b901409a3156cd38c686e06a",
+      "bytes": 454,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/03.out",
+      "sha256": "deef1a5546d76801b0cdd664d77987cc6467d2eb2c303d8e2688cb6b25dbc798",
+      "bytes": 1670,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/04.cmd.txt",
+      "sha256": "9bfb60baf9eebba38a9956fdaad0203c878a298dbf92b593f21f09853ca412f3",
+      "bytes": 352,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/04.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/04.exit",
+      "sha256": "cc15623c7c3678ffbca933e47c51004ce65665fc6313c2efb7d56ba99f9e05aa",
+      "bytes": 462,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/04.out",
+      "sha256": "82e8661bc49641048e77653ee41ae861a93eaab8922f33ff3df10ec46acdd623",
+      "bytes": 31,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/05.cmd.txt",
+      "sha256": "e4a065382dff32b4150a7e44d4e6dda9e6327bd95820f244cc66b720f108640b",
+      "bytes": 350,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/05.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/05.exit",
+      "sha256": "4815eff8a79c1ac977f3ca2bb9ae1962e45e8f0aa1de9f06a82c9a7c12bdc908",
+      "bytes": 461,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/05.out",
+      "sha256": "3edd3a19362ddd1a169565a317d6708db48bd9506cb9d66667a8336445af27ec",
+      "bytes": 313,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/06.cmd.txt",
+      "sha256": "8bad50f361715d7ecb9ae2e43429ba8c523a4ba5c7547bffd1b3cd9e6effb53b",
+      "bytes": 345,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/06.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/06.exit",
+      "sha256": "10296f9c70f646cf2495a83d1ab6f51fcc833c558778118a9b4e7afb5f51692f",
+      "bytes": 457,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/06.out",
+      "sha256": "208bc4d1822eda9652f7cabb08348f1d6e34f1125ce4c47aed78a2e95354223e",
+      "bytes": 13,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/07.cmd.txt",
+      "sha256": "a6581213a263e482ac438db486a009fe90a27c1472e8f2df4dda5f0c6c96ecd7",
+      "bytes": 340,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/07.err",
+      "sha256": "ae6e6067ff19804853e3697e40f26c0621add3806c40577da19ffbbf0030a6f7",
+      "bytes": 14,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/07.exit",
+      "sha256": "287c93c86de0be344ad13296ccf2496cd9db5f7805a83aec83376ba8f9f2a8c8",
+      "bytes": 454,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/07.out",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/08.cmd.txt",
+      "sha256": "fc10be8742050c3be6308244724c81818eab0ce1dee569313b2fdea7ad2b5be9",
+      "bytes": 340,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/08.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/08.exit",
+      "sha256": "c8dd19fed2363481748cef7b60652cd4834e6f34678de4984a0b54a2e80a3a28",
+      "bytes": 454,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/08.out",
+      "sha256": "f719b79dd7d9a49c49c34e8653318bcc957ff23e8c92fd3f2f1fde533b9ec309",
+      "bytes": 20,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/09.cmd.txt",
+      "sha256": "82a9446e82652e90cc4823845150599bb318452082c56017f47dc7c9c0e09768",
+      "bytes": 412,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/09.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/09.exit",
+      "sha256": "2d9bff959c050ea48be1d08bf5b76177f3fd19f73f451c5f3f55212b190e3d6f",
+      "bytes": 523,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/09.out",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/10.cmd.txt",
+      "sha256": "c398861ce48531d7d15f1e1fd269169b03596daa85d7d57d3cc05a5e20c79eeb",
+      "bytes": 340,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/10.err",
+      "sha256": "e0bb37acf921af3bb3fe1792f4200eeb39493b32fcb4200d44068d33ce21f51d",
+      "bytes": 17,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/10.exit",
+      "sha256": "3a66bf36b57461068d1ed104eb0cb6118bd2c9e023166ab7ea00c384610f6d40",
+      "bytes": 454,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/10.out",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/11.cmd.txt",
+      "sha256": "1f3f26d5748a68c7e98f96eaf82aef93bd1598f2555360dbf37f954266f4a7f2",
+      "bytes": 408,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/11.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/11.exit",
+      "sha256": "f730dbb297fb58d38b50aa179cde18546add84c1c8c0fb1b5422e177ec1860ba",
+      "bytes": 520,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/11.out",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/12.cmd.txt",
+      "sha256": "227bfb7babb76255024a60e7e05953944f4676c696a929b611bdeafee8030877",
+      "bytes": 340,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/12.err",
+      "sha256": "967ca296726f17ffb60831343d5820b5563a9514d0dcd241845ac762f90be3d7",
+      "bytes": 636,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/12.exit",
+      "sha256": "1fdd70315f0692dd2e8110349de88178cb07f28d3b8dbdfe5d27dd806eeac58c",
+      "bytes": 454,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/12.out",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/13.cmd.txt",
+      "sha256": "42976107583d7e51f58b1655b214ec9e4132933427e43bbac607e9aa10d362c3",
+      "bytes": 406,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/13.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/13.exit",
+      "sha256": "734b6eadc73942c71aeeceb6a52d211187950ff037ce9241fe86e4005114d68f",
+      "bytes": 519,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/13.out",
+      "sha256": "a7f2c7c7f2a28e8a0b458482d70d67e7c05e666dfe15a9b54380dd2c503f06c1",
+      "bytes": 159271,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/14.cmd.txt",
+      "sha256": "7bb3f1971688f52481cffa3d22f6608f89d470e1614bf2f0cb92f6f5cb995ff4",
+      "bytes": 340,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/14.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/14.exit",
+      "sha256": "dde2df06399f8ccafb1f2ec8ab049a2be3ab36d0190ad8aef0d78823acd3a8f2",
+      "bytes": 454,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/14.out",
+      "sha256": "61c5a1677a824931fe106b16f69a8e6d483ffbb93ad2cbca69bd370d810d6948",
+      "bytes": 60,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/15.cmd.txt",
+      "sha256": "0ae2a70f47905c74f721b9c39d818862c748f92788e463a70d1afc9a85ec1074",
+      "bytes": 403,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/15.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/15.exit",
+      "sha256": "c44686a9f7adf4757fc255770b58fb15a9f443796354d17fa5de4dd60d5646aa",
+      "bytes": 517,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/15.out",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/16.cmd.txt",
+      "sha256": "ea843003ddc94072b9d8572dd21a8034aa5e6a697b2937985a4ea97684f74c8f",
+      "bytes": 401,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/16.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/16.exit",
+      "sha256": "05156194b85128772b1cf8d7df81d3edc956f2e9ecab01684a1bb2a8e9a62070",
+      "bytes": 516,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/16.out",
+      "sha256": "6d10e104543ccc33bab4eeff968d13d871f05eb297d7e95d634ee1b8368c2e28",
+      "bytes": 853,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/17.cmd.txt",
+      "sha256": "ad0e4e63b354dc9d70980bb2e07e183ecdde291c7a3fd547a5da6f26a021456c",
+      "bytes": 518,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/17.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/17.exit",
+      "sha256": "c30c246b4061ca0ea7bdacde82599ebbbbda2e3916c126d5977c3bd1dda171e7",
+      "bytes": 429,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/17.out",
+      "sha256": "e63f79094a7860e8590701f79dd5b9dda1bcbc175c3180d85ce58bce9783fb19",
+      "bytes": 14,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/18.cmd.txt",
+      "sha256": "c4fe8a78a5006d51cd6c233b1b797bb0c87974c8a8f5961ccaa50b3a24b9d87a",
+      "bytes": 403,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/18.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/18.exit",
+      "sha256": "1a06c1cd8efe0f5cef4d5d52405970d3400924c03200af45d186362c978dda53",
+      "bytes": 517,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/18.out",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/19.cmd.txt",
+      "sha256": "9464d0ea40f3b4c09bad4ecc6ce1326f0d2cc2c1fe7f174187a645f5e87db07e",
+      "bytes": 401,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/19.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/19.exit",
+      "sha256": "266a5064e19bc2b42359f6c9c173fe197d91f100d3098ee8b542e8b86391769e",
+      "bytes": 516,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/19.out",
+      "sha256": "e0a5a118e48a837c645adb2cdb5382bacf85c7b1dab924610455485fe8167a60",
+      "bytes": 6474,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/20.cmd.txt",
+      "sha256": "83ff8ff4ef9a9b9dbd48e9f3a2f3ef83d6011a5545947919b43d416542a65c32",
+      "bytes": 472,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/20.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/20.exit",
+      "sha256": "d401c4e7e512286c275a2367dcedabe54c0e1dd1b79d7937001c4ee71d66d00e",
+      "bytes": 406,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/20.out",
+      "sha256": "6afb685941d240557857603667cf29d3dd54a20df495fd2deb34985663bf6b5b",
+      "bytes": 8,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/21.cmd.txt",
+      "sha256": "0655ece6719da2da03db0651adc876e7206ecd8731293b7fb3775f763f80a33e",
+      "bytes": 403,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/21.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/21.exit",
+      "sha256": "8efa555944b3d51e29604632f6303ed941050ccce1495f27e0d9bc180f637ffd",
+      "bytes": 517,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/21.out",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/22.cmd.txt",
+      "sha256": "64a232c0412cc104be3103d394d1de7dc782ddf67ab2ce6e9503ac4528a4a130",
+      "bytes": 401,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/22.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/22.exit",
+      "sha256": "8a11ed5d2504e28fce1c3a5c164236cc6025788db90e5e3e6362ea5a7eb6acf9",
+      "bytes": 516,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/22.out",
+      "sha256": "e6f19189c39be29fa402b93f67c8bb2967d90e2259a8630f912c54654c2084a8",
+      "bytes": 18984,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/23.cmd.txt",
+      "sha256": "85f2332708df70815b5b5e5c72a679fcab17e3dfe5720d19304b0b21298df077",
+      "bytes": 472,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/23.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/23.exit",
+      "sha256": "e37740183e1648097e3efa8c9ff760400912f16f35991920eca05603ffcbd991",
+      "bytes": 406,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/23.out",
+      "sha256": "6afb685941d240557857603667cf29d3dd54a20df495fd2deb34985663bf6b5b",
+      "bytes": 8,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/24.cmd.txt",
+      "sha256": "a9f557d995eded40b6e26ef324c3abd60e67db6f814547c58ca97b6e3ba0a139",
+      "bytes": 401,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/24.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/24.exit",
+      "sha256": "f1b65710a06c8bba7987813a6f8dac45d6b8b3b515554cc9ad73717307ebb1ee",
+      "bytes": 516,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/24.out",
+      "sha256": "a24a47faabe9b2c387392cddc3f5940858980ecc2bb7f44f552a658f3a60a9f0",
+      "bytes": 20530,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/25.cmd.txt",
+      "sha256": "ba66fbc81ea1044b35ed0ebce1bac1ec5d62f0d26518da2cfc6626fab0df1148",
+      "bytes": 472,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/25.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/25.exit",
+      "sha256": "6b98f4d59d0dc08eebf591f454bf7abf21ebafbf2c84510be95d29ec1ee53bad",
+      "bytes": 406,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/25.out",
+      "sha256": "6afb685941d240557857603667cf29d3dd54a20df495fd2deb34985663bf6b5b",
+      "bytes": 8,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/26.cmd.txt",
+      "sha256": "34a013ef14e55208b97959e9f4af8dc174492c049a75702f2cef2aa180e2c33b",
+      "bytes": 401,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/26.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/26.exit",
+      "sha256": "716cf7b5880eb701879cdcb93636dc4c38fffcc9ff9e5c8b058306270cc2ea2f",
+      "bytes": 516,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/26.out",
+      "sha256": "b58791cf37e08890deabe7f8db9e082d70eb1ab793e04e4f8e82599f25ff65c3",
+      "bytes": 42211,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/27.cmd.txt",
+      "sha256": "e2fab9ecd4d6917e53d5997253c4c81247767ea9ca11d9d57251e73b3ec6b4a8",
+      "bytes": 472,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/27.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/27.exit",
+      "sha256": "7db9e14b089fa39273bcdd3f31a3fd0c1c60a55b0f21b968a8c10da4e4a1e217",
+      "bytes": 406,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/27.out",
+      "sha256": "6afb685941d240557857603667cf29d3dd54a20df495fd2deb34985663bf6b5b",
+      "bytes": 8,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/28.cmd.txt",
+      "sha256": "123fbf93dbdb11d43f5995818e9b6da30453a298ea3437296bced870b7808828",
+      "bytes": 401,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/28.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/28.exit",
+      "sha256": "ab04c02e5966c0d7f9c4c24907600e0c19c20dc17c1963f696b186c8c93791d8",
+      "bytes": 516,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/28.out",
+      "sha256": "06638502db27fe6fabfa9d85e8144a16a78758469d2051ec9e9bf3895aa22f75",
+      "bytes": 67163,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/29.cmd.txt",
+      "sha256": "f9003048b7fc8617428711548575ce7de425c22f055f8c65d86734349b61856e",
+      "bytes": 391,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/29.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/29.exit",
+      "sha256": "2f37ad739bf0f292c5cda24c0277172033a55907578b1d347db54359ac55df56",
+      "bytes": 509,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/29.out",
+      "sha256": "85da524a605cbff640d04bf58750996888b933c8e10b30db4f6f8d9bfa4dc5df",
+      "bytes": 5836,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/30.cmd.txt",
+      "sha256": "59d904e78e245eb70f46fe4e77661ec029dc44ac031b5c302ec0d8da04f5dd04",
+      "bytes": 409,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/30.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/30.exit",
+      "sha256": "05e4e406fb2f3a8350e9167dbb0a3a8ca54a2c403b796f4b1dfbb7fcd0c94eb7",
+      "bytes": 521,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/30.out",
+      "sha256": "6d0b45ced95318f8e991810f0d7d6b702687a00fe7417f286719ae56467c856c",
+      "bytes": 22974,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/31.cmd.txt",
+      "sha256": "bc8d1f07df91bc56e82db808180721f2f6a989c5c88522ac6bec80c497690005",
+      "bytes": 484,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/31.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/31.exit",
+      "sha256": "4653bcc7598f67761fdae1738fbda0a9887d7a0f56eda29cee686f4836f4df14",
+      "bytes": 412,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/31.out",
+      "sha256": "6afb685941d240557857603667cf29d3dd54a20df495fd2deb34985663bf6b5b",
+      "bytes": 8,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/32.cmd.txt",
+      "sha256": "49eef88873adeed0ec2ce846a477dff4b5eb478b00df615b4444d648e899eb71",
+      "bytes": 409,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/32.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/32.exit",
+      "sha256": "f58ea888586c3239f2fecedabc3f62d36e9e846d433284b31f01306d6ddb70c2",
+      "bytes": 521,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/32.out",
+      "sha256": "d561841fc463c4cd79967e1fae3c39df5a1e44ec7a77feb3e7051301812dbd50",
+      "bytes": 23224,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/33.cmd.txt",
+      "sha256": "574dd79a38a010a6b09490b0966068a959c2662f5c3abdfab1abeb87f91ed87a",
+      "bytes": 484,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/33.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/33.exit",
+      "sha256": "7fd97decd3ef3d8c6416affe0f3802b51245b7347f25d341a9c48c425ef3de2d",
+      "bytes": 412,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/33.out",
+      "sha256": "6afb685941d240557857603667cf29d3dd54a20df495fd2deb34985663bf6b5b",
+      "bytes": 8,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/34.cmd.txt",
+      "sha256": "ff9c26eca1f5f4b6ce460188e9aaeff6c4a70992b5b43a9fc42f7267671c636a",
+      "bytes": 409,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/34.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/34.exit",
+      "sha256": "91bd3e5ebc2ac7220028e3ef3efd49eeff437db1db1bf348fedf2cc817c777bd",
+      "bytes": 521,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/34.out",
+      "sha256": "52ff12bab19e68122cd53d7053f05e56f68dc8541d8c6b61732950864d2cda2d",
+      "bytes": 46096,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/35.cmd.txt",
+      "sha256": "24ed4a3fc2d97358fe4ae6a9e00bb0a34f4cf195733b404f51fe8d31f71b7c8b",
+      "bytes": 343,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/35.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/35.exit",
+      "sha256": "95933989c3f4272df550f00205a7a4b010229163b5becc3e4ff81c393505f6e1",
+      "bytes": 456,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/35.out",
+      "sha256": "847b16328fdc800dc737e3ec8a7132094cda5a94a48ae9593dd05da7dd9644ed",
+      "bytes": 1015,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/36.cmd.txt",
+      "sha256": "4ba123576e086df0bfdf3d9bc8cc9f39d64477790618be3ec95bf0fb3480ee9c",
+      "bytes": 412,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/36.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/36.exit",
+      "sha256": "99221fac07aab9595c78caa5a6e24db276c86c974775d3a4a203a76332913e33",
+      "bytes": 523,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/36.out",
+      "sha256": "fa18297545db2ba5722c6e64b58739e94fa4167e13d26c135930f4f509a97f86",
+      "bytes": 4928,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/37.cmd.txt",
+      "sha256": "a702b2ab90d913ba65ad9024bb0f6c59f95436bad252b57e8e02f932365acacd",
+      "bytes": 409,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/37.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/37.exit",
+      "sha256": "cf1edbcd27a5458795fb55e51a5422ba4e7bc8fafc77711f5c7ffafb3090de96",
+      "bytes": 521,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/37.out",
+      "sha256": "186cbe23ffbb55dc086a5f94c749f213c47e3ff936d1219adc99cc235e7e6f71",
+      "bytes": 3903,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/38.cmd.txt",
+      "sha256": "43c47ca93b8ea42f7b5cdd5aba8fb77d111d783a7f56c1c531981caca0be6778",
+      "bytes": 342,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/38.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/38.exit",
+      "sha256": "c0a84b23ed9cd2a1fffe3a08c4bf0a67292d9bc04fe3cd5bf329f9538e64c13c",
+      "bytes": 455,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/38.out",
+      "sha256": "4731892ab4973e084b5515e145e8bc7c686c222df2a01cc490921401b8760103",
+      "bytes": 22,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/39.cmd.txt",
+      "sha256": "dcafcbf6ad5ba18416872e5f31da30aa9c259def6d6784bdb7dfc0aaaaa3a5f0",
+      "bytes": 352,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/39.err",
+      "sha256": "1c7a3ca3a33fec49e53c769d1da2c2b0815e1145f18d1e6f21378f6f74c37aa3",
+      "bytes": 889,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/39.exit",
+      "sha256": "5eff06fe17688def0d494d6926b9504d42f103625f60ae8b553c7db049bbe8e8",
+      "bytes": 462,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/39.out",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/40.cmd.txt",
+      "sha256": "6700e2e318c39c5a0c74301cee88e6d759a0fc7c9127c459532f16c079ea2017",
+      "bytes": 349,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/40.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/40.exit",
+      "sha256": "1ce479f151c5cfa8b146f09bda2c38e49fee3a685280985eff48ea28c1bda0ba",
+      "bytes": 460,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/40.out",
+      "sha256": "183b27df828bba9e6e4e423e06c4dd2ac2b0334f35bc9932eb39cb7be5286b7f",
+      "bytes": 33,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/41.cmd.txt",
+      "sha256": "3e49169cbaa4cc9757fe21544638e842b4c29d10a2186f3dab3019e0481b4cb5",
+      "bytes": 352,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/design.md",
+      "sha256": "48c45b2523e40e89b3fa12ce9325f3e8df1d4544df2129de51897de772ed4a90",
+      "bytes": 4208,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/disasm-callsite-k1.txt",
+      "sha256": "4233fb1c8c03bf04f148e8ffa93a38c5972bc7c1957a6cb6df80b51e74385466",
+      "bytes": 76,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/disasm-converter-k1.txt",
+      "sha256": "57e2fb91309e7d4d0727f791f34fd318218b96b791995841a49ec7a266dff98e",
+      "bytes": 1321,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/disasm-ensure-k1.txt",
+      "sha256": "9a69a2c1b65a48b8c87536254ef034a01da3fa47bc8f8c42c39b03503eaad1e4",
+      "bytes": 2418,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/disasm-home-k1.txt",
+      "sha256": "469ce12c7171d01e680a5c6a0869e39b3411a6e60a4eed18b2c655aaa3a015c1",
+      "bytes": 2475,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/disasm-reconcile-head-k1.txt",
+      "sha256": "85bf3dbce2fcdc46e0401a9613e86d6d5608e98d4c22747deafc4f4d4dc1ba87",
+      "bytes": 1325,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/disasm-stub-k1.txt",
+      "sha256": "f03ff28faf74d0613fc9e1e2da17d218a63d9248b9a24a42e4f2cdbadb8cb04d",
+      "bytes": 2745,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/edge-k3-p1-zone-1.png",
+      "sha256": "890dfa2216bc67928874f9b817bf25beae5917c2eaa0242c8cc1ee64a6e22da5",
+      "bytes": 12877,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/edge-k4-p1-zone-1.png",
+      "sha256": "890dfa2216bc67928874f9b817bf25beae5917c2eaa0242c8cc1ee64a6e22da5",
+      "bytes": 12877,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/edge-k5-p1-zone-1.png",
+      "sha256": "890dfa2216bc67928874f9b817bf25beae5917c2eaa0242c8cc1ee64a6e22da5",
+      "bytes": 12877,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/edge-k5-p2-zone-2.png",
+      "sha256": "e1426dff00d629cd80f553a3dc610c5a240a6f6b62f3fceb706d5a980dd447d9",
+      "bytes": 12766,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/edge-k6-p1-zone-1.png",
+      "sha256": "890dfa2216bc67928874f9b817bf25beae5917c2eaa0242c8cc1ee64a6e22da5",
+      "bytes": 12877,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/edge-k6-p2-zone-2.png",
+      "sha256": "e1426dff00d629cd80f553a3dc610c5a240a6f6b62f3fceb706d5a980dd447d9",
+      "bytes": 12766,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/edge-k6-p3-zone-1.png",
+      "sha256": "890dfa2216bc67928874f9b817bf25beae5917c2eaa0242c8cc1ee64a6e22da5",
+      "bytes": 12877,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/edge-k6-p4-zone-1.png",
+      "sha256": "890dfa2216bc67928874f9b817bf25beae5917c2eaa0242c8cc1ee64a6e22da5",
+      "bytes": 12877,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/edge-k7-p4-zone-1.png",
+      "sha256": "890dfa2216bc67928874f9b817bf25beae5917c2eaa0242c8cc1ee64a6e22da5",
+      "bytes": 12877,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/edges-k1.jsonl",
+      "sha256": "6d10e104543ccc33bab4eeff968d13d871f05eb297d7e95d634ee1b8368c2e28",
+      "bytes": 853,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/edges-k2.jsonl",
+      "sha256": "cbe562d58853256b31c098d8ab6c64506eba9823fd55ee1a24cb47d254afb3d1",
+      "bytes": 1475,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/edges-k3.jsonl",
+      "sha256": "06432eeb10587fd5f0b374533efd028c91008ecddeb6fcd52eeb0f2e61458b7f",
+      "bytes": 8689,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/edges-k4.jsonl",
+      "sha256": "fd3b716db555c6670e8e4bc7967b3a23e5eac335f20cd398053a2e50bfa26b4a",
+      "bytes": 10235,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/edges-k5.jsonl",
+      "sha256": "0c63721933c472ba140c62a7b73fb7ab11adfb37dc32e28a4584752433469924",
+      "bytes": 22187,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/edges-k6.jsonl",
+      "sha256": "5823c10c5727e3facaa9db3204c93fb491b21b5b409576e0ee1638f5a8774cea",
+      "bytes": 37099,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/edges-k7.jsonl",
+      "sha256": "3e8204bc8f18d8bf9dd10ed3a387a0d2b42d65774af498a9d4f2aec13f399a00",
+      "bytes": 1211,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/ghidra-k1.log",
+      "sha256": "98cd67776992830db5b69775cbff9325055b668c671ea9739275cfa809d852d6",
+      "bytes": 5313,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/import-inventory-k1.json",
+      "sha256": "2ca4f5db87d64abe890c950af5c1d9256b1c205f8c1b16597626654363904ca8",
+      "bytes": 30660,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/nvram-accept-c1.json",
+      "sha256": "6b2bc437006b6e197874c0ad809b562890388c5f2565224e48f11bd022b14f10",
+      "bytes": 611828,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/nvram-accept-control.json",
+      "sha256": "8290aee9c3b2fd71e371d7df87728399a4d06c1a44299f3131b97a2dc65c79d4",
+      "bytes": 611826,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/nvram-accept-k1-c1.json",
+      "sha256": "8290aee9c3b2fd71e371d7df87728399a4d06c1a44299f3131b97a2dc65c79d4",
+      "bytes": 611826,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/nvram-accept-k1-c2.json",
+      "sha256": "8290aee9c3b2fd71e371d7df87728399a4d06c1a44299f3131b97a2dc65c79d4",
+      "bytes": 611826,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/nvram-accept-k1-control.json",
+      "sha256": "8290aee9c3b2fd71e371d7df87728399a4d06c1a44299f3131b97a2dc65c79d4",
+      "bytes": 611826,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/nvram-accept-store-control.json",
+      "sha256": "487c75ec3260d0e948d4edfc17a59fc53592c49b61051d21e9865e8aa7eaf5d9",
+      "bytes": 611828,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/nvram-accept2-c1.json",
+      "sha256": "487c75ec3260d0e948d4edfc17a59fc53592c49b61051d21e9865e8aa7eaf5d9",
+      "bytes": 611828,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/nvram-accept2-control.json",
+      "sha256": "8290aee9c3b2fd71e371d7df87728399a4d06c1a44299f3131b97a2dc65c79d4",
+      "bytes": 611826,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/nvram-accept3-c1.json",
+      "sha256": "487c75ec3260d0e948d4edfc17a59fc53592c49b61051d21e9865e8aa7eaf5d9",
+      "bytes": 611828,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/nvram-accept3-c2.json",
+      "sha256": "487c75ec3260d0e948d4edfc17a59fc53592c49b61051d21e9865e8aa7eaf5d9",
+      "bytes": 611828,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/nvram-accept3-control.json",
+      "sha256": "8290aee9c3b2fd71e371d7df87728399a4d06c1a44299f3131b97a2dc65c79d4",
+      "bytes": 611826,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/nvram-edge-k1-control-saf.json",
+      "sha256": "8290aee9c3b2fd71e371d7df87728399a4d06c1a44299f3131b97a2dc65c79d4",
+      "bytes": 611826,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/nvram-edge-k3-control-saf.json",
+      "sha256": "8290aee9c3b2fd71e371d7df87728399a4d06c1a44299f3131b97a2dc65c79d4",
+      "bytes": 611826,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/nvram-edge-k3-p1.json",
+      "sha256": "487c75ec3260d0e948d4edfc17a59fc53592c49b61051d21e9865e8aa7eaf5d9",
+      "bytes": 611828,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/nvram-edge-k4-control-saf.json",
+      "sha256": "8290aee9c3b2fd71e371d7df87728399a4d06c1a44299f3131b97a2dc65c79d4",
+      "bytes": 611826,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/nvram-edge-k4-p1.json",
+      "sha256": "487c75ec3260d0e948d4edfc17a59fc53592c49b61051d21e9865e8aa7eaf5d9",
+      "bytes": 611828,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/nvram-edge-k5-control-caf.json",
+      "sha256": "8290aee9c3b2fd71e371d7df87728399a4d06c1a44299f3131b97a2dc65c79d4",
+      "bytes": 611826,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/nvram-edge-k5-control-saf.json",
+      "sha256": "8290aee9c3b2fd71e371d7df87728399a4d06c1a44299f3131b97a2dc65c79d4",
+      "bytes": 611826,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/nvram-edge-k5-p1.json",
+      "sha256": "487c75ec3260d0e948d4edfc17a59fc53592c49b61051d21e9865e8aa7eaf5d9",
+      "bytes": 611828,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/nvram-edge-k5-p2.json",
+      "sha256": "487c75ec3260d0e948d4edfc17a59fc53592c49b61051d21e9865e8aa7eaf5d9",
+      "bytes": 611828,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/nvram-edge-k6-control-caf.json",
+      "sha256": "8290aee9c3b2fd71e371d7df87728399a4d06c1a44299f3131b97a2dc65c79d4",
+      "bytes": 611826,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/nvram-edge-k6-control-saf.json",
+      "sha256": "8290aee9c3b2fd71e371d7df87728399a4d06c1a44299f3131b97a2dc65c79d4",
+      "bytes": 611826,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/nvram-edge-k6-p1.json",
+      "sha256": "487c75ec3260d0e948d4edfc17a59fc53592c49b61051d21e9865e8aa7eaf5d9",
+      "bytes": 611828,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/nvram-edge-k6-p2.json",
+      "sha256": "487c75ec3260d0e948d4edfc17a59fc53592c49b61051d21e9865e8aa7eaf5d9",
+      "bytes": 611828,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/nvram-edge-k6-p3.json",
+      "sha256": "be8fccca01a758ee645946fa4970e4b82b54f3f8e31059710ad7bb606b019477",
+      "bytes": 611828,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/nvram-edge-k6-p4.json",
+      "sha256": "487c75ec3260d0e948d4edfc17a59fc53592c49b61051d21e9865e8aa7eaf5d9",
+      "bytes": 611828,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/nvram-edge-k7-p4.json",
+      "sha256": "487c75ec3260d0e948d4edfc17a59fc53592c49b61051d21e9865e8aa7eaf5d9",
+      "bytes": 611828,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/overlay-changed-bytes.csv",
+      "sha256": "08365a6362a1ad2b98d8aece7ebc2f9fd3f8efc9b82f83087e1c6fad45aad7ae",
+      "bytes": 265007,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/overlay-combined-k1.csv",
+      "sha256": "086fa34169bd845339ca84a2ef7957c47c4cf60a3bfa46f4582aebbe0307909b",
+      "bytes": 263891,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/overlay-combined-k1.json",
+      "sha256": "b04b0ad69baa66fd5e1a53e4d113dcfd45c68a8cbe498e3c48377314de612a9b",
+      "bytes": 372,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/owned-immediates-k1.json",
+      "sha256": "1eb6fa67dc1ad7ad3e630241a89a48950942089ea4a38d80c351c913324d5287",
+      "bytes": 5898,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/session-accept-c1.jsonl",
+      "sha256": "735c57925e557f46c5ad605a3763a37f3dc64646f10ab3a91a25386f03e604e8",
+      "bytes": 5164,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/session-accept-control.jsonl",
+      "sha256": "d88f62556f184acffe024ec0b435ddf9eadaa12128ad96859d50dae5c161e765",
+      "bytes": 3907,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/session-accept2-c1.jsonl",
+      "sha256": "4dfcd84cc76dd3dbbb7b1a5fdf74bb7215f988124236051e00afa16e4b551218",
+      "bytes": 5309,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/session-accept2-control.jsonl",
+      "sha256": "236c9509707ed0bb0a81a1503125bd4d2a60748e022f707f9acdfbec98e65616",
+      "bytes": 3911,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/session-accept3-c1.jsonl",
+      "sha256": "98088b325c39c62408c4f07416db5de68e7d3f65ce3fd0d86b62d0ebc0e515d7",
+      "bytes": 4598,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/session-accept3-c2.jsonl",
+      "sha256": "fa97a57b57b8adc81336c916a478a364052d40173a7772305e866ae4603d83ee",
+      "bytes": 4598,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/session-accept3-control.jsonl",
+      "sha256": "f1fcfc64736fd60ffb6f969ceccee01bf9eff76c80fd21dd09981e43e1bc1c11",
+      "bytes": 3911,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/session-k1-c1.jsonl",
+      "sha256": "c48575e3d57fb1803a0edb76e3d7bb1adf7bdb973c28edb8e42ae2bfdba5715a",
+      "bytes": 5046,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/session-k1-c2.jsonl",
+      "sha256": "8a3a393795675bd8a81b544ebcd173f075b603a13a5dd56fdd84e195d8dd00a6",
+      "bytes": 5046,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/session-k1-control-saf.jsonl",
+      "sha256": "e3c46bdef4d00485ff3ae3dc32468bf1e72865e01d5d918021374ab5e092b409",
+      "bytes": 4999,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/session-k1-control.jsonl",
+      "sha256": "de21c6da652cb7fa73281fb3864ea44e80aaac7d2ac8929ec59228994c9ca8ce",
+      "bytes": 4266,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/session-k3-control-saf.jsonl",
+      "sha256": "6e08b24d1c0dd294573bcf18a60038ddde8a57261e5ea14fe62cefede4e5a984",
+      "bytes": 4417,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/session-k3-p1.jsonl",
+      "sha256": "1f6539b104e1b2514ff73b952dd1d4f8752bc6aebedf5dfd9eba1f103dc28c6c",
+      "bytes": 5878,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/session-k4-control-saf.jsonl",
+      "sha256": "ab6b1a46dd86b1f1d28444569bc600b73de62ac20e2baa88121276dcb8fef5f1",
+      "bytes": 4417,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/session-k4-p1.jsonl",
+      "sha256": "fefebc7e1dee9f1298fe7fa06059d3d48f5f41da7351d713f08aaf4138db1f3e",
+      "bytes": 5878,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/session-k5-control-caf.jsonl",
+      "sha256": "b46295d50604e30240edafb73cd6c92439c5f2e92bf224734c6a95916ff86ac5",
+      "bytes": 4999,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/session-k5-control-saf.jsonl",
+      "sha256": "2451c8ef0b49921fb75f3d383c3f7759d1b7647cda6d0bfabb17911d54fb9ee8",
+      "bytes": 4417,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/session-k5-p1.jsonl",
+      "sha256": "9cc8be75619d723c095ebecff02c74ca9d5395cdf3dd37dcad7ce0bef10626bd",
+      "bytes": 5304,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/session-k5-p2.jsonl",
+      "sha256": "263a34109ab0c1cb470137589a75545b27ed2e804d75cfbd6b020454306a85bb",
+      "bytes": 5304,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/session-k6-control-caf.jsonl",
+      "sha256": "fbf4ebaf2f5096e099fbbbde8d2cb5a2f8b97d55bbfcc4b532718a9d235e726e",
+      "bytes": 4425,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/session-k6-control-saf.jsonl",
+      "sha256": "07a15065efa537cb80ea67c56f4e13eae08732cd30150f9aeb52a9ee466410d5",
+      "bytes": 4425,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/session-k6-p1.jsonl",
+      "sha256": "e6310b8216c4fae444f8f0893e37abf9ab93223b4447da5be8742097edcc1e5e",
+      "bytes": 5312,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/session-k6-p2.jsonl",
+      "sha256": "0b4dd821622d6382c50dd970d258161ff2e24a4d536971c662246425ca8cd47a",
+      "bytes": 5312,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/session-k6-p3.jsonl",
+      "sha256": "821d2b1f82c5b3b9207744f9032443cc3b3deaea6bf391d2412627798bcf2dc6",
+      "bytes": 5312,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/session-k6-p4.jsonl",
+      "sha256": "be8320be7d8f1da98b3103ac13375ddae6d28579391eb64207cf868df1aacab4",
+      "bytes": 5278,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/session-k7-p4.jsonl",
+      "sha256": "f04bd834244ef1092003ac4491ee2c37b4891f9ae92eca0cffce5c97a60e2052",
+      "bytes": 4625,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/session-reopen-k1.jsonl",
+      "sha256": "393c652683d734913e5fbceb07d9de821e299522a4f6394f89d7791bc34ccce8",
+      "bytes": 4617,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/session-store-k1.jsonl",
+      "sha256": "186cbe23ffbb55dc086a5f94c749f213c47e3ff936d1219adc99cc235e7e6f71",
+      "bytes": 3903,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/static-overlay-k1.json",
+      "sha256": "7effd0c25acccc071af9fb1158e723c242a470b85f641e79fb9ed24764355e7e",
+      "bytes": 93426,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/static-windows-k1.json",
+      "sha256": "a0948a0f04a06b5df37b9988201e9857f06199bcd8b9a693f2ff5353aa64175c",
+      "bytes": 4972,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/target-bytes.md",
+      "sha256": "b69ef57c497246dfcac1b1048f7dd9ea9591eb5e67d146322549af012d3b6d12",
+      "bytes": 7772,
+      "hashed": "later"
+    },
+    {
+      "path": "work/result.md",
+      "sha256": "b928dca37a3d64b4eb0712eb06f04f8e88aec34770b0b9daa1494d5515d59d93",
+      "bytes": 8369,
+      "hashed": "later"
+    }
+  ],
+  "commands": [
+    {
+      "id": "01",
+      "spawn": "python -I work/scripts/static_overlay_k1.py",
+      "status": 0,
+      "start": "2026-11-18T19:13:16.890Z",
+      "end": "2026-11-18T19:13:18.825Z",
+      "exit_file": "work/out/cmd/01.exit",
+      "hashed": "later"
+    },
+    {
+      "id": "02",
+      "spawn": "cmd.exe /d /c tools\\bin\\run-ghidra.cmd -postScript DisasmRangesK1.java work\\out\\static-windows-k1.json 60a8f6bb 100 work\\out\\disasm-home-k1.txt 6031eb80 90 work\\out\\disasm-stub-k1.txt 6031ead0 80 work\\out\\disasm-ensure-k1.txt 609b3ecd 45 work\\out\\disasm-converter-k1.txt 610bf5e2 4 work\\out\\disasm-callsite-k1.txt 60a8f2ac 40 work\\out\\disasm-reconcile-head-k1.txt -log work\\out\\ghidra-k1.log",
+      "status": 0,
+      "start": "2026-11-18T19:15:23.326Z",
+      "end": "2026-11-18T19:15:27.667Z",
+      "exit_file": "work/out/cmd/02.exit",
+      "hashed": "later"
+    },
+    {
+      "id": "03",
+      "spawn": "python -I work/scripts/scan_owned_k1.py",
+      "status": 0,
+      "start": "2026-11-18T19:17:32.646Z",
+      "end": "2026-11-18T19:17:32.719Z",
+      "exit_file": "work/out/cmd/03.exit",
+      "hashed": "later"
+    },
+    {
+      "id": "04",
+      "spawn": "python -I work/scripts/check_listings_k1.py",
+      "status": 0,
+      "start": "2026-11-18T19:17:33.027Z",
+      "end": "2026-11-18T19:17:33.072Z",
+      "exit_file": "work/out/cmd/04.exit",
+      "hashed": "later"
+    },
+    {
+      "id": "05",
+      "spawn": "python -I work/scripts/build_overlay_k1.py",
+      "status": 0,
+      "start": "2026-11-18T19:21:02.034Z",
+      "end": "2026-11-18T19:21:02.137Z",
+      "exit_file": "work/out/cmd/05.exit",
+      "hashed": "later"
+    },
+    {
+      "id": "06",
+      "spawn": "python -I work/scripts/copy_session_k1.py",
+      "status": 0,
+      "start": "2026-11-18T19:24:07.713Z",
+      "end": "2026-11-18T19:24:07.755Z",
+      "exit_file": "work/out/cmd/06.exit",
+      "hashed": "later"
+    },
+    {
+      "id": "07",
+      "spawn": "python -I work/scripts/build_swap_k1.py",
+      "status": 1,
+      "start": "2026-11-18T19:24:08.338Z",
+      "end": "2026-11-18T19:24:08.388Z",
+      "exit_file": "work/out/cmd/07.exit",
+      "hashed": "later"
+    },
+    {
+      "id": "08",
+      "spawn": "python -I work/scripts/make_table_k1.py",
+      "status": 0,
+      "start": "2026-11-18T19:24:08.591Z",
+      "end": "2026-11-18T19:24:08.640Z",
+      "exit_file": "work/out/cmd/08.exit",
+      "hashed": "later"
+    },
+    {
+      "id": "09",
+      "spawn": "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe --check work/scripts/zone_session_k1.mjs",
+      "status": 0,
+      "start": "2026-11-18T19:25:55.316Z",
+      "end": "2026-11-18T19:25:55.356Z",
+      "exit_file": "work/out/cmd/09.exit",
+      "hashed": "later"
+    },
+    {
+      "id": "10",
+      "spawn": "python -I work/scripts/build_swap_k2.py",
+      "status": 1,
+      "start": "2026-11-18T19:25:55.651Z",
+      "end": "2026-11-18T19:25:55.697Z",
+      "exit_file": "work/out/cmd/10.exit",
+      "hashed": "later"
+    },
+    {
+      "id": "11",
+      "spawn": "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe --check work/scripts/accept_page_k1.mjs",
+      "status": 0,
+      "start": "2026-11-18T19:26:45.005Z",
+      "end": "2026-11-18T19:26:45.046Z",
+      "exit_file": "work/out/cmd/11.exit",
+      "hashed": "later"
+    },
+    {
+      "id": "12",
+      "spawn": "python -I work/scripts/build_swap_k3.py",
+      "status": 1,
+      "start": "2026-11-18T19:26:45.395Z",
+      "end": "2026-11-18T19:26:45.453Z",
+      "exit_file": "work/out/cmd/12.exit",
+      "hashed": "later"
+    },
+    {
+      "id": "13",
+      "spawn": "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe work/scripts/accept_page_k1.mjs om-emu",
+      "status": 0,
+      "start": "2026-11-18T19:27:07.310Z",
+      "end": "2026-11-18T19:28:11.273Z",
+      "exit_file": "work/out/cmd/13.exit",
+      "hashed": "later"
+    },
+    {
+      "id": "14",
+      "spawn": "python -I work/scripts/build_swap_k4.py",
+      "status": 0,
+      "start": "2026-11-18T19:27:23.598Z",
+      "end": "2026-11-18T19:27:23.710Z",
+      "exit_file": "work/out/cmd/14.exit",
+      "hashed": "later"
+    },
+    {
+      "id": "15",
+      "spawn": "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe --check work/scripts/exp_edges_k1.mjs",
+      "status": 0,
+      "start": "2026-11-18T19:33:40.734Z",
+      "end": "2026-11-18T19:33:40.770Z",
+      "exit_file": "work/out/cmd/15.exit",
+      "hashed": "later"
+    },
+    {
+      "id": "16",
+      "spawn": "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe work/scripts/exp_edges_k1.mjs om-emu",
+      "status": 1,
+      "start": "2026-11-18T19:33:43.447Z",
+      "end": "2026-11-18T19:33:43.598Z",
+      "exit_file": "work/out/cmd/16.exit",
+      "hashed": "later"
+    },
+    {
+      "id": "17",
+      "spawn": "python -I -c from pathlib import Path; p=Path('work/scripts/exp_edges_k1.mjs'); Path('work/scripts/exp_edges_k2.mjs').write_bytes(p.read_bytes()); print('copied', p.stat().st_size)",
+      "status": 0,
+      "start": "2026-11-18T19:35:20.018Z",
+      "end": "2026-11-18T19:35:20.061Z",
+      "exit_file": "work/out/cmd/17.exit",
+      "hashed": "later"
+    },
+    {
+      "id": "18",
+      "spawn": "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe --check work/scripts/exp_edges_k2.mjs",
+      "status": 0,
+      "start": "2026-11-18T19:35:37.692Z",
+      "end": "2026-11-18T19:35:37.729Z",
+      "exit_file": "work/out/cmd/18.exit",
+      "hashed": "later"
+    },
+    {
+      "id": "19",
+      "spawn": "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe work/scripts/exp_edges_k2.mjs om-emu",
+      "status": 1,
+      "start": "2026-11-18T19:35:41.115Z",
+      "end": "2026-11-18T19:35:48.336Z",
+      "exit_file": "work/out/cmd/19.exit",
+      "hashed": "later"
+    },
+    {
+      "id": "20",
+      "spawn": "python -I -c from pathlib import Path; Path('work/scripts/exp_edges_k3.mjs').write_bytes(Path('work/scripts/exp_edges_k2.mjs').read_bytes()); print('copied')",
+      "status": 0,
+      "start": "2026-11-18T19:36:55.121Z",
+      "end": "2026-11-18T19:36:55.172Z",
+      "exit_file": "work/out/cmd/20.exit",
+      "hashed": "later"
+    },
+    {
+      "id": "21",
+      "spawn": "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe --check work/scripts/exp_edges_k3.mjs",
+      "status": 0,
+      "start": "2026-11-18T19:37:17.259Z",
+      "end": "2026-11-18T19:37:17.297Z",
+      "exit_file": "work/out/cmd/21.exit",
+      "hashed": "later"
+    },
+    {
+      "id": "22",
+      "spawn": "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe work/scripts/exp_edges_k3.mjs om-emu",
+      "status": 1,
+      "start": "2026-11-18T19:37:20.347Z",
+      "end": "2026-11-18T19:37:53.792Z",
+      "exit_file": "work/out/cmd/22.exit",
+      "hashed": "later"
+    },
+    {
+      "id": "23",
+      "spawn": "python -I -c from pathlib import Path; Path('work/scripts/exp_edges_k4.mjs').write_bytes(Path('work/scripts/exp_edges_k3.mjs').read_bytes()); print('copied')",
+      "status": 0,
+      "start": "2026-11-18T19:38:57.110Z",
+      "end": "2026-11-18T19:38:57.153Z",
+      "exit_file": "work/out/cmd/23.exit",
+      "hashed": "later"
+    },
+    {
+      "id": "24",
+      "spawn": "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe work/scripts/exp_edges_k4.mjs om-emu",
+      "status": 1,
+      "start": "2026-11-18T19:39:23.566Z",
+      "end": "2026-11-18T19:39:59.646Z",
+      "exit_file": "work/out/cmd/24.exit",
+      "hashed": "later"
+    },
+    {
+      "id": "25",
+      "spawn": "python -I -c from pathlib import Path; Path('work/scripts/exp_edges_k5.mjs').write_bytes(Path('work/scripts/exp_edges_k4.mjs').read_bytes()); print('copied')",
+      "status": 0,
+      "start": "2026-11-18T19:40:17.099Z",
+      "end": "2026-11-18T19:40:17.141Z",
+      "exit_file": "work/out/cmd/25.exit",
+      "hashed": "later"
+    },
+    {
+      "id": "26",
+      "spawn": "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe work/scripts/exp_edges_k5.mjs om-emu",
+      "status": 1,
+      "start": "2026-11-18T19:40:34.118Z",
+      "end": "2026-11-18T19:41:52.553Z",
+      "exit_file": "work/out/cmd/26.exit",
+      "hashed": "later"
+    },
+    {
+      "id": "27",
+      "spawn": "python -I -c from pathlib import Path; Path('work/scripts/exp_edges_k6.mjs').write_bytes(Path('work/scripts/exp_edges_k5.mjs').read_bytes()); print('copied')",
+      "status": 0,
+      "start": "2026-11-18T19:42:42.716Z",
+      "end": "2026-11-18T19:42:42.764Z",
+      "exit_file": "work/out/cmd/27.exit",
+      "hashed": "later"
+    },
+    {
+      "id": "28",
+      "spawn": "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe work/scripts/exp_edges_k6.mjs om-emu",
+      "status": 1,
+      "start": "2026-11-18T19:43:03.573Z",
+      "end": "2026-11-18T19:45:25.046Z",
+      "exit_file": "work/out/cmd/28.exit",
+      "hashed": "later"
+    },
+    {
+      "id": "29",
+      "spawn": "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe work/scripts/exp_p4_k7.mjs om-emu",
+      "status": 0,
+      "start": "2026-11-18T19:46:59.706Z",
+      "end": "2026-11-18T19:47:23.459Z",
+      "exit_file": "work/out/cmd/29.exit",
+      "hashed": "later"
+    },
+    {
+      "id": "30",
+      "spawn": "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe work/scripts/accept_edges_k1.mjs om-emu",
+      "status": 1,
+      "start": "2026-11-18T19:47:43.280Z",
+      "end": "2026-11-18T19:48:38.924Z",
+      "exit_file": "work/out/cmd/30.exit",
+      "hashed": "later"
+    },
+    {
+      "id": "31",
+      "spawn": "python -I -c from pathlib import Path; Path('work/scripts/accept_edges_k2.mjs').write_bytes(Path('work/scripts/accept_edges_k1.mjs').read_bytes()); print('copied')",
+      "status": 0,
+      "start": "2026-11-18T19:49:33.529Z",
+      "end": "2026-11-18T19:49:33.573Z",
+      "exit_file": "work/out/cmd/31.exit",
+      "hashed": "later"
+    },
+    {
+      "id": "32",
+      "spawn": "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe work/scripts/accept_edges_k2.mjs om-emu",
+      "status": 1,
+      "start": "2026-11-18T19:49:55.396Z",
+      "end": "2026-11-18T19:50:41.360Z",
+      "exit_file": "work/out/cmd/32.exit",
+      "hashed": "later"
+    },
+    {
+      "id": "33",
+      "spawn": "python -I -c from pathlib import Path; Path('work/scripts/accept_edges_k3.mjs').write_bytes(Path('work/scripts/accept_edges_k2.mjs').read_bytes()); print('copied')",
+      "status": 0,
+      "start": "2026-11-18T19:50:55.226Z",
+      "end": "2026-11-18T19:50:55.269Z",
+      "exit_file": "work/out/cmd/33.exit",
+      "hashed": "later"
+    },
+    {
+      "id": "34",
+      "spawn": "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe work/scripts/accept_edges_k3.mjs om-emu",
+      "status": 1,
+      "start": "2026-11-18T19:51:08.961Z",
+      "end": "2026-11-18T19:52:53.781Z",
+      "exit_file": "work/out/cmd/34.exit",
+      "hashed": "later"
+    },
+    {
+      "id": "35",
+      "spawn": "python -I work/scripts/diff_stores_k1.py",
+      "status": 0,
+      "start": "2026-11-18T19:53:17.896Z",
+      "end": "2026-11-18T19:53:18.020Z",
+      "exit_file": "work/out/cmd/35.exit",
+      "hashed": "later"
+    },
+    {
+      "id": "36",
+      "spawn": "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe work/scripts/accept_reopen_k1.mjs om-emu",
+      "status": 0,
+      "start": "2026-11-18T19:53:56.771Z",
+      "end": "2026-11-18T19:54:05.267Z",
+      "exit_file": "work/out/cmd/36.exit",
+      "hashed": "later"
+    },
+    {
+      "id": "37",
+      "spawn": "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe work/scripts/accept_store_k1.mjs om-emu",
+      "status": 0,
+      "start": "2026-11-18T19:54:32.179Z",
+      "end": "2026-11-18T19:54:55.635Z",
+      "exit_file": "work/out/cmd/37.exit",
+      "hashed": "later"
+    },
+    {
+      "id": "38",
+      "spawn": "python -I work/scripts/diff_stores_k2.py",
+      "status": 0,
+      "start": "2026-11-18T19:55:02.114Z",
+      "end": "2026-11-18T19:55:02.180Z",
+      "exit_file": "work/out/cmd/38.exit",
+      "hashed": "later"
+    },
+    {
+      "id": "39",
+      "spawn": "python -I work/scripts/write_manifest_k1.py",
+      "status": 1,
+      "start": "2026-11-18T19:56:37.693Z",
+      "end": "2026-11-18T19:56:37.756Z",
+      "exit_file": "work/out/cmd/39.exit",
+      "hashed": "later"
+    },
+    {
+      "id": "40",
+      "spawn": "python -I work/scripts/make_manifest_k2.py",
+      "status": 0,
+      "start": "2026-11-18T19:57:48.297Z",
+      "end": "2026-11-18T19:57:48.340Z",
+      "exit_file": "work/out/cmd/40.exit",
+      "hashed": "later"
+    },
+    {
+      "id": "41",
+      "spawn": "python -I work/scripts/write_manifest_k2.py",
+      "status": null,
+      "note": "This process. The wrapper writes work/out/cmd/41.out, 39.err and 39.exit after the manifest is closed, so those three files are not entries above. work/out/cmd/41.cmd.txt is written before this process starts."
+    }
+  ],
+  "tool_versions": {
+    "node26": "[WinError 2] The system cannot find the file specified",
+    "python": "Python 3.12.7"
+  },
+  "note": "Execution hashes of emulator modules, including transitive static imports, were taken before the page-27 sessions and stored in work/out/import-inventory-k1.json. Session helper-hashes add the unpacked firmware and the session module at session start. later hashes were taken by this script. The manifest file itself is not an output entry. The profile byte is RAM only. No firmware image was written. Subject Detect stayed Off."
+}
