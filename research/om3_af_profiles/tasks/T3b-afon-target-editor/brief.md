@@ -1,4 +1,4 @@
-# T3b: AF-ON target size and position editor (measure the stock screen, then route it to the AF-ON profile)
+﻿# T3b: AF-ON target size and position editor (measure the stock screen, then route it to the AF-ON profile)
 
 Agent: Grok 4.7 High · Coordinator: Opus 5.5 · Reviewer: Codex Sol
 Brief version: 2026-11-19 · Workspace: Ghidra + OM-Emu · Runs concurrently with T4b (separate workspace)
@@ -80,3 +80,44 @@ scripts, tables, JSONL and screenshots.
 
 The button target using the new fields (that is T6); storage (Q7); display; Subject Detect On; packaging;
 hardware.
+
+## 5. Correction round (Opus, after Sol's review `run-20261119-062241-review`: REJECT)
+
+Your previous work is in `work\`. Sol's full review is `audit\previous-review.md`. Do **not** start over. The
+stock direct-screen measurements (findings 1–3), the 55-byte mirror at `0xa031eeb0`, the routing at the
+mapped setter and getter, and the normal-edit control are confirmed; reuse them. Save every new script,
+table, JSONL and screenshot under a **new, unique name** (`-f1` suffix onward); never overwrite a file a run
+used or wrote. At most four new experiment versions in total.
+
+**Coordinator amendment, cancel (replaces brief §2 item 4 "repeat and cancel: nothing changes").** The
+feature spec requires reusing the stock screen and its mechanisms. The stock direct screen commits each key
+to the change index immediately, and MENU does not restore it (your finding 10, and the stock control). In
+AF-ON mode, MENU must therefore behave **exactly as stock MENU does**, applied to the profile instead of the
+half-press cells. Assert that parity against the stock control: same keys, same profile change as the
+control's half-press change, half-press cells unchanged. Do not add a rollback. Keep the earlier failed
+`accept-e3` record and describe it as superseded by this amendment, not as a pass.
+
+1. **Mode flag.** Move the AF-ON-mode flag into verified free bytes inside the owned range
+   `0x6031e920`–`0x6031f000` (uncached alias `0xa031e920`…), checked against the Z5 CSV and the relocated
+   block. Scope it to the editor's lifetime: set it on the AF-ON entry, and clear it on every exit (OK, MENU,
+   shutter half-press, power-off/session end, any other exit you observe). Assert after each exit that the
+   flag is clear and that a following normal edit writes the half-press cells.
+2. **Custom target sizes.** The spec requires editing the custom sizes (`MODE_AF_AREA_SIZE_*_CUSTOM_*`,
+   `0x1dd1` indices 2–9). Find the stock editor that writes them; the leading candidate is the menu page
+   **AF Target Mode Settings** (seen highlighted, not entered, by T4b). Measure it on a stock session
+   (routes, cells written, entry trace), then route it in AF-ON mode to the mirror's custom-size fields the
+   same way. If no stock editor writes them, show the evidence and report it.
+3. **Stock measurements, gaps.** Add open and cancel entry traces (start the trace before the opening key),
+   raise or remove the 500-entry call cap or show that it was not hit, list the routes that were tried and
+   not wired, and add a stock screenshot of a custom zone on the direct screen.
+4. **Acceptance, new runner.** Table-driven, two fresh candidate sessions and a stock control, asserting
+   after every key: the screen identity and the visible zone title or glyph (by pixel hash or resource ID, not
+   by a screen-type string), the complete profile mirror, the zone byte, the flag, and every half-press cell.
+   Cover: AF-ON move, type change, C1 selection, a custom-size edit (item 2), OK, MENU parity (amendment), and
+   a normal edit after each exit. Then a native save **after** the edits with its completion read back, a new
+   session on that store, and an assertion of the full profile's initial state on reopen (say what the
+   default is for every field, and whether `0xFF` means "uninitialised, use stock defaults"). The run must end
+   `ok:true`. Keep the one-orientation limitation stated.
+5. **Records.** Mark anything not achieved as partial or BLOCKED; remove "No other deviation". Repair the
+   manifest: consumed research inputs, baseline helpers, command 17 and every command-output hash. Refresh it
+   last.

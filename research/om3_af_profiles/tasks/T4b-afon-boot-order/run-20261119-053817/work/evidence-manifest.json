@@ -1,0 +1,1441 @@
+{
+  "task": "T4b-afon-boot-order",
+  "brief_sha256": "2a7cf5220ebe28e998b164fc2cd201fb610635d69d8874c431d9e2298aef4e2c",
+  "inputs": [
+    {
+      "path": "inputs/00_0100_50000020.decoded.bin",
+      "sha256": "5e8d376e9111a44ac0352f26030d7c1b17026d42c45f3600cfa02a0e8c5b7d59"
+    },
+    {
+      "path": "inputs/02_0106_458c0020.decoded.bin",
+      "sha256": "3d9fd4426b45fbe4b715599422af38c6d22392c08543a69f63c28291c5a0b059"
+    }
+  ],
+  "sources": [
+    {
+      "path": "brief.md",
+      "sha256": "2a7cf5220ebe28e998b164fc2cd201fb610635d69d8874c431d9e2298aef4e2c"
+    },
+    {
+      "path": "TASK.md",
+      "sha256": "e54045b62e207b67a4f6b426d54ead65d774b58ab62c6efae93c658c1240fcd6"
+    },
+    {
+      "path": "templates/result.md",
+      "sha256": "18d605fc1f70369c40245130cdd499288bd3ae1a8fe1bdb84575cb58532d0110"
+    },
+    {
+      "path": "review-brief.md",
+      "sha256": "143cbedb572d224d8ee05f986a6c6be024ed489b2e692f6e58d951fb6223c43e"
+    },
+    {
+      "path": "ref/HARDWARE-STAGE0-RECORD.md",
+      "sha256": "53c725620759c10dbe49d8e7568ab8ad9aa15f7d02844dd0c49ac1892a46abde"
+    },
+    {
+      "path": "ref/analysis/button-af/AFON-MENU-RESEARCH.md",
+      "sha256": "d950e2d88da43a7eb77f1b77f69e88a4e8424b62f736eb966533a672cdf0d287"
+    },
+    {
+      "path": "ref/analysis/button-af/readiness/t4-afon-packaging/README.md",
+      "sha256": "aa99b15b36f15ae446ef9e8c80cf7c4d537814bc393ed5c6f7a7b10129a8b5e1"
+    },
+    {
+      "path": "ref/analysis/button-af/readiness/t4-afon-packaging/out/packaging-c1.md",
+      "sha256": "5ef1809b99b8d78bf169e8ccaf2464ab5e08599af9c8dcfdedeb7fbec4b4e5d1"
+    },
+    {
+      "path": "ref/tasks/T4-afon-packaging/decision.md",
+      "sha256": "ce55be2378bee563bc1bb7a8318824eab7bca89fee42859e005cd5be9756dd28"
+    },
+    {
+      "path": "om-emu/emu/checks/lib/args.mjs",
+      "sha256": "6c99d21aad6340f2b7c72c5c63f33b7287d04dab798adedc23f1cf705ab92ad8"
+    },
+    {
+      "path": "om-emu/emu/checks/lib/coverage.mjs",
+      "sha256": "e6e3d409d7766e8d5b55d473523355a7dda4b2a4dba1bda984ca170411109ee7"
+    },
+    {
+      "path": "om-emu/emu/checks/lib/env.mjs",
+      "sha256": "dbbfd2ab839d8ceb784c7df5c12d0d9a17898eba549b84e848a9cfb05b0d609b"
+    },
+    {
+      "path": "om-emu/emu/checks/lib/errors.mjs",
+      "sha256": "4c01fc5ac9167e751e6f9f1f013d61c56600e3af668db8ee305f79718e213c79"
+    },
+    {
+      "path": "om-emu/emu/refs/errors.mjs",
+      "sha256": "fff1f2065bbdb2797f3f998fabeb2a0353b88451bc252e4d3ad74025ab164aca"
+    },
+    {
+      "path": "om-emu/emu/scenarios/bind.mjs",
+      "sha256": "5809e36b04e3fa0983e85c104070e3639ee85c965f25d0bddc0165533ee5fedc"
+    },
+    {
+      "path": "om-emu/emu/scenarios/session_replay.mjs",
+      "sha256": "83d2afc6accf98d0cad951803af7f42319ec7858a9c9cc1a018622357c02b133"
+    },
+    {
+      "path": "om-emu/emu/src/core/cores.mjs",
+      "sha256": "c40e61d8cb1c6d5660968bc3780591fe58b070d39346b33aacb1f8253cf3bfa0"
+    },
+    {
+      "path": "om-emu/emu/src/core/cpu.mjs",
+      "sha256": "94f3caf73745b17dceca437299b6c711aee0efe51c9ab7c872d5b1e6c599521e"
+    },
+    {
+      "path": "om-emu/emu/src/core/interp.mjs",
+      "sha256": "660e09091fc99db584104cd8e98d6050fe517e204fa2c747d0aa72e1423f9aa2"
+    },
+    {
+      "path": "om-emu/emu/src/core/m4/boot.mjs",
+      "sha256": "064782160d72244f025941957757c5c0becac5cbc2baf272c93124a4b025c2ab"
+    },
+    {
+      "path": "om-emu/emu/src/core/m4/bus.mjs",
+      "sha256": "7d40173941ce9136e055f5d68a3904d7e13bcb100afe076c99e62c5f04daff2b"
+    },
+    {
+      "path": "om-emu/emu/src/core/m4/cpu.mjs",
+      "sha256": "64ddeaecf9402af3d04cbf232b99036fd1b87a637300b5ab0db6db4eafb655b8"
+    },
+    {
+      "path": "om-emu/emu/src/core/m4/dcache.mjs",
+      "sha256": "5c1cd23048a7d5c693bc626abbcc1057d29bc4214c96bb9d05d71674ebf472cf"
+    },
+    {
+      "path": "om-emu/emu/src/core/m4/decode.mjs",
+      "sha256": "a5400b0d56fbec796452aa7d93817cb4e97d28604f75048aef9a0d2008b9616d"
+    },
+    {
+      "path": "om-emu/emu/src/core/m4/errors.mjs",
+      "sha256": "e4552273413b00095c7536a9e490c3c1b70428a9da88b4ec8087dccc5e0b517b"
+    },
+    {
+      "path": "om-emu/emu/src/core/m4/periph/adc.mjs",
+      "sha256": "d986c043c73a0ffcfcac748224516520cd909f297bca97fca0479c0e18da2ab3"
+    },
+    {
+      "path": "om-emu/emu/src/core/m4/periph/board.mjs",
+      "sha256": "96452848d86624d9c569fdca46fa3ef015ae4c1847f31ae24da561ed54d9d4b6"
+    },
+    {
+      "path": "om-emu/emu/src/core/m4/periph/dma.mjs",
+      "sha256": "0013b012879e42f249776e8d0a91db465d84312f967751994fdcfb78aeef931f"
+    },
+    {
+      "path": "om-emu/emu/src/core/m4/periph/exti.mjs",
+      "sha256": "3ccca80728f6a95d651bee8fbdea6eebff4cf0c839073198e7a39465a2f7f572"
+    },
+    {
+      "path": "om-emu/emu/src/core/m4/periph/flash.mjs",
+      "sha256": "8a1b09f4465f05ed8853a08be72081635257fc9e47e5b475820d0b49cb1b5a85"
+    },
+    {
+      "path": "om-emu/emu/src/core/m4/periph/gpio.mjs",
+      "sha256": "4f2bd672f826e915f4dc628e39d156d7bc05f4ad1291b1121eebc780665025f9"
+    },
+    {
+      "path": "om-emu/emu/src/core/m4/periph/i2c.mjs",
+      "sha256": "db2ed90a75f8f23fa8119eceb74641e1faf0c840f0e5b412297bed3fe27fed42"
+    },
+    {
+      "path": "om-emu/emu/src/core/m4/periph/pwr.mjs",
+      "sha256": "e665b6f771874170fb13346b85389d8969d5106f116ab80c32689c293e32f179"
+    },
+    {
+      "path": "om-emu/emu/src/core/m4/periph/rcc.mjs",
+      "sha256": "28649dbcca9e0006c0c518d23ca488544d48d15f5443dd8d40fb40954745cd70"
+    },
+    {
+      "path": "om-emu/emu/src/core/m4/periph/regs.mjs",
+      "sha256": "a159b2f84183d50cccb9445f435ebb2955bada803f994b7ffb9e2ea29262ee1e"
+    },
+    {
+      "path": "om-emu/emu/src/core/m4/periph/rtc.mjs",
+      "sha256": "3edf5249203b6230e69e423e50953d9611db7a1bf780fc93ad42f2bd71965107"
+    },
+    {
+      "path": "om-emu/emu/src/core/m4/periph/sched.mjs",
+      "sha256": "a683cedc35145ccd001f22c4031f6fd4942e9bfd38d00c0a99db7b3e78923e4c"
+    },
+    {
+      "path": "om-emu/emu/src/core/m4/periph/spi.mjs",
+      "sha256": "388e0f06c7c1c6ce9400efd78e1d3d8f3249a424cdf192f5fd7bb039ce2dba5f"
+    },
+    {
+      "path": "om-emu/emu/src/core/m4/periph/stm32l4.mjs",
+      "sha256": "1beb26e4d57bcfc8996e5b4c0ef04f6d94c3e9e4de4952d056904c6698a9aef5"
+    },
+    {
+      "path": "om-emu/emu/src/core/m4/periph/tim.mjs",
+      "sha256": "a3d74c5c2eb63bc9759899ba528a0c0519bb64b0a101d67b44cee85963f21f72"
+    },
+    {
+      "path": "om-emu/emu/src/core/m4/periph/usart.mjs",
+      "sha256": "5f3ff52bf755043637af356f2516524a13e2ac5d706772d73791eb32508a3396"
+    },
+    {
+      "path": "om-emu/emu/src/core/m4/periph/usb.mjs",
+      "sha256": "e9cd406f7666cc4b85ae2e4fc9c1830a66f62bc60747f443498dcaf65d349c0a"
+    },
+    {
+      "path": "om-emu/emu/src/core/m4/sys.mjs",
+      "sha256": "e97b9371d3e8eea59cea3d87c08b39eca3ae16e35539f8ce4f2ca785cec81a3b"
+    },
+    {
+      "path": "om-emu/emu/src/core/mem.mjs",
+      "sha256": "adfe9bca23723f22b490c99047b6ad32c291f495492c98138d1da3c20ab5a676"
+    },
+    {
+      "path": "om-emu/emu/src/debug/call.mjs",
+      "sha256": "74bffd86020ec1c6f3eca732fd4a41aaa7dcfba2d4670a094449918d84a44186"
+    },
+    {
+      "path": "om-emu/emu/src/debug/debugger.mjs",
+      "sha256": "a24ce644ab922457a843c868076aa21e72007e78086fda75fd88119a79da4705"
+    },
+    {
+      "path": "om-emu/emu/src/debug/live.mjs",
+      "sha256": "c19050fd773dc1f46b9f7c0c3669ada12b1293dab93599206913022c62a87e49"
+    },
+    {
+      "path": "om-emu/emu/src/debug/protocol.mjs",
+      "sha256": "5eff055d29372fb46aecda2c09c6ba94538d7026ad585e15abe06ccbd1f259ea"
+    },
+    {
+      "path": "om-emu/emu/src/debug/regs.mjs",
+      "sha256": "2e620e185508bf19008cf97cc33ae188222e7461e0b3f1811bf304fdb7b422d7"
+    },
+    {
+      "path": "om-emu/emu/src/debug/snapshot.mjs",
+      "sha256": "24e51e3811a58d55051caeb7507707cfb51001cb9b5355d27bc20c8c0c98ab54"
+    },
+    {
+      "path": "om-emu/emu/src/debug/trace.mjs",
+      "sha256": "92b3ed83780771c6011d1521ab018dee0fda5f604522acdbdd624a25bdf32bab"
+    },
+    {
+      "path": "om-emu/emu/src/dev/audio.mjs",
+      "sha256": "2a41fcd1bd0152e5b2b54f3cad314a7e77c5741787d761d69df9e023d41ad571"
+    },
+    {
+      "path": "om-emu/emu/src/dev/bus.mjs",
+      "sha256": "e537c4ed7e90f6bc2b4a7fef2a35d856af5ffc5ae446ee9336a87e5b4e6e397f"
+    },
+    {
+      "path": "om-emu/emu/src/dev/camfe.mjs",
+      "sha256": "69a9fde49796f27fac8454565b69c281f670659decb6655fb0ad7c5ef2c3057c"
+    },
+    {
+      "path": "om-emu/emu/src/dev/dml.mjs",
+      "sha256": "cb8761cb0d5531eb4e7ff46fb3c1cba535afcf6719220ca670ec3c94d9b0a890"
+    },
+    {
+      "path": "om-emu/emu/src/dev/dpc.mjs",
+      "sha256": "adf00b0157638de3c7f2885957b4542ef0b8a1bcac8c7649546a0658cfb89f32"
+    },
+    {
+      "path": "om-emu/emu/src/dev/ems1.mjs",
+      "sha256": "68deb7a62e8d6d7d1fb11e49baed979dcf01012e07074ec19bf4e8c39db9d371"
+    },
+    {
+      "path": "om-emu/emu/src/dev/engine.mjs",
+      "sha256": "2164dcaa278792e3b64675e9ee02dcefa0a6c03afbe7d2738d013da0bfa18059"
+    },
+    {
+      "path": "om-emu/emu/src/dev/hdmi.mjs",
+      "sha256": "80497c3a89e39ecd641f4fcc5e67ebb2028893fb3b86edffb91b50b115449e8c"
+    },
+    {
+      "path": "om-emu/emu/src/dev/imgpipe.mjs",
+      "sha256": "924001331674b9e6642c2c9c052fe75a4aff78d8a16f41dd2e2191046ef94daa"
+    },
+    {
+      "path": "om-emu/emu/src/dev/imgpro.mjs",
+      "sha256": "275680322384425d95a05c39178a70091ed8d3ff897ae04ab504004029066664"
+    },
+    {
+      "path": "om-emu/emu/src/dev/intc.mjs",
+      "sha256": "85b6b7d21652ac1a057e19fdc1e214154ac52bceec47a8f4afdac1661788dada"
+    },
+    {
+      "path": "om-emu/emu/src/dev/lensssc.mjs",
+      "sha256": "e96b83c864f901ca1811a447f5f88fb1ff0b9ee87972555fe2678e420fd6a34d"
+    },
+    {
+      "path": "om-emu/emu/src/dev/linkpins.mjs",
+      "sha256": "cbc3e7a5fca33012a2344800016eb8e9f63d723f381dc13deb4ce52e66e3c1d5"
+    },
+    {
+      "path": "om-emu/emu/src/dev/pdt.mjs",
+      "sha256": "9377aa4bfd22964c40c672c44f7eb48c5955e5faa6f98a44525497afecb716c9"
+    },
+    {
+      "path": "om-emu/emu/src/dev/scpu.mjs",
+      "sha256": "69198b7be16fb24d32968553888ee551ba0f6d227688bba434203e5c834fd5cb"
+    },
+    {
+      "path": "om-emu/emu/src/dev/stub.mjs",
+      "sha256": "b87a757f0e57823fc46a89020060cc38a6361d24a0498450bdc3047fb9419a3d"
+    },
+    {
+      "path": "om-emu/emu/src/dev/timer.mjs",
+      "sha256": "b03f10e8d4d622d3fb2fcd6b8b39943c69c98d17241dd4e5026c338fbe0b4739"
+    },
+    {
+      "path": "om-emu/emu/src/dev/vsc.mjs",
+      "sha256": "38de0fa08a4ff6197c60868c6b893d46775908ccf9389f1d1ddcc5f6b6342602"
+    },
+    {
+      "path": "om-emu/emu/src/dev/vsccompose.mjs",
+      "sha256": "ba3da9916f999ca91b4c1b9857c13f95239628be334e58478154e682aa05971c"
+    },
+    {
+      "path": "om-emu/emu/src/dev/vsccompose2.mjs",
+      "sha256": "234572564acef358dd7084d35ca624d62312c42f005ef9c3dcb314fcc1a4d638"
+    },
+    {
+      "path": "om-emu/emu/src/dev/vscregs.mjs",
+      "sha256": "d29e6661e27212b466035b13ca9ceb9f2bcbafe8026328659d65382f0b806265"
+    },
+    {
+      "path": "om-emu/emu/src/fw/board.mjs",
+      "sha256": "6a02f7c74bee6f0b6409c57c3ee78c62e16280794ee55557edb42d2f723d7875"
+    },
+    {
+      "path": "om-emu/emu/src/fw/expand.mjs",
+      "sha256": "e2575f5a4c8ecb79764a31ae01223ab718e7ddc266c00bd88bbf0008dabd1d7d"
+    },
+    {
+      "path": "om-emu/emu/src/fw/facts.mjs",
+      "sha256": "3f938574a7cc589dd227584066e726039009678c4f51fa8175437badfc1c4c17"
+    },
+    {
+      "path": "om-emu/emu/src/fw/image.mjs",
+      "sha256": "657e9a447ea8035f17115708121e1ad8e71c08f8f5ef1aefb107ccf3a73621d8"
+    },
+    {
+      "path": "om-emu/emu/src/fw/labfw.mjs",
+      "sha256": "3efbe7112a2917fbf77c3a57b704296bd730676f1921d24c427f40225ecfb083"
+    },
+    {
+      "path": "om-emu/emu/src/fw/model.mjs",
+      "sha256": "f080e7e9c91bf3baa5136c7b8aeb6b0e0c4c8378d89f361a47e87aac4e902a44"
+    },
+    {
+      "path": "om-emu/emu/src/fw/models.mjs",
+      "sha256": "115c8349e4f0aadbe56f24638db4e195ca3ba59739c64607eb5b34e4e14db3db"
+    },
+    {
+      "path": "om-emu/emu/src/fw/nand.mjs",
+      "sha256": "1c7751b4db88c7874eb4c86d33185f6279ced1cd2f7bddbae4a2dea37fe3b5dd"
+    },
+    {
+      "path": "om-emu/emu/src/fw/olyfw.mjs",
+      "sha256": "a1c02f4ded0c3624ac017d97eb1ca59e6ca5dd407bcc0854722d7c126c9ef246"
+    },
+    {
+      "path": "om-emu/emu/src/fw/overrides-E122.mjs",
+      "sha256": "6bff3bc7d875f7424165e6737ecd50c4a4ebb8d1dc4dd4d42b9431b5982b0602"
+    },
+    {
+      "path": "om-emu/emu/src/fw/overrides-E144.mjs",
+      "sha256": "cc98ffd4ed9eac44c6a8c58c31010b67c72eef618d09e93cf97e442b3f5bd307"
+    },
+    {
+      "path": "om-emu/emu/src/fw/patch.mjs",
+      "sha256": "bb9434c31fc8e494daa7dd05321bf5835b51aae6bfdbbd981d7151b445375d3b"
+    },
+    {
+      "path": "om-emu/emu/src/fw/ports.mjs",
+      "sha256": "6c81c9955e9baba6c165ed3affb69fd5208bb44e6a9dba5dc6094935074ce0b0"
+    },
+    {
+      "path": "om-emu/emu/src/fw/resprefix.mjs",
+      "sha256": "612c87c0dd722ee031685dd5c70bf14e113d094f2e3a66677dfbe4b8c14c6372"
+    },
+    {
+      "path": "om-emu/emu/src/fw/sections.mjs",
+      "sha256": "e8e55f2820a7db8426f0172882a34c90c611a7a6b2d848904cd55739d45d6250"
+    },
+    {
+      "path": "om-emu/emu/src/lab/acc.mjs",
+      "sha256": "48c508462bb4e8cf94b893315d079b9d08248956f06c040be1ed4e3503122062"
+    },
+    {
+      "path": "om-emu/emu/src/lab/audio.mjs",
+      "sha256": "9b1edfc267afe2c915cbecf4d9fc7bc78003f7f19ef799fd4c738ae1d4e2ff4b"
+    },
+    {
+      "path": "om-emu/emu/src/lab/audiohw.mjs",
+      "sha256": "c8b414b7217647d696c67aa84ffd273680d325f0119576aa480416791932d705"
+    },
+    {
+      "path": "om-emu/emu/src/lab/camapp.mjs",
+      "sha256": "363891a90afc7e77e57abd1638e31f0a7badc09b81778e90ac8d42fb640b33f3"
+    },
+    {
+      "path": "om-emu/emu/src/lab/charger.mjs",
+      "sha256": "f0a2426fb249f9f675c0d22d6e49126fd53a88541dbd6637f6a5bbe4e0212982"
+    },
+    {
+      "path": "om-emu/emu/src/lab/cpu2.mjs",
+      "sha256": "9a6877013f48a51f56a94bb1185d827c50b8d427b2db375d0d6a3964f0736666"
+    },
+    {
+      "path": "om-emu/emu/src/lab/display.mjs",
+      "sha256": "7b34ff5b05fef9c7ca1d33fe771e4158387298fd02b28372afd36bf5f0d501bb"
+    },
+    {
+      "path": "om-emu/emu/src/lab/dispq.mjs",
+      "sha256": "4821c3b1eb64f4b25f40ed80bcf2c14aea5b166148efa3dda35b3d978537b4a4"
+    },
+    {
+      "path": "om-emu/emu/src/lab/edid.mjs",
+      "sha256": "416d945d868a7d8c53cc0085179733a25fccb82f88e1d6cbd0fe7add32b4d051"
+    },
+    {
+      "path": "om-emu/emu/src/lab/errors.mjs",
+      "sha256": "2fd7139bceb60f0ad31c428f7ed9f69235af4bc76cda823b1bb9c6dcea45fe10"
+    },
+    {
+      "path": "om-emu/emu/src/lab/hle.mjs",
+      "sha256": "5648a293d1f6ede0eda8e29d4dc9e6f683210a28935b02b4e6c0af2a03da0520"
+    },
+    {
+      "path": "om-emu/emu/src/lab/irq.mjs",
+      "sha256": "8fec8ed6abe08a9b83845eae044fc3fcc43f2e339f95d872489152b4de9c072f"
+    },
+    {
+      "path": "om-emu/emu/src/lab/jpeg.mjs",
+      "sha256": "b54cfe0eb9655371f282fd1e3565b92dfce2500538b805bf0d082de002b97554"
+    },
+    {
+      "path": "om-emu/emu/src/lab/kernel.mjs",
+      "sha256": "6ceee4bf9962892c0d025be0d70a92ccbb53cdb0ef009b5b9e312586302f47f8"
+    },
+    {
+      "path": "om-emu/emu/src/lab/lens.mjs",
+      "sha256": "b92b12d381f3389fa8802f1e9ef3bde4291c45e8cb386619ff6fcf25099a96e5"
+    },
+    {
+      "path": "om-emu/emu/src/lab/lensmcu.mjs",
+      "sha256": "52eb5614952c45f8f648db3cda980019bf9d1fe79334e48bbc3a183a443eabdc"
+    },
+    {
+      "path": "om-emu/emu/src/lab/mdet.mjs",
+      "sha256": "89c61056df82fe1a159e684cdee0810af38d60c986ab0bf33a6e90e1c504bdde"
+    },
+    {
+      "path": "om-emu/emu/src/lab/media.mjs",
+      "sha256": "373ceb78980f1c9a7098d56b573e86b00595392fe4e5a69e7c93af970a6ef248"
+    },
+    {
+      "path": "om-emu/emu/src/lab/menu.mjs",
+      "sha256": "f1fbb65e5a9d30e90ac4eb5565ad6852733d4ae20ff3a3de590d916cf4ec4e94"
+    },
+    {
+      "path": "om-emu/emu/src/lab/menudata.mjs",
+      "sha256": "1cfdf906d143bea38e730040b2f062b3b3d46b35ba361b58dfd5b01db15531da"
+    },
+    {
+      "path": "om-emu/emu/src/lab/menuwalk.mjs",
+      "sha256": "d91eeba2e912d05d4a11081bd5846f53b60cbf1578e0733e3289bac8b47706f1"
+    },
+    {
+      "path": "om-emu/emu/src/lab/nav.mjs",
+      "sha256": "f0062a533f6caf7a37e600364a0d645ffa184deb7892c385b9bba5f58390baef"
+    },
+    {
+      "path": "om-emu/emu/src/lab/nvramdoc.mjs",
+      "sha256": "597148fdec863af46873a53ab5380a553fcda3a82499da2548f527eed28fffba"
+    },
+    {
+      "path": "om-emu/emu/src/lab/osd.mjs",
+      "sha256": "a0887531c74d890dca3a12b26d7aea57009da602ffbb6fff8382f89a119176b8"
+    },
+    {
+      "path": "om-emu/emu/src/lab/osdfmt.mjs",
+      "sha256": "8d5945aeca6a9ec80099c8a3c48ea90580f4c87399e6bcc593f2f0782a263248"
+    },
+    {
+      "path": "om-emu/emu/src/lab/patchaudit.mjs",
+      "sha256": "18b946321244d4473f904314ba558e9f3c92e330f6dd502863974773bf349b74"
+    },
+    {
+      "path": "om-emu/emu/src/lab/play.mjs",
+      "sha256": "ac4221021017ba3facacb5db7b1600f2704291136b72c24fefee3b9f8ed092a8"
+    },
+    {
+      "path": "om-emu/emu/src/lab/player.mjs",
+      "sha256": "bfd861245f1a3d3b2d19a48966b410e979def2ae7cb62c5dde86e31eb03e1404"
+    },
+    {
+      "path": "om-emu/emu/src/lab/playmod.mjs",
+      "sha256": "56f5802c85ac55f4c5ecbee290384620826c62a1fde6d6bce4b4704aa95bfad8"
+    },
+    {
+      "path": "om-emu/emu/src/lab/power.mjs",
+      "sha256": "ec16f3c8dfbd67a7802e9718ce930e00d2889b0e5dc37fc7e040a255ea92f549"
+    },
+    {
+      "path": "om-emu/emu/src/lab/rec.mjs",
+      "sha256": "830d220debed119b5183391ce0d629de368369609ccbfafef14dd27bdf4643f4"
+    },
+    {
+      "path": "om-emu/emu/src/lab/resnand.mjs",
+      "sha256": "c58d5d251c32f05d247ab8914551202c474e793bcdb2062ce61d2617fbc17462"
+    },
+    {
+      "path": "om-emu/emu/src/lab/resources.mjs",
+      "sha256": "122450c256d8ef188f77a8e323ba92a28a6102f9033b4634e3c77c36dd066002"
+    },
+    {
+      "path": "om-emu/emu/src/lab/rtos.mjs",
+      "sha256": "ea7e06666d37aaa97d06142febdbe853d996f68705bcca35f7ff11b4c6ed4b5d"
+    },
+    {
+      "path": "om-emu/emu/src/lab/scene.mjs",
+      "sha256": "a842e60f803bc8b88113e1484e864235b5e2f9014dabb831210fd5cb9c8e9366"
+    },
+    {
+      "path": "om-emu/emu/src/lab/scpudev.mjs",
+      "sha256": "c93ce9ced00ba5effba9dedf61ac54d3ca437533f2fd8c899273d273ec5dfc6c"
+    },
+    {
+      "path": "om-emu/emu/src/lab/scpulink.mjs",
+      "sha256": "3df7584565d3b873e4cbf8fe0050364efe14ae383a4bff5d2dcc9251946ddb96"
+    },
+    {
+      "path": "om-emu/emu/src/lab/scpum4.mjs",
+      "sha256": "8b7d7fcb1473963f775a2f6742fb2236ef2309ddbaa47d98e7edc41692867514"
+    },
+    {
+      "path": "om-emu/emu/src/lab/sdcard.mjs",
+      "sha256": "4f81b26b7158dff6bedbd7e88e10fe6293a4c6cea643b498ab98ff7041e7828e"
+    },
+    {
+      "path": "om-emu/emu/src/lab/settings_ids.mjs",
+      "sha256": "9c395cbd29b04f7e3a4cc1c34332c6f3c4327b28b9ed45db969e9589758b1f78"
+    },
+    {
+      "path": "om-emu/emu/src/lab/shoe.mjs",
+      "sha256": "d6675b13346890962de1eec8930f763312f7f7d59ccb5b869a0607bf03840e98"
+    },
+    {
+      "path": "om-emu/emu/src/lab/shuttersnd.mjs",
+      "sha256": "f4e81e625dcbaa0807d5ac67dfc246ad791f314c5ae9fd7f44192d12728fbc63"
+    },
+    {
+      "path": "om-emu/emu/src/lab/sim.mjs",
+      "sha256": "aab4081dcfc9fb63ca8e84f7f100f84a0ce6dc91a633595cb05446a5d480e6be"
+    },
+    {
+      "path": "om-emu/emu/src/lab/sio.mjs",
+      "sha256": "f0716ec9f3b3fbcffce75fa186a53f387ab1c336726595bfedc62119b4a9627b"
+    },
+    {
+      "path": "om-emu/emu/src/lab/soundres.mjs",
+      "sha256": "a2c6dd3df56db40e95822cdb973bfe25efad7f049828626964c88886ff6aa8e9"
+    },
+    {
+      "path": "om-emu/emu/src/lab/storage.mjs",
+      "sha256": "f5ea0a36b9c78f0a05a5e0f5e45f53ee5f4d076019fab8ee41c2d9e8c4d37d9c"
+    },
+    {
+      "path": "om-emu/emu/src/lab/subject.mjs",
+      "sha256": "a5bd078b39c2f8594b13f564e5086eb56e8f22bbcdbac115e226e19220b5b317"
+    },
+    {
+      "path": "om-emu/emu/src/lab/take.mjs",
+      "sha256": "8c6dc9cc84ee43a46e22d542f79bb6a5138b9ed686f089b0e17d7c500f66d4ee"
+    },
+    {
+      "path": "om-emu/emu/src/lab/text.mjs",
+      "sha256": "e27b2d3781feab8d9eb3f49b0cc73524a9312913f85a4131358156a9770a1357"
+    },
+    {
+      "path": "om-emu/emu/src/lab/touchpanel.mjs",
+      "sha256": "72f93c8bc053f159ec14a20b4dbcf0fabc189c01f79fde7a06efea160743e9de"
+    },
+    {
+      "path": "om-emu/emu/src/lab/windows.mjs",
+      "sha256": "d18038a30d2f87e3abf6098cd943f35ff4202c6bb3a954d0f7ed1d9c8d28189f"
+    },
+    {
+      "path": "om-emu/emu/src/lab/wm8946.mjs",
+      "sha256": "4ae26e3647e049fc3bc72163aa978ffc36a0966125b8370dab44827cdfee67bd"
+    },
+    {
+      "path": "om-emu/emu/src/machine.mjs",
+      "sha256": "9c10e396d122722a486fa73dedabb0c19ad45033c59c172ec6bcaa37d031cd63"
+    },
+    {
+      "path": "om-emu/emu/src/util/bytes.mjs",
+      "sha256": "86707333d72877e35b374bfd39f3d6af2b716437c73df46929e74b460af985be"
+    },
+    {
+      "path": "om-emu/emu/src/util/equal.mjs",
+      "sha256": "31d47358a57d40bc4d67b9a077a8c05e6c4f1fe7a92de33f8eb538d75ead238e"
+    },
+    {
+      "path": "om-emu/emu/src/util/hex.mjs",
+      "sha256": "d48bffb45373a94b8d1c824aa46d7a93665f282ee8a563370d698b1a53237c33"
+    },
+    {
+      "path": "om-emu/emu/src/util/parse.mjs",
+      "sha256": "b0754de377324528b15d6588dbe1d634649cbefd68754bf6b0b114beee3ddfd7"
+    },
+    {
+      "path": "om-emu/emu/src/util/show.mjs",
+      "sha256": "58a20ae76e473414c3b0a0075eb362f7a1cf4c968b3feef64659f0473515e076"
+    },
+    {
+      "path": "om-emu/emu/src/util/tally.mjs",
+      "sha256": "33f495d217ff46a5e2e1bb74a3cb319b2db374e8bd3d37dfef75da9a6864ed26"
+    },
+    {
+      "path": "om-emu/emu/src/util/tracejson.mjs",
+      "sha256": "52a0e82cd086dee77069600061f3d478fbf4ac447c75173dc53e97365f0e4e77"
+    },
+    {
+      "path": "work/scripts/watch_b1.mjs",
+      "sha256": "c5f4905441b44378e4dc076f7b9b22fad89218b47deaf8492597c2d697ab8de2"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "work/out/boot-order.md",
+      "sha256": "adbf201c985281f337f1d18d392f43203bdd3a9eeebf1c312e463b93c13da32c",
+      "bytes": 12313
+    },
+    {
+      "path": "work/out/cmd/01.cmd.txt",
+      "sha256": "7b93dd8acd043b5c610dbe7a69eee01af7e38b75b3d8ae5835bbcfc075488521",
+      "bytes": 342
+    },
+    {
+      "path": "work/out/cmd/01.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "work/out/cmd/01.exit",
+      "sha256": "f70a545eb651dc4da3af0254804c342c236062f1a3c7a228ecc7b0b1b5e4db7d",
+      "bytes": 455
+    },
+    {
+      "path": "work/out/cmd/01.out",
+      "sha256": "0ab1704d7d6fb1544d1725bc98bf7579fce2ce3653a962f02bee19c9e4898274",
+      "bytes": 608
+    },
+    {
+      "path": "work/out/cmd/02.cmd.txt",
+      "sha256": "3b6ab233e33f634a915f430a556c35f87abff7fb18c171671109b3d0b7c8efdc",
+      "bytes": 346
+    },
+    {
+      "path": "work/out/cmd/02.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "work/out/cmd/02.exit",
+      "sha256": "3dd9f91a5df8d891146f5703617b2b23c425b68991708857f953421b7a72b1db",
+      "bytes": 458
+    },
+    {
+      "path": "work/out/cmd/02.out",
+      "sha256": "76726d3b7517ef9ff10f356132e7b388e27901dea8c859f0debfc0e58a185872",
+      "bytes": 3350
+    },
+    {
+      "path": "work/out/cmd/03.cmd.txt",
+      "sha256": "035a17506d930e783768fdd7dccba79abe250f4e7a76c62839dd3ad98a875a83",
+      "bytes": 567
+    },
+    {
+      "path": "work/out/cmd/03.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "work/out/cmd/03.exit",
+      "sha256": "60dd38a86ff68b287ae6f7ad316777fe1eeee994bb396c48aeb1ee100c6366b1",
+      "bytes": 569
+    },
+    {
+      "path": "work/out/cmd/03.out",
+      "sha256": "f6ad361c9ecb4bdcad9faee6f5fd226ddf6d3edaa1babd3df3140bb2e6154a4e",
+      "bytes": 6302
+    },
+    {
+      "path": "work/out/cmd/05.cmd.txt",
+      "sha256": "22fb778564ceef176a57252bd729d2c0278bf8e0930d4d29b5190c12a0dc72b2",
+      "bytes": 389
+    },
+    {
+      "path": "work/out/cmd/05.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "work/out/cmd/05.exit",
+      "sha256": "b4561625a6dcf7587c89a1657ee2670370d5fb847e4334dfdf43157c95631bca",
+      "bytes": 508
+    },
+    {
+      "path": "work/out/cmd/05.out",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "work/out/cmd/06.cmd.txt",
+      "sha256": "80cb833bd7cb3808740ce0a9ab8d2595f3681904614d53f1dd1475390928ba51",
+      "bytes": 567
+    },
+    {
+      "path": "work/out/cmd/06.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "work/out/cmd/06.exit",
+      "sha256": "4005d2164eb0b45d62369ad09e904dc773504da52c76fdcc7133594aa73d4a0d",
+      "bytes": 569
+    },
+    {
+      "path": "work/out/cmd/06.out",
+      "sha256": "e59f4f417059250f342cb387882b3e56eecb4cee9b50fff62a081d9bcf3ffce5",
+      "bytes": 3985
+    },
+    {
+      "path": "work/out/cmd/07.cmd.txt",
+      "sha256": "7c773ca8a0557209f9facd432e4b2bc2d66cf1e7dbadf726b88f916e751943c4",
+      "bytes": 337
+    },
+    {
+      "path": "work/out/cmd/07.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "work/out/cmd/07.exit",
+      "sha256": "d3198211db7484ed76e1cc6e60d02c32ff8185896ad45826fc1b9bae9c73916a",
+      "bytes": 452
+    },
+    {
+      "path": "work/out/cmd/07.out",
+      "sha256": "8dda08f52ccbffe440ce9c747ffbd3606d96735c4ff8032b3565c5ade707f137",
+      "bytes": 2443
+    },
+    {
+      "path": "work/out/cmd/08.cmd.txt",
+      "sha256": "a1bbb3ee65a3a071c8fc43e4bef2ab543aec8afe85a18662e59e9f8dad33b7ab",
+      "bytes": 352
+    },
+    {
+      "path": "work/out/cmd/08.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "work/out/cmd/08.exit",
+      "sha256": "173b12187adc449ab5abd9cd3b91e394c5d36d32028e59eac778cfc6539057e5",
+      "bytes": 462
+    },
+    {
+      "path": "work/out/cmd/08.out",
+      "sha256": "db2151dd31254a6421134d2adb8edb440f0537b5504f95a3fb3b518a194fef1d",
+      "bytes": 33
+    },
+    {
+      "path": "work/out/cmd/09.cmd.txt",
+      "sha256": "d06f34c4a2ba99d756ec9e930526ba7cba592f5f41f28f3a74b0c7f784700c02",
+      "bytes": 260
+    },
+    {
+      "path": "work/out/cmd/09.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "work/out/cmd/09.exit",
+      "sha256": "9c0cf978889cec00d2f1544813897e198d1f09e6cfa5242fa312f8600c56df35",
+      "bytes": 331
+    },
+    {
+      "path": "work/out/cmd/09.out",
+      "sha256": "b26441604894a1a4e4cac96bfb464737575d9b6a2e8b9d3e996283005bd67b37",
+      "bytes": 9
+    },
+    {
+      "path": "work/out/cmd/10.cmd.txt",
+      "sha256": "532a2f2c0d1ac1c316203666db32397ba08236ad870a6a93dc30ecc855d597c3",
+      "bytes": 184
+    },
+    {
+      "path": "work/out/cmd/10.err",
+      "sha256": "f645f7ab8cfd17d21777f3f7db884e5e175c3ab73668fb5c2873df877e1cc387",
+      "bytes": 193
+    },
+    {
+      "path": "work/out/cmd/10.exit",
+      "sha256": "f9cb7d086e108e3df009e36fff7822e091fe31224d7aa31e4d259335bef8963c",
+      "bytes": 262
+    },
+    {
+      "path": "work/out/cmd/10.out",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "work/out/cmd/11.cmd.txt",
+      "sha256": "808e240375e858282da42c9602148daa8f56c59ba716e657a421f5362be3339b",
+      "bytes": 352
+    },
+    {
+      "path": "work/out/cmd/11.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "work/out/cmd/11.exit",
+      "sha256": "837e830c956c0429ead64f4d5e9e1d9d59cbee37e5ae0fda8f3677ed5ef1321d",
+      "bytes": 462
+    },
+    {
+      "path": "work/out/cmd/11.out",
+      "sha256": "2c1f93b250046cb0501959eb02cc543de402f88f2cc66584626a6fe03f3cca8b",
+      "bytes": 107
+    },
+    {
+      "path": "work/out/cmd/12.cmd.txt",
+      "sha256": "4145ac084ce0681d5d8d663c78aa31422783eb37855800165cb03be6d61c88dd",
+      "bytes": 352
+    },
+    {
+      "path": "work/out/flash-callees.md",
+      "sha256": "0bb709ec57f633dea232556ad07132b3322a70f4b8e5263f0ab0dd2fb0b1c645",
+      "bytes": 5832
+    },
+    {
+      "path": "work/out/flash-calls-b2.txt",
+      "sha256": "bdd01e3e5bd336cd57b390ffde6879935878129f89460d0fbb41d646e7b8fed8",
+      "bytes": 10908
+    },
+    {
+      "path": "work/out/flash-roots-b1.txt",
+      "sha256": "33a6adf646b5c15147b9e8a2264da7318ab6b27bbfc591fcbba74257bddad13d",
+      "bytes": 595
+    },
+    {
+      "path": "work/out/ghidra-b1.log",
+      "sha256": "3a818a5da4d507a9036ef2724d31cb40653a18f85ff51ed37defaa8f1ea18864",
+      "bytes": 7185
+    },
+    {
+      "path": "work/out/ghidra-b2.log",
+      "sha256": "40b8246af97480603800c02ac9a4bcc31444a538da2d352ed143f49ebe2a0c1f",
+      "bytes": 4828
+    },
+    {
+      "path": "work/out/import-inventory-b1.json",
+      "sha256": "e562ec22443521e805d25f5f9be084d23c92f544cf3f2e17be5b4e9530c7aaf1",
+      "bytes": 23213
+    },
+    {
+      "path": "work/out/listings/d0-builder-60405865.txt",
+      "sha256": "550ad953134b0f14a00c3a6ea2c00436ec5251f751ee41880a6753ca6bdf3bba",
+      "bytes": 1180
+    },
+    {
+      "path": "work/out/listings/d0-builder-call-6040476d.txt",
+      "sha256": "6a44248c758c0efd2ec2e96ba4aa19db4cda2505592775bf55727781cf5ea28d",
+      "bytes": 150
+    },
+    {
+      "path": "work/out/listings/d0-flash-21812-60021812.txt",
+      "sha256": "344d39b651feb6964153f8180ed4a9b425fab6907faec3a3460a737832795d05",
+      "bytes": 2306
+    },
+    {
+      "path": "work/out/listings/d0-flash-218ea-600218ea.txt",
+      "sha256": "86c9c238673dd8402fe708ce3e712a9506f9580d3651011c92c772e84aed127c",
+      "bytes": 479
+    },
+    {
+      "path": "work/out/listings/d0-flash-23042-60023042.txt",
+      "sha256": "6d53c850d68718877ab3358a8e9e914b3ed93e69694c107f9d56989b6300ea08",
+      "bytes": 5516
+    },
+    {
+      "path": "work/out/listings/d0-flash-23228-60023228.txt",
+      "sha256": "5d7ee729a78c32bd4ce2752f96855b5cb677648e1f63dd4b78c2aa4a8f077950",
+      "bytes": 1468
+    },
+    {
+      "path": "work/out/listings/d0-flash-236a2-600236a2.txt",
+      "sha256": "6105a67807eba15090e78280888c943c688081d132818d20c440b0d717ecfd5e",
+      "bytes": 735
+    },
+    {
+      "path": "work/out/listings/d0-flash-236ea-600236ea.txt",
+      "sha256": "b315284ed65ba2d8e92f9b5967107b08f5b58db193ff8d5e7396a80f5c989a96",
+      "bytes": 330
+    },
+    {
+      "path": "work/out/listings/d0-hook-6017a5fc.txt",
+      "sha256": "d94115fec93b42dcdbb5039823d80e5278d2e515de1921240950fb2f366b1493",
+      "bytes": 1583
+    },
+    {
+      "path": "work/out/listings/d0-walk-1-6124f4e5.txt",
+      "sha256": "776d267f95cb3180a3784f9517732460af66d91f44227d5604ffe6f0b9b49003",
+      "bytes": 1869
+    },
+    {
+      "path": "work/out/listings/d0-walk-2-6124f55e.txt",
+      "sha256": "1fc67fc614ca6f266cd1f948e85dd61069314ac8d38993a607a1f798d8ba732a",
+      "bytes": 2960
+    },
+    {
+      "path": "work/out/listings/d0-walk-3-6124f63d.txt",
+      "sha256": "a5e0d0727a620661bef19eb612900078099e3598456ea3e1e1d52122976ca2b6",
+      "bytes": 2120
+    },
+    {
+      "path": "work/out/listings/d1-callee-6002172b.txt",
+      "sha256": "efe34ac3228b55923c136af8742dbd7ca44a6c246899043017519811289f5e47",
+      "bytes": 317
+    },
+    {
+      "path": "work/out/listings/d1-callee-60021d89.txt",
+      "sha256": "52dfa243da6388898073fd959d10ad0400e0ba8e026d9b55abb9af689aa877b6",
+      "bytes": 4428
+    },
+    {
+      "path": "work/out/listings/d1-callee-60022087.txt",
+      "sha256": "d5b6ba21b45470395bfea4137ad05db34f2fcdf34285ec079694e4aafefb8689",
+      "bytes": 4233
+    },
+    {
+      "path": "work/out/listings/d1-callee-6002269f.txt",
+      "sha256": "3226acaa56bb8bcea828d3d960bef484bb8ddf03ac4a5c08cf63950df2d3b7e8",
+      "bytes": 121
+    },
+    {
+      "path": "work/out/listings/d1-callee-600226c0.txt",
+      "sha256": "e639d88546211db34977d75e7d1f00608d29c5336806178f598f634e3293b4b9",
+      "bytes": 1923
+    },
+    {
+      "path": "work/out/listings/d1-callee-600229c2.txt",
+      "sha256": "5b3885ee7bf99b8180d1096b2c7c3503e5d7e1cf0e6e9f26a52c493d10ff60f6",
+      "bytes": 1279
+    },
+    {
+      "path": "work/out/listings/d1-callee-60022f49.txt",
+      "sha256": "e98df5c18d437e668f8935946a9413dfb27e768410039a80a5fde68b26ab36e2",
+      "bytes": 118
+    },
+    {
+      "path": "work/out/listings/d1-callee-60023208.txt",
+      "sha256": "4dd4ee4045f88da19c24b71d283fa2fb85a9e08e5399ee0aab35995504c16089",
+      "bytes": 122
+    },
+    {
+      "path": "work/out/listings/d1-callee-60023210.txt",
+      "sha256": "567ace69929a06f28132e30f5fbb2c756473383ed547db731a777b4d56a99baf",
+      "bytes": 122
+    },
+    {
+      "path": "work/out/listings/d1-callee-60023218.txt",
+      "sha256": "e544bcf1b83edabcea14ca8ef501e5488cd1e46e9d1a61b323e1394ecb204960",
+      "bytes": 122
+    },
+    {
+      "path": "work/out/listings/d1-callee-600232a9.txt",
+      "sha256": "eba97e0db5060ae355f3b14df1c143419031641321b0d78d47b3afe26b8f1b5a",
+      "bytes": 122
+    },
+    {
+      "path": "work/out/listings/d1-callee-60023deb.txt",
+      "sha256": "b2c17d9ead777669f30148c3dbe5a60a5d30b49c4de767a713e668ab15589886",
+      "bytes": 3200
+    },
+    {
+      "path": "work/out/listings/d1-callee-6004d43f.txt",
+      "sha256": "3246c5cec432aca34f681dbf44b723e547aacb342831a8630e99605aee47dc35",
+      "bytes": 1288
+    },
+    {
+      "path": "work/out/listings/d1-callee-6005cec3.txt",
+      "sha256": "3ea525d2a49cd924fc79e6632021eb5f393910230df27b76995447262a3b76aa",
+      "bytes": 3854
+    },
+    {
+      "path": "work/out/listings/d1-callee-6005d00e.txt",
+      "sha256": "1169de4919537756c20c3cf2a2d6dc0d384a894d6fdf4ae236146e1a1046d3a3",
+      "bytes": 1321
+    },
+    {
+      "path": "work/out/listings/d1-callee-60075f73.txt",
+      "sha256": "1fdb642fb44e4df0596eff341325a12e4aafdaed2175e1e20bfe5a59df7549b4",
+      "bytes": 732
+    },
+    {
+      "path": "work/out/listings/d1-callee-60075fbc.txt",
+      "sha256": "2fee494b1c69af00ba5daee388b04b8c5769b83dd91d5d7f9805d008f2f6b3e8",
+      "bytes": 636
+    },
+    {
+      "path": "work/out/listings/d2-callee-600213f3.txt",
+      "sha256": "33b50ab9d5ebde614511b2c92f16c132db412284dfaa1723a01362325da19128",
+      "bytes": 462
+    },
+    {
+      "path": "work/out/listings/d2-callee-600219ed.txt",
+      "sha256": "f4f47a902f5574d416cedc3e72ffc45c1640bcb089f8110dbdcfff0936b3ac35",
+      "bytes": 2732
+    },
+    {
+      "path": "work/out/listings/d2-callee-60021b30.txt",
+      "sha256": "70d7e4b9cc424bcfdcc99b4a7492c205a01aa49d4e81c8b27be17ebf1cad3ed5",
+      "bytes": 953
+    },
+    {
+      "path": "work/out/listings/d2-callee-600225b2.txt",
+      "sha256": "b7aa06c2d6acb6063880b1a79b8fba3ea8abf112da7e652e4b9bc17fc6309cbc",
+      "bytes": 857
+    },
+    {
+      "path": "work/out/listings/d2-callee-600225fa.txt",
+      "sha256": "b20f815a2d10ff73e5541f5e4959d01d1ccc857b33cd820b9aa5974ef667c398",
+      "bytes": 1070
+    },
+    {
+      "path": "work/out/listings/d2-callee-60022640.txt",
+      "sha256": "78971607688489fe71ea4b9bc1aa2a6b00ee81e2835a1f6c1a1479d9a964a3c7",
+      "bytes": 319
+    },
+    {
+      "path": "work/out/listings/d2-callee-60022696.txt",
+      "sha256": "1053b10d1b7dba92fb98f85872683cb9d805c164ddaf85d779f61c9e1ef09b6d",
+      "bytes": 121
+    },
+    {
+      "path": "work/out/listings/d2-callee-600226a8.txt",
+      "sha256": "f5466bad3b4753a1cdeecbbd9162db67fddf7b0ec545c11fcc7f99620bd365c0",
+      "bytes": 108
+    },
+    {
+      "path": "work/out/listings/d2-callee-600226ae.txt",
+      "sha256": "707cd03d9828af6ec057440632eea1416882210eb8fcf9f9dac8e0e194d04b23",
+      "bytes": 116
+    },
+    {
+      "path": "work/out/listings/d2-callee-60022c32.txt",
+      "sha256": "591a65999c9fd68195f602252fd7f24c369bbf9b8cd357028c306ebc8ae0d829",
+      "bytes": 2698
+    },
+    {
+      "path": "work/out/listings/d2-callee-60022f1f.txt",
+      "sha256": "aaf15a081d0054522b248e0ad0eb941f706685d79332189b3fa2546a6abf5cc5",
+      "bytes": 121
+    },
+    {
+      "path": "work/out/listings/d2-callee-60022f52.txt",
+      "sha256": "14e9c2728019cc704d87f22c5ad05d78dee48a46c54d93b292a62e735df4d1df",
+      "bytes": 254
+    },
+    {
+      "path": "work/out/listings/d2-callee-60023c05.txt",
+      "sha256": "68ce45301474651fcf955b5bc3eb19af18da463ad7682f1c658c90456182d0a0",
+      "bytes": 121
+    },
+    {
+      "path": "work/out/listings/d2-callee-60023d0a.txt",
+      "sha256": "20ba81c774a8799cc9b08bc7a9cca704ace6ccb39b48bb9e206e71a343a34299",
+      "bytes": 805
+    },
+    {
+      "path": "work/out/listings/d2-callee-60023d5f.txt",
+      "sha256": "4198a2dc243365c28fb69771162db6fc857c77ef23ae26f96835e15d6c39fe2f",
+      "bytes": 123
+    },
+    {
+      "path": "work/out/listings/d2-callee-60023f80.txt",
+      "sha256": "99084e5fa86926e123d874133c7d5c446095237fccdf676cbd73858c972c18fd",
+      "bytes": 578
+    },
+    {
+      "path": "work/out/listings/d2-callee-60024953.txt",
+      "sha256": "2d9f5beb4afbae5916edda08dd5cb7a9108ad2b22951c36718215bcd404ea1ba",
+      "bytes": 332
+    },
+    {
+      "path": "work/out/listings/d2-callee-60024d0e.txt",
+      "sha256": "2e7489b04dc98284e1ac32b2dc652e6813bdaeff4071765dfe196adc9f87d15d",
+      "bytes": 2023
+    },
+    {
+      "path": "work/out/listings/d2-callee-60031521.txt",
+      "sha256": "59fbda06d9091c87abc844dca3482158a7ed17ce72acbfb11971fd4214e95e8c",
+      "bytes": 1258
+    },
+    {
+      "path": "work/out/listings/d2-callee-60031609.txt",
+      "sha256": "3aff56fa1d2c3e8810d6e85c459c3f1fb43e5cacdb44ffc93da2ba1898a69435",
+      "bytes": 1415
+    },
+    {
+      "path": "work/out/listings/d2-callee-6003193e.txt",
+      "sha256": "614235a9f919c27f3ec6e259d4d82501ae9a32d3e7f79571852ce59d5c815a20",
+      "bytes": 924
+    },
+    {
+      "path": "work/out/listings/d2-callee-60035feb.txt",
+      "sha256": "6b5c5d768c53d73cb53149fdcd46f1e2237f25f073fdf21282ccf26f552e5f8b",
+      "bytes": 2424
+    },
+    {
+      "path": "work/out/listings/d2-callee-600364b7.txt",
+      "sha256": "d079506a1cae25f8a0390e644a1ab3bd10b301e44e9fb66a1e02401514de6425",
+      "bytes": 273
+    },
+    {
+      "path": "work/out/listings/d2-callee-60038b8a.txt",
+      "sha256": "16d79361d732bebeb469e3d9fda0ea871cc834ddd32a8173f44ad086c26b08f9",
+      "bytes": 391
+    },
+    {
+      "path": "work/out/listings/d2-callee-6004d4e8.txt",
+      "sha256": "6dca0a215056a17e2a16572edded48addea6dcfc88651ece630b442986797810",
+      "bytes": 78
+    },
+    {
+      "path": "work/out/listings/d2-callee-6004d705.txt",
+      "sha256": "289d58eab04638f910dc923901d0e67b0f867a9fcbce4204acba3eb3bcb7834f",
+      "bytes": 346
+    },
+    {
+      "path": "work/out/listings/d2-callee-6004d7b1.txt",
+      "sha256": "62f34d46da8b200ab6dbdfda6d8d3f1e817d0721eaa01ce4d9caba904bcdb67b",
+      "bytes": 1894
+    },
+    {
+      "path": "work/out/listings/d2-callee-6004ddd7.txt",
+      "sha256": "0b7d8243d6471623a806531eaee3dbfabd5bae998aab33874d56bcc48b13fb01",
+      "bytes": 237
+    },
+    {
+      "path": "work/out/listings/d2-callee-6004dfd0.txt",
+      "sha256": "5e02574f84435e3a02be37585f1b7896b454dd389df5bc130cbceabc9cf1961e",
+      "bytes": 1012
+    },
+    {
+      "path": "work/out/listings/d2-callee-6004e2d5.txt",
+      "sha256": "f1c47644cfb01eaa81a6c01129908ce1c7254f9024747d0ad4f668a341c732b0",
+      "bytes": 754
+    },
+    {
+      "path": "work/out/listings/d2-callee-6004f63f.txt",
+      "sha256": "098511b3d7dbb9d039e8d98b5e50f64eb16c79ba6ba8a2f0a59949b73a58c48c",
+      "bytes": 413
+    },
+    {
+      "path": "work/out/listings/d2-callee-6004f660.txt",
+      "sha256": "a77d3108f1f557b71dc48bb221d17509d764fac90abf44ed0dcc0c7334514723",
+      "bytes": 138
+    },
+    {
+      "path": "work/out/listings/d2-callee-6004f667.txt",
+      "sha256": "365113a6788d01320ebc232d63a1be12d52d5aa9224537ac9a6be92b315c9f61",
+      "bytes": 104
+    },
+    {
+      "path": "work/out/listings/d2-callee-6005ceb3.txt",
+      "sha256": "881b31422177bb787b20ea060199fd3acaf7f7d6f058644371a4b764766c366e",
+      "bytes": 194
+    },
+    {
+      "path": "work/out/listings/d2-callee-6005cebd.txt",
+      "sha256": "9bafe789e2202b00268b736d1375fe081ff5b5c7ad826e21a4ba9e2a4e5a6f47",
+      "bytes": 122
+    },
+    {
+      "path": "work/out/listings/d2-callee-60060835.txt",
+      "sha256": "e5c93daeefbbf1110e4078fe6c4d1f279ff107b70601b529666fdbc6f0e6c8bc",
+      "bytes": 597
+    },
+    {
+      "path": "work/out/listings/d2-callee-60068a54.txt",
+      "sha256": "ed8082777269d87d5a74f539c023ce4335546313a59eaca1044ccfb4dfeaf26a",
+      "bytes": 2718
+    },
+    {
+      "path": "work/out/listings/d2-callee-60076082.txt",
+      "sha256": "19eb1ea705e0986b1186078c419e2b999ee9b3f1698e3c2d3d916f2851021cd7",
+      "bytes": 316
+    },
+    {
+      "path": "work/out/listings/d2-callee-60076096.txt",
+      "sha256": "7f2f318e217ad6fa693e16be9184c986ddf682f816b99c7c2fc679dedb94ebd7",
+      "bytes": 336
+    },
+    {
+      "path": "work/out/listings/d2-callee-600760c7.txt",
+      "sha256": "bc418254d91ad210b7ebeeb2e2f1d49376b21b757fe827ca45b7f809f51444a0",
+      "bytes": 149
+    },
+    {
+      "path": "work/out/listings/d2-callee-600760d2.txt",
+      "sha256": "7e4173e3b13ee2c062102fb7c22c32061a71b95492c3ed7c6b846efe4fc2e670",
+      "bytes": 147
+    },
+    {
+      "path": "work/out/listings/d2-callee-6008200e.txt",
+      "sha256": "b7e196df533b02239cd126d1ad7424784bc1d9c63a769bbbee882f37ec5449b3",
+      "bytes": 121
+    },
+    {
+      "path": "work/out/static-index-b1.txt",
+      "sha256": "76726d3b7517ef9ff10f356132e7b388e27901dea8c859f0debfc0e58a185872",
+      "bytes": 3350
+    },
+    {
+      "path": "work/out/watch-b1-hits.json",
+      "sha256": "c1e806e418244da032d352b55eddbf39b84cdb71b315bde9bb4a12507f238c41",
+      "bytes": 9708
+    },
+    {
+      "path": "work/out/watch-b1.jsonl",
+      "sha256": "6cc4c4252fe7f8aacb5f15d3e5817198cf3ae3f4884a588a5d33a760ab51e4c5",
+      "bytes": 569851
+    },
+    {
+      "path": "work/result.md",
+      "sha256": "648e46483f7e0f64ce5a939aedcb751e5d1c70333cabc2ba8819d2598635632a",
+      "bytes": 12159
+    },
+    {
+      "path": "work/scripts/check_listings_b1.py",
+      "sha256": "c2b389a858ec97eb45fa0df6830282c57bfa5d80c5255055514f79311254f0ae",
+      "bytes": 1225
+    },
+    {
+      "path": "work/scripts/hash_inputs_b1.py",
+      "sha256": "49fa304ef9b807ee6be65ce6d91e14418d45ea6e6cc59531cdaa518e53b4ecc9",
+      "bytes": 521
+    },
+    {
+      "path": "work/scripts/run_logged.mjs",
+      "sha256": "e00170efc367d0ed4c145db59bd6a84738688554f6904980ea382f6494325d15",
+      "bytes": 4095
+    },
+    {
+      "path": "work/scripts/static_index_b1.py",
+      "sha256": "0b15046b788fc6d52b70dccceb3d54475a1f37b4b0e2e7bf0db02c9d8b896131",
+      "bytes": 4240
+    },
+    {
+      "path": "work/scripts/summarize_b1.py",
+      "sha256": "6ce738cbb7611988d6d2538c13b2066d8aae30280bb6833522648983b15ae7bd",
+      "bytes": 5192
+    },
+    {
+      "path": "work/scripts/T4bListB1.java",
+      "sha256": "482c84f6f07e1b0777d5fde3707215d2f91d532c5524083d81415e955a709b8d",
+      "bytes": 4984
+    },
+    {
+      "path": "work/scripts/T4bListB2.java",
+      "sha256": "bb08e981caed7cdc6acb5474000f254bdab8eee46ea7b456a3b5c11e2b14389f",
+      "bytes": 5078
+    },
+    {
+      "path": "work/scripts/watch_b1.mjs",
+      "sha256": "c5f4905441b44378e4dc076f7b9b22fad89218b47deaf8492597c2d697ab8de2",
+      "bytes": 18933
+    },
+    {
+      "path": "work/scripts/write_manifest_b1.py",
+      "sha256": "681d302ac9bbbed2bd73650f801c00990ebb47d609e217f63b3530e66c84edc9",
+      "bytes": 3089
+    },
+    {
+      "path": "work/scripts/write_manifest_b2.py",
+      "sha256": "fb84ef1c444887c961cee726345d5e96104faaf0477d717277176d7b8161e1ef",
+      "bytes": 3157
+    }
+  ],
+  "commands": [
+    {
+      "status": 0,
+      "signal": null,
+      "error": null,
+      "start": "2026-11-19T10:57:05.272Z",
+      "end": "2026-11-19T10:57:05.499Z",
+      "spawn": "python -I work/scripts/hash_inputs_b1.py",
+      "wrapper_sha256": "e00170efc367d0ed4c145db59bd6a84738688554f6904980ea382f6494325d15",
+      "scripts": [
+        {
+          "path": "work/scripts/hash_inputs_b1.py",
+          "sha256": "49fa304ef9b807ee6be65ce6d91e14418d45ea6e6cc59531cdaa518e53b4ecc9",
+          "bytes": 521
+        }
+      ],
+      "id": "01"
+    },
+    {
+      "status": 0,
+      "signal": null,
+      "error": null,
+      "start": "2026-11-19T10:57:05.942Z",
+      "end": "2026-11-19T10:57:08.504Z",
+      "spawn": "python -I work/scripts/static_index_b1.py",
+      "wrapper_sha256": "e00170efc367d0ed4c145db59bd6a84738688554f6904980ea382f6494325d15",
+      "scripts": [
+        {
+          "path": "work/scripts/static_index_b1.py",
+          "sha256": "0b15046b788fc6d52b70dccceb3d54475a1f37b4b0e2e7bf0db02c9d8b896131",
+          "bytes": 4240
+        }
+      ],
+      "id": "02"
+    },
+    {
+      "status": 0,
+      "signal": null,
+      "error": null,
+      "start": "2026-11-19T10:57:06.659Z",
+      "end": "2026-11-19T10:57:10.963Z",
+      "spawn": "cmd.exe /d /c tools\\bin\\run-ghidra.cmd -postScript T4bListB1.java work/out/flash-roots-b1.txt work/out/listings work/out/flash-calls-b1.txt -log work/out/ghidra-b1.log",
+      "wrapper_sha256": "e00170efc367d0ed4c145db59bd6a84738688554f6904980ea382f6494325d15",
+      "scripts": [
+        {
+          "path": "T4bListB1.java",
+          "sha256": "482c84f6f07e1b0777d5fde3707215d2f91d532c5524083d81415e955a709b8d",
+          "bytes": 4984
+        }
+      ],
+      "id": "03"
+    },
+    {
+      "status": 0,
+      "signal": null,
+      "error": null,
+      "start": "2026-11-19T10:57:07.426Z",
+      "end": "2026-11-19T10:58:47.528Z",
+      "spawn": "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe work/scripts/watch_b1.mjs om-emu",
+      "wrapper_sha256": "e00170efc367d0ed4c145db59bd6a84738688554f6904980ea382f6494325d15",
+      "scripts": [
+        {
+          "path": "work/scripts/watch_b1.mjs",
+          "sha256": "c5f4905441b44378e4dc076f7b9b22fad89218b47deaf8492597c2d697ab8de2",
+          "bytes": 18933
+        }
+      ],
+      "id": "05"
+    },
+    {
+      "status": 0,
+      "signal": null,
+      "error": null,
+      "start": "2026-11-19T10:59:08.780Z",
+      "end": "2026-11-19T10:59:13.115Z",
+      "spawn": "cmd.exe /d /c tools\\bin\\run-ghidra.cmd -postScript T4bListB2.java work/out/flash-roots-b1.txt work/out/listings work/out/flash-calls-b2.txt -log work/out/ghidra-b2.log",
+      "wrapper_sha256": "e00170efc367d0ed4c145db59bd6a84738688554f6904980ea382f6494325d15",
+      "scripts": [
+        {
+          "path": "T4bListB2.java",
+          "sha256": "bb08e981caed7cdc6acb5474000f254bdab8eee46ea7b456a3b5c11e2b14389f",
+          "bytes": 5078
+        }
+      ],
+      "id": "06"
+    },
+    {
+      "status": 0,
+      "signal": null,
+      "error": null,
+      "start": "2026-11-19T11:07:53.903Z",
+      "end": "2026-11-19T11:07:54.151Z",
+      "spawn": "python -I work/scripts/summarize_b1.py",
+      "wrapper_sha256": "e00170efc367d0ed4c145db59bd6a84738688554f6904980ea382f6494325d15",
+      "scripts": [
+        {
+          "path": "work/scripts/summarize_b1.py",
+          "sha256": "6ce738cbb7611988d6d2538c13b2066d8aae30280bb6833522648983b15ae7bd",
+          "bytes": 5192
+        }
+      ],
+      "id": "07"
+    },
+    {
+      "status": 0,
+      "signal": null,
+      "error": null,
+      "start": "2026-11-19T11:07:54.146Z",
+      "end": "2026-11-19T11:07:54.208Z",
+      "spawn": "python -I work/scripts/check_listings_b1.py",
+      "wrapper_sha256": "e00170efc367d0ed4c145db59bd6a84738688554f6904980ea382f6494325d15",
+      "scripts": [
+        {
+          "path": "work/scripts/check_listings_b1.py",
+          "sha256": "c2b389a858ec97eb45fa0df6830282c57bfa5d80c5255055514f79311254f0ae",
+          "bytes": 1225
+        }
+      ],
+      "id": "08"
+    },
+    {
+      "status": 0,
+      "signal": null,
+      "error": null,
+      "start": "2026-11-19T11:09:54.853Z",
+      "end": "2026-11-19T11:09:54.893Z",
+      "spawn": "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe -p process.version",
+      "wrapper_sha256": "e00170efc367d0ed4c145db59bd6a84738688554f6904980ea382f6494325d15",
+      "scripts": [],
+      "id": "09"
+    },
+    {
+      "status": 0,
+      "signal": null,
+      "error": null,
+      "start": "2026-11-19T11:09:55.094Z",
+      "end": "2026-11-19T11:09:55.144Z",
+      "spawn": "java -version",
+      "wrapper_sha256": "e00170efc367d0ed4c145db59bd6a84738688554f6904980ea382f6494325d15",
+      "scripts": [],
+      "id": "10"
+    },
+    {
+      "status": 0,
+      "signal": null,
+      "error": null,
+      "start": "2026-11-19T11:14:28.243Z",
+      "end": "2026-11-19T11:14:28.522Z",
+      "spawn": "python -I work/scripts/write_manifest_b1.py",
+      "wrapper_sha256": "e00170efc367d0ed4c145db59bd6a84738688554f6904980ea382f6494325d15",
+      "scripts": [
+        {
+          "path": "work/scripts/write_manifest_b1.py",
+          "sha256": "681d302ac9bbbed2bd73650f801c00990ebb47d609e217f63b3530e66c84edc9",
+          "bytes": 3089
+        }
+      ],
+      "id": "11"
+    }
+  ],
+  "tool_versions": {
+    "node": "v26.12.1",
+    "python": "3.12.7 (tags/v3.12.7:0b05ead, Oct  1 2024, 03:06:41) [MSC v.1941 64 bit (AMD64)]",
+    "java": "openjdk version \"25.0.5\" 2026-10-20 LTS",
+    "ghidra": "ghidra_12.2_PUBLIC"
+  }
+}

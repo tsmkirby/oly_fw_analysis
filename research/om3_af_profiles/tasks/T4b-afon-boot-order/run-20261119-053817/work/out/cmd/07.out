@@ -1,0 +1,43 @@
+counts {"bucket": 2, "builder": 1, "builder-call": 1, "dir": 40, "first": 8, "hook": 2, "idx-walk-1": 2528, "page-ctor": 12, "walk-1": 32}
+stored 2626 dropped 0
+firsts
+  builder-call 0x6040476d caller 0x603f0e16 insns 166533763 {}
+  builder 0x60405865 caller 0x60404772 insns 166533764 {}
+  bucket 0x6040586e caller 0x60404772 insns 166534434 {'addr': '0x62a84b2c', 'size': 4, 'dir': 'w', 'value': 0}
+  hook 0x6017a5fc caller 0x60070a13 insns 6735 {}
+  walk-1 0x6124f4e5 caller 0x61283ede insns 4597292 {}
+  dir 0x6124f4fc caller 0x61283ede insns 4597303 {'addr': '0x615cc934', 'size': 4, 'dir': 'r', 'value': 8, 'dir0': 8, 'dir4': 1633440780, 'count': 416}
+  idx-walk-1 0x6124f51c caller 0x61283ede insns 4597343 {'index': 0, 'form': 'imm8'}
+  page-ctor 0x61203696 caller 0x61203693 insns 140195 {'a1': 0, 'pageId': 0}
+  first 0x6124f522 caller 0x61283ede insns 110109 {'addr': '0x615c59dc', 'size': 4, 'dir': 'r', 'value': 534}
+invocations 32
+ caller 0x61283ede n 30 max 139 ge151 0 ge152 0
+ caller 0x6125617f n 2 max 170 ge151 2 ge152 2
+passed151 2
+  walk-1 caller 0x6125617f max 170 samples 171 insns 458597
+  walk-1 caller 0x6125617f max 170 samples 171 insns 458425
+pageIds {0: 12}
+dir4 1633440780 0x615c540c count 416 dir0 8
+array 0x615c540c
+bucket 1 pc 0x6040586e value 0x0 caller 0x60404772
+bucket 2 pc 0x604058ac value 0x62a84c68 caller 0x60404772
+bytes at 0x61203690 00f02cdf300c96cd165a0004430cfccc4cfb5861605c0c00
+B1 sha256 482c84f6f07e1b0777d5fde3707215d2f91d532c5524083d81415e955a709b8d bytes 4984
+idx>=151 40 callers {'0x6125617f': 40}
+jsonl hits dup 0 past151 0 walk-2 0 walk-3 0
+dir pcs {'0x6124f4fc': 32, '0x6124f500': 8}
+flash roots
+  d0-flash-21812-60021812.txt complete 600218e7	dff024	ret [d2,d3,a2,a3],0x24
+  d0-flash-218ea-600218ea.txt complete 60021907	dfa00c	ret [d2,a2],0xc
+  d0-flash-23042-60023042.txt complete 600231ea	dff028	ret [d2,d3,a2,a3],0x28
+  d0-flash-23228-60023228.txt complete 6002328a	dff01c	ret [d2,d3,a2,a3],0x1c
+  d0-flash-236a2-600236a2.txt complete 600236e7	df0004	ret [],0x4
+  d0-flash-236ea-600236ea.txt complete 600236ff	df0004	ret [],0x4
+checksum-shaped
+  d1-callee-60023deb.txt 3
+    0x60023e70 mov (0x4,sp),D0 -> 0x60023e7b add D0,D1
+    0x60023e79 mov (0x4,sp),D0 -> 0x60023e7b add D0,D1
+    0x60023ec4 mov (0x4,sp),D1 -> 0x60023ec6 add D1,D0
+ truncated d2-callee-600219ed.txt
+ truncated d2-callee-60035feb.txt
+ truncated d2-callee-60068a54.txt

@@ -1,0 +1,74 @@
+INFO  Using log config file: jar:file:/C:/Dev/OM3-research/tooling/ghidra_12.2_PUBLIC/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml (LoggingInitialization)  
+INFO  Using log file: work\out\ghidra-b1.log (LoggingInitialization)  
+INFO  Loading user preferences: C:\Dev\OM3-tasks\T4b-afon-boot-order\ws\state\ghidra-user\settings\tsmki-ghidra\ghidra_12.2_PUBLIC\preferences (Preferences)  
+INFO  Searching for classes... (ClassSearcher)  
+INFO  Class search complete (614 ms) (ClassSearcher)  
+INFO  Initializing SSL Context (DefaultSSLContextInitializer)  
+INFO  Initializing Random Number Generator... (SecureRandomFactory)  
+INFO  Random Number Generator initialization complete: SHA1PRNG (SecureRandomFactory)  
+WARN  OS Truststore load failed: java.security.KeyStoreException: error 5, Access is denied.
+ (DefaultTrustManagerFactory)  
+INFO  Loaded 118 trusted CA certificates from the Java default trust store. (DefaultTrustManagerFactory)  
+INFO  Starting cache cleanup: C:\Dev\OM3-tasks\T4b-afon-boot-order\ws\state\ghidra-user\cache\tsmki-ghidra\fscache2 (FileCacheMaintenanceDaemon)  
+INFO  Finished cache cleanup, estimated storage used: 0 (FileCacheMaintenanceDaemon)  
+INFO  Headless startup complete (1375 ms) (AnalyzeHeadless)  
+INFO  Class searcher loaded 60 extension points (19 false positives) (ClassSearcher)  
+INFO  HEADLESS Script Paths:
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\VersionTracking\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\BSim\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\PDB\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Processors\JVM\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\MicrosoftCodeAnalyzer\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Debug\Debugger-rmi-trace\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Debug\Debugger\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Processors\Atmel\ghidra_scripts
+    C:\Dev\OM3-tasks\T4b-afon-boot-order\ws\work\scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Processors\DATA\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\FileFormats\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Processors\8051\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\GnuDemangler\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\SystemEmulation\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\Base\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\PyGhidra\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\Swift\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\BytePatterns\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\WildcardAssembler\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\FunctionID\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\Decompiler\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\DecompilerDependent\ghidra_scripts
+    C:\Dev\OM3-research\scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Processors\PIC\ghidra_scripts (HeadlessAnalyzer)  
+INFO  HEADLESS: execution starts (HeadlessAnalyzer)  
+INFO  Opening existing project: C:\Dev\OM3-tasks\T4b-afon-boot-order\ws\projects\OM3_main_full (HeadlessAnalyzer)  
+INFO  Opening project: C:\Dev\OM3-tasks\T4b-afon-boot-order\ws\projects\OM3_main_full (HeadlessProject)  
+INFO  REPORT: Processing read-only project file: /00_0100_50000020.decoded.bin (HeadlessAnalyzer)  
+INFO  REPORT: Execute script: T4bListB1.java 'work/out/flash-roots-b1.txt' 'work/out/listings' 'work/out/flash-calls-b1.txt'  (HeadlessAnalyzer)  
+ERROR T4bListB1.java:92: error: cannot find symbol
+    Path dest = dir.resolve(String.format("d%d-%s-%08x.txt", depth, name, addr));
+                ^
+  symbol:   variable dir
+  location: class T4bListB1
+skipping C:\Dev\OM3-tasks\T4b-afon-boot-order\ws\work\scripts\T4bListB1.java
+ (HeadlessAnalyzer)  
+ERROR REPORT SCRIPT ERROR: T4bListB1.java : The class could not be found. It must be the public class of the .java file: T4bListB1 not found by d9b26300 [1] (HeadlessAnalyzer) ghidra.app.script.GhidraScriptLoadException: The class could not be found. It must be the public class of the .java file: T4bListB1 not found by d9b26300 [1]
+	at ghidra.app.script.JavaScriptProvider.getScriptInstance(JavaScriptProvider.java:114)
+	at ghidra.app.util.headless.HeadlessAnalyzer.runScriptsList(HeadlessAnalyzer.java:929)
+	at ghidra.app.util.headless.HeadlessAnalyzer.analyzeProgram(HeadlessAnalyzer.java:1107)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processFileNoImport(HeadlessAnalyzer.java:1206)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processFolderNoImport(HeadlessAnalyzer.java:1376)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processNoImport(HeadlessAnalyzer.java:1405)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processLocal(HeadlessAnalyzer.java:461)
+	at ghidra.app.util.headless.AnalyzeHeadless.launch(AnalyzeHeadless.java:211)
+	at ghidra.GhidraLauncher.launch(GhidraLauncher.java:78)
+	at ghidra.Ghidra.main(Ghidra.java:41)
+Caused by: java.lang.ClassNotFoundException: T4bListB1 not found by d9b26300 [1]
+	at org.apache.felix.framework.BundleWiringImpl.findClassOrResourceByDelegation(BundleWiringImpl.java:1591)
+	at org.apache.felix.framework.BundleWiringImpl.access$300(BundleWiringImpl.java:79)
+	at org.apache.felix.framework.BundleWiringImpl$BundleClassLoader.loadClass(BundleWiringImpl.java:1976)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:490)
+	at org.apache.felix.framework.Felix.loadBundleClass(Felix.java:2116)
+	at org.apache.felix.framework.BundleImpl.loadClass(BundleImpl.java:986)
+	at ghidra.app.script.JavaScriptProvider.loadClass(JavaScriptProvider.java:166)
+	at ghidra.app.script.JavaScriptProvider.getScriptInstance(JavaScriptProvider.java:97)
+	... 9 more
+ 

@@ -1,0 +1,17 @@
+# mode address name
+# deep: the function, then its direct callees, then their callees.
+# shallow: the function body only.
+# Caps, in instructions: deep level 0 = 500, level 1 = 250, level 2 = 80.
+# A call below level 2 is named and not listed. Each address is listed once.
+deep 60021812 flash-21812
+deep 60023042 flash-23042
+deep 60023228 flash-23228
+deep 600218ea flash-218ea
+deep 600236ea flash-236ea
+deep 600236a2 flash-236a2
+shallow 60405865 builder
+shallow 6040476d builder-call
+shallow 6017a5fc hook
+shallow 6124f4e5 walk-1
+shallow 6124f55e walk-2
+shallow 6124f63d walk-3

@@ -1,0 +1,70 @@
+# function FUN_6124f4e5 6124f4e5 depth 0 cap 500
+6124f4e5	f89720	movhu D1,(0x20,sp)
+6124f4e8	04	clr D1
+6124f4e9	461c	mov D1,(0x1c,sp)
+6124f4eb	9f00	mov 0x0,A3
+6124f4ed	9c	mov A3,A0
+6124f4ee	0c	clr D3
+6124f4ef	db	setlb
+6124f4f0	1d	exthu D1
+6124f4f1	f9150c	udfu01 0xc,D1
+6124f4f4	f1e5	mov D1,A1
+6124f4f6	fcd134c95c61	add 0x615cc934,A1
+6124f4fc	75	mov (A1),D1
+6124f4fd	a1	cmp D0,D1
+6124f4fe	c90a	bne 0x6124f508
+6124f500	f82d04	mov (0x4,A1),A3
+6124f503	f86d08	movhu (0x8,A1),D3
+6124f506	ca08	bra 0x6124f50e
+6124f508	4c	inc D3
+6124f509	8d	mov D3,D1
+6124f50a	1f	exthu D3
+6124f50b	af0e	cmp 0xe,D3
+6124f50d	d4	lcs
+6124f50e	b3	cmp A0,A3
+6124f50f	c84c	beq 0x6124f55b
+6124f511	00	clr D0
+6124f512	08	clr D2
+6124f513	1f	exthu D3
+6124f514	a3	cmp D0,D3
+6124f515	c31a	ble 0x6124f52f
+6124f517	f8bd20	movhu (0x20,sp),D1
+6124f51a	db	setlb
+6124f51b	1c	exthu D0
+6124f51c	f91418	udfu01 0x18,D0
+6124f51f	9e	mov A3,A2
+6124f520	f162	add D0,A2
+6124f522	72	mov (A2),D0
+6124f523	a1	cmp D0,D1
+6124f524	c906	bne 0x6124f52a
+6124f526	4b1c	mov A2,(0x1c,sp)
+6124f528	ca07	bra 0x6124f52f
+6124f52a	48	inc D2
+6124f52b	88	mov D2,D0
+6124f52c	1e	exthu D2
+6124f52d	ae	cmp D3,D2
+6124f52e	d0	llt
+6124f52f	581c	mov (0x1c,sp),D0
+6124f531	a000	cmp 0x0,D0
+6124f533	c828	beq 0x6124f55b
+6124f535	2cf400	mov 0xf4,D0
+6124f538	dd769db8ff0004	call 0x60dd92ae,[],0x4
+6124f53f	92	mov A0,A2
+6124f540	9000	mov 0x0,A0
+6124f542	b2	cmp A0,A2
+6124f543	c818	beq 0x6124f55b
+6124f545	5f1c	mov (0x1c,sp),A3
+6124f547	3d	mov sp,A1
+6124f548	51	inc4 A1
+6124f549	85fa	mov -0x6,D1
+6124f54b	db	setlb
+6124f54c	73	mov (A3),D0
+6124f54d	53	inc4 A3
+6124f54e	61	mov D0,(A1)
+6124f54f	51	inc4 A1
+6124f550	44	inc D1
+6124f551	d9	lne
+6124f552	98	mov A2,A0
+6124f553	f8bc20	movhu (0x20,sp),D0
+6124f556	cdc4fb7034	call 0x6124f11a,[d3,a2,a3],0x34
+6124f55b	dff034	ret [d2,d3,a2,a3],0x34

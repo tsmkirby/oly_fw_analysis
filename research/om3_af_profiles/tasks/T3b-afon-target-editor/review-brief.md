@@ -1,30 +1,24 @@
-# T3b review brief (Codex Sol, read-only)
+﻿# T3b correction review (Codex Sol, read-only)
 
-Read `TASK.md`, `brief.md`, `work\result.md`, `work\evidence-manifest.json`, `work\out\stock-target-screen.md`,
-`work\out\profile-layout.md`, `work\out\design.md` and `work\out\overlay-changed-bytes.csv`. Then read the
-scripts, tables, JSONL logs, screenshots, `work\out\cmd\` and `audit\`.
+Read `brief.md` §5 (the correction list and the coordinator amendment on cancel), your previous review in
+`audit\previous-review.md`, the updated `work\result.md`, `work\evidence-manifest.json`,
+`work\out\stock-target-screen.md`, `work\out\profile-layout.md`, `work\out\design.md`,
+`work\out\overlay-changed-bytes.csv`, the new runners, tables, JSONL logs, screenshots, `work\out\cmd\` and
+`audit\`. For each of corrections 1–5 and the amendment report DONE / NOT DONE / WRONG / BLOCKED (honestly
+reported), with evidence.
 
-**Item 1, stock screen.** Check that it was measured on a stock session (no overlay). Check the routes, the
-cells read and written (full-cell readbacks), the orientation bank selection and the entry trace. Check the
-listings against `inputs\00_0100_50000020.decoded.bin` (offset = address − `0x60021020`).
-
-**Item 2, layout.** Check that every proposed profile byte is free in the Z5 configuration (the T5 CSV and the
-relocated block) and lies in owned RAM as described in `HARDWARE-STAGE0-RECORD.md`.
-
-**Item 3, routing.** Check that the change from Z5 is one change and that every hook is labelled
-`EMULATOR-ONLY`. Check that an AF-ON-mode edit leaves every half-press cell unchanged, and a normal edit leaves
-the profile unchanged. If BLOCKED, judge whether the evidence supports that.
-
-**Item 4, acceptance, if run.** Check assertions after every key; confirm, cancel, the normal-edit control,
-the orientations (or the stated limit), the store comparison and the reset to defaults. Compare the stores
-yourself.
-
-**§0 menu design.** Check whether the entry route changes the visible menu, and that any such change is
-reported as a Q5 option, not presented as settled.
-
-**Records.** Manifest completeness, command records, script hashes, no script edited after running, overlay
-rows' old values and sections (only the three amended section-7 bytes allowed), and nothing presented as
-native, as a storage decision, or as Subject Detect On evidence.
+In particular:
+- check that the flag lies in verified free bytes inside `0x6031e920`–`0x6031f000` (Z5 CSV and the relocated
+  block), and that every exit clears it, with the following normal edit asserted;
+- check the custom-size editor's stock measurement (stock session, entry trace) and its AF-ON routing, or
+  the evidence for BLOCKED;
+- check MENU parity against the stock control (same keys, same change, half-press cells unchanged), and that
+  no rollback was added;
+- check that acceptance asserts after every key the visual identity, the complete mirror, the zone byte, the
+  flag and every half-press cell; that the save follows the edits with completion read back; the reopen
+  state; and that the run ends `ok:true`. Compare the stores yourself;
+- check every overlay row's section (only the three amended section-7 bytes allowed), manifest completeness,
+  and that no script was edited after running.
 
 Recompute every manifest hash. Use PowerShell (Python is not on your PATH). Do not run Ghidra or OM-Emu.
 Give the verdict in the structure of `templates\review.md`.

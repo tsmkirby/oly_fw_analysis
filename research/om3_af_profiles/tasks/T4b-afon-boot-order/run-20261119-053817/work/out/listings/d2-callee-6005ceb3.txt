@@ -1,0 +1,7 @@
+# function FUN_6005ceb3 6005ceb3 depth 2 cap 80
+6005ceb3	f1e4	mov D1,A0
+6005ceb5	f080	bset D0,(A0)
+6005ceb7	c803	beq 0x6005ceba
+6005ceb9	00	clr D0
+6005ceba	14	extbu D0
+6005cebb	f0fc	rets

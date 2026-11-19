@@ -1,0 +1,6 @@
+start 2026-11-19T11:21:48.414Z
+requested: python -I -c import json; d=json.load(open('work/evidence-manifest.json',encoding='utf-8')); print(d['task'], len(d['commands']), d['commands'][-1]['n'], d['commands'][13]['status'])
+python -I -c import json; d=json.load(open('work/evidence-manifest.json',encoding='utf-8')); print(d['task'], len(d['commands']), d['commands'][-1]['n'], d['commands'][13]['status'])
+wrapper_sha256: 34e42c59c553a1e4213e2b223034bd31142c7000c6aef4aac2ac9d5e7f1fe0ef
+script: none
+script_sha256: none

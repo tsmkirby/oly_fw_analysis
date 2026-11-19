@@ -1,0 +1,75 @@
+image bytes 33554368 base 0x60021020
+index 151 * 24 = 0xe28
+array + 151*24 = 0x615c6234 duplicate 0x615c6234 match True
+array + 152*24 = 0x615c624c past-record 0x615c624c match True
+first record 0x615c59dc delta 0x5d0 index 62.0
+
+immediate array-base 0x615c540c count 1
+  0x615cc938 file+0x15ab918 bytes 0c545c61a0010000
+immediate directory 0x615cc934 count 3
+  0x6124f4f8 file+0x122e4d8 bytes 34c95c6175a1c90a
+  0x6124f579 file+0x122e559 bytes 34c95c6177a1c929
+  0x6124f650 file+0x122e630 bytes 34c95c6175a1c90a
+immediate directory-slot 0x615cc938 count 0
+immediate first-record 0x615c59dc count 0
+immediate duplicate 0x615c6234 count 0
+immediate past-152 0x615c624c count 0
+immediate e28 0xe28 count 4
+  0x60257658 file+0x236638 bytes 280e000000000000
+  0x602580a0 file+0x237080 bytes 280e000000000000
+  0x6035b660 file+0x33a640 bytes 280e0000e9802d60
+  0x606a8b58 file+0x687b38 bytes 280e0000260e0000
+immediate e40 0xe40 count 35
+  0x602b0750 file+0x28f730 bytes 400e000000000000
+  0x602b07a8 file+0x28f788 bytes 400e000000000000
+  0x602b0800 file+0x28f7e0 bytes 400e000000000000
+  0x602b0858 file+0x28f838 bytes 400e000000000000
+  0x602b09b8 file+0x28f998 bytes 400e000000000000
+  0x602bac74 file+0x299c54 bytes 400e0000610cd90f
+  0x602bb260 file+0x29a240 bytes 400e0000610cd90f
+  0x6035b710 file+0x33a6f0 bytes 400e00005f822d60
+  0x6062e7ce file+0x60d7ae bytes 400e000000000000
+  0x606a46ac file+0x68368c bytes 400e00002c0b0000
+  0x606ac19c file+0x68b17c bytes 400e00002c0b0000
+  0x6078f408 file+0x76e3e8 bytes 400e000000000000
+  0x6078f460 file+0x76e440 bytes 400e000000000000
+  0x6078f4b8 file+0x76e498 bytes 400e000000000000
+  0x6078f618 file+0x76e5f8 bytes 400e000000000000
+  0x6078f720 file+0x76e700 bytes 400e000000000000
+  0x6078f9e0 file+0x76e9c0 bytes 400e000000000000
+  0x607a3fe8 file+0x782fc8 bytes 400e0000610cd90f
+  0x607a92d0 file+0x7882b0 bytes 400e0000610cd90f
+  0x607aaa80 file+0x789a60 bytes 400e0000610cd90f
+  0x607b7c78 file+0x796c58 bytes 400e000095010000
+  0x607b7fc0 file+0x796fa0 bytes 400e000095010000
+  0x607b8308 file+0x7972e8 bytes 400e000095010000
+  0x607b8650 file+0x797630 bytes 400e000095010000
+  0x607b9508 file+0x7984e8 bytes 400e000000000000
+  0x60c357c9 file+0xc147a9 bytes 400e0000f1e8f1ed
+  0x60cf51da file+0xcd41ba bytes 400e00000408b000
+  0x60cf5226 file+0xcd4206 bytes 400e000004dfb014
+  0x60cf525d file+0xcd423d bytes 400e0000049a00b8
+  0x60cf527b file+0xcd425b bytes 400e00000408b000
+  0x60f14ae4 file+0xef3ac4 bytes 400e0000b00a0000
+  0x615ef820 file+0x15ce800 bytes 400e0000a0065061
+  0x61799644 file+0x1778624 bytes 400e0000f80044ca
+  0x61978a0f file+0x19579ef bytes 400e000000666666
+  0x6197dee4 file+0x195cec4 bytes 400e000000666666
+
+udfu01 *24 count 454 by register D0 314 D1 83 D2 47 D3 10
+
+computed index: a *24 whose 192 bytes before it, or 48 after it, contain the array base, the directory base, or the directory slot
+  *24 at 0x6124f51c imm8 D0 near directory
+  *24 at 0x6124f5c0 imm8 D0 near directory
+  *24 at 0x6124f684 imm8 D1 near directory
+near count 3
+
+walker windows (walk-3 end is entry+0x180, a search bound, not a proven ret)
+walk-1 0x6124f4e5-0x6124f55e
+  *24 at 0x6124f51c imm8 D0
+walk-2 0x6124f55e-0x6124f63d
+  *24 at 0x6124f5c0 imm8 D0
+walk-3 0x6124f63d-0x6124f7bd
+  *24 at 0x6124f684 imm8 D1
+
+done

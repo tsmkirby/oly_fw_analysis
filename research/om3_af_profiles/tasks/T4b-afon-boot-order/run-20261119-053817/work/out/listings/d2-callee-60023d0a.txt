@@ -1,0 +1,28 @@
+# function FUN_60023d0a 60023d0a depth 2 cap 80
+60023d0a	fca15c3e2da3	mov (0xa32d3e5c),A1
+60023d10	b500	cmp 0x0,A1
+60023d12	c833	beq 0x60023d45
+60023d14	f044	movbu (A0),D1
+60023d16	fcac623e2da3	movhu (0xa32d3e62),D0
+60023d1c	a500	cmp 0x0,D1
+60023d1e	c821	beq 0x60023d3f
+60023d20	db	setlb
+60023d21	f048	movbu (A0),D2
+60023d23	fca15c3e2da3	mov (0xa32d3e5c),A1
+60023d29	81	mov D0,D1
+60023d2a	1d	exthu D1
+60023d2b	f465	movbu D2,(D1,A1)
+60023d2d	1c	exthu D0
+60023d2e	40	inc D0
+60023d2f	81	mov D0,D1
+60023d30	1d	exthu D1
+60023d31	fac90040	cmp 0x4000,D1
+60023d35	c003	blt 0x60023d38
+60023d37	00	clr D0
+60023d38	41	inc A0
+60023d39	f044	movbu (A0),D1
+60023d3b	11	extb D1
+60023d3c	a500	cmp 0x0,D1
+60023d3e	d9	lne
+60023d3f	fc83623e2da3	movhu D0,(0xa32d3e62)
+60023d45	de8004	retf [d2],0x4

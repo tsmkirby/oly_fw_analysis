@@ -1,0 +1,11 @@
+# function FUN_60076096 60076096 depth 2 cap 80
+60076096	f1d2	mov A0,D2
+60076098	4604	mov D1,(0x4,sp)
+6007609a	04	clr D1
+6007609b	4608	mov D1,(0x8,sp)
+6007609d	3c	mov sp,A0
+6007609e	50	inc4 A0
+6007609f	16	extbu D2
+600760a0	89	mov D2,D1
+600760a1	ddcd97fdfff020	call 0x6004f86e,[d2,d3,a2,a3],0x20
+600760a8	df8010	ret [d2],0x10

@@ -1,0 +1,13 @@
+# function FUN_60038b8a 60038b8a depth 2 cap 80
+60038b8a	305080	mov (0x8050),D0
+60038b8d	54	asl2 D0
+60038b8e	fcdc0400f097	mov -0x680ffffc,A0
+60038b94	f380	mov (D0,A0),A0
+60038b96	f8201c	mov (0x1c,A0),A0
+60038b99	f044	movbu (A0),D1
+60038b9b	8001	mov 0x1,D0
+60038b9d	a500	cmp 0x0,D1
+60038b9f	c903	bne 0x60038ba2
+60038ba1	00	clr D0
+60038ba2	14	extbu D0
+60038ba3	de0000	retf [],0x0

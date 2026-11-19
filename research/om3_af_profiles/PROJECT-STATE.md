@@ -8,9 +8,21 @@ Last updated: 2026-11-17 (Phase 1 preparation).
 
 ## 1. Continuation point
 
-- **Now:** T3b (measure the stock AF target selection screen, then route it to the AF-ON profile's size
-  and position) and T4b (stock watch run from reset: boot order, duplicate-record readers, flash callees)
-  run concurrently. T6 (the button target takes size and position from the profile) follows T3b.
+- **Now:** the T3b correction round runs concurrently with T7, which finds the orientation producer and
+  adds an EMULATOR-ONLY pose injection. T6 (the button target takes size and position from the profile)
+  follows T3b and uses T7's pose module.
+  - **T3b round 1 (REJECT, 19 Nov).** The stock direct target screen (opened from shooting with the arrow
+    keys) is routed to a 55-byte RAM mirror while an EMULATOR-ONLY flag is set. Confirm, the normal-edit
+    control and identical stores passed.
+    - Corrections: the flag must move into owned RAM and be scoped to the editor's lifetime; the custom-size
+      editor must be found and routed; the measurement gaps must be filled; acceptance needs complete
+      assertions.
+    - **Coordinator amendment:** MENU follows stock behaviour (it keeps the edit), not a rollback.
+  - **T4b accepted with corrections (19 Nov).** In the emulator's staged bring-up, the descriptor build runs
+    before the key-port hook `0x6017a5fc`, and the hook runs before the first menu lookup. Nothing read the
+    duplicate `0x216` record on the exercised paths; it remains a hypothesis. The flash callees show no
+    listed sum or inflate, within capped coverage.
+    [readiness/t4b-afon-boot-order](analysis/button-af/readiness/t4b-afon-boot-order/README.md).
   - **T5 accepted with corrections (19 Nov):** in OM-Emu, Subject Detect Off, pressing AF-ON applies the
     zone chosen in the page-27 row (S-AF and C-AF); release restores the half-press target; legacy AF Home
     no longer drives AF-ON; stores byte-identical after save. Navigation equivalence with the stock control
@@ -112,8 +124,9 @@ The autonomous programme ends at either of these:
 | T3j | Table-driven acceptance, exact assertion on every key; T3i configuration unchanged | **Accepted with corrections.** **The AF-ON zone row meets its functional acceptance in full, as an EMULATOR-ONLY prototype:** 281 steps, 0 failures. Evidence promoted to `analysis/button-af/readiness/t3-afon-zone-row/` | [decision](tasks/T3j-afon-acceptance-assertions/decision.md) |
 | T4 | Packaging analysis (static): section-7 edit vs runtime installer; home for the binding array; face-table key; descriptor registration; native value routing; byte budget | **Accepted** (correction round; bounded: reuse is a hypothesis, ordering and flash callees unresolved) | [decision](tasks/T4-afon-packaging/decision.md) |
 | T5 | AF-ON button applies the zone from the menu row: the RAM profile replaces the legacy AF Home provider in the central-edge handoff; 12 edges; S-AF and C-AF; Subject Detect Off | **Accepted with corrections**, claims narrowed (correction round REJECT on control navigation only; resolved by the coordinator; final reopen release → T6) | [decision](tasks/T5-afon-button-handoff/decision.md) |
-| T3b | AF-ON target size and position editor: measure the stock AF target selection screen, profile layout, route the screen to the profile (EMULATOR-ONLY entry; entry options → Q5) | **Running** (concurrently with T4b) | [tasks/T3b-afon-target-editor](tasks/T3b-afon-target-editor/brief.md) |
-| T4b | Stock watch run from reset: boot order (descriptor build, key-port hook, first lookup), duplicate `0x216` readers, flash-read callees | **Running** (concurrently with T3b) | [tasks/T4b-afon-boot-order](tasks/T4b-afon-boot-order/brief.md) |
+| T3b | AF-ON target size and position editor: measure the stock AF target selection screen, profile layout, route the screen to the profile (EMULATOR-ONLY entry; entry options → Q5) | **Correcting** (round 1 REJECT: flag ownership and lifetime, custom-size editor, measurement gaps, assertions; cancel amended to stock parity) | [tasks/T3b-afon-target-editor](tasks/T3b-afon-target-editor/brief.md) |
+| T4b | Stock watch run from reset: boot order (descriptor build, key-port hook, first lookup), duplicate `0x216` readers, flash-read callees | **Accepted with corrections** (bounded; reuse still a hypothesis) | [decision](tasks/T4b-afon-boot-order/decision.md) |
+| T7 | Orientation: stock producer, EMULATOR-ONLY pose injection at the sensor read, per-pose AF target banks, reusable pose module | **Running** (concurrently with the T3b correction) | [tasks/T7-orientation-producer](tasks/T7-orientation-producer/brief.md) |
 | T6 | Button target takes size and position from the profile; full 12-edge acceptance incl. the reopen release | Planned, after T3b | — |
 | — | Beyond T3: persistence, display, hook point (Q4), acceptance matrix | Planned by Opus as results arrive | §2 |
 | — | CPU3 request/loader port | Deferred; regression only | AFON-MENU-RESEARCH §9 item 5 |
@@ -302,6 +315,7 @@ ACL or label operation on any tree containing a junction; the scripts check for 
 | 2026-11-18 | Relaunch `run-20261118-152508` (T5, T4) also failed: Grok lost its Cursor connection after 15 min (`RetriableError: Connection failed repeatedly`), with no file written under either `work\`. Isolation clean. Second infrastructure failure; relaunched again after the owner reported internet access restored (19 Nov). | Opus | run-20261118-152508 err |
 | 2026-11-19 | Correction runs `run-20261119-044533` completed. During them the Cursor CLI tried to add its install folder to the user PATH (`reg add HKCU\Environment`); Low integrity denied it and the user PATH was verified unchanged. | Opus | run err.txt |
 | 2026-11-19 | T4 accepted (Sol ACCEPT). T5 accepted with corrections: Sol's correction review rejected only the control navigation (a stock control has no AF-ON row by construction) and one unasserted reopen release; the coordinator narrowed the claim to store identity and moved the release assertion to T6. Evidence promoted for both. T3b and T4b launched concurrently; T6 planned after T3b. | Opus | T4/T5 decision.md |
+| 2026-11-19 | T4b accepted with corrections; Sol's wording and bounding corrections were applied in the decision, with no further round. T3b round 1 rejected; one correction round. Coordinator amendment: MENU on the AF-ON-mode editor must match stock MENU (the stock screen commits each key and MENU does not restore), because the spec requires reusing the stock screen and mechanisms. My original cancel criterion assumed a rollback the stock screen does not have. T7 (orientation) launched alongside. The Cursor CLI's PATH write was denied again. | Opus | T4b decision.md; T3b brief §5 |
 
 ## 12. Session resumption checklist (Opus)
 

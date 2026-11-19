@@ -1,0 +1,3161 @@
+{
+  "task": "T3b",
+  "brief_sha256": "62ba87b1a9f19be05550ec911794e9acc848e9da3914155b600cbff431b45e3f",
+  "inputs": [
+    {
+      "path": "brief.md",
+      "sha256": "62ba87b1a9f19be05550ec911794e9acc848e9da3914155b600cbff431b45e3f",
+      "bytes": 5901,
+      "hashed": "later"
+    },
+    {
+      "path": "TASK.md",
+      "sha256": "ce71e1837bf5b57a984badfb19438dea427c878e8355d3b8330e2e884fa6c16b",
+      "bytes": 2331,
+      "hashed": "later"
+    },
+    {
+      "path": "inputs/00_0100_50000020.decoded.bin",
+      "sha256": "5e8d376e9111a44ac0352f26030d7c1b17026d42c45f3600cfa02a0e8c5b7d59",
+      "bytes": 33554368,
+      "hashed": "later"
+    },
+    {
+      "path": "inputs/02_0106_458c0020.decoded.bin",
+      "sha256": "3d9fd4426b45fbe4b715599422af38c6d22392c08543a69f63c28291c5a0b059",
+      "bytes": 143523776,
+      "hashed": "later"
+    },
+    {
+      "path": "om-emu/unpacked/E147/OLY_E_147_1100_0000_0000.BIN.blk00000000.OE.0100.bin",
+      "sha256": "5e8d376e9111a44ac0352f26030d7c1b17026d42c45f3600cfa02a0e8c5b7d59",
+      "bytes": 33554368,
+      "hashed": "later"
+    },
+    {
+      "path": "om-emu/unpacked/E147/OLY_E_147_1100_0000_0000.BIN.blk02000000.OE.0101.bin",
+      "sha256": "6d2bef74b4b2fa089f271529482f96505a170b91e79ab9b1a13f3ce8f7918226",
+      "bytes": 60817344,
+      "hashed": "later"
+    },
+    {
+      "path": "ref/analysis/button-af/readiness/t5-afon-button-handoff/out/overlay-changed-bytes.csv",
+      "sha256": "08365a6362a1ad2b98d8aece7ebc2f9fd3f8efc9b82f83087e1c6fad45aad7ae",
+      "bytes": 265007,
+      "hashed": "later"
+    },
+    {
+      "path": "ref/tasks/T3i-afon-zone-acceptance/brief.md",
+      "sha256": "2e6159a45c5a9e51f894eb68a12c501bc6e1becf461f6863e952b7768a4a19b7",
+      "bytes": 5565,
+      "hashed": "later"
+    },
+    {
+      "path": "ref/tasks/T3j-afon-acceptance-assertions/brief.md",
+      "sha256": "3fc9e4ae1a4a0ef662b4fa10a2894ef3541a535d3c5ff19f9c865e81689946ff",
+      "bytes": 4482,
+      "hashed": "later"
+    },
+    {
+      "path": "ref/tasks/T5-afon-button-handoff/brief.md",
+      "sha256": "d4643219373854e0260e48fc2a65a21959f7cae6b468725167605bc0b0657aaa",
+      "bytes": 8606,
+      "hashed": "later"
+    }
+  ],
+  "sources": [
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/checks/lib/args.mjs",
+      "sha256": "6c99d21aad6340f2b7c72c5c63f33b7287d04dab798adedc23f1cf705ab92ad8",
+      "bytes": 4766,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/checks/lib/coverage.mjs",
+      "sha256": "e6e3d409d7766e8d5b55d473523355a7dda4b2a4dba1bda984ca170411109ee7",
+      "bytes": 4549,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/checks/lib/env.mjs",
+      "sha256": "dbbfd2ab839d8ceb784c7df5c12d0d9a17898eba549b84e848a9cfb05b0d609b",
+      "bytes": 12178,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/checks/lib/errors.mjs",
+      "sha256": "4c01fc5ac9167e751e6f9f1f013d61c56600e3af668db8ee305f79718e213c79",
+      "bytes": 1846,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/checks/lib/png.mjs",
+      "sha256": "77d52d420a15ac8005ab9ac39e1d09d7df2a2650ece690813e511ac03ce6db99",
+      "bytes": 5493,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/host/nvram.mjs",
+      "sha256": "352f7765f0426706553ab6c3453048ff37c0d3e1fd274ceda18c8a37fd7b2071",
+      "bytes": 5126,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/refs/errors.mjs",
+      "sha256": "fff1f2065bbdb2797f3f998fabeb2a0353b88451bc252e4d3ad74025ab164aca",
+      "bytes": 809,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/scenarios/bind.mjs",
+      "sha256": "5809e36b04e3fa0983e85c104070e3639ee85c965f25d0bddc0165533ee5fedc",
+      "bytes": 1979,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/scenarios/session_replay.mjs",
+      "sha256": "83d2afc6accf98d0cad951803af7f42319ec7858a9c9cc1a018622357c02b133",
+      "bytes": 25927,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/core/cores.mjs",
+      "sha256": "c40e61d8cb1c6d5660968bc3780591fe58b070d39346b33aacb1f8253cf3bfa0",
+      "bytes": 14575,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/core/cpu.mjs",
+      "sha256": "94f3caf73745b17dceca437299b6c711aee0efe51c9ab7c872d5b1e6c599521e",
+      "bytes": 33769,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/core/interp.mjs",
+      "sha256": "660e09091fc99db584104cd8e98d6050fe517e204fa2c747d0aa72e1423f9aa2",
+      "bytes": 40485,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/core/m4/boot.mjs",
+      "sha256": "064782160d72244f025941957757c5c0becac5cbc2baf272c93124a4b025c2ab",
+      "bytes": 2475,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/core/m4/bus.mjs",
+      "sha256": "7d40173941ce9136e055f5d68a3904d7e13bcb100afe076c99e62c5f04daff2b",
+      "bytes": 5865,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/core/m4/cpu.mjs",
+      "sha256": "64ddeaecf9402af3d04cbf232b99036fd1b87a637300b5ab0db6db4eafb655b8",
+      "bytes": 38527,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/core/m4/dcache.mjs",
+      "sha256": "5c1cd23048a7d5c693bc626abbcc1057d29bc4214c96bb9d05d71674ebf472cf",
+      "bytes": 3444,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/core/m4/decode.mjs",
+      "sha256": "a5400b0d56fbec796452aa7d93817cb4e97d28604f75048aef9a0d2008b9616d",
+      "bytes": 41153,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/core/m4/errors.mjs",
+      "sha256": "e4552273413b00095c7536a9e490c3c1b70428a9da88b4ec8087dccc5e0b517b",
+      "bytes": 894,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/core/m4/periph/adc.mjs",
+      "sha256": "d986c043c73a0ffcfcac748224516520cd909f297bca97fca0479c0e18da2ab3",
+      "bytes": 5729,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/core/m4/periph/board.mjs",
+      "sha256": "96452848d86624d9c569fdca46fa3ef015ae4c1847f31ae24da561ed54d9d4b6",
+      "bytes": 2077,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/core/m4/periph/dma.mjs",
+      "sha256": "0013b012879e42f249776e8d0a91db465d84312f967751994fdcfb78aeef931f",
+      "bytes": 6520,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/core/m4/periph/exti.mjs",
+      "sha256": "3ccca80728f6a95d651bee8fbdea6eebff4cf0c839073198e7a39465a2f7f572",
+      "bytes": 5980,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/core/m4/periph/flash.mjs",
+      "sha256": "8a1b09f4465f05ed8853a08be72081635257fc9e47e5b475820d0b49cb1b5a85",
+      "bytes": 13217,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/core/m4/periph/gpio.mjs",
+      "sha256": "4f2bd672f826e915f4dc628e39d156d7bc05f4ad1291b1121eebc780665025f9",
+      "bytes": 7331,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/core/m4/periph/i2c.mjs",
+      "sha256": "db2ed90a75f8f23fa8119eceb74641e1faf0c840f0e5b412297bed3fe27fed42",
+      "bytes": 15064,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/core/m4/periph/pwr.mjs",
+      "sha256": "e665b6f771874170fb13346b85389d8969d5106f116ab80c32689c293e32f179",
+      "bytes": 2976,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/core/m4/periph/rcc.mjs",
+      "sha256": "28649dbcca9e0006c0c518d23ca488544d48d15f5443dd8d40fb40954745cd70",
+      "bytes": 9103,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/core/m4/periph/regs.mjs",
+      "sha256": "a159b2f84183d50cccb9445f435ebb2955bada803f994b7ffb9e2ea29262ee1e",
+      "bytes": 2837,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/core/m4/periph/rtc.mjs",
+      "sha256": "3edf5249203b6230e69e423e50953d9611db7a1bf780fc93ad42f2bd71965107",
+      "bytes": 12634,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/core/m4/periph/sched.mjs",
+      "sha256": "a683cedc35145ccd001f22c4031f6fd4942e9bfd38d00c0a99db7b3e78923e4c",
+      "bytes": 4354,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/core/m4/periph/spi.mjs",
+      "sha256": "388e0f06c7c1c6ce9400efd78e1d3d8f3249a424cdf192f5fd7bb039ce2dba5f",
+      "bytes": 5146,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/core/m4/periph/stm32l4.mjs",
+      "sha256": "1beb26e4d57bcfc8996e5b4c0ef04f6d94c3e9e4de4952d056904c6698a9aef5",
+      "bytes": 25042,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/core/m4/periph/tim.mjs",
+      "sha256": "a3d74c5c2eb63bc9759899ba528a0c0519bb64b0a101d67b44cee85963f21f72",
+      "bytes": 19535,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/core/m4/periph/usart.mjs",
+      "sha256": "5f3ff52bf755043637af356f2516524a13e2ac5d706772d73791eb32508a3396",
+      "bytes": 10349,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/core/m4/periph/usb.mjs",
+      "sha256": "e9cd406f7666cc4b85ae2e4fc9c1830a66f62bc60747f443498dcaf65d349c0a",
+      "bytes": 2042,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/core/m4/sys.mjs",
+      "sha256": "e97b9371d3e8eea59cea3d87c08b39eca3ae16e35539f8ce4f2ca785cec81a3b",
+      "bytes": 16370,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/core/mem.mjs",
+      "sha256": "adfe9bca23723f22b490c99047b6ad32c291f495492c98138d1da3c20ab5a676",
+      "bytes": 23219,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/debug/call.mjs",
+      "sha256": "74bffd86020ec1c6f3eca732fd4a41aaa7dcfba2d4670a094449918d84a44186",
+      "bytes": 22586,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/debug/debugger.mjs",
+      "sha256": "a24ce644ab922457a843c868076aa21e72007e78086fda75fd88119a79da4705",
+      "bytes": 24393,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/debug/live.mjs",
+      "sha256": "c19050fd773dc1f46b9f7c0c3669ada12b1293dab93599206913022c62a87e49",
+      "bytes": 28766,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/debug/protocol.mjs",
+      "sha256": "5eff055d29372fb46aecda2c09c6ba94538d7026ad585e15abe06ccbd1f259ea",
+      "bytes": 21791,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/debug/regs.mjs",
+      "sha256": "2e620e185508bf19008cf97cc33ae188222e7461e0b3f1811bf304fdb7b422d7",
+      "bytes": 866,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/debug/snapshot.mjs",
+      "sha256": "24e51e3811a58d55051caeb7507707cfb51001cb9b5355d27bc20c8c0c98ab54",
+      "bytes": 5970,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/debug/trace.mjs",
+      "sha256": "92b3ed83780771c6011d1521ab018dee0fda5f604522acdbdd624a25bdf32bab",
+      "bytes": 4456,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/dev/audio.mjs",
+      "sha256": "2a41fcd1bd0152e5b2b54f3cad314a7e77c5741787d761d69df9e023d41ad571",
+      "bytes": 17201,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/dev/bus.mjs",
+      "sha256": "e537c4ed7e90f6bc2b4a7fef2a35d856af5ffc5ae446ee9336a87e5b4e6e397f",
+      "bytes": 8291,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/dev/camfe.mjs",
+      "sha256": "69a9fde49796f27fac8454565b69c281f670659decb6655fb0ad7c5ef2c3057c",
+      "bytes": 13697,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/dev/dml.mjs",
+      "sha256": "cb8761cb0d5531eb4e7ff46fb3c1cba535afcf6719220ca670ec3c94d9b0a890",
+      "bytes": 8744,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/dev/dpc.mjs",
+      "sha256": "adf00b0157638de3c7f2885957b4542ef0b8a1bcac8c7649546a0658cfb89f32",
+      "bytes": 2629,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/dev/ems1.mjs",
+      "sha256": "68deb7a62e8d6d7d1fb11e49baed979dcf01012e07074ec19bf4e8c39db9d371",
+      "bytes": 11974,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/dev/engine.mjs",
+      "sha256": "2164dcaa278792e3b64675e9ee02dcefa0a6c03afbe7d2738d013da0bfa18059",
+      "bytes": 21611,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/dev/hdmi.mjs",
+      "sha256": "80497c3a89e39ecd641f4fcc5e67ebb2028893fb3b86edffb91b50b115449e8c",
+      "bytes": 16254,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/dev/imgpipe.mjs",
+      "sha256": "924001331674b9e6642c2c9c052fe75a4aff78d8a16f41dd2e2191046ef94daa",
+      "bytes": 25971,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/dev/imgpro.mjs",
+      "sha256": "275680322384425d95a05c39178a70091ed8d3ff897ae04ab504004029066664",
+      "bytes": 13544,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/dev/intc.mjs",
+      "sha256": "85b6b7d21652ac1a057e19fdc1e214154ac52bceec47a8f4afdac1661788dada",
+      "bytes": 15228,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/dev/lensssc.mjs",
+      "sha256": "e96b83c864f901ca1811a447f5f88fb1ff0b9ee87972555fe2678e420fd6a34d",
+      "bytes": 12839,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/dev/linkpins.mjs",
+      "sha256": "cbc3e7a5fca33012a2344800016eb8e9f63d723f381dc13deb4ce52e66e3c1d5",
+      "bytes": 7211,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/dev/pdt.mjs",
+      "sha256": "9377aa4bfd22964c40c672c44f7eb48c5955e5faa6f98a44525497afecb716c9",
+      "bytes": 9847,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/dev/scpu.mjs",
+      "sha256": "69198b7be16fb24d32968553888ee551ba0f6d227688bba434203e5c834fd5cb",
+      "bytes": 9454,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/dev/stub.mjs",
+      "sha256": "b87a757f0e57823fc46a89020060cc38a6361d24a0498450bdc3047fb9419a3d",
+      "bytes": 4079,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/dev/timer.mjs",
+      "sha256": "b03f10e8d4d622d3fb2fcd6b8b39943c69c98d17241dd4e5026c338fbe0b4739",
+      "bytes": 10301,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/dev/vsc.mjs",
+      "sha256": "38de0fa08a4ff6197c60868c6b893d46775908ccf9389f1d1ddcc5f6b6342602",
+      "bytes": 31927,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/dev/vsccompose.mjs",
+      "sha256": "ba3da9916f999ca91b4c1b9857c13f95239628be334e58478154e682aa05971c",
+      "bytes": 33867,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/dev/vsccompose2.mjs",
+      "sha256": "234572564acef358dd7084d35ca624d62312c42f005ef9c3dcb314fcc1a4d638",
+      "bytes": 18331,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/dev/vscregs.mjs",
+      "sha256": "d29e6661e27212b466035b13ca9ceb9f2bcbafe8026328659d65382f0b806265",
+      "bytes": 3828,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/fw/board.mjs",
+      "sha256": "6a02f7c74bee6f0b6409c57c3ee78c62e16280794ee55557edb42d2f723d7875",
+      "bytes": 39911,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/fw/expand.mjs",
+      "sha256": "e2575f5a4c8ecb79764a31ae01223ab718e7ddc266c00bd88bbf0008dabd1d7d",
+      "bytes": 3148,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/fw/facts.mjs",
+      "sha256": "3f938574a7cc589dd227584066e726039009678c4f51fa8175437badfc1c4c17",
+      "bytes": 509333,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/fw/image.mjs",
+      "sha256": "657e9a447ea8035f17115708121e1ad8e71c08f8f5ef1aefb107ccf3a73621d8",
+      "bytes": 2077,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/fw/labfw.mjs",
+      "sha256": "3efbe7112a2917fbf77c3a57b704296bd730676f1921d24c427f40225ecfb083",
+      "bytes": 4276,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/fw/model.mjs",
+      "sha256": "f080e7e9c91bf3baa5136c7b8aeb6b0e0c4c8378d89f361a47e87aac4e902a44",
+      "bytes": 4718,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/fw/models.mjs",
+      "sha256": "115c8349e4f0aadbe56f24638db4e195ca3ba59739c64607eb5b34e4e14db3db",
+      "bytes": 125036,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/fw/nand.mjs",
+      "sha256": "1c7751b4db88c7874eb4c86d33185f6279ced1cd2f7bddbae4a2dea37fe3b5dd",
+      "bytes": 20696,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/fw/olyfw.mjs",
+      "sha256": "a1c02f4ded0c3624ac017d97eb1ca59e6ca5dd407bcc0854722d7c126c9ef246",
+      "bytes": 5786,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/fw/overrides-E122.mjs",
+      "sha256": "6bff3bc7d875f7424165e6737ecd50c4a4ebb8d1dc4dd4d42b9431b5982b0602",
+      "bytes": 4046,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/fw/overrides-E144.mjs",
+      "sha256": "cc98ffd4ed9eac44c6a8c58c31010b67c72eef618d09e93cf97e442b3f5bd307",
+      "bytes": 25687,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/fw/patch.mjs",
+      "sha256": "bb9434c31fc8e494daa7dd05321bf5835b51aae6bfdbbd981d7151b445375d3b",
+      "bytes": 19035,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/fw/ports.mjs",
+      "sha256": "6c81c9955e9baba6c165ed3affb69fd5208bb44e6a9dba5dc6094935074ce0b0",
+      "bytes": 1076335,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/fw/resprefix.mjs",
+      "sha256": "612c87c0dd722ee031685dd5c70bf14e113d094f2e3a66677dfbe4b8c14c6372",
+      "bytes": 2144,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/fw/sections.mjs",
+      "sha256": "e8e55f2820a7db8426f0172882a34c90c611a7a6b2d848904cd55739d45d6250",
+      "bytes": 8601,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/lab/acc.mjs",
+      "sha256": "48c508462bb4e8cf94b893315d079b9d08248956f06c040be1ed4e3503122062",
+      "bytes": 15789,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/lab/audio.mjs",
+      "sha256": "9b1edfc267afe2c915cbecf4d9fc7bc78003f7f19ef799fd4c738ae1d4e2ff4b",
+      "bytes": 8006,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/lab/audiohw.mjs",
+      "sha256": "c8b414b7217647d696c67aa84ffd273680d325f0119576aa480416791932d705",
+      "bytes": 13787,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/lab/camapp.mjs",
+      "sha256": "363891a90afc7e77e57abd1638e31f0a7badc09b81778e90ac8d42fb640b33f3",
+      "bytes": 232107,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/lab/charger.mjs",
+      "sha256": "f0a2426fb249f9f675c0d22d6e49126fd53a88541dbd6637f6a5bbe4e0212982",
+      "bytes": 3046,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/lab/cpu2.mjs",
+      "sha256": "9a6877013f48a51f56a94bb1185d827c50b8d427b2db375d0d6a3964f0736666",
+      "bytes": 24107,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/lab/display.mjs",
+      "sha256": "7b34ff5b05fef9c7ca1d33fe771e4158387298fd02b28372afd36bf5f0d501bb",
+      "bytes": 91058,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/lab/dispq.mjs",
+      "sha256": "4821c3b1eb64f4b25f40ed80bcf2c14aea5b166148efa3dda35b3d978537b4a4",
+      "bytes": 2427,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/lab/edid.mjs",
+      "sha256": "416d945d868a7d8c53cc0085179733a25fccb82f88e1d6cbd0fe7add32b4d051",
+      "bytes": 2948,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/lab/errors.mjs",
+      "sha256": "2fd7139bceb60f0ad31c428f7ed9f69235af4bc76cda823b1bb9c6dcea45fe10",
+      "bytes": 1204,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/lab/hle.mjs",
+      "sha256": "5648a293d1f6ede0eda8e29d4dc9e6f683210a28935b02b4e6c0af2a03da0520",
+      "bytes": 18565,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/lab/irq.mjs",
+      "sha256": "8fec8ed6abe08a9b83845eae044fc3fcc43f2e339f95d872489152b4de9c072f",
+      "bytes": 10200,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/lab/jpeg.mjs",
+      "sha256": "b54cfe0eb9655371f282fd1e3565b92dfce2500538b805bf0d082de002b97554",
+      "bytes": 14285,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/lab/kernel.mjs",
+      "sha256": "6ceee4bf9962892c0d025be0d70a92ccbb53cdb0ef009b5b9e312586302f47f8",
+      "bytes": 22251,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/lab/lens.mjs",
+      "sha256": "b92b12d381f3389fa8802f1e9ef3bde4291c45e8cb386619ff6fcf25099a96e5",
+      "bytes": 11978,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/lab/lensmcu.mjs",
+      "sha256": "52eb5614952c45f8f648db3cda980019bf9d1fe79334e48bbc3a183a443eabdc",
+      "bytes": 13566,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/lab/mdet.mjs",
+      "sha256": "89c61056df82fe1a159e684cdee0810af38d60c986ab0bf33a6e90e1c504bdde",
+      "bytes": 45695,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/lab/media.mjs",
+      "sha256": "373ceb78980f1c9a7098d56b573e86b00595392fe4e5a69e7c93af970a6ef248",
+      "bytes": 25418,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/lab/menu.mjs",
+      "sha256": "f1fbb65e5a9d30e90ac4eb5565ad6852733d4ae20ff3a3de590d916cf4ec4e94",
+      "bytes": 85212,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/lab/menudata.mjs",
+      "sha256": "1cfdf906d143bea38e730040b2f062b3b3d46b35ba361b58dfd5b01db15531da",
+      "bytes": 17067,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/lab/menuwalk.mjs",
+      "sha256": "d91eeba2e912d05d4a11081bd5846f53b60cbf1578e0733e3289bac8b47706f1",
+      "bytes": 10985,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/lab/nav.mjs",
+      "sha256": "f0062a533f6caf7a37e600364a0d645ffa184deb7892c385b9bba5f58390baef",
+      "bytes": 28926,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/lab/nvramdoc.mjs",
+      "sha256": "597148fdec863af46873a53ab5380a553fcda3a82499da2548f527eed28fffba",
+      "bytes": 6245,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/lab/osd.mjs",
+      "sha256": "a0887531c74d890dca3a12b26d7aea57009da602ffbb6fff8382f89a119176b8",
+      "bytes": 21528,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/lab/osdfmt.mjs",
+      "sha256": "8d5945aeca6a9ec80099c8a3c48ea90580f4c87399e6bcc593f2f0782a263248",
+      "bytes": 4699,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/lab/patchaudit.mjs",
+      "sha256": "18b946321244d4473f904314ba558e9f3c92e330f6dd502863974773bf349b74",
+      "bytes": 12584,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/lab/play.mjs",
+      "sha256": "ac4221021017ba3facacb5db7b1600f2704291136b72c24fefee3b9f8ed092a8",
+      "bytes": 184297,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/lab/player.mjs",
+      "sha256": "bfd861245f1a3d3b2d19a48966b410e979def2ae7cb62c5dde86e31eb03e1404",
+      "bytes": 82293,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/lab/playmod.mjs",
+      "sha256": "56f5802c85ac55f4c5ecbee290384620826c62a1fde6d6bce4b4704aa95bfad8",
+      "bytes": 14600,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/lab/power.mjs",
+      "sha256": "ec16f3c8dfbd67a7802e9718ce930e00d2889b0e5dc37fc7e040a255ea92f549",
+      "bytes": 17507,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/lab/rec.mjs",
+      "sha256": "830d220debed119b5183391ce0d629de368369609ccbfafef14dd27bdf4643f4",
+      "bytes": 62226,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/lab/resnand.mjs",
+      "sha256": "c58d5d251c32f05d247ab8914551202c474e793bcdb2062ce61d2617fbc17462",
+      "bytes": 12700,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/lab/resources.mjs",
+      "sha256": "122450c256d8ef188f77a8e323ba92a28a6102f9033b4634e3c77c36dd066002",
+      "bytes": 14110,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/lab/rtos.mjs",
+      "sha256": "ea7e06666d37aaa97d06142febdbe853d996f68705bcca35f7ff11b4c6ed4b5d",
+      "bytes": 7071,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/lab/scene.mjs",
+      "sha256": "a842e60f803bc8b88113e1484e864235b5e2f9014dabb831210fd5cb9c8e9366",
+      "bytes": 20424,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/lab/scpudev.mjs",
+      "sha256": "c93ce9ced00ba5effba9dedf61ac54d3ca437533f2fd8c899273d273ec5dfc6c",
+      "bytes": 40483,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/lab/scpulink.mjs",
+      "sha256": "3df7584565d3b873e4cbf8fe0050364efe14ae383a4bff5d2dcc9251946ddb96",
+      "bytes": 10470,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/lab/scpum4.mjs",
+      "sha256": "8b7d7fcb1473963f775a2f6742fb2236ef2309ddbaa47d98e7edc41692867514",
+      "bytes": 16575,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/lab/sdcard.mjs",
+      "sha256": "4f81b26b7158dff6bedbd7e88e10fe6293a4c6cea643b498ab98ff7041e7828e",
+      "bytes": 15367,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/lab/settings_ids.mjs",
+      "sha256": "9c395cbd29b04f7e3a4cc1c34332c6f3c4327b28b9ed45db969e9589758b1f78",
+      "bytes": 2242,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/lab/shoe.mjs",
+      "sha256": "d6675b13346890962de1eec8930f763312f7f7d59ccb5b869a0607bf03840e98",
+      "bytes": 10854,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/lab/shuttersnd.mjs",
+      "sha256": "f4e81e625dcbaa0807d5ac67dfc246ad791f314c5ae9fd7f44192d12728fbc63",
+      "bytes": 5762,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/lab/sim.mjs",
+      "sha256": "aab4081dcfc9fb63ca8e84f7f100f84a0ce6dc91a633595cb05446a5d480e6be",
+      "bytes": 16409,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/lab/sio.mjs",
+      "sha256": "f0716ec9f3b3fbcffce75fa186a53f387ab1c336726595bfedc62119b4a9627b",
+      "bytes": 9980,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/lab/soundres.mjs",
+      "sha256": "a2c6dd3df56db40e95822cdb973bfe25efad7f049828626964c88886ff6aa8e9",
+      "bytes": 6887,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/lab/storage.mjs",
+      "sha256": "f5ea0a36b9c78f0a05a5e0f5e45f53ee5f4d076019fab8ee41c2d9e8c4d37d9c",
+      "bytes": 50163,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/lab/subject.mjs",
+      "sha256": "a5bd078b39c2f8594b13f564e5086eb56e8f22bbcdbac115e226e19220b5b317",
+      "bytes": 13781,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/lab/take.mjs",
+      "sha256": "8c6dc9cc84ee43a46e22d542f79bb6a5138b9ed686f089b0e17d7c500f66d4ee",
+      "bytes": 65265,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/lab/text.mjs",
+      "sha256": "e27b2d3781feab8d9eb3f49b0cc73524a9312913f85a4131358156a9770a1357",
+      "bytes": 22116,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/lab/touchpanel.mjs",
+      "sha256": "72f93c8bc053f159ec14a20b4dbcf0fabc189c01f79fde7a06efea160743e9de",
+      "bytes": 6610,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/lab/windows.mjs",
+      "sha256": "d18038a30d2f87e3abf6098cd943f35ff4202c6bb3a954d0f7ed1d9c8d28189f",
+      "bytes": 1265,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/lab/wm8946.mjs",
+      "sha256": "4ae26e3647e049fc3bc72163aa978ffc36a0966125b8370dab44827cdfee67bd",
+      "bytes": 8976,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/machine.mjs",
+      "sha256": "9c10e396d122722a486fa73dedabb0c19ad45033c59c172ec6bcaa37d031cd63",
+      "bytes": 33745,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/util/bytes.mjs",
+      "sha256": "86707333d72877e35b374bfd39f3d6af2b716437c73df46929e74b460af985be",
+      "bytes": 6115,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/util/equal.mjs",
+      "sha256": "31d47358a57d40bc4d67b9a077a8c05e6c4f1fe7a92de33f8eb538d75ead238e",
+      "bytes": 1471,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/util/hex.mjs",
+      "sha256": "d48bffb45373a94b8d1c824aa46d7a93665f282ee8a563370d698b1a53237c33",
+      "bytes": 489,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/util/parse.mjs",
+      "sha256": "b0754de377324528b15d6588dbe1d634649cbefd68754bf6b0b114beee3ddfd7",
+      "bytes": 1807,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/util/show.mjs",
+      "sha256": "58a20ae76e473414c3b0a0075eb362f7a1cf4c968b3feef64659f0473515e076",
+      "bytes": 1724,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/util/tally.mjs",
+      "sha256": "33f495d217ff46a5e2e1bb74a3cb319b2db374e8bd3d37dfef75da9a6864ed26",
+      "bytes": 896,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/om-emu/emu/src/util/tracejson.mjs",
+      "sha256": "52a0e82cd086dee77069600061f3d478fbf4ac447c75173dc53e97365f0e4e77",
+      "bytes": 3871,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3b-afon-target-editor/ws/work/scripts/accept_e3.mjs",
+      "sha256": "56f33fa1c391e9095de191a6d7e1a2b98a725303d981a6429e380c3afbe7502a",
+      "bytes": 20849,
+      "hashed": "execution"
+    },
+    {
+      "path": "work/scripts/accept_e3.mjs",
+      "sha256": "56f33fa1c391e9095de191a6d7e1a2b98a725303d981a6429e380c3afbe7502a",
+      "bytes": 20849,
+      "hashed": "later"
+    },
+    {
+      "path": "work/scripts/check_listings_e3.py",
+      "sha256": "53627189619881da9eb8517cb114b77d9e62a05ec71c5be7062f6fc5944f6239",
+      "bytes": 1135,
+      "hashed": "later"
+    },
+    {
+      "path": "work/scripts/custom_e2.mjs",
+      "sha256": "c9c5126d60886ef381085640d51f26c2337214c559826914c5e73d875b5c05c6",
+      "bytes": 10685,
+      "hashed": "later"
+    },
+    {
+      "path": "work/scripts/DisasmStockM2.java",
+      "sha256": "e488a5772cd7e7d58fe41a331ff88019b2ce7336672329fd7fcd46fffb3dc6ea",
+      "bytes": 2111,
+      "hashed": "later"
+    },
+    {
+      "path": "work/scripts/gap_scan_m1.py",
+      "sha256": "9fc878a197858c327ce0ee7a24c1126862aec7969c0708aa11cd497ac16888c0",
+      "bytes": 3093,
+      "hashed": "later"
+    },
+    {
+      "path": "work/scripts/gen_custom_e2.py",
+      "sha256": "51f9c2d723ba7696fad726dc242fd8756ecddb8efe992181cfe49666b45eb17c",
+      "bytes": 1168,
+      "hashed": "later"
+    },
+    {
+      "path": "work/scripts/route_e1.mjs",
+      "sha256": "c6766a03513032b46997874f487b35e2f5855911c803169e2645c61c249b67f5",
+      "bytes": 10777,
+      "hashed": "later"
+    },
+    {
+      "path": "work/scripts/run_logged.mjs",
+      "sha256": "34e42c59c553a1e4213e2b223034bd31142c7000c6aef4aac2ac9d5e7f1fe0ef",
+      "bytes": 4139,
+      "hashed": "later"
+    },
+    {
+      "path": "work/scripts/section_rows_e1.py",
+      "sha256": "0685b55ccc448162cb416668906dda23f7de197efc6699ebe541e85ffb17b358",
+      "bytes": 6791,
+      "hashed": "later"
+    },
+    {
+      "path": "work/scripts/show_a1_m2.py",
+      "sha256": "20bbe909959c7eef0d28c4f2fb80029f8b001185d777258fe66815ed32989043",
+      "bytes": 584,
+      "hashed": "later"
+    },
+    {
+      "path": "work/scripts/show_custom_e2.py",
+      "sha256": "97e62119acc3bb64b4d2bc28b6ce6b545c2f0ba30e7fb575f4757c9b97abbccf",
+      "bytes": 470,
+      "hashed": "later"
+    },
+    {
+      "path": "work/scripts/static_keys_m1.py",
+      "sha256": "95a316df3b163d813fa96e58c78c0278621c79226b5f8589e0e2768a9a514dd2",
+      "bytes": 1997,
+      "hashed": "later"
+    },
+    {
+      "path": "work/scripts/stock_edit_m2.mjs",
+      "sha256": "f1f349b544cc1b64067c4da15584b94562a49286ee8b7e154c98e18e8cefc313",
+      "bytes": 8043,
+      "hashed": "later"
+    },
+    {
+      "path": "work/scripts/stock_probe_m1.mjs",
+      "sha256": "668788beab5a329a390090c63a36a800e3df1e74dd8ec8085c85d0e95ce91630",
+      "bytes": 17569,
+      "hashed": "later"
+    },
+    {
+      "path": "work/scripts/summarize_m1.py",
+      "sha256": "612f95b8493599b636fb8e85e6576eb2133ea14bcdf9fd0729420e319b32e733",
+      "bytes": 1115,
+      "hashed": "later"
+    },
+    {
+      "path": "work/scripts/summarize_m2.py",
+      "sha256": "240dd38f6a7ce5181f892f8c695284d59b73386c8d3e8c47c1d7ec8a49004c25",
+      "bytes": 1421,
+      "hashed": "later"
+    },
+    {
+      "path": "work/scripts/write_manifest_e3.py",
+      "sha256": "f9d487744bf104076ea32fe41c0f44641ddc2f77f49e49324e7c2a0b89bfc3bc",
+      "bytes": 3397,
+      "hashed": "later"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "work/result.md",
+      "sha256": "3a4701566c93c0f007f9e5ea5c65d9a0d7c4b162c25f019fb5b4029bb8b46f88",
+      "bytes": 9298,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-e3-cancel-00-base.png",
+      "sha256": "ff0a276eb6db88237146b9b048a0faecf263ac295aaa0d1a8a1ef4697177a9de",
+      "bytes": 6799,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-e3-cancel-01-mode.png",
+      "sha256": "ff0a276eb6db88237146b9b048a0faecf263ac295aaa0d1a8a1ef4697177a9de",
+      "bytes": 6799,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-e3-cancel-02-up.png",
+      "sha256": "b7b2d33a5d1c1716285b5cce0a4e309825e79ba3f2be9fa2346dec447948d08b",
+      "bytes": 4522,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-e3-cancel-03-dial-small.png",
+      "sha256": "31630274d6a55e9830d1c3b29984807b4d01dae60e2542f8553862a41f8402ce",
+      "bytes": 6574,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-e3-cancel-04-right-1.png",
+      "sha256": "83a1ed24b968dc3ada386fa1fdad94c7c0718e94741b84695c93a7995c51f559",
+      "bytes": 4985,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-e3-cancel-05-right-2.png",
+      "sha256": "1a1a405b9f6dbc5b87b14c663091702e9b0642e4f1ed89594f372fac54bcf82e",
+      "bytes": 4648,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-e3-cancel-06-dial-cross.png",
+      "sha256": "279120c0a1d68c0545edb63d2f01450ad0bb43e6c77161fe4a9d26746480ea12",
+      "bytes": 6611,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-e3-cancel-07-dial-mid.png",
+      "sha256": "09822a4335b9fdaf4543bf5daebad533d92bdaadf4e200acf31f6a07ff6a28eb",
+      "bytes": 6578,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-e3-cancel-08-dial-large.png",
+      "sha256": "2455495f67d63d430d58786bd730c87bbcfc0dbecef3f09673a5afaaa79d94fb",
+      "bytes": 6706,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-e3-cancel-09-dial-c1.png",
+      "sha256": "acc58f01a19d344cab3d1c0260f7b6d7e590339b7ce438e8e689cade9f4135be",
+      "bytes": 5943,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-e3-cancel-10-menu.png",
+      "sha256": "542ed40b758684c43091a6fd9b1f1634cf1e5084f6cfa9a93c3cbeda0cec9715",
+      "bytes": 14163,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-e3-confirm-00-base.png",
+      "sha256": "ff0a276eb6db88237146b9b048a0faecf263ac295aaa0d1a8a1ef4697177a9de",
+      "bytes": 6799,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-e3-confirm-01-mode.png",
+      "sha256": "ff0a276eb6db88237146b9b048a0faecf263ac295aaa0d1a8a1ef4697177a9de",
+      "bytes": 6799,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-e3-confirm-02-up.png",
+      "sha256": "b7b2d33a5d1c1716285b5cce0a4e309825e79ba3f2be9fa2346dec447948d08b",
+      "bytes": 4522,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-e3-confirm-03-dial-small.png",
+      "sha256": "31630274d6a55e9830d1c3b29984807b4d01dae60e2542f8553862a41f8402ce",
+      "bytes": 6574,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-e3-confirm-04-right-1.png",
+      "sha256": "83a1ed24b968dc3ada386fa1fdad94c7c0718e94741b84695c93a7995c51f559",
+      "bytes": 4985,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-e3-confirm-05-right-2.png",
+      "sha256": "1a1a405b9f6dbc5b87b14c663091702e9b0642e4f1ed89594f372fac54bcf82e",
+      "bytes": 4648,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-e3-confirm-06-dial-cross.png",
+      "sha256": "279120c0a1d68c0545edb63d2f01450ad0bb43e6c77161fe4a9d26746480ea12",
+      "bytes": 6611,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-e3-confirm-07-dial-mid.png",
+      "sha256": "09822a4335b9fdaf4543bf5daebad533d92bdaadf4e200acf31f6a07ff6a28eb",
+      "bytes": 6578,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-e3-confirm-08-dial-large.png",
+      "sha256": "2455495f67d63d430d58786bd730c87bbcfc0dbecef3f09673a5afaaa79d94fb",
+      "bytes": 6706,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-e3-confirm-09-dial-c1.png",
+      "sha256": "acc58f01a19d344cab3d1c0260f7b6d7e590339b7ce438e8e689cade9f4135be",
+      "bytes": 5943,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-e3-confirm-10-ok.png",
+      "sha256": "a27f7259f5fc911ec6dc03675e5100c88163d55b671eba4c27b9d2dcb581e591",
+      "bytes": 14926,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-e3-confirm-11-save.png",
+      "sha256": "a27f7259f5fc911ec6dc03675e5100c88163d55b671eba4c27b9d2dcb581e591",
+      "bytes": 14926,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-e3-control-edit-00-n-base.png",
+      "sha256": "ff0a276eb6db88237146b9b048a0faecf263ac295aaa0d1a8a1ef4697177a9de",
+      "bytes": 6799,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-e3-control-edit-01-n-up.png",
+      "sha256": "9c63127a3573186a1f10a0cebaa2656f54e4740a41ae6e52247de39b91188f6a",
+      "bytes": 7274,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-e3-control-edit-02-n-dial.png",
+      "sha256": "c3ab4888b249c2a39dadcdc4a99fad34a32e23432ef77a0f1fecd9e29f6a35e1",
+      "bytes": 6303,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-e3-control-edit-03-n-right-1.png",
+      "sha256": "93f3de43189134c6d901f1b0b19ce3ed96e948345c75c6de4725eaf7a23fa1d2",
+      "bytes": 4543,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-e3-control-edit-04-n-right-2.png",
+      "sha256": "fcbb3331d6c92bb19c0935a6acef75d1af70a9596aeb913a19e64b969b268861",
+      "bytes": 4543,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-e3-control-edit-05-n-ok.png",
+      "sha256": "a27f7259f5fc911ec6dc03675e5100c88163d55b671eba4c27b9d2dcb581e591",
+      "bytes": 14926,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-e3-control-edit-06-n-save.png",
+      "sha256": "a27f7259f5fc911ec6dc03675e5100c88163d55b671eba4c27b9d2dcb581e591",
+      "bytes": 14926,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-e3-normal-00-n-base.png",
+      "sha256": "ff0a276eb6db88237146b9b048a0faecf263ac295aaa0d1a8a1ef4697177a9de",
+      "bytes": 6799,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-e3-normal-01-n-up.png",
+      "sha256": "9c63127a3573186a1f10a0cebaa2656f54e4740a41ae6e52247de39b91188f6a",
+      "bytes": 7274,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-e3-normal-02-n-dial.png",
+      "sha256": "c3ab4888b249c2a39dadcdc4a99fad34a32e23432ef77a0f1fecd9e29f6a35e1",
+      "bytes": 6303,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-e3-normal-03-n-right-1.png",
+      "sha256": "93f3de43189134c6d901f1b0b19ce3ed96e948345c75c6de4725eaf7a23fa1d2",
+      "bytes": 4543,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-e3-normal-04-n-right-2.png",
+      "sha256": "fcbb3331d6c92bb19c0935a6acef75d1af70a9596aeb913a19e64b969b268861",
+      "bytes": 4543,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-e3-normal-05-n-ok.png",
+      "sha256": "a27f7259f5fc911ec6dc03675e5100c88163d55b671eba4c27b9d2dcb581e591",
+      "bytes": 14926,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-e3-normal-06-n-save.png",
+      "sha256": "a27f7259f5fc911ec6dc03675e5100c88163d55b671eba4c27b9d2dcb581e591",
+      "bytes": 14926,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-e3-reopen-00-reopen.png",
+      "sha256": "ff0a276eb6db88237146b9b048a0faecf263ac295aaa0d1a8a1ef4697177a9de",
+      "bytes": 6799,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-e3-store-stock-00-base.png",
+      "sha256": "ff0a276eb6db88237146b9b048a0faecf263ac295aaa0d1a8a1ef4697177a9de",
+      "bytes": 6799,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-e3-store-stock-01-rotate.png",
+      "sha256": "c7c75341464d52517bf9d2fc0acc1dc308c8e5dda19183c703f1c7e513b3d9db",
+      "bytes": 11786,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-e3-store-stock-02-save.png",
+      "sha256": "930a26c8431eafe0adf923263a1c74f2e495006c85fa518b8e59586a657a58ff",
+      "bytes": 12724,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-e3-store-z5-00-base.png",
+      "sha256": "ff0a276eb6db88237146b9b048a0faecf263ac295aaa0d1a8a1ef4697177a9de",
+      "bytes": 6799,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-e3-store-z5-01-save.png",
+      "sha256": "ff0a276eb6db88237146b9b048a0faecf263ac295aaa0d1a8a1ef4697177a9de",
+      "bytes": 6799,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/accept-e3.jsonl",
+      "sha256": "187e04d566ad63eadf2fc4621c7d8ec4ed191398c9e3dc5b603ab6ad90960a72",
+      "bytes": 27581,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/01.cmd.txt",
+      "sha256": "8dcb0c166ee6e98c9b8cf89f5388cf5b10621acfef8bed60f04ac60d964150d1",
+      "bytes": 334,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/01.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/01.exit",
+      "sha256": "408cc25b538c80dba87a3f48d374f16c20b364c516ad5f8841fcd1740c17fe78",
+      "bytes": 450,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/01.out",
+      "sha256": "3a9723b50cc6720f3c5a76f9f09a9b3c78c87b6c9e1106d5c2430590c0025393",
+      "bytes": 1259,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/02.cmd.txt",
+      "sha256": "2f3fcd68fb6f71bd58c72b75baf400a8a87c861c3f30ae23cf785bcef6c06e3d",
+      "bytes": 343,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/02.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/02.exit",
+      "sha256": "11d0f6531698ad24950002615813cab95d8b958d635c6f7c612b79d6e21a645e",
+      "bytes": 456,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/02.out",
+      "sha256": "82660c139712071e1176ec9ad0947029389e82392c4f09f2321f735b646a668d",
+      "bytes": 3958,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/03.cmd.txt",
+      "sha256": "e656611f464736ab9115a71e35c3cbf456883f4941b0643127761c9267ece6bd",
+      "bytes": 407,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/03.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/03.exit",
+      "sha256": "65b7cc4b8c618b594486763746a419a57a7c0c841ee3c4c8caae5fc12286e265",
+      "bytes": 520,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/03.out",
+      "sha256": "8b0cb87aa10e005bc5911a9e79aef2833626df446a50abaa441385e00ba499b2",
+      "bytes": 29456,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/04.cmd.txt",
+      "sha256": "f22f294a016787e7af9ef301e17f3134aee6073d25da246b5f26e18c5bacbea4",
+      "bytes": 337,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/04.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/04.exit",
+      "sha256": "b437f8cc68f51a23a3fde333822f81087e25182e995538fc5777237fdf22b994",
+      "bytes": 452,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/04.out",
+      "sha256": "c8d3cf5eb9ac404cbaf97c56d43a38ecf22447f7e2b7c4b7356ffb57cfed76ea",
+      "bytes": 10961,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/05.cmd.txt",
+      "sha256": "1d5d76bdf870e1e4e7c828e677364f935e9ca85cf05823e6e7584286e9ea7460",
+      "bytes": 851,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/05.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/05.exit",
+      "sha256": "0d7ff3cc379149ad1ef8c582ede4b92e0bb138e8195064ecb80e558dcbed8c51",
+      "bytes": 725,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/05.out",
+      "sha256": "0c37dc0768a7c2b7b3e0ce5ae5c8c135763a40485f0cfbc324b01f0d4aaa1fdf",
+      "bytes": 4872,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/06.cmd.txt",
+      "sha256": "a8dd3b116e9e1823d4deff20529fe5d2bc39c0da95246720fe72f35ae3bf3f29",
+      "bytes": 403,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/06.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/06.exit",
+      "sha256": "56ee546c8f6390e7f603dbd79496622d32fb62fe5004a32c731c566142ea83f9",
+      "bytes": 517,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/06.out",
+      "sha256": "4b91bd1b59a7eb98c7b1924c9090a575de34ff4aac2b44ebe57ee0825dda0017",
+      "bytes": 114658,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/07.cmd.txt",
+      "sha256": "1e13df3a96b223b9c61914b0d2f6bd52435a51b16eb8a303ca99bf3feffbfb3d",
+      "bytes": 337,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/07.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/07.exit",
+      "sha256": "a05e8f84d02826891798c4d950ff749e0e2095ba266c116479f7531a83537359",
+      "bytes": 452,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/07.out",
+      "sha256": "e14493f80218c0072fb9182564e1621404034c2da3c56dccec9ada2adfa344c0",
+      "bytes": 27671,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/08.cmd.txt",
+      "sha256": "4ea65f7925f53c49420dbe86863e46e208c2856dc36270552add6c63896fba8f",
+      "bytes": 330,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/08.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/08.exit",
+      "sha256": "382bcdea7e646dc32b96d0b811cf346e861f6e59b4359f0228695a380980a3e9",
+      "bytes": 447,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/08.out",
+      "sha256": "8022bba3d0109fb797526d93eb4e6b2cd8601b313f4678c5646799938a14c0ca",
+      "bytes": 575,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/09.cmd.txt",
+      "sha256": "bb69c9295b09187860675f1b86386256d786ab23cec12eaae57190b6297cc829",
+      "bytes": 346,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/09.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/09.exit",
+      "sha256": "b2d66aac6c21a72c9d3e5117331e887e0d73f4d3a335c3c99c9278d148702226",
+      "bytes": 458,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/09.out",
+      "sha256": "9075f82de501b4e27347dbe7e486cd1ff1d8eeac5e2ec762cfed7c0406d50884",
+      "bytes": 95,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/10.cmd.txt",
+      "sha256": "b5df418543281c0c877d4463c705621db1d142f5a031b1e514f7c9571fee9f68",
+      "bytes": 389,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/10.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/10.exit",
+      "sha256": "cd3c6815776070d32d80aa8ff14214ea44305c45fe4c20c6c203478867980bca",
+      "bytes": 508,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/10.out",
+      "sha256": "db9b72253d006dbb89c848e74baaf495fc4e0529a7b9f349a4b1b9d579481699",
+      "bytes": 2385,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/11.cmd.txt",
+      "sha256": "97355ca9378d5c5930a41558396a384829d3ae027839e600ff6adf80cd350284",
+      "bytes": 340,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/11.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/11.exit",
+      "sha256": "68312ec991e754be0dfbdef3a34f8e0798843439c51e5d4c0435bb6580683062",
+      "bytes": 454,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/11.out",
+      "sha256": "51e20b30b5496b7610a20bf9f457d83130d23e49d489e54ce7285c4c14a653b0",
+      "bytes": 13,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/12.cmd.txt",
+      "sha256": "fd6f34bf32c37da9dc3255f7db440620115e75d1ea6f8a8ca4f1e68ef65de89d",
+      "bytes": 392,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/12.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/12.exit",
+      "sha256": "b6864de31ac3be7bbf9b12d21e6299bcc7a4e602140d4f8b4002a9ca0e046d04",
+      "bytes": 510,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/12.out",
+      "sha256": "5f30a029eee7efe9776e6a0ddb254ca8836482b16055669bf0d54d0b29258cfa",
+      "bytes": 2034,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/13.cmd.txt",
+      "sha256": "83ac8272c495867058195804bb85095f0bdcf3bc250d72abc1ac5d9967f99cbd",
+      "bytes": 342,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/13.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/13.exit",
+      "sha256": "0f2c640121f856c8268ed8c1cd3fccd6ad6558f81898046fb871656070a66b3c",
+      "bytes": 455,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/13.out",
+      "sha256": "a6a47ed9b699106fe75f5f877931684bdd91f5ef9619a94fdb9bb2fe3906721f",
+      "bytes": 2177,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/14.cmd.txt",
+      "sha256": "7f52ce484570ecbafda3014d729a0a580f00b6e3447c2525cdefe255ea74c331",
+      "bytes": 392,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/14.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/14.exit",
+      "sha256": "14e6f9d9c2c436d85c9a21dcfd6600bc7069424275a1e2ff6ec57320d7a5ff3b",
+      "bytes": 510,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/14.out",
+      "sha256": "2b6fe21d11510be25c229a8d3fbcd859ae04a5a30cbbf952703732d7e543763b",
+      "bytes": 3742,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/15.cmd.txt",
+      "sha256": "d5e5116548c6cb7cab319dbf9572173839919b76e36cb01e1276fd5d9d150a6e",
+      "bytes": 352,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/15.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/15.exit",
+      "sha256": "757d03fe9db08eafc457798b3fb4d483cb8ed9e793d3cc7d2fed30932cee66a8",
+      "bytes": 462,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/15.out",
+      "sha256": "a64548ddae351c94600adf53db3498f28f2d4b646e18f3a2fb1a6870feb2e9f0",
+      "bytes": 46,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/cmd/16.cmd.txt",
+      "sha256": "73dabe096fa3dc2ad31f361034a1ef1e2a09978ab1baee872120c97882aa146c",
+      "bytes": 352,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/custom-e2-00-baseline-mode-off.png",
+      "sha256": "ff0a276eb6db88237146b9b048a0faecf263ac295aaa0d1a8a1ef4697177a9de",
+      "bytes": 6799,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/custom-e2-01-afon-open.png",
+      "sha256": "b7b2d33a5d1c1716285b5cce0a4e309825e79ba3f2be9fa2346dec447948d08b",
+      "bytes": 4522,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/custom-e2-02-afon-dial.png",
+      "sha256": "31630274d6a55e9830d1c3b29984807b4d01dae60e2542f8553862a41f8402ce",
+      "bytes": 6574,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/custom-e2-03-afon-right-1.png",
+      "sha256": "83a1ed24b968dc3ada386fa1fdad94c7c0718e94741b84695c93a7995c51f559",
+      "bytes": 4985,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/custom-e2-04-afon-right-2.png",
+      "sha256": "1a1a405b9f6dbc5b87b14c663091702e9b0642e4f1ed89594f372fac54bcf82e",
+      "bytes": 4648,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/custom-e2-05-afon-type-0.png",
+      "sha256": "279120c0a1d68c0545edb63d2f01450ad0bb43e6c77161fe4a9d26746480ea12",
+      "bytes": 6611,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/custom-e2-06-afon-type-1.png",
+      "sha256": "09822a4335b9fdaf4543bf5daebad533d92bdaadf4e200acf31f6a07ff6a28eb",
+      "bytes": 6578,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/custom-e2-07-afon-type-2.png",
+      "sha256": "2455495f67d63d430d58786bd730c87bbcfc0dbecef3f09673a5afaaa79d94fb",
+      "bytes": 6706,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/custom-e2-08-afon-type-3.png",
+      "sha256": "acc58f01a19d344cab3d1c0260f7b6d7e590339b7ce438e8e689cade9f4135be",
+      "bytes": 5943,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/custom-e2-09-c1-info.png",
+      "sha256": "acc58f01a19d344cab3d1c0260f7b6d7e590339b7ce438e8e689cade9f4135be",
+      "bytes": 5943,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/custom-e2-10-c1-info-right.png",
+      "sha256": "92f1f47afa72af442f7bc5460832d26b975420e8610ae8d2d3e98548cd6ed182",
+      "bytes": 4729,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/custom-e2-11-c1-info-up.png",
+      "sha256": "2e13cdea67769303e6b2370420263304379e4d88588c0bf7a9784998be1ee2fd",
+      "bytes": 4726,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/custom-e2-12-c1-menu.png",
+      "sha256": "542ed40b758684c43091a6fd9b1f1634cf1e5084f6cfa9a93c3cbeda0cec9715",
+      "bytes": 14163,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/custom-e2.jsonl",
+      "sha256": "ffb33c1cf2837c119d1ce50d331c581ea17cf0c386954c9446aa52fbf840a0c3",
+      "bytes": 11234,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/design.md",
+      "sha256": "60a82507a05367050b61631f0bf9d5f6063c3b5657f473399a06bafcb43d3263",
+      "bytes": 3396,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/disasm-cellset-m2.txt",
+      "sha256": "f56a59d02187ae6a496121baaa2334b9b091e5c08ffff14bf057c7654cf33e8f",
+      "bytes": 1106,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/disasm-getter-m2.txt",
+      "sha256": "6dc268c55e1c984bfb955ce9d6e56a19c6b8ded10bacaf6a3828ec5806f4987d",
+      "bytes": 792,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/disasm-mapped-m2.txt",
+      "sha256": "6d156339257de1dec52521f5c40b0d83d4bd7a73b410d76178a76bbfb4514a52",
+      "bytes": 1353,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/disasm-setcall-m2.txt",
+      "sha256": "3ffdfa7be0486ed6477ea85720f8d1beb945feb4f2d7e8a797ee7f70bc43f601",
+      "bytes": 1081,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/disasm-wrap-m2.txt",
+      "sha256": "fc83f6e3bcc56553391aa99922d804a3d43ff2b897f498610a9c1afc5b808ed8",
+      "bytes": 1208,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/ghidra-m2.log",
+      "sha256": "2c832f9da2a3902f48249912c14e2cd94fb169c4ca29eea32edc41d89abb65ee",
+      "bytes": 5835,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/import-inventory-e3.json",
+      "sha256": "e99a5ca638b8f9dce8b55e1d2811bfee07af52dd0820d5daa954a3f98b77e777",
+      "bytes": 29535,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/import-inventory-m1.json",
+      "sha256": "551d12e9523fdd459c5b2908ea5b8039ed593def33190273db8ab394b36d7ae4",
+      "bytes": 30501,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/listing-check-e3.json",
+      "sha256": "72bd396ce089dbd9576bfee7797f1b55c05524bbe5648fac86a06374b9fa0031",
+      "bytes": 58,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/nvram-accept-e3-cancel.json",
+      "sha256": "8290aee9c3b2fd71e371d7df87728399a4d06c1a44299f3131b97a2dc65c79d4",
+      "bytes": 611826,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/nvram-accept-e3-confirm.json",
+      "sha256": "8290aee9c3b2fd71e371d7df87728399a4d06c1a44299f3131b97a2dc65c79d4",
+      "bytes": 611826,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/nvram-accept-e3-control-edit.json",
+      "sha256": "8290aee9c3b2fd71e371d7df87728399a4d06c1a44299f3131b97a2dc65c79d4",
+      "bytes": 611826,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/nvram-accept-e3-normal.json",
+      "sha256": "8290aee9c3b2fd71e371d7df87728399a4d06c1a44299f3131b97a2dc65c79d4",
+      "bytes": 611826,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/nvram-accept-e3-store-stock.json",
+      "sha256": "8290aee9c3b2fd71e371d7df87728399a4d06c1a44299f3131b97a2dc65c79d4",
+      "bytes": 611826,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/nvram-accept-e3-store-z5.json",
+      "sha256": "8290aee9c3b2fd71e371d7df87728399a4d06c1a44299f3131b97a2dc65c79d4",
+      "bytes": 611826,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/nvram-custom-e2.json",
+      "sha256": "8290aee9c3b2fd71e371d7df87728399a4d06c1a44299f3131b97a2dc65c79d4",
+      "bytes": 611826,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/nvram-route-e1.json",
+      "sha256": "8290aee9c3b2fd71e371d7df87728399a4d06c1a44299f3131b97a2dc65c79d4",
+      "bytes": 611826,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/nvram-stock-m1.json",
+      "sha256": "9dc0a319ac5c0fde8f2b1f094f3700e959d6e78bea02b6be9ad10ce0a40bb170",
+      "bytes": 611828,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/nvram-stock-m2.json",
+      "sha256": "8290aee9c3b2fd71e371d7df87728399a4d06c1a44299f3131b97a2dc65c79d4",
+      "bytes": 611826,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/overlay-changed-bytes.csv",
+      "sha256": "83a9e0d42cf0e314d6d76013520788a7403da3be594542ed50de8da09707d56e",
+      "bytes": 268498,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/profile-layout.md",
+      "sha256": "45336f7deb7142f9dcb728758c5c084dda8b8f809be399335d1889ee3a478c5b",
+      "bytes": 2943,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/ram-gaps-m1.json",
+      "sha256": "70507259d433ab355e73921567ebb0a6658aa819177ccd8812799281e88b6ed8",
+      "bytes": 7121,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/route-e1-00-baseline-mode-off.png",
+      "sha256": "ff0a276eb6db88237146b9b048a0faecf263ac295aaa0d1a8a1ef4697177a9de",
+      "bytes": 6799,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/route-e1-01-afon-open.png",
+      "sha256": "b7b2d33a5d1c1716285b5cce0a4e309825e79ba3f2be9fa2346dec447948d08b",
+      "bytes": 4522,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/route-e1-02-afon-dial.png",
+      "sha256": "31630274d6a55e9830d1c3b29984807b4d01dae60e2542f8553862a41f8402ce",
+      "bytes": 6574,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/route-e1-03-afon-right-1.png",
+      "sha256": "83a1ed24b968dc3ada386fa1fdad94c7c0718e94741b84695c93a7995c51f559",
+      "bytes": 4985,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/route-e1-04-afon-right-2.png",
+      "sha256": "1a1a405b9f6dbc5b87b14c663091702e9b0642e4f1ed89594f372fac54bcf82e",
+      "bytes": 4648,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/route-e1-05-afon-type-0.png",
+      "sha256": "279120c0a1d68c0545edb63d2f01450ad0bb43e6c77161fe4a9d26746480ea12",
+      "bytes": 6611,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/route-e1-06-afon-type-1.png",
+      "sha256": "09822a4335b9fdaf4543bf5daebad533d92bdaadf4e200acf31f6a07ff6a28eb",
+      "bytes": 6578,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/route-e1-07-afon-type-2.png",
+      "sha256": "2455495f67d63d430d58786bd730c87bbcfc0dbecef3f09673a5afaaa79d94fb",
+      "bytes": 6706,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/route-e1-08-afon-type-3.png",
+      "sha256": "acc58f01a19d344cab3d1c0260f7b6d7e590339b7ce438e8e689cade9f4135be",
+      "bytes": 5943,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/route-e1-09-afon-sub.png",
+      "sha256": "2455495f67d63d430d58786bd730c87bbcfc0dbecef3f09673a5afaaa79d94fb",
+      "bytes": 6706,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/route-e1-10-afon-ok.png",
+      "sha256": "a27f7259f5fc911ec6dc03675e5100c88163d55b671eba4c27b9d2dcb581e591",
+      "bytes": 14926,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/route-e1-11-half-open.png",
+      "sha256": "9c63127a3573186a1f10a0cebaa2656f54e4740a41ae6e52247de39b91188f6a",
+      "bytes": 7274,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/route-e1-12-half-dial.png",
+      "sha256": "8685e6a405de125117e27a85a43595e00692fe572dd950151c846c36e1c3825d",
+      "bytes": 6150,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/route-e1-13-half-right.png",
+      "sha256": "8685e6a405de125117e27a85a43595e00692fe572dd950151c846c36e1c3825d",
+      "bytes": 6150,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/route-e1-14-half-ok.png",
+      "sha256": "dc7badd44f4699885052b49ab01cc24dbf6c4270009958ed79a2a3ab22d077eb",
+      "bytes": 15867,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/route-e1.jsonl",
+      "sha256": "9c5f60cd6d2b6bd1350e66ce693a4a8699c828d6fb342f1f76f109a4eb8b0399",
+      "bytes": 12829,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/section-rows-e1.json",
+      "sha256": "6473466d74707c158f91a9db30156f775da727022034f6dcaee94e20fd924a00",
+      "bytes": 135,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/static-keys-m1.txt",
+      "sha256": "ebdf5bfc3f0acf6ed8f111226c24144923ef52a58b24c6c22f94f0fcd0ed58eb",
+      "bytes": 6209,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-edit-m2.jsonl",
+      "sha256": "113d8395059e8dd00160018513c6f6dc65e3edf5f80cb89ff05e42c4885a52c0",
+      "bytes": 123233,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-000-baseline.png",
+      "sha256": "ff0a276eb6db88237146b9b048a0faecf263ac295aaa0d1a8a1ef4697177a9de",
+      "bytes": 6799,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-001-open-ok.png",
+      "sha256": "e11b03eee3854132f35ca8acac60506ba0b927f58fb91d7ea68a76b7bad872e1",
+      "bytes": 19234,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-002-escape-0.png",
+      "sha256": "542ed40b758684c43091a6fd9b1f1634cf1e5084f6cfa9a93c3cbeda0cec9715",
+      "bytes": 14163,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-003-escape-1.png",
+      "sha256": "dc7badd44f4699885052b49ab01cc24dbf6c4270009958ed79a2a3ab22d077eb",
+      "bytes": 15867,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-004-open-up.png",
+      "sha256": "9c63127a3573186a1f10a0cebaa2656f54e4740a41ae6e52247de39b91188f6a",
+      "bytes": 7274,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-005-open-up-right.png",
+      "sha256": "9c63127a3573186a1f10a0cebaa2656f54e4740a41ae6e52247de39b91188f6a",
+      "bytes": 7274,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-006-open-up-up.png",
+      "sha256": "9c63127a3573186a1f10a0cebaa2656f54e4740a41ae6e52247de39b91188f6a",
+      "bytes": 7274,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-007-open-up-left.png",
+      "sha256": "9c63127a3573186a1f10a0cebaa2656f54e4740a41ae6e52247de39b91188f6a",
+      "bytes": 7274,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-008-open-up-down.png",
+      "sha256": "9c63127a3573186a1f10a0cebaa2656f54e4740a41ae6e52247de39b91188f6a",
+      "bytes": 7274,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-009-open-up-info.png",
+      "sha256": "9c63127a3573186a1f10a0cebaa2656f54e4740a41ae6e52247de39b91188f6a",
+      "bytes": 7274,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-010-open-up-js_press.png",
+      "sha256": "9c63127a3573186a1f10a0cebaa2656f54e4740a41ae6e52247de39b91188f6a",
+      "bytes": 7274,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-011-open-up-dial-main.png",
+      "sha256": "c3ab4888b249c2a39dadcdc4a99fad34a32e23432ef77a0f1fecd9e29f6a35e1",
+      "bytes": 6303,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-012-open-up-dial-sub.png",
+      "sha256": "9c63127a3573186a1f10a0cebaa2656f54e4740a41ae6e52247de39b91188f6a",
+      "bytes": 7274,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-013-open-up-iso.png",
+      "sha256": "9c63127a3573186a1f10a0cebaa2656f54e4740a41ae6e52247de39b91188f6a",
+      "bytes": 7274,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-014-open-up-ok.png",
+      "sha256": "a27f7259f5fc911ec6dc03675e5100c88163d55b671eba4c27b9d2dcb581e591",
+      "bytes": 14926,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-015-open-up-menu.png",
+      "sha256": "542ed40b758684c43091a6fd9b1f1634cf1e5084f6cfa9a93c3cbeda0cec9715",
+      "bytes": 14163,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-016-escape-0.png",
+      "sha256": "dc7badd44f4699885052b49ab01cc24dbf6c4270009958ed79a2a3ab22d077eb",
+      "bytes": 15867,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-017-open-right.png",
+      "sha256": "9c63127a3573186a1f10a0cebaa2656f54e4740a41ae6e52247de39b91188f6a",
+      "bytes": 7274,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-018-open-right-right.png",
+      "sha256": "9c63127a3573186a1f10a0cebaa2656f54e4740a41ae6e52247de39b91188f6a",
+      "bytes": 7274,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-019-open-right-up.png",
+      "sha256": "9c63127a3573186a1f10a0cebaa2656f54e4740a41ae6e52247de39b91188f6a",
+      "bytes": 7274,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-020-open-right-left.png",
+      "sha256": "9c63127a3573186a1f10a0cebaa2656f54e4740a41ae6e52247de39b91188f6a",
+      "bytes": 7274,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-021-open-right-down.png",
+      "sha256": "9c63127a3573186a1f10a0cebaa2656f54e4740a41ae6e52247de39b91188f6a",
+      "bytes": 7274,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-022-open-right-info.png",
+      "sha256": "9c63127a3573186a1f10a0cebaa2656f54e4740a41ae6e52247de39b91188f6a",
+      "bytes": 7274,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-023-open-right-js_press.png",
+      "sha256": "9c63127a3573186a1f10a0cebaa2656f54e4740a41ae6e52247de39b91188f6a",
+      "bytes": 7274,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-024-open-right-dial-main.png",
+      "sha256": "c3ab4888b249c2a39dadcdc4a99fad34a32e23432ef77a0f1fecd9e29f6a35e1",
+      "bytes": 6303,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-025-open-right-dial-sub.png",
+      "sha256": "9c63127a3573186a1f10a0cebaa2656f54e4740a41ae6e52247de39b91188f6a",
+      "bytes": 7274,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-026-open-right-iso.png",
+      "sha256": "9c63127a3573186a1f10a0cebaa2656f54e4740a41ae6e52247de39b91188f6a",
+      "bytes": 7274,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-027-open-right-ok.png",
+      "sha256": "a27f7259f5fc911ec6dc03675e5100c88163d55b671eba4c27b9d2dcb581e591",
+      "bytes": 14926,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-028-open-right-menu.png",
+      "sha256": "542ed40b758684c43091a6fd9b1f1634cf1e5084f6cfa9a93c3cbeda0cec9715",
+      "bytes": 14163,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-029-escape-0.png",
+      "sha256": "dc7badd44f4699885052b49ab01cc24dbf6c4270009958ed79a2a3ab22d077eb",
+      "bytes": 15867,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-030-open-left.png",
+      "sha256": "9c63127a3573186a1f10a0cebaa2656f54e4740a41ae6e52247de39b91188f6a",
+      "bytes": 7274,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-031-open-left-right.png",
+      "sha256": "9c63127a3573186a1f10a0cebaa2656f54e4740a41ae6e52247de39b91188f6a",
+      "bytes": 7274,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-032-open-left-up.png",
+      "sha256": "9c63127a3573186a1f10a0cebaa2656f54e4740a41ae6e52247de39b91188f6a",
+      "bytes": 7274,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-033-open-left-left.png",
+      "sha256": "9c63127a3573186a1f10a0cebaa2656f54e4740a41ae6e52247de39b91188f6a",
+      "bytes": 7274,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-034-open-left-down.png",
+      "sha256": "9c63127a3573186a1f10a0cebaa2656f54e4740a41ae6e52247de39b91188f6a",
+      "bytes": 7274,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-035-open-left-info.png",
+      "sha256": "9c63127a3573186a1f10a0cebaa2656f54e4740a41ae6e52247de39b91188f6a",
+      "bytes": 7274,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-036-open-left-js_press.png",
+      "sha256": "9c63127a3573186a1f10a0cebaa2656f54e4740a41ae6e52247de39b91188f6a",
+      "bytes": 7274,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-037-open-left-dial-main.png",
+      "sha256": "c3ab4888b249c2a39dadcdc4a99fad34a32e23432ef77a0f1fecd9e29f6a35e1",
+      "bytes": 6303,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-038-open-left-dial-sub.png",
+      "sha256": "9c63127a3573186a1f10a0cebaa2656f54e4740a41ae6e52247de39b91188f6a",
+      "bytes": 7274,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-039-open-left-iso.png",
+      "sha256": "9c63127a3573186a1f10a0cebaa2656f54e4740a41ae6e52247de39b91188f6a",
+      "bytes": 7274,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-040-open-left-ok.png",
+      "sha256": "a27f7259f5fc911ec6dc03675e5100c88163d55b671eba4c27b9d2dcb581e591",
+      "bytes": 14926,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-041-open-left-menu.png",
+      "sha256": "542ed40b758684c43091a6fd9b1f1634cf1e5084f6cfa9a93c3cbeda0cec9715",
+      "bytes": 14163,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-042-escape-0.png",
+      "sha256": "dc7badd44f4699885052b49ab01cc24dbf6c4270009958ed79a2a3ab22d077eb",
+      "bytes": 15867,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-043-open-down.png",
+      "sha256": "9c63127a3573186a1f10a0cebaa2656f54e4740a41ae6e52247de39b91188f6a",
+      "bytes": 7274,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-044-open-down-right.png",
+      "sha256": "9c63127a3573186a1f10a0cebaa2656f54e4740a41ae6e52247de39b91188f6a",
+      "bytes": 7274,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-045-open-down-up.png",
+      "sha256": "9c63127a3573186a1f10a0cebaa2656f54e4740a41ae6e52247de39b91188f6a",
+      "bytes": 7274,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-046-open-down-left.png",
+      "sha256": "9c63127a3573186a1f10a0cebaa2656f54e4740a41ae6e52247de39b91188f6a",
+      "bytes": 7274,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-047-open-down-down.png",
+      "sha256": "9c63127a3573186a1f10a0cebaa2656f54e4740a41ae6e52247de39b91188f6a",
+      "bytes": 7274,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-048-open-down-info.png",
+      "sha256": "9c63127a3573186a1f10a0cebaa2656f54e4740a41ae6e52247de39b91188f6a",
+      "bytes": 7274,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-049-open-down-js_press.png",
+      "sha256": "9c63127a3573186a1f10a0cebaa2656f54e4740a41ae6e52247de39b91188f6a",
+      "bytes": 7274,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-050-open-down-dial-main.png",
+      "sha256": "c3ab4888b249c2a39dadcdc4a99fad34a32e23432ef77a0f1fecd9e29f6a35e1",
+      "bytes": 6303,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-051-open-down-dial-sub.png",
+      "sha256": "9c63127a3573186a1f10a0cebaa2656f54e4740a41ae6e52247de39b91188f6a",
+      "bytes": 7274,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-052-open-down-iso.png",
+      "sha256": "9c63127a3573186a1f10a0cebaa2656f54e4740a41ae6e52247de39b91188f6a",
+      "bytes": 7274,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-053-open-down-ok.png",
+      "sha256": "a27f7259f5fc911ec6dc03675e5100c88163d55b671eba4c27b9d2dcb581e591",
+      "bytes": 14926,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-054-open-down-menu.png",
+      "sha256": "542ed40b758684c43091a6fd9b1f1634cf1e5084f6cfa9a93c3cbeda0cec9715",
+      "bytes": 14163,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-055-escape-0.png",
+      "sha256": "dc7badd44f4699885052b49ab01cc24dbf6c4270009958ed79a2a3ab22d077eb",
+      "bytes": 15867,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-056-open-info.png",
+      "sha256": "3ffb0d8a8e75d22c6611f016583ee9fe5d211bafc1f59dd74653ec3377588a24",
+      "bytes": 13412,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-057-open-js_press.png",
+      "sha256": "3ffb0d8a8e75d22c6611f016583ee9fe5d211bafc1f59dd74653ec3377588a24",
+      "bytes": 13412,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-058-open-js_up.png",
+      "sha256": "3ffb0d8a8e75d22c6611f016583ee9fe5d211bafc1f59dd74653ec3377588a24",
+      "bytes": 13412,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-059-open-delete.png",
+      "sha256": "3ffb0d8a8e75d22c6611f016583ee9fe5d211bafc1f59dd74653ec3377588a24",
+      "bytes": 13412,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-060-open-afmeter.png",
+      "sha256": "3ffb0d8a8e75d22c6611f016583ee9fe5d211bafc1f59dd74653ec3377588a24",
+      "bytes": 13412,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-061-open-lvkey.png",
+      "sha256": "3ffb0d8a8e75d22c6611f016583ee9fe5d211bafc1f59dd74653ec3377588a24",
+      "bytes": 13412,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-062-menu.png",
+      "sha256": "542ed40b758684c43091a6fd9b1f1634cf1e5084f6cfa9a93c3cbeda0cec9715",
+      "bytes": 14163,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-063-left-0.png",
+      "sha256": "dcaca24e6d0790189ef076631128a252731ed9e1feda703516d226e07e753560",
+      "bytes": 18944,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-064-left-1.png",
+      "sha256": "c6a699de5d1857525e7a00e94d53936e4c067cb0c05654ec518bb6ba2aef0970",
+      "bytes": 16636,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-065-left-2.png",
+      "sha256": "cbac7ce631f21d8211ee968b33d6e5137ec2dea5bb36fa2c88d6877104f17124",
+      "bytes": 17134,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-066-left-3.png",
+      "sha256": "85cff2f79ef134552e12b123687f29ed7d7e124bec54b00b1ee384e3caf9ebe0",
+      "bytes": 15461,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-067-left-4.png",
+      "sha256": "1b63c462c0f711f6eb84bcd1009b10d3df572164c7318189f732f058a9fa4644",
+      "bytes": 13107,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-068-left-5.png",
+      "sha256": "80db5b503ccf3eecf9149fd3baaf62bfe48c92f9538e9a01a3d1aff67c83418a",
+      "bytes": 12782,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-069-left-6.png",
+      "sha256": "29d07d70dc92f25cf30dec0c0c26f6b105c3f64437c064b7f6fc836c22667b79",
+      "bytes": 18139,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-070-left-7.png",
+      "sha256": "318f49f1de68251aff8bb558924aa7d7663258a7fc31da4897147b884ed3f77c",
+      "bytes": 8869,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-071-left-8.png",
+      "sha256": "fb44be426d751d77e45cf33927fc46b96bb50e1b38958489cc9fc02414659e6e",
+      "bytes": 15931,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-072-left-9.png",
+      "sha256": "46358a19276604963631e8ea04de0336f3420c5dc6f436159598144f2a74cf4b",
+      "bytes": 15320,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-073-left-10.png",
+      "sha256": "b258d5a935d701fadc164dcc0ebc84e2b6e9fd0b37f0afb2d24bbaef2a18cbfa",
+      "bytes": 11513,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-074-left-11.png",
+      "sha256": "2fa322003891566e5a88a86cb62a7448e067ff1b12f748c715a6ceeadac7dac7",
+      "bytes": 14923,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-075-left-12.png",
+      "sha256": "26958b4832108564c475fa0163c82c762a0ff77f560b8142a4ab4268d66dbd38",
+      "bytes": 16383,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-076-left-13.png",
+      "sha256": "3436dd3d7db5e60bc892f6fe30db98d614f9dbed77ee20fd82187ed3ad8188a2",
+      "bytes": 22020,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-077-left-14.png",
+      "sha256": "f5d92ea55199e18af55dab08f21ba941dc4fdb2ce4430069a624c1f7c6ba7877",
+      "bytes": 15655,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-078-left-15.png",
+      "sha256": "e8ac865af9f59a330ecbba1e9aada16968d56055d969d6eb162d097d0471b14d",
+      "bytes": 19547,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-079-row-0-ok.png",
+      "sha256": "1e298a1e8b7ba7874eb715d9610fa2a93e91eb08d0d2d0044260938b460862a2",
+      "bytes": 18598,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-080-row-0-right.png",
+      "sha256": "1e298a1e8b7ba7874eb715d9610fa2a93e91eb08d0d2d0044260938b460862a2",
+      "bytes": 18598,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-081-row-0-up.png",
+      "sha256": "24abc8818fa86921a46228d16e0fe7cfbae6054d2b8ff53ea532f9caf8a431f1",
+      "bytes": 14450,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-082-row-0-left.png",
+      "sha256": "24abc8818fa86921a46228d16e0fe7cfbae6054d2b8ff53ea532f9caf8a431f1",
+      "bytes": 14450,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-083-row-0-down.png",
+      "sha256": "1e298a1e8b7ba7874eb715d9610fa2a93e91eb08d0d2d0044260938b460862a2",
+      "bytes": 18598,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-084-row-0-info.png",
+      "sha256": "1e298a1e8b7ba7874eb715d9610fa2a93e91eb08d0d2d0044260938b460862a2",
+      "bytes": 18598,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-085-row-0-js_press.png",
+      "sha256": "1e298a1e8b7ba7874eb715d9610fa2a93e91eb08d0d2d0044260938b460862a2",
+      "bytes": 18598,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-086-row-0-dial-main.png",
+      "sha256": "f784fc67fa3ee1bc0e7b751407fa7b5ca4d139f4ddfad0dd192e0fe3ff904a7d",
+      "bytes": 19528,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-087-row-0-dial-sub.png",
+      "sha256": "1e298a1e8b7ba7874eb715d9610fa2a93e91eb08d0d2d0044260938b460862a2",
+      "bytes": 18598,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-088-row-0-iso.png",
+      "sha256": "1e298a1e8b7ba7874eb715d9610fa2a93e91eb08d0d2d0044260938b460862a2",
+      "bytes": 18598,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-089-row-0-ok.png",
+      "sha256": "c3f3b63beb2ba0e05124165036221450bbbc9afe2068602f8ce80fdc95e461c2",
+      "bytes": 18464,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-090-row-0-cancel.png",
+      "sha256": "e8ac865af9f59a330ecbba1e9aada16968d56055d969d6eb162d097d0471b14d",
+      "bytes": 19547,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-091-row-0-down.png",
+      "sha256": "83736bcc8ede09157fc12d99a497e170cb1fe7a565f78d65e5246c01b016b4d9",
+      "bytes": 19572,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-092-row-1-ok.png",
+      "sha256": "0c4ee32f31bcae9e4c3491c8afc9cd311e5ec4dadf88435b4b7b5b978774810a",
+      "bytes": 10044,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-093-row-1-right.png",
+      "sha256": "0c4ee32f31bcae9e4c3491c8afc9cd311e5ec4dadf88435b4b7b5b978774810a",
+      "bytes": 10044,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-094-row-1-up.png",
+      "sha256": "0e0b2995b7c6ee2bfbfe6992cb3c017c2edf6bd4d53e55afe30960b9c5eba299",
+      "bytes": 10050,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-095-row-1-left.png",
+      "sha256": "0e0b2995b7c6ee2bfbfe6992cb3c017c2edf6bd4d53e55afe30960b9c5eba299",
+      "bytes": 10050,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-096-row-1-down.png",
+      "sha256": "0c4ee32f31bcae9e4c3491c8afc9cd311e5ec4dadf88435b4b7b5b978774810a",
+      "bytes": 10044,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-097-row-1-info.png",
+      "sha256": "0c4ee32f31bcae9e4c3491c8afc9cd311e5ec4dadf88435b4b7b5b978774810a",
+      "bytes": 10044,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-098-row-1-js_press.png",
+      "sha256": "0c4ee32f31bcae9e4c3491c8afc9cd311e5ec4dadf88435b4b7b5b978774810a",
+      "bytes": 10044,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-099-row-1-dial-main.png",
+      "sha256": "0e0b2995b7c6ee2bfbfe6992cb3c017c2edf6bd4d53e55afe30960b9c5eba299",
+      "bytes": 10050,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-100-row-1-dial-sub.png",
+      "sha256": "0c4ee32f31bcae9e4c3491c8afc9cd311e5ec4dadf88435b4b7b5b978774810a",
+      "bytes": 10044,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-101-row-1-iso.png",
+      "sha256": "0c4ee32f31bcae9e4c3491c8afc9cd311e5ec4dadf88435b4b7b5b978774810a",
+      "bytes": 10044,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-102-row-1-ok.png",
+      "sha256": "b1b727183233a152e00069a815ffbe0ded0fef428944bd5ada4d150933d299fc",
+      "bytes": 10207,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-103-row-1-cancel.png",
+      "sha256": "83736bcc8ede09157fc12d99a497e170cb1fe7a565f78d65e5246c01b016b4d9",
+      "bytes": 19572,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-104-row-1-down.png",
+      "sha256": "cd8fc64b6f15707521c3fc52a97c1ea268e917f53cb94b900353c098f565f208",
+      "bytes": 19599,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-105-row-2-ok.png",
+      "sha256": "afb146db885825314ba3a418d8de715d8219cec91bce3b34bb0f5ad5df3b4146",
+      "bytes": 10387,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-106-row-2-right.png",
+      "sha256": "8d01af297de030126ed279b2a33c742ee41e1b1028d5dfeda4869e9dd0e630c7",
+      "bytes": 13269,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-107-row-2-up.png",
+      "sha256": "49f5f8b4088e2c03124b823897387f00aded41d855831206211433e8477751a7",
+      "bytes": 13298,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-108-row-2-left.png",
+      "sha256": "afb146db885825314ba3a418d8de715d8219cec91bce3b34bb0f5ad5df3b4146",
+      "bytes": 10387,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-109-row-2-down.png",
+      "sha256": "c319531dace33d82e3e6388dc73baa89288bf7c9c65e252d9e3175d88f907d6d",
+      "bytes": 10395,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-110-row-2-info.png",
+      "sha256": "c319531dace33d82e3e6388dc73baa89288bf7c9c65e252d9e3175d88f907d6d",
+      "bytes": 10395,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-111-row-2-js_press.png",
+      "sha256": "c319531dace33d82e3e6388dc73baa89288bf7c9c65e252d9e3175d88f907d6d",
+      "bytes": 10395,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-112-row-2-dial-main.png",
+      "sha256": "afb146db885825314ba3a418d8de715d8219cec91bce3b34bb0f5ad5df3b4146",
+      "bytes": 10387,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-113-row-2-dial-sub.png",
+      "sha256": "c319531dace33d82e3e6388dc73baa89288bf7c9c65e252d9e3175d88f907d6d",
+      "bytes": 10395,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-114-row-2-iso.png",
+      "sha256": "c319531dace33d82e3e6388dc73baa89288bf7c9c65e252d9e3175d88f907d6d",
+      "bytes": 10395,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-115-row-2-ok.png",
+      "sha256": "aa4888090648638ceb46b034ffbcb640155038747579f71aa1e164c73d0f9548",
+      "bytes": 10227,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-116-row-2-cancel.png",
+      "sha256": "cd8fc64b6f15707521c3fc52a97c1ea268e917f53cb94b900353c098f565f208",
+      "bytes": 19599,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-117-row-2-down.png",
+      "sha256": "904718bab1c9314244ac7f33c1f0141ad29cf4544b47a5091c0b01bbb9cec994",
+      "bytes": 19553,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-118-row-3-ok.png",
+      "sha256": "cc49e70a1c955e027be551dd26b6755208222d29c20ff2cf759e5ba113d8c6de",
+      "bytes": 9500,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-119-row-3-right.png",
+      "sha256": "cc49e70a1c955e027be551dd26b6755208222d29c20ff2cf759e5ba113d8c6de",
+      "bytes": 9500,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-120-row-3-up.png",
+      "sha256": "8e0555c03d919759e77da0a7fc38d194ba5cd9436477c364e599945c492e0ab7",
+      "bytes": 9517,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-121-row-3-left.png",
+      "sha256": "8e0555c03d919759e77da0a7fc38d194ba5cd9436477c364e599945c492e0ab7",
+      "bytes": 9517,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-122-row-3-down.png",
+      "sha256": "cc49e70a1c955e027be551dd26b6755208222d29c20ff2cf759e5ba113d8c6de",
+      "bytes": 9500,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-123-row-3-info.png",
+      "sha256": "cc49e70a1c955e027be551dd26b6755208222d29c20ff2cf759e5ba113d8c6de",
+      "bytes": 9500,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-124-row-3-js_press.png",
+      "sha256": "cc49e70a1c955e027be551dd26b6755208222d29c20ff2cf759e5ba113d8c6de",
+      "bytes": 9500,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-125-row-3-dial-main.png",
+      "sha256": "8e0555c03d919759e77da0a7fc38d194ba5cd9436477c364e599945c492e0ab7",
+      "bytes": 9517,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-126-row-3-dial-sub.png",
+      "sha256": "cc49e70a1c955e027be551dd26b6755208222d29c20ff2cf759e5ba113d8c6de",
+      "bytes": 9500,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-127-row-3-iso.png",
+      "sha256": "cc49e70a1c955e027be551dd26b6755208222d29c20ff2cf759e5ba113d8c6de",
+      "bytes": 9500,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-128-row-3-ok.png",
+      "sha256": "92bbb8a89ba947410c132fd7fd0d61cd810b6dc587c17d21a301cdb86672af47",
+      "bytes": 10219,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-129-row-3-cancel.png",
+      "sha256": "cc49e70a1c955e027be551dd26b6755208222d29c20ff2cf759e5ba113d8c6de",
+      "bytes": 9500,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-130-escape-0.png",
+      "sha256": "904718bab1c9314244ac7f33c1f0141ad29cf4544b47a5091c0b01bbb9cec994",
+      "bytes": 19553,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-131-escape-1.png",
+      "sha256": "606fb51fce7fc84120425addf0a1a9dff2ccec4c08923c518ccc15c5f13ca1bf",
+      "bytes": 17358,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-132-rotate-1.png",
+      "sha256": "606fb51fce7fc84120425addf0a1a9dff2ccec4c08923c518ccc15c5f13ca1bf",
+      "bytes": 17358,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m1-133-monitor-0.png",
+      "sha256": "606fb51fce7fc84120425addf0a1a9dff2ccec4c08923c518ccc15c5f13ca1bf",
+      "bytes": 17358,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m2-00-baseline.png",
+      "sha256": "ff0a276eb6db88237146b9b048a0faecf263ac295aaa0d1a8a1ef4697177a9de",
+      "bytes": 6799,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m2-01-open-up.png",
+      "sha256": "9c63127a3573186a1f10a0cebaa2656f54e4740a41ae6e52247de39b91188f6a",
+      "bytes": 7274,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m2-02-dial-single.png",
+      "sha256": "c3ab4888b249c2a39dadcdc4a99fad34a32e23432ef77a0f1fecd9e29f6a35e1",
+      "bytes": 6303,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m2-03-move-right-3.png",
+      "sha256": "93f3de43189134c6d901f1b0b19ce3ed96e948345c75c6de4725eaf7a23fa1d2",
+      "bytes": 4543,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m2-04-move-right-4.png",
+      "sha256": "fcbb3331d6c92bb19c0935a6acef75d1af70a9596aeb913a19e64b969b268861",
+      "bytes": 4543,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m2-05-move-right-5.png",
+      "sha256": "08e4abaac0c9f67c879feac87ed623a126dfe7ebaf6ff52f4669af4d86099aa5",
+      "bytes": 4547,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m2-06-move-js_right-6.png",
+      "sha256": "6a792d4d91d7e20256033aea0a5353dcda36686fe6ca60c7d8ffb39a1d87666a",
+      "bytes": 6309,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m2-07-move-js_up-7.png",
+      "sha256": "6a792d4d91d7e20256033aea0a5353dcda36686fe6ca60c7d8ffb39a1d87666a",
+      "bytes": 6309,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m2-08-dial-0.png",
+      "sha256": "9378a5a77e14ae6e3f77145edb0f71eb4081330f5ed36b9a515e7d5b9060de2a",
+      "bytes": 6570,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m2-09-dial-1.png",
+      "sha256": "9448496a1fb685080e3a2423b01938cf6625f92defde2f124c6f4672fb01d6c6",
+      "bytes": 7539,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m2-10-dial-2.png",
+      "sha256": "f59b74d6454d800e4a42b4d7ccfbb3a431cbddfed692c8769e5bfb869bd8ad7f",
+      "bytes": 7567,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m2-11-dial-3.png",
+      "sha256": "4ebd780a4a42dcf2ac88c916eb680da116acfe4278c7936f82b14d51923fd160",
+      "bytes": 7916,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m2-12-dial-4.png",
+      "sha256": "9c63127a3573186a1f10a0cebaa2656f54e4740a41ae6e52247de39b91188f6a",
+      "bytes": 7274,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m2-13-dial-5.png",
+      "sha256": "6a792d4d91d7e20256033aea0a5353dcda36686fe6ca60c7d8ffb39a1d87666a",
+      "bytes": 6309,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m2-14-dial-6.png",
+      "sha256": "9378a5a77e14ae6e3f77145edb0f71eb4081330f5ed36b9a515e7d5b9060de2a",
+      "bytes": 6570,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m2-15-dial-7.png",
+      "sha256": "9448496a1fb685080e3a2423b01938cf6625f92defde2f124c6f4672fb01d6c6",
+      "bytes": 7539,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m2-16-dial-8.png",
+      "sha256": "f59b74d6454d800e4a42b4d7ccfbb3a431cbddfed692c8769e5bfb869bd8ad7f",
+      "bytes": 7567,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m2-17-sub-on-last.png",
+      "sha256": "9448496a1fb685080e3a2423b01938cf6625f92defde2f124c6f4672fb01d6c6",
+      "bytes": 7539,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m2-18-info-on-last.png",
+      "sha256": "9448496a1fb685080e3a2423b01938cf6625f92defde2f124c6f4672fb01d6c6",
+      "bytes": 7539,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m2-19-confirm-ok.png",
+      "sha256": "a27f7259f5fc911ec6dc03675e5100c88163d55b671eba4c27b9d2dcb581e591",
+      "bytes": 14926,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m2-20-reopen.png",
+      "sha256": "7f52c0578422bb59b5b3210b265711b66cc221832e7414f41341d18b5030acd8",
+      "bytes": 5833,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m2-21-reopen-dial.png",
+      "sha256": "43d47b88d0be305158c15c30be3abc10d48f316b049558683dc40ea3210d93e7",
+      "bytes": 7559,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-m2-22-cancel-menu.png",
+      "sha256": "542ed40b758684c43091a6fd9b1f1634cf1e5084f6cfa9a93c3cbeda0cec9715",
+      "bytes": 14163,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-probe-m1.jsonl",
+      "sha256": "b35d036a27192b11c20aa2065c488535d7bf2bb473b1f9ddc15dcbd37c1a1fcf",
+      "bytes": 749312,
+      "hashed": "later"
+    },
+    {
+      "path": "work/out/stock-target-screen.md",
+      "sha256": "43c9c1bf0c0b1b6bbd243d485a3493c4ae530cafa85857d95a9b15b2024d75ab",
+      "bytes": 6122,
+      "hashed": "later"
+    }
+  ],
+  "commands": [
+    {
+      "n": "01",
+      "status": 0,
+      "spawn": "python -I work/scripts/gap_scan_m1.py",
+      "scripts": [
+        {
+          "path": "work/scripts/gap_scan_m1.py",
+          "sha256": "9fc878a197858c327ce0ee7a24c1126862aec7969c0708aa11cd497ac16888c0",
+          "bytes": 3093
+        }
+      ],
+      "wrapper_sha256": "34e42c59c553a1e4213e2b223034bd31142c7000c6aef4aac2ac9d5e7f1fe0ef"
+    },
+    {
+      "n": "02",
+      "status": 0,
+      "spawn": "python -I work/scripts/static_keys_m1.py",
+      "scripts": [
+        {
+          "path": "work/scripts/static_keys_m1.py",
+          "sha256": "95a316df3b163d813fa96e58c78c0278621c79226b5f8589e0e2768a9a514dd2",
+          "bytes": 1997
+        }
+      ],
+      "wrapper_sha256": "34e42c59c553a1e4213e2b223034bd31142c7000c6aef4aac2ac9d5e7f1fe0ef"
+    },
+    {
+      "n": "03",
+      "status": 0,
+      "spawn": "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe work/scripts/stock_probe_m1.mjs om-emu",
+      "scripts": [
+        {
+          "path": "work/scripts/stock_probe_m1.mjs",
+          "sha256": "668788beab5a329a390090c63a36a800e3df1e74dd8ec8085c85d0e95ce91630",
+          "bytes": 17569
+        }
+      ],
+      "wrapper_sha256": "34e42c59c553a1e4213e2b223034bd31142c7000c6aef4aac2ac9d5e7f1fe0ef"
+    },
+    {
+      "n": "04",
+      "status": 0,
+      "spawn": "python -I work/scripts/summarize_m1.py",
+      "scripts": [
+        {
+          "path": "work/scripts/summarize_m1.py",
+          "sha256": "612f95b8493599b636fb8e85e6576eb2133ea14bcdf9fd0729420e319b32e733",
+          "bytes": 1115
+        }
+      ],
+      "wrapper_sha256": "34e42c59c553a1e4213e2b223034bd31142c7000c6aef4aac2ac9d5e7f1fe0ef"
+    },
+    {
+      "n": "05",
+      "status": 0,
+      "spawn": "cmd.exe /d /c tools\\bin\\run-ghidra.cmd -postScript DisasmStockM2.java 6041937f 48 work\\out\\disasm-mapped-m2.txt 604193c0 36 work\\out\\disasm-setcall-m2.txt 6041a202 40 work\\out\\disasm-wrap-m2.txt 60063380 28 work\\out\\disasm-getter-m2.txt 60063431 36 work\\out\\disasm-cellset-m2.txt -log work\\out\\ghidra-m2.log",
+      "scripts": [
+        {
+          "path": "DisasmStockM2.java",
+          "sha256": "e488a5772cd7e7d58fe41a331ff88019b2ce7336672329fd7fcd46fffb3dc6ea",
+          "bytes": 2111
+        }
+      ],
+      "wrapper_sha256": "34e42c59c553a1e4213e2b223034bd31142c7000c6aef4aac2ac9d5e7f1fe0ef"
+    },
+    {
+      "n": "06",
+      "status": 0,
+      "spawn": "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe work/scripts/stock_edit_m2.mjs om-emu",
+      "scripts": [
+        {
+          "path": "work/scripts/stock_edit_m2.mjs",
+          "sha256": "f1f349b544cc1b64067c4da15584b94562a49286ee8b7e154c98e18e8cefc313",
+          "bytes": 8043
+        }
+      ],
+      "wrapper_sha256": "34e42c59c553a1e4213e2b223034bd31142c7000c6aef4aac2ac9d5e7f1fe0ef"
+    },
+    {
+      "n": "07",
+      "status": 0,
+      "spawn": "python -I work/scripts/summarize_m2.py",
+      "scripts": [
+        {
+          "path": "work/scripts/summarize_m2.py",
+          "sha256": "240dd38f6a7ce5181f892f8c695284d59b73386c8d3e8c47c1d7ec8a49004c25",
+          "bytes": 1421
+        }
+      ],
+      "wrapper_sha256": "34e42c59c553a1e4213e2b223034bd31142c7000c6aef4aac2ac9d5e7f1fe0ef"
+    },
+    {
+      "n": "08",
+      "status": 0,
+      "spawn": "python -I work/scripts/show_a1_m2.py",
+      "scripts": [
+        {
+          "path": "work/scripts/show_a1_m2.py",
+          "sha256": "20bbe909959c7eef0d28c4f2fb80029f8b001185d777258fe66815ed32989043",
+          "bytes": 584
+        }
+      ],
+      "wrapper_sha256": "34e42c59c553a1e4213e2b223034bd31142c7000c6aef4aac2ac9d5e7f1fe0ef"
+    },
+    {
+      "n": "09",
+      "status": 0,
+      "spawn": "python -I work/scripts/section_rows_e1.py",
+      "scripts": [
+        {
+          "path": "work/scripts/section_rows_e1.py",
+          "sha256": "0685b55ccc448162cb416668906dda23f7de197efc6699ebe541e85ffb17b358",
+          "bytes": 6791
+        }
+      ],
+      "wrapper_sha256": "34e42c59c553a1e4213e2b223034bd31142c7000c6aef4aac2ac9d5e7f1fe0ef"
+    },
+    {
+      "n": "10",
+      "status": 0,
+      "spawn": "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe work/scripts/route_e1.mjs om-emu",
+      "scripts": [
+        {
+          "path": "work/scripts/route_e1.mjs",
+          "sha256": "c6766a03513032b46997874f487b35e2f5855911c803169e2645c61c249b67f5",
+          "bytes": 10777
+        }
+      ],
+      "wrapper_sha256": "34e42c59c553a1e4213e2b223034bd31142c7000c6aef4aac2ac9d5e7f1fe0ef"
+    },
+    {
+      "n": "11",
+      "status": 0,
+      "spawn": "python -I work/scripts/gen_custom_e2.py",
+      "scripts": [
+        {
+          "path": "work/scripts/gen_custom_e2.py",
+          "sha256": "51f9c2d723ba7696fad726dc242fd8756ecddb8efe992181cfe49666b45eb17c",
+          "bytes": 1168
+        }
+      ],
+      "wrapper_sha256": "34e42c59c553a1e4213e2b223034bd31142c7000c6aef4aac2ac9d5e7f1fe0ef"
+    },
+    {
+      "n": "12",
+      "status": 0,
+      "spawn": "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe work/scripts/custom_e2.mjs om-emu",
+      "scripts": [
+        {
+          "path": "work/scripts/custom_e2.mjs",
+          "sha256": "c9c5126d60886ef381085640d51f26c2337214c559826914c5e73d875b5c05c6",
+          "bytes": 10685
+        }
+      ],
+      "wrapper_sha256": "34e42c59c553a1e4213e2b223034bd31142c7000c6aef4aac2ac9d5e7f1fe0ef"
+    },
+    {
+      "n": "13",
+      "status": 0,
+      "spawn": "python -I work/scripts/show_custom_e2.py",
+      "scripts": [
+        {
+          "path": "work/scripts/show_custom_e2.py",
+          "sha256": "97e62119acc3bb64b4d2bc28b6ce6b545c2f0ba30e7fb575f4757c9b97abbccf",
+          "bytes": 470
+        }
+      ],
+      "wrapper_sha256": "34e42c59c553a1e4213e2b223034bd31142c7000c6aef4aac2ac9d5e7f1fe0ef"
+    },
+    {
+      "n": "14",
+      "status": 1,
+      "spawn": "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe work/scripts/accept_e3.mjs om-emu",
+      "scripts": [
+        {
+          "path": "work/scripts/accept_e3.mjs",
+          "sha256": "56f33fa1c391e9095de191a6d7e1a2b98a725303d981a6429e380c3afbe7502a",
+          "bytes": 20849
+        }
+      ],
+      "wrapper_sha256": "34e42c59c553a1e4213e2b223034bd31142c7000c6aef4aac2ac9d5e7f1fe0ef"
+    },
+    {
+      "n": "15",
+      "status": 0,
+      "spawn": "python -I work/scripts/check_listings_e3.py",
+      "scripts": [
+        {
+          "path": "work/scripts/check_listings_e3.py",
+          "sha256": "53627189619881da9eb8517cb114b77d9e62a05ec71c5be7062f6fc5944f6239",
+          "bytes": 1135
+        }
+      ],
+      "wrapper_sha256": "34e42c59c553a1e4213e2b223034bd31142c7000c6aef4aac2ac9d5e7f1fe0ef"
+    },
+    {
+      "n": "16",
+      "status": 0,
+      "spawn": "python -I work/scripts/write_manifest_e3.py",
+      "scripts": [
+        {
+          "path": "work/scripts/write_manifest_e3.py",
+          "sha256": "f9d487744bf104076ea32fe41c0f44641ddc2f77f49e49324e7c2a0b89bfc3bc",
+          "bytes": 3397
+        }
+      ],
+      "wrapper_sha256": "34e42c59c553a1e4213e2b223034bd31142c7000c6aef4aac2ac9d5e7f1fe0ef",
+      "note": "Appended from work/out/cmd/16.exit after the script exited. The exit file did not exist while the script was hashing."
+    }
+  ],
+  "tool_versions": {
+    "node": "node26, recorded as the wrapper spawn in each command",
+    "python": "python -I, recorded as the wrapper spawn in each command",
+    "ghidra": "tools/bin/run-ghidra.cmd, command 05, log work/out/ghidra-m2.log"
+  },
+  "note": "Imported emulator modules are the execution-time hashes in sources from work/out/import-inventory-e3.json. Inputs and outputs were hashed by this script after those sessions. This file is not listed in outputs."
+}

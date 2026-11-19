@@ -1,0 +1,8 @@
+# function FUN_600364b7 600364b7 depth 2 cap 80
+600364b7	305080	mov (0x8050),D0
+600364ba	54	asl2 D0
+600364bb	fcdc0400f097	mov -0x680ffffc,A0
+600364c1	f380	mov (D0,A0),A0
+600364c3	f8201c	mov (0x1c,A0),A0
+600364c6	f84002	movbu (0x2,A0),D0
+600364c9	de0000	retf [],0x0

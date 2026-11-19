@@ -1,0 +1,15 @@
+# function FUN_6004f63f 6004f63f depth 2 cap 80
+6004f63f	f2e5	mov psw,D1
+6004f641	f1e5	mov D1,A1
+6004f643	fae10007	and 0x700,D1
+6004f647	f8c008	asl 0x8,D0
+6004f64a	a1	cmp D0,D1
+6004f64b	c710	bls 0x6004f65b
+6004f64d	f1d5	mov A1,D1
+6004f64f	fce1fff8ffff	and -0x701,D1
+6004f655	f211	or D0,D1
+6004f657	f2f7	mov D1,psw
+6004f659	cb	nop
+6004f65a	cb	nop
+6004f65b	f1d4	mov A1,D0
+6004f65d	de0000	retf [],0x0

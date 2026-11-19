@@ -1,0 +1,7 @@
+# function FUN_6004ddd7 6004ddd7 depth 2 cap 80
+6004ddd7	82	mov D0,D2
+6004ddd8	aa00	cmp 0x0,D2
+6004ddda	c207	bge 0x6004dde1
+6004dddc	cd1f00f0a4	call 0x6004ddfb,[d2,d3,a2,a3],0xa4
+6004dde1	88	mov D2,D0
+6004dde2	df8008	ret [d2],0x8
