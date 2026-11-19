@@ -1,0 +1,312 @@
+T4 static packaging measurements
+image bytes 33554368 resource bytes 143523776
+image sha input path inputs/00_0100_50000020.decoded.bin
+olycompress in main: 0 hits
+olycompress in 0106: 0 hits (first file offs [])
+image starts fafcfff0cbcbf8fefcfcff8c000000f8 OE header False
+
+== section descriptors at 0x60029b28, 12 bytes: dest, source, word2 ==
+  section 1 dest 0x60134000 source 0x50113000 file 0x112fe0 word2 0x0 in_place True raw 004013600030115000000000
+  section 2 dest 0x603ba800 source 0x50399800 file 0x3997e0 word2 0x0 in_place True raw 00a83b600098395000000000
+  section 3 dest 0x6075a800 source 0x50739800 file 0x7397e0 word2 0x0 in_place True raw 00a875600098735000000000
+  section 4 dest 0x60828000 source 0x50807000 file 0x806fe0 word2 0x0 in_place True raw 008082600070805000000000
+  section 5 dest 0x60ad8000 source 0x50ab7000 file 0xab6fe0 word2 0x0 in_place True raw 0080ad600070ab5000000000
+  section 6 dest 0x60adc000 source 0x50abb000 file 0xabafe0 word2 0x1 in_place True raw 00c0ad6000b0ab5001000000
+  section 7 dest 0x6103f000 source 0x5101e000 file 0x101dfe0 word2 0x1 in_place True raw 00f0036100e0015101000000
+  section 8 dest 0x6169e800 source 0x5167d800 file 0x167d7e0 word2 0x0 in_place True raw 00e8696100d8675100000000
+  section 9 dest 0x61809000 source 0x517e8000 file 0x17e7fe0 word2 0x0 in_place True raw 0090806100807e5100000000
+  section 10 dest 0x619fd000 source 0x519dc000 file 0x19dbfe0 word2 0x0 in_place True raw 00d09f6100c09d5100000000
+
+== end immediates (fc cc imm32) whose value is a section end candidate ==
+  mov imm32 at 0x60045e82 value 0x6031f000
+  mov imm32 at 0x60045e8a value 0x60718800
+  mov imm32 at 0x60045e92 value 0x60a8f800
+  mov imm32 at 0x60045e9a value 0x60f49800
+  mov imm32 at 0x60045ea2 value 0x6164b000
+  mov imm32 at 0x60045eaa value 0x619a9800
+  mov imm32 at 0x60045eb2 value 0x60adb800
+  mov imm32 at 0x60045eba value 0x617e4800
+  mov imm32 at 0x60045ec2 value 0x60820000
+  mov imm32 at 0x60045ecb value 0x61aa4800
+  section 1 loaded 0x60134000..0x6031f000 (2011136 bytes) end word at 0x60045e82
+  section 2 loaded 0x603ba800..0x60718800 (3530752 bytes) end word at 0x60045e8a
+  section 3 loaded 0x6075a800..0x60820000 (808960 bytes) end word at 0x60045ec2
+  section 4 loaded 0x60828000..0x60a8f800 (2521088 bytes) end word at 0x60045e92
+  section 5 loaded 0x60ad8000..0x60adb800 (14336 bytes) end word at 0x60045eb2
+  section 6 loaded 0x60adc000..0x60f49800 (4642816 bytes) end word at 0x60045e9a
+  section 7 loaded 0x6103f000..0x6164b000 (6340608 bytes) end word at 0x60045ea2
+  section 8 loaded 0x6169e800..0x617e4800 (1335296 bytes) end word at 0x60045eba
+  section 9 loaded 0x61809000..0x619a9800 (1705984 bytes) end word at 0x60045eaa
+  section 10 loaded 0x619fd000..0x61aa4800 (686080 bytes) end word at 0x60045ecb
+
+== gaps between loaded end and the next destination (not copied by the loader) ==
+  after section 1: 0x6031f000..0x603ba800 gap 636928 bytes
+  after section 2: 0x60718800..0x6075a800 gap 270336 bytes
+  after section 3: 0x60820000..0x60828000 gap 32768 bytes
+  after section 4: 0x60a8f800..0x60ad8000 gap 296960 bytes
+  after section 5: 0x60adb800..0x60adc000 gap 2048 bytes
+  after section 6: 0x60f49800..0x6103f000 gap 1005568 bytes
+  after section 7: 0x6164b000..0x6169e800 gap 342016 bytes
+  after section 8: 0x617e4800..0x61809000 gap 149504 bytes
+  after section 9: 0x619a9800..0x619fd000 gap 342016 bytes
+  after section 10: 0x61aa4800..0x62020fe0 gap 5752800 bytes
+
+== immediates of the descriptor table and of each word2 address ==
+  table base 0x60029b28 hits 3 file offs ['0x24ec9', '0x24f7a', '0x25077'] runtime ['0x60045ee9', '0x60045f9a', '0x60046097']
+  word2 address section 1 0x60029b30 pointer hits 0
+  word2 address section 2 0x60029b3c pointer hits 0
+  word2 address section 3 0x60029b48 pointer hits 0
+  word2 address section 4 0x60029b54 pointer hits 0
+  word2 address section 5 0x60029b60 pointer hits 0
+  word2 address section 6 0x60029b6c pointer hits 0
+  word2 address section 7 0x60029b78 pointer hits 0
+  word2 address section 8 0x60029b84 pointer hits 0
+  word2 address section 9 0x60029b90 pointer hits 0
+  word2 address section 10 0x60029b9c pointer hits 0
+
+== plain-byte checks ==
+  0x60045ed5 expect f1e38fffe3 got f1e38fffe3 match True
+  0x6124f4e5 expect f8972004 got f8972004 match True
+  0x60405876 expect fcdf2c916160 got fcdf2c916160 match True
+  0x611f7f35 expect fcd2dcbe3760 got fcd2dcbe3760 match True
+  0x604058b3 expect fac9b006 got fac9b006 match True
+
+== loader string candidates at 0x60047790 and 0x600477a6 ==
+  0x60047790 b'UserSub_FlashReadErr:\x00Lo'
+  0x600477a6 b'LoadNo:\x00\x00\x00\x82^\x04`\x8a^\x04`\xc2^\x04`\x92^'
+
+== binding directory 0x615cc934, 14 x 12 ==
+  [0] key 0x8 ptr 0x615c540c count 416 pad 0x0 raw 080000000c545c61a0010000
+  [1] key 0xe ptr 0x615c873c count 6 pad 0x0 raw 0e0000003c875c6106000000
+  [2] key 0xf ptr 0x615c7b0c count 130 pad 0x0 raw 0f0000000c7b5c6182000000
+  [3] key 0x3 ptr 0x615c87cc count 33 pad 0x0 raw 03000000cc875c6121000000
+  [4] key 0x10 ptr 0x615c8ae4 count 2 pad 0x0 raw 10000000e48a5c6102000000
+  [5] key 0x11 ptr 0x615c8b14 count 51 pad 0x0 raw 11000000148b5c6133000000
+  [6] key 0x12 ptr 0x615c8fdc count 223 pad 0x0 raw 12000000dc8f5c61df000000
+  [7] key 0x14 ptr 0x615ca4c4 count 1 pad 0x0 raw 14000000c4a45c6101000000
+  [8] key 0x15 ptr 0x615ca4dc count 1 pad 0x0 raw 15000000dca45c6101000000
+  [9] key 0x1a ptr 0x615ca4f4 count 11 pad 0x0 raw 1a000000f4a45c610b000000
+  [10] key 0x1b ptr 0x615ca5fc count 3 pad 0x0 raw 1b000000fca55c6103000000
+  [11] key 0x1c ptr 0x615ca65c count 8 pad 0x0 raw 1c0000005ca65c6108000000
+  [12] key 0x1d ptr 0x615ca71c count 45 pad 0x0 raw 1d0000001ca75c612d000000
+  [13] key 0x1e ptr 0x615ca644 count 1 pad 0x0 raw 1e00000044a65c6101000000
+  duplicate keys: []
+
+== records walked when the directory key is 8 ==
+  entries with key 8: 1
+  first key-8 entry ptr 0x615c540c count 416 end 0x615c7b0c bytes 9984
+  unique editor ids 415 of 416
+  id 0x1e6 present False
+  id 0 present False count 0
+  duplicate id groups 1
+    id 0x216 x2 indexes [62, 151] records-identical True
+  first id 0x189 last id 0x2c8
+  key-8 +16 halfwords unique 122 min 0x0 max 0x8b
+  64 bytes after the counted array 0000000018000000000000001f00000000000000000000000500000038000000000000003f000000000000000000000006000000390000000000000040000000
+  those 24 bytes all FF False
+  directory ranges that cover the next 24 bytes: [(2, 15, 1633450764, 1633453884)]
+  pointer hits of array base 0x615c540c: 1 ['0x615cc938']
+
+== every directory array: id 0x1e6, span, bytes immediately after ==
+  [0] key 0x8 0x615c540c..0x615c7b0c count 416 0x1e6 False unique ids 415 after 0000000018000000 section 7
+  [1] key 0xe 0x615c873c..0x615c87cc count 6 0x1e6 False unique ids 6 after 180000002d000000 section 7
+  [2] key 0xf 0x615c7b0c..0x615c873c count 130 0x1e6 False unique ids 130 after 3000000015000000 section 7
+  [3] key 0x3 0x615c87cc..0x615c8ae4 count 33 0x1e6 False unique ids 33 after 000000004a000000 section 7
+  [4] key 0x10 0x615c8ae4..0x615c8b14 count 2 0x1e6 False unique ids 2 after 000000004a000000 section 7
+  [5] key 0x11 0x615c8b14..0x615c8fdc count 51 0x1e6 False unique ids 51 after 2c0600001a000000 section 7
+  [6] key 0x12 0x615c8fdc..0x615ca4c4 count 223 0x1e6 False unique ids 223 after 000000001b000000 section 7
+  [7] key 0x14 0x615ca4c4..0x615ca4dc count 1 0x1e6 False unique ids 1 after 000000001c000000 section 7
+  [8] key 0x15 0x615ca4dc..0x615ca4f4 count 1 0x1e6 False unique ids 1 after 0000000022000000 section 7
+  [9] key 0x1a 0x615ca4f4..0x615ca5fc count 11 0x1e6 False unique ids 11 after aa02000027000000 section 7
+  [10] key 0x1b 0x615ca5fc..0x615ca644 count 3 0x1e6 False unique ids 3 after 640d000033000000 section 7
+  [11] key 0x1c 0x615ca65c..0x615ca71c count 8 0x1e6 False unique ids 8 after 000000002a000000 section 7
+  [12] key 0x1d 0x615ca71c..0x615cab54 count 45 0x1e6 False unique ids 45 after 0000000000000000 section 7
+  [13] key 0x1e 0x615ca644..0x615ca65c count 1 0x1e6 False unique ids 1 after 0000000028000000 section 7
+
+== face keys selected by any directory array +16 ==
+  union size 122 missing 0..95: []
+  keys outside 0..95: [96, 98, 99, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 117, 118, 119, 121, 122, 123] count 26
+
+== face table 0x6037bedc stride 0x24 count immediate 0x60 ==
+  end 0x6037cc5c bytes 3456
+  section of table None section of end None
+  record0 key 0x0 record76 key 0x2d last key 0x62
+  keys equal to index 0..95: False
+  48 bytes after record 96 4a841f61da841f61aa811f6133801f610000000090881f619d881f6100000000e18d1f61f88d1f610000000075911f61
+  next 36 all FF False
+  immediate table 0x6037bedc hits 1 runtime ['0x611f7f37']
+  immediate end 0x6037cc5c hits 2 runtime ['0x611f7fe1', '0x611f7fe7']
+  immediate record76 0x6037c98c hits 0 runtime []
+  bytes at 0x611f7f47 aa60
+
+== head-copy address constants in the first 0x8000 image bytes ==
+  0x60030000 in head 0 runtime []
+  0x60357000 in head 0 runtime []
+  0x60387094 in head 1 runtime ['0x60021107']
+  0x6039b800 in head 0 runtime []
+  0x603a4000 in head 0 runtime []
+  0x6037bedc in head 0 runtime []
+  0x60320000 in head 0 runtime []
+  0x6031f000 in head 0 runtime []
+  0x60129000 in head 1 runtime ['0x60021137']
+  whole-image immediate 0x60320000 hits 1 runtime ['0x6136b9d6']
+
+== descriptor table ==
+  0x6061912c stride 20 count 1712 end 0x606216ec section 2
+  id 0x3D6F present False id 2154 count 1 id 238 count 1
+  duplicate descriptor ids 30
+  32 bytes after table 0000800c800c8000800c0100b80b58072200e5010200b90b59073b00e6010300 all FF False
+  FF run after table 0 bytes then 0000800c800c8000800c0100b80b5807
+  immediate 0x6061912c hits 1 runtime ['0x60405878']
+  immediate 0x606216ec hits 6 runtime ['0x604048f7', '0x60404a9d', '0x6040595c', '0x60405a6c', '0x60405b64', '0x60405c21']
+  immediate 0x606200e4 hits 0 runtime []
+  immediate 0x6062132c hits 0 runtime []
+  builder count bytes at 0x604058b3 fac9b006
+  builder in section 2
+
+== 0x3D6F against mapped/index range constants ==
+  id 15727 (0x3d6f)
+    vs 2256 (0x8d0): id < bound False id > bound True
+    vs 3000 (0xbb8): id < bound False id > bound True
+    vs 3046 (0xbe6): id < bound False id > bound True
+    vs 4000 (0xfa0): id < bound False id > bound True
+    vs 4022 (0xfb6): id < bound False id > bound True
+    vs 4500 (0x1194): id < bound False id > bound True
+    vs 4521 (0x11a9): id < bound False id > bound True
+    vs 10000 (0x2710): id < bound False id > bound True
+    vs 10070 (0x2756): id < bound False id > bound True
+    vs 15000 (0x3a98): id < bound False id > bound True
+    vs 15455 (0x3c5f): id < bound False id > bound True
+    vs 6000 (0x1770): id < bound False id > bound True
+
+== entry bytes at the value sites and the key-port hook ==
+  0x6041931e section 2 820042041e2d7017a6c014a6c111eaf1
+  0x6041937f section 2 f1e6820042041e2d7017a6c016a6c113
+  0x60419446 section 2 4304838e1eaa00c055facacf08c14f56
+  0x60419696 section 2 1ca000c016fac8cf08c11054fcc05c55
+  0x6017a5fc section 1 cf20f8fef8dd1d61efffc008f89204dd
+  0x611f7f42 section 7 ca0848881eaa60d4
+  0x60405865 section 2 00fcdc7049a862db04644050fac88000
+
+== section-7 fields the prototype rewrites (stock bytes) ==
+  page descriptor 0x6158f0f8 section 7 1b00000044dc58610200000098af5861
+  source record 0x61529ce8 section 7 15010000129852610200000016010000
+  action pointer 0x6150f5f0 section 7 14c550610200000012010000
+  directory entry 0x615cc934 section 7 080000000c545c61a0010000
+  stock action table 0x6150c514 section 7 010000006a0800000000000008000000e301000000000000010000006b0800000000000008000000e401000000000000
+  page rows 0x6158dc44 section 7 6a0800000c00b106b4ae586104ba58610200000000000000b4ae586100000000000000006b0800000c002c28b4ae586104ba58610200000000000000b4ae58610000000000000000
+
+== alignment of rewrite addresses ==
+  page+4 0x6158f0fc mod4 0 mod2 0
+  page count 0x6158f100 mod4 0 mod2 0
+  source+4 0x61529cec mod4 0 mod2 0
+  source count 0x61529cf0 mod4 0 mod2 0
+  action ptr 0x6150f5f0 mod4 0 mod2 0
+  action count 0x6150f5f4 mod4 0 mod2 0
+  dir ptr 0x615cc938 mod4 0 mod2 0
+  dir count 0x615cc93c mod4 0 mod2 0
+  bucket ram 0x62a84b2c mod4 0 mod2 0
+  face immediate 0x611f7f35 mod4 1 mod2 1
+  face count cmp 0x611f7f47 mod4 3 mod2 1
+
+== stage-0 tails: FF and pointer hits (cached and uncached, any alignment) ==
+  section1 0x6031e920..0x6031f000 1760 bytes FF 1760 other 0 section 1
+    pointer hits shown 3 more 0
+    from 0x606191f7 value 0x6031ec00 context 00ec3160
+    from 0x610422f6 value 0xa031ef40 context 40ef31a0
+    from 0x61935503 value 0xa031ee26 context 26ee31a0
+  section2 0x607187a4..0x60718800 92 bytes FF 92 other 0 section 2
+    pointer hits shown 0 more 0
+  section4 0x60a8f088..0x60a8f800 1912 bytes FF 1912 other 0 section 4
+    pointer hits shown 9 more 0
+    from 0x60215407 value 0x60a8f088 context 88f0a860
+    from 0x616f0530 value 0x60a8f264 context 64f2a860
+    from 0x6115acff value 0xa0a8f0df context dff0a8a0
+    from 0x6115ae0b value 0xa0a8f0df context dff0a8a0
+    from 0x6118adae value 0xa0a8f356 context 56f3a8a0
+    from 0x61196ebb value 0xa0a8f356 context 56f3a8a0
+    from 0x61708474 value 0xa0a8f200 context 00f2a8a0
+    from 0x617a3fb7 value 0xa0a8f0df context dff0a8a0
+    from 0x617a41e3 value 0xa0a8f0df context dff0a8a0
+  section9-code-space 0x619a9680..0x619a9800 384 bytes FF 384 other 0 section 9
+    pointer hits shown 0 more 0
+
+== FF runs of at least 10008 bytes inside loaded sections ==
+  none
+== FF runs of at least 4096 bytes inside loaded sections ==
+  none
+
+== longest FF run inside each loaded section ==
+  section 1 longest 0x6031e910 length 1776 (runs >= 64: 218)
+  section 2 longest 0x605f85ac length 140 (runs >= 64: 3)
+  section 3 longest 0x6081fe00 length 512 (runs >= 64: 1)
+  section 4 longest 0x60a8f088 length 1912 (runs >= 64: 7)
+  section 5 longest 0x60adb5a0 length 608 (runs >= 64: 1)
+  section 6 longest 0x60f49580 length 640 (runs >= 64: 1)
+  section 7 none >= 64
+  section 8 longest 0x617e45e0 length 544 (runs >= 64: 3)
+  section 9 longest 0x619a966c length 404 (runs >= 64: 1)
+  section 10 longest 0x61aa42f0 length 1296 (runs >= 64: 1)
+
+== prototype overlay spans ==
+  changed bytes 368 span 0x6031e920..0x6031eae3 (452 span bytes)
+  purpose 'prerequisite T3a section-1 tail' bytes 84 spans [('0x6031e920', '0x6031e923', 4), ('0x6031e928', '0x6031e977', 80)]
+  purpose 'one change against H+help: row kind 4' bytes 36 spans [('0x6031e978', '0x6031e99b', 36)]
+  purpose 'Z1 descriptor clone of UI 238' bytes 20 spans [('0x6031e9a0', '0x6031e9b3', 20)]
+  purpose 'page-27 action table; third record UI 0x3D6F editor 0x1e6' bytes 72 spans [('0x6031ea00', '0x6031ea47', 72)]
+  purpose 'H private face record count 10 list 0x6158ba1c help 0x61576520' bytes 32 spans [('0x6031ea48', '0x6031ea57', 16), ('0x6031ea5c', '0x6031ea6b', 16)]
+  purpose 'combined one change against H: face record +0x10 points at the help list 0x6031ea6c' bytes 4 spans [('0x6031ea58', '0x6031ea5b', 4)]
+  purpose 'combined one change against H: ten-record help list' bytes 120 spans [('0x6031ea6c', '0x6031eae3', 120)]
+
+== archived queue-95 placement spans ==
+  changed bytes 3612 sections [1, 2, 4]
+  'key-port interrupt callback trampoline' bytes 5 spans [('0x6017a5fc', '0x6017a600', 5)]
+  'initial feature state (uncached at runtime)' bytes 408 spans [('0x6031e920', '0x6031e922', 3), ('0x6031e925', '0x6031e937', 19), ('0x6031e940', '0x6031e991', 82), ('0x6031e9a0', '0x6031eacf', 304)]
+  'task-context ensure and interrupt-only table installer' bytes 167 spans [('0x6031ead0', '0x6031eaec', 29), ('0x6031eaee', '0x6031eb4f', 98), ('0x6031eb51', '0x6031eb60', 16), ('0x6031eb62', '0x6031eb79', 24)]
+  'placed feature block from 700d2000' bytes 269 spans [('0x6031eb80', '0x6031eb9d', 30), ('0x6031eba1', '0x6031ebb5', 21), ('0x6031ebb7', '0x6031ebed', 55), ('0x6031ebef', '0x6031ec01', 19), ('0x6031ec03', '0x6031ec06', 4), ('0x6031ec0a', '0x6031ec1c', 19), ('0x6031ec1e', '0x6031ec1f', 2), ('0x6031ec21', '0x6031ec50', 48), ('0x6031ec52', '0x6031ec98', 71)]
+  'placed feature block from 700d2200' bytes 271 spans [('0x6031ec99', '0x6031ecb7', 31), ('0x6031ecba', '0x6031ecce', 21), ('0x6031ecd0', '0x6031ed06', 55), ('0x6031ed08', '0x6031ed1a', 19), ('0x6031ed1c', '0x6031ed1f', 4), ('0x6031ed23', '0x6031ed38', 22), ('0x6031ed3a', '0x6031ed69', 48), ('0x6031ed6b', '0x6031edb1', 71)]
+  'placed feature block from 700d2400' bytes 271 spans [('0x6031edb2', '0x6031edd0', 31), ('0x6031edd3', '0x6031ede7', 21), ('0x6031ede9', '0x6031ee1f', 55), ('0x6031ee21', '0x6031ee33', 19), ('0x6031ee35', '0x6031ee38', 4), ('0x6031ee3c', '0x6031ee51', 22), ('0x6031ee53', '0x6031ee82', 48), ('0x6031ee84', '0x6031eeca', 71)]
+  'placed feature block from 700d2600' bytes 271 spans [('0x6031eecb', '0x6031eee9', 31), ('0x6031eeec', '0x6031ef00', 21), ('0x6031ef02', '0x6031ef38', 55), ('0x6031ef3a', '0x6031ef4c', 19), ('0x6031ef4e', '0x6031ef51', 4), ('0x6031ef55', '0x6031ef6a', 22), ('0x6031ef6c', '0x6031ef9b', 48), ('0x6031ef9d', '0x6031efe3', 71)]
+  'existing feature entry/accessor trampoline' bytes 10 spans [('0x603cedfe', '0x603cee02', 5), ('0x609b3bb2', '0x609b3bb6', 5)]
+  'placed feature block from 700d1200' bytes 42 spans [('0x607187a4', '0x607187cd', 42)]
+  'runtime redirect descriptors; section 7 remains stock' bytes 48 spans [('0x607187d0', '0x607187ff', 48)]
+  'placed feature block from 700d0000' bytes 541 spans [('0x60a8f088', '0x60a8f15b', 212), ('0x60a8f15d', '0x60a8f1eb', 143), ('0x60a8f1ed', '0x60a8f207', 27), ('0x60a8f209', '0x60a8f222', 26), ('0x60a8f224', '0x60a8f22f', 12), ('0x60a8f231', '0x60a8f237', 7), ('0x60a8f239', '0x60a8f24e', 22), ('0x60a8f250', '0x60a8f2ab', 92)]
+  'placed feature block from 700d0500' bytes 920 spans [('0x60a8f2ac', '0x60a8f3ac', 257), ('0x60a8f3ae', '0x60a8f41f', 114), ('0x60a8f421', '0x60a8f446', 38), ('0x60a8f448', '0x60a8f48d', 70), ('0x60a8f48f', '0x60a8f603', 373), ('0x60a8f606', '0x60a8f649', 68)]
+  'placed feature block from 700d0f50' bytes 112 spans [('0x60a8f64a', '0x60a8f6b4', 107), ('0x60a8f6b6', '0x60a8f6ba', 5)]
+  'placed feature block from 700d0e00' bytes 277 spans [('0x60a8f6bb', '0x60a8f718', 94), ('0x60a8f71a', '0x60a8f722', 9), ('0x60a8f724', '0x60a8f753', 48), ('0x60a8f755', '0x60a8f76a', 22), ('0x60a8f76c', '0x60a8f785', 26), ('0x60a8f787', '0x60a8f7d4', 78)]
+
+== overlap of overlay addresses with archived addresses ==
+  shared addresses 349 first ['0x6031e920', '0x6031e921', '0x6031e922', '0x6031e928', '0x6031e929', '0x6031e92a', '0x6031e92b', '0x6031e92c', '0x6031e92d', '0x6031e92e', '0x6031e92f', '0x6031e930'] last ['0x6031eae0', '0x6031eae1', '0x6031eae2', '0x6031eae3']
+  span intersections:
+    overlay 0x6031e920..0x6031e923 x archived 0x6031e920..0x6031e922 -> 0x6031e920..0x6031e922 (3)
+    overlay 0x6031e928..0x6031e99b x archived 0x6031e925..0x6031e937 -> 0x6031e928..0x6031e937 (16)
+    overlay 0x6031e928..0x6031e99b x archived 0x6031e940..0x6031e991 -> 0x6031e940..0x6031e991 (82)
+    overlay 0x6031e9a0..0x6031e9b3 x archived 0x6031e9a0..0x6031eaec -> 0x6031e9a0..0x6031e9b3 (20)
+    overlay 0x6031ea00..0x6031eae3 x archived 0x6031e9a0..0x6031eaec -> 0x6031ea00..0x6031eae3 (228)
+
+== section-4 tail versus archived high water ==
+  archived bytes in section-4 tail 1850 0x60a8f088..0x60a8f7d4
+  bytes after last archived byte through 0x60a8f7ff: 43
+
+== scratch 0x60320000 ==
+  section None
+  sits in the unloaded gap after section 1 (0x6031f000..0x603ba800)
+  first 16 file bytes ffffffffffffffffffffffffffffffff
+  10008 bytes all FF True
+
+== constructor site 0x602153fb ==
+  bytes fcce00000000aa00c856fcde
+
+== hash bucket for 0x3D6F: index 0x6f addr 0x62a84b2c == 0x62a84b2c True
+
+== section flags only ==
+  section 1 word2 0x0 loaded 2011136
+  section 2 word2 0x0 loaded 3530752
+  section 3 word2 0x0 loaded 808960
+  section 4 word2 0x0 loaded 2521088
+  section 5 word2 0x0 loaded 14336
+  section 6 word2 0x1 loaded 4642816
+  section 7 word2 0x1 loaded 6340608
+  section 8 word2 0x0 loaded 1335296
+  section 9 word2 0x0 loaded 1705984
+  section 10 word2 0x0 loaded 686080

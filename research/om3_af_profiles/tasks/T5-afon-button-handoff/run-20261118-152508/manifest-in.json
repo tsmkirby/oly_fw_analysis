@@ -1,0 +1,31 @@
+﻿{
+    "task":  "T5-afon-button-handoff",
+    "created_utc":  "2026-11-18T19:02:26.5749705Z",
+    "workspace":  "C:\\Dev\\OM3-tasks\\T5-afon-button-handoff\\ws",
+    "brief_sha256":  "e9f6e4b7b84a27cddf6637bca36a940212d0437ef7f41bc472899f673c379ee8",
+    "inputs":  [
+                   {
+                       "path":  "inputs/00_0100_50000020.decoded.bin",
+                       "sha256":  "5e8d376e9111a44ac0352f26030d7c1b17026d42c45f3600cfa02a0e8c5b7d59"
+                   },
+                   {
+                       "path":  "inputs/02_0106_458c0020.decoded.bin",
+                       "sha256":  "3d9fd4426b45fbe4b715599422af38c6d22392c08543a69f63c28291c5a0b059"
+                   }
+               ],
+    "ghidra":  {
+                   "project":  "projects/OM3_main_full",
+                   "files":  10,
+                   "bytes":  730268777,
+                   "launcher":  "tools/ghidra/support/analyzeHeadless.bat",
+                   "settings":  "state/ghidra-user"
+               },
+    "om_emu":  {
+                   "path":  "om-emu",
+                   "head":  "4e4ec4ef084542a7e30eecce56970c7e09c123c9",
+                   "local_diff_sha256":  "61cd13270e82f9bc5236c36c945783defda4c97a2e99f93b75f11da521877702"
+               },
+    "ref":  "C:\\Dev\\OM3-research",
+    "jdk":  "C:\\Dev\\OM3-research\\tooling\\jdk-25.0.5+8",
+    "node":  "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe"
+}
