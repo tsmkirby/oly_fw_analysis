@@ -1,0 +1,98 @@
+{
+  "checked": [
+    {
+      "file": "work/out/disasm-boundary-c1.txt",
+      "lines": 110,
+      "bytes": 275,
+      "mismatches": 0,
+      "bad": []
+    },
+    {
+      "file": "work/out/disasm-poscall-a-c1.txt",
+      "lines": 48,
+      "bytes": 150,
+      "mismatches": 0,
+      "bad": []
+    },
+    {
+      "file": "work/out/disasm-poscall-b-c1.txt",
+      "lines": 48,
+      "bytes": 130,
+      "mismatches": 0,
+      "bad": []
+    },
+    {
+      "file": "work/out/disasm-getter-c1.txt",
+      "lines": 36,
+      "bytes": 92,
+      "mismatches": 0,
+      "bad": []
+    },
+    {
+      "file": "work/out/disasm-rectcall-a-c1.txt",
+      "lines": 36,
+      "bytes": 84,
+      "mismatches": 0,
+      "bad": []
+    },
+    {
+      "file": "work/out/disasm-rectcall-b-c1.txt",
+      "lines": 28,
+      "bytes": 59,
+      "mismatches": 0,
+      "bad": []
+    }
+  ],
+  "byTarget": {
+    "0x607118c9": [
+      "0x603efa5b",
+      "0x61a43e59",
+      "0x61a49a3e"
+    ],
+    "0x609eece3": [
+      "0x607118ed",
+      "0x60907dad"
+    ],
+    "0x60907d9c": [
+      "0x609ef3e8"
+    ]
+  },
+  "hits": [
+    {
+      "pc": "0x603efa5b",
+      "op": "dd",
+      "target": "0x607118c9",
+      "size": 4
+    },
+    {
+      "pc": "0x607118ed",
+      "op": "dd",
+      "target": "0x609eece3",
+      "size": 68
+    },
+    {
+      "pc": "0x60907dad",
+      "op": "dd",
+      "target": "0x609eece3",
+      "size": 68
+    },
+    {
+      "pc": "0x609ef3e8",
+      "op": "dd",
+      "target": "0x60907d9c",
+      "size": 56
+    },
+    {
+      "pc": "0x61a43e59",
+      "op": "dd",
+      "target": "0x607118c9",
+      "size": 4
+    },
+    {
+      "pc": "0x61a49a3e",
+      "op": "dd",
+      "target": "0x607118c9",
+      "size": 4
+    }
+  ]
+}

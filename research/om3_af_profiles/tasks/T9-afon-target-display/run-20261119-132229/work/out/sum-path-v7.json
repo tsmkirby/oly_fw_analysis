@@ -1,0 +1,865 @@
+{
+  "model": {
+    "id": "v7-model",
+    "step": "model",
+    "pass": true,
+    "problems": [],
+    "expect": {
+      "model": "E147"
+    },
+    "actual": {
+      "model": "E147"
+    },
+    "note": "Read before bring-up and before any key."
+  },
+  "subject": {
+    "id": "v7-subject",
+    "step": "subject",
+    "pass": true,
+    "problems": [],
+    "expect": {
+      "highlight": "Subject Detection",
+      "off": true,
+      "subject": 0
+    },
+    "actual": {
+      "highlight": "Subject Detection",
+      "off": true,
+      "subject": 0
+    }
+  },
+  "rest": {
+    "id": "v7-rest",
+    "pass": true,
+    "problems": [],
+    "expect": {
+      "marks": 4,
+      "subject": 0,
+      "position": 526
+    },
+    "union": {
+      "x": 417,
+      "y": 265,
+      "w": 66,
+      "h": 70
+    },
+    "restUnion": null,
+    "marks": [
+      {
+        "x": 417,
+        "y": 265,
+        "w": 19,
+        "h": 21,
+        "n": 111
+      },
+      {
+        "x": 464,
+        "y": 265,
+        "w": 19,
+        "h": 21,
+        "n": 111
+      },
+      {
+        "x": 417,
+        "y": 314,
+        "w": 19,
+        "h": 21,
+        "n": 111
+      },
+      {
+        "x": 464,
+        "y": 314,
+        "w": 19,
+        "h": 21,
+        "n": 111
+      }
+    ],
+    "png": "bf4c0924a4adccaca1727a314e576e9f12956e21da825d246fa5d41f53de3e75",
+    "cells": {
+      "k99a1": [
+        2,
+        0
+      ],
+      "k84d1": 3,
+      "k88b2": 526,
+      "k5962": [
+        526,
+        526
+      ],
+      "size": [
+        3,
+        3
+      ],
+      "k1e71": 0
+    },
+    "target": [
+      14,
+      2,
+      2,
+      0,
+      27,
+      0,
+      39,
+      0,
+      0,
+      0
+    ],
+    "dirty": 1
+  },
+  "buffers": {
+    "id": "v7-buffers",
+    "pass": true,
+    "problems": [],
+    "expect": {
+      "recordReadable": true
+    },
+    "union": null,
+    "restUnion": null,
+    "marks": null,
+    "png": null,
+    "cells": null,
+    "target": null,
+    "colourHits": 8,
+    "records": [
+      {
+        "slot": 0,
+        "address": "0x62b77c34",
+        "base": "0xb7c31000",
+        "kind": 0,
+        "stride": 1664,
+        "height": 1200,
+        "x": 0,
+        "y": 0
+      },
+      {
+        "slot": 1,
+        "address": "0x62b77c44",
+        "base": "0xb7e18800",
+        "kind": 0,
+        "stride": 1664,
+        "height": 1200,
+        "x": 0,
+        "y": 0
+      },
+      {
+        "slot": 2,
+        "address": "0x62b77c54",
+        "base": "0xb7862000",
+        "kind": 1,
+        "stride": 1664,
+        "height": 1200,
+        "x": 0,
+        "y": 0
+      },
+      {
+        "slot": 3,
+        "address": "0x62b77c64",
+        "base": "0xb7a49800",
+        "kind": 1,
+        "stride": 1664,
+        "height": 1200,
+        "x": 0,
+        "y": 0
+      },
+      {
+        "slot": 4,
+        "address": "0x62b77c74",
+        "base": "0xb7493000",
+        "kind": 2,
+        "stride": 1664,
+        "height": 1200,
+        "x": 0,
+        "y": 0
+      },
+      {
+        "slot": 5,
+        "address": "0x62b77c84",
+        "base": "0xb767a800",
+        "kind": 2,
+        "stride": 1664,
+        "height": 1200,
+        "x": 0,
+        "y": 0
+      },
+      {
+        "slot": 6,
+        "address": "0x62b77c9c",
+        "base": "0xb6ecc800",
+        "kind": 3,
+        "stride": 1664,
+        "height": 2400,
+        "x": 0,
+        "y": 0
+      }
+    ]
+  },
+  "idle": {
+    "id": "v7-idle",
+    "pass": true,
+    "problems": [],
+    "expect": {
+      "watchError": null
+    },
+    "union": null,
+    "restUnion": null,
+    "marks": null,
+    "png": null,
+    "cells": null,
+    "target": null,
+    "watchCount": 0,
+    "watchPcs": {},
+    "watchError": null,
+    "updates": 2,
+    "note": "Armed rest idle. Writes here are a periodic refresh. No writes means the corner is not repainted until something invalidates it."
+  },
+  "direct": {
+    "id": "v7-direct",
+    "pass": true,
+    "problems": [],
+    "expect": {
+      "sawSingle": true,
+      "size": [
+        3,
+        3
+      ],
+      "moved": true
+    },
+    "union": null,
+    "restUnion": null,
+    "marks": null,
+    "png": null,
+    "cells": null,
+    "target": null,
+    "posCount": {},
+    "oldCount": {}
+  },
+  "ok": {
+    "id": "v7-ok",
+    "pass": true,
+    "problems": [],
+    "expect": {
+      "marks": 4,
+      "subject": 0,
+      "unionDiffersFromRest": true
+    },
+    "union": {
+      "x": 356,
+      "y": 198,
+      "w": 65,
+      "h": 71
+    },
+    "restUnion": {
+      "x": 417,
+      "y": 265,
+      "w": 66,
+      "h": 70
+    },
+    "marks": [
+      {
+        "x": 356,
+        "y": 198,
+        "w": 19,
+        "h": 21,
+        "n": 111
+      },
+      {
+        "x": 402,
+        "y": 198,
+        "w": 19,
+        "h": 21,
+        "n": 111
+      },
+      {
+        "x": 356,
+        "y": 248,
+        "w": 19,
+        "h": 21,
+        "n": 111
+      },
+      {
+        "x": 402,
+        "y": 248,
+        "w": 19,
+        "h": 21,
+        "n": 111
+      }
+    ],
+    "png": "26002479a84b9f5cc6250b9b340ed2e48d5257906096920a707b40459dc0d276",
+    "cells": {
+      "k99a1": [
+        2,
+        0
+      ],
+      "k84d1": 3,
+      "k88b2": 412,
+      "k5962": [
+        412,
+        526
+      ],
+      "size": [
+        3,
+        3
+      ],
+      "k1e71": 0
+    },
+    "target": [
+      14,
+      2,
+      2,
+      0,
+      27,
+      0,
+      39,
+      0,
+      0,
+      0
+    ],
+    "dirty": 1,
+    "watchCount": 0,
+    "watchPcs": {},
+    "watchError": null,
+    "watchSamples": [],
+    "draws": [
+      {
+        "seq": 7,
+        "phase": "ok",
+        "caller": "0x610f66df",
+        "x": 356,
+        "y": 198,
+        "w": 65,
+        "h": 4,
+        "colour": 22,
+        "layer": 1,
+        "a0": "0x62b77c74",
+        "chain": [
+          {
+            "ra": "0x610f66df",
+            "sp": "0x6246085c",
+            "top": "0x610f75cc",
+            "words": [
+              "0x610f75cc",
+              "0x6135cec4",
+              "0x1a1",
+              "0xca",
+              "0x4",
+              "0x3f",
+              "0x16",
+              "0x1",
+              "0x1",
+              "0x62b77c84",
+              "0x4",
+              "0x0"
+            ]
+          },
+          {
+            "ra": "0x6135cec4",
+            "sp": "0x62460860",
+            "top": "0x6135cec4",
+            "words": [
+              "0x6135cec4",
+              "0x1a1",
+              "0xca",
+              "0x4",
+              "0x3f",
+              "0x16",
+              "0x1",
+              "0x1",
+              "0x62b77c84",
+              "0x4",
+              "0x0",
+              "0x62b77c84"
+            ]
+          }
+        ]
+      },
+      {
+        "seq": 8,
+        "phase": "ok",
+        "caller": "0x610f66df",
+        "x": 356,
+        "y": 202,
+        "w": 4,
+        "h": 63,
+        "colour": 22,
+        "layer": 1,
+        "a0": "0x62b77c74",
+        "chain": [
+          {
+            "ra": "0x610f66df",
+            "sp": "0x6246085c",
+            "top": "0x610f75cc",
+            "words": [
+              "0x610f75cc",
+              "0x6135cec4",
+              "0x164",
+              "0xc6",
+              "0x41",
+              "0x4",
+              "0x16",
+              "0x1",
+              "0x1",
+              "0x62b77c74",
+              "0x41",
+              "0x0"
+            ]
+          },
+          {
+            "ra": "0x6135cec4",
+            "sp": "0x62460860",
+            "top": "0x6135cec4",
+            "words": [
+              "0x6135cec4",
+              "0x164",
+              "0xc6",
+              "0x41",
+              "0x4",
+              "0x16",
+              "0x1",
+              "0x1",
+              "0x62b77c74",
+              "0x41",
+              "0x0",
+              "0x62b77c74"
+            ]
+          }
+        ]
+      },
+      {
+        "seq": 9,
+        "phase": "ok",
+        "caller": "0x610f66df",
+        "x": 356,
+        "y": 265,
+        "w": 65,
+        "h": 4,
+        "colour": 22,
+        "layer": 1,
+        "a0": "0x62b77c74",
+        "chain": [
+          {
+            "ra": "0x610f66df",
+            "sp": "0x6246085c",
+            "top": "0x610f75cc",
+            "words": [
+              "0x610f75cc",
+              "0x6135cec4",
+              "0x164",
+              "0xca",
+              "0x4",
+              "0x3f",
+              "0x16",
+              "0x1",
+              "0x1",
+              "0x62b77c74",
+              "0x4",
+              "0x0"
+            ]
+          },
+          {
+            "ra": "0x6135cec4",
+            "sp": "0x62460860",
+            "top": "0x6135cec4",
+            "words": [
+              "0x6135cec4",
+              "0x164",
+              "0xca",
+              "0x4",
+              "0x3f",
+              "0x16",
+              "0x1",
+              "0x1",
+              "0x62b77c74",
+              "0x4",
+              "0x0",
+              "0x62b77c74"
+            ]
+          }
+        ]
+      },
+      {
+        "seq": 10,
+        "phase": "ok",
+        "caller": "0x610f66df",
+        "x": 417,
+        "y": 202,
+        "w": 4,
+        "h": 63,
+        "colour": 22,
+        "layer": 1,
+        "a0": "0x62b77c74",
+        "chain": [
+          {
+            "ra": "0x610f66df",
+            "sp": "0x6246085c",
+            "top": "0x610f75cc",
+            "words": [
+              "0x610f75cc",
+              "0x6135cec4",
+              "0x164",
+              "0x109",
+              "0x41",
+              "0x4",
+              "0x16",
+              "0x1",
+              "0x1",
+              "0x62b77c74",
+              "0x41",
+              "0x0"
+            ]
+          },
+          {
+            "ra": "0x6135cec4",
+            "sp": "0x62460860",
+            "top": "0x6135cec4",
+            "words": [
+              "0x6135cec4",
+              "0x164",
+              "0x109",
+              "0x41",
+              "0x4",
+              "0x16",
+              "0x1",
+              "0x1",
+              "0x62b77c74",
+              "0x41",
+              "0x0",
+              "0x62b77c74"
+            ]
+          }
+        ]
+      }
+    ],
+    "updates": [
+      {
+        "seq": 11,
+        "phase": "ok",
+        "caller": "0x610f70da",
+        "d0": 0
+      },
+      {
+        "seq": 18,
+        "phase": "ok",
+        "caller": "0x610f70da",
+        "d0": 0
+      },
+      {
+        "seq": 21,
+        "phase": "ok",
+        "caller": "0x610f70da",
+        "d0": 0
+      },
+      {
+        "seq": 24,
+        "phase": "ok",
+        "caller": "0x610f70da",
+        "d0": 0
+      },
+      {
+        "seq": 27,
+        "phase": "ok",
+        "caller": "0x610f70da",
+        "d0": 0
+      },
+      {
+        "seq": 28,
+        "phase": "ok",
+        "caller": "0x610f70da",
+        "d0": 0
+      }
+    ],
+    "gets": [
+      {
+        "seq": 5,
+        "phase": "ok",
+        "caller": "0x6041a202",
+        "key": "0x1dd1",
+        "index": 1
+      },
+      {
+        "seq": 6,
+        "phase": "ok",
+        "caller": "0x6041a202",
+        "key": "0x1dd1",
+        "index": 0
+      },
+      {
+        "seq": 12,
+        "phase": "ok",
+        "caller": "0x6041a202",
+        "key": "0x99a1",
+        "index": 0
+      },
+      {
+        "seq": 13,
+        "phase": "ok",
+        "caller": "0x6041a202",
+        "key": "0x88b2",
+        "index": 0
+      },
+      {
+        "seq": 14,
+        "phase": "ok",
+        "caller": "0x6041a202",
+        "key": "0x99a1",
+        "index": 0
+      },
+      {
+        "seq": 15,
+        "phase": "ok",
+        "caller": "0x6041a202",
+        "key": "0x88b2",
+        "index": 0
+      },
+      {
+        "seq": 16,
+        "phase": "ok",
+        "caller": "0x6041a202",
+        "key": "0x1dd1",
+        "index": 1
+      },
+      {
+        "seq": 17,
+        "phase": "ok",
+        "caller": "0x6041a202",
+        "key": "0x1dd1",
+        "index": 0
+      },
+      {
+        "seq": 19,
+        "phase": "ok",
+        "caller": "0x6041a202",
+        "key": "0x1dd1",
+        "index": 1
+      },
+      {
+        "seq": 20,
+        "phase": "ok",
+        "caller": "0x6041a202",
+        "key": "0x1dd1",
+        "index": 0
+      },
+      {
+        "seq": 22,
+        "phase": "ok",
+        "caller": "0x6041a202",
+        "key": "0x99a1",
+        "index": 0
+      },
+      {
+        "seq": 23,
+        "phase": "ok",
+        "caller": "0x6041a202",
+        "key": "0x88b2",
+        "index": 0
+      },
+      {
+        "seq": 25,
+        "phase": "ok",
+        "caller": "0x6041a202",
+        "key": "0x99a1",
+        "index": 0
+      },
+      {
+        "seq": 26,
+        "phase": "ok",
+        "caller": "0x6041a202",
+        "key": "0x88b2",
+        "index": 0
+      }
+    ],
+    "posSamples": [],
+    "posCount": {},
+    "oldCount": {}
+  },
+  "afon": {
+    "id": "v7-afon",
+    "pass": true,
+    "problems": [],
+    "expect": {
+      "subject": 0,
+      "screen": "shooting"
+    },
+    "union": {
+      "x": 356,
+      "y": 198,
+      "w": 65,
+      "h": 71
+    },
+    "restUnion": null,
+    "marks": [
+      {
+        "x": 356,
+        "y": 198,
+        "w": 19,
+        "h": 21,
+        "n": 111
+      },
+      {
+        "x": 402,
+        "y": 198,
+        "w": 19,
+        "h": 21,
+        "n": 111
+      },
+      {
+        "x": 356,
+        "y": 248,
+        "w": 19,
+        "h": 21,
+        "n": 111
+      },
+      {
+        "x": 402,
+        "y": 248,
+        "w": 19,
+        "h": 21,
+        "n": 111
+      }
+    ],
+    "png": "44688bdf39691a3144c9d0257042cf8f405db33a29052cd411872c2ec61bcd93",
+    "cells": {
+      "k99a1": [
+        2,
+        0
+      ],
+      "k84d1": 3,
+      "k88b2": 412,
+      "k5962": [
+        412,
+        526
+      ],
+      "size": [
+        3,
+        3
+      ],
+      "k1e71": 0
+    },
+    "target": [
+      14,
+      2,
+      2,
+      0,
+      27,
+      0,
+      39,
+      0,
+      0,
+      0
+    ],
+    "watchCount": 0,
+    "watchPcs": {},
+    "watchError": null,
+    "watchSamples": [],
+    "draws": [],
+    "updates": [
+      {
+        "seq": 31,
+        "phase": "afon",
+        "caller": "0x610f70da",
+        "d0": 0
+      },
+      {
+        "seq": 34,
+        "phase": "afon",
+        "caller": "0x610f70da",
+        "d0": 0
+      },
+      {
+        "seq": 40,
+        "phase": "afon",
+        "caller": "0x610f70da",
+        "d0": 0
+      }
+    ],
+    "gets": [
+      {
+        "seq": 29,
+        "phase": "afon",
+        "caller": "0x6041a202",
+        "key": "0x99a1",
+        "index": 0
+      },
+      {
+        "seq": 30,
+        "phase": "afon",
+        "caller": "0x6041a202",
+        "key": "0x88b2",
+        "index": 0
+      },
+      {
+        "seq": 32,
+        "phase": "afon",
+        "caller": "0x6041a202",
+        "key": "0x99a1",
+        "index": 0
+      },
+      {
+        "seq": 33,
+        "phase": "afon",
+        "caller": "0x6041a202",
+        "key": "0x88b2",
+        "index": 0
+      },
+      {
+        "seq": 35,
+        "phase": "afon",
+        "caller": "0x6041a202",
+        "key": "0x99a1",
+        "index": 0
+      },
+      {
+        "seq": 36,
+        "phase": "afon",
+        "caller": "0x6041a202",
+        "key": "0x88b2",
+        "index": 0
+      },
+      {
+        "seq": 37,
+        "phase": "afon",
+        "caller": "0x6041a202",
+        "key": "0x99a1",
+        "index": 0
+      },
+      {
+        "seq": 38,
+        "phase": "afon",
+        "caller": "0x6041a202",
+        "key": "0x99a1",
+        "index": 0
+      },
+      {
+        "seq": 39,
+        "phase": "afon",
+        "caller": "0x6041a202",
+        "key": "0x88b2",
+        "index": 0
+      },
+      {
+        "seq": 41,
+        "phase": "afon",
+        "caller": "0x6041a202",
+        "key": "0x99a1",
+        "index": 0
+      },
+      {
+        "seq": 42,
+        "phase": "afon",
+        "caller": "0x6041a202",
+        "key": "0x88b2",
+        "index": 0
+      }
+    ],
+    "posSamples": [],
+    "posCount": {},
+    "oldCount": {},
+    "unionSameAsOk": true,
+    "upUnion": {
+      "x": 356,
+      "y": 198,
+      "w": 65,
+      "h": 71
+    },
+    "note": "Stock AF-ON. Counts say whether the press repaints the corner. unionSameAsOk is measured, not assumed."
+  }
+}

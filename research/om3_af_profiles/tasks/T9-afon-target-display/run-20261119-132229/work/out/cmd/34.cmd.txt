@@ -1,0 +1,6 @@
+start 2026-11-19T18:45:09.806Z
+requested: node26 -e const rows=require('fs').readFileSync('work/out/obs-cell-v9.jsonl','utf8').trim().split(/\n/).map(JSON.parse); const m=rows.find(r=>r.id==='v9-marks'); process.stdout.write(JSON.stringify({expect:m.expect, cells:m.actual.cells, union:m.actual.union, restUnion:m.actual.restUnion, unionUnchanged:m.actual.unionUnchanged, pngUnchanged:m.actual.pngUnchanged, frameRects:m.actual.frameRects, png:m.actual.png, restPng:m.actual.restPng},null,2));
+C:\Dev\OM3-research\tooling\node-v26.12.1-win-x64\node.exe -e const rows=require('fs').readFileSync('work/out/obs-cell-v9.jsonl','utf8').trim().split(/\n/).map(JSON.parse); const m=rows.find(r=>r.id==='v9-marks'); process.stdout.write(JSON.stringify({expect:m.expect, cells:m.actual.cells, union:m.actual.union, restUnion:m.actual.restUnion, unionUnchanged:m.actual.unionUnchanged, pngUnchanged:m.actual.pngUnchanged, frameRects:m.actual.frameRects, png:m.actual.png, restPng:m.actual.restPng},null,2));
+wrapper_sha256: 34e42c59c553a1e4213e2b223034bd31142c7000c6aef4aac2ac9d5e7f1fe0ef
+script: none
+script_sha256: none

@@ -1,0 +1,179 @@
+{
+  "directCount": {
+    "boot": 8,
+    "direct": 91
+  },
+  "callers": [
+    "0x610eee13"
+  ],
+  "samples": [
+    {
+      "phase": "ok",
+      "caller": "0x610eee13",
+      "d0": 0,
+      "d1": 0,
+      "a0": "0x62bb6cd8",
+      "a1": "0x62b8f3bc",
+      "callBytes": "481b4e105c20f0f2"
+    },
+    {
+      "phase": "ok",
+      "caller": "0x610eee13",
+      "d0": 51,
+      "d1": 1,
+      "a0": "0x62bb6cd8",
+      "a1": "0x62b8f3bc",
+      "callBytes": "481b4e105c20f0f2"
+    },
+    {
+      "phase": "ok",
+      "caller": "0x610eee13",
+      "d0": 51,
+      "d1": 3,
+      "a0": "0x62bb6cd8",
+      "a1": "0x62b8f3bc",
+      "callBytes": "481b4e105c20f0f2"
+    },
+    {
+      "phase": "ok",
+      "caller": "0x610eee13",
+      "d0": 51,
+      "d1": 597,
+      "a0": "0x62bb6cd8",
+      "a1": "0x62b8f3bc",
+      "callBytes": "481b4e105c20f0f2"
+    },
+    {
+      "phase": "ok",
+      "caller": "0x610eee13",
+      "d0": 847,
+      "d1": 3,
+      "a0": "0x62bb6cd8",
+      "a1": "0x62b8f3bc",
+      "callBytes": "481b4e105c20f0f2"
+    },
+    {
+      "phase": "ok",
+      "caller": "0x610eee13",
+      "d0": 0,
+      "d1": 0,
+      "a0": "0x62bb6cd8",
+      "a1": "0x62b8f464",
+      "callBytes": "481b4e105c20f0f2"
+    },
+    {
+      "phase": "ok",
+      "caller": "0x610eee13",
+      "d0": 356,
+      "d1": 198,
+      "a0": "0x62bb6cd8",
+      "a1": "0x62b8f464",
+      "callBytes": "481b4e105c20f0f2"
+    },
+    {
+      "phase": "ok",
+      "caller": "0x610eee13",
+      "d0": 356,
+      "d1": 202,
+      "a0": "0x62bb6cd8",
+      "a1": "0x62b8f464",
+      "callBytes": "481b4e105c20f0f2"
+    }
+  ],
+  "rects": [
+    {
+      "x": 51,
+      "y": 1,
+      "w": 798,
+      "h": 2,
+      "colour": 34,
+      "layer": 0,
+      "caller": "0x610f66df"
+    },
+    {
+      "x": 51,
+      "y": 3,
+      "w": 2,
+      "h": 594,
+      "colour": 34,
+      "layer": 0,
+      "caller": "0x610f66df"
+    },
+    {
+      "x": 51,
+      "y": 597,
+      "w": 798,
+      "h": 2,
+      "colour": 34,
+      "layer": 0,
+      "caller": "0x610f66df"
+    },
+    {
+      "x": 847,
+      "y": 3,
+      "w": 2,
+      "h": 594,
+      "colour": 34,
+      "layer": 0,
+      "caller": "0x610f66df"
+    },
+    {
+      "x": 356,
+      "y": 198,
+      "w": 65,
+      "h": 4,
+      "colour": 22,
+      "layer": 1,
+      "caller": "0x610f66df"
+    },
+    {
+      "x": 356,
+      "y": 202,
+      "w": 4,
+      "h": 63,
+      "colour": 22,
+      "layer": 1,
+      "caller": "0x610f66df"
+    },
+    {
+      "x": 356,
+      "y": 265,
+      "w": 65,
+      "h": 4,
+      "colour": 22,
+      "layer": 1,
+      "caller": "0x610f66df"
+    },
+    {
+      "x": 417,
+      "y": 202,
+      "w": 4,
+      "h": 63,
+      "colour": 22,
+      "layer": 1,
+      "caller": "0x610f66df"
+    }
+  ],
+  "okCount": {
+    "boot": 8,
+    "direct": 91,
+    "ok": 22
+  },
+  "afon": {
+    "unionSameAsOk": true,
+    "union": {
+      "x": 356,
+      "y": 198,
+      "w": 65,
+      "h": 71
+    },
+    "png": "44688bdf39691a3144c9d0257042cf8f405db33a29052cd411872c2ec61bcd93",
+    "widgetEntriesDuringAfon": 3,
+    "widgetCount": {
+      "boot": 8,
+      "direct": 91,
+      "ok": 22,
+      "afon": 3
+    }
+  }
+}

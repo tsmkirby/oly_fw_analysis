@@ -1,0 +1,6 @@
+start 2026-11-19T19:00:24.716Z
+requested: node26 -e const fs=require('fs'); const lines=fs.readFileSync('work/out/t8r4.jsonl','utf8').split(/\n/); const o=JSON.parse(lines[67]); const a=o.actual; console.log('highlight', a.highlightBeforeCommit); console.log('baseline', JSON.stringify(a.baseline)); console.log('added', JSON.stringify(a.added,null,2)); console.log('zone', a.zone, 'screen', a.screen); const extra=a.extra; console.log('extra keys', extra && Object.keys(extra)); if (extra && extra.trace) { for (const t of extra.trace) console.log(t.id, t.pageTitle, t.highlight); }
+C:\Dev\OM3-research\tooling\node-v26.12.1-win-x64\node.exe -e const fs=require('fs'); const lines=fs.readFileSync('work/out/t8r4.jsonl','utf8').split(/\n/); const o=JSON.parse(lines[67]); const a=o.actual; console.log('highlight', a.highlightBeforeCommit); console.log('baseline', JSON.stringify(a.baseline)); console.log('added', JSON.stringify(a.added,null,2)); console.log('zone', a.zone, 'screen', a.screen); const extra=a.extra; console.log('extra keys', extra && Object.keys(extra)); if (extra && extra.trace) { for (const t of extra.trace) console.log(t.id, t.pageTitle, t.highlight); }
+wrapper_sha256: 34e42c59c553a1e4213e2b223034bd31142c7000c6aef4aac2ac9d5e7f1fe0ef
+script: none
+script_sha256: none

@@ -1,0 +1,31 @@
+{
+  "task": "T9",
+  "note": "External finalizer. These hashes cover command 41 and the seal. This process does not hash work/out/cmd/42.out, 42.err or 42.exit, and it does not hash this file's own bytes: the wrapper writes the three command files after the process returns, and the .exit file contains a timestamp.",
+  "files": [
+    {
+      "path": "work/out/manifest-seal-t9c.json",
+      "sha256": "6166c38e673a69d40a6848610367bebecf810eeae08366af78ffb058ac1b834f",
+      "bytes": 1321
+    },
+    {
+      "path": "work/out/cmd/41.cmd.txt",
+      "sha256": "19caadd4aaa4844b7f4ed20e72c1e9f28220d1ec3e908010084ea50e83e73c6a",
+      "bytes": 401
+    },
+    {
+      "path": "work/out/cmd/41.out",
+      "sha256": "384dbf6b392d7925ed7bf5688f1af8cd6350d24197d4cff07163b9614339f6e5",
+      "bytes": 751
+    },
+    {
+      "path": "work/out/cmd/41.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "work/out/cmd/41.exit",
+      "sha256": "1fbef78fb44a2c28000c2b3daff0fb71039648667a7c5733914d50d4175bc64d",
+      "bytes": 518
+    }
+  ]
+}

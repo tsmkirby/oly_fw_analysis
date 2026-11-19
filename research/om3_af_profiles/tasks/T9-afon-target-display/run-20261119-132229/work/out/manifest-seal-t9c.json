@@ -1,0 +1,36 @@
+{
+  "task": "T9",
+  "note": "Command 41 seals command 40, the manifest and the supplement. Command 41 does not hash work/out/cmd/41.out, 41.err or 41.exit. Command 42, a separate process, hashes those three files and this seal. The wrapper writes a command's .out, .err and .exit after the process returns, and the .exit file contains a timestamp.",
+  "files": [
+    {
+      "path": "work/evidence-manifest.json",
+      "sha256": "aafc9734d44cf9e557f8ab391ee7d07296b999871b7b2e18c7a3bb6ae5a36ea0",
+      "bytes": 132426
+    },
+    {
+      "path": "work/out/manifest-supplement-t9c.json",
+      "sha256": "443fde80527814383f4698ab1de86f9de65a6b6ebbd7ec5ba05c3a5eb2803553",
+      "bytes": 109354
+    },
+    {
+      "path": "work/out/cmd/40.cmd.txt",
+      "sha256": "130fac93bc713f93bc960eb2b26d30da334ce667cf02257d9fa3fcf5f0e79a59",
+      "bytes": 404
+    },
+    {
+      "path": "work/out/cmd/40.out",
+      "sha256": "a14d28fb6fffbbd0bac9675fc21c5ed0b0ad28106380a21c610550399762984a",
+      "bytes": 368
+    },
+    {
+      "path": "work/out/cmd/40.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "work/out/cmd/40.exit",
+      "sha256": "c4061ed7592ad64a6d23497012d076eb8eaab594a76cc60c5327b4341385c770",
+      "bytes": 520
+    }
+  ]
+}

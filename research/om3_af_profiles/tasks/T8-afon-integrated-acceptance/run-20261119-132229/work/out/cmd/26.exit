@@ -1,0 +1,10 @@
+{
+  "status": 0,
+  "signal": null,
+  "error": null,
+  "start": "2026-11-19T19:00:32.721Z",
+  "end": "2026-11-19T19:00:32.761Z",
+  "spawn": "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe -e const fs=require('fs'); const lines=fs.readFileSync('work/out/t8r4.jsonl','utf8').split(/\\n/); const o=JSON.parse(lines[67]); const e=o.actual.extra; console.log('baseline', JSON.stringify(e.baseline)); console.log('added', JSON.stringify(e.added,null,2));",
+  "wrapper_sha256": "34e42c59c553a1e4213e2b223034bd31142c7000c6aef4aac2ac9d5e7f1fe0ef",
+  "scripts": []
+}

@@ -1,0 +1,6 @@
+start 2026-11-19T18:43:03.465Z
+requested: node26 -e const rows=require('fs').readFileSync('work/out/obs-path-v8.jsonl','utf8').trim().split(/\n/).map(JSON.parse); const ok=rows.find(r=>r.id==='v8-ok'); const af=rows.find(r=>r.id==='v8-afon'); const di=rows.find(r=>r.id==='v8-direct'); process.stdout.write(JSON.stringify({directCount:di.actual.widgetCount, callers:ok.actual.widgetCallers, samples:ok.actual.widgetSamples.slice(0,8), rects:ok.actual.rects, okCount:ok.actual.widgetCount, afon:af.actual},null,2));
+C:\Dev\OM3-research\tooling\node-v26.12.1-win-x64\node.exe -e const rows=require('fs').readFileSync('work/out/obs-path-v8.jsonl','utf8').trim().split(/\n/).map(JSON.parse); const ok=rows.find(r=>r.id==='v8-ok'); const af=rows.find(r=>r.id==='v8-afon'); const di=rows.find(r=>r.id==='v8-direct'); process.stdout.write(JSON.stringify({directCount:di.actual.widgetCount, callers:ok.actual.widgetCallers, samples:ok.actual.widgetSamples.slice(0,8), rects:ok.actual.rects, okCount:ok.actual.widgetCount, afon:af.actual},null,2));
+wrapper_sha256: 34e42c59c553a1e4213e2b223034bd31142c7000c6aef4aac2ac9d5e7f1fe0ef
+script: none
+script_sha256: none

@@ -1,0 +1,7 @@
+start 2026-11-19T18:34:54.015Z
+requested: tools\bin\run-ghidra.cmd -postScript DisasmStockV1.java 609eece0 110 work/out/disasm-boundary-c1.txt 607118c0 48 work/out/disasm-poscall-a-c1.txt 60907d80 48 work/out/disasm-poscall-b-c1.txt 6041a1c0 36 work/out/disasm-getter-c1.txt 610f61e0 36 work/out/disasm-rectcall-a-c1.txt 610f8c20 28 work/out/disasm-rectcall-b-c1.txt -log work/out/disasm-c1.log
+cmd.exe /d /c tools\bin\run-ghidra.cmd -postScript DisasmStockV1.java 609eece0 110 work/out/disasm-boundary-c1.txt 607118c0 48 work/out/disasm-poscall-a-c1.txt 60907d80 48 work/out/disasm-poscall-b-c1.txt 6041a1c0 36 work/out/disasm-getter-c1.txt 610f61e0 36 work/out/disasm-rectcall-a-c1.txt 610f8c20 28 work/out/disasm-rectcall-b-c1.txt -log work/out/disasm-c1.log
+wrapper_sha256: 34e42c59c553a1e4213e2b223034bd31142c7000c6aef4aac2ac9d5e7f1fe0ef
+script: DisasmStockV1.java
+script_sha256: 396935d9adbea81a0911ebb28978468e14cf6bd16bc4411deac9095dd818a49d
+script_bytes: 1579
