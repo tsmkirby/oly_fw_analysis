@@ -1,0 +1,11 @@
+table 0x60357e68 bytes 0b000100060003000800000001000000feffffff halfwords [11, 1, 6, 3, 8, 0, 1, 0, 65534, 65535]
+raw-get 6 6006aba6 6006b7bb 6007d6e0 6007d7f1 609c82ea 61042d0e
+sample-issue 0 
+sample-setup 1 6006a723
+acc-init 1 60218ff0
+sync-read 3 6006a7a3 6006bdc4 6006be6c
+sync-write 3 6006a7d6 6006a7e2 6006bd20
+sync-close 6 6006a7e9 6006a85e 6006a8cf 6006bd27 6006bdcb 6006be79
+sync-open 4 6006a795 6006bd14 6006bdb3 6006be5e
+sampler-wait 1 6006a732
+

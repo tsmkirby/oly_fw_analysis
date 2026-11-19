@@ -1,0 +1,7 @@
+start 2026-11-19T10:58:23.201Z
+requested: tools\bin\run-ghidra.cmd -postScript DisasmStockM2.java 6041937f 48 work\out\disasm-mapped-m2.txt 604193c0 36 work\out\disasm-setcall-m2.txt 6041a202 40 work\out\disasm-wrap-m2.txt 60063380 28 work\out\disasm-getter-m2.txt 60063431 36 work\out\disasm-cellset-m2.txt -log work\out\ghidra-m2.log
+cmd.exe /d /c tools\bin\run-ghidra.cmd -postScript DisasmStockM2.java 6041937f 48 work\out\disasm-mapped-m2.txt 604193c0 36 work\out\disasm-setcall-m2.txt 6041a202 40 work\out\disasm-wrap-m2.txt 60063380 28 work\out\disasm-getter-m2.txt 60063431 36 work\out\disasm-cellset-m2.txt -log work\out\ghidra-m2.log
+wrapper_sha256: 34e42c59c553a1e4213e2b223034bd31142c7000c6aef4aac2ac9d5e7f1fe0ef
+script: DisasmStockM2.java
+script_sha256: e488a5772cd7e7d58fe41a331ff88019b2ce7336672329fd7fcd46fffb3dc6ea
+script_bytes: 2111

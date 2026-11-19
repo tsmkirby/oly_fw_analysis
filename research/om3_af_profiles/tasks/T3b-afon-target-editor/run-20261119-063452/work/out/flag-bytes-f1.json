@@ -1,0 +1,52 @@
+{
+  "owned": [
+    "6031e920",
+    "6031f000"
+  ],
+  "owned_bytes": 1760,
+  "mirror": [
+    "6031eeb0",
+    "6031eee6"
+  ],
+  "relocated_occupied_through": "6031eeaf",
+  "z5_rows_in_owned": 1308,
+  "z5_covers_chosen": false,
+  "candidates": [
+    {
+      "addr": "6031e924",
+      "uncached": "a031e924",
+      "image": "ff",
+      "in_z5": false,
+      "z5": null,
+      "inside_owned": true,
+      "inside_mirror": false,
+      "inside_relocated": false
+    },
+    {
+      "addr": "6031eee7",
+      "uncached": "a031eee7",
+      "image": "ff",
+      "in_z5": false,
+      "z5": null,
+      "inside_owned": true,
+      "inside_mirror": false,
+      "inside_relocated": false
+    },
+    {
+      "addr": "6031e91f",
+      "uncached": "a031e91f",
+      "image": "ff",
+      "in_z5": false,
+      "z5": null,
+      "inside_owned": false,
+      "inside_mirror": false,
+      "inside_relocated": false
+    }
+  ],
+  "chosen": {
+    "addr": "6031eee7",
+    "uncached": "a031eee7",
+    "why": "First byte after the 55-byte mirror, inside the owned tail, stock 0xFF, absent from the Z5 CSV and from the relocated block."
+  },
+  "ok": true
+}

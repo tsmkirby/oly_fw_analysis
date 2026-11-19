@@ -1,0 +1,22 @@
+control p-dial half vs c1 h1-dial half diffs 2
+  ('k5962[1]', 526, 529)
+  ('k88b2', 526, 529)
+c1 h1-up half vs h1-dial half diffs 7
+  ('k1dd1[0]', 27, 1)
+  ('k1dd1[1]', 39, 1)
+  ('k5962[1]', 526, 529)
+  ('k84d1', 2, 0)
+  ('k88b2', 526, 529)
+  ('k90d1[1]', 2, 1)
+  ('k99a1[1]', 0, 1)
+control p-up half vs p-dial half diffs 5
+  ('k1dd1[0]', 27, 1)
+  ('k1dd1[1]', 39, 1)
+  ('k84d1', 2, 0)
+  ('k90d1[1]', 2, 1)
+  ('k99a1[1]', 0, 1)
+c1 h1-dial title 42a83c79ead5126577e529b063c94c43e6d6d7a3177476b1be78a8c12c09b1a7
+control p-dial title 42a83c79ead5126577e529b063c94c43e6d6d7a3177476b1be78a8c12c09b1a7
+c1 h1-dial zone 1 prof zone [2, 1, 2, 0, 2, 0, 5, 5]
+c1 p-dial zone 1 prof [2, 1, 2, 0, 2, 0, 5, 5] half [2, 0, 2, 0, 2, 0, 5, 5]
+save control {'pass': True, 'savesBefore': [{'store': 'E', 'from': '0x6006124a (disasm 0x5004022a)', 'posted': False}, {'store': 'M', 'from': '0x6006124a (disasm 0x5004022a)', 'posted': False}, {'store': 'M', 'from': '0x60061268 (disasm 0x50040248)', 'posted': True}, {'store': 'M', 'from': '0x60061268 (disasm 0x50040248)', 'posted': True}], 'savesAfterMenu': [{'store': 'E', 'from': '0x6006124a (disasm 0x5004022a)', 'posted': False}, {'store': 'M', 'from': '0x6006124a (disasm 0x5004022a)', 'posted': False}, {'store': 'M', 'from': '0x60061268 (disasm 0x50040248)', 'posted': True}, {'store': 'M', 'from': '0x60061268 (disasm 0x50040248)', 'posted': True}, {'store': 'M', 'from': '0x60061268 (disasm 0x50040248)', 'posted': True}], 'savesAfterPower': [{'store': 'E', 'from': '0x6006124a (disasm 0x5004022a)', 'posted': False}, {'store': 'M', 'from': '0x6006124a (disasm 0x5004022a)', 'posted': False}, {'store': 'M', 'from': '0x60061268 (disasm 0x50040248)', 'posted': True}, {'store': 'M', 'from': '0x60061268 (disasm 0x50040248)', 'posted': True}, {'store': 'M', 'from': '0x60061268 (disasm 0x50040248)', 'posted': True}], 'storeChanged': True, 'powerNull': True, 'powerError': 'S-SHUTDOWN: the power-off had not reached its last write after 10000 ms of lab time; tasks [[2,"0x5089b8ac WAI"],[10,"0x50044861 WAI"],[13,"0x508ae684 WAI"],[14,"0x508b3770 WAI"],[16,"0x500541a0 WAI"],[58,"0x50ac6296 WAI"],[59,"0x5105fd77 WAI"],[85,"0x50156805 WAI"],[91,"0x502d0ceb WAI"],[92,"0x5011f82d WAI"],[93,"0x502ce98f WAI"],[122,"0x5005806c WAI"],[140,"0x501d3ec8 WAI"],[147,"0x501e3eca WAI"],[160,"0xa2300100 WAI"],[161,"0x50db7bf8 WAI"],[162,"0x50acc3fd WAI"],[163,"0x50ace582 WAI"],[164,"0x50acff91 WAI"],[165,"0x510a711e WAI"],[166,"0x510a711e WAI"],[167,"0x510db30f WAI"],[168,"0x51179075 WAI"]]', 'bootSaves': 2}

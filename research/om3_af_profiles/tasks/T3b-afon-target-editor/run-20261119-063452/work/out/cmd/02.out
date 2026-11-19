@@ -1,0 +1,92 @@
+# fc cc + little-endian key immediate
+# image inputs/00_0100_50000020.decoded.bin bytes 33554368
+
+## 0x99a1 zone type  hits 7
+609b3e3a  fccca199000090008501dd3cf56affc0
+609b3e4c  fccca199000090008503dd2af56affc0
+609b3e5e  fccca199000090008505ca2ffccca199
+609b3e6a  fccca1990000900004dd0df56affc00c
+609b3e7b  fccca199000090008502ddfbf46affc0
+609b3e8d  fccca199000090008504dde9f46affc0
+609f02f4  fccca1990000dd5c3067ff0004fc8040
+
+## 0x9a41 target size  hits 22
+609b3c7a  fccc419a00009000ddfef66affc00cf8
+609eff91  fccc419a0000ddbf3367ff0004fc8080
+610fd21b  fccc419a0000ddd27bffffe010b000c9
+610fd22c  fccc419a0000fccdffff000095003efa
+610fd2ca  fccc419a0000dd237bffffe010b000c9
+610fd2db  fccc419a0000fccdffff000095003efa
+61108816  fccc419a000090008508f1e93e22204b
+6110889b  fccc419a0000900004913e22204b04dd
+611088f4  fccc419a0000900089913e22204b04dd
+61108925  fccc419a00009000850a913e22204b04
+611089b3  fccc419a0000900004913e22204b04dd
+61108c29  fccc419a0000900004913e22204b04dd
+61108cfa  fccc419a0000900004913e222c4b04dd
+61108d79  fccc419a0000900004913e222c4b04dd
+61108ff1  fccc419a000090008503913e22204b04
+611090ac  fccc419a000090008501913e22204b04
+61267b4e  fccc419a000090008502913e22204b04
+6126966f  fccc419a000090008504913e22204b04
+612696a9  fccc419a000090008506913e22204b04
+61269765  fccc419a000090008509913e22204b04
+6126a1c1  fccc419a000090008505913e22204b04
+6126a6f6  fccc419a000090008506913e22204b04
+
+## 0x5962 position  hits 0
+
+## 0x1dd1 custom size  hits 0
+
+## 0x1de1 custom step  hits 0
+
+## 0xdfa1 home size  hits 0
+
+## 0x99d2 home position  hits 0
+
+## 0x1db1 area orientation enable  hits 0
+
+## 0x1dc1 position orientation enable  hits 0
+
+## 0x0e91 pose  hits 0
+
+# strings
+61505433  b'AF_Target_Actuator::Get_State this->select_all_state=%d'
+61505471  b'AF_Target_Actuator::Get_State this->current_cursor=%d'
+615054ad  b'AF_Target_Actuator::Get_Cursor_Value this->cursor_num=%d    cursor==%d'
+615054fa  b'AF_Target_Actuator::Get_Cursor_State this->cursor_num=%d  cursor=%d'
+61505544  b'AF_Target_Actuator::initialize()_0'
+6150556d  b'AF_Target_Actuator::initialize()_1'
+61505596  b'AF_Target_Actuator::set_cursor_enable_base_0'
+615055c9  b'AF_Target_Actuator::set_cursor_enable_base_3'
+615055fc  b'AF_Target_Actuator::set_cursor_enable_adjust_af_0'
+61505634  b'AF_Target_Actuator::set_cursor_enable_adjust_af_1'
+6150566d  b'AF_Target_Actuator::initialize_direct_af_0'
+615056d6  b'AF_Target_Actuator.cpp'
+615056f4  b'AF_Target_Actuator::initialize_direct_af_1'
+6150576b  b'AF_Target_Actuator::initialize_adjust_af pos=%d'
+615057a3  b'AF_Target_Actuator::initialize_adjust_af inside if()'
+615057e2  b'AF_Target_Actuator::initialize_adjust_af inside else'
+6150581e  b'AF_Target_Actuator::up_direct_af'
+6150583f  b'AF_Target_Actuator::up_direct_af_0 af_target_actuator->modeId= %d'
+61505881  b'AF_Target_Actuator::up_direct_af_1 af_target_actuator->select_all_before_mode=%d'
+615058d2  b'AF_Target_Actuator::up_direct_af_2'
+609f4348  b'af_target_lost_event'
+60a7ce0e  b'af_target     = '
+60e91c4d  b'af_target_data[%d].af_type=%d'
+60e91c6b  b'af_target_data[%d].frame_heigh=%d'
+60e91c8d  b'af_target_data[%d].frame_width=%d'
+60e91caf  b'af_target_data[%d].list_data_num=%d'
+6146e97c  b'af_target_info.ucAFType = %d'
+6146f154  b'af_target_info.ucAFType = %d'
+61505862  b'af_target_actuator->modeId= %d'
+615058a4  b'af_target_actuator->select_all_before_mode=%d'
+61505c00  b'af_target_actuator->select_all_state=%d'
+61505ca2  b'af_target_actuator->cursor_state[af_target_actuator->current_cursor]=%d'
+61505cc3  b'af_target_actuator->current_cursor]=%d'
+61505d14  b'af_target_actuator->current_cursor=%d'
+61505e22  b'af_target_actuator->current_cursor=%d'
+61505e71  b'af_target_actuator->cursor_state[af_target_actuator->current_cursor]=%d'
+61505e92  b'af_target_actuator->current_cursor]=%d'
+61505ecb  b'af_target_actuator->current_cursor=%d'
+... total lines 117
