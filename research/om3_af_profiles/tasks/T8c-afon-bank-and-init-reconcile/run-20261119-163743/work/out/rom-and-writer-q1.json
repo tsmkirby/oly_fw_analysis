@@ -1,0 +1,388 @@
+{
+  "tables": [
+    {
+      "name": "T0",
+      "records": 452,
+      "zeroKey": "0x600b8f50",
+      "endOk": true
+    },
+    {
+      "name": "T2",
+      "records": 544,
+      "zeroKey": "0x600bb5e0",
+      "endOk": true
+    },
+    {
+      "name": "T3a",
+      "records": 128,
+      "zeroKey": "0x600bda6c",
+      "endOk": true
+    },
+    {
+      "name": "T3b",
+      "records": 204,
+      "zeroKey": "0x600e4b54",
+      "endOk": true
+    },
+    {
+      "name": "bank7",
+      "records": 1215,
+      "zeroKey": "0x6011fe20",
+      "endOk": true
+    }
+  ],
+  "rom": [
+    {
+      "key": "0x99a1",
+      "name": "k99a1",
+      "layout": {
+        "n": 8,
+        "width": 1
+      },
+      "hits": [
+        {
+          "table": "bank7",
+          "record": "0x6011ebdc",
+          "count": 8,
+          "width": 1,
+          "payload": "0000000000000000"
+        }
+      ]
+    },
+    {
+      "key": "0x9a41",
+      "name": "k9a41",
+      "layout": {
+        "n": 2,
+        "width": 1
+      },
+      "hits": [
+        {
+          "table": "bank7",
+          "record": "0x6011ec34",
+          "count": 1,
+          "width": 1,
+          "payload": "00"
+        }
+      ]
+    },
+    {
+      "key": "0x5962",
+      "name": "k5962",
+      "layout": {
+        "n": 6,
+        "width": 2
+      },
+      "hits": [
+        {
+          "table": "bank7",
+          "record": "0x600e575c",
+          "count": 6,
+          "width": 2,
+          "payload": "000000000000000000000000"
+        }
+      ]
+    },
+    {
+      "key": "0x1dd1",
+      "name": "k1dd1",
+      "layout": {
+        "n": 10,
+        "width": 1
+      },
+      "hits": [
+        {
+          "table": "bank7",
+          "record": "0x600e4f4c",
+          "count": 10,
+          "width": 1,
+          "payload": "00000000000000000000"
+        }
+      ]
+    },
+    {
+      "key": "0x84d1",
+      "name": "k84d1",
+      "layout": {
+        "n": 1,
+        "width": 1
+      },
+      "hits": [
+        {
+          "table": "bank7",
+          "record": "0x600e5fe8",
+          "count": 1,
+          "width": 1,
+          "payload": "00"
+        }
+      ]
+    },
+    {
+      "key": "0x88b2",
+      "name": "k88b2",
+      "layout": {
+        "n": 1,
+        "width": 2
+      },
+      "hits": [
+        {
+          "table": "bank7",
+          "record": "0x60117870",
+          "count": 1,
+          "width": 2,
+          "payload": "0000"
+        }
+      ]
+    },
+    {
+      "key": "0x90d1",
+      "name": "k90d1",
+      "layout": {
+        "n": 8,
+        "width": 1
+      },
+      "hits": [
+        {
+          "table": "bank7",
+          "record": "0x6011e7a8",
+          "count": 8,
+          "width": 1,
+          "payload": "0000000000000000"
+        }
+      ]
+    },
+    {
+      "key": "0x5a11",
+      "name": "k5a11",
+      "layout": {
+        "n": 11,
+        "width": 1
+      },
+      "hits": [
+        {
+          "table": "bank7",
+          "record": "0x600e57c4",
+          "count": 11,
+          "width": 1,
+          "payload": "0000000000000000000000"
+        }
+      ]
+    },
+    {
+      "key": "0x1de1",
+      "name": "k1de1",
+      "layout": {
+        "n": 8,
+        "width": 1
+      },
+      "hits": [
+        {
+          "table": "bank7",
+          "record": "0x600e4f5c",
+          "count": 8,
+          "width": 1,
+          "payload": "0000000000000000"
+        }
+      ]
+    },
+    {
+      "key": "0x1df1",
+      "name": "k1df1",
+      "layout": {
+        "n": 8,
+        "width": 1
+      },
+      "hits": [
+        {
+          "table": "bank7",
+          "record": "0x600e4f68",
+          "count": 9,
+          "width": 1,
+          "payload": "000000000000000000"
+        }
+      ]
+    },
+    {
+      "key": "0x1db1",
+      "name": "k1db1",
+      "layout": {
+        "n": 1,
+        "width": 1
+      },
+      "hits": [
+        {
+          "table": "bank7",
+          "record": "0x600e4f3c",
+          "count": 1,
+          "width": 1,
+          "payload": "00"
+        }
+      ]
+    },
+    {
+      "key": "0x1dc1",
+      "name": "k1dc1",
+      "layout": {
+        "n": 1,
+        "width": 1
+      },
+      "hits": [
+        {
+          "table": "bank7",
+          "record": "0x600e4f44",
+          "count": 1,
+          "width": 1,
+          "payload": "00"
+        }
+      ]
+    },
+    {
+      "key": "0x5991",
+      "name": "k5991",
+      "layout": {
+        "n": 2,
+        "width": 1
+      },
+      "hits": [
+        {
+          "table": "bank7",
+          "record": "0x600e577c",
+          "count": 2,
+          "width": 1,
+          "payload": "0000"
+        }
+      ]
+    },
+    {
+      "key": "0xe1f1",
+      "name": "ke1f1",
+      "layout": {
+        "n": 1,
+        "width": 1
+      },
+      "hits": [
+        {
+          "table": "bank7",
+          "record": "0x6011f394",
+          "count": 1,
+          "width": 1,
+          "payload": "00"
+        }
+      ]
+    },
+    {
+      "key": "0x1e71",
+      "name": "k1e71",
+      "layout": {
+        "n": 1,
+        "width": 1
+      },
+      "hits": [
+        {
+          "table": "bank7",
+          "record": "0x600e4fb8",
+          "count": 1,
+          "width": 1,
+          "payload": "00"
+        }
+      ]
+    }
+  ],
+  "writer": {
+    "entry": "0x609b3c79",
+    "return": "0x609b3d6d",
+    "windowBytes": 244,
+    "windowSha256": "574a1dc02186f5a01eac2884f6bb8bad1f1be9c8e29aecd9fedfc66435dddac8",
+    "orderedImmediates": [
+      {
+        "needle": "419a0000",
+        "at": "0x609b3c7c"
+      },
+      {
+        "needle": "d11d",
+        "at": "0x609b3c8d"
+      },
+      {
+        "needle": "d1840000",
+        "at": "0x609b3caf"
+      },
+      {
+        "needle": "b2880000",
+        "at": "0x609b3cc2"
+      },
+      {
+        "needle": "f11d",
+        "at": "0x609b3cd4"
+      },
+      {
+        "needle": "011e",
+        "at": "0x609b3ce5"
+      }
+    ],
+    "absentOrPresent": [
+      {
+        "label": "pose",
+        "present": false,
+        "at": null
+      },
+      {
+        "label": "0x5962",
+        "present": false,
+        "at": null
+      },
+      {
+        "label": "0x99a1",
+        "present": false,
+        "at": null
+      },
+      {
+        "label": "0x1db1",
+        "present": false,
+        "at": null
+      },
+      {
+        "label": "0x1dc1",
+        "present": false,
+        "at": null
+      }
+    ],
+    "fixedIndices": [
+      {
+        "key": "0x9a41",
+        "index": 0,
+        "site": "0x609b3c7a"
+      },
+      {
+        "key": "0x1dd1",
+        "index": 0,
+        "site": "0x609b3c8c"
+      },
+      {
+        "key": "0x1dd1",
+        "index": 1,
+        "site": "0x609b3c9c"
+      },
+      {
+        "key": "0x84d1",
+        "index": 0,
+        "site": "0x609b3cad"
+      },
+      {
+        "key": "0x88b2",
+        "index": 0,
+        "site": "0x609b3cc0"
+      },
+      {
+        "key": "0x1df1",
+        "index": 0,
+        "site": "0x609b3cd3"
+      },
+      {
+        "key": "0x1e01",
+        "index": 0,
+        "site": "0x609b3ce4"
+      }
+    ],
+    "checksOk": true
+  }
+}

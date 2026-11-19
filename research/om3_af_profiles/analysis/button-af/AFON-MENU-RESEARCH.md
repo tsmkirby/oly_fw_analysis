@@ -1119,6 +1119,22 @@ emulator only.
 - **Observed and unexplained.** A pose publish can rewrite the live half-press `0x84d1` and `0x1dd1`.
 - **Evidence:** [readiness/t6-afon-target-size-position](readiness/t6-afon-target-size-position/README.md).
 
+### T8c/T10/T9c round 1 findings (19 November, EMULATOR-ONLY, Sol-confirmed as stated)
+
+- **Banks.** The stock direct editor writes the **saved** position index of the pose: `0x5962` index 0
+  (landscape), 4 (EXIF 6), 2 (EXIF 8) with Orientation Linked on, and 0 for every pose when off. The T6 reader
+  used the **change** index (1/5/3). The UI-id table at `0x6062555c` pairs them (ids 1338/1339, 1646/1647,
+  1648/1649). The AF-ON reader now uses the saved index. Why T7 saw 1/5/3 is inferred, not listed.
+- **Initialization.** *Initialize All Settings → Yes* writes the same values as the fresh store at all 63
+  mirror-copied slots; the ROM registration payloads are all zero. Reset values are the definition of "stock
+  factory defaults".
+- **Storage (Q7 a).** The packed profile is 160 bits (20 bytes) of the 26 available. A stock menu save changes M
+  only at the bank checksum (offsets 2–3) and the unnamed cells; E is unchanged. The codec domain must include
+  zero custom values (T10b).
+- **Display.** The getter return at `0x6041935b` is a causal input of the AF frame (cell left at 526). The frame
+  routine `0x61184dd6` is dispatched by `calls (A2)` at `0x610c8b66` (vtable+`0x190`) during idle. The
+  return-to-pixel relation is not yet general.
+
 ## 9. Next steps (reordered 17 November 2026)
 
 The owner's stock-hardware confirmation (section 1) takes the CPU3 detection

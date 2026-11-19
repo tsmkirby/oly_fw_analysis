@@ -1,0 +1,615 @@
+{
+  "task": "T8c",
+  "directTitle": "9d6a92dc9914061304a8f94e2515a22b5fd6ba2846405649f740cc62282aea02",
+  "link": {
+    "area": 1,
+    "point": 1
+  },
+  "editorBank": {
+    "unlinked": 0,
+    "pose1": 0,
+    "pose2": 4,
+    "pose4": 2
+  },
+  "steps": [
+    {
+      "id": "enter-land",
+      "action": "enter",
+      "who": [
+        "candidate"
+      ],
+      "pose": 1,
+      "bank": 0,
+      "expect": {
+        "mirrorFactory": true
+      },
+      "fields": {
+        "subject": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c brief: 0x1e71[0] is 0 after every key"
+        },
+        "bank": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c Q1: saved index, linked pose 1"
+        }
+      }
+    },
+    {
+      "id": "e-open",
+      "action": "key",
+      "key": "up",
+      "who": [
+        "k1e",
+        "candidate"
+      ],
+      "pose": 1,
+      "bank": 0,
+      "editor": true,
+      "identity": {
+        "screen": "direct",
+        "highlight": null,
+        "title": "9d6a92dc9914061304a8f94e2515a22b5fd6ba2846405649f740cc62282aea02"
+      },
+      "expect": {
+        "zone": 2,
+        "bankCell": "k5962"
+      },
+      "fields": {
+        "subject": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c brief: 0x1e71[0] is 0 after every key"
+        },
+        "bank": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c Q1: saved index, linked pose 1"
+        }
+      }
+    },
+    {
+      "id": "e-up",
+      "action": "key",
+      "key": "up",
+      "who": [
+        "k1e",
+        "candidate"
+      ],
+      "pose": 1,
+      "bank": 0,
+      "editor": true,
+      "identity": {
+        "screen": "direct",
+        "highlight": null,
+        "title": "9d6a92dc9914061304a8f94e2515a22b5fd6ba2846405649f740cc62282aea02"
+      },
+      "expect": {
+        "zone": 2,
+        "bankCell": "k5962"
+      },
+      "fields": {
+        "subject": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c brief: 0x1e71[0] is 0 after every key"
+        },
+        "bank": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c Q1: saved index, linked pose 1"
+        }
+      }
+    },
+    {
+      "id": "e-ok",
+      "action": "key",
+      "key": "ok",
+      "who": [
+        "k1e",
+        "candidate"
+      ],
+      "pose": 1,
+      "bank": 0,
+      "editor": true,
+      "exit": true,
+      "exitSeq": [
+        {
+          "key": "ok",
+          "dir": "down"
+        },
+        {
+          "key": "ok",
+          "dir": "up"
+        }
+      ],
+      "identity": {
+        "screen": "direct",
+        "highlight": null,
+        "title": "9d6a92dc9914061304a8f94e2515a22b5fd6ba2846405649f740cc62282aea02"
+      },
+      "fields": {
+        "subject": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c brief: 0x1e71[0] is 0 after every key"
+        },
+        "bank": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c Q1: saved index, linked pose 1"
+        }
+      }
+    },
+    {
+      "id": "af-down",
+      "action": "edge",
+      "key": "afon",
+      "dir": "down",
+      "who": [
+        "candidate"
+      ],
+      "pose": 1,
+      "bank": 0,
+      "exitSeq": [
+        {
+          "key": "afon",
+          "dir": "down"
+        }
+      ],
+      "expect": {
+        "positionFrom": "k1e:e-ok",
+        "small": true,
+        "owner": 2
+      },
+      "fields": {
+        "subject": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c brief: 0x1e71[0] is 0 after every key"
+        },
+        "bank": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c Q1: saved index, linked pose 1"
+        }
+      }
+    },
+    {
+      "id": "af-up",
+      "action": "edge",
+      "key": "afon",
+      "dir": "up",
+      "who": [
+        "candidate"
+      ],
+      "pose": 1,
+      "bank": 0,
+      "exitSeq": [
+        {
+          "key": "afon",
+          "dir": "up"
+        }
+      ],
+      "expect": {
+        "releaseFrom": "k1e:e-ok",
+        "owner": 0
+      },
+      "fields": {
+        "subject": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c brief: 0x1e71[0] is 0 after every key"
+        },
+        "bank": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c Q1: saved index, linked pose 1"
+        }
+      }
+    },
+    {
+      "id": "pose-exif6",
+      "action": "pose",
+      "key": "exif6",
+      "who": [
+        "k1e",
+        "candidate"
+      ],
+      "pose": 2,
+      "bank": 4,
+      "fields": {
+        "subject": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c brief: 0x1e71[0] is 0 after every key"
+        },
+        "bank": {
+          "source": "literal",
+          "value": 4,
+          "provenance": "T8c Q1: saved index, linked pose 2"
+        }
+      }
+    },
+    {
+      "id": "enter-exif6",
+      "action": "enter",
+      "who": [
+        "candidate"
+      ],
+      "pose": 2,
+      "bank": 4,
+      "fields": {
+        "subject": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c brief: 0x1e71[0] is 0 after every key"
+        },
+        "bank": {
+          "source": "literal",
+          "value": 4,
+          "provenance": "T8c Q1: saved index, linked pose 2"
+        }
+      }
+    },
+    {
+      "id": "p-up",
+      "action": "key",
+      "key": "up",
+      "who": [
+        "k1e",
+        "candidate"
+      ],
+      "pose": 2,
+      "bank": 4,
+      "editor": true,
+      "identity": {
+        "screen": "direct",
+        "highlight": null,
+        "title": "9d6a92dc9914061304a8f94e2515a22b5fd6ba2846405649f740cc62282aea02"
+      },
+      "expect": {
+        "zone": 2,
+        "bankCell": "k5962"
+      },
+      "fields": {
+        "subject": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c brief: 0x1e71[0] is 0 after every key"
+        },
+        "bank": {
+          "source": "literal",
+          "value": 4,
+          "provenance": "T8c Q1: saved index, linked pose 2"
+        }
+      }
+    },
+    {
+      "id": "p-menu",
+      "action": "key",
+      "key": "menu",
+      "who": [
+        "k1e",
+        "candidate"
+      ],
+      "pose": 2,
+      "bank": 4,
+      "editor": true,
+      "exit": true,
+      "exitSeq": [
+        {
+          "key": "menu",
+          "dir": "down"
+        },
+        {
+          "key": "menu",
+          "dir": "up"
+        }
+      ],
+      "identity": {
+        "screen": "direct",
+        "highlight": null,
+        "title": "9d6a92dc9914061304a8f94e2515a22b5fd6ba2846405649f740cc62282aea02"
+      },
+      "fields": {
+        "subject": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c brief: 0x1e71[0] is 0 after every key"
+        },
+        "bank": {
+          "source": "literal",
+          "value": 4,
+          "provenance": "T8c Q1: saved index, linked pose 2"
+        }
+      }
+    },
+    {
+      "id": "p-af-down",
+      "action": "edge",
+      "key": "afon",
+      "dir": "down",
+      "who": [
+        "candidate"
+      ],
+      "pose": 2,
+      "bank": 4,
+      "exitSeq": [
+        {
+          "key": "afon",
+          "dir": "down"
+        }
+      ],
+      "expect": {
+        "positionFrom": "k1e:p-menu",
+        "small": true,
+        "owner": 2
+      },
+      "fields": {
+        "subject": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c brief: 0x1e71[0] is 0 after every key"
+        },
+        "bank": {
+          "source": "literal",
+          "value": 4,
+          "provenance": "T8c Q1: saved index, linked pose 2"
+        }
+      }
+    },
+    {
+      "id": "p-af-up",
+      "action": "edge",
+      "key": "afon",
+      "dir": "up",
+      "who": [
+        "candidate"
+      ],
+      "pose": 2,
+      "bank": 4,
+      "exitSeq": [
+        {
+          "key": "afon",
+          "dir": "up"
+        }
+      ],
+      "expect": {
+        "releaseFrom": "k1e:p-menu",
+        "owner": 0
+      },
+      "fields": {
+        "subject": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c brief: 0x1e71[0] is 0 after every key"
+        },
+        "bank": {
+          "source": "literal",
+          "value": 4,
+          "provenance": "T8c Q1: saved index, linked pose 2"
+        }
+      }
+    },
+    {
+      "id": "pose-land",
+      "action": "pose",
+      "key": "landscape",
+      "who": [
+        "candidate"
+      ],
+      "pose": 1,
+      "bank": 0,
+      "fields": {
+        "subject": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c brief: 0x1e71[0] is 0 after every key"
+        },
+        "bank": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c Q1: saved index, linked pose 1"
+        }
+      }
+    },
+    {
+      "id": "l-af-down",
+      "action": "edge",
+      "key": "afon",
+      "dir": "down",
+      "who": [
+        "candidate"
+      ],
+      "pose": 1,
+      "bank": 0,
+      "exitSeq": [
+        {
+          "key": "afon",
+          "dir": "down"
+        }
+      ],
+      "expect": {
+        "positionFrom": "k1e:e-ok",
+        "small": true,
+        "owner": 2
+      },
+      "fields": {
+        "subject": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c brief: 0x1e71[0] is 0 after every key"
+        },
+        "bank": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c Q1: saved index, linked pose 1"
+        }
+      }
+    },
+    {
+      "id": "l-af-up",
+      "action": "edge",
+      "key": "afon",
+      "dir": "up",
+      "who": [
+        "candidate"
+      ],
+      "pose": 1,
+      "bank": 0,
+      "exitSeq": [
+        {
+          "key": "afon",
+          "dir": "up"
+        }
+      ],
+      "expect": {
+        "releaseFrom": "k1e:e-ok",
+        "owner": 0
+      },
+      "fields": {
+        "subject": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c brief: 0x1e71[0] is 0 after every key"
+        },
+        "bank": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c Q1: saved index, linked pose 1"
+        }
+      }
+    },
+    {
+      "id": "n-open",
+      "action": "key",
+      "key": "up",
+      "who": [
+        "k2",
+        "candidate"
+      ],
+      "pose": 1,
+      "bank": 0,
+      "identity": {
+        "screen": "direct",
+        "highlight": null,
+        "title": "9d6a92dc9914061304a8f94e2515a22b5fd6ba2846405649f740cc62282aea02"
+      },
+      "fields": {
+        "subject": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c brief: 0x1e71[0] is 0 after every key"
+        },
+        "bank": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c Q1: saved index, linked pose 1"
+        }
+      }
+    },
+    {
+      "id": "n-up",
+      "action": "key",
+      "key": "up",
+      "who": [
+        "k2",
+        "candidate"
+      ],
+      "pose": 1,
+      "bank": 0,
+      "identity": {
+        "screen": "direct",
+        "highlight": null,
+        "title": "9d6a92dc9914061304a8f94e2515a22b5fd6ba2846405649f740cc62282aea02"
+      },
+      "fields": {
+        "subject": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c brief: 0x1e71[0] is 0 after every key"
+        },
+        "bank": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c Q1: saved index, linked pose 1"
+        }
+      }
+    },
+    {
+      "id": "n-ok",
+      "action": "key",
+      "key": "ok",
+      "who": [
+        "k2",
+        "candidate"
+      ],
+      "pose": 1,
+      "bank": 0,
+      "exit": true,
+      "matchExit": "n-ok",
+      "exitSeq": [
+        {
+          "key": "ok",
+          "dir": "down"
+        },
+        {
+          "key": "ok",
+          "dir": "up"
+        }
+      ],
+      "identity": {
+        "screen": "direct",
+        "highlight": null,
+        "title": "9d6a92dc9914061304a8f94e2515a22b5fd6ba2846405649f740cc62282aea02"
+      },
+      "fields": {
+        "subject": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c brief: 0x1e71[0] is 0 after every key"
+        },
+        "bank": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c Q1: saved index, linked pose 1"
+        }
+      }
+    },
+    {
+      "id": "n-s1",
+      "action": "edge",
+      "key": "s1",
+      "dir": "down",
+      "who": [
+        "k2",
+        "candidate"
+      ],
+      "pose": 1,
+      "bank": 0,
+      "exitSeq": [
+        {
+          "key": "s1",
+          "dir": "down"
+        }
+      ],
+      "expect": {
+        "halfFrom": "k2:n-s1"
+      },
+      "fields": {
+        "subject": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c brief: 0x1e71[0] is 0 after every key"
+        },
+        "bank": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c Q1: saved index, linked pose 1"
+        }
+      }
+    }
+  ]
+}

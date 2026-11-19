@@ -1,0 +1,255 @@
+{
+  "task": "T10-afon-profile-storage-5b82",
+  "sealed": "External final seal. Commands 01-06 include cmd, out, err, and exit. Command 07 cmd.txt is hashed. 07.out, 07.err, and 07.exit are written by the wrapper after this process exits. No emulator module was loaded.",
+  "manifest": {
+    "path": "work/evidence-manifest.json",
+    "sha256": "caba53e7944a99ac58a2198379f8f46b25f7f04b055afd2ec8f92565db29dc0f",
+    "bytes": 15626
+  },
+  "result": {
+    "path": "work/result.md",
+    "sha256": "02e78eaae69d2b6078e02414902bc13f1b959123ba1f0c1853786baad15aa452",
+    "bytes": 8441
+  },
+  "encoding": {
+    "path": "work/out/encoding.md",
+    "sha256": "881ba3309af64bb6bd3567625bc614b92d5e70504a6706996dfe9133b097a3fb",
+    "bytes": 4728
+  },
+  "reader_audit": {
+    "path": "work/out/reader-audit.md",
+    "sha256": "f78f7b7d3c7ce7bf4829e8dafd49985729e26a90f98a0629a186df764b70946b",
+    "bytes": 7435
+  },
+  "seal_script": {
+    "path": "work/scripts/seal_t10.mjs",
+    "sha256": "8f3c9b65265bc2e5ca3877ccf52c3b9a45caab85253b82944e9b2fe3f82ee0c9",
+    "bytes": 2283
+  },
+  "commands": [
+    {
+      "n": 1,
+      "requested": "python -I work/scripts/audit_5b82_t10.py",
+      "status": 1,
+      "wrapper_sha256": "34e42c59c553a1e4213e2b223034bd31142c7000c6aef4aac2ac9d5e7f1fe0ef",
+      "scripts": [
+        {
+          "path": "work/scripts/audit_5b82_t10.py",
+          "sha256": "cce65befbe0157fac9c9a1ae01e00b1764c77e7555f67ccb82c7c1278582e2b8",
+          "bytes": 10248
+        }
+      ],
+      "files": {
+        "cmd": {
+          "path": "work/out/cmd/01.cmd.txt",
+          "sha256": "4c79054ddea8ec3a2a3a3816e79c8816d3e62b9f22b0e9361a1e363c3ada8430",
+          "bytes": 344
+        },
+        "out": {
+          "path": "work/out/cmd/01.out",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        "err": {
+          "path": "work/out/cmd/01.err",
+          "sha256": "90a6332d5284235bf451c14faa54921793c6ec6a1fd22f7861a3169f91244d5b",
+          "bytes": 254
+        },
+        "exit": {
+          "path": "work/out/cmd/01.exit",
+          "sha256": "f4e0cc7ebd5af14cddc049c3605d72e4bea8e64f64892e2e98fc6e8a66c4543b",
+          "bytes": 457
+        }
+      }
+    },
+    {
+      "n": 2,
+      "requested": "python -I work/scripts/hash_image_t10.py",
+      "status": 0,
+      "wrapper_sha256": "34e42c59c553a1e4213e2b223034bd31142c7000c6aef4aac2ac9d5e7f1fe0ef",
+      "scripts": [
+        {
+          "path": "work/scripts/hash_image_t10.py",
+          "sha256": "685c006cbb2f05f699550e503650a1ac96ca7b9aea5f6d7ceaa7fde14ae9e6b5",
+          "bytes": 438
+        }
+      ],
+      "files": {
+        "cmd": {
+          "path": "work/out/cmd/02.cmd.txt",
+          "sha256": "0677b4fcd50f7907430ca19154de9adeac9ff201744d7ce15d1a725327a1a4e8",
+          "bytes": 342
+        },
+        "out": {
+          "path": "work/out/cmd/02.out",
+          "sha256": "8ce56ff99a3c8ec7224a0d4ec650be2213f8f76e47a853a2cae165c744ea9712",
+          "bytes": 178
+        },
+        "err": {
+          "path": "work/out/cmd/02.err",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        "exit": {
+          "path": "work/out/cmd/02.exit",
+          "sha256": "cabb91a55cb1a53c799ab4dc904dbe95e5a682d1e9420d1eac5c5a7e1f2271cd",
+          "bytes": 455
+        }
+      }
+    },
+    {
+      "n": 3,
+      "requested": "python -I work/scripts/make_audit_t10b.py",
+      "status": 0,
+      "wrapper_sha256": "34e42c59c553a1e4213e2b223034bd31142c7000c6aef4aac2ac9d5e7f1fe0ef",
+      "scripts": [
+        {
+          "path": "work/scripts/make_audit_t10b.py",
+          "sha256": "53431204e325b007d807638f1a3229e15e0f79224d4ce175b0dc50c2c1d17c66",
+          "bytes": 818
+        }
+      ],
+      "files": {
+        "cmd": {
+          "path": "work/out/cmd/03.cmd.txt",
+          "sha256": "a27489c00fea9d5a8c484ba60a85ea981e287d216a69265b88732686eaedcf20",
+          "bytes": 345
+        },
+        "out": {
+          "path": "work/out/cmd/03.out",
+          "sha256": "a6094a5ac533b2f55faeb3c575541fc2a114cd308774250e40e11ffa06a57458",
+          "bytes": 32
+        },
+        "err": {
+          "path": "work/out/cmd/03.err",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        "exit": {
+          "path": "work/out/cmd/03.exit",
+          "sha256": "0ba3debbeb64f4e2e9b20071c890a8228a2410fb040a5575a2ff8e51a203cb61",
+          "bytes": 457
+        }
+      }
+    },
+    {
+      "n": 4,
+      "requested": "python -I work/scripts/audit_5b82_t10b.py",
+      "status": 0,
+      "wrapper_sha256": "34e42c59c553a1e4213e2b223034bd31142c7000c6aef4aac2ac9d5e7f1fe0ef",
+      "scripts": [
+        {
+          "path": "work/scripts/audit_5b82_t10b.py",
+          "sha256": "8e70f995dd74abf90f0f258576acfd1b740fdc31ef167fda2ba13f5caa1ed0e0",
+          "bytes": 10249
+        }
+      ],
+      "files": {
+        "cmd": {
+          "path": "work/out/cmd/04.cmd.txt",
+          "sha256": "0b0ea9ba1417de8f02566c08e61d0d4c9e3cbe0a11e3260e68f64cec7d600fff",
+          "bytes": 347
+        },
+        "out": {
+          "path": "work/out/cmd/04.out",
+          "sha256": "86915c92f1c7de71568293d0a0595c75ce63a4fe32da6c7a333798b8fecca5cb",
+          "bytes": 51
+        },
+        "err": {
+          "path": "work/out/cmd/04.err",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        "exit": {
+          "path": "work/out/cmd/04.exit",
+          "sha256": "9b42769e027c44580dae85d8b53973a534b76b65b1733b9a041028d00d592436",
+          "bytes": 459
+        }
+      }
+    },
+    {
+      "n": 5,
+      "requested": "python -I work/scripts/scan_run_t10.py",
+      "status": 0,
+      "wrapper_sha256": "34e42c59c553a1e4213e2b223034bd31142c7000c6aef4aac2ac9d5e7f1fe0ef",
+      "scripts": [
+        {
+          "path": "work/scripts/scan_run_t10.py",
+          "sha256": "64e98b8a74ff072164447dfbce9d3be0db515b47b1a8090c09e395e304da3f52",
+          "bytes": 2122
+        }
+      ],
+      "files": {
+        "cmd": {
+          "path": "work/out/cmd/05.cmd.txt",
+          "sha256": "4b3413b478f0af64f2c32657fd15dcb004fc9476c5acefc602284e403314cf05",
+          "bytes": 337
+        },
+        "out": {
+          "path": "work/out/cmd/05.out",
+          "sha256": "46dba631ce1f5da44d9a11bd7187dc0359833aaf75676eb29e1af4c1ab349318",
+          "bytes": 394
+        },
+        "err": {
+          "path": "work/out/cmd/05.err",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        "exit": {
+          "path": "work/out/cmd/05.exit",
+          "sha256": "0b05cd0c145506375daaa63d6cd9260372c81e4efc9dc9ab6560c4c8a812629a",
+          "bytes": 452
+        }
+      }
+    },
+    {
+      "n": 6,
+      "requested": "node26 work/scripts/build_manifest_t10.mjs",
+      "status": 0,
+      "wrapper_sha256": "34e42c59c553a1e4213e2b223034bd31142c7000c6aef4aac2ac9d5e7f1fe0ef",
+      "scripts": [
+        {
+          "path": "work/scripts/build_manifest_t10.mjs",
+          "sha256": "72e29e6fb4a5714deb368253a684e03447c32dc1096626a50469796e622464e6",
+          "bytes": 4333
+        }
+      ],
+      "files": {
+        "cmd": {
+          "path": "work/out/cmd/06.cmd.txt",
+          "sha256": "11fa7cdc449dfd4c872d2ef8c498ce7ee866c9bdad5dd9154261ce6f0c748caf",
+          "bytes": 404
+        },
+        "out": {
+          "path": "work/out/cmd/06.out",
+          "sha256": "1389c7aa9ea9a9a5b33bb3c523aa4aac3d4365b048597fa5a627002a74e9665f",
+          "bytes": 144
+        },
+        "err": {
+          "path": "work/out/cmd/06.err",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        "exit": {
+          "path": "work/out/cmd/06.exit",
+          "sha256": "ea694c5c80aecbf91091a404024a36417354830131fed56acfcce4f4e898d05b",
+          "bytes": 520
+        }
+      }
+    },
+    {
+      "n": 7,
+      "requested": "node26 work/scripts/seal_t10.mjs",
+      "status": null,
+      "wrapper_sha256": null,
+      "scripts": null,
+      "files": {
+        "cmd": {
+          "path": "work/out/cmd/07.cmd.txt",
+          "sha256": "9596135effae9ddf329dafc0f1c673ddf5141d095d1e64a950226a79f330a3d2",
+          "bytes": 374
+        }
+      }
+    }
+  ]
+}

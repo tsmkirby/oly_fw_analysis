@@ -59,3 +59,39 @@ Brief version: 2026-11-19 · Workspace: Ghidra + OM-Emu · Runs concurrently wit
 ## 2. Out of scope
 
 The editor (T8c), storage (T10), Subject Detect On, packaging and hardware.
+
+## 5. Correction round (Opus, after Sol's review `run-20261119-174959-review`: REJECT)
+
+Your previous work is in `work\`, and Sol's full review is `audit\previous-review.md`. Read it completely.
+Do **not** start over. Preserve version 4's failed evidence unchanged.
+
+**Confirmed, reuse:** the getter return at `0x6041935b` is a causal input (412 → 356,198 marks, cell 526); the
+entry is `calls (A2)` at `0x610c8b66` (vtable+`0x190`); the two `0x610cd5ac` checks gate the writer; division
+by 39, mode-2 size 3/3, glyph 19×21.
+
+**Coordinator ruling: frame expectations come from reference runs, not from a formula.** The minus-6 rule stays
+a fitted hypothesis and is **not** used to derive expectations.
+- **AF-ON-owned edges:** K1e is stock with the half-press zone, size and position set to the AF-ON profile's
+  values for the current bank (native editor keys, or the stock setter labelled test setup). Its frame after the
+  same idle is the expected frame for that profile. Record the four mark rectangles, sizes and colour, and hash
+  them **before** the candidate runs.
+- **Owner 0/1 edges:** the frame of the full K2 configuration at the same edge (`ref:K2:<edge>`).
+
+**Required:**
+1. **Full K2.** K2 is the T6 overlay, the T6 profile-reader hook and the **same** display hook as the candidate,
+   unseeded. The Z5 control does not count. Relabel version 5 as the Z5 control with a reduced hook.
+2. **Size coverage.** Two seeded profiles: profile A (Small, as before) and profile B with a different zone and
+   size at a non-centre position, so the hook's size/kind branches execute (count substitutions per branch;
+   zero is a failure).
+3. **Refresh.** Either name the producer that schedules the `0x610c8b66` dispatch and raise it on press and
+   release, **or**, if it cannot be named within budget, measure per edge the time from the edge to the first
+   frame change and require it to be no longer than K1e's measured stock latency from S1 press to frame change,
+   plus one idle period. State which criterion was used. The producer then stays unresolved.
+4. **Validation.** Seeded A, seeded B, full K2, K1: all 12 edges, full frame plus ten-byte target plus owner after
+   every edge, stop at the first failure, each ending `ok:true`.
+5. **Records.** Apply Sol's corrections 1–4: a partial-investigation label for the previous run, refresh scheduling
+   and the general getter-to-word relation left unresolved, minus-6 labelled as a fitted hypothesis, "No other
+   deviation" withdrawn. Separate directly sampled words from screenshot-inferred ones. Complete the manifest and
+   refresh the seal.
+
+**Authorization: six new experiment versions** (emulator processes).

@@ -1,0 +1,723 @@
+// T10 acceptance, fourth emulator process. The menu save's Right changes the
+// half-press target, so the release is that record, the same on K2 and a candidate.
+// K1, which does not take that menu, keeps the untouched stock record. Do not edit
+// this file after it has run.
+// Usage: node26 work/scripts/accept_t10f.mjs om-emu
+import { createHash } from 'node:crypto';
+import { appendFileSync, copyFileSync, mkdirSync, readFileSync } from 'node:fs';
+import { resolve } from 'node:path';
+import { pathToFileURL } from 'node:url';
+import { pageTitle } from '../../ref/analysis/button-af/readiness/t5-afon-button-handoff/scripts/observe_c1.mjs';
+import {
+  PROFILE_A, decode, encode, mirrorFromProfile, profileFromMirror,
+} from './codec.mjs';
+
+process.env.OM_EMU_MODEL = 'E147';
+process.env.OM_EMU_NVRAM = 'off';
+
+const checkout = process.argv[2];
+if (!checkout) {
+  process.stderr.write('usage: node26 work/scripts/accept_t10f.mjs om-emu\n');
+  process.exit(2);
+}
+
+const { runZone } = await import(pathToFileURL(resolve(
+  'ref/analysis/button-af/readiness/t5-afon-button-handoff/scripts/zone_session_k1.mjs',
+)).href);
+
+const T6 = 'ref/analysis/button-af/readiness/t6-afon-target-size-position/out/overlay-changed-bytes.csv';
+const OUT = resolve('work/out/accept-t10f.jsonl');
+const GET = 0x60063380;
+const SET = 0x60063431;
+const MIRROR = 0xa031eeb0;
+const MIRROR_C = 0x6031eeb0;
+const ZONE = 0xa031e920;
+const BUILDER = 0x60a8f6bb;
+const RET_ZONE = 0x60a8f71c;
+const RET_SIZE = 0x60a8f757;
+const RET_POS = 0x60a8f76e;
+const RET_PLUS9 = 0x60a8f789;
+const CALL_CONV = 0x60a8f71f;
+const BACK_CONV = 0x60a8f726;
+const KEY = 0x5b82;
+const LIVE = 0x62920700;
+const LIVE_LEN = 0x40000;
+const UNNAMED = [0, 1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 14, 15];
+const NAMED = [5, 12, 13];
+const ALL = [0x0e, 0x02, 0x02, 0x00, 0x01, 0x00, 0x01, 0x00, 0x00, 0x00];
+const SMALL = [0x11, 0x02, 0x03, 0x00, 0x01, 0x00, 0x01, 0x00, 0x00, 0x00];
+const STOCK = [0x0e, 0x02, 0x02, 0x00, 0x1b, 0x00, 0x27, 0x00, 0x00, 0x00];
+const HALF = [0x0e, 0x02, 0x03, 0x00, 0x03, 0x00, 0x03, 0x00, 0x00, 0x00];
+const WANT = mirrorFromProfile(PROFILE_A);
+
+const holder = { events: [], queue: [] };
+mkdirSync(resolve('work/out'), { recursive: true });
+appendFileSync(OUT, '');
+
+function emit(row) {
+  appendFileSync(OUT, JSON.stringify(row) + '\n');
+}
+function same(a, b) {
+  return Array.from(a).every((v, i) => v === b[i]) && a.length === b.length;
+}
+function check(id, problems, extra) {
+  emit({ id, pass: problems.length === 0, problems, ...extra });
+  if (problems.length) throw new Error(id + ' ' + problems.join(','));
+}
+function sha(file) {
+  return createHash('sha256').update(readFileSync(file)).digest('hex');
+}
+
+function readKey(ctx, key, index) {
+  return ctx.l.call(ctx.native(GET), { d0: key, d1: index, a0: 0 }, null, null, 200000).d0 & 0xffff;
+}
+function setKey(ctx, key, index, value) {
+  ctx.l.call(ctx.native(SET), { d0: key, d1: index, a1: value }, null, null, 200000);
+  const back = readKey(ctx, key, index);
+  if (back !== (value & 0xffff)) throw new Error('setter readback ' + index + ' ' + back);
+}
+function readCells(ctx) {
+  return Array.from({ length: 16 }, (_, i) => readKey(ctx, KEY, i));
+}
+function recordFromCells(cells) {
+  const out = new Uint8Array(26);
+  let o = 0;
+  for (const i of UNNAMED) {
+    out[o] = cells[i] & 0xff;
+    out[o + 1] = (cells[i] >> 8) & 0xff;
+    o += 2;
+  }
+  return out;
+}
+function writeRecord(ctx, bytes) {
+  let o = 0;
+  for (const i of UNNAMED) {
+    setKey(ctx, KEY, i, bytes[o] | (bytes[o + 1] << 8));
+    o += 2;
+  }
+}
+function writeMirror(ctx, bytes) {
+  const buf = Buffer.from(bytes);
+  ctx.l.sim.write(MIRROR, buf);
+  ctx.l.sim.write(MIRROR_C, buf);
+}
+function readMirror(ctx) {
+  return Array.from(ctx.l.sim.read(MIRROR, 71));
+}
+function publish(ctx) {
+  const profile = decode(recordFromCells(readCells(ctx)));
+  writeMirror(ctx, profile ? mirrorFromProfile(profile) : new Uint8Array(71).fill(0xff));
+  return profile;
+}
+function callSaved(ctx, fn) {
+  const saved = ctx.l.sim.registers();
+  try { return fn(); }
+  finally { ctx.l.sim.reset(saved); }
+}
+
+function installRead(ctx) {
+  const link = { area: 0, pos: 0 };
+  let inConv = false;
+  const u8 = (a) => ctx.l.sim.read(a, 1)[0];
+  const u16 = (a) => { const b = ctx.l.sim.read(a, 2); return b[0] | (b[1] << 8); };
+  const bank = () => {
+    if (!(link.area === 1 && link.pos === 1)) return 1;
+    return 1;
+  };
+  const refresh = () => {
+    link.area = readKey(ctx, 0x1db1, 0);
+    link.pos = readKey(ctx, 0x1dc1, 0);
+  };
+  ctx.l.observe(ctx.native(CALL_CONV), () => { inConv = true; }, 'obs-builder-converter');
+  ctx.l.observe(ctx.native(BACK_CONV), () => { inConv = false; }, 'obs-builder-converter-back');
+  ctx.l.hook(ctx.native(GET), (h, r) => {
+    const back = r.mdr >>> 0;
+    const key = r.d0 & 0xffff;
+    const index = r.d1 & 0xffff;
+    const b = bank();
+    if (back === RET_ZONE) {
+      let v = u8(MIRROR + b);
+      if (v === 0xff) v = u8(ZONE);
+      h.finish(r, { d0: v });
+      return;
+    }
+    if (back === RET_SIZE) {
+      let v = u8(MIRROR + 0x08);
+      if (v === 0xff) v = 0;
+      h.finish(r, { d0: v });
+      return;
+    }
+    if (back === RET_POS) {
+      let v = u16(MIRROR + 0x0a + b * 2);
+      if (v === 0xffff) v = 0;
+      h.finish(r, { d0: v });
+      return;
+    }
+    if (back === RET_PLUS9) { h.finish(r, { d0: 0 }); return; }
+    if (inConv && key === 0x1dd1) {
+      let v = u8(MIRROR + 0x16 + (index & 0xff));
+      if (v === 0xff) v = 0;
+      h.finish(r, { d0: v });
+      return;
+    }
+    ctx.l.passthrough(r);
+  }, 'EMULATOR-ONLY profile read from the mirror. Role: behaviour.');
+  return { refresh };
+}
+
+function publishImage(ctx, base) {
+  const raw = Buffer.from(ctx.l.sim.read(base, 32));
+  const cells = [];
+  for (let i = 0; i < 16; i++) cells.push(raw.readUInt16LE(i * 2));
+  const profile = decode(recordFromCells(cells));
+  writeMirror(ctx, profile ? mirrorFromProfile(profile) : new Uint8Array(71).fill(0xff));
+  return profile;
+}
+function installEntry(ctx) {
+  const state = { n: 0, base: -1 };
+  ctx.l.observe(ctx.native(BUILDER), () => {
+    state.n += 1;
+    if (state.base >= 0) publishImage(ctx, state.base);
+  }, 'obs-afon-republish EMULATOR-ONLY. Pass-through on the overlay entry. Reads the live key image matched to the stock getter and writes the mirror. Role: behaviour.');
+  return state;
+}
+
+async function prepare(ctx) {
+  const { A } = await import(pathToFileURL(resolve(checkout, 'emu/src/fw/model.mjs')).href);
+  const api = A(0x50ac4afe);
+  const brought = ctx.bringUp();
+  ctx.emit('behaviour', {
+    step: 'bring-up',
+    label: 'EMULATOR-ONLY native bring-up 0x6071181e, 0x608fe1b0, 0x609df7e4, task 105. Role: behaviour.',
+    ...brought,
+  });
+  ctx.s.switch_input('lever', 1);
+  ctx.s.camapp.pump();
+  ctx.idle(500);
+  const argument = ctx.l.call(ctx.native(0x604050e5), { d0: 289, d1: 0 }, null, null, 200000).d0 >>> 0;
+  ctx.l.call(api, { d0: 289, d1: argument }, null, null, 200000);
+  ctx.l.call(api, { d0: 1712, d1: 0 }, null, null, 200000);
+  ctx.idle(500);
+  const subject = readKey(ctx, 0x1e71, 0);
+  if (subject !== 0) throw new Error('subject ' + subject);
+  if (ctx.s.get(289) !== 0 || ctx.s.get(25) !== 0) throw new Error('focus');
+  return { subject };
+}
+
+function namesOf(ctx) {
+  const view = ctx.screen();
+  return view.texts || [];
+}
+
+async function menuSave(ctx, name) {
+  const mark = holder.events.length;
+  await ctx.press('menu');
+  for (let i = 0; i < 20; i++) await ctx.press('left');
+  const landed = ctx.screen();
+  check(name + '-af-tab', pageTitle(landed.texts) === '2.AF' ? [] : ['title'], {
+    step: 'af-tab',
+    actual: { title: pageTitle(landed.texts), highlight: landed.highlight, texts: (landed.texts || []).slice(0, 12) },
+  });
+  for (const k of ['down', 'down', 'ok', 'ok', 'menu', 'down', 'ok', 'menu', 'down']) await ctx.press(k);
+  const row = ctx.screen();
+  const blob = (row.texts || []).join('\n') + '\n' + (row.highlight || '');
+  check(name + '-af-row', blob.includes('AF Target Mode') ? [] : ['row'], {
+    step: 'af-row',
+    actual: { highlight: row.highlight, texts: (row.texts || []).slice(0, 16) },
+  });
+  await ctx.press('ok');
+  await ctx.press('right');
+  await ctx.press('ok');
+  await ctx.press('menu');
+  await ctx.press('menu');
+  ctx.idle(800);
+  const neu = holder.events.slice(mark);
+  const posted = neu.filter((e) => e.store === 'M' && e.posted);
+  check(name + '-posted-m', (posted.length && posted.every((e) => e.status === 0)) ? [] : ['posted-m'], {
+    step: 'posted-m',
+    actual: neu.map((e) => ({ store: e.store, posted: e.posted, status: e.status })),
+  });
+}
+
+function patternOf(cells) {
+  const pat = Buffer.alloc(32);
+  for (let i = 0; i < 16; i++) pat.writeUInt16LE(cells[i], i * 2);
+  return pat;
+}
+function locate(ctx) {
+  const cells = readCells(ctx);
+  const pat = patternOf(cells);
+  try {
+    const ram = Buffer.from(ctx.l.sim.read(LIVE, LIVE_LEN));
+    return { cells, at: ram.indexOf(pat) };
+  } catch (e) {
+    return { cells, at: -1, error: String(e && e.message || e) };
+  }
+}
+
+async function afon(ctx, name, down, up) {
+  const shots = {};
+  for (const [dir, want, owner] of [['down', down, 2], ['up', up, 0]]) {
+    ctx.key('afon', dir);
+    ctx.idle(250);
+    const id = name + '-afon-' + dir;
+    const shot = ctx.shot(id);
+    const own = ctx.readOwn();
+    const target = ctx.readTarget();
+    const problems = [];
+    if (!same(target, want)) problems.push('target');
+    if (own[4] !== owner) problems.push('owner');
+    if (own[5] !== 0) problems.push('status');
+    if (own[6] !== 1) problems.push('enabled');
+    if (readKey(ctx, 0x1e71, 0) !== 0) problems.push('subject');
+    check(id, problems, {
+      step: 'afon', dir,
+      expected: { target: want, owner, status: 0, enabled: 1 },
+      actual: {
+        target, owner: own[4], status: own[5], enabled: own[6],
+        subject: readKey(ctx, 0x1e71, 0), mirror: readMirror(ctx),
+        screenshot: shot.file.split(/[/\\]/).pop(),
+      },
+    });
+    shots[dir] = shot.file;
+  }
+  return shots;
+}
+
+function decodeStores(file) {
+  const doc = JSON.parse(readFileSync(resolve(file), 'utf8'));
+  const out = {};
+  for (const store of ['M', 'E']) out[store] = Buffer.from(doc[store], 'base64');
+  return out;
+}
+
+async function boot(name, opts, drive) {
+  holder.events = [];
+  holder.queue = [];
+  const result = await runZone({
+    checkout,
+    outPath: 'work/out/session-t10f-' + name + '.jsonl',
+    tag: 't10f-' + name,
+    candidate: !!opts.candidate,
+    help: !!opts.candidate,
+    rowLabel: !!opts.candidate,
+    fatalShots: true,
+    nvramPath: opts.nvram,
+    overlayCsv: opts.candidate ? T6 : null,
+    explanation: opts.explanation,
+    change: opts.change,
+    drive,
+  });
+  if (!result.ok) throw new Error(name + ' ' + result.failed);
+}
+
+async function installWitness() {
+  const menu = await import(pathToFileURL(resolve(checkout, 'emu/src/lab/menu.mjs')).href);
+  const proto = menu.MenuLab.prototype;
+  if (proto.__t10fWitness) return;
+  const orig = proto._s_nand_write;
+  proto._s_nand_write = function(hle, r, posted) {
+    const before = this.store_log && this.store_log.nvram ? this.store_log.nvram.saves.length : 0;
+    const origAfter = hle.finish_after.bind(hle);
+    const origFinish = hle.finish.bind(hle);
+    const rec = { store: null, posted: !!posted, status: null, via: null };
+    hle.finish_after = (regs, fn, args) => {
+      rec.via = 'callback';
+      holder.queue.push(rec);
+      this.observe(fn, (lab, rr) => {
+        const job = holder.queue.shift();
+        if (job) job.status = rr.d0 >>> 0;
+      }, 'obs-save-cb-' + (fn >>> 0).toString(16));
+      return origAfter(regs, fn, args);
+    };
+    hle.finish = (regs, args = {}) => {
+      if (rec.via === null) rec.status = (args.d0 ?? 0) >>> 0;
+      return origFinish(regs, args);
+    };
+    try {
+      return orig.call(this, hle, r, posted);
+    } finally {
+      hle.finish_after = origAfter;
+      hle.finish = origFinish;
+      const saves = this.store_log && this.store_log.nvram ? this.store_log.nvram.saves : null;
+      if (saves && saves.length > before) {
+        const row = saves[saves.length - 1];
+        rec.store = row.store;
+        rec.posted = !!row.posted;
+        holder.events.push(rec);
+      }
+    }
+  };
+  proto.__t10fWitness = true;
+}
+
+const CHANGE = 'EMULATOR-ONLY combined change. T6 overlay CSV, the getter hook on 0x60063380, and the profile store and load. Role: behaviour.';
+const SITES = 'Load: publish() after prepare, stock getter 0x60063380. The boot copy 0x60063e85 has already returned inside open_session. Republish: pass-through observer on builder entry 0x60a8f6bb reads the live key image at the offset the getter matched. Store: commit() calls stock setter 0x60063431 for the 13 unnamed indices, then the stock menu save.';
+
+function overlayOpts(name, nvram, explanation) {
+  return {
+    candidate: true,
+    nvram,
+    explanation,
+    change: CHANGE,
+  };
+}
+
+async function saveSession(name, nvram, seed) {
+  let located = null;
+  await boot(name, overlayOpts(name, nvram, name + ' save. ' + SITES), async (ctx) => {
+    installRead(ctx);
+    const entry = seed ? installEntry(ctx) : null;
+    await prepare(ctx);
+    const loaded = publish(ctx);
+    ctx.emit('behaviour', {
+      step: 'publish',
+      label: 'EMULATOR-ONLY load. After prepare, which is after the stock settings load. Role: behaviour.',
+      profile: loaded ? 'profile' : 'none',
+    });
+    if (seed) {
+      writeMirror(ctx, WANT);
+      ctx.emit('test-setup', {
+        step: 'seed',
+        label: 'EMULATOR-ONLY test setup. The mirror is seeded with profile A. Role: test-setup.',
+      });
+      const named = NAMED.map((i) => readKey(ctx, KEY, i));
+      writeRecord(ctx, encode(profileFromMirror(WANT)));
+      ctx.emit('behaviour', {
+        step: 'commit',
+        label: 'EMULATOR-ONLY store trigger, the stand-in for the editor exit. Stock setter 0x60063431, unnamed indices only. Role: behaviour.',
+      });
+      const problems = [];
+      if (!same(readCells(ctx).filter((v, i) => UNNAMED.includes(i)), UNNAMED.map((i, n) => {
+        const b = encode(PROFILE_A);
+        return b[n * 2] | (b[n * 2 + 1] << 8);
+      }))) problems.push('cells');
+      if (!same(NAMED.map((i) => readKey(ctx, KEY, i)), named)) problems.push('named');
+      check(name + '-commit', problems, { step: 'commit', actual: { cells: readCells(ctx), entry: entry.n } });
+      if (entry.n !== 0) throw new Error('entry hook ran before the press');
+    }
+    await menuSave(ctx, name);
+    located = locate(ctx);
+    emit({ id: name + '-locate', step: 'locate', pass: true, at: located.at, cells: located.cells });
+  });
+  return located;
+}
+
+async function reopenSession(name, nvram, opts) {
+  const snap = resolve('work/out/nvram-t10f-' + name + '-open.json');
+  let opened = null;
+  await boot(name + '-reopen', overlayOpts(name, nvram, name + ' reopen. ' + SITES), async (ctx) => {
+    const { copyFileSync: copy } = await import('node:fs');
+    copy(nvram, snap);
+    installRead(ctx);
+    const entry = installEntry(ctx);
+    await prepare(ctx);
+    const loaded = publish(ctx);
+    ctx.emit('behaviour', {
+      step: 'publish',
+      label: 'EMULATOR-ONLY load on reopen, after prepare. Role: behaviour.',
+      profile: loaded ? 'profile' : 'none',
+    });
+    const mirror = readMirror(ctx);
+    const problems = [];
+    if (opts.profile) {
+      if (!loaded) problems.push('decode');
+      if (loaded && !same(mirror, WANT)) problems.push('mirror');
+    } else if (loaded) problems.push('unexpected-profile');
+    check(name + '-restored', problems, {
+      step: 'restored',
+      actual: { loaded: !!loaded, mirror, cells: readCells(ctx) },
+    });
+    const found = locate(ctx);
+    if (found.at < 0) throw new Error(name + ' key image missing');
+    entry.base = LIVE + found.at;
+    const before = entry.n;
+    await afon(ctx, name + '-reopen', opts.profile ? SMALL : ALL, HALF);
+    if (entry.n <= before) throw new Error(name + ' builder entry did not run');
+    opened = { entry };
+    if (opts.after) await opts.after(ctx, entry);
+  });
+  return { snap, opened };
+}
+
+async function findCustom(ctx) {
+  const want = (names) => names.find((t) => t.includes('@A02C@Custom Mode'));
+  if (ctx.s.screen() !== 'menu') await ctx.press('menu');
+  for (let n = 0; n < 40; n++) {
+    const hit = want(namesOf(ctx));
+    if (hit) return hit;
+    await ctx.press('left');
+  }
+  throw new Error('Custom Mode not found ' + JSON.stringify(namesOf(ctx).slice(0, 8)));
+}
+
+async function customMode(ctx, name) {
+  const before = readCells(ctx);
+  ctx.s.switch_input('still_movie', 2);
+  ctx.idle(400);
+  const custom = await findCustom(ctx);
+  await ctx.walk.to([{ row: [custom] }]);
+  const c1 = namesOf(ctx).find((t) => t === 'C1');
+  if (!c1) throw new Error('C1 missing ' + JSON.stringify(namesOf(ctx).slice(0, 12)));
+  await ctx.walk.to([{ row: [c1] }]);
+  const assign = namesOf(ctx).find((t) => t === 'Assign');
+  if (!assign) throw new Error('Assign missing ' + JSON.stringify(namesOf(ctx).slice(0, 12)));
+  await ctx.walk.to([{ row: [assign] }]);
+  const confirm = namesOf(ctx).find((t) => t === 'Set' || t === 'Yes');
+  if (confirm) await ctx.walk.to([{ row: [confirm] }]);
+  const recall = namesOf(ctx).find((t) => t === 'Recall');
+  if (!recall) throw new Error('Recall missing ' + JSON.stringify(namesOf(ctx).slice(0, 12)));
+  await ctx.walk.to([{ row: [recall] }]);
+  const again = namesOf(ctx).find((t) => t === 'Set' || t === 'Yes');
+  if (again) await ctx.walk.to([{ row: [again] }]);
+  const after = readCells(ctx);
+  check(name + '-c1', same(before, after) ? [] : ['cells'], {
+    step: 'c1',
+    actual: { before, after },
+  });
+  for (let n = 0; n < 6 && ctx.s.screen() !== 'shooting'; n++) await ctx.press('menu');
+}
+
+async function stockReset(ctx, name) {
+  if (ctx.s.screen() !== 'menu') await ctx.press('menu');
+  const seen = [];
+  let hit = null;
+  for (let n = 0; n < 40 && !hit; n++) {
+    const names = namesOf(ctx);
+    seen.push(pageTitle(names) || (names[0] || ''));
+    hit = names.find((t) => t.includes('Reset/Initialize Settings') || t.includes('Reset/Clock'));
+    if (!hit) await ctx.press('down');
+  }
+  if (!hit) throw new Error('reset row not found ' + JSON.stringify(seen));
+  const row = namesOf(ctx).find((t) => t.includes('Reset/Initialize'));
+  if (!row) throw new Error('reset row text ' + hit);
+  await ctx.walk.to([{ row: [row] }]);
+  const confirm = namesOf(ctx).find((t) => t === 'Yes' || t === 'OK' || t === 'Set');
+  if (!confirm) throw new Error('reset confirm ' + JSON.stringify(namesOf(ctx).slice(0, 16)));
+  await ctx.walk.to([{ row: [confirm] }]);
+  ctx.idle(800);
+  const cells = readCells(ctx);
+  const rec = recordFromCells(cells);
+  check(name + '-reset', (cells.every((v) => v === 0) && decode(rec) === null) ? [] : ['reset'], {
+    step: 'reset',
+    actual: { cells },
+  });
+  for (let n = 0; n < 6 && ctx.s.screen() !== 'shooting'; n++) await ctx.press('menu');
+}
+
+async function artPass(ctx, name) {
+  const trace = [];
+  const snap = async (key) => {
+    const shot = ctx.shot(name + '-art-' + trace.length);
+    const cells = readCells(ctx);
+    trace.push({
+      key,
+      named: NAMED.map((i) => cells[i]),
+      hash: sha(shot.file),
+      file: shot.file.split(/[/\\]/).pop(),
+      highlight: shot.highlight,
+    });
+  };
+  ctx.s.switch_input('creative_dial', 3);
+  ctx.idle(700);
+  await snap('creative-3');
+  for (let i = 0; i < 14; i++) {
+    ctx.s.dial_input('main', 1);
+    ctx.idle(350);
+    await snap('main');
+  }
+  for (const k of ['ok', 'right', 'right', 'down', 'up', 'left']) {
+    await ctx.press(k);
+    await snap(k);
+  }
+  for (let i = 0; i < 4; i++) {
+    ctx.s.dial_input('sub', 1);
+    ctx.idle(300);
+    await snap('sub');
+  }
+  return trace;
+}
+
+function basesOf(image, cells) {
+  const pat = patternOf(cells);
+  const bases = [];
+  let from = 0;
+  while (from <= image.length - pat.length) {
+    const at = image.indexOf(pat, from);
+    if (at < 0) break;
+    bases.push(at);
+    from = at + 2;
+  }
+  return bases;
+}
+function allowedOffsets(bases) {
+  const set = new Set([2, 3]);
+  for (const base of bases) {
+    for (const i of UNNAMED) {
+      set.add(base + i * 2);
+      set.add(base + i * 2 + 1);
+    }
+  }
+  return set;
+}
+
+await installWitness();
+
+const k1nv = resolve('work/out/nvram-t10f-k1.json');
+let k1Art = null;
+let k1Release = null;
+await boot('k1', {
+  candidate: false,
+  nvram: k1nv,
+  explanation: 'K1 stock. No overlay, no profile hook. The release target is the stock half-press record.',
+  change: 'none',
+}, async (ctx) => {
+  await prepare(ctx);
+  const shots = {};
+  for (const [dir, owner] of [['down', null], ['up', null]]) {
+    ctx.key('afon', dir);
+    ctx.idle(250);
+    const shot = ctx.shot('k1-afon-' + dir);
+    const target = ctx.readTarget();
+    const own = ctx.readOwn();
+    check('k1-afon-' + dir, same(target, STOCK) ? [] : ['target'], {
+      step: 'k1-afon', dir,
+      expected: { target: STOCK },
+      actual: { target, owner: own[4], status: own[5], enabled: own[6], subject: readKey(ctx, 0x1e71, 0), screenshot: shot.file.split(/[/\\]/).pop() },
+    });
+    if (readKey(ctx, 0x1e71, 0) !== 0) throw new Error('k1 subject');
+    shots[dir] = target;
+  }
+  k1Release = shots.up;
+});
+if (!same(k1Release, STOCK)) throw new Error('k1 release');
+
+const k2nv = resolve('work/out/nvram-t10f-k2.json');
+await saveSession('k2', k2nv, false);
+const k2open = await reopenSession('k2', k2nv, { profile: false });
+
+const stores = {};
+for (const name of ['c1', 'c2']) {
+  const nv = resolve('work/out/nvram-t10f-' + name + '.json');
+  const located = await saveSession(name, nv, true);
+  copyFileSync(nv, resolve('work/out/nvram-t10f-' + name + '-saved.json'));
+  const opened = await reopenSession(name, nv, {
+    profile: true,
+    after: name === 'c1' ? async (ctx, entry) => {
+      await customMode(ctx, name);
+      const beforeEntry = entry.n;
+      const beforeMirror = readMirror(ctx);
+      await stockReset(ctx, name);
+      check(name + '-mirror-before-entry', same(beforeMirror, WANT) ? [] : ['mirror-held'], {
+        step: 'mirror-held',
+        note: 'The mirror still holds profile A until the next AF-ON entry.',
+      });
+      await afon(ctx, name + '-after-reset', ALL, STOCK);
+      if (entry.n <= beforeEntry) throw new Error('reset entry did not run');
+      check(name + '-mirror-after-entry', same(readMirror(ctx), new Array(71).fill(255)) ? [] : ['mirror-ff'], {
+        step: 'mirror-ff',
+        actual: { mirror: readMirror(ctx), entry: entry.n },
+      });
+    } : null,
+  });
+  stores[name] = { located, snap: opened.snap, saved: resolve('work/out/nvram-t10f-' + name + '-saved.json') };
+}
+
+function classify(k2file, candfile, cells) {
+  const k2 = decodeStores(k2file);
+  const cand = decodeStores(candfile);
+  const out = {};
+  for (const store of ['M', 'E']) {
+    const a = k2[store];
+    const b = cand[store];
+    const diffs = [];
+    const n = Math.min(a.length, b.length);
+    for (let i = 0; i < n; i++) if (a[i] !== b[i]) diffs.push(i);
+    const bases = basesOf(b, cells);
+    const allow = allowedOffsets(bases);
+    const extra = diffs.filter((off) => !allow.has(off));
+    out[store] = { diffs, extra, len: [a.length, b.length], bases };
+    if (!bases.length || extra.length || a.length !== b.length) {
+      throw new Error(store + ' diff ' + JSON.stringify({
+        extra, len: [a.length, b.length], diffs: diffs.slice(0, 48), bases,
+      }));
+    }
+  }
+  return out;
+}
+
+const cells = stores.c1.located.cells;
+const diff1 = classify(k2open.snap, stores.c1.snap, cells);
+const diff2 = classify(k2open.snap, stores.c2.snap, cells);
+emit({
+  id: 'store-diff', step: 'store', pass: true,
+  liveAt: stores.c1.located.at, k2: k2open.snap, c1: diff1, c2: diff2,
+});
+
+const corruptNv = resolve('work/out/nvram-t10f-corrupt.json');
+copyFileSync(stores.c2.saved, corruptNv);
+await boot('corrupt', overlayOpts('corrupt', corruptNv, 'Corruption. One stored bit flipped as test setup, then the stock menu save. ' + SITES), async (ctx) => {
+  installRead(ctx);
+  installEntry(ctx);
+  await prepare(ctx);
+  const loaded = publish(ctx);
+  if (!loaded) throw new Error('corrupt session did not load profile A');
+  const rec = recordFromCells(readCells(ctx));
+  rec[0] ^= 0x01;
+  ctx.emit('test-setup', {
+    step: 'flip',
+    label: 'EMULATOR-ONLY test setup. Bit 0 of the stored record is flipped, then the stock setter writes it back. Role: test-setup.',
+  });
+  writeRecord(ctx, rec);
+  if (decode(recordFromCells(readCells(ctx))) !== null) throw new Error('flipped record still decoded');
+  await menuSave(ctx, 'corrupt');
+});
+await reopenSession('corrupt', corruptNv, { profile: false });
+
+await boot('k1-art', {
+  candidate: false,
+  nvram: resolve('work/out/nvram-t10f-k1-art.json'),
+  explanation: 'K1 art-filter cursor. Stock. No overlay.',
+  change: 'none',
+}, async (ctx) => {
+  await prepare(ctx);
+  k1Art = await artPass(ctx, 'k1');
+  emit({ id: 'k1-art', step: 'art', pass: true, named: k1Art.map((r) => r.named) });
+});
+
+const artNv = resolve('work/out/nvram-t10f-art.json');
+copyFileSync(stores.c1.saved, artNv);
+let candArt = null;
+await boot('art', overlayOpts('art', artNv, 'Art filters on the stored profile. ' + SITES), async (ctx) => {
+  installRead(ctx);
+  installEntry(ctx);
+  await prepare(ctx);
+  const loaded = publish(ctx);
+  if (!loaded) throw new Error('art session did not load the profile');
+  for (let n = 0; n < 4 && ctx.s.screen() !== 'shooting'; n++) await ctx.press('menu');
+  candArt = await artPass(ctx, 'art');
+  const end = decode(recordFromCells(readCells(ctx)));
+  check('art-survives', end && same(mirrorFromProfile(end), WANT) ? [] : ['survives'], {
+    step: 'art-survives',
+    actual: { cells: readCells(ctx) },
+  });
+});
+
+const artProblems = [];
+if (k1Art.length !== candArt.length) artProblems.push('length');
+for (let i = 0; i < Math.min(k1Art.length, candArt.length); i++) {
+  if (!same(k1Art[i].named, candArt[i].named)) artProblems.push('named-' + i);
+  if (k1Art[i].hash !== candArt[i].hash) artProblems.push('screen-' + i);
+}
+const changed = k1Art.some((row, i) => i > 0 && !same(row.named, k1Art[0].named));
+if (!changed) artProblems.push('named-unchanged');
+check('art-filters', artProblems, {
+  step: 'art',
+  actual: {
+    k1: k1Art.map((r) => ({ key: r.key, named: r.named, hash: r.hash })),
+    cand: candArt.map((r) => ({ key: r.key, named: r.named, hash: r.hash })),
+  },
+});
+
+emit({ id: 'done', step: 'done', ok: true, experiment: 'accept_t10f.mjs is one emulator process' });
+console.log(JSON.stringify({ ok: true, liveAt: stores.c1.located.at, diffs: { c1: diff1, c2: diff2 } }));

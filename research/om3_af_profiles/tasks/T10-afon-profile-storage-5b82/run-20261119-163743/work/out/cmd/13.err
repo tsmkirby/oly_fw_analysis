@@ -1,0 +1,17 @@
+file:///C:/Dev/OM3-tasks/T10-afon-profile-storage-5b82/ws/work/scripts/accept_t10f.mjs:311
+  if (!result.ok) throw new Error(name + ' ' + result.failed);
+                        ^
+
+Error: c1-reopen Error: reset row not found ["1.Basic Settings/Image Quality","1.Basic Settings/Image Quality","1.Basic Settings/Image Quality","1.Basic Settings/Image Quality","1.Basic Settings/Image Quality","1.Basic Settings/Image Quality","1.Basic Settings/Image Quality","1.Basic Settings/Image Quality","1.Basic Settings/Image Quality","1.Basic Settings/Image Quality","1.Basic Settings/Image Quality","1.Basic Settings/Image Quality","1.Basic Settings/Image Quality","1.Basic Settings/Image Quality","1.Basic Settings/Image Quality","1.Basic Settings/Image Quality","1.Basic Settings/Image Quality","1.Basic Settings/Image Quality","1.Basic Settings/Image Quality","1.Basic Settings/Image Quality","1.Basic Settings/Image Quality","1.Basic Settings/Image Quality","1.Basic Settings/Image Quality","1.Basic Settings/Image Quality","1.Basic Settings/Image Quality","1.Basic Settings/Image Quality","1.Basic Settings/Image Quality","1.Basic Settings/Image Quality","1.Basic Settings/Image Quality","1.Basic Settings/Image Quality","1.Basic Settings/Image Quality","1.Basic Settings/Image Quality","1.Basic Settings/Image Quality","1.Basic Settings/Image Quality","1.Basic Settings/Image Quality","1.Basic Settings/Image Quality","1.Basic Settings/Image Quality","1.Basic Settings/Image Quality","1.Basic Settings/Image Quality","1.Basic Settings/Image Quality"]
+    at stockReset (file:///C:/Dev/OM3-tasks/T10-afon-profile-storage-5b82/ws/work/scripts/accept_t10f.mjs:491:19)
+    at async reopenSession.after (file:///C:/Dev/OM3-tasks/T10-afon-profile-storage-5b82/ws/work/scripts/accept_t10f.mjs:610:7)
+    at async file:///C:/Dev/OM3-tasks/T10-afon-profile-storage-5b82/ws/work/scripts/accept_t10f.mjs:438:21
+    at async runZone (file:///C:/Dev/OM3-research/analysis/button-af/readiness/t5-afon-button-handoff/scripts/zone_session_k1.mjs:478:5)
+    at async boot (file:///C:/Dev/OM3-tasks/T10-afon-profile-storage-5b82/ws/work/scripts/accept_t10f.mjs:297:18)
+    at async reopenSession (file:///C:/Dev/OM3-tasks/T10-afon-profile-storage-5b82/ws/work/scripts/accept_t10f.mjs:409:3)
+    at async file:///C:/Dev/OM3-tasks/T10-afon-profile-storage-5b82/ws/work/scripts/accept_t10f.mjs:604:18
+    at boot (file:///C:/Dev/OM3-tasks/T10-afon-profile-storage-5b82/ws/work/scripts/accept_t10f.mjs:311:25)
+    at async reopenSession (file:///C:/Dev/OM3-tasks/T10-afon-profile-storage-5b82/ws/work/scripts/accept_t10f.mjs:409:3)
+    at async file:///C:/Dev/OM3-tasks/T10-afon-profile-storage-5b82/ws/work/scripts/accept_t10f.mjs:604:18
+
+Node.js v26.12.1

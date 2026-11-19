@@ -1,0 +1,387 @@
+{
+  "image_sha256": "5e8d376e9111a44ac0352f26030d7c1b17026d42c45f3600cfa02a0e8c5b7d59",
+  "image_bytes": 33554368,
+  "checks": [
+    {
+      "addr": "0x60197541",
+      "bytes": "58 10",
+      "label": "mov (0x10,sp),D0"
+    },
+    {
+      "addr": "0x60197543",
+      "bytes": "28 04",
+      "label": "add 0x4,D0  -> record+0x50"
+    },
+    {
+      "addr": "0x60197545",
+      "bytes": "42 14",
+      "label": "mov D0,(0x14,sp)"
+    },
+    {
+      "addr": "0x6019756d",
+      "bytes": "5c 10",
+      "label": "mov (0x10,sp),A0"
+    },
+    {
+      "addr": "0x6019756f",
+      "bytes": "f8 bd 26",
+      "label": "movhu (0x26,sp),D1"
+    },
+    {
+      "addr": "0x60197572",
+      "bytes": "f8 0c 18",
+      "label": "mov (0x18,A0),D3  record+0x64"
+    },
+    {
+      "addr": "0x60197575",
+      "bytes": "5c 14",
+      "label": "mov (0x14,sp),A0"
+    },
+    {
+      "addr": "0x60197579",
+      "bytes": "f0 60",
+      "label": "movhu (A0),D0  key at record+0x50"
+    },
+    {
+      "addr": "0x6019757b",
+      "bytes": "ed",
+      "label": "add D3,D1"
+    },
+    {
+      "addr": "0x6019757c",
+      "bytes": "1d",
+      "label": "exthu D1  index"
+    },
+    {
+      "addr": "0x6019757f",
+      "bytes": "dd b2 be ec ff f0 28",
+      "label": "call 0x60063431"
+    },
+    {
+      "addr": "0x60197608",
+      "bytes": "5c 10",
+      "label": "mov (0x10,sp),A0"
+    },
+    {
+      "addr": "0x6019760a",
+      "bytes": "20 06",
+      "label": "add 0x6,A0  -> record+0x52"
+    },
+    {
+      "addr": "0x6019760c",
+      "bytes": "f0 60",
+      "label": "movhu (A0),D0  key at record+0x52"
+    },
+    {
+      "addr": "0x6019760e",
+      "bytes": "a0 00",
+      "label": "cmp 0x0,D0"
+    },
+    {
+      "addr": "0x60197610",
+      "bytes": "c8 16",
+      "label": "beq skip when key is 0"
+    },
+    {
+      "addr": "0x60197617",
+      "bytes": "f8 04 1c",
+      "label": "mov (0x1c,A0),D1"
+    },
+    {
+      "addr": "0x6019761c",
+      "bytes": "1d",
+      "label": "exthu D1"
+    },
+    {
+      "addr": "0x6019761f",
+      "bytes": "dd 12 be ec ff f0 28",
+      "label": "call 0x60063431"
+    },
+    {
+      "addr": "0x6019764d",
+      "bytes": "20 06",
+      "label": "sibling add 0x6,A0 on (0xc,sp)"
+    },
+    {
+      "addr": "0x6019764f",
+      "bytes": "f0 60",
+      "label": "sibling key load"
+    },
+    {
+      "addr": "0x601972f8",
+      "bytes": "90 4c",
+      "label": "mov 0x4c,A0 inside FUN_601972f1"
+    },
+    {
+      "addr": "0x6118bf47",
+      "bytes": "24 b8 05",
+      "label": "mov 0x5b8,A0"
+    },
+    {
+      "addr": "0x6118bf4a",
+      "bytes": "f1 78",
+      "label": "add A2,A0  object+0x5b8"
+    },
+    {
+      "addr": "0x6118bf4c",
+      "bytes": "85 62",
+      "label": "mov 0x62,D1"
+    },
+    {
+      "addr": "0x6118bf45",
+      "bytes": "80 1f",
+      "label": "mov 0x1f,D0 length/id"
+    },
+    {
+      "addr": "0x6118c058",
+      "bytes": "24 b8 05",
+      "label": "mov 0x5b8,A0"
+    },
+    {
+      "addr": "0x6118c05b",
+      "bytes": "f1 78",
+      "label": "add A2,A0"
+    },
+    {
+      "addr": "0x6118c05d",
+      "bytes": "85 62",
+      "label": "mov 0x62,D1"
+    },
+    {
+      "addr": "0x610cd5ac",
+      "bytes": "91",
+      "label": "FUN_610cd5ac mov A0,A1"
+    },
+    {
+      "addr": "0x610cd6bd",
+      "bytes": "87",
+      "label": "FUN_610cd6bd mov D1,D3"
+    },
+    {
+      "addr": "0x610cd6be",
+      "bytes": "97",
+      "label": "mov A1,A3 keeps object+0x5b8"
+    },
+    {
+      "addr": "0x610cd6c1",
+      "bytes": "f8 62 0c",
+      "label": "movhu (0xc,A2),D0 different pointer"
+    },
+    {
+      "addr": "0x610cd71b",
+      "bytes": "9c",
+      "label": "mov A3,A0 copy source"
+    },
+    {
+      "addr": "0x610cd71c",
+      "bytes": "dd ed 51 f3 ee",
+      "label": "call 0x50002909"
+    },
+    {
+      "addr": "0x616ddb03",
+      "bytes": "2d b8 05",
+      "label": "mov 0x5b8,D1"
+    },
+    {
+      "addr": "0x616ddb01",
+      "bytes": "80 02",
+      "label": "mov 0x2,D0"
+    },
+    {
+      "addr": "0x616ddb06",
+      "bytes": "fc dd d7 31 7c 61",
+      "label": "mov 0x617c31d7,A1"
+    },
+    {
+      "addr": "0x616a1cfe",
+      "bytes": "86",
+      "label": "mov D1,D2 keeps the immediate"
+    },
+    {
+      "addr": "0x616a1d41",
+      "bytes": "4a 0c",
+      "label": "mov D2,(0xc,sp)"
+    },
+    {
+      "addr": "0x6118bee0",
+      "bytes": "24 8c 03",
+      "label": "mov 0x38c,A0 sibling offset"
+    },
+    {
+      "addr": "0x6118bef6",
+      "bytes": "24 e8 03",
+      "label": "mov 0x3e8,A0 sibling offset"
+    },
+    {
+      "addr": "0x6118bf96",
+      "bytes": "24 1a 06",
+      "label": "mov 0x61a,A0 sibling offset"
+    },
+    {
+      "addr": "0x600e5874",
+      "bytes": "82 5b 10 00",
+      "label": "registration key 0x5b82 count 16"
+    },
+    {
+      "addr": "0x606274e0",
+      "bytes": "82 5b 05 00",
+      "label": "UI 2017 index 5"
+    },
+    {
+      "addr": "0x60627518",
+      "bytes": "82 5b 0c 00",
+      "label": "UI 2031 index 12"
+    },
+    {
+      "addr": "0x60627524",
+      "bytes": "82 5b 0d 00",
+      "label": "UI 2034 index 13"
+    }
+  ],
+  "table_b": {
+    "base": "0x60242324",
+    "stride": "0x9c",
+    "count": 61,
+    "end_exclusive": "0x60244850",
+    "halfword_0x5b82_hits": [],
+    "distinct_nonzero_key_at_plus_0x50": [
+      "0x1404",
+      "0x1724"
+    ],
+    "distinct_nonzero_key_at_plus_0x52": [
+      "0x13f4",
+      "0x1714"
+    ],
+    "index_term_sample": [
+      {
+        "index": 0,
+        "key_50": 0,
+        "key_52": 0,
+        "dword_64": 4950,
+        "dword_68": 10
+      },
+      {
+        "index": 1,
+        "key_50": 0,
+        "key_52": 0,
+        "dword_64": 4950,
+        "dword_68": 10
+      },
+      {
+        "index": 2,
+        "key_50": 0,
+        "key_52": 0,
+        "dword_64": 650,
+        "dword_68": 0
+      }
+    ]
+  },
+  "format_string": "%s(%u): %s\n",
+  "cpp_string": "CAvpiVenHEVCCodec.cpp",
+  "data_sites": [
+    {
+      "addr": "0x607c69f4",
+      "aligned_u16": true,
+      "value": "0x5b82",
+      "window": "14 e2 1a be 39 a6 73 4e 82 5b b7 92 7c 5d af fb cf 74 e9 59 5b 76 96 14",
+      "le32_pointers": []
+    },
+    {
+      "addr": "0x607cb986",
+      "aligned_u16": true,
+      "value": "0x5b82",
+      "window": "09 79 9e ad c7 95 7d 86 82 5b 0d 53 7e a5 ef f2 46 e7 62 6c 05 7a 3e cf",
+      "le32_pointers": []
+    },
+    {
+      "addr": "0x60539e07",
+      "aligned_u16": false,
+      "value": null,
+      "window": "e8 2e a3 fa 43 c7 00 fc 82 5b e8 2e a3 fa 43 c8 00 fc 82 5c e8 2e a3 fa",
+      "le32_pointers": []
+    },
+    {
+      "addr": "0x607c8e19",
+      "aligned_u16": false,
+      "value": null,
+      "window": "ab 7f de 9b 92 41 d9 9f 82 5b c8 a2 ce a5 f2 eb 03 6f 3d 34 70 2f 15 b3",
+      "le32_pointers": []
+    },
+    {
+      "addr": "0x607e2ef9",
+      "aligned_u16": false,
+      "value": null,
+      "window": "58 76 42 31 d7 b2 74 0f 82 5b 19 6e f9 29 66 1f 55 4e 0b 41 da 4b 82 d3",
+      "le32_pointers": []
+    }
+  ],
+  "registration_payload_32": "00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00",
+  "named_indices": {
+    "5": 2017,
+    "12": 2031,
+    "13": 2034
+  },
+  "budget": {
+    "unnamed_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      14,
+      15
+    ],
+    "unnamed_bytes": 26,
+    "fields": [
+      {
+        "field": "zone 0x99a1",
+        "indices": "banks 1, 5, 3",
+        "cells": 3,
+        "bits_each": 8,
+        "bits": 24
+      },
+      {
+        "field": "size 0x9a41[0]",
+        "indices": "0",
+        "cells": 1,
+        "bits_each": 8,
+        "bits": 8
+      },
+      {
+        "field": "position 0x5962",
+        "indices": "banks 1, 5, 3",
+        "cells": 3,
+        "bits_each": 16,
+        "bits": 48
+      },
+      {
+        "field": "custom 0x1dd1",
+        "indices": "0..9",
+        "cells": 10,
+        "bits_each": 8,
+        "bits": 80
+      },
+      {
+        "field": "custom 0x1de1",
+        "indices": "0..7",
+        "cells": 8,
+        "bits_each": 8,
+        "bits": 64
+      }
+    ],
+    "payload_bits": 224,
+    "payload_bytes": 28,
+    "payload_bytes_if_1dd1_limited_to_indices_2_through_9": 26,
+    "marker_min_bytes": 2,
+    "checksum_min_bytes": 2,
+    "fits_with_marker_and_checksum": false,
+    "reason": "payload alone is 28 bytes, and 26 bytes remain after a 2-byte marker is still short of a checksum"
+  },
+  "stop": true
+}

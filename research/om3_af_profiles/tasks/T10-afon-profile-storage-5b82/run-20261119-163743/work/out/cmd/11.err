@@ -1,0 +1,21 @@
+file:///C:/Dev/OM3-tasks/T10-afon-profile-storage-5b82/ws/work/scripts/accept_t10d.mjs:301
+  if (!result.ok) throw new Error(name + ' ' + result.failed);
+                        ^
+
+Error: k2-reopen NavError: UI_IN group 1: bad return state: {"d0": 0, "d1": 1660017868, "d2": 572662306, "d3": 858993459, "a0": 0, "a1": 1660017892, "a2": 1659952312, "a3": 1659969452, "sp": 2720006144, "pc": 2718957575, "psw": 6, "mdr": 1610833572, "lir": 2709540912, "lar": 1610816709, "fault": 0, "insns": 562}
+  step 03-key afon down; GUI state 0x0108 SS_COMMON/ID_ST_CA_REQ_DISP; messages taken ["0xf001", "0x1900", "0x1002"]; GESetEvent 23 from [["0x510bdcac", 15], ["0x510acd8c", 6], ["0x51179067", 1], ["0x510e2f94", 1]]; hook stops 7587, top [["EMULATOR-ONLY profile read from the mirror. Role: behaviour.", 1280], ["prop_get", 1115], ["EMULATOR-ONLY afon value getter", 1057], ["EMULATOR-ONLY afon mapped getter", 1057], ["EMULATOR-ONLY afon index getter", 1057], ["memcpy", 419], ["obs-setting", 351], ["obs-setting-value", 351], ["memset", 331], ["get_tid(scoped)", 222]]; kernel events ["[\"rtos\", \"OlyEvWt\", \"d0=0x100 d1=0x1 a0=0xa20efeec\", \"0x6020d427 (disasm 0x501ec407)\"]", "[\"rtos\", \"iOlyEvSt\", \"d0=0x100 d1=0x1 a0=0x62f1dcb4\", \"0x6020d2a1 (disasm 0x501ec281)\"]", "[\"clk_ctrl\", \"d0=0 d1=18 a0=1\", \"0x60046f9e (disasm 0x50025f7e)\"]", "[\"clk_ctrl\", \"d0=51 d1=1 a0=1\", \"0x60046fab (disasm 0x50025f8b)\"]", "[\"clk_ctrl\", \"d0=0 d1=18 a0=0\", \"0x6004705c (disasm 0x5002603c)\"]", "[\"clk_ctrl\", \"d0=51 d1=1 a0=0\", \"0x60047069 (disasm 0x50026049)\"]"]; tasks {2: "0x5089b8ac WAI", 10: "0x50044861 WAI", 13: "0x508ae684 WAI", 14: "0x508b3770 WAI", 16: "0x500541a0 WAI", 58: "0x50ac6296 WAI", 59: "0x5105fd77 WAI", 85: "0x50156805 WAI", 91: "0x502d0ceb WAI", 92: "0x5011f82d WAI", 93: "0x502ce98f WAI", 105: "0x509be82d WAI", 122: "0x5005806c WAI", 140: "0x501d3ec8 WAI", 147: "0x501e3eca WAI", 160: "0xa2300100 RUN", 161: "0x50db7bf8 WAI", 162: "0x50acc3fd WAI", 163: "0x50ace582 WAI", 164: "0x50acff91 WAI", 165: "0x510a711e WAI", 166: "0x510a711e WAI", 167: "0x510db30f WAI", 168: "0x51179075 WAI"}
+    at PlaySession.settle (file:///C:/Dev/OM3-tasks/T10-afon-profile-storage-5b82/ws/om-emu/emu/src/lab/nav.mjs:263:45)
+    at PlaySession.push_group (file:///C:/Dev/OM3-tasks/T10-afon-profile-storage-5b82/ws/om-emu/emu/src/lab/play.mjs:1578:10)
+    at PlaySession.key (file:///C:/Dev/OM3-tasks/T10-afon-profile-storage-5b82/ws/om-emu/emu/src/lab/play.mjs:1631:29)
+    at Object.key (file:///C:/Dev/OM3-research/analysis/button-af/readiness/t5-afon-button-handoff/scripts/zone_session_k1.mjs:370:31)
+    at afon (file:///C:/Dev/OM3-tasks/T10-afon-profile-storage-5b82/ws/work/scripts/accept_t10d.mjs:251:9)
+    at file:///C:/Dev/OM3-tasks/T10-afon-profile-storage-5b82/ws/work/scripts/accept_t10d.mjs:422:11
+    at async runZone (file:///C:/Dev/OM3-research/analysis/button-af/readiness/t5-afon-button-handoff/scripts/zone_session_k1.mjs:478:5)
+    at async boot (file:///C:/Dev/OM3-tasks/T10-afon-profile-storage-5b82/ws/work/scripts/accept_t10d.mjs:287:18)
+    at async reopenSession (file:///C:/Dev/OM3-tasks/T10-afon-profile-storage-5b82/ws/work/scripts/accept_t10d.mjs:399:3)
+    at async file:///C:/Dev/OM3-tasks/T10-afon-profile-storage-5b82/ws/work/scripts/accept_t10d.mjs:584:16
+    at boot (file:///C:/Dev/OM3-tasks/T10-afon-profile-storage-5b82/ws/work/scripts/accept_t10d.mjs:301:25)
+    at async reopenSession (file:///C:/Dev/OM3-tasks/T10-afon-profile-storage-5b82/ws/work/scripts/accept_t10d.mjs:399:3)
+    at async file:///C:/Dev/OM3-tasks/T10-afon-profile-storage-5b82/ws/work/scripts/accept_t10d.mjs:584:16
+
+Node.js v26.12.1

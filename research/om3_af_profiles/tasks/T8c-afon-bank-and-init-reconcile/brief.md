@@ -85,3 +85,38 @@ Brief version: 2026-11-19 · Workspace: Ghidra + OM-Emu · Runs concurrently wit
 
 - The full acceptance (C1/C2, size, save and reopen, two candidates). That is the next task, once this passes.
 - Storage (T10), display (T9c), Subject Detect On, packaging and hardware.
+
+## 5. Correction round (Opus, after Sol's review `run-20261119-174338-review`: REJECT)
+
+Your previous work is in `work\`, and Sol's full review is `audit\previous-review.md`. Read it completely.
+Do **not** start over.
+
+**Confirmed, reuse (do not re-measure):**
+- Q1: the stock editor writes the **saved** index (0/4/2 linked, 0 unlinked); the T6 reader used the **change**
+  index (1/5/3, 1). The UI-id table at `0x6062555c` pairs them (1338/1339, 1646/1647, 1648/1649).
+- Q2: Initialize All Settings → Yes equals the fresh store at all 63 slots; ROM payloads are zero.
+- The change: `bank()` returns the saved index; `initMirror()` unchanged.
+
+**Coordinator ruling on references.** No literal and no image-era record may serve as an expectation.
+- **Press expectation:** K1e performs the **same edit keys** on the stock half-press editor from the reset state,
+  then an **S1 press**; its ten-byte record at that step is the AF-ON press expectation (`ref:K1e:<step>`),
+  hashed as soon as it is written.
+- **Release expectation:** immediately before each AF-ON press, the candidate itself does an S1 press and release
+  in the same state; that S1 record is the release expectation for the following AF-ON release. Cross-check it
+  against `ref:K2:<step>` where K2 took the same normal keys.
+- Delete the hard-coded `STOCK` record and the "3×3 or 1×1" alternatives.
+
+**Required:**
+1. Generated table `fields` declare and judge: mirror bytes, flag, half-press cells at the mapped bank, the
+   custom-size record, edge state, owner, `0x1e71[0]`, bank. One declared source per field.
+2. The checker fails any exit without a matched control sequence (an exit may not match itself).
+3. Before every commit key, compare the screen title hash and the highlighted row with **expected** values
+   recorded from K1e at the same step (not "non-empty").
+4. Run the complete §2.3 sequence: landscape edit/press/release, EXIF 6 edit with MENU exit and press/release,
+   back to landscape press/release, the normal edit equal to K2. End `ok:true`. Stop at the first failure.
+5. Records: the per-slot reset/ROM/fresh table (all 63 slots, not only the disagreement count); describe the
+   T7-versus-T8 explanation as inferred (the selector branch was not listed); complete the import and baseline
+   inventory with execution-time hashes; refresh the seal; distinguish the static T6 bank calculation from
+   dynamically observed reads.
+
+**Authorization: six new experiment versions** (emulator processes).

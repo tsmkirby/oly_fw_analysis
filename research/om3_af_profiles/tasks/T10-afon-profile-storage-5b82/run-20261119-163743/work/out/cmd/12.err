@@ -1,0 +1,17 @@
+file:///C:/Dev/OM3-tasks/T10-afon-profile-storage-5b82/ws/work/scripts/accept_t10e.mjs:310
+  if (!result.ok) throw new Error(name + ' ' + result.failed);
+                        ^
+
+Error: k2-reopen Error: k2-reopen-afon-up target
+    at check (file:///C:/Dev/OM3-tasks/T10-afon-profile-storage-5b82/ws/work/scripts/accept_t10e.mjs:64:30)
+    at afon (file:///C:/Dev/OM3-tasks/T10-afon-profile-storage-5b82/ws/work/scripts/accept_t10e.mjs:272:5)
+    at file:///C:/Dev/OM3-tasks/T10-afon-profile-storage-5b82/ws/work/scripts/accept_t10e.mjs:434:11
+    at async runZone (file:///C:/Dev/OM3-research/analysis/button-af/readiness/t5-afon-button-handoff/scripts/zone_session_k1.mjs:478:5)
+    at async boot (file:///C:/Dev/OM3-tasks/T10-afon-profile-storage-5b82/ws/work/scripts/accept_t10e.mjs:296:18)
+    at async reopenSession (file:///C:/Dev/OM3-tasks/T10-afon-profile-storage-5b82/ws/work/scripts/accept_t10e.mjs:408:3)
+    at async file:///C:/Dev/OM3-tasks/T10-afon-profile-storage-5b82/ws/work/scripts/accept_t10e.mjs:596:16
+    at boot (file:///C:/Dev/OM3-tasks/T10-afon-profile-storage-5b82/ws/work/scripts/accept_t10e.mjs:310:25)
+    at async reopenSession (file:///C:/Dev/OM3-tasks/T10-afon-profile-storage-5b82/ws/work/scripts/accept_t10e.mjs:408:3)
+    at async file:///C:/Dev/OM3-tasks/T10-afon-profile-storage-5b82/ws/work/scripts/accept_t10e.mjs:596:16
+
+Node.js v26.12.1

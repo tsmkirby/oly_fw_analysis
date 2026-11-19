@@ -42,3 +42,14 @@
 
 Recompute every manifest hash. Use PowerShell (Python is not on your PATH). Do not run Ghidra or OM-Emu.
 Give the verdict in the structure of `templates\review.md`.
+## Correction round
+
+Also read `brief.md` §5 and your previous review in `audit\previous-review.md`. For each §5 item, report DONE /
+NOT DONE / WRONG / BLOCKED (honestly reported).
+
+Check in particular:
+- Press expectations come from K1e's S1 record after the same keys; release expectations from the candidate's
+  own S1 record in the same state, cross-checked with K2. No literal or image-era record is used.
+- Every field in brief §5 item 1 is declared and judged; every exit has a matched control sequence.
+- Expected title hashes are compared before every commit.
+- The full sequence ran through both poses and the normal edit, ending `ok:true`.

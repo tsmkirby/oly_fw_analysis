@@ -1,0 +1,605 @@
+{
+  "task": "T10-afon-profile-storage-5b82",
+  "sealed": "External final seal. Commands 01-16 include cmd, out, err, and exit. Command 17 cmd.txt is hashed. 17.out, 17.err, and 17.exit are written by the wrapper after this process exits. No emulator module was loaded.",
+  "manifest": {
+    "path": "work/evidence-manifest.json",
+    "sha256": "e49e7ac2490192a71b170ed6ede91d65edae10b987ce32784097a0ba36f026f3",
+    "bytes": 54184
+  },
+  "result": {
+    "path": "work/result.md",
+    "sha256": "1d2655d0b8202c41857959940dcc00639f5e31646217e73d89620e95d5437140",
+    "bytes": 8868
+  },
+  "encoding": {
+    "path": "work/out/encoding.md",
+    "sha256": "579b8da5f87772cb9b90b4c8252e2f359b8d97de2fe36efccc4a415fe5fa663e",
+    "bytes": 6372
+  },
+  "reader_audit": {
+    "path": "work/out/reader-audit.md",
+    "sha256": "92357a35c95f698b4d2b65cfa1f4477fb3e01e3f26f0f9f6b43e50d2c4c2c69e",
+    "bytes": 9131
+  },
+  "seal_script": {
+    "path": "work/scripts/seal_t10d.mjs",
+    "sha256": "d0e214801686070452ca6942d2f59fe91d6468025742f644ead54a25a663b543",
+    "bytes": 2306
+  },
+  "commands": [
+    {
+      "n": 1,
+      "requested": "python -I work/scripts/audit_5b82_t10.py",
+      "status": 1,
+      "wrapper_sha256": "34e42c59c553a1e4213e2b223034bd31142c7000c6aef4aac2ac9d5e7f1fe0ef",
+      "scripts": [
+        {
+          "path": "work/scripts/audit_5b82_t10.py",
+          "sha256": "cce65befbe0157fac9c9a1ae01e00b1764c77e7555f67ccb82c7c1278582e2b8",
+          "bytes": 10248
+        }
+      ],
+      "files": {
+        "cmd": {
+          "path": "work/out/cmd/01.cmd.txt",
+          "sha256": "4c79054ddea8ec3a2a3a3816e79c8816d3e62b9f22b0e9361a1e363c3ada8430",
+          "bytes": 344
+        },
+        "out": {
+          "path": "work/out/cmd/01.out",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        "err": {
+          "path": "work/out/cmd/01.err",
+          "sha256": "90a6332d5284235bf451c14faa54921793c6ec6a1fd22f7861a3169f91244d5b",
+          "bytes": 254
+        },
+        "exit": {
+          "path": "work/out/cmd/01.exit",
+          "sha256": "f4e0cc7ebd5af14cddc049c3605d72e4bea8e64f64892e2e98fc6e8a66c4543b",
+          "bytes": 457
+        }
+      }
+    },
+    {
+      "n": 2,
+      "requested": "python -I work/scripts/hash_image_t10.py",
+      "status": 0,
+      "wrapper_sha256": "34e42c59c553a1e4213e2b223034bd31142c7000c6aef4aac2ac9d5e7f1fe0ef",
+      "scripts": [
+        {
+          "path": "work/scripts/hash_image_t10.py",
+          "sha256": "685c006cbb2f05f699550e503650a1ac96ca7b9aea5f6d7ceaa7fde14ae9e6b5",
+          "bytes": 438
+        }
+      ],
+      "files": {
+        "cmd": {
+          "path": "work/out/cmd/02.cmd.txt",
+          "sha256": "0677b4fcd50f7907430ca19154de9adeac9ff201744d7ce15d1a725327a1a4e8",
+          "bytes": 342
+        },
+        "out": {
+          "path": "work/out/cmd/02.out",
+          "sha256": "8ce56ff99a3c8ec7224a0d4ec650be2213f8f76e47a853a2cae165c744ea9712",
+          "bytes": 178
+        },
+        "err": {
+          "path": "work/out/cmd/02.err",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        "exit": {
+          "path": "work/out/cmd/02.exit",
+          "sha256": "cabb91a55cb1a53c799ab4dc904dbe95e5a682d1e9420d1eac5c5a7e1f2271cd",
+          "bytes": 455
+        }
+      }
+    },
+    {
+      "n": 3,
+      "requested": "python -I work/scripts/make_audit_t10b.py",
+      "status": 0,
+      "wrapper_sha256": "34e42c59c553a1e4213e2b223034bd31142c7000c6aef4aac2ac9d5e7f1fe0ef",
+      "scripts": [
+        {
+          "path": "work/scripts/make_audit_t10b.py",
+          "sha256": "53431204e325b007d807638f1a3229e15e0f79224d4ce175b0dc50c2c1d17c66",
+          "bytes": 818
+        }
+      ],
+      "files": {
+        "cmd": {
+          "path": "work/out/cmd/03.cmd.txt",
+          "sha256": "a27489c00fea9d5a8c484ba60a85ea981e287d216a69265b88732686eaedcf20",
+          "bytes": 345
+        },
+        "out": {
+          "path": "work/out/cmd/03.out",
+          "sha256": "a6094a5ac533b2f55faeb3c575541fc2a114cd308774250e40e11ffa06a57458",
+          "bytes": 32
+        },
+        "err": {
+          "path": "work/out/cmd/03.err",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        "exit": {
+          "path": "work/out/cmd/03.exit",
+          "sha256": "0ba3debbeb64f4e2e9b20071c890a8228a2410fb040a5575a2ff8e51a203cb61",
+          "bytes": 457
+        }
+      }
+    },
+    {
+      "n": 4,
+      "requested": "python -I work/scripts/audit_5b82_t10b.py",
+      "status": 0,
+      "wrapper_sha256": "34e42c59c553a1e4213e2b223034bd31142c7000c6aef4aac2ac9d5e7f1fe0ef",
+      "scripts": [
+        {
+          "path": "work/scripts/audit_5b82_t10b.py",
+          "sha256": "8e70f995dd74abf90f0f258576acfd1b740fdc31ef167fda2ba13f5caa1ed0e0",
+          "bytes": 10249
+        }
+      ],
+      "files": {
+        "cmd": {
+          "path": "work/out/cmd/04.cmd.txt",
+          "sha256": "0b0ea9ba1417de8f02566c08e61d0d4c9e3cbe0a11e3260e68f64cec7d600fff",
+          "bytes": 347
+        },
+        "out": {
+          "path": "work/out/cmd/04.out",
+          "sha256": "86915c92f1c7de71568293d0a0595c75ce63a4fe32da6c7a333798b8fecca5cb",
+          "bytes": 51
+        },
+        "err": {
+          "path": "work/out/cmd/04.err",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        "exit": {
+          "path": "work/out/cmd/04.exit",
+          "sha256": "9b42769e027c44580dae85d8b53973a534b76b65b1733b9a041028d00d592436",
+          "bytes": 459
+        }
+      }
+    },
+    {
+      "n": 5,
+      "requested": "python -I work/scripts/scan_run_t10.py",
+      "status": 0,
+      "wrapper_sha256": "34e42c59c553a1e4213e2b223034bd31142c7000c6aef4aac2ac9d5e7f1fe0ef",
+      "scripts": [
+        {
+          "path": "work/scripts/scan_run_t10.py",
+          "sha256": "64e98b8a74ff072164447dfbce9d3be0db515b47b1a8090c09e395e304da3f52",
+          "bytes": 2122
+        }
+      ],
+      "files": {
+        "cmd": {
+          "path": "work/out/cmd/05.cmd.txt",
+          "sha256": "4b3413b478f0af64f2c32657fd15dcb004fc9476c5acefc602284e403314cf05",
+          "bytes": 337
+        },
+        "out": {
+          "path": "work/out/cmd/05.out",
+          "sha256": "46dba631ce1f5da44d9a11bd7187dc0359833aaf75676eb29e1af4c1ab349318",
+          "bytes": 394
+        },
+        "err": {
+          "path": "work/out/cmd/05.err",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        "exit": {
+          "path": "work/out/cmd/05.exit",
+          "sha256": "0b05cd0c145506375daaa63d6cd9260372c81e4efc9dc9ab6560c4c8a812629a",
+          "bytes": 452
+        }
+      }
+    },
+    {
+      "n": 6,
+      "requested": "node26 work/scripts/build_manifest_t10.mjs",
+      "status": 0,
+      "wrapper_sha256": "34e42c59c553a1e4213e2b223034bd31142c7000c6aef4aac2ac9d5e7f1fe0ef",
+      "scripts": [
+        {
+          "path": "work/scripts/build_manifest_t10.mjs",
+          "sha256": "72e29e6fb4a5714deb368253a684e03447c32dc1096626a50469796e622464e6",
+          "bytes": 4333
+        }
+      ],
+      "files": {
+        "cmd": {
+          "path": "work/out/cmd/06.cmd.txt",
+          "sha256": "11fa7cdc449dfd4c872d2ef8c498ce7ee866c9bdad5dd9154261ce6f0c748caf",
+          "bytes": 404
+        },
+        "out": {
+          "path": "work/out/cmd/06.out",
+          "sha256": "1389c7aa9ea9a9a5b33bb3c523aa4aac3d4365b048597fa5a627002a74e9665f",
+          "bytes": 144
+        },
+        "err": {
+          "path": "work/out/cmd/06.err",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        "exit": {
+          "path": "work/out/cmd/06.exit",
+          "sha256": "ea694c5c80aecbf91091a404024a36417354830131fed56acfcce4f4e898d05b",
+          "bytes": 520
+        }
+      }
+    },
+    {
+      "n": 7,
+      "requested": "node26 work/scripts/seal_t10.mjs",
+      "status": 0,
+      "wrapper_sha256": "34e42c59c553a1e4213e2b223034bd31142c7000c6aef4aac2ac9d5e7f1fe0ef",
+      "scripts": [
+        {
+          "path": "work/scripts/seal_t10.mjs",
+          "sha256": "8f3c9b65265bc2e5ca3877ccf52c3b9a45caab85253b82944e9b2fe3f82ee0c9",
+          "bytes": 2283
+        }
+      ],
+      "files": {
+        "cmd": {
+          "path": "work/out/cmd/07.cmd.txt",
+          "sha256": "9596135effae9ddf329dafc0f1c673ddf5141d095d1e64a950226a79f330a3d2",
+          "bytes": 374
+        },
+        "out": {
+          "path": "work/out/cmd/07.out",
+          "sha256": "a62582f22531f71a92ec6d2c192445725794de47e365ae35d4eb0009cefbe08c",
+          "bytes": 103
+        },
+        "err": {
+          "path": "work/out/cmd/07.err",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        "exit": {
+          "path": "work/out/cmd/07.exit",
+          "sha256": "c379d7b2bc1ce21d9630e4c34e2c30a6ee9c2c093296c52a19f366a80507148b",
+          "bytes": 500
+        }
+      }
+    },
+    {
+      "n": 8,
+      "requested": "python -I work/scripts/ranges_t10c.py",
+      "status": 0,
+      "wrapper_sha256": "34e42c59c553a1e4213e2b223034bd31142c7000c6aef4aac2ac9d5e7f1fe0ef",
+      "scripts": [
+        {
+          "path": "work/scripts/ranges_t10c.py",
+          "sha256": "98e8ce83e60280628626a08fde9af0d6176dfe3e23dc2fafe2c5c9b35a79a3b2",
+          "bytes": 9199
+        }
+      ],
+      "files": {
+        "cmd": {
+          "path": "work/out/cmd/08.cmd.txt",
+          "sha256": "801852af5fe469917ccd39aa715a7ffa3dda300c6456ebec15ec29e52161b668",
+          "bytes": 334
+        },
+        "out": {
+          "path": "work/out/cmd/08.out",
+          "sha256": "68c36433c80b3d66d0413c344cbc5574c87f82bb57b763dfee2fa992b00211d6",
+          "bytes": 7769
+        },
+        "err": {
+          "path": "work/out/cmd/08.err",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        "exit": {
+          "path": "work/out/cmd/08.exit",
+          "sha256": "ad06e236eecf0865adda922a334446c3e398cc870d090cdd985481a575bb6c5b",
+          "bytes": 450
+        }
+      }
+    },
+    {
+      "n": 9,
+      "requested": "node26 work/scripts/codec_test_t10c.mjs",
+      "status": 0,
+      "wrapper_sha256": "34e42c59c553a1e4213e2b223034bd31142c7000c6aef4aac2ac9d5e7f1fe0ef",
+      "scripts": [
+        {
+          "path": "work/scripts/codec_test_t10c.mjs",
+          "sha256": "90a19d06745ba7edf31b2a9776439618a63680e036a225ec45f7dbfc05115c46",
+          "bytes": 5444
+        }
+      ],
+      "files": {
+        "cmd": {
+          "path": "work/out/cmd/09.cmd.txt",
+          "sha256": "0743a47d633637fc4d0279f375d546dd8ef6e5b906f57530934c055f5ed96862",
+          "bytes": 395
+        },
+        "out": {
+          "path": "work/out/cmd/09.out",
+          "sha256": "47d44096e6dcb548407107feb2673786ed083088a3ce50662f116e1d5bcef27d",
+          "bytes": 175
+        },
+        "err": {
+          "path": "work/out/cmd/09.err",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        "exit": {
+          "path": "work/out/cmd/09.exit",
+          "sha256": "e6bc2df598770cf45adafacc9b8e767d74f8ce72e5645a2895473211d77c6a67",
+          "bytes": 514
+        }
+      }
+    },
+    {
+      "n": 10,
+      "requested": "node26 work/scripts/accept_t10c.mjs om-emu",
+      "status": 1,
+      "wrapper_sha256": "34e42c59c553a1e4213e2b223034bd31142c7000c6aef4aac2ac9d5e7f1fe0ef",
+      "scripts": [
+        {
+          "path": "work/scripts/accept_t10c.mjs",
+          "sha256": "2eb2421f7b9cb46ae49de72862c94aab771e3cb9f7a5c172d1b9310cb0fa930f",
+          "bytes": 26534
+        }
+      ],
+      "files": {
+        "cmd": {
+          "path": "work/out/cmd/10.cmd.txt",
+          "sha256": "36e981d42e772f68edb1bcb26bede6d258e7714b2c696e18f8349fba658cbba3",
+          "bytes": 398
+        },
+        "out": {
+          "path": "work/out/cmd/10.out",
+          "sha256": "2591808939d900e86b83f0e9a3eb1381e5a9d7504abe8816140839cb931fc574",
+          "bytes": 18920
+        },
+        "err": {
+          "path": "work/out/cmd/10.err",
+          "sha256": "f81f9e47d75d5536dd5b04f80e56f6f3b32bf6a58671810e380f5491d6b4ec27",
+          "bytes": 3621
+        },
+        "exit": {
+          "path": "work/out/cmd/10.exit",
+          "sha256": "5aa29854a435631deca69de9e40694a4e2b3bcdc9ad7b5046c76560ef17f861f",
+          "bytes": 514
+        }
+      }
+    },
+    {
+      "n": 11,
+      "requested": "node26 work/scripts/accept_t10d.mjs om-emu",
+      "status": 1,
+      "wrapper_sha256": "34e42c59c553a1e4213e2b223034bd31142c7000c6aef4aac2ac9d5e7f1fe0ef",
+      "scripts": [
+        {
+          "path": "work/scripts/accept_t10d.mjs",
+          "sha256": "19f4399e0bca754305b3a3832419cfc9c5cfecb003871d459c8923ff89b77604",
+          "bytes": 26806
+        }
+      ],
+      "files": {
+        "cmd": {
+          "path": "work/out/cmd/11.cmd.txt",
+          "sha256": "074b65c0df2799bbadf9b8afc718b56962219208dd8c993cc1992ae38ff7ae3f",
+          "bytes": 398
+        },
+        "out": {
+          "path": "work/out/cmd/11.out",
+          "sha256": "bbac40c292347785769e863b4f4eaee069cec12c5fe975db27933a4bd8d4f32d",
+          "bytes": 19175
+        },
+        "err": {
+          "path": "work/out/cmd/11.err",
+          "sha256": "b7144b3e9410563578a7f55002efa81e439772287e319b8f5bac6fa6f25a516d",
+          "bytes": 3690
+        },
+        "exit": {
+          "path": "work/out/cmd/11.exit",
+          "sha256": "d60d87bad9098e2471845a8adea9f96b5b21cbafa250915eaccbc1a5466d6a35",
+          "bytes": 514
+        }
+      }
+    },
+    {
+      "n": 12,
+      "requested": "node26 work/scripts/accept_t10e.mjs om-emu",
+      "status": 1,
+      "wrapper_sha256": "34e42c59c553a1e4213e2b223034bd31142c7000c6aef4aac2ac9d5e7f1fe0ef",
+      "scripts": [
+        {
+          "path": "work/scripts/accept_t10e.mjs",
+          "sha256": "05f042b3db0ae89c78e70c530306b78063c1b82df4116154f8884670fa4b313f",
+          "bytes": 27359
+        }
+      ],
+      "files": {
+        "cmd": {
+          "path": "work/out/cmd/12.cmd.txt",
+          "sha256": "4dc724bf521dab0582b97811950b7d868dba8e6a4983777b17dc6642f3089a5d",
+          "bytes": 398
+        },
+        "out": {
+          "path": "work/out/cmd/12.out",
+          "sha256": "a3401f415df04bd03d2c680161b82244ad71be3fb2e845e472e78a2e4e748f03",
+          "bytes": 16671
+        },
+        "err": {
+          "path": "work/out/cmd/12.err",
+          "sha256": "3d8df3a26acaa8a98d78389806aa37aed3ad8e2242f19c2a0f37d64830d6608b",
+          "bytes": 1398
+        },
+        "exit": {
+          "path": "work/out/cmd/12.exit",
+          "sha256": "c360347b8e966b6d34a583918a6eabb02c3b147f4331303969031f7cb6307937",
+          "bytes": 514
+        }
+      }
+    },
+    {
+      "n": 13,
+      "requested": "node26 work/scripts/accept_t10f.mjs om-emu",
+      "status": 1,
+      "wrapper_sha256": "34e42c59c553a1e4213e2b223034bd31142c7000c6aef4aac2ac9d5e7f1fe0ef",
+      "scripts": [
+        {
+          "path": "work/scripts/accept_t10f.mjs",
+          "sha256": "db14244367ad9f83102fa1d9012d787350d2f3bc5625846fd78b049dc9cf32ca",
+          "bytes": 27377
+        }
+      ],
+      "files": {
+        "cmd": {
+          "path": "work/out/cmd/13.cmd.txt",
+          "sha256": "5eede09609f1e361ddcbbf2e24dae1874184b9cf1293a0dd2782bed5dfa6efeb",
+          "bytes": 398
+        },
+        "out": {
+          "path": "work/out/cmd/13.out",
+          "sha256": "d081c377550a2dc4e5073b80ef34bae7b10c40562c7585329ff046ac7710eaa0",
+          "bytes": 29944
+        },
+        "err": {
+          "path": "work/out/cmd/13.err",
+          "sha256": "1c9390ae11d56772d4b95ca518d3b3a6492acf8c85c8772264f86ef8ba80b341",
+          "bytes": 2748
+        },
+        "exit": {
+          "path": "work/out/cmd/13.exit",
+          "sha256": "26da2552ac6b8e4a93ba1d781d37eb42aa8de0c31372eb9c4c30561f2edd2126",
+          "bytes": 514
+        }
+      }
+    },
+    {
+      "n": 14,
+      "requested": "node26 work/scripts/accept_t10g.mjs om-emu",
+      "status": 1,
+      "wrapper_sha256": "34e42c59c553a1e4213e2b223034bd31142c7000c6aef4aac2ac9d5e7f1fe0ef",
+      "scripts": [
+        {
+          "path": "work/scripts/accept_t10g.mjs",
+          "sha256": "e27c88384a13e5b4b0d68213e0618687d48549215f364cde72caa9e9debf4178",
+          "bytes": 27350
+        }
+      ],
+      "files": {
+        "cmd": {
+          "path": "work/out/cmd/14.cmd.txt",
+          "sha256": "71d89d6cb30fd9f9c29c9be1116bc47e18333630e4c07d1bc78fe47fc95a69e2",
+          "bytes": 398
+        },
+        "out": {
+          "path": "work/out/cmd/14.out",
+          "sha256": "80d21240cdf20117e80667015d1ef4447d074c9b0f022eba24a76f7c2ba1990f",
+          "bytes": 28682
+        },
+        "err": {
+          "path": "work/out/cmd/14.err",
+          "sha256": "ce9a11b1259d79bea658c96e3dc2fb078d18bd7b4ced436b7d60a776a62ff471",
+          "bytes": 1556
+        },
+        "exit": {
+          "path": "work/out/cmd/14.exit",
+          "sha256": "ee915e2514aeacd0a9b151b2abd40a061e0e95cf751bc917926a81edd9b46017",
+          "bytes": 514
+        }
+      }
+    },
+    {
+      "n": 15,
+      "requested": "node26 work/scripts/accept_t10h.mjs om-emu",
+      "status": 1,
+      "wrapper_sha256": "34e42c59c553a1e4213e2b223034bd31142c7000c6aef4aac2ac9d5e7f1fe0ef",
+      "scripts": [
+        {
+          "path": "work/scripts/accept_t10h.mjs",
+          "sha256": "2d25647e3181ae55264ee751440b557efa67b829ada3450a1de35dbcc926d829",
+          "bytes": 28315
+        }
+      ],
+      "files": {
+        "cmd": {
+          "path": "work/out/cmd/15.cmd.txt",
+          "sha256": "9a23c4966f1613c0c7d44ff33740ddbbf16700ba00bb1b75b2bdff89ed17b05b",
+          "bytes": 398
+        },
+        "out": {
+          "path": "work/out/cmd/15.out",
+          "sha256": "e1e45d7c293788a37e1d761edbcc18d25a3fdf3191d71c6d94f84fe38839415d",
+          "bytes": 28716
+        },
+        "err": {
+          "path": "work/out/cmd/15.err",
+          "sha256": "17d0baca9be9355947e86f0511b6ab7c8319456ea6afceb00dfeedf4c89206b0",
+          "bytes": 1580
+        },
+        "exit": {
+          "path": "work/out/cmd/15.exit",
+          "sha256": "774ca4dac9354019b78437b48da0c7b9787a3c6441d366f6a80badc2aee11312",
+          "bytes": 514
+        }
+      }
+    },
+    {
+      "n": 16,
+      "requested": "node26 work/scripts/build_manifest_t10d.mjs",
+      "status": 0,
+      "wrapper_sha256": "34e42c59c553a1e4213e2b223034bd31142c7000c6aef4aac2ac9d5e7f1fe0ef",
+      "scripts": [
+        {
+          "path": "work/scripts/build_manifest_t10d.mjs",
+          "sha256": "6436e526ffa8a136611f9eb1d7fcbc3919a60bd0094ef19dc9671a5db78508bb",
+          "bytes": 5650
+        }
+      ],
+      "files": {
+        "cmd": {
+          "path": "work/out/cmd/16.cmd.txt",
+          "sha256": "43a2ad148cc1609675f795906de7adbbe86b0bb9054d54db2c8599e859c3c65d",
+          "bytes": 407
+        },
+        "out": {
+          "path": "work/out/cmd/16.out",
+          "sha256": "45a6f0ebf035c7ef0d80dc2006664a0dcb035f64efdfa2b82cc53f924d087079",
+          "bytes": 160
+        },
+        "err": {
+          "path": "work/out/cmd/16.err",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        "exit": {
+          "path": "work/out/cmd/16.exit",
+          "sha256": "706c8645b717efb038199549ab12e38ad5bcff4176f2a4bcd5c9376e890a43a2",
+          "bytes": 522
+        }
+      }
+    },
+    {
+      "n": 17,
+      "requested": "node26 work/scripts/seal_t10d.mjs",
+      "status": null,
+      "wrapper_sha256": null,
+      "scripts": null,
+      "files": {
+        "cmd": {
+          "path": "work/out/cmd/17.cmd.txt",
+          "sha256": "6c255a59c7104c7219163e685024b8c3f73a7dbb46fc41f14410d72ed0720b4d",
+          "bytes": 377
+        }
+      }
+    }
+  ]
+}

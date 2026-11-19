@@ -1,0 +1,10 @@
+file:///C:/Dev/OM3-tasks/T8c-afon-bank-and-init-reconcile/ws/work/scripts/list_menu_pages.mjs:18
+    const rows = g ? g.labels.map((lab) => M.render(lab, strings, 'en')) : [];
+                              ^
+
+TypeError: Cannot read properties of undefined (reading 'map')
+    at file:///C:/Dev/OM3-tasks/T8c-afon-bank-and-init-reconcile/ws/work/scripts/list_menu_pages.mjs:18:31
+    at Array.forEach (<anonymous>)
+    at file:///C:/Dev/OM3-tasks/T8c-afon-bank-and-init-reconcile/ws/work/scripts/list_menu_pages.mjs:15:13
+
+Node.js v26.12.1

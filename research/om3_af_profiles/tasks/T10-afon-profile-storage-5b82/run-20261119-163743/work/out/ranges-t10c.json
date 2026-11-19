@@ -1,0 +1,2481 @@
+{
+  "image_sha256": "5e8d376e9111a44ac0352f26030d7c1b17026d42c45f3600cfa02a0e8c5b7d59",
+  "image_bytes": 33554368,
+  "checks": [
+    {
+      "addr": "0x60405876",
+      "bytes": "fcdf2c916160",
+      "label": "mov 0x6061912c,A3"
+    },
+    {
+      "addr": "0x604058b3",
+      "bytes": "fac9b006",
+      "label": "cmp 0x6b0,D1"
+    },
+    {
+      "addr": "0x6041944f",
+      "bytes": "facacf08",
+      "label": "cmp 0x8cf,D2"
+    },
+    {
+      "addr": "0x60419455",
+      "bytes": "56",
+      "label": "asl2 D2"
+    },
+    {
+      "addr": "0x60419456",
+      "bytes": "fcdc5c556260",
+      "label": "mov 0x6062555c,A0"
+    },
+    {
+      "addr": "0x6041945c",
+      "bytes": "f488",
+      "label": "movhu (D2,A0),D0"
+    },
+    {
+      "addr": "0x606200e4",
+      "bytes": "ee008000b1786160000000000a00010000010000",
+      "label": "UI 238 descriptor"
+    },
+    {
+      "addr": "0x606178b1",
+      "bytes": "00010203050a06070809",
+      "label": "UI 238 value table"
+    },
+    {
+      "addr": "0x60063544",
+      "bytes": "f16a",
+      "label": "add D2,A2 byte cell"
+    },
+    {
+      "addr": "0x60063546",
+      "bytes": "f046",
+      "label": "movbu (A2),D1 old"
+    },
+    {
+      "addr": "0x60063548",
+      "bytes": "f19d",
+      "label": "cmp A3,D1"
+    },
+    {
+      "addr": "0x6006354a",
+      "bytes": "c81a",
+      "label": "beq skip if equal"
+    },
+    {
+      "addr": "0x6006354c",
+      "bytes": "f1dd",
+      "label": "mov A3,D1"
+    },
+    {
+      "addr": "0x6006354e",
+      "bytes": "f056",
+      "label": "movbu D1,(A2)"
+    },
+    {
+      "addr": "0x60063532",
+      "bytes": "f1dd",
+      "label": "mov A3,D1 half"
+    },
+    {
+      "addr": "0x60063534",
+      "bytes": "f076",
+      "label": "movhu D1,(A2)"
+    }
+  ],
+  "map_span": {
+    "base": "0x6062555c",
+    "last_id": 2255,
+    "hits": 33
+  },
+  "map_hits": [
+    {
+      "ui": 163,
+      "key": "0x99a1",
+      "name": "zone 0x99a1",
+      "index": 0,
+      "map_addr": "0x606257e8",
+      "bytes": "a1990000"
+    },
+    {
+      "ui": 1333,
+      "key": "0x99a1",
+      "name": "zone 0x99a1",
+      "index": 1,
+      "map_addr": "0x60626a30",
+      "bytes": "a1990100"
+    },
+    {
+      "ui": 1338,
+      "key": "0x5962",
+      "name": "position 0x5962",
+      "index": 0,
+      "map_addr": "0x60626a44",
+      "bytes": "62590000"
+    },
+    {
+      "ui": 1339,
+      "key": "0x5962",
+      "name": "position 0x5962",
+      "index": 1,
+      "map_addr": "0x60626a48",
+      "bytes": "62590100"
+    },
+    {
+      "ui": 1642,
+      "key": "0x99a1",
+      "name": "zone 0x99a1",
+      "index": 2,
+      "map_addr": "0x60626f04",
+      "bytes": "a1990200"
+    },
+    {
+      "ui": 1643,
+      "key": "0x99a1",
+      "name": "zone 0x99a1",
+      "index": 3,
+      "map_addr": "0x60626f08",
+      "bytes": "a1990300"
+    },
+    {
+      "ui": 1644,
+      "key": "0x99a1",
+      "name": "zone 0x99a1",
+      "index": 4,
+      "map_addr": "0x60626f0c",
+      "bytes": "a1990400"
+    },
+    {
+      "ui": 1645,
+      "key": "0x99a1",
+      "name": "zone 0x99a1",
+      "index": 5,
+      "map_addr": "0x60626f10",
+      "bytes": "a1990500"
+    },
+    {
+      "ui": 1646,
+      "key": "0x5962",
+      "name": "position 0x5962",
+      "index": 2,
+      "map_addr": "0x60626f14",
+      "bytes": "62590200"
+    },
+    {
+      "ui": 1647,
+      "key": "0x5962",
+      "name": "position 0x5962",
+      "index": 3,
+      "map_addr": "0x60626f18",
+      "bytes": "62590300"
+    },
+    {
+      "ui": 1648,
+      "key": "0x5962",
+      "name": "position 0x5962",
+      "index": 4,
+      "map_addr": "0x60626f1c",
+      "bytes": "62590400"
+    },
+    {
+      "ui": 1649,
+      "key": "0x5962",
+      "name": "position 0x5962",
+      "index": 5,
+      "map_addr": "0x60626f20",
+      "bytes": "62590500"
+    },
+    {
+      "ui": 1657,
+      "key": "0x1dd1",
+      "name": "custom size 0x1dd1",
+      "index": 0,
+      "map_addr": "0x60626f40",
+      "bytes": "d11d0000"
+    },
+    {
+      "ui": 1658,
+      "key": "0x1dd1",
+      "name": "custom size 0x1dd1",
+      "index": 1,
+      "map_addr": "0x60626f44",
+      "bytes": "d11d0100"
+    },
+    {
+      "ui": 1659,
+      "key": "0x1dd1",
+      "name": "custom size 0x1dd1",
+      "index": 2,
+      "map_addr": "0x60626f48",
+      "bytes": "d11d0200"
+    },
+    {
+      "ui": 1660,
+      "key": "0x1dd1",
+      "name": "custom size 0x1dd1",
+      "index": 3,
+      "map_addr": "0x60626f4c",
+      "bytes": "d11d0300"
+    },
+    {
+      "ui": 1661,
+      "key": "0x1dd1",
+      "name": "custom size 0x1dd1",
+      "index": 4,
+      "map_addr": "0x60626f50",
+      "bytes": "d11d0400"
+    },
+    {
+      "ui": 1662,
+      "key": "0x1dd1",
+      "name": "custom size 0x1dd1",
+      "index": 5,
+      "map_addr": "0x60626f54",
+      "bytes": "d11d0500"
+    },
+    {
+      "ui": 1663,
+      "key": "0x1dd1",
+      "name": "custom size 0x1dd1",
+      "index": 6,
+      "map_addr": "0x60626f58",
+      "bytes": "d11d0600"
+    },
+    {
+      "ui": 1664,
+      "key": "0x1dd1",
+      "name": "custom size 0x1dd1",
+      "index": 7,
+      "map_addr": "0x60626f5c",
+      "bytes": "d11d0700"
+    },
+    {
+      "ui": 1665,
+      "key": "0x1dd1",
+      "name": "custom size 0x1dd1",
+      "index": 8,
+      "map_addr": "0x60626f60",
+      "bytes": "d11d0800"
+    },
+    {
+      "ui": 1666,
+      "key": "0x1dd1",
+      "name": "custom size 0x1dd1",
+      "index": 9,
+      "map_addr": "0x60626f64",
+      "bytes": "d11d0900"
+    },
+    {
+      "ui": 1667,
+      "key": "0x1de1",
+      "name": "custom step 0x1de1",
+      "index": 0,
+      "map_addr": "0x60626f68",
+      "bytes": "e11d0000"
+    },
+    {
+      "ui": 1668,
+      "key": "0x1de1",
+      "name": "custom step 0x1de1",
+      "index": 1,
+      "map_addr": "0x60626f6c",
+      "bytes": "e11d0100"
+    },
+    {
+      "ui": 1669,
+      "key": "0x1de1",
+      "name": "custom step 0x1de1",
+      "index": 2,
+      "map_addr": "0x60626f70",
+      "bytes": "e11d0200"
+    },
+    {
+      "ui": 1670,
+      "key": "0x1de1",
+      "name": "custom step 0x1de1",
+      "index": 3,
+      "map_addr": "0x60626f74",
+      "bytes": "e11d0300"
+    },
+    {
+      "ui": 1671,
+      "key": "0x1de1",
+      "name": "custom step 0x1de1",
+      "index": 4,
+      "map_addr": "0x60626f78",
+      "bytes": "e11d0400"
+    },
+    {
+      "ui": 1672,
+      "key": "0x1de1",
+      "name": "custom step 0x1de1",
+      "index": 5,
+      "map_addr": "0x60626f7c",
+      "bytes": "e11d0500"
+    },
+    {
+      "ui": 1673,
+      "key": "0x1de1",
+      "name": "custom step 0x1de1",
+      "index": 6,
+      "map_addr": "0x60626f80",
+      "bytes": "e11d0600"
+    },
+    {
+      "ui": 1674,
+      "key": "0x1de1",
+      "name": "custom step 0x1de1",
+      "index": 7,
+      "map_addr": "0x60626f84",
+      "bytes": "e11d0700"
+    },
+    {
+      "ui": 1716,
+      "key": "0x99a1",
+      "name": "zone 0x99a1",
+      "index": 6,
+      "map_addr": "0x6062702c",
+      "bytes": "a1990600"
+    },
+    {
+      "ui": 1717,
+      "key": "0x99a1",
+      "name": "zone 0x99a1",
+      "index": 7,
+      "map_addr": "0x60627030",
+      "bytes": "a1990700"
+    },
+    {
+      "ui": 1803,
+      "key": "0x9a41",
+      "name": "size 0x9a41",
+      "index": 0,
+      "map_addr": "0x60627188",
+      "bytes": "419a0000"
+    }
+  ],
+  "descriptors": [
+    {
+      "ui": 40,
+      "records": []
+    },
+    {
+      "ui": 85,
+      "records": [
+        {
+          "addr": "0x6062042c",
+          "bytes": "5500800046796160000000003a08020000050000",
+          "flags": "0x80",
+          "value_ptr": "0x60617946",
+          "second_ptr": "0x0",
+          "byte_count": 2106,
+          "stride": 2,
+          "tail": "0x500",
+          "type": 5,
+          "table": {
+            "present": true,
+            "stride": 2,
+            "byte_count": 2106,
+            "count": 1053,
+            "decoded": true,
+            "min": 0,
+            "max": 1052,
+            "unique": 1053,
+            "values_head": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51,
+              52,
+              53,
+              54,
+              55,
+              56,
+              57,
+              58,
+              59,
+              60,
+              61,
+              62,
+              63
+            ],
+            "values_truncated": true,
+            "head_bytes": "00000100020003000400050006000700080009000a000b000c000d000e000f00",
+            "ptr": "0x60617946"
+          }
+        }
+      ]
+    },
+    {
+      "ui": 163,
+      "records": [
+        {
+          "addr": "0x6061fd88",
+          "bytes": "a300800064786160000000000a00010000010000",
+          "flags": "0x80",
+          "value_ptr": "0x60617864",
+          "second_ptr": "0x0",
+          "byte_count": 10,
+          "stride": 1,
+          "tail": "0x100",
+          "type": 1,
+          "table": {
+            "present": true,
+            "stride": 1,
+            "byte_count": 10,
+            "count": 10,
+            "decoded": true,
+            "min": 0,
+            "max": 10,
+            "unique": 10,
+            "values_head": [
+              0,
+              1,
+              2,
+              3,
+              5,
+              10,
+              6,
+              7,
+              8,
+              9
+            ],
+            "values_truncated": false,
+            "head_bytes": "00010203050a06070809",
+            "ptr": "0x60617864"
+          }
+        }
+      ]
+    },
+    {
+      "ui": 238,
+      "records": [
+        {
+          "addr": "0x606200e4",
+          "bytes": "ee008000b1786160000000000a00010000010000",
+          "flags": "0x80",
+          "value_ptr": "0x606178b1",
+          "second_ptr": "0x0",
+          "byte_count": 10,
+          "stride": 1,
+          "tail": "0x100",
+          "type": 1,
+          "table": {
+            "present": true,
+            "stride": 1,
+            "byte_count": 10,
+            "count": 10,
+            "decoded": true,
+            "min": 0,
+            "max": 10,
+            "unique": 10,
+            "values_head": [
+              0,
+              1,
+              2,
+              3,
+              5,
+              10,
+              6,
+              7,
+              8,
+              9
+            ],
+            "values_truncated": false,
+            "head_bytes": "00010203050a06070809",
+            "ptr": "0x606178b1"
+          }
+        }
+      ]
+    },
+    {
+      "ui": 1303,
+      "records": [
+        {
+          "addr": "0x6061e654",
+          "bytes": "1705800080746160000000000e00020001050000",
+          "flags": "0x80",
+          "value_ptr": "0x60617480",
+          "second_ptr": "0x0",
+          "byte_count": 14,
+          "stride": 2,
+          "tail": "0x501",
+          "type": 5,
+          "table": {
+            "present": true,
+            "stride": 2,
+            "byte_count": 14,
+            "count": 7,
+            "decoded": true,
+            "min": 2,
+            "max": 3200,
+            "unique": 7,
+            "values_head": [
+              3200,
+              86,
+              2,
+              17,
+              1701,
+              1578,
+              1632
+            ],
+            "values_truncated": false,
+            "head_bytes": "800c560002001100a5062a066006",
+            "ptr": "0x60617480"
+          }
+        }
+      ]
+    },
+    {
+      "ui": 1304,
+      "records": [
+        {
+          "addr": "0x6061e690",
+          "bytes": "180580008e746160000000000e00020001050000",
+          "flags": "0x80",
+          "value_ptr": "0x6061748e",
+          "second_ptr": "0x0",
+          "byte_count": 14,
+          "stride": 2,
+          "tail": "0x501",
+          "type": 5,
+          "table": {
+            "present": true,
+            "stride": 2,
+            "byte_count": 14,
+            "count": 7,
+            "decoded": true,
+            "min": 2,
+            "max": 3200,
+            "unique": 7,
+            "values_head": [
+              3200,
+              1697,
+              2,
+              17,
+              1701,
+              1578,
+              1632
+            ],
+            "values_truncated": false,
+            "head_bytes": "800ca10602001100a5062a066006",
+            "ptr": "0x6061748e"
+          }
+        }
+      ]
+    },
+    {
+      "ui": 1333,
+      "records": [
+        {
+          "addr": "0x6061fd9c",
+          "bytes": "3505800064786160000000000a00010000010000",
+          "flags": "0x80",
+          "value_ptr": "0x60617864",
+          "second_ptr": "0x0",
+          "byte_count": 10,
+          "stride": 1,
+          "tail": "0x100",
+          "type": 1,
+          "table": {
+            "present": true,
+            "stride": 1,
+            "byte_count": 10,
+            "count": 10,
+            "decoded": true,
+            "min": 0,
+            "max": 10,
+            "unique": 10,
+            "values_head": [
+              0,
+              1,
+              2,
+              3,
+              5,
+              10,
+              6,
+              7,
+              8,
+              9
+            ],
+            "values_truncated": false,
+            "head_bytes": "00010203050a06070809",
+            "ptr": "0x60617864"
+          }
+        }
+      ]
+    },
+    {
+      "ui": 1338,
+      "records": [
+        {
+          "addr": "0x60620440",
+          "bytes": "3a05800046796160000000003a08020000050000",
+          "flags": "0x80",
+          "value_ptr": "0x60617946",
+          "second_ptr": "0x0",
+          "byte_count": 2106,
+          "stride": 2,
+          "tail": "0x500",
+          "type": 5,
+          "table": {
+            "present": true,
+            "stride": 2,
+            "byte_count": 2106,
+            "count": 1053,
+            "decoded": true,
+            "min": 0,
+            "max": 1052,
+            "unique": 1053,
+            "values_head": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51,
+              52,
+              53,
+              54,
+              55,
+              56,
+              57,
+              58,
+              59,
+              60,
+              61,
+              62,
+              63
+            ],
+            "values_truncated": true,
+            "head_bytes": "00000100020003000400050006000700080009000a000b000c000d000e000f00",
+            "ptr": "0x60617946"
+          }
+        }
+      ]
+    },
+    {
+      "ui": 1339,
+      "records": [
+        {
+          "addr": "0x60620454",
+          "bytes": "3b05800046796160000000003a08020000050000",
+          "flags": "0x80",
+          "value_ptr": "0x60617946",
+          "second_ptr": "0x0",
+          "byte_count": 2106,
+          "stride": 2,
+          "tail": "0x500",
+          "type": 5,
+          "table": {
+            "present": true,
+            "stride": 2,
+            "byte_count": 2106,
+            "count": 1053,
+            "decoded": true,
+            "min": 0,
+            "max": 1052,
+            "unique": 1053,
+            "values_head": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51,
+              52,
+              53,
+              54,
+              55,
+              56,
+              57,
+              58,
+              59,
+              60,
+              61,
+              62,
+              63
+            ],
+            "values_truncated": true,
+            "head_bytes": "00000100020003000400050006000700080009000a000b000c000d000e000f00",
+            "ptr": "0x60617946"
+          }
+        }
+      ]
+    },
+    {
+      "ui": 1617,
+      "records": [
+        {
+          "addr": "0x6061fbf8",
+          "bytes": "510680001e786160000000001e00020001040000",
+          "flags": "0x80",
+          "value_ptr": "0x6061781e",
+          "second_ptr": "0x0",
+          "byte_count": 30,
+          "stride": 2,
+          "tail": "0x401",
+          "type": 4,
+          "table": {
+            "present": true,
+            "stride": 2,
+            "byte_count": 30,
+            "count": 15,
+            "decoded": true,
+            "min": 0,
+            "max": 65535,
+            "unique": 15,
+            "values_head": [
+              65529,
+              65530,
+              65531,
+              65532,
+              65533,
+              65534,
+              65535,
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ],
+            "values_truncated": false,
+            "head_bytes": "f9fffafffbfffcfffdfffeffffff00000100020003000400050006000700",
+            "ptr": "0x6061781e"
+          }
+        }
+      ]
+    },
+    {
+      "ui": 1618,
+      "records": [
+        {
+          "addr": "0x6061fc0c",
+          "bytes": "520680001e786160000000001e00020001040000",
+          "flags": "0x80",
+          "value_ptr": "0x6061781e",
+          "second_ptr": "0x0",
+          "byte_count": 30,
+          "stride": 2,
+          "tail": "0x401",
+          "type": 4,
+          "table": {
+            "present": true,
+            "stride": 2,
+            "byte_count": 30,
+            "count": 15,
+            "decoded": true,
+            "min": 0,
+            "max": 65535,
+            "unique": 15,
+            "values_head": [
+              65529,
+              65530,
+              65531,
+              65532,
+              65533,
+              65534,
+              65535,
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ],
+            "values_truncated": false,
+            "head_bytes": "f9fffafffbfffcfffdfffeffffff00000100020003000400050006000700",
+            "ptr": "0x6061781e"
+          }
+        }
+      ]
+    },
+    {
+      "ui": 1619,
+      "records": [
+        {
+          "addr": "0x6061fc20",
+          "bytes": "530680003c786160000000001e00020001040000",
+          "flags": "0x80",
+          "value_ptr": "0x6061783c",
+          "second_ptr": "0x0",
+          "byte_count": 30,
+          "stride": 2,
+          "tail": "0x401",
+          "type": 4,
+          "table": {
+            "present": true,
+            "stride": 2,
+            "byte_count": 30,
+            "count": 15,
+            "decoded": true,
+            "min": 0,
+            "max": 65535,
+            "unique": 15,
+            "values_head": [
+              65529,
+              65530,
+              65531,
+              65532,
+              65533,
+              65534,
+              65535,
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ],
+            "values_truncated": false,
+            "head_bytes": "f9fffafffbfffcfffdfffeffffff00000100020003000400050006000700",
+            "ptr": "0x6061783c"
+          }
+        }
+      ]
+    },
+    {
+      "ui": 1620,
+      "records": [
+        {
+          "addr": "0x6061fc34",
+          "bytes": "540680003c786160000000001e00020001040000",
+          "flags": "0x80",
+          "value_ptr": "0x6061783c",
+          "second_ptr": "0x0",
+          "byte_count": 30,
+          "stride": 2,
+          "tail": "0x401",
+          "type": 4,
+          "table": {
+            "present": true,
+            "stride": 2,
+            "byte_count": 30,
+            "count": 15,
+            "decoded": true,
+            "min": 0,
+            "max": 65535,
+            "unique": 15,
+            "values_head": [
+              65529,
+              65530,
+              65531,
+              65532,
+              65533,
+              65534,
+              65535,
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ],
+            "values_truncated": false,
+            "head_bytes": "f9fffafffbfffcfffdfffeffffff00000100020003000400050006000700",
+            "ptr": "0x6061783c"
+          }
+        }
+      ]
+    },
+    {
+      "ui": 1642,
+      "records": [
+        {
+          "addr": "0x6061fdb0",
+          "bytes": "6a06800064786160000000000a00010000010000",
+          "flags": "0x80",
+          "value_ptr": "0x60617864",
+          "second_ptr": "0x0",
+          "byte_count": 10,
+          "stride": 1,
+          "tail": "0x100",
+          "type": 1,
+          "table": {
+            "present": true,
+            "stride": 1,
+            "byte_count": 10,
+            "count": 10,
+            "decoded": true,
+            "min": 0,
+            "max": 10,
+            "unique": 10,
+            "values_head": [
+              0,
+              1,
+              2,
+              3,
+              5,
+              10,
+              6,
+              7,
+              8,
+              9
+            ],
+            "values_truncated": false,
+            "head_bytes": "00010203050a06070809",
+            "ptr": "0x60617864"
+          }
+        }
+      ]
+    },
+    {
+      "ui": 1643,
+      "records": [
+        {
+          "addr": "0x6061fdc4",
+          "bytes": "6b06800064786160000000000a00010000010000",
+          "flags": "0x80",
+          "value_ptr": "0x60617864",
+          "second_ptr": "0x0",
+          "byte_count": 10,
+          "stride": 1,
+          "tail": "0x100",
+          "type": 1,
+          "table": {
+            "present": true,
+            "stride": 1,
+            "byte_count": 10,
+            "count": 10,
+            "decoded": true,
+            "min": 0,
+            "max": 10,
+            "unique": 10,
+            "values_head": [
+              0,
+              1,
+              2,
+              3,
+              5,
+              10,
+              6,
+              7,
+              8,
+              9
+            ],
+            "values_truncated": false,
+            "head_bytes": "00010203050a06070809",
+            "ptr": "0x60617864"
+          }
+        }
+      ]
+    },
+    {
+      "ui": 1644,
+      "records": [
+        {
+          "addr": "0x6061fdd8",
+          "bytes": "6c06800064786160000000000a00010000010000",
+          "flags": "0x80",
+          "value_ptr": "0x60617864",
+          "second_ptr": "0x0",
+          "byte_count": 10,
+          "stride": 1,
+          "tail": "0x100",
+          "type": 1,
+          "table": {
+            "present": true,
+            "stride": 1,
+            "byte_count": 10,
+            "count": 10,
+            "decoded": true,
+            "min": 0,
+            "max": 10,
+            "unique": 10,
+            "values_head": [
+              0,
+              1,
+              2,
+              3,
+              5,
+              10,
+              6,
+              7,
+              8,
+              9
+            ],
+            "values_truncated": false,
+            "head_bytes": "00010203050a06070809",
+            "ptr": "0x60617864"
+          }
+        }
+      ]
+    },
+    {
+      "ui": 1645,
+      "records": [
+        {
+          "addr": "0x6061fdec",
+          "bytes": "6d06800064786160000000000a00010000010000",
+          "flags": "0x80",
+          "value_ptr": "0x60617864",
+          "second_ptr": "0x0",
+          "byte_count": 10,
+          "stride": 1,
+          "tail": "0x100",
+          "type": 1,
+          "table": {
+            "present": true,
+            "stride": 1,
+            "byte_count": 10,
+            "count": 10,
+            "decoded": true,
+            "min": 0,
+            "max": 10,
+            "unique": 10,
+            "values_head": [
+              0,
+              1,
+              2,
+              3,
+              5,
+              10,
+              6,
+              7,
+              8,
+              9
+            ],
+            "values_truncated": false,
+            "head_bytes": "00010203050a06070809",
+            "ptr": "0x60617864"
+          }
+        }
+      ]
+    },
+    {
+      "ui": 1646,
+      "records": [
+        {
+          "addr": "0x60620468",
+          "bytes": "6e06800046796160000000003a08020000050000",
+          "flags": "0x80",
+          "value_ptr": "0x60617946",
+          "second_ptr": "0x0",
+          "byte_count": 2106,
+          "stride": 2,
+          "tail": "0x500",
+          "type": 5,
+          "table": {
+            "present": true,
+            "stride": 2,
+            "byte_count": 2106,
+            "count": 1053,
+            "decoded": true,
+            "min": 0,
+            "max": 1052,
+            "unique": 1053,
+            "values_head": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51,
+              52,
+              53,
+              54,
+              55,
+              56,
+              57,
+              58,
+              59,
+              60,
+              61,
+              62,
+              63
+            ],
+            "values_truncated": true,
+            "head_bytes": "00000100020003000400050006000700080009000a000b000c000d000e000f00",
+            "ptr": "0x60617946"
+          }
+        }
+      ]
+    },
+    {
+      "ui": 1647,
+      "records": [
+        {
+          "addr": "0x6062047c",
+          "bytes": "6f06800046796160000000003a08020000050000",
+          "flags": "0x80",
+          "value_ptr": "0x60617946",
+          "second_ptr": "0x0",
+          "byte_count": 2106,
+          "stride": 2,
+          "tail": "0x500",
+          "type": 5,
+          "table": {
+            "present": true,
+            "stride": 2,
+            "byte_count": 2106,
+            "count": 1053,
+            "decoded": true,
+            "min": 0,
+            "max": 1052,
+            "unique": 1053,
+            "values_head": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51,
+              52,
+              53,
+              54,
+              55,
+              56,
+              57,
+              58,
+              59,
+              60,
+              61,
+              62,
+              63
+            ],
+            "values_truncated": true,
+            "head_bytes": "00000100020003000400050006000700080009000a000b000c000d000e000f00",
+            "ptr": "0x60617946"
+          }
+        }
+      ]
+    },
+    {
+      "ui": 1648,
+      "records": [
+        {
+          "addr": "0x60620490",
+          "bytes": "7006800046796160000000003a08020000050000",
+          "flags": "0x80",
+          "value_ptr": "0x60617946",
+          "second_ptr": "0x0",
+          "byte_count": 2106,
+          "stride": 2,
+          "tail": "0x500",
+          "type": 5,
+          "table": {
+            "present": true,
+            "stride": 2,
+            "byte_count": 2106,
+            "count": 1053,
+            "decoded": true,
+            "min": 0,
+            "max": 1052,
+            "unique": 1053,
+            "values_head": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51,
+              52,
+              53,
+              54,
+              55,
+              56,
+              57,
+              58,
+              59,
+              60,
+              61,
+              62,
+              63
+            ],
+            "values_truncated": true,
+            "head_bytes": "00000100020003000400050006000700080009000a000b000c000d000e000f00",
+            "ptr": "0x60617946"
+          }
+        }
+      ]
+    },
+    {
+      "ui": 1649,
+      "records": [
+        {
+          "addr": "0x606204a4",
+          "bytes": "7106800046796160000000003a08020000050000",
+          "flags": "0x80",
+          "value_ptr": "0x60617946",
+          "second_ptr": "0x0",
+          "byte_count": 2106,
+          "stride": 2,
+          "tail": "0x500",
+          "type": 5,
+          "table": {
+            "present": true,
+            "stride": 2,
+            "byte_count": 2106,
+            "count": 1053,
+            "decoded": true,
+            "min": 0,
+            "max": 1052,
+            "unique": 1053,
+            "values_head": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51,
+              52,
+              53,
+              54,
+              55,
+              56,
+              57,
+              58,
+              59,
+              60,
+              61,
+              62,
+              63
+            ],
+            "values_truncated": true,
+            "head_bytes": "00000100020003000400050006000700080009000a000b000c000d000e000f00",
+            "ptr": "0x60617946"
+          }
+        }
+      ]
+    },
+    {
+      "ui": 1657,
+      "records": [
+        {
+          "addr": "0x6061fe28",
+          "bytes": "7906800070786160000000000a00010000010000",
+          "flags": "0x80",
+          "value_ptr": "0x60617870",
+          "second_ptr": "0x0",
+          "byte_count": 10,
+          "stride": 1,
+          "tail": "0x100",
+          "type": 1,
+          "table": {
+            "present": true,
+            "stride": 1,
+            "byte_count": 10,
+            "count": 10,
+            "decoded": true,
+            "min": 1,
+            "max": 27,
+            "unique": 10,
+            "values_head": [
+              1,
+              3,
+              5,
+              7,
+              9,
+              11,
+              15,
+              19,
+              23,
+              27
+            ],
+            "values_truncated": false,
+            "head_bytes": "01030507090b0f13171b",
+            "ptr": "0x60617870"
+          }
+        }
+      ]
+    },
+    {
+      "ui": 1658,
+      "records": [
+        {
+          "addr": "0x6061fe3c",
+          "bytes": "7a0680007a786160000000000c00010000010000",
+          "flags": "0x80",
+          "value_ptr": "0x6061787a",
+          "second_ptr": "0x0",
+          "byte_count": 12,
+          "stride": 1,
+          "tail": "0x100",
+          "type": 1,
+          "table": {
+            "present": true,
+            "stride": 1,
+            "byte_count": 12,
+            "count": 12,
+            "decoded": true,
+            "min": 1,
+            "max": 39,
+            "unique": 12,
+            "values_head": [
+              1,
+              3,
+              5,
+              7,
+              9,
+              11,
+              15,
+              19,
+              23,
+              27,
+              33,
+              39
+            ],
+            "values_truncated": false,
+            "head_bytes": "01030507090b0f13171b2127",
+            "ptr": "0x6061787a"
+          }
+        }
+      ]
+    },
+    {
+      "ui": 1659,
+      "records": [
+        {
+          "addr": "0x6061fe50",
+          "bytes": "7b06800086786160000000000a00010000010000",
+          "flags": "0x80",
+          "value_ptr": "0x60617886",
+          "second_ptr": "0x0",
+          "byte_count": 10,
+          "stride": 1,
+          "tail": "0x100",
+          "type": 1,
+          "table": {
+            "present": true,
+            "stride": 1,
+            "byte_count": 10,
+            "count": 10,
+            "decoded": true,
+            "min": 1,
+            "max": 27,
+            "unique": 10,
+            "values_head": [
+              1,
+              3,
+              5,
+              7,
+              9,
+              11,
+              15,
+              19,
+              23,
+              27
+            ],
+            "values_truncated": false,
+            "head_bytes": "01030507090b0f13171b",
+            "ptr": "0x60617886"
+          }
+        }
+      ]
+    },
+    {
+      "ui": 1660,
+      "records": [
+        {
+          "addr": "0x6061fea0",
+          "bytes": "7c06800090786160000000000c00010000010000",
+          "flags": "0x80",
+          "value_ptr": "0x60617890",
+          "second_ptr": "0x0",
+          "byte_count": 12,
+          "stride": 1,
+          "tail": "0x100",
+          "type": 1,
+          "table": {
+            "present": true,
+            "stride": 1,
+            "byte_count": 12,
+            "count": 12,
+            "decoded": true,
+            "min": 1,
+            "max": 39,
+            "unique": 12,
+            "values_head": [
+              1,
+              3,
+              5,
+              7,
+              9,
+              11,
+              15,
+              19,
+              23,
+              27,
+              33,
+              39
+            ],
+            "values_truncated": false,
+            "head_bytes": "01030507090b0f13171b2127",
+            "ptr": "0x60617890"
+          }
+        }
+      ]
+    },
+    {
+      "ui": 1661,
+      "records": [
+        {
+          "addr": "0x6061fe64",
+          "bytes": "7d06800086786160000000000a00010000010000",
+          "flags": "0x80",
+          "value_ptr": "0x60617886",
+          "second_ptr": "0x0",
+          "byte_count": 10,
+          "stride": 1,
+          "tail": "0x100",
+          "type": 1,
+          "table": {
+            "present": true,
+            "stride": 1,
+            "byte_count": 10,
+            "count": 10,
+            "decoded": true,
+            "min": 1,
+            "max": 27,
+            "unique": 10,
+            "values_head": [
+              1,
+              3,
+              5,
+              7,
+              9,
+              11,
+              15,
+              19,
+              23,
+              27
+            ],
+            "values_truncated": false,
+            "head_bytes": "01030507090b0f13171b",
+            "ptr": "0x60617886"
+          }
+        }
+      ]
+    },
+    {
+      "ui": 1662,
+      "records": [
+        {
+          "addr": "0x6061feb4",
+          "bytes": "7e06800090786160000000000c00010000010000",
+          "flags": "0x80",
+          "value_ptr": "0x60617890",
+          "second_ptr": "0x0",
+          "byte_count": 12,
+          "stride": 1,
+          "tail": "0x100",
+          "type": 1,
+          "table": {
+            "present": true,
+            "stride": 1,
+            "byte_count": 12,
+            "count": 12,
+            "decoded": true,
+            "min": 1,
+            "max": 39,
+            "unique": 12,
+            "values_head": [
+              1,
+              3,
+              5,
+              7,
+              9,
+              11,
+              15,
+              19,
+              23,
+              27,
+              33,
+              39
+            ],
+            "values_truncated": false,
+            "head_bytes": "01030507090b0f13171b2127",
+            "ptr": "0x60617890"
+          }
+        }
+      ]
+    },
+    {
+      "ui": 1663,
+      "records": [
+        {
+          "addr": "0x6061fe78",
+          "bytes": "7f06800086786160000000000a00010000010000",
+          "flags": "0x80",
+          "value_ptr": "0x60617886",
+          "second_ptr": "0x0",
+          "byte_count": 10,
+          "stride": 1,
+          "tail": "0x100",
+          "type": 1,
+          "table": {
+            "present": true,
+            "stride": 1,
+            "byte_count": 10,
+            "count": 10,
+            "decoded": true,
+            "min": 1,
+            "max": 27,
+            "unique": 10,
+            "values_head": [
+              1,
+              3,
+              5,
+              7,
+              9,
+              11,
+              15,
+              19,
+              23,
+              27
+            ],
+            "values_truncated": false,
+            "head_bytes": "01030507090b0f13171b",
+            "ptr": "0x60617886"
+          }
+        }
+      ]
+    },
+    {
+      "ui": 1664,
+      "records": [
+        {
+          "addr": "0x6061fec8",
+          "bytes": "8006800090786160000000000c00010000010000",
+          "flags": "0x80",
+          "value_ptr": "0x60617890",
+          "second_ptr": "0x0",
+          "byte_count": 12,
+          "stride": 1,
+          "tail": "0x100",
+          "type": 1,
+          "table": {
+            "present": true,
+            "stride": 1,
+            "byte_count": 12,
+            "count": 12,
+            "decoded": true,
+            "min": 1,
+            "max": 39,
+            "unique": 12,
+            "values_head": [
+              1,
+              3,
+              5,
+              7,
+              9,
+              11,
+              15,
+              19,
+              23,
+              27,
+              33,
+              39
+            ],
+            "values_truncated": false,
+            "head_bytes": "01030507090b0f13171b2127",
+            "ptr": "0x60617890"
+          }
+        }
+      ]
+    },
+    {
+      "ui": 1665,
+      "records": [
+        {
+          "addr": "0x6061fe8c",
+          "bytes": "8106800086786160000000000a00010000010000",
+          "flags": "0x80",
+          "value_ptr": "0x60617886",
+          "second_ptr": "0x0",
+          "byte_count": 10,
+          "stride": 1,
+          "tail": "0x100",
+          "type": 1,
+          "table": {
+            "present": true,
+            "stride": 1,
+            "byte_count": 10,
+            "count": 10,
+            "decoded": true,
+            "min": 1,
+            "max": 27,
+            "unique": 10,
+            "values_head": [
+              1,
+              3,
+              5,
+              7,
+              9,
+              11,
+              15,
+              19,
+              23,
+              27
+            ],
+            "values_truncated": false,
+            "head_bytes": "01030507090b0f13171b",
+            "ptr": "0x60617886"
+          }
+        }
+      ]
+    },
+    {
+      "ui": 1666,
+      "records": [
+        {
+          "addr": "0x6061fedc",
+          "bytes": "8206800090786160000000000c00010000010000",
+          "flags": "0x80",
+          "value_ptr": "0x60617890",
+          "second_ptr": "0x0",
+          "byte_count": 12,
+          "stride": 1,
+          "tail": "0x100",
+          "type": 1,
+          "table": {
+            "present": true,
+            "stride": 1,
+            "byte_count": 12,
+            "count": 12,
+            "decoded": true,
+            "min": 1,
+            "max": 39,
+            "unique": 12,
+            "values_head": [
+              1,
+              3,
+              5,
+              7,
+              9,
+              11,
+              15,
+              19,
+              23,
+              27,
+              33,
+              39
+            ],
+            "values_truncated": false,
+            "head_bytes": "01030507090b0f13171b2127",
+            "ptr": "0x60617890"
+          }
+        }
+      ]
+    },
+    {
+      "ui": 1667,
+      "records": [
+        {
+          "addr": "0x6061fef0",
+          "bytes": "830680009c786160000000000500010000010000",
+          "flags": "0x80",
+          "value_ptr": "0x6061789c",
+          "second_ptr": "0x0",
+          "byte_count": 5,
+          "stride": 1,
+          "tail": "0x100",
+          "type": 1,
+          "table": {
+            "present": true,
+            "stride": 1,
+            "byte_count": 5,
+            "count": 5,
+            "decoded": true,
+            "min": 1,
+            "max": 5,
+            "unique": 5,
+            "values_head": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "values_truncated": false,
+            "head_bytes": "0102030405",
+            "ptr": "0x6061789c"
+          }
+        }
+      ]
+    },
+    {
+      "ui": 1668,
+      "records": [
+        {
+          "addr": "0x6061ff40",
+          "bytes": "84068000a1786160000000000800010000010000",
+          "flags": "0x80",
+          "value_ptr": "0x606178a1",
+          "second_ptr": "0x0",
+          "byte_count": 8,
+          "stride": 1,
+          "tail": "0x100",
+          "type": 1,
+          "table": {
+            "present": true,
+            "stride": 1,
+            "byte_count": 8,
+            "count": 8,
+            "decoded": true,
+            "min": 1,
+            "max": 8,
+            "unique": 8,
+            "values_head": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ],
+            "values_truncated": false,
+            "head_bytes": "0102030405060708",
+            "ptr": "0x606178a1"
+          }
+        }
+      ]
+    },
+    {
+      "ui": 1669,
+      "records": [
+        {
+          "addr": "0x6061ff04",
+          "bytes": "850680009c786160000000000500010000010000",
+          "flags": "0x80",
+          "value_ptr": "0x6061789c",
+          "second_ptr": "0x0",
+          "byte_count": 5,
+          "stride": 1,
+          "tail": "0x100",
+          "type": 1,
+          "table": {
+            "present": true,
+            "stride": 1,
+            "byte_count": 5,
+            "count": 5,
+            "decoded": true,
+            "min": 1,
+            "max": 5,
+            "unique": 5,
+            "values_head": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "values_truncated": false,
+            "head_bytes": "0102030405",
+            "ptr": "0x6061789c"
+          }
+        }
+      ]
+    },
+    {
+      "ui": 1670,
+      "records": [
+        {
+          "addr": "0x6061ff54",
+          "bytes": "86068000a1786160000000000800010000010000",
+          "flags": "0x80",
+          "value_ptr": "0x606178a1",
+          "second_ptr": "0x0",
+          "byte_count": 8,
+          "stride": 1,
+          "tail": "0x100",
+          "type": 1,
+          "table": {
+            "present": true,
+            "stride": 1,
+            "byte_count": 8,
+            "count": 8,
+            "decoded": true,
+            "min": 1,
+            "max": 8,
+            "unique": 8,
+            "values_head": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ],
+            "values_truncated": false,
+            "head_bytes": "0102030405060708",
+            "ptr": "0x606178a1"
+          }
+        }
+      ]
+    },
+    {
+      "ui": 1671,
+      "records": [
+        {
+          "addr": "0x6061ff18",
+          "bytes": "870680009c786160000000000500010000010000",
+          "flags": "0x80",
+          "value_ptr": "0x6061789c",
+          "second_ptr": "0x0",
+          "byte_count": 5,
+          "stride": 1,
+          "tail": "0x100",
+          "type": 1,
+          "table": {
+            "present": true,
+            "stride": 1,
+            "byte_count": 5,
+            "count": 5,
+            "decoded": true,
+            "min": 1,
+            "max": 5,
+            "unique": 5,
+            "values_head": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "values_truncated": false,
+            "head_bytes": "0102030405",
+            "ptr": "0x6061789c"
+          }
+        }
+      ]
+    },
+    {
+      "ui": 1672,
+      "records": [
+        {
+          "addr": "0x6061ff68",
+          "bytes": "88068000a1786160000000000800010000010000",
+          "flags": "0x80",
+          "value_ptr": "0x606178a1",
+          "second_ptr": "0x0",
+          "byte_count": 8,
+          "stride": 1,
+          "tail": "0x100",
+          "type": 1,
+          "table": {
+            "present": true,
+            "stride": 1,
+            "byte_count": 8,
+            "count": 8,
+            "decoded": true,
+            "min": 1,
+            "max": 8,
+            "unique": 8,
+            "values_head": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ],
+            "values_truncated": false,
+            "head_bytes": "0102030405060708",
+            "ptr": "0x606178a1"
+          }
+        }
+      ]
+    },
+    {
+      "ui": 1673,
+      "records": [
+        {
+          "addr": "0x6061ff2c",
+          "bytes": "890680009c786160000000000500010000010000",
+          "flags": "0x80",
+          "value_ptr": "0x6061789c",
+          "second_ptr": "0x0",
+          "byte_count": 5,
+          "stride": 1,
+          "tail": "0x100",
+          "type": 1,
+          "table": {
+            "present": true,
+            "stride": 1,
+            "byte_count": 5,
+            "count": 5,
+            "decoded": true,
+            "min": 1,
+            "max": 5,
+            "unique": 5,
+            "values_head": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "values_truncated": false,
+            "head_bytes": "0102030405",
+            "ptr": "0x6061789c"
+          }
+        }
+      ]
+    },
+    {
+      "ui": 1674,
+      "records": [
+        {
+          "addr": "0x6061ff7c",
+          "bytes": "8a068000a1786160000000000800010000010000",
+          "flags": "0x80",
+          "value_ptr": "0x606178a1",
+          "second_ptr": "0x0",
+          "byte_count": 8,
+          "stride": 1,
+          "tail": "0x100",
+          "type": 1,
+          "table": {
+            "present": true,
+            "stride": 1,
+            "byte_count": 8,
+            "count": 8,
+            "decoded": true,
+            "min": 1,
+            "max": 8,
+            "unique": 8,
+            "values_head": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ],
+            "values_truncated": false,
+            "head_bytes": "0102030405060708",
+            "ptr": "0x606178a1"
+          }
+        }
+      ]
+    },
+    {
+      "ui": 1692,
+      "records": [
+        {
+          "addr": "0x606200f8",
+          "bytes": "9c068000b1786160000000000a00010000010000",
+          "flags": "0x80",
+          "value_ptr": "0x606178b1",
+          "second_ptr": "0x0",
+          "byte_count": 10,
+          "stride": 1,
+          "tail": "0x100",
+          "type": 1,
+          "table": {
+            "present": true,
+            "stride": 1,
+            "byte_count": 10,
+            "count": 10,
+            "decoded": true,
+            "min": 0,
+            "max": 10,
+            "unique": 10,
+            "values_head": [
+              0,
+              1,
+              2,
+              3,
+              5,
+              10,
+              6,
+              7,
+              8,
+              9
+            ],
+            "values_truncated": false,
+            "head_bytes": "00010203050a06070809",
+            "ptr": "0x606178b1"
+          }
+        }
+      ]
+    },
+    {
+      "ui": 1693,
+      "records": [
+        {
+          "addr": "0x6062010c",
+          "bytes": "9d068000b1786160000000000a00010000010000",
+          "flags": "0x80",
+          "value_ptr": "0x606178b1",
+          "second_ptr": "0x0",
+          "byte_count": 10,
+          "stride": 1,
+          "tail": "0x100",
+          "type": 1,
+          "table": {
+            "present": true,
+            "stride": 1,
+            "byte_count": 10,
+            "count": 10,
+            "decoded": true,
+            "min": 0,
+            "max": 10,
+            "unique": 10,
+            "values_head": [
+              0,
+              1,
+              2,
+              3,
+              5,
+              10,
+              6,
+              7,
+              8,
+              9
+            ],
+            "values_truncated": false,
+            "head_bytes": "00010203050a06070809",
+            "ptr": "0x606178b1"
+          }
+        }
+      ]
+    },
+    {
+      "ui": 1716,
+      "records": [
+        {
+          "addr": "0x606201ac",
+          "bytes": "b4068000d9786160000000000400010000010000",
+          "flags": "0x80",
+          "value_ptr": "0x606178d9",
+          "second_ptr": "0x0",
+          "byte_count": 4,
+          "stride": 1,
+          "tail": "0x100",
+          "type": 1,
+          "table": {
+            "present": true,
+            "stride": 1,
+            "byte_count": 4,
+            "count": 4,
+            "decoded": true,
+            "min": 0,
+            "max": 10,
+            "unique": 4,
+            "values_head": [
+              0,
+              2,
+              5,
+              10
+            ],
+            "values_truncated": false,
+            "head_bytes": "0002050a",
+            "ptr": "0x606178d9"
+          }
+        }
+      ]
+    },
+    {
+      "ui": 1717,
+      "records": [
+        {
+          "addr": "0x606201c0",
+          "bytes": "b5068000d9786160000000000400010000010000",
+          "flags": "0x80",
+          "value_ptr": "0x606178d9",
+          "second_ptr": "0x0",
+          "byte_count": 4,
+          "stride": 1,
+          "tail": "0x100",
+          "type": 1,
+          "table": {
+            "present": true,
+            "stride": 1,
+            "byte_count": 4,
+            "count": 4,
+            "decoded": true,
+            "min": 0,
+            "max": 10,
+            "unique": 4,
+            "values_head": [
+              0,
+              2,
+              5,
+              10
+            ],
+            "values_truncated": false,
+            "head_bytes": "0002050a",
+            "ptr": "0x606178d9"
+          }
+        }
+      ]
+    },
+    {
+      "ui": 1803,
+      "records": []
+    }
+  ],
+  "setter_clamp": "none on the byte and halfword store paths checked above",
+  "singletons": [
+    {
+      "site": "0x615fbdb0",
+      "aligned": "0x615fbdb0",
+      "dword": "0x61295b82",
+      "window": "7a5b296106800000825b2961078000008a5b296100000000",
+      "image_range_dword": true,
+      "dword_ptrs_to_site": 0,
+      "dword_ptrs_to_aligned": 0
+    },
+    {
+      "site": "0x615b9d55",
+      "aligned": "0x615b9d54",
+      "dword": "0x615b823c",
+      "window": "000000000000003c825b6108000000040000000000000000",
+      "image_range_dword": true,
+      "dword_ptrs_to_site": 0,
+      "dword_ptrs_to_aligned": 0
+    },
+    {
+      "site": "0x615b9d91",
+      "aligned": "0x615b9d90",
+      "dword": "0x615b823c",
+      "window": "000000000000003c825b6108000000010000000000000000",
+      "image_range_dword": true,
+      "dword_ptrs_to_site": 0,
+      "dword_ptrs_to_aligned": 0
+    }
+  ]
+}

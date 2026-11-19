@@ -39,3 +39,15 @@
 
 Recompute every manifest hash. Use PowerShell (Python is not on your PATH). Do not run Ghidra or OM-Emu.
 Give the verdict in the structure of `templates\review.md`.
+## Correction round
+
+Also read `brief.md` §5 and your previous review in `audit\previous-review.md`. For each §5 item, report DONE /
+NOT DONE / WRONG / BLOCKED (honestly reported).
+
+Check in particular:
+- Expected frames come from K1e and full-K2 reference runs, hashed before the candidate ran; the minus-6 rule is
+  not used to derive them.
+- K2 carries the same display hook as the candidate, unseeded.
+- Both profiles exercise the hook's size/kind branches (non-zero substitution counts).
+- Which refresh criterion was used, and whether it was met on every edge.
+- Seeded A, seeded B, K2 and K1 each end `ok:true`.

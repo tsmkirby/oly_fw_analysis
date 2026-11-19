@@ -1,0 +1,21 @@
+file:///C:/Dev/OM3-tasks/T10-afon-profile-storage-5b82/ws/work/scripts/accept_t10c.mjs:300
+  if (!result.ok) throw new Error(name + ' ' + result.failed);
+                        ^
+
+Error: k2-reopen NavError: UI_IN group 1: lab hook EMULATOR-ONLY AF-ON entry republish from the stock getter. Role: behaviour. reached at 0x60a8f6bb (disasm 0x50a6e69b), on bytes the patch overlay changed (body 0x00a6e696+99): the lab's stand-in would run in place of the patched code
+  step 03-key afon down; GUI state 0x0108 SS_COMMON/ID_ST_CA_REQ_DISP; messages taken []; GESetEvent 0 from []; hook stops 369, top [["EMULATOR-ONLY profile read from the mirror. Role: behaviour.", 55], ["prop_get", 48], ["EMULATOR-ONLY afon value getter", 42], ["EMULATOR-ONLY afon mapped getter", 42], ["EMULATOR-ONLY afon index getter", 42], ["get_tid(scoped)", 41], ["obs-setting", 27], ["obs-setting-value", 27], ["memset", 14], ["memcpy", 5]]; kernel events ["[\"rtos\", \"iOlyEvSt\", \"d0=0x100 d1=0x1 a0=0x62f1dcb4\", \"0x6020d2a1 (disasm 0x501ec281)\"]", "[\"rtos\", \"iOlyEvSt\", \"d0=0x100 d1=0x1 a0=0x62f1dcb4\", \"0x6020d2a1 (disasm 0x501ec281)\"]", "[\"rtos\", \"OlyEvCl\", \"d0=0x100 d1=0x0\", \"0x6020d407 (disasm 0x501ec3e7)\"]", "[\"rtos\", \"OlyEvWt\", \"d0=0x100 d1=0x1 a0=0xa20efe58\", \"0x6020d427 (disasm 0x501ec407)\"]", "[\"rtos\", \"iOlyEvSt\", \"d0=0x100 d1=0x1 a0=0x62f1dcb4\", \"0x6020d2a1 (disasm 0x501ec281)\"]", "[\"rtos\", \"iOlyEvSt\", \"d0=0x100 d1=0x1 a0=0x62f1dcb4\", \"0x6020d2a1 (disasm 0x501ec281)\"]"]; tasks {2: "0x5089b8ac WAI", 10: "0x50044861 WAI", 13: "0x508ae684 WAI", 14: "0x508b3770 WAI", 16: "0x500541a0 WAI", 58: "0x50ac6296 WAI", 59: "0x5105fd77 WAI", 85: "0x50156805 WAI", 91: "0x502d0ceb WAI", 92: "0x5011f82d WAI", 93: "0x502ce98f WAI", 105: "0x509be82d WAI", 122: "0x5005806c WAI", 140: "0x501d3ec8 WAI", 147: "0x501e3eca WAI", 160: "0xa2300100 WAI", 161: "0x50db7bf8 WAI", 162: "0x50acc3fd WAI", 163: "0x50ace582 WAI", 164: "0x50acff91 WAI", 165: "0x510a711e RUN", 166: "0x510a711e WAI", 167: "0x510db30f WAI", 168: "0x51179075 WAI"}
+    at PlaySession.settle (file:///C:/Dev/OM3-tasks/T10-afon-profile-storage-5b82/ws/om-emu/emu/src/lab/nav.mjs:263:45)
+    at PlaySession.push_group (file:///C:/Dev/OM3-tasks/T10-afon-profile-storage-5b82/ws/om-emu/emu/src/lab/play.mjs:1578:10)
+    at PlaySession.key (file:///C:/Dev/OM3-tasks/T10-afon-profile-storage-5b82/ws/om-emu/emu/src/lab/play.mjs:1631:29)
+    at Object.key (file:///C:/Dev/OM3-research/analysis/button-af/readiness/t5-afon-button-handoff/scripts/zone_session_k1.mjs:370:31)
+    at afon (file:///C:/Dev/OM3-tasks/T10-afon-profile-storage-5b82/ws/work/scripts/accept_t10c.mjs:250:9)
+    at file:///C:/Dev/OM3-tasks/T10-afon-profile-storage-5b82/ws/work/scripts/accept_t10c.mjs:421:11
+    at async runZone (file:///C:/Dev/OM3-research/analysis/button-af/readiness/t5-afon-button-handoff/scripts/zone_session_k1.mjs:478:5)
+    at async boot (file:///C:/Dev/OM3-tasks/T10-afon-profile-storage-5b82/ws/work/scripts/accept_t10c.mjs:286:18)
+    at async reopenSession (file:///C:/Dev/OM3-tasks/T10-afon-profile-storage-5b82/ws/work/scripts/accept_t10c.mjs:398:3)
+    at async file:///C:/Dev/OM3-tasks/T10-afon-profile-storage-5b82/ws/work/scripts/accept_t10c.mjs:583:16
+    at boot (file:///C:/Dev/OM3-tasks/T10-afon-profile-storage-5b82/ws/work/scripts/accept_t10c.mjs:300:25)
+    at async reopenSession (file:///C:/Dev/OM3-tasks/T10-afon-profile-storage-5b82/ws/work/scripts/accept_t10c.mjs:398:3)
+    at async file:///C:/Dev/OM3-tasks/T10-afon-profile-storage-5b82/ws/work/scripts/accept_t10c.mjs:583:16
+
+Node.js v26.12.1

@@ -1,0 +1,17 @@
+file:///C:/Dev/OM3-tasks/T10-afon-profile-storage-5b82/ws/work/scripts/accept_t10h.mjs:310
+  if (!result.ok) throw new Error(name + ' ' + result.failed);
+                        ^
+
+Error: c1-reopen Error: reset row ["6.","@A05D@","Level Adjust","Pixel Mapping","Firmware Version","Certification","0.0","Reset/Initialize Settings","@A017@ Settings","Reset/Clock/Language/Others"]
+    at stockReset (file:///C:/Dev/OM3-tasks/T10-afon-profile-storage-5b82/ws/work/scripts/accept_t10h.mjs:496:19)
+    at async reopenSession.after (file:///C:/Dev/OM3-tasks/T10-afon-profile-storage-5b82/ws/work/scripts/accept_t10h.mjs:633:7)
+    at async file:///C:/Dev/OM3-tasks/T10-afon-profile-storage-5b82/ws/work/scripts/accept_t10h.mjs:437:21
+    at async runZone (file:///C:/Dev/OM3-research/analysis/button-af/readiness/t5-afon-button-handoff/scripts/zone_session_k1.mjs:478:5)
+    at async boot (file:///C:/Dev/OM3-tasks/T10-afon-profile-storage-5b82/ws/work/scripts/accept_t10h.mjs:296:18)
+    at async reopenSession (file:///C:/Dev/OM3-tasks/T10-afon-profile-storage-5b82/ws/work/scripts/accept_t10h.mjs:408:3)
+    at async file:///C:/Dev/OM3-tasks/T10-afon-profile-storage-5b82/ws/work/scripts/accept_t10h.mjs:627:18
+    at boot (file:///C:/Dev/OM3-tasks/T10-afon-profile-storage-5b82/ws/work/scripts/accept_t10h.mjs:310:25)
+    at async reopenSession (file:///C:/Dev/OM3-tasks/T10-afon-profile-storage-5b82/ws/work/scripts/accept_t10h.mjs:408:3)
+    at async file:///C:/Dev/OM3-tasks/T10-afon-profile-storage-5b82/ws/work/scripts/accept_t10h.mjs:627:18
+
+Node.js v26.12.1
