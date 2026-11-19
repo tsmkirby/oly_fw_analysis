@@ -1,0 +1,7 @@
+start 2026-11-19T15:27:43.904Z
+requested: tools\bin\run-ghidra.cmd -postScript DisasmLeak.java 60063480 40 60063a20 30 6119aee0 40 6119b960 30 6119dde0 24 6119b380 24 work\out\disasm-leak-p1.txt -log work\out\ghidra-p1.log
+cmd.exe /d /c tools\bin\run-ghidra.cmd -postScript DisasmLeak.java 60063480 40 60063a20 30 6119aee0 40 6119b960 30 6119dde0 24 6119b380 24 work\out\disasm-leak-p1.txt -log work\out\ghidra-p1.log
+wrapper_sha256: 34e42c59c553a1e4213e2b223034bd31142c7000c6aef4aac2ac9d5e7f1fe0ef
+script: DisasmLeak.java
+script_sha256: de01b575507d7a2ffc82741e371b1389c81f38718f0711e3430a9345938e7f65
+script_bytes: 1415

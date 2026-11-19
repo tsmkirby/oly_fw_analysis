@@ -1,0 +1,38 @@
+{
+  "sealed": "after the manifest hash",
+  "note": "Command 22 builds evidence-manifest.json. This file hashes that command's wrapper outputs and the manifest. Command 23 writes this supplement. The wrapper writes 23.out, 23.err, and 23.exit after this process exits, so those three files are not hashed here.",
+  "command": {
+    "n": 22,
+    "requested": "node26 work/scripts/manifest_t3m.mjs",
+    "start": "2026-11-19T16:06:41.374Z",
+    "status": 0,
+    "script": "work/scripts/manifest_t3m.mjs",
+    "script_sha256": "337f9cddd0dd7c235c744e944df4a91705797428738698f3455e60f89ae0a3ff",
+    "wrapper_sha256": "34e42c59c553a1e4213e2b223034bd31142c7000c6aef4aac2ac9d5e7f1fe0ef",
+    "files": {
+      "cmd": {
+        "path": "work/out/cmd/22.cmd.txt",
+        "sha256": "d9fd628ffca3f7ec7ed7cfec2f00ba36502e8832a373063753895dead7a569cc",
+        "bytes": 386
+      },
+      "out": {
+        "path": "work/out/cmd/22.out",
+        "sha256": "d0df13fb42aece8c07abb5fbdfb9e9970411ea468f3481cca4e59e1d38ec2e77",
+        "bytes": 94
+      },
+      "err": {
+        "path": "work/out/cmd/22.err",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      },
+      "exit": {
+        "path": "work/out/cmd/22.exit",
+        "sha256": "d1649e3d52145a59659a523b16f70d324bd6c63a2b736c36558f8351a8fb09f4",
+        "bytes": 508
+      }
+    }
+  },
+  "manifest": "work/evidence-manifest.json",
+  "manifest_sha256": "4190dec58af7622f2d4b2f6b3f1b47636a0ef8a313c352fab03aa112093d4953",
+  "manifest_bytes": 155780
+}

@@ -1,0 +1,104 @@
+{
+  "experiment": "fix-v1",
+  "change": "EMULATOR-ONLY exit restore of the persisted custom-size words at 0x62954108",
+  "label": "EMULATOR-ONLY",
+  "bank": 1653737216,
+  "window": {
+    "off": 211440,
+    "len": 176,
+    "addr": 1653948656
+  },
+  "sessions": {
+    "k2": {
+      "subject": 0,
+      "saves": {
+        "before": 3,
+        "after": [
+          {
+            "store": "E",
+            "from": "0x6006124a (disasm 0x5004022a)",
+            "posted": false
+          },
+          {
+            "store": "M",
+            "from": "0x6006124a (disasm 0x5004022a)",
+            "posted": false
+          },
+          {
+            "store": "M",
+            "from": "0x60061268 (disasm 0x50040248)",
+            "posted": true
+          }
+        ]
+      },
+      "events": 272,
+      "exits": 0,
+      "shots": 28
+    },
+    "c": {
+      "subject": 0,
+      "saves": {
+        "before": 3,
+        "after": [
+          {
+            "store": "E",
+            "from": "0x6006124a (disasm 0x5004022a)",
+            "posted": false
+          },
+          {
+            "store": "M",
+            "from": "0x6006124a (disasm 0x5004022a)",
+            "posted": false
+          },
+          {
+            "store": "M",
+            "from": "0x60061268 (disasm 0x50040248)",
+            "posted": true
+          }
+        ]
+      },
+      "mirror": {
+        "k1dd1": [
+          27,
+          39,
+          1,
+          33,
+          1,
+          33,
+          0,
+          0,
+          0,
+          0
+        ],
+        "k1de1": [
+          5,
+          8,
+          5,
+          8,
+          0,
+          0,
+          0,
+          0
+        ],
+        "k1df1": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0
+        ]
+      },
+      "events": 392,
+      "exits": 2,
+      "shots": 39
+    }
+  },
+  "stores": {
+    "cMinusK2": [],
+    "cCount": 0
+  },
+  "ok": true
+}

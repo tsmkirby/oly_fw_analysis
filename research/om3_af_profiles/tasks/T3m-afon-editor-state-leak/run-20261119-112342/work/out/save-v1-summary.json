@@ -1,0 +1,16 @@
+{
+  "experiment": "save-v1",
+  "change": "EMULATOR-ONLY exit restore of the persisted custom-size words at 0x62954108",
+  "label": "EMULATOR-ONLY",
+  "bank": 1653737216,
+  "window": {
+    "off": 211440,
+    "len": 176,
+    "addr": 1653948656
+  },
+  "sessions": {
+    "k2": {}
+  },
+  "ok": false,
+  "error": "Error: k2 stopped: Error: k2 save no-new-M; no-new-E; no-posted-M-callback\n    at file:///C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/work/scripts/save_v1.mjs:829:39\n    at runSession (file:///C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/work/scripts/save_v1.mjs:703:5)\n    at file:///C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/work/scripts/save_v1.mjs:814:3\n    at runSession (file:///C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/work/scripts/save_v1.mjs:716:21)\n    at file:///C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/work/scripts/save_v1.mjs:814:3"
+}

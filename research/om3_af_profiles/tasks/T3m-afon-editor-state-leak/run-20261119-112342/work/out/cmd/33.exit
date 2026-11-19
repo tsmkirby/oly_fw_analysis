@@ -1,0 +1,10 @@
+{
+  "status": 0,
+  "signal": null,
+  "error": null,
+  "start": "2026-11-19T16:56:43.093Z",
+  "end": "2026-11-19T16:56:43.134Z",
+  "spawn": "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe -e const fs=require('fs'); const rows=fs.readFileSync('work/out/save-v1.jsonl','utf8').trim().split(/\\n/).map(JSON.parse).filter(r=>r.session==='k2'&&String(r.id).startsWith('t6-')); for (const r of rows) console.log(r.id, r.screen, 'zone', r.zone, 'saves', r.saves, 'title', (r.title||'').slice(0,12));",
+  "wrapper_sha256": "34e42c59c553a1e4213e2b223034bd31142c7000c6aef4aac2ac9d5e7f1fe0ef",
+  "scripts": []
+}

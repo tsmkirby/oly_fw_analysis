@@ -1,0 +1,226 @@
+{
+  "experiment": "persist-v1b",
+  "change": "none beyond the accepted p3 exit restore",
+  "label": "EMULATOR-ONLY",
+  "bank": 1653737216,
+  "window": {
+    "off": 211440,
+    "len": 176,
+    "addr": 1653948656
+  },
+  "sessions": {
+    "k2": {
+      "subject": 0,
+      "saves": {
+        "before": 3,
+        "after": [
+          {
+            "store": "E",
+            "from": "0x6006124a (disasm 0x5004022a)",
+            "posted": false
+          },
+          {
+            "store": "M",
+            "from": "0x6006124a (disasm 0x5004022a)",
+            "posted": false
+          },
+          {
+            "store": "M",
+            "from": "0x60061268 (disasm 0x50040248)",
+            "posted": true
+          }
+        ]
+      },
+      "events": 272,
+      "exits": 0,
+      "shots": 28
+    },
+    "c": {
+      "subject": 0,
+      "saves": {
+        "before": 3,
+        "after": [
+          {
+            "store": "E",
+            "from": "0x6006124a (disasm 0x5004022a)",
+            "posted": false
+          },
+          {
+            "store": "M",
+            "from": "0x6006124a (disasm 0x5004022a)",
+            "posted": false
+          },
+          {
+            "store": "M",
+            "from": "0x60061268 (disasm 0x50040248)",
+            "posted": true
+          }
+        ]
+      },
+      "events": 392,
+      "exits": 2,
+      "shots": 39
+    },
+    "k2e": {
+      "subject": 0,
+      "saves": {
+        "before": 3,
+        "after": [
+          {
+            "store": "E",
+            "from": "0x6006124a (disasm 0x5004022a)",
+            "posted": false
+          },
+          {
+            "store": "M",
+            "from": "0x6006124a (disasm 0x5004022a)",
+            "posted": false
+          },
+          {
+            "store": "M",
+            "from": "0x60061268 (disasm 0x50040248)",
+            "posted": true
+          }
+        ]
+      },
+      "events": 512,
+      "exits": 0,
+      "shots": 37
+    }
+  },
+  "stores": {
+    "cMinusK2": [
+      {
+        "bank": "M",
+        "offset": 2,
+        "a": 251,
+        "b": 173
+      },
+      {
+        "bank": "M",
+        "offset": 211472,
+        "a": 3,
+        "b": 1
+      },
+      {
+        "bank": "M",
+        "offset": 211476,
+        "a": 3,
+        "b": 33
+      },
+      {
+        "bank": "M",
+        "offset": 211480,
+        "a": 3,
+        "b": 1
+      },
+      {
+        "bank": "M",
+        "offset": 211484,
+        "a": 3,
+        "b": 33
+      },
+      {
+        "bank": "M",
+        "offset": 211504,
+        "a": 1,
+        "b": 5
+      },
+      {
+        "bank": "M",
+        "offset": 211508,
+        "a": 1,
+        "b": 8
+      },
+      {
+        "bank": "M",
+        "offset": 211512,
+        "a": 1,
+        "b": 5
+      },
+      {
+        "bank": "M",
+        "offset": 211516,
+        "a": 1,
+        "b": 8
+      }
+    ],
+    "k2eMinusK2": [
+      {
+        "bank": "M",
+        "offset": 2,
+        "a": 251,
+        "b": 246
+      },
+      {
+        "bank": "M",
+        "offset": 3,
+        "a": 247,
+        "b": 250
+      },
+      {
+        "bank": "M",
+        "offset": 644,
+        "a": 3,
+        "b": 5
+      },
+      {
+        "bank": "M",
+        "offset": 645,
+        "a": 3,
+        "b": 1
+      },
+      {
+        "bank": "M",
+        "offset": 646,
+        "a": 3,
+        "b": 5
+      },
+      {
+        "bank": "M",
+        "offset": 647,
+        "a": 3,
+        "b": 1
+      },
+      {
+        "bank": "M",
+        "offset": 664,
+        "a": 0,
+        "b": 1
+      },
+      {
+        "bank": "M",
+        "offset": 665,
+        "a": 0,
+        "b": 1
+      },
+      {
+        "bank": "M",
+        "offset": 211472,
+        "a": 3,
+        "b": 5
+      },
+      {
+        "bank": "M",
+        "offset": 211476,
+        "a": 3,
+        "b": 1
+      },
+      {
+        "bank": "M",
+        "offset": 211480,
+        "a": 3,
+        "b": 5
+      },
+      {
+        "bank": "M",
+        "offset": 211484,
+        "a": 3,
+        "b": 1
+      }
+    ],
+    "cCount": 9,
+    "k2eCount": 12
+  },
+  "ok": true
+}
