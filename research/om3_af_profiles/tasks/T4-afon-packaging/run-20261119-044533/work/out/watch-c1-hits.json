@@ -1,0 +1,113 @@
+{
+  "why": "end",
+  "watchHits": 8,
+  "earlyKept": 8,
+  "probes": [
+    {
+      "name": "builder",
+      "pc": "0x60405865",
+      "n": 0,
+      "firstInsns": null
+    },
+    {
+      "name": "builder-call",
+      "pc": "0x6040476d",
+      "n": 0,
+      "firstInsns": null
+    },
+    {
+      "name": "hook",
+      "pc": "0x6017a5fc",
+      "n": 0,
+      "firstInsns": null
+    },
+    {
+      "name": "walk-1",
+      "pc": "0x6124f4e5",
+      "n": 6,
+      "firstInsns": 4598989
+    },
+    {
+      "name": "walk-2",
+      "pc": "0x6124f55e",
+      "n": 0,
+      "firstInsns": null
+    },
+    {
+      "name": "walk-3",
+      "pc": "0x6124f63d",
+      "n": 0,
+      "firstInsns": null
+    }
+  ],
+  "firstDistinct": [
+    {
+      "id": "dir",
+      "pc": "0x6124f4fc",
+      "insns": 4599000
+    },
+    {
+      "id": "dir",
+      "pc": "0x6124f500",
+      "insns": 109349
+    }
+  ],
+  "byId": {
+    "dir": [
+      {
+        "pc": "0x6124f500",
+        "n": 2,
+        "firstInsns": 109349,
+        "lastInsns": 109366
+      },
+      {
+        "pc": "0x6124f4fc",
+        "n": 6,
+        "firstInsns": 4599000,
+        "lastInsns": 3937323
+      }
+    ]
+  },
+  "early": [
+    {
+      "id": "dir",
+      "pc": "0x6124f4fc",
+      "insns": 4599000
+    },
+    {
+      "id": "dir",
+      "pc": "0x6124f4fc",
+      "insns": 109013
+    },
+    {
+      "id": "dir",
+      "pc": "0x6124f4fc",
+      "insns": 109346
+    },
+    {
+      "id": "dir",
+      "pc": "0x6124f500",
+      "insns": 109349
+    },
+    {
+      "id": "dir",
+      "pc": "0x6124f4fc",
+      "insns": 109363
+    },
+    {
+      "id": "dir",
+      "pc": "0x6124f500",
+      "insns": 109366
+    },
+    {
+      "id": "dir",
+      "pc": "0x6124f4fc",
+      "insns": 3937321
+    },
+    {
+      "id": "dir",
+      "pc": "0x6124f4fc",
+      "insns": 3937323
+    }
+  ]
+}

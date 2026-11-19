@@ -1063,6 +1063,36 @@ emulator only.
 
   The storage choice (PROJECT-STATE Q7) is not a prerequisite for the UI prototype.
 
+### AF-ON button applies the menu-row zone, and packaging (T5 and T4, 19 November 2026)
+
+- **T5 (accepted with corrections, EMULATOR-ONLY, Subject Detect Off).**
+  - **Configuration.** The zone row was combined with the central-edge overlay. The overlay was relocated
+    by `0x3e0` because 182 of its bytes conflicted with the zone row's.
+  - **The swap.** A 15-byte swap at `0x60a8f708` makes the AF-ON target take its zone type from the RAM
+    profile byte `0xa031e920` instead of legacy AF Home `0x9fa1`.
+    - The profile drives kind, vertical, horizontal and priority.
+    - Size `0xdfa1`, position `0x99d2` and +9 `0x1e01` stay legacy for now.
+  - **Behaviour.**
+    - Pressing AF-ON with Single chosen gives `0e 02 00 00 01 00 01 00 00 00`, and with Small gives
+      `0e 02 03 00 01 00 01 00 00 00`. This holds in S-AF and in C-AF.
+    - Both release orders restore the half-press record.
+    - With legacy AF Home set to Small and the profile set to Single, AF-ON stays Single.
+    - After save and reopen, the profile resets to All, and the stores are byte-identical to a stock
+      control.
+  - **Evidence:** [readiness/t5-afon-button-handoff](readiness/t5-afon-button-handoff/README.md).
+- **T4 (accepted, bounded).**
+  - **Section 7.** The upper loader copies section 7 as plain bytes, and no compression magic is present.
+    This contradicts `HARDWARE-STAGE0-RECORD.md` Finding 2. The flash-reader callees are still open.
+  - **Binding array.** It has no qualifying relocation home. Reusing the duplicate `0x216` record at
+    `0x615c6234` is a hypothesis.
+  - **Face table.** The site is the six bytes at `0x611f7f3e` plus a 48-byte helper, a design that
+    preserves the incoming branch to `0x611f7f44`.
+  - **Descriptor.** It would use a post-build link of an 8-byte node.
+  - **Value routing sites.** The getter is 5 bytes and the setter 6.
+  - **Placement conflict.** 349 of the 368 overlay addresses collide with the archived installer
+    placement, so a native build needs a layout pass.
+  - **Evidence:** [readiness/t4-afon-packaging](readiness/t4-afon-packaging/README.md).
+
 ## 9. Next steps (reordered 17 November 2026)
 
 The owner's stock-hardware confirmation (section 1) takes the CPU3 detection

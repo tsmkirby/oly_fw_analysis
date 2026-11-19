@@ -8,20 +8,30 @@ Last updated: 2026-11-17 (Phase 1 preparation).
 
 ## 1. Continuation point
 
-- **Now:** T4 (packaging analysis) and T5 (the AF-ON button applies the menu-row zone) are in their
-  correction rounds, concurrently. Sol rejected both first runs; the core results stood (T5: the AF-ON
-  press applies the menu-row zone in S-AF and C-AF, Subject Detect Off; T4: section 7 is stored as plain
-  bytes), and the defects were evidence and design gaps.
+- **Now:** T3b (measure the stock AF target selection screen, then route it to the AF-ON profile's size
+  and position) and T4b (stock watch run from reset: boot order, duplicate-record readers, flash callees)
+  run concurrently. T6 (the button target takes size and position from the profile) follows T3b.
+  - **T5 accepted with corrections (19 Nov):** in OM-Emu, Subject Detect Off, pressing AF-ON applies the
+    zone chosen in the page-27 row (S-AF and C-AF); release restores the half-press target; legacy AF Home
+    no longer drives AF-ON; stores byte-identical after save. Navigation equivalence with the stock control
+    is not claimed; the final reopen release assertion moves to T6.
+    [readiness/t5-afon-button-handoff](analysis/button-af/readiness/t5-afon-button-handoff/README.md).
+  - **T4 accepted (19 Nov):** section 7 is stored and copied as plain bytes by the upper loader
+    (contradicts stage-0 Finding 2; lower callees open, T4b). No qualifying home for the binding array; the
+    duplicate `0x216` record is a reuse hypothesis; face patch design preserved control flow; 376 data
+    bytes plus a 48-byte helper; 349 of 368 addresses collide with the archived installer placement, so a
+    native build needs a layout pass.
+    [readiness/t4-afon-packaging](analysis/button-af/readiness/t4-afon-packaging/README.md).
   - **Milestone (T3j, 18 Nov):** the AF-ON zone row on page 27 meets its functional acceptance in full as
     an EMULATOR-ONLY prototype. Sol confirmed it. Evidence:
     [readiness/t3-afon-zone-row](analysis/button-af/readiness/t3-afon-zone-row/README.md).
   - Still open for condition A:
-    - the AF-ON button behaviour (T5);
-    - target size and position (T3b);
+    - target size and position: editor (T3b) and button target (T6);
     - persistence (Q7, owner);
     - display;
     - Subject Detect On (CPU3 boundary);
-    - native packaging (T4).
+    - native packaging: boot order (T4b), then a layout pass reconciling the AF-ON payload with the
+      archived installer.
   - T3h (accepted with corrections): the ten zone faces render in the AF-ON chooser, commit to the RAM
     profile, and leave the stores byte-identical to the stock control's.
   - T3g (accepted with corrections): the AF-ON row opens a ten-slot chooser and commits zone values to
@@ -100,9 +110,11 @@ The autonomous programme ends at either of these:
 | T3h | Trace the chooser's face source; render the ten zone faces; complete acceptance (assertions at every step; `*_ORIGINALLY` getter values) | **Accepted with corrections.** Face table at `0x6037bedc`; the ten zone faces render and commit; stores byte-identical. Acceptance partial: assertions, row label, page 28, and the C4 crash (help-list overrun) | [decision](tasks/T3h-afon-zone-faces/decision.md) |
 | T3i | Ten-record help list; isolate the C4 crash; restore the row label; page 28 by reference construction; complete acceptance with exact per-key assertions | **Accepted with corrections.** Functional acceptance confirmed: label, help, exact commits 2/9, cancel from C4, page 28, identical stores. The C4 crash did not reproduce. Per-key assertions still open | [decision](tasks/T3i-afon-zone-acceptance/decision.md) |
 | T3j | Table-driven acceptance, exact assertion on every key; T3i configuration unchanged | **Accepted with corrections.** **The AF-ON zone row meets its functional acceptance in full, as an EMULATOR-ONLY prototype:** 281 steps, 0 failures. Evidence promoted to `analysis/button-af/readiness/t3-afon-zone-row/` | [decision](tasks/T3j-afon-acceptance-assertions/decision.md) |
-| T4 | Packaging analysis (static): section-7 edit vs runtime installer; home for the binding array; face-table key; descriptor registration; native value routing; byte budget | **Correcting** (round 1 REJECT: duplicate-record reuse unproven, face patch breaks a branch target, budget incomplete; stock OM-Emu watchpoints now allowed) | [tasks/T4-afon-packaging](tasks/T4-afon-packaging/brief.md) |
-| T5 | AF-ON button applies the zone from the menu row: the RAM profile replaces the legacy AF Home provider in the central-edge handoff; 12 edges; S-AF and C-AF; Subject Detect Off | **Correcting** (round 1 REJECT: P1–P3 handoff confirmed; acceptance not fully asserted, matched control, header assertion, P4, manifest; section-7 call-site bytes amended as EMULATOR-ONLY) | [tasks/T5-afon-button-handoff](tasks/T5-afon-button-handoff/brief.md) |
-| T3b | AF-ON target-position editor routing | Queued after T3c (uses T3c's R2 measurement) | AFON-MENU-RESEARCH §9 |
+| T4 | Packaging analysis (static): section-7 edit vs runtime installer; home for the binding array; face-table key; descriptor registration; native value routing; byte budget | **Accepted** (correction round; bounded: reuse is a hypothesis, ordering and flash callees unresolved) | [decision](tasks/T4-afon-packaging/decision.md) |
+| T5 | AF-ON button applies the zone from the menu row: the RAM profile replaces the legacy AF Home provider in the central-edge handoff; 12 edges; S-AF and C-AF; Subject Detect Off | **Accepted with corrections**, claims narrowed (correction round REJECT on control navigation only; resolved by the coordinator; final reopen release → T6) | [decision](tasks/T5-afon-button-handoff/decision.md) |
+| T3b | AF-ON target size and position editor: measure the stock AF target selection screen, profile layout, route the screen to the profile (EMULATOR-ONLY entry; entry options → Q5) | **Running** (concurrently with T4b) | [tasks/T3b-afon-target-editor](tasks/T3b-afon-target-editor/brief.md) |
+| T4b | Stock watch run from reset: boot order (descriptor build, key-port hook, first lookup), duplicate `0x216` readers, flash-read callees | **Running** (concurrently with T3b) | [tasks/T4b-afon-boot-order](tasks/T4b-afon-boot-order/brief.md) |
+| T6 | Button target takes size and position from the profile; full 12-edge acceptance incl. the reopen release | Planned, after T3b | — |
 | — | Beyond T3: persistence, display, hook point (Q4), acceptance matrix | Planned by Opus as results arrive | §2 |
 | — | CPU3 request/loader port | Deferred; regression only | AFON-MENU-RESEARCH §9 item 5 |
 
@@ -288,6 +300,8 @@ ACL or label operation on any tree containing a junction; the scripts check for 
 | 2026-11-18 | T5 and T4 round 1 rejected by Sol; one correction round each. Coordinator amendment: T5's three section-7 bytes `0x610bf5e3`–`0x610bf5e5` (call site of the accepted EMULATOR-ONLY central-edge hook) are permitted as a labelled emulator runtime patch; native placement is T4's question. T4 may use stock-image OM-Emu watchpoints (no overlay, NVRAM off) for reader completeness and init order. T4 also finds section 7 stored as plain bytes, challenging the stage-0 compression reading (pending review). | Opus | T5/T4 brief §5 |
 | 2026-11-18 | Correction runs `run-20261118-151607` (T5, T4) failed in 22 s before Grok started: `getaddrinfo ENOTFOUND api2.cursor.sh` (network outage). Isolation clean. Infrastructure failure, not a brief failure; relaunched with the same §5 briefs once DNS resolved. | Opus | run-20261118-151607 err |
 | 2026-11-18 | Relaunch `run-20261118-152508` (T5, T4) also failed: Grok lost its Cursor connection after 15 min (`RetriableError: Connection failed repeatedly`), with no file written under either `work\`. Isolation clean. Second infrastructure failure; relaunched again after the owner reported internet access restored (19 Nov). | Opus | run-20261118-152508 err |
+| 2026-11-19 | Correction runs `run-20261119-044533` completed. During them the Cursor CLI tried to add its install folder to the user PATH (`reg add HKCU\Environment`); Low integrity denied it and the user PATH was verified unchanged. | Opus | run err.txt |
+| 2026-11-19 | T4 accepted (Sol ACCEPT). T5 accepted with corrections: Sol's correction review rejected only the control navigation (a stock control has no AF-ON row by construction) and one unasserted reopen release; the coordinator narrowed the claim to store identity and moved the release assertion to T6. Evidence promoted for both. T3b and T4b launched concurrently; T6 planned after T3b. | Opus | T4/T5 decision.md |
 
 ## 12. Session resumption checklist (Opus)
 

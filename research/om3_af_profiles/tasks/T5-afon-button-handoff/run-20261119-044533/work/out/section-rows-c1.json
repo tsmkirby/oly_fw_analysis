@@ -1,0 +1,91 @@
+{
+  "base": "0x60021020",
+  "table": "0x60029b28",
+  "sections": [
+    {
+      "n": 1,
+      "start": "0x60134000",
+      "end": "0x6031f000",
+      "flag": 0,
+      "compressed": false,
+      "rows": 1308
+    },
+    {
+      "n": 2,
+      "start": "0x603ba800",
+      "end": "0x60718800",
+      "flag": 0,
+      "compressed": false,
+      "rows": 95
+    },
+    {
+      "n": 3,
+      "start": "0x6075a800",
+      "end": "0x60820000",
+      "flag": 0,
+      "compressed": false,
+      "rows": 0
+    },
+    {
+      "n": 4,
+      "start": "0x60828000",
+      "end": "0x60a8f800",
+      "flag": 0,
+      "compressed": false,
+      "rows": 1856
+    },
+    {
+      "n": 5,
+      "start": "0x60ad8000",
+      "end": "0x60adb800",
+      "flag": 0,
+      "compressed": false,
+      "rows": 0
+    },
+    {
+      "n": 6,
+      "start": "0x60adc000",
+      "end": "0x60f49800",
+      "flag": 1,
+      "compressed": true,
+      "rows": 0
+    },
+    {
+      "n": 7,
+      "start": "0x6103f000",
+      "end": "0x6164b000",
+      "flag": 1,
+      "compressed": true,
+      "rows": 3
+    },
+    {
+      "n": 8,
+      "start": "0x6169e800",
+      "end": "0x617e4800",
+      "flag": 0,
+      "compressed": false,
+      "rows": 0
+    },
+    {
+      "n": 9,
+      "start": "0x61809000",
+      "end": "0x619a9800",
+      "flag": 0,
+      "compressed": false,
+      "rows": 0
+    },
+    {
+      "n": 10,
+      "start": "0x619fd000",
+      "end": "0x61aa4800",
+      "flag": 0,
+      "compressed": false,
+      "rows": 0
+    }
+  ],
+  "rows": 3262,
+  "problems": [],
+  "ok": true,
+  "permitted_mark": "section 7, EMULATOR-ONLY runtime call-site patch (inherited central-edge)",
+  "note": "Native placement of the three section-7 call-site bytes is a T4 question. They stay an EMULATOR-ONLY runtime patch."
+}

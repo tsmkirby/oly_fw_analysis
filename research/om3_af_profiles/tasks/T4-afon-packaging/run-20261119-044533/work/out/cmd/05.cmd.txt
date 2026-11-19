@@ -1,0 +1,7 @@
+start 2026-11-18T19:22:44.120Z
+requested: tools\bin\run-ghidra.cmd -postScript T4List.java work/out/disasm-ranges-c.txt work/out/xrefs-t4c.txt -log work/out/ghidra-t4c.log
+cmd.exe /d /c tools\bin\run-ghidra.cmd -postScript T4List.java work/out/disasm-ranges-c.txt work/out/xrefs-t4c.txt -log work/out/ghidra-t4c.log
+wrapper_sha256: e00170efc367d0ed4c145db59bd6a84738688554f6904980ea382f6494325d15
+script: T4List.java
+script_sha256: 89fc4c4e1a565b9a07e84beddcf0da62325be05913f81d8d9421bed1302b1f2d
+script_bytes: 3139

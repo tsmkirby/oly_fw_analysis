@@ -1,0 +1,62 @@
+INFO  Using log config file: jar:file:/C:/Dev/OM3-research/tooling/ghidra_12.2_PUBLIC/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml (LoggingInitialization)  
+INFO  Using log file: work\out\ghidra-t4-c1.log (LoggingInitialization)  
+INFO  Loading user preferences: C:\Dev\OM3-tasks\T4-afon-packaging\ws\state\ghidra-user\settings\tsmki-ghidra\ghidra_12.2_PUBLIC\preferences (Preferences)  
+INFO  Searching for classes... (ClassSearcher)  
+INFO  Class search complete (654 ms) (ClassSearcher)  
+INFO  Initializing SSL Context (DefaultSSLContextInitializer)  
+INFO  Initializing Random Number Generator... (SecureRandomFactory)  
+INFO  Random Number Generator initialization complete: SHA1PRNG (SecureRandomFactory)  
+WARN  OS Truststore load failed: java.security.KeyStoreException: error 5, Access is denied.
+ (DefaultTrustManagerFactory)  
+INFO  Loaded 118 trusted CA certificates from the Java default trust store. (DefaultTrustManagerFactory)  
+INFO  Headless startup complete (4146 ms) (AnalyzeHeadless)  
+INFO  Class searcher loaded 60 extension points (19 false positives) (ClassSearcher)  
+INFO  HEADLESS Script Paths:
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\VersionTracking\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\BSim\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\PDB\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Processors\JVM\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\MicrosoftCodeAnalyzer\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Debug\Debugger-rmi-trace\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Debug\Debugger\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Processors\Atmel\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Processors\DATA\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\FileFormats\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Processors\8051\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\GnuDemangler\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\SystemEmulation\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\Base\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\PyGhidra\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\Swift\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\BytePatterns\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\WildcardAssembler\ghidra_scripts
+    C:\Dev\OM3-tasks\T4-afon-packaging\ws\work\scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\FunctionID\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\Decompiler\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\DecompilerDependent\ghidra_scripts
+    C:\Dev\OM3-research\scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Processors\PIC\ghidra_scripts (HeadlessAnalyzer)  
+INFO  HEADLESS: execution starts (HeadlessAnalyzer)  
+INFO  Opening existing project: C:\Dev\OM3-tasks\T4-afon-packaging\ws\projects\OM3_main_full (HeadlessAnalyzer)  
+INFO  Opening project: C:\Dev\OM3-tasks\T4-afon-packaging\ws\projects\OM3_main_full (HeadlessProject)  
+INFO  REPORT: Processing read-only project file: /00_0100_50000020.decoded.bin (HeadlessAnalyzer)  
+INFO  REPORT: Execute script: T4ListC1.java 'work/out/disasm-ranges-c1.txt' 'work/out/xrefs-t4-c1.txt'  (HeadlessAnalyzer)  
+INFO  SCRIPT: C:\Dev\OM3-tasks\T4-afon-packaging\ws\work\scripts\T4ListC1.java (HeadlessAnalyzer)  
+INFO  T4ListC1.java> listing flash-entry-c1 110 ins 600232d1 (GhidraScript)  
+INFO  T4ListC1.java> listing flash-read-c1 150 ins 60023389 (GhidraScript)  
+INFO  T4ListC1.java> listing callee-213f0-c1 40 ins 600213f0 (GhidraScript)  
+INFO  T4ListC1.java> listing callee-235b5-c1 50 ins 600235b5 (GhidraScript)  
+INFO  T4ListC1.java> listing callee-235ff-c1 40 ins 600235ff (GhidraScript)  
+INFO  T4ListC1.java> listing callee-2347c-c1 50 ins 6002347c (GhidraScript)  
+INFO  T4ListC1.java> listing callee-23653-c1 40 ins 60023653 (GhidraScript)  
+INFO  T4ListC1.java> listing callee-236ea-c1 50 ins 600236ea (GhidraScript)  
+INFO  T4ListC1.java> listing callee-21812-c1 50 ins 60021812 (GhidraScript)  
+INFO  T4ListC1.java> listing callee-23042-c1 40 ins 60023042 (GhidraScript)  
+INFO  T4ListC1.java> listing callee-23228-c1 40 ins 60023228 (GhidraScript)  
+INFO  T4ListC1.java> listing section-init-c1 200 ins 60045f44 (GhidraScript)  
+INFO  T4ListC1.java> listing face-c1 100 ins 611f7f01 (GhidraScript)  
+INFO  T4ListC1.java> listing call-site-c1 16 ins 6040476d (GhidraScript)  
+INFO  T4ListC1.java> blob face-site-c1 2 ins 611f7f3e (GhidraScript)  
+INFO  T4ListC1.java> blob face-helper-c1 17 ins 6031e9c0 (GhidraScript)  
+INFO  T4ListC1.java> xrefs 66 (GhidraScript)  
+INFO  T4ListC1.java> callers 96 (GhidraScript)  
