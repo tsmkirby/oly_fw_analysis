@@ -1,0 +1,41 @@
+{
+  "task": "T9b",
+  "note": "Command 29 seals command 28 and the manifest. Command 29 does not hash work/out/cmd/29.out, 29.err or 29.exit. Command 30 hashes those three files and this seal. The wrapper writes a command's .out, .err and .exit after the process returns, and the .exit file contains a timestamp.",
+  "files": [
+    {
+      "path": "work/evidence-manifest.json",
+      "sha256": "48e35b73933f852b5a9ed0e5cc735bccf4639b92217b1cca8ab8ea10efceb73f",
+      "bytes": 99360
+    },
+    {
+      "path": "work/result.md",
+      "sha256": "d39b46e9f9370c8420a56193376a71aec9ce1b7acc94564413768c54aca016b8",
+      "bytes": 8433
+    },
+    {
+      "path": "work/out/display.md",
+      "sha256": "2ef4611b1397d461f7fc95336eed8a0f67851a9d690b0af8fade95b96b80297c",
+      "bytes": 4280
+    },
+    {
+      "path": "work/out/cmd/28.cmd.txt",
+      "sha256": "00f00e4b5e2e73511a2317597d18b6d4dca1fcbc587d7d85b4de688132d4dfbd",
+      "bytes": 404
+    },
+    {
+      "path": "work/out/cmd/28.out",
+      "sha256": "fc5a11ee8ec2bfb7c9e496359a693b26e5cce07b190d1fd14825d83b31260e35",
+      "bytes": 105
+    },
+    {
+      "path": "work/out/cmd/28.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "work/out/cmd/28.exit",
+      "sha256": "285e1c87f83782ef1ae09f29861cebac9aceded0c9652a7b19aa4b9b21de3c1f",
+      "bytes": 520
+    }
+  ]
+}

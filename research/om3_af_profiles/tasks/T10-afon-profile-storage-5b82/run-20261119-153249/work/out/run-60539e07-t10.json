@@ -1,0 +1,39 @@
+{
+  "record_bytes": 10,
+  "constant_pointer": "0xfaa32ee8",
+  "tail_halfword": "0xfc00",
+  "count": 4,
+  "first": {
+    "addr": "0x60539dff",
+    "key_addr": "0x60539e07",
+    "mid": "0xc743",
+    "key": "0x5b82"
+  },
+  "last": {
+    "addr": "0x60539e1d",
+    "key_addr": "0x60539e25",
+    "mid": "0xca63",
+    "key": "0x5e83"
+  },
+  "contains_key_0x5b82": true,
+  "key_min": "0x5b82",
+  "key_max": "0x5e83",
+  "key_step_set": [
+    256,
+    257
+  ],
+  "around_5b82": [
+    {
+      "addr": "0x60539dff",
+      "key_addr": "0x60539e07",
+      "mid": "0xc743",
+      "key": "0x5b82"
+    },
+    {
+      "addr": "0x60539e09",
+      "key_addr": "0x60539e11",
+      "mid": "0xc843",
+      "key": "0x5c82"
+    }
+  ]
+}

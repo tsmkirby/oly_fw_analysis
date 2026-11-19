@@ -1,0 +1,1632 @@
+{
+  "task": "T8b",
+  "note": "Correction sequence. Candidate mirror after each AF-ON editor key is K1e half-press cells packed by lib_map_c1. AF-ON owned targets are K1e halfTarget after the same edits. Landscape consumer bank 1, EXIF 6 consumer bank 5.",
+  "afTabHeader": "bb086a5b20fe141fc7db882c015fb47fa34bccd9d86ab709799ef8bb8324225c",
+  "afTabTitle": "2.AF",
+  "actions": [
+    {
+      "id": "ke-base",
+      "action": "check",
+      "who": [
+        "k1e"
+      ],
+      "phase": "main",
+      "measure": true,
+      "note": "K1e factory observation before any editor key"
+    },
+    {
+      "id": "setup",
+      "action": "setup",
+      "who": [
+        "k1",
+        "k2",
+        "candidate"
+      ],
+      "phase": "main",
+      "shared": true
+    },
+    {
+      "id": "zone-up",
+      "action": "key",
+      "key": "up",
+      "who": [
+        "k1",
+        "k2",
+        "candidate"
+      ],
+      "phase": "main",
+      "shared": true
+    },
+    {
+      "id": "zone-ok",
+      "action": "key",
+      "key": "ok",
+      "who": [
+        "k1",
+        "k2",
+        "candidate"
+      ],
+      "phase": "main",
+      "shared": true,
+      "k2ExitFor": "zone-ok"
+    },
+    {
+      "id": "e-enter",
+      "action": "enter",
+      "who": [
+        "candidate"
+      ],
+      "phase": "main",
+      "editor": true,
+      "mirrorFrom": "factory",
+      "zoneFrom": "literal",
+      "zone": 0,
+      "flagFrom": "on",
+      "screenFrom": "literal",
+      "screen": "shooting",
+      "anchor": "zone-ok"
+    },
+    {
+      "id": "e-up",
+      "action": "key",
+      "key": "up",
+      "who": [
+        "k1e",
+        "candidate"
+      ],
+      "phase": "main",
+      "editor": true,
+      "mirrorFrom": "k1e",
+      "zoneFrom": "k1e",
+      "flagFrom": "on",
+      "screenFrom": "k1e",
+      "anchor": "zone-ok",
+      "bank": 1
+    },
+    {
+      "id": "e-dial",
+      "action": "dial",
+      "dial": "main",
+      "detents": 1,
+      "who": [
+        "k1e",
+        "candidate"
+      ],
+      "phase": "main",
+      "editor": true,
+      "mirrorFrom": "k1e",
+      "zoneFrom": "k1e",
+      "flagFrom": "on",
+      "screenFrom": "k1e",
+      "anchor": "zone-ok",
+      "bank": 1
+    },
+    {
+      "id": "e-right",
+      "action": "key",
+      "key": "right",
+      "who": [
+        "k1e",
+        "candidate"
+      ],
+      "phase": "main",
+      "editor": true,
+      "mirrorFrom": "k1e",
+      "zoneFrom": "k1e",
+      "flagFrom": "on",
+      "screenFrom": "k1e",
+      "anchor": "zone-ok",
+      "bank": 1
+    },
+    {
+      "id": "e-ok",
+      "action": "key",
+      "key": "ok",
+      "who": [
+        "k1e",
+        "candidate"
+      ],
+      "phase": "main",
+      "editor": true,
+      "exit": true,
+      "k2Exit": "zone-ok",
+      "mirrorFrom": "k1e",
+      "zoneFrom": "literal",
+      "zone": 0,
+      "flagFrom": "off",
+      "screenFrom": "k1e",
+      "anchor": "zone-ok",
+      "bank": 1
+    },
+    {
+      "id": "ke-s1-down",
+      "action": "edge",
+      "key": "s1",
+      "dir": "down",
+      "who": [
+        "k1e"
+      ],
+      "phase": "main",
+      "measure": true,
+      "note": "K1e half-press target after the landscape edit"
+    },
+    {
+      "id": "ke-s1-up",
+      "action": "edge",
+      "key": "s1",
+      "dir": "up",
+      "who": [
+        "k1e"
+      ],
+      "phase": "main",
+      "measure": true
+    },
+    {
+      "id": "n-up",
+      "action": "key",
+      "key": "up",
+      "who": [
+        "k1",
+        "k2",
+        "candidate"
+      ],
+      "phase": "main",
+      "shared": true,
+      "mirrorFrom": "k1e-hold",
+      "hold": "e-ok",
+      "flagFrom": "off"
+    },
+    {
+      "id": "n-dial",
+      "action": "dial",
+      "dial": "main",
+      "detents": 1,
+      "who": [
+        "k1",
+        "k2",
+        "candidate"
+      ],
+      "phase": "main",
+      "shared": true,
+      "mirrorFrom": "k1e-hold",
+      "hold": "e-ok",
+      "flagFrom": "off"
+    },
+    {
+      "id": "n-ok",
+      "action": "key",
+      "key": "ok",
+      "who": [
+        "k1",
+        "k2",
+        "candidate"
+      ],
+      "phase": "main",
+      "shared": true,
+      "mirrorFrom": "k1e-hold",
+      "hold": "e-ok",
+      "flagFrom": "off"
+    },
+    {
+      "id": "edge-0",
+      "action": "edge",
+      "key": "s1",
+      "dir": "down",
+      "who": [
+        "k1",
+        "k2",
+        "candidate"
+      ],
+      "phase": "main",
+      "shared": true,
+      "mirrorFrom": "k1e-hold",
+      "hold": "e-ok",
+      "flagFrom": "off",
+      "edge": {
+        "owned": false,
+        "owner": 1,
+        "bank": 1,
+        "targetFrom": "k2",
+        "k1eStep": "ke-s1-down"
+      }
+    },
+    {
+      "id": "edge-1",
+      "action": "edge",
+      "key": "s1",
+      "dir": "up",
+      "who": [
+        "k1",
+        "k2",
+        "candidate"
+      ],
+      "phase": "main",
+      "shared": true,
+      "mirrorFrom": "k1e-hold",
+      "hold": "e-ok",
+      "flagFrom": "off",
+      "edge": {
+        "owned": false,
+        "owner": 0,
+        "bank": 1,
+        "targetFrom": "k2",
+        "k1eStep": "ke-s1-down"
+      }
+    },
+    {
+      "id": "edge-2",
+      "action": "edge",
+      "key": "afon",
+      "dir": "down",
+      "who": [
+        "k1",
+        "k2",
+        "candidate"
+      ],
+      "phase": "main",
+      "shared": true,
+      "mirrorFrom": "k1e-hold",
+      "hold": "e-ok",
+      "flagFrom": "off",
+      "edge": {
+        "owned": true,
+        "owner": 2,
+        "bank": 1,
+        "targetFrom": "k1e",
+        "k1eStep": "ke-s1-down"
+      }
+    },
+    {
+      "id": "edge-3",
+      "action": "edge",
+      "key": "afon",
+      "dir": "up",
+      "who": [
+        "k1",
+        "k2",
+        "candidate"
+      ],
+      "phase": "main",
+      "shared": true,
+      "mirrorFrom": "k1e-hold",
+      "hold": "e-ok",
+      "flagFrom": "off",
+      "edge": {
+        "owned": false,
+        "owner": 0,
+        "bank": 1,
+        "targetFrom": "k2",
+        "k1eStep": "ke-s1-down"
+      }
+    },
+    {
+      "id": "edge-4",
+      "action": "edge",
+      "key": "s1",
+      "dir": "down",
+      "who": [
+        "k1",
+        "k2",
+        "candidate"
+      ],
+      "phase": "main",
+      "shared": true,
+      "mirrorFrom": "k1e-hold",
+      "hold": "e-ok",
+      "flagFrom": "off",
+      "edge": {
+        "owned": false,
+        "owner": 1,
+        "bank": 1,
+        "targetFrom": "k2",
+        "k1eStep": "ke-s1-down"
+      }
+    },
+    {
+      "id": "edge-5",
+      "action": "edge",
+      "key": "afon",
+      "dir": "down",
+      "who": [
+        "k1",
+        "k2",
+        "candidate"
+      ],
+      "phase": "main",
+      "shared": true,
+      "mirrorFrom": "k1e-hold",
+      "hold": "e-ok",
+      "flagFrom": "off",
+      "edge": {
+        "owned": true,
+        "owner": 2,
+        "bank": 1,
+        "targetFrom": "k1e",
+        "k1eStep": "ke-s1-down"
+      }
+    },
+    {
+      "id": "edge-6",
+      "action": "edge",
+      "key": "afon",
+      "dir": "up",
+      "who": [
+        "k1",
+        "k2",
+        "candidate"
+      ],
+      "phase": "main",
+      "shared": true,
+      "mirrorFrom": "k1e-hold",
+      "hold": "e-ok",
+      "flagFrom": "off",
+      "edge": {
+        "owned": false,
+        "owner": 1,
+        "bank": 1,
+        "targetFrom": "k2",
+        "k1eStep": "ke-s1-down"
+      }
+    },
+    {
+      "id": "edge-7",
+      "action": "edge",
+      "key": "s1",
+      "dir": "up",
+      "who": [
+        "k1",
+        "k2",
+        "candidate"
+      ],
+      "phase": "main",
+      "shared": true,
+      "mirrorFrom": "k1e-hold",
+      "hold": "e-ok",
+      "flagFrom": "off",
+      "edge": {
+        "owned": false,
+        "owner": 0,
+        "bank": 1,
+        "targetFrom": "k2",
+        "k1eStep": "ke-s1-down"
+      }
+    },
+    {
+      "id": "edge-8",
+      "action": "edge",
+      "key": "afon",
+      "dir": "down",
+      "who": [
+        "k1",
+        "k2",
+        "candidate"
+      ],
+      "phase": "main",
+      "shared": true,
+      "mirrorFrom": "k1e-hold",
+      "hold": "e-ok",
+      "flagFrom": "off",
+      "edge": {
+        "owned": true,
+        "owner": 2,
+        "bank": 1,
+        "targetFrom": "k1e",
+        "k1eStep": "ke-s1-down"
+      }
+    },
+    {
+      "id": "edge-9",
+      "action": "edge",
+      "key": "s1",
+      "dir": "down",
+      "who": [
+        "k1",
+        "k2",
+        "candidate"
+      ],
+      "phase": "main",
+      "shared": true,
+      "mirrorFrom": "k1e-hold",
+      "hold": "e-ok",
+      "flagFrom": "off",
+      "edge": {
+        "owned": true,
+        "owner": 2,
+        "bank": 1,
+        "targetFrom": "k1e",
+        "k1eStep": "ke-s1-down"
+      }
+    },
+    {
+      "id": "edge-10",
+      "action": "edge",
+      "key": "s1",
+      "dir": "up",
+      "who": [
+        "k1",
+        "k2",
+        "candidate"
+      ],
+      "phase": "main",
+      "shared": true,
+      "mirrorFrom": "k1e-hold",
+      "hold": "e-ok",
+      "flagFrom": "off",
+      "edge": {
+        "owned": true,
+        "owner": 2,
+        "bank": 1,
+        "targetFrom": "k1e",
+        "k1eStep": "ke-s1-down"
+      }
+    },
+    {
+      "id": "edge-11",
+      "action": "edge",
+      "key": "afon",
+      "dir": "up",
+      "who": [
+        "k1",
+        "k2",
+        "candidate"
+      ],
+      "phase": "main",
+      "shared": true,
+      "mirrorFrom": "k1e-hold",
+      "hold": "e-ok",
+      "flagFrom": "off",
+      "edge": {
+        "owned": false,
+        "owner": 0,
+        "bank": 1,
+        "targetFrom": "k2",
+        "k1eStep": "ke-s1-down"
+      }
+    },
+    {
+      "id": "pose-exif6",
+      "action": "pose",
+      "key": "exif6",
+      "who": [
+        "k1",
+        "k2",
+        "k1e",
+        "candidate"
+      ],
+      "phase": "main",
+      "shared": true,
+      "mirrorFrom": "k1e-hold",
+      "hold": "e-ok",
+      "flagFrom": "off",
+      "bank": 5
+    },
+    {
+      "id": "p-enter",
+      "action": "enter",
+      "who": [
+        "candidate"
+      ],
+      "phase": "main",
+      "editor": true,
+      "mirrorFrom": "k1e-hold",
+      "hold": "e-ok",
+      "zoneFrom": "literal",
+      "zone": 0,
+      "flagFrom": "on",
+      "screenFrom": "literal",
+      "screen": "shooting",
+      "anchor": "pose-exif6",
+      "bank": 5
+    },
+    {
+      "id": "p-up",
+      "action": "key",
+      "key": "up",
+      "who": [
+        "k1e",
+        "candidate"
+      ],
+      "phase": "main",
+      "editor": true,
+      "mirrorFrom": "k1e",
+      "zoneFrom": "k1e",
+      "flagFrom": "on",
+      "screenFrom": "k1e",
+      "anchor": "pose-exif6",
+      "bank": 5
+    },
+    {
+      "id": "p-right",
+      "action": "key",
+      "key": "right",
+      "who": [
+        "k1e",
+        "candidate"
+      ],
+      "phase": "main",
+      "editor": true,
+      "mirrorFrom": "k1e",
+      "zoneFrom": "k1e",
+      "flagFrom": "on",
+      "screenFrom": "k1e",
+      "anchor": "pose-exif6",
+      "bank": 5
+    },
+    {
+      "id": "p-menu",
+      "action": "key",
+      "key": "menu",
+      "who": [
+        "k1e",
+        "candidate"
+      ],
+      "phase": "main",
+      "editor": true,
+      "exit": true,
+      "k2Exit": "save-open",
+      "mirrorFrom": "k1e",
+      "zoneFrom": "literal",
+      "zone": 0,
+      "flagFrom": "off",
+      "screenFrom": "k1e",
+      "anchor": "pose-exif6",
+      "bank": 5
+    },
+    {
+      "id": "p-back",
+      "action": "key",
+      "key": "menu",
+      "who": [
+        "k1e",
+        "candidate"
+      ],
+      "phase": "main",
+      "editor": true,
+      "exit": true,
+      "k2Exit": "save-leave-0",
+      "mirrorFrom": "k1e",
+      "zoneFrom": "literal",
+      "zone": 0,
+      "flagFrom": "off",
+      "screenFrom": "k1e",
+      "anchor": "pose-exif6",
+      "bank": 5
+    },
+    {
+      "id": "ke-p-s1-down",
+      "action": "edge",
+      "key": "s1",
+      "dir": "down",
+      "who": [
+        "k1e"
+      ],
+      "phase": "main",
+      "measure": true
+    },
+    {
+      "id": "ke-p-s1-up",
+      "action": "edge",
+      "key": "s1",
+      "dir": "up",
+      "who": [
+        "k1e"
+      ],
+      "phase": "main",
+      "measure": true
+    },
+    {
+      "id": "exif6-afon-down",
+      "action": "edge",
+      "key": "afon",
+      "dir": "down",
+      "who": [
+        "k1",
+        "k2",
+        "candidate"
+      ],
+      "phase": "main",
+      "shared": true,
+      "mirrorFrom": "k1e-hold",
+      "hold": "p-back",
+      "flagFrom": "off",
+      "edge": {
+        "owned": true,
+        "owner": 2,
+        "bank": 5,
+        "targetFrom": "k1e",
+        "k1eStep": "ke-p-s1-down"
+      }
+    },
+    {
+      "id": "exif6-afon-up",
+      "action": "edge",
+      "key": "afon",
+      "dir": "up",
+      "who": [
+        "k1",
+        "k2",
+        "candidate"
+      ],
+      "phase": "main",
+      "shared": true,
+      "mirrorFrom": "k1e-hold",
+      "hold": "p-back",
+      "flagFrom": "off",
+      "edge": {
+        "owned": false,
+        "owner": 0,
+        "bank": 5,
+        "targetFrom": "k2"
+      }
+    },
+    {
+      "id": "pose-land",
+      "action": "pose",
+      "key": "landscape",
+      "who": [
+        "k1",
+        "k2",
+        "k1e",
+        "candidate"
+      ],
+      "phase": "main",
+      "shared": true,
+      "mirrorFrom": "k1e-hold",
+      "hold": "p-back",
+      "flagFrom": "off",
+      "bank": 1
+    },
+    {
+      "id": "land-afon-down",
+      "action": "edge",
+      "key": "afon",
+      "dir": "down",
+      "who": [
+        "k1",
+        "k2",
+        "candidate"
+      ],
+      "phase": "main",
+      "shared": true,
+      "mirrorFrom": "k1e-hold",
+      "hold": "p-back",
+      "flagFrom": "off",
+      "edge": {
+        "owned": true,
+        "owner": 2,
+        "bank": 1,
+        "targetFrom": "k1e",
+        "k1eStep": "ke-s1-down"
+      }
+    },
+    {
+      "id": "land-afon-up",
+      "action": "edge",
+      "key": "afon",
+      "dir": "up",
+      "who": [
+        "k1",
+        "k2",
+        "candidate"
+      ],
+      "phase": "main",
+      "shared": true,
+      "mirrorFrom": "k1e-hold",
+      "hold": "p-back",
+      "flagFrom": "off",
+      "edge": {
+        "owned": false,
+        "owner": 0,
+        "bank": 1,
+        "targetFrom": "k2"
+      }
+    },
+    {
+      "id": "c-enter",
+      "action": "enter",
+      "who": [
+        "candidate"
+      ],
+      "phase": "main",
+      "editor": true,
+      "mirrorFrom": "k1e-hold",
+      "hold": "p-back",
+      "zoneFrom": "literal",
+      "zone": 0,
+      "flagFrom": "on",
+      "screenFrom": "literal",
+      "screen": "shooting",
+      "anchor": "land-afon-up",
+      "bank": 1
+    },
+    {
+      "who": [
+        "k1e",
+        "candidate"
+      ],
+      "phase": "main",
+      "editor": true,
+      "mirrorFrom": "k1e",
+      "zoneFrom": "k1e",
+      "flagFrom": "on",
+      "screenFrom": "k1e",
+      "anchor": "land-afon-up",
+      "bank": 1,
+      "keys": [
+        {
+          "id": "c-menu",
+          "action": "key",
+          "key": "menu"
+        },
+        {
+          "id": "c-left-00",
+          "action": "key",
+          "key": "left"
+        },
+        {
+          "id": "c-left-01",
+          "action": "key",
+          "key": "left"
+        },
+        {
+          "id": "c-left-02",
+          "action": "key",
+          "key": "left"
+        },
+        {
+          "id": "c-left-03",
+          "action": "key",
+          "key": "left"
+        },
+        {
+          "id": "c-left-04",
+          "action": "key",
+          "key": "left"
+        },
+        {
+          "id": "c-left-05",
+          "action": "key",
+          "key": "left"
+        },
+        {
+          "id": "c-left-06",
+          "action": "key",
+          "key": "left"
+        },
+        {
+          "id": "c-left-07",
+          "action": "key",
+          "key": "left"
+        },
+        {
+          "id": "c-left-08",
+          "action": "key",
+          "key": "left"
+        },
+        {
+          "id": "c-left-09",
+          "action": "key",
+          "key": "left"
+        },
+        {
+          "id": "c-left-10",
+          "action": "key",
+          "key": "left"
+        },
+        {
+          "id": "c-left-11",
+          "action": "key",
+          "key": "left"
+        },
+        {
+          "id": "c-left-12",
+          "action": "key",
+          "key": "left"
+        },
+        {
+          "id": "c-left-13",
+          "action": "key",
+          "key": "left"
+        },
+        {
+          "id": "c-left-14",
+          "action": "key",
+          "key": "left"
+        },
+        {
+          "id": "c-left-15",
+          "action": "key",
+          "key": "left"
+        },
+        {
+          "id": "c-left-16",
+          "action": "key",
+          "key": "left"
+        },
+        {
+          "id": "c-left-17",
+          "action": "key",
+          "key": "left"
+        },
+        {
+          "id": "c-left-18",
+          "action": "key",
+          "key": "left"
+        },
+        {
+          "id": "c-left-19",
+          "action": "key",
+          "key": "left"
+        },
+        {
+          "id": "c-page-ok",
+          "action": "key",
+          "key": "ok"
+        },
+        {
+          "id": "c-down-0",
+          "action": "key",
+          "key": "down"
+        },
+        {
+          "id": "c-down-1",
+          "action": "key",
+          "key": "down"
+        },
+        {
+          "id": "c-down-2",
+          "action": "key",
+          "key": "down"
+        },
+        {
+          "id": "c-down-3",
+          "action": "key",
+          "key": "down"
+        },
+        {
+          "id": "c-down-4",
+          "action": "key",
+          "key": "down"
+        },
+        {
+          "id": "c-size-right",
+          "action": "key",
+          "key": "right"
+        }
+      ]
+    },
+    {
+      "id": "c-size-v",
+      "action": "dial",
+      "dial": "main",
+      "detents": 1,
+      "who": [
+        "k1e",
+        "candidate"
+      ],
+      "phase": "main",
+      "editor": true,
+      "mirrorFrom": "k1e",
+      "zoneFrom": "k1e",
+      "flagFrom": "on",
+      "screenFrom": "k1e",
+      "anchor": "land-afon-up",
+      "bank": 1
+    },
+    {
+      "id": "c-size-h",
+      "action": "dial",
+      "dial": "sub",
+      "detents": 1,
+      "who": [
+        "k1e",
+        "candidate"
+      ],
+      "phase": "main",
+      "editor": true,
+      "mirrorFrom": "k1e",
+      "zoneFrom": "k1e",
+      "flagFrom": "on",
+      "screenFrom": "k1e",
+      "anchor": "land-afon-up",
+      "bank": 1
+    },
+    {
+      "id": "c-size-ok",
+      "action": "key",
+      "key": "ok",
+      "who": [
+        "k1e",
+        "candidate"
+      ],
+      "phase": "main",
+      "editor": true,
+      "exit": true,
+      "k2Exit": "save-subok-0",
+      "mirrorFrom": "k1e",
+      "zoneFrom": "literal",
+      "zone": 0,
+      "flagFrom": "off",
+      "screenFrom": "k1e",
+      "anchor": "land-afon-up",
+      "bank": 1
+    },
+    {
+      "who": [
+        "k1e",
+        "candidate"
+      ],
+      "phase": "main",
+      "editor": true,
+      "exit": false,
+      "mirrorFrom": "k1e",
+      "zoneFrom": "literal",
+      "zone": 0,
+      "flagFrom": "off",
+      "screenFrom": "k1e",
+      "anchor": "land-afon-up",
+      "bank": 1,
+      "keys": [
+        {
+          "id": "c-right-00",
+          "action": "key",
+          "key": "right"
+        },
+        {
+          "id": "c-right-01",
+          "action": "key",
+          "key": "right"
+        },
+        {
+          "id": "c-right-02",
+          "action": "key",
+          "key": "right"
+        },
+        {
+          "id": "c-right-03",
+          "action": "key",
+          "key": "right"
+        },
+        {
+          "id": "c-right-04",
+          "action": "key",
+          "key": "right"
+        },
+        {
+          "id": "c-right-05",
+          "action": "key",
+          "key": "right"
+        },
+        {
+          "id": "c-right-06",
+          "action": "key",
+          "key": "right"
+        },
+        {
+          "id": "c-right-07",
+          "action": "key",
+          "key": "right"
+        },
+        {
+          "id": "c-right-08",
+          "action": "key",
+          "key": "right"
+        },
+        {
+          "id": "c-right-09",
+          "action": "key",
+          "key": "right"
+        },
+        {
+          "id": "c-right-10",
+          "action": "key",
+          "key": "right"
+        },
+        {
+          "id": "c-right-11",
+          "action": "key",
+          "key": "right"
+        },
+        {
+          "id": "c-right-12",
+          "action": "key",
+          "key": "right"
+        },
+        {
+          "id": "c-right-13",
+          "action": "key",
+          "key": "right"
+        },
+        {
+          "id": "c-right-14",
+          "action": "key",
+          "key": "right"
+        },
+        {
+          "id": "c-right-15",
+          "action": "key",
+          "key": "right"
+        },
+        {
+          "id": "c-right-16",
+          "action": "key",
+          "key": "right"
+        },
+        {
+          "id": "c-right-17",
+          "action": "key",
+          "key": "right"
+        },
+        {
+          "id": "c-right-18",
+          "action": "key",
+          "key": "right"
+        },
+        {
+          "id": "c-right-19",
+          "action": "key",
+          "key": "right"
+        }
+      ]
+    },
+    {
+      "id": "c-tab-leave",
+      "action": "key",
+      "key": "menu",
+      "who": [
+        "k1e",
+        "candidate"
+      ],
+      "phase": "main",
+      "editor": true,
+      "exit": true,
+      "k2Exit": "save-leave-0",
+      "mirrorFrom": "k1e",
+      "zoneFrom": "literal",
+      "zone": 0,
+      "flagFrom": "off",
+      "screenFrom": "k1e",
+      "anchor": "land-afon-up",
+      "bank": 1
+    },
+    {
+      "id": "c-reenter",
+      "action": "enter",
+      "who": [
+        "candidate"
+      ],
+      "phase": "main",
+      "editor": true,
+      "mirrorFrom": "k1e-hold",
+      "hold": "c-tab-leave",
+      "zoneFrom": "literal",
+      "zone": 0,
+      "flagFrom": "on",
+      "screenFrom": "literal",
+      "screen": "shooting",
+      "anchor": "land-afon-up"
+    },
+    {
+      "id": "c-up",
+      "action": "key",
+      "key": "up",
+      "who": [
+        "k1e",
+        "candidate"
+      ],
+      "phase": "main",
+      "editor": true,
+      "mirrorFrom": "k1e",
+      "zoneFrom": "k1e",
+      "flagFrom": "on",
+      "screenFrom": "k1e",
+      "anchor": "land-afon-up",
+      "bank": 1
+    },
+    {
+      "id": "c-s1",
+      "action": "key",
+      "key": "s1",
+      "who": [
+        "k1e",
+        "candidate"
+      ],
+      "phase": "main",
+      "editor": true,
+      "exit": true,
+      "k2Exit": "edge-0",
+      "mirrorFrom": "k1e",
+      "zoneFrom": "literal",
+      "zone": 0,
+      "flagFrom": "off",
+      "screenFrom": "k1e",
+      "anchor": "land-afon-up",
+      "bank": 1
+    },
+    {
+      "id": "ke-c-s1-down",
+      "action": "edge",
+      "key": "s1",
+      "dir": "down",
+      "who": [
+        "k1e"
+      ],
+      "phase": "main",
+      "measure": true
+    },
+    {
+      "id": "ke-c-s1-up",
+      "action": "edge",
+      "key": "s1",
+      "dir": "up",
+      "who": [
+        "k1e"
+      ],
+      "phase": "main",
+      "measure": true
+    },
+    {
+      "id": "n2-up",
+      "action": "key",
+      "key": "up",
+      "who": [
+        "k1",
+        "k2",
+        "candidate"
+      ],
+      "phase": "main",
+      "shared": true,
+      "mirrorFrom": "k1e-hold",
+      "hold": "c-s1",
+      "flagFrom": "off"
+    },
+    {
+      "id": "n2-dial",
+      "action": "dial",
+      "dial": "main",
+      "detents": 1,
+      "who": [
+        "k1",
+        "k2",
+        "candidate"
+      ],
+      "phase": "main",
+      "shared": true,
+      "mirrorFrom": "k1e-hold",
+      "hold": "c-s1",
+      "flagFrom": "off"
+    },
+    {
+      "id": "n2-ok",
+      "action": "key",
+      "key": "ok",
+      "who": [
+        "k1",
+        "k2",
+        "candidate"
+      ],
+      "phase": "main",
+      "shared": true,
+      "mirrorFrom": "k1e-hold",
+      "hold": "c-s1",
+      "flagFrom": "off"
+    },
+    {
+      "id": "c-afon-down",
+      "action": "edge",
+      "key": "afon",
+      "dir": "down",
+      "who": [
+        "k1",
+        "k2",
+        "candidate"
+      ],
+      "phase": "main",
+      "shared": true,
+      "mirrorFrom": "k1e-hold",
+      "hold": "c-s1",
+      "flagFrom": "off",
+      "edge": {
+        "owned": true,
+        "owner": 2,
+        "bank": 1,
+        "targetFrom": "k1e",
+        "k1eStep": "ke-c-s1-down"
+      }
+    },
+    {
+      "id": "c-afon-up",
+      "action": "edge",
+      "key": "afon",
+      "dir": "up",
+      "who": [
+        "k1",
+        "k2",
+        "candidate"
+      ],
+      "phase": "main",
+      "shared": true,
+      "mirrorFrom": "k1e-hold",
+      "hold": "c-s1",
+      "flagFrom": "off",
+      "edge": {
+        "owned": false,
+        "owner": 0,
+        "bank": 1,
+        "targetFrom": "k2"
+      }
+    },
+    {
+      "id": "size-write",
+      "action": "size-setup",
+      "who": [
+        "candidate"
+      ],
+      "phase": "main",
+      "editor": true,
+      "mirrorFrom": "size",
+      "hold": "c-s1",
+      "zoneFrom": "literal",
+      "zone": 0,
+      "flagFrom": "off",
+      "screenFrom": "literal",
+      "screen": "shooting",
+      "anchor": "n2-ok"
+    },
+    {
+      "id": "size-afon-down",
+      "action": "edge",
+      "key": "afon",
+      "dir": "down",
+      "who": [
+        "k1",
+        "k2",
+        "candidate"
+      ],
+      "phase": "main",
+      "shared": true,
+      "mirrorFrom": "size",
+      "hold": "c-s1",
+      "flagFrom": "off",
+      "edge": {
+        "owned": true,
+        "owner": 2,
+        "bank": 1,
+        "targetFrom": "sized",
+        "k1eStep": "ke-c-s1-down"
+      }
+    },
+    {
+      "id": "size-afon-up",
+      "action": "edge",
+      "key": "afon",
+      "dir": "up",
+      "who": [
+        "k1",
+        "k2",
+        "candidate"
+      ],
+      "phase": "main",
+      "shared": true,
+      "mirrorFrom": "size",
+      "hold": "c-s1",
+      "flagFrom": "off",
+      "edge": {
+        "owned": false,
+        "owner": 0,
+        "bank": 1,
+        "targetFrom": "k2"
+      }
+    },
+    {
+      "who": [
+        "k1",
+        "k2",
+        "candidate"
+      ],
+      "phase": "main",
+      "shared": true,
+      "mirrorFrom": "size",
+      "hold": "c-s1",
+      "flagFrom": "off",
+      "keys": [
+        {
+          "id": "save-open",
+          "action": "key",
+          "key": "menu"
+        },
+        {
+          "id": "save-left-00",
+          "action": "key",
+          "key": "left",
+          "assertAfTab": false
+        },
+        {
+          "id": "save-left-01",
+          "action": "key",
+          "key": "left",
+          "assertAfTab": false
+        },
+        {
+          "id": "save-left-02",
+          "action": "key",
+          "key": "left",
+          "assertAfTab": false
+        },
+        {
+          "id": "save-left-03",
+          "action": "key",
+          "key": "left",
+          "assertAfTab": false
+        },
+        {
+          "id": "save-left-04",
+          "action": "key",
+          "key": "left",
+          "assertAfTab": false
+        },
+        {
+          "id": "save-left-05",
+          "action": "key",
+          "key": "left",
+          "assertAfTab": false
+        },
+        {
+          "id": "save-left-06",
+          "action": "key",
+          "key": "left",
+          "assertAfTab": false
+        },
+        {
+          "id": "save-left-07",
+          "action": "key",
+          "key": "left",
+          "assertAfTab": false
+        },
+        {
+          "id": "save-left-08",
+          "action": "key",
+          "key": "left",
+          "assertAfTab": false
+        },
+        {
+          "id": "save-left-09",
+          "action": "key",
+          "key": "left",
+          "assertAfTab": false
+        },
+        {
+          "id": "save-left-10",
+          "action": "key",
+          "key": "left",
+          "assertAfTab": false
+        },
+        {
+          "id": "save-left-11",
+          "action": "key",
+          "key": "left",
+          "assertAfTab": false
+        },
+        {
+          "id": "save-left-12",
+          "action": "key",
+          "key": "left",
+          "assertAfTab": false
+        },
+        {
+          "id": "save-left-13",
+          "action": "key",
+          "key": "left",
+          "assertAfTab": false
+        },
+        {
+          "id": "save-left-14",
+          "action": "key",
+          "key": "left",
+          "assertAfTab": false
+        },
+        {
+          "id": "save-left-15",
+          "action": "key",
+          "key": "left",
+          "assertAfTab": false
+        },
+        {
+          "id": "save-left-16",
+          "action": "key",
+          "key": "left",
+          "assertAfTab": false
+        },
+        {
+          "id": "save-left-17",
+          "action": "key",
+          "key": "left",
+          "assertAfTab": false
+        },
+        {
+          "id": "save-left-18",
+          "action": "key",
+          "key": "left",
+          "assertAfTab": false
+        },
+        {
+          "id": "save-left-19",
+          "action": "key",
+          "key": "left",
+          "assertAfTab": true
+        },
+        {
+          "id": "save-down-0",
+          "action": "key",
+          "key": "down"
+        },
+        {
+          "id": "save-down-1",
+          "action": "key",
+          "key": "down"
+        },
+        {
+          "id": "save-ok-0",
+          "action": "key",
+          "key": "ok"
+        },
+        {
+          "id": "save-subok-0",
+          "action": "key",
+          "key": "ok"
+        },
+        {
+          "id": "save-submenu-0",
+          "action": "key",
+          "key": "menu"
+        },
+        {
+          "id": "save-subdown-0",
+          "action": "key",
+          "key": "down"
+        },
+        {
+          "id": "save-subok-1",
+          "action": "key",
+          "key": "ok"
+        },
+        {
+          "id": "save-submenu-1",
+          "action": "key",
+          "key": "menu"
+        },
+        {
+          "id": "save-subdown-1",
+          "action": "key",
+          "key": "down"
+        }
+      ]
+    },
+    {
+      "who": [
+        "k2",
+        "candidate"
+      ],
+      "phase": "main",
+      "shared": true,
+      "k1Skip": true,
+      "mirrorFrom": "size",
+      "hold": "c-s1",
+      "flagFrom": "off",
+      "keys": [
+        {
+          "id": "save-before-commit",
+          "action": "check",
+          "assertRow": true
+        },
+        {
+          "id": "save-commit-open",
+          "action": "key",
+          "key": "ok",
+          "commitStart": true
+        },
+        {
+          "id": "save-commit-right",
+          "action": "key",
+          "key": "right"
+        },
+        {
+          "id": "save-commit-ok",
+          "action": "key",
+          "key": "ok"
+        },
+        {
+          "id": "save-leave-0",
+          "action": "key",
+          "key": "menu"
+        },
+        {
+          "id": "save-leave-1",
+          "action": "key",
+          "key": "menu",
+          "saveJudge": true
+        }
+      ]
+    },
+    {
+      "id": "reopen-base",
+      "action": "check",
+      "who": [
+        "k1",
+        "k2",
+        "candidate"
+      ],
+      "phase": "reopen",
+      "mirrorFrom": "ff",
+      "zoneFrom": "literal",
+      "zone": 0,
+      "flagFrom": "k2",
+      "screenFrom": "k2",
+      "anchor": "reopen-base"
+    },
+    {
+      "id": "reopen-afon-down",
+      "action": "edge",
+      "key": "afon",
+      "dir": "down",
+      "who": [
+        "k1",
+        "k2",
+        "candidate"
+      ],
+      "phase": "reopen",
+      "mirrorFrom": "ff",
+      "zoneFrom": "literal",
+      "zone": 0,
+      "flagFrom": "k2",
+      "screenFrom": "k2",
+      "anchor": "reopen-afon-down",
+      "edge": {
+        "owned": true,
+        "owner": 2,
+        "bank": 1,
+        "targetFrom": "factory-all"
+      }
+    },
+    {
+      "id": "reopen-afon-up",
+      "action": "edge",
+      "key": "afon",
+      "dir": "up",
+      "who": [
+        "k1",
+        "k2",
+        "candidate"
+      ],
+      "phase": "reopen",
+      "mirrorFrom": "ff",
+      "zoneFrom": "literal",
+      "zone": 0,
+      "flagFrom": "k2",
+      "screenFrom": "k2",
+      "anchor": "reopen-afon-up",
+      "edge": {
+        "owned": false,
+        "owner": 0,
+        "bank": 1,
+        "targetFrom": "k2"
+      }
+    },
+    {
+      "id": "reopen-enter",
+      "action": "enter",
+      "who": [
+        "candidate"
+      ],
+      "phase": "reopen",
+      "editor": true,
+      "mirrorFrom": "factory",
+      "zoneFrom": "literal",
+      "zone": 0,
+      "flagFrom": "on",
+      "screenFrom": "literal",
+      "screen": "shooting",
+      "anchor": "reopen-afon-up"
+    }
+  ]
+}

@@ -1,0 +1,291 @@
+﻿{
+    "task":  "T10-afon-profile-storage-5b82",
+    "batch":  [
+                  "T8b-afon-integrated-acceptance-generated",
+                  "T9b-afon-display-coordinate-path",
+                  "T10-afon-profile-storage-5b82"
+              ],
+    "agent":  "grok",
+    "model":  "grok-4.7-high",
+    "brief_sha256":  "3c95a0670f5e4416d6dd2c996cc56d300a8fe0179ca02fb7ec5cfbf8e36b74c8",
+    "command":  "C:\\Dev\\OM3-tasks\\_agent\\cli\\node.exe (Low integrity, via C:\\Dev\\OM3-tasks\\T10-afon-profile-storage-5b82\\launch-20261119-153249.cmd) -p --model grok-4.7-high --output-format json --trust --workspace C:\\Dev\\OM3-tasks\\T10-afon-profile-storage-5b82\\ws \"Read TASK.md and then brief.md in this folder completely, and carry out the brief exactly. Section 0 of the brief overrides everything else. Write only under work. Finish by making sure work/result.md and work/evidence-manifest.json exist.\"",
+    "cursor_sandbox":  false,
+    "started":  "2026-11-19T15:35:40.1549705-05:00",
+    "ended":  "2026-11-19T16:17:25.7085011-05:00",
+    "timed_out":  false,
+    "exit_code":  0,
+    "lock_ok":  true,
+    "lock_output":  "locked 20 targets in 11.1 s; probe failures: 0",
+    "unlock_ok":  true,
+    "unlock_output":  "unlocked; rules that had disappeared while locked: 0; probe failures: 0",
+    "workspace_unchanged":  true,
+    "inputs_unchanged":  true,
+    "harvested":  [
+                      {
+                          "path":  "evidence-manifest.json",
+                          "bytes":  15626,
+                          "sha256":  "caba53e7944a99ac58a2198379f8f46b25f7f04b055afd2ec8f92565db29dc0f",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "result.md",
+                          "bytes":  8441,
+                          "sha256":  "02e78eaae69d2b6078e02414902bc13f1b959123ba1f0c1853786baad15aa452",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\audit-5b82-t10b.json",
+                          "bytes":  8771,
+                          "sha256":  "36122c817c31c2103b622718b204ed234cba35de2f34bcf9161d5797a24849f8",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\encoding.md",
+                          "bytes":  4728,
+                          "sha256":  "881ba3309af64bb6bd3567625bc614b92d5e70504a6706996dfe9133b097a3fb",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\reader-audit.md",
+                          "bytes":  7435,
+                          "sha256":  "f78f7b7d3c7ce7bf4829e8dafd49985729e26a90f98a0629a186df764b70946b",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\run-60539e07-t10.json",
+                          "bytes":  750,
+                          "sha256":  "91a9cbfe6293a99e9bb4688e8bbb2474f00b434b60cce6d9a1d440570610e82c",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\seal-t10.json",
+                          "bytes":  8429,
+                          "sha256":  "74646aef985ecbb4ca0a1916038a92b7b84b148ecc08266e35ecde43dd37fe43",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\01.cmd.txt",
+                          "bytes":  344,
+                          "sha256":  "4c79054ddea8ec3a2a3a3816e79c8816d3e62b9f22b0e9361a1e363c3ada8430",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\01.err",
+                          "bytes":  254,
+                          "sha256":  "90a6332d5284235bf451c14faa54921793c6ec6a1fd22f7861a3169f91244d5b",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\01.exit",
+                          "bytes":  457,
+                          "sha256":  "f4e0cc7ebd5af14cddc049c3605d72e4bea8e64f64892e2e98fc6e8a66c4543b",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\01.out",
+                          "bytes":  0,
+                          "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\02.cmd.txt",
+                          "bytes":  342,
+                          "sha256":  "0677b4fcd50f7907430ca19154de9adeac9ff201744d7ce15d1a725327a1a4e8",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\02.err",
+                          "bytes":  0,
+                          "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\02.exit",
+                          "bytes":  455,
+                          "sha256":  "cabb91a55cb1a53c799ab4dc904dbe95e5a682d1e9420d1eac5c5a7e1f2271cd",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\02.out",
+                          "bytes":  178,
+                          "sha256":  "8ce56ff99a3c8ec7224a0d4ec650be2213f8f76e47a853a2cae165c744ea9712",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\03.cmd.txt",
+                          "bytes":  345,
+                          "sha256":  "a27489c00fea9d5a8c484ba60a85ea981e287d216a69265b88732686eaedcf20",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\03.err",
+                          "bytes":  0,
+                          "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\03.exit",
+                          "bytes":  457,
+                          "sha256":  "0ba3debbeb64f4e2e9b20071c890a8228a2410fb040a5575a2ff8e51a203cb61",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\03.out",
+                          "bytes":  32,
+                          "sha256":  "a6094a5ac533b2f55faeb3c575541fc2a114cd308774250e40e11ffa06a57458",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\04.cmd.txt",
+                          "bytes":  347,
+                          "sha256":  "0b0ea9ba1417de8f02566c08e61d0d4c9e3cbe0a11e3260e68f64cec7d600fff",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\04.err",
+                          "bytes":  0,
+                          "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\04.exit",
+                          "bytes":  459,
+                          "sha256":  "9b42769e027c44580dae85d8b53973a534b76b65b1733b9a041028d00d592436",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\04.out",
+                          "bytes":  51,
+                          "sha256":  "86915c92f1c7de71568293d0a0595c75ce63a4fe32da6c7a333798b8fecca5cb",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\05.cmd.txt",
+                          "bytes":  337,
+                          "sha256":  "4b3413b478f0af64f2c32657fd15dcb004fc9476c5acefc602284e403314cf05",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\05.err",
+                          "bytes":  0,
+                          "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\05.exit",
+                          "bytes":  452,
+                          "sha256":  "0b05cd0c145506375daaa63d6cd9260372c81e4efc9dc9ab6560c4c8a812629a",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\05.out",
+                          "bytes":  394,
+                          "sha256":  "46dba631ce1f5da44d9a11bd7187dc0359833aaf75676eb29e1af4c1ab349318",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\06.cmd.txt",
+                          "bytes":  404,
+                          "sha256":  "11fa7cdc449dfd4c872d2ef8c498ce7ee866c9bdad5dd9154261ce6f0c748caf",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\06.err",
+                          "bytes":  0,
+                          "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\06.exit",
+                          "bytes":  520,
+                          "sha256":  "ea694c5c80aecbf91091a404024a36417354830131fed56acfcce4f4e898d05b",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\06.out",
+                          "bytes":  144,
+                          "sha256":  "1389c7aa9ea9a9a5b33bb3c523aa4aac3d4365b048597fa5a627002a74e9665f",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\07.cmd.txt",
+                          "bytes":  374,
+                          "sha256":  "9596135effae9ddf329dafc0f1c673ddf5141d095d1e64a950226a79f330a3d2",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\07.err",
+                          "bytes":  0,
+                          "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\07.exit",
+                          "bytes":  500,
+                          "sha256":  "c379d7b2bc1ce21d9630e4c34e2c30a6ee9c2c093296c52a19f366a80507148b",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\07.out",
+                          "bytes":  103,
+                          "sha256":  "a62582f22531f71a92ec6d2c192445725794de47e365ae35d4eb0009cefbe08c",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "scripts\\audit_5b82_t10.py",
+                          "bytes":  10248,
+                          "sha256":  "cce65befbe0157fac9c9a1ae01e00b1764c77e7555f67ccb82c7c1278582e2b8",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "scripts\\audit_5b82_t10b.py",
+                          "bytes":  10249,
+                          "sha256":  "8e70f995dd74abf90f0f258576acfd1b740fdc31ef167fda2ba13f5caa1ed0e0",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "scripts\\build_manifest_t10.mjs",
+                          "bytes":  4333,
+                          "sha256":  "72e29e6fb4a5714deb368253a684e03447c32dc1096626a50469796e622464e6",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "scripts\\hash_image_t10.py",
+                          "bytes":  438,
+                          "sha256":  "685c006cbb2f05f699550e503650a1ac96ca7b9aea5f6d7ceaa7fde14ae9e6b5",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "scripts\\make_audit_t10b.py",
+                          "bytes":  818,
+                          "sha256":  "53431204e325b007d807638f1a3229e15e0f79224d4ce175b0dc50c2c1d17c66",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "scripts\\run_logged.mjs",
+                          "bytes":  4139,
+                          "sha256":  "34e42c59c553a1e4213e2b223034bd31142c7000c6aef4aac2ac9d5e7f1fe0ef",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "scripts\\scan_run_t10.py",
+                          "bytes":  2122,
+                          "sha256":  "64e98b8a74ff072164447dfbce9d3be0db515b47b1a8090c09e395e304da3f52",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "scripts\\seal_t10.mjs",
+                          "bytes":  2283,
+                          "sha256":  "8f3c9b65265bc2e5ca3877ccf52c3b9a45caab85253b82944e9b2fe3f82ee0c9",
+                          "copied":  true
+                      }
+                  ],
+    "usage":  {
+                  "inputTokens":  288292,
+                  "outputTokens":  85389,
+                  "cacheReadTokens":  7710336,
+                  "cacheWriteTokens":  0,
+                  "reasoningTokens":  61276
+              },
+    "ok":  true
+}

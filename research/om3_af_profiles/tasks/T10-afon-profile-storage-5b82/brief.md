@@ -112,3 +112,44 @@ Brief version: 2026-11-19 · Workspace: Ghidra + OM-Emu
 - Display (T9b).
 - The editor integration (T8b): the store trigger is a labelled stand-in.
 - Packaging and hardware.
+
+## 5. Correction round (Opus, after Sol's review `run-20261119-161828-review`: REJECT)
+
+Your previous work is in `work\`, and Sol's full review is `audit\previous-review.md`. Read it completely.
+Do **not** start over.
+
+**Confirmed, reuse:**
+- the table-B key-field result (no `0x5b82` in records +0x50/+0x52);
+- the `mov 0x5b8` classifications (one diagnostic line number, two pointer displacements);
+- the 28-byte **raw** layout.
+
+**Coordinator ruling.** 28 bytes is the size **at cell width**, not the minimum lossless size. The guard
+forbids dropping a field. It does not forbid packing values into fewer bits than their cells. Do not stop on
+cell width.
+
+1. **Legal ranges (static).** For each profile field, establish its legal value range from firmware evidence:
+   - setter clamps;
+   - the stock editor's limits;
+   - the descriptor bounds or min/max tables;
+   - the T3j/T3l/T6 measurements.
+
+   Cite each one, with a bounded listing.
+   - If a range cannot be established, use the full cell width for that field.
+   - Then compute the exact packed bit total, plus a marker, a version and a checksum (choose the sizes and
+     justify them).
+2. **Decision point.**
+   - **If the packed total fits in 26 bytes:** continue with brief §2.2–2.5 unchanged: `codec.mjs` with unit
+     tests, which include out-of-range values decoding as "no profile"; the persistence change; the six
+     tests; `ok:true`.
+   - **If it does not fit,** even with the established ranges: stop, report the exact shortfall in bits, and
+     list the fields involved.
+3. **Unresolved inventory.** Restore the three singleton sites Sol lists to the unresolved list, unless concrete
+   consumer and bounds evidence excludes them. Qualify the normal-operation inventory.
+4. **Records.**
+   - Add `all-functions.asm`, the T2 review and the other consumed or cited research inputs to the manifest.
+   - Refresh the external seal.
+   - Report index bounds as `0..65535`.
+   - Call the four-record observation a byte-pattern run.
+   - Make the completion and deviation wording consistent with the outcome.
+
+**Authorization: six experiment versions** (emulator processes). The static work is free.

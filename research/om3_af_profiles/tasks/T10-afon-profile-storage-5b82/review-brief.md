@@ -46,3 +46,15 @@
 
 Recompute every manifest hash. Use PowerShell (Python is not on your PATH). Do not run Ghidra or OM-Emu.
 Give the verdict in the structure of `templates\review.md`.
+
+## Correction round
+
+Also read `brief.md` §5 and your previous review in `audit\previous-review.md`. For each §5 item, report DONE /
+NOT DONE / WRONG / BLOCKED (honestly reported).
+
+Check in particular:
+- Each legal range is cited from firmware evidence. Where a range is unknown, the full width is used.
+- Recompute the packed bit total yourself.
+- If it fits: every brief §2.2–2.5 item, the six tests and `ok:true`.
+- If it does not fit: the exact shortfall.
+- The three singleton sites are back on the unresolved list.

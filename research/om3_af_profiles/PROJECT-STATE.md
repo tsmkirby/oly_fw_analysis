@@ -8,7 +8,22 @@ Last updated: 2026-11-17 (Phase 1 preparation).
 
 ## 1. Continuation point
 
-- **Now:** three concurrent runs.
+- **Now:** T8c, T9c and the T10 correction run concurrently.
+  - **T8c.** Reconcile the editor's write bank (measured at index 0/4) with the AF-ON reader's bank (1/5,
+    from T7). Define initialization as what the stock settings **Reset** writes; the ROM defaults are all
+    zero and the fresh store differs. Then a short integrated proof: edit in landscape and EXIF 6, then the
+    AF-ON press uses it.
+  - **T9c.** A causal trial: does the getter return at `0x6041935b` move the frame? Find the refresh trigger
+    of the frame writer `0x61184e51`, then make one change.
+  - **T10 correction.** 28 bytes is the cell-width size, not the packed size. Establish the legal ranges and
+    pack losslessly. Report a shortfall only if even the packed record does not fit.
+  - **T8b closed as PARTIAL.** Accepted: the generated-table method; the K1/K2 reference; K2's amended save;
+    the ROM defaults all zero.
+  - **T9b accepted with corrections** (partial investigation). Accepted:
+    - the getter path `0x6041935b` → `0x603f15b1`;
+    - the frame pixel writer `0x61184e51`, entered indirectly from `0x61184dd6`;
+    - **an AF-ON press never enters it.**
+- **Earlier step (superseded):** three concurrent runs.
   - **T8b correction.** One authorized change: the AF-ON mirror initializes to the stock **factory values**
     (ROM defaults, confirmed against K1's fresh store) instead of zero. A new stock role, K1e, presses the
     same editor keys in normal mode and supplies the candidate's independent expectations.
@@ -228,9 +243,11 @@ The autonomous programme ends at either of these:
 | T6 | AF-ON button target from the mirror (type, size, position, custom dimensions) per pose; 12 edges; C-AF; full acceptance including the reopen release | **Closed PARTIAL** (Q1–Q4, size, save, reopen press and release, and stores equal to K2 confirmed; evidence-contract gaps → T8) | [decision](tasks/T6-afon-target-size-position/decision.md) |
 | T8 | Integrated acceptance: editor-made AF-ON profile drives the AF-ON target, per pose; controls first; final-call save; reopen; stores equal to K2; no new change | **Closed: PARTIAL** (two REJECTs; controls and save timing established; candidates → T8b) | [decision](tasks/T8-afon-integrated-acceptance/decision.md) |
 | T9 | Display: does the shooting-screen AF frame follow the AF-ON target? Emulator capability first; one change only if needed | **Closed: PARTIAL** (two REJECTs; mismatch confirmed; driving cell `0x88b2`; path → T9b) | [decision](tasks/T9-afon-target-display/decision.md) |
-| T8b | Integrated acceptance: generated per-key table and complete checker; reference run; candidates; amended save criterion (fresh posted M, no new E, E equal to K2) | **Correcting** (round 1 REJECT: candidate stalled on zero init; factory-init amendment and K1e references; 6 versions) | [tasks/T8b-afon-integrated-acceptance-generated](tasks/T8b-afon-integrated-acceptance-generated/brief.md) |
-| T9b | Display: trace setter → coordinate object → OSD invalidation; one change; full-frame assertions on 12 edges | **Correcting** (round 1 REJECT: direct store and idle refresh found; geometry not reached; 6 versions) | [tasks/T9b-afon-display-coordinate-path](tasks/T9b-afon-display-coordinate-path/brief.md) |
-| T10 | Persistence in the unnamed `0x5b82` cells (Q7 = a): leftover-reader audit; codec; stock-API store and load; save/reopen, reset, C1, corruption and art-filter tests | **Running** | [tasks/T10-afon-profile-storage-5b82](tasks/T10-afon-profile-storage-5b82/brief.md) |
+| T8b | Integrated acceptance: generated per-key table and complete checker; reference run; candidates; amended save criterion (fresh posted M, no new E, E equal to K2) | **Closed: PARTIAL** (two REJECTs; method, reference and save accepted; bank 0/4 vs 1/5 and init → T8c) | [decision](tasks/T8b-afon-integrated-acceptance-generated/decision.md) |
+| T9b | Display: trace setter → coordinate object → OSD invalidation; one change; full-frame assertions on 12 edges | **Accepted with corrections** (partial investigation; frame writer found; AF-ON never enters it) | [decision](tasks/T9b-afon-display-coordinate-path/decision.md) |
+| T10 | Persistence in the unnamed `0x5b82` cells (Q7 = a): leftover-reader audit; codec; stock-API store and load; save/reopen, reset, C1, corruption and art-filter tests | **Correcting** (round 1 REJECT: stopped at 28 raw bytes against 26; lossless packing by legal ranges required) |
+| T8c | Bank reconciliation (editor 0/4 against reader 1/5), Reset-defined initialization, short integrated proof | **Running** | [tasks/T8c-afon-bank-and-init-reconcile](tasks/T8c-afon-bank-and-init-reconcile/brief.md) |
+| T9c | Display: causal trial of the getter return, the refresh trigger of `0x61184dd6`, one change, 12-edge frame validation | **Running** | [tasks/T9c-afon-display-causal-input](tasks/T9c-afon-display-causal-input/brief.md) | [tasks/T10-afon-profile-storage-5b82](tasks/T10-afon-profile-storage-5b82/brief.md) |
 | — | Q7 option (b): new registered settings key (owner wants it researched later) | **Planned**, not started | owner, 19 Nov |
 | — | Beyond T3: persistence, display, hook point (Q4), acceptance matrix | Planned by Opus as results arrive | §2 |
 | — | CPU3 request/loader port | Deferred; regression only | AFON-MENU-RESEARCH §9 item 5 |
@@ -431,6 +448,7 @@ ACL or label operation on any tree containing a junction; the scripts check for 
 | 2026-11-19 | T8 round 1 rejected: six versions stopped in K1, each fixing one guessed control literal. This was a coordinator brief flaw: controls cannot be asserted against values never measured. Correction method: a static table check (no version), then a K1/K2 reference run asserting only accepted invariants and recorded with its hash, then candidates asserted against same-step references. T9 round 1 rejected: the display does not follow the AF-ON target (confirmed); the routine was misattributed; the change aborted on model E143. The correction traces from framebuffer writes back to the coordinates, adds an unseeded T6 control, and sets `OM_EMU_MODEL=E147`. | Opus | T8/T9 brief §5 |
 | 2026-11-19 | T8 and T9 closed as PARTIAL after their correction-round REJECTs. Both stopped honestly at real limits. Coordinator decision on the save criterion: E and an unposted M are written at session open, and the AF Target Mode commit posts only M. The "fresh E" requirement came from misreading T6's whole-log witness. It is replaced by: a fresh posted M with status 0, no new E, and E byte-identical to K2. This is a test correction, not a functional change. T8b takes a different approach (a declarative sequence, a generated per-key table, a complete static checker, every emulator process counted, stop at the first failure). T9b traces the coordinate object and the invalidation before any change. | Opus | T8/T9 decision.md; T8b/T9b briefs |
 | 2026-11-19 | **Owner decision: Q7 = option (a)**, the unnamed `0x5b82` cells ("We will go with A for now, but I will want to research B later"). T10 opened. T8b round 1 rejected: the candidate stalled because `initMirror` writes 0 while the stock factory state is position 526 and 3×3. Coordinator amendment for the T8b correction: initialize the mirror to the ROM factory defaults, which keeps the stated "stock factory defaults" rule with the true values, and add K1e as the independent reference. T9b round 1 rejected on two measurement corrections and the seal; the correction continues the trace. | owner; Opus | T8b/T9b brief §5; T10 brief |
+| 2026-11-19 | T8b closed as PARTIAL. K1e committed a wrong page, and init used fresh-store values instead of the ROM tie-break. Sol confirmed the ROM defaults are all zero and the editor writes indices 0/4 while the reader reads 1/5. Different approach (T8c): first resolve the bank mismatch and define initialization by the stock Reset, with a short integrated proof, before any full acceptance. T9b accepted with corrections as a partial investigation; T9c runs a causal trial before any change. T10 round 1 rejected: the capacity stop was premature, because 28 bytes is the cell width, not the minimum encoding. Coordinator ruling: lossless bit-packing is permitted, and dropping a field still is not. | Opus | T8b/T9b decision.md; T8c/T9c briefs; T10 brief §5 |
 
 ## 12. Session resumption checklist (Opus)
 

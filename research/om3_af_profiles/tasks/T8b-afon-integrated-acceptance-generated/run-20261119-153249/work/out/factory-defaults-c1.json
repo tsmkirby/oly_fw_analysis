@@ -1,0 +1,1557 @@
+{
+  "task": "T8b",
+  "registration": "0x60062536",
+  "tables": [
+    {
+      "name": "T0",
+      "start": 1611224452,
+      "records": 452,
+      "zeroKey": 1611370320,
+      "endOk": true
+    },
+    {
+      "name": "T2",
+      "start": 1611370324,
+      "records": 544,
+      "zeroKey": 1611380192,
+      "endOk": true
+    },
+    {
+      "name": "T3a",
+      "start": 1611380204,
+      "records": 128,
+      "zeroKey": 1611389548,
+      "endOk": true
+    },
+    {
+      "name": "T3b",
+      "start": 1611389560,
+      "records": 204,
+      "zeroKey": 1611549524,
+      "endOk": true
+    },
+    {
+      "name": "bank7",
+      "start": 1611549676,
+      "records": 1215,
+      "zeroKey": 1611791904,
+      "endOk": true
+    }
+  ],
+  "decision": "ROM registration payloads and K1 claim 2 disagree on every non-zero fresh cell. The correction says to report that and to use the ROM default. It also says initMirror writes the stock factory value instead of 0, and it names that state as K1 claim 2 (position 526 and the 3x3 custom size). Writing the ROM zeros would leave the accepted zero init unchanged. The bytes initMirror writes are K1 claim 2. The disagreement is this report. Offset 33 stays 0xFF because it is not a LAYOUT slot.",
+  "k1Step": "setup",
+  "disagreements": 50,
+  "slots": [
+    {
+      "key": "0x1dd1",
+      "index": 0,
+      "width": 1,
+      "off": 22,
+      "rom": 0,
+      "k1": 3,
+      "written": 3,
+      "agree": false
+    },
+    {
+      "key": "0x1dd1",
+      "index": 1,
+      "width": 1,
+      "off": 23,
+      "rom": 0,
+      "k1": 3,
+      "written": 3,
+      "agree": false
+    },
+    {
+      "key": "0x1dd1",
+      "index": 2,
+      "width": 1,
+      "off": 24,
+      "rom": 0,
+      "k1": 3,
+      "written": 3,
+      "agree": false
+    },
+    {
+      "key": "0x1dd1",
+      "index": 3,
+      "width": 1,
+      "off": 25,
+      "rom": 0,
+      "k1": 3,
+      "written": 3,
+      "agree": false
+    },
+    {
+      "key": "0x1dd1",
+      "index": 4,
+      "width": 1,
+      "off": 26,
+      "rom": 0,
+      "k1": 3,
+      "written": 3,
+      "agree": false
+    },
+    {
+      "key": "0x1dd1",
+      "index": 5,
+      "width": 1,
+      "off": 27,
+      "rom": 0,
+      "k1": 3,
+      "written": 3,
+      "agree": false
+    },
+    {
+      "key": "0x1dd1",
+      "index": 6,
+      "width": 1,
+      "off": 28,
+      "rom": 0,
+      "k1": 3,
+      "written": 3,
+      "agree": false
+    },
+    {
+      "key": "0x1dd1",
+      "index": 7,
+      "width": 1,
+      "off": 29,
+      "rom": 0,
+      "k1": 3,
+      "written": 3,
+      "agree": false
+    },
+    {
+      "key": "0x1dd1",
+      "index": 8,
+      "width": 1,
+      "off": 30,
+      "rom": 0,
+      "k1": 3,
+      "written": 3,
+      "agree": false
+    },
+    {
+      "key": "0x1dd1",
+      "index": 9,
+      "width": 1,
+      "off": 31,
+      "rom": 0,
+      "k1": 3,
+      "written": 3,
+      "agree": false
+    },
+    {
+      "key": "0x1de1",
+      "index": 0,
+      "width": 1,
+      "off": 55,
+      "rom": 0,
+      "k1": 1,
+      "written": 1,
+      "agree": false
+    },
+    {
+      "key": "0x1de1",
+      "index": 1,
+      "width": 1,
+      "off": 56,
+      "rom": 0,
+      "k1": 1,
+      "written": 1,
+      "agree": false
+    },
+    {
+      "key": "0x1de1",
+      "index": 2,
+      "width": 1,
+      "off": 57,
+      "rom": 0,
+      "k1": 1,
+      "written": 1,
+      "agree": false
+    },
+    {
+      "key": "0x1de1",
+      "index": 3,
+      "width": 1,
+      "off": 58,
+      "rom": 0,
+      "k1": 1,
+      "written": 1,
+      "agree": false
+    },
+    {
+      "key": "0x1de1",
+      "index": 4,
+      "width": 1,
+      "off": 59,
+      "rom": 0,
+      "k1": 1,
+      "written": 1,
+      "agree": false
+    },
+    {
+      "key": "0x1de1",
+      "index": 5,
+      "width": 1,
+      "off": 60,
+      "rom": 0,
+      "k1": 1,
+      "written": 1,
+      "agree": false
+    },
+    {
+      "key": "0x1de1",
+      "index": 6,
+      "width": 1,
+      "off": 61,
+      "rom": 0,
+      "k1": 1,
+      "written": 1,
+      "agree": false
+    },
+    {
+      "key": "0x1de1",
+      "index": 7,
+      "width": 1,
+      "off": 62,
+      "rom": 0,
+      "k1": 1,
+      "written": 1,
+      "agree": false
+    },
+    {
+      "key": "0x1df1",
+      "index": 0,
+      "width": 1,
+      "off": 63,
+      "rom": 0,
+      "k1": 1,
+      "written": 1,
+      "agree": false
+    },
+    {
+      "key": "0x1df1",
+      "index": 1,
+      "width": 1,
+      "off": 64,
+      "rom": 0,
+      "k1": 1,
+      "written": 1,
+      "agree": false
+    },
+    {
+      "key": "0x1df1",
+      "index": 2,
+      "width": 1,
+      "off": 65,
+      "rom": 0,
+      "k1": 1,
+      "written": 1,
+      "agree": false
+    },
+    {
+      "key": "0x1df1",
+      "index": 3,
+      "width": 1,
+      "off": 66,
+      "rom": 0,
+      "k1": 1,
+      "written": 1,
+      "agree": false
+    },
+    {
+      "key": "0x1df1",
+      "index": 4,
+      "width": 1,
+      "off": 67,
+      "rom": 0,
+      "k1": 0,
+      "written": 0,
+      "agree": true
+    },
+    {
+      "key": "0x1df1",
+      "index": 5,
+      "width": 1,
+      "off": 68,
+      "rom": 0,
+      "k1": 0,
+      "written": 0,
+      "agree": true
+    },
+    {
+      "key": "0x1df1",
+      "index": 6,
+      "width": 1,
+      "off": 69,
+      "rom": 0,
+      "k1": 0,
+      "written": 0,
+      "agree": true
+    },
+    {
+      "key": "0x1df1",
+      "index": 7,
+      "width": 1,
+      "off": 70,
+      "rom": 0,
+      "k1": 0,
+      "written": 0,
+      "agree": true
+    },
+    {
+      "key": "0x5962",
+      "index": 0,
+      "width": 2,
+      "off": 10,
+      "rom": 0,
+      "k1": 526,
+      "written": 526,
+      "agree": false
+    },
+    {
+      "key": "0x5962",
+      "index": 1,
+      "width": 2,
+      "off": 12,
+      "rom": 0,
+      "k1": 526,
+      "written": 526,
+      "agree": false
+    },
+    {
+      "key": "0x5962",
+      "index": 2,
+      "width": 2,
+      "off": 14,
+      "rom": 0,
+      "k1": 526,
+      "written": 526,
+      "agree": false
+    },
+    {
+      "key": "0x5962",
+      "index": 3,
+      "width": 2,
+      "off": 16,
+      "rom": 0,
+      "k1": 526,
+      "written": 526,
+      "agree": false
+    },
+    {
+      "key": "0x5962",
+      "index": 4,
+      "width": 2,
+      "off": 18,
+      "rom": 0,
+      "k1": 526,
+      "written": 526,
+      "agree": false
+    },
+    {
+      "key": "0x5962",
+      "index": 5,
+      "width": 2,
+      "off": 20,
+      "rom": 0,
+      "k1": 526,
+      "written": 526,
+      "agree": false
+    },
+    {
+      "key": "0x5a11",
+      "index": 0,
+      "width": 1,
+      "off": 44,
+      "rom": 0,
+      "k1": 1,
+      "written": 1,
+      "agree": false
+    },
+    {
+      "key": "0x5a11",
+      "index": 1,
+      "width": 1,
+      "off": 45,
+      "rom": 0,
+      "k1": 1,
+      "written": 1,
+      "agree": false
+    },
+    {
+      "key": "0x5a11",
+      "index": 2,
+      "width": 1,
+      "off": 46,
+      "rom": 0,
+      "k1": 1,
+      "written": 1,
+      "agree": false
+    },
+    {
+      "key": "0x5a11",
+      "index": 3,
+      "width": 1,
+      "off": 47,
+      "rom": 0,
+      "k1": 0,
+      "written": 0,
+      "agree": true
+    },
+    {
+      "key": "0x5a11",
+      "index": 4,
+      "width": 1,
+      "off": 48,
+      "rom": 0,
+      "k1": 1,
+      "written": 1,
+      "agree": false
+    },
+    {
+      "key": "0x5a11",
+      "index": 5,
+      "width": 1,
+      "off": 49,
+      "rom": 0,
+      "k1": 0,
+      "written": 0,
+      "agree": true
+    },
+    {
+      "key": "0x5a11",
+      "index": 6,
+      "width": 1,
+      "off": 50,
+      "rom": 0,
+      "k1": 0,
+      "written": 0,
+      "agree": true
+    },
+    {
+      "key": "0x5a11",
+      "index": 7,
+      "width": 1,
+      "off": 51,
+      "rom": 0,
+      "k1": 0,
+      "written": 0,
+      "agree": true
+    },
+    {
+      "key": "0x5a11",
+      "index": 8,
+      "width": 1,
+      "off": 52,
+      "rom": 0,
+      "k1": 0,
+      "written": 0,
+      "agree": true
+    },
+    {
+      "key": "0x5a11",
+      "index": 9,
+      "width": 1,
+      "off": 53,
+      "rom": 0,
+      "k1": 1,
+      "written": 1,
+      "agree": false
+    },
+    {
+      "key": "0x5a11",
+      "index": 10,
+      "width": 1,
+      "off": 54,
+      "rom": 0,
+      "k1": 1,
+      "written": 1,
+      "agree": false
+    },
+    {
+      "key": "0x84d1",
+      "index": 0,
+      "width": 1,
+      "off": 32,
+      "rom": 0,
+      "k1": 3,
+      "written": 3,
+      "agree": false
+    },
+    {
+      "key": "0x88b2",
+      "index": 0,
+      "width": 2,
+      "off": 34,
+      "rom": 0,
+      "k1": 526,
+      "written": 526,
+      "agree": false
+    },
+    {
+      "key": "0x90d1",
+      "index": 0,
+      "width": 1,
+      "off": 36,
+      "rom": 0,
+      "k1": 2,
+      "written": 2,
+      "agree": false
+    },
+    {
+      "key": "0x90d1",
+      "index": 1,
+      "width": 1,
+      "off": 37,
+      "rom": 0,
+      "k1": 2,
+      "written": 2,
+      "agree": false
+    },
+    {
+      "key": "0x90d1",
+      "index": 2,
+      "width": 1,
+      "off": 38,
+      "rom": 0,
+      "k1": 2,
+      "written": 2,
+      "agree": false
+    },
+    {
+      "key": "0x90d1",
+      "index": 3,
+      "width": 1,
+      "off": 39,
+      "rom": 0,
+      "k1": 2,
+      "written": 2,
+      "agree": false
+    },
+    {
+      "key": "0x90d1",
+      "index": 4,
+      "width": 1,
+      "off": 40,
+      "rom": 0,
+      "k1": 2,
+      "written": 2,
+      "agree": false
+    },
+    {
+      "key": "0x90d1",
+      "index": 5,
+      "width": 1,
+      "off": 41,
+      "rom": 0,
+      "k1": 2,
+      "written": 2,
+      "agree": false
+    },
+    {
+      "key": "0x90d1",
+      "index": 6,
+      "width": 1,
+      "off": 42,
+      "rom": 0,
+      "k1": 5,
+      "written": 5,
+      "agree": false
+    },
+    {
+      "key": "0x90d1",
+      "index": 7,
+      "width": 1,
+      "off": 43,
+      "rom": 0,
+      "k1": 5,
+      "written": 5,
+      "agree": false
+    },
+    {
+      "key": "0x99a1",
+      "index": 0,
+      "width": 1,
+      "off": 0,
+      "rom": 0,
+      "k1": 2,
+      "written": 2,
+      "agree": false
+    },
+    {
+      "key": "0x99a1",
+      "index": 1,
+      "width": 1,
+      "off": 1,
+      "rom": 0,
+      "k1": 0,
+      "written": 0,
+      "agree": true
+    },
+    {
+      "key": "0x99a1",
+      "index": 2,
+      "width": 1,
+      "off": 2,
+      "rom": 0,
+      "k1": 2,
+      "written": 2,
+      "agree": false
+    },
+    {
+      "key": "0x99a1",
+      "index": 3,
+      "width": 1,
+      "off": 3,
+      "rom": 0,
+      "k1": 0,
+      "written": 0,
+      "agree": true
+    },
+    {
+      "key": "0x99a1",
+      "index": 4,
+      "width": 1,
+      "off": 4,
+      "rom": 0,
+      "k1": 2,
+      "written": 2,
+      "agree": false
+    },
+    {
+      "key": "0x99a1",
+      "index": 5,
+      "width": 1,
+      "off": 5,
+      "rom": 0,
+      "k1": 0,
+      "written": 0,
+      "agree": true
+    },
+    {
+      "key": "0x99a1",
+      "index": 6,
+      "width": 1,
+      "off": 6,
+      "rom": 0,
+      "k1": 5,
+      "written": 5,
+      "agree": false
+    },
+    {
+      "key": "0x99a1",
+      "index": 7,
+      "width": 1,
+      "off": 7,
+      "rom": 0,
+      "k1": 5,
+      "written": 5,
+      "agree": false
+    },
+    {
+      "key": "0x9a41",
+      "index": 0,
+      "width": 1,
+      "off": 8,
+      "rom": 0,
+      "k1": 0,
+      "written": 0,
+      "agree": true
+    },
+    {
+      "key": "0x9a41",
+      "index": 1,
+      "width": 1,
+      "off": 9,
+      "rom": null,
+      "k1": 1,
+      "written": 1,
+      "agree": false
+    }
+  ],
+  "mirror55": [
+    2,
+    0,
+    2,
+    0,
+    2,
+    0,
+    5,
+    5,
+    0,
+    1,
+    14,
+    2,
+    14,
+    2,
+    14,
+    2,
+    14,
+    2,
+    14,
+    2,
+    14,
+    2,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    255,
+    14,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    5,
+    5,
+    1,
+    1,
+    1,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    1,
+    1
+  ],
+  "fields": [
+    {
+      "key": "0x1dd1",
+      "half": "k1dd1",
+      "layout": {
+        "off": 22,
+        "n": 10,
+        "width": 1
+      },
+      "romHits": [
+        {
+          "table": "bank7",
+          "record": "0x600e4f4c",
+          "count": 10,
+          "width": 1,
+          "payload": "00000000000000000000",
+          "bytes": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "k1": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "compared": [
+        {
+          "index": 0,
+          "rom": 0,
+          "k1": 3,
+          "agree": false,
+          "inLayout": true
+        },
+        {
+          "index": 1,
+          "rom": 0,
+          "k1": 3,
+          "agree": false,
+          "inLayout": true
+        },
+        {
+          "index": 2,
+          "rom": 0,
+          "k1": 3,
+          "agree": false,
+          "inLayout": true
+        },
+        {
+          "index": 3,
+          "rom": 0,
+          "k1": 3,
+          "agree": false,
+          "inLayout": true
+        },
+        {
+          "index": 4,
+          "rom": 0,
+          "k1": 3,
+          "agree": false,
+          "inLayout": true
+        },
+        {
+          "index": 5,
+          "rom": 0,
+          "k1": 3,
+          "agree": false,
+          "inLayout": true
+        },
+        {
+          "index": 6,
+          "rom": 0,
+          "k1": 3,
+          "agree": false,
+          "inLayout": true
+        },
+        {
+          "index": 7,
+          "rom": 0,
+          "k1": 3,
+          "agree": false,
+          "inLayout": true
+        },
+        {
+          "index": 8,
+          "rom": 0,
+          "k1": 3,
+          "agree": false,
+          "inLayout": true
+        },
+        {
+          "index": 9,
+          "rom": 0,
+          "k1": 3,
+          "agree": false,
+          "inLayout": true
+        }
+      ]
+    },
+    {
+      "key": "0x1de1",
+      "half": "k1de1",
+      "layout": {
+        "off": 55,
+        "n": 8,
+        "width": 1
+      },
+      "romHits": [
+        {
+          "table": "bank7",
+          "record": "0x600e4f5c",
+          "count": 8,
+          "width": 1,
+          "payload": "0000000000000000",
+          "bytes": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "k1": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "compared": [
+        {
+          "index": 0,
+          "rom": 0,
+          "k1": 1,
+          "agree": false,
+          "inLayout": true
+        },
+        {
+          "index": 1,
+          "rom": 0,
+          "k1": 1,
+          "agree": false,
+          "inLayout": true
+        },
+        {
+          "index": 2,
+          "rom": 0,
+          "k1": 1,
+          "agree": false,
+          "inLayout": true
+        },
+        {
+          "index": 3,
+          "rom": 0,
+          "k1": 1,
+          "agree": false,
+          "inLayout": true
+        },
+        {
+          "index": 4,
+          "rom": 0,
+          "k1": 1,
+          "agree": false,
+          "inLayout": true
+        },
+        {
+          "index": 5,
+          "rom": 0,
+          "k1": 1,
+          "agree": false,
+          "inLayout": true
+        },
+        {
+          "index": 6,
+          "rom": 0,
+          "k1": 1,
+          "agree": false,
+          "inLayout": true
+        },
+        {
+          "index": 7,
+          "rom": 0,
+          "k1": 1,
+          "agree": false,
+          "inLayout": true
+        }
+      ]
+    },
+    {
+      "key": "0x1df1",
+      "half": "k1df1",
+      "layout": {
+        "off": 63,
+        "n": 8,
+        "width": 1
+      },
+      "romHits": [
+        {
+          "table": "bank7",
+          "record": "0x600e4f68",
+          "count": 9,
+          "width": 1,
+          "payload": "000000000000000000",
+          "bytes": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "k1": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "compared": [
+        {
+          "index": 0,
+          "rom": 0,
+          "k1": 1,
+          "agree": false,
+          "inLayout": true
+        },
+        {
+          "index": 1,
+          "rom": 0,
+          "k1": 1,
+          "agree": false,
+          "inLayout": true
+        },
+        {
+          "index": 2,
+          "rom": 0,
+          "k1": 1,
+          "agree": false,
+          "inLayout": true
+        },
+        {
+          "index": 3,
+          "rom": 0,
+          "k1": 1,
+          "agree": false,
+          "inLayout": true
+        },
+        {
+          "index": 4,
+          "rom": 0,
+          "k1": 0,
+          "agree": true,
+          "inLayout": true
+        },
+        {
+          "index": 5,
+          "rom": 0,
+          "k1": 0,
+          "agree": true,
+          "inLayout": true
+        },
+        {
+          "index": 6,
+          "rom": 0,
+          "k1": 0,
+          "agree": true,
+          "inLayout": true
+        },
+        {
+          "index": 7,
+          "rom": 0,
+          "k1": 0,
+          "agree": true,
+          "inLayout": true
+        },
+        {
+          "index": 8,
+          "rom": 0,
+          "k1": 1,
+          "agree": false,
+          "inLayout": false
+        }
+      ]
+    },
+    {
+      "key": "0x5962",
+      "half": "k5962",
+      "layout": {
+        "off": 10,
+        "n": 6,
+        "width": 2
+      },
+      "romHits": [
+        {
+          "table": "bank7",
+          "record": "0x600e575c",
+          "count": 6,
+          "width": 2,
+          "payload": "000000000000000000000000",
+          "bytes": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "k1": [
+        526,
+        526,
+        526,
+        526,
+        526,
+        526
+      ],
+      "compared": [
+        {
+          "index": 0,
+          "rom": 0,
+          "k1": 526,
+          "agree": false,
+          "inLayout": true
+        },
+        {
+          "index": 1,
+          "rom": 0,
+          "k1": 526,
+          "agree": false,
+          "inLayout": true
+        },
+        {
+          "index": 2,
+          "rom": 0,
+          "k1": 526,
+          "agree": false,
+          "inLayout": true
+        },
+        {
+          "index": 3,
+          "rom": 0,
+          "k1": 526,
+          "agree": false,
+          "inLayout": true
+        },
+        {
+          "index": 4,
+          "rom": 0,
+          "k1": 526,
+          "agree": false,
+          "inLayout": true
+        },
+        {
+          "index": 5,
+          "rom": 0,
+          "k1": 526,
+          "agree": false,
+          "inLayout": true
+        }
+      ]
+    },
+    {
+      "key": "0x5a11",
+      "half": "k5a11",
+      "layout": {
+        "off": 44,
+        "n": 11,
+        "width": 1
+      },
+      "romHits": [
+        {
+          "table": "bank7",
+          "record": "0x600e57c4",
+          "count": 11,
+          "width": 1,
+          "payload": "0000000000000000000000",
+          "bytes": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "k1": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "compared": [
+        {
+          "index": 0,
+          "rom": 0,
+          "k1": 1,
+          "agree": false,
+          "inLayout": true
+        },
+        {
+          "index": 1,
+          "rom": 0,
+          "k1": 1,
+          "agree": false,
+          "inLayout": true
+        },
+        {
+          "index": 2,
+          "rom": 0,
+          "k1": 1,
+          "agree": false,
+          "inLayout": true
+        },
+        {
+          "index": 3,
+          "rom": 0,
+          "k1": 0,
+          "agree": true,
+          "inLayout": true
+        },
+        {
+          "index": 4,
+          "rom": 0,
+          "k1": 1,
+          "agree": false,
+          "inLayout": true
+        },
+        {
+          "index": 5,
+          "rom": 0,
+          "k1": 0,
+          "agree": true,
+          "inLayout": true
+        },
+        {
+          "index": 6,
+          "rom": 0,
+          "k1": 0,
+          "agree": true,
+          "inLayout": true
+        },
+        {
+          "index": 7,
+          "rom": 0,
+          "k1": 0,
+          "agree": true,
+          "inLayout": true
+        },
+        {
+          "index": 8,
+          "rom": 0,
+          "k1": 0,
+          "agree": true,
+          "inLayout": true
+        },
+        {
+          "index": 9,
+          "rom": 0,
+          "k1": 1,
+          "agree": false,
+          "inLayout": true
+        },
+        {
+          "index": 10,
+          "rom": 0,
+          "k1": 1,
+          "agree": false,
+          "inLayout": true
+        }
+      ]
+    },
+    {
+      "key": "0x84d1",
+      "half": "k84d1",
+      "layout": {
+        "off": 32,
+        "n": 1,
+        "width": 1
+      },
+      "romHits": [
+        {
+          "table": "bank7",
+          "record": "0x600e5fe8",
+          "count": 1,
+          "width": 1,
+          "payload": "00",
+          "bytes": [
+            0
+          ]
+        }
+      ],
+      "k1": [
+        3
+      ],
+      "compared": [
+        {
+          "index": 0,
+          "rom": 0,
+          "k1": 3,
+          "agree": false,
+          "inLayout": true
+        }
+      ]
+    },
+    {
+      "key": "0x88b2",
+      "half": "k88b2",
+      "layout": {
+        "off": 34,
+        "n": 1,
+        "width": 2
+      },
+      "romHits": [
+        {
+          "table": "bank7",
+          "record": "0x60117870",
+          "count": 1,
+          "width": 2,
+          "payload": "0000",
+          "bytes": [
+            0,
+            0
+          ]
+        }
+      ],
+      "k1": [
+        526
+      ],
+      "compared": [
+        {
+          "index": 0,
+          "rom": 0,
+          "k1": 526,
+          "agree": false,
+          "inLayout": true
+        }
+      ]
+    },
+    {
+      "key": "0x90d1",
+      "half": "k90d1",
+      "layout": {
+        "off": 36,
+        "n": 8,
+        "width": 1
+      },
+      "romHits": [
+        {
+          "table": "bank7",
+          "record": "0x6011e7a8",
+          "count": 8,
+          "width": 1,
+          "payload": "0000000000000000",
+          "bytes": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "k1": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        5,
+        5
+      ],
+      "compared": [
+        {
+          "index": 0,
+          "rom": 0,
+          "k1": 2,
+          "agree": false,
+          "inLayout": true
+        },
+        {
+          "index": 1,
+          "rom": 0,
+          "k1": 2,
+          "agree": false,
+          "inLayout": true
+        },
+        {
+          "index": 2,
+          "rom": 0,
+          "k1": 2,
+          "agree": false,
+          "inLayout": true
+        },
+        {
+          "index": 3,
+          "rom": 0,
+          "k1": 2,
+          "agree": false,
+          "inLayout": true
+        },
+        {
+          "index": 4,
+          "rom": 0,
+          "k1": 2,
+          "agree": false,
+          "inLayout": true
+        },
+        {
+          "index": 5,
+          "rom": 0,
+          "k1": 2,
+          "agree": false,
+          "inLayout": true
+        },
+        {
+          "index": 6,
+          "rom": 0,
+          "k1": 5,
+          "agree": false,
+          "inLayout": true
+        },
+        {
+          "index": 7,
+          "rom": 0,
+          "k1": 5,
+          "agree": false,
+          "inLayout": true
+        }
+      ]
+    },
+    {
+      "key": "0x99a1",
+      "half": "k99a1",
+      "layout": {
+        "off": 0,
+        "n": 8,
+        "width": 1
+      },
+      "romHits": [
+        {
+          "table": "bank7",
+          "record": "0x6011ebdc",
+          "count": 8,
+          "width": 1,
+          "payload": "0000000000000000",
+          "bytes": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "k1": [
+        2,
+        0,
+        2,
+        0,
+        2,
+        0,
+        5,
+        5
+      ],
+      "compared": [
+        {
+          "index": 0,
+          "rom": 0,
+          "k1": 2,
+          "agree": false,
+          "inLayout": true
+        },
+        {
+          "index": 1,
+          "rom": 0,
+          "k1": 0,
+          "agree": true,
+          "inLayout": true
+        },
+        {
+          "index": 2,
+          "rom": 0,
+          "k1": 2,
+          "agree": false,
+          "inLayout": true
+        },
+        {
+          "index": 3,
+          "rom": 0,
+          "k1": 0,
+          "agree": true,
+          "inLayout": true
+        },
+        {
+          "index": 4,
+          "rom": 0,
+          "k1": 2,
+          "agree": false,
+          "inLayout": true
+        },
+        {
+          "index": 5,
+          "rom": 0,
+          "k1": 0,
+          "agree": true,
+          "inLayout": true
+        },
+        {
+          "index": 6,
+          "rom": 0,
+          "k1": 5,
+          "agree": false,
+          "inLayout": true
+        },
+        {
+          "index": 7,
+          "rom": 0,
+          "k1": 5,
+          "agree": false,
+          "inLayout": true
+        }
+      ]
+    },
+    {
+      "key": "0x9a41",
+      "half": "k9a41",
+      "layout": {
+        "off": 8,
+        "n": 2,
+        "width": 1
+      },
+      "romHits": [
+        {
+          "table": "bank7",
+          "record": "0x6011ec34",
+          "count": 1,
+          "width": 1,
+          "payload": "00",
+          "bytes": [
+            0
+          ]
+        }
+      ],
+      "k1": [
+        0,
+        1
+      ],
+      "compared": [
+        {
+          "index": 0,
+          "rom": 0,
+          "k1": 0,
+          "agree": true,
+          "inLayout": true
+        },
+        {
+          "index": 1,
+          "rom": null,
+          "k1": 1,
+          "agree": false,
+          "inLayout": true
+        }
+      ]
+    }
+  ]
+}
