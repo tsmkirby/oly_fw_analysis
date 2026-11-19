@@ -1,4 +1,4 @@
-# T3l: AF-ON target editor completion (exit handling, initialization, custom sizes, full acceptance)
+﻿# T3l: AF-ON target editor completion (exit handling, initialization, custom sizes, full acceptance)
 
 Agent: Grok 4.7 High · Coordinator: Opus 5.5 · Reviewer: Codex Sol
 Brief version: 2026-11-19 · Workspace: Ghidra + OM-Emu · Runs concurrently with the T7 correction round
@@ -95,3 +95,62 @@ screenshots.
 ## 4. Out of scope
 
 The button target using the mirror (T6); storage (Q7); display; packaging; hardware.
+
+## 5. Correction round (Opus, after Sol's review `run-20261119-081955-review`: REJECT)
+
+Your previous work is in `work\`, and Sol's full review is `audit\previous-review.md`. Do **not** start over.
+The hook-side exit handling (OK, MENU, S1 and playback clear the flag and restore the zone byte) and the C1/C2
+mirror-only routing are confirmed. Save everything new under a **new, unique name** (`-m1` onward), and never
+overwrite a file that a run used or wrote.
+
+**Authorization: six new experiment versions, in this order of priority.** Do items 1–3 before anything else.
+If the versions run out, stop and report.
+
+**Erratum (coordinator).** `0x90a1` is the page-27 per-button priority (T1: 1 = detected-subject priority), not
+SCP Subject Detect. Remove every claim that `0x90a1 = [1,1]` means Subject Detect Off. SCP Subject Detect is
+`MODE_SUBJECT_DETECT`, key `0x1e71[0]`. Read it back, and state its value and how you know that value means Off
+(stock menu text). Do not set it unless that is needed, and if you do, set it only through native menu keys.
+
+1. **Entry must not overwrite the profile (a bug found in this round).** Each AF-ON entry currently recopies the
+   half-press cells over the mirror, so the profile is not independent.
+   - Fix it so that entry copies **nothing** into the mirror except the factory defaults for fields that are
+     still `FF` (one change).
+   - Show the following:
+     - first entry with an all-`FF` mirror initializes from the descriptor defaults (all zero, per your finding
+       2), and the screen still draws (assert the title-band hash);
+     - a mixed mirror (some fields set, some `FF`) initializes only the `FF` fields;
+     - C1 edited, exit, re-entry, C2 edited: both C1 and C2 stay in the mirror;
+     - a value set in AF-ON mode survives a normal half-press edit and a re-entry.
+2. **Acceptance (new runner, before the remaining exits).**
+   - Run two fresh candidate sessions, K1, and a K2 that repeats only the half-press keys and the same menu
+     exits.
+   - After **every individual key**, assert:
+     - the visual identity;
+     - every mirror field;
+     - the zone byte;
+     - the flag;
+     - every half-press cell, including all nine bytes of `0x1df1`.
+   - Use unique step IDs.
+   - Cover: entry with initialization; move; type change; C1; C2 with C1 retained; the OK, MENU and S1 exits,
+     each followed by a normal edit.
+   - Then do a native save **after** the edits, with its completion asserted, and start a new session on that
+     store.
+   - On reopen, assert: RAM-only, so the mirror holds the image `FF` values and the zone byte holds 0; the next
+     entry initializes.
+   - Compare the stores byte for byte with K2's.
+   - The run must end `ok:true`.
+3. **Restore with a non-zero snapshot.** In one case the zone byte is non-zero on entry. Show that exit restores
+   that value.
+4. **Remaining exits (only after items 1–3 pass).**
+   - **Playback:** dismiss or avoid the no-picture warning (for example, return to shooting with the native
+     key), then do the following normal edit.
+   - **Session end:** call the shutdown path from the direct screen, and read the flag before and after.
+
+   Correct the playback warning description.
+5. **Orientations (only if item 2 passes).** As in brief §2 item 6. Use `pose.mjs`, unchanged, from
+   `ref\tasks\T7-orientation-producer\run-20261119-072701\work\scripts\` (record its hash).
+6. **Records.**
+   - Seal the final command-output hashes in a supplement.
+   - Inventory the consumed research inputs and the actual emulator resource files.
+   - Qualify the wording on complete invariance.
+   - Refresh the manifest last.

@@ -1,0 +1,13 @@
+{
+  "sealed": "after the manifest hash",
+  "note": "Command 14 is this manifest build. The wrapper writes its .out, .err, and .exit after this process exits, so those three files are not in evidence-manifest.json.",
+  "command": {
+    "n": 14,
+    "requested": "python -I work/scripts/manifest_final.py 14",
+    "script": "work/scripts/manifest_final.py",
+    "script_sha256": "b3b74b7eac2d4b71d7d43bb8134706c33a4ee279042ef7407de6ff375840a1a5"
+  },
+  "manifest": "work/evidence-manifest.json",
+  "manifest_sha256": "e0ba3a8aa826ffe4a0d25546d38f887da0411d58a9a1157cc7faba054868de94",
+  "manifest_bytes": 137536
+}

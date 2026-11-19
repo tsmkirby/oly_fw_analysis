@@ -1,0 +1,50 @@
+target acc-init cached 0x6006a436
+target enable-set cached 0x6006a636
+target enable-clr cached 0x6006a641
+target acc-main cached 0x6006a660
+target sampler cached 0x6006a720
+target probe cached 0x6006a791
+target pin-cb cached 0x6006a869
+target completion cached 0x6006a8ca
+target copy cached 0x6006a9c1
+target acc-device cached 0x6006ab64
+target correct cached 0x6006ab94
+target convert cached 0x6006af97
+target reg-read cached 0x6006f28e
+target rotate-init cached 0x60077d18
+target rotate-get cached 0x60077de1
+target rotate-task cached 0x60077e0a
+target slope-init cached 0x6007d750
+target slope-task cached 0x6007d7bb
+target remap cached 0x6007db9c
+acc-init calls 1 60218ff0
+acc-device calls 1 6006a43d
+acc-main calls 0 
+probe calls 1 6006a788
+sampler calls 0 
+pin-cb calls 0 
+reg-read calls 2 6006a8c2 6006f3ae
+completion calls 0 
+correct calls 1 6006a6fa
+convert calls 13 6006aa3c 6006ab00 6006ab20 6006ab42 6006b98b 6006e9d4 6006eb0f 60077e43 60077e57 60077e6b 6007d855 6007d864 6007d873
+remap calls 5 6006aa2f 6006aaf5 6006b97d 60077e38 6007d84c
+copy calls 0 
+slope-init calls 2 6007dc4b 6021900b
+slope-task calls 0 
+rotate-init calls 2 6007814f 6021901f
+rotate-get calls 11 6007819d 6007df70 603e8cf8 60447d38 6047d4ca 6053138a 60531638 6087458a 60875e9a 61834a42 6183c4b6
+rotate-task calls 0 
+enable-set calls 2 6006bc77 6006bef4
+enable-clr calls 4 6006bc95 6006bcc1 6006bd5a 6006be35
+exif halfword table 11,1,6,3,8:
+immediate 0x04020310:
+  600780bb
+  60c605e4
+  60c6065b
+  60c73b68
+  60d373c0
+  60d37430
+  60e68668
+event hits shown 7
+
+sha 5e8d376e9111a44ac0352f26030d7c1b17026d42c45f3600cfa02a0e8c5b7d59

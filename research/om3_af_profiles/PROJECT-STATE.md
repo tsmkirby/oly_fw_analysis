@@ -8,12 +8,26 @@ Last updated: 2026-11-17 (Phase 1 preparation).
 
 ## 1. Continuation point
 
-- **Now:** T3l (AF-ON editor completion) runs concurrently with the T7 correction round.
-  - T3l covers exit handling and first-entry initialization inside the hook, a Z5 control with the flag
-    off, AF-ON custom sizes, full acceptance, and the poses taken from T7.
-  - T7's correction: find which index the ten-byte target reads for each pose. The emulator's I2C stand-ins
-    are allowed by amendment.
-  - T6 (the button target takes size and position from the profile) follows T3l and T7.
+- **Now:** the T3l correction round runs concurrently with T6.
+  - **T3l correction:**
+    - entry must stop overwriting the mirror; initialize only `FF` fields;
+    - full acceptance comes first;
+    - then the playback and session-end exits.
+  - **T6:** the AF-ON button target takes type, size, position and custom dimensions from the mirror, at the
+    bank chosen by the pose. The mirror is seeded by the session, so T6 doesn't wait for the editor. T6 also
+    carries T5's reopen-release assertion.
+  - **T3l round 1 (REJECT).** The hook-side exits (OK, MENU, S1, playback) clear the flag and restore the
+    zone byte. The following edits match K1 and K2. C1 and C2 AF-ON edits land only in the mirror. Not done:
+    initialization, acceptance, session end. A bug was found: each entry recopied the half-press cells over
+    the mirror.
+  - **T7 closed as PARTIAL (19 Nov).** The accelerometer → pose producer and `pose.mjs` are accepted, as are
+    the direct-editor banks (1/5/3 with Orientation Linked on). The stock ten-byte consumer's per-pose index is
+    BLOCKED on stock in this emulator. T6 doesn't need it, because the overlay builds the AF-ON record.
+    [T7 decision](tasks/T7-orientation-producer/decision.md); evidence in `analysis/button-af/readiness/t7-orientation-producer/`.
+  - **Erratum (19 Nov).** `0x90a1` is the page-27 per-button priority (1 = detected-subject priority), not
+    SCP Subject Detect. SCP Subject Detect is `MODE_SUBJECT_DETECT`, key `0x1e71[0]`. Claims in the T3b, T3l
+    and T7 results that "`0x90a1` = [1,1] means Subject Detect Off" are withdrawn. T5's Subject Detect Off
+    setup comes from the §8 harness matrix, not from `0x90a1`.
   - **T3b closed as PARTIAL (19 Nov).** Accepted from it:
     - the stock direct screen;
     - the stock custom-size editor, AF Target Mode Settings;
@@ -141,10 +155,10 @@ The autonomous programme ends at either of these:
 | T4 | Packaging analysis (static): section-7 edit vs runtime installer; home for the binding array; face-table key; descriptor registration; native value routing; byte budget | **Accepted** (correction round; bounded: reuse is a hypothesis, ordering and flash callees unresolved) | [decision](tasks/T4-afon-packaging/decision.md) |
 | T5 | AF-ON button applies the zone from the menu row: the RAM profile replaces the legacy AF Home provider in the central-edge handoff; 12 edges; S-AF and C-AF; Subject Detect Off | **Accepted with corrections**, claims narrowed (correction round REJECT on control navigation only; resolved by the coordinator; final reopen release → T6) | [decision](tasks/T5-afon-button-handoff/decision.md) |
 | T3b | AF-ON target size and position editor: measure the stock AF target selection screen, profile layout, route the screen to the profile (EMULATOR-ONLY entry; entry options → Q5) | **Closed: PARTIAL** (two REJECTs; components accepted; continued as T3l) | [decision](tasks/T3b-afon-target-editor/decision.md) |
-| T3l | AF-ON editor completion: hook-side exit handling and zone-byte restore, factory-default initialization, K1 and K2 controls, AF-ON custom sizes, full acceptance, poses via T7 | **Running** (concurrently with T7) | [tasks/T3l-afon-editor-completion](tasks/T3l-afon-editor-completion/brief.md) |
+| T3l | AF-ON editor completion: hook-side exit handling and zone-byte restore, factory-default initialization, K1 and K2 controls, AF-ON custom sizes, full acceptance, poses via T7 | **Correcting** (round 1 REJECT: init, acceptance and session end not done; entry-overwrite bug; 6 more versions authorized) | [tasks/T3l-afon-editor-completion](tasks/T3l-afon-editor-completion/brief.md) |
 | T4b | Stock watch run from reset: boot order (descriptor build, key-port hook, first lookup), duplicate `0x216` readers, flash-read callees | **Accepted with corrections** (bounded; reuse still a hypothesis) | [decision](tasks/T4b-afon-boot-order/decision.md) |
-| T7 | Orientation: stock producer, EMULATOR-ONLY pose injection at the sensor read, per-pose AF target banks, reusable pose module | **Correcting** (round 1 REJECT: ten-byte target index per pose missing; injection stand-ins amended as permitted) | [tasks/T7-orientation-producer](tasks/T7-orientation-producer/brief.md) |
-| T6 | Button target takes size and position from the profile; full 12-edge acceptance incl. the reopen release | Planned, after T3b | — |
+| T7 | Orientation: stock producer, EMULATOR-ONLY pose injection at the sensor read, per-pose AF target banks, reusable pose module | **Closed: PARTIAL** (producer and pose injection accepted; stock consumer per-pose index BLOCKED) | [decision](tasks/T7-orientation-producer/decision.md) |
+| T6 | AF-ON button target from the mirror (type, size, position, custom dimensions) per pose; 12 edges; C-AF; full acceptance including the reopen release | **Running** (concurrently with the T3l correction) | [tasks/T6-afon-target-size-position](tasks/T6-afon-target-size-position/brief.md) |
 | — | Beyond T3: persistence, display, hook point (Q4), acceptance matrix | Planned by Opus as results arrive | §2 |
 | — | CPU3 request/loader port | Deferred; regression only | AFON-MENU-RESEARCH §9 item 5 |
 
@@ -334,6 +348,7 @@ ACL or label operation on any tree containing a junction; the scripts check for 
 | 2026-11-19 | T4 accepted (Sol ACCEPT). T5 accepted with corrections: Sol's correction review rejected only the control navigation (a stock control has no AF-ON row by construction) and one unasserted reopen release; the coordinator narrowed the claim to store identity and moved the release assertion to T6. Evidence promoted for both. T3b and T4b launched concurrently; T6 planned after T3b. | Opus | T4/T5 decision.md |
 | 2026-11-19 | T4b accepted with corrections; Sol's wording and bounding corrections were applied in the decision, with no further round. T3b round 1 rejected; one correction round. Coordinator amendment: MENU on the AF-ON-mode editor must match stock MENU (the stock screen commits each key and MENU does not restore), because the spec requires reusing the stock screen and mechanisms. My original cancel criterion assumed a rollback the stock screen does not have. T7 (orientation) launched alongside. The Cursor CLI's PATH write was denied again. | Opus | T4b decision.md; T3b brief §5 |
 | 2026-11-19 | T3b closed as PARTIAL after its correction-round REJECT (acceptance failed at the normal edit after exit). Its components were accepted. T3l was opened with a different change: hook-side exit handling with a zone-byte restore, factory-default initialization of `FF` fields, and a Z5 flag-off control. Coordinator default: AF-ON fields start at the stock factory defaults. T7 round 1 was rejected; amendment: the four I2C stand-ins are permitted, as they supply no data, and only the register-read hook supplies the pose. | Opus | T3b decision.md; T3l brief; T7 brief §5 |
+| 2026-11-19 | T7 closed as PARTIAL after its correction-round REJECT. The producer is accepted; the stock consumer is blocked. T3l round 1 rejected; one correction round with six versions, prioritized so that acceptance comes before the remaining exits. The entry-overwrite bug is to be fixed. Erratum: `0x90a1` is not Subject Detect; future tasks assert `0x1e71[0]`. T6 launched concurrently with seeded mirrors (it doesn't depend on the editor). Default for an uninitialized AF-ON profile: stock factory defaults (zero). This is a coordinator choice, to be reported to the owner. | Opus | T7 decision.md; T3l brief §5; T6 brief |
 
 ## 12. Session resumption checklist (Opus)
 

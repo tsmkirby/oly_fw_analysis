@@ -1,30 +1,40 @@
-# T3l review brief (Codex Sol, read-only)
+﻿# T3l correction review (Codex Sol, read-only)
 
-Read `TASK.md`, `brief.md`, `work\result.md`, `work\evidence-manifest.json` and its sealed supplement,
-`work\out\profile-layout.md`, `work\out\design.md` and `work\out\overlay-changed-bytes.csv`. Then read the
-scripts, tables, JSONL logs, screenshots, `work\out\cmd\` and `audit\`. Compare against the T3b decision and
-your last T3b review (`ref\tasks\T3b-afon-target-editor\`).
+Read the following:
 
-1. **Exit handling.** Check that the hook (not the harness) clears the flag and restores the zone byte on
-   every exit the trace identifies. Check that the following normal edit is asserted against K2 for each exit.
-2. **Initialization.** Check that the defaults come from the firmware's default table or descriptor, not from
-   session values, and that initialization happens only for `FF` fields on entry.
-3. **Controls.** Check that K1 is stock without an overlay, and that K2 is Z5 with the flag off. Check that
-   the comparisons use the right control.
-4. **Custom sizes.** Check the AF-ON edits of C1 and a second slot, the complete mirror and half-press
-   readbacks (`0x1dd1`, `0x1de1`, `0x1df1`, `0x5a11`), and the flag-off parity with K1.
-5. **Acceptance.** Check the assertions after every individual key: visual identity, every mirror field, the
-   zone byte, the flag, and every half-press cell. Check both candidate sessions, the save completion after
-   the edits, the reopen state, and `ok:true`. Compare the stores with K2 yourself.
-6. **Orientations, if run.** Check that `pose.mjs` is imported unchanged (by hash). Check the per-pose index
-   for AF-ON and normal moves.
-7. **Records.** Check:
-   - each overlay row's section (only the three amended section-7 bytes are allowed);
-   - that every behaviour change is labelled;
-   - that the manifest is complete, including dynamic imports and final command outputs;
-   - that no script was edited after it ran;
-   - that no visible menu entry was added;
-   - that nothing is presented as native, as a storage decision, or as Subject Detect On evidence.
+- `brief.md` §5: the correction list, the authorization and the `0x90a1` erratum;
+- your previous review in `audit\previous-review.md`;
+- the updated `work\result.md`, `work\evidence-manifest.json` and its supplement;
+- `work\out\profile-layout.md`, `work\out\design.md` and `work\out\overlay-changed-bytes.csv`;
+- the new runners, tables, JSONL logs and screenshots;
+- `work\out\cmd\` and `audit\`.
+
+For each of corrections 1–6 and the erratum, report DONE, NOT DONE, WRONG or BLOCKED (honestly reported), with
+evidence.
+
+In particular, check:
+
+- **Entry.** Entry no longer overwrites the mirror. Only `FF` fields are initialized, from descriptor defaults.
+  The mixed-mirror case, C1 retained across a C2 edit, and survival across a normal edit and a re-entry are all
+  shown.
+- **Acceptance.**
+  - Assertions after every individual key, with unique step IDs. They cover visual identity, every mirror field,
+    the zone byte, the flag and every half-press cell, including all nine bytes of `0x1df1`.
+  - Two candidates, K1 and K2.
+  - A save after the edits, with completion asserted.
+  - The reopen state.
+  - `ok:true`.
+
+  Compare the stores with K2 yourself.
+- **Restore.** Restore works with a non-zero snapshot.
+- **Remaining exits, if run.** Playback's following edit, and session end.
+- **Orientations, if run.** `pose.mjs` unchanged, by hash.
+- **Subject Detect.** No claim rests on `0x90a1`, and the `0x1e71[0]` readback and its meaning are stated.
+- **Records.**
+  - Every overlay row's section; only the three amended section-7 bytes are allowed.
+  - Manifest completeness.
+  - No script edited after it ran.
+  - No visible menu entry added.
 
 Recompute every manifest hash. Use PowerShell (Python is not on your PATH). Do not run Ghidra or OM-Emu.
 Give the verdict in the structure of `templates\review.md`.

@@ -1,0 +1,41 @@
+{
+  "what": "Command 13 ran manifest_s8.py. That manifest omitted 13.out, 13.err, and 13.exit, and it omitted command 13 from commands. The sentence that every file was included was inaccurate.",
+  "files": [
+    {
+      "path": "work/out/cmd/13.cmd.txt",
+      "sha256": "4762e8975e652b7d268c9575ea833888034d260a10009b4a5bf38af300d64b75",
+      "bytes": 334
+    },
+    {
+      "path": "work/out/cmd/13.out",
+      "sha256": "a0f48ce0da884e01d90166effae0566e31f3ec100e0f73f4c5b9f004b0b0185c",
+      "bytes": 46
+    },
+    {
+      "path": "work/out/cmd/13.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "work/out/cmd/13.exit",
+      "sha256": "8c59856f44febc9694c6efffbc470fb567926c7055b5b9cf8946b50653f290eb",
+      "bytes": 450
+    }
+  ],
+  "command": {
+    "n": "13",
+    "requested": "python -I work/scripts/manifest_s8.py",
+    "status": 0,
+    "start": "2026-11-19T12:13:00.832Z",
+    "end": "2026-11-19T12:13:01.144Z",
+    "scripts": [
+      {
+        "path": "work/scripts/manifest_s8.py",
+        "sha256": "46cc9dd3149db9cb2e95aa60a668498c11e70110cef00c14a7e0dfb18e613a51",
+        "bytes": 3193
+      }
+    ],
+    "wrapper_sha256": "34e42c59c553a1e4213e2b223034bd31142c7000c6aef4aac2ac9d5e7f1fe0ef"
+  },
+  "manifest_limit": "The manifest refreshed after this supplement lists these four files. It does not hash itself. The wrapper writes the manifest command's .out, .err, and .exit after that script returns, so those three are not inside the manifest."
+}
