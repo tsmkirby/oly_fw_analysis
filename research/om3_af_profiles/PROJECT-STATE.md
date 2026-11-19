@@ -8,7 +8,15 @@ Last updated: 2026-11-17 (Phase 1 preparation).
 
 ## 1. Continuation point
 
-- **Now:** T8 and T9 run concurrently.
+- **Now:** the T8 and T9 correction rounds run concurrently.
+  - **T8 round 1:** REJECT. All six versions were spent on K1 literals. The coordinator changed the method:
+    a static table check, then a K1/K2 reference run, then candidates against the same-step references.
+  - **T9 round 1:** REJECT.
+    - Confirmed: the stock frame (four corner marks) moves with the half-press position.
+    - Confirmed: with T6, AF-ON changes the target but **not the frame**.
+    - The positioning routine was misidentified, and the change aborted on the wrong emulator model.
+    - The correction traces the real drawing path, then makes one change.
+- **Previous step:** T8 and T9 launched.
   - **T8, integrated acceptance.** The AF-ON profile is made in the editor (T3m components), drives the AF-ON
     target (T6 component), and works per orientation. It carries a save caused by the final call with
     identity-guided navigation, the reopen, and stores equal to K2. Controls must pass first, and no new
@@ -189,8 +197,8 @@ The autonomous programme ends at either of these:
 | T4b | Stock watch run from reset: boot order (descriptor build, key-port hook, first lookup), duplicate `0x216` readers, flash-read callees | **Accepted with corrections** (bounded; reuse still a hypothesis) | [decision](tasks/T4b-afon-boot-order/decision.md) |
 | T7 | Orientation: stock producer, EMULATOR-ONLY pose injection at the sensor read, per-pose AF target banks, reusable pose module | **Closed: PARTIAL** (producer and pose injection accepted; stock consumer per-pose index BLOCKED) | [decision](tasks/T7-orientation-producer/decision.md) |
 | T6 | AF-ON button target from the mirror (type, size, position, custom dimensions) per pose; 12 edges; C-AF; full acceptance including the reopen release | **Closed PARTIAL** (Q1–Q4, size, save, reopen press and release, and stores equal to K2 confirmed; evidence-contract gaps → T8) | [decision](tasks/T6-afon-target-size-position/decision.md) |
-| T8 | Integrated acceptance: editor-made AF-ON profile drives the AF-ON target, per pose; controls first; final-call save; reopen; stores equal to K2; no new change | **Running** (with T9) | [tasks/T8-afon-integrated-acceptance](tasks/T8-afon-integrated-acceptance/brief.md) |
-| T9 | Display: does the shooting-screen AF frame follow the AF-ON target? Emulator capability first; one change only if needed | **Running** (with T8) | [tasks/T9-afon-target-display](tasks/T9-afon-target-display/brief.md) |
+| T8 | Integrated acceptance: editor-made AF-ON profile drives the AF-ON target, per pose; controls first; final-call save; reopen; stores equal to K2; no new change | **Correcting** (round 1 REJECT: stopped in K1; method changed to reference-run controls; 6 versions) | [tasks/T8-afon-integrated-acceptance](tasks/T8-afon-integrated-acceptance/brief.md) |
+| T9 | Display: does the shooting-screen AF frame follow the AF-ON target? Emulator capability first; one change only if needed | **Correcting** (round 1 REJECT: frame does not follow AF-ON, confirmed; source misattributed; change not run; 6 versions) | [tasks/T9-afon-target-display](tasks/T9-afon-target-display/brief.md) |
 | — | Beyond T3: persistence, display, hook point (Q4), acceptance matrix | Planned by Opus as results arrive | §2 |
 | — | CPU3 request/loader port | Deferred; regression only | AFON-MENU-RESEARCH §9 item 5 |
 
@@ -385,6 +393,7 @@ ACL or label operation on any tree containing a junction; the scripts check for 
 | 2026-11-19 | T6 round 1 rejected after the re-run review (09:53). One correction round with six versions: reuse T5's proven save procedure (M+E with status 0), full acceptance including the reopen AF-ON press and release, and a size trial that distinguishes mirror from legacy. T3m launched alongside. | Opus | T6 brief §5 |
 | 2026-11-19 | T6 closed as PARTIAL after its correction-round REJECT. Sol independently confirmed every functional result, including both candidates' stores byte-identical to K2 and the asserted reopen press and release. The rejection covered one leftover empty check, K1 status and reopened-focus comparisons, a size-source misattribution (corrected in the decision to live `0x9a41[0]`) and manifest coverage. Those are carried to a final combined acceptance (T8), not to another T6 round. T3m round 1 rejected: the leak was fixed, but the saved M carried the mirror's C1/C2 sizes. One correction round with six versions: trace the persistence route, fix it, and verify the save with T6's accepted witness. Sol explained M+2 as the bank checksum word. | Opus | T6 decision.md; T3m brief §5 |
 | 2026-11-19 | T3m closed as PARTIAL after its correction-round REJECT. The custom-size persistence route was found (the stock size editor's OK commit writes the `0x62954108` record before the routed setter) and fixed by a record restore, with zero store differences confirmed. Save and acceptance failed on harness defects (the menu reopens on the last tab; a K1 self-reference). Different approach: T8 integrates only accepted components on one runner, controls first, with identity-guided save navigation. T9 (display) opened in parallel. Condition A cannot complete without Q7 (persistence), which is an owner decision. | Opus | T3m decision.md; T8 and T9 briefs |
+| 2026-11-19 | T8 round 1 rejected: six versions stopped in K1, each fixing one guessed control literal. This was a coordinator brief flaw: controls cannot be asserted against values never measured. Correction method: a static table check (no version), then a K1/K2 reference run asserting only accepted invariants and recorded with its hash, then candidates asserted against same-step references. T9 round 1 rejected: the display does not follow the AF-ON target (confirmed); the routine was misattributed; the change aborted on model E143. The correction traces from framebuffer writes back to the coordinates, adds an unseeded T6 control, and sets `OM_EMU_MODEL=E147`. | Opus | T8/T9 brief §5 |
 
 ## 12. Session resumption checklist (Opus)
 

@@ -1,0 +1,585 @@
+{
+  "task": "T8",
+  "sealed": "commands 01-16 complete; command 17 cmd.txt hashed; 17.out, 17.err, and 17.exit are written by the wrapper after this process exits",
+  "manifest": {
+    "path": "work/evidence-manifest.json",
+    "sha256": "814b092e09b755b993c7eb31b2a9100565b4fdddf520675f302029f2d6842754",
+    "bytes": 276767
+  },
+  "commands": [
+    {
+      "n": 1,
+      "requested": "python -I work/scripts/static_overlay_t8.py",
+      "status": 0,
+      "wrapper_sha256": "34e42c59c553a1e4213e2b223034bd31142c7000c6aef4aac2ac9d5e7f1fe0ef",
+      "scripts": [
+        {
+          "path": "work/scripts/static_overlay_t8.py",
+          "sha256": "1ae70905fef59312ef59950a146b36cdea5320d5dea0fd6eb609e2e1ac7e16be",
+          "bytes": 12088
+        }
+      ],
+      "files": {
+        "cmd": {
+          "path": "work/out/cmd/01.cmd.txt",
+          "sha256": "e848bf224c1621c5c88376856594a119a27725d716160589c32dcc18a314baab",
+          "bytes": 353
+        },
+        "out": {
+          "path": "work/out/cmd/01.out",
+          "sha256": "61eaa4fa3c7513d87003a571e8c9633125b0283ef8efc572a10821197f919fd4",
+          "bytes": 199
+        },
+        "err": {
+          "path": "work/out/cmd/01.err",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        "exit": {
+          "path": "work/out/cmd/01.exit",
+          "sha256": "569cf3a355264a0105ebcea2cf095e1f886668e0887e4051f6b190d10a219da8",
+          "bytes": 463
+        }
+      }
+    },
+    {
+      "n": 2,
+      "requested": "node26 --check work/scripts/accept_t8_v1.mjs",
+      "status": 0,
+      "wrapper_sha256": "34e42c59c553a1e4213e2b223034bd31142c7000c6aef4aac2ac9d5e7f1fe0ef",
+      "scripts": [
+        {
+          "path": "work/scripts/accept_t8_v1.mjs",
+          "sha256": "77d26e7e43827247cbe45e333cdeb611e8c567f6a870be1fc65138a347b1f9dc",
+          "bytes": 33552
+        }
+      ],
+      "files": {
+        "cmd": {
+          "path": "work/out/cmd/02.cmd.txt",
+          "sha256": "3da88ad118d353b82cb069b73adebbd09ca5a6f76a2e87380849c42bd192cb06",
+          "bytes": 403
+        },
+        "out": {
+          "path": "work/out/cmd/02.out",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        "err": {
+          "path": "work/out/cmd/02.err",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        "exit": {
+          "path": "work/out/cmd/02.exit",
+          "sha256": "39d4260693413a283123f2d3554c48ad74d2550c4a1d98402b63673f3804c2ac",
+          "bytes": 517
+        }
+      }
+    },
+    {
+      "n": 3,
+      "requested": "node26 work/scripts/build_table_t8_v1.mjs",
+      "status": 0,
+      "wrapper_sha256": "34e42c59c553a1e4213e2b223034bd31142c7000c6aef4aac2ac9d5e7f1fe0ef",
+      "scripts": [
+        {
+          "path": "work/scripts/build_table_t8_v1.mjs",
+          "sha256": "5507866f533f8ebcd5f65ae72747422ac849e16fec5d0c19b16d3523c24bdd64",
+          "bytes": 26268
+        }
+      ],
+      "files": {
+        "cmd": {
+          "path": "work/out/cmd/03.cmd.txt",
+          "sha256": "b0e2aa61e40d484930a13f324c58109875d08c4b05883855a5f198adfd17ac8e",
+          "bytes": 402
+        },
+        "out": {
+          "path": "work/out/cmd/03.out",
+          "sha256": "66f0e854b04bbc0cea5ba50115d98828c97933cb843fa02114f31514bf761bcc",
+          "bytes": 138
+        },
+        "err": {
+          "path": "work/out/cmd/03.err",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        "exit": {
+          "path": "work/out/cmd/03.exit",
+          "sha256": "d6beba176a9b7c66d27685b8b6aa0c8edfe4651a7761d2286e0002d283d52460",
+          "bytes": 519
+        }
+      }
+    },
+    {
+      "n": 4,
+      "requested": "node26 work/scripts/accept_t8_v1.mjs om-emu controls work/out/accept-table-t8-v1.json t8v1",
+      "status": 1,
+      "wrapper_sha256": "34e42c59c553a1e4213e2b223034bd31142c7000c6aef4aac2ac9d5e7f1fe0ef",
+      "scripts": [
+        {
+          "path": "work/scripts/accept_t8_v1.mjs",
+          "sha256": "77d26e7e43827247cbe45e333cdeb611e8c567f6a870be1fc65138a347b1f9dc",
+          "bytes": 33552
+        }
+      ],
+      "files": {
+        "cmd": {
+          "path": "work/out/cmd/04.cmd.txt",
+          "sha256": "4a11c1eb1192d579b10012649a986a307fc13f5e3f622570205b79a758ba536d",
+          "bytes": 495
+        },
+        "out": {
+          "path": "work/out/cmd/04.out",
+          "sha256": "15329704936bd8580c426464f5a788139ea5fd002216546ab5b20d24087f3614",
+          "bytes": 6103
+        },
+        "err": {
+          "path": "work/out/cmd/04.err",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        "exit": {
+          "path": "work/out/cmd/04.exit",
+          "sha256": "f30c21fe789b0907e2de8fb7cf33b8df7b493151238c0fef7d702b7b708898e1",
+          "bytes": 563
+        }
+      }
+    },
+    {
+      "n": 5,
+      "requested": "node26 work/scripts/build_table_t8_v2.mjs",
+      "status": 0,
+      "wrapper_sha256": "34e42c59c553a1e4213e2b223034bd31142c7000c6aef4aac2ac9d5e7f1fe0ef",
+      "scripts": [
+        {
+          "path": "work/scripts/build_table_t8_v2.mjs",
+          "sha256": "c3ba66cf8ff61ef268391f4f5d1fce32cb27bc69848a8a22d1ed0f10f4f586e7",
+          "bytes": 1148
+        }
+      ],
+      "files": {
+        "cmd": {
+          "path": "work/out/cmd/05.cmd.txt",
+          "sha256": "1b03ba482d81dba1aab57f7c2295d89e3f21a9d12093caa1a4c0c0fe8275bfc8",
+          "bytes": 401
+        },
+        "out": {
+          "path": "work/out/cmd/05.out",
+          "sha256": "c958904b90b8140835861f72cf09a57e18eca0db50d90f7fad2fb096734b8f8a",
+          "bytes": 141
+        },
+        "err": {
+          "path": "work/out/cmd/05.err",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        "exit": {
+          "path": "work/out/cmd/05.exit",
+          "sha256": "d199d4f0acce8b3b331a9985a0a2844e6ba23421572cbbe38b4f4ba89914b41d",
+          "bytes": 518
+        }
+      }
+    },
+    {
+      "n": 6,
+      "requested": "node26 work/scripts/accept_t8_v1.mjs om-emu controls work/out/accept-table-t8-v2.json t8v2",
+      "status": 1,
+      "wrapper_sha256": "34e42c59c553a1e4213e2b223034bd31142c7000c6aef4aac2ac9d5e7f1fe0ef",
+      "scripts": [
+        {
+          "path": "work/scripts/accept_t8_v1.mjs",
+          "sha256": "77d26e7e43827247cbe45e333cdeb611e8c567f6a870be1fc65138a347b1f9dc",
+          "bytes": 33552
+        }
+      ],
+      "files": {
+        "cmd": {
+          "path": "work/out/cmd/06.cmd.txt",
+          "sha256": "25b8873657172d773bed83de116f36b6ab92c1ab2c5af0f37d368b9233428b62",
+          "bytes": 495
+        },
+        "out": {
+          "path": "work/out/cmd/06.out",
+          "sha256": "14a9f15ddaa5635700c506c817ce6f3c9c83b494e1439098ea7defcdc80776bc",
+          "bytes": 6078
+        },
+        "err": {
+          "path": "work/out/cmd/06.err",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        "exit": {
+          "path": "work/out/cmd/06.exit",
+          "sha256": "f78fb1f131cb407b3f738359ded970282cda34db94d5d9874c9b4e0f4c6098ca",
+          "bytes": 563
+        }
+      }
+    },
+    {
+      "n": 7,
+      "requested": "node26 work/scripts/build_table_t8_v3.mjs",
+      "status": 0,
+      "wrapper_sha256": "34e42c59c553a1e4213e2b223034bd31142c7000c6aef4aac2ac9d5e7f1fe0ef",
+      "scripts": [
+        {
+          "path": "work/scripts/build_table_t8_v3.mjs",
+          "sha256": "42606cf43653a0c25bd9209c53348cf6f55551e202d85a345eea83d3bfe10d03",
+          "bytes": 1204
+        }
+      ],
+      "files": {
+        "cmd": {
+          "path": "work/out/cmd/07.cmd.txt",
+          "sha256": "27ab57e8886ae1e2897287b63d11fe43fa88b48751c801e28973e847f0dde019",
+          "bytes": 401
+        },
+        "out": {
+          "path": "work/out/cmd/07.out",
+          "sha256": "9323a6e6ffac8194c66d09a9c8117c9861e856fc5c6a2721617b59c01c632986",
+          "bytes": 136
+        },
+        "err": {
+          "path": "work/out/cmd/07.err",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        "exit": {
+          "path": "work/out/cmd/07.exit",
+          "sha256": "861a760ff68dd45fc862efde1e46a5e6502766146c1e6d1aae8ba22f1497e5e6",
+          "bytes": 518
+        }
+      }
+    },
+    {
+      "n": 8,
+      "requested": "node26 work/scripts/accept_t8_v1.mjs om-emu controls work/out/accept-table-t8-v3.json t8v3",
+      "status": 1,
+      "wrapper_sha256": "34e42c59c553a1e4213e2b223034bd31142c7000c6aef4aac2ac9d5e7f1fe0ef",
+      "scripts": [
+        {
+          "path": "work/scripts/accept_t8_v1.mjs",
+          "sha256": "77d26e7e43827247cbe45e333cdeb611e8c567f6a870be1fc65138a347b1f9dc",
+          "bytes": 33552
+        }
+      ],
+      "files": {
+        "cmd": {
+          "path": "work/out/cmd/08.cmd.txt",
+          "sha256": "13339b5cc27ca0a871096675856c65cd385694c442e15688dc0ad3dd8e401222",
+          "bytes": 495
+        },
+        "out": {
+          "path": "work/out/cmd/08.out",
+          "sha256": "e2761c5b435ef2bc7f3c34c6ba9e2cfd4aab25748e7edfb3b5452fc60468ab59",
+          "bytes": 6133
+        },
+        "err": {
+          "path": "work/out/cmd/08.err",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        "exit": {
+          "path": "work/out/cmd/08.exit",
+          "sha256": "b2e391e743d7143706b3ff0164a50c22e0c110887237fe9bf6aa0c9667a3d5f4",
+          "bytes": 563
+        }
+      }
+    },
+    {
+      "n": 9,
+      "requested": "node26 work/scripts/build_table_t8_v4.mjs",
+      "status": 0,
+      "wrapper_sha256": "34e42c59c553a1e4213e2b223034bd31142c7000c6aef4aac2ac9d5e7f1fe0ef",
+      "scripts": [
+        {
+          "path": "work/scripts/build_table_t8_v4.mjs",
+          "sha256": "780b9d6b7af7b22ebe75544c5795060349a5f0a51197698beed7356dde7b172b",
+          "bytes": 973
+        }
+      ],
+      "files": {
+        "cmd": {
+          "path": "work/out/cmd/09.cmd.txt",
+          "sha256": "f659c0bce44a0d4fe65872122ddd00c0abcb12df520138a05606d515cd0a00f2",
+          "bytes": 400
+        },
+        "out": {
+          "path": "work/out/cmd/09.out",
+          "sha256": "fc2806958dac4659324669218807189378332636f0223882d053139b63985a42",
+          "bytes": 60
+        },
+        "err": {
+          "path": "work/out/cmd/09.err",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        "exit": {
+          "path": "work/out/cmd/09.exit",
+          "sha256": "bf471810d5136937a634c3c5d63f623d8f0faaee85a5e3e467778c5f456b964d",
+          "bytes": 517
+        }
+      }
+    },
+    {
+      "n": 10,
+      "requested": "node26 work/scripts/accept_t8_v1.mjs om-emu controls work/out/accept-table-t8-v4.json t8v4",
+      "status": 1,
+      "wrapper_sha256": "34e42c59c553a1e4213e2b223034bd31142c7000c6aef4aac2ac9d5e7f1fe0ef",
+      "scripts": [
+        {
+          "path": "work/scripts/accept_t8_v1.mjs",
+          "sha256": "77d26e7e43827247cbe45e333cdeb611e8c567f6a870be1fc65138a347b1f9dc",
+          "bytes": 33552
+        }
+      ],
+      "files": {
+        "cmd": {
+          "path": "work/out/cmd/10.cmd.txt",
+          "sha256": "b8bc2e1c9d81ea557a5f7fc0a0b9aa7981e027468daef9d27364444a970f62ab",
+          "bytes": 495
+        },
+        "out": {
+          "path": "work/out/cmd/10.out",
+          "sha256": "551c9e2b1cc1d99dcaceef9b978f1bc3960e01bade2674a9910589aa40a2b42d",
+          "bytes": 6348
+        },
+        "err": {
+          "path": "work/out/cmd/10.err",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        "exit": {
+          "path": "work/out/cmd/10.exit",
+          "sha256": "16350093e42aa12b3b0cd4044f1469e8792b5682328658125891b41c263afe5d",
+          "bytes": 563
+        }
+      }
+    },
+    {
+      "n": 11,
+      "requested": "python -I work/scripts/extract_t8v4_dial.py",
+      "status": 0,
+      "wrapper_sha256": "34e42c59c553a1e4213e2b223034bd31142c7000c6aef4aac2ac9d5e7f1fe0ef",
+      "scripts": [
+        {
+          "path": "work/scripts/extract_t8v4_dial.py",
+          "sha256": "4839cada4cd9f1cfbf96044f96693db1a9991ed4118ba5495b98c45a0f488096",
+          "bytes": 617
+        }
+      ],
+      "files": {
+        "cmd": {
+          "path": "work/out/cmd/11.cmd.txt",
+          "sha256": "7ac0a8a2a592b6390c0cb88110b33a44686267b345982993bf2e19b11d77914d",
+          "bytes": 351
+        },
+        "out": {
+          "path": "work/out/cmd/11.out",
+          "sha256": "986cebbb54d289ccf70c2a8d50f48f562f3fd93bb503cd46ef3de0f8d15e274b",
+          "bytes": 1773
+        },
+        "err": {
+          "path": "work/out/cmd/11.err",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        "exit": {
+          "path": "work/out/cmd/11.exit",
+          "sha256": "0477cd8edf601c319b13b9401be54b3545d6d2169302767ec6f14b7357dfab53",
+          "bytes": 461
+        }
+      }
+    },
+    {
+      "n": 12,
+      "requested": "node26 work/scripts/build_table_t8_v5.mjs",
+      "status": 0,
+      "wrapper_sha256": "34e42c59c553a1e4213e2b223034bd31142c7000c6aef4aac2ac9d5e7f1fe0ef",
+      "scripts": [
+        {
+          "path": "work/scripts/build_table_t8_v5.mjs",
+          "sha256": "bc639b09e57f2466112d224c0630ec7f01ef5c31d6a402889683d53efc8982c3",
+          "bytes": 1367
+        }
+      ],
+      "files": {
+        "cmd": {
+          "path": "work/out/cmd/12.cmd.txt",
+          "sha256": "7bf8b1ee594e903754ca25d67fa2b2496ece364b70fd80397462e7040a1cb70f",
+          "bytes": 401
+        },
+        "out": {
+          "path": "work/out/cmd/12.out",
+          "sha256": "fe5ab5b5495b00b920d11f66a2e3b26ba79667c85b0fb0fd28e626c4726e6bb6",
+          "bytes": 119
+        },
+        "err": {
+          "path": "work/out/cmd/12.err",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        "exit": {
+          "path": "work/out/cmd/12.exit",
+          "sha256": "8cd038a369b6a29cdbf7790ca41b1b83ae4d5e1924ac6bd06e558875e28e507b",
+          "bytes": 518
+        }
+      }
+    },
+    {
+      "n": 13,
+      "requested": "node26 work/scripts/accept_t8_v1.mjs om-emu controls work/out/accept-table-t8-v5.json t8v5",
+      "status": 1,
+      "wrapper_sha256": "34e42c59c553a1e4213e2b223034bd31142c7000c6aef4aac2ac9d5e7f1fe0ef",
+      "scripts": [
+        {
+          "path": "work/scripts/accept_t8_v1.mjs",
+          "sha256": "77d26e7e43827247cbe45e333cdeb611e8c567f6a870be1fc65138a347b1f9dc",
+          "bytes": 33552
+        }
+      ],
+      "files": {
+        "cmd": {
+          "path": "work/out/cmd/13.cmd.txt",
+          "sha256": "a04b525f3726b80d4804c1c4fdc4f2b5713c0b58bb54d6ad948ec59769eea9ba",
+          "bytes": 495
+        },
+        "out": {
+          "path": "work/out/cmd/13.out",
+          "sha256": "1e35e1b28b3e742a67bdbc17d3acf4c227bf122c546171dbcabf877ff87657d0",
+          "bytes": 6113
+        },
+        "err": {
+          "path": "work/out/cmd/13.err",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        "exit": {
+          "path": "work/out/cmd/13.exit",
+          "sha256": "ff9f83c08d9cd479c94ce4131ef33edf250c5b443e317ec8dad2abf0f40c90de",
+          "bytes": 563
+        }
+      }
+    },
+    {
+      "n": 14,
+      "requested": "node26 work/scripts/build_table_t8_v6.mjs",
+      "status": 0,
+      "wrapper_sha256": "34e42c59c553a1e4213e2b223034bd31142c7000c6aef4aac2ac9d5e7f1fe0ef",
+      "scripts": [
+        {
+          "path": "work/scripts/build_table_t8_v6.mjs",
+          "sha256": "8a4be325c053726c8ecbcbfa89d891dd896f83b35151f38f1b47d4df144dce7b",
+          "bytes": 1315
+        }
+      ],
+      "files": {
+        "cmd": {
+          "path": "work/out/cmd/14.cmd.txt",
+          "sha256": "5cee0f586573566f502d724f7cad25635a74b4804c664cf25ed9292a17fc2fc8",
+          "bytes": 401
+        },
+        "out": {
+          "path": "work/out/cmd/14.out",
+          "sha256": "891f7c929d18027958317bf7f82f95cf341785535589ab52107b2b9e0505f9e5",
+          "bytes": 409
+        },
+        "err": {
+          "path": "work/out/cmd/14.err",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        "exit": {
+          "path": "work/out/cmd/14.exit",
+          "sha256": "60a30ce9e7203a4378935f19e6850c31e0939c308bba8cb60c8dcba784c8fd62",
+          "bytes": 518
+        }
+      }
+    },
+    {
+      "n": 15,
+      "requested": "node26 work/scripts/accept_t8_v1.mjs om-emu controls work/out/accept-table-t8-v6.json t8v6",
+      "status": 1,
+      "wrapper_sha256": "34e42c59c553a1e4213e2b223034bd31142c7000c6aef4aac2ac9d5e7f1fe0ef",
+      "scripts": [
+        {
+          "path": "work/scripts/accept_t8_v1.mjs",
+          "sha256": "77d26e7e43827247cbe45e333cdeb611e8c567f6a870be1fc65138a347b1f9dc",
+          "bytes": 33552
+        }
+      ],
+      "files": {
+        "cmd": {
+          "path": "work/out/cmd/15.cmd.txt",
+          "sha256": "5f89f7a7aa819b6167da7e7b6a5e8bc5efc17b4bf1cb34166f40d3ab15d6721e",
+          "bytes": 495
+        },
+        "out": {
+          "path": "work/out/cmd/15.out",
+          "sha256": "ea93a23af29099393006a4b264df335c4fce980dacbc7d268b4e12e3f4383a8e",
+          "bytes": 6079
+        },
+        "err": {
+          "path": "work/out/cmd/15.err",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        "exit": {
+          "path": "work/out/cmd/15.exit",
+          "sha256": "f3f4238b56840281997e4b70fa87362cc9ce90a650c2e0e89c145576b394ac81",
+          "bytes": 563
+        }
+      }
+    },
+    {
+      "n": 16,
+      "requested": "node26 work/scripts/manifest_t8.mjs",
+      "status": 0,
+      "wrapper_sha256": "34e42c59c553a1e4213e2b223034bd31142c7000c6aef4aac2ac9d5e7f1fe0ef",
+      "scripts": [
+        {
+          "path": "work/scripts/manifest_t8.mjs",
+          "sha256": "534b4f3be246285a00f5f404bfc0b977a3ef8d591328003df8e752eba3f4e01c",
+          "bytes": 3694
+        }
+      ],
+      "files": {
+        "cmd": {
+          "path": "work/out/cmd/16.cmd.txt",
+          "sha256": "4035a6fda6e7bf6410e9117d5ca8151e3e13a6b9a15dbe6416fe078a2416c004",
+          "bytes": 383
+        },
+        "out": {
+          "path": "work/out/cmd/16.out",
+          "sha256": "3e572d29072f687652f6b420d16b1ca0c90b3cbc31baaeb6186c72b43b542e6a",
+          "bytes": 40
+        },
+        "err": {
+          "path": "work/out/cmd/16.err",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        "exit": {
+          "path": "work/out/cmd/16.exit",
+          "sha256": "204ccc7163f0761361c7ee6f0a1b11aeeaafde4d165395d10ab322009a75d67a",
+          "bytes": 506
+        }
+      }
+    },
+    {
+      "n": 17,
+      "requested": "node26 work/scripts/seal_t8.mjs",
+      "status": null,
+      "wrapper_sha256": null,
+      "scripts": null,
+      "files": {
+        "cmd": {
+          "path": "work/out/cmd/17.cmd.txt",
+          "sha256": "9eecba4e5dc0283bd645a24e428a7ec9fa29fae15bbaf59b8e1709fbbae0b7f3",
+          "bytes": 371
+        }
+      }
+    }
+  ]
+}

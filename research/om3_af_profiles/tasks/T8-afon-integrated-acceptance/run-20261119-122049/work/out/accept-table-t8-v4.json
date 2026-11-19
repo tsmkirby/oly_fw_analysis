@@ -1,0 +1,6492 @@
+{
+  "task": "T8",
+  "table": "accept-table-t8-v4",
+  "poseSha256": "09cb38618024a749ba4b15ee3be4e5140257d6c5145347567887196a81665358",
+  "afTabHash": "93f763b60aa95a47d30a7476c6e3e1968443c3b0b372d22ff6cd066dbc0c9c11",
+  "editorKeys": [
+    {
+      "id": "e-enter",
+      "note": "AF-ON editor key. Session flag. K1 and K2 skip it."
+    },
+    {
+      "id": "e-up",
+      "note": "AF-ON editor key. Opens the direct screen. Factory defaults."
+    },
+    {
+      "id": "e-dial",
+      "note": "AF-ON editor key. One detent, Single to Small."
+    },
+    {
+      "id": "e-right",
+      "note": "AF-ON editor key. Moves the position."
+    },
+    {
+      "id": "e-ok",
+      "note": "AF-ON editor key. Exit with OK. Restores the zone byte and the position copies."
+    },
+    {
+      "id": "p-enter",
+      "note": "AF-ON editor key. Re-enter in EXIF 6."
+    },
+    {
+      "id": "p-up",
+      "note": "AF-ON editor key."
+    },
+    {
+      "id": "p-right",
+      "note": "AF-ON editor key. Bank 5 position changes. Bank 1 does not."
+    },
+    {
+      "id": "p-menu",
+      "note": "AF-ON editor key. Exit with MENU."
+    },
+    {
+      "id": "c-enter",
+      "note": "AF-ON editor key. Enter before the custom-size edit."
+    },
+    {
+      "id": "c-right",
+      "note": "AF-ON editor key. Opens the custom-size editor."
+    },
+    {
+      "id": "c-main-0",
+      "note": "AF-ON editor key. Custom size vertical."
+    },
+    {
+      "id": "c-main-1",
+      "note": "AF-ON editor key. Custom size vertical."
+    },
+    {
+      "id": "c-main-2",
+      "note": "AF-ON editor key. Custom size vertical."
+    },
+    {
+      "id": "c-main-3",
+      "note": "AF-ON editor key. Custom size vertical."
+    },
+    {
+      "id": "c-main-4",
+      "note": "AF-ON editor key. Custom size vertical."
+    },
+    {
+      "id": "c-sub-0",
+      "note": "AF-ON editor key. Custom size horizontal."
+    },
+    {
+      "id": "c-sub-1",
+      "note": "AF-ON editor key. Custom size horizontal."
+    },
+    {
+      "id": "c-sub-2",
+      "note": "AF-ON editor key. Custom size horizontal."
+    },
+    {
+      "id": "c-sub-3",
+      "note": "AF-ON editor key. Custom size horizontal."
+    },
+    {
+      "id": "c-sub-4",
+      "note": "AF-ON editor key. Custom size horizontal."
+    },
+    {
+      "id": "c-sub-5",
+      "note": "AF-ON editor key. Custom size horizontal."
+    },
+    {
+      "id": "c-sub-6",
+      "note": "AF-ON editor key. Custom size horizontal."
+    },
+    {
+      "id": "c-ok",
+      "note": "AF-ON editor key. Commits C1 [5,7] and exits."
+    },
+    {
+      "id": "c-enter2",
+      "note": "AF-ON editor key. Re-enter so the exit can be S1."
+    },
+    {
+      "id": "c-s1",
+      "note": "AF-ON editor key. Exit with S1."
+    },
+    {
+      "id": "c-s1-up",
+      "note": "AF-ON editor key. Release the S1 exit."
+    },
+    {
+      "id": "size-write",
+      "note": "AF-ON editor path cannot set 0x9a41[0]. Labelled test-setup write of 4."
+    },
+    {
+      "id": "reopen-enter",
+      "note": "AF-ON editor key. Next entry initialises the FF mirror."
+    }
+  ],
+  "presets": {
+    "mirrorFF": [
+      255,
+      255,
+      255,
+      255,
+      255,
+      255,
+      255,
+      255,
+      255,
+      255,
+      255,
+      255,
+      255,
+      255,
+      255,
+      255,
+      255,
+      255,
+      255,
+      255,
+      255,
+      255,
+      255,
+      255,
+      255,
+      255,
+      255,
+      255,
+      255,
+      255,
+      255,
+      255,
+      255,
+      255,
+      255,
+      255,
+      255,
+      255,
+      255,
+      255,
+      255,
+      255,
+      255,
+      255,
+      255,
+      255,
+      255,
+      255,
+      255,
+      255,
+      255,
+      255,
+      255,
+      255,
+      255
+    ],
+    "mirrorZero": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "mirrorOpen": [
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      14,
+      2,
+      226,
+      3,
+      14,
+      2,
+      14,
+      2,
+      14,
+      2,
+      14,
+      2,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      226,
+      3,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "mirrorSmallBeforeMove": [
+      0,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      14,
+      2,
+      226,
+      3,
+      14,
+      2,
+      14,
+      2,
+      14,
+      2,
+      14,
+      2,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      226,
+      3,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "mirrorSmall": [
+      0,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      14,
+      2,
+      229,
+      3,
+      14,
+      2,
+      14,
+      2,
+      14,
+      2,
+      14,
+      2,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      229,
+      3,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "mirrorExif6": [
+      0,
+      2,
+      0,
+      0,
+      0,
+      2,
+      0,
+      0,
+      0,
+      0,
+      14,
+      2,
+      229,
+      3,
+      14,
+      2,
+      14,
+      2,
+      14,
+      2,
+      229,
+      3,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      229,
+      3,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "mirrorC1": [
+      0,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      14,
+      2,
+      229,
+      3,
+      14,
+      2,
+      14,
+      2,
+      14,
+      2,
+      14,
+      2,
+      1,
+      1,
+      5,
+      7,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      229,
+      3,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "mirrorSize": [
+      0,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      4,
+      0,
+      14,
+      2,
+      229,
+      3,
+      14,
+      2,
+      14,
+      2,
+      14,
+      2,
+      14,
+      2,
+      1,
+      1,
+      5,
+      7,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      229,
+      3,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "halfBoot": {
+      "k99a1": [
+        2,
+        0,
+        2,
+        0,
+        2,
+        0,
+        5,
+        5
+      ],
+      "k9a41": [
+        0,
+        1
+      ],
+      "k5962": [
+        526,
+        526,
+        526,
+        526,
+        526,
+        526
+      ],
+      "k1dd1": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "k84d1": [
+        3
+      ],
+      "k88b2": [
+        526
+      ],
+      "k90d1": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        5,
+        5
+      ],
+      "k5a11": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "k1de1": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "k1df1": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "k1db1": [
+        1
+      ],
+      "k1dc1": [
+        1
+      ]
+    },
+    "halfSingle": {
+      "k99a1": [
+        2,
+        1,
+        2,
+        0,
+        2,
+        0,
+        5,
+        5
+      ],
+      "k9a41": [
+        0,
+        1
+      ],
+      "k5962": [
+        526,
+        526,
+        526,
+        526,
+        526,
+        526
+      ],
+      "k1dd1": [
+        1,
+        1,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "k84d1": [
+        0
+      ],
+      "k88b2": [
+        526
+      ],
+      "k90d1": [
+        2,
+        1,
+        2,
+        2,
+        2,
+        2,
+        5,
+        5
+      ],
+      "k5a11": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "k1de1": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "k1df1": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "k1db1": [
+        1
+      ],
+      "k1dc1": [
+        1
+      ]
+    },
+    "halfSmall": {
+      "k99a1": [
+        2,
+        2,
+        2,
+        0,
+        2,
+        0,
+        5,
+        5
+      ],
+      "k9a41": [
+        0,
+        1
+      ],
+      "k5962": [
+        526,
+        526,
+        526,
+        526,
+        526,
+        526
+      ],
+      "k1dd1": [
+        1,
+        1,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "k84d1": [
+        0
+      ],
+      "k88b2": [
+        526
+      ],
+      "k90d1": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        5,
+        5
+      ],
+      "k5a11": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "k1de1": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "k1df1": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "k1db1": [
+        1
+      ],
+      "k1dc1": [
+        1
+      ]
+    },
+    "sizeRecordBoot": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "halfUp": {
+      "k99a1": [
+        2,
+        0,
+        2,
+        0,
+        2,
+        0,
+        5,
+        5
+      ],
+      "k9a41": [
+        0,
+        1
+      ],
+      "k5962": [
+        409,
+        526,
+        526,
+        526,
+        526,
+        526
+      ],
+      "k1dd1": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "k84d1": [
+        3
+      ],
+      "k88b2": [
+        409
+      ],
+      "k90d1": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        5,
+        5
+      ],
+      "k5a11": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "k1de1": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "k1df1": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "k1db1": [
+        1
+      ],
+      "k1dc1": [
+        1
+      ]
+    },
+    "halfUp2": {
+      "k99a1": [
+        2,
+        0,
+        2,
+        0,
+        2,
+        0,
+        5,
+        5
+      ],
+      "k9a41": [
+        0,
+        1
+      ],
+      "k5962": [
+        292,
+        526,
+        526,
+        526,
+        526,
+        526
+      ],
+      "k1dd1": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "k84d1": [
+        3
+      ],
+      "k88b2": [
+        292
+      ],
+      "k90d1": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        5,
+        5
+      ],
+      "k5a11": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "k1de1": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "k1df1": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "k1db1": [
+        1
+      ],
+      "k1dc1": [
+        1
+      ]
+    }
+  },
+  "stockTarget": [
+    14,
+    2,
+    2,
+    0,
+    27,
+    0,
+    39,
+    0,
+    0,
+    0
+  ],
+  "steps": [
+    {
+      "id": "setup",
+      "action": "setup",
+      "who": [
+        "k1",
+        "k2",
+        "c1",
+        "c2"
+      ],
+      "editor": false,
+      "phase": "main",
+      "key": null,
+      "expect": {
+        "screen": "shooting",
+        "highlight": null,
+        "mirror": {
+          "preset": "mirrorFF"
+        },
+        "zone": {
+          "k1": 255,
+          "overlay": 0
+        },
+        "flag": 255,
+        "half": {
+          "preset": "halfBoot"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 255,
+        "title": "166805347ccaf26ddad5750dbfd0a2b169855ffa38b4dbcdfa0717ddd42a3059"
+      }
+    },
+    {
+      "id": "zone-up",
+      "action": "key",
+      "who": [
+        "k1",
+        "k2",
+        "c1",
+        "c2"
+      ],
+      "editor": false,
+      "phase": "main",
+      "key": "up",
+      "expect": {
+        "screen": "direct",
+        "highlight": null,
+        "mirror": {
+          "preset": "mirrorFF"
+        },
+        "zone": {
+          "k1": 255,
+          "overlay": 0
+        },
+        "flag": 255,
+        "half": {
+          "preset": "halfUp"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 255,
+        "title": "9d6a92dc9914061304a8f94e2515a22b5fd6ba2846405649f740cc62282aea02"
+      }
+    },
+    {
+      "id": "zone-ok",
+      "action": "key",
+      "who": [
+        "k1",
+        "k2",
+        "c1",
+        "c2"
+      ],
+      "editor": false,
+      "phase": "main",
+      "key": "ok",
+      "expect": {
+        "screen": "shooting",
+        "highlight": null,
+        "mirror": {
+          "preset": "mirrorFF"
+        },
+        "zone": {
+          "k1": 255,
+          "overlay": 0
+        },
+        "flag": 255,
+        "half": {
+          "preset": "halfUp"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 255,
+        "title": "19a0f247d22625e54bb1ea773998e8886a8591151390eb27af9b5d4ac6e3ea69"
+      }
+    },
+    {
+      "id": "e-enter",
+      "action": "enter",
+      "who": [
+        "c1",
+        "c2"
+      ],
+      "editor": true,
+      "phase": "main",
+      "key": null,
+      "note": "AF-ON editor key. Session flag. K1 and K2 skip it.",
+      "expect": {
+        "screen": "shooting",
+        "highlight": null,
+        "mirror": {
+          "preset": "mirrorZero"
+        },
+        "zone": 0,
+        "flag": 1,
+        "half": {
+          "preset": "halfUp"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 255,
+        "title": "19a0f247d22625e54bb1ea773998e8886a8591151390eb27af9b5d4ac6e3ea69"
+      }
+    },
+    {
+      "id": "e-up",
+      "action": "key",
+      "who": [
+        "c1",
+        "c2"
+      ],
+      "editor": true,
+      "phase": "main",
+      "key": "up",
+      "note": "AF-ON editor key. Opens the direct screen. Factory defaults.",
+      "expect": {
+        "screen": "direct",
+        "highlight": null,
+        "mirror": {
+          "preset": "mirrorOpen"
+        },
+        "zone": 1,
+        "flag": 1,
+        "half": {
+          "preset": "halfUp"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 255,
+        "title": "42a83c79ead5126577e529b063c94c43e6d6d7a3177476b1be78a8c12c09b1a7"
+      }
+    },
+    {
+      "id": "e-dial",
+      "action": "dial",
+      "who": [
+        "c1",
+        "c2"
+      ],
+      "editor": true,
+      "phase": "main",
+      "dial": "main",
+      "note": "AF-ON editor key. One detent, Single to Small.",
+      "expect": {
+        "screen": "direct",
+        "highlight": null,
+        "mirror": {
+          "preset": "mirrorSmallBeforeMove"
+        },
+        "zone": 2,
+        "flag": 1,
+        "half": {
+          "preset": "halfUp"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 255,
+        "title": "unresolved-small-direct-title-band"
+      }
+    },
+    {
+      "id": "e-right",
+      "action": "key",
+      "who": [
+        "c1",
+        "c2"
+      ],
+      "editor": true,
+      "phase": "main",
+      "key": "right",
+      "note": "AF-ON editor key. Moves the position.",
+      "expect": {
+        "screen": "direct",
+        "highlight": null,
+        "mirror": {
+          "preset": "mirrorSmall"
+        },
+        "zone": 2,
+        "flag": 1,
+        "half": {
+          "preset": "halfUp"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 255,
+        "title": "unresolved-small-direct-title-band"
+      }
+    },
+    {
+      "id": "e-ok",
+      "action": "key",
+      "who": [
+        "c1",
+        "c2"
+      ],
+      "editor": true,
+      "phase": "main",
+      "key": "ok",
+      "note": "AF-ON editor key. Exit with OK. Restores the zone byte and the position copies.",
+      "expect": {
+        "screen": "shooting",
+        "highlight": null,
+        "mirror": {
+          "preset": "mirrorSmall"
+        },
+        "zone": 0,
+        "flag": 0,
+        "half": {
+          "preset": "halfUp"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 255,
+        "title": "19a0f247d22625e54bb1ea773998e8886a8591151390eb27af9b5d4ac6e3ea69"
+      }
+    },
+    {
+      "id": "n-up",
+      "action": "key",
+      "who": [
+        "k1",
+        "k2",
+        "c1",
+        "c2"
+      ],
+      "editor": false,
+      "phase": "main",
+      "key": "up",
+      "expect": {
+        "screen": "direct",
+        "highlight": null,
+        "mirror": {
+          "k1": {
+            "preset": "mirrorFF"
+          },
+          "k2": {
+            "preset": "mirrorFF"
+          },
+          "c1": {
+            "preset": "mirrorSmall"
+          },
+          "c2": {
+            "preset": "mirrorSmall"
+          }
+        },
+        "zone": {
+          "k1": 255,
+          "overlay": 0
+        },
+        "flag": {
+          "k1": 255,
+          "k2": 255,
+          "c1": 0,
+          "c2": 0
+        },
+        "half": {
+          "preset": "halfUp2"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 255,
+        "title": "9d6a92dc9914061304a8f94e2515a22b5fd6ba2846405649f740cc62282aea02"
+      }
+    },
+    {
+      "id": "n-dial",
+      "action": "dial",
+      "who": [
+        "k1",
+        "k2",
+        "c1",
+        "c2"
+      ],
+      "editor": false,
+      "phase": "main",
+      "dial": "main",
+      "note": "Normal edit. One move. Half-press position stays 526.",
+      "expect": {
+        "screen": "direct",
+        "highlight": null,
+        "mirror": {
+          "k1": {
+            "preset": "mirrorFF"
+          },
+          "k2": {
+            "preset": "mirrorFF"
+          },
+          "c1": {
+            "preset": "mirrorSmall"
+          },
+          "c2": {
+            "preset": "mirrorSmall"
+          }
+        },
+        "zone": {
+          "k1": 255,
+          "overlay": 0
+        },
+        "flag": {
+          "k1": 255,
+          "k2": 255,
+          "c1": 0,
+          "c2": 0
+        },
+        "half": {
+          "preset": "halfSingle"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 255,
+        "title": "42a83c79ead5126577e529b063c94c43e6d6d7a3177476b1be78a8c12c09b1a7"
+      }
+    },
+    {
+      "id": "n-ok",
+      "action": "key",
+      "who": [
+        "k1",
+        "k2",
+        "c1",
+        "c2"
+      ],
+      "editor": false,
+      "phase": "main",
+      "key": "ok",
+      "expect": {
+        "screen": "shooting",
+        "highlight": null,
+        "mirror": {
+          "k1": {
+            "preset": "mirrorFF"
+          },
+          "k2": {
+            "preset": "mirrorFF"
+          },
+          "c1": {
+            "preset": "mirrorSmall"
+          },
+          "c2": {
+            "preset": "mirrorSmall"
+          }
+        },
+        "zone": {
+          "k1": 255,
+          "overlay": 0
+        },
+        "flag": {
+          "k1": 255,
+          "k2": 255,
+          "c1": 0,
+          "c2": 0
+        },
+        "half": {
+          "preset": "halfSingle"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 255,
+        "title": "19a0f247d22625e54bb1ea773998e8886a8591151390eb27af9b5d4ac6e3ea69"
+      }
+    },
+    {
+      "id": "edge-0",
+      "action": "edge",
+      "who": [
+        "k1",
+        "k2",
+        "c1",
+        "c2"
+      ],
+      "editor": false,
+      "phase": "main",
+      "key": "s1",
+      "dir": "down",
+      "expect": {
+        "screen": "shooting",
+        "highlight": null,
+        "mirror": {
+          "k1": {
+            "preset": "mirrorFF"
+          },
+          "k2": {
+            "preset": "mirrorFF"
+          },
+          "c1": {
+            "preset": "mirrorSmall"
+          },
+          "c2": {
+            "preset": "mirrorSmall"
+          }
+        },
+        "zone": {
+          "k1": 255,
+          "overlay": 0
+        },
+        "flag": {
+          "k1": 255,
+          "k2": 255,
+          "c1": 0,
+          "c2": 0
+        },
+        "half": {
+          "preset": "halfSingle"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "19a0f247d22625e54bb1ea773998e8886a8591151390eb27af9b5d4ac6e3ea69",
+        "target": [
+          14,
+          2,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "owner": 1,
+        "enabled": 1
+      }
+    },
+    {
+      "id": "edge-1",
+      "action": "edge",
+      "who": [
+        "k1",
+        "k2",
+        "c1",
+        "c2"
+      ],
+      "editor": false,
+      "phase": "main",
+      "key": "s1",
+      "dir": "up",
+      "expect": {
+        "screen": "shooting",
+        "highlight": null,
+        "mirror": {
+          "k1": {
+            "preset": "mirrorFF"
+          },
+          "k2": {
+            "preset": "mirrorFF"
+          },
+          "c1": {
+            "preset": "mirrorSmall"
+          },
+          "c2": {
+            "preset": "mirrorSmall"
+          }
+        },
+        "zone": {
+          "k1": 255,
+          "overlay": 0
+        },
+        "flag": {
+          "k1": 255,
+          "k2": 255,
+          "c1": 0,
+          "c2": 0
+        },
+        "half": {
+          "preset": "halfSingle"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "19a0f247d22625e54bb1ea773998e8886a8591151390eb27af9b5d4ac6e3ea69",
+        "target": [
+          14,
+          2,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "owner": 0,
+        "enabled": 1
+      }
+    },
+    {
+      "id": "edge-2",
+      "action": "edge",
+      "who": [
+        "k1",
+        "k2",
+        "c1",
+        "c2"
+      ],
+      "editor": false,
+      "phase": "main",
+      "key": "afon",
+      "dir": "down",
+      "expect": {
+        "screen": "shooting",
+        "highlight": null,
+        "mirror": {
+          "k1": {
+            "preset": "mirrorFF"
+          },
+          "k2": {
+            "preset": "mirrorFF"
+          },
+          "c1": {
+            "preset": "mirrorSmall"
+          },
+          "c2": {
+            "preset": "mirrorSmall"
+          }
+        },
+        "zone": {
+          "k1": 255,
+          "overlay": 0
+        },
+        "flag": {
+          "k1": 255,
+          "k2": 255,
+          "c1": 0,
+          "c2": 0
+        },
+        "half": {
+          "preset": "halfSingle"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "19a0f247d22625e54bb1ea773998e8886a8591151390eb27af9b5d4ac6e3ea69",
+        "target": {
+          "k1": [
+            14,
+            2,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "k2": [
+            14,
+            2,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "c1": [
+            229,
+            3,
+            3,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "c2": [
+            229,
+            3,
+            3,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        "owner": 2,
+        "enabled": 1
+      }
+    },
+    {
+      "id": "edge-3",
+      "action": "edge",
+      "who": [
+        "k1",
+        "k2",
+        "c1",
+        "c2"
+      ],
+      "editor": false,
+      "phase": "main",
+      "key": "afon",
+      "dir": "up",
+      "expect": {
+        "screen": "shooting",
+        "highlight": null,
+        "mirror": {
+          "k1": {
+            "preset": "mirrorFF"
+          },
+          "k2": {
+            "preset": "mirrorFF"
+          },
+          "c1": {
+            "preset": "mirrorSmall"
+          },
+          "c2": {
+            "preset": "mirrorSmall"
+          }
+        },
+        "zone": {
+          "k1": 255,
+          "overlay": 0
+        },
+        "flag": {
+          "k1": 255,
+          "k2": 255,
+          "c1": 0,
+          "c2": 0
+        },
+        "half": {
+          "preset": "halfSingle"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "19a0f247d22625e54bb1ea773998e8886a8591151390eb27af9b5d4ac6e3ea69",
+        "target": [
+          14,
+          2,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "owner": 0,
+        "enabled": 1
+      }
+    },
+    {
+      "id": "edge-4",
+      "action": "edge",
+      "who": [
+        "k1",
+        "k2",
+        "c1",
+        "c2"
+      ],
+      "editor": false,
+      "phase": "main",
+      "key": "s1",
+      "dir": "down",
+      "expect": {
+        "screen": "shooting",
+        "highlight": null,
+        "mirror": {
+          "k1": {
+            "preset": "mirrorFF"
+          },
+          "k2": {
+            "preset": "mirrorFF"
+          },
+          "c1": {
+            "preset": "mirrorSmall"
+          },
+          "c2": {
+            "preset": "mirrorSmall"
+          }
+        },
+        "zone": {
+          "k1": 255,
+          "overlay": 0
+        },
+        "flag": {
+          "k1": 255,
+          "k2": 255,
+          "c1": 0,
+          "c2": 0
+        },
+        "half": {
+          "preset": "halfSingle"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "19a0f247d22625e54bb1ea773998e8886a8591151390eb27af9b5d4ac6e3ea69",
+        "target": [
+          14,
+          2,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "owner": 1,
+        "enabled": 1
+      }
+    },
+    {
+      "id": "edge-5",
+      "action": "edge",
+      "who": [
+        "k1",
+        "k2",
+        "c1",
+        "c2"
+      ],
+      "editor": false,
+      "phase": "main",
+      "key": "afon",
+      "dir": "down",
+      "expect": {
+        "screen": "shooting",
+        "highlight": null,
+        "mirror": {
+          "k1": {
+            "preset": "mirrorFF"
+          },
+          "k2": {
+            "preset": "mirrorFF"
+          },
+          "c1": {
+            "preset": "mirrorSmall"
+          },
+          "c2": {
+            "preset": "mirrorSmall"
+          }
+        },
+        "zone": {
+          "k1": 255,
+          "overlay": 0
+        },
+        "flag": {
+          "k1": 255,
+          "k2": 255,
+          "c1": 0,
+          "c2": 0
+        },
+        "half": {
+          "preset": "halfSingle"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "19a0f247d22625e54bb1ea773998e8886a8591151390eb27af9b5d4ac6e3ea69",
+        "target": {
+          "k1": [
+            14,
+            2,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "k2": [
+            14,
+            2,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "c1": [
+            229,
+            3,
+            3,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "c2": [
+            229,
+            3,
+            3,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        "owner": 2,
+        "enabled": 1
+      }
+    },
+    {
+      "id": "edge-6",
+      "action": "edge",
+      "who": [
+        "k1",
+        "k2",
+        "c1",
+        "c2"
+      ],
+      "editor": false,
+      "phase": "main",
+      "key": "afon",
+      "dir": "up",
+      "expect": {
+        "screen": "shooting",
+        "highlight": null,
+        "mirror": {
+          "k1": {
+            "preset": "mirrorFF"
+          },
+          "k2": {
+            "preset": "mirrorFF"
+          },
+          "c1": {
+            "preset": "mirrorSmall"
+          },
+          "c2": {
+            "preset": "mirrorSmall"
+          }
+        },
+        "zone": {
+          "k1": 255,
+          "overlay": 0
+        },
+        "flag": {
+          "k1": 255,
+          "k2": 255,
+          "c1": 0,
+          "c2": 0
+        },
+        "half": {
+          "preset": "halfSingle"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "19a0f247d22625e54bb1ea773998e8886a8591151390eb27af9b5d4ac6e3ea69",
+        "target": [
+          14,
+          2,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "owner": 1,
+        "enabled": 1
+      }
+    },
+    {
+      "id": "edge-7",
+      "action": "edge",
+      "who": [
+        "k1",
+        "k2",
+        "c1",
+        "c2"
+      ],
+      "editor": false,
+      "phase": "main",
+      "key": "s1",
+      "dir": "up",
+      "expect": {
+        "screen": "shooting",
+        "highlight": null,
+        "mirror": {
+          "k1": {
+            "preset": "mirrorFF"
+          },
+          "k2": {
+            "preset": "mirrorFF"
+          },
+          "c1": {
+            "preset": "mirrorSmall"
+          },
+          "c2": {
+            "preset": "mirrorSmall"
+          }
+        },
+        "zone": {
+          "k1": 255,
+          "overlay": 0
+        },
+        "flag": {
+          "k1": 255,
+          "k2": 255,
+          "c1": 0,
+          "c2": 0
+        },
+        "half": {
+          "preset": "halfSingle"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "19a0f247d22625e54bb1ea773998e8886a8591151390eb27af9b5d4ac6e3ea69",
+        "target": [
+          14,
+          2,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "owner": 0,
+        "enabled": 1
+      }
+    },
+    {
+      "id": "edge-8",
+      "action": "edge",
+      "who": [
+        "k1",
+        "k2",
+        "c1",
+        "c2"
+      ],
+      "editor": false,
+      "phase": "main",
+      "key": "afon",
+      "dir": "down",
+      "expect": {
+        "screen": "shooting",
+        "highlight": null,
+        "mirror": {
+          "k1": {
+            "preset": "mirrorFF"
+          },
+          "k2": {
+            "preset": "mirrorFF"
+          },
+          "c1": {
+            "preset": "mirrorSmall"
+          },
+          "c2": {
+            "preset": "mirrorSmall"
+          }
+        },
+        "zone": {
+          "k1": 255,
+          "overlay": 0
+        },
+        "flag": {
+          "k1": 255,
+          "k2": 255,
+          "c1": 0,
+          "c2": 0
+        },
+        "half": {
+          "preset": "halfSingle"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "19a0f247d22625e54bb1ea773998e8886a8591151390eb27af9b5d4ac6e3ea69",
+        "target": {
+          "k1": [
+            14,
+            2,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "k2": [
+            14,
+            2,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "c1": [
+            229,
+            3,
+            3,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "c2": [
+            229,
+            3,
+            3,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        "owner": 2,
+        "enabled": 1
+      }
+    },
+    {
+      "id": "edge-9",
+      "action": "edge",
+      "who": [
+        "k1",
+        "k2",
+        "c1",
+        "c2"
+      ],
+      "editor": false,
+      "phase": "main",
+      "key": "s1",
+      "dir": "down",
+      "expect": {
+        "screen": "shooting",
+        "highlight": null,
+        "mirror": {
+          "k1": {
+            "preset": "mirrorFF"
+          },
+          "k2": {
+            "preset": "mirrorFF"
+          },
+          "c1": {
+            "preset": "mirrorSmall"
+          },
+          "c2": {
+            "preset": "mirrorSmall"
+          }
+        },
+        "zone": {
+          "k1": 255,
+          "overlay": 0
+        },
+        "flag": {
+          "k1": 255,
+          "k2": 255,
+          "c1": 0,
+          "c2": 0
+        },
+        "half": {
+          "preset": "halfSingle"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "19a0f247d22625e54bb1ea773998e8886a8591151390eb27af9b5d4ac6e3ea69",
+        "target": {
+          "k1": [
+            14,
+            2,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "k2": [
+            14,
+            2,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "c1": [
+            229,
+            3,
+            3,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "c2": [
+            229,
+            3,
+            3,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        "owner": 2,
+        "enabled": 1
+      }
+    },
+    {
+      "id": "edge-10",
+      "action": "edge",
+      "who": [
+        "k1",
+        "k2",
+        "c1",
+        "c2"
+      ],
+      "editor": false,
+      "phase": "main",
+      "key": "s1",
+      "dir": "up",
+      "expect": {
+        "screen": "shooting",
+        "highlight": null,
+        "mirror": {
+          "k1": {
+            "preset": "mirrorFF"
+          },
+          "k2": {
+            "preset": "mirrorFF"
+          },
+          "c1": {
+            "preset": "mirrorSmall"
+          },
+          "c2": {
+            "preset": "mirrorSmall"
+          }
+        },
+        "zone": {
+          "k1": 255,
+          "overlay": 0
+        },
+        "flag": {
+          "k1": 255,
+          "k2": 255,
+          "c1": 0,
+          "c2": 0
+        },
+        "half": {
+          "preset": "halfSingle"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "19a0f247d22625e54bb1ea773998e8886a8591151390eb27af9b5d4ac6e3ea69",
+        "target": {
+          "k1": [
+            14,
+            2,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "k2": [
+            14,
+            2,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "c1": [
+            229,
+            3,
+            3,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "c2": [
+            229,
+            3,
+            3,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        "owner": 2,
+        "enabled": 1
+      }
+    },
+    {
+      "id": "edge-11",
+      "action": "edge",
+      "who": [
+        "k1",
+        "k2",
+        "c1",
+        "c2"
+      ],
+      "editor": false,
+      "phase": "main",
+      "key": "afon",
+      "dir": "up",
+      "expect": {
+        "screen": "shooting",
+        "highlight": null,
+        "mirror": {
+          "k1": {
+            "preset": "mirrorFF"
+          },
+          "k2": {
+            "preset": "mirrorFF"
+          },
+          "c1": {
+            "preset": "mirrorSmall"
+          },
+          "c2": {
+            "preset": "mirrorSmall"
+          }
+        },
+        "zone": {
+          "k1": 255,
+          "overlay": 0
+        },
+        "flag": {
+          "k1": 255,
+          "k2": 255,
+          "c1": 0,
+          "c2": 0
+        },
+        "half": {
+          "preset": "halfSingle"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "19a0f247d22625e54bb1ea773998e8886a8591151390eb27af9b5d4ac6e3ea69",
+        "target": [
+          14,
+          2,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "owner": 0,
+        "enabled": 1
+      }
+    },
+    {
+      "id": "pose-exif6",
+      "action": "pose",
+      "who": [
+        "k1",
+        "k2",
+        "c1",
+        "c2"
+      ],
+      "editor": false,
+      "phase": "main",
+      "key": "exif6",
+      "expect": {
+        "screen": "shooting",
+        "highlight": null,
+        "mirror": {
+          "k1": {
+            "preset": "mirrorFF"
+          },
+          "k2": {
+            "preset": "mirrorFF"
+          },
+          "c1": {
+            "preset": "mirrorSmall"
+          },
+          "c2": {
+            "preset": "mirrorSmall"
+          }
+        },
+        "zone": {
+          "k1": 255,
+          "overlay": 0
+        },
+        "flag": {
+          "k1": 255,
+          "k2": 255,
+          "c1": 0,
+          "c2": 0
+        },
+        "half": {
+          "preset": "halfSingle"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "19a0f247d22625e54bb1ea773998e8886a8591151390eb27af9b5d4ac6e3ea69",
+        "poseIndex": 2,
+        "poseExif": 6,
+        "poseWord": 2
+      }
+    },
+    {
+      "id": "p-enter",
+      "action": "enter",
+      "who": [
+        "c1",
+        "c2"
+      ],
+      "editor": true,
+      "phase": "main",
+      "key": null,
+      "note": "AF-ON editor key. Re-enter in EXIF 6.",
+      "expect": {
+        "screen": "shooting",
+        "highlight": null,
+        "mirror": {
+          "preset": "mirrorSmall"
+        },
+        "zone": 0,
+        "flag": 1,
+        "half": {
+          "preset": "halfSingle"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "19a0f247d22625e54bb1ea773998e8886a8591151390eb27af9b5d4ac6e3ea69"
+      }
+    },
+    {
+      "id": "p-up",
+      "action": "key",
+      "who": [
+        "c1",
+        "c2"
+      ],
+      "editor": true,
+      "phase": "main",
+      "key": "up",
+      "note": "AF-ON editor key.",
+      "expect": {
+        "screen": "direct",
+        "highlight": null,
+        "mirror": {
+          "preset": "mirrorSmall"
+        },
+        "zone": 2,
+        "flag": 1,
+        "half": {
+          "preset": "halfSingle"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "unresolved-small-direct-title-band"
+      }
+    },
+    {
+      "id": "p-right",
+      "action": "key",
+      "who": [
+        "c1",
+        "c2"
+      ],
+      "editor": true,
+      "phase": "main",
+      "key": "right",
+      "note": "AF-ON editor key. Bank 5 position changes. Bank 1 does not.",
+      "expect": {
+        "screen": "direct",
+        "highlight": null,
+        "mirror": {
+          "preset": "mirrorExif6"
+        },
+        "zone": 2,
+        "flag": 1,
+        "half": {
+          "preset": "halfSingle"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "unresolved-small-direct-title-band"
+      }
+    },
+    {
+      "id": "p-menu",
+      "action": "key",
+      "who": [
+        "c1",
+        "c2"
+      ],
+      "editor": true,
+      "phase": "main",
+      "key": "menu",
+      "note": "AF-ON editor key. Exit with MENU.",
+      "expect": {
+        "screen": "shooting",
+        "highlight": null,
+        "mirror": {
+          "preset": "mirrorExif6"
+        },
+        "zone": 0,
+        "flag": 0,
+        "half": {
+          "preset": "halfSingle"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "19a0f247d22625e54bb1ea773998e8886a8591151390eb27af9b5d4ac6e3ea69"
+      }
+    },
+    {
+      "id": "exif6-afon-down",
+      "action": "edge",
+      "who": [
+        "k1",
+        "k2",
+        "c1",
+        "c2"
+      ],
+      "editor": false,
+      "phase": "main",
+      "key": "afon",
+      "dir": "down",
+      "expect": {
+        "screen": "shooting",
+        "highlight": null,
+        "mirror": {
+          "k1": {
+            "preset": "mirrorFF"
+          },
+          "k2": {
+            "preset": "mirrorFF"
+          },
+          "c1": {
+            "preset": "mirrorExif6"
+          },
+          "c2": {
+            "preset": "mirrorExif6"
+          }
+        },
+        "zone": {
+          "k1": 255,
+          "overlay": 0
+        },
+        "flag": {
+          "k1": 255,
+          "k2": 255,
+          "c1": 0,
+          "c2": 0
+        },
+        "half": {
+          "preset": "halfSingle"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "19a0f247d22625e54bb1ea773998e8886a8591151390eb27af9b5d4ac6e3ea69",
+        "target": {
+          "k1": [
+            14,
+            2,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "k2": [
+            14,
+            2,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "c1": [
+            229,
+            3,
+            3,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "c2": [
+            229,
+            3,
+            3,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        "owner": 2,
+        "enabled": 1
+      }
+    },
+    {
+      "id": "exif6-afon-up",
+      "action": "edge",
+      "who": [
+        "k1",
+        "k2",
+        "c1",
+        "c2"
+      ],
+      "editor": false,
+      "phase": "main",
+      "key": "afon",
+      "dir": "up",
+      "expect": {
+        "screen": "shooting",
+        "highlight": null,
+        "mirror": {
+          "k1": {
+            "preset": "mirrorFF"
+          },
+          "k2": {
+            "preset": "mirrorFF"
+          },
+          "c1": {
+            "preset": "mirrorExif6"
+          },
+          "c2": {
+            "preset": "mirrorExif6"
+          }
+        },
+        "zone": {
+          "k1": 255,
+          "overlay": 0
+        },
+        "flag": {
+          "k1": 255,
+          "k2": 255,
+          "c1": 0,
+          "c2": 0
+        },
+        "half": {
+          "preset": "halfSingle"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "19a0f247d22625e54bb1ea773998e8886a8591151390eb27af9b5d4ac6e3ea69",
+        "target": [
+          14,
+          2,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "owner": 0,
+        "enabled": 1
+      }
+    },
+    {
+      "id": "pose-land",
+      "action": "pose",
+      "who": [
+        "k1",
+        "k2",
+        "c1",
+        "c2"
+      ],
+      "editor": false,
+      "phase": "main",
+      "key": "landscape",
+      "expect": {
+        "screen": "shooting",
+        "highlight": null,
+        "mirror": {
+          "k1": {
+            "preset": "mirrorFF"
+          },
+          "k2": {
+            "preset": "mirrorFF"
+          },
+          "c1": {
+            "preset": "mirrorExif6"
+          },
+          "c2": {
+            "preset": "mirrorExif6"
+          }
+        },
+        "zone": {
+          "k1": 255,
+          "overlay": 0
+        },
+        "flag": {
+          "k1": 255,
+          "k2": 255,
+          "c1": 0,
+          "c2": 0
+        },
+        "half": {
+          "preset": "halfSingle"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "19a0f247d22625e54bb1ea773998e8886a8591151390eb27af9b5d4ac6e3ea69",
+        "poseIndex": 1,
+        "poseExif": 1
+      }
+    },
+    {
+      "id": "land-afon-down",
+      "action": "edge",
+      "who": [
+        "k1",
+        "k2",
+        "c1",
+        "c2"
+      ],
+      "editor": false,
+      "phase": "main",
+      "key": "afon",
+      "dir": "down",
+      "expect": {
+        "screen": "shooting",
+        "highlight": null,
+        "mirror": {
+          "k1": {
+            "preset": "mirrorFF"
+          },
+          "k2": {
+            "preset": "mirrorFF"
+          },
+          "c1": {
+            "preset": "mirrorExif6"
+          },
+          "c2": {
+            "preset": "mirrorExif6"
+          }
+        },
+        "zone": {
+          "k1": 255,
+          "overlay": 0
+        },
+        "flag": {
+          "k1": 255,
+          "k2": 255,
+          "c1": 0,
+          "c2": 0
+        },
+        "half": {
+          "preset": "halfSingle"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "19a0f247d22625e54bb1ea773998e8886a8591151390eb27af9b5d4ac6e3ea69",
+        "target": {
+          "k1": [
+            14,
+            2,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "k2": [
+            14,
+            2,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "c1": [
+            229,
+            3,
+            3,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "c2": [
+            229,
+            3,
+            3,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        "owner": 2,
+        "enabled": 1
+      }
+    },
+    {
+      "id": "land-afon-up",
+      "action": "edge",
+      "who": [
+        "k1",
+        "k2",
+        "c1",
+        "c2"
+      ],
+      "editor": false,
+      "phase": "main",
+      "key": "afon",
+      "dir": "up",
+      "expect": {
+        "screen": "shooting",
+        "highlight": null,
+        "mirror": {
+          "k1": {
+            "preset": "mirrorFF"
+          },
+          "k2": {
+            "preset": "mirrorFF"
+          },
+          "c1": {
+            "preset": "mirrorExif6"
+          },
+          "c2": {
+            "preset": "mirrorExif6"
+          }
+        },
+        "zone": {
+          "k1": 255,
+          "overlay": 0
+        },
+        "flag": {
+          "k1": 255,
+          "k2": 255,
+          "c1": 0,
+          "c2": 0
+        },
+        "half": {
+          "preset": "halfSingle"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "19a0f247d22625e54bb1ea773998e8886a8591151390eb27af9b5d4ac6e3ea69",
+        "target": [
+          14,
+          2,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "owner": 0,
+        "enabled": 1
+      }
+    },
+    {
+      "id": "sz-menu",
+      "action": "key",
+      "who": [
+        "k1",
+        "k2",
+        "c1",
+        "c2"
+      ],
+      "editor": false,
+      "phase": "main",
+      "key": "menu",
+      "expect": {
+        "screen": "menu",
+        "highlight": "Card Formatting",
+        "mirror": {
+          "k1": {
+            "preset": "mirrorFF"
+          },
+          "k2": {
+            "preset": "mirrorFF"
+          },
+          "c1": {
+            "preset": "mirrorExif6"
+          },
+          "c2": {
+            "preset": "mirrorExif6"
+          }
+        },
+        "zone": {
+          "k1": 255,
+          "overlay": 0
+        },
+        "flag": {
+          "k1": 255,
+          "k2": 255,
+          "c1": 0,
+          "c2": 0
+        },
+        "half": {
+          "preset": "halfSingle"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "7a997c516349676e62a9ef50817381dabb8aba04505c17732ea04025c82617e3"
+      }
+    },
+    {
+      "id": "sz-left-0",
+      "action": "key",
+      "who": [
+        "k1",
+        "k2",
+        "c1",
+        "c2"
+      ],
+      "editor": false,
+      "phase": "main",
+      "key": "left",
+      "expect": {
+        "screen": "menu",
+        "highlight": "@A02C@Grid Settings",
+        "mirror": {
+          "k1": {
+            "preset": "mirrorFF"
+          },
+          "k2": {
+            "preset": "mirrorFF"
+          },
+          "c1": {
+            "preset": "mirrorExif6"
+          },
+          "c2": {
+            "preset": "mirrorExif6"
+          }
+        },
+        "zone": {
+          "k1": 255,
+          "overlay": 0
+        },
+        "flag": {
+          "k1": 255,
+          "k2": 255,
+          "c1": 0,
+          "c2": 0
+        },
+        "half": {
+          "preset": "halfSingle"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "01c76db1834ad78618a75361995f23741e0b8d11f8e635b9ffca4c8f6673f64c"
+      }
+    },
+    {
+      "id": "sz-left-1",
+      "action": "key",
+      "who": [
+        "k1",
+        "k2",
+        "c1",
+        "c2"
+      ],
+      "editor": false,
+      "phase": "main",
+      "key": "left",
+      "expect": {
+        "screen": "menu",
+        "highlight": "EVF Style",
+        "mirror": {
+          "k1": {
+            "preset": "mirrorFF"
+          },
+          "k2": {
+            "preset": "mirrorFF"
+          },
+          "c1": {
+            "preset": "mirrorExif6"
+          },
+          "c2": {
+            "preset": "mirrorExif6"
+          }
+        },
+        "zone": {
+          "k1": 255,
+          "overlay": 0
+        },
+        "flag": {
+          "k1": 255,
+          "k2": 255,
+          "c1": 0,
+          "c2": 0
+        },
+        "half": {
+          "preset": "halfSingle"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "a0c37bba0d19fbcc0fb614bf9ea52c647700523fd5772d6e83be2ad13ca5f0c1"
+      }
+    },
+    {
+      "id": "sz-left-2",
+      "action": "key",
+      "who": [
+        "k1",
+        "k2",
+        "c1",
+        "c2"
+      ],
+      "editor": false,
+      "phase": "main",
+      "key": "left",
+      "expect": {
+        "screen": "menu",
+        "highlight": "@A02C@LV Mode",
+        "mirror": {
+          "k1": {
+            "preset": "mirrorFF"
+          },
+          "k2": {
+            "preset": "mirrorFF"
+          },
+          "c1": {
+            "preset": "mirrorExif6"
+          },
+          "c2": {
+            "preset": "mirrorExif6"
+          }
+        },
+        "zone": {
+          "k1": 255,
+          "overlay": 0
+        },
+        "flag": {
+          "k1": 255,
+          "k2": 255,
+          "c1": 0,
+          "c2": 0
+        },
+        "half": {
+          "preset": "halfSingle"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "38ae29601f1f952ca4fe09015032535fa158995055bc7da924bfe123ee209b97"
+      }
+    },
+    {
+      "id": "sz-left-3",
+      "action": "key",
+      "who": [
+        "k1",
+        "k2",
+        "c1",
+        "c2"
+      ],
+      "editor": false,
+      "phase": "main",
+      "key": "left",
+      "expect": {
+        "screen": "menu",
+        "highlight": "LV Close Up Mode",
+        "mirror": {
+          "k1": {
+            "preset": "mirrorFF"
+          },
+          "k2": {
+            "preset": "mirrorFF"
+          },
+          "c1": {
+            "preset": "mirrorExif6"
+          },
+          "c2": {
+            "preset": "mirrorExif6"
+          }
+        },
+        "zone": {
+          "k1": 255,
+          "overlay": 0
+        },
+        "flag": {
+          "k1": 255,
+          "k2": 255,
+          "c1": 0,
+          "c2": 0
+        },
+        "half": {
+          "preset": "halfSingle"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "66c647aabcca54c40b888287e34318109f43c608160b51c9c80a2053d076741b"
+      }
+    },
+    {
+      "id": "sz-left-4",
+      "action": "key",
+      "who": [
+        "k1",
+        "k2",
+        "c1",
+        "c2"
+      ],
+      "editor": false,
+      "phase": "main",
+      "key": "left",
+      "expect": {
+        "screen": "menu",
+        "highlight": "Button Settings",
+        "mirror": {
+          "k1": {
+            "preset": "mirrorFF"
+          },
+          "k2": {
+            "preset": "mirrorFF"
+          },
+          "c1": {
+            "preset": "mirrorExif6"
+          },
+          "c2": {
+            "preset": "mirrorExif6"
+          }
+        },
+        "zone": {
+          "k1": 255,
+          "overlay": 0
+        },
+        "flag": {
+          "k1": 255,
+          "k2": 255,
+          "c1": 0,
+          "c2": 0
+        },
+        "half": {
+          "preset": "halfSingle"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "66c647aabcca54c40b888287e34318109f43c608160b51c9c80a2053d076741b"
+      }
+    },
+    {
+      "id": "sz-left-5",
+      "action": "key",
+      "who": [
+        "k1",
+        "k2",
+        "c1",
+        "c2"
+      ],
+      "editor": false,
+      "phase": "main",
+      "key": "left",
+      "expect": {
+        "screen": "menu",
+        "highlight": "@A01C@",
+        "mirror": {
+          "k1": {
+            "preset": "mirrorFF"
+          },
+          "k2": {
+            "preset": "mirrorFF"
+          },
+          "c1": {
+            "preset": "mirrorExif6"
+          },
+          "c2": {
+            "preset": "mirrorExif6"
+          }
+        },
+        "zone": {
+          "k1": 255,
+          "overlay": 0
+        },
+        "flag": {
+          "k1": 255,
+          "k2": 255,
+          "c1": 0,
+          "c2": 0
+        },
+        "half": {
+          "preset": "halfSingle"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "cf05eb4496d6861f0bec817bfd3018e4dbdf6664a8b9d79532f961783997d3f4"
+      }
+    },
+    {
+      "id": "sz-left-6",
+      "action": "key",
+      "who": [
+        "k1",
+        "k2",
+        "c1",
+        "c2"
+      ],
+      "editor": false,
+      "phase": "main",
+      "key": "left",
+      "expect": {
+        "screen": "menu",
+        "highlight": "@A037@@A035@Function",
+        "mirror": {
+          "k1": {
+            "preset": "mirrorFF"
+          },
+          "k2": {
+            "preset": "mirrorFF"
+          },
+          "c1": {
+            "preset": "mirrorExif6"
+          },
+          "c2": {
+            "preset": "mirrorExif6"
+          }
+        },
+        "zone": {
+          "k1": 255,
+          "overlay": 0
+        },
+        "flag": {
+          "k1": 255,
+          "k2": 255,
+          "c1": 0,
+          "c2": 0
+        },
+        "half": {
+          "preset": "halfSingle"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "07e5d42f30dfdb2cd915d53b7c60652567de8a6a8b85ab039fa32b06adfefe71"
+      }
+    },
+    {
+      "id": "sz-left-7",
+      "action": "key",
+      "who": [
+        "k1",
+        "k2",
+        "c1",
+        "c2"
+      ],
+      "editor": false,
+      "phase": "main",
+      "key": "left",
+      "expect": {
+        "screen": "menu",
+        "highlight": "@A009@",
+        "mirror": {
+          "k1": {
+            "preset": "mirrorFF"
+          },
+          "k2": {
+            "preset": "mirrorFF"
+          },
+          "c1": {
+            "preset": "mirrorExif6"
+          },
+          "c2": {
+            "preset": "mirrorExif6"
+          }
+        },
+        "zone": {
+          "k1": 255,
+          "overlay": 0
+        },
+        "flag": {
+          "k1": 255,
+          "k2": 255,
+          "c1": 0,
+          "c2": 0
+        },
+        "half": {
+          "preset": "halfSingle"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "cf05eb4496d6861f0bec817bfd3018e4dbdf6664a8b9d79532f961783997d3f4"
+      }
+    },
+    {
+      "id": "sz-left-8",
+      "action": "key",
+      "who": [
+        "k1",
+        "k2",
+        "c1",
+        "c2"
+      ],
+      "editor": false,
+      "phase": "main",
+      "key": "left",
+      "expect": {
+        "screen": "menu",
+        "highlight": "Center Marker",
+        "mirror": {
+          "k1": {
+            "preset": "mirrorFF"
+          },
+          "k2": {
+            "preset": "mirrorFF"
+          },
+          "c1": {
+            "preset": "mirrorExif6"
+          },
+          "c2": {
+            "preset": "mirrorExif6"
+          }
+        },
+        "zone": {
+          "k1": 255,
+          "overlay": 0
+        },
+        "flag": {
+          "k1": 255,
+          "k2": 255,
+          "c1": 0,
+          "c2": 0
+        },
+        "half": {
+          "preset": "halfSingle"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "de4f087947028f16e9f3fb23c6fe3e3f6d9a319bb37e8ca5416c8dac359f77cf"
+      }
+    },
+    {
+      "id": "sz-left-9",
+      "action": "key",
+      "who": [
+        "k1",
+        "k2",
+        "c1",
+        "c2"
+      ],
+      "editor": false,
+      "phase": "main",
+      "key": "left",
+      "expect": {
+        "screen": "menu",
+        "highlight": "Sound Recording Settings",
+        "mirror": {
+          "k1": {
+            "preset": "mirrorFF"
+          },
+          "k2": {
+            "preset": "mirrorFF"
+          },
+          "c1": {
+            "preset": "mirrorExif6"
+          },
+          "c2": {
+            "preset": "mirrorExif6"
+          }
+        },
+        "zone": {
+          "k1": 255,
+          "overlay": 0
+        },
+        "flag": {
+          "k1": 255,
+          "k2": 255,
+          "c1": 0,
+          "c2": 0
+        },
+        "half": {
+          "preset": "halfSingle"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "3f2187743b1a85e9f2a91b1b4ef36861b17e04b86e80b6d189604969dc91a1ff"
+      }
+    },
+    {
+      "id": "sz-left-10",
+      "action": "key",
+      "who": [
+        "k1",
+        "k2",
+        "c1",
+        "c2"
+      ],
+      "editor": false,
+      "phase": "main",
+      "key": "left",
+      "expect": {
+        "screen": "menu",
+        "highlight": "@A027@Image Stabilizer",
+        "mirror": {
+          "k1": {
+            "preset": "mirrorFF"
+          },
+          "k2": {
+            "preset": "mirrorFF"
+          },
+          "c1": {
+            "preset": "mirrorExif6"
+          },
+          "c2": {
+            "preset": "mirrorExif6"
+          }
+        },
+        "zone": {
+          "k1": 255,
+          "overlay": 0
+        },
+        "flag": {
+          "k1": 255,
+          "k2": 255,
+          "c1": 0,
+          "c2": 0
+        },
+        "half": {
+          "preset": "halfSingle"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "69b19383263e67ed048c61c40f0c40c7abdca256d7e7f8139e7c0a4830d09f42"
+      }
+    },
+    {
+      "id": "sz-left-11",
+      "action": "key",
+      "who": [
+        "k1",
+        "k2",
+        "c1",
+        "c2"
+      ],
+      "editor": false,
+      "phase": "main",
+      "key": "left",
+      "expect": {
+        "screen": "menu",
+        "highlight": "@A03E@ISO-A Upper/Default",
+        "mirror": {
+          "k1": {
+            "preset": "mirrorFF"
+          },
+          "k2": {
+            "preset": "mirrorFF"
+          },
+          "c1": {
+            "preset": "mirrorExif6"
+          },
+          "c2": {
+            "preset": "mirrorExif6"
+          }
+        },
+        "zone": {
+          "k1": 255,
+          "overlay": 0
+        },
+        "flag": {
+          "k1": 255,
+          "k2": 255,
+          "c1": 0,
+          "c2": 0
+        },
+        "half": {
+          "preset": "halfSingle"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "e3ed2449bf94d5b4416a7505b13411b25864b161b3c2f671801a7dc84e3ef0a4"
+      }
+    },
+    {
+      "id": "sz-left-12",
+      "action": "key",
+      "who": [
+        "k1",
+        "k2",
+        "c1",
+        "c2"
+      ],
+      "editor": false,
+      "phase": "main",
+      "key": "left",
+      "expect": {
+        "screen": "menu",
+        "highlight": "@A027@Picture Mode",
+        "mirror": {
+          "k1": {
+            "preset": "mirrorFF"
+          },
+          "k2": {
+            "preset": "mirrorFF"
+          },
+          "c1": {
+            "preset": "mirrorExif6"
+          },
+          "c2": {
+            "preset": "mirrorExif6"
+          }
+        },
+        "zone": {
+          "k1": 255,
+          "overlay": 0
+        },
+        "flag": {
+          "k1": 255,
+          "k2": 255,
+          "c1": 0,
+          "c2": 0
+        },
+        "half": {
+          "preset": "halfSingle"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "778d3232a51ecf3f8fa55e1630f70c1dee06dedffbf54c5fd10d798331c5a079"
+      }
+    },
+    {
+      "id": "sz-left-13",
+      "action": "key",
+      "who": [
+        "k1",
+        "k2",
+        "c1",
+        "c2"
+      ],
+      "editor": false,
+      "phase": "main",
+      "key": "left",
+      "expect": {
+        "screen": "menu",
+        "highlight": "@A027@Custom Mode",
+        "mirror": {
+          "k1": {
+            "preset": "mirrorFF"
+          },
+          "k2": {
+            "preset": "mirrorFF"
+          },
+          "c1": {
+            "preset": "mirrorExif6"
+          },
+          "c2": {
+            "preset": "mirrorExif6"
+          }
+        },
+        "zone": {
+          "k1": 255,
+          "overlay": 0
+        },
+        "flag": {
+          "k1": 255,
+          "k2": 255,
+          "c1": 0,
+          "c2": 0
+        },
+        "half": {
+          "preset": "halfSingle"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "d9e0f63ebda531e33d4cb3dd758d739772690e3c97022ec82e7c9b909eeb873e"
+      }
+    },
+    {
+      "id": "sz-left-14",
+      "action": "key",
+      "who": [
+        "k1",
+        "k2",
+        "c1",
+        "c2"
+      ],
+      "editor": false,
+      "phase": "main",
+      "key": "left",
+      "expect": {
+        "screen": "menu",
+        "highlight": "MF Assist",
+        "mirror": {
+          "k1": {
+            "preset": "mirrorFF"
+          },
+          "k2": {
+            "preset": "mirrorFF"
+          },
+          "c1": {
+            "preset": "mirrorExif6"
+          },
+          "c2": {
+            "preset": "mirrorExif6"
+          }
+        },
+        "zone": {
+          "k1": 255,
+          "overlay": 0
+        },
+        "flag": {
+          "k1": 255,
+          "k2": 255,
+          "c1": 0,
+          "c2": 0
+        },
+        "half": {
+          "preset": "halfSingle"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "44768eeae68fcb56611d0bf3529ef0b4c81a068a469178e82da5477abf55df29"
+      }
+    },
+    {
+      "id": "sz-left-15",
+      "action": "key",
+      "who": [
+        "k1",
+        "k2",
+        "c1",
+        "c2"
+      ],
+      "editor": false,
+      "phase": "main",
+      "key": "left",
+      "expect": {
+        "screen": "menu",
+        "highlight": "@A02C@AF Target Mode Settings",
+        "mirror": {
+          "k1": {
+            "preset": "mirrorFF"
+          },
+          "k2": {
+            "preset": "mirrorFF"
+          },
+          "c1": {
+            "preset": "mirrorExif6"
+          },
+          "c2": {
+            "preset": "mirrorExif6"
+          }
+        },
+        "zone": {
+          "k1": 255,
+          "overlay": 0
+        },
+        "flag": {
+          "k1": 255,
+          "k2": 255,
+          "c1": 0,
+          "c2": 0
+        },
+        "half": {
+          "preset": "halfSingle"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "93f763b60aa95a47d30a7476c6e3e1968443c3b0b372d22ff6cd066dbc0c9c11"
+      }
+    },
+    {
+      "id": "sz-ok",
+      "action": "key",
+      "who": [
+        "k1",
+        "k2",
+        "c1",
+        "c2"
+      ],
+      "editor": false,
+      "phase": "main",
+      "key": "ok",
+      "expect": {
+        "screen": "menu",
+        "highlight": null,
+        "mirror": {
+          "k1": {
+            "preset": "mirrorFF"
+          },
+          "k2": {
+            "preset": "mirrorFF"
+          },
+          "c1": {
+            "preset": "mirrorExif6"
+          },
+          "c2": {
+            "preset": "mirrorExif6"
+          }
+        },
+        "zone": {
+          "k1": 255,
+          "overlay": 0
+        },
+        "flag": {
+          "k1": 255,
+          "k2": 255,
+          "c1": 0,
+          "c2": 0
+        },
+        "half": {
+          "preset": "halfSingle"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "97e9a3ebe9a0825f77ea38fee21e83ba53036c4165c2926683c100be08519521"
+      }
+    },
+    {
+      "id": "sz-down-0",
+      "action": "key",
+      "who": [
+        "k1",
+        "k2",
+        "c1",
+        "c2"
+      ],
+      "editor": false,
+      "phase": "main",
+      "key": "down",
+      "expect": {
+        "screen": "menu",
+        "highlight": null,
+        "mirror": {
+          "k1": {
+            "preset": "mirrorFF"
+          },
+          "k2": {
+            "preset": "mirrorFF"
+          },
+          "c1": {
+            "preset": "mirrorExif6"
+          },
+          "c2": {
+            "preset": "mirrorExif6"
+          }
+        },
+        "zone": {
+          "k1": 255,
+          "overlay": 0
+        },
+        "flag": {
+          "k1": 255,
+          "k2": 255,
+          "c1": 0,
+          "c2": 0
+        },
+        "half": {
+          "preset": "halfSingle"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "febd8e9da9ce5a51c573bc3d256cf8e127ffbd5ce0e27446d455aebb2bd46433"
+      }
+    },
+    {
+      "id": "sz-down-1",
+      "action": "key",
+      "who": [
+        "k1",
+        "k2",
+        "c1",
+        "c2"
+      ],
+      "editor": false,
+      "phase": "main",
+      "key": "down",
+      "expect": {
+        "screen": "menu",
+        "highlight": null,
+        "mirror": {
+          "k1": {
+            "preset": "mirrorFF"
+          },
+          "k2": {
+            "preset": "mirrorFF"
+          },
+          "c1": {
+            "preset": "mirrorExif6"
+          },
+          "c2": {
+            "preset": "mirrorExif6"
+          }
+        },
+        "zone": {
+          "k1": 255,
+          "overlay": 0
+        },
+        "flag": {
+          "k1": 255,
+          "k2": 255,
+          "c1": 0,
+          "c2": 0
+        },
+        "half": {
+          "preset": "halfSingle"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "febd8e9da9ce5a51c573bc3d256cf8e127ffbd5ce0e27446d455aebb2bd46433"
+      }
+    },
+    {
+      "id": "sz-down-2",
+      "action": "key",
+      "who": [
+        "k1",
+        "k2",
+        "c1",
+        "c2"
+      ],
+      "editor": false,
+      "phase": "main",
+      "key": "down",
+      "expect": {
+        "screen": "menu",
+        "highlight": null,
+        "mirror": {
+          "k1": {
+            "preset": "mirrorFF"
+          },
+          "k2": {
+            "preset": "mirrorFF"
+          },
+          "c1": {
+            "preset": "mirrorExif6"
+          },
+          "c2": {
+            "preset": "mirrorExif6"
+          }
+        },
+        "zone": {
+          "k1": 255,
+          "overlay": 0
+        },
+        "flag": {
+          "k1": 255,
+          "k2": 255,
+          "c1": 0,
+          "c2": 0
+        },
+        "half": {
+          "preset": "halfSingle"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "febd8e9da9ce5a51c573bc3d256cf8e127ffbd5ce0e27446d455aebb2bd46433"
+      }
+    },
+    {
+      "id": "sz-down-3",
+      "action": "key",
+      "who": [
+        "k1",
+        "k2",
+        "c1",
+        "c2"
+      ],
+      "editor": false,
+      "phase": "main",
+      "key": "down",
+      "expect": {
+        "screen": "menu",
+        "highlight": null,
+        "mirror": {
+          "k1": {
+            "preset": "mirrorFF"
+          },
+          "k2": {
+            "preset": "mirrorFF"
+          },
+          "c1": {
+            "preset": "mirrorExif6"
+          },
+          "c2": {
+            "preset": "mirrorExif6"
+          }
+        },
+        "zone": {
+          "k1": 255,
+          "overlay": 0
+        },
+        "flag": {
+          "k1": 255,
+          "k2": 255,
+          "c1": 0,
+          "c2": 0
+        },
+        "half": {
+          "preset": "halfSingle"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "febd8e9da9ce5a51c573bc3d256cf8e127ffbd5ce0e27446d455aebb2bd46433"
+      }
+    },
+    {
+      "id": "sz-down-4",
+      "action": "key",
+      "who": [
+        "k1",
+        "k2",
+        "c1",
+        "c2"
+      ],
+      "editor": false,
+      "phase": "main",
+      "key": "down",
+      "expect": {
+        "screen": "menu",
+        "highlight": null,
+        "mirror": {
+          "k1": {
+            "preset": "mirrorFF"
+          },
+          "k2": {
+            "preset": "mirrorFF"
+          },
+          "c1": {
+            "preset": "mirrorExif6"
+          },
+          "c2": {
+            "preset": "mirrorExif6"
+          }
+        },
+        "zone": {
+          "k1": 255,
+          "overlay": 0
+        },
+        "flag": {
+          "k1": 255,
+          "k2": 255,
+          "c1": 0,
+          "c2": 0
+        },
+        "half": {
+          "preset": "halfSingle"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "febd8e9da9ce5a51c573bc3d256cf8e127ffbd5ce0e27446d455aebb2bd46433"
+      }
+    },
+    {
+      "id": "c-enter",
+      "action": "enter",
+      "who": [
+        "c1",
+        "c2"
+      ],
+      "editor": true,
+      "phase": "main",
+      "key": null,
+      "note": "AF-ON editor key. Enter before the custom-size edit.",
+      "expect": {
+        "screen": "menu",
+        "highlight": null,
+        "mirror": {
+          "preset": "mirrorExif6"
+        },
+        "zone": 0,
+        "flag": 1,
+        "half": {
+          "preset": "halfSingle"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "febd8e9da9ce5a51c573bc3d256cf8e127ffbd5ce0e27446d455aebb2bd46433"
+      }
+    },
+    {
+      "id": "c-right",
+      "action": "key",
+      "who": [
+        "c1",
+        "c2"
+      ],
+      "editor": true,
+      "phase": "main",
+      "key": "right",
+      "note": "AF-ON editor key. Opens the custom-size editor.",
+      "expect": {
+        "screen": "menu",
+        "highlight": null,
+        "mirror": {
+          "preset": "mirrorExif6"
+        },
+        "zone": 0,
+        "flag": 1,
+        "half": {
+          "preset": "halfSingle"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "unresolved-custom-size-title-band"
+      }
+    },
+    {
+      "id": "c-main-0",
+      "action": "dial",
+      "who": [
+        "c1",
+        "c2"
+      ],
+      "editor": true,
+      "phase": "main",
+      "dial": "main",
+      "note": "AF-ON editor key. Custom size vertical.",
+      "expect": {
+        "screen": "menu",
+        "highlight": null,
+        "mirror": {
+          "preset": "mirrorExif6"
+        },
+        "zone": 0,
+        "flag": 1,
+        "half": {
+          "preset": "halfSingle"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "unresolved-custom-size-title-band"
+      }
+    },
+    {
+      "id": "c-main-1",
+      "action": "dial",
+      "who": [
+        "c1",
+        "c2"
+      ],
+      "editor": true,
+      "phase": "main",
+      "dial": "main",
+      "note": "AF-ON editor key. Custom size vertical.",
+      "expect": {
+        "screen": "menu",
+        "highlight": null,
+        "mirror": {
+          "preset": "mirrorExif6"
+        },
+        "zone": 0,
+        "flag": 1,
+        "half": {
+          "preset": "halfSingle"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "unresolved-custom-size-title-band"
+      }
+    },
+    {
+      "id": "c-main-2",
+      "action": "dial",
+      "who": [
+        "c1",
+        "c2"
+      ],
+      "editor": true,
+      "phase": "main",
+      "dial": "main",
+      "note": "AF-ON editor key. Custom size vertical.",
+      "expect": {
+        "screen": "menu",
+        "highlight": null,
+        "mirror": {
+          "preset": "mirrorExif6"
+        },
+        "zone": 0,
+        "flag": 1,
+        "half": {
+          "preset": "halfSingle"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "unresolved-custom-size-title-band"
+      }
+    },
+    {
+      "id": "c-main-3",
+      "action": "dial",
+      "who": [
+        "c1",
+        "c2"
+      ],
+      "editor": true,
+      "phase": "main",
+      "dial": "main",
+      "note": "AF-ON editor key. Custom size vertical.",
+      "expect": {
+        "screen": "menu",
+        "highlight": null,
+        "mirror": {
+          "preset": "mirrorExif6"
+        },
+        "zone": 0,
+        "flag": 1,
+        "half": {
+          "preset": "halfSingle"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "unresolved-custom-size-title-band"
+      }
+    },
+    {
+      "id": "c-main-4",
+      "action": "dial",
+      "who": [
+        "c1",
+        "c2"
+      ],
+      "editor": true,
+      "phase": "main",
+      "dial": "main",
+      "note": "AF-ON editor key. Custom size vertical.",
+      "expect": {
+        "screen": "menu",
+        "highlight": null,
+        "mirror": {
+          "preset": "mirrorExif6"
+        },
+        "zone": 0,
+        "flag": 1,
+        "half": {
+          "preset": "halfSingle"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "unresolved-custom-size-title-band"
+      }
+    },
+    {
+      "id": "c-sub-0",
+      "action": "dial",
+      "who": [
+        "c1",
+        "c2"
+      ],
+      "editor": true,
+      "phase": "main",
+      "dial": "sub",
+      "note": "AF-ON editor key. Custom size horizontal.",
+      "expect": {
+        "screen": "menu",
+        "highlight": null,
+        "mirror": {
+          "preset": "mirrorExif6"
+        },
+        "zone": 0,
+        "flag": 1,
+        "half": {
+          "preset": "halfSingle"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "unresolved-custom-size-title-band"
+      }
+    },
+    {
+      "id": "c-sub-1",
+      "action": "dial",
+      "who": [
+        "c1",
+        "c2"
+      ],
+      "editor": true,
+      "phase": "main",
+      "dial": "sub",
+      "note": "AF-ON editor key. Custom size horizontal.",
+      "expect": {
+        "screen": "menu",
+        "highlight": null,
+        "mirror": {
+          "preset": "mirrorExif6"
+        },
+        "zone": 0,
+        "flag": 1,
+        "half": {
+          "preset": "halfSingle"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "unresolved-custom-size-title-band"
+      }
+    },
+    {
+      "id": "c-sub-2",
+      "action": "dial",
+      "who": [
+        "c1",
+        "c2"
+      ],
+      "editor": true,
+      "phase": "main",
+      "dial": "sub",
+      "note": "AF-ON editor key. Custom size horizontal.",
+      "expect": {
+        "screen": "menu",
+        "highlight": null,
+        "mirror": {
+          "preset": "mirrorExif6"
+        },
+        "zone": 0,
+        "flag": 1,
+        "half": {
+          "preset": "halfSingle"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "unresolved-custom-size-title-band"
+      }
+    },
+    {
+      "id": "c-sub-3",
+      "action": "dial",
+      "who": [
+        "c1",
+        "c2"
+      ],
+      "editor": true,
+      "phase": "main",
+      "dial": "sub",
+      "note": "AF-ON editor key. Custom size horizontal.",
+      "expect": {
+        "screen": "menu",
+        "highlight": null,
+        "mirror": {
+          "preset": "mirrorExif6"
+        },
+        "zone": 0,
+        "flag": 1,
+        "half": {
+          "preset": "halfSingle"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "unresolved-custom-size-title-band"
+      }
+    },
+    {
+      "id": "c-sub-4",
+      "action": "dial",
+      "who": [
+        "c1",
+        "c2"
+      ],
+      "editor": true,
+      "phase": "main",
+      "dial": "sub",
+      "note": "AF-ON editor key. Custom size horizontal.",
+      "expect": {
+        "screen": "menu",
+        "highlight": null,
+        "mirror": {
+          "preset": "mirrorExif6"
+        },
+        "zone": 0,
+        "flag": 1,
+        "half": {
+          "preset": "halfSingle"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "unresolved-custom-size-title-band"
+      }
+    },
+    {
+      "id": "c-sub-5",
+      "action": "dial",
+      "who": [
+        "c1",
+        "c2"
+      ],
+      "editor": true,
+      "phase": "main",
+      "dial": "sub",
+      "note": "AF-ON editor key. Custom size horizontal.",
+      "expect": {
+        "screen": "menu",
+        "highlight": null,
+        "mirror": {
+          "preset": "mirrorExif6"
+        },
+        "zone": 0,
+        "flag": 1,
+        "half": {
+          "preset": "halfSingle"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "unresolved-custom-size-title-band"
+      }
+    },
+    {
+      "id": "c-sub-6",
+      "action": "dial",
+      "who": [
+        "c1",
+        "c2"
+      ],
+      "editor": true,
+      "phase": "main",
+      "dial": "sub",
+      "note": "AF-ON editor key. Custom size horizontal.",
+      "expect": {
+        "screen": "menu",
+        "highlight": null,
+        "mirror": {
+          "preset": "mirrorExif6"
+        },
+        "zone": 0,
+        "flag": 1,
+        "half": {
+          "preset": "halfSingle"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "unresolved-custom-size-title-band"
+      }
+    },
+    {
+      "id": "c-ok",
+      "action": "key",
+      "who": [
+        "c1",
+        "c2"
+      ],
+      "editor": true,
+      "phase": "main",
+      "key": "ok",
+      "note": "AF-ON editor key. Commits C1 [5,7] and exits.",
+      "expect": {
+        "screen": "menu",
+        "highlight": null,
+        "mirror": {
+          "preset": "mirrorC1"
+        },
+        "zone": 0,
+        "flag": 0,
+        "half": {
+          "preset": "halfSingle"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "febd8e9da9ce5a51c573bc3d256cf8e127ffbd5ce0e27446d455aebb2bd46433"
+      }
+    },
+    {
+      "id": "sz-leave-0",
+      "action": "key",
+      "who": [
+        "k1",
+        "k2",
+        "c1",
+        "c2"
+      ],
+      "editor": false,
+      "phase": "main",
+      "key": "menu",
+      "expect": {
+        "screen": "menu",
+        "highlight": "@A02C@AF Target Mode Settings",
+        "mirror": {
+          "k1": {
+            "preset": "mirrorFF"
+          },
+          "k2": {
+            "preset": "mirrorFF"
+          },
+          "c1": {
+            "preset": "mirrorC1"
+          },
+          "c2": {
+            "preset": "mirrorC1"
+          }
+        },
+        "zone": {
+          "k1": 255,
+          "overlay": 0
+        },
+        "flag": {
+          "k1": 255,
+          "k2": 255,
+          "c1": 0,
+          "c2": 0
+        },
+        "half": {
+          "preset": "halfSingle"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "93f763b60aa95a47d30a7476c6e3e1968443c3b0b372d22ff6cd066dbc0c9c11"
+      }
+    },
+    {
+      "id": "sz-leave-1",
+      "action": "key",
+      "who": [
+        "k1",
+        "k2",
+        "c1",
+        "c2"
+      ],
+      "editor": false,
+      "phase": "main",
+      "key": "menu",
+      "expect": {
+        "screen": "shooting",
+        "highlight": null,
+        "mirror": {
+          "k1": {
+            "preset": "mirrorFF"
+          },
+          "k2": {
+            "preset": "mirrorFF"
+          },
+          "c1": {
+            "preset": "mirrorC1"
+          },
+          "c2": {
+            "preset": "mirrorC1"
+          }
+        },
+        "zone": {
+          "k1": 255,
+          "overlay": 0
+        },
+        "flag": {
+          "k1": 255,
+          "k2": 255,
+          "c1": 0,
+          "c2": 0
+        },
+        "half": {
+          "preset": "halfSingle"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "19a0f247d22625e54bb1ea773998e8886a8591151390eb27af9b5d4ac6e3ea69"
+      }
+    },
+    {
+      "id": "c-enter2",
+      "action": "enter",
+      "who": [
+        "c1",
+        "c2"
+      ],
+      "editor": true,
+      "phase": "main",
+      "key": null,
+      "note": "AF-ON editor key. Re-enter so the exit can be S1.",
+      "expect": {
+        "screen": "shooting",
+        "highlight": null,
+        "mirror": {
+          "preset": "mirrorC1"
+        },
+        "zone": 0,
+        "flag": 1,
+        "half": {
+          "preset": "halfSingle"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "19a0f247d22625e54bb1ea773998e8886a8591151390eb27af9b5d4ac6e3ea69"
+      }
+    },
+    {
+      "id": "c-s1",
+      "action": "edge",
+      "who": [
+        "c1",
+        "c2"
+      ],
+      "editor": true,
+      "phase": "main",
+      "key": "s1",
+      "dir": "down",
+      "note": "AF-ON editor key. Exit with S1.",
+      "expect": {
+        "screen": "shooting",
+        "highlight": null,
+        "mirror": {
+          "preset": "mirrorC1"
+        },
+        "zone": 0,
+        "flag": 0,
+        "half": {
+          "preset": "halfSingle"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "19a0f247d22625e54bb1ea773998e8886a8591151390eb27af9b5d4ac6e3ea69",
+        "target": [
+          229,
+          3,
+          7,
+          0,
+          5,
+          0,
+          7,
+          0,
+          0,
+          0
+        ],
+        "owner": 1,
+        "enabled": 1
+      }
+    },
+    {
+      "id": "c-s1-up",
+      "action": "edge",
+      "who": [
+        "c1",
+        "c2"
+      ],
+      "editor": true,
+      "phase": "main",
+      "key": "s1",
+      "dir": "up",
+      "note": "AF-ON editor key. Release the S1 exit.",
+      "expect": {
+        "screen": "shooting",
+        "highlight": null,
+        "mirror": {
+          "preset": "mirrorC1"
+        },
+        "zone": 0,
+        "flag": 0,
+        "half": {
+          "preset": "halfSingle"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "19a0f247d22625e54bb1ea773998e8886a8591151390eb27af9b5d4ac6e3ea69",
+        "target": [
+          14,
+          2,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "owner": 0,
+        "enabled": 1
+      }
+    },
+    {
+      "id": "n2-up",
+      "action": "key",
+      "who": [
+        "k1",
+        "k2",
+        "c1",
+        "c2"
+      ],
+      "editor": false,
+      "phase": "main",
+      "key": "up",
+      "expect": {
+        "screen": "direct",
+        "highlight": null,
+        "mirror": {
+          "k1": {
+            "preset": "mirrorFF"
+          },
+          "k2": {
+            "preset": "mirrorFF"
+          },
+          "c1": {
+            "preset": "mirrorC1"
+          },
+          "c2": {
+            "preset": "mirrorC1"
+          }
+        },
+        "zone": {
+          "k1": 255,
+          "overlay": 0
+        },
+        "flag": {
+          "k1": 255,
+          "k2": 255,
+          "c1": 0,
+          "c2": 0
+        },
+        "half": {
+          "preset": "halfSingle"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "42a83c79ead5126577e529b063c94c43e6d6d7a3177476b1be78a8c12c09b1a7"
+      }
+    },
+    {
+      "id": "n2-dial",
+      "action": "dial",
+      "who": [
+        "k1",
+        "k2",
+        "c1",
+        "c2"
+      ],
+      "editor": false,
+      "phase": "main",
+      "dial": "main",
+      "note": "Normal edit after the C1 exit.",
+      "expect": {
+        "screen": "direct",
+        "highlight": null,
+        "mirror": {
+          "k1": {
+            "preset": "mirrorFF"
+          },
+          "k2": {
+            "preset": "mirrorFF"
+          },
+          "c1": {
+            "preset": "mirrorC1"
+          },
+          "c2": {
+            "preset": "mirrorC1"
+          }
+        },
+        "zone": {
+          "k1": 255,
+          "overlay": 0
+        },
+        "flag": {
+          "k1": 255,
+          "k2": 255,
+          "c1": 0,
+          "c2": 0
+        },
+        "half": {
+          "preset": "halfSmall"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "unresolved-small-direct-title-band"
+      }
+    },
+    {
+      "id": "n2-ok",
+      "action": "key",
+      "who": [
+        "k1",
+        "k2",
+        "c1",
+        "c2"
+      ],
+      "editor": false,
+      "phase": "main",
+      "key": "ok",
+      "expect": {
+        "screen": "shooting",
+        "highlight": null,
+        "mirror": {
+          "k1": {
+            "preset": "mirrorFF"
+          },
+          "k2": {
+            "preset": "mirrorFF"
+          },
+          "c1": {
+            "preset": "mirrorC1"
+          },
+          "c2": {
+            "preset": "mirrorC1"
+          }
+        },
+        "zone": {
+          "k1": 255,
+          "overlay": 0
+        },
+        "flag": {
+          "k1": 255,
+          "k2": 255,
+          "c1": 0,
+          "c2": 0
+        },
+        "half": {
+          "preset": "halfSmall"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "19a0f247d22625e54bb1ea773998e8886a8591151390eb27af9b5d4ac6e3ea69"
+      }
+    },
+    {
+      "id": "c-afon-down",
+      "action": "edge",
+      "who": [
+        "k1",
+        "k2",
+        "c1",
+        "c2"
+      ],
+      "editor": false,
+      "phase": "main",
+      "key": "afon",
+      "dir": "down",
+      "expect": {
+        "screen": "shooting",
+        "highlight": null,
+        "mirror": {
+          "k1": {
+            "preset": "mirrorFF"
+          },
+          "k2": {
+            "preset": "mirrorFF"
+          },
+          "c1": {
+            "preset": "mirrorC1"
+          },
+          "c2": {
+            "preset": "mirrorC1"
+          }
+        },
+        "zone": {
+          "k1": 255,
+          "overlay": 0
+        },
+        "flag": {
+          "k1": 255,
+          "k2": 255,
+          "c1": 0,
+          "c2": 0
+        },
+        "half": {
+          "preset": "halfSmall"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "19a0f247d22625e54bb1ea773998e8886a8591151390eb27af9b5d4ac6e3ea69",
+        "target": {
+          "k1": [
+            14,
+            2,
+            3,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "k2": [
+            14,
+            2,
+            3,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "c1": [
+            229,
+            3,
+            7,
+            0,
+            5,
+            0,
+            7,
+            0,
+            0,
+            0
+          ],
+          "c2": [
+            229,
+            3,
+            7,
+            0,
+            5,
+            0,
+            7,
+            0,
+            0,
+            0
+          ]
+        },
+        "owner": 2,
+        "enabled": 1,
+        "sizeRecord": {
+          "k1": {
+            "from": "k2"
+          },
+          "k2": {
+            "preset": "sizeRecordBoot"
+          },
+          "c1": {
+            "from": "k2"
+          },
+          "c2": {
+            "from": "k2"
+          }
+        }
+      }
+    },
+    {
+      "id": "c-afon-up",
+      "action": "edge",
+      "who": [
+        "k1",
+        "k2",
+        "c1",
+        "c2"
+      ],
+      "editor": false,
+      "phase": "main",
+      "key": "afon",
+      "dir": "up",
+      "expect": {
+        "screen": "shooting",
+        "highlight": null,
+        "mirror": {
+          "k1": {
+            "preset": "mirrorFF"
+          },
+          "k2": {
+            "preset": "mirrorFF"
+          },
+          "c1": {
+            "preset": "mirrorC1"
+          },
+          "c2": {
+            "preset": "mirrorC1"
+          }
+        },
+        "zone": {
+          "k1": 255,
+          "overlay": 0
+        },
+        "flag": {
+          "k1": 255,
+          "k2": 255,
+          "c1": 0,
+          "c2": 0
+        },
+        "half": {
+          "preset": "halfSmall"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "19a0f247d22625e54bb1ea773998e8886a8591151390eb27af9b5d4ac6e3ea69",
+        "target": [
+          14,
+          2,
+          3,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "owner": 0,
+        "enabled": 1
+      }
+    },
+    {
+      "id": "size-write",
+      "action": "size-setup",
+      "who": [
+        "c1",
+        "c2"
+      ],
+      "editor": true,
+      "phase": "main",
+      "key": null,
+      "note": "AF-ON editor path cannot set 0x9a41[0]. Labelled test-setup write of 4.",
+      "expect": {
+        "screen": "shooting",
+        "highlight": null,
+        "mirror": {
+          "preset": "mirrorSize"
+        },
+        "zone": 0,
+        "flag": 0,
+        "half": {
+          "preset": "halfSmall"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "19a0f247d22625e54bb1ea773998e8886a8591151390eb27af9b5d4ac6e3ea69"
+      }
+    },
+    {
+      "id": "size-afon-down",
+      "action": "edge",
+      "who": [
+        "k1",
+        "k2",
+        "c1",
+        "c2"
+      ],
+      "editor": false,
+      "phase": "main",
+      "key": "afon",
+      "dir": "down",
+      "expect": {
+        "screen": "shooting",
+        "highlight": null,
+        "mirror": {
+          "k1": {
+            "preset": "mirrorFF"
+          },
+          "k2": {
+            "preset": "mirrorFF"
+          },
+          "c1": {
+            "preset": "mirrorSize"
+          },
+          "c2": {
+            "preset": "mirrorSize"
+          }
+        },
+        "zone": {
+          "k1": 255,
+          "overlay": 0
+        },
+        "flag": {
+          "k1": 255,
+          "k2": 255,
+          "c1": 0,
+          "c2": 0
+        },
+        "half": {
+          "preset": "halfSmall"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "19a0f247d22625e54bb1ea773998e8886a8591151390eb27af9b5d4ac6e3ea69",
+        "target": {
+          "k1": [
+            14,
+            2,
+            3,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "k2": [
+            14,
+            2,
+            3,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "c1": [
+            229,
+            3,
+            7,
+            4,
+            5,
+            0,
+            7,
+            0,
+            0,
+            0
+          ],
+          "c2": [
+            229,
+            3,
+            7,
+            4,
+            5,
+            0,
+            7,
+            0,
+            0,
+            0
+          ]
+        },
+        "owner": 2,
+        "enabled": 1
+      }
+    },
+    {
+      "id": "size-afon-up",
+      "action": "edge",
+      "who": [
+        "k1",
+        "k2",
+        "c1",
+        "c2"
+      ],
+      "editor": false,
+      "phase": "main",
+      "key": "afon",
+      "dir": "up",
+      "expect": {
+        "screen": "shooting",
+        "highlight": null,
+        "mirror": {
+          "k1": {
+            "preset": "mirrorFF"
+          },
+          "k2": {
+            "preset": "mirrorFF"
+          },
+          "c1": {
+            "preset": "mirrorSize"
+          },
+          "c2": {
+            "preset": "mirrorSize"
+          }
+        },
+        "zone": {
+          "k1": 255,
+          "overlay": 0
+        },
+        "flag": {
+          "k1": 255,
+          "k2": 255,
+          "c1": 0,
+          "c2": 0
+        },
+        "half": {
+          "preset": "halfSmall"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "19a0f247d22625e54bb1ea773998e8886a8591151390eb27af9b5d4ac6e3ea69",
+        "target": [
+          14,
+          2,
+          3,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "owner": 0,
+        "enabled": 1
+      }
+    },
+    {
+      "id": "save-menu",
+      "action": "key",
+      "who": [
+        "k1",
+        "k2",
+        "c1",
+        "c2"
+      ],
+      "editor": false,
+      "phase": "main",
+      "key": "menu",
+      "expect": {
+        "screen": "menu",
+        "highlight": "@A02C@AF Target Mode Settings",
+        "mirror": {
+          "k1": {
+            "preset": "mirrorFF"
+          },
+          "k2": {
+            "preset": "mirrorFF"
+          },
+          "c1": {
+            "preset": "mirrorSize"
+          },
+          "c2": {
+            "preset": "mirrorSize"
+          }
+        },
+        "zone": {
+          "k1": 255,
+          "overlay": 0
+        },
+        "flag": {
+          "k1": 255,
+          "k2": 255,
+          "c1": 0,
+          "c2": 0
+        },
+        "half": {
+          "preset": "halfSmall"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "93f763b60aa95a47d30a7476c6e3e1968443c3b0b372d22ff6cd066dbc0c9c11"
+      }
+    },
+    {
+      "id": "save-left-0",
+      "action": "key",
+      "who": [
+        "k1",
+        "k2",
+        "c1",
+        "c2"
+      ],
+      "editor": false,
+      "phase": "main",
+      "key": "left",
+      "expect": {
+        "screen": "menu",
+        "highlight": "@A027@AF Mode",
+        "mirror": {
+          "k1": {
+            "preset": "mirrorFF"
+          },
+          "k2": {
+            "preset": "mirrorFF"
+          },
+          "c1": {
+            "preset": "mirrorSize"
+          },
+          "c2": {
+            "preset": "mirrorSize"
+          }
+        },
+        "zone": {
+          "k1": 255,
+          "overlay": 0
+        },
+        "flag": {
+          "k1": 255,
+          "k2": 255,
+          "c1": 0,
+          "c2": 0
+        },
+        "half": {
+          "preset": "halfSmall"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "17df90301d5940bf6b91ae9a9dd9f1031666d365bd93b2be62468e6d91120734"
+      }
+    },
+    {
+      "id": "save-left-1",
+      "action": "key",
+      "who": [
+        "k1",
+        "k2",
+        "c1",
+        "c2"
+      ],
+      "editor": false,
+      "phase": "main",
+      "key": "left",
+      "expect": {
+        "screen": "menu",
+        "highlight": "@A02C@C-AF Sensitivity",
+        "mirror": {
+          "k1": {
+            "preset": "mirrorFF"
+          },
+          "k2": {
+            "preset": "mirrorFF"
+          },
+          "c1": {
+            "preset": "mirrorSize"
+          },
+          "c2": {
+            "preset": "mirrorSize"
+          }
+        },
+        "zone": {
+          "k1": 255,
+          "overlay": 0
+        },
+        "flag": {
+          "k1": 255,
+          "k2": 255,
+          "c1": 0,
+          "c2": 0
+        },
+        "half": {
+          "preset": "halfSmall"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "44768eeae68fcb56611d0bf3529ef0b4c81a068a469178e82da5477abf55df29"
+      }
+    },
+    {
+      "id": "save-left-2",
+      "action": "key",
+      "who": [
+        "k1",
+        "k2",
+        "c1",
+        "c2"
+      ],
+      "editor": false,
+      "phase": "main",
+      "key": "left",
+      "expect": {
+        "screen": "menu",
+        "highlight": "AF Illuminator",
+        "mirror": {
+          "k1": {
+            "preset": "mirrorFF"
+          },
+          "k2": {
+            "preset": "mirrorFF"
+          },
+          "c1": {
+            "preset": "mirrorSize"
+          },
+          "c2": {
+            "preset": "mirrorSize"
+          }
+        },
+        "zone": {
+          "k1": 255,
+          "overlay": 0
+        },
+        "flag": {
+          "k1": 255,
+          "k2": 255,
+          "c1": 0,
+          "c2": 0
+        },
+        "half": {
+          "preset": "halfSmall"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "44768eeae68fcb56611d0bf3529ef0b4c81a068a469178e82da5477abf55df29"
+      }
+    },
+    {
+      "id": "save-left-3",
+      "action": "key",
+      "who": [
+        "k1",
+        "k2",
+        "c1",
+        "c2"
+      ],
+      "editor": false,
+      "phase": "main",
+      "key": "left",
+      "expect": {
+        "screen": "menu",
+        "highlight": "Subject Detection",
+        "mirror": {
+          "k1": {
+            "preset": "mirrorFF"
+          },
+          "k2": {
+            "preset": "mirrorFF"
+          },
+          "c1": {
+            "preset": "mirrorSize"
+          },
+          "c2": {
+            "preset": "mirrorSize"
+          }
+        },
+        "zone": {
+          "k1": 255,
+          "overlay": 0
+        },
+        "flag": {
+          "k1": 255,
+          "k2": 255,
+          "c1": 0,
+          "c2": 0
+        },
+        "half": {
+          "preset": "halfSmall"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "44768eeae68fcb56611d0bf3529ef0b4c81a068a469178e82da5477abf55df29"
+      }
+    },
+    {
+      "id": "save-down-0",
+      "action": "key",
+      "who": [
+        "k1",
+        "k2",
+        "c1",
+        "c2"
+      ],
+      "editor": false,
+      "phase": "main",
+      "key": "down",
+      "expect": {
+        "screen": "menu",
+        "highlight": "@A065@C-AF Setting",
+        "mirror": {
+          "k1": {
+            "preset": "mirrorFF"
+          },
+          "k2": {
+            "preset": "mirrorFF"
+          },
+          "c1": {
+            "preset": "mirrorSize"
+          },
+          "c2": {
+            "preset": "mirrorSize"
+          }
+        },
+        "zone": {
+          "k1": 255,
+          "overlay": 0
+        },
+        "flag": {
+          "k1": 255,
+          "k2": 255,
+          "c1": 0,
+          "c2": 0
+        },
+        "half": {
+          "preset": "halfSmall"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "44768eeae68fcb56611d0bf3529ef0b4c81a068a469178e82da5477abf55df29"
+      }
+    },
+    {
+      "id": "save-down-1",
+      "action": "key",
+      "who": [
+        "k1",
+        "k2",
+        "c1",
+        "c2"
+      ],
+      "editor": false,
+      "phase": "main",
+      "key": "down",
+      "expect": {
+        "screen": "menu",
+        "highlight": "@A02C@@A065@AF Button",
+        "mirror": {
+          "k1": {
+            "preset": "mirrorFF"
+          },
+          "k2": {
+            "preset": "mirrorFF"
+          },
+          "c1": {
+            "preset": "mirrorSize"
+          },
+          "c2": {
+            "preset": "mirrorSize"
+          }
+        },
+        "zone": {
+          "k1": 255,
+          "overlay": 0
+        },
+        "flag": {
+          "k1": 255,
+          "k2": 255,
+          "c1": 0,
+          "c2": 0
+        },
+        "half": {
+          "preset": "halfSmall"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "44768eeae68fcb56611d0bf3529ef0b4c81a068a469178e82da5477abf55df29"
+      }
+    },
+    {
+      "id": "save-page",
+      "action": "key",
+      "who": [
+        "k1",
+        "k2",
+        "c1",
+        "c2"
+      ],
+      "editor": false,
+      "phase": "main",
+      "key": "ok",
+      "expect": {
+        "screen": "menu",
+        "highlight": "@A066@ Priority",
+        "mirror": {
+          "k1": {
+            "preset": "mirrorFF"
+          },
+          "k2": {
+            "preset": "mirrorFF"
+          },
+          "c1": {
+            "preset": "mirrorSize"
+          },
+          "c2": {
+            "preset": "mirrorSize"
+          }
+        },
+        "zone": {
+          "k1": 255,
+          "overlay": 0
+        },
+        "flag": {
+          "k1": 255,
+          "k2": 255,
+          "c1": 0,
+          "c2": 0
+        },
+        "half": {
+          "preset": "halfSmall"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "unresolved-af-button-title-band"
+      }
+    },
+    {
+      "id": "save-2154-open",
+      "action": "key",
+      "who": [
+        "k1",
+        "k2",
+        "c1",
+        "c2"
+      ],
+      "editor": false,
+      "phase": "main",
+      "key": "ok",
+      "expect": {
+        "screen": "menu",
+        "highlight": "@A066@ Priority",
+        "mirror": {
+          "k1": {
+            "preset": "mirrorFF"
+          },
+          "k2": {
+            "preset": "mirrorFF"
+          },
+          "c1": {
+            "preset": "mirrorSize"
+          },
+          "c2": {
+            "preset": "mirrorSize"
+          }
+        },
+        "zone": {
+          "k1": 255,
+          "overlay": 0
+        },
+        "flag": {
+          "k1": 255,
+          "k2": 255,
+          "c1": 0,
+          "c2": 0
+        },
+        "half": {
+          "preset": "halfSmall"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "unresolved-af-button-popup-title-band"
+      }
+    },
+    {
+      "id": "save-2154-cancel",
+      "action": "key",
+      "who": [
+        "k1",
+        "k2",
+        "c1",
+        "c2"
+      ],
+      "editor": false,
+      "phase": "main",
+      "key": "menu",
+      "expect": {
+        "screen": "menu",
+        "highlight": "@A066@ Priority",
+        "mirror": {
+          "k1": {
+            "preset": "mirrorFF"
+          },
+          "k2": {
+            "preset": "mirrorFF"
+          },
+          "c1": {
+            "preset": "mirrorSize"
+          },
+          "c2": {
+            "preset": "mirrorSize"
+          }
+        },
+        "zone": {
+          "k1": 255,
+          "overlay": 0
+        },
+        "flag": {
+          "k1": 255,
+          "k2": 255,
+          "c1": 0,
+          "c2": 0
+        },
+        "half": {
+          "preset": "halfSmall"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "unresolved-af-button-title-band"
+      }
+    },
+    {
+      "id": "save-down-2155",
+      "action": "key",
+      "who": [
+        "k1",
+        "k2",
+        "c1",
+        "c2"
+      ],
+      "editor": false,
+      "phase": "main",
+      "key": "down",
+      "expect": {
+        "screen": "menu",
+        "highlight": "@A066@ Priority",
+        "mirror": {
+          "k1": {
+            "preset": "mirrorFF"
+          },
+          "k2": {
+            "preset": "mirrorFF"
+          },
+          "c1": {
+            "preset": "mirrorSize"
+          },
+          "c2": {
+            "preset": "mirrorSize"
+          }
+        },
+        "zone": {
+          "k1": 255,
+          "overlay": 0
+        },
+        "flag": {
+          "k1": 255,
+          "k2": 255,
+          "c1": 0,
+          "c2": 0
+        },
+        "half": {
+          "preset": "halfSmall"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "unresolved-af-button-title-band"
+      }
+    },
+    {
+      "id": "save-2155-open",
+      "action": "key",
+      "who": [
+        "k1",
+        "k2",
+        "c1",
+        "c2"
+      ],
+      "editor": false,
+      "phase": "main",
+      "key": "ok",
+      "expect": {
+        "screen": "menu",
+        "highlight": "@A066@ Priority",
+        "mirror": {
+          "k1": {
+            "preset": "mirrorFF"
+          },
+          "k2": {
+            "preset": "mirrorFF"
+          },
+          "c1": {
+            "preset": "mirrorSize"
+          },
+          "c2": {
+            "preset": "mirrorSize"
+          }
+        },
+        "zone": {
+          "k1": 255,
+          "overlay": 0
+        },
+        "flag": {
+          "k1": 255,
+          "k2": 255,
+          "c1": 0,
+          "c2": 0
+        },
+        "half": {
+          "preset": "halfSmall"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "unresolved-af-button-popup-title-band"
+      }
+    },
+    {
+      "id": "save-2155-cancel",
+      "action": "key",
+      "who": [
+        "k1",
+        "k2",
+        "c1",
+        "c2"
+      ],
+      "editor": false,
+      "phase": "main",
+      "key": "menu",
+      "expect": {
+        "screen": "menu",
+        "highlight": "@A066@ Priority",
+        "mirror": {
+          "k1": {
+            "preset": "mirrorFF"
+          },
+          "k2": {
+            "preset": "mirrorFF"
+          },
+          "c1": {
+            "preset": "mirrorSize"
+          },
+          "c2": {
+            "preset": "mirrorSize"
+          }
+        },
+        "zone": {
+          "k1": 255,
+          "overlay": 0
+        },
+        "flag": {
+          "k1": 255,
+          "k2": 255,
+          "c1": 0,
+          "c2": 0
+        },
+        "half": {
+          "preset": "halfSmall"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "unresolved-af-button-title-band"
+      }
+    },
+    {
+      "id": "save-zone-row",
+      "action": "key",
+      "who": [
+        "k1",
+        "k2",
+        "c1",
+        "c2"
+      ],
+      "editor": false,
+      "phase": "main",
+      "key": "down",
+      "expect": {
+        "screen": "menu",
+        "highlight": "@A040@AF Target Mode",
+        "mirror": {
+          "k1": {
+            "preset": "mirrorFF"
+          },
+          "k2": {
+            "preset": "mirrorFF"
+          },
+          "c1": {
+            "preset": "mirrorSize"
+          },
+          "c2": {
+            "preset": "mirrorSize"
+          }
+        },
+        "zone": {
+          "k1": 255,
+          "overlay": 0
+        },
+        "flag": {
+          "k1": 255,
+          "k2": 255,
+          "c1": 0,
+          "c2": 0
+        },
+        "half": {
+          "preset": "halfSmall"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "unresolved-af-button-title-band"
+      }
+    },
+    {
+      "id": "save-mark",
+      "action": "save-mark",
+      "who": [
+        "k1",
+        "k2",
+        "c1",
+        "c2"
+      ],
+      "editor": false,
+      "phase": "main",
+      "key": null,
+      "expect": {
+        "screen": "menu",
+        "highlight": "@A040@AF Target Mode",
+        "mirror": {
+          "k1": {
+            "preset": "mirrorFF"
+          },
+          "k2": {
+            "preset": "mirrorFF"
+          },
+          "c1": {
+            "preset": "mirrorSize"
+          },
+          "c2": {
+            "preset": "mirrorSize"
+          }
+        },
+        "zone": {
+          "k1": 255,
+          "overlay": 0
+        },
+        "flag": {
+          "k1": 255,
+          "k2": 255,
+          "c1": 0,
+          "c2": 0
+        },
+        "half": {
+          "preset": "halfSmall"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "unresolved-af-button-title-band"
+      }
+    },
+    {
+      "id": "save-commit",
+      "action": "key",
+      "who": [
+        "k1",
+        "k2",
+        "c1",
+        "c2"
+      ],
+      "editor": false,
+      "phase": "main",
+      "key": "ok",
+      "expect": {
+        "screen": "menu",
+        "highlight": "@A040@AF Target Mode",
+        "mirror": {
+          "k1": {
+            "preset": "mirrorFF"
+          },
+          "k2": {
+            "preset": "mirrorFF"
+          },
+          "c1": {
+            "preset": "mirrorSize"
+          },
+          "c2": {
+            "preset": "mirrorSize"
+          }
+        },
+        "zone": {
+          "k1": 255,
+          "overlay": 1
+        },
+        "flag": {
+          "k1": 255,
+          "k2": 255,
+          "c1": 0,
+          "c2": 0
+        },
+        "half": {
+          "preset": "halfSmall"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "unresolved-af-button-title-band"
+      }
+    },
+    {
+      "id": "save-exit-0",
+      "action": "key",
+      "who": [
+        "k1",
+        "k2",
+        "c1",
+        "c2"
+      ],
+      "editor": false,
+      "phase": "main",
+      "key": "menu",
+      "expect": {
+        "screen": "menu",
+        "highlight": "@A02C@@A065@AF Button",
+        "mirror": {
+          "k1": {
+            "preset": "mirrorFF"
+          },
+          "k2": {
+            "preset": "mirrorFF"
+          },
+          "c1": {
+            "preset": "mirrorSize"
+          },
+          "c2": {
+            "preset": "mirrorSize"
+          }
+        },
+        "zone": {
+          "k1": 255,
+          "overlay": 1
+        },
+        "flag": {
+          "k1": 255,
+          "k2": 255,
+          "c1": 0,
+          "c2": 0
+        },
+        "half": {
+          "preset": "halfSmall"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "44768eeae68fcb56611d0bf3529ef0b4c81a068a469178e82da5477abf55df29"
+      }
+    },
+    {
+      "id": "save-exit-1",
+      "action": "key",
+      "who": [
+        "k1",
+        "k2",
+        "c1",
+        "c2"
+      ],
+      "editor": false,
+      "phase": "main",
+      "key": "menu",
+      "expect": {
+        "screen": "shooting",
+        "highlight": null,
+        "mirror": {
+          "k1": {
+            "preset": "mirrorFF"
+          },
+          "k2": {
+            "preset": "mirrorFF"
+          },
+          "c1": {
+            "preset": "mirrorSize"
+          },
+          "c2": {
+            "preset": "mirrorSize"
+          }
+        },
+        "zone": {
+          "k1": 255,
+          "overlay": 1
+        },
+        "flag": {
+          "k1": 255,
+          "k2": 255,
+          "c1": 0,
+          "c2": 0
+        },
+        "half": {
+          "preset": "halfSmall"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "19a0f247d22625e54bb1ea773998e8886a8591151390eb27af9b5d4ac6e3ea69"
+      }
+    },
+    {
+      "id": "save-witness",
+      "action": "save-witness",
+      "who": [
+        "k1",
+        "k2",
+        "c1",
+        "c2"
+      ],
+      "editor": false,
+      "phase": "main",
+      "key": null,
+      "expect": {
+        "screen": "shooting",
+        "highlight": null,
+        "mirror": {
+          "k1": {
+            "preset": "mirrorFF"
+          },
+          "k2": {
+            "preset": "mirrorFF"
+          },
+          "c1": {
+            "preset": "mirrorSize"
+          },
+          "c2": {
+            "preset": "mirrorSize"
+          }
+        },
+        "zone": {
+          "k1": 255,
+          "overlay": 1
+        },
+        "flag": {
+          "k1": 255,
+          "k2": 255,
+          "c1": 0,
+          "c2": 0
+        },
+        "half": {
+          "preset": "halfSmall"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "19a0f247d22625e54bb1ea773998e8886a8591151390eb27af9b5d4ac6e3ea69",
+        "persisted": [
+          3,
+          3,
+          3,
+          3,
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "reopen-base",
+      "action": "check",
+      "who": [
+        "k1",
+        "k2",
+        "c1",
+        "c2"
+      ],
+      "editor": false,
+      "phase": "reopen",
+      "key": null,
+      "expect": {
+        "screen": "shooting",
+        "highlight": null,
+        "mirror": {
+          "preset": "mirrorFF"
+        },
+        "zone": {
+          "k1": 255,
+          "overlay": 0
+        },
+        "flag": 255,
+        "half": {
+          "from": "k2",
+          "step": "save-witness"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "166805347ccaf26ddad5750dbfd0a2b169855ffa38b4dbcdfa0717ddd42a3059"
+      }
+    },
+    {
+      "id": "reopen-afon-down",
+      "action": "edge",
+      "who": [
+        "k1",
+        "k2",
+        "c1",
+        "c2"
+      ],
+      "editor": false,
+      "phase": "reopen",
+      "key": "afon",
+      "dir": "down",
+      "expect": {
+        "screen": "shooting",
+        "highlight": null,
+        "mirror": {
+          "preset": "mirrorFF"
+        },
+        "zone": {
+          "k1": 255,
+          "overlay": 0
+        },
+        "flag": 255,
+        "half": {
+          "from": "k2",
+          "step": "save-witness"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "b4d51d676ffd6a56d083049cb561fe4b4d9b2cd9e1596f7d1401ee3032258661",
+        "target": {
+          "k1": [
+            14,
+            2,
+            3,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "k2": [
+            14,
+            2,
+            3,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "c1": [
+            14,
+            2,
+            2,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "c2": [
+            14,
+            2,
+            2,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        "owner": 2,
+        "enabled": 1
+      }
+    },
+    {
+      "id": "reopen-afon-up",
+      "action": "edge",
+      "who": [
+        "k1",
+        "k2",
+        "c1",
+        "c2"
+      ],
+      "editor": false,
+      "phase": "reopen",
+      "key": "afon",
+      "dir": "up",
+      "expect": {
+        "screen": "shooting",
+        "highlight": null,
+        "mirror": {
+          "preset": "mirrorFF"
+        },
+        "zone": {
+          "k1": 255,
+          "overlay": 0
+        },
+        "flag": 255,
+        "half": {
+          "from": "k2",
+          "step": "save-witness"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "b4d51d676ffd6a56d083049cb561fe4b4d9b2cd9e1596f7d1401ee3032258661",
+        "target": {
+          "k1": [
+            14,
+            2,
+            3,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "k2": [
+            14,
+            2,
+            3,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "c1": {
+            "from": "k2"
+          },
+          "c2": {
+            "from": "k2"
+          }
+        },
+        "owner": 0,
+        "enabled": 1
+      }
+    },
+    {
+      "id": "reopen-enter",
+      "action": "enter",
+      "who": [
+        "c1",
+        "c2"
+      ],
+      "editor": true,
+      "phase": "reopen",
+      "key": null,
+      "note": "AF-ON editor key. Next entry initialises the FF mirror.",
+      "expect": {
+        "screen": "shooting",
+        "highlight": null,
+        "mirror": {
+          "preset": "mirrorZero"
+        },
+        "zone": 0,
+        "flag": 1,
+        "half": {
+          "from": "k2",
+          "step": "save-witness"
+        },
+        "subject": 0,
+        "focus": 0,
+        "active": 0,
+        "status": 0,
+        "title": "b4d51d676ffd6a56d083049cb561fe4b4d9b2cd9e1596f7d1401ee3032258661"
+      }
+    }
+  ]
+}

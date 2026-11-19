@@ -122,3 +122,63 @@ All are accepted, EMULATOR-ONLY.
 - Display (T9).
 - Subject Detect On, packaging and hardware.
 - Playback and session-end exits. Note them as remaining if they are not exercised.
+
+## 5. Correction round (Opus, after Sol's review `run-20261119-131023-review`: REJECT)
+
+Your previous work is in `work\`, and Sol's full review is `audit\previous-review.md`. Read it completely.
+Do **not** start over.
+
+**Confirmed, reuse:**
+- the static integration (`overlay-diff-t8.json`: the overlays differ only in the 15 profile-read bytes;
+  sections computed from the image);
+- `config.md`;
+- the K1 observations in claims 2–6.
+
+**Coordinator change of method (this replaces the literal-only rule for controls in §2.3).** Six versions were
+spent discovering K1 values one per run. A control cannot be asserted against values nobody has measured. From
+now on:
+
+1. **Table check (no experiment version).** Before any emulator run, a static checker validates the step table:
+   - every step has a unique ID and every required field;
+   - K2 and the candidates have the same half-press keys, edges, exits and save steps, and the AF-ON editor keys
+     K2 skips are listed;
+   - each reference points to an existing step ID of the same name;
+   - the C1 step selects C1, so its mirror expectation is the C1 type, not Small;
+   - the bank-1 values are preserved across the EXIF-6 edit;
+   - the S1 exit is a real S1 key in the editor.
+
+   Fix the issues Sol listed. Record the checker's output.
+2. **Reference run (version 1).** Run K1 and K2 over the full sequence, including the save and the reopen.
+   Assert only these invariants:
+   - accepted literals: `0x1e71[0]=0`; the mirror is 55 `FF` bytes in K1 and K2; the flag is off; K1's
+     ten-byte target is the stock `0e 02 02 00 1b 00 27 00 00 00`; K1's owner, status and enabled are the image
+     value 255, the role-specific stock readback (your claim 6);
+   - no screenshot error, with no fallback after `ctx.screen()` throws;
+   - for the save: a fresh E and a fresh M after the recorded baseline, each with a captured image and its own
+     status-0 completion, including the posted M, reached by identity-guided navigation with the AF Target Mode
+     row asserted before the commit.
+
+   Write every other field at every step into `out\reference-v1.json`, keyed by role and step ID. Add a hash of
+   that file to the manifest at once. Then, in that same run, compare K1 and K2 decoded stores and report every
+   differing offset.
+3. **Acceptance (versions 2–6).** The candidates c1 and c2 assert every field at every step against either the
+   same-step K2 or K1 reference from `reference-v1.json`, or a literal for the AF-ON-specific values:
+   - the mirror;
+   - the AF-ON ten-byte target on AF-ON-owned edges (from T6: Small `11 02 03 00 01 00 01 00 00 00` pattern,
+     at the edited position);
+   - C1 `[5,7]`;
+   - the bank-5 position;
+   - the size byte.
+
+   A missing reference is a failure. No expectation is taken from the candidate's own observation. Every
+   acceptance item of §2.3 is in force, including both reopens with re-initialization and `compareStores` of
+   each candidate against K2 with zero differences. The run ends `ok:true`.
+   - If version 1's K2 fails an invariant, fix only the table or the harness, and record why.
+   - The accepted components are never changed.
+4. **Records.**
+   - Inventory the final commands and every consumed input, with an external final seal.
+   - Revise §5 and §11.
+   - Rename misleading presets (for example `halfSingle`).
+   - Preserve the executed scripts.
+
+**Authorization: six new experiment versions.** The table check is not an experiment version.

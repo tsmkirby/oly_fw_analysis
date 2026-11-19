@@ -78,3 +78,50 @@ Brief version: 2026-11-19 · Workspace: Ghidra + OM-Emu · Runs concurrently wit
 - The editor (T8), storage (Q7) and Subject Detect On.
 - Packaging and hardware.
 - Any detected-subject frame. Subject Detect is Off.
+
+## 5. Correction round (Opus, after Sol's review `run-20261119-131450-review`: REJECT)
+
+Your previous work is in `work\`, and Sol's full review is `audit\previous-review.md`. Read it completely.
+Do **not** start over.
+
+**Confirmed, reuse:**
+- the stock frame: four grey corner marks on the TFT shooting screen, located by region and hash;
+- the marks move with the half-press position set on the direct screen, and S1 does not move them;
+- `0x1e71[0]=0`;
+- with the seeded T6 configuration, the AF-ON press changes the ten-byte target and the owner, but the frame
+  pixels do not change.
+
+**Authorization: six new experiment versions,** spent in the order below. When they run out, stop and report.
+
+1. **Environment.** Set `OM_EMU_MODEL=E147` before any import of `emu/src/fw/model.mjs`. Assert the loaded model
+   at the start of every session, before any key. Version 6 aborted because the lab was imported as E143.
+2. **Find the frame's real drawing path (observation).**
+   - Watch the framebuffer writes that paint the corner pixels, and the draw calls behind them (the `0x610f66df`
+     rectangle return was observed).
+   - Walk back from the drawing call to the code that computes the corner coordinates. Record PCs, callers and
+     argument values in chronological order.
+   - Account for the return at `0x609eece0`, the function boundary of `0x609eec84`, and the getter caller
+     `0x6041a202`.
+   - Then state the call path from a position change to the redraw, and which cell drives it: `0x88b2`,
+     `0x5962`, or another copy.
+   - Distinguish causally with one trial: change one candidate cell alone by a test-setup write, and record
+     whether the marks move.
+   - Also find what triggers the redraw (invalidation or refresh), and whether an AF-ON press triggers it at
+     all.
+   - Correct the attribution in `result.md` and `display.md`.
+3. **Controls.** Add K2 as the **unseeded T6 configuration**: the T6 overlay and hook with no mirror seed. Label
+   the earlier Z5 control as Z5 without the T6 hook.
+4. **One change (only after item 2 identifies the path).** At the narrowest point, while AF-ON owns the target,
+   the frame's coordinate and size source reads the AF-ON target (mirror, or ten-byte target), with a redraw
+   triggered on the AF-ON press and on release.
+   - Assert the full expected and actual frame region after **every one** of the 12 T5 edges, with executable
+     pixel expectations and no unconditional `pass:true`.
+   - The half-press frame is unchanged on the S1-owned edges.
+   - K1 and the unseeded K2 behave as stock.
+   - If item 2 cannot identify the path, do not guess: report it with the evidence.
+5. **Wording.** Narrow claim 8 to the observed cross-session pixel difference, unless a distinguishing trial
+   establishes its cause.
+6. **Records.**
+   - Inventory both consumed overlay CSVs, the directly imported `menu.mjs` and `sim.mjs`, the transitive
+     emulator modules and the cited research inputs.
+   - Seal the final outputs and command records through the last command with an external finalization step.
