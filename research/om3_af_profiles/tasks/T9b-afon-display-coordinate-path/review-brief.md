@@ -41,3 +41,15 @@
 
 Recompute every manifest hash. Use PowerShell (Python is not on your PATH). Do not run Ghidra or OM-Emu.
 Give the verdict in the structure of `templates\review.md`.
+## Correction round
+
+Also read `brief.md` §5 and your previous review in `audit\previous-review.md`. For each §5 item, report DONE /
+NOT DONE / WRONG / BLOCKED (honestly reported).
+
+Check in particular:
+- The record corrections are uniquely named addenda, and the old files are unchanged.
+- The thunk caller is identified with a chronological store trace, up to the frame geometry for 412 and for 526.
+- The refresh trigger, and whether an AF-ON press schedules it.
+- If a change was made: one labelled change feeding the stock routine's input, with the full frame, the target
+  and the owner asserted after all 12 edges, against K1 and the unseeded K2.
+- The external final seal.

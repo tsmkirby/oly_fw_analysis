@@ -1,0 +1,47 @@
+INFO  Using log config file: jar:file:/C:/Dev/OM3-research/tooling/ghidra_12.2_PUBLIC/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml (LoggingInitialization)  
+INFO  Using log file: work\out\disasm-b1d.log (LoggingInitialization)  
+INFO  Loading user preferences: C:\Dev\OM3-tasks\T9b-afon-display-coordinate-path\ws\state\ghidra-user\settings\tsmki-ghidra\ghidra_12.2_PUBLIC\preferences (Preferences)  
+INFO  Searching for classes... (ClassSearcher)  
+INFO  Class search complete (601 ms) (ClassSearcher)  
+INFO  Initializing SSL Context (DefaultSSLContextInitializer)  
+INFO  Initializing Random Number Generator... (SecureRandomFactory)  
+INFO  Random Number Generator initialization complete: SHA1PRNG (SecureRandomFactory)  
+WARN  OS Truststore load failed: java.security.KeyStoreException: error 5, Access is denied.
+ (DefaultTrustManagerFactory)  
+INFO  Loaded 118 trusted CA certificates from the Java default trust store. (DefaultTrustManagerFactory)  
+INFO  Headless startup complete (1339 ms) (AnalyzeHeadless)  
+INFO  Class searcher loaded 60 extension points (19 false positives) (ClassSearcher)  
+INFO  HEADLESS Script Paths:
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\VersionTracking\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\BSim\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\PDB\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Processors\JVM\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\MicrosoftCodeAnalyzer\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Debug\Debugger-rmi-trace\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Debug\Debugger\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Processors\Atmel\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Processors\DATA\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\FileFormats\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Processors\8051\ghidra_scripts
+    C:\Dev\OM3-tasks\T9b-afon-display-coordinate-path\ws\work\scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\GnuDemangler\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\SystemEmulation\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\Base\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\PyGhidra\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\Swift\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\BytePatterns\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\WildcardAssembler\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\FunctionID\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\Decompiler\ghidra_scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Features\DecompilerDependent\ghidra_scripts
+    C:\Dev\OM3-research\scripts
+    C:\Dev\OM3-research\tooling\ghidra_12.2_PUBLIC\Ghidra\Processors\PIC\ghidra_scripts (HeadlessAnalyzer)  
+INFO  HEADLESS: execution starts (HeadlessAnalyzer)  
+INFO  Opening existing project: C:\Dev\OM3-tasks\T9b-afon-display-coordinate-path\ws\projects\OM3_main_full (HeadlessAnalyzer)  
+INFO  Opening project: C:\Dev\OM3-tasks\T9b-afon-display-coordinate-path\ws\projects\OM3_main_full (HeadlessProject)  
+INFO  REPORT: Processing read-only project file: /00_0100_50000020.decoded.bin (HeadlessAnalyzer)  
+INFO  REPORT: Execute script: DisasmStockV1.java '600630a3' '200' 'work/out/disasm-cb-b1.txt' '610ee1f8' '160' 'work/out/disasm-paintfn-b1.txt' '60057501' '40' 'work/out/disasm-post-b1.txt'  (HeadlessAnalyzer)  
+INFO  SCRIPT: C:\Dev\OM3-tasks\T9b-afon-display-coordinate-path\ws\work\scripts\DisasmStockV1.java (HeadlessAnalyzer)  
+INFO  DisasmStockV1.java> wrote work\out\disasm-cb-b1.txt 200 (GhidraScript)  
+INFO  DisasmStockV1.java> wrote work\out\disasm-paintfn-b1.txt 160 (GhidraScript)  
+INFO  DisasmStockV1.java> wrote work\out\disasm-post-b1.txt 40 (GhidraScript)  

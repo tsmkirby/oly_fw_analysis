@@ -8,7 +8,20 @@ Last updated: 2026-11-17 (Phase 1 preparation).
 
 ## 1. Continuation point
 
-- **Now:** T8b and T9b run concurrently.
+- **Now:** three concurrent runs.
+  - **T8b correction.** One authorized change: the AF-ON mirror initializes to the stock **factory values**
+    (ROM defaults, confirmed against K1's fresh store) instead of zero. A new stock role, K1e, presses the
+    same editor keys in normal mode and supplies the candidate's independent expectations.
+  - **T9b correction.** It traces the getter-thunk caller to the frame geometry and the refresh trigger, then
+    makes one change.
+  - **T10, persistence via `0x5b82`.** This follows the owner's Q7 decision. It covers:
+    - a targeted audit of the leftover readers;
+    - a codec with a marker and a checksum;
+    - store and load through the stock API;
+    - tests for save and reopen, reset, C1 recall, corruption and art-filter cursors.
+  - **Owner decision (19 Nov): Q7 = (a)**; research (b) later.
+- **Previous step:** T8b and T9b round 1 (both REJECT; candidate stalled on the zero init; display path not
+  yet traced).
   - **T8b:** integrated acceptance with a step table generated from a declarative sequence and a complete
     checker. Every emulator process counts as a version, and the run stops at the first failure. The save
     criterion is amended from the evidence: a fresh posted M, no new E, E equal to K2.
@@ -215,8 +228,10 @@ The autonomous programme ends at either of these:
 | T6 | AF-ON button target from the mirror (type, size, position, custom dimensions) per pose; 12 edges; C-AF; full acceptance including the reopen release | **Closed PARTIAL** (Q1–Q4, size, save, reopen press and release, and stores equal to K2 confirmed; evidence-contract gaps → T8) | [decision](tasks/T6-afon-target-size-position/decision.md) |
 | T8 | Integrated acceptance: editor-made AF-ON profile drives the AF-ON target, per pose; controls first; final-call save; reopen; stores equal to K2; no new change | **Closed: PARTIAL** (two REJECTs; controls and save timing established; candidates → T8b) | [decision](tasks/T8-afon-integrated-acceptance/decision.md) |
 | T9 | Display: does the shooting-screen AF frame follow the AF-ON target? Emulator capability first; one change only if needed | **Closed: PARTIAL** (two REJECTs; mismatch confirmed; driving cell `0x88b2`; path → T9b) | [decision](tasks/T9-afon-target-display/decision.md) |
-| T8b | Integrated acceptance: generated per-key table and complete checker; reference run; candidates; amended save criterion (fresh posted M, no new E, E equal to K2) | **Running** (with T9b) | [tasks/T8b-afon-integrated-acceptance-generated](tasks/T8b-afon-integrated-acceptance-generated/brief.md) |
-| T9b | Display: trace setter → coordinate object → OSD invalidation; one change; full-frame assertions on 12 edges | **Running** (with T8b) | [tasks/T9b-afon-display-coordinate-path](tasks/T9b-afon-display-coordinate-path/brief.md) |
+| T8b | Integrated acceptance: generated per-key table and complete checker; reference run; candidates; amended save criterion (fresh posted M, no new E, E equal to K2) | **Correcting** (round 1 REJECT: candidate stalled on zero init; factory-init amendment and K1e references; 6 versions) | [tasks/T8b-afon-integrated-acceptance-generated](tasks/T8b-afon-integrated-acceptance-generated/brief.md) |
+| T9b | Display: trace setter → coordinate object → OSD invalidation; one change; full-frame assertions on 12 edges | **Correcting** (round 1 REJECT: direct store and idle refresh found; geometry not reached; 6 versions) | [tasks/T9b-afon-display-coordinate-path](tasks/T9b-afon-display-coordinate-path/brief.md) |
+| T10 | Persistence in the unnamed `0x5b82` cells (Q7 = a): leftover-reader audit; codec; stock-API store and load; save/reopen, reset, C1, corruption and art-filter tests | **Running** | [tasks/T10-afon-profile-storage-5b82](tasks/T10-afon-profile-storage-5b82/brief.md) |
+| — | Q7 option (b): new registered settings key (owner wants it researched later) | **Planned**, not started | owner, 19 Nov |
 | — | Beyond T3: persistence, display, hook point (Q4), acceptance matrix | Planned by Opus as results arrive | §2 |
 | — | CPU3 request/loader port | Deferred; regression only | AFON-MENU-RESEARCH §9 item 5 |
 
@@ -243,7 +258,9 @@ The autonomous programme ends at either of these:
   `0x610bf5e2` (section 7, no placement proof). Phase-plan stage 6 still assumes the table redirect.
 - **Q5.** Does the AF-ON position editor need a second row (page-29 pattern)? *T3.*
 - **Q6.** Section-4 tail run-time use; secondary-CPU/DMA ownership of the reserved tails.
-- **Q7. Storage for the AF-ON profile. *Owner decision* (escalated 18 Nov).**
+- **Q7. Storage for the AF-ON profile. DECIDED by the owner, 19 Nov: option (a)**, the unnamed cells of
+  `0x5b82`, "for now". The owner wants option (b), a new registered key, researched later, so keep the
+  codec independent of the location. Implemented as EMULATOR-ONLY in T10. History:
   - **What is established.** The unnamed cells of `0x5b82` (26 bytes) fit the 18-byte CRC layout. Custom
     Mode C1 does not store this key, so the profile would be global, not per custom mode. The default and
     reset paths write zeros, which decode as "no profile". The factory adjustment and debug paths can
@@ -413,6 +430,7 @@ ACL or label operation on any tree containing a junction; the scripts check for 
 | 2026-11-19 | T3m closed as PARTIAL after its correction-round REJECT. The custom-size persistence route was found (the stock size editor's OK commit writes the `0x62954108` record before the routed setter) and fixed by a record restore, with zero store differences confirmed. Save and acceptance failed on harness defects (the menu reopens on the last tab; a K1 self-reference). Different approach: T8 integrates only accepted components on one runner, controls first, with identity-guided save navigation. T9 (display) opened in parallel. Condition A cannot complete without Q7 (persistence), which is an owner decision. | Opus | T3m decision.md; T8 and T9 briefs |
 | 2026-11-19 | T8 round 1 rejected: six versions stopped in K1, each fixing one guessed control literal. This was a coordinator brief flaw: controls cannot be asserted against values never measured. Correction method: a static table check (no version), then a K1/K2 reference run asserting only accepted invariants and recorded with its hash, then candidates asserted against same-step references. T9 round 1 rejected: the display does not follow the AF-ON target (confirmed); the routine was misattributed; the change aborted on model E143. The correction traces from framebuffer writes back to the coordinates, adds an unseeded T6 control, and sets `OM_EMU_MODEL=E147`. | Opus | T8/T9 brief §5 |
 | 2026-11-19 | T8 and T9 closed as PARTIAL after their correction-round REJECTs. Both stopped honestly at real limits. Coordinator decision on the save criterion: E and an unposted M are written at session open, and the AF Target Mode commit posts only M. The "fresh E" requirement came from misreading T6's whole-log witness. It is replaced by: a fresh posted M with status 0, no new E, and E byte-identical to K2. This is a test correction, not a functional change. T8b takes a different approach (a declarative sequence, a generated per-key table, a complete static checker, every emulator process counted, stop at the first failure). T9b traces the coordinate object and the invalidation before any change. | Opus | T8/T9 decision.md; T8b/T9b briefs |
+| 2026-11-19 | **Owner decision: Q7 = option (a)**, the unnamed `0x5b82` cells ("We will go with A for now, but I will want to research B later"). T10 opened. T8b round 1 rejected: the candidate stalled because `initMirror` writes 0 while the stock factory state is position 526 and 3×3. Coordinator amendment for the T8b correction: initialize the mirror to the ROM factory defaults, which keeps the stated "stock factory defaults" rule with the true values, and add K1e as the independent reference. T9b round 1 rejected on two measurement corrections and the seal; the correction continues the trace. | owner; Opus | T8b/T9b brief §5; T10 brief |
 
 ## 12. Session resumption checklist (Opus)
 

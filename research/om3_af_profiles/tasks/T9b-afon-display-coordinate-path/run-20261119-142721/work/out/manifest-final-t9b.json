@@ -1,0 +1,36 @@
+{
+  "task": "T9b",
+  "note": "External finalizer. These hashes cover command 29 and the seal. This process does not hash work/out/cmd/30.out, 30.err or 30.exit, and it does not hash this file's own bytes: the wrapper writes the three command files after the process returns, and the .exit file contains a timestamp.",
+  "files": [
+    {
+      "path": "work/out/manifest-seal-t9b.json",
+      "sha256": "55265ff9cedae01dac928f311bd672fe5a14bc9bd8a085a3dacfc93a199a2f33",
+      "bytes": 1413
+    },
+    {
+      "path": "work/evidence-manifest.json",
+      "sha256": "48e35b73933f852b5a9ed0e5cc735bccf4639b92217b1cca8ab8ea10efceb73f",
+      "bytes": 99360
+    },
+    {
+      "path": "work/out/cmd/29.cmd.txt",
+      "sha256": "a6c156fd37887a2e56e3c1ce29573b4bf5e30dac6885dfcd77d5360f9fc601cb",
+      "bytes": 401
+    },
+    {
+      "path": "work/out/cmd/29.out",
+      "sha256": "77bab245fa1582c29a342d9bc8145f5f73cc3508b5434fff56b9d6b143873cb6",
+      "bytes": 845
+    },
+    {
+      "path": "work/out/cmd/29.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "work/out/cmd/29.exit",
+      "sha256": "ec62c340018aa84307131e768837c5c50c7290c1466e2f8c83e8a0661110b86c",
+      "bytes": 518
+    }
+  ]
+}

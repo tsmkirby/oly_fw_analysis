@@ -62,3 +62,51 @@ T9's run `ref\tasks\T9-afon-target-display\run-20261119-132229\work\`:
 ## 3. Out of scope
 
 The editor (T8b), storage (Q7), Subject Detect On, packaging and hardware.
+
+## 5. Correction round (Opus, after Sol's review `run-20261119-152529-review`: REJECT)
+
+Your previous work is in `work\`, and Sol's full review is `audit\previous-review.md`. Read it completely.
+Do **not** start over.
+
+**Confirmed, reuse:**
+- the setter `0x60063431` stores `0x88b2[0]` directly at `0x629526c0`, plus `0xa32bfb32`=1;
+- the marks move about 500 ms later, on idle;
+- `0x60063a5e` reads the cell during that idle;
+- `0x610eedcb`/`0x610eedee` are **not** the AF corner geometry on this path;
+- an AF-ON press runs the same getter and flag writer but does not move the marks.
+
+**Record corrections, issued as uniquely named addenda (`result-addendum-v1.md`, `display-addendum-v1.md`).
+Do not edit the old files.**
+1. Claim 9 and the display table: the unseeded target is `0e 02 02 00 01 00 01 00 00 00`, position 526.
+2. Claim 3: 90 shared-instruction hits, 2 address-filtered cell hits. Remove the attribution of all 1,998 getter
+   entries to the thunk.
+3. Add the cited T9 reviews to the source inventory, and acknowledge the record deviations.
+
+**Authorization: six new experiment versions,** spent in the order below. Every emulator process counts.
+
+1. **Thunk caller (observation).**
+   - Probe the entry of thunk `0x6041a1f9` and record the caller's return address (`mdr`, or the stack) when
+     `d0 = 0x88b2` during the idle refresh.
+   - Then record, in chronological order, the stores that caller and its callees make after the getter
+     returns, until the frame geometry appears: values consistent with (356, 198) 65×71 for 412, and
+     (417, 265) 66×70 for 526.
+   - Name the routine, the object, its fields and the writer.
+2. **Frame-specific invalidation (observation).** Identify what schedules that refresh after the setter:
+   `0xa32bfb32`, a message, or a timer. Show whether an AF-ON press schedules it.
+3. **One change (only after items 1 and 2).**
+   - While AF-ON owns the target (owner 2), make the identified routine compute the frame from the AF-ON
+     target (the mirror position and size for the current bank), and schedule the identified refresh on press
+     and on release.
+   - Prefer feeding the stock routine's input over writing geometry.
+   - Validate on the 12 T5 edges, with the seeded T6 configuration plus the change, the unseeded T6 control
+     (K2) and stock (K1).
+   - After every edge, assert:
+     - the full expected frame (four rectangles: position, size and colour, derived from the target);
+     - the ten-byte target;
+     - the owner.
+   - The S1-owned edges show the half-press frame.
+   - If items 1 and 2 do not identify the path, do not guess. Report it.
+4. **Records.**
+   - The transitive inventory.
+   - An external final seal after the last wrapper finishes, covering every command record and the final
+     manifest.

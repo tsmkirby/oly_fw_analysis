@@ -1,0 +1,16 @@
+{
+  "status": 0,
+  "signal": null,
+  "error": null,
+  "start": "2026-11-19T19:57:22.925Z",
+  "end": "2026-11-19T19:57:26.400Z",
+  "spawn": "cmd.exe /d /c tools\\bin\\run-ghidra.cmd -postScript DisasmStockV1.java 610ef400 160 work/out/disasm-caller-ef-b1.txt 610ef4c0 40 work/out/disasm-call-ef-b1.txt -log work/out/disasm-b3.log",
+  "wrapper_sha256": "34e42c59c553a1e4213e2b223034bd31142c7000c6aef4aac2ac9d5e7f1fe0ef",
+  "scripts": [
+    {
+      "path": "DisasmStockV1.java",
+      "sha256": "396935d9adbea81a0911ebb28978468e14cf6bd16bc4411deac9095dd818a49d",
+      "bytes": 1579
+    }
+  ]
+}

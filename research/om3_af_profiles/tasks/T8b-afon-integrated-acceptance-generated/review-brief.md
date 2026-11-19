@@ -45,3 +45,18 @@
 
 Recompute every manifest hash. Use PowerShell (Python is not on your PATH). Do not run Ghidra or OM-Emu.
 Give the verdict in the structure of `templates\review.md`.
+## Correction round
+
+Also read `brief.md` §5 and your previous review in `audit\previous-review.md`. For each §5 item, report DONE /
+NOT DONE / WRONG / BLOCKED (honestly reported).
+
+Check in particular:
+- The factory-initialization change is the only change. Its values come from the ROM default tables, are
+  confirmed against K1's fresh store, and only `FF` fields are initialized.
+- K1e presses the same editor keys in normal mode. The mapping from its half-press cells to the mirror (field
+  and bank) is static, stated and checker-validated.
+- Every remaining literal cites its source.
+- The exits, banks and flags are consistent.
+- Both candidates run to `ok:true`.
+- On both reopens, the next entry initializes to the factory values.
+- Decode the M and E stores against K2 yourself.
