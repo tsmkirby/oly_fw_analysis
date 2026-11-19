@@ -1,4 +1,4 @@
-# T6: AF-ON button target takes type, size and position from the AF-ON profile, per orientation (OM-Emu prototype)
+﻿# T6: AF-ON button target takes type, size and position from the AF-ON profile, per orientation (OM-Emu prototype)
 
 Agent: Grok 4.7 High · Coordinator: Opus 5.5 · Reviewer: Codex Sol
 Brief version: 2026-11-19 · Workspace: Ghidra + OM-Emu · Runs concurrently with the T3l correction round
@@ -93,3 +93,59 @@ Brief version: 2026-11-19 · Workspace: Ghidra + OM-Emu · Runs concurrently wit
 ## 4. Out of scope
 
 The editor (T3l), storage (Q7), display, Subject Detect On, packaging and hardware.
+
+## 5. Correction round (Opus, after Sol's review `run-20261119-095259-review`: REJECT)
+
+Your previous work is in `work\`, and Sol's full review is `audit\previous-review.md`. Do **not** start over.
+
+**Confirmed, reuse unchanged:**
+- the 15-byte profile read (one change on Z5);
+- Q1's 12 edges (Small on the AF-ON-owned edges);
+- C1 dimensions;
+- the six pose/link combinations;
+- C-AF;
+- both 12-edge profiles in acceptance, including the EXIF-6 change.
+
+Save everything new under a **new, unique name** (`-v1` onward). Never overwrite a file a run used or wrote.
+
+**Authorization: six new experiment versions,** spent in the order below. When they run out, stop and report.
+
+1. **Save procedure.** T5's final acceptance completed a native save with M and E byte-identical to its
+   control: `ref\analysis\button-af\readiness\t5-afon-button-handoff\scripts\accept_runner_c3.mjs` and its
+   table, steps up to and including `store`.
+   - Reproduce that exact save procedure here: the same menu commit that dirties the store, then the menu
+     exit.
+   - Assert that the store log contains an M **and** an E save, with completion status 0 (not only a
+     log-length change; see Sol's T3l note on `menu.mjs:879–880`).
+   - Read the persisted cells back from the store file.
+2. **Acceptance (new runner).**
+   - Two fresh candidates, K1 and K2. K2 is Z5 with the stock half-press only and the same keys and menu
+     exits as the candidates.
+   - Replace every unconditional `check(id, [], …)` with exact expected-state comparisons, using explicit
+     expected and actual values.
+   - Assert every key, including those inside menu-exit loops, with unique step IDs.
+   - Emit the complete 55-byte mirror and the focus/status readbacks on every edge.
+   - Sequence:
+     1. profile A, 12 edges;
+     2. a pose change;
+     3. profile B, 12 edges;
+     4. the save from item 1;
+     5. a new session on that store;
+     6. on reopen: the mirror is back at image `FF`, the fallback is stated, **the AF-ON press and the AF-ON
+        release are both asserted**, and the half-press record is stock;
+     7. `compareStores` of decoded M and E against K2, reporting every differing offset.
+   - The run must end `ok:true`.
+3. **Size, distinguishing (one trial).**
+   - Set the mirror's `0x9a41[0]` to a value that differs from the legacy size `0xdfa1`.
+   - Show which one the AF-ON target uses, and that the half-press target still uses the legacy one.
+4. **Narrow the claims.**
+   - Q1: Small on the five AF-ON-owned edges, All restored on the others.
+   - Q3: the reduced controls (K2 two linked edges per pose, K1 landscape only), unless you rerun them matched.
+   - Q2: the unmatched navigation and store differences.
+   - Correct the `0x9a41` descriptor count.
+   - Remove "No other deviation".
+5. **Records.**
+   - Seal the final command outputs in a supplement.
+   - Add the omitted consumed and cited inputs.
+   - Canonicalize the duplicate manifest paths.
+   - Refresh the manifest last.
