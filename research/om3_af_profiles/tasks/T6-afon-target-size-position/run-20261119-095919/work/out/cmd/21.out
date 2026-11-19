@@ -1,0 +1,13 @@
+problems ['log-E', 'status', 'status', 'status', 'status', 'status', 'status', 'status'] count 868
+added 1
+added stores {'M': 1}
+added sample [{'store': 'M', 'from': '0x60061268 (disasm 0x50040248)', 'posted': True}]
+events 51979 pending 0 screen shooting
+status {0: 51114, 1: 864, 2: 1}
+when {'callback-entry': 1, 'nand-return': 51978}
+event stores {None: 51979}
+event0 {'when': 'callback-entry', 'posted': True, 'status': 0, 'intended': 0, 'callback': 1342451092}
+event1 {'when': 'nand-return', 'posted': False, 'status': 0, 'intended': 0, 'callback': None}
+nv keys ['E', 'M', 'model', 'scpu', 'version']
+M present True b64 349528
+E present True b64 262144

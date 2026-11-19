@@ -8,9 +8,26 @@ Last updated: 2026-11-17 (Phase 1 preparation).
 
 ## 1. Continuation point
 
-- **Now:** T3m (find and restore the editor state that leaks position across modes; shared acceptance
-  harness `accept_lib.mjs`) runs concurrently with the T6 correction round (T5's proven save procedure;
-  full acceptance with the reopen press and release; a size trial that distinguishes the sources).
+- **Now:** T3m correction round. It finds the route by which the AF-ON C1/C2 custom sizes reach the saved
+  half-press record, fixes it, then runs a strict acceptance with T6's accepted save witness. After that comes
+  **T8**, the final combined acceptance: the editor (T3m) plus the target (T6) on one strict runner, carrying
+  T6's open evidence items. T8 is the candidate for completion condition A.
+  - **T6 closed as PARTIAL (19 Nov).** Sol confirmed:
+    - the profile read;
+    - Q1–Q4;
+    - the size distinguished (AF-ON uses mirror `0x9a41[0]`; half-press uses live `0x9a41[0]`, not
+      `0xdfa1`);
+    - the T5 save, with M+E witnessed at status 0;
+    - acceptance `ok:true`, with the reopen AF-ON press (All) and release (stock) asserted, and both
+      candidates' stores **byte-identical to K2**.
+
+    The correction REJECT was for evidence gaps only, which carry to T8. The profile does not survive a reopen
+    (Q7). [decision](tasks/T6-afon-target-size-position/decision.md).
+  - **T3m round 1 (REJECT).**
+    - Leak found and fixed: three editor copies (`0x62953c10`, `0x60379d64`, object +`0x42`) are restored on
+      exit.
+    - Acceptance failed: c1's saved M carried the mirror's C1/C2 custom sizes into the half-press record
+      (8 bytes, plus the checksum word).
   - **T3l closed as PARTIAL (19 Nov).** Accepted: the hook-side exits and the non-zero zone restore; entry
     that copies nothing and initializes only `FF` fields to factory defaults (zero); C1 kept through C2;
     survival across a normal edit and re-entry; `0x1e71[0]=0` read back (Subject Detect Off).
@@ -158,10 +175,10 @@ The autonomous programme ends at either of these:
 | T5 | AF-ON button applies the zone from the menu row: the RAM profile replaces the legacy AF Home provider in the central-edge handoff; 12 edges; S-AF and C-AF; Subject Detect Off | **Accepted with corrections**, claims narrowed (correction round REJECT on control navigation only; resolved by the coordinator; final reopen release → T6) | [decision](tasks/T5-afon-button-handoff/decision.md) |
 | T3b | AF-ON target size and position editor: measure the stock AF target selection screen, profile layout, route the screen to the profile (EMULATOR-ONLY entry; entry options → Q5) | **Closed: PARTIAL** (two REJECTs; components accepted; continued as T3l) | [decision](tasks/T3b-afon-target-editor/decision.md) |
 | T3l | AF-ON editor completion: hook-side exit handling and zone-byte restore, factory-default initialization, K1 and K2 controls, AF-ON custom sizes, full acceptance, poses via T7 | **Closed: PARTIAL** (two REJECTs; entry/init/restore accepted; position leak found; continued as T3m) | [decision](tasks/T3l-afon-editor-completion/decision.md) |
-| T3m | Editor state isolation: locate and restore the state leaking the AF-ON position into the next normal edit; shared acceptance harness (`waitTitle`, `nativeSave` with M+E and status, `compareStores`, matched K2); full editor acceptance | **Running** (concurrently with the T6 correction) | [tasks/T3m-afon-editor-state-leak](tasks/T3m-afon-editor-state-leak/brief.md) |
+| T3m | Editor state isolation: locate and restore the state leaking the AF-ON position into the next normal edit; shared acceptance harness (`waitTitle`, `nativeSave` with M+E and status, `compareStores`, matched K2); full editor acceptance | **Correcting** (round 1 REJECT: leak located and fixed; the saved M carried the AF-ON C1/C2 sizes; 6 versions authorized) | [tasks/T3m-afon-editor-state-leak](tasks/T3m-afon-editor-state-leak/brief.md) |
 | T4b | Stock watch run from reset: boot order (descriptor build, key-port hook, first lookup), duplicate `0x216` readers, flash-read callees | **Accepted with corrections** (bounded; reuse still a hypothesis) | [decision](tasks/T4b-afon-boot-order/decision.md) |
 | T7 | Orientation: stock producer, EMULATOR-ONLY pose injection at the sensor read, per-pose AF target banks, reusable pose module | **Closed: PARTIAL** (producer and pose injection accepted; stock consumer per-pose index BLOCKED) | [decision](tasks/T7-orientation-producer/decision.md) |
-| T6 | AF-ON button target from the mirror (type, size, position, custom dimensions) per pose; 12 edges; C-AF; full acceptance including the reopen release | **Correcting** (round 1 REJECT: Q1–Q4 confirmed; acceptance incomplete; size not distinguished; 6 versions authorized) | [tasks/T6-afon-target-size-position](tasks/T6-afon-target-size-position/brief.md) |
+| T6 | AF-ON button target from the mirror (type, size, position, custom dimensions) per pose; 12 edges; C-AF; full acceptance including the reopen release | **Closed PARTIAL** (Q1–Q4, size, save, reopen press and release, and stores equal to K2 confirmed; evidence-contract gaps → T8) | [tasks/T6-afon-target-size-position](tasks/T6-afon-target-size-position/brief.md) |
 | — | Beyond T3: persistence, display, hook point (Q4), acceptance matrix | Planned by Opus as results arrive | §2 |
 | — | CPU3 request/loader port | Deferred; regression only | AFON-MENU-RESEARCH §9 item 5 |
 
@@ -354,6 +371,7 @@ ACL or label operation on any tree containing a junction; the scripts check for 
 | 2026-11-19 | T7 closed as PARTIAL after its correction-round REJECT. The producer is accepted; the stock consumer is blocked. T3l round 1 rejected; one correction round with six versions, prioritized so that acceptance comes before the remaining exits. The entry-overwrite bug is to be fixed. Erratum: `0x90a1` is not Subject Detect; future tasks assert `0x1e71[0]`. T6 launched concurrently with seeded mirrors (it doesn't depend on the editor). Default for an uninitialized AF-ON profile: stock factory defaults (zero). This is a coordinator choice, to be reported to the owner. | Opus | T7 decision.md; T3l brief §5; T6 brief |
 | 2026-11-19 | T3l closed as PARTIAL after its correction-round REJECT. Sol found a position leak (994 vs 526) in the normal edit after an AF-ON session, masked earlier by the old entry recopy. T3m opened with a different approach: locate the leaking editor state, then build a shared acceptance harness for T3m and T6. The T6 Sol review was cut off by the Codex usage limit ("You've hit your usage limit", reset 09:51). No credits were purchased (that needs owner approval); the review is re-run after the reset. | Opus | T3l decision.md; T6 review err |
 | 2026-11-19 | T6 round 1 rejected after the re-run review (09:53). One correction round with six versions: reuse T5's proven save procedure (M+E with status 0), full acceptance including the reopen AF-ON press and release, and a size trial that distinguishes mirror from legacy. T3m launched alongside. | Opus | T6 brief §5 |
+| 2026-11-19 | T6 closed as PARTIAL after its correction-round REJECT. Sol independently confirmed every functional result, including both candidates' stores byte-identical to K2 and the asserted reopen press and release. The rejection covered one leftover empty check, K1 status and reopened-focus comparisons, a size-source misattribution (corrected in the decision to live `0x9a41[0]`) and manifest coverage. Those are carried to a final combined acceptance (T8), not to another T6 round. T3m round 1 rejected: the leak was fixed, but the saved M carried the mirror's C1/C2 sizes. One correction round with six versions: trace the persistence route, fix it, and verify the save with T6's accepted witness. Sol explained M+2 as the bank checksum word. | Opus | T6 decision.md; T3m brief §5 |
 
 ## 12. Session resumption checklist (Opus)
 

@@ -1,0 +1,42 @@
+0x60379d64 find 994 blob 994 boot 255 bootBlob 255 exit 994 exitBlob 994
+0x62473176 find 994 blob 994 boot 25159 bootBlob 25159 exit 994 exitBlob 994
+0x62473182 find 994 blob 994 boot 25159 bootBlob 25159 exit 994 exitBlob 994
+0x62475af8 find 994 blob 994 boot 0 bootBlob 0 exit 994 exitBlob 994
+0x62475f26 find 994 blob 994 boot 0 bootBlob 0 exit 994 exitBlob 994
+0x62953c10 find 994 blob 994 boot 526 bootBlob 526 exit 994 exitBlob 994
+0x62b4a1a4 find 994 blob 994 boot 48879 bootBlob 48879 exit 994 exitBlob 994
+0x62b4a2bc find 994 blob 994 boot 48879 bootBlob 48879 exit 994 exitBlob 994
+0x62b4a35c find 994 blob 994 boot 48879 bootBlob 48879 exit 994 exitBlob 994
+0x62b4a3b4 find 994 blob 994 boot 48879 bootBlob 48879 exit 994 exitBlob 994
+0x62b4a3e8 find 994 blob 994 boot 48879 bootBlob 48879 exit 994 exitBlob 994
+0x62b4a514 find 994 blob 994 boot 48879 bootBlob 48879 exit 994 exitBlob 994
+0x62baba42 find 994 blob 994 boot 0 bootBlob 0 exit 994 exitBlob 994
+0x62c4f62a find 994 blob 994 boot 0 bootBlob 0 exit 994 exitBlob 994
+0x62c50fda find 994 blob 994 boot 0 bootBlob 0 exit 994 exitBlob 994
+0x62c53282 find 994 blob 994 boot 0 bootBlob 0 exit 994 exitBlob 994
+--- up reads ---
+norm-up r 0x62473176 v 526 sz 2 pc 0x6119b50f n 1
+norm-up r 0x62473182 v 994 sz 2 pc 0x6119de25 n 1
+norm-up r 0x62473176 v 526 sz 2 pc 0x6119b959 n 1
+norm-up r 0x62c50fda v 0 sz 2 pc 0x6117358e n 1
+norm-up r 0x62c53282 v 0 sz 2 pc 0x6117231c n 1
+--- dial reads ---
+norm-dial r 0x62953c10 v 994 sz 4 pc 0x60063a58 n 2
+norm-dial r 0x62475af8 v 994 sz 4 pc 0x6119c44f n 1
+norm-dial r 0x62473176 v 994 sz 2 pc 0x6119c4c5 n 1
+norm-dial r 0x62473176 v 994 sz 2 pc 0x6119c4d8 n 1
+norm-dial r 0x62473176 v 994 sz 2 pc 0x6119af7c n 1
+norm-dial r 0x62473176 v 994 sz 2 pc 0x6119af87 n 1
+norm-dial r 0x62475af8 v 994 sz 4 pc 0x6119afc7 n 1
+norm-dial r 0x62c50fda v 994 sz 2 pc 0x6117358e n 1
+norm-dial r 0x62c53282 v 994 sz 2 pc 0x6117231c n 1
+--- writes of 994 or the global ---
+afon-up w 0x62475af8 v 994 sz 4 pc 0x6119b3a1 n 1
+afon-up w 0x62473176 v 994 sz 2 pc 0x6119b9a3 n 1
+afon-up w 0x62b4a3b4 v 994 sz 2 pc 0x60aee5f6 n 1
+afon-up w 0x62953c10 v 994 sz 4 pc 0x60063519 n 1
+afon-up w 0xa2953c10 v 994 sz 4 pc 0x6006351b n 1
+afon-ok w 0x62475f26 v 994 sz 2 pc 0x611cb07c n 1
+afon-ok w 0x60379d64 v 994 sz 2 pc 0x6119af20 n 1
+getDiffUp null
+getDiffDial {"index":29,"left":{"key":"0x5962","index":2,"ret":526,"caller":"0x6041a202","disasm":"0x503f91e2"},"right":{"key":"0x5962","index":1,"ret":994,"caller":"0x6041a202","disasm":"0x503f91e2"},"why":"value"}

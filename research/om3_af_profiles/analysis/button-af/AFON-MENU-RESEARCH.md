@@ -1093,6 +1093,32 @@ emulator only.
     placement, so a native build needs a layout pass.
   - **Evidence:** [readiness/t4-afon-packaging](readiness/t4-afon-packaging/README.md).
 
+### AF-ON target takes type, size, position and custom dimensions from the AF-ON profile, per orientation (T6, 19 November 2026)
+
+- **Closed as partial, EMULATOR-ONLY, Subject Detect Off (`0x1e71[0]=0`).** Sol confirmed every functional
+  result below. The remaining gaps are evidence and wording, and they carry to the final combined acceptance
+  (T8).
+- **Change.** The T5 swap at `0x60a8f708` is replaced by a 15-byte profile read (all section 4). When AF-ON owns
+  the target, the getter supplies the zone type, size `0x9a41[0]`, position `0x5962[bank]` and C1 dimensions
+  `0x1dd1` from the 55-byte mirror at `0xa031eeb0`. The bank is the one the pose and Orientation Linked select:
+  1, 5 and 3 when linked, 1 when not. +9 stays at the factory value 0. The half-press record is untouched.
+- **Results.**
+  - Q1: Small on the five AF-ON-owned edges, All on the other seven.
+  - Q2: C1 `[5,7]` gives `11 02 07 00 05 00 07 00 00 00`.
+  - Q3: per-pose banks (Small 529, Single 532, Cross 535).
+  - Q4: C-AF.
+  - Size: mirror size 4 against live and legacy 0. AF-ON uses 4, and half-press keeps 0.
+- **Correction to the T5 wording above.** The half-press size comes from live `0x9a41[0]`, read by the stock
+  writer `0x609b3c79`. It does not come from `0xdfa1`.
+- **Save and reopen.** T5's save procedure is witnessed as M+E, status 0. On reopen:
+  - the mirror is all `FF`;
+  - the AF-ON press gives All, and the release gives the stock half-press record;
+  - both candidates' decoded stores are byte-identical to the K2 control.
+
+  The profile therefore does not survive a reopen until storage (Q7) is decided.
+- **Observed and unexplained.** A pose publish can rewrite the live half-press `0x84d1` and `0x1dd1`.
+- **Evidence:** [readiness/t6-afon-target-size-position](readiness/t6-afon-target-size-position/README.md).
+
 ## 9. Next steps (reordered 17 November 2026)
 
 The owner's stock-hardware confirmation (section 1) takes the CPU3 detection

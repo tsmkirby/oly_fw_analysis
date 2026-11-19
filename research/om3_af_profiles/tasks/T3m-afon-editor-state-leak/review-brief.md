@@ -1,40 +1,53 @@
-# T3m review brief (Codex Sol, read-only)
+﻿# T3m correction review (Codex Sol, read-only)
 
-Read `TASK.md`, `brief.md`, `work\result.md`, `work\evidence-manifest.json` and its supplement,
-`work\out\leak.md`, `work\out\design.md`, `work\out\accept-lib.md`, `work\scripts\accept_lib.mjs` and
-`work\out\overlay-changed-bytes.csv`. Then read the runners, tables, JSONL logs, screenshots, `work\out\cmd\`
-and `audit\`. Compare them against the T3l decision and your last T3l review (`ref\tasks\T3l-afon-editor-completion\`).
+## Read
 
-1. **Leak.** Check the following:
-   - The minimal reproduction shows the leak.
-   - The trace identifies the first differing value, its address and its writer during the AF-ON session.
-   - The explanation of why the exit restore missed it follows from the trace.
-2. **Fix.** Check the following:
-   - It is one change, and it is labelled.
-   - The minimal sequence matches K1 and K2 at every key.
-   - AF-ON edits still land only in the mirror.
-3. **Harness.** Check the following:
-   - `waitTitle` fails on timeout.
-   - `nativeSave` asserts M **and** E saves and a status-0 callback, and reads the persisted cells back.
-   - `compareStores` reports every differing offset.
-   - The assertions carry explicit expected and actual values.
-   - K1 and K2 stores match each other, or every differing byte is explained.
-4. **Acceptance, if run.** Check the following:
-   - Assertions run immediately after every individual key and cover visual identity, every mirror field, the
-     zone byte, the flag and every half-press cell.
-   - Two candidates, K1 and K2.
-   - Save completion after the edits.
-   - The reopen state.
-   - The run ends `ok:true`.
+- `brief.md` §5 (the correction list and the authorization).
+- Your previous review in `audit\previous-review.md`.
+- The updated `work\result.md`, `work\evidence-manifest.json` and its supplements, `work\out\leak.md`,
+  `work\out\design.md`, `work\out\accept-lib.md`, and the new `accept_lib` version.
+- The new runners, step tables, JSONL logs, screenshots, stores, `work\out\cmd\` and `audit\`.
+- The T6 save procedure the brief points to:
+  `ref\analysis\button-af\readiness\t6-afon-target-size-position\scripts\save_v3.mjs`.
 
-   Compare the stores with K2's yourself.
-5. **Records.** Check the following:
-   - The section of every overlay row (only the three amended section-7 bytes are allowed).
-   - The manifest is complete, including dynamic imports and the final outputs.
-   - No script was edited after it ran.
-   - No visible menu entry was added.
-   - `0x1e71[0]` was read back.
-   - Nothing is presented as native or as a storage decision.
+## Report
+
+For each of corrections 1–5, report DONE / NOT DONE / WRONG / BLOCKED (honestly reported), with evidence.
+
+## Check in particular
+
+- **Persistence route.**
+  - The chronological, unaggregated write trace identifies the RAM the save serialises for M +211472…+211516.
+  - It also identifies the writer, and why the T3l routing missed it.
+  - K2 is traced at matched steps, or the "first difference" claim is qualified.
+- **Fix.**
+  - It is one labelled change on top of p3.
+  - On the minimal sequence, the custom sizes stay in the mirror, and `compareStores(K2, candidate)` has zero
+    differing offsets.
+- **Save.**
+  - The final save is caused by the final call: a new E and a new M after the recorded baseline, each with a
+    captured image and status 0, including the posted M callback.
+  - Earlier saves cannot satisfy the check.
+  - The persisted cells are asserted against explicit expectations.
+- **Acceptance.**
+  - A complete step table, asserted after every individual key: visual identity, every mirror field, the zone
+    byte, the flag and every half-press cell.
+  - No expectation is copied from candidate observations.
+  - Two candidates, K1 and K2.
+  - On reopen: the mirror at `FF`, the zone byte at 0, and the next entry initializes.
+  - The run ends `ok:true`.
+  - Decode both candidates' stores and compare them with K2 yourself.
+- **Records.**
+  - Every overlay row's section, computed from the image; only the three amended section-7 bytes may lie in
+    section 7.
+  - Manifest completeness, including command 23, the final outputs, the per-version import inventories and
+    the consumed measurements.
+  - No script edited after it ran.
+  - `0x1e71[0]` read back.
+  - No visible menu entry.
+  - Nothing presented as native or as a storage decision.
+
+## Rules
 
 Recompute every manifest hash. Use PowerShell (Python is not on your PATH). Do not run Ghidra or OM-Emu.
 Give the verdict in the structure of `templates\review.md`.

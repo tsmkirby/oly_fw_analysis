@@ -1,0 +1,14 @@
+completion True []
+log [{'store': 'E', 'from': '0x6006124a (disasm 0x5004022a)', 'posted': False}, {'store': 'M', 'from': '0x6006124a (disasm 0x5004022a)', 'posted': False}, {'store': 'M', 'from': '0x60061268 (disasm 0x50040248)', 'posted': True}]
+events [{"store": "E", "from": "0x6006124a (disasm 0x5004022a)", "posted": false, "via": "return", "intended": 0, "status": 0, "callback": null}, {"store": "M", "from": "0x6006124a (disasm 0x5004022a)", "posted": false, "via": "return", "intended": 0, "status": 0, "callback": null}, {"store": "M", "from": "0x60061268 (disasm 0x50040248)", "posted": true, "via": "callback", "intended": 0, "status": 0, "callback": 1342451092}]
+persisted True []
+zone 0
+zoneCached 0
+subject 0
+dfa1 0
+q9a41 [0, 1]
+k1dd1 [3, 3, 3, 3, 3, 3, 3, 3, 3, 3]
+k99a1 [2, 0, 2, 0, 2, 0, 5, 5]
+mirror ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff allff True
+mirrorMatch {'M': True, 'E': True} loaded ['M', 'E']
+bytes 262144 196608

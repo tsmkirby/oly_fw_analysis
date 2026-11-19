@@ -1,0 +1,961 @@
+{
+  "size": [
+    {
+      "id": "size-v1-plan",
+      "pass": true,
+      "problems": null,
+      "key": null,
+      "dir": null,
+      "expectedTarget": null,
+      "expectedSize": null,
+      "expectedSource": null,
+      "target": null,
+      "sizeByte": null,
+      "dfa1": null,
+      "k9a41_0": null,
+      "k9a41_1": null,
+      "mirrorSize": null,
+      "owner": null,
+      "sizeReads": null,
+      "sizeReadsBefore": null,
+      "counts": null
+    },
+    {
+      "id": "size-v1-setup",
+      "pass": true,
+      "problems": [],
+      "key": null,
+      "dir": null,
+      "expectedTarget": null,
+      "expectedSize": null,
+      "expectedSource": null,
+      "target": null,
+      "sizeByte": null,
+      "dfa1": 0,
+      "k9a41_0": 0,
+      "k9a41_1": 1,
+      "mirrorSize": 4,
+      "owner": null,
+      "sizeReads": null,
+      "sizeReadsBefore": null,
+      "counts": null
+    },
+    {
+      "id": "size-v1-e0",
+      "pass": true,
+      "problems": [],
+      "key": "s1",
+      "dir": "down",
+      "expectedTarget": [
+        14,
+        2,
+        2,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "expectedSize": 0,
+      "expectedSource": "legacy 0xdfa1",
+      "target": [
+        14,
+        2,
+        2,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "sizeByte": 0,
+      "dfa1": 0,
+      "k9a41_0": 0,
+      "k9a41_1": 1,
+      "mirrorSize": 4,
+      "owner": 1,
+      "sizeReads": 1,
+      "sizeReadsBefore": 0,
+      "counts": null
+    },
+    {
+      "id": "size-v1-e1",
+      "pass": true,
+      "problems": [],
+      "key": "s1",
+      "dir": "up",
+      "expectedTarget": [
+        14,
+        2,
+        2,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "expectedSize": 0,
+      "expectedSource": "legacy 0xdfa1",
+      "target": [
+        14,
+        2,
+        2,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "sizeByte": 0,
+      "dfa1": 0,
+      "k9a41_0": 0,
+      "k9a41_1": 1,
+      "mirrorSize": 4,
+      "owner": 0,
+      "sizeReads": 2,
+      "sizeReadsBefore": 1,
+      "counts": null
+    },
+    {
+      "id": "size-v1-e2",
+      "pass": true,
+      "problems": [],
+      "key": "afon",
+      "dir": "down",
+      "expectedTarget": [
+        17,
+        2,
+        3,
+        4,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "expectedSize": 4,
+      "expectedSource": "mirror 0x9a41[0]",
+      "target": [
+        17,
+        2,
+        3,
+        4,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "sizeByte": 4,
+      "dfa1": 0,
+      "k9a41_0": 0,
+      "k9a41_1": 1,
+      "mirrorSize": 4,
+      "owner": 2,
+      "sizeReads": 3,
+      "sizeReadsBefore": 2,
+      "counts": null
+    },
+    {
+      "id": "size-v1-e3",
+      "pass": true,
+      "problems": [],
+      "key": "afon",
+      "dir": "up",
+      "expectedTarget": [
+        14,
+        2,
+        2,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "expectedSize": 0,
+      "expectedSource": "legacy 0xdfa1",
+      "target": [
+        14,
+        2,
+        2,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "sizeByte": 0,
+      "dfa1": 0,
+      "k9a41_0": 0,
+      "k9a41_1": 1,
+      "mirrorSize": 4,
+      "owner": 0,
+      "sizeReads": 4,
+      "sizeReadsBefore": 3,
+      "counts": null
+    },
+    {
+      "id": "size-v1-hook",
+      "pass": true,
+      "problems": [],
+      "key": null,
+      "dir": null,
+      "expectedTarget": null,
+      "expectedSize": null,
+      "expectedSource": null,
+      "target": null,
+      "sizeByte": null,
+      "dfa1": null,
+      "k9a41_0": null,
+      "k9a41_1": null,
+      "mirrorSize": null,
+      "owner": null,
+      "sizeReads": null,
+      "sizeReadsBefore": null,
+      "counts": {
+        "zone": 4,
+        "size": 4,
+        "pos": 4,
+        "plus9": 4,
+        "dim": 0
+      }
+    },
+    {
+      "id": "size-v1-session",
+      "pass": true,
+      "problems": null,
+      "key": null,
+      "dir": null,
+      "expectedTarget": null,
+      "expectedSize": null,
+      "expectedSource": null,
+      "target": null,
+      "sizeByte": null,
+      "dfa1": null,
+      "k9a41_0": null,
+      "k9a41_1": null,
+      "mirrorSize": null,
+      "owner": null,
+      "sizeReads": null,
+      "sizeReadsBefore": null,
+      "counts": null
+    },
+    {
+      "id": "size-v1-done",
+      "pass": true,
+      "problems": null,
+      "key": null,
+      "dir": null,
+      "expectedTarget": null,
+      "expectedSize": null,
+      "expectedSource": null,
+      "target": null,
+      "sizeByte": null,
+      "dfa1": null,
+      "k9a41_0": null,
+      "k9a41_1": null,
+      "mirrorSize": null,
+      "owner": null,
+      "sizeReads": null,
+      "sizeReadsBefore": null,
+      "counts": null
+    }
+  ],
+  "accept": [
+    {
+      "id": "accept-v1-plan",
+      "pass": true,
+      "problems": null,
+      "step": "plan",
+      "fallback": "Uninitialised mirror uses zone byte 0, size 0, position 0 and +9 0. Kind 2 then forces 526. AF-ON press is All. Release restores the stock half-press record 0e 02 03 00 03 00 03 00 00 00."
+    },
+    {
+      "id": "k2-save",
+      "pass": true,
+      "problems": [],
+      "step": "save",
+      "log": [
+        {
+          "store": "E",
+          "from": "0x6006124a (disasm 0x5004022a)",
+          "posted": false
+        },
+        {
+          "store": "M",
+          "from": "0x6006124a (disasm 0x5004022a)",
+          "posted": false
+        },
+        {
+          "store": "M",
+          "from": "0x60061268 (disasm 0x50040248)",
+          "posted": true
+        }
+      ],
+      "events": [
+        {
+          "store": "E",
+          "from": "0x6006124a (disasm 0x5004022a)",
+          "posted": false,
+          "via": "return",
+          "intended": 0,
+          "status": 0,
+          "callback": null
+        },
+        {
+          "store": "M",
+          "from": "0x6006124a (disasm 0x5004022a)",
+          "posted": false,
+          "via": "return",
+          "intended": 0,
+          "status": 0,
+          "callback": null
+        },
+        {
+          "store": "M",
+          "from": "0x60061268 (disasm 0x50040248)",
+          "posted": true,
+          "via": "callback",
+          "intended": 0,
+          "status": 0,
+          "callback": 1342451092
+        }
+      ]
+    },
+    {
+      "id": "c1-save",
+      "pass": true,
+      "problems": [],
+      "step": "save",
+      "log": [
+        {
+          "store": "E",
+          "from": "0x6006124a (disasm 0x5004022a)",
+          "posted": false
+        },
+        {
+          "store": "M",
+          "from": "0x6006124a (disasm 0x5004022a)",
+          "posted": false
+        },
+        {
+          "store": "M",
+          "from": "0x60061268 (disasm 0x50040248)",
+          "posted": true
+        }
+      ],
+      "events": [
+        {
+          "store": "E",
+          "from": "0x6006124a (disasm 0x5004022a)",
+          "posted": false,
+          "via": "return",
+          "intended": 0,
+          "status": 0,
+          "callback": null
+        },
+        {
+          "store": "M",
+          "from": "0x6006124a (disasm 0x5004022a)",
+          "posted": false,
+          "via": "return",
+          "intended": 0,
+          "status": 0,
+          "callback": null
+        },
+        {
+          "store": "M",
+          "from": "0x60061268 (disasm 0x50040248)",
+          "posted": true,
+          "via": "callback",
+          "intended": 0,
+          "status": 0,
+          "callback": 1342451092
+        }
+      ]
+    },
+    {
+      "id": "c2-save",
+      "pass": true,
+      "problems": [],
+      "step": "save",
+      "log": [
+        {
+          "store": "E",
+          "from": "0x6006124a (disasm 0x5004022a)",
+          "posted": false
+        },
+        {
+          "store": "M",
+          "from": "0x6006124a (disasm 0x5004022a)",
+          "posted": false
+        },
+        {
+          "store": "M",
+          "from": "0x60061268 (disasm 0x50040248)",
+          "posted": true
+        }
+      ],
+      "events": [
+        {
+          "store": "E",
+          "from": "0x6006124a (disasm 0x5004022a)",
+          "posted": false,
+          "via": "return",
+          "intended": 0,
+          "status": 0,
+          "callback": null
+        },
+        {
+          "store": "M",
+          "from": "0x6006124a (disasm 0x5004022a)",
+          "posted": false,
+          "via": "return",
+          "intended": 0,
+          "status": 0,
+          "callback": null
+        },
+        {
+          "store": "M",
+          "from": "0x60061268 (disasm 0x50040248)",
+          "posted": true,
+          "via": "callback",
+          "intended": 0,
+          "status": 0,
+          "callback": 1342451092
+        }
+      ]
+    },
+    {
+      "id": "c1-store",
+      "pass": true,
+      "problems": [],
+      "step": "store",
+      "mDiffs": [],
+      "eDiffs": [],
+      "mSha256": "7ac3baeae47473ad4eebca572365fa3828fc89d948bf00fece522b1354b1a394",
+      "eSha256": "0f47f7d2e52c925a1bd3076cc4e58530da2f40eba8797321d22ca6a3c0adba9f",
+      "mBytes": 262144,
+      "eBytes": 196608
+    },
+    {
+      "id": "c2-store",
+      "pass": true,
+      "problems": [],
+      "step": "store",
+      "mDiffs": [],
+      "eDiffs": [],
+      "mSha256": "7ac3baeae47473ad4eebca572365fa3828fc89d948bf00fece522b1354b1a394",
+      "eSha256": "0f47f7d2e52c925a1bd3076cc4e58530da2f40eba8797321d22ca6a3c0adba9f",
+      "mBytes": 262144,
+      "eBytes": 196608
+    },
+    {
+      "id": "k2-reopen-base",
+      "pass": true,
+      "problems": [],
+      "step": "reopen-base",
+      "target": [
+        14,
+        2,
+        2,
+        0,
+        27,
+        0,
+        39,
+        0,
+        0,
+        0
+      ],
+      "owner": null,
+      "expectedTarget": [
+        14,
+        2,
+        2,
+        0,
+        27,
+        0,
+        39,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "k2-reopen-afon-down",
+      "pass": true,
+      "problems": [],
+      "step": "reopen-edge",
+      "target": [
+        14,
+        2,
+        2,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "owner": 2,
+      "expectedTarget": [
+        14,
+        2,
+        2,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "k2-reopen-afon-up",
+      "pass": true,
+      "problems": [],
+      "step": "reopen-edge",
+      "target": [
+        14,
+        2,
+        3,
+        0,
+        3,
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      "owner": 0,
+      "expectedTarget": [
+        14,
+        2,
+        3,
+        0,
+        3,
+        0,
+        3,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "c1-reopen-base",
+      "pass": true,
+      "problems": [],
+      "step": "reopen-base",
+      "target": [
+        14,
+        2,
+        2,
+        0,
+        27,
+        0,
+        39,
+        0,
+        0,
+        0
+      ],
+      "owner": null,
+      "expectedTarget": [
+        14,
+        2,
+        2,
+        0,
+        27,
+        0,
+        39,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "c1-reopen-afon-down",
+      "pass": true,
+      "problems": [],
+      "step": "reopen-edge",
+      "target": [
+        14,
+        2,
+        2,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "owner": 2,
+      "expectedTarget": [
+        14,
+        2,
+        2,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "c1-reopen-afon-up",
+      "pass": true,
+      "problems": [],
+      "step": "reopen-edge",
+      "target": [
+        14,
+        2,
+        3,
+        0,
+        3,
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      "owner": 0,
+      "expectedTarget": [
+        14,
+        2,
+        3,
+        0,
+        3,
+        0,
+        3,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "c1-reopen-hook",
+      "pass": true,
+      "problems": null,
+      "step": "hook",
+      "fallback": "mirror FF uses zone byte 0, size 0, position 0, +9 0. Kind 2 forces position 526. The press record is All.",
+      "counts": {
+        "zone": 2,
+        "size": 2,
+        "pos": 2,
+        "plus9": 2,
+        "dim": 0
+      }
+    },
+    {
+      "id": "c2-reopen-base",
+      "pass": true,
+      "problems": [],
+      "step": "reopen-base",
+      "target": [
+        14,
+        2,
+        2,
+        0,
+        27,
+        0,
+        39,
+        0,
+        0,
+        0
+      ],
+      "owner": null,
+      "expectedTarget": [
+        14,
+        2,
+        2,
+        0,
+        27,
+        0,
+        39,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "c2-reopen-afon-down",
+      "pass": true,
+      "problems": [],
+      "step": "reopen-edge",
+      "target": [
+        14,
+        2,
+        2,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "owner": 2,
+      "expectedTarget": [
+        14,
+        2,
+        2,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "c2-reopen-afon-up",
+      "pass": true,
+      "problems": [],
+      "step": "reopen-edge",
+      "target": [
+        14,
+        2,
+        3,
+        0,
+        3,
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      "owner": 0,
+      "expectedTarget": [
+        14,
+        2,
+        3,
+        0,
+        3,
+        0,
+        3,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "c2-reopen-hook",
+      "pass": true,
+      "problems": null,
+      "step": "hook",
+      "fallback": "mirror FF uses zone byte 0, size 0, position 0, +9 0. Kind 2 forces position 526. The press record is All.",
+      "counts": {
+        "zone": 2,
+        "size": 2,
+        "pos": 2,
+        "plus9": 2,
+        "dim": 0
+      }
+    },
+    {
+      "id": "k1-reopen-base",
+      "pass": true,
+      "problems": [],
+      "step": "reopen-base",
+      "target": [
+        14,
+        2,
+        2,
+        0,
+        27,
+        0,
+        39,
+        0,
+        0,
+        0
+      ],
+      "owner": null,
+      "expectedTarget": [
+        14,
+        2,
+        2,
+        0,
+        27,
+        0,
+        39,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "k1-reopen-afon-down",
+      "pass": true,
+      "problems": [],
+      "step": "reopen-edge",
+      "target": [
+        14,
+        2,
+        2,
+        0,
+        27,
+        0,
+        39,
+        0,
+        0,
+        0
+      ],
+      "owner": 255,
+      "expectedTarget": [
+        14,
+        2,
+        2,
+        0,
+        27,
+        0,
+        39,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "k1-reopen-afon-up",
+      "pass": true,
+      "problems": [],
+      "step": "reopen-edge",
+      "target": [
+        14,
+        2,
+        2,
+        0,
+        27,
+        0,
+        39,
+        0,
+        0,
+        0
+      ],
+      "owner": 255,
+      "expectedTarget": [
+        14,
+        2,
+        2,
+        0,
+        27,
+        0,
+        39,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "accept-v1-done",
+      "pass": true,
+      "problems": null,
+      "step": "done"
+    }
+  ],
+  "stores": {
+    "q2": {
+      "M": [
+        2,
+        3,
+        4,
+        664,
+        665,
+        666,
+        667,
+        745,
+        746,
+        1029,
+        1040,
+        1056,
+        1174,
+        1175,
+        1176,
+        1180,
+        2040,
+        2062,
+        204952,
+        207548,
+        208156,
+        208256,
+        208424,
+        208880,
+        209532,
+        210256,
+        210564,
+        212472,
+        212476,
+        232469,
+        232636,
+        232660,
+        232663,
+        233334,
+        233482,
+        233483,
+        233484,
+        233488,
+        233494,
+        233495,
+        233522,
+        233523,
+        233524,
+        233525,
+        233528,
+        233688,
+        234096,
+        234104,
+        234285
+      ],
+      "E": [],
+      "mBytes": [
+        262144,
+        262144
+      ],
+      "eBytes": [
+        196608,
+        196608
+      ]
+    },
+    "accept-c1": {
+      "M": [],
+      "E": [],
+      "mBytes": [
+        262144,
+        262144
+      ],
+      "eBytes": [
+        196608,
+        196608
+      ]
+    },
+    "accept-c2": {
+      "M": [],
+      "E": [],
+      "mBytes": [
+        262144,
+        262144
+      ],
+      "eBytes": [
+        196608,
+        196608
+      ]
+    }
+  }
+}

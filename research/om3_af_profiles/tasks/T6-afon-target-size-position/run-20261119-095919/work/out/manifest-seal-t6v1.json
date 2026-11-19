@@ -1,0 +1,36 @@
+{
+  "seals_command": "29",
+  "files": {
+    "cmd.txt": {
+      "path": "work/out/cmd/29.cmd.txt",
+      "sha256": "584bc9d8f57295685495425123e789b343a8c43bfb9280d4c2632c703d87c7f6",
+      "bytes": 365
+    },
+    "out": {
+      "path": "work/out/cmd/29.out",
+      "sha256": "9283548e620c5985c898fd3b8bdeb5f571eb08c4f77ef7fcf35654351d577ac9",
+      "bytes": 82
+    },
+    "err": {
+      "path": "work/out/cmd/29.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "exit": {
+      "path": "work/out/cmd/29.exit",
+      "sha256": "82070790db4a0e409703665899ba5a5df5c959c2896d6f06383dd5fc945f2509",
+      "bytes": 470
+    }
+  },
+  "evidence_manifest": {
+    "path": "work/evidence-manifest.json",
+    "sha256": "f82fed2402e07bb2c5b6c13bc6f0a14da370b36bbed75e9d3ad248e105ace6c9",
+    "bytes": 270426
+  },
+  "preliminary_supplement": {
+    "path": "work/out/manifest-supplement-t6v1.json",
+    "sha256": "c319f5f0df9291e98502253d3af590248c680734756f1adfd7945d0ed2e74792",
+    "bytes": 523
+  },
+  "note": "This process hashes the manifest command. It cannot hash its own work/out/cmd wrapper .out, .err or .exit. The wrapper writes those files after this process returns, and the .exit file contains a timestamp."
+}

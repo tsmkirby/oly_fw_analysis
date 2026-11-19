@@ -1,0 +1,1595 @@
+[
+  {
+    "id": "baseline",
+    "who": "both",
+    "phase": "menu-a",
+    "key": null,
+    "dir": null,
+    "action": "baseline",
+    "controlStep": "baseline",
+    "expect": {
+      "title": null,
+      "highlight": null,
+      "invariant": true,
+      "readback": {
+        "profile": 0,
+        "profileCached": 0,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "shooting",
+        "slotValue": null,
+        "helpId": null,
+        "glyph": null,
+        "saves": null,
+        "cells": {
+          "k90a1": [
+            1,
+            1
+          ],
+          "k1dd1": [
+            27,
+            39,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "k99a1": [
+            2,
+            0,
+            2,
+            0,
+            2,
+            0,
+            5,
+            5
+          ],
+          "k9a41": 0,
+          "k5962": [
+            526,
+            526,
+            526,
+            526,
+            526,
+            526
+          ],
+          "home": {
+            "0x99d2": [
+              526,
+              526,
+              526
+            ],
+            "0x9fa1": [
+              0,
+              0,
+              0
+            ],
+            "0xdfa1": [
+              0
+            ],
+            "0x1ea1": [
+              0
+            ],
+            "0x9ec1": [
+              0
+            ],
+            "0x9ed1": [
+              1
+            ],
+            "0x9ee1": [
+              0
+            ],
+            "0x9ef1": [
+              0
+            ],
+            "0x59b1": [
+              0
+            ]
+          },
+          "originally": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "profileControl": 255,
+        "profileCachedControl": 255,
+        "glyphControl": null
+      },
+      "helpText": null,
+      "headerHash": null,
+      "assertTitle": true
+    }
+  },
+  {
+    "id": "menu",
+    "who": "both",
+    "phase": "menu-a",
+    "key": "menu",
+    "dir": null,
+    "action": null,
+    "controlStep": "menu",
+    "expect": {
+      "title": "1.Card/Folder/File",
+      "highlight": "Card Formatting",
+      "invariant": true,
+      "readback": {
+        "profile": 0,
+        "profileCached": 0,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": null,
+        "helpId": null,
+        "glyph": null,
+        "saves": null,
+        "cells": null,
+        "profileControl": 255,
+        "profileCachedControl": 255,
+        "glyphControl": null
+      },
+      "helpText": null,
+      "headerHash": null,
+      "assertTitle": true
+    }
+  },
+  {
+    "id": "left-0",
+    "who": "both",
+    "phase": "menu-a",
+    "key": "left",
+    "dir": null,
+    "action": null,
+    "controlStep": "left-0",
+    "expect": {
+      "title": "5.Grid/Other Displays",
+      "highlight": "@A02C@Grid Settings",
+      "invariant": true,
+      "readback": {
+        "profile": 0,
+        "profileCached": 0,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": null,
+        "helpId": null,
+        "glyph": null,
+        "saves": null,
+        "cells": null,
+        "profileControl": 255,
+        "profileCachedControl": 255,
+        "glyphControl": null
+      },
+      "helpText": null,
+      "headerHash": null,
+      "assertTitle": true
+    }
+  },
+  {
+    "id": "left-1",
+    "who": "both",
+    "phase": "menu-a",
+    "key": "left",
+    "dir": null,
+    "action": null,
+    "controlStep": "left-1",
+    "expect": {
+      "title": "4.Information",
+      "highlight": "EVF Style",
+      "invariant": true,
+      "readback": {
+        "profile": 0,
+        "profileCached": 0,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": null,
+        "helpId": null,
+        "glyph": null,
+        "saves": null,
+        "cells": null,
+        "profileControl": 255,
+        "profileCachedControl": 255,
+        "glyphControl": null
+      },
+      "helpText": null,
+      "headerHash": null,
+      "assertTitle": true
+    }
+  },
+  {
+    "id": "left-2",
+    "who": "both",
+    "phase": "menu-a",
+    "key": "left",
+    "dir": null,
+    "action": null,
+    "controlStep": "left-2",
+    "expect": {
+      "title": "3.Live View",
+      "highlight": "@A02C@LV Mode",
+      "invariant": true,
+      "readback": {
+        "profile": 0,
+        "profileCached": 0,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": null,
+        "helpId": null,
+        "glyph": null,
+        "saves": null,
+        "cells": null,
+        "profileControl": 255,
+        "profileCachedControl": 255,
+        "glyphControl": null
+      },
+      "helpText": null,
+      "headerHash": null,
+      "assertTitle": true
+    }
+  },
+  {
+    "id": "left-3",
+    "who": "both",
+    "phase": "menu-a",
+    "key": "left",
+    "dir": null,
+    "action": null,
+    "controlStep": "left-3",
+    "expect": {
+      "title": "2.Operations",
+      "highlight": "LV Close Up Mode",
+      "invariant": true,
+      "readback": {
+        "profile": 0,
+        "profileCached": 0,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": null,
+        "helpId": null,
+        "glyph": null,
+        "saves": null,
+        "cells": null,
+        "profileControl": 255,
+        "profileCachedControl": 255,
+        "glyphControl": null
+      },
+      "helpText": null,
+      "headerHash": null,
+      "assertTitle": true
+    }
+  },
+  {
+    "id": "left-4",
+    "who": "both",
+    "phase": "menu-a",
+    "key": "left",
+    "dir": null,
+    "action": null,
+    "controlStep": "left-4",
+    "expect": {
+      "title": "1.Operations",
+      "highlight": "Button Settings",
+      "invariant": true,
+      "readback": {
+        "profile": 0,
+        "profileCached": 0,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": null,
+        "helpId": null,
+        "glyph": null,
+        "saves": null,
+        "cells": null,
+        "profileControl": 255,
+        "profileCachedControl": 255,
+        "glyphControl": null
+      },
+      "helpText": null,
+      "headerHash": null,
+      "assertTitle": true
+    }
+  },
+  {
+    "id": "left-5",
+    "who": "both",
+    "phase": "menu-a",
+    "key": "left",
+    "dir": null,
+    "action": null,
+    "controlStep": "left-5",
+    "expect": {
+      "title": "3.Displays",
+      "highlight": "@A01C@",
+      "invariant": true,
+      "readback": {
+        "profile": 0,
+        "profileCached": 0,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": null,
+        "helpId": null,
+        "glyph": null,
+        "saves": null,
+        "cells": null,
+        "profileControl": 255,
+        "profileCachedControl": 255,
+        "glyphControl": null
+      },
+      "helpText": null,
+      "headerHash": null,
+      "assertTitle": true
+    }
+  },
+  {
+    "id": "left-6",
+    "who": "both",
+    "phase": "menu-a",
+    "key": "left",
+    "dir": null,
+    "action": null,
+    "controlStep": "left-6",
+    "expect": {
+      "title": "2.Operations",
+      "highlight": "@A037@@A035@Function",
+      "invariant": true,
+      "readback": {
+        "profile": 0,
+        "profileCached": 0,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": null,
+        "helpId": null,
+        "glyph": null,
+        "saves": null,
+        "cells": null,
+        "profileControl": 255,
+        "profileCachedControl": 255,
+        "glyphControl": null
+      },
+      "helpText": null,
+      "headerHash": null,
+      "assertTitle": true
+    }
+  },
+  {
+    "id": "left-7",
+    "who": "both",
+    "phase": "menu-a",
+    "key": "left",
+    "dir": null,
+    "action": null,
+    "controlStep": "left-7",
+    "expect": {
+      "title": "1.File",
+      "highlight": "@A009@",
+      "invariant": true,
+      "readback": {
+        "profile": 0,
+        "profileCached": 0,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": null,
+        "helpId": null,
+        "glyph": null,
+        "saves": null,
+        "cells": null,
+        "profileControl": 255,
+        "profileCachedControl": 255,
+        "glyphControl": null
+      },
+      "helpText": null,
+      "headerHash": null,
+      "assertTitle": true
+    }
+  },
+  {
+    "id": "left-8",
+    "who": "both",
+    "phase": "menu-a",
+    "key": "left",
+    "dir": null,
+    "action": null,
+    "controlStep": "left-8",
+    "expect": {
+      "title": "6.Shooting Assist",
+      "highlight": "Center Marker",
+      "invariant": true,
+      "readback": {
+        "profile": 0,
+        "profileCached": 0,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": null,
+        "helpId": null,
+        "glyph": null,
+        "saves": null,
+        "cells": null,
+        "profileControl": 255,
+        "profileCachedControl": 255,
+        "glyphControl": null
+      },
+      "helpText": null,
+      "headerHash": null,
+      "assertTitle": true
+    }
+  },
+  {
+    "id": "left-9",
+    "who": "both",
+    "phase": "menu-a",
+    "key": "left",
+    "dir": null,
+    "action": null,
+    "controlStep": "left-9",
+    "expect": {
+      "title": "5.Sound Recording/Connection",
+      "highlight": "Sound Recording Settings",
+      "invariant": true,
+      "readback": {
+        "profile": 0,
+        "profileCached": 0,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": null,
+        "helpId": null,
+        "glyph": null,
+        "saves": null,
+        "cells": null,
+        "profileControl": 255,
+        "profileCachedControl": 255,
+        "glyphControl": null
+      },
+      "helpText": null,
+      "headerHash": null,
+      "assertTitle": true
+    }
+  },
+  {
+    "id": "left-10",
+    "who": "both",
+    "phase": "menu-a",
+    "key": "left",
+    "dir": null,
+    "action": null,
+    "controlStep": "left-10",
+    "expect": {
+      "title": "4.Image Stabilizer",
+      "highlight": "@A027@Image Stabilizer",
+      "invariant": true,
+      "readback": {
+        "profile": 0,
+        "profileCached": 0,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": null,
+        "helpId": null,
+        "glyph": null,
+        "saves": null,
+        "cells": null,
+        "profileControl": 255,
+        "profileCachedControl": 255,
+        "glyphControl": null
+      },
+      "helpText": null,
+      "headerHash": null,
+      "assertTitle": true
+    }
+  },
+  {
+    "id": "left-11",
+    "who": "both",
+    "phase": "menu-a",
+    "key": "left",
+    "dir": null,
+    "action": null,
+    "controlStep": "left-11",
+    "expect": {
+      "title": "3.ISO/Noise Reduction",
+      "highlight": "@A03E@ISO-A Upper/Default",
+      "invariant": true,
+      "readback": {
+        "profile": 0,
+        "profileCached": 0,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": null,
+        "helpId": null,
+        "glyph": null,
+        "saves": null,
+        "cells": null,
+        "profileControl": 255,
+        "profileCachedControl": 255,
+        "glyphControl": null
+      },
+      "helpText": null,
+      "headerHash": null,
+      "assertTitle": true
+    }
+  },
+  {
+    "id": "left-12",
+    "who": "both",
+    "phase": "menu-a",
+    "key": "left",
+    "dir": null,
+    "action": null,
+    "controlStep": "left-12",
+    "expect": {
+      "title": "2.Picture Mode/WB",
+      "highlight": "@A027@Picture Mode",
+      "invariant": true,
+      "readback": {
+        "profile": 0,
+        "profileCached": 0,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": null,
+        "helpId": null,
+        "glyph": null,
+        "saves": null,
+        "cells": null,
+        "profileControl": 255,
+        "profileCachedControl": 255,
+        "glyphControl": null
+      },
+      "helpText": null,
+      "headerHash": null,
+      "assertTitle": true
+    }
+  },
+  {
+    "id": "left-13",
+    "who": "both",
+    "phase": "menu-a",
+    "key": "left",
+    "dir": null,
+    "action": null,
+    "controlStep": "left-13",
+    "expect": {
+      "title": "1.Basic Settings/Image Quality",
+      "highlight": "@A027@Custom Mode",
+      "invariant": true,
+      "readback": {
+        "profile": 0,
+        "profileCached": 0,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": null,
+        "helpId": null,
+        "glyph": null,
+        "saves": null,
+        "cells": null,
+        "profileControl": 255,
+        "profileCachedControl": 255,
+        "glyphControl": null
+      },
+      "helpText": null,
+      "headerHash": null,
+      "assertTitle": true
+    }
+  },
+  {
+    "id": "left-14",
+    "who": "both",
+    "phase": "menu-a",
+    "key": "left",
+    "dir": null,
+    "action": null,
+    "controlStep": "left-14",
+    "expect": {
+      "title": "7.MF",
+      "highlight": "MF Assist",
+      "invariant": true,
+      "readback": {
+        "profile": 0,
+        "profileCached": 0,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": null,
+        "helpId": null,
+        "glyph": null,
+        "saves": null,
+        "cells": null,
+        "profileControl": 255,
+        "profileCachedControl": 255,
+        "glyphControl": null
+      },
+      "helpText": null,
+      "headerHash": null,
+      "assertTitle": true
+    }
+  },
+  {
+    "id": "left-15",
+    "who": "both",
+    "phase": "menu-a",
+    "key": "left",
+    "dir": null,
+    "action": null,
+    "controlStep": "left-15",
+    "expect": {
+      "title": "6.AF Target Settings & Operations",
+      "highlight": "@A02C@AF Target Mode Settings",
+      "invariant": true,
+      "readback": {
+        "profile": 0,
+        "profileCached": 0,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": null,
+        "helpId": null,
+        "glyph": null,
+        "saves": null,
+        "cells": null,
+        "profileControl": 255,
+        "profileCachedControl": 255,
+        "glyphControl": null
+      },
+      "helpText": null,
+      "headerHash": null,
+      "assertTitle": true
+    }
+  },
+  {
+    "id": "left-16",
+    "who": "both",
+    "phase": "menu-a",
+    "key": "left",
+    "dir": null,
+    "action": null,
+    "controlStep": "left-16",
+    "expect": {
+      "title": "5.Movie AF",
+      "highlight": "@A027@AF Mode",
+      "invariant": true,
+      "readback": {
+        "profile": 0,
+        "profileCached": 0,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": null,
+        "helpId": null,
+        "glyph": null,
+        "saves": null,
+        "cells": null,
+        "profileControl": 255,
+        "profileCachedControl": 255,
+        "glyphControl": null
+      },
+      "helpText": null,
+      "headerHash": null,
+      "assertTitle": true
+    }
+  },
+  {
+    "id": "left-17",
+    "who": "both",
+    "phase": "menu-a",
+    "key": "left",
+    "dir": null,
+    "action": null,
+    "controlStep": "left-17",
+    "expect": {
+      "title": "4.AF",
+      "highlight": "@A02C@C-AF Sensitivity",
+      "invariant": true,
+      "readback": {
+        "profile": 0,
+        "profileCached": 0,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": null,
+        "helpId": null,
+        "glyph": null,
+        "saves": null,
+        "cells": null,
+        "profileControl": 255,
+        "profileCachedControl": 255,
+        "glyphControl": null
+      },
+      "helpText": null,
+      "headerHash": null,
+      "assertTitle": true
+    }
+  },
+  {
+    "id": "left-18",
+    "who": "both",
+    "phase": "menu-a",
+    "key": "left",
+    "dir": null,
+    "action": null,
+    "controlStep": "left-18",
+    "expect": {
+      "title": "3.AF",
+      "highlight": "AF Illuminator",
+      "invariant": true,
+      "readback": {
+        "profile": 0,
+        "profileCached": 0,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": null,
+        "helpId": null,
+        "glyph": null,
+        "saves": null,
+        "cells": null,
+        "profileControl": 255,
+        "profileCachedControl": 255,
+        "glyphControl": null
+      },
+      "helpText": null,
+      "headerHash": null,
+      "assertTitle": true
+    }
+  },
+  {
+    "id": "left-19",
+    "who": "both",
+    "phase": "menu-a",
+    "key": "left",
+    "dir": null,
+    "action": null,
+    "controlStep": "left-19",
+    "expect": {
+      "title": "2.AF",
+      "highlight": "Subject Detection",
+      "invariant": true,
+      "readback": {
+        "profile": 0,
+        "profileCached": 0,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": null,
+        "helpId": null,
+        "glyph": null,
+        "saves": null,
+        "cells": null,
+        "profileControl": 255,
+        "profileCachedControl": 255,
+        "glyphControl": null
+      },
+      "helpText": null,
+      "headerHash": null,
+      "assertTitle": true
+    }
+  },
+  {
+    "id": "down-caf",
+    "who": "both",
+    "phase": "menu-a",
+    "key": "down",
+    "dir": null,
+    "action": null,
+    "controlStep": "down-caf",
+    "expect": {
+      "title": "2.AF",
+      "highlight": "@A065@C-AF Setting",
+      "invariant": true,
+      "readback": {
+        "profile": 0,
+        "profileCached": 0,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": null,
+        "helpId": null,
+        "glyph": null,
+        "saves": null,
+        "cells": null,
+        "profileControl": 255,
+        "profileCachedControl": 255,
+        "glyphControl": null
+      },
+      "helpText": null,
+      "headerHash": null,
+      "assertTitle": true
+    }
+  },
+  {
+    "id": "down-afbutton",
+    "who": "both",
+    "phase": "menu-a",
+    "key": "down",
+    "dir": null,
+    "action": null,
+    "controlStep": "down-afbutton",
+    "expect": {
+      "title": "2.AF",
+      "highlight": "@A02C@@A065@AF Button",
+      "invariant": true,
+      "readback": {
+        "profile": 0,
+        "profileCached": 0,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": null,
+        "helpId": null,
+        "glyph": null,
+        "saves": null,
+        "cells": null,
+        "profileControl": 255,
+        "profileCachedControl": 255,
+        "glyphControl": null
+      },
+      "helpText": null,
+      "headerHash": null,
+      "assertTitle": true
+    }
+  },
+  {
+    "id": "page27",
+    "who": "both",
+    "phase": "menu-a",
+    "key": "ok",
+    "dir": null,
+    "action": null,
+    "controlStep": "page27",
+    "expect": {
+      "title": "@A02C@@A065@AF Button",
+      "highlight": "@A066@ Priority",
+      "invariant": true,
+      "readback": {
+        "profile": 0,
+        "profileCached": 0,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": null,
+        "helpId": null,
+        "glyph": {
+          "value": 0,
+          "id": 9123
+        },
+        "saves": null,
+        "cells": null,
+        "profileControl": 255,
+        "profileCachedControl": 255,
+        "glyphControl": null
+      },
+      "helpText": null,
+      "headerHash": null,
+      "assertTitle": true
+    }
+  },
+  {
+    "id": "2154-open",
+    "who": "both",
+    "phase": "menu-a",
+    "key": "ok",
+    "dir": null,
+    "action": null,
+    "controlStep": "2154-open",
+    "expect": {
+      "title": null,
+      "highlight": "@A066@ Priority",
+      "invariant": true,
+      "readback": {
+        "profile": 0,
+        "profileCached": 0,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": 1,
+        "helpId": 4732,
+        "glyph": null,
+        "saves": null,
+        "cells": null,
+        "profileControl": 255,
+        "profileCachedControl": 255,
+        "glyphControl": null
+      },
+      "helpText": "When a specified subject is detected at\r\nthe selected AF target position, AF is\r\nperformed on the detected subject.",
+      "headerHash": "bd8da5bd11491b59d2ddcf2c60e77cc4a115d4ce3a1b1dfffc4f0173e2280477",
+      "assertTitle": true
+    }
+  },
+  {
+    "id": "2154-cancel",
+    "who": "both",
+    "phase": "menu-a",
+    "key": "menu",
+    "dir": null,
+    "action": null,
+    "controlStep": "2154-cancel",
+    "expect": {
+      "title": "@A02C@@A065@AF Button",
+      "highlight": "@A066@ Priority",
+      "invariant": true,
+      "readback": {
+        "profile": 0,
+        "profileCached": 0,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": null,
+        "helpId": null,
+        "glyph": {
+          "value": 0,
+          "id": 9123
+        },
+        "saves": null,
+        "cells": null,
+        "profileControl": 255,
+        "profileCachedControl": 255,
+        "glyphControl": null
+      },
+      "helpText": null,
+      "headerHash": null,
+      "assertTitle": true
+    }
+  },
+  {
+    "id": "down-2155",
+    "who": "both",
+    "phase": "menu-a",
+    "key": "down",
+    "dir": null,
+    "action": null,
+    "controlStep": "down-2155",
+    "expect": {
+      "title": "@A02C@@A065@AF Button",
+      "highlight": "@A066@ Priority",
+      "invariant": true,
+      "readback": {
+        "profile": 0,
+        "profileCached": 0,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": null,
+        "helpId": null,
+        "glyph": {
+          "value": 0,
+          "id": 9123
+        },
+        "saves": null,
+        "cells": null,
+        "profileControl": 255,
+        "profileCachedControl": 255,
+        "glyphControl": null
+      },
+      "helpText": null,
+      "headerHash": null,
+      "assertTitle": true
+    }
+  },
+  {
+    "id": "2155-open",
+    "who": "both",
+    "phase": "menu-a",
+    "key": "ok",
+    "dir": null,
+    "action": null,
+    "controlStep": "2155-open",
+    "expect": {
+      "title": null,
+      "highlight": "@A066@ Priority",
+      "invariant": true,
+      "readback": {
+        "profile": 0,
+        "profileCached": 0,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": 1,
+        "helpId": 4732,
+        "glyph": null,
+        "saves": null,
+        "cells": null,
+        "profileControl": 255,
+        "profileCachedControl": 255,
+        "glyphControl": null
+      },
+      "helpText": "When a specified subject is detected at\r\nthe selected AF target position, AF is\r\nperformed on the detected subject.",
+      "headerHash": "5a085475b10c089b8283a34f4248eb02b936adacb7327622fad6604ca214e51b",
+      "assertTitle": true
+    }
+  },
+  {
+    "id": "2155-cancel",
+    "who": "both",
+    "phase": "menu-a",
+    "key": "menu",
+    "dir": null,
+    "action": null,
+    "controlStep": "2155-cancel",
+    "expect": {
+      "title": "@A02C@@A065@AF Button",
+      "highlight": "@A066@ Priority",
+      "invariant": true,
+      "readback": {
+        "profile": 0,
+        "profileCached": 0,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": null,
+        "helpId": null,
+        "glyph": {
+          "value": 0,
+          "id": 9123
+        },
+        "saves": null,
+        "cells": null,
+        "profileControl": 255,
+        "profileCachedControl": 255,
+        "glyphControl": null
+      },
+      "helpText": null,
+      "headerHash": null,
+      "assertTitle": true
+    }
+  },
+  {
+    "id": "a-zone-row",
+    "who": "candidate",
+    "phase": "menu-a",
+    "key": "down",
+    "dir": null,
+    "action": null,
+    "controlStep": null,
+    "expect": {
+      "title": "@A02C@@A065@AF Button",
+      "highlight": "@A040@AF Target Mode",
+      "invariant": true,
+      "helpText": null,
+      "headerHash": null,
+      "assertTitle": true,
+      "readback": {
+        "profile": 0,
+        "profileCached": 0,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": null,
+        "helpId": null,
+        "glyph": {
+          "value": 0,
+          "id": 9123
+        },
+        "cells": null
+      }
+    }
+  },
+  {
+    "id": "a-zone-open",
+    "who": "candidate",
+    "phase": "menu-a",
+    "key": "ok",
+    "dir": null,
+    "action": null,
+    "controlStep": null,
+    "expect": {
+      "title": null,
+      "highlight": 9123,
+      "invariant": true,
+      "helpText": "Choose the AF target area.",
+      "headerHash": "bd8da5bd11491b59d2ddcf2c60e77cc4a115d4ce3a1b1dfffc4f0173e2280477",
+      "assertTitle": true,
+      "readback": {
+        "profile": 0,
+        "profileCached": 0,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": 0,
+        "helpId": 424,
+        "glyph": null,
+        "cells": null
+      }
+    }
+  },
+  {
+    "id": "a-zone-right",
+    "who": "candidate",
+    "phase": "menu-a",
+    "key": "right",
+    "dir": null,
+    "action": null,
+    "controlStep": null,
+    "expect": {
+      "title": null,
+      "highlight": 1610,
+      "invariant": true,
+      "helpText": "Choose the AF target area.",
+      "headerHash": "bd8da5bd11491b59d2ddcf2c60e77cc4a115d4ce3a1b1dfffc4f0173e2280477",
+      "assertTitle": true,
+      "readback": {
+        "profile": 0,
+        "profileCached": 0,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": 1,
+        "helpId": 424,
+        "glyph": null,
+        "cells": null
+      }
+    }
+  },
+  {
+    "id": "a-commit",
+    "who": "candidate",
+    "phase": "menu-a",
+    "key": "ok",
+    "dir": null,
+    "action": null,
+    "controlStep": null,
+    "expect": {
+      "title": "@A02C@@A065@AF Button",
+      "highlight": "@A040@AF Target Mode",
+      "invariant": true,
+      "helpText": null,
+      "headerHash": null,
+      "assertTitle": true,
+      "readback": {
+        "profile": 1,
+        "profileCached": 1,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": 1,
+        "helpId": 424,
+        "glyph": {
+          "value": 1,
+          "id": 1610
+        },
+        "cells": null
+      }
+    }
+  },
+  {
+    "id": "a-exit-0",
+    "who": "candidate",
+    "phase": "menu-a",
+    "key": "menu",
+    "dir": null,
+    "action": null,
+    "controlStep": null,
+    "expect": {
+      "title": "2.AF",
+      "highlight": "@A02C@@A065@AF Button",
+      "invariant": true,
+      "helpText": null,
+      "headerHash": null,
+      "assertTitle": true,
+      "readback": {
+        "profile": 1,
+        "profileCached": 1,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": null,
+        "helpId": null,
+        "glyph": null,
+        "cells": null
+      },
+      "assertGlyph": false,
+      "assertFaces": false
+    }
+  },
+  {
+    "id": "a-exit-1",
+    "who": "candidate",
+    "phase": "menu-a",
+    "key": "menu",
+    "dir": null,
+    "action": null,
+    "controlStep": null,
+    "expect": {
+      "title": null,
+      "highlight": null,
+      "invariant": true,
+      "helpText": null,
+      "headerHash": null,
+      "assertTitle": true,
+      "readback": {
+        "profile": 1,
+        "profileCached": 1,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "shooting",
+        "slotValue": null,
+        "helpId": null,
+        "glyph": null,
+        "cells": null
+      },
+      "assertGlyph": false,
+      "assertFaces": false
+    }
+  },
+  {
+    "id": "b-menu",
+    "who": "candidate",
+    "phase": "menu-b",
+    "key": "menu",
+    "dir": null,
+    "action": null,
+    "controlStep": null,
+    "expect": {
+      "title": "2.AF",
+      "highlight": "@A02C@@A065@AF Button",
+      "invariant": true,
+      "helpText": null,
+      "headerHash": null,
+      "assertTitle": true,
+      "readback": {
+        "profile": 1,
+        "profileCached": 1,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": null,
+        "helpId": null,
+        "glyph": null,
+        "cells": null
+      },
+      "assertGlyph": false,
+      "assertFaces": false
+    }
+  },
+  {
+    "id": "b-enter",
+    "who": "candidate",
+    "phase": "menu-b",
+    "key": "ok",
+    "dir": null,
+    "action": null,
+    "controlStep": null,
+    "expect": {
+      "title": "@A02C@@A065@AF Button",
+      "highlight": "@A066@ Priority",
+      "invariant": true,
+      "helpText": null,
+      "headerHash": null,
+      "assertTitle": true,
+      "readback": {
+        "profile": 1,
+        "profileCached": 1,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": null,
+        "helpId": null,
+        "glyph": {
+          "value": 1,
+          "id": 1610
+        },
+        "cells": null
+      },
+      "assertGlyph": false,
+      "assertFaces": false
+    }
+  },
+  {
+    "id": "b-down-1",
+    "who": "candidate",
+    "phase": "menu-b",
+    "key": "down",
+    "dir": null,
+    "action": null,
+    "controlStep": null,
+    "expect": {
+      "title": "@A02C@@A065@AF Button",
+      "highlight": "@A066@ Priority",
+      "invariant": true,
+      "helpText": null,
+      "headerHash": null,
+      "assertTitle": true,
+      "readback": {
+        "profile": 1,
+        "profileCached": 1,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": null,
+        "helpId": null,
+        "glyph": {
+          "value": 1,
+          "id": 1610
+        },
+        "cells": null
+      },
+      "assertGlyph": false,
+      "assertFaces": false
+    }
+  },
+  {
+    "id": "b-zone-row",
+    "who": "candidate",
+    "phase": "menu-b",
+    "key": "down",
+    "dir": null,
+    "action": null,
+    "controlStep": null,
+    "expect": {
+      "title": "@A02C@@A065@AF Button",
+      "highlight": "@A040@AF Target Mode",
+      "invariant": true,
+      "helpText": null,
+      "headerHash": null,
+      "assertTitle": true,
+      "readback": {
+        "profile": 1,
+        "profileCached": 1,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": null,
+        "helpId": null,
+        "glyph": {
+          "value": 1,
+          "id": 1610
+        },
+        "cells": null
+      },
+      "assertGlyph": false,
+      "assertFaces": false
+    }
+  },
+  {
+    "id": "b-open",
+    "who": "candidate",
+    "phase": "menu-b",
+    "key": "ok",
+    "dir": null,
+    "action": null,
+    "controlStep": null,
+    "expect": {
+      "title": null,
+      "highlight": 1610,
+      "invariant": true,
+      "helpText": "Choose the AF target area.",
+      "headerHash": "bd8da5bd11491b59d2ddcf2c60e77cc4a115d4ce3a1b1dfffc4f0173e2280477",
+      "assertTitle": true,
+      "readback": {
+        "profile": 1,
+        "profileCached": 1,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": 1,
+        "helpId": 424,
+        "glyph": null,
+        "cells": null
+      }
+    }
+  },
+  {
+    "id": "b-right",
+    "who": "candidate",
+    "phase": "menu-b",
+    "key": "right",
+    "dir": null,
+    "action": null,
+    "controlStep": null,
+    "expect": {
+      "title": null,
+      "highlight": 650,
+      "invariant": true,
+      "helpText": "Choose the AF target area.",
+      "headerHash": "bd8da5bd11491b59d2ddcf2c60e77cc4a115d4ce3a1b1dfffc4f0173e2280477",
+      "assertTitle": true,
+      "readback": {
+        "profile": 1,
+        "profileCached": 1,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": 2,
+        "helpId": 424,
+        "glyph": null,
+        "cells": null
+      }
+    }
+  },
+  {
+    "id": "b-commit",
+    "who": "candidate",
+    "phase": "menu-b",
+    "key": "ok",
+    "dir": null,
+    "action": null,
+    "controlStep": null,
+    "expect": {
+      "title": "@A02C@@A065@AF Button",
+      "highlight": "@A040@AF Target Mode",
+      "invariant": true,
+      "helpText": null,
+      "headerHash": null,
+      "assertTitle": true,
+      "readback": {
+        "profile": 2,
+        "profileCached": 2,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": 2,
+        "helpId": 424,
+        "glyph": {
+          "value": 2,
+          "id": 650
+        },
+        "cells": null
+      }
+    }
+  },
+  {
+    "id": "b-exit-0",
+    "who": "candidate",
+    "phase": "menu-b",
+    "key": "menu",
+    "dir": null,
+    "action": null,
+    "controlStep": null,
+    "expect": {
+      "title": "2.AF",
+      "highlight": "@A02C@@A065@AF Button",
+      "invariant": true,
+      "helpText": null,
+      "headerHash": null,
+      "assertTitle": true,
+      "readback": {
+        "profile": 2,
+        "profileCached": 2,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "menu",
+        "slotValue": null,
+        "helpId": null,
+        "glyph": null,
+        "cells": null
+      },
+      "assertGlyph": false,
+      "assertFaces": false
+    }
+  },
+  {
+    "id": "b-exit-1",
+    "who": "candidate",
+    "phase": "menu-b",
+    "key": "menu",
+    "dir": null,
+    "action": null,
+    "controlStep": null,
+    "expect": {
+      "title": null,
+      "highlight": null,
+      "invariant": true,
+      "helpText": null,
+      "headerHash": null,
+      "assertTitle": true,
+      "readback": {
+        "profile": 2,
+        "profileCached": 2,
+        "k90a1": [
+          1,
+          1
+        ],
+        "screen": "shooting",
+        "slotValue": null,
+        "helpId": null,
+        "glyph": null,
+        "cells": null
+      },
+      "assertGlyph": false,
+      "assertFaces": false
+    }
+  }
+]

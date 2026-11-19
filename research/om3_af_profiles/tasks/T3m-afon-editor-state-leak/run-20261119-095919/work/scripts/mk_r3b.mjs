@@ -1,0 +1,17 @@
+import { readFileSync, writeFileSync } from 'node:fs';
+let lib = readFileSync('work/scripts/accept_lib_r2.mjs', 'utf8');
+const line = "if (!seen) problems.push('no-image-' + bank);";
+const i = lib.indexOf(line);
+if (i < 0) throw new Error('line missing');
+const neu = "if (seen && seen.sha256 !== fileHash[bank]) problems.push('file-mismatch-' + bank);\n    if (!seen && !added.some((x) => x.store === bank)) problems.push('no-image-' + bank);";
+lib = lib.slice(0, i) + neu + lib.slice(i + line.length);
+const next = lib.indexOf("else if (seen.sha256 !== fileHash[bank]) problems.push('file-mismatch-' + bank);");
+if (next < 0) throw new Error('else missing');
+const nl = lib[next - 1] === '\n' ? (lib[next - 2] === '\r' ? 2 : 1) : 0;
+lib = lib.slice(0, next - nl) + lib.slice(next + "else if (seen.sha256 !== fileHash[bank]) problems.push('file-mismatch-' + bank);".length);
+lib = lib.replace('helpers, r2.', 'helpers, r3.');
+writeFileSync('work/scripts/accept_lib_r3.mjs', lib);
+let run = readFileSync('work/scripts/accept_run2.mjs', 'utf8');
+run = run.replaceAll('r2', 'r3');
+writeFileSync('work/scripts/accept_run3.mjs', run);
+console.log('wrote r3');

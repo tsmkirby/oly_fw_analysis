@@ -1,0 +1,859 @@
+{
+  "hashed": "execution",
+  "change": "EMULATOR-ONLY exit restore of the editor position copies",
+  "label": "EMULATOR-ONLY",
+  "modules": [
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/fw/model.mjs",
+      "sha256": "f080e7e9c91bf3baa5136c7b8aeb6b0e0c4c8378d89f361a47e87aac4e902a44",
+      "bytes": 4718,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/fw/facts.mjs",
+      "sha256": "3f938574a7cc589dd227584066e726039009678c4f51fa8175437badfc1c4c17",
+      "bytes": 509333,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/core/cpu.mjs",
+      "sha256": "94f3caf73745b17dceca437299b6c711aee0efe51c9ab7c872d5b1e6c599521e",
+      "bytes": 33769,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/core/mem.mjs",
+      "sha256": "adfe9bca23723f22b490c99047b6ad32c291f495492c98138d1da3c20ab5a676",
+      "bytes": 23219,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/fw/ports.mjs",
+      "sha256": "6c81c9955e9baba6c165ed3affb69fd5208bb44e6a9dba5dc6094935074ce0b0",
+      "bytes": 1076335,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/fw/models.mjs",
+      "sha256": "115c8349e4f0aadbe56f24638db4e195ca3ba59739c64607eb5b34e4e14db3db",
+      "bytes": 125036,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/fw/overrides-E122.mjs",
+      "sha256": "6bff3bc7d875f7424165e6737ecd50c4a4ebb8d1dc4dd4d42b9431b5982b0602",
+      "bytes": 4046,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/fw/overrides-E144.mjs",
+      "sha256": "cc98ffd4ed9eac44c6a8c58c31010b67c72eef618d09e93cf97e442b3f5bd307",
+      "bytes": 25687,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/checks/lib/env.mjs",
+      "sha256": "dbbfd2ab839d8ceb784c7df5c12d0d9a17898eba549b84e848a9cfb05b0d609b",
+      "bytes": 12178,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/fw/nand.mjs",
+      "sha256": "1c7751b4db88c7874eb4c86d33185f6279ced1cd2f7bddbae4a2dea37fe3b5dd",
+      "bytes": 20696,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/fw/olyfw.mjs",
+      "sha256": "a1c02f4ded0c3624ac017d97eb1ca59e6ca5dd407bcc0854722d7c126c9ef246",
+      "bytes": 5786,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/fw/patch.mjs",
+      "sha256": "bb9434c31fc8e494daa7dd05321bf5835b51aae6bfdbbd981d7151b445375d3b",
+      "bytes": 19035,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/util/bytes.mjs",
+      "sha256": "86707333d72877e35b374bfd39f3d6af2b716437c73df46929e74b460af985be",
+      "bytes": 6115,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/checks/lib/coverage.mjs",
+      "sha256": "e6e3d409d7766e8d5b55d473523355a7dda4b2a4dba1bda984ca170411109ee7",
+      "bytes": 4549,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/fw/resprefix.mjs",
+      "sha256": "612c87c0dd722ee031685dd5c70bf14e113d094f2e3a66677dfbe4b8c14c6372",
+      "bytes": 2144,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/lab/resources.mjs",
+      "sha256": "122450c256d8ef188f77a8e323ba92a28a6102f9033b4634e3c77c36dd066002",
+      "bytes": 14110,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/fw/image.mjs",
+      "sha256": "657e9a447ea8035f17115708121e1ad8e71c08f8f5ef1aefb107ccf3a73621d8",
+      "bytes": 2077,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/lab/errors.mjs",
+      "sha256": "2fd7139bceb60f0ad31c428f7ed9f69235af4bc76cda823b1bb9c6dcea45fe10",
+      "bytes": 1204,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/util/show.mjs",
+      "sha256": "58a20ae76e473414c3b0a0075eb362f7a1cf4c968b3feef64659f0473515e076",
+      "bytes": 1724,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/fw/labfw.mjs",
+      "sha256": "3efbe7112a2917fbf77c3a57b704296bd730676f1921d24c427f40225ecfb083",
+      "bytes": 4276,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/checks/lib/errors.mjs",
+      "sha256": "4c01fc5ac9167e751e6f9f1f013d61c56600e3af668db8ee305f79718e213c79",
+      "bytes": 1846,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/refs/errors.mjs",
+      "sha256": "fff1f2065bbdb2797f3f998fabeb2a0353b88451bc252e4d3ad74025ab164aca",
+      "bytes": 809,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/checks/lib/args.mjs",
+      "sha256": "6c99d21aad6340f2b7c72c5c63f33b7287d04dab798adedc23f1cf705ab92ad8",
+      "bytes": 4766,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/fw/expand.mjs",
+      "sha256": "e2575f5a4c8ecb79764a31ae01223ab718e7ddc266c00bd88bbf0008dabd1d7d",
+      "bytes": 3148,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/fw/board.mjs",
+      "sha256": "6a02f7c74bee6f0b6409c57c3ee78c62e16280794ee55557edb42d2f723d7875",
+      "bytes": 39911,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/lab/menu.mjs",
+      "sha256": "f1fbb65e5a9d30e90ac4eb5565ad6852733d4ae20ff3a3de590d916cf4ec4e94",
+      "bytes": 85212,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/fw/sections.mjs",
+      "sha256": "e8e55f2820a7db8426f0172882a34c90c611a7a6b2d848904cd55739d45d6250",
+      "bytes": 8601,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/util/tally.mjs",
+      "sha256": "33f495d217ff46a5e2e1bb74a3cb319b2db374e8bd3d37dfef75da9a6864ed26",
+      "bytes": 896,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/util/hex.mjs",
+      "sha256": "d48bffb45373a94b8d1c824aa46d7a93665f282ee8a563370d698b1a53237c33",
+      "bytes": 489,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/lab/sim.mjs",
+      "sha256": "aab4081dcfc9fb63ca8e84f7f100f84a0ce6dc91a633595cb05446a5d480e6be",
+      "bytes": 16409,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/machine.mjs",
+      "sha256": "9c10e396d122722a486fa73dedabb0c19ad45033c59c172ec6bcaa37d031cd63",
+      "bytes": 33745,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/core/cores.mjs",
+      "sha256": "c40e61d8cb1c6d5660968bc3780591fe58b070d39346b33aacb1f8253cf3bfa0",
+      "bytes": 14575,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/core/interp.mjs",
+      "sha256": "660e09091fc99db584104cd8e98d6050fe517e204fa2c747d0aa72e1423f9aa2",
+      "bytes": 40485,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/dev/dpc.mjs",
+      "sha256": "adf00b0157638de3c7f2885957b4542ef0b8a1bcac8c7649546a0658cfb89f32",
+      "bytes": 2629,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/dev/imgpipe.mjs",
+      "sha256": "924001331674b9e6642c2c9c052fe75a4aff78d8a16f41dd2e2191046ef94daa",
+      "bytes": 25971,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/lab/jpeg.mjs",
+      "sha256": "b54cfe0eb9655371f282fd1e3565b92dfce2500538b805bf0d082de002b97554",
+      "bytes": 14285,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/dev/imgpro.mjs",
+      "sha256": "275680322384425d95a05c39178a70091ed8d3ff897ae04ab504004029066664",
+      "bytes": 13544,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/dev/ems1.mjs",
+      "sha256": "68deb7a62e8d6d7d1fb11e49baed979dcf01012e07074ec19bf4e8c39db9d371",
+      "bytes": 11974,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/dev/pdt.mjs",
+      "sha256": "9377aa4bfd22964c40c672c44f7eb48c5955e5faa6f98a44525497afecb716c9",
+      "bytes": 9847,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/dev/dml.mjs",
+      "sha256": "cb8761cb0d5531eb4e7ff46fb3c1cba535afcf6719220ca670ec3c94d9b0a890",
+      "bytes": 8744,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/dev/lensssc.mjs",
+      "sha256": "e96b83c864f901ca1811a447f5f88fb1ff0b9ee87972555fe2678e420fd6a34d",
+      "bytes": 12839,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/dev/linkpins.mjs",
+      "sha256": "cbc3e7a5fca33012a2344800016eb8e9f63d723f381dc13deb4ce52e66e3c1d5",
+      "bytes": 7211,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/dev/audio.mjs",
+      "sha256": "2a41fcd1bd0152e5b2b54f3cad314a7e77c5741787d761d69df9e023d41ad571",
+      "bytes": 17201,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/dev/hdmi.mjs",
+      "sha256": "80497c3a89e39ecd641f4fcc5e67ebb2028893fb3b86edffb91b50b115449e8c",
+      "bytes": 16254,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/dev/scpu.mjs",
+      "sha256": "69198b7be16fb24d32968553888ee551ba0f6d227688bba434203e5c834fd5cb",
+      "bytes": 9454,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/dev/stub.mjs",
+      "sha256": "b87a757f0e57823fc46a89020060cc38a6361d24a0498450bdc3047fb9419a3d",
+      "bytes": 4079,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/dev/engine.mjs",
+      "sha256": "2164dcaa278792e3b64675e9ee02dcefa0a6c03afbe7d2738d013da0bfa18059",
+      "bytes": 21611,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/dev/intc.mjs",
+      "sha256": "85b6b7d21652ac1a057e19fdc1e214154ac52bceec47a8f4afdac1661788dada",
+      "bytes": 15228,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/dev/bus.mjs",
+      "sha256": "e537c4ed7e90f6bc2b4a7fef2a35d856af5ffc5ae446ee9336a87e5b4e6e397f",
+      "bytes": 8291,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/dev/vsc.mjs",
+      "sha256": "38de0fa08a4ff6197c60868c6b893d46775908ccf9389f1d1ddcc5f6b6342602",
+      "bytes": 31927,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/dev/vsccompose2.mjs",
+      "sha256": "234572564acef358dd7084d35ca624d62312c42f005ef9c3dcb314fcc1a4d638",
+      "bytes": 18331,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/dev/vsccompose.mjs",
+      "sha256": "ba3da9916f999ca91b4c1b9857c13f95239628be334e58478154e682aa05971c",
+      "bytes": 33867,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/dev/vscregs.mjs",
+      "sha256": "d29e6661e27212b466035b13ca9ceb9f2bcbafe8026328659d65382f0b806265",
+      "bytes": 3828,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/dev/timer.mjs",
+      "sha256": "b03f10e8d4d622d3fb2fcd6b8b39943c69c98d17241dd4e5026c338fbe0b4739",
+      "bytes": 10301,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/debug/snapshot.mjs",
+      "sha256": "24e51e3811a58d55051caeb7507707cfb51001cb9b5355d27bc20c8c0c98ab54",
+      "bytes": 5970,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/lab/scpum4.mjs",
+      "sha256": "8b7d7fcb1473963f775a2f6742fb2236ef2309ddbaa47d98e7edc41692867514",
+      "bytes": 16575,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/lab/scpudev.mjs",
+      "sha256": "c93ce9ced00ba5effba9dedf61ac54d3ca437533f2fd8c899273d273ec5dfc6c",
+      "bytes": 40483,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/lab/hle.mjs",
+      "sha256": "5648a293d1f6ede0eda8e29d4dc9e6f683210a28935b02b4e6c0af2a03da0520",
+      "bytes": 18565,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/lab/patchaudit.mjs",
+      "sha256": "18b946321244d4473f904314ba558e9f3c92e330f6dd502863974773bf349b74",
+      "bytes": 12584,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/core/m4/boot.mjs",
+      "sha256": "064782160d72244f025941957757c5c0becac5cbc2baf272c93124a4b025c2ab",
+      "bytes": 2475,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/core/m4/bus.mjs",
+      "sha256": "7d40173941ce9136e055f5d68a3904d7e13bcb100afe076c99e62c5f04daff2b",
+      "bytes": 5865,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/core/m4/errors.mjs",
+      "sha256": "e4552273413b00095c7536a9e490c3c1b70428a9da88b4ec8087dccc5e0b517b",
+      "bytes": 894,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/core/m4/cpu.mjs",
+      "sha256": "64ddeaecf9402af3d04cbf232b99036fd1b87a637300b5ab0db6db4eafb655b8",
+      "bytes": 38527,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/core/m4/sys.mjs",
+      "sha256": "e97b9371d3e8eea59cea3d87c08b39eca3ae16e35539f8ce4f2ca785cec81a3b",
+      "bytes": 16370,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/core/m4/decode.mjs",
+      "sha256": "a5400b0d56fbec796452aa7d93817cb4e97d28604f75048aef9a0d2008b9616d",
+      "bytes": 41153,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/core/m4/dcache.mjs",
+      "sha256": "5c1cd23048a7d5c693bc626abbcc1057d29bc4214c96bb9d05d71674ebf472cf",
+      "bytes": 3444,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/core/m4/periph/gpio.mjs",
+      "sha256": "4f2bd672f826e915f4dc628e39d156d7bc05f4ad1291b1121eebc780665025f9",
+      "bytes": 7331,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/core/m4/periph/regs.mjs",
+      "sha256": "a159b2f84183d50cccb9445f435ebb2955bada803f994b7ffb9e2ea29262ee1e",
+      "bytes": 2837,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/core/m4/periph/stm32l4.mjs",
+      "sha256": "1beb26e4d57bcfc8996e5b4c0ef04f6d94c3e9e4de4952d056904c6698a9aef5",
+      "bytes": 25042,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/core/m4/periph/tim.mjs",
+      "sha256": "a3d74c5c2eb63bc9759899ba528a0c0519bb64b0a101d67b44cee85963f21f72",
+      "bytes": 19535,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/core/m4/periph/spi.mjs",
+      "sha256": "388e0f06c7c1c6ce9400efd78e1d3d8f3249a424cdf192f5fd7bb039ce2dba5f",
+      "bytes": 5146,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/core/m4/periph/rtc.mjs",
+      "sha256": "3edf5249203b6230e69e423e50953d9611db7a1bf780fc93ad42f2bd71965107",
+      "bytes": 12634,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/core/m4/periph/dma.mjs",
+      "sha256": "0013b012879e42f249776e8d0a91db465d84312f967751994fdcfb78aeef931f",
+      "bytes": 6520,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/core/m4/periph/usart.mjs",
+      "sha256": "5f3ff52bf755043637af356f2516524a13e2ac5d706772d73791eb32508a3396",
+      "bytes": 10349,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/core/m4/periph/i2c.mjs",
+      "sha256": "db2ed90a75f8f23fa8119eceb74641e1faf0c840f0e5b412297bed3fe27fed42",
+      "bytes": 15064,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/core/m4/periph/adc.mjs",
+      "sha256": "d986c043c73a0ffcfcac748224516520cd909f297bca97fca0479c0e18da2ab3",
+      "bytes": 5729,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/core/m4/periph/usb.mjs",
+      "sha256": "e9cd406f7666cc4b85ae2e4fc9c1830a66f62bc60747f443498dcaf65d349c0a",
+      "bytes": 2042,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/core/m4/periph/exti.mjs",
+      "sha256": "3ccca80728f6a95d651bee8fbdea6eebff4cf0c839073198e7a39465a2f7f572",
+      "bytes": 5980,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/core/m4/periph/pwr.mjs",
+      "sha256": "e665b6f771874170fb13346b85389d8969d5106f116ab80c32689c293e32f179",
+      "bytes": 2976,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/core/m4/periph/flash.mjs",
+      "sha256": "8a1b09f4465f05ed8853a08be72081635257fc9e47e5b475820d0b49cb1b5a85",
+      "bytes": 13217,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/core/m4/periph/rcc.mjs",
+      "sha256": "28649dbcca9e0006c0c518d23ca488544d48d15f5443dd8d40fb40954745cd70",
+      "bytes": 9103,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/core/m4/periph/board.mjs",
+      "sha256": "96452848d86624d9c569fdca46fa3ef015ae4c1847f31ae24da561ed54d9d4b6",
+      "bytes": 2077,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/core/m4/periph/sched.mjs",
+      "sha256": "a683cedc35145ccd001f22c4031f6fd4942e9bfd38d00c0a99db7b3e78923e4c",
+      "bytes": 4354,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/lab/scpulink.mjs",
+      "sha256": "3df7584565d3b873e4cbf8fe0050364efe14ae383a4bff5d2dcc9251946ddb96",
+      "bytes": 10470,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/lab/kernel.mjs",
+      "sha256": "6ceee4bf9962892c0d025be0d70a92ccbb53cdb0ef009b5b9e312586302f47f8",
+      "bytes": 22251,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/lab/irq.mjs",
+      "sha256": "8fec8ed6abe08a9b83845eae044fc3fcc43f2e339f95d872489152b4de9c072f",
+      "bytes": 10200,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/lab/rtos.mjs",
+      "sha256": "ea7e06666d37aaa97d06142febdbe853d996f68705bcca35f7ff11b4c6ed4b5d",
+      "bytes": 7071,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/lab/osd.mjs",
+      "sha256": "a0887531c74d890dca3a12b26d7aea57009da602ffbb6fff8382f89a119176b8",
+      "bytes": 21528,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/lab/osdfmt.mjs",
+      "sha256": "8d5945aeca6a9ec80099c8a3c48ea90580f4c87399e6bcc593f2f0782a263248",
+      "bytes": 4699,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/lab/text.mjs",
+      "sha256": "e27b2d3781feab8d9eb3f49b0cc73524a9312913f85a4131358156a9770a1357",
+      "bytes": 22116,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/util/equal.mjs",
+      "sha256": "31d47358a57d40bc4d67b9a077a8c05e6c4f1fe7a92de33f8eb538d75ead238e",
+      "bytes": 1471,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/lab/display.mjs",
+      "sha256": "7b34ff5b05fef9c7ca1d33fe771e4158387298fd02b28372afd36bf5f0d501bb",
+      "bytes": 91058,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/lab/menudata.mjs",
+      "sha256": "1cfdf906d143bea38e730040b2f062b3b3d46b35ba361b58dfd5b01db15531da",
+      "bytes": 17067,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/lab/player.mjs",
+      "sha256": "bfd861245f1a3d3b2d19a48966b410e979def2ae7cb62c5dde86e31eb03e1404",
+      "bytes": 82293,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/lab/playmod.mjs",
+      "sha256": "56f5802c85ac55f4c5ecbee290384620826c62a1fde6d6bce4b4704aa95bfad8",
+      "bytes": 14600,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/lab/cpu2.mjs",
+      "sha256": "9a6877013f48a51f56a94bb1185d827c50b8d427b2db375d0d6a3964f0736666",
+      "bytes": 24107,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/lab/nvramdoc.mjs",
+      "sha256": "597148fdec863af46873a53ab5380a553fcda3a82499da2548f527eed28fffba",
+      "bytes": 6245,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/lab/audio.mjs",
+      "sha256": "9b1edfc267afe2c915cbecf4d9fc7bc78003f7f19ef799fd4c738ae1d4e2ff4b",
+      "bytes": 8006,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/lab/rec.mjs",
+      "sha256": "830d220debed119b5183391ce0d629de368369609ccbfafef14dd27bdf4643f4",
+      "bytes": 62226,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/lab/storage.mjs",
+      "sha256": "f5ea0a36b9c78f0a05a5e0f5e45f53ee5f4d076019fab8ee41c2d9e8c4d37d9c",
+      "bytes": 50163,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/lab/sdcard.mjs",
+      "sha256": "4f81b26b7158dff6bedbd7e88e10fe6293a4c6cea643b498ab98ff7041e7828e",
+      "bytes": 15367,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/debug/live.mjs",
+      "sha256": "c19050fd773dc1f46b9f7c0c3669ada12b1293dab93599206913022c62a87e49",
+      "bytes": 28766,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/debug/call.mjs",
+      "sha256": "74bffd86020ec1c6f3eca732fd4a41aaa7dcfba2d4670a094449918d84a44186",
+      "bytes": 22586,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/debug/regs.mjs",
+      "sha256": "2e620e185508bf19008cf97cc33ae188222e7461e0b3f1811bf304fdb7b422d7",
+      "bytes": 866,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/debug/protocol.mjs",
+      "sha256": "5eff055d29372fb46aecda2c09c6ba94538d7026ad585e15abe06ccbd1f259ea",
+      "bytes": 21791,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/debug/trace.mjs",
+      "sha256": "92b3ed83780771c6011d1521ab018dee0fda5f604522acdbdd624a25bdf32bab",
+      "bytes": 4456,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/debug/debugger.mjs",
+      "sha256": "a24ce644ab922457a843c868076aa21e72007e78086fda75fd88119a79da4705",
+      "bytes": 24393,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/util/tracejson.mjs",
+      "sha256": "52a0e82cd086dee77069600061f3d478fbf4ac447c75173dc53e97365f0e4e77",
+      "bytes": 3871,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/util/parse.mjs",
+      "sha256": "b0754de377324528b15d6588dbe1d634649cbefd68754bf6b0b114beee3ddfd7",
+      "bytes": 1807,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/lab/play.mjs",
+      "sha256": "ac4221021017ba3facacb5db7b1600f2704291136b72c24fefee3b9f8ed092a8",
+      "bytes": 184297,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/lab/dispq.mjs",
+      "sha256": "4821c3b1eb64f4b25f40ed80bcf2c14aea5b166148efa3dda35b3d978537b4a4",
+      "bytes": 2427,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/lab/soundres.mjs",
+      "sha256": "a2c6dd3df56db40e95822cdb973bfe25efad7f049828626964c88886ff6aa8e9",
+      "bytes": 6887,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/lab/audiohw.mjs",
+      "sha256": "c8b414b7217647d696c67aa84ffd273680d325f0119576aa480416791932d705",
+      "bytes": 13787,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/lab/wm8946.mjs",
+      "sha256": "4ae26e3647e049fc3bc72163aa978ffc36a0966125b8370dab44827cdfee67bd",
+      "bytes": 8976,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/lab/camapp.mjs",
+      "sha256": "363891a90afc7e77e57abd1638e31f0a7badc09b81778e90ac8d42fb640b33f3",
+      "bytes": 232107,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/lab/take.mjs",
+      "sha256": "8c6dc9cc84ee43a46e22d542f79bb6a5138b9ed686f089b0e17d7c500f66d4ee",
+      "bytes": 65265,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/dev/camfe.mjs",
+      "sha256": "69a9fde49796f27fac8454565b69c281f670659decb6655fb0ad7c5ef2c3057c",
+      "bytes": 13697,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/lab/shoe.mjs",
+      "sha256": "d6675b13346890962de1eec8930f763312f7f7d59ccb5b869a0607bf03840e98",
+      "bytes": 10854,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/lab/nav.mjs",
+      "sha256": "f0062a533f6caf7a37e600364a0d645ffa184deb7892c385b9bba5f58390baef",
+      "bytes": 28926,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/lab/shuttersnd.mjs",
+      "sha256": "f4e81e625dcbaa0807d5ac67dfc246ad791f314c5ae9fd7f44192d12728fbc63",
+      "bytes": 5762,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/lab/mdet.mjs",
+      "sha256": "89c61056df82fe1a159e684cdee0810af38d60c986ab0bf33a6e90e1c504bdde",
+      "bytes": 45695,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/lab/subject.mjs",
+      "sha256": "a5bd078b39c2f8594b13f564e5086eb56e8f22bbcdbac115e226e19220b5b317",
+      "bytes": 13781,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/lab/scene.mjs",
+      "sha256": "a842e60f803bc8b88113e1484e864235b5e2f9014dabb831210fd5cb9c8e9366",
+      "bytes": 20424,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/lab/media.mjs",
+      "sha256": "373ceb78980f1c9a7098d56b573e86b00595392fe4e5a69e7c93af970a6ef248",
+      "bytes": 25418,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/lab/settings_ids.mjs",
+      "sha256": "9c395cbd29b04f7e3a4cc1c34332c6f3c4327b28b9ed45db969e9589758b1f78",
+      "bytes": 2242,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/lab/windows.mjs",
+      "sha256": "d18038a30d2f87e3abf6098cd943f35ff4202c6bb3a954d0f7ed1d9c8d28189f",
+      "bytes": 1265,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/lab/touchpanel.mjs",
+      "sha256": "72f93c8bc053f159ec14a20b4dbcf0fabc189c01f79fde7a06efea160743e9de",
+      "bytes": 6610,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/lab/sio.mjs",
+      "sha256": "f0716ec9f3b3fbcffce75fa186a53f387ab1c336726595bfedc62119b4a9627b",
+      "bytes": 9980,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/lab/charger.mjs",
+      "sha256": "f0a2426fb249f9f675c0d22d6e49126fd53a88541dbd6637f6a5bbe4e0212982",
+      "bytes": 3046,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/lab/power.mjs",
+      "sha256": "ec16f3c8dfbd67a7802e9718ce930e00d2889b0e5dc37fc7e040a255ea92f549",
+      "bytes": 17507,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/lab/resnand.mjs",
+      "sha256": "c58d5d251c32f05d247ab8914551202c474e793bcdb2062ce61d2617fbc17462",
+      "bytes": 12700,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/lab/lens.mjs",
+      "sha256": "b92b12d381f3389fa8802f1e9ef3bde4291c45e8cb386619ff6fcf25099a96e5",
+      "bytes": 11978,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/lab/lensmcu.mjs",
+      "sha256": "52eb5614952c45f8f648db3cda980019bf9d1fe79334e48bbc3a183a443eabdc",
+      "bytes": 13566,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/lab/acc.mjs",
+      "sha256": "48c508462bb4e8cf94b893315d079b9d08248956f06c040be1ed4e3503122062",
+      "bytes": 15789,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/lab/edid.mjs",
+      "sha256": "416d945d868a7d8c53cc0085179733a25fccb82f88e1d6cbd0fe7add32b4d051",
+      "bytes": 2948,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/work/scripts/accept_lib.mjs",
+      "sha256": "1a663604655b0200b9929fc30d50e704ec2d25a4c44735e56111d01304eeb5e2",
+      "bytes": 6066,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/work/scripts/accept_run.mjs",
+      "sha256": "4953c466dc206469a6b9a42bf37bf17fbebc421491349764bdbd501c0aa842cb",
+      "bytes": 36343,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/host/nvram.mjs",
+      "sha256": "352f7765f0426706553ab6c3453048ff37c0d3e1fd274ceda18c8a37fd7b2071",
+      "bytes": 5126,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/checks/lib/png.mjs",
+      "sha256": "77d52d420a15ac8005ab9ac39e1d09d7df2a2650ece690813e511ac03ce6db99",
+      "bytes": 5493,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/src/lab/menuwalk.mjs",
+      "sha256": "d91eeba2e912d05d4a11081bd5846f53b60cbf1578e0733e3289bac8b47706f1",
+      "bytes": 10985,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/scenarios/session_replay.mjs",
+      "sha256": "83d2afc6accf98d0cad951803af7f42319ec7858a9c9cc1a018622357c02b133",
+      "bytes": 25927,
+      "hashed": "execution"
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/om-emu/emu/scenarios/bind.mjs",
+      "sha256": "5809e36b04e3fa0983e85c104070e3639ee85c965f25d0bddc0165533ee5fedc",
+      "bytes": 1979,
+      "hashed": "execution"
+    }
+  ]
+}

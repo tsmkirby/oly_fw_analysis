@@ -1,0 +1,11 @@
+file:///C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/work/scripts/mk_r2.mjs:32
+if (!lib.includes(oldFn)) throw new Error('nativeSave head not found');
+                                ^
+
+Error: nativeSave head not found
+    at file:///C:/Dev/OM3-tasks/T3m-afon-editor-state-leak/ws/work/scripts/mk_r2.mjs:32:33
+    at ModuleJob.run (node:internal/modules/esm/module_job:569:25)
+    at async node:internal/modules/esm/loader:650:26
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:105:5)
+
+Node.js v26.12.1

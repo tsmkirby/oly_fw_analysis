@@ -1,0 +1,9 @@
+{
+  "command": "29",
+  "note": "work/out/cmd/29.out, work/out/cmd/29.err and work/out/cmd/29.exit are written by the wrapper after this script returns. They are not hashed here. The following seal command hashes them. That seal cannot hash its own .exit, because the wrapper writes the .exit after the process returns and the file contains a timestamp.",
+  "cmd_txt": {
+    "path": "work/out/cmd/29.cmd.txt",
+    "sha256": "584bc9d8f57295685495425123e789b343a8c43bfb9280d4c2632c703d87c7f6",
+    "bytes": 365
+  }
+}
