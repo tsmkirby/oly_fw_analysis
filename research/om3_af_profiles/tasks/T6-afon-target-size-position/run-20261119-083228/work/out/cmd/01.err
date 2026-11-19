@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "C:\Dev\OM3-tasks\T6-afon-target-size-position\ws\work\scripts\check_listings_t6.py", line 150, in <module>
+    main()
+  File "C:\Dev\OM3-tasks\T6-afon-target-size-position\ws\work\scripts\check_listings_t6.py", line 69, in main
+    lines.append('listing covers swap ' + (listed.hex() == stock_swap.hex()))
+                 ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TypeError: can only concatenate str (not "bool") to str

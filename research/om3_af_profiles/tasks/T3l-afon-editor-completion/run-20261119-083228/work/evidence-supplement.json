@@ -1,0 +1,13 @@
+{
+  "sealed": "after the manifest hash",
+  "note": "Command 31 is this manifest build. The wrapper writes its .out, .err, and .exit after this process exits, so those three files are not in evidence-manifest.json. Commands 1 through 30, including command 14 from the rejected round, are hashed in the manifest.",
+  "command": {
+    "n": 31,
+    "requested": "python -I work/scripts/manifest_corr.py 31",
+    "script": "work/scripts/manifest_corr.py",
+    "script_sha256": "c93418963722c72ec791792edbe38269d540ebbc44603f0d629f14110bfff6e5"
+  },
+  "manifest": "work/evidence-manifest.json",
+  "manifest_sha256": "c55327e515daadf49dbd0ad7ef233270abc892c7402b0b44072a88b4ba0d5a23",
+  "manifest_bytes": 218908
+}

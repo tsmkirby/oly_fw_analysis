@@ -1,0 +1,125 @@
+home instructions 71 mismatches 71
+converter instructions 45 mismatches 0
+MISMATCH 1621685947 cff0 ffff movm [d2,d3,a2,a3],(sp)
+MISMATCH 1621685949 f8fee0 ffffff add -0x20,sp
+MISMATCH 1621685952 82 ff mov D0,D2
+MISMATCH 1621685953 aa00 ffff cmp 0x0,D2
+MISMATCH 1621685955 c907 ffff bne 0x60a8f6ca
+MISMATCH 1621685957 dc22000000 ffffffffff jmp 0x60a8f6e7
+MISMATCH 1621685962 aa01 ffff cmp 0x1,D2
+MISMATCH 1621685964 c907 ffff bne 0x60a8f6d3
+MISMATCH 1621685966 dc24000000 ffffffffff jmp 0x60a8f6f2
+MISMATCH 1621685971 aa02 ffff cmp 0x2,D2
+MISMATCH 1621685973 c907 ffff bne 0x60a8f6dc
+MISMATCH 1621685975 dc26000000 ffffffffff jmp 0x60a8f6fd
+MISMATCH 1621685980 fccc01000000 ffffffffffff mov 0x1,D0
+MISMATCH 1621685986 dcf0000000 ffffffffff jmp 0x60a8f7d2
+MISMATCH 1621685991 fcdfa0ea31a0 ffffffffffff mov -0x5fce1560,A3
+MISMATCH 1621685997 dc1b000000 ffffffffff jmp 0x60a8f708
+MISMATCH 1621686002 fcdfb0ea31a0 ffffffffffff mov -0x5fce1550,A3
+MISMATCH 1621686008 dc10000000 ffffffffff jmp 0x60a8f708
+MISMATCH 1621686013 fcdfc0ea31a0 ffffffffffff mov -0x5fce1540,A3
+MISMATCH 1621686019 dc05000000 ffffffffff jmp 0x60a8f708
+MISMATCH 1621686024 fccca19f0000 ffffffffffff mov 0x9fa1,D0
+MISMATCH 1621686030 89 ff mov D2,D1
+MISMATCH 1621686031 fcdc00000000 ffffffffffff mov 0x0,A0
+MISMATCH 1621686037 dd6b3c5dffc00c ffffffffffffff call 0x60063380,[d2,d3],0xc
+MISMATCH 1621686044 3c ff mov sp,A0
+MISMATCH 1621686045 2004 ffff add 0x4,A0
+MISMATCH 1621686047 ddae47f2ffe014 ffffffffffffff call 0x609b3ecd,[d2,d3,a2],0x14
+MISMATCH 1621686054 f8b804 ffffff movbu (0x4,sp),D0
+MISMATCH 1621686057 f85302 ffffff movbu D0,(0x2,A3)
+MISMATCH 1621686060 f8b805 ffffff movbu (0x5,sp),D0
+MISMATCH 1621686063 f87304 ffffff movhu D0,(0x4,A3)
+MISMATCH 1621686066 f8b806 ffffff movbu (0x6,sp),D0
+MISMATCH 1621686069 f87306 ffffff movhu D0,(0x6,A3)
+MISMATCH 1621686072 f8b807 ffffff movbu (0x7,sp),D0
+MISMATCH 1621686075 f85308 ffffff movbu D0,(0x8,A3)
+MISMATCH 1621686078 fccca1df0000 ffffffffffff mov 0xdfa1,D0
+MISMATCH 1621686084 fccd00000000 ffffffffffff mov 0x0,D1
+MISMATCH 1621686090 fcdc00000000 ffffffffffff mov 0x0,A0
+MISMATCH 1621686096 dd303c5dffc00c ffffffffffffff call 0x60063380,[d2,d3],0xc
+MISMATCH 1621686103 f85303 ffffff movbu D0,(0x3,A3)
+MISMATCH 1621686106 fcccd2990000 ffffffffffff mov 0x99d2,D0
+MISMATCH 1621686112 8d ff mov D3,D1
+MISMATCH 1621686113 fcdc00000000 ffffffffffff mov 0x0,A0
+MISMATCH 1621686119 dd193c5dffc00c ffffffffffffff call 0x60063380,[d2,d3],0xc
+MISMATCH 1621686126 f073 ffff movhu D0,(A3)
+MISMATCH 1621686128 fccc011e0000 ffffffffffff mov 0x1e01,D0
+MISMATCH 1621686134 fccd00000000 ffffffffffff mov 0x0,D1
+MISMATCH 1621686140 fcdc00000000 ffffffffffff mov 0x0,A0
+MISMATCH 1621686146 ddfe3b5dffc00c ffffffffffffff call 0x60063380,[d2,d3],0xc
+MISMATCH 1621686153 f85309 ffffff movbu D0,(0x9,A3)
+MISMATCH 1621686156 f84302 ffffff movbu (0x2,A3),D0
+MISMATCH 1621686159 a002 ffff cmp 0x2,D0
+MISMATCH 1621686161 c907 ffff bne 0x60a8f798
+MISMATCH 1621686163 dc28000000 ffffffffff jmp 0x60a8f7bb
+MISMATCH 1621686168 a000 ffff cmp 0x0,D0
+MISMATCH 1621686170 c907 ffff bne 0x60a8f7a1
+MISMATCH 1621686172 dc27000000 ffffffffff jmp 0x60a8f7c3
+MISMATCH 1621686177 a003 ffff cmp 0x3,D0
+MISMATCH 1621686179 c807 ffff beq 0x60a8f7aa
+MISMATCH 1621686181 dc27000000 ffffffffff jmp 0x60a8f7cc
+MISMATCH 1621686186 f86304 ffffff movhu (0x4,A3),D0
+MISMATCH 1621686189 a003 ffff cmp 0x3,D0
+MISMATCH 1621686191 c807 ffff beq 0x60a8f7b6
+MISMATCH 1621686193 dc1b000000 ffffffffff jmp 0x60a8f7cc
+MISMATCH 1621686198 dc0d000000 ffffffffff jmp 0x60a8f7c3
+MISMATCH 1621686203 fccc0e020000 ffffffffffff mov 0x20e,D0
+MISMATCH 1621686209 f073 ffff movhu D0,(A3)
+MISMATCH 1621686211 fccc00000000 ffffffffffff mov 0x0,D0
+MISMATCH 1621686217 f85308 ffffff movbu D0,(0x8,A3)
+MISMATCH 1621686220 fccc00000000 ffffffffffff mov 0x0,D0
+MISMATCH 1621686226 dff030 ffffff ret [d2,d3,a2,a3],0x30
+stock 0x60a8f708 ffffffffffffffffffffffffffffffffffffffff
+listing covers swap False
+overlay 0x60a8f708 fca820e931a0dc0e000000000000000000000000
+overlay matches documented swap True
+z5 rows 3262
+builder 0x9fa1-imm32 none
+builder 0xdfa1-imm32 none
+builder 0x99d2-imm32 none
+builder 0x1e01-imm32 none
+builder 0x5962-imm32 none
+builder 0x88b2-imm32 none
+builder 0x1dd1-imm32 none
+builder 0x9a41-imm32 none
+builder 0x5962-imm16 none
+builder 0x88b2-imm16 none
+builder 0x1dd1-imm16 none
+builder 0x1e01-imm16 none
+converter jump table
+  ui 0 0x609b3ee8 head 8002ca07ccd90080
+  ui 1 0x609b3eec head ccd9008003f89204
+  ui 2 0x609b3eef head 8003f892048f018e
+  ui 3 0x609b3efb head 8003f892048f018e
+  ui 4 0x609b3fc5 head 00f892048f018ef8
+  ui 5 0x609b3efb head 8003f892048f018e
+  ui 6 0x609b3f13 head 8007f892042cd11d
+  ui 7 0x609b3f3f head 8007f892042cd11d
+  ui 8 0x609b3f6b head 8007f892042cd11d
+  ui 9 0x609b3f98 head 8007f892042cd11d
+  ui 10 0x609b3efb head 8003f892048f018e
+converter 0x1dd1 at 0x609b3f18 next 90008502dd index 2
+converter 0x1dd1 at 0x609b3f27 next 90008503dd index 3
+converter 0x1dd1 at 0x609b3f44 next 90008504dd index 4
+converter 0x1dd1 at 0x609b3f53 next 90008505dd index 5
+converter 0x1dd1 at 0x609b3f70 next 90008506dd index 6
+converter 0x1dd1 at 0x609b3f7f next 90008507dd index 7
+converter 0x1dd1 at 0x609b3f9d next 90008508dd index 8
+converter 0x1dd1 at 0x609b3fac next 90008509dd index 9
+converter 0x1df1 at 0x609b3f03 next 900004dd77 index 0
+converter 0x1df1 at 0x609b3f36 next 90008504ca index 4
+converter 0x1df1 at 0x609b3f62 next 90008505ca index 5
+converter 0x1df1 at 0x609b3f8e next 90008506cc index 6
+converter 0x1df1 at 0x609b3fbb next 90008507cc index 7
+resource utf16 'Subject Detection' count 0
+resource ascii 'Subject Detection' count 0
+resource utf16 'Subject Detect' count 0
+resource ascii 'Subject Detect' count 0
+resource utf16 'Face Priority' count 0
+resource ascii 'Face Priority' count 0
+resource utf16 'Human' count 0
+resource ascii 'Human' count 0
+resource utf16 'Off' count 0
+resource ascii 'Off' count 16

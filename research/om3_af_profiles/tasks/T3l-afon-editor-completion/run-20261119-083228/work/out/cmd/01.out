@@ -1,0 +1,152 @@
+{
+  "checks": {
+    "records": 1215,
+    "zero_key": "0x6011fe20",
+    "live_end": "0x62959b65",
+    "known_5b82": true,
+    "known_99a1_zeros": true
+  },
+  "keys": {
+    "0x99a1": [
+      {
+        "key": "0x99a1",
+        "record": "0x6011ebdc",
+        "count": 8,
+        "width": 1,
+        "payload": "0000000000000000",
+        "live": "0x6295946c"
+      }
+    ],
+    "0x9a41": [
+      {
+        "key": "0x9a41",
+        "record": "0x6011ec34",
+        "count": 1,
+        "width": 1,
+        "payload": "00",
+        "live": "0x62959484"
+      }
+    ],
+    "0x5962": [
+      {
+        "key": "0x5962",
+        "record": "0x600e575c",
+        "count": 6,
+        "width": 2,
+        "payload": "000000000000000000000000",
+        "live": "0x62920bf0"
+      }
+    ],
+    "0x1dd1": [
+      {
+        "key": "0x1dd1",
+        "record": "0x600e4f4c",
+        "count": 10,
+        "width": 1,
+        "payload": "00000000000000000000",
+        "live": "0x62920982"
+      }
+    ],
+    "0x84d1": [
+      {
+        "key": "0x84d1",
+        "record": "0x600e5fe8",
+        "count": 1,
+        "width": 1,
+        "payload": "00",
+        "live": "0x62920fa5"
+      }
+    ],
+    "0x88b2": [
+      {
+        "key": "0x88b2",
+        "record": "0x60117870",
+        "count": 1,
+        "width": 2,
+        "payload": "0000",
+        "live": "0x629526c0"
+      }
+    ],
+    "0x90d1": [
+      {
+        "key": "0x90d1",
+        "record": "0x6011e7a8",
+        "count": 8,
+        "width": 1,
+        "payload": "0000000000000000",
+        "live": "0x62959355"
+      }
+    ],
+    "0x5a11": [
+      {
+        "key": "0x5a11",
+        "record": "0x600e57c4",
+        "count": 11,
+        "width": 1,
+        "payload": "0000000000000000000000",
+        "live": "0x62920c18"
+      }
+    ],
+    "0x1de1": [
+      {
+        "key": "0x1de1",
+        "record": "0x600e4f5c",
+        "count": 8,
+        "width": 1,
+        "payload": "0000000000000000",
+        "live": "0x6292098c"
+      }
+    ],
+    "0x1df1": [
+      {
+        "key": "0x1df1",
+        "record": "0x600e4f68",
+        "count": 9,
+        "width": 1,
+        "payload": "000000000000000000",
+        "live": "0x62920994"
+      }
+    ],
+    "0x5b82": [
+      {
+        "key": "0x5b82",
+        "record": "0x600e5874",
+        "count": 16,
+        "width": 2,
+        "payload": "0000000000000000000000000000000000000000000000000000000000000000",
+        "live": "0x62920ca6"
+      }
+    ]
+  },
+  "patterns": {
+    "session-99a1": {
+      "hits_capped": [],
+      "more": false
+    },
+    "session-1dd1-head": {
+      "hits_capped": [],
+      "more": false
+    },
+    "session-5a11": {
+      "hits_capped": [],
+      "more": false
+    },
+    "pos-526-six": {
+      "hits_capped": [
+        "0x6066aa8c",
+        "0x6066aa8e",
+        "0x6066aa90",
+        "0x6066aa92",
+        "0x6066aa94",
+        "0x6066aa96",
+        "0x6066aa98",
+        "0x6066aa9a",
+        "0x6066aa9c",
+        "0x6066aa9e",
+        "0x6066aaa0",
+        "0x60a7e1df"
+      ],
+      "more": true
+    }
+  }
+}
