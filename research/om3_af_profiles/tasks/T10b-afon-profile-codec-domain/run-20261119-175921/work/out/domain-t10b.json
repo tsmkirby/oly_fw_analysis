@@ -1,0 +1,1217 @@
+{
+  "image_sha256": "5e8d376e9111a44ac0352f26030d7c1b17026d42c45f3600cfa02a0e8c5b7d59",
+  "image_bytes": 33554368,
+  "image_base": "0x60021020",
+  "checks": [
+    {
+      "addr": "0x60405876",
+      "bytes": "fcdf2c916160",
+      "label": "mov 0x6061912c,A3"
+    },
+    {
+      "addr": "0x604058b3",
+      "bytes": "fac9b006",
+      "label": "cmp 0x6b0,D1"
+    },
+    {
+      "addr": "0x60617864",
+      "bytes": "00010203050a06070809",
+      "label": "zone value table"
+    },
+    {
+      "addr": "0x60617870",
+      "bytes": "01030507090b0f13171b",
+      "label": "vertical dimension table"
+    },
+    {
+      "addr": "0x6061787a",
+      "bytes": "01030507090b0f13171b2127",
+      "label": "horizontal dimension table"
+    },
+    {
+      "addr": "0x60617886",
+      "bytes": "01030507090b0f13171b",
+      "label": "vertical dimension table copy"
+    },
+    {
+      "addr": "0x60617890",
+      "bytes": "01030507090b0f13171b2127",
+      "label": "horizontal dimension table copy"
+    },
+    {
+      "addr": "0x6061789c",
+      "bytes": "0102030405",
+      "label": "vertical step table"
+    },
+    {
+      "addr": "0x606178a1",
+      "bytes": "0102030405060708",
+      "label": "horizontal step table"
+    },
+    {
+      "addr": "0x60063544",
+      "bytes": "f16a",
+      "label": "add D2,A2 byte cell"
+    },
+    {
+      "addr": "0x60063546",
+      "bytes": "f046",
+      "label": "movbu (A2),D1 old"
+    },
+    {
+      "addr": "0x60063548",
+      "bytes": "f19d",
+      "label": "cmp A3,D1"
+    },
+    {
+      "addr": "0x6006354a",
+      "bytes": "c81a",
+      "label": "beq skip if equal"
+    },
+    {
+      "addr": "0x6006354c",
+      "bytes": "f1dd",
+      "label": "mov A3,D1"
+    },
+    {
+      "addr": "0x6006354e",
+      "bytes": "f056",
+      "label": "movbu D1,(A2)"
+    },
+    {
+      "addr": "0x60063532",
+      "bytes": "f1dd",
+      "label": "mov A3,D1 half"
+    },
+    {
+      "addr": "0x60063534",
+      "bytes": "f076",
+      "label": "movhu D1,(A2)"
+    }
+  ],
+  "map_hits": [
+    {
+      "ui": 163,
+      "key": "0x99a1",
+      "name": "zone",
+      "index": 0,
+      "map_addr": "0x606257e8",
+      "bytes": "a1990000"
+    },
+    {
+      "ui": 1333,
+      "key": "0x99a1",
+      "name": "zone",
+      "index": 1,
+      "map_addr": "0x60626a30",
+      "bytes": "a1990100"
+    },
+    {
+      "ui": 1338,
+      "key": "0x5962",
+      "name": "position",
+      "index": 0,
+      "map_addr": "0x60626a44",
+      "bytes": "62590000"
+    },
+    {
+      "ui": 1339,
+      "key": "0x5962",
+      "name": "position",
+      "index": 1,
+      "map_addr": "0x60626a48",
+      "bytes": "62590100"
+    },
+    {
+      "ui": 1642,
+      "key": "0x99a1",
+      "name": "zone",
+      "index": 2,
+      "map_addr": "0x60626f04",
+      "bytes": "a1990200"
+    },
+    {
+      "ui": 1643,
+      "key": "0x99a1",
+      "name": "zone",
+      "index": 3,
+      "map_addr": "0x60626f08",
+      "bytes": "a1990300"
+    },
+    {
+      "ui": 1644,
+      "key": "0x99a1",
+      "name": "zone",
+      "index": 4,
+      "map_addr": "0x60626f0c",
+      "bytes": "a1990400"
+    },
+    {
+      "ui": 1645,
+      "key": "0x99a1",
+      "name": "zone",
+      "index": 5,
+      "map_addr": "0x60626f10",
+      "bytes": "a1990500"
+    },
+    {
+      "ui": 1646,
+      "key": "0x5962",
+      "name": "position",
+      "index": 2,
+      "map_addr": "0x60626f14",
+      "bytes": "62590200"
+    },
+    {
+      "ui": 1647,
+      "key": "0x5962",
+      "name": "position",
+      "index": 3,
+      "map_addr": "0x60626f18",
+      "bytes": "62590300"
+    },
+    {
+      "ui": 1648,
+      "key": "0x5962",
+      "name": "position",
+      "index": 4,
+      "map_addr": "0x60626f1c",
+      "bytes": "62590400"
+    },
+    {
+      "ui": 1649,
+      "key": "0x5962",
+      "name": "position",
+      "index": 5,
+      "map_addr": "0x60626f20",
+      "bytes": "62590500"
+    },
+    {
+      "ui": 1657,
+      "key": "0x1dd1",
+      "name": "dim",
+      "index": 0,
+      "map_addr": "0x60626f40",
+      "bytes": "d11d0000"
+    },
+    {
+      "ui": 1658,
+      "key": "0x1dd1",
+      "name": "dim",
+      "index": 1,
+      "map_addr": "0x60626f44",
+      "bytes": "d11d0100"
+    },
+    {
+      "ui": 1659,
+      "key": "0x1dd1",
+      "name": "dim",
+      "index": 2,
+      "map_addr": "0x60626f48",
+      "bytes": "d11d0200"
+    },
+    {
+      "ui": 1660,
+      "key": "0x1dd1",
+      "name": "dim",
+      "index": 3,
+      "map_addr": "0x60626f4c",
+      "bytes": "d11d0300"
+    },
+    {
+      "ui": 1661,
+      "key": "0x1dd1",
+      "name": "dim",
+      "index": 4,
+      "map_addr": "0x60626f50",
+      "bytes": "d11d0400"
+    },
+    {
+      "ui": 1662,
+      "key": "0x1dd1",
+      "name": "dim",
+      "index": 5,
+      "map_addr": "0x60626f54",
+      "bytes": "d11d0500"
+    },
+    {
+      "ui": 1663,
+      "key": "0x1dd1",
+      "name": "dim",
+      "index": 6,
+      "map_addr": "0x60626f58",
+      "bytes": "d11d0600"
+    },
+    {
+      "ui": 1664,
+      "key": "0x1dd1",
+      "name": "dim",
+      "index": 7,
+      "map_addr": "0x60626f5c",
+      "bytes": "d11d0700"
+    },
+    {
+      "ui": 1665,
+      "key": "0x1dd1",
+      "name": "dim",
+      "index": 8,
+      "map_addr": "0x60626f60",
+      "bytes": "d11d0800"
+    },
+    {
+      "ui": 1666,
+      "key": "0x1dd1",
+      "name": "dim",
+      "index": 9,
+      "map_addr": "0x60626f64",
+      "bytes": "d11d0900"
+    },
+    {
+      "ui": 1667,
+      "key": "0x1de1",
+      "name": "step",
+      "index": 0,
+      "map_addr": "0x60626f68",
+      "bytes": "e11d0000"
+    },
+    {
+      "ui": 1668,
+      "key": "0x1de1",
+      "name": "step",
+      "index": 1,
+      "map_addr": "0x60626f6c",
+      "bytes": "e11d0100"
+    },
+    {
+      "ui": 1669,
+      "key": "0x1de1",
+      "name": "step",
+      "index": 2,
+      "map_addr": "0x60626f70",
+      "bytes": "e11d0200"
+    },
+    {
+      "ui": 1670,
+      "key": "0x1de1",
+      "name": "step",
+      "index": 3,
+      "map_addr": "0x60626f74",
+      "bytes": "e11d0300"
+    },
+    {
+      "ui": 1671,
+      "key": "0x1de1",
+      "name": "step",
+      "index": 4,
+      "map_addr": "0x60626f78",
+      "bytes": "e11d0400"
+    },
+    {
+      "ui": 1672,
+      "key": "0x1de1",
+      "name": "step",
+      "index": 5,
+      "map_addr": "0x60626f7c",
+      "bytes": "e11d0500"
+    },
+    {
+      "ui": 1673,
+      "key": "0x1de1",
+      "name": "step",
+      "index": 6,
+      "map_addr": "0x60626f80",
+      "bytes": "e11d0600"
+    },
+    {
+      "ui": 1674,
+      "key": "0x1de1",
+      "name": "step",
+      "index": 7,
+      "map_addr": "0x60626f84",
+      "bytes": "e11d0700"
+    },
+    {
+      "ui": 1716,
+      "key": "0x99a1",
+      "name": "zone",
+      "index": 6,
+      "map_addr": "0x6062702c",
+      "bytes": "a1990600"
+    },
+    {
+      "ui": 1717,
+      "key": "0x99a1",
+      "name": "zone",
+      "index": 7,
+      "map_addr": "0x60627030",
+      "bytes": "a1990700"
+    },
+    {
+      "ui": 1803,
+      "key": "0x9a41",
+      "name": "size",
+      "index": 0,
+      "map_addr": "0x60627188",
+      "bytes": "419a0000"
+    }
+  ],
+  "descriptors": {
+    "zone": {
+      "uis": [
+        163,
+        1333,
+        1642,
+        1643,
+        1644,
+        1645
+      ],
+      "values": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        10,
+        6,
+        7,
+        8,
+        9
+      ],
+      "rows": [
+        {
+          "ui": 163,
+          "addr": "0x6061fd88",
+          "value_ptr": "0x60617864",
+          "byte_count": 10,
+          "stride": 1,
+          "count": 10,
+          "head_bytes": "00010203050a06070809"
+        },
+        {
+          "ui": 1333,
+          "addr": "0x6061fd9c",
+          "value_ptr": "0x60617864",
+          "byte_count": 10,
+          "stride": 1,
+          "count": 10,
+          "head_bytes": "00010203050a06070809"
+        },
+        {
+          "ui": 1642,
+          "addr": "0x6061fdb0",
+          "value_ptr": "0x60617864",
+          "byte_count": 10,
+          "stride": 1,
+          "count": 10,
+          "head_bytes": "00010203050a06070809"
+        },
+        {
+          "ui": 1643,
+          "addr": "0x6061fdc4",
+          "value_ptr": "0x60617864",
+          "byte_count": 10,
+          "stride": 1,
+          "count": 10,
+          "head_bytes": "00010203050a06070809"
+        },
+        {
+          "ui": 1644,
+          "addr": "0x6061fdd8",
+          "value_ptr": "0x60617864",
+          "byte_count": 10,
+          "stride": 1,
+          "count": 10,
+          "head_bytes": "00010203050a06070809"
+        },
+        {
+          "ui": 1645,
+          "addr": "0x6061fdec",
+          "value_ptr": "0x60617864",
+          "byte_count": 10,
+          "stride": 1,
+          "count": 10,
+          "head_bytes": "00010203050a06070809"
+        }
+      ]
+    },
+    "zone_indices_6_7": {
+      "uis": [
+        1716,
+        1717
+      ],
+      "values": [
+        0,
+        2,
+        5,
+        10
+      ],
+      "subset_of_zone": true
+    },
+    "dim_v": {
+      "uis": [
+        1657,
+        1659,
+        1661,
+        1663,
+        1665
+      ],
+      "descriptor_values": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        11,
+        15,
+        19,
+        23,
+        27
+      ],
+      "rows": [
+        {
+          "ui": 1657,
+          "addr": "0x6061fe28",
+          "value_ptr": "0x60617870",
+          "byte_count": 10,
+          "stride": 1,
+          "count": 10,
+          "head_bytes": "01030507090b0f13171b"
+        },
+        {
+          "ui": 1659,
+          "addr": "0x6061fe50",
+          "value_ptr": "0x60617886",
+          "byte_count": 10,
+          "stride": 1,
+          "count": 10,
+          "head_bytes": "01030507090b0f13171b"
+        },
+        {
+          "ui": 1661,
+          "addr": "0x6061fe64",
+          "value_ptr": "0x60617886",
+          "byte_count": 10,
+          "stride": 1,
+          "count": 10,
+          "head_bytes": "01030507090b0f13171b"
+        },
+        {
+          "ui": 1663,
+          "addr": "0x6061fe78",
+          "value_ptr": "0x60617886",
+          "byte_count": 10,
+          "stride": 1,
+          "count": 10,
+          "head_bytes": "01030507090b0f13171b"
+        },
+        {
+          "ui": 1665,
+          "addr": "0x6061fe8c",
+          "value_ptr": "0x60617886",
+          "byte_count": 10,
+          "stride": 1,
+          "count": 10,
+          "head_bytes": "01030507090b0f13171b"
+        }
+      ]
+    },
+    "dim_h": {
+      "uis": [
+        1658,
+        1660,
+        1662,
+        1664,
+        1666
+      ],
+      "descriptor_values": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        11,
+        15,
+        19,
+        23,
+        27,
+        33,
+        39
+      ],
+      "rows": [
+        {
+          "ui": 1658,
+          "addr": "0x6061fe3c",
+          "value_ptr": "0x6061787a",
+          "byte_count": 12,
+          "stride": 1,
+          "count": 12,
+          "head_bytes": "01030507090b0f13171b2127"
+        },
+        {
+          "ui": 1660,
+          "addr": "0x6061fea0",
+          "value_ptr": "0x60617890",
+          "byte_count": 12,
+          "stride": 1,
+          "count": 12,
+          "head_bytes": "01030507090b0f13171b2127"
+        },
+        {
+          "ui": 1662,
+          "addr": "0x6061feb4",
+          "value_ptr": "0x60617890",
+          "byte_count": 12,
+          "stride": 1,
+          "count": 12,
+          "head_bytes": "01030507090b0f13171b2127"
+        },
+        {
+          "ui": 1664,
+          "addr": "0x6061fec8",
+          "value_ptr": "0x60617890",
+          "byte_count": 12,
+          "stride": 1,
+          "count": 12,
+          "head_bytes": "01030507090b0f13171b2127"
+        },
+        {
+          "ui": 1666,
+          "addr": "0x6061fedc",
+          "value_ptr": "0x60617890",
+          "byte_count": 12,
+          "stride": 1,
+          "count": 12,
+          "head_bytes": "01030507090b0f13171b2127"
+        }
+      ]
+    },
+    "step_v": {
+      "uis": [
+        1667,
+        1669,
+        1671,
+        1673
+      ],
+      "descriptor_values": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "rows": [
+        {
+          "ui": 1667,
+          "addr": "0x6061fef0",
+          "value_ptr": "0x6061789c",
+          "byte_count": 5,
+          "stride": 1,
+          "count": 5,
+          "head_bytes": "0102030405"
+        },
+        {
+          "ui": 1669,
+          "addr": "0x6061ff04",
+          "value_ptr": "0x6061789c",
+          "byte_count": 5,
+          "stride": 1,
+          "count": 5,
+          "head_bytes": "0102030405"
+        },
+        {
+          "ui": 1671,
+          "addr": "0x6061ff18",
+          "value_ptr": "0x6061789c",
+          "byte_count": 5,
+          "stride": 1,
+          "count": 5,
+          "head_bytes": "0102030405"
+        },
+        {
+          "ui": 1673,
+          "addr": "0x6061ff2c",
+          "value_ptr": "0x6061789c",
+          "byte_count": 5,
+          "stride": 1,
+          "count": 5,
+          "head_bytes": "0102030405"
+        }
+      ]
+    },
+    "step_h": {
+      "uis": [
+        1668,
+        1670,
+        1672,
+        1674
+      ],
+      "descriptor_values": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "rows": [
+        {
+          "ui": 1668,
+          "addr": "0x6061ff40",
+          "value_ptr": "0x606178a1",
+          "byte_count": 8,
+          "stride": 1,
+          "count": 8,
+          "head_bytes": "0102030405060708"
+        },
+        {
+          "ui": 1670,
+          "addr": "0x6061ff54",
+          "value_ptr": "0x606178a1",
+          "byte_count": 8,
+          "stride": 1,
+          "count": 8,
+          "head_bytes": "0102030405060708"
+        },
+        {
+          "ui": 1672,
+          "addr": "0x6061ff68",
+          "value_ptr": "0x606178a1",
+          "byte_count": 8,
+          "stride": 1,
+          "count": 8,
+          "head_bytes": "0102030405060708"
+        },
+        {
+          "ui": 1674,
+          "addr": "0x6061ff7c",
+          "value_ptr": "0x606178a1",
+          "byte_count": 8,
+          "stride": 1,
+          "count": 8,
+          "head_bytes": "0102030405060708"
+        }
+      ]
+    },
+    "position": {
+      "uis": [
+        1338,
+        1339,
+        1646,
+        1647,
+        1648,
+        1649
+      ],
+      "count": 1053,
+      "min": 0,
+      "max": 1052,
+      "sequential": true,
+      "ptr": "0x60617946",
+      "byte_count": 2106
+    },
+    "size": {
+      "ui": 1803,
+      "records": 0
+    }
+  },
+  "registration": [
+    {
+      "key": "0x99a1",
+      "record": "0x6011ebdc",
+      "count": 8,
+      "width": 1,
+      "header_and_payload_hex": "a19908000000000000000000",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "unique": [
+        0
+      ]
+    },
+    {
+      "key": "0x9a41",
+      "record": "0x6011ec34",
+      "count": 1,
+      "width": 1,
+      "header_and_payload_hex": "419a010000",
+      "values": [
+        0
+      ],
+      "unique": [
+        0
+      ]
+    },
+    {
+      "key": "0x5962",
+      "record": "0x600e575c",
+      "count": 6,
+      "width": 2,
+      "header_and_payload_hex": "62590600000000000000000000000000",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "unique": [
+        0
+      ]
+    },
+    {
+      "key": "0x1dd1",
+      "record": "0x600e4f4c",
+      "count": 10,
+      "width": 1,
+      "header_and_payload_hex": "d11d0a0000000000000000000000",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "unique": [
+        0
+      ]
+    },
+    {
+      "key": "0x84d1",
+      "record": "0x600e5fe8",
+      "count": 1,
+      "width": 1,
+      "header_and_payload_hex": "d184010000",
+      "values": [
+        0
+      ],
+      "unique": [
+        0
+      ]
+    },
+    {
+      "key": "0x88b2",
+      "record": "0x60117870",
+      "count": 1,
+      "width": 2,
+      "header_and_payload_hex": "b28801000000",
+      "values": [
+        0
+      ],
+      "unique": [
+        0
+      ]
+    },
+    {
+      "key": "0x90d1",
+      "record": "0x6011e7a8",
+      "count": 8,
+      "width": 1,
+      "header_and_payload_hex": "d19008000000000000000000",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "unique": [
+        0
+      ]
+    },
+    {
+      "key": "0x5a11",
+      "record": "0x600e57c4",
+      "count": 11,
+      "width": 1,
+      "header_and_payload_hex": "115a0b000000000000000000000000",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "unique": [
+        0
+      ]
+    },
+    {
+      "key": "0x1de1",
+      "record": "0x600e4f5c",
+      "count": 8,
+      "width": 1,
+      "header_and_payload_hex": "e11d08000000000000000000",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "unique": [
+        0
+      ]
+    },
+    {
+      "key": "0x1df1",
+      "record": "0x600e4f68",
+      "count": 9,
+      "width": 1,
+      "header_and_payload_hex": "f11d0900000000000000000000",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "unique": [
+        0
+      ]
+    }
+  ],
+  "reset_source": "ref/tasks/T8c-afon-bank-and-init-reconcile/run-20261119-163743/work/out/q2b-summary.json",
+  "reset_equals_fresh": true,
+  "reset_outside_domain": {
+    "zone": [],
+    "size": [],
+    "position": [],
+    "dim_v": [],
+    "dim_h": [],
+    "step_v": [],
+    "step_h": []
+  },
+  "t3l": {
+    "source": "ref/tasks/T3l-afon-editor-completion/run-20261119-083228/work/out/design.md Initialization",
+    "zero_custom": {
+      "dim": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "step": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "c1_from_zero": {
+      "dim": [
+        0,
+        0,
+        1,
+        33,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "step": [
+        5,
+        8,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "c1_and_c2": {
+      "dim": [
+        0,
+        0,
+        1,
+        33,
+        1,
+        33,
+        0,
+        0,
+        0,
+        0
+      ],
+      "step": [
+        5,
+        8,
+        5,
+        8,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "reader_index_not_in_codec": {
+    "source": "ref/tasks/T8c-afon-bank-and-init-reconcile/run-20261119-163743/work/scripts/hook_t8c2.mjs bank()",
+    "linked_saved": {
+      "landscape": 0,
+      "exif6": 4,
+      "exif8": 2
+    },
+    "unlinked_saved": {
+      "landscape": 0,
+      "exif6": 0,
+      "exif8": 0
+    },
+    "t6_change": {
+      "landscape": 1,
+      "exif6": 5,
+      "exif8": 3
+    }
+  },
+  "reset_profile_saved_index": {
+    "zone": {
+      "landscape": 2,
+      "exif6": 2,
+      "exif8": 2
+    },
+    "size": 0,
+    "position": {
+      "landscape": 526,
+      "exif6": 526,
+      "exif8": 526
+    },
+    "dim": [
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3
+    ],
+    "step": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "reset_profile_change_index": {
+    "zone": {
+      "landscape": 0,
+      "exif6": 0,
+      "exif8": 0
+    },
+    "size": 0,
+    "position": {
+      "landscape": 526,
+      "exif6": 526,
+      "exif8": 526
+    },
+    "dim": [
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3
+    ],
+    "step": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "domain": {
+    "zone": {
+      "values": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        10,
+        6,
+        7,
+        8,
+        9
+      ],
+      "bits": 4,
+      "cell_bits": 8,
+      "closed": true,
+      "full_width": false
+    },
+    "size": {
+      "min": 0,
+      "max": 255,
+      "bits": 8,
+      "cell_bits": 8,
+      "closed": true,
+      "full_width": true,
+      "reason": "UI 1803 has no descriptor. The setter stores the byte with no min or max compare."
+    },
+    "position": {
+      "min": 0,
+      "max": 1052,
+      "bits": 11,
+      "cell_bits": 16,
+      "closed": true,
+      "full_width": false
+    },
+    "dim_v": {
+      "values": [
+        0,
+        1,
+        3,
+        5,
+        7,
+        9,
+        11,
+        15,
+        19,
+        23,
+        27
+      ],
+      "added": [
+        0
+      ],
+      "bits": 4,
+      "cell_bits": 8,
+      "closed": true,
+      "full_width": false
+    },
+    "dim_h": {
+      "values": [
+        0,
+        1,
+        3,
+        5,
+        7,
+        9,
+        11,
+        15,
+        19,
+        23,
+        27,
+        33,
+        39
+      ],
+      "added": [
+        0
+      ],
+      "bits": 4,
+      "cell_bits": 8,
+      "closed": true,
+      "full_width": false
+    },
+    "step_v": {
+      "values": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "added": [
+        0
+      ],
+      "bits": 3,
+      "cell_bits": 8,
+      "closed": true,
+      "full_width": false
+    },
+    "step_h": {
+      "values": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "added": [
+        0
+      ],
+      "bits": 4,
+      "cell_bits": 8,
+      "closed": true,
+      "full_width": false
+    }
+  },
+  "packing": {
+    "poses": [
+      "landscape",
+      "exif6",
+      "exif8"
+    ],
+    "payload_bits": 121,
+    "marker_bits": 16,
+    "version_bits": 8,
+    "field_bits": 145,
+    "pad_bits": 7,
+    "crc_bits": 16,
+    "used_bits": 168,
+    "used_bytes": 21,
+    "record_bytes": 26,
+    "available_bits": 208,
+    "spare_bits": 40,
+    "fits": true,
+    "shortfall_bits": 0
+  }
+}

@@ -1,0 +1,341 @@
+{
+  "task": "T10b-afon-profile-codec-domain",
+  "brief_sha256": "d131393148331b8d77ed419b62e0abe610671c3bb7b12e15cbdd5675e2a47e49",
+  "emulator_modules": [],
+  "experiment_versions": 0,
+  "note": "Static codec domain and pose-keyed layout. No emulator process and no OM-Emu import. Commands 01-02 are hashed in full. Command 03 is this manifest; its out, err, and exit are in the external seal. Command 04 writes that seal. Built-in Node modules have no workspace file.",
+  "imports": [
+    {
+      "script": "work/scripts/build_manifest_t10b.mjs",
+      "specifiers": [
+        "node:crypto",
+        "node:child_process",
+        "node:fs",
+        "node:path"
+      ]
+    },
+    {
+      "script": "work/scripts/codec_v2.mjs",
+      "specifiers": []
+    },
+    {
+      "script": "work/scripts/codec_v2.test.mjs",
+      "specifiers": [
+        "node:assert/strict",
+        "node:fs",
+        "./codec_v2.mjs"
+      ]
+    },
+    {
+      "script": "work/scripts/domain_t10b.mjs",
+      "specifiers": [
+        "node:crypto",
+        "node:fs",
+        "node:path"
+      ]
+    },
+    {
+      "script": "work/scripts/run_logged.mjs",
+      "specifiers": [
+        "node:child_process",
+        "node:crypto",
+        "node:fs",
+        "node:path"
+      ]
+    },
+    {
+      "script": "work/scripts/seal_t10b.mjs",
+      "specifiers": [
+        "node:crypto",
+        "node:fs",
+        "node:path"
+      ]
+    }
+  ],
+  "inputs": [
+    {
+      "path": "brief.md",
+      "sha256": "d131393148331b8d77ed419b62e0abe610671c3bb7b12e15cbdd5675e2a47e49",
+      "bytes": 3203
+    },
+    {
+      "path": "TASK.md",
+      "sha256": "b836b57f3df5668554beb0e1c9c11a9beb95f5614994468d73a918948ee3608f",
+      "bytes": 2339
+    },
+    {
+      "path": "review-brief.md",
+      "sha256": "82fb3e5d0e43b5e0253398483306941362096a9303bfcabd15e759680bae933d",
+      "bytes": 1441
+    },
+    {
+      "path": "templates/result.md",
+      "sha256": "18d605fc1f70369c40245130cdd499288bd3ae1a8fe1bdb84575cb58532d0110",
+      "bytes": 1230
+    },
+    {
+      "path": "inputs/00_0100_50000020.decoded.bin",
+      "sha256": "5e8d376e9111a44ac0352f26030d7c1b17026d42c45f3600cfa02a0e8c5b7d59",
+      "bytes": 33554368
+    },
+    {
+      "path": "inputs/02_0106_458c0020.decoded.bin",
+      "sha256": "3d9fd4426b45fbe4b715599422af38c6d22392c08543a69f63c28291c5a0b059",
+      "bytes": 143523776
+    },
+    {
+      "path": "ref/tasks/T10-afon-profile-storage-5b82/decision.md",
+      "sha256": "0298a065d89f06cc07544dd177b09315776f218c62c0d44ea8aff67289c8ff06",
+      "bytes": 3726
+    },
+    {
+      "path": "ref/tasks/T10-afon-profile-storage-5b82/run-20261119-173646-review/review.md",
+      "sha256": "1aa3581ff7e23a8d2ab70b976c4beb57b743b4ee0091967b4c1e1fcefb051e8b",
+      "bytes": 13285
+    },
+    {
+      "path": "ref/tasks/T10-afon-profile-storage-5b82/run-20261119-163743/work/out/encoding.md",
+      "sha256": "579b8da5f87772cb9b90b4c8252e2f359b8d97de2fe36efccc4a415fe5fa663e",
+      "bytes": 6372
+    },
+    {
+      "path": "ref/tasks/T10-afon-profile-storage-5b82/run-20261119-163743/work/scripts/codec.mjs",
+      "sha256": "72fce05a7ed9b08871ba2095e75108ab8426ef035b5ba44aa14097dc30e4a944",
+      "bytes": 6931
+    },
+    {
+      "path": "ref/tasks/T10-afon-profile-storage-5b82/run-20261119-163743/work/scripts/codec_test_t10c.mjs",
+      "sha256": "90a19d06745ba7edf31b2a9776439618a63680e036a225ec45f7dbfc05115c46",
+      "bytes": 5444
+    },
+    {
+      "path": "ref/tasks/T10-afon-profile-storage-5b82/run-20261119-163743/work/out/ranges-t10c.json",
+      "sha256": "7a4c14578790ada11cb4dfeb64df095e40c382293919c51fb59326a5fc6924e6",
+      "bytes": 57545
+    },
+    {
+      "path": "ref/tasks/T3l-afon-editor-completion/run-20261119-083228/work/out/design.md",
+      "sha256": "5d7973fbb6f6216e1694e38d5ac3a46a3d7b24a2e866e010b7e2be12f2b88cf2",
+      "bytes": 6456
+    },
+    {
+      "path": "ref/tasks/T3l-afon-editor-completion/run-20261119-083228/work/out/profile-layout.md",
+      "sha256": "c8ab300d7686de8fe49bdb8c5e7ff489bd1e385d0cbccfd9e23e1628ae0b795d",
+      "bytes": 2905
+    },
+    {
+      "path": "ref/analysis/button-af/readiness/t3m-afon-editor-state-leak/out/profile-layout.md",
+      "sha256": "de3e4c10cda5156d2a2ed73414e11a3b7a91a1938f21a0cb70fa3f8b7529c704",
+      "bytes": 2826
+    },
+    {
+      "path": "ref/tasks/T8c-afon-bank-and-init-reconcile/brief.md",
+      "sha256": "cc8a3cca8a917e40ae6bc9f27c1363721206e7aed40f65ce1de27a030525d571",
+      "bytes": 7236
+    },
+    {
+      "path": "ref/tasks/T8c-afon-bank-and-init-reconcile/run-20261119-163743/work/result.md",
+      "sha256": "35bab2914c35d9b204c386c861bce454fccb7af5c1c39a8f9f93f7dcafa9b92b",
+      "bytes": 8748
+    },
+    {
+      "path": "ref/tasks/T8c-afon-bank-and-init-reconcile/run-20261119-163743/work/out/q2b-summary.json",
+      "sha256": "918faedeb80aff877f236d1a85ece1ad3859eade57048ea0436670da79f1d0a8",
+      "bytes": 1997
+    },
+    {
+      "path": "ref/tasks/T8c-afon-bank-and-init-reconcile/run-20261119-163743/work/scripts/hook_t8c2.mjs",
+      "sha256": "928d29167edcb2197f335dcea8f2bf15d8dfa58950dd5ece7afa528346ca43dc",
+      "bytes": 11163
+    }
+  ],
+  "sources": [
+    {
+      "path": "work/scripts/build_manifest_t10b.mjs",
+      "sha256": "dd30824e17638438aa71a18a88dd356c4b4f059c8eacae80bb4510dd64cf18e4",
+      "bytes": 5024
+    },
+    {
+      "path": "work/scripts/codec_v2.mjs",
+      "sha256": "eaa01cbe0d309f89ca1d78993bcf3a33afa218a8b01ef7670c6e7b989023b95e",
+      "bytes": 8689
+    },
+    {
+      "path": "work/scripts/codec_v2.test.mjs",
+      "sha256": "1497b0790059d2f452ea973dceef2e2c047c445e45706fd928a9c11eb5c0d1c6",
+      "bytes": 12769
+    },
+    {
+      "path": "work/scripts/domain_t10b.mjs",
+      "sha256": "fa750c545b5707a62f5b2846a5759a48afc831d4a7f49abb720f7cfb3a731f37",
+      "bytes": 15743
+    },
+    {
+      "path": "work/scripts/run_logged.mjs",
+      "sha256": "e3895e56dbeae1af4406feac98e09e7cfb98c361ddeef9e3dc74dc2f567ae229",
+      "bytes": 4140
+    },
+    {
+      "path": "work/scripts/seal_t10b.mjs",
+      "sha256": "557d47c47d0e8873ec512c0902c68e7d381ad0f79b6b1d41b578f3a9fd8f2234",
+      "bytes": 2284
+    }
+  ],
+  "outputs": [
+    {
+      "path": "work/result.md",
+      "sha256": "3c6e24309c47e2c2dd847c086fa5fdfa0974a5c032495d9f0d6b2c74025d60e4",
+      "bytes": 7651
+    },
+    {
+      "path": "work/out/cmd/01.cmd.txt",
+      "sha256": "b151fadbe0779a2fdc3aed8acdd52114a3ed64e9ad5eff6879e4bf11e9a1d968",
+      "bytes": 384
+    },
+    {
+      "path": "work/out/cmd/01.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "work/out/cmd/01.exit",
+      "sha256": "4a3589bbf7ddd4869fbc5609edc55c486462e87138a227179ec076dc3ae507fb",
+      "bytes": 507
+    },
+    {
+      "path": "work/out/cmd/01.out",
+      "sha256": "c7eb71185387175a30a1fa3f39151a4ee68059398aa5d85c12f6ca14a8ac00a3",
+      "bytes": 381
+    },
+    {
+      "path": "work/out/cmd/02.cmd.txt",
+      "sha256": "4362807667df1321b0995a62d6d6a92defdeffd9240a17650c78c4a88fb4a76f",
+      "bytes": 575
+    },
+    {
+      "path": "work/out/cmd/02.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "work/out/cmd/02.exit",
+      "sha256": "1fc8cee511cebff13ba83b41afe1d7ecb0ccd64a5080e38ba9b025b1fb8a61e9",
+      "bytes": 697
+    },
+    {
+      "path": "work/out/cmd/02.out",
+      "sha256": "e2ea619ef7995430dd05e336a5fc574c0c08be9cfe88b41d93b150e0e659c7b0",
+      "bytes": 206
+    },
+    {
+      "path": "work/out/cmd/03.cmd.txt",
+      "sha256": "3810bdece25f1b6c66342b1b11e41165531d04a6371a74d17dae6bf75d985b4f",
+      "bytes": 407
+    },
+    {
+      "path": "work/out/domain-t10b.json",
+      "sha256": "cad07041d160bd8fb4d12865d1bd4d74cf09f9d28668829c2a7ac8f4383af63b",
+      "bytes": 22043
+    },
+    {
+      "path": "work/out/encoding-v2.md",
+      "sha256": "de4749828094971e3a07ef771642ab6cd7d4d31c6ccc83fafef4048eb6428179",
+      "bytes": 10249
+    }
+  ],
+  "commands": [
+    {
+      "n": 1,
+      "requested": "node26 work/scripts/domain_t10b.mjs",
+      "status": 0,
+      "wrapper_sha256": "e3895e56dbeae1af4406feac98e09e7cfb98c361ddeef9e3dc74dc2f567ae229",
+      "scripts": [
+        {
+          "path": "work/scripts/domain_t10b.mjs",
+          "sha256": "fa750c545b5707a62f5b2846a5759a48afc831d4a7f49abb720f7cfb3a731f37",
+          "bytes": 15743
+        }
+      ],
+      "files": {
+        "cmd": {
+          "path": "work/out/cmd/01.cmd.txt",
+          "sha256": "b151fadbe0779a2fdc3aed8acdd52114a3ed64e9ad5eff6879e4bf11e9a1d968",
+          "bytes": 384
+        },
+        "out": {
+          "path": "work/out/cmd/01.out",
+          "sha256": "c7eb71185387175a30a1fa3f39151a4ee68059398aa5d85c12f6ca14a8ac00a3",
+          "bytes": 381
+        },
+        "err": {
+          "path": "work/out/cmd/01.err",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        "exit": {
+          "path": "work/out/cmd/01.exit",
+          "sha256": "4a3589bbf7ddd4869fbc5609edc55c486462e87138a227179ec076dc3ae507fb",
+          "bytes": 507
+        }
+      }
+    },
+    {
+      "n": 2,
+      "requested": "node26 work/scripts/codec_v2.test.mjs work/scripts/codec_v2.mjs",
+      "status": 0,
+      "wrapper_sha256": "e3895e56dbeae1af4406feac98e09e7cfb98c361ddeef9e3dc74dc2f567ae229",
+      "scripts": [
+        {
+          "path": "work/scripts/codec_v2.test.mjs",
+          "sha256": "1497b0790059d2f452ea973dceef2e2c047c445e45706fd928a9c11eb5c0d1c6",
+          "bytes": 12769
+        },
+        {
+          "path": "work/scripts/codec_v2.mjs",
+          "sha256": "eaa01cbe0d309f89ca1d78993bcf3a33afa218a8b01ef7670c6e7b989023b95e",
+          "bytes": 8689
+        }
+      ],
+      "files": {
+        "cmd": {
+          "path": "work/out/cmd/02.cmd.txt",
+          "sha256": "4362807667df1321b0995a62d6d6a92defdeffd9240a17650c78c4a88fb4a76f",
+          "bytes": 575
+        },
+        "out": {
+          "path": "work/out/cmd/02.out",
+          "sha256": "e2ea619ef7995430dd05e336a5fc574c0c08be9cfe88b41d93b150e0e659c7b0",
+          "bytes": 206
+        },
+        "err": {
+          "path": "work/out/cmd/02.err",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        "exit": {
+          "path": "work/out/cmd/02.exit",
+          "sha256": "1fc8cee511cebff13ba83b41afe1d7ecb0ccd64a5080e38ba9b025b1fb8a61e9",
+          "bytes": 697
+        }
+      }
+    },
+    {
+      "n": 3,
+      "requested": "node26 work/scripts/build_manifest_t10b.mjs",
+      "status": null,
+      "wrapper_sha256": null,
+      "scripts": null,
+      "files": {
+        "cmd": {
+          "path": "work/out/cmd/03.cmd.txt",
+          "sha256": "3810bdece25f1b6c66342b1b11e41165531d04a6371a74d17dae6bf75d985b4f",
+          "bytes": 407
+        }
+      }
+    }
+  ],
+  "tool_versions": {
+    "node": "v26.12.1",
+    "python": "3.12.7 (tags/v3.12.7:0b05ead, Oct  1 2024, 03:06:41) [MSC v.1941 64 bit (AMD64)]"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "profile": "B",
+  "role": "K1e",
+  "version": 2,
+  "idlePeriodMs": 600,
+  "latencyMs": 66.73128,
+  "latencySource": "s1-press",
+  "boundMs": 666.73128,
+  "criterion": "S1 was pressed immediately after the stock setter returned. The bound is that press-to-change latency plus one 600 ms idle period. The producer of 0x610c8b66 stays unresolved.",
+  "frame": {
+    "marks": [],
+    "pixels": 0,
+    "n31": 0,
+    "sha256": "572c1a1e0b0a6ee64483c3738102d2adb92c1cec96e206961b92dacd4792fbef",
+    "file": "work/out/k1e-b-ref.png"
+  },
+  "cells": {
+    "k88b2": 540,
+    "k84d1": 7,
+    "k99a1": 6,
+    "k1dd1": [
+      5,
+      7,
+      5,
+      7
+    ],
+    "k5962": 540,
+    "subject": 0
+  },
+  "subject": 0,
+  "rest": {
+    "marks": [
+      {
+        "x": 417,
+        "y": 265,
+        "w": 19,
+        "h": 21
+      },
+      {
+        "x": 464,
+        "y": 265,
+        "w": 19,
+        "h": 21
+      },
+      {
+        "x": 417,
+        "y": 314,
+        "w": 19,
+        "h": 21
+      },
+      {
+        "x": 464,
+        "y": 314,
+        "w": 19,
+        "h": 21
+      }
+    ],
+    "pixels": 444,
+    "n31": 444
+  }
+}

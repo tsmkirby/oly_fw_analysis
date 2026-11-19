@@ -1,0 +1,17 @@
+node:fs:782
+  return binding.open(
+                 ^
+
+Error: ENOENT: no such file or directory, open 'C:\Dev\OM3-tasks\T8c-afon-bank-and-init-reconcile\ws\om-emu\unpacked\E143\OLY_E_143_1900_0000_0000.BIN.blk00000000.OE.0100.bin'
+    at Object.openSync (node:fs:782:18)
+    at Object.readFileSync (node:fs:628:35)
+    at readBytes (file:///C:/Dev/OM3-tasks/T8c-afon-bank-and-init-reconcile/ws/om-emu/emu/checks/lib/env.mjs:76:51)
+    at loadImage (file:///C:/Dev/OM3-tasks/T8c-afon-bank-and-init-reconcile/ws/om-emu/emu/checks/lib/env.mjs:90:71)
+    at file:///C:/Dev/OM3-tasks/T8c-afon-bank-and-init-reconcile/ws/work/scripts/list_menu_pages.mjs:10:25 {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Dev\\OM3-tasks\\T8c-afon-bank-and-init-reconcile\\ws\\om-emu\\unpacked\\E143\\OLY_E_143_1900_0000_0000.BIN.blk00000000.OE.0100.bin'
+}
+
+Node.js v26.12.1
