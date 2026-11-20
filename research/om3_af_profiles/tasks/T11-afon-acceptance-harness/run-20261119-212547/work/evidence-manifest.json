@@ -1,0 +1,3349 @@
+{
+  "task": "T11",
+  "brief_sha256": "ee24068b89977067fbba0012d41ca2f396489539ac7931072fe3ff5e1fc511ac",
+  "inputs": [
+    {
+      "path": "C:/Dev/OM3-research/analysis/button-af/readiness/t3m-afon-editor-state-leak/scripts/accept_lib_v4.mjs",
+      "sha256": "9bb612f87ef028dafa5885b1b845e892f27694b7fdcd0a48e4fcb67b3806755d",
+      "bytes": 7417
+    },
+    {
+      "path": "C:/Dev/OM3-research/analysis/button-af/readiness/t5-afon-button-handoff/scripts/zone_session_k1.mjs",
+      "sha256": "04cc1c3cc9d24a58e93cc8b1ea01f26f823c168be67d707333ceeb40bf359734",
+      "bytes": 24357
+    },
+    {
+      "path": "C:/Dev/OM3-research/tasks/T7-orientation-producer/run-20261119-072701/work/scripts/pose.mjs",
+      "sha256": "09cb38618024a749ba4b15ee3be4e5140257d6c5145347567887196a81665358",
+      "bytes": 5560
+    },
+    {
+      "path": "C:/Dev/OM3-research/tasks/T8b-afon-integrated-acceptance-generated/run-20261119-153249/work/scripts/lib_map_c1.mjs",
+      "sha256": "60d5ed07990cf74526380d566409c297877c9e18c2fc8b8a0ffc0fda030200e7",
+      "bytes": 2539
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/checks/lib/args.mjs",
+      "sha256": "6c99d21aad6340f2b7c72c5c63f33b7287d04dab798adedc23f1cf705ab92ad8",
+      "bytes": 4766
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/checks/lib/coverage.mjs",
+      "sha256": "e6e3d409d7766e8d5b55d473523355a7dda4b2a4dba1bda984ca170411109ee7",
+      "bytes": 4549
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/checks/lib/env.mjs",
+      "sha256": "dbbfd2ab839d8ceb784c7df5c12d0d9a17898eba549b84e848a9cfb05b0d609b",
+      "bytes": 12178
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/checks/lib/errors.mjs",
+      "sha256": "4c01fc5ac9167e751e6f9f1f013d61c56600e3af668db8ee305f79718e213c79",
+      "bytes": 1846
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/checks/lib/png.mjs",
+      "sha256": "77d52d420a15ac8005ab9ac39e1d09d7df2a2650ece690813e511ac03ce6db99",
+      "bytes": 5493
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/host/nvram.mjs",
+      "sha256": "352f7765f0426706553ab6c3453048ff37c0d3e1fd274ceda18c8a37fd7b2071",
+      "bytes": 5126
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/refs/errors.mjs",
+      "sha256": "fff1f2065bbdb2797f3f998fabeb2a0353b88451bc252e4d3ad74025ab164aca",
+      "bytes": 809
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/scenarios/bind.mjs",
+      "sha256": "5809e36b04e3fa0983e85c104070e3639ee85c965f25d0bddc0165533ee5fedc",
+      "bytes": 1979
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/scenarios/session_replay.mjs",
+      "sha256": "83d2afc6accf98d0cad951803af7f42319ec7858a9c9cc1a018622357c02b133",
+      "bytes": 25927
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/core/cores.mjs",
+      "sha256": "c40e61d8cb1c6d5660968bc3780591fe58b070d39346b33aacb1f8253cf3bfa0",
+      "bytes": 14575
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/core/cpu.mjs",
+      "sha256": "94f3caf73745b17dceca437299b6c711aee0efe51c9ab7c872d5b1e6c599521e",
+      "bytes": 33769
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/core/interp.mjs",
+      "sha256": "660e09091fc99db584104cd8e98d6050fe517e204fa2c747d0aa72e1423f9aa2",
+      "bytes": 40485
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/core/m4/boot.mjs",
+      "sha256": "064782160d72244f025941957757c5c0becac5cbc2baf272c93124a4b025c2ab",
+      "bytes": 2475
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/core/m4/bus.mjs",
+      "sha256": "7d40173941ce9136e055f5d68a3904d7e13bcb100afe076c99e62c5f04daff2b",
+      "bytes": 5865
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/core/m4/cpu.mjs",
+      "sha256": "64ddeaecf9402af3d04cbf232b99036fd1b87a637300b5ab0db6db4eafb655b8",
+      "bytes": 38527
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/core/m4/dcache.mjs",
+      "sha256": "5c1cd23048a7d5c693bc626abbcc1057d29bc4214c96bb9d05d71674ebf472cf",
+      "bytes": 3444
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/core/m4/decode.mjs",
+      "sha256": "a5400b0d56fbec796452aa7d93817cb4e97d28604f75048aef9a0d2008b9616d",
+      "bytes": 41153
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/core/m4/errors.mjs",
+      "sha256": "e4552273413b00095c7536a9e490c3c1b70428a9da88b4ec8087dccc5e0b517b",
+      "bytes": 894
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/core/m4/periph/adc.mjs",
+      "sha256": "d986c043c73a0ffcfcac748224516520cd909f297bca97fca0479c0e18da2ab3",
+      "bytes": 5729
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/core/m4/periph/board.mjs",
+      "sha256": "96452848d86624d9c569fdca46fa3ef015ae4c1847f31ae24da561ed54d9d4b6",
+      "bytes": 2077
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/core/m4/periph/dma.mjs",
+      "sha256": "0013b012879e42f249776e8d0a91db465d84312f967751994fdcfb78aeef931f",
+      "bytes": 6520
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/core/m4/periph/exti.mjs",
+      "sha256": "3ccca80728f6a95d651bee8fbdea6eebff4cf0c839073198e7a39465a2f7f572",
+      "bytes": 5980
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/core/m4/periph/flash.mjs",
+      "sha256": "8a1b09f4465f05ed8853a08be72081635257fc9e47e5b475820d0b49cb1b5a85",
+      "bytes": 13217
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/core/m4/periph/gpio.mjs",
+      "sha256": "4f2bd672f826e915f4dc628e39d156d7bc05f4ad1291b1121eebc780665025f9",
+      "bytes": 7331
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/core/m4/periph/i2c.mjs",
+      "sha256": "db2ed90a75f8f23fa8119eceb74641e1faf0c840f0e5b412297bed3fe27fed42",
+      "bytes": 15064
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/core/m4/periph/pwr.mjs",
+      "sha256": "e665b6f771874170fb13346b85389d8969d5106f116ab80c32689c293e32f179",
+      "bytes": 2976
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/core/m4/periph/rcc.mjs",
+      "sha256": "28649dbcca9e0006c0c518d23ca488544d48d15f5443dd8d40fb40954745cd70",
+      "bytes": 9103
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/core/m4/periph/regs.mjs",
+      "sha256": "a159b2f84183d50cccb9445f435ebb2955bada803f994b7ffb9e2ea29262ee1e",
+      "bytes": 2837
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/core/m4/periph/rtc.mjs",
+      "sha256": "3edf5249203b6230e69e423e50953d9611db7a1bf780fc93ad42f2bd71965107",
+      "bytes": 12634
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/core/m4/periph/sched.mjs",
+      "sha256": "a683cedc35145ccd001f22c4031f6fd4942e9bfd38d00c0a99db7b3e78923e4c",
+      "bytes": 4354
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/core/m4/periph/spi.mjs",
+      "sha256": "388e0f06c7c1c6ce9400efd78e1d3d8f3249a424cdf192f5fd7bb039ce2dba5f",
+      "bytes": 5146
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/core/m4/periph/stm32l4.mjs",
+      "sha256": "1beb26e4d57bcfc8996e5b4c0ef04f6d94c3e9e4de4952d056904c6698a9aef5",
+      "bytes": 25042
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/core/m4/periph/tim.mjs",
+      "sha256": "a3d74c5c2eb63bc9759899ba528a0c0519bb64b0a101d67b44cee85963f21f72",
+      "bytes": 19535
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/core/m4/periph/usart.mjs",
+      "sha256": "5f3ff52bf755043637af356f2516524a13e2ac5d706772d73791eb32508a3396",
+      "bytes": 10349
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/core/m4/periph/usb.mjs",
+      "sha256": "e9cd406f7666cc4b85ae2e4fc9c1830a66f62bc60747f443498dcaf65d349c0a",
+      "bytes": 2042
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/core/m4/sys.mjs",
+      "sha256": "e97b9371d3e8eea59cea3d87c08b39eca3ae16e35539f8ce4f2ca785cec81a3b",
+      "bytes": 16370
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/core/mem.mjs",
+      "sha256": "adfe9bca23723f22b490c99047b6ad32c291f495492c98138d1da3c20ab5a676",
+      "bytes": 23219
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/debug/call.mjs",
+      "sha256": "74bffd86020ec1c6f3eca732fd4a41aaa7dcfba2d4670a094449918d84a44186",
+      "bytes": 22586
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/debug/debugger.mjs",
+      "sha256": "a24ce644ab922457a843c868076aa21e72007e78086fda75fd88119a79da4705",
+      "bytes": 24393
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/debug/live.mjs",
+      "sha256": "c19050fd773dc1f46b9f7c0c3669ada12b1293dab93599206913022c62a87e49",
+      "bytes": 28766
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/debug/protocol.mjs",
+      "sha256": "5eff055d29372fb46aecda2c09c6ba94538d7026ad585e15abe06ccbd1f259ea",
+      "bytes": 21791
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/debug/regs.mjs",
+      "sha256": "2e620e185508bf19008cf97cc33ae188222e7461e0b3f1811bf304fdb7b422d7",
+      "bytes": 866
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/debug/snapshot.mjs",
+      "sha256": "24e51e3811a58d55051caeb7507707cfb51001cb9b5355d27bc20c8c0c98ab54",
+      "bytes": 5970
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/debug/trace.mjs",
+      "sha256": "92b3ed83780771c6011d1521ab018dee0fda5f604522acdbdd624a25bdf32bab",
+      "bytes": 4456
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/dev/audio.mjs",
+      "sha256": "2a41fcd1bd0152e5b2b54f3cad314a7e77c5741787d761d69df9e023d41ad571",
+      "bytes": 17201
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/dev/bus.mjs",
+      "sha256": "e537c4ed7e90f6bc2b4a7fef2a35d856af5ffc5ae446ee9336a87e5b4e6e397f",
+      "bytes": 8291
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/dev/camfe.mjs",
+      "sha256": "69a9fde49796f27fac8454565b69c281f670659decb6655fb0ad7c5ef2c3057c",
+      "bytes": 13697
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/dev/dml.mjs",
+      "sha256": "cb8761cb0d5531eb4e7ff46fb3c1cba535afcf6719220ca670ec3c94d9b0a890",
+      "bytes": 8744
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/dev/dpc.mjs",
+      "sha256": "adf00b0157638de3c7f2885957b4542ef0b8a1bcac8c7649546a0658cfb89f32",
+      "bytes": 2629
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/dev/ems1.mjs",
+      "sha256": "68deb7a62e8d6d7d1fb11e49baed979dcf01012e07074ec19bf4e8c39db9d371",
+      "bytes": 11974
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/dev/engine.mjs",
+      "sha256": "2164dcaa278792e3b64675e9ee02dcefa0a6c03afbe7d2738d013da0bfa18059",
+      "bytes": 21611
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/dev/hdmi.mjs",
+      "sha256": "80497c3a89e39ecd641f4fcc5e67ebb2028893fb3b86edffb91b50b115449e8c",
+      "bytes": 16254
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/dev/imgpipe.mjs",
+      "sha256": "924001331674b9e6642c2c9c052fe75a4aff78d8a16f41dd2e2191046ef94daa",
+      "bytes": 25971
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/dev/imgpro.mjs",
+      "sha256": "275680322384425d95a05c39178a70091ed8d3ff897ae04ab504004029066664",
+      "bytes": 13544
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/dev/intc.mjs",
+      "sha256": "85b6b7d21652ac1a057e19fdc1e214154ac52bceec47a8f4afdac1661788dada",
+      "bytes": 15228
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/dev/lensssc.mjs",
+      "sha256": "e96b83c864f901ca1811a447f5f88fb1ff0b9ee87972555fe2678e420fd6a34d",
+      "bytes": 12839
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/dev/linkpins.mjs",
+      "sha256": "cbc3e7a5fca33012a2344800016eb8e9f63d723f381dc13deb4ce52e66e3c1d5",
+      "bytes": 7211
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/dev/pdt.mjs",
+      "sha256": "9377aa4bfd22964c40c672c44f7eb48c5955e5faa6f98a44525497afecb716c9",
+      "bytes": 9847
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/dev/scpu.mjs",
+      "sha256": "69198b7be16fb24d32968553888ee551ba0f6d227688bba434203e5c834fd5cb",
+      "bytes": 9454
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/dev/stub.mjs",
+      "sha256": "b87a757f0e57823fc46a89020060cc38a6361d24a0498450bdc3047fb9419a3d",
+      "bytes": 4079
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/dev/timer.mjs",
+      "sha256": "b03f10e8d4d622d3fb2fcd6b8b39943c69c98d17241dd4e5026c338fbe0b4739",
+      "bytes": 10301
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/dev/vsc.mjs",
+      "sha256": "38de0fa08a4ff6197c60868c6b893d46775908ccf9389f1d1ddcc5f6b6342602",
+      "bytes": 31927
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/dev/vsccompose.mjs",
+      "sha256": "ba3da9916f999ca91b4c1b9857c13f95239628be334e58478154e682aa05971c",
+      "bytes": 33867
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/dev/vsccompose2.mjs",
+      "sha256": "234572564acef358dd7084d35ca624d62312c42f005ef9c3dcb314fcc1a4d638",
+      "bytes": 18331
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/dev/vscregs.mjs",
+      "sha256": "d29e6661e27212b466035b13ca9ceb9f2bcbafe8026328659d65382f0b806265",
+      "bytes": 3828
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/fw/board.mjs",
+      "sha256": "6a02f7c74bee6f0b6409c57c3ee78c62e16280794ee55557edb42d2f723d7875",
+      "bytes": 39911
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/fw/expand.mjs",
+      "sha256": "e2575f5a4c8ecb79764a31ae01223ab718e7ddc266c00bd88bbf0008dabd1d7d",
+      "bytes": 3148
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/fw/facts.mjs",
+      "sha256": "3f938574a7cc589dd227584066e726039009678c4f51fa8175437badfc1c4c17",
+      "bytes": 509333
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/fw/image.mjs",
+      "sha256": "657e9a447ea8035f17115708121e1ad8e71c08f8f5ef1aefb107ccf3a73621d8",
+      "bytes": 2077
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/fw/labfw.mjs",
+      "sha256": "3efbe7112a2917fbf77c3a57b704296bd730676f1921d24c427f40225ecfb083",
+      "bytes": 4276
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/fw/model.mjs",
+      "sha256": "f080e7e9c91bf3baa5136c7b8aeb6b0e0c4c8378d89f361a47e87aac4e902a44",
+      "bytes": 4718
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/fw/models.mjs",
+      "sha256": "115c8349e4f0aadbe56f24638db4e195ca3ba59739c64607eb5b34e4e14db3db",
+      "bytes": 125036
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/fw/nand.mjs",
+      "sha256": "1c7751b4db88c7874eb4c86d33185f6279ced1cd2f7bddbae4a2dea37fe3b5dd",
+      "bytes": 20696
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/fw/olyfw.mjs",
+      "sha256": "a1c02f4ded0c3624ac017d97eb1ca59e6ca5dd407bcc0854722d7c126c9ef246",
+      "bytes": 5786
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/fw/overrides-E122.mjs",
+      "sha256": "6bff3bc7d875f7424165e6737ecd50c4a4ebb8d1dc4dd4d42b9431b5982b0602",
+      "bytes": 4046
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/fw/overrides-E144.mjs",
+      "sha256": "cc98ffd4ed9eac44c6a8c58c31010b67c72eef618d09e93cf97e442b3f5bd307",
+      "bytes": 25687
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/fw/patch.mjs",
+      "sha256": "bb9434c31fc8e494daa7dd05321bf5835b51aae6bfdbbd981d7151b445375d3b",
+      "bytes": 19035
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/fw/ports.mjs",
+      "sha256": "6c81c9955e9baba6c165ed3affb69fd5208bb44e6a9dba5dc6094935074ce0b0",
+      "bytes": 1076335
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/fw/resprefix.mjs",
+      "sha256": "612c87c0dd722ee031685dd5c70bf14e113d094f2e3a66677dfbe4b8c14c6372",
+      "bytes": 2144
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/fw/sections.mjs",
+      "sha256": "e8e55f2820a7db8426f0172882a34c90c611a7a6b2d848904cd55739d45d6250",
+      "bytes": 8601
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/lab/acc.mjs",
+      "sha256": "48c508462bb4e8cf94b893315d079b9d08248956f06c040be1ed4e3503122062",
+      "bytes": 15789
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/lab/audio.mjs",
+      "sha256": "9b1edfc267afe2c915cbecf4d9fc7bc78003f7f19ef799fd4c738ae1d4e2ff4b",
+      "bytes": 8006
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/lab/audiohw.mjs",
+      "sha256": "c8b414b7217647d696c67aa84ffd273680d325f0119576aa480416791932d705",
+      "bytes": 13787
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/lab/camapp.mjs",
+      "sha256": "363891a90afc7e77e57abd1638e31f0a7badc09b81778e90ac8d42fb640b33f3",
+      "bytes": 232107
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/lab/charger.mjs",
+      "sha256": "f0a2426fb249f9f675c0d22d6e49126fd53a88541dbd6637f6a5bbe4e0212982",
+      "bytes": 3046
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/lab/cpu2.mjs",
+      "sha256": "9a6877013f48a51f56a94bb1185d827c50b8d427b2db375d0d6a3964f0736666",
+      "bytes": 24107
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/lab/display.mjs",
+      "sha256": "7b34ff5b05fef9c7ca1d33fe771e4158387298fd02b28372afd36bf5f0d501bb",
+      "bytes": 91058
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/lab/dispq.mjs",
+      "sha256": "4821c3b1eb64f4b25f40ed80bcf2c14aea5b166148efa3dda35b3d978537b4a4",
+      "bytes": 2427
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/lab/edid.mjs",
+      "sha256": "416d945d868a7d8c53cc0085179733a25fccb82f88e1d6cbd0fe7add32b4d051",
+      "bytes": 2948
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/lab/errors.mjs",
+      "sha256": "2fd7139bceb60f0ad31c428f7ed9f69235af4bc76cda823b1bb9c6dcea45fe10",
+      "bytes": 1204
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/lab/hle.mjs",
+      "sha256": "5648a293d1f6ede0eda8e29d4dc9e6f683210a28935b02b4e6c0af2a03da0520",
+      "bytes": 18565
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/lab/irq.mjs",
+      "sha256": "8fec8ed6abe08a9b83845eae044fc3fcc43f2e339f95d872489152b4de9c072f",
+      "bytes": 10200
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/lab/jpeg.mjs",
+      "sha256": "b54cfe0eb9655371f282fd1e3565b92dfce2500538b805bf0d082de002b97554",
+      "bytes": 14285
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/lab/kernel.mjs",
+      "sha256": "6ceee4bf9962892c0d025be0d70a92ccbb53cdb0ef009b5b9e312586302f47f8",
+      "bytes": 22251
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/lab/lens.mjs",
+      "sha256": "b92b12d381f3389fa8802f1e9ef3bde4291c45e8cb386619ff6fcf25099a96e5",
+      "bytes": 11978
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/lab/lensmcu.mjs",
+      "sha256": "52eb5614952c45f8f648db3cda980019bf9d1fe79334e48bbc3a183a443eabdc",
+      "bytes": 13566
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/lab/mdet.mjs",
+      "sha256": "89c61056df82fe1a159e684cdee0810af38d60c986ab0bf33a6e90e1c504bdde",
+      "bytes": 45695
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/lab/media.mjs",
+      "sha256": "373ceb78980f1c9a7098d56b573e86b00595392fe4e5a69e7c93af970a6ef248",
+      "bytes": 25418
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/lab/menu.mjs",
+      "sha256": "f1fbb65e5a9d30e90ac4eb5565ad6852733d4ae20ff3a3de590d916cf4ec4e94",
+      "bytes": 85212
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/lab/menudata.mjs",
+      "sha256": "1cfdf906d143bea38e730040b2f062b3b3d46b35ba361b58dfd5b01db15531da",
+      "bytes": 17067
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/lab/menuwalk.mjs",
+      "sha256": "d91eeba2e912d05d4a11081bd5846f53b60cbf1578e0733e3289bac8b47706f1",
+      "bytes": 10985
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/lab/nav.mjs",
+      "sha256": "f0062a533f6caf7a37e600364a0d645ffa184deb7892c385b9bba5f58390baef",
+      "bytes": 28926
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/lab/nvramdoc.mjs",
+      "sha256": "597148fdec863af46873a53ab5380a553fcda3a82499da2548f527eed28fffba",
+      "bytes": 6245
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/lab/osd.mjs",
+      "sha256": "a0887531c74d890dca3a12b26d7aea57009da602ffbb6fff8382f89a119176b8",
+      "bytes": 21528
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/lab/osdfmt.mjs",
+      "sha256": "8d5945aeca6a9ec80099c8a3c48ea90580f4c87399e6bcc593f2f0782a263248",
+      "bytes": 4699
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/lab/patchaudit.mjs",
+      "sha256": "18b946321244d4473f904314ba558e9f3c92e330f6dd502863974773bf349b74",
+      "bytes": 12584
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/lab/play.mjs",
+      "sha256": "ac4221021017ba3facacb5db7b1600f2704291136b72c24fefee3b9f8ed092a8",
+      "bytes": 184297
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/lab/player.mjs",
+      "sha256": "bfd861245f1a3d3b2d19a48966b410e979def2ae7cb62c5dde86e31eb03e1404",
+      "bytes": 82293
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/lab/playmod.mjs",
+      "sha256": "56f5802c85ac55f4c5ecbee290384620826c62a1fde6d6bce4b4704aa95bfad8",
+      "bytes": 14600
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/lab/power.mjs",
+      "sha256": "ec16f3c8dfbd67a7802e9718ce930e00d2889b0e5dc37fc7e040a255ea92f549",
+      "bytes": 17507
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/lab/rec.mjs",
+      "sha256": "830d220debed119b5183391ce0d629de368369609ccbfafef14dd27bdf4643f4",
+      "bytes": 62226
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/lab/resnand.mjs",
+      "sha256": "c58d5d251c32f05d247ab8914551202c474e793bcdb2062ce61d2617fbc17462",
+      "bytes": 12700
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/lab/resources.mjs",
+      "sha256": "122450c256d8ef188f77a8e323ba92a28a6102f9033b4634e3c77c36dd066002",
+      "bytes": 14110
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/lab/rtos.mjs",
+      "sha256": "ea7e06666d37aaa97d06142febdbe853d996f68705bcca35f7ff11b4c6ed4b5d",
+      "bytes": 7071
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/lab/scene.mjs",
+      "sha256": "a842e60f803bc8b88113e1484e864235b5e2f9014dabb831210fd5cb9c8e9366",
+      "bytes": 20424
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/lab/scpudev.mjs",
+      "sha256": "c93ce9ced00ba5effba9dedf61ac54d3ca437533f2fd8c899273d273ec5dfc6c",
+      "bytes": 40483
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/lab/scpulink.mjs",
+      "sha256": "3df7584565d3b873e4cbf8fe0050364efe14ae383a4bff5d2dcc9251946ddb96",
+      "bytes": 10470
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/lab/scpum4.mjs",
+      "sha256": "8b7d7fcb1473963f775a2f6742fb2236ef2309ddbaa47d98e7edc41692867514",
+      "bytes": 16575
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/lab/sdcard.mjs",
+      "sha256": "4f81b26b7158dff6bedbd7e88e10fe6293a4c6cea643b498ab98ff7041e7828e",
+      "bytes": 15367
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/lab/settings_ids.mjs",
+      "sha256": "9c395cbd29b04f7e3a4cc1c34332c6f3c4327b28b9ed45db969e9589758b1f78",
+      "bytes": 2242
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/lab/shoe.mjs",
+      "sha256": "d6675b13346890962de1eec8930f763312f7f7d59ccb5b869a0607bf03840e98",
+      "bytes": 10854
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/lab/shuttersnd.mjs",
+      "sha256": "f4e81e625dcbaa0807d5ac67dfc246ad791f314c5ae9fd7f44192d12728fbc63",
+      "bytes": 5762
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/lab/sim.mjs",
+      "sha256": "aab4081dcfc9fb63ca8e84f7f100f84a0ce6dc91a633595cb05446a5d480e6be",
+      "bytes": 16409
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/lab/sio.mjs",
+      "sha256": "f0716ec9f3b3fbcffce75fa186a53f387ab1c336726595bfedc62119b4a9627b",
+      "bytes": 9980
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/lab/soundres.mjs",
+      "sha256": "a2c6dd3df56db40e95822cdb973bfe25efad7f049828626964c88886ff6aa8e9",
+      "bytes": 6887
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/lab/storage.mjs",
+      "sha256": "f5ea0a36b9c78f0a05a5e0f5e45f53ee5f4d076019fab8ee41c2d9e8c4d37d9c",
+      "bytes": 50163
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/lab/subject.mjs",
+      "sha256": "a5bd078b39c2f8594b13f564e5086eb56e8f22bbcdbac115e226e19220b5b317",
+      "bytes": 13781
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/lab/take.mjs",
+      "sha256": "8c6dc9cc84ee43a46e22d542f79bb6a5138b9ed686f089b0e17d7c500f66d4ee",
+      "bytes": 65265
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/lab/text.mjs",
+      "sha256": "e27b2d3781feab8d9eb3f49b0cc73524a9312913f85a4131358156a9770a1357",
+      "bytes": 22116
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/lab/touchpanel.mjs",
+      "sha256": "72f93c8bc053f159ec14a20b4dbcf0fabc189c01f79fde7a06efea160743e9de",
+      "bytes": 6610
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/lab/windows.mjs",
+      "sha256": "d18038a30d2f87e3abf6098cd943f35ff4202c6bb3a954d0f7ed1d9c8d28189f",
+      "bytes": 1265
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/lab/wm8946.mjs",
+      "sha256": "4ae26e3647e049fc3bc72163aa978ffc36a0966125b8370dab44827cdfee67bd",
+      "bytes": 8976
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/machine.mjs",
+      "sha256": "9c10e396d122722a486fa73dedabb0c19ad45033c59c172ec6bcaa37d031cd63",
+      "bytes": 33745
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/util/bytes.mjs",
+      "sha256": "86707333d72877e35b374bfd39f3d6af2b716437c73df46929e74b460af985be",
+      "bytes": 6115
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/util/equal.mjs",
+      "sha256": "31d47358a57d40bc4d67b9a077a8c05e6c4f1fe7a92de33f8eb538d75ead238e",
+      "bytes": 1471
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/util/hex.mjs",
+      "sha256": "d48bffb45373a94b8d1c824aa46d7a93665f282ee8a563370d698b1a53237c33",
+      "bytes": 489
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/util/parse.mjs",
+      "sha256": "b0754de377324528b15d6588dbe1d634649cbefd68754bf6b0b114beee3ddfd7",
+      "bytes": 1807
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/util/show.mjs",
+      "sha256": "58a20ae76e473414c3b0a0075eb362f7a1cf4c968b3feef64659f0473515e076",
+      "bytes": 1724
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/util/tally.mjs",
+      "sha256": "33f495d217ff46a5e2e1bb74a3cb319b2db374e8bd3d37dfef75da9a6864ed26",
+      "bytes": 896
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/om-emu/emu/src/util/tracejson.mjs",
+      "sha256": "52a0e82cd086dee77069600061f3d478fbf4ac447c75173dc53e97365f0e4e77",
+      "bytes": 3871
+    }
+  ],
+  "sources": [
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/harness/afon_hooks_v1.mjs",
+      "sha256": "6a7adb958ec39a75561d14dc5dae0c7105e941b6ee20b6d4253d19ac115cdbaa",
+      "bytes": 22493
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/harness/afon_hooks_v2.mjs",
+      "sha256": "0d024de2a0d6f0a4c5c8e65b82eabe8a63bcd1f27b13511038e5b1aee7ec6acb",
+      "bytes": 22584
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/harness/afon_hooks_v3.mjs",
+      "sha256": "0fd0b20b096dfa7b31b4c80499caba9c512a09984d3ca8d3b8660e5528f84d74",
+      "bytes": 23055
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/harness/afon_hooks_v4.mjs",
+      "sha256": "0d024de2a0d6f0a4c5c8e65b82eabe8a63bcd1f27b13511038e5b1aee7ec6acb",
+      "bytes": 22584
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/harness/afon_hooks_v5.mjs",
+      "sha256": "de234c7e9ea44a6c8f05f1f17c386a801ff1fec1aa507c5959617fbc68a3f448",
+      "bytes": 22624
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/harness/drive_v1.mjs",
+      "sha256": "bc834b582afde59dcbd15f43cb0306d3b325b59583120e4861a2e6fdffe78668",
+      "bytes": 24747
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/harness/drive_v2.mjs",
+      "sha256": "0193a4aaa279efa5328e9f55c2767062b0257aef5ad3bf4026f1b6fe05e23882",
+      "bytes": 24747
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/harness/drive_v3.mjs",
+      "sha256": "45f26d169bf41d8b7cb326e6a9e2d47ed6c70462c5daaeb9ad1019dcbf9a80ce",
+      "bytes": 24747
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/harness/drive_v4.mjs",
+      "sha256": "9679f3fb4f0cfcdf9be6862ed9f126591709c22ab82a3413829f21fd18ce9e94",
+      "bytes": 24758
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/harness/drive_v5.mjs",
+      "sha256": "f6cff97784ad005f08904306c1c96a652e6da37a59cc8a11569872f8ba2da690",
+      "bytes": 24758
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/harness/drive_v6.mjs",
+      "sha256": "9d700305bd452e5d119936bcf3f3c93b436371a538a44f60cd52085e5f783cd5",
+      "bytes": 25645
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/harness/gate_v1.mjs",
+      "sha256": "26e6a75a60192fddc7b6855a15f9f5c7e9720a956f2cda2a7f22b8b315718881",
+      "bytes": 1569
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/harness/identity_v1.mjs",
+      "sha256": "2f8419b7ecf744a90e8b7ded2938021c6b215542b2fafe4d9ac3c8e089b6fcdc",
+      "bytes": 2350
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/harness/judge_v1.mjs",
+      "sha256": "487e87ba89a481ce628d4b69c68a4f85735bacf40ccb4410c6cf42c063f95a90",
+      "bytes": 6179
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/harness/judge_v2.mjs",
+      "sha256": "ddb4b05816a5b11d06297d083b73a0bf0fc10670fec498cb984f4a947fd9140e",
+      "bytes": 6980
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/harness/predicates_v1.mjs",
+      "sha256": "8109f30b4862064d9b32805fbe140d783142893c3816d27ef286283fcea7f7a7",
+      "bytes": 854
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/harness/predicates_v2.mjs",
+      "sha256": "22f05cdbdbf2c2733477fd25598b9fc74ad523c16d35a833232bbaf62f36294d",
+      "bytes": 1124
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/harness/state_v1.mjs",
+      "sha256": "8b5752adcf905e53af86d92e640135e3e9a83ed50bf3743f9e74a6f1c3da0677",
+      "bytes": 3647
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/unit-G8VH4r/fixture.mjs",
+      "sha256": "115882c72725abf263713a5c90ed115d43ac66fa6026ebab3b019ae3fda16998",
+      "bytes": 20
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/scripts/run_accept_v1.mjs",
+      "sha256": "300e2377363c3a8269fc5d5a2af2ec0f8aa5950567c667cd5feb9b9f599ee971",
+      "bytes": 2338
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/scripts/run_identity_v1.mjs",
+      "sha256": "e9cbfa40b033e5859bb5cf45e6712786306514bb711610602421510fded05849",
+      "bytes": 1157
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/scripts/run_identity_v2.mjs",
+      "sha256": "6ef03a1439b02f972299beb064fa0d3f12667b879d4e49eb70d914a329a5b730",
+      "bytes": 1157
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/scripts/run_identity_v3.mjs",
+      "sha256": "f1727c00efa5b3bc0bfc710e2231bad7066f1a843caa8f7bb4094ec7bb3ddf86",
+      "bytes": 1157
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/scripts/run_identity_v4.mjs",
+      "sha256": "e0054b96ec46da7f9b718bb6b30c953de1768ff95a32b7f052a4e84646206c65",
+      "bytes": 1157
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/scripts/run_identity_v5.mjs",
+      "sha256": "2cf6ecff3545f6decb7a4adaa291068268676cce8207b8563a0cf15d196c31dc",
+      "bytes": 1157
+    }
+  ],
+  "outputs": [
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/harness.md",
+      "sha256": "ca01bc00ee97a7b2d5bf6e44c586f9a46589c8c108e413c4e0675bc4e50de7e8",
+      "bytes": 3628
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/harness/afon_hooks_v1.mjs",
+      "sha256": "6a7adb958ec39a75561d14dc5dae0c7105e941b6ee20b6d4253d19ac115cdbaa",
+      "bytes": 22493
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/harness/afon_hooks_v2.mjs",
+      "sha256": "0d024de2a0d6f0a4c5c8e65b82eabe8a63bcd1f27b13511038e5b1aee7ec6acb",
+      "bytes": 22584
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/harness/afon_hooks_v3.mjs",
+      "sha256": "0fd0b20b096dfa7b31b4c80499caba9c512a09984d3ca8d3b8660e5528f84d74",
+      "bytes": 23055
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/harness/afon_hooks_v4.mjs",
+      "sha256": "0d024de2a0d6f0a4c5c8e65b82eabe8a63bcd1f27b13511038e5b1aee7ec6acb",
+      "bytes": 22584
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/harness/afon_hooks_v5.mjs",
+      "sha256": "de234c7e9ea44a6c8f05f1f17c386a801ff1fec1aa507c5959617fbc68a3f448",
+      "bytes": 22624
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/harness/check_table_v1.mjs",
+      "sha256": "ecf13ba30d5aab647b6ff89cfee50a8efe66b2eeaaa3433836f9a16450185783",
+      "bytes": 8656
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/harness/display_v1.mjs",
+      "sha256": "6ca641d0320ba08f4310c7bddf3de5783760b3c0862f615985c2d47bfa24746b",
+      "bytes": 10968
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/harness/drive_v1.mjs",
+      "sha256": "bc834b582afde59dcbd15f43cb0306d3b325b59583120e4861a2e6fdffe78668",
+      "bytes": 24747
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/harness/drive_v2.mjs",
+      "sha256": "0193a4aaa279efa5328e9f55c2767062b0257aef5ad3bf4026f1b6fe05e23882",
+      "bytes": 24747
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/harness/drive_v3.mjs",
+      "sha256": "45f26d169bf41d8b7cb326e6a9e2d47ed6c70462c5daaeb9ad1019dcbf9a80ce",
+      "bytes": 24747
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/harness/drive_v4.mjs",
+      "sha256": "9679f3fb4f0cfcdf9be6862ed9f126591709c22ab82a3413829f21fd18ce9e94",
+      "bytes": 24758
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/harness/drive_v5.mjs",
+      "sha256": "f6cff97784ad005f08904306c1c96a652e6da37a59cc8a11569872f8ba2da690",
+      "bytes": 24758
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/harness/drive_v6.mjs",
+      "sha256": "9d700305bd452e5d119936bcf3f3c93b436371a538a44f60cd52085e5f783cd5",
+      "bytes": 25645
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/harness/gate_v1.mjs",
+      "sha256": "26e6a75a60192fddc7b6855a15f9f5c7e9720a956f2cda2a7f22b8b315718881",
+      "bytes": 1569
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/harness/identity_v1.mjs",
+      "sha256": "2f8419b7ecf744a90e8b7ded2938021c6b215542b2fafe4d9ac3c8e089b6fcdc",
+      "bytes": 2350
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/harness/inventory_hook_v1.mjs",
+      "sha256": "c0643f53db2b03f396b5d558a52605e9cfe5cd41c6a3dcc001734d02ce17214b",
+      "bytes": 1056
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/harness/inventory_v1.mjs",
+      "sha256": "f9907daea708c7ea96c57f1a6fa407a6ec7d0c8482157c5e5e94364c53047a1e",
+      "bytes": 3085
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/harness/judge_v1.mjs",
+      "sha256": "487e87ba89a481ce628d4b69c68a4f85735bacf40ccb4410c6cf42c063f95a90",
+      "bytes": 6179
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/harness/judge_v2.mjs",
+      "sha256": "ddb4b05816a5b11d06297d083b73a0bf0fc10670fec498cb984f4a947fd9140e",
+      "bytes": 6980
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/harness/predicates_v1.mjs",
+      "sha256": "8109f30b4862064d9b32805fbe140d783142893c3816d27ef286283fcea7f7a7",
+      "bytes": 854
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/harness/predicates_v2.mjs",
+      "sha256": "22f05cdbdbf2c2733477fd25598b9fc74ad523c16d35a833232bbaf62f36294d",
+      "bytes": 1124
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/harness/refresh_v1.mjs",
+      "sha256": "1a1918592149be119050664faf2231e0bb180361b130547f3f368361e573205a",
+      "bytes": 2417
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/harness/state_v1.mjs",
+      "sha256": "8b5752adcf905e53af86d92e640135e3e9a83ed50bf3743f9e74a6f1c3da0677",
+      "bytes": 3647
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/harness/static_check_v1.mjs",
+      "sha256": "30d3ebd0d84668861420227cdcdb2e3118243e04887bfc4b1c7bb0dbed76dc88",
+      "bytes": 1508
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/harness/static_check_v2.mjs",
+      "sha256": "e5a791bdfa6d55f4632502c1080439d3d4884afb84f29b83dcf85d1c80f3007f",
+      "bytes": 1644
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/harness/static_check_v3.mjs",
+      "sha256": "6ad349e8d325ac3f0c48518aa7934e1331f4ebe5f3e4e5a2ca80b7051e98e5c7",
+      "bytes": 1780
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/harness/static_check_v4.mjs",
+      "sha256": "52b36dc2067409234e7ae50e453f1838eb285b854314a47b0c576783171ee93b",
+      "bytes": 1707
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/harness/static_check_v5.mjs",
+      "sha256": "91ffdf627c0918300d3dc2dc155551beb90471cde18db8d3ac9d5507f2fcc668",
+      "bytes": 1751
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/harness/table_v1.mjs",
+      "sha256": "a60d56b4ddc2765b1bb99ffa16ee0b30ff52600b6433900c41f1333a0275be71",
+      "bytes": 16838
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/harness/test_harness_v1.mjs",
+      "sha256": "62f143d28c2dd927699cea3037cfee4e5df1cb627ac5fde3a0688ee773ee0e82",
+      "bytes": 5389
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v1-candidate-base.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v1-candidate-enter-land.png",
+      "sha256": "be761c643f200cdcc700e67cb0aa972f0d7d17d46d382635b9e75c98ec16847b",
+      "bytes": 12469
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v1-k1e-back-shoot.png",
+      "sha256": "4fa68cdfa644bdb0ffadb558b7c0d340cccac12f4ccfa0c80b6ff4f6924adf63",
+      "bytes": 16430
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v1-k1e-base.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v1-k1e-e-ok.png",
+      "sha256": "dfbc31fa183d198e6c96264c11b6bd01a980b511d9608dcf283461ba71e12d11",
+      "bytes": 16430
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v1-k1e-e-open.png",
+      "sha256": "703c942b0cac9e409760ecc29b77493894c26ff1dd91c2b2474d9761c7d0d263",
+      "bytes": 4986
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v1-k1e-e-up.png",
+      "sha256": "79116a608feaa84f3a32a5ab6a73b1af99a4c5f292bb3fda4d32a24a339628d6",
+      "bytes": 4986
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v1-k1e-ke-p-s1-down.png",
+      "sha256": "c9d045e210cf3ea5af90d3aa42afe1243234c834d96ab3219c0d5ef236e29d28",
+      "bytes": 12166
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v1-k1e-ke-p-s1-up.png",
+      "sha256": "8ee2b298292c9fc4ed72ab50515dcf0ef898f23ee831c6e2265921431542cf63",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v1-k1e-ke-s1-down.png",
+      "sha256": "1f0c631ba86742724541ecde4df7196e336e6dbf50cb2b21b92f24057646848a",
+      "bytes": 15486
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v1-k1e-ke-s1-up.png",
+      "sha256": "dfbc31fa183d198e6c96264c11b6bd01a980b511d9608dcf283461ba71e12d11",
+      "bytes": 16430
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v1-k1e-p-menu.png",
+      "sha256": "542ed40b758684c43091a6fd9b1f1634cf1e5084f6cfa9a93c3cbeda0cec9715",
+      "bytes": 14163
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v1-k1e-p-up.png",
+      "sha256": "703c942b0cac9e409760ecc29b77493894c26ff1dd91c2b2474d9761c7d0d263",
+      "bytes": 4986
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v1-k1e-pose-exif6.png",
+      "sha256": "f29e503e88ac6c42974ab698b750d348a2b2e5cd50ed3d1cc5bc46f2cf9bfd69",
+      "bytes": 15478
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v1-k2-base.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v1-k2-k2-af-down.png",
+      "sha256": "02c5a7eac3e923b9d19b0ccf13a526e391841fb6cb6d7c05cef51c98c0cf2c73",
+      "bytes": 13281
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v1-k2-k2-af-up.png",
+      "sha256": "02c5a7eac3e923b9d19b0ccf13a526e391841fb6cb6d7c05cef51c98c0cf2c73",
+      "bytes": 13281
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v1-k2-k2-l-af-down.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v1-k2-k2-l-af-up.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v1-k2-k2-p-af-down.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v1-k2-k2-p-af-up.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v1-k2-n-ok.png",
+      "sha256": "1f0c631ba86742724541ecde4df7196e336e6dbf50cb2b21b92f24057646848a",
+      "bytes": 15486
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v1-k2-n-open.png",
+      "sha256": "703c942b0cac9e409760ecc29b77493894c26ff1dd91c2b2474d9761c7d0d263",
+      "bytes": 4986
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v1-k2-n-s1-down.png",
+      "sha256": "1f0c631ba86742724541ecde4df7196e336e6dbf50cb2b21b92f24057646848a",
+      "bytes": 15486
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v1-k2-n-s1-up.png",
+      "sha256": "1f0c631ba86742724541ecde4df7196e336e6dbf50cb2b21b92f24057646848a",
+      "bytes": 15486
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v1-k2-n-up.png",
+      "sha256": "79116a608feaa84f3a32a5ab6a73b1af99a4c5f292bb3fda4d32a24a339628d6",
+      "bytes": 4986
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v1-k2-pose-after-edit.png",
+      "sha256": "f29e503e88ac6c42974ab698b750d348a2b2e5cd50ed3d1cc5bc46f2cf9bfd69",
+      "bytes": 15478
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v1-k2-pose-exif6.png",
+      "sha256": "02c5a7eac3e923b9d19b0ccf13a526e391841fb6cb6d7c05cef51c98c0cf2c73",
+      "bytes": 13281
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v1-k2-pose-land.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v1-k2-pre-l-s1-down.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v1-k2-pre-l-s1-up.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v1-k2-pre-p-s1-down.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v1-k2-pre-p-s1-up.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v1-k2-pre-s1-down.png",
+      "sha256": "be761c643f200cdcc700e67cb0aa972f0d7d17d46d382635b9e75c98ec16847b",
+      "bytes": 12469
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v1-k2-pre-s1-up.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v1.jsonl",
+      "sha256": "41a1a656defbad99a3bf5939490b85042f3e404f7524d5b0966a970c29a7296d",
+      "bytes": 177198
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v2-candidate-af-down.png",
+      "sha256": "f00e83c8b9514e2ddfb0cf774f80f1d0410bc6c413825fa65dba297e33cfe770",
+      "bytes": 12345
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v2-candidate-af-up.png",
+      "sha256": "116e0f121cfd8cc456aa3de06d610d29644c7593816af7d827e803564c582105",
+      "bytes": 12345
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v2-candidate-back-shoot.png",
+      "sha256": "0b352310bea2c0b58dd3f30b6ae0399d05acded95ac3d94404d6329197d58629",
+      "bytes": 15350
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v2-candidate-base.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v2-candidate-e-ok.png",
+      "sha256": "bf4c0924a4adccaca1727a314e576e9f12956e21da825d246fa5d41f53de3e75",
+      "bytes": 16421
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v2-candidate-e-open.png",
+      "sha256": "703c942b0cac9e409760ecc29b77493894c26ff1dd91c2b2474d9761c7d0d263",
+      "bytes": 4986
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v2-candidate-e-up.png",
+      "sha256": "79116a608feaa84f3a32a5ab6a73b1af99a4c5f292bb3fda4d32a24a339628d6",
+      "bytes": 4986
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v2-candidate-enter-exif6.png",
+      "sha256": "b662691b2da9aae27e0f88a23425ca0fe3a333cdb85e72ac25ab7bd5a0dbf1fb",
+      "bytes": 13281
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v2-candidate-enter-land.png",
+      "sha256": "be761c643f200cdcc700e67cb0aa972f0d7d17d46d382635b9e75c98ec16847b",
+      "bytes": 12469
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v2-candidate-l-af-down.png",
+      "sha256": "bf4c0924a4adccaca1727a314e576e9f12956e21da825d246fa5d41f53de3e75",
+      "bytes": 16421
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v2-candidate-l-af-up.png",
+      "sha256": "be761c643f200cdcc700e67cb0aa972f0d7d17d46d382635b9e75c98ec16847b",
+      "bytes": 12469
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v2-candidate-n-open.png",
+      "sha256": "703c942b0cac9e409760ecc29b77493894c26ff1dd91c2b2474d9761c7d0d263",
+      "bytes": 4986
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v2-candidate-p-af-down.png",
+      "sha256": "f29e503e88ac6c42974ab698b750d348a2b2e5cd50ed3d1cc5bc46f2cf9bfd69",
+      "bytes": 15478
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v2-candidate-p-af-up.png",
+      "sha256": "f29e503e88ac6c42974ab698b750d348a2b2e5cd50ed3d1cc5bc46f2cf9bfd69",
+      "bytes": 15478
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v2-candidate-p-menu.png",
+      "sha256": "542ed40b758684c43091a6fd9b1f1634cf1e5084f6cfa9a93c3cbeda0cec9715",
+      "bytes": 14163
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v2-candidate-p-up.png",
+      "sha256": "703c942b0cac9e409760ecc29b77493894c26ff1dd91c2b2474d9761c7d0d263",
+      "bytes": 4986
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v2-candidate-pose-exif6.png",
+      "sha256": "116e0f121cfd8cc456aa3de06d610d29644c7593816af7d827e803564c582105",
+      "bytes": 12345
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v2-candidate-pose-land.png",
+      "sha256": "f29e503e88ac6c42974ab698b750d348a2b2e5cd50ed3d1cc5bc46f2cf9bfd69",
+      "bytes": 15478
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v2-candidate-pre-l-s1-down.png",
+      "sha256": "bf4c0924a4adccaca1727a314e576e9f12956e21da825d246fa5d41f53de3e75",
+      "bytes": 16421
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v2-candidate-pre-l-s1-up.png",
+      "sha256": "f29e503e88ac6c42974ab698b750d348a2b2e5cd50ed3d1cc5bc46f2cf9bfd69",
+      "bytes": 15478
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v2-candidate-pre-p-s1-down.png",
+      "sha256": "bf4c0924a4adccaca1727a314e576e9f12956e21da825d246fa5d41f53de3e75",
+      "bytes": 16421
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v2-candidate-pre-p-s1-up.png",
+      "sha256": "f29e503e88ac6c42974ab698b750d348a2b2e5cd50ed3d1cc5bc46f2cf9bfd69",
+      "bytes": 15478
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v2-candidate-pre-s1-down.png",
+      "sha256": "bf4c0924a4adccaca1727a314e576e9f12956e21da825d246fa5d41f53de3e75",
+      "bytes": 16421
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v2-candidate-pre-s1-up.png",
+      "sha256": "f29e503e88ac6c42974ab698b750d348a2b2e5cd50ed3d1cc5bc46f2cf9bfd69",
+      "bytes": 15478
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v2-k1e-back-shoot.png",
+      "sha256": "4fa68cdfa644bdb0ffadb558b7c0d340cccac12f4ccfa0c80b6ff4f6924adf63",
+      "bytes": 16430
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v2-k1e-base.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v2-k1e-e-ok.png",
+      "sha256": "dfbc31fa183d198e6c96264c11b6bd01a980b511d9608dcf283461ba71e12d11",
+      "bytes": 16430
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v2-k1e-e-open.png",
+      "sha256": "703c942b0cac9e409760ecc29b77493894c26ff1dd91c2b2474d9761c7d0d263",
+      "bytes": 4986
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v2-k1e-e-up.png",
+      "sha256": "79116a608feaa84f3a32a5ab6a73b1af99a4c5f292bb3fda4d32a24a339628d6",
+      "bytes": 4986
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v2-k1e-ke-p-s1-down.png",
+      "sha256": "c9d045e210cf3ea5af90d3aa42afe1243234c834d96ab3219c0d5ef236e29d28",
+      "bytes": 12166
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v2-k1e-ke-p-s1-up.png",
+      "sha256": "8ee2b298292c9fc4ed72ab50515dcf0ef898f23ee831c6e2265921431542cf63",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v2-k1e-ke-s1-down.png",
+      "sha256": "1f0c631ba86742724541ecde4df7196e336e6dbf50cb2b21b92f24057646848a",
+      "bytes": 15486
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v2-k1e-ke-s1-up.png",
+      "sha256": "dfbc31fa183d198e6c96264c11b6bd01a980b511d9608dcf283461ba71e12d11",
+      "bytes": 16430
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v2-k1e-p-menu.png",
+      "sha256": "542ed40b758684c43091a6fd9b1f1634cf1e5084f6cfa9a93c3cbeda0cec9715",
+      "bytes": 14163
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v2-k1e-p-up.png",
+      "sha256": "703c942b0cac9e409760ecc29b77493894c26ff1dd91c2b2474d9761c7d0d263",
+      "bytes": 4986
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v2-k1e-pose-exif6.png",
+      "sha256": "f29e503e88ac6c42974ab698b750d348a2b2e5cd50ed3d1cc5bc46f2cf9bfd69",
+      "bytes": 15478
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v2-k2-base.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v2-k2-k2-af-down.png",
+      "sha256": "02c5a7eac3e923b9d19b0ccf13a526e391841fb6cb6d7c05cef51c98c0cf2c73",
+      "bytes": 13281
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v2-k2-k2-af-up.png",
+      "sha256": "02c5a7eac3e923b9d19b0ccf13a526e391841fb6cb6d7c05cef51c98c0cf2c73",
+      "bytes": 13281
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v2-k2-k2-l-af-down.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v2-k2-k2-l-af-up.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v2-k2-k2-p-af-down.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v2-k2-k2-p-af-up.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v2-k2-n-ok.png",
+      "sha256": "1f0c631ba86742724541ecde4df7196e336e6dbf50cb2b21b92f24057646848a",
+      "bytes": 15486
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v2-k2-n-open.png",
+      "sha256": "703c942b0cac9e409760ecc29b77493894c26ff1dd91c2b2474d9761c7d0d263",
+      "bytes": 4986
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v2-k2-n-s1-down.png",
+      "sha256": "1f0c631ba86742724541ecde4df7196e336e6dbf50cb2b21b92f24057646848a",
+      "bytes": 15486
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v2-k2-n-s1-up.png",
+      "sha256": "1f0c631ba86742724541ecde4df7196e336e6dbf50cb2b21b92f24057646848a",
+      "bytes": 15486
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v2-k2-n-up.png",
+      "sha256": "79116a608feaa84f3a32a5ab6a73b1af99a4c5f292bb3fda4d32a24a339628d6",
+      "bytes": 4986
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v2-k2-pose-after-edit.png",
+      "sha256": "f29e503e88ac6c42974ab698b750d348a2b2e5cd50ed3d1cc5bc46f2cf9bfd69",
+      "bytes": 15478
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v2-k2-pose-exif6.png",
+      "sha256": "02c5a7eac3e923b9d19b0ccf13a526e391841fb6cb6d7c05cef51c98c0cf2c73",
+      "bytes": 13281
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v2-k2-pose-land.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v2-k2-pre-l-s1-down.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v2-k2-pre-l-s1-up.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v2-k2-pre-p-s1-down.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v2-k2-pre-p-s1-up.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v2-k2-pre-s1-down.png",
+      "sha256": "be761c643f200cdcc700e67cb0aa972f0d7d17d46d382635b9e75c98ec16847b",
+      "bytes": 12469
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v2-k2-pre-s1-up.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v2.jsonl",
+      "sha256": "fd8fca69c3d34f0fb9f64965d30155ec970afcfeb72c09d80e42fd4fe22fe784",
+      "bytes": 290863
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v3-candidate-base.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v3-candidate-enter-land.png",
+      "sha256": "be761c643f200cdcc700e67cb0aa972f0d7d17d46d382635b9e75c98ec16847b",
+      "bytes": 12469
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v3-k1e-back-shoot.png",
+      "sha256": "4fa68cdfa644bdb0ffadb558b7c0d340cccac12f4ccfa0c80b6ff4f6924adf63",
+      "bytes": 16430
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v3-k1e-base.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v3-k1e-e-ok.png",
+      "sha256": "dfbc31fa183d198e6c96264c11b6bd01a980b511d9608dcf283461ba71e12d11",
+      "bytes": 16430
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v3-k1e-e-open.png",
+      "sha256": "703c942b0cac9e409760ecc29b77493894c26ff1dd91c2b2474d9761c7d0d263",
+      "bytes": 4986
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v3-k1e-e-up.png",
+      "sha256": "79116a608feaa84f3a32a5ab6a73b1af99a4c5f292bb3fda4d32a24a339628d6",
+      "bytes": 4986
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v3-k1e-ke-p-s1-down.png",
+      "sha256": "c9d045e210cf3ea5af90d3aa42afe1243234c834d96ab3219c0d5ef236e29d28",
+      "bytes": 12166
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v3-k1e-ke-p-s1-up.png",
+      "sha256": "8ee2b298292c9fc4ed72ab50515dcf0ef898f23ee831c6e2265921431542cf63",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v3-k1e-ke-s1-down.png",
+      "sha256": "1f0c631ba86742724541ecde4df7196e336e6dbf50cb2b21b92f24057646848a",
+      "bytes": 15486
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v3-k1e-ke-s1-up.png",
+      "sha256": "dfbc31fa183d198e6c96264c11b6bd01a980b511d9608dcf283461ba71e12d11",
+      "bytes": 16430
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v3-k1e-p-menu.png",
+      "sha256": "542ed40b758684c43091a6fd9b1f1634cf1e5084f6cfa9a93c3cbeda0cec9715",
+      "bytes": 14163
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v3-k1e-p-up.png",
+      "sha256": "703c942b0cac9e409760ecc29b77493894c26ff1dd91c2b2474d9761c7d0d263",
+      "bytes": 4986
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v3-k1e-pose-exif6.png",
+      "sha256": "f29e503e88ac6c42974ab698b750d348a2b2e5cd50ed3d1cc5bc46f2cf9bfd69",
+      "bytes": 15478
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v3-k2-base.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v3-k2-k2-af-down.png",
+      "sha256": "02c5a7eac3e923b9d19b0ccf13a526e391841fb6cb6d7c05cef51c98c0cf2c73",
+      "bytes": 13281
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v3-k2-k2-af-up.png",
+      "sha256": "02c5a7eac3e923b9d19b0ccf13a526e391841fb6cb6d7c05cef51c98c0cf2c73",
+      "bytes": 13281
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v3-k2-k2-l-af-down.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v3-k2-k2-l-af-up.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v3-k2-k2-p-af-down.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v3-k2-k2-p-af-up.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v3-k2-n-ok.png",
+      "sha256": "1f0c631ba86742724541ecde4df7196e336e6dbf50cb2b21b92f24057646848a",
+      "bytes": 15486
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v3-k2-n-open.png",
+      "sha256": "703c942b0cac9e409760ecc29b77493894c26ff1dd91c2b2474d9761c7d0d263",
+      "bytes": 4986
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v3-k2-n-s1-down.png",
+      "sha256": "1f0c631ba86742724541ecde4df7196e336e6dbf50cb2b21b92f24057646848a",
+      "bytes": 15486
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v3-k2-n-s1-up.png",
+      "sha256": "1f0c631ba86742724541ecde4df7196e336e6dbf50cb2b21b92f24057646848a",
+      "bytes": 15486
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v3-k2-n-up.png",
+      "sha256": "79116a608feaa84f3a32a5ab6a73b1af99a4c5f292bb3fda4d32a24a339628d6",
+      "bytes": 4986
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v3-k2-pose-after-edit.png",
+      "sha256": "f29e503e88ac6c42974ab698b750d348a2b2e5cd50ed3d1cc5bc46f2cf9bfd69",
+      "bytes": 15478
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v3-k2-pose-exif6.png",
+      "sha256": "02c5a7eac3e923b9d19b0ccf13a526e391841fb6cb6d7c05cef51c98c0cf2c73",
+      "bytes": 13281
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v3-k2-pose-land.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v3-k2-pre-l-s1-down.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v3-k2-pre-l-s1-up.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v3-k2-pre-p-s1-down.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v3-k2-pre-p-s1-up.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v3-k2-pre-s1-down.png",
+      "sha256": "be761c643f200cdcc700e67cb0aa972f0d7d17d46d382635b9e75c98ec16847b",
+      "bytes": 12469
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v3-k2-pre-s1-up.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v3.jsonl",
+      "sha256": "3232165c5d96d9222c19294af93fe35d4d5f9be5ccf980f7bb4a14c66358f0d7",
+      "bytes": 180465
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v4-candidate-af-down.png",
+      "sha256": "f00e83c8b9514e2ddfb0cf774f80f1d0410bc6c413825fa65dba297e33cfe770",
+      "bytes": 12345
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v4-candidate-af-up.png",
+      "sha256": "116e0f121cfd8cc456aa3de06d610d29644c7593816af7d827e803564c582105",
+      "bytes": 12345
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v4-candidate-back-shoot.png",
+      "sha256": "0b352310bea2c0b58dd3f30b6ae0399d05acded95ac3d94404d6329197d58629",
+      "bytes": 15350
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v4-candidate-base.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v4-candidate-e-ok.png",
+      "sha256": "bf4c0924a4adccaca1727a314e576e9f12956e21da825d246fa5d41f53de3e75",
+      "bytes": 16421
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v4-candidate-e-open.png",
+      "sha256": "703c942b0cac9e409760ecc29b77493894c26ff1dd91c2b2474d9761c7d0d263",
+      "bytes": 4986
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v4-candidate-e-up.png",
+      "sha256": "79116a608feaa84f3a32a5ab6a73b1af99a4c5f292bb3fda4d32a24a339628d6",
+      "bytes": 4986
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v4-candidate-enter-exif6.png",
+      "sha256": "b662691b2da9aae27e0f88a23425ca0fe3a333cdb85e72ac25ab7bd5a0dbf1fb",
+      "bytes": 13281
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v4-candidate-enter-land.png",
+      "sha256": "be761c643f200cdcc700e67cb0aa972f0d7d17d46d382635b9e75c98ec16847b",
+      "bytes": 12469
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v4-candidate-l-af-down.png",
+      "sha256": "bf4c0924a4adccaca1727a314e576e9f12956e21da825d246fa5d41f53de3e75",
+      "bytes": 16421
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v4-candidate-l-af-up.png",
+      "sha256": "be761c643f200cdcc700e67cb0aa972f0d7d17d46d382635b9e75c98ec16847b",
+      "bytes": 12469
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v4-candidate-n-open.png",
+      "sha256": "703c942b0cac9e409760ecc29b77493894c26ff1dd91c2b2474d9761c7d0d263",
+      "bytes": 4986
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v4-candidate-n-up.png",
+      "sha256": "79116a608feaa84f3a32a5ab6a73b1af99a4c5f292bb3fda4d32a24a339628d6",
+      "bytes": 4986
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v4-candidate-p-af-down.png",
+      "sha256": "f29e503e88ac6c42974ab698b750d348a2b2e5cd50ed3d1cc5bc46f2cf9bfd69",
+      "bytes": 15478
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v4-candidate-p-af-up.png",
+      "sha256": "f29e503e88ac6c42974ab698b750d348a2b2e5cd50ed3d1cc5bc46f2cf9bfd69",
+      "bytes": 15478
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v4-candidate-p-menu.png",
+      "sha256": "542ed40b758684c43091a6fd9b1f1634cf1e5084f6cfa9a93c3cbeda0cec9715",
+      "bytes": 14163
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v4-candidate-p-up.png",
+      "sha256": "703c942b0cac9e409760ecc29b77493894c26ff1dd91c2b2474d9761c7d0d263",
+      "bytes": 4986
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v4-candidate-pose-exif6.png",
+      "sha256": "116e0f121cfd8cc456aa3de06d610d29644c7593816af7d827e803564c582105",
+      "bytes": 12345
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v4-candidate-pose-land.png",
+      "sha256": "f29e503e88ac6c42974ab698b750d348a2b2e5cd50ed3d1cc5bc46f2cf9bfd69",
+      "bytes": 15478
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v4-candidate-pre-l-s1-down.png",
+      "sha256": "bf4c0924a4adccaca1727a314e576e9f12956e21da825d246fa5d41f53de3e75",
+      "bytes": 16421
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v4-candidate-pre-l-s1-up.png",
+      "sha256": "f29e503e88ac6c42974ab698b750d348a2b2e5cd50ed3d1cc5bc46f2cf9bfd69",
+      "bytes": 15478
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v4-candidate-pre-p-s1-down.png",
+      "sha256": "bf4c0924a4adccaca1727a314e576e9f12956e21da825d246fa5d41f53de3e75",
+      "bytes": 16421
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v4-candidate-pre-p-s1-up.png",
+      "sha256": "f29e503e88ac6c42974ab698b750d348a2b2e5cd50ed3d1cc5bc46f2cf9bfd69",
+      "bytes": 15478
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v4-candidate-pre-s1-down.png",
+      "sha256": "bf4c0924a4adccaca1727a314e576e9f12956e21da825d246fa5d41f53de3e75",
+      "bytes": 16421
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v4-candidate-pre-s1-up.png",
+      "sha256": "f29e503e88ac6c42974ab698b750d348a2b2e5cd50ed3d1cc5bc46f2cf9bfd69",
+      "bytes": 15478
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v4-k1e-back-shoot.png",
+      "sha256": "4fa68cdfa644bdb0ffadb558b7c0d340cccac12f4ccfa0c80b6ff4f6924adf63",
+      "bytes": 16430
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v4-k1e-base.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v4-k1e-e-ok.png",
+      "sha256": "dfbc31fa183d198e6c96264c11b6bd01a980b511d9608dcf283461ba71e12d11",
+      "bytes": 16430
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v4-k1e-e-open.png",
+      "sha256": "703c942b0cac9e409760ecc29b77493894c26ff1dd91c2b2474d9761c7d0d263",
+      "bytes": 4986
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v4-k1e-e-up.png",
+      "sha256": "79116a608feaa84f3a32a5ab6a73b1af99a4c5f292bb3fda4d32a24a339628d6",
+      "bytes": 4986
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v4-k1e-ke-p-s1-down.png",
+      "sha256": "c9d045e210cf3ea5af90d3aa42afe1243234c834d96ab3219c0d5ef236e29d28",
+      "bytes": 12166
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v4-k1e-ke-p-s1-up.png",
+      "sha256": "8ee2b298292c9fc4ed72ab50515dcf0ef898f23ee831c6e2265921431542cf63",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v4-k1e-ke-s1-down.png",
+      "sha256": "1f0c631ba86742724541ecde4df7196e336e6dbf50cb2b21b92f24057646848a",
+      "bytes": 15486
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v4-k1e-ke-s1-up.png",
+      "sha256": "dfbc31fa183d198e6c96264c11b6bd01a980b511d9608dcf283461ba71e12d11",
+      "bytes": 16430
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v4-k1e-p-menu.png",
+      "sha256": "542ed40b758684c43091a6fd9b1f1634cf1e5084f6cfa9a93c3cbeda0cec9715",
+      "bytes": 14163
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v4-k1e-p-up.png",
+      "sha256": "703c942b0cac9e409760ecc29b77493894c26ff1dd91c2b2474d9761c7d0d263",
+      "bytes": 4986
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v4-k1e-pose-exif6.png",
+      "sha256": "f29e503e88ac6c42974ab698b750d348a2b2e5cd50ed3d1cc5bc46f2cf9bfd69",
+      "bytes": 15478
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v4-k2-base.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v4-k2-k2-af-down.png",
+      "sha256": "02c5a7eac3e923b9d19b0ccf13a526e391841fb6cb6d7c05cef51c98c0cf2c73",
+      "bytes": 13281
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v4-k2-k2-af-up.png",
+      "sha256": "02c5a7eac3e923b9d19b0ccf13a526e391841fb6cb6d7c05cef51c98c0cf2c73",
+      "bytes": 13281
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v4-k2-k2-l-af-down.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v4-k2-k2-l-af-up.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v4-k2-k2-p-af-down.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v4-k2-k2-p-af-up.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v4-k2-n-ok.png",
+      "sha256": "1f0c631ba86742724541ecde4df7196e336e6dbf50cb2b21b92f24057646848a",
+      "bytes": 15486
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v4-k2-n-open.png",
+      "sha256": "703c942b0cac9e409760ecc29b77493894c26ff1dd91c2b2474d9761c7d0d263",
+      "bytes": 4986
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v4-k2-n-s1-down.png",
+      "sha256": "1f0c631ba86742724541ecde4df7196e336e6dbf50cb2b21b92f24057646848a",
+      "bytes": 15486
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v4-k2-n-s1-up.png",
+      "sha256": "1f0c631ba86742724541ecde4df7196e336e6dbf50cb2b21b92f24057646848a",
+      "bytes": 15486
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v4-k2-n-up.png",
+      "sha256": "79116a608feaa84f3a32a5ab6a73b1af99a4c5f292bb3fda4d32a24a339628d6",
+      "bytes": 4986
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v4-k2-pose-after-edit.png",
+      "sha256": "f29e503e88ac6c42974ab698b750d348a2b2e5cd50ed3d1cc5bc46f2cf9bfd69",
+      "bytes": 15478
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v4-k2-pose-exif6.png",
+      "sha256": "02c5a7eac3e923b9d19b0ccf13a526e391841fb6cb6d7c05cef51c98c0cf2c73",
+      "bytes": 13281
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v4-k2-pose-land.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v4-k2-pre-l-s1-down.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v4-k2-pre-l-s1-up.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v4-k2-pre-p-s1-down.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v4-k2-pre-p-s1-up.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v4-k2-pre-s1-down.png",
+      "sha256": "be761c643f200cdcc700e67cb0aa972f0d7d17d46d382635b9e75c98ec16847b",
+      "bytes": 12469
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v4-k2-pre-s1-up.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v4.jsonl",
+      "sha256": "1f0a4c01c24d523b9e8d370a6851fb7bbd59ceb8c1ae002cd5475718c9caa22a",
+      "bytes": 294641
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v5-candidate-af-down.png",
+      "sha256": "f00e83c8b9514e2ddfb0cf774f80f1d0410bc6c413825fa65dba297e33cfe770",
+      "bytes": 12345
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v5-candidate-af-up.png",
+      "sha256": "116e0f121cfd8cc456aa3de06d610d29644c7593816af7d827e803564c582105",
+      "bytes": 12345
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v5-candidate-back-shoot.png",
+      "sha256": "0b352310bea2c0b58dd3f30b6ae0399d05acded95ac3d94404d6329197d58629",
+      "bytes": 15350
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v5-candidate-base.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v5-candidate-e-ok.png",
+      "sha256": "bf4c0924a4adccaca1727a314e576e9f12956e21da825d246fa5d41f53de3e75",
+      "bytes": 16421
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v5-candidate-e-open.png",
+      "sha256": "703c942b0cac9e409760ecc29b77493894c26ff1dd91c2b2474d9761c7d0d263",
+      "bytes": 4986
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v5-candidate-e-up.png",
+      "sha256": "79116a608feaa84f3a32a5ab6a73b1af99a4c5f292bb3fda4d32a24a339628d6",
+      "bytes": 4986
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v5-candidate-enter-exif6.png",
+      "sha256": "b662691b2da9aae27e0f88a23425ca0fe3a333cdb85e72ac25ab7bd5a0dbf1fb",
+      "bytes": 13281
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v5-candidate-enter-land.png",
+      "sha256": "be761c643f200cdcc700e67cb0aa972f0d7d17d46d382635b9e75c98ec16847b",
+      "bytes": 12469
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v5-candidate-l-af-down.png",
+      "sha256": "bf4c0924a4adccaca1727a314e576e9f12956e21da825d246fa5d41f53de3e75",
+      "bytes": 16421
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v5-candidate-l-af-up.png",
+      "sha256": "be761c643f200cdcc700e67cb0aa972f0d7d17d46d382635b9e75c98ec16847b",
+      "bytes": 12469
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v5-candidate-n-ok.png",
+      "sha256": "dfbc31fa183d198e6c96264c11b6bd01a980b511d9608dcf283461ba71e12d11",
+      "bytes": 16430
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v5-candidate-n-open.png",
+      "sha256": "703c942b0cac9e409760ecc29b77493894c26ff1dd91c2b2474d9761c7d0d263",
+      "bytes": 4986
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v5-candidate-n-s1-down.png",
+      "sha256": "dfbc31fa183d198e6c96264c11b6bd01a980b511d9608dcf283461ba71e12d11",
+      "bytes": 16430
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v5-candidate-n-s1-up.png",
+      "sha256": "dfbc31fa183d198e6c96264c11b6bd01a980b511d9608dcf283461ba71e12d11",
+      "bytes": 16430
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v5-candidate-n-up.png",
+      "sha256": "79116a608feaa84f3a32a5ab6a73b1af99a4c5f292bb3fda4d32a24a339628d6",
+      "bytes": 4986
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v5-candidate-p-af-down.png",
+      "sha256": "f29e503e88ac6c42974ab698b750d348a2b2e5cd50ed3d1cc5bc46f2cf9bfd69",
+      "bytes": 15478
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v5-candidate-p-af-up.png",
+      "sha256": "f29e503e88ac6c42974ab698b750d348a2b2e5cd50ed3d1cc5bc46f2cf9bfd69",
+      "bytes": 15478
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v5-candidate-p-menu.png",
+      "sha256": "542ed40b758684c43091a6fd9b1f1634cf1e5084f6cfa9a93c3cbeda0cec9715",
+      "bytes": 14163
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v5-candidate-p-up.png",
+      "sha256": "703c942b0cac9e409760ecc29b77493894c26ff1dd91c2b2474d9761c7d0d263",
+      "bytes": 4986
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v5-candidate-pose-after-edit.png",
+      "sha256": "bf4c0924a4adccaca1727a314e576e9f12956e21da825d246fa5d41f53de3e75",
+      "bytes": 16421
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v5-candidate-pose-exif6.png",
+      "sha256": "116e0f121cfd8cc456aa3de06d610d29644c7593816af7d827e803564c582105",
+      "bytes": 12345
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v5-candidate-pose-land.png",
+      "sha256": "f29e503e88ac6c42974ab698b750d348a2b2e5cd50ed3d1cc5bc46f2cf9bfd69",
+      "bytes": 15478
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v5-candidate-pre-l-s1-down.png",
+      "sha256": "bf4c0924a4adccaca1727a314e576e9f12956e21da825d246fa5d41f53de3e75",
+      "bytes": 16421
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v5-candidate-pre-l-s1-up.png",
+      "sha256": "f29e503e88ac6c42974ab698b750d348a2b2e5cd50ed3d1cc5bc46f2cf9bfd69",
+      "bytes": 15478
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v5-candidate-pre-p-s1-down.png",
+      "sha256": "bf4c0924a4adccaca1727a314e576e9f12956e21da825d246fa5d41f53de3e75",
+      "bytes": 16421
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v5-candidate-pre-p-s1-up.png",
+      "sha256": "f29e503e88ac6c42974ab698b750d348a2b2e5cd50ed3d1cc5bc46f2cf9bfd69",
+      "bytes": 15478
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v5-candidate-pre-s1-down.png",
+      "sha256": "bf4c0924a4adccaca1727a314e576e9f12956e21da825d246fa5d41f53de3e75",
+      "bytes": 16421
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v5-candidate-pre-s1-up.png",
+      "sha256": "f29e503e88ac6c42974ab698b750d348a2b2e5cd50ed3d1cc5bc46f2cf9bfd69",
+      "bytes": 15478
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v5-k1e-back-shoot.png",
+      "sha256": "4fa68cdfa644bdb0ffadb558b7c0d340cccac12f4ccfa0c80b6ff4f6924adf63",
+      "bytes": 16430
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v5-k1e-base.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v5-k1e-e-ok.png",
+      "sha256": "dfbc31fa183d198e6c96264c11b6bd01a980b511d9608dcf283461ba71e12d11",
+      "bytes": 16430
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v5-k1e-e-open.png",
+      "sha256": "703c942b0cac9e409760ecc29b77493894c26ff1dd91c2b2474d9761c7d0d263",
+      "bytes": 4986
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v5-k1e-e-up.png",
+      "sha256": "79116a608feaa84f3a32a5ab6a73b1af99a4c5f292bb3fda4d32a24a339628d6",
+      "bytes": 4986
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v5-k1e-ke-p-s1-down.png",
+      "sha256": "c9d045e210cf3ea5af90d3aa42afe1243234c834d96ab3219c0d5ef236e29d28",
+      "bytes": 12166
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v5-k1e-ke-p-s1-up.png",
+      "sha256": "8ee2b298292c9fc4ed72ab50515dcf0ef898f23ee831c6e2265921431542cf63",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v5-k1e-ke-s1-down.png",
+      "sha256": "1f0c631ba86742724541ecde4df7196e336e6dbf50cb2b21b92f24057646848a",
+      "bytes": 15486
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v5-k1e-ke-s1-up.png",
+      "sha256": "dfbc31fa183d198e6c96264c11b6bd01a980b511d9608dcf283461ba71e12d11",
+      "bytes": 16430
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v5-k1e-p-menu.png",
+      "sha256": "542ed40b758684c43091a6fd9b1f1634cf1e5084f6cfa9a93c3cbeda0cec9715",
+      "bytes": 14163
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v5-k1e-p-up.png",
+      "sha256": "703c942b0cac9e409760ecc29b77493894c26ff1dd91c2b2474d9761c7d0d263",
+      "bytes": 4986
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v5-k1e-pose-exif6.png",
+      "sha256": "f29e503e88ac6c42974ab698b750d348a2b2e5cd50ed3d1cc5bc46f2cf9bfd69",
+      "bytes": 15478
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v5-k2-base.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v5-k2-k2-af-down.png",
+      "sha256": "02c5a7eac3e923b9d19b0ccf13a526e391841fb6cb6d7c05cef51c98c0cf2c73",
+      "bytes": 13281
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v5-k2-k2-af-up.png",
+      "sha256": "02c5a7eac3e923b9d19b0ccf13a526e391841fb6cb6d7c05cef51c98c0cf2c73",
+      "bytes": 13281
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v5-k2-k2-l-af-down.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v5-k2-k2-l-af-up.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v5-k2-k2-p-af-down.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v5-k2-k2-p-af-up.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v5-k2-n-ok.png",
+      "sha256": "1f0c631ba86742724541ecde4df7196e336e6dbf50cb2b21b92f24057646848a",
+      "bytes": 15486
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v5-k2-n-open.png",
+      "sha256": "703c942b0cac9e409760ecc29b77493894c26ff1dd91c2b2474d9761c7d0d263",
+      "bytes": 4986
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v5-k2-n-s1-down.png",
+      "sha256": "1f0c631ba86742724541ecde4df7196e336e6dbf50cb2b21b92f24057646848a",
+      "bytes": 15486
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v5-k2-n-s1-up.png",
+      "sha256": "1f0c631ba86742724541ecde4df7196e336e6dbf50cb2b21b92f24057646848a",
+      "bytes": 15486
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v5-k2-n-up.png",
+      "sha256": "79116a608feaa84f3a32a5ab6a73b1af99a4c5f292bb3fda4d32a24a339628d6",
+      "bytes": 4986
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v5-k2-pose-after-edit.png",
+      "sha256": "f29e503e88ac6c42974ab698b750d348a2b2e5cd50ed3d1cc5bc46f2cf9bfd69",
+      "bytes": 15478
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v5-k2-pose-exif6.png",
+      "sha256": "02c5a7eac3e923b9d19b0ccf13a526e391841fb6cb6d7c05cef51c98c0cf2c73",
+      "bytes": 13281
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v5-k2-pose-land.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v5-k2-pre-l-s1-down.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v5-k2-pre-l-s1-up.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v5-k2-pre-p-s1-down.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v5-k2-pre-p-s1-up.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v5-k2-pre-s1-down.png",
+      "sha256": "be761c643f200cdcc700e67cb0aa972f0d7d17d46d382635b9e75c98ec16847b",
+      "bytes": 12469
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v5-k2-pre-s1-up.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v5-zone-k1e.json",
+      "sha256": "cb1aafbc54b78955184d64239eb3b1c4d5212f9c81519e9e136757f2e45fff50",
+      "bytes": 13352
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v5.jsonl",
+      "sha256": "8d48d6e6f4a0f4140c8ddc7baa92f0e6cf05c8bd1cc5dc39644e402e187e78d3",
+      "bytes": 320257
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v6-candidate-af-down.png",
+      "sha256": "f00e83c8b9514e2ddfb0cf774f80f1d0410bc6c413825fa65dba297e33cfe770",
+      "bytes": 12345
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v6-candidate-af-up.png",
+      "sha256": "116e0f121cfd8cc456aa3de06d610d29644c7593816af7d827e803564c582105",
+      "bytes": 12345
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v6-candidate-back-shoot.png",
+      "sha256": "0b352310bea2c0b58dd3f30b6ae0399d05acded95ac3d94404d6329197d58629",
+      "bytes": 15350
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v6-candidate-base.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v6-candidate-e-ok.png",
+      "sha256": "bf4c0924a4adccaca1727a314e576e9f12956e21da825d246fa5d41f53de3e75",
+      "bytes": 16421
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v6-candidate-e-open.png",
+      "sha256": "703c942b0cac9e409760ecc29b77493894c26ff1dd91c2b2474d9761c7d0d263",
+      "bytes": 4986
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v6-candidate-e-up.png",
+      "sha256": "79116a608feaa84f3a32a5ab6a73b1af99a4c5f292bb3fda4d32a24a339628d6",
+      "bytes": 4986
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v6-candidate-enter-exif6.png",
+      "sha256": "b662691b2da9aae27e0f88a23425ca0fe3a333cdb85e72ac25ab7bd5a0dbf1fb",
+      "bytes": 13281
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v6-candidate-enter-land.png",
+      "sha256": "be761c643f200cdcc700e67cb0aa972f0d7d17d46d382635b9e75c98ec16847b",
+      "bytes": 12469
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v6-candidate-l-af-down.png",
+      "sha256": "bf4c0924a4adccaca1727a314e576e9f12956e21da825d246fa5d41f53de3e75",
+      "bytes": 16421
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v6-candidate-l-af-up.png",
+      "sha256": "be761c643f200cdcc700e67cb0aa972f0d7d17d46d382635b9e75c98ec16847b",
+      "bytes": 12469
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v6-candidate-n-ok.png",
+      "sha256": "dfbc31fa183d198e6c96264c11b6bd01a980b511d9608dcf283461ba71e12d11",
+      "bytes": 16430
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v6-candidate-n-open.png",
+      "sha256": "703c942b0cac9e409760ecc29b77493894c26ff1dd91c2b2474d9761c7d0d263",
+      "bytes": 4986
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v6-candidate-n-s1-down.png",
+      "sha256": "dfbc31fa183d198e6c96264c11b6bd01a980b511d9608dcf283461ba71e12d11",
+      "bytes": 16430
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v6-candidate-n-s1-up.png",
+      "sha256": "dfbc31fa183d198e6c96264c11b6bd01a980b511d9608dcf283461ba71e12d11",
+      "bytes": 16430
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v6-candidate-n-up.png",
+      "sha256": "79116a608feaa84f3a32a5ab6a73b1af99a4c5f292bb3fda4d32a24a339628d6",
+      "bytes": 4986
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v6-candidate-p-af-down.png",
+      "sha256": "f29e503e88ac6c42974ab698b750d348a2b2e5cd50ed3d1cc5bc46f2cf9bfd69",
+      "bytes": 15478
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v6-candidate-p-af-up.png",
+      "sha256": "f29e503e88ac6c42974ab698b750d348a2b2e5cd50ed3d1cc5bc46f2cf9bfd69",
+      "bytes": 15478
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v6-candidate-p-menu.png",
+      "sha256": "542ed40b758684c43091a6fd9b1f1634cf1e5084f6cfa9a93c3cbeda0cec9715",
+      "bytes": 14163
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v6-candidate-p-up.png",
+      "sha256": "703c942b0cac9e409760ecc29b77493894c26ff1dd91c2b2474d9761c7d0d263",
+      "bytes": 4986
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v6-candidate-pose-after-edit.png",
+      "sha256": "bf4c0924a4adccaca1727a314e576e9f12956e21da825d246fa5d41f53de3e75",
+      "bytes": 16421
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v6-candidate-pose-exif6.png",
+      "sha256": "116e0f121cfd8cc456aa3de06d610d29644c7593816af7d827e803564c582105",
+      "bytes": 12345
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v6-candidate-pose-land.png",
+      "sha256": "f29e503e88ac6c42974ab698b750d348a2b2e5cd50ed3d1cc5bc46f2cf9bfd69",
+      "bytes": 15478
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v6-candidate-pre-l-s1-down.png",
+      "sha256": "bf4c0924a4adccaca1727a314e576e9f12956e21da825d246fa5d41f53de3e75",
+      "bytes": 16421
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v6-candidate-pre-l-s1-up.png",
+      "sha256": "f29e503e88ac6c42974ab698b750d348a2b2e5cd50ed3d1cc5bc46f2cf9bfd69",
+      "bytes": 15478
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v6-candidate-pre-p-s1-down.png",
+      "sha256": "bf4c0924a4adccaca1727a314e576e9f12956e21da825d246fa5d41f53de3e75",
+      "bytes": 16421
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v6-candidate-pre-p-s1-up.png",
+      "sha256": "f29e503e88ac6c42974ab698b750d348a2b2e5cd50ed3d1cc5bc46f2cf9bfd69",
+      "bytes": 15478
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v6-candidate-pre-s1-down.png",
+      "sha256": "bf4c0924a4adccaca1727a314e576e9f12956e21da825d246fa5d41f53de3e75",
+      "bytes": 16421
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v6-candidate-pre-s1-up.png",
+      "sha256": "f29e503e88ac6c42974ab698b750d348a2b2e5cd50ed3d1cc5bc46f2cf9bfd69",
+      "bytes": 15478
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v6-k1e-back-shoot.png",
+      "sha256": "4fa68cdfa644bdb0ffadb558b7c0d340cccac12f4ccfa0c80b6ff4f6924adf63",
+      "bytes": 16430
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v6-k1e-base.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v6-k1e-e-ok.png",
+      "sha256": "dfbc31fa183d198e6c96264c11b6bd01a980b511d9608dcf283461ba71e12d11",
+      "bytes": 16430
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v6-k1e-e-open.png",
+      "sha256": "703c942b0cac9e409760ecc29b77493894c26ff1dd91c2b2474d9761c7d0d263",
+      "bytes": 4986
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v6-k1e-e-up.png",
+      "sha256": "79116a608feaa84f3a32a5ab6a73b1af99a4c5f292bb3fda4d32a24a339628d6",
+      "bytes": 4986
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v6-k1e-ke-p-s1-down.png",
+      "sha256": "c9d045e210cf3ea5af90d3aa42afe1243234c834d96ab3219c0d5ef236e29d28",
+      "bytes": 12166
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v6-k1e-ke-p-s1-up.png",
+      "sha256": "8ee2b298292c9fc4ed72ab50515dcf0ef898f23ee831c6e2265921431542cf63",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v6-k1e-ke-s1-down.png",
+      "sha256": "1f0c631ba86742724541ecde4df7196e336e6dbf50cb2b21b92f24057646848a",
+      "bytes": 15486
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v6-k1e-ke-s1-up.png",
+      "sha256": "dfbc31fa183d198e6c96264c11b6bd01a980b511d9608dcf283461ba71e12d11",
+      "bytes": 16430
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v6-k1e-p-menu.png",
+      "sha256": "542ed40b758684c43091a6fd9b1f1634cf1e5084f6cfa9a93c3cbeda0cec9715",
+      "bytes": 14163
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v6-k1e-p-up.png",
+      "sha256": "703c942b0cac9e409760ecc29b77493894c26ff1dd91c2b2474d9761c7d0d263",
+      "bytes": 4986
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v6-k1e-pose-exif6.png",
+      "sha256": "f29e503e88ac6c42974ab698b750d348a2b2e5cd50ed3d1cc5bc46f2cf9bfd69",
+      "bytes": 15478
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v6-k2-base.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v6-k2-k2-af-down.png",
+      "sha256": "02c5a7eac3e923b9d19b0ccf13a526e391841fb6cb6d7c05cef51c98c0cf2c73",
+      "bytes": 13281
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v6-k2-k2-af-up.png",
+      "sha256": "02c5a7eac3e923b9d19b0ccf13a526e391841fb6cb6d7c05cef51c98c0cf2c73",
+      "bytes": 13281
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v6-k2-k2-l-af-down.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v6-k2-k2-l-af-up.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v6-k2-k2-p-af-down.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v6-k2-k2-p-af-up.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v6-k2-n-ok.png",
+      "sha256": "1f0c631ba86742724541ecde4df7196e336e6dbf50cb2b21b92f24057646848a",
+      "bytes": 15486
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v6-k2-n-open.png",
+      "sha256": "703c942b0cac9e409760ecc29b77493894c26ff1dd91c2b2474d9761c7d0d263",
+      "bytes": 4986
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v6-k2-n-s1-down.png",
+      "sha256": "1f0c631ba86742724541ecde4df7196e336e6dbf50cb2b21b92f24057646848a",
+      "bytes": 15486
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v6-k2-n-s1-up.png",
+      "sha256": "1f0c631ba86742724541ecde4df7196e336e6dbf50cb2b21b92f24057646848a",
+      "bytes": 15486
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v6-k2-n-up.png",
+      "sha256": "79116a608feaa84f3a32a5ab6a73b1af99a4c5f292bb3fda4d32a24a339628d6",
+      "bytes": 4986
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v6-k2-pose-after-edit.png",
+      "sha256": "f29e503e88ac6c42974ab698b750d348a2b2e5cd50ed3d1cc5bc46f2cf9bfd69",
+      "bytes": 15478
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v6-k2-pose-exif6.png",
+      "sha256": "02c5a7eac3e923b9d19b0ccf13a526e391841fb6cb6d7c05cef51c98c0cf2c73",
+      "bytes": 13281
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v6-k2-pose-land.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v6-k2-pre-l-s1-down.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v6-k2-pre-l-s1-up.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v6-k2-pre-p-s1-down.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v6-k2-pre-p-s1-up.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v6-k2-pre-s1-down.png",
+      "sha256": "be761c643f200cdcc700e67cb0aa972f0d7d17d46d382635b9e75c98ec16847b",
+      "bytes": 12469
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v6-k2-pre-s1-up.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v6-zone-k1e.json",
+      "sha256": "cb1aafbc54b78955184d64239eb3b1c4d5212f9c81519e9e136757f2e45fff50",
+      "bytes": 13352
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v6.json",
+      "sha256": "c5298796aaa5010c9f873cec7c5ee065553523a84dccdd5c562ff810612564a9",
+      "bytes": 4682
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v6.jsonl",
+      "sha256": "338f8d1413e608b5dd84c52c2d610984866b86ec225ea5277ea9de8a34e6df21",
+      "bytes": 319589
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/identity-t11-v6.seal.json",
+      "sha256": "515a7f2c654e8e38dd71c6cddcd6dc3ed400b198da6100cf6f86e5d72a387036",
+      "bytes": 143
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/inventory-accept-t11-v1-exit.json",
+      "sha256": "ac09b6e9a61c1bedf650cc0872390f1e4f115e851a4a3803d37ca92889b32066",
+      "bytes": 32749
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/inventory-accept-t11-v1-meta.json",
+      "sha256": "f71603755f998fd2bde0c821d06fde500b775eec2d5807c983f704a061789dc9",
+      "bytes": 401
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/inventory-accept-t11-v1.jsonl",
+      "sha256": "2041410a210e19cc1c5d943c6d740b94fab8cfc0921d8a09db3bdb6162815e68",
+      "bytes": 30508
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/inventory-identity-t11-v1-exit.json",
+      "sha256": "b5bb3f2d5654bcaa0e69e4e83a5703a54278057aea10f287db8efd05cc6a5943",
+      "bytes": 32965
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/inventory-identity-t11-v1-meta.json",
+      "sha256": "fd04b88dc40389b7ce52a0f5fd462e3b44a929f334b0e08f7a9f02ec0e67381d",
+      "bytes": 405
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/inventory-identity-t11-v1.jsonl",
+      "sha256": "49ee531b3c7329e71b17d1e50649bd4e6c2139be55b9cd7b88b5b7c4c3491b2a",
+      "bytes": 30705
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/inventory-identity-t11-v2-exit.json",
+      "sha256": "c65600f6821c0d0c4d1bff452a57cb8198ef03cd3eb68e88a68086387a70adcf",
+      "bytes": 32965
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/inventory-identity-t11-v2-meta.json",
+      "sha256": "0e8d524c924afe4985e515baf4656b6436303b5185874b67530a137fc57c6774",
+      "bytes": 405
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/inventory-identity-t11-v2.jsonl",
+      "sha256": "78c1aa0f82ab09c53756bd0d9616c2e9a6624c77dc92fe2fa915cbabcbe8f0f1",
+      "bytes": 30705
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/inventory-identity-t11-v3-exit.json",
+      "sha256": "0f9bffc02a0c7b259b9d09045460d562bc1cabb253bab3c80f27382de4405b0e",
+      "bytes": 32965
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/inventory-identity-t11-v3-meta.json",
+      "sha256": "2878a22112d4265a5405dca3c62098bd1cc56db7c21f7eb25ec66db9acea5121",
+      "bytes": 405
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/inventory-identity-t11-v3.jsonl",
+      "sha256": "a55d671aef59d87e5fca177bb9c3cf472b7306a9df626f74da571fab5f3360d9",
+      "bytes": 30705
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/inventory-identity-t11-v4-exit.json",
+      "sha256": "7e93e785387f584c319708e291ecacc4fbfc9453440818e39ffaa911d3a59244",
+      "bytes": 32965
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/inventory-identity-t11-v4-meta.json",
+      "sha256": "fd6930076b083993ef74cdcc5d213a36568f1df19412b88112e1ce517c688971",
+      "bytes": 405
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/inventory-identity-t11-v4.jsonl",
+      "sha256": "066f05f1cc56762f2ded32073f62bf232303a04cd5dd2dec3bd1b5eb0d129c6a",
+      "bytes": 30705
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/inventory-identity-t11-v5-exit.json",
+      "sha256": "5b96d5a60f2e4cf988d881879b3fa258809b496953e709646dcbb2749f7e4adb",
+      "bytes": 32966
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/inventory-identity-t11-v5-meta.json",
+      "sha256": "26730873005ce09e6048b8352fcbb05f99463a2886434f22b34a46ff97eacd92",
+      "bytes": 405
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/inventory-identity-t11-v5.jsonl",
+      "sha256": "c894408b6d07da04150557813a80fbdbe95e731d87c705917b8f0167d0b67929",
+      "bytes": 30706
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/inventory-unit-inventory-exit.json",
+      "sha256": "ad93023990c1706c23d0398fef139bf64d7afe950f279c96801c8c0d7bfffbbb",
+      "bytes": 734
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/inventory-unit-inventory-meta.json",
+      "sha256": "28af8d3bbb73d8c172d9c0f88b18e043d1cb28b518875522ce1a0a4b83aee404",
+      "bytes": 402
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/inventory-unit-inventory.jsonl",
+      "sha256": "af169b40cc6e2b75b17697589c0d77c0ee1cb8520caa5f8f956843d55799e841",
+      "bytes": 216
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/nvram-identity-t11-v1-candidate.json",
+      "sha256": "8290aee9c3b2fd71e371d7df87728399a4d06c1a44299f3131b97a2dc65c79d4",
+      "bytes": 611826
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/nvram-identity-t11-v1-k1e.json",
+      "sha256": "20ef7537f7a33ad5c0aa4b236b842dd60901b79d4963fe48ab9fc3496d4e9e93",
+      "bytes": 611828
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/nvram-identity-t11-v1-k2.json",
+      "sha256": "8290aee9c3b2fd71e371d7df87728399a4d06c1a44299f3131b97a2dc65c79d4",
+      "bytes": 611826
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/nvram-identity-t11-v2-candidate.json",
+      "sha256": "ada2c916cbbdcb1fb411dc90ebbd85df5bbf946c18cf08f695c815ea3d2ea071",
+      "bytes": 611828
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/nvram-identity-t11-v2-k1e.json",
+      "sha256": "20ef7537f7a33ad5c0aa4b236b842dd60901b79d4963fe48ab9fc3496d4e9e93",
+      "bytes": 611828
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/nvram-identity-t11-v2-k2.json",
+      "sha256": "8290aee9c3b2fd71e371d7df87728399a4d06c1a44299f3131b97a2dc65c79d4",
+      "bytes": 611826
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/nvram-identity-t11-v3-candidate.json",
+      "sha256": "8290aee9c3b2fd71e371d7df87728399a4d06c1a44299f3131b97a2dc65c79d4",
+      "bytes": 611826
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/nvram-identity-t11-v3-k1e.json",
+      "sha256": "20ef7537f7a33ad5c0aa4b236b842dd60901b79d4963fe48ab9fc3496d4e9e93",
+      "bytes": 611828
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/nvram-identity-t11-v3-k2.json",
+      "sha256": "8290aee9c3b2fd71e371d7df87728399a4d06c1a44299f3131b97a2dc65c79d4",
+      "bytes": 611826
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/nvram-identity-t11-v4-candidate.json",
+      "sha256": "ada2c916cbbdcb1fb411dc90ebbd85df5bbf946c18cf08f695c815ea3d2ea071",
+      "bytes": 611828
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/nvram-identity-t11-v4-k1e.json",
+      "sha256": "20ef7537f7a33ad5c0aa4b236b842dd60901b79d4963fe48ab9fc3496d4e9e93",
+      "bytes": 611828
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/nvram-identity-t11-v4-k2.json",
+      "sha256": "8290aee9c3b2fd71e371d7df87728399a4d06c1a44299f3131b97a2dc65c79d4",
+      "bytes": 611826
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/nvram-identity-t11-v5-candidate.json",
+      "sha256": "ada2c916cbbdcb1fb411dc90ebbd85df5bbf946c18cf08f695c815ea3d2ea071",
+      "bytes": 611828
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/nvram-identity-t11-v5-k1e.json",
+      "sha256": "20ef7537f7a33ad5c0aa4b236b842dd60901b79d4963fe48ab9fc3496d4e9e93",
+      "bytes": 611828
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/nvram-identity-t11-v5-k2.json",
+      "sha256": "8290aee9c3b2fd71e371d7df87728399a4d06c1a44299f3131b97a2dc65c79d4",
+      "bytes": 611826
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/nvram-identity-t11-v5-zcand.json",
+      "sha256": "8290aee9c3b2fd71e371d7df87728399a4d06c1a44299f3131b97a2dc65c79d4",
+      "bytes": 611826
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/nvram-identity-t11-v5-zk1e.json",
+      "sha256": "8290aee9c3b2fd71e371d7df87728399a4d06c1a44299f3131b97a2dc65c79d4",
+      "bytes": 611826
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/nvram-identity-t11-v6-candidate.json",
+      "sha256": "ada2c916cbbdcb1fb411dc90ebbd85df5bbf946c18cf08f695c815ea3d2ea071",
+      "bytes": 611828
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/nvram-identity-t11-v6-k1e.json",
+      "sha256": "20ef7537f7a33ad5c0aa4b236b842dd60901b79d4963fe48ab9fc3496d4e9e93",
+      "bytes": 611828
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/nvram-identity-t11-v6-k2.json",
+      "sha256": "8290aee9c3b2fd71e371d7df87728399a4d06c1a44299f3131b97a2dc65c79d4",
+      "bytes": 611826
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/nvram-identity-t11-v6-zcand.json",
+      "sha256": "8290aee9c3b2fd71e371d7df87728399a4d06c1a44299f3131b97a2dc65c79d4",
+      "bytes": 611826
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/nvram-identity-t11-v6-zk1e.json",
+      "sha256": "8290aee9c3b2fd71e371d7df87728399a4d06c1a44299f3131b97a2dc65c79d4",
+      "bytes": 611826
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/nvram-proof-t11-v1-candidate.json",
+      "sha256": "8290aee9c3b2fd71e371d7df87728399a4d06c1a44299f3131b97a2dc65c79d4",
+      "bytes": 611826
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/nvram-proof-t11-v1-k1e.json",
+      "sha256": "20ef7537f7a33ad5c0aa4b236b842dd60901b79d4963fe48ab9fc3496d4e9e93",
+      "bytes": 611828
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/nvram-proof-t11-v1-k2.json",
+      "sha256": "8290aee9c3b2fd71e371d7df87728399a4d06c1a44299f3131b97a2dc65c79d4",
+      "bytes": 611826
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/proof-t11-v1-candidate-base.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/proof-t11-v1-candidate-e-ok.png",
+      "sha256": "bf4c0924a4adccaca1727a314e576e9f12956e21da825d246fa5d41f53de3e75",
+      "bytes": 16421
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/proof-t11-v1-candidate-e-open.png",
+      "sha256": "703c942b0cac9e409760ecc29b77493894c26ff1dd91c2b2474d9761c7d0d263",
+      "bytes": 4986
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/proof-t11-v1-candidate-e-up.png",
+      "sha256": "79116a608feaa84f3a32a5ab6a73b1af99a4c5f292bb3fda4d32a24a339628d6",
+      "bytes": 4986
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/proof-t11-v1-candidate-enter-land.png",
+      "sha256": "be761c643f200cdcc700e67cb0aa972f0d7d17d46d382635b9e75c98ec16847b",
+      "bytes": 12469
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/proof-t11-v1-candidate-pre-s1-down.png",
+      "sha256": "bf4c0924a4adccaca1727a314e576e9f12956e21da825d246fa5d41f53de3e75",
+      "bytes": 16421
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/proof-t11-v1-candidate-pre-s1-up.png",
+      "sha256": "f29e503e88ac6c42974ab698b750d348a2b2e5cd50ed3d1cc5bc46f2cf9bfd69",
+      "bytes": 15478
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/proof-t11-v1-k1e-back-shoot.png",
+      "sha256": "4fa68cdfa644bdb0ffadb558b7c0d340cccac12f4ccfa0c80b6ff4f6924adf63",
+      "bytes": 16430
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/proof-t11-v1-k1e-base.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/proof-t11-v1-k1e-e-ok.png",
+      "sha256": "dfbc31fa183d198e6c96264c11b6bd01a980b511d9608dcf283461ba71e12d11",
+      "bytes": 16430
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/proof-t11-v1-k1e-e-open.png",
+      "sha256": "703c942b0cac9e409760ecc29b77493894c26ff1dd91c2b2474d9761c7d0d263",
+      "bytes": 4986
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/proof-t11-v1-k1e-e-up.png",
+      "sha256": "79116a608feaa84f3a32a5ab6a73b1af99a4c5f292bb3fda4d32a24a339628d6",
+      "bytes": 4986
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/proof-t11-v1-k1e-ke-p-s1-down.png",
+      "sha256": "c9d045e210cf3ea5af90d3aa42afe1243234c834d96ab3219c0d5ef236e29d28",
+      "bytes": 12166
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/proof-t11-v1-k1e-ke-p-s1-up.png",
+      "sha256": "8ee2b298292c9fc4ed72ab50515dcf0ef898f23ee831c6e2265921431542cf63",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/proof-t11-v1-k1e-ke-s1-down.png",
+      "sha256": "1f0c631ba86742724541ecde4df7196e336e6dbf50cb2b21b92f24057646848a",
+      "bytes": 15486
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/proof-t11-v1-k1e-ke-s1-up.png",
+      "sha256": "dfbc31fa183d198e6c96264c11b6bd01a980b511d9608dcf283461ba71e12d11",
+      "bytes": 16430
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/proof-t11-v1-k1e-p-menu.png",
+      "sha256": "542ed40b758684c43091a6fd9b1f1634cf1e5084f6cfa9a93c3cbeda0cec9715",
+      "bytes": 14163
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/proof-t11-v1-k1e-p-up.png",
+      "sha256": "703c942b0cac9e409760ecc29b77493894c26ff1dd91c2b2474d9761c7d0d263",
+      "bytes": 4986
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/proof-t11-v1-k1e-pose-exif6.png",
+      "sha256": "f29e503e88ac6c42974ab698b750d348a2b2e5cd50ed3d1cc5bc46f2cf9bfd69",
+      "bytes": 15478
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/proof-t11-v1-k2-base.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/proof-t11-v1-k2-k2-af-down.png",
+      "sha256": "02c5a7eac3e923b9d19b0ccf13a526e391841fb6cb6d7c05cef51c98c0cf2c73",
+      "bytes": 13281
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/proof-t11-v1-k2-k2-af-up.png",
+      "sha256": "02c5a7eac3e923b9d19b0ccf13a526e391841fb6cb6d7c05cef51c98c0cf2c73",
+      "bytes": 13281
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/proof-t11-v1-k2-k2-l-af-down.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/proof-t11-v1-k2-k2-l-af-up.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/proof-t11-v1-k2-k2-p-af-down.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/proof-t11-v1-k2-k2-p-af-up.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/proof-t11-v1-k2-n-ok.png",
+      "sha256": "1f0c631ba86742724541ecde4df7196e336e6dbf50cb2b21b92f24057646848a",
+      "bytes": 15486
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/proof-t11-v1-k2-n-open.png",
+      "sha256": "703c942b0cac9e409760ecc29b77493894c26ff1dd91c2b2474d9761c7d0d263",
+      "bytes": 4986
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/proof-t11-v1-k2-n-s1-down.png",
+      "sha256": "1f0c631ba86742724541ecde4df7196e336e6dbf50cb2b21b92f24057646848a",
+      "bytes": 15486
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/proof-t11-v1-k2-n-s1-up.png",
+      "sha256": "1f0c631ba86742724541ecde4df7196e336e6dbf50cb2b21b92f24057646848a",
+      "bytes": 15486
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/proof-t11-v1-k2-n-up.png",
+      "sha256": "79116a608feaa84f3a32a5ab6a73b1af99a4c5f292bb3fda4d32a24a339628d6",
+      "bytes": 4986
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/proof-t11-v1-k2-pose-after-edit.png",
+      "sha256": "f29e503e88ac6c42974ab698b750d348a2b2e5cd50ed3d1cc5bc46f2cf9bfd69",
+      "bytes": 15478
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/proof-t11-v1-k2-pose-exif6.png",
+      "sha256": "02c5a7eac3e923b9d19b0ccf13a526e391841fb6cb6d7c05cef51c98c0cf2c73",
+      "bytes": 13281
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/proof-t11-v1-k2-pose-land.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/proof-t11-v1-k2-pre-l-s1-down.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/proof-t11-v1-k2-pre-l-s1-up.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/proof-t11-v1-k2-pre-p-s1-down.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/proof-t11-v1-k2-pre-p-s1-up.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/proof-t11-v1-k2-pre-s1-down.png",
+      "sha256": "be761c643f200cdcc700e67cb0aa972f0d7d17d46d382635b9e75c98ec16847b",
+      "bytes": 12469
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/proof-t11-v1-k2-pre-s1-up.png",
+      "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6",
+      "bytes": 13406
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/proof-t11-v1.jsonl",
+      "sha256": "5f6c8eb2b57350ac7a9db0f6fe00aa4922708f82a208db936c2fbb71c83e78eb",
+      "bytes": 208610
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/proof-table-t11-v1.json",
+      "sha256": "3f48d89281fb964fe7fa48aeb1f0030d846c72010845b57d6795bc1b16ed3407",
+      "bytes": 90459
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/session-identity-t11-v1-candidate.jsonl",
+      "sha256": "4f47d793b998ec2b5f2907141863864360f9445ee7a4458dfe6df3f78d550568",
+      "bytes": 6709
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/session-identity-t11-v1-k1e.jsonl",
+      "sha256": "1c9afc2068fd89a49280e4bf84b6218489fbbc3b37cde9761578fa007402defe",
+      "bytes": 5553
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/session-identity-t11-v1-k2.jsonl",
+      "sha256": "ef7550307416c0790bc921189b2f1bb313a63ea80a87bb3e2be67148bfd11aa9",
+      "bytes": 5847
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/session-identity-t11-v2-candidate.jsonl",
+      "sha256": "9cf86bab87765cb2ca5ad307dc01a21e5a37f901b145c0da5f9ef06ce5462a3f",
+      "bytes": 8584
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/session-identity-t11-v2-k1e.jsonl",
+      "sha256": "3799804bc13003ed85ffd79c6802524378cd3aee388fc879fc2e5fd28b39cd8f",
+      "bytes": 5553
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/session-identity-t11-v2-k2.jsonl",
+      "sha256": "e38a2612e6e3891957c6e17f5cee63a14e734d58b594c7f5ab08f79166f364fb",
+      "bytes": 5847
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/session-identity-t11-v3-candidate.jsonl",
+      "sha256": "d2ec17c189e8f9285b374d84de45220b3cb20bc1a01ae152ae49cc2c8209ccd4",
+      "bytes": 6263
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/session-identity-t11-v3-k1e.jsonl",
+      "sha256": "fd8516e49c97fb1fd71aa09a366d740e7944752bc3e2225201114226421ca5e3",
+      "bytes": 5553
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/session-identity-t11-v3-k2.jsonl",
+      "sha256": "d090a48f7677d1255f9f962c40a91d8d7080088c0f21ff05791c7a26a6aa783f",
+      "bytes": 5847
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/session-identity-t11-v4-candidate.jsonl",
+      "sha256": "0fdec9f7f79c5872a51f803212afcbf320ae03f17e8ab406ee430d1a45b401f9",
+      "bytes": 8589
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/session-identity-t11-v4-k1e.jsonl",
+      "sha256": "dc33d58df9b3bf36acc163a14ce2e3e028c198a8c39aabd89186eab1caf0325c",
+      "bytes": 5553
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/session-identity-t11-v4-k2.jsonl",
+      "sha256": "93ec68c52ef9190c1ab1a84843d2a43a2293c137cdc92f66f241a111e5890005",
+      "bytes": 5847
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/session-identity-t11-v5-candidate.jsonl",
+      "sha256": "f310f1ff95919f7b9ae5245edf75826f31a0cd49b113d342a910462572d3a326",
+      "bytes": 8022
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/session-identity-t11-v5-k1e.jsonl",
+      "sha256": "f1d6d0952e8ebec027b10ad50578bbc562f2ebf54c552edcf9e43cf40e462e33",
+      "bytes": 5553
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/session-identity-t11-v5-k2.jsonl",
+      "sha256": "ebc975c75009eec19af3785caa8b530fec64ca502b516238f04a0de89257e263",
+      "bytes": 5847
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/session-identity-t11-v5-zcand.jsonl",
+      "sha256": "b9af1cc52e06843a6a579a7678b3117ff751bd91d1bd4d55e464e3cfdce78ec1",
+      "bytes": 7969
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/session-identity-t11-v5-zk1e.jsonl",
+      "sha256": "5c0f56ba8d6dc7d207aff834961cf3b68cb843066c125b2227cae39410347752",
+      "bytes": 5212
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/session-identity-t11-v6-candidate.jsonl",
+      "sha256": "ce4cdeae8b5d67c7ffbb1aec1cd7771e58c3ed86e857380e2c61feabacda1b27",
+      "bytes": 8022
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/session-identity-t11-v6-k1e.jsonl",
+      "sha256": "52ce75818368b603c30af70a1b1d9d2b9973783f18dccb64a7f14abe1718b4f2",
+      "bytes": 5553
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/session-identity-t11-v6-k2.jsonl",
+      "sha256": "4dc8369bf830aeb7ac59fa477315248832d80f340f1ba81e9b8d2624e5349c29",
+      "bytes": 5847
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/session-identity-t11-v6-zcand.jsonl",
+      "sha256": "a00e0a1a7ce30d20a5c77ff9c9e6d4779fd1c854e09d0c117b716e0c70bf721f",
+      "bytes": 7310
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/session-identity-t11-v6-zk1e.jsonl",
+      "sha256": "3d01b19d0d645f6c60d589daeda03e7a681b8108eaa874ec8d28bda4eaf832f1",
+      "bytes": 5212
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/session-proof-t11-v1-candidate.jsonl",
+      "sha256": "e629872f4b3bb2bbbf7f3649119f3ef1431e9f0206a3a70a47ebce6f9ad68628",
+      "bytes": 6379
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/session-proof-t11-v1-k1e.jsonl",
+      "sha256": "8fd30cefd759bc01749cbd9139c7ea9e095c5779a4566c41a128b550dcdbbf39",
+      "bytes": 5520
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/session-proof-t11-v1-k2.jsonl",
+      "sha256": "7b516ae64ef09969bf03b323c1e8e4a98fd39764e2bbde48333dc5a7407421b2",
+      "bytes": 5808
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/table-check-t11-v1.json",
+      "sha256": "d5741a32018a5dfc33b6ae141a9c5d6c3300bd29a4dfd19068e71d2b9bd03a99",
+      "bytes": 50
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/out/unit-G8VH4r/fixture.mjs",
+      "sha256": "115882c72725abf263713a5c90ed115d43ac66fa6026ebab3b019ae3fda16998",
+      "bytes": 20
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/result.md",
+      "sha256": "7d57290981d4d577f45e367afc5c9d20e6b0e1e3352534baf0f2addfe70b6e97",
+      "bytes": 8663
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/scripts/build_manifest_v1.mjs",
+      "sha256": "c7e3a4af21660a0ca99ff0fedbe4c3c140096476f11b9f973fd5bc03921b1e87",
+      "bytes": 3482
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/scripts/peek_flag_v1.mjs",
+      "sha256": "a09649a77955d5157037758988e107a10d77eab944b49f8fd6d379f3c758915a",
+      "bytes": 557
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/scripts/peek_half_v1.mjs",
+      "sha256": "e971fefa3f0f48c9b0952b1fca3ade8059b629244504768cb406577d5ff6b237",
+      "bytes": 520
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/scripts/peek_mirror_v1.mjs",
+      "sha256": "879e22ed9cc0bbb1bf5760e7d8ba7685242da30427e68a9369c3f3e925c1c3c4",
+      "bytes": 527
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/scripts/run_accept_v1.mjs",
+      "sha256": "300e2377363c3a8269fc5d5a2af2ec0f8aa5950567c667cd5feb9b9f599ee971",
+      "bytes": 2338
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/scripts/run_display_v1.mjs",
+      "sha256": "a34c691c5952ddb8fb94d456114439cad711354585e9dc7910e834e1a5080af6",
+      "bytes": 957
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/scripts/run_identity_v1.mjs",
+      "sha256": "e9cbfa40b033e5859bb5cf45e6712786306514bb711610602421510fded05849",
+      "bytes": 1157
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/scripts/run_identity_v2.mjs",
+      "sha256": "6ef03a1439b02f972299beb064fa0d3f12667b879d4e49eb70d914a329a5b730",
+      "bytes": 1157
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/scripts/run_identity_v3.mjs",
+      "sha256": "f1727c00efa5b3bc0bfc710e2231bad7066f1a843caa8f7bb4094ec7bb3ddf86",
+      "bytes": 1157
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/scripts/run_identity_v4.mjs",
+      "sha256": "e0054b96ec46da7f9b718bb6b30c953de1768ff95a32b7f052a4e84646206c65",
+      "bytes": 1157
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/scripts/run_identity_v5.mjs",
+      "sha256": "2cf6ecff3545f6decb7a4adaa291068268676cce8207b8563a0cf15d196c31dc",
+      "bytes": 1157
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/scripts/run_proof_v1.mjs",
+      "sha256": "5d0a35cb0ad80a04e9ac5b7b5853e3d770965f27bf82c4d42b2abbfbc53a8bad",
+      "bytes": 1353
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/scripts/seal_identity_v1.mjs",
+      "sha256": "130268d9ff45867dc1efaa5844f93ef67201a9fcd1b9695f26d3580be7a40eea",
+      "bytes": 717
+    }
+  ],
+  "commands": [
+    {
+      "tag": "accept-t11-v1",
+      "argv": [
+        "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe",
+        "C:\\Dev\\OM3-tasks\\T11-afon-acceptance-harness\\ws\\work\\scripts\\run_accept_v1.mjs"
+      ],
+      "env": {
+        "OM_EMU_MODEL": "E147",
+        "OM_EMU_NVRAM": "off"
+      },
+      "started": "2026-11-20T03:16:53.018Z"
+    },
+    {
+      "tag": "identity-t11-v1",
+      "argv": [
+        "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe",
+        "C:\\Dev\\OM3-tasks\\T11-afon-acceptance-harness\\ws\\work\\scripts\\run_identity_v1.mjs"
+      ],
+      "env": {
+        "OM_EMU_MODEL": "E147",
+        "OM_EMU_NVRAM": "off"
+      },
+      "started": "2026-11-20T02:56:54.845Z"
+    },
+    {
+      "tag": "identity-t11-v2",
+      "argv": [
+        "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe",
+        "C:\\Dev\\OM3-tasks\\T11-afon-acceptance-harness\\ws\\work\\scripts\\run_identity_v2.mjs"
+      ],
+      "env": {
+        "OM_EMU_MODEL": "E147",
+        "OM_EMU_NVRAM": "off"
+      },
+      "started": "2026-11-20T02:59:28.330Z"
+    },
+    {
+      "tag": "identity-t11-v3",
+      "argv": [
+        "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe",
+        "C:\\Dev\\OM3-tasks\\T11-afon-acceptance-harness\\ws\\work\\scripts\\run_identity_v3.mjs"
+      ],
+      "env": {
+        "OM_EMU_MODEL": "E147",
+        "OM_EMU_NVRAM": "off"
+      },
+      "started": "2026-11-20T03:03:30.188Z"
+    },
+    {
+      "tag": "identity-t11-v4",
+      "argv": [
+        "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe",
+        "C:\\Dev\\OM3-tasks\\T11-afon-acceptance-harness\\ws\\work\\scripts\\run_identity_v4.mjs"
+      ],
+      "env": {
+        "OM_EMU_MODEL": "E147",
+        "OM_EMU_NVRAM": "off"
+      },
+      "started": "2026-11-20T03:08:31.950Z"
+    },
+    {
+      "tag": "identity-t11-v5",
+      "argv": [
+        "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe",
+        "C:\\Dev\\OM3-tasks\\T11-afon-acceptance-harness\\ws\\work\\scripts\\run_identity_v5.mjs"
+      ],
+      "env": {
+        "OM_EMU_MODEL": "E147",
+        "OM_EMU_NVRAM": "off"
+      },
+      "started": "2026-11-20T03:11:44.355Z"
+    },
+    {
+      "tag": "unit-inventory",
+      "argv": [
+        "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe",
+        "C:\\Dev\\OM3-tasks\\T11-afon-acceptance-harness\\ws\\work\\harness\\test_harness_v1.mjs"
+      ],
+      "env": {
+        "OM_EMU_MODEL": null,
+        "OM_EMU_NVRAM": "off"
+      },
+      "started": "2026-11-20T02:55:57.376Z"
+    },
+    {
+      "tag": "pure-node",
+      "argv": [
+        "node26 work/harness/table_v1.mjs",
+        "node26 work/harness/check_table_v1.mjs work/out/proof-table-t11-v1.json work/out/table-check-t11-v1.json",
+        "node26 work/harness/test_harness_v1.mjs",
+        "node26 work/scripts/build_manifest_v1.mjs"
+      ]
+    }
+  ],
+  "tool_versions": {
+    "node": "v26.12.1",
+    "execPath": "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe"
+  }
+}

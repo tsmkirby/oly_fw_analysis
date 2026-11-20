@@ -28,3 +28,11 @@
 
 Recompute every manifest hash. Use PowerShell (Python is not on your PATH). Do not run Ghidra or OM-Emu.
 Give the verdict in the structure of `templates\review.md`.
+
+## Correction round
+
+Also read `brief.md` §6 and your previous review in `audit\previous-review.md`. For each §6 item, report DONE /
+NOT DONE / WRONG / BLOCKED (honestly reported). Check in particular that assertions are compared inside the gate
+after every individual operation, the identity completeness check ran before acceptance, the pose predicate reads
+nothing the runner sets, the inventory is registered before task imports and fails closed, the refresh recorder
+keeps every call and return, and the T8d and display proofs end `ok:true` within five new versions.

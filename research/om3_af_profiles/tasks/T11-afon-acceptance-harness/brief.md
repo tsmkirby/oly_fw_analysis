@@ -64,3 +64,41 @@ scheduling producer) forward unchanged.
 ## 5. Out of scope
 
 Persistence (next task, on this harness, with codec v2), Subject Detect On, packaging, hardware.
+
+## 6. Correction round (Opus, after Sol's review `run-20261119-222335-review`: REJECT)
+
+Your previous work is in `work\`, and Sol's full review is `audit\previous-review.md`. Read it completely.
+Do **not** start over, and do not edit any executed file (new versioned names only).
+
+**Confirmed, reuse:** `afon_hooks_v5.mjs` `bank()` and `initMirror()` equal T8c; reader, writer feed and display share
+`bank()`; the writer self-arms on the owner 0→2 transition with no `armPress` (3 calls in the candidate session);
+the identity-mode numerical comparisons (three press, three release, normal edit = K2, 14 zone press/release);
+the 39-step table and its 28 exit matches; section and overlay records.
+
+**Required:**
+1. **Assertions inside the gate.** The gate itself captures and **compares** the full state (§1.2 list) after every
+   individual down, up, setter, pose and zone operation, before returning. Define the expectation per step in the
+   generated table: every field the step names equals its single declared source; **every other field equals its
+   value before the operation**. Capturing without comparing does not count. Route all setup writes (custom live
+   cells, flag clear, display seeding) through the gate as declared setter steps; extend the static check to reject
+   direct memory writes and `tap(...)`/raw OK outside the gate, and prove it rejects a planted bypass in a unit test.
+2. **Identity completeness.** Before any acceptance session, a pure-Node check proves that every `identityFrom` and
+   every commit of every role has a row in the sealed table (including `ke-s1-down`, `ke-s1-up`, `ke-p-s1-down`,
+   `ke-p-s1-up`); the session refuses to start otherwise. The gate refuses any commit-class input (OK, MENU, AF-ON
+   commits in zone runs, custom traversal) without a sealed row, and logs expected and actual for every success.
+3. **Pose protection from installed behaviour.** The refusal predicate must not read `watchArmed` or anything else
+   the runner sets. Derive "pose change in progress" from an installed hook on the native pose path. Show in a unit
+   test that toggling instrumentation does not change any refusal. Keep the normal-edit commit and the non-reset
+   pose-after-edit case.
+4. **Inventory fails closed.** Load the loader hook before any task module (e.g. `--import` of the inventory
+   registrar), make a hashing error fatal, run the exit check on every exit path (including throws), include
+   non-module inputs (decoded images, combined overlay, references) and write `work\out\cmd\` command records.
+5. **Refresh recorder.** Keep the returned value for passthrough calls, record substituted (`skip_call`) calls too,
+   remove the silent 500-call cap or fail on it, and fail on any null return or unclosed window. Unit-test the
+   **final** versions of gate, judge, predicates, static check and recorder.
+6. **Proofs.** Then: a new identity pass sealed before acceptance, the T8d proof `ok:true`, and display A, B, K2, K1
+   `ok:true` with every-refresh records. Optional: custom-release with a live profile distinct from the AF-ON one.
+7. **Records.** Correct `result.md` §9, §11, §12 and `harness.md` guarantees; supplemental manifest and new seal.
+
+**Authorization: five new experiment versions** (emulator processes); pure-Node work is not a version.
+Stop at the first failed assertion as before.
