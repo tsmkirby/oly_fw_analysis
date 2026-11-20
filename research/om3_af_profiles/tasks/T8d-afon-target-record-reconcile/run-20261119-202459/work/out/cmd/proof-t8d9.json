@@ -1,0 +1,107 @@
+{
+  "tag": "proof-t8d9",
+  "when": "before-session",
+  "command": "node26 work/scripts/proof_t8d9.mjs om-emu work/out/proof-table-t8d3.json proof-t8d9",
+  "OM_EMU_MODEL": "E147",
+  "OM_EMU_NVRAM": "off",
+  "identitySha": "52206dcb1d7bc5a31f240eeb6764cf939cfe198ac970003b6f2418e31e7fb6e0",
+  "imports": [
+    {
+      "path": "work/scripts/proof_t8d9.mjs",
+      "sha256": "09a8933c6f624d8337e126649f057fdb23bea093924112bbf844bb82c28a2756",
+      "bytes": 32400
+    },
+    {
+      "path": "ref/analysis/button-af/readiness/t5-afon-button-handoff/scripts/zone_session_k1.mjs",
+      "sha256": "04cc1c3cc9d24a58e93cc8b1ea01f26f823c168be67d707333ceeb40bf359734",
+      "bytes": 24357
+    },
+    {
+      "path": "ref/tasks/T7-orientation-producer/run-20261119-072701/work/scripts/pose.mjs",
+      "sha256": "09cb38618024a749ba4b15ee3be4e5140257d6c5145347567887196a81665358",
+      "bytes": 5560
+    },
+    {
+      "path": "ref/analysis/button-af/readiness/t3m-afon-editor-state-leak/scripts/accept_lib_v4.mjs",
+      "sha256": "9bb612f87ef028dafa5885b1b845e892f27694b7fdcd0a48e4fcb67b3806755d",
+      "bytes": 7417
+    },
+    {
+      "path": "ref/tasks/T8b-afon-integrated-acceptance-generated/run-20261119-153249/work/scripts/lib_map_c1.mjs",
+      "sha256": "60d5ed07990cf74526380d566409c297877c9e18c2fc8b8a0ffc0fda030200e7",
+      "bytes": 2539
+    },
+    {
+      "path": "work/scripts/hook_t8d_writer8.mjs",
+      "sha256": "8b78a52e2e37281a397720a669f981103abc9c4e9095e17c4af4b5c12d733ee1",
+      "bytes": 19282
+    }
+  ],
+  "baselines": [
+    {
+      "path": "TASK.md",
+      "sha256": "4fd6ec4617a0d626a94ac0600ab7ade1106703f98aa17785f41006e40124ba88",
+      "bytes": 2341
+    },
+    {
+      "path": "brief.md",
+      "sha256": "386c6a55b7a967b6fea33ffc4e7ac1f5781d6a232621ea474daee5bf561335c1",
+      "bytes": 6357
+    },
+    {
+      "path": "audit/previous-review.md",
+      "sha256": "a59026ea87df8d85c4b8185a95d31efa6f8e41b9654308c6f5b56810da675d62",
+      "bytes": 10824
+    },
+    {
+      "path": "ref/tasks/T8c-afon-bank-and-init-reconcile/decision.md",
+      "sha256": "40185e306f78de4201396473b18329fc14309cc26571d7a4867553475127633c",
+      "bytes": 2680
+    },
+    {
+      "path": "ref/tasks/T8c-afon-bank-and-init-reconcile/run-20261119-174338-review/review.md",
+      "sha256": "d8ba2a2309f2c1a50024ccbd52326322f2253fc2f2ca014506817eb557acee84",
+      "bytes": 10129
+    },
+    {
+      "path": "ref/tasks/T8c-afon-bank-and-init-reconcile/run-20261119-184058-review/review.md",
+      "sha256": "73e70c94ade190a7dda98922a470853c72d20acd75e4b15fbba295d4bf8912db",
+      "bytes": 12222
+    },
+    {
+      "path": "ref/analysis/button-af/readiness/t6-afon-target-size-position/out/design.md",
+      "sha256": "8d8e352d762b3f139bddaaeb989a60dd677ef2f44252f0b0f975a57d662be1fb",
+      "bytes": 9065
+    },
+    {
+      "path": "ref/tasks/T8c-afon-bank-and-init-reconcile/run-20261119-175921/work/out/slots-q2.json",
+      "sha256": "8bdb508b5d793fb2cfd3451b62b71703cdca5b2f1470d2e1e0ae989a9f258f94",
+      "bytes": 17451
+    },
+    {
+      "path": "work/out/identity-t8d8.json",
+      "sha256": "52206dcb1d7bc5a31f240eeb6764cf939cfe198ac970003b6f2418e31e7fb6e0",
+      "bytes": 1229
+    },
+    {
+      "path": "work/out/proof-table-t8d3.json",
+      "sha256": "ca11e20f9fbf69a7060a0c493acff7f0082342861299bcf31f4a89686d8d9727",
+      "bytes": 90495
+    },
+    {
+      "path": "inputs/00_0100_50000020.decoded.bin",
+      "sha256": "5e8d376e9111a44ac0352f26030d7c1b17026d42c45f3600cfa02a0e8c5b7d59",
+      "bytes": 33554368
+    },
+    {
+      "path": "inputs/02_0106_458c0020.decoded.bin",
+      "sha256": "3d9fd4426b45fbe4b715599422af38c6d22392c08543a69f63c28291c5a0b059",
+      "bytes": 143523776
+    },
+    {
+      "path": "ref/tasks/T8-afon-integrated-acceptance/run-20261119-132229/work/out/overlay-combined-t8.csv",
+      "sha256": "3601999e17086a23f29053d90d84ab56676b7f3cb450bd9fa9e3f1e89e98d63e",
+      "bytes": 267706
+    }
+  ]
+}

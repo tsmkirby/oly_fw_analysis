@@ -1,0 +1,129 @@
+{
+  "step": "before-emulator",
+  "note": "SHA-256 of the shared validation library, taken before the emulator is imported. The listing bytes were compared with the stock image in this same step. This run does not install the display hook.",
+  "libValid": {
+    "path": "C:/Dev/OM3-tasks/T9d-afon-display-size-inputs/ws/work/scripts/lib_valid_t9d.mjs",
+    "sha256": "2013f1d2841b7b241567f25ccaa059bc714e1622554e15c12f17752142f3d81b",
+    "bytes": 10181
+  },
+  "image": {
+    "path": "C:/Dev/OM3-tasks/T9d-afon-display-size-inputs/ws/inputs/00_0100_50000020.decoded.bin",
+    "sha256": "5e8d376e9111a44ac0352f26030d7c1b17026d42c45f3600cfa02a0e8c5b7d59",
+    "bytes": 33554368
+  },
+  "listingCheck": [
+    {
+      "addr": 1628982788,
+      "hex": "8029",
+      "text": "mov 0x29,D0",
+      "got": "8029",
+      "match": true
+    },
+    {
+      "addr": 1628982790,
+      "hex": "244c03",
+      "text": "mov 0x34c,A0",
+      "got": "244c03",
+      "match": true
+    },
+    {
+      "addr": 1628982793,
+      "hex": "f17c",
+      "text": "add A3,A0",
+      "got": "f17c",
+      "match": true
+    },
+    {
+      "addr": 1628982795,
+      "hex": "8538",
+      "text": "mov 0x38,D1",
+      "got": "8538",
+      "match": true
+    },
+    {
+      "addr": 1628982797,
+      "hex": "dd9f87f4ff0004",
+      "text": "call 0x610cd5ac",
+      "got": "dd9f87f4ff0004",
+      "match": true
+    },
+    {
+      "addr": 1628231084,
+      "hex": "91",
+      "text": "mov A0,A1",
+      "got": "91",
+      "match": true
+    },
+    {
+      "addr": 1628231099,
+      "hex": "cd0201f014",
+      "text": "call 0x610cd6bd",
+      "got": "cd0201f014",
+      "match": true
+    },
+    {
+      "addr": 1628231357,
+      "hex": "87",
+      "text": "mov D1,D3",
+      "got": "87",
+      "match": true
+    },
+    {
+      "addr": 1628231448,
+      "hex": "f82408",
+      "text": "mov (0x8,A0),A1",
+      "got": "f82408",
+      "match": true
+    },
+    {
+      "addr": 1628231451,
+      "hex": "9c",
+      "text": "mov A3,A0",
+      "got": "9c",
+      "match": true
+    },
+    {
+      "addr": 1628231452,
+      "hex": "dded51f3eef01c",
+      "text": "call 0x50002909",
+      "got": "dded51f3eef01c",
+      "match": true
+    },
+    {
+      "addr": 1628983857,
+      "hex": "a002",
+      "text": "cmp 0x2,D0",
+      "got": "a002",
+      "match": true
+    },
+    {
+      "addr": 1628983861,
+      "hex": "a003",
+      "text": "cmp 0x3,D0",
+      "got": "a003",
+      "match": true
+    },
+    {
+      "addr": 1628983889,
+      "hex": "ca4a",
+      "text": "bra 0x6118529b",
+      "got": "ca4a",
+      "match": true
+    },
+    {
+      "addr": 1628983891,
+      "hex": "8003",
+      "text": "mov 0x3,D0",
+      "got": "8003",
+      "match": true
+    },
+    {
+      "addr": 1628983895,
+      "hex": "8001",
+      "text": "mov 0x1,D0",
+      "got": "8001",
+      "match": true
+    }
+  ],
+  "listingMismatches": 0
+}

@@ -1,0 +1,31 @@
+{
+  "command": "node26 work/scripts/trace_t8d7.mjs om-emu",
+  "when": "before the emulator process",
+  "files": [
+    {
+      "path": "work/scripts/trace_t8d7.mjs",
+      "sha256": "4d830a6e86bc63e5859b12f58f4338cb141d1d88aa37f00372cf18548cb12e9e",
+      "bytes": 7481
+    },
+    {
+      "path": "work/scripts/hook_t8d_writer5.mjs",
+      "sha256": "3e797c962ef0a216eef172dea55dfcdccaa848e234ea1e763cb2b5bd40ccb27a",
+      "bytes": 17410
+    },
+    {
+      "path": "brief.md",
+      "sha256": "386c6a55b7a967b6fea33ffc4e7ac1f5781d6a232621ea474daee5bf561335c1",
+      "bytes": 6357
+    },
+    {
+      "path": "TASK.md",
+      "sha256": "4fd6ec4617a0d626a94ac0600ab7ade1106703f98aa17785f41006e40124ba88",
+      "bytes": 2341
+    },
+    {
+      "path": "ref/tasks/T8c-afon-bank-and-init-reconcile/decision.md",
+      "sha256": "40185e306f78de4201396473b18329fc14309cc26571d7a4867553475127633c",
+      "bytes": 2680
+    }
+  ]
+}

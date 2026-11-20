@@ -1,0 +1,36 @@
+{
+  "step": "before-emulator",
+  "note": "SHA-256 of the shared validation library and the already-made references, written before the emulator is imported. This run is stock. It does not install the display hook.",
+  "libValid": {
+    "path": "C:/Dev/OM3-tasks/T9d-afon-display-size-inputs/ws/work/scripts/lib_valid_t9d.mjs",
+    "sha256": "2013f1d2841b7b241567f25ccaa059bc714e1622554e15c12f17752142f3d81b",
+    "bytes": 10181
+  },
+  "references": [
+    {
+      "path": "C:/Dev/OM3-tasks/T9d-afon-display-size-inputs/ws/work/out/sweep-small.png",
+      "sha256": "c3d3c00bfd28a2b95aca5997a0d4962bbc8165b4321d59a2122c5be085fc1e25",
+      "bytes": 12465
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T9d-afon-display-size-inputs/ws/work/out/sweep-single.png",
+      "sha256": "5513c70292058bf07648a3eb239433330d57c06e0e595be8f15157c9e6492c43",
+      "bytes": 12239
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T9d-afon-display-size-inputs/ws/work/out/ref-k1e-a.json",
+      "sha256": "c6af69e99346738f804d392b0994fee7aecceff790e676e91ac95c09d2a0860c",
+      "bytes": 984
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T9d-afon-display-size-inputs/ws/work/out/ref-k1e-b.json",
+      "sha256": "b915b703e6e25935536e884c0ccf41db250b6b3cfc72be25989a17058778f480",
+      "bytes": 976
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T9d-afon-display-size-inputs/ws/work/out/ref-k2.json",
+      "sha256": "791de47f0c0546220b8a6b4c9b2c1e3486a2c6a18f058195072a84331892746b",
+      "bytes": 4060
+    }
+  ]
+}

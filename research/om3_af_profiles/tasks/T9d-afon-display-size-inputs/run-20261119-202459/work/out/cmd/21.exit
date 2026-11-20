@@ -1,0 +1,16 @@
+{
+  "status": 0,
+  "signal": null,
+  "error": null,
+  "start": "2026-11-20T01:59:42.962Z",
+  "end": "2026-11-20T01:59:46.364Z",
+  "spawn": "cmd.exe /d /c tools\\bin\\run-ghidra.cmd -postScript DisasmT9d.java 61247420 50 work/out/disasm-fill-r3.txt 615beb80 60 work/out/disasm-fill2-r3.txt -log work/out/disasm-fill-r3.log",
+  "wrapper_sha256": "34e42c59c553a1e4213e2b223034bd31142c7000c6aef4aac2ac9d5e7f1fe0ef",
+  "scripts": [
+    {
+      "path": "DisasmT9d.java",
+      "sha256": "88fa8cd4027aefb13721f92411a87904489391b52f7264d65c1e40b025639ccd",
+      "bytes": 1575
+    }
+  ]
+}

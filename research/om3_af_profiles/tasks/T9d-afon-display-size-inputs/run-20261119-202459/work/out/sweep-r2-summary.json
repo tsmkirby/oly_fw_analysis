@@ -1,0 +1,425 @@
+{
+  "version": "r2",
+  "position": 529,
+  "armed": {
+    "where": "PlayLab.preinit, after the machine exists and before OsdLab.mm_ctors",
+    "insns": 0,
+    "pc": 1342177280,
+    "mode": 1657095372,
+    "modeUncached": 2730837196,
+    "page": 25285,
+    "wp": -1,
+    "rp": -1
+  },
+  "libValid": {
+    "path": "C:/Dev/OM3-tasks/T9d-afon-display-size-inputs/ws/work/scripts/lib_valid_t9d.mjs",
+    "sha256": "2013f1d2841b7b241567f25ccaa059bc714e1622554e15c12f17752142f3d81b",
+    "bytes": 10181
+  },
+  "idlePeriodMs": 316,
+  "idleGapsMs": [
+    177.66982,
+    274,
+    316,
+    318,
+    340
+  ],
+  "nWindows": 37,
+  "nSamples": 169,
+  "openRefresh": null,
+  "unsampled": [],
+  "storeSeq": 0,
+  "keptStores": 0,
+  "skippedStores": 0,
+  "storePcs": [],
+  "discardedFirstRun": "The first sweep kept one writer window per trial in sweep-calls.json. The other windows from that process were not exported and cannot be reconstructed. This file is a new run.",
+  "trials": [
+    {
+      "id": "all",
+      "zone": 0,
+      "n31": 0,
+      "pixels": 0,
+      "marks": [],
+      "sha256": "fecc3079475b7850f4ef3b7d353c8eb096c072da6f483c3ec7e7deae76142f50",
+      "nWindows": 3,
+      "writerModes": [
+        1
+      ]
+    },
+    {
+      "id": "single",
+      "zone": 1,
+      "n31": 168,
+      "pixels": 168,
+      "marks": [
+        {
+          "x": 376,
+          "y": 287,
+          "w": 8,
+          "h": 9,
+          "n": 42
+        },
+        {
+          "x": 393,
+          "y": 287,
+          "w": 8,
+          "h": 9,
+          "n": 42
+        },
+        {
+          "x": 376,
+          "y": 304,
+          "w": 8,
+          "h": 9,
+          "n": 42
+        },
+        {
+          "x": 393,
+          "y": 304,
+          "w": 8,
+          "h": 9,
+          "n": 42
+        }
+      ],
+      "sha256": "5513c70292058bf07648a3eb239433330d57c06e0e595be8f15157c9e6492c43",
+      "nWindows": 3,
+      "writerModes": [
+        3
+      ]
+    },
+    {
+      "id": "small",
+      "zone": 2,
+      "n31": 444,
+      "pixels": 444,
+      "marks": [
+        {
+          "x": 356,
+          "y": 265,
+          "w": 19,
+          "h": 21,
+          "n": 111
+        },
+        {
+          "x": 402,
+          "y": 265,
+          "w": 19,
+          "h": 21,
+          "n": 111
+        },
+        {
+          "x": 356,
+          "y": 314,
+          "w": 19,
+          "h": 21,
+          "n": 111
+        },
+        {
+          "x": 402,
+          "y": 314,
+          "w": 19,
+          "h": 21,
+          "n": 111
+        }
+      ],
+      "sha256": "c3d3c00bfd28a2b95aca5997a0d4962bbc8165b4321d59a2122c5be085fc1e25",
+      "nWindows": 2,
+      "writerModes": [
+        2
+      ]
+    },
+    {
+      "id": "cross",
+      "zone": 3,
+      "n31": 888,
+      "pixels": 888,
+      "marks": [
+        {
+          "x": 356,
+          "y": 221,
+          "w": 19,
+          "h": 21,
+          "n": 111
+        },
+        {
+          "x": 401,
+          "y": 221,
+          "w": 19,
+          "h": 21,
+          "n": 111
+        },
+        {
+          "x": 296,
+          "y": 265,
+          "w": 19,
+          "h": 21,
+          "n": 111
+        },
+        {
+          "x": 461,
+          "y": 265,
+          "w": 19,
+          "h": 21,
+          "n": 111
+        },
+        {
+          "x": 296,
+          "y": 314,
+          "w": 19,
+          "h": 21,
+          "n": 111
+        },
+        {
+          "x": 461,
+          "y": 314,
+          "w": 19,
+          "h": 21,
+          "n": 111
+        },
+        {
+          "x": 356,
+          "y": 358,
+          "w": 19,
+          "h": 21,
+          "n": 111
+        },
+        {
+          "x": 401,
+          "y": 358,
+          "w": 19,
+          "h": 21,
+          "n": 111
+        }
+      ],
+      "sha256": "08760d12c0fbebb108d6ab1fda4f2c68a4ea34e07ad414472398c8a05fd91a42",
+      "nWindows": 3,
+      "writerModes": [
+        4
+      ]
+    },
+    {
+      "id": "mid",
+      "zone": 5,
+      "n31": 444,
+      "pixels": 444,
+      "marks": [
+        {
+          "x": 294,
+          "y": 220,
+          "w": 19,
+          "h": 21,
+          "n": 111
+        },
+        {
+          "x": 464,
+          "y": 220,
+          "w": 19,
+          "h": 21,
+          "n": 111
+        },
+        {
+          "x": 294,
+          "y": 359,
+          "w": 19,
+          "h": 21,
+          "n": 111
+        },
+        {
+          "x": 464,
+          "y": 359,
+          "w": 19,
+          "h": 21,
+          "n": 111
+        }
+      ],
+      "sha256": "fad3709d3375f9d1d9171925c4d74cb28b66cb40bd29906461057db7f794be02",
+      "nWindows": 3,
+      "writerModes": [
+        5
+      ]
+    },
+    {
+      "id": "large",
+      "zone": 10,
+      "n31": 444,
+      "pixels": 444,
+      "marks": [
+        {
+          "x": 233,
+          "y": 176,
+          "w": 19,
+          "h": 21,
+          "n": 111
+        },
+        {
+          "x": 525,
+          "y": 176,
+          "w": 19,
+          "h": 21,
+          "n": 111
+        },
+        {
+          "x": 233,
+          "y": 403,
+          "w": 19,
+          "h": 21,
+          "n": 111
+        },
+        {
+          "x": 525,
+          "y": 403,
+          "w": 19,
+          "h": 21,
+          "n": 111
+        }
+      ],
+      "sha256": "ca0bdee526a85a31ba464e422fbe6a00f86e668205b06fa6fc47b6bd362e4b25",
+      "nWindows": 3,
+      "writerModes": [
+        6
+      ]
+    },
+    {
+      "id": "c1",
+      "zone": 6,
+      "n31": 444,
+      "pixels": 444,
+      "marks": [
+        {
+          "x": 315,
+          "y": 242,
+          "w": 19,
+          "h": 21,
+          "n": 111
+        },
+        {
+          "x": 443,
+          "y": 242,
+          "w": 19,
+          "h": 21,
+          "n": 111
+        },
+        {
+          "x": 315,
+          "y": 337,
+          "w": 19,
+          "h": 21,
+          "n": 111
+        },
+        {
+          "x": 443,
+          "y": 337,
+          "w": 19,
+          "h": 21,
+          "n": 111
+        }
+      ],
+      "sha256": "6dcebef8eb2f6db6e21c4262dc88fa2077c434c09cdf3dc27b8a9ff683314413",
+      "nWindows": 2,
+      "writerModes": [
+        7
+      ]
+    },
+    {
+      "id": "c2",
+      "zone": 7,
+      "n31": 272,
+      "pixels": 272,
+      "marks": [
+        {
+          "x": 361,
+          "y": 270,
+          "w": 34,
+          "h": 38,
+          "n": 272
+        }
+      ],
+      "sha256": "5350387797022d123b0ffbfb0684be74fadf5042208e982cb92320d7e4198b3d",
+      "nWindows": 3,
+      "writerModes": [
+        8
+      ]
+    },
+    {
+      "id": "c3",
+      "zone": 8,
+      "n31": 272,
+      "pixels": 272,
+      "marks": [
+        {
+          "x": 361,
+          "y": 270,
+          "w": 34,
+          "h": 38,
+          "n": 272
+        }
+      ],
+      "sha256": "5350387797022d123b0ffbfb0684be74fadf5042208e982cb92320d7e4198b3d",
+      "nWindows": 3,
+      "writerModes": [
+        9
+      ]
+    },
+    {
+      "id": "c4",
+      "zone": 9,
+      "n31": 272,
+      "pixels": 272,
+      "marks": [
+        {
+          "x": 361,
+          "y": 270,
+          "w": 34,
+          "h": 38,
+          "n": 272
+        }
+      ],
+      "sha256": "5350387797022d123b0ffbfb0684be74fadf5042208e982cb92320d7e4198b3d",
+      "nWindows": 3,
+      "writerModes": [
+        10
+      ]
+    },
+    {
+      "id": "custom",
+      "zone": 6,
+      "n31": 444,
+      "pixels": 444,
+      "marks": [
+        {
+          "x": 274,
+          "y": 198,
+          "w": 19,
+          "h": 21,
+          "n": 111
+        },
+        {
+          "x": 484,
+          "y": 198,
+          "w": 19,
+          "h": 21,
+          "n": 111
+        },
+        {
+          "x": 274,
+          "y": 381,
+          "w": 19,
+          "h": 21,
+          "n": 111
+        },
+        {
+          "x": 484,
+          "y": 381,
+          "w": 19,
+          "h": 21,
+          "n": 111
+        }
+      ],
+      "sha256": "dd7a143391e1a13064fa2223543340905f1995fb29ed768b02057e916409f803",
+      "nWindows": 2,
+      "writerModes": [
+        7
+      ]
+    }
+  ]
+}

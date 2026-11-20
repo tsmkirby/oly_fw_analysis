@@ -1,0 +1,177 @@
+{
+  "note": "Bytes read from inputs/00_0100_50000020.decoded.bin at address - 0x60021020. The table at 0x615ba414 is ten pairs. The key is the zone number and the value is the mode written to the template word.",
+  "mismatches": 0,
+  "checks": [
+    {
+      "addr": 1629255489,
+      "hex": "5c0c",
+      "text": "mov (0xc,sp),A0",
+      "got": "5c0c",
+      "match": true
+    },
+    {
+      "addr": 1629255491,
+      "hex": "f80104",
+      "text": "mov (0x4,A1),D0",
+      "got": "f80104",
+      "match": true
+    },
+    {
+      "addr": 1629255494,
+      "hex": "60",
+      "text": "mov D0,(A0)",
+      "got": "60",
+      "match": true
+    },
+    {
+      "addr": 1629720218,
+      "hex": "fcdc14a45b61",
+      "text": "mov 0x615ba414,A0",
+      "got": "fcdc14a45b61",
+      "match": true
+    },
+    {
+      "addr": 1629720244,
+      "hex": "fa00fc1a",
+      "text": "mov (0x1afc,A0),D0",
+      "got": "fa00fc1a",
+      "match": true
+    },
+    {
+      "addr": 1629720248,
+      "hex": "dd03900500a010",
+      "text": "call 0x61291ebb",
+      "got": "dd03900500a010",
+      "match": true
+    },
+    {
+      "addr": 1629720255,
+      "hex": "4214",
+      "text": "mov D0,(0x14,sp)",
+      "got": "4214",
+      "match": true
+    },
+    {
+      "addr": 1629720568,
+      "hex": "5814",
+      "text": "mov (0x14,sp),D0",
+      "got": "5814",
+      "match": true
+    },
+    {
+      "addr": 1629720570,
+      "hex": "4248",
+      "text": "mov D0,(0x48,sp)",
+      "got": "4248",
+      "match": true
+    },
+    {
+      "addr": 1629720825,
+      "hex": "fcdd14a45b61",
+      "text": "mov 0x615ba414,A1",
+      "got": "fcdd14a45b61",
+      "match": true
+    },
+    {
+      "addr": 1629720831,
+      "hex": "850a",
+      "text": "mov 0xa,D1",
+      "got": "850a",
+      "match": true
+    },
+    {
+      "addr": 1629720833,
+      "hex": "dd37e6f8ffc008",
+      "text": "call 0x611c7738",
+      "got": "dd37e6f8ffc008",
+      "match": true
+    },
+    {
+      "addr": 1628231452,
+      "hex": "dded51f3eef01c",
+      "text": "call 0x50002909",
+      "got": "dded51f3eef01c",
+      "match": true
+    },
+    {
+      "addr": 1628231601,
+      "hex": "dd5851f3eef01c",
+      "text": "call 0x50002909",
+      "got": "dd5851f3eef01c",
+      "match": true
+    },
+    {
+      "addr": 1628982788,
+      "hex": "8029",
+      "text": "mov 0x29,D0",
+      "got": "8029",
+      "match": true
+    },
+    {
+      "addr": 1628982795,
+      "hex": "8538",
+      "text": "mov 0x38,D1",
+      "got": "8538",
+      "match": true
+    },
+    {
+      "addr": 1628983889,
+      "hex": "ca4a",
+      "text": "bra 0x6118529b",
+      "got": "ca4a",
+      "match": true
+    }
+  ],
+  "table": [
+    {
+      "index": 0,
+      "key": 0,
+      "value": 1
+    },
+    {
+      "index": 1,
+      "key": 1,
+      "value": 3
+    },
+    {
+      "index": 2,
+      "key": 2,
+      "value": 2
+    },
+    {
+      "index": 3,
+      "key": 3,
+      "value": 4
+    },
+    {
+      "index": 4,
+      "key": 5,
+      "value": 5
+    },
+    {
+      "index": 5,
+      "key": 10,
+      "value": 6
+    },
+    {
+      "index": 6,
+      "key": 6,
+      "value": 7
+    },
+    {
+      "index": 7,
+      "key": 7,
+      "value": 8
+    },
+    {
+      "index": 8,
+      "key": 8,
+      "value": 9
+    },
+    {
+      "index": 9,
+      "key": 9,
+      "value": 10
+    }
+  ]
+}

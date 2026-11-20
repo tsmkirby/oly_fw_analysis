@@ -1,0 +1,6 @@
+start 2026-11-20T00:35:15.965Z
+requested: node26 -e const {createHash}=require('crypto'); const {readFileSync}=require('fs'); for (const p of ['inputs/00_0100_50000020.decoded.bin','inputs/02_0106_458c0020.decoded.bin']) { const b=readFileSync(p); console.log(p, b.length, createHash('sha256').update(b).digest('hex')); }
+C:\Dev\OM3-research\tooling\node-v26.12.1-win-x64\node.exe -e const {createHash}=require('crypto'); const {readFileSync}=require('fs'); for (const p of ['inputs/00_0100_50000020.decoded.bin','inputs/02_0106_458c0020.decoded.bin']) { const b=readFileSync(p); console.log(p, b.length, createHash('sha256').update(b).digest('hex')); }
+wrapper_sha256: 34e42c59c553a1e4213e2b223034bd31142c7000c6aef4aac2ac9d5e7f1fe0ef
+script: none
+script_sha256: none
