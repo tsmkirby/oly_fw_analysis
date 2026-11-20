@@ -1,0 +1,60 @@
+{
+  "tag": "v3-named",
+  "ok": true,
+  "finished": "2026-11-20T07:48:58.862Z",
+  "argv": [
+    "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe",
+    "C:\\Dev\\OM3-tasks\\T12b-afon-harness-by-capability\\ws\\work\\scripts\\named_read_v1.mjs"
+  ],
+  "execArgv": [
+    "--import",
+    "./work/harness/inventory_register_v8.mjs"
+  ],
+  "env": {
+    "OM_EMU_MODEL": "E147",
+    "OM_EMU_NVRAM": "off",
+    "T12B_FREEZE_CAPTURE": null,
+    "T12B_RUNNER": null,
+    "T12B_FREEZE_PATH": null
+  },
+  "captureException": null,
+  "imports": [
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/harness/inventory_register_v8.mjs",
+      "sha256": "39b06b2589bb9a6dbae773a64f382825b20b87cf49efb4ec2669d12b80ced806",
+      "bytes": 15850
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/harness/inventory_hook_v6.mjs",
+      "sha256": "76d35cbd8418af1662dc17c27a924b507c1265878fb935caa7a28cdfb35423a3",
+      "bytes": 3188
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/harness/inventory_v5.mjs",
+      "sha256": "cd77d0806dfbc593114b2d8bc9795a96b8bb9d30ada54a32d7f8a0e5ae04e9ec",
+      "bytes": 1682
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/scripts/named_read_v1.mjs",
+      "sha256": "1d561801ab0ed582fd9eb06c2a15a9ab4d714cd11b417f27f8085f01e8f6ec31",
+      "bytes": 218
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/out/probe-identity.json",
+      "sha256": "4bf48a3727db0ecd342ba1fbfe17331e958a4a0cbee43b9b749a5edef916c1be",
+      "bytes": 12
+    }
+  ],
+  "notes": [
+    {
+      "ready": true
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/out/probe-identity.json",
+      "bytes": null,
+      "sha256": null,
+      "at": "open"
+    }
+  ],
+  "problems": []
+}

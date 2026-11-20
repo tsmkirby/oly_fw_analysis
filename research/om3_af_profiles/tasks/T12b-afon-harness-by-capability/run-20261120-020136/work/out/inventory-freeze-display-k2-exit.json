@@ -1,0 +1,92 @@
+{
+  "tag": "freeze-display-k2",
+  "ok": true,
+  "finished": "2026-11-20T06:52:38.847Z",
+  "argv": [
+    "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe",
+    "C:\\Dev\\OM3-tasks\\T12b-afon-harness-by-capability\\ws\\work\\scripts\\run_display_k2_t13_v1.mjs"
+  ],
+  "execArgv": [
+    "--import",
+    "./work/harness/inventory_register_v6.mjs"
+  ],
+  "env": {
+    "OM_EMU_MODEL": "E147",
+    "OM_EMU_NVRAM": "off",
+    "T12B_FREEZE_CAPTURE": "1",
+    "T12B_FREEZE_ENFORCE": null
+  },
+  "imports": [
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/harness/inventory_register_v6.mjs",
+      "sha256": "83b2a08fb9e6ed4bdcba4ef719f821f545100c29c957f0a5a74a1c5a1157cb76",
+      "bytes": 10516
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/harness/inventory_hook_v5.mjs",
+      "sha256": "972503bae1397f98e695abbb6658ab83bea2fab6f8047453ec25d3c04f316a02",
+      "bytes": 2157
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/harness/inventory_v5.mjs",
+      "sha256": "cd77d0806dfbc593114b2d8bc9795a96b8bb9d30ada54a32d7f8a0e5ae04e9ec",
+      "bytes": 1682
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/scripts/run_display_k2_t13_v1.mjs",
+      "sha256": "4dd5be7240788ca835b336981c85817d423d85d33957175499fe197459941390",
+      "bytes": 173
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/harness/entry_v1.mjs",
+      "sha256": "ad70cf9c58d2253b68bf219efc738db974f47f71cba374bdb66c2a1850167c0e",
+      "bytes": 5564
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/harness/gate_v6.mjs",
+      "sha256": "37838776f78ce84c02c8531d0e872dfe2f357cda78439a67f60104772eef6575",
+      "bytes": 4609
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/harness/compare_v4.mjs",
+      "sha256": "af808b73807143aeb87bd3cd8c1c89fb0c4860fbe2a7b663d409e2e844c4b5e2",
+      "bytes": 4649
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/harness/identity_v5.mjs",
+      "sha256": "fb94f2d2c8000a553f3a8796ec16e309f69f6ff2e8619a0f2a81438c556054ea",
+      "bytes": 2905
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/harness/setup_delta_v1.mjs",
+      "sha256": "e17159ce8fc272a34e6f5b682398cce092c785647cdbfb86735aa31dd09b4a11",
+      "bytes": 1016
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/harness/operations_v1.mjs",
+      "sha256": "53373d81c41733390eda18f64e5c46ebf6a49b131e5e4a8013d66aae6e8c6e00",
+      "bytes": 14140
+    },
+    {
+      "path": "C:/Dev/OM3-research/tasks/T9d-afon-display-size-inputs/run-20261119-202459/work/scripts/lib_valid_t9d.mjs",
+      "sha256": "2013f1d2841b7b241567f25ccaa059bc714e1622554e15c12f17752142f3d81b",
+      "bytes": 10181
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/harness/table_v2.mjs",
+      "sha256": "1dbdfa871ec90c27010d5361c188b7d63db0d24c700ac57c74942dbce1bb5f20",
+      "bytes": 17566
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/harness/driver_v1.mjs",
+      "sha256": "e513036d1f6125e272026068a4af17172fa972441a4917cec037569bc362bc9d",
+      "bytes": 490
+    }
+  ],
+  "notes": [
+    {
+      "ready": true
+    }
+  ],
+  "problems": []
+}

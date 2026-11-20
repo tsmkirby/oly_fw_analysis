@@ -1,0 +1,24 @@
+{
+  "tag": "init",
+  "ok": false,
+  "finished": "2026-11-20T06:52:17.117Z",
+  "problems": [
+    "T12B_INVENTORY_TAG is required"
+  ],
+  "imports": [],
+  "notes": [],
+  "argv": [
+    "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe",
+    "C:\\Dev\\OM3-tasks\\T12b-afon-harness-by-capability\\ws\\work\\scripts\\inventory_init_v1.mjs"
+  ],
+  "execArgv": [
+    "--import",
+    "./work/harness/inventory_register_v6.mjs"
+  ],
+  "env": {
+    "OM_EMU_MODEL": null,
+    "OM_EMU_NVRAM": "off",
+    "T12B_FREEZE_CAPTURE": null,
+    "T12B_FREEZE_ENFORCE": null
+  }
+}

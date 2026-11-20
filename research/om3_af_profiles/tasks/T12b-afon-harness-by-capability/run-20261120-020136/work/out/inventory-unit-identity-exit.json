@@ -1,0 +1,67 @@
+{
+  "tag": "unit-identity",
+  "ok": true,
+  "finished": "2026-11-20T06:52:17.239Z",
+  "argv": [
+    "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe",
+    "C:\\Dev\\OM3-tasks\\T12b-afon-harness-by-capability\\ws\\work\\scripts\\inventory_probe_v1.mjs"
+  ],
+  "execArgv": [
+    "--import",
+    "./work/harness/inventory_register_v6.mjs"
+  ],
+  "env": {
+    "OM_EMU_MODEL": null,
+    "OM_EMU_NVRAM": "off",
+    "T12B_FREEZE_CAPTURE": null,
+    "T12B_FREEZE_ENFORCE": null
+  },
+  "imports": [
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/harness/inventory_register_v6.mjs",
+      "sha256": "83b2a08fb9e6ed4bdcba4ef719f821f545100c29c957f0a5a74a1c5a1157cb76",
+      "bytes": 10516
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/harness/inventory_hook_v5.mjs",
+      "sha256": "972503bae1397f98e695abbb6658ab83bea2fab6f8047453ec25d3c04f316a02",
+      "bytes": 2157
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/harness/inventory_v5.mjs",
+      "sha256": "cd77d0806dfbc593114b2d8bc9795a96b8bb9d30ada54a32d7f8a0e5ae04e9ec",
+      "bytes": 1682
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/scripts/inventory_probe_v1.mjs",
+      "sha256": "5c5818cd0debf55a1d9b21b0d7211dd55563aec8cbe8818e761aecb475e4eb70",
+      "bytes": 1091
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/out/probe-identity.json",
+      "sha256": "a70687e60a5381279fcb328f8700bd06b8a6311129d834b423fa5af804196e3a",
+      "bytes": 20
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/out/probe-promise.json",
+      "sha256": "3e05f1f3abb5384b3a5c06bba8e0d27b282f8d3da0cca385278f2e6c216d2c7a",
+      "bytes": 17
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/out/probe-open.txt",
+      "sha256": "30da2826a39aee42b1ecc8c8f5ad1f503e430566b03e3b13655a94915f012b00",
+      "bytes": 5
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/out/probe-stream.txt",
+      "sha256": "d9204af6f27e38526b2e595333f888641ac643f65d7e93ca4c44ab9591871701",
+      "bytes": 7
+    }
+  ],
+  "notes": [
+    {
+      "ready": true
+    }
+  ],
+  "problems": []
+}

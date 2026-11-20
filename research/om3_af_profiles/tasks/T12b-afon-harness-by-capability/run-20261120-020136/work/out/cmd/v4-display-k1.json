@@ -1,0 +1,21 @@
+{
+  "tag": "v4-display-k1",
+  "started": "2026-11-20T07:53:50.076Z",
+  "argv": [
+    "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe",
+    "C:\\Dev\\OM3-tasks\\T12b-afon-harness-by-capability\\ws\\work\\scripts\\run_display_k1_t13_v4.mjs"
+  ],
+  "execArgv": [
+    "--import",
+    "./work/harness/inventory_register_v9.mjs"
+  ],
+  "execPath": "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe",
+  "env": {
+    "OM_EMU_MODEL": "E147",
+    "OM_EMU_NVRAM": "off",
+    "T12B_FREEZE_CAPTURE": "1",
+    "T12B_RUNNER": "1",
+    "T12B_FREEZE_PATH": null
+  },
+  "captureException": "capture mode skips freeze enforcement and cannot be combined with proof mode"
+}
