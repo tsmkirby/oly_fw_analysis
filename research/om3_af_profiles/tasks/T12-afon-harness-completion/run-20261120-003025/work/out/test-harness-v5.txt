@@ -1,0 +1,88 @@
+FAIL 2
+PASS byte copy work/harness/afon_hooks_v7.mjs 488e6973767a246b24130173edf16fa4082dafb2ce00dcf8622150db8dc1fcd0 24636
+PASS byte copy work/harness/predicates_v3.mjs c6a11a0d03a8a355beb021cd2578d9be304498695c118250a1464f22de8a046f 1605
+PASS byte copy work/harness/state_v1.mjs 8b5752adcf905e53af86d92e640135e3e9a83ed50bf3743f9e74a6f1c3da0677 3647
+PASS byte copy work/harness/table_v2.mjs 1dbdfa871ec90c27010d5361c188b7d63db0d24c700ac57c74942dbce1bb5f20 17566
+PASS table
+PASS candidate-af-up full state
+PASS no seal field
+PASS no slot exemption
+PASS no paired press
+PASS raw press rejected
+PASS raw key rejected
+PASS raw s.key rejected
+PASS changed unexpected slot
+PASS changed exempt-looking slot
+PASS wrong declared value
+PASS shape-only compare still values
+PASS ok is a commit without a caller flag
+PASS afon outside commit context
+PASS afon in commit context
+PASS unmarked commit refused before delivery
+PASS identity after the key
+PASS success retains expected and actual
+PASS missing sealed row delivers zero inputs
+PASS present sealed row delivers the key
+PASS null frame refused
+FAIL changed frame fails the hold
+PASS stable frame passes the hold
+PASS setup is five gated steps
+PASS setup argument flows into the next call
+PASS static key in the plan
+PASS zone release in the plan
+PASS display commit in the plan
+PASS every plan key is required 101
+PASS declared ids match the generator missing 0 extra 0
+PASS missing static row
+PASS missing dynamic zone row
+PASS missing display row
+PASS missing rows refuse the session
+PASS watch toggle does not change pose refusal
+PASS decide does not read the watch
+PASS hook decide call omits the watch
+PASS control-role judge compares values half,owner,target,halfTarget,flag
+PASS candidate judge compares values half,owner,target,halfTarget,flag
+PASS planted armPress planted-armPress.mjs armPress
+PASS planted ctx.key planted-ctx.key.mjs ctx.key
+PASS planted ctx.s.key planted-ctx.s.key.mjs ctx.s.key
+PASS planted dial_input planted-dial_input.mjs dial_input
+PASS planted setPose planted-setPose.mjs setPose
+PASS planted setKey planted-setKey.mjs setKey
+PASS planted sim.write planted-sim.write.mjs sim.write
+PASS planted sim.u8 planted-sim.u8.mjs sim.u8
+PASS planted sim.word planted-sim.word.mjs sim.word
+PASS planted writeU32 planted-writeU32.mjs writeU32
+PASS planted writeU16 planted-writeU16.mjs writeU16
+PASS planted nk.svc planted-nk.svc.mjs nk.svc
+PASS planted bringUp planted-bringUp.mjs bringUp
+PASS planted tap planted-tap.mjs tap
+PASS planted raw-ok planted-raw-ok.mjs raw-ok
+PASS planted press planted-press.mjs press
+PASS planted native planted-native.mjs native
+PASS planted l.call planted-l.call.mjs l.call
+PASS planted switch_input planted-switch_input.mjs switch_input
+PASS scanner accepts the tree
+PASS passthrough return kept
+PASS substitution kept
+PASS outside getter categorised
+PASS uncategorised getter is an orphan
+PASS null outside fails
+PASS window keeps its own sample
+PASS later sample does not replace
+PASS windows stamped
+PASS return hook fills the getter
+PASS sample taken inside the open window
+PASS custom zone reaches the mode step
+FAIL display runner on a fake emulator Cannot find module 'C:\Dev\OM3-tasks\T12-afon-harness-completion\ws\om-emu\checks\lib\png.mjs' imported from C:\Dev\OM3-tasks\T12-afon-harness-completion\ws\work\harness\display_v4.mjs
+PASS inventory inputs exit (node:35920) [DEP0205] DeprecationWarning: `module.register()` is deprecated. Use `module.registerHooks()` instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+PASS command records argv
+PASS command records execArgv
+PASS exit records execArgv
+PASS T6 overlay read is inventoried
+PASS firmware block read is inventoried
+PASS resource block read is inventoried
+PASS empty NAND is recorded at read time
+PASS throw path writes the exit check
+PASS init failure still writes the exit check

@@ -1,0 +1,211 @@
+{
+  "tag": "unit-inputs-v4",
+  "finished": "2026-11-20T06:04:02.558Z",
+  "started": "2026-11-20T06:04:01.919Z",
+  "argv": [
+    "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe",
+    "C:\\Dev\\OM3-tasks\\T12-afon-harness-completion\\ws\\work\\harness\\inventory_probe_v4.mjs",
+    "inputs"
+  ],
+  "execArgv": [
+    "--import",
+    "./work/harness/inventory_register_v4.mjs"
+  ],
+  "env": {
+    "OM_EMU_MODEL": "E147",
+    "OM_EMU_NVRAM": "off"
+  },
+  "imports": [
+    {
+      "path": "C:/Dev/OM3-tasks/T12-afon-harness-completion/ws/work/harness/inventory_probe_v4.mjs",
+      "sha256": "00d48def2891e1cc2e4a02ff2ad1c40664e6cf91b6eb7198fa827528e60af4c1",
+      "bytes": 1291
+    },
+    {
+      "path": "C:/Dev/OM3-research/tasks/T9d-afon-display-size-inputs/run-20261119-202459/work/scripts/lib_valid_t9d.mjs",
+      "sha256": "2013f1d2841b7b241567f25ccaa059bc714e1622554e15c12f17752142f3d81b",
+      "bytes": 10181
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12-afon-harness-completion/ws/inputs/00_0100_50000020.decoded.bin",
+      "sha256": "5e8d376e9111a44ac0352f26030d7c1b17026d42c45f3600cfa02a0e8c5b7d59",
+      "bytes": 33554368
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12-afon-harness-completion/ws/inputs/02_0106_458c0020.decoded.bin",
+      "sha256": "3d9fd4426b45fbe4b715599422af38c6d22392c08543a69f63c28291c5a0b059",
+      "bytes": 143523776
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12-afon-harness-completion/ws/ref/analysis/button-af/readiness/t6-afon-target-size-position/out/overlay-changed-bytes.csv",
+      "sha256": "99b60124f27a7d3d926108574897d1d50bbb297c7b2ec32b54c7010b04091224",
+      "bytes": 267928
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12-afon-harness-completion/ws/om-emu/emu/checks/lib/env.mjs",
+      "sha256": "dbbfd2ab839d8ceb784c7df5c12d0d9a17898eba549b84e848a9cfb05b0d609b",
+      "bytes": 12178
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12-afon-harness-completion/ws/om-emu/emu/src/fw/expand.mjs",
+      "sha256": "e2575f5a4c8ecb79764a31ae01223ab718e7ddc266c00bd88bbf0008dabd1d7d",
+      "bytes": 3148
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12-afon-harness-completion/ws/om-emu/emu/src/lab/resources.mjs",
+      "sha256": "122450c256d8ef188f77a8e323ba92a28a6102f9033b4634e3c77c36dd066002",
+      "bytes": 14110
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12-afon-harness-completion/ws/om-emu/emu/src/lab/errors.mjs",
+      "sha256": "2fd7139bceb60f0ad31c428f7ed9f69235af4bc76cda823b1bb9c6dcea45fe10",
+      "bytes": 1204
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12-afon-harness-completion/ws/om-emu/emu/src/util/show.mjs",
+      "sha256": "58a20ae76e473414c3b0a0075eb362f7a1cf4c968b3feef64659f0473515e076",
+      "bytes": 1724
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12-afon-harness-completion/ws/om-emu/emu/src/util/bytes.mjs",
+      "sha256": "86707333d72877e35b374bfd39f3d6af2b716437c73df46929e74b460af985be",
+      "bytes": 6115
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12-afon-harness-completion/ws/om-emu/emu/src/fw/model.mjs",
+      "sha256": "f080e7e9c91bf3baa5136c7b8aeb6b0e0c4c8378d89f361a47e87aac4e902a44",
+      "bytes": 4718
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12-afon-harness-completion/ws/om-emu/emu/src/fw/models.mjs",
+      "sha256": "115c8349e4f0aadbe56f24638db4e195ca3ba59739c64607eb5b34e4e14db3db",
+      "bytes": 125036
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12-afon-harness-completion/ws/om-emu/emu/src/fw/overrides-E144.mjs",
+      "sha256": "cc98ffd4ed9eac44c6a8c58c31010b67c72eef618d09e93cf97e442b3f5bd307",
+      "bytes": 25687
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12-afon-harness-completion/ws/om-emu/emu/src/fw/overrides-E122.mjs",
+      "sha256": "6bff3bc7d875f7424165e6737ecd50c4a4ebb8d1dc4dd4d42b9431b5982b0602",
+      "bytes": 4046
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12-afon-harness-completion/ws/om-emu/emu/src/fw/ports.mjs",
+      "sha256": "6c81c9955e9baba6c165ed3affb69fd5208bb44e6a9dba5dc6094935074ce0b0",
+      "bytes": 1076335
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12-afon-harness-completion/ws/om-emu/emu/src/fw/facts.mjs",
+      "sha256": "3f938574a7cc589dd227584066e726039009678c4f51fa8175437badfc1c4c17",
+      "bytes": 509333
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12-afon-harness-completion/ws/om-emu/emu/src/core/cpu.mjs",
+      "sha256": "94f3caf73745b17dceca437299b6c711aee0efe51c9ab7c872d5b1e6c599521e",
+      "bytes": 33769
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12-afon-harness-completion/ws/om-emu/emu/src/core/mem.mjs",
+      "sha256": "adfe9bca23723f22b490c99047b6ad32c291f495492c98138d1da3c20ab5a676",
+      "bytes": 23219
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12-afon-harness-completion/ws/om-emu/emu/src/fw/image.mjs",
+      "sha256": "657e9a447ea8035f17115708121e1ad8e71c08f8f5ef1aefb107ccf3a73621d8",
+      "bytes": 2077
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12-afon-harness-completion/ws/om-emu/emu/src/fw/board.mjs",
+      "sha256": "6a02f7c74bee6f0b6409c57c3ee78c62e16280794ee55557edb42d2f723d7875",
+      "bytes": 39911
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12-afon-harness-completion/ws/om-emu/emu/checks/lib/args.mjs",
+      "sha256": "6c99d21aad6340f2b7c72c5c63f33b7287d04dab798adedc23f1cf705ab92ad8",
+      "bytes": 4766
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12-afon-harness-completion/ws/om-emu/emu/checks/lib/errors.mjs",
+      "sha256": "4c01fc5ac9167e751e6f9f1f013d61c56600e3af668db8ee305f79718e213c79",
+      "bytes": 1846
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12-afon-harness-completion/ws/om-emu/emu/refs/errors.mjs",
+      "sha256": "fff1f2065bbdb2797f3f998fabeb2a0353b88451bc252e4d3ad74025ab164aca",
+      "bytes": 809
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12-afon-harness-completion/ws/om-emu/emu/src/fw/labfw.mjs",
+      "sha256": "3efbe7112a2917fbf77c3a57b704296bd730676f1921d24c427f40225ecfb083",
+      "bytes": 4276
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12-afon-harness-completion/ws/om-emu/emu/src/fw/olyfw.mjs",
+      "sha256": "a1c02f4ded0c3624ac017d97eb1ca59e6ca5dd407bcc0854722d7c126c9ef246",
+      "bytes": 5786
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12-afon-harness-completion/ws/om-emu/emu/src/fw/nand.mjs",
+      "sha256": "1c7751b4db88c7874eb4c86d33185f6279ced1cd2f7bddbae4a2dea37fe3b5dd",
+      "bytes": 20696
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12-afon-harness-completion/ws/om-emu/emu/src/fw/resprefix.mjs",
+      "sha256": "612c87c0dd722ee031685dd5c70bf14e113d094f2e3a66677dfbe4b8c14c6372",
+      "bytes": 2144
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12-afon-harness-completion/ws/om-emu/emu/checks/lib/coverage.mjs",
+      "sha256": "e6e3d409d7766e8d5b55d473523355a7dda4b2a4dba1bda984ca170411109ee7",
+      "bytes": 4549
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12-afon-harness-completion/ws/om-emu/emu/src/fw/patch.mjs",
+      "sha256": "bb9434c31fc8e494daa7dd05321bf5835b51aae6bfdbbd981d7151b445375d3b",
+      "bytes": 19035
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12-afon-harness-completion/ws/om-emu/unpacked/E147/OLY_E_147_1100_0000_0000.BIN.blk00000000.OE.0100.bin",
+      "sha256": "5e8d376e9111a44ac0352f26030d7c1b17026d42c45f3600cfa02a0e8c5b7d59",
+      "bytes": 33554368
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12-afon-harness-completion/ws/om-emu/unpacked/E147/OLY_E_147_1100_0000_0000.BIN.blk02000000.OE.0101.bin",
+      "sha256": "6d2bef74b4b2fa089f271529482f96505a170b91e79ab9b1a13f3ce8f7918226",
+      "bytes": 60817344
+    }
+  ],
+  "notes": [
+    {
+      "ready": true
+    },
+    {
+      "kind": "loadNand",
+      "backing": null,
+      "model": "E147",
+      "empty": true
+    },
+    {
+      "kind": "loadBlock",
+      "backing": "C:/Dev/OM3-tasks/T12-afon-harness-completion/ws/om-emu/unpacked/E147/OLY_E_147_1100_0000_0000.BIN.blk02000000.OE.0101.bin",
+      "model": "E147"
+    },
+    {
+      "kind": "loadImage",
+      "backing": "C:/Dev/OM3-tasks/T12-afon-harness-completion/ws/om-emu/unpacked/E147/OLY_E_147_1100_0000_0000.BIN.blk00000000.OE.0100.bin",
+      "model": "E147"
+    }
+  ],
+  "noted": [
+    "C:/Dev/OM3-tasks/T12-afon-harness-completion/ws/inputs/00_0100_50000020.decoded.bin",
+    "C:/Dev/OM3-tasks/T12-afon-harness-completion/ws/inputs/02_0106_458c0020.decoded.bin",
+    "C:/Dev/OM3-tasks/T12-afon-harness-completion/ws/ref/analysis/button-af/readiness/t6-afon-target-size-position/out/overlay-changed-bytes.csv",
+    "C:/Dev/OM3-tasks/T12-afon-harness-completion/ws/ref/analysis/button-af/readiness/t6-afon-target-size-position/out/overlay-changed-bytes.csv",
+    "C:/Dev/OM3-tasks/T12-afon-harness-completion/ws/om-emu/unpacked/E147/OLY_E_147_1100_0000_0000.BIN.blk00000000.OE.0100.bin",
+    "C:/Dev/OM3-tasks/T12-afon-harness-completion/ws/om-emu/unpacked/E147/OLY_E_147_1100_0000_0000.BIN.blk02000000.OE.0101.bin"
+  ],
+  "problems": [],
+  "ok": true
+}
