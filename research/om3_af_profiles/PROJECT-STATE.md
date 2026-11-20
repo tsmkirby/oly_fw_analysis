@@ -8,8 +8,8 @@ Last updated: 2026-11-17 (Phase 1 preparation).
 
 ## 1. Continuation point
 
-- **Now:** nothing running. **Escalation open** (`tasks/ESCALATION-2026-11-20-harness-rigor.md`): eight harness-rigor rejections while AF-ON behaviour stays accepted; the owner is asked to choose between continuing, accepting with documented limits, narrowing the harness bar (recommended), or changing roles.
-- **Previous step:** T12b (closed PARTIAL after two REJECTs; operation module and sealed setup deltas accepted; runners regressed to a circular fake).
+- **Now:** T13 alone: Opus writes the acceptance harness (owner decision 2026-11-20, escalation option 4, full bar kept). Stage 1: Sol reviews the design; stage 2: Opus implements and unit-tests in pure Node; stage 3: Grok runs the identity pass, T8d proof and four display plans without edits.
+- **Previous step:** escalation resolved by the owner: Opus writes the harness, Grok only runs it, Sol reviews both.
 - **Previous step:** T8d and T9d round 1 (both REJECT).
   - **T8d.** After the same edit, the stock half-press writer records size bytes 3/3 for the zone T6 calls
     Small, while the AF-ON converter records 1/1. T8d lists both computations, sweeps every zone against the
@@ -278,6 +278,7 @@ The autonomous programme ends at either of these:
 | T11 | Shared acceptance harness (import inventory, gated input with full state after every edge, sealed identity table); combined hook set with self-arming writer; re-prove T8d and T9d | **Closed: PARTIAL** (two REJECTs; self-arming writer, native pose latch, zone press/release accepted; proofs stopped at identity capture; harness rigor → T12) | [decision](tasks/T11-afon-acceptance-harness/decision.md) |
 | T12 | Complete and freeze the acceptance harness in pure Node (closed checklist; no emulator) | **Closed: PARTIAL** (two REJECTs; pre-delivery identity refusal, split setup, recorder tests, mode binding accepted; scanner, inventory, freeze and coverage-generation classes → T12b) | [decision](tasks/T12-afon-harness-completion/decision.md) |
 | T12b | Close the harness defect classes by construction: capability passing, fs-level inventory, freeze from execution, one operation-definition module, sealed setup deltas (pure Node) | **Closed: PARTIAL** (two REJECTs; shared operation module and sealed setup deltas accepted; circular fake, unrestored runners → escalation) | [decision](tasks/T12b-afon-harness-by-capability/decision.md) |
+| T13 | Acceptance harness written by Opus (owner decision: escalation option 4); Node permission model, no runner code, one plan module, two-layer expectations; Grok runs only | **Design review** (Sol) | [tasks/T13-afon-harness-opus](tasks/T13-afon-harness-opus/brief.md) |
 | — | Q7 option (b): new registered settings key (owner wants it researched later) | **Planned**, not started | owner, 19 Nov |
 | — | Beyond T3: persistence, display, hook point (Q4), acceptance matrix | Planned by Opus as results arrive | §2 |
 | — | CPU3 request/loader port | Deferred; regression only | AFON-MENU-RESEARCH §9 item 5 |
@@ -489,6 +490,7 @@ ACL or label operation on any tree containing a junction; the scripts check for 
 | 2026-11-20 | T12 closed PARTIAL (`run-20261120-010959-review`: REJECT; items 2 and 4 DONE). Remaining defects recur as classes (deny-list scanner, inventory with exclusions, hand-picked freeze, separately enumerated coverage), plus an unproven live-setup preservation risk. Different approach: T12b replaces each with a class-closing design (capability passing, fs-level read inventory, freeze from end-to-end fake runs, one operation-definition module, sealed observed setup deltas), pure Node. | Opus | T12 decision.md; T12b brief |
 | 2026-11-20 | T12b round 1 REJECT (`run-20261120-015622-review`): items 4 (shared operation module) and 5 (sealed setup deltas) DONE; capability leak, inventory exclusions and optional freeze enforcement remain, and the runners regressed to fake-only stubs. Correction round orders the real T12 implementation restored behind the private entry. Escalation memo written for the owner (`tasks/ESCALATION-2026-11-20-harness-rigor.md`): continue, accept with documented limits, or narrow the harness requirements. | Opus | T12b brief §3; escalation memo |
 | 2026-11-20 | T12b closed PARTIAL (`run-20261120-025921-review`: REJECT; restored implementation WRONG: fake delivery copies expected values, frame sample is the reference). Loop rule: written escalation to the owner; recommendation option 3 (narrow the harness bar to defect-hiding checks, run T13 on the T12 correction run's real harness). No task launched pending the owner. | Opus | T12b decision.md; escalation memo |
+| 2026-11-20 | Owner resolved the harness escalation: option 4, Opus writes the harness directly, Grok only runs checks, Sol reviews; the acceptance bar is not relaxed. T13 opened; design under Sol review first (Node permission model for reads and freeze, no runner code, one plan module, sealed full-state reproduction plus cross-role behavioural relations). | Owner / Opus | escalation memo; T13 design.md |
 
 ## 12. Session resumption checklist (Opus)
 

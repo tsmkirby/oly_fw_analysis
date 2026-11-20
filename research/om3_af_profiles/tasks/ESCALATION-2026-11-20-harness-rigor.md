@@ -1,6 +1,6 @@
 # Escalation: acceptance-harness rigor loop (Opus, 2026-11-20)
 
-**Status: OPEN — awaiting the owner.** T12b closed PARTIAL after its correction round; under the loop rules this is
+**Status: RESOLVED 2026-11-20 — owner chose option 4 (Opus writes the harness; Grok only runs; Sol reviews; bar unchanged).** T12b closed PARTIAL after its correction round; under the loop rules this is
 the written escalation. No task is running.
 
 ## Situation
