@@ -21,3 +21,10 @@ They do not by themselves decide the verdict; the coordinator rules on them.
 
 Use PowerShell (Python is not on your PATH). Do not run Ghidra or OM-Emu. Give the verdict in the structure of
 `templates\review.md`.
+
+## Correction round
+
+Also read `brief.md` §3 and your previous review in `audit\previous-review.md`. For each §3 item (the restored real
+implementation and items 1–4) report DONE / NOT DONE / WRONG. Check in particular that the fake runs execute the same
+code paths as the real runners (hook installation, full state capture, recorder, real expectations and settling), and
+confirm still no OM-Emu, Ghidra or Java process ran.

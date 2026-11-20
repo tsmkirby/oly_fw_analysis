@@ -1,0 +1,831 @@
+{
+  "task": "T12b",
+  "brief_sha256": "6386787e62ba09107cdbd6e4aa282fa630deb2fa77886c3fee8a128ab71a1825",
+  "inputs": [
+    {
+      "path": "brief.md",
+      "sha256": "6386787e62ba09107cdbd6e4aa282fa630deb2fa77886c3fee8a128ab71a1825",
+      "bytes": 4416
+    },
+    {
+      "path": "C:/Dev/OM3-research/tasks/T9d-afon-display-size-inputs/run-20261119-202459/work/scripts/lib_valid_t9d.mjs",
+      "sha256": "2013f1d2841b7b241567f25ccaa059bc714e1622554e15c12f17752142f3d81b",
+      "bytes": 10181
+    }
+  ],
+  "sources": [
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/harness/compare_v4.mjs",
+      "sha256": "af808b73807143aeb87bd3cd8c1c89fb0c4860fbe2a7b663d409e2e844c4b5e2",
+      "bytes": 4649
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/harness/driver_v1.mjs",
+      "sha256": "e513036d1f6125e272026068a4af17172fa972441a4917cec037569bc362bc9d",
+      "bytes": 490
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/harness/entry_v1.mjs",
+      "sha256": "ad70cf9c58d2253b68bf219efc738db974f47f71cba374bdb66c2a1850167c0e",
+      "bytes": 5564
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/harness/gate_v6.mjs",
+      "sha256": "37838776f78ce84c02c8531d0e872dfe2f357cda78439a67f60104772eef6575",
+      "bytes": 4609
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/harness/identity_v5.mjs",
+      "sha256": "fb94f2d2c8000a553f3a8796ec16e309f69f6ff2e8619a0f2a81438c556054ea",
+      "bytes": 2905
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/harness/inventory_hook_v5.mjs",
+      "sha256": "972503bae1397f98e695abbb6658ab83bea2fab6f8047453ec25d3c04f316a02",
+      "bytes": 2157
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/harness/inventory_register_v6.mjs",
+      "sha256": "83b2a08fb9e6ed4bdcba4ef719f821f545100c29c957f0a5a74a1c5a1157cb76",
+      "bytes": 10516
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/harness/inventory_v5.mjs",
+      "sha256": "cd77d0806dfbc593114b2d8bc9795a96b8bb9d30ada54a32d7f8a0e5ae04e9ec",
+      "bytes": 1682
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/harness/operations_v1.mjs",
+      "sha256": "53373d81c41733390eda18f64e5c46ebf6a49b131e5e4a8013d66aae6e8c6e00",
+      "bytes": 14140
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/harness/setup_delta_v1.mjs",
+      "sha256": "e17159ce8fc272a34e6f5b682398cce092c785647cdbfb86735aa31dd09b4a11",
+      "bytes": 1016
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/harness/table_v2.mjs",
+      "sha256": "1dbdfa871ec90c27010d5361c188b7d63db0d24c700ac57c74942dbce1bb5f20",
+      "bytes": 17566
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/out/identity-t13-v1.json",
+      "sha256": "4cdbe9f6a5bf551b6253da88c21934f227b679bd8a3ce1377dc6b9b1d74d9fa6",
+      "bytes": 20701
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/out/identity-t13-v1.seal.json",
+      "sha256": "d5cb21afeec2a9585c837be8c36d1cbd6554b5e7b3ddc890e3a0cd3abb41a2f7",
+      "bytes": 144
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/out/probe-changed.txt",
+      "sha256": "389390fafdc6a35bba55be3a599dbf7bd25b407ab31901d8f06448f277c7edc0",
+      "bytes": 19
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/out/probe-identity.json",
+      "sha256": "a70687e60a5381279fcb328f8700bd06b8a6311129d834b423fa5af804196e3a",
+      "bytes": 20
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/out/probe-open.txt",
+      "sha256": "30da2826a39aee42b1ecc8c8f5ad1f503e430566b03e3b13655a94915f012b00",
+      "bytes": 5
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/out/probe-promise.json",
+      "sha256": "3e05f1f3abb5384b3a5c06bba8e0d27b282f8d3da0cca385278f2e6c216d2c7a",
+      "bytes": 17
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/out/probe-stream.txt",
+      "sha256": "d9204af6f27e38526b2e595333f888641ac643f65d7e93ca4c44ab9591871701",
+      "bytes": 7
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/scripts/inventory_probe_v1.mjs",
+      "sha256": "5c5818cd0debf55a1d9b21b0d7211dd55563aec8cbe8818e761aecb475e4eb70",
+      "bytes": 1091
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/scripts/run_display_a_t13_v1.mjs",
+      "sha256": "513ab48b79b714349a7bb68d27ab403e9cd286e61cbdef4b98dc7de435e0c3b2",
+      "bytes": 171
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/scripts/run_display_b_t13_v1.mjs",
+      "sha256": "b4fe8bab6d00f126557f7b5bba51b46c252b9a2f01d87c49701187e25cba476c",
+      "bytes": 171
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/scripts/run_display_k1_t13_v1.mjs",
+      "sha256": "bd9557a2ac95a7584e0f44914e9af64a878b2fcd50aafa49179dda21d4aff95b",
+      "bytes": 173
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/scripts/run_display_k2_t13_v1.mjs",
+      "sha256": "4dd5be7240788ca835b336981c85817d423d85d33957175499fe197459941390",
+      "bytes": 173
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/scripts/run_identity_t13_v1.mjs",
+      "sha256": "0e0c45e3b1a1085ff12bc6f9a344d84b65a5e2cb164f3c96f4ff63fa0d0f2d34",
+      "bytes": 174
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/scripts/run_proof_t13_v1.mjs",
+      "sha256": "31491d1fee6dfbfa32843a0517b0c33fb981c0779cfac81f916971e93ae69383",
+      "bytes": 163
+    }
+  ],
+  "outputs": [
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/harness-freeze.json",
+      "sha256": "dc4343da5ebe868e5e81d00c168f9d57210a736c3cded06e58cf6accaf79b908",
+      "bytes": 4652
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/harness.md",
+      "sha256": "8020e6f932a833e44f386331466419a5123cf71fe1c6430edd8a46815d8809d3",
+      "bytes": 7964
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/harness/afon_hooks_v8.mjs",
+      "sha256": "488e6973767a246b24130173edf16fa4082dafb2ce00dcf8622150db8dc1fcd0",
+      "bytes": 24636
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/harness/check_table_v3.mjs",
+      "sha256": "37255a2b42c52c2f4cc99782d0e1cf186e0d9cd84735224f76d0be1b6c3df1d9",
+      "bytes": 7778
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/harness/compare_v4.mjs",
+      "sha256": "af808b73807143aeb87bd3cd8c1c89fb0c4860fbe2a7b663d409e2e844c4b5e2",
+      "bytes": 4649
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/harness/driver_v1.mjs",
+      "sha256": "e513036d1f6125e272026068a4af17172fa972441a4917cec037569bc362bc9d",
+      "bytes": 490
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/harness/entry_v1.mjs",
+      "sha256": "ad70cf9c58d2253b68bf219efc738db974f47f71cba374bdb66c2a1850167c0e",
+      "bytes": 5564
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/harness/gate_v6.mjs",
+      "sha256": "37838776f78ce84c02c8531d0e872dfe2f357cda78439a67f60104772eef6575",
+      "bytes": 4609
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/harness/identity_v5.mjs",
+      "sha256": "fb94f2d2c8000a553f3a8796ec16e309f69f6ff2e8619a0f2a81438c556054ea",
+      "bytes": 2905
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/harness/inventory_hook_v5.mjs",
+      "sha256": "972503bae1397f98e695abbb6658ab83bea2fab6f8047453ec25d3c04f316a02",
+      "bytes": 2157
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/harness/inventory_register_v5.mjs",
+      "sha256": "e595d35bd49f86923e1e87015f1c437d22c728da3af9ce2ee991a94538a977a7",
+      "bytes": 10092
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/harness/inventory_register_v6.mjs",
+      "sha256": "83b2a08fb9e6ed4bdcba4ef719f821f545100c29c957f0a5a74a1c5a1157cb76",
+      "bytes": 10516
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/harness/inventory_v5.mjs",
+      "sha256": "cd77d0806dfbc593114b2d8bc9795a96b8bb9d30ada54a32d7f8a0e5ae04e9ec",
+      "bytes": 1682
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/harness/operations_v1.mjs",
+      "sha256": "53373d81c41733390eda18f64e5c46ebf6a49b131e5e4a8013d66aae6e8c6e00",
+      "bytes": 14140
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/harness/planted_runner_v1.mjs",
+      "sha256": "f2e4e1e4ff8bd699a3e515bf2403584bdee570eb06acbc07807321c77c913353",
+      "bytes": 351
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/harness/predicates_v3.mjs",
+      "sha256": "c6a11a0d03a8a355beb021cd2578d9be304498695c118250a1464f22de8a046f",
+      "bytes": 1605
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/harness/refresh_v4.mjs",
+      "sha256": "01e4714d9f3067f1972e113ffc693bdb8a5dc847800b80604eed827bc1e75f48",
+      "bytes": 4294
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/harness/setup_delta_v1.mjs",
+      "sha256": "e17159ce8fc272a34e6f5b682398cce092c785647cdbfb86735aa31dd09b4a11",
+      "bytes": 1016
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/harness/state_v1.mjs",
+      "sha256": "8b5752adcf905e53af86d92e640135e3e9a83ed50bf3743f9e74a6f1c3da0677",
+      "bytes": 3647
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/harness/static_check_v1.mjs",
+      "sha256": "245c8c063f4dcc82eb0a5a03977ad47dc502c94095cfc145168d68b706739b5e",
+      "bytes": 1579
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/harness/table_v2.mjs",
+      "sha256": "1dbdfa871ec90c27010d5361c188b7d63db0d24c700ac57c74942dbce1bb5f20",
+      "bytes": 17566
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/harness/test_harness_v1.mjs",
+      "sha256": "de13f16c1a154210f827f1b1c568ade7c27a71375f5f0d80c5bac605c52c2aa0",
+      "bytes": 27293
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/harness/test_harness_v2.mjs",
+      "sha256": "88913f81a01ccc407114c2065e76e703f04cf992faca6b7b0e811fdc7d91ff15",
+      "bytes": 27495
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/harness/test_harness_v3.mjs",
+      "sha256": "7cb3c830cab32df0cec55fdd4cd4e365d8495e0406ad5ca3cc46e29a0b7f28ed",
+      "bytes": 27495
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/out/bad-freeze.json",
+      "sha256": "662672e062cb2952bde7ea22d1d94463ee6ea23c4eae5106da8134dbe2012af8",
+      "bytes": 4311
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/out/cmd/build-manifest-v1.json",
+      "sha256": "73a8e279148df3a4e762c7ad0430e46f7e7e0fd66fa1276bda99d66adb945b8e",
+      "bytes": 429
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/out/cmd/freeze-display-a.json",
+      "sha256": "294c8ff1c61b6f86ce3aa6f2ff18115bdb78c5d53e723b89810c6fbceea23681",
+      "bytes": 562
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/out/cmd/freeze-display-b.json",
+      "sha256": "f972b9852e2d83420b250be3999a364c75aebcc121c1dd05a4ba4bf6bca6c37d",
+      "bytes": 562
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/out/cmd/freeze-display-k1.json",
+      "sha256": "6718bef46fe1d7ed21703b8d12475c314a4a6f79b1eba111dbb64c74ac051c2a",
+      "bytes": 564
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/out/cmd/freeze-display-k2.json",
+      "sha256": "b8fc0167ef1e2031734e8a1d7900d4ddb1334d9d33795c5e0a2f1fce3159be66",
+      "bytes": 564
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/out/cmd/freeze-identity.json",
+      "sha256": "76f5ebfac4b0ddffc427dd95ac7a9d5a2403a8f7d6e46982304e02ccce84d377",
+      "bytes": 560
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/out/cmd/freeze-proof-enforce.json",
+      "sha256": "571c420638a0da8adb190ab2203e4992ae207de93e553cf0c6d12a7b025e1dc7",
+      "bytes": 562
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/out/cmd/freeze-proof-refuse.json",
+      "sha256": "2566bdf40c6c0c077fb854fc9e863078072ffe9e95a05c6f85728a1276d1564e",
+      "bytes": 561
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/out/cmd/freeze-proof.json",
+      "sha256": "d9d3ad25c6195c4f3e133be820a14f077b7e57231fd3911814a083f23a692558",
+      "bytes": 554
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/out/cmd/unit-changed.json",
+      "sha256": "ef5ca40ee3e646f2369ee9def2f01f84fa38539e418b3c431dd87317628662d1",
+      "bytes": 557
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/out/cmd/unit-identity.json",
+      "sha256": "31ab7139e091074465f9133d4dc29a34e414eb13081f2e806af877ca3b6d564e",
+      "bytes": 558
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/out/cmd/unit-v1.json",
+      "sha256": "68de7fa489edeb2cf1b5ca5bc5da5c44d56204af08d1014a9011261d812b5b59",
+      "bytes": 417
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/out/cmd/unit-v3.json",
+      "sha256": "3b4a13a1ff1f934f5b73006784b5e6b8e12b35eff2b09a3c0b945ab9d58c85dc",
+      "bytes": 417
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/out/cmd/write-freeze-v1.json",
+      "sha256": "2fa1dcbfb2c43377a9bb1d046bbad04827082d40a6992d954481be3f81514003",
+      "bytes": 440
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/out/display-a-t13-v1.json",
+      "sha256": "5d0ff8b0949dcd482740e92f76041ce1a9481d99dc12c88e89f42013a35b2624",
+      "bytes": 58
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/out/display-b-t13-v1.json",
+      "sha256": "07d13755607193a8fc354de6c695df44a00784f9e49827ed14cd396adfc4287f",
+      "bytes": 58
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/out/display-k1-t13-v1.json",
+      "sha256": "9ca251c8084f82fd5e6cc14804ab29df7b9737eabca5d2420df3325b99bab0d9",
+      "bytes": 59
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/out/display-k2-t13-v1.json",
+      "sha256": "146522a216996b531b49abb37b3ac0e71121a2f3d635912129d18a19a4ff5e63",
+      "bytes": 59
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/out/identity-t13-v1.json",
+      "sha256": "4cdbe9f6a5bf551b6253da88c21934f227b679bd8a3ce1377dc6b9b1d74d9fa6",
+      "bytes": 20701
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/out/identity-t13-v1.seal.json",
+      "sha256": "d5cb21afeec2a9585c837be8c36d1cbd6554b5e7b3ddc890e3a0cd3abb41a2f7",
+      "bytes": 144
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/out/inventory-freeze-display-a-exit.json",
+      "sha256": "b7984b9d527d5cf52621678da59dc28bcba2edf4ff10e57f2e0b30be6e162dc3",
+      "bytes": 3425
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/out/inventory-freeze-display-a.jsonl",
+      "sha256": "9f11a802cdd825fceff5c71c205f70ff55c28fa39a986dea47b2e44356ca8360",
+      "bytes": 4552
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/out/inventory-freeze-display-b-exit.json",
+      "sha256": "c339f8666fed399e8e012d0d94e7f4542d8f92c56d6b447eea1d9c626fbff986",
+      "bytes": 3425
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/out/inventory-freeze-display-b.jsonl",
+      "sha256": "035a481ae9397adcb693274e2b8c6dfb5808f6778195d221d1a185bffe4f77cb",
+      "bytes": 4552
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/out/inventory-freeze-display-k1-exit.json",
+      "sha256": "9311240a3a17fbe900d15a93d06a5396a0b338ad4065939a806e0c11bdce8b19",
+      "bytes": 3428
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/out/inventory-freeze-display-k1.jsonl",
+      "sha256": "adc94de427d53fe69381fe7954864c4fd77396b6bc0c1bc646d372fd70d40310",
+      "bytes": 4554
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/out/inventory-freeze-display-k2-exit.json",
+      "sha256": "ec86f7bbbce9870f5d5791069131f97db6bbcc3573096ce637cfef72ff1761f1",
+      "bytes": 3428
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/out/inventory-freeze-display-k2.jsonl",
+      "sha256": "a61bdd1812f3bbf93fe6f1eb6981c8db686f06d0632d5bff908dfe13e8708fe4",
+      "bytes": 4554
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/out/inventory-freeze-identity-exit.json",
+      "sha256": "1e2e5bb058b38bf0a43766d38017e4283101e64495921aa1640881d8b010dec3",
+      "bytes": 3859
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/out/inventory-freeze-identity.jsonl",
+      "sha256": "79c196b11cd1ae513ce25d2b65a08737f1bdcc4291d25ecc6af45e2d744fcf7a",
+      "bytes": 4943
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/out/inventory-freeze-proof-enforce-exit.json",
+      "sha256": "40c008dc506be1d40f110d653f43a3bba6177c33ebf468cbf5eaebaa5b34bc04",
+      "bytes": 3858
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/out/inventory-freeze-proof-enforce.jsonl",
+      "sha256": "5c0ea6782a8265dfcead9fb671be2b4b99fdb6bd4c7b5872e416f6e44a167a34",
+      "bytes": 4937
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/out/inventory-freeze-proof-exit.json",
+      "sha256": "5ee198df7844d1581e612d640f52d5005f47bc49f9b24888ff4764c57398574d",
+      "bytes": 3850
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/out/inventory-freeze-proof-refuse-exit.json",
+      "sha256": "015a6d0fafdbfea6051006348b91b1a0e2356f34d5a8557af23a7029216d9031",
+      "bytes": 1577
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/out/inventory-freeze-proof-refuse.jsonl",
+      "sha256": "29780e8405551a0d04d36a7bb95e653d1715ca4cc58c16f05480aa8d170c1f32",
+      "bytes": 1014
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/out/inventory-freeze-proof.jsonl",
+      "sha256": "5c0ea6782a8265dfcead9fb671be2b4b99fdb6bd4c7b5872e416f6e44a167a34",
+      "bytes": 4937
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/out/inventory-init-exit.json",
+      "sha256": "f7ee6756fb7e17ffd56bc54cac3272b80ad90d59292c2911185677872a529541",
+      "bytes": 573
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/out/inventory-unit-changed-exit.json",
+      "sha256": "c00705e8bd1987b5b4f7e8c2d363c46095b0f4a8dbe8a504d2f0303bd9e1c915",
+      "bytes": 1771
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/out/inventory-unit-changed.jsonl",
+      "sha256": "6c09aed41466dc2c77bce03ed335b6274832260ce9ce1427d4b7e5d751d8cd65",
+      "bytes": 1208
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/out/inventory-unit-identity-exit.json",
+      "sha256": "47fb09b73f1bff8c81b7e4f36e5768b92a6f0e06b287c86a3c83ed927ab7ca1b",
+      "bytes": 2305
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/out/inventory-unit-identity.jsonl",
+      "sha256": "ff81a21ed0d21352c3f6cc93e4c71380b7d564a26596f91b7e691eb3fe34e31d",
+      "bytes": 1773
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/out/inventory-unit-init-exit.json",
+      "sha256": "9fbd25c0b90a6b1d3ff4975d02d2d710124e6bae1fa12a3e7231bce88df6ff98",
+      "bytes": 569
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/out/probe-changed.txt",
+      "sha256": "389390fafdc6a35bba55be3a599dbf7bd25b407ab31901d8f06448f277c7edc0",
+      "bytes": 19
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/out/probe-identity.json",
+      "sha256": "a70687e60a5381279fcb328f8700bd06b8a6311129d834b423fa5af804196e3a",
+      "bytes": 20
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/out/probe-open.txt",
+      "sha256": "30da2826a39aee42b1ecc8c8f5ad1f503e430566b03e3b13655a94915f012b00",
+      "bytes": 5
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/out/probe-promise.json",
+      "sha256": "3e05f1f3abb5384b3a5c06bba8e0d27b282f8d3da0cca385278f2e6c216d2c7a",
+      "bytes": 17
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/out/probe-stream.txt",
+      "sha256": "d9204af6f27e38526b2e595333f888641ac643f65d7e93ca4c44ab9591871701",
+      "bytes": 7
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/out/proof-t13-v1.json",
+      "sha256": "c1945fccffddc3ce142449c007b7a84fb9e7d258cc3ed635a1358ad78cf37424",
+      "bytes": 55
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/out/test-harness-v2.txt",
+      "sha256": "abec71972baa14dc647bcf2d25f13fe8ec8ebe08dcbe722a910c9c129f42da81",
+      "bytes": 4362
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/out/test-harness-v3.txt",
+      "sha256": "fd79abd8dcc997321b7a5002a2f621206bd170d08fb01f25bc73d73bd461c299",
+      "bytes": 4362
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/result.md",
+      "sha256": "ebaa1b0ed5c2ef8df81447e3baafce2552d00a7782994944b04e35c69cbd39f4",
+      "bytes": 11240
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/scripts/build_manifest_v1.mjs",
+      "sha256": "f9612a7130d39a3410865dc1174adcfe1b815fc62ac18e9c72b92df1bd409817",
+      "bytes": 3548
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/scripts/inventory_init_v1.mjs",
+      "sha256": "2e4bf37c38c68b1d285afa92d9ee0f0c012f403716e8e90681cfb5e161bc6195",
+      "bytes": 80
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/scripts/inventory_probe_v1.mjs",
+      "sha256": "5c5818cd0debf55a1d9b21b0d7211dd55563aec8cbe8818e761aecb475e4eb70",
+      "bytes": 1091
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/scripts/run_display_a_t13_v1.mjs",
+      "sha256": "513ab48b79b714349a7bb68d27ab403e9cd286e61cbdef4b98dc7de435e0c3b2",
+      "bytes": 171
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/scripts/run_display_b_t13_v1.mjs",
+      "sha256": "b4fe8bab6d00f126557f7b5bba51b46c252b9a2f01d87c49701187e25cba476c",
+      "bytes": 171
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/scripts/run_display_k1_t13_v1.mjs",
+      "sha256": "bd9557a2ac95a7584e0f44914e9af64a878b2fcd50aafa49179dda21d4aff95b",
+      "bytes": 173
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/scripts/run_display_k2_t13_v1.mjs",
+      "sha256": "4dd5be7240788ca835b336981c85817d423d85d33957175499fe197459941390",
+      "bytes": 173
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/scripts/run_identity_t13_v1.mjs",
+      "sha256": "0e0c45e3b1a1085ff12bc6f9a344d84b65a5e2cb164f3c96f4ff63fa0d0f2d34",
+      "bytes": 174
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/scripts/run_proof_t13_v1.mjs",
+      "sha256": "31491d1fee6dfbfa32843a0517b0c33fb981c0779cfac81f916971e93ae69383",
+      "bytes": 163
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/scripts/write_bad_freeze_v1.mjs",
+      "sha256": "dce5f0117fbc97e1a215c7a6d71485e8922cabd4f4cdd61abe8a20cf2bc32c91",
+      "bytes": 790
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/scripts/write_freeze_v1.mjs",
+      "sha256": "9e5e3af29a212ba8ac432d4177ee3e3ad21310ea921f523702de446996f1975d",
+      "bytes": 2076
+    }
+  ],
+  "commands": [
+    {
+      "tag": "build-manifest-v1",
+      "argv": [
+        "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe",
+        "C:\\Dev\\OM3-tasks\\T12b-afon-harness-by-capability\\ws\\work\\scripts\\build_manifest_v1.mjs"
+      ],
+      "execArgv": [],
+      "env": {
+        "OM_EMU_MODEL": null,
+        "OM_EMU_NVRAM": "off"
+      },
+      "started": "2026-11-20T06:55:44.284Z",
+      "execPath": "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe"
+    },
+    {
+      "tag": "freeze-display-a",
+      "argv": [
+        "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe",
+        "C:\\Dev\\OM3-tasks\\T12b-afon-harness-by-capability\\ws\\work\\scripts\\run_display_a_t13_v1.mjs"
+      ],
+      "execArgv": [
+        "--import",
+        "./work/harness/inventory_register_v6.mjs"
+      ],
+      "env": {
+        "OM_EMU_MODEL": null,
+        "OM_EMU_NVRAM": "off",
+        "T12B_FREEZE_CAPTURE": "1",
+        "T12B_FREEZE_ENFORCE": null
+      },
+      "started": "2026-11-20T06:52:37.376Z",
+      "execPath": "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe"
+    },
+    {
+      "tag": "freeze-display-b",
+      "argv": [
+        "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe",
+        "C:\\Dev\\OM3-tasks\\T12b-afon-harness-by-capability\\ws\\work\\scripts\\run_display_b_t13_v1.mjs"
+      ],
+      "execArgv": [
+        "--import",
+        "./work/harness/inventory_register_v6.mjs"
+      ],
+      "env": {
+        "OM_EMU_MODEL": null,
+        "OM_EMU_NVRAM": "off",
+        "T12B_FREEZE_CAPTURE": "1",
+        "T12B_FREEZE_ENFORCE": null
+      },
+      "started": "2026-11-20T06:52:38.068Z",
+      "execPath": "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe"
+    },
+    {
+      "tag": "freeze-display-k1",
+      "argv": [
+        "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe",
+        "C:\\Dev\\OM3-tasks\\T12b-afon-harness-by-capability\\ws\\work\\scripts\\run_display_k1_t13_v1.mjs"
+      ],
+      "execArgv": [
+        "--import",
+        "./work/harness/inventory_register_v6.mjs"
+      ],
+      "env": {
+        "OM_EMU_MODEL": null,
+        "OM_EMU_NVRAM": "off",
+        "T12B_FREEZE_CAPTURE": "1",
+        "T12B_FREEZE_ENFORCE": null
+      },
+      "started": "2026-11-20T06:52:39.564Z",
+      "execPath": "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe"
+    },
+    {
+      "tag": "freeze-display-k2",
+      "argv": [
+        "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe",
+        "C:\\Dev\\OM3-tasks\\T12b-afon-harness-by-capability\\ws\\work\\scripts\\run_display_k2_t13_v1.mjs"
+      ],
+      "execArgv": [
+        "--import",
+        "./work/harness/inventory_register_v6.mjs"
+      ],
+      "env": {
+        "OM_EMU_MODEL": null,
+        "OM_EMU_NVRAM": "off",
+        "T12B_FREEZE_CAPTURE": "1",
+        "T12B_FREEZE_ENFORCE": null
+      },
+      "started": "2026-11-20T06:52:38.810Z",
+      "execPath": "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe"
+    },
+    {
+      "tag": "freeze-identity",
+      "argv": [
+        "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe",
+        "C:\\Dev\\OM3-tasks\\T12b-afon-harness-by-capability\\ws\\work\\scripts\\run_identity_t13_v1.mjs"
+      ],
+      "execArgv": [
+        "--import",
+        "./work/harness/inventory_register_v6.mjs"
+      ],
+      "env": {
+        "OM_EMU_MODEL": null,
+        "OM_EMU_NVRAM": "off",
+        "T12B_FREEZE_CAPTURE": "1",
+        "T12B_FREEZE_ENFORCE": null
+      },
+      "started": "2026-11-20T06:52:34.183Z",
+      "execPath": "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe"
+    },
+    {
+      "tag": "freeze-proof-enforce",
+      "argv": [
+        "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe",
+        "C:\\Dev\\OM3-tasks\\T12b-afon-harness-by-capability\\ws\\work\\scripts\\run_proof_t13_v1.mjs"
+      ],
+      "execArgv": [
+        "--import",
+        "./work/harness/inventory_register_v6.mjs"
+      ],
+      "env": {
+        "OM_EMU_MODEL": null,
+        "OM_EMU_NVRAM": "off",
+        "T12B_FREEZE_CAPTURE": null,
+        "T12B_FREEZE_ENFORCE": "1"
+      },
+      "started": "2026-11-20T06:52:48.124Z",
+      "execPath": "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe"
+    },
+    {
+      "tag": "freeze-proof-refuse",
+      "argv": [
+        "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe",
+        "C:\\Dev\\OM3-tasks\\T12b-afon-harness-by-capability\\ws\\work\\scripts\\run_proof_t13_v1.mjs"
+      ],
+      "execArgv": [
+        "--import",
+        "./work/harness/inventory_register_v6.mjs"
+      ],
+      "env": {
+        "OM_EMU_MODEL": null,
+        "OM_EMU_NVRAM": "off",
+        "T12B_FREEZE_CAPTURE": null,
+        "T12B_FREEZE_ENFORCE": "1"
+      },
+      "started": "2026-11-20T06:53:04.997Z",
+      "execPath": "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe"
+    },
+    {
+      "tag": "freeze-proof",
+      "argv": [
+        "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe",
+        "C:\\Dev\\OM3-tasks\\T12b-afon-harness-by-capability\\ws\\work\\scripts\\run_proof_t13_v1.mjs"
+      ],
+      "execArgv": [
+        "--import",
+        "./work/harness/inventory_register_v6.mjs"
+      ],
+      "env": {
+        "OM_EMU_MODEL": null,
+        "OM_EMU_NVRAM": "off",
+        "T12B_FREEZE_CAPTURE": "1",
+        "T12B_FREEZE_ENFORCE": null
+      },
+      "started": "2026-11-20T06:52:36.795Z",
+      "execPath": "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe"
+    },
+    {
+      "tag": "unit-changed",
+      "argv": [
+        "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe",
+        "C:\\Dev\\OM3-tasks\\T12b-afon-harness-by-capability\\ws\\work\\scripts\\inventory_probe_v1.mjs"
+      ],
+      "execArgv": [
+        "--import",
+        "./work/harness/inventory_register_v6.mjs"
+      ],
+      "env": {
+        "OM_EMU_MODEL": null,
+        "OM_EMU_NVRAM": "off",
+        "T12B_FREEZE_CAPTURE": null,
+        "T12B_FREEZE_ENFORCE": null
+      },
+      "started": "2026-11-20T06:52:17.285Z",
+      "execPath": "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe"
+    },
+    {
+      "tag": "unit-identity",
+      "argv": [
+        "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe",
+        "C:\\Dev\\OM3-tasks\\T12b-afon-harness-by-capability\\ws\\work\\scripts\\inventory_probe_v1.mjs"
+      ],
+      "execArgv": [
+        "--import",
+        "./work/harness/inventory_register_v6.mjs"
+      ],
+      "env": {
+        "OM_EMU_MODEL": null,
+        "OM_EMU_NVRAM": "off",
+        "T12B_FREEZE_CAPTURE": null,
+        "T12B_FREEZE_ENFORCE": null
+      },
+      "started": "2026-11-20T06:52:17.210Z",
+      "execPath": "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe"
+    },
+    {
+      "tag": "unit-v1",
+      "argv": [
+        "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe",
+        "C:\\Dev\\OM3-tasks\\T12b-afon-harness-by-capability\\ws\\work\\harness\\test_harness_v2.mjs"
+      ],
+      "execArgv": [],
+      "env": {
+        "OM_EMU_MODEL": null,
+        "OM_EMU_NVRAM": "off"
+      },
+      "started": "2026-11-20T06:49:56.679Z",
+      "execPath": "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe"
+    },
+    {
+      "tag": "unit-v3",
+      "argv": [
+        "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe",
+        "C:\\Dev\\OM3-tasks\\T12b-afon-harness-by-capability\\ws\\work\\harness\\test_harness_v3.mjs"
+      ],
+      "execArgv": [],
+      "env": {
+        "OM_EMU_MODEL": null,
+        "OM_EMU_NVRAM": "off"
+      },
+      "started": "2026-11-20T06:52:17.327Z",
+      "execPath": "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe"
+    },
+    {
+      "tag": "write-freeze-v1",
+      "argv": [
+        "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe",
+        "C:\\Dev\\OM3-tasks\\T12b-afon-harness-by-capability\\ws\\work\\scripts\\write_freeze_v1.mjs"
+      ],
+      "execArgv": [],
+      "env": {
+        "OM_EMU_MODEL": null,
+        "OM_EMU_NVRAM": "off"
+      },
+      "started": "2026-11-20T06:52:41.844Z",
+      "execPath": "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe"
+    }
+  ],
+  "tool_versions": {
+    "node": "v26.12.1"
+  }
+}

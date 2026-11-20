@@ -1,0 +1,565 @@
+﻿{
+    "task":  "T12b-afon-harness-by-capability",
+    "batch":  [
+                  "T12b-afon-harness-by-capability"
+              ],
+    "agent":  "grok",
+    "model":  "grok-4.7-high",
+    "brief_sha256":  "6386787e62ba09107cdbd6e4aa282fa630deb2fa77886c3fee8a128ab71a1825",
+    "command":  "C:\\Dev\\OM3-tasks\\_agent\\cli\\node.exe (Low integrity, via C:\\Dev\\OM3-tasks\\T12b-afon-harness-by-capability\\launch-20261120-011723.cmd) -p --model grok-4.7-high --output-format json --trust --workspace C:\\Dev\\OM3-tasks\\T12b-afon-harness-by-capability\\ws \"Read TASK.md and then brief.md in this folder completely, and carry out the brief exactly. Section 0 of the brief overrides everything else. Write only under work. Finish by making sure work/result.md and work/evidence-manifest.json exist.\"",
+    "cursor_sandbox":  false,
+    "started":  "2026-11-20T01:21:12.0472545-05:00",
+    "ended":  "2026-11-20T01:55:52.7472442-05:00",
+    "timed_out":  false,
+    "exit_code":  0,
+    "lock_ok":  true,
+    "lock_output":  "locked 11 targets in 12.7 s; probe failures: 0",
+    "unlock_ok":  true,
+    "unlock_output":  "unlocked; rules that had disappeared while locked: 0; probe failures: 0",
+    "workspace_unchanged":  true,
+    "inputs_unchanged":  true,
+    "harvested":  [
+                      {
+                          "path":  "evidence-manifest.json",
+                          "bytes":  33460,
+                          "sha256":  "24739f8c6770a4a2b14d611d2c9c0e53f22a97c4e3e0bc3e867fc4fafa244cdf",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "harness-freeze.json",
+                          "bytes":  4652,
+                          "sha256":  "dc4343da5ebe868e5e81d00c168f9d57210a736c3cded06e58cf6accaf79b908",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "harness.md",
+                          "bytes":  7964,
+                          "sha256":  "8020e6f932a833e44f386331466419a5123cf71fe1c6430edd8a46815d8809d3",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "result.md",
+                          "bytes":  11240,
+                          "sha256":  "ebaa1b0ed5c2ef8df81447e3baafce2552d00a7782994944b04e35c69cbd39f4",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "harness\\afon_hooks_v8.mjs",
+                          "bytes":  24636,
+                          "sha256":  "488e6973767a246b24130173edf16fa4082dafb2ce00dcf8622150db8dc1fcd0",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "harness\\check_table_v3.mjs",
+                          "bytes":  7778,
+                          "sha256":  "37255a2b42c52c2f4cc99782d0e1cf186e0d9cd84735224f76d0be1b6c3df1d9",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "harness\\compare_v4.mjs",
+                          "bytes":  4649,
+                          "sha256":  "af808b73807143aeb87bd3cd8c1c89fb0c4860fbe2a7b663d409e2e844c4b5e2",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "harness\\driver_v1.mjs",
+                          "bytes":  490,
+                          "sha256":  "e513036d1f6125e272026068a4af17172fa972441a4917cec037569bc362bc9d",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "harness\\entry_v1.mjs",
+                          "bytes":  5564,
+                          "sha256":  "ad70cf9c58d2253b68bf219efc738db974f47f71cba374bdb66c2a1850167c0e",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "harness\\gate_v6.mjs",
+                          "bytes":  4609,
+                          "sha256":  "37838776f78ce84c02c8531d0e872dfe2f357cda78439a67f60104772eef6575",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "harness\\identity_v5.mjs",
+                          "bytes":  2905,
+                          "sha256":  "fb94f2d2c8000a553f3a8796ec16e309f69f6ff2e8619a0f2a81438c556054ea",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "harness\\inventory_hook_v5.mjs",
+                          "bytes":  2157,
+                          "sha256":  "972503bae1397f98e695abbb6658ab83bea2fab6f8047453ec25d3c04f316a02",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "harness\\inventory_register_v5.mjs",
+                          "bytes":  10092,
+                          "sha256":  "e595d35bd49f86923e1e87015f1c437d22c728da3af9ce2ee991a94538a977a7",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "harness\\inventory_register_v6.mjs",
+                          "bytes":  10516,
+                          "sha256":  "83b2a08fb9e6ed4bdcba4ef719f821f545100c29c957f0a5a74a1c5a1157cb76",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "harness\\inventory_v5.mjs",
+                          "bytes":  1682,
+                          "sha256":  "cd77d0806dfbc593114b2d8bc9795a96b8bb9d30ada54a32d7f8a0e5ae04e9ec",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "harness\\operations_v1.mjs",
+                          "bytes":  14140,
+                          "sha256":  "53373d81c41733390eda18f64e5c46ebf6a49b131e5e4a8013d66aae6e8c6e00",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "harness\\planted_runner_v1.mjs",
+                          "bytes":  351,
+                          "sha256":  "f2e4e1e4ff8bd699a3e515bf2403584bdee570eb06acbc07807321c77c913353",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "harness\\predicates_v3.mjs",
+                          "bytes":  1605,
+                          "sha256":  "c6a11a0d03a8a355beb021cd2578d9be304498695c118250a1464f22de8a046f",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "harness\\refresh_v4.mjs",
+                          "bytes":  4294,
+                          "sha256":  "01e4714d9f3067f1972e113ffc693bdb8a5dc847800b80604eed827bc1e75f48",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "harness\\setup_delta_v1.mjs",
+                          "bytes":  1016,
+                          "sha256":  "e17159ce8fc272a34e6f5b682398cce092c785647cdbfb86735aa31dd09b4a11",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "harness\\state_v1.mjs",
+                          "bytes":  3647,
+                          "sha256":  "8b5752adcf905e53af86d92e640135e3e9a83ed50bf3743f9e74a6f1c3da0677",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "harness\\static_check_v1.mjs",
+                          "bytes":  1579,
+                          "sha256":  "245c8c063f4dcc82eb0a5a03977ad47dc502c94095cfc145168d68b706739b5e",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "harness\\table_v2.mjs",
+                          "bytes":  17566,
+                          "sha256":  "1dbdfa871ec90c27010d5361c188b7d63db0d24c700ac57c74942dbce1bb5f20",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "harness\\test_harness_v1.mjs",
+                          "bytes":  27293,
+                          "sha256":  "de13f16c1a154210f827f1b1c568ade7c27a71375f5f0d80c5bac605c52c2aa0",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "harness\\test_harness_v2.mjs",
+                          "bytes":  27495,
+                          "sha256":  "88913f81a01ccc407114c2065e76e703f04cf992faca6b7b0e811fdc7d91ff15",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "harness\\test_harness_v3.mjs",
+                          "bytes":  27495,
+                          "sha256":  "7cb3c830cab32df0cec55fdd4cd4e365d8495e0406ad5ca3cc46e29a0b7f28ed",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\bad-freeze.json",
+                          "bytes":  4311,
+                          "sha256":  "662672e062cb2952bde7ea22d1d94463ee6ea23c4eae5106da8134dbe2012af8",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\display-a-t13-v1.json",
+                          "bytes":  58,
+                          "sha256":  "5d0ff8b0949dcd482740e92f76041ce1a9481d99dc12c88e89f42013a35b2624",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\display-b-t13-v1.json",
+                          "bytes":  58,
+                          "sha256":  "07d13755607193a8fc354de6c695df44a00784f9e49827ed14cd396adfc4287f",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\display-k1-t13-v1.json",
+                          "bytes":  59,
+                          "sha256":  "9ca251c8084f82fd5e6cc14804ab29df7b9737eabca5d2420df3325b99bab0d9",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\display-k2-t13-v1.json",
+                          "bytes":  59,
+                          "sha256":  "146522a216996b531b49abb37b3ac0e71121a2f3d635912129d18a19a4ff5e63",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\evidence-manifest.seal.json",
+                          "bytes":  142,
+                          "sha256":  "d8615c31b20d4dc460e6e7b8474ff3780515882f5f0ae212885c2ec05e966a14",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\identity-t13-v1.json",
+                          "bytes":  20701,
+                          "sha256":  "4cdbe9f6a5bf551b6253da88c21934f227b679bd8a3ce1377dc6b9b1d74d9fa6",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\identity-t13-v1.seal.json",
+                          "bytes":  144,
+                          "sha256":  "d5cb21afeec2a9585c837be8c36d1cbd6554b5e7b3ddc890e3a0cd3abb41a2f7",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\inventory-freeze-display-a-exit.json",
+                          "bytes":  3425,
+                          "sha256":  "b7984b9d527d5cf52621678da59dc28bcba2edf4ff10e57f2e0b30be6e162dc3",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\inventory-freeze-display-a.jsonl",
+                          "bytes":  4552,
+                          "sha256":  "9f11a802cdd825fceff5c71c205f70ff55c28fa39a986dea47b2e44356ca8360",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\inventory-freeze-display-b-exit.json",
+                          "bytes":  3425,
+                          "sha256":  "c339f8666fed399e8e012d0d94e7f4542d8f92c56d6b447eea1d9c626fbff986",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\inventory-freeze-display-b.jsonl",
+                          "bytes":  4552,
+                          "sha256":  "035a481ae9397adcb693274e2b8c6dfb5808f6778195d221d1a185bffe4f77cb",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\inventory-freeze-display-k1-exit.json",
+                          "bytes":  3428,
+                          "sha256":  "9311240a3a17fbe900d15a93d06a5396a0b338ad4065939a806e0c11bdce8b19",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\inventory-freeze-display-k1.jsonl",
+                          "bytes":  4554,
+                          "sha256":  "adc94de427d53fe69381fe7954864c4fd77396b6bc0c1bc646d372fd70d40310",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\inventory-freeze-display-k2-exit.json",
+                          "bytes":  3428,
+                          "sha256":  "ec86f7bbbce9870f5d5791069131f97db6bbcc3573096ce637cfef72ff1761f1",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\inventory-freeze-display-k2.jsonl",
+                          "bytes":  4554,
+                          "sha256":  "a61bdd1812f3bbf93fe6f1eb6981c8db686f06d0632d5bff908dfe13e8708fe4",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\inventory-freeze-identity-exit.json",
+                          "bytes":  3859,
+                          "sha256":  "1e2e5bb058b38bf0a43766d38017e4283101e64495921aa1640881d8b010dec3",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\inventory-freeze-identity.jsonl",
+                          "bytes":  4943,
+                          "sha256":  "79c196b11cd1ae513ce25d2b65a08737f1bdcc4291d25ecc6af45e2d744fcf7a",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\inventory-freeze-proof-enforce-exit.json",
+                          "bytes":  3858,
+                          "sha256":  "40c008dc506be1d40f110d653f43a3bba6177c33ebf468cbf5eaebaa5b34bc04",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\inventory-freeze-proof-enforce.jsonl",
+                          "bytes":  4937,
+                          "sha256":  "5c0ea6782a8265dfcead9fb671be2b4b99fdb6bd4c7b5872e416f6e44a167a34",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\inventory-freeze-proof-exit.json",
+                          "bytes":  3850,
+                          "sha256":  "5ee198df7844d1581e612d640f52d5005f47bc49f9b24888ff4764c57398574d",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\inventory-freeze-proof-refuse-exit.json",
+                          "bytes":  1577,
+                          "sha256":  "015a6d0fafdbfea6051006348b91b1a0e2356f34d5a8557af23a7029216d9031",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\inventory-freeze-proof-refuse.jsonl",
+                          "bytes":  1014,
+                          "sha256":  "29780e8405551a0d04d36a7bb95e653d1715ca4cc58c16f05480aa8d170c1f32",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\inventory-freeze-proof.jsonl",
+                          "bytes":  4937,
+                          "sha256":  "5c0ea6782a8265dfcead9fb671be2b4b99fdb6bd4c7b5872e416f6e44a167a34",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\inventory-init-exit.json",
+                          "bytes":  573,
+                          "sha256":  "f7ee6756fb7e17ffd56bc54cac3272b80ad90d59292c2911185677872a529541",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\inventory-unit-changed-exit.json",
+                          "bytes":  1771,
+                          "sha256":  "c00705e8bd1987b5b4f7e8c2d363c46095b0f4a8dbe8a504d2f0303bd9e1c915",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\inventory-unit-changed.jsonl",
+                          "bytes":  1208,
+                          "sha256":  "6c09aed41466dc2c77bce03ed335b6274832260ce9ce1427d4b7e5d751d8cd65",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\inventory-unit-identity-exit.json",
+                          "bytes":  2305,
+                          "sha256":  "47fb09b73f1bff8c81b7e4f36e5768b92a6f0e06b287c86a3c83ed927ab7ca1b",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\inventory-unit-identity.jsonl",
+                          "bytes":  1773,
+                          "sha256":  "ff81a21ed0d21352c3f6cc93e4c71380b7d564a26596f91b7e691eb3fe34e31d",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\inventory-unit-init-exit.json",
+                          "bytes":  569,
+                          "sha256":  "9fbd25c0b90a6b1d3ff4975d02d2d710124e6bae1fa12a3e7231bce88df6ff98",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\probe-changed.txt",
+                          "bytes":  19,
+                          "sha256":  "389390fafdc6a35bba55be3a599dbf7bd25b407ab31901d8f06448f277c7edc0",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\probe-identity.json",
+                          "bytes":  20,
+                          "sha256":  "a70687e60a5381279fcb328f8700bd06b8a6311129d834b423fa5af804196e3a",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\probe-open.txt",
+                          "bytes":  5,
+                          "sha256":  "30da2826a39aee42b1ecc8c8f5ad1f503e430566b03e3b13655a94915f012b00",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\probe-promise.json",
+                          "bytes":  17,
+                          "sha256":  "3e05f1f3abb5384b3a5c06bba8e0d27b282f8d3da0cca385278f2e6c216d2c7a",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\probe-stream.txt",
+                          "bytes":  7,
+                          "sha256":  "d9204af6f27e38526b2e595333f888641ac643f65d7e93ca4c44ab9591871701",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\proof-t13-v1.json",
+                          "bytes":  55,
+                          "sha256":  "c1945fccffddc3ce142449c007b7a84fb9e7d258cc3ed635a1358ad78cf37424",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\test-harness-v2.txt",
+                          "bytes":  4362,
+                          "sha256":  "abec71972baa14dc647bcf2d25f13fe8ec8ebe08dcbe722a910c9c129f42da81",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\test-harness-v3.txt",
+                          "bytes":  4362,
+                          "sha256":  "fd79abd8dcc997321b7a5002a2f621206bd170d08fb01f25bc73d73bd461c299",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\build-manifest-v1.json",
+                          "bytes":  429,
+                          "sha256":  "73a8e279148df3a4e762c7ad0430e46f7e7e0fd66fa1276bda99d66adb945b8e",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\freeze-display-a.json",
+                          "bytes":  562,
+                          "sha256":  "294c8ff1c61b6f86ce3aa6f2ff18115bdb78c5d53e723b89810c6fbceea23681",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\freeze-display-b.json",
+                          "bytes":  562,
+                          "sha256":  "f972b9852e2d83420b250be3999a364c75aebcc121c1dd05a4ba4bf6bca6c37d",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\freeze-display-k1.json",
+                          "bytes":  564,
+                          "sha256":  "6718bef46fe1d7ed21703b8d12475c314a4a6f79b1eba111dbb64c74ac051c2a",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\freeze-display-k2.json",
+                          "bytes":  564,
+                          "sha256":  "b8fc0167ef1e2031734e8a1d7900d4ddb1334d9d33795c5e0a2f1fce3159be66",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\freeze-identity.json",
+                          "bytes":  560,
+                          "sha256":  "76f5ebfac4b0ddffc427dd95ac7a9d5a2403a8f7d6e46982304e02ccce84d377",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\freeze-proof-enforce.json",
+                          "bytes":  562,
+                          "sha256":  "571c420638a0da8adb190ab2203e4992ae207de93e553cf0c6d12a7b025e1dc7",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\freeze-proof-refuse.json",
+                          "bytes":  561,
+                          "sha256":  "2566bdf40c6c0c077fb854fc9e863078072ffe9e95a05c6f85728a1276d1564e",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\freeze-proof.json",
+                          "bytes":  554,
+                          "sha256":  "d9d3ad25c6195c4f3e133be820a14f077b7e57231fd3911814a083f23a692558",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\unit-changed.json",
+                          "bytes":  557,
+                          "sha256":  "ef5ca40ee3e646f2369ee9def2f01f84fa38539e418b3c431dd87317628662d1",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\unit-identity.json",
+                          "bytes":  558,
+                          "sha256":  "31ab7139e091074465f9133d4dc29a34e414eb13081f2e806af877ca3b6d564e",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\unit-v1.json",
+                          "bytes":  417,
+                          "sha256":  "68de7fa489edeb2cf1b5ca5bc5da5c44d56204af08d1014a9011261d812b5b59",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\unit-v3.json",
+                          "bytes":  417,
+                          "sha256":  "3b4a13a1ff1f934f5b73006784b5e6b8e12b35eff2b09a3c0b945ab9d58c85dc",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "out\\cmd\\write-freeze-v1.json",
+                          "bytes":  440,
+                          "sha256":  "2fa1dcbfb2c43377a9bb1d046bbad04827082d40a6992d954481be3f81514003",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "scripts\\build_manifest_v1.mjs",
+                          "bytes":  3548,
+                          "sha256":  "f9612a7130d39a3410865dc1174adcfe1b815fc62ac18e9c72b92df1bd409817",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "scripts\\inventory_init_v1.mjs",
+                          "bytes":  80,
+                          "sha256":  "2e4bf37c38c68b1d285afa92d9ee0f0c012f403716e8e90681cfb5e161bc6195",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "scripts\\inventory_probe_v1.mjs",
+                          "bytes":  1091,
+                          "sha256":  "5c5818cd0debf55a1d9b21b0d7211dd55563aec8cbe8818e761aecb475e4eb70",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "scripts\\run_display_a_t13_v1.mjs",
+                          "bytes":  171,
+                          "sha256":  "513ab48b79b714349a7bb68d27ab403e9cd286e61cbdef4b98dc7de435e0c3b2",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "scripts\\run_display_b_t13_v1.mjs",
+                          "bytes":  171,
+                          "sha256":  "b4fe8bab6d00f126557f7b5bba51b46c252b9a2f01d87c49701187e25cba476c",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "scripts\\run_display_k1_t13_v1.mjs",
+                          "bytes":  173,
+                          "sha256":  "bd9557a2ac95a7584e0f44914e9af64a878b2fcd50aafa49179dda21d4aff95b",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "scripts\\run_display_k2_t13_v1.mjs",
+                          "bytes":  173,
+                          "sha256":  "4dd5be7240788ca835b336981c85817d423d85d33957175499fe197459941390",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "scripts\\run_identity_t13_v1.mjs",
+                          "bytes":  174,
+                          "sha256":  "0e0c45e3b1a1085ff12bc6f9a344d84b65a5e2cb164f3c96f4ff63fa0d0f2d34",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "scripts\\run_proof_t13_v1.mjs",
+                          "bytes":  163,
+                          "sha256":  "31491d1fee6dfbfa32843a0517b0c33fb981c0779cfac81f916971e93ae69383",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "scripts\\write_bad_freeze_v1.mjs",
+                          "bytes":  790,
+                          "sha256":  "dce5f0117fbc97e1a215c7a6d71485e8922cabd4f4cdd61abe8a20cf2bc32c91",
+                          "copied":  true
+                      },
+                      {
+                          "path":  "scripts\\write_freeze_v1.mjs",
+                          "bytes":  2076,
+                          "sha256":  "9e5e3af29a212ba8ac432d4177ee3e3ad21310ea921f523702de446996f1975d",
+                          "copied":  true
+                      }
+                  ],
+    "usage":  {
+                  "inputTokens":  357397,
+                  "outputTokens":  189624,
+                  "cacheReadTokens":  11825920,
+                  "cacheWriteTokens":  0,
+                  "reasoningTokens":  134061
+              },
+    "ok":  true
+}

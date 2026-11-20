@@ -1,0 +1,90 @@
+PASS byte copy work/harness/afon_hooks_v8.mjs 488e6973767a246b24130173edf16fa4082dafb2ce00dcf8622150db8dc1fcd0
+PASS byte copy work/harness/predicates_v3.mjs c6a11a0d03a8a355beb021cd2578d9be304498695c118250a1464f22de8a046f
+PASS byte copy work/harness/state_v1.mjs 8b5752adcf905e53af86d92e640135e3e9a83ed50bf3743f9e74a6f1c3da0677
+PASS byte copy work/harness/table_v2.mjs 1dbdfa871ec90c27010d5361c188b7d63db0d24c700ac57c74942dbce1bb5f20
+PASS byte copy work/harness/compare_v4.mjs af808b73807143aeb87bd3cd8c1c89fb0c4860fbe2a7b663d409e2e844c4b5e2
+PASS byte copy work/harness/refresh_v4.mjs 01e4714d9f3067f1972e113ffc693bdb8a5dc847800b80604eed827bc1e75f48
+PASS table
+PASS hook contains bank
+PASS hook contains initMirror
+PASS hook decide omits the watch
+PASS predicate decide does not read the watch
+PASS watch toggle does not change pose refusal
+PASS ok is a commit without a caller flag
+PASS afon outside commit context
+PASS afon in commit context
+PASS gate has no press
+PASS changed unexpected slot held held slot 34994:0
+PASS changed exempt-looking slot
+PASS wrong declared value
+PASS seal is not a value
+PASS shape-only compare still values
+PASS unmarked commit refused before delivery
+PASS identity after the key
+PASS success retains expected and actual
+PASS missing sealed row delivers zero inputs
+PASS present sealed row delivers the key
+PASS null frame refused
+PASS changed frame fails the hold
+PASS stable frame passes the hold
+PASS passthrough return kept
+PASS substitution kept
+PASS outside getter categorised
+PASS uncategorised getter is an orphan
+PASS null outside fails
+PASS window keeps its own sample
+PASS later sample does not replace
+PASS windows stamped
+PASS return hook fills the getter
+PASS sample taken inside the open window
+PASS operation group setup 25
+PASS operation group table 80
+PASS operation group setter 77
+PASS operation group pose 5
+PASS operation group zone 111
+PASS operation group custom 24
+PASS operation group display 50
+PASS every operation has one expectation source
+PASS commit class is commit or none
+PASS driver iterates gate.operations
+PASS driver has no private operation id
+PASS runners and driver import only the entry
+PASS planted emulator import is rejected
+PASS unclassified fs.promises
+PASS freeze accepts the noted file
+PASS freeze refuses a missing file
+PASS freeze refuses a different hash
+PASS exit handler is installed before the tag check
+PASS real session is refused T12b does not start the emulator
+PASS handle has no prototype and no session methods
+PASS planted runner cannot obtain the session planted runner failed to obtain the session
+PASS identity pass seals the observed setup delta {"changed":{"flag":7}}
+PASS proof passes on the sealed setup change
+PASS proof fails on a different setup change setup-bring-up flag
+PASS setup-lever is in the shared definition list
+PASS deleting a definition removes it from execution
+PASS deleting a definition removes it from coverage
+PASS deleting a definition removes it from the identity generator
+PASS definition list restored
+PASS missing tag still writes a failing exit record Error: T12B_INVENTORY_TAG is required
+    at file:///C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/harness/inventory_register_v6.mjs:293:19
+    at ModuleJob.run (node:internal/modules/esm/module_job:569:25)
+    at async node:internal/modules/esm/loader:650:26
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:97:9)
+
+PASS init failure still writes a failing exit record
+PASS identity json under work/out is recorded (node:44448) [DEP0205] DeprecationWarning: `module.register()` is deprecated. Use `module.registerHooks()` instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+PASS promise read is recorded
+PASS open is recorded
+PASS callback read is recorded
+PASS registrar output is not an input
+PASS command records argv (node:44448) [DEP0205] DeprecationWarning: `module.register()` is deprecated. Use `module.registerHooks()` instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+PASS command records execArgv
+PASS exit records execArgv
+PASS file changed between read and exit fails (node:32428) [DEP0205] DeprecationWarning: `module.register()` is deprecated. Use `module.registerHooks()` instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+

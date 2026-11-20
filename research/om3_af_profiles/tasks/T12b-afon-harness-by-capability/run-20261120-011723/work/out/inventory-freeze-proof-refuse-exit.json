@@ -1,0 +1,49 @@
+{
+  "tag": "freeze-proof-refuse",
+  "ok": false,
+  "finished": "2026-11-20T06:53:05.023Z",
+  "argv": [
+    "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe",
+    "C:\\Dev\\OM3-tasks\\T12b-afon-harness-by-capability\\ws\\work\\scripts\\run_proof_t13_v1.mjs"
+  ],
+  "execArgv": [
+    "--import",
+    "./work/harness/inventory_register_v6.mjs"
+  ],
+  "env": {
+    "OM_EMU_MODEL": null,
+    "OM_EMU_NVRAM": "off",
+    "T12B_FREEZE_CAPTURE": null,
+    "T12B_FREEZE_ENFORCE": "1"
+  },
+  "imports": [
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/harness/inventory_register_v6.mjs",
+      "sha256": "83b2a08fb9e6ed4bdcba4ef719f821f545100c29c957f0a5a74a1c5a1157cb76",
+      "bytes": 10516
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/harness/inventory_hook_v5.mjs",
+      "sha256": "972503bae1397f98e695abbb6658ab83bea2fab6f8047453ec25d3c04f316a02",
+      "bytes": 2157
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/harness/inventory_v5.mjs",
+      "sha256": "cd77d0806dfbc593114b2d8bc9795a96b8bb9d30ada54a32d7f8a0e5ae04e9ec",
+      "bytes": 1682
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/scripts/run_proof_t13_v1.mjs",
+      "sha256": "31491d1fee6dfbfa32843a0517b0c33fb981c0779cfac81f916971e93ae69383",
+      "bytes": 163
+    }
+  ],
+  "notes": [
+    {
+      "ready": true
+    }
+  ],
+  "problems": [
+    "refuse to start: missing C:/Dev/OM3-tasks/T12b-afon-harness-by-capability/ws/work/harness/entry_v1.mjs"
+  ]
+}

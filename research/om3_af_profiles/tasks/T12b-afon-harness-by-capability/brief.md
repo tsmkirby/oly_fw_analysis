@@ -52,3 +52,33 @@ coverage lists drift from the drivers. This task replaces each mechanism with on
 
 Running any emulator proof (T13), persistence, Subject Detect On, packaging, hardware. The two T9d mechanism items
 stay unresolved and non-blocking.
+
+## 3. Correction round (Opus, after Sol's review `run-20261120-015622-review`: REJECT)
+
+Your previous work is in `work\`, and Sol's full review is `audit\previous-review.md`. Read it completely. Do not
+start over and do not edit any executed file. Still **zero emulator processes**.
+
+**Confirmed, reuse:** the six accepted copies byte-identical; the shared `OPERATIONS` module feeding drivers,
+coverage and identity (item 4); sealed setup deltas with `diffState`/`expectFromDelta` (item 5); exit handlers before
+the tag check; the closure-private session; the 20-path fake-run freeze generation.
+
+**Most important (item 6 / Sol item 4):** the runners must execute the **real** T13 implementation. Restore the
+accepted T12 operation payloads, expectations, settling/idle times, full state capture, hook installation
+(`afon_hooks` combined hook) and recorder integration from `ref\tasks\T12-afon-harness-completion\run-20261120-003025\work\`
+behind the private entry. Write `createReal()` fully (OM-Emu session creation as T11/T12 did) but do not call it.
+The fake must implement the emulator API surface those real paths use (as the T12 v6 fake did), so the fake runs
+exercise the same code, not stubs. No `hold`-everything expectations, no zero idle, no no-op delivery.
+
+**Required:**
+1. **Capabilities.** No runner-supplied callback receives backing state; the handle exposes frozen operation
+   descriptions or IDs only. The static check covers computed `import()`, `createRequire`, `require`, `process.binding`
+   and `node:module`; a runtime test plants a **valid, resolvable** emulator import and shows it is refused by policy
+   (assert the refusal reason, not any error).
+2. **Inventory.** No exclusions: the freeze file is an input and is inventoried. Handle Buffer and URL paths and
+   descriptor-based reads (record the path at `open`, hash at first read). Probes for each form.
+3. **Freeze enforcement mandatory.** Any non-capture run refuses to start unless the freeze validates; capture mode is
+   an explicit, logged exception that cannot be combined with proof mode. The freeze also lists, by revision, diff
+   digest and per-file SHA-256, every file under the OM-Emu checkout's source tree, so a real T13 session's emulator
+   imports are covered without running the emulator now.
+4. **Records.** Make the identity-generator deletion test use an identity-bearing operation; regenerate the freeze from
+   the restored runners on the fake; update `harness.md`, `result.md`, manifest and seal.
