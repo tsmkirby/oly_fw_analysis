@@ -25,3 +25,12 @@
 
 Recompute every manifest hash. Use PowerShell (Python is not on your PATH). Do not run Ghidra or OM-Emu.
 Give the verdict in the structure of `templates\review.md`.
+
+## Correction round
+
+Also read `brief.md` §5 and your previous review in `audit\previous-review.md`. For each §5 item, report DONE /
+NOT DONE / WRONG / BLOCKED (honestly reported).
+
+Check in particular: the writer feed uses the saved bank and runs from the installed hook; the pose-time leak is
+traced to an instruction and fixed without changing expectations; all banks and the full 71-byte mirror are
+checked after every key; identity expectations were hashed before use; the full proof ends `ok:true`.

@@ -1,0 +1,284 @@
+{
+  "task": "T9d",
+  "note": "External seal written after wrapper command 13 exited. Covers every command record under work/out/cmd, including command 13. This process was not a wrapper and did not import the emulator.",
+  "files": [
+    {
+      "path": "work/evidence-manifest.json",
+      "sha256": "29f2443a87c4a2894313b344c85c3be9cf1cdc44cb69bd6b1523591ea503b33c",
+      "bytes": 62394
+    },
+    {
+      "path": "work/result.md",
+      "sha256": "b17cd42aa3c8b1182a676a17f53a663cd036cccc97d05ed3ed013661536877dd",
+      "bytes": 10282
+    },
+    {
+      "path": "work/out/display.md",
+      "sha256": "006655055d6f28ef192c2ef8612c3340290fd8a7bf0607ed986022179abccaea",
+      "bytes": 7485
+    }
+  ],
+  "commands": [
+    {
+      "path": "work/out/cmd/01.cmd.txt",
+      "sha256": "3e85db443c15c3c795ede07c586310169fb5ff5ddd7393d25e70951b1415696b",
+      "bytes": 389
+    },
+    {
+      "path": "work/out/cmd/01.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "work/out/cmd/01.exit",
+      "sha256": "d07d775648de4e7bf756903c4fd4e4e3996b6cbb1bd6713277e1700c5e6b16c9",
+      "bytes": 510
+    },
+    {
+      "path": "work/out/cmd/01.out",
+      "sha256": "71c99cfe0c65ea25fef2ae05e33f62e9fbe8c48809c2c2de8761aad40cafedb8",
+      "bytes": 1919
+    },
+    {
+      "path": "work/out/cmd/02.cmd.txt",
+      "sha256": "f5f5f677a77c4a49a2a378ea79a3354f87d1965f8893193be261be9ea2d829f3",
+      "bytes": 765
+    },
+    {
+      "path": "work/out/cmd/02.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "work/out/cmd/02.exit",
+      "sha256": "a86401e65f38b2770ff7e3e9dd31e23fc2574880176e64bf51724c1089602ef3",
+      "bytes": 668
+    },
+    {
+      "path": "work/out/cmd/02.out",
+      "sha256": "84afbeb004895ab777b62ab5d52d0a6cd817662163f027132868b8b05a9eab98",
+      "bytes": 4662
+    },
+    {
+      "path": "work/out/cmd/03.cmd.txt",
+      "sha256": "a7bb8d62de4969bee68051e52451f21551be68a3fa09db44338232f1dada1450",
+      "bytes": 404
+    },
+    {
+      "path": "work/out/cmd/03.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "work/out/cmd/03.exit",
+      "sha256": "144d2fce7fa82e5c4388a4a9136ae01b240e57ad183b79f2958156590557591d",
+      "bytes": 518
+    },
+    {
+      "path": "work/out/cmd/03.out",
+      "sha256": "fb7a58f073a6559cedb19d1eeaa0948d968ca279bee35f5a807c290bc7722f65",
+      "bytes": 4805
+    },
+    {
+      "path": "work/out/cmd/04.cmd.txt",
+      "sha256": "d98b74cb1b51fe037181b1f330a19d05fcf1137c0cb60d72006095b50621bbae",
+      "bytes": 679
+    },
+    {
+      "path": "work/out/cmd/04.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "work/out/cmd/04.exit",
+      "sha256": "021918c8edf99316ac1956997a15c6446ea7be78fee60d36d5280de3c02f170b",
+      "bytes": 625
+    },
+    {
+      "path": "work/out/cmd/04.out",
+      "sha256": "e3ec7f6d6e77ac891dc43024c071c290d69d5453f0785712ef3c3056bf8e0fad",
+      "bytes": 4286
+    },
+    {
+      "path": "work/out/cmd/05.cmd.txt",
+      "sha256": "4319fe74e49163ef19ad587114820ace445c2c8b84e61ae242019d578030dcdb",
+      "bytes": 509
+    },
+    {
+      "path": "work/out/cmd/05.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "work/out/cmd/05.exit",
+      "sha256": "289586c18b5d57a6274a340329f7627e3c421d45659cc0d22ab27d404b6346f5",
+      "bytes": 540
+    },
+    {
+      "path": "work/out/cmd/05.out",
+      "sha256": "55a7169d592cd24749fc392bbb8c6455befcd408c44a04bf39891ca093b3cc69",
+      "bytes": 4030
+    },
+    {
+      "path": "work/out/cmd/06.cmd.txt",
+      "sha256": "8b6dc162d99465154a8e1f62a96525ba485bdb73d35ff7a25ace303266710f86",
+      "bytes": 392
+    },
+    {
+      "path": "work/out/cmd/06.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "work/out/cmd/06.exit",
+      "sha256": "5f491e9387adbfac8583ef5e0412a32c573e72c649a755ea553605fcb4d1b44e",
+      "bytes": 512
+    },
+    {
+      "path": "work/out/cmd/06.out",
+      "sha256": "60030498697942cb8ee554c91ba48faaba2f1305d05d51db624719351fb20530",
+      "bytes": 164
+    },
+    {
+      "path": "work/out/cmd/07.cmd.txt",
+      "sha256": "afd6fc519fb717ae18f0cd6f00829b5dd41e610657c8d6cb825c35cc212e23cf",
+      "bytes": 394
+    },
+    {
+      "path": "work/out/cmd/07.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "work/out/cmd/07.exit",
+      "sha256": "9145a80461b96295fca372be643bf9a5b2004df358b1475d9630da6d61626a25",
+      "bytes": 511
+    },
+    {
+      "path": "work/out/cmd/07.out",
+      "sha256": "1fe0493bf97424af6c0f4bd6b615ea56bda3005abbdfe6f8bdc585f2f0dd6424",
+      "bytes": 5491
+    },
+    {
+      "path": "work/out/cmd/08.cmd.txt",
+      "sha256": "49920341924c48f17f7797ba9327f62e6f906800f56917e4a2283fc438a4e418",
+      "bytes": 404
+    },
+    {
+      "path": "work/out/cmd/08.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "work/out/cmd/08.exit",
+      "sha256": "5a9936b80860b6f8b59911b09e706e0627955070e62a6148df97d0be2f383cef",
+      "bytes": 517
+    },
+    {
+      "path": "work/out/cmd/08.out",
+      "sha256": "720eab35112d5e460f1c9d81253ae8f4893a0474df9ea496d97e818c6514e6a5",
+      "bytes": 5575
+    },
+    {
+      "path": "work/out/cmd/09.cmd.txt",
+      "sha256": "724b292314df7c80a27319b7105f0dfc3fda412c468e1eef9cd4232dcc3134d6",
+      "bytes": 404
+    },
+    {
+      "path": "work/out/cmd/09.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "work/out/cmd/09.exit",
+      "sha256": "a5f17ed8e349376478325f75d862ad3480c104942a49155758610f944d8fef16",
+      "bytes": 517
+    },
+    {
+      "path": "work/out/cmd/09.out",
+      "sha256": "2d0e79497fc763d7c944d57765677b844487a560e5b78fe783fb4f2291188749",
+      "bytes": 5575
+    },
+    {
+      "path": "work/out/cmd/10.cmd.txt",
+      "sha256": "3222b2ff0a109c93f86e28e985906f5834132c88cc3516af7e05ad48d4b3a6ca",
+      "bytes": 394
+    },
+    {
+      "path": "work/out/cmd/10.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "work/out/cmd/10.exit",
+      "sha256": "d176aae41bfb8704e56381a5f8c928b741e48d48b45f65d3e9c7482e10a32130",
+      "bytes": 511
+    },
+    {
+      "path": "work/out/cmd/10.out",
+      "sha256": "149b7869ff95b19d3b5424311dd75b59361874be26d61d60d66575d6bc025ccf",
+      "bytes": 4632
+    },
+    {
+      "path": "work/out/cmd/11.cmd.txt",
+      "sha256": "6d2328419a04ab69a9cd8ff6bd277a54ef5daffda9c4b0b6d89e367ba8b0297f",
+      "bytes": 401
+    },
+    {
+      "path": "work/out/cmd/11.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "work/out/cmd/11.exit",
+      "sha256": "dfb01147c1ac4eaded6f1f390a561bc7c7f61a7928c75e2ffcfff9a46c44bec6",
+      "bytes": 518
+    },
+    {
+      "path": "work/out/cmd/11.out",
+      "sha256": "af7c40e2c8ca0d92a29b52c7306bd2db91f699a406039633d36b726b7ede86aa",
+      "bytes": 235
+    },
+    {
+      "path": "work/out/cmd/12.cmd.txt",
+      "sha256": "c035032f9330a1496411672adb4d5403706524a9160fcbed9c476cf5936cdc13",
+      "bytes": 768
+    },
+    {
+      "path": "work/out/cmd/12.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "work/out/cmd/12.exit",
+      "sha256": "3af50e79d1a9a9e46fa7e7c007909805d14c80b3d82a491c07b93a58d27c1ac3",
+      "bytes": 585
+    },
+    {
+      "path": "work/out/cmd/12.out",
+      "sha256": "84f08fd74a8fb1060520566eea76b7ababe3cd708132e7fe4e6c3679f50eade3",
+      "bytes": 221
+    },
+    {
+      "path": "work/out/cmd/13.cmd.txt",
+      "sha256": "073fe3c6236f3c73987daa374f458d6030ff2d5672e9b686156a045627fbfcbb",
+      "bytes": 404
+    },
+    {
+      "path": "work/out/cmd/13.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "work/out/cmd/13.exit",
+      "sha256": "4f1e3678663d7ab10c14aa0539f0479879ebc9bd21e3e64cb6b4aa97c1f1b28e",
+      "bytes": 520
+    },
+    {
+      "path": "work/out/cmd/13.out",
+      "sha256": "c15a64427a6d88385b5b5a66428853682bab459e949fa148dcfd638d2db8c190",
+      "bytes": 287
+    }
+  ],
+  "missing": []
+}

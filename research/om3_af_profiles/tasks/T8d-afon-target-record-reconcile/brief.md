@@ -54,3 +54,37 @@ Brief version: 2026-11-19 · Workspace: Ghidra + OM-Emu · Runs concurrently wit
 
 Storage and persistence (they follow, in the integrated acceptance), the display (T9d), Subject Detect On,
 packaging, hardware.
+
+## 5. Correction round (Opus, after Sol's review `run-20261119-201846-review`: REJECT)
+
+Your previous work is in `work\`, and Sol's full review is `audit\previous-review.md`. Read it completely.
+Do **not** start over, and never edit an executed file.
+
+**Confirmed, reuse:** the writer rule and the divergence (preset zones forced to 1×1 by the converter; the stock
+writer copies `0x9a41[0]`, `0x1dd1[0..1]`, `0x84d1[0]`, `0x88b2[0]`, `0x1df1[0]`, `0x1e01[0]`); the zone names;
+the six-zone comparison; landscape and EXIF 6 AF-ON press records equal to K1e S1, releases equal to the
+candidate's own S1 and to K2.
+
+**Coordinator ruling.** The live half-press position `0x5962[0]` changing to the AF-ON edit (292) during the EXIF 6
+portion is a **state leak**, not an expectation error. Do not change the expectation. Normal half-press cells must
+stay equal to K2 (and to K1e's normal-edit values where K1e edited them) throughout.
+
+**Required:**
+1. **Bank in the writer feed.** During the AF-ON writer call, `0x88b2[0]` must come from the mirror cell for
+   `bank()`'s saved index, not from mirror offset `0x22`.
+2. **Real invocation path.** The writer feed must run from the installed hook on the AF-ON press path, not from a
+   runner call to `applyWriter()`.
+3. **Leak trace, then one fix.** Arm store watches on every `0x5962`/`0x99a1` live cell, `0x88b2[0]` and the
+   mirror before the pose change, and capture the writing instruction, caller chain and value. Then one labelled
+   change that stops it (restore or redirect), on top of items 1–2.
+4. **Complete checks.** After every key: all half-press cells of all banks (not only the current one), and the
+   full 71-byte mirror including `0x37–0x46`.
+5. **Identity.** Title/highlight expectations come from a table hashed **before** the session that uses them
+   (an identity pass, or earlier hashed runs), for control and candidate commits alike; never self-assigned.
+6. **Complete the proof.** Custom-size comparison, the post-change zone pass/fail table, the return to landscape
+   press/release, and the normal edit equal to K2. End `ok:true`.
+7. **Records.** Complete bounded listings of the writer and converter windows; execution-time inventory of
+   imports, baselines and commands; the covered ROM disagreement count corrected to **49** (plus one uncovered
+   slot and 13 all-zero); a refreshed seal.
+
+**Authorization: six new experiment versions** (emulator processes).

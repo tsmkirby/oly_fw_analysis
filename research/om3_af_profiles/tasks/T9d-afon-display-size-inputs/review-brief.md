@@ -24,3 +24,12 @@
 
 Recompute every manifest hash. Use PowerShell (Python is not on your PATH). Do not run Ghidra or OM-Emu.
 Give the verdict in the structure of `templates\review.md`.
+
+## Correction round
+
+Also read `brief.md` §5 and your previous review in `audit\previous-review.md`. For each §5 item, report DONE /
+NOT DONE / WRONG / BLOCKED (honestly reported).
+
+Check in particular: the full-frame mark inventory (Large and Custom); the captured store of object+`0x374` with
+its listing and input; getter records for every refresh window; the library digest recorded before each run; no
+executed file edited.

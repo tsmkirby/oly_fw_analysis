@@ -42,3 +42,29 @@ Brief version: 2026-11-19 · Workspace: Ghidra + OM-Emu · Runs concurrently wit
 
 The target record reconciliation (T8d), storage, Subject Detect On, packaging, hardware. If T8d changes the AF-ON
 record, the display expectations stay valid because they come from K1e references.
+
+## 5. Correction round (Opus, after Sol's review `run-20261119-194955-review`: REJECT)
+
+Your previous work is in `work\`, and Sol's full review is `audit\previous-review.md`. Read it completely.
+Do **not** start over, and do not edit any executed file.
+
+**Confirmed, reuse:** seeded A (Small) and seeded B (Single, 8×9) match their K1e references on all 12 edges;
+full K2 and K1 stay stock; the display hook (position and zone at `0x6041935b`, `0x1dd1` at `0x6041a1fb`, owner 2,
+saved bank) is accepted as the candidate change; the refresh results on the measured edges.
+
+**Required:**
+1. **Mark inventory (static, no version).** Reanalyse the retained sweep screenshots over the whole frame (no
+   x<280 window). Correct Large and Custom (Sol found four complete 19×21 marks each) and every count and
+   clipping description.
+2. **Mode-word producer.** Arm a store watch on object+`0x374` (object `0x62c54158`) **before** the first
+   translation of the code that writes it, and capture the storing instruction, its caller chain and the inputs
+   (which getter return selects the mode). Give image-matching listings. Correct Cross's mode (Sol: mode 4, not
+   2) and narrow the glyph-size inference to what the trace shows.
+3. **Every refresh.** Record getter calls for every refresh window, each with a timestamped refresh identifier
+   and a per-sample frame signature. Acknowledge that the windows discarded in the previous run cannot be
+   reconstructed. Rerun the sweep, seeded A and seeded B only if needed to supply these records, against the
+   hashed references already made.
+4. **Records.** Record the shared validation library's digest before every run; update the completion and
+   deviation wording; supplemental manifest and refreshed seal under new names.
+
+**Authorization: four new experiment versions** (emulator processes).

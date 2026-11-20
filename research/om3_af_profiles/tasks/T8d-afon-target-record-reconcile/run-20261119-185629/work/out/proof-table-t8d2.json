@@ -1,0 +1,3331 @@
+{
+  "task": "T8d",
+  "correction": "run-20261119-184058-review",
+  "zoneDial": "Reset zone is already Small, stored value 2. The dial is not turned. One detent would leave Small.",
+  "staticT6": "Linked pose word 2 selects 5, pose word 4 selects 3, otherwise 1. Design calculation only. The hook is not this formula.",
+  "savedBank": {
+    "pose1": 0,
+    "pose2": 4,
+    "pose4": 2,
+    "unlinked": 0
+  },
+  "steps": [
+    {
+      "id": "base",
+      "action": "check",
+      "who": [
+        "k1e",
+        "k2",
+        "candidate"
+      ],
+      "pose": 1,
+      "bank": 0,
+      "fields": {
+        "subject": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c brief section 0: 0x1e71[0] is 0 after every key"
+        },
+        "bank": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c Q1: saved index the stock direct screen writes when the link is on"
+        },
+        "flag": {
+          "byRole": {
+            "k1e": {
+              "source": "literal",
+              "value": 255,
+              "provenance": "Image MODE is 255 until the hook writes it. K1e and K2 do not install the hook."
+            },
+            "k2": {
+              "source": "literal",
+              "value": 255,
+              "provenance": "Image MODE is 255 until the hook writes it. K1e and K2 do not install the hook."
+            },
+            "candidate": {
+              "source": "literal",
+              "value": 255,
+              "provenance": "Image MODE is 255 until the hook writes it. K1e and K2 do not install the hook."
+            }
+          }
+        },
+        "mirror": {
+          "byRole": {
+            "k1e": {
+              "source": "seal",
+              "provenance": "K1e mirror bytes at bring-up. Hashed with the step."
+            },
+            "k2": {
+              "source": "ref:K1e:base",
+              "field": "mirror"
+            },
+            "candidate": {
+              "source": "ref:K1e:base",
+              "field": "mirror"
+            }
+          }
+        },
+        "halfBank": {
+          "byRole": {
+            "k1e": {
+              "source": "seal",
+              "provenance": "K1e half-press image at bring-up. Hashed with the step."
+            },
+            "k2": {
+              "source": "ref:K1e:base",
+              "map": "bank-cell"
+            },
+            "candidate": {
+              "source": "ref:K1e:base",
+              "map": "bank-cell"
+            }
+          }
+        },
+        "sizeRecord": {
+          "byRole": {
+            "k1e": {
+              "source": "seal",
+              "provenance": "Custom-size record at bring-up. Hashed with the step."
+            },
+            "k2": {
+              "source": "ref:K1e:base",
+              "field": "sizeRecord"
+            },
+            "candidate": {
+              "source": "ref:K1e:base",
+              "field": "sizeRecord"
+            }
+          }
+        },
+        "edge": {
+          "byRole": {
+            "k1e": {
+              "source": "seal",
+              "provenance": "Owner-block edge state sealed on this step and hashed with it."
+            },
+            "k2": {
+              "source": "ref:K1e:base",
+              "field": "edge"
+            },
+            "candidate": {
+              "source": "ref:K1e:base",
+              "field": "edge"
+            }
+          }
+        },
+        "owner": {
+          "byRole": {
+            "k1e": {
+              "source": "seal",
+              "provenance": "Owner sealed on this step and hashed with it."
+            },
+            "k2": {
+              "source": "ref:K1e:base",
+              "field": "owner"
+            },
+            "candidate": {
+              "source": "ref:K1e:base",
+              "field": "owner"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "enter-land",
+      "action": "enter",
+      "who": [
+        "candidate"
+      ],
+      "pose": 1,
+      "bank": 0,
+      "fields": {
+        "subject": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c brief section 0: 0x1e71[0] is 0 after every key"
+        },
+        "bank": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c Q1: saved index the stock direct screen writes when the link is on"
+        },
+        "flag": {
+          "source": "literal",
+          "value": 1,
+          "provenance": "T3m decision: MODE is 1 while the AF-ON editor is open"
+        },
+        "mirror": {
+          "source": "ref:K1e:base",
+          "map": "half-to-mirror"
+        },
+        "halfBank": {
+          "source": "ref:K1e:base",
+          "map": "bank-cell"
+        },
+        "sizeRecord": {
+          "source": "ref:K1e:base",
+          "field": "sizeRecord"
+        },
+        "edge": {
+          "source": "ref:session:base",
+          "field": "edge"
+        },
+        "owner": {
+          "source": "ref:session:base",
+          "field": "owner"
+        }
+      }
+    },
+    {
+      "id": "e-open",
+      "action": "key",
+      "who": [
+        "k1e",
+        "candidate"
+      ],
+      "pose": 1,
+      "bank": 0,
+      "fields": {
+        "subject": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c brief section 0: 0x1e71[0] is 0 after every key"
+        },
+        "bank": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c Q1: saved index the stock direct screen writes when the link is on"
+        },
+        "flag": {
+          "byRole": {
+            "k1e": {
+              "source": "literal",
+              "value": 255,
+              "provenance": "Image MODE is 255 until the hook writes it. K1e and K2 do not install the hook."
+            },
+            "candidate": {
+              "source": "literal",
+              "value": 1,
+              "provenance": "T3m decision: MODE is 1 while the AF-ON editor is open"
+            }
+          }
+        },
+        "mirror": {
+          "byRole": {
+            "k1e": {
+              "source": "ref:session:base",
+              "field": "mirror"
+            },
+            "candidate": {
+              "source": "ref:K1e:e-open",
+              "map": "half-to-mirror"
+            }
+          }
+        },
+        "halfBank": {
+          "byRole": {
+            "k1e": {
+              "source": "ref:K1e:base",
+              "field": "half",
+              "relation": "pos-changed-at-bank"
+            },
+            "candidate": {
+              "source": "ref:K1e:base",
+              "map": "bank-cell"
+            }
+          }
+        },
+        "sizeRecord": {
+          "byRole": {
+            "k1e": {
+              "source": "ref:session:base",
+              "field": "sizeRecord"
+            },
+            "candidate": {
+              "source": "ref:K1e:base",
+              "field": "sizeRecord"
+            }
+          }
+        },
+        "edge": {
+          "byRole": {
+            "k1e": {
+              "source": "ref:session:base",
+              "field": "edge"
+            },
+            "candidate": {
+              "source": "ref:session:enter-land",
+              "field": "edge"
+            }
+          }
+        },
+        "owner": {
+          "byRole": {
+            "k1e": {
+              "source": "ref:session:base",
+              "field": "owner"
+            },
+            "candidate": {
+              "source": "ref:session:enter-land",
+              "field": "owner"
+            }
+          }
+        }
+      },
+      "key": "up",
+      "editor": true
+    },
+    {
+      "id": "e-up",
+      "action": "key",
+      "who": [
+        "k1e",
+        "candidate"
+      ],
+      "pose": 1,
+      "bank": 0,
+      "fields": {
+        "subject": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c brief section 0: 0x1e71[0] is 0 after every key"
+        },
+        "bank": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c Q1: saved index the stock direct screen writes when the link is on"
+        },
+        "flag": {
+          "byRole": {
+            "k1e": {
+              "source": "literal",
+              "value": 255,
+              "provenance": "Image MODE is 255 until the hook writes it. K1e and K2 do not install the hook."
+            },
+            "candidate": {
+              "source": "literal",
+              "value": 1,
+              "provenance": "T3m decision: MODE is 1 while the AF-ON editor is open"
+            }
+          }
+        },
+        "mirror": {
+          "byRole": {
+            "k1e": {
+              "source": "ref:session:e-open",
+              "field": "mirror"
+            },
+            "candidate": {
+              "source": "ref:K1e:e-up",
+              "map": "half-to-mirror"
+            }
+          }
+        },
+        "halfBank": {
+          "byRole": {
+            "k1e": {
+              "source": "ref:K1e:e-open",
+              "field": "half",
+              "relation": "pos-changed-at-bank"
+            },
+            "candidate": {
+              "source": "ref:K1e:base",
+              "map": "bank-cell"
+            }
+          }
+        },
+        "sizeRecord": {
+          "byRole": {
+            "k1e": {
+              "source": "ref:session:e-open",
+              "field": "sizeRecord"
+            },
+            "candidate": {
+              "source": "ref:K1e:base",
+              "field": "sizeRecord"
+            }
+          }
+        },
+        "edge": {
+          "byRole": {
+            "k1e": {
+              "source": "ref:session:e-open",
+              "field": "edge"
+            },
+            "candidate": {
+              "source": "ref:session:e-open",
+              "field": "edge"
+            }
+          }
+        },
+        "owner": {
+          "byRole": {
+            "k1e": {
+              "source": "ref:session:e-open",
+              "field": "owner"
+            },
+            "candidate": {
+              "source": "ref:session:e-open",
+              "field": "owner"
+            }
+          }
+        }
+      },
+      "key": "up",
+      "editor": true
+    },
+    {
+      "id": "e-ok",
+      "action": "key",
+      "who": [
+        "k1e",
+        "candidate"
+      ],
+      "pose": 1,
+      "bank": 0,
+      "fields": {
+        "subject": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c brief section 0: 0x1e71[0] is 0 after every key"
+        },
+        "bank": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c Q1: saved index the stock direct screen writes when the link is on"
+        },
+        "flag": {
+          "byRole": {
+            "k1e": {
+              "source": "literal",
+              "value": 255,
+              "provenance": "Image MODE is 255 until the hook writes it. K1e and K2 do not install the hook."
+            },
+            "candidate": {
+              "source": "literal",
+              "value": 0,
+              "provenance": "T3m decision: leave writes MODE 0"
+            }
+          }
+        },
+        "mirror": {
+          "byRole": {
+            "k1e": {
+              "source": "ref:session:e-up",
+              "field": "mirror"
+            },
+            "candidate": {
+              "source": "ref:K1e:e-ok",
+              "map": "half-to-mirror"
+            }
+          }
+        },
+        "halfBank": {
+          "byRole": {
+            "k1e": {
+              "source": "ref:K1e:e-up",
+              "map": "bank-cell"
+            },
+            "candidate": {
+              "source": "ref:K1e:base",
+              "map": "bank-cell"
+            }
+          }
+        },
+        "sizeRecord": {
+          "byRole": {
+            "k1e": {
+              "source": "ref:session:e-up",
+              "field": "sizeRecord"
+            },
+            "candidate": {
+              "source": "ref:K1e:base",
+              "field": "sizeRecord"
+            }
+          }
+        },
+        "edge": {
+          "byRole": {
+            "k1e": {
+              "source": "ref:session:e-up",
+              "field": "edge"
+            },
+            "candidate": {
+              "source": "ref:session:e-up",
+              "field": "edge"
+            }
+          }
+        },
+        "owner": {
+          "byRole": {
+            "k1e": {
+              "source": "ref:session:e-up",
+              "field": "owner"
+            },
+            "candidate": {
+              "source": "ref:session:e-up",
+              "field": "owner"
+            }
+          }
+        }
+      },
+      "key": "ok",
+      "editor": true,
+      "exit": true,
+      "commit": true,
+      "identityFrom": "ref:K1e:e-ok",
+      "exitSeq": [
+        {
+          "key": "ok",
+          "dir": "down"
+        },
+        {
+          "key": "ok",
+          "dir": "up"
+        }
+      ],
+      "matchExit": "n-ok"
+    },
+    {
+      "id": "ke-s1-down",
+      "action": "edge",
+      "who": [
+        "k1e"
+      ],
+      "pose": 1,
+      "bank": 0,
+      "fields": {
+        "subject": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c brief section 0: 0x1e71[0] is 0 after every key"
+        },
+        "bank": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c Q1: saved index the stock direct screen writes when the link is on"
+        },
+        "flag": {
+          "source": "literal",
+          "value": 255,
+          "provenance": "Image MODE is 255 until the hook writes it. K1e and K2 do not install the hook."
+        },
+        "mirror": {
+          "source": "ref:session:e-ok",
+          "field": "mirror"
+        },
+        "halfBank": {
+          "source": "ref:K1e:e-ok",
+          "map": "bank-cell"
+        },
+        "sizeRecord": {
+          "source": "ref:session:e-ok",
+          "field": "sizeRecord"
+        },
+        "edge": {
+          "source": "seal",
+          "provenance": "Owner-block edge state sealed on this step and hashed with it."
+        },
+        "owner": {
+          "source": "seal",
+          "provenance": "Owner sealed on this step and hashed with it."
+        },
+        "target": {
+          "source": "seal",
+          "provenance": "Ten-byte record written by this S1 press. Hashed as soon as it is read."
+        },
+        "halfTarget": {
+          "source": "seal",
+          "provenance": "Ten-byte record written by this S1 press. Hashed as soon as it is read."
+        }
+      },
+      "key": "s1",
+      "dir": "down",
+      "exitSeq": [
+        {
+          "key": "s1",
+          "dir": "down"
+        }
+      ],
+      "matchExit": "pre-s1-down",
+      "sealPress": true,
+      "commit": true,
+      "identityFrom": "ref:K1e:ke-s1-down"
+    },
+    {
+      "id": "ke-s1-up",
+      "action": "edge",
+      "who": [
+        "k1e"
+      ],
+      "pose": 1,
+      "bank": 0,
+      "fields": {
+        "subject": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c brief section 0: 0x1e71[0] is 0 after every key"
+        },
+        "bank": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c Q1: saved index the stock direct screen writes when the link is on"
+        },
+        "flag": {
+          "source": "literal",
+          "value": 255,
+          "provenance": "Image MODE is 255 until the hook writes it. K1e and K2 do not install the hook."
+        },
+        "mirror": {
+          "source": "ref:session:ke-s1-down",
+          "field": "mirror"
+        },
+        "halfBank": {
+          "source": "ref:K1e:e-ok",
+          "map": "bank-cell"
+        },
+        "sizeRecord": {
+          "source": "ref:session:ke-s1-down",
+          "field": "sizeRecord"
+        },
+        "edge": {
+          "source": "seal",
+          "provenance": "Owner-block edge state sealed on this step and hashed with it."
+        },
+        "owner": {
+          "source": "seal",
+          "provenance": "Owner sealed on this step and hashed with it."
+        }
+      },
+      "key": "s1",
+      "dir": "up",
+      "exitSeq": [
+        {
+          "key": "s1",
+          "dir": "up"
+        }
+      ],
+      "matchExit": "pre-s1-up",
+      "commit": true,
+      "identityFrom": "ref:K1e:ke-s1-up"
+    },
+    {
+      "id": "pre-s1-down",
+      "action": "edge",
+      "who": [
+        "k2",
+        "candidate"
+      ],
+      "pose": 1,
+      "bank": 0,
+      "fields": {
+        "subject": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c brief section 0: 0x1e71[0] is 0 after every key"
+        },
+        "bank": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c Q1: saved index the stock direct screen writes when the link is on"
+        },
+        "flag": {
+          "byRole": {
+            "k2": {
+              "source": "literal",
+              "value": 255,
+              "provenance": "Image MODE is 255 until the hook writes it. K1e and K2 do not install the hook."
+            },
+            "candidate": {
+              "source": "literal",
+              "value": 0,
+              "provenance": "T3m decision: leave writes MODE 0"
+            }
+          }
+        },
+        "mirror": {
+          "byRole": {
+            "k2": {
+              "source": "ref:session:base",
+              "field": "mirror"
+            },
+            "candidate": {
+              "source": "ref:K1e:e-ok",
+              "map": "half-to-mirror"
+            }
+          }
+        },
+        "halfBank": {
+          "source": "ref:K1e:base",
+          "map": "bank-cell"
+        },
+        "sizeRecord": {
+          "byRole": {
+            "k2": {
+              "source": "ref:session:base",
+              "field": "sizeRecord"
+            },
+            "candidate": {
+              "source": "ref:K1e:base",
+              "field": "sizeRecord"
+            }
+          }
+        },
+        "edge": {
+          "byRole": {
+            "k2": {
+              "source": "seal",
+              "provenance": "Owner-block edge state sealed on this step and hashed with it."
+            },
+            "candidate": {
+              "source": "ref:K2:pre-s1-down",
+              "field": "edge"
+            }
+          }
+        },
+        "owner": {
+          "byRole": {
+            "k2": {
+              "source": "seal",
+              "provenance": "Owner sealed on this step and hashed with it."
+            },
+            "candidate": {
+              "source": "ref:K2:pre-s1-down",
+              "field": "owner"
+            }
+          }
+        },
+        "target": {
+          "byRole": {
+            "k2": {
+              "source": "seal",
+              "provenance": "Ten-byte record written by this S1 press. Hashed as soon as it is read."
+            },
+            "candidate": {
+              "source": "ref:K2:pre-s1-down",
+              "field": "target"
+            }
+          }
+        },
+        "halfTarget": {
+          "byRole": {
+            "k2": {
+              "source": "seal",
+              "provenance": "Ten-byte record written by this S1 press. Hashed as soon as it is read."
+            },
+            "candidate": {
+              "source": "ref:K2:pre-s1-down",
+              "field": "halfTarget"
+            }
+          }
+        }
+      },
+      "key": "s1",
+      "dir": "down",
+      "exitSeq": [
+        {
+          "key": "s1",
+          "dir": "down"
+        }
+      ],
+      "matchExit": "ke-s1-down",
+      "crossS1": true
+    },
+    {
+      "id": "pre-s1-up",
+      "action": "edge",
+      "who": [
+        "k2",
+        "candidate"
+      ],
+      "pose": 1,
+      "bank": 0,
+      "fields": {
+        "subject": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c brief section 0: 0x1e71[0] is 0 after every key"
+        },
+        "bank": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c Q1: saved index the stock direct screen writes when the link is on"
+        },
+        "flag": {
+          "byRole": {
+            "k2": {
+              "source": "literal",
+              "value": 255,
+              "provenance": "Image MODE is 255 until the hook writes it. K1e and K2 do not install the hook."
+            },
+            "candidate": {
+              "source": "literal",
+              "value": 0,
+              "provenance": "T3m decision: leave writes MODE 0"
+            }
+          }
+        },
+        "mirror": {
+          "byRole": {
+            "k2": {
+              "source": "ref:session:pre-s1-down",
+              "field": "mirror"
+            },
+            "candidate": {
+              "source": "ref:K1e:e-ok",
+              "map": "half-to-mirror"
+            }
+          }
+        },
+        "halfBank": {
+          "source": "ref:K1e:base",
+          "map": "bank-cell"
+        },
+        "sizeRecord": {
+          "byRole": {
+            "k2": {
+              "source": "ref:session:pre-s1-down",
+              "field": "sizeRecord"
+            },
+            "candidate": {
+              "source": "ref:K1e:base",
+              "field": "sizeRecord"
+            }
+          }
+        },
+        "edge": {
+          "byRole": {
+            "k2": {
+              "source": "seal",
+              "provenance": "Owner-block edge state sealed on this step and hashed with it."
+            },
+            "candidate": {
+              "source": "ref:K2:pre-s1-up",
+              "field": "edge"
+            }
+          }
+        },
+        "owner": {
+          "byRole": {
+            "k2": {
+              "source": "seal",
+              "provenance": "Owner sealed on this step and hashed with it."
+            },
+            "candidate": {
+              "source": "ref:K2:pre-s1-up",
+              "field": "owner"
+            }
+          }
+        }
+      },
+      "key": "s1",
+      "dir": "up",
+      "exitSeq": [
+        {
+          "key": "s1",
+          "dir": "up"
+        }
+      ],
+      "matchExit": "ke-s1-up"
+    },
+    {
+      "id": "k2-af-down",
+      "action": "edge",
+      "who": [
+        "k2"
+      ],
+      "pose": 1,
+      "bank": 0,
+      "fields": {
+        "subject": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c brief section 0: 0x1e71[0] is 0 after every key"
+        },
+        "bank": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c Q1: saved index the stock direct screen writes when the link is on"
+        },
+        "flag": {
+          "source": "literal",
+          "value": 255,
+          "provenance": "Image MODE is 255 until the hook writes it. K1e and K2 do not install the hook."
+        },
+        "mirror": {
+          "source": "ref:session:pre-s1-up",
+          "field": "mirror"
+        },
+        "halfBank": {
+          "source": "ref:K1e:base",
+          "map": "bank-cell"
+        },
+        "sizeRecord": {
+          "source": "ref:session:pre-s1-up",
+          "field": "sizeRecord"
+        },
+        "edge": {
+          "source": "literal",
+          "value": {
+            "status": 0,
+            "enabled": 1
+          },
+          "provenance": "T6 exp_size_v1: an owned edge has status 0 and enabled 1"
+        },
+        "owner": {
+          "source": "literal",
+          "value": 2,
+          "provenance": "T8c brief section 2.3: AF-ON press owner is 2"
+        },
+        "target": {
+          "source": "seal",
+          "provenance": "Ten-byte record written by this S1 press. Hashed as soon as it is read."
+        },
+        "halfTarget": {
+          "source": "seal",
+          "provenance": "Ten-byte record written by this S1 press. Hashed as soon as it is read."
+        }
+      },
+      "key": "afon",
+      "dir": "down",
+      "exitSeq": [
+        {
+          "key": "afon",
+          "dir": "down"
+        }
+      ],
+      "matchExit": "k2-p-af-down",
+      "sealPress": true
+    },
+    {
+      "id": "k2-af-up",
+      "action": "edge",
+      "who": [
+        "k2"
+      ],
+      "pose": 1,
+      "bank": 0,
+      "fields": {
+        "subject": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c brief section 0: 0x1e71[0] is 0 after every key"
+        },
+        "bank": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c Q1: saved index the stock direct screen writes when the link is on"
+        },
+        "flag": {
+          "source": "literal",
+          "value": 255,
+          "provenance": "Image MODE is 255 until the hook writes it. K1e and K2 do not install the hook."
+        },
+        "mirror": {
+          "source": "ref:session:k2-af-down",
+          "field": "mirror"
+        },
+        "halfBank": {
+          "source": "ref:K1e:base",
+          "map": "bank-cell"
+        },
+        "sizeRecord": {
+          "source": "ref:session:k2-af-down",
+          "field": "sizeRecord"
+        },
+        "edge": {
+          "source": "literal",
+          "value": {
+            "status": 0,
+            "enabled": 1
+          },
+          "provenance": "T6 exp_size_v1: an owned edge has status 0 and enabled 1"
+        },
+        "owner": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c brief section 2.3: AF-ON release owner is 0"
+        },
+        "target": {
+          "source": "seal",
+          "provenance": "Ten-byte record written by this S1 press. Hashed as soon as it is read."
+        },
+        "halfTarget": {
+          "source": "seal",
+          "provenance": "Ten-byte record written by this S1 press. Hashed as soon as it is read."
+        }
+      },
+      "key": "afon",
+      "dir": "up",
+      "exitSeq": [
+        {
+          "key": "afon",
+          "dir": "up"
+        }
+      ],
+      "matchExit": "k2-p-af-up",
+      "sealPress": true
+    },
+    {
+      "id": "af-down",
+      "action": "edge",
+      "who": [
+        "candidate"
+      ],
+      "pose": 1,
+      "bank": 0,
+      "fields": {
+        "subject": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c brief section 0: 0x1e71[0] is 0 after every key"
+        },
+        "bank": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c Q1: saved index the stock direct screen writes when the link is on"
+        },
+        "flag": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T3m decision: leave writes MODE 0"
+        },
+        "mirror": {
+          "source": "ref:K1e:e-ok",
+          "map": "half-to-mirror"
+        },
+        "halfBank": {
+          "source": "ref:K1e:base",
+          "map": "bank-cell"
+        },
+        "sizeRecord": {
+          "source": "ref:K1e:base",
+          "field": "sizeRecord"
+        },
+        "edge": {
+          "source": "literal",
+          "value": {
+            "status": 0,
+            "enabled": 1
+          },
+          "provenance": "T6 exp_size_v1: an owned edge has status 0 and enabled 1"
+        },
+        "owner": {
+          "source": "literal",
+          "value": 2,
+          "provenance": "T8c brief section 2.3: AF-ON press owner is 2"
+        },
+        "target": {
+          "source": "ref:K1e:ke-s1-down",
+          "field": "halfTarget",
+          "bankFrom": "e-ok"
+        },
+        "readBank": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c Q1 saved index. Dynamic hook read during this press. The static T6 formula is not this value."
+        }
+      },
+      "key": "afon",
+      "dir": "down",
+      "commit": true,
+      "identityFrom": "ref:K1e:ke-s1-down",
+      "exitSeq": [
+        {
+          "key": "afon",
+          "dir": "down"
+        }
+      ],
+      "matchExit": "k2-af-down",
+      "pressFrom": "ke-s1-down",
+      "judgeRead": true
+    },
+    {
+      "id": "af-up",
+      "action": "edge",
+      "who": [
+        "candidate"
+      ],
+      "pose": 1,
+      "bank": 0,
+      "fields": {
+        "subject": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c brief section 0: 0x1e71[0] is 0 after every key"
+        },
+        "bank": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c Q1: saved index the stock direct screen writes when the link is on"
+        },
+        "flag": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T3m decision: leave writes MODE 0"
+        },
+        "mirror": {
+          "source": "ref:K1e:e-ok",
+          "map": "half-to-mirror"
+        },
+        "halfBank": {
+          "source": "ref:K1e:base",
+          "map": "bank-cell"
+        },
+        "sizeRecord": {
+          "source": "ref:K1e:base",
+          "field": "sizeRecord"
+        },
+        "edge": {
+          "source": "literal",
+          "value": {
+            "status": 0,
+            "enabled": 1
+          },
+          "provenance": "T6 exp_size_v1: an owned edge has status 0 and enabled 1"
+        },
+        "owner": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c brief section 2.3: AF-ON release owner is 0"
+        },
+        "target": {
+          "source": "ref:session:pre-s1-down",
+          "field": "halfTarget"
+        },
+        "halfTarget": {
+          "source": "ref:session:pre-s1-down",
+          "field": "halfTarget"
+        }
+      },
+      "key": "afon",
+      "dir": "up",
+      "commit": true,
+      "identityFrom": "ref:K1e:ke-s1-up",
+      "exitSeq": [
+        {
+          "key": "afon",
+          "dir": "up"
+        }
+      ],
+      "matchExit": "k2-af-up",
+      "releaseFrom": "pre-s1-down"
+    },
+    {
+      "id": "pose-exif6",
+      "action": "pose",
+      "who": [
+        "k1e",
+        "k2",
+        "candidate"
+      ],
+      "pose": 2,
+      "bank": 4,
+      "fields": {
+        "subject": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c brief section 0: 0x1e71[0] is 0 after every key"
+        },
+        "bank": {
+          "source": "literal",
+          "value": 4,
+          "provenance": "T8c Q1: saved index the stock direct screen writes when the link is on"
+        },
+        "flag": {
+          "byRole": {
+            "k1e": {
+              "source": "literal",
+              "value": 255,
+              "provenance": "Image MODE is 255 until the hook writes it. K1e and K2 do not install the hook."
+            },
+            "k2": {
+              "source": "literal",
+              "value": 255,
+              "provenance": "Image MODE is 255 until the hook writes it. K1e and K2 do not install the hook."
+            },
+            "candidate": {
+              "source": "literal",
+              "value": 0,
+              "provenance": "T3m decision: leave writes MODE 0"
+            }
+          }
+        },
+        "mirror": {
+          "byRole": {
+            "k1e": {
+              "source": "ref:session:ke-s1-up",
+              "field": "mirror"
+            },
+            "k2": {
+              "source": "ref:session:k2-af-up",
+              "field": "mirror"
+            },
+            "candidate": {
+              "source": "ref:K1e:e-ok",
+              "map": "half-to-mirror"
+            }
+          }
+        },
+        "halfBank": {
+          "source": "ref:K1e:base",
+          "map": "bank-cell"
+        },
+        "sizeRecord": {
+          "byRole": {
+            "k1e": {
+              "source": "ref:session:ke-s1-up",
+              "field": "sizeRecord"
+            },
+            "k2": {
+              "source": "ref:session:k2-af-up",
+              "field": "sizeRecord"
+            },
+            "candidate": {
+              "source": "ref:K1e:base",
+              "field": "sizeRecord"
+            }
+          }
+        },
+        "edge": {
+          "byRole": {
+            "k1e": {
+              "source": "ref:session:ke-s1-up",
+              "field": "edge"
+            },
+            "k2": {
+              "source": "ref:session:k2-af-up",
+              "field": "edge"
+            },
+            "candidate": {
+              "source": "ref:session:af-up",
+              "field": "edge"
+            }
+          }
+        },
+        "owner": {
+          "byRole": {
+            "k1e": {
+              "source": "ref:session:ke-s1-up",
+              "field": "owner"
+            },
+            "k2": {
+              "source": "ref:session:k2-af-up",
+              "field": "owner"
+            },
+            "candidate": {
+              "source": "ref:session:af-up",
+              "field": "owner"
+            }
+          }
+        }
+      },
+      "key": "exif6"
+    },
+    {
+      "id": "enter-exif6",
+      "action": "enter",
+      "who": [
+        "candidate"
+      ],
+      "pose": 2,
+      "bank": 4,
+      "fields": {
+        "subject": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c brief section 0: 0x1e71[0] is 0 after every key"
+        },
+        "bank": {
+          "source": "literal",
+          "value": 4,
+          "provenance": "T8c Q1: saved index the stock direct screen writes when the link is on"
+        },
+        "flag": {
+          "source": "literal",
+          "value": 1,
+          "provenance": "T3m decision: MODE is 1 while the AF-ON editor is open"
+        },
+        "mirror": {
+          "source": "ref:K1e:e-ok",
+          "map": "half-to-mirror"
+        },
+        "halfBank": {
+          "source": "ref:K1e:base",
+          "map": "bank-cell"
+        },
+        "sizeRecord": {
+          "source": "ref:K1e:base",
+          "field": "sizeRecord"
+        },
+        "edge": {
+          "source": "ref:session:pose-exif6",
+          "field": "edge"
+        },
+        "owner": {
+          "source": "ref:session:pose-exif6",
+          "field": "owner"
+        }
+      }
+    },
+    {
+      "id": "p-up",
+      "action": "key",
+      "who": [
+        "k1e",
+        "candidate"
+      ],
+      "pose": 2,
+      "bank": 4,
+      "fields": {
+        "subject": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c brief section 0: 0x1e71[0] is 0 after every key"
+        },
+        "bank": {
+          "source": "literal",
+          "value": 4,
+          "provenance": "T8c Q1: saved index the stock direct screen writes when the link is on"
+        },
+        "flag": {
+          "byRole": {
+            "k1e": {
+              "source": "literal",
+              "value": 255,
+              "provenance": "Image MODE is 255 until the hook writes it. K1e and K2 do not install the hook."
+            },
+            "candidate": {
+              "source": "literal",
+              "value": 1,
+              "provenance": "T3m decision: MODE is 1 while the AF-ON editor is open"
+            }
+          }
+        },
+        "mirror": {
+          "byRole": {
+            "k1e": {
+              "source": "ref:session:pose-exif6",
+              "field": "mirror"
+            },
+            "candidate": {
+              "source": "ref:K1e:p-up",
+              "map": "half-to-mirror"
+            }
+          }
+        },
+        "halfBank": {
+          "byRole": {
+            "k1e": {
+              "source": "ref:K1e:e-ok",
+              "field": "half",
+              "relation": "pos-changed-at-bank"
+            },
+            "candidate": {
+              "source": "ref:K1e:base",
+              "map": "bank-cell"
+            }
+          }
+        },
+        "sizeRecord": {
+          "byRole": {
+            "k1e": {
+              "source": "ref:session:pose-exif6",
+              "field": "sizeRecord"
+            },
+            "candidate": {
+              "source": "ref:K1e:base",
+              "field": "sizeRecord"
+            }
+          }
+        },
+        "edge": {
+          "byRole": {
+            "k1e": {
+              "source": "ref:session:pose-exif6",
+              "field": "edge"
+            },
+            "candidate": {
+              "source": "ref:session:enter-exif6",
+              "field": "edge"
+            }
+          }
+        },
+        "owner": {
+          "byRole": {
+            "k1e": {
+              "source": "ref:session:pose-exif6",
+              "field": "owner"
+            },
+            "candidate": {
+              "source": "ref:session:enter-exif6",
+              "field": "owner"
+            }
+          }
+        }
+      },
+      "key": "up",
+      "editor": true
+    },
+    {
+      "id": "p-menu",
+      "action": "key",
+      "who": [
+        "k1e",
+        "candidate"
+      ],
+      "pose": 2,
+      "bank": 4,
+      "fields": {
+        "subject": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c brief section 0: 0x1e71[0] is 0 after every key"
+        },
+        "bank": {
+          "source": "literal",
+          "value": 4,
+          "provenance": "T8c Q1: saved index the stock direct screen writes when the link is on"
+        },
+        "flag": {
+          "byRole": {
+            "k1e": {
+              "source": "literal",
+              "value": 255,
+              "provenance": "Image MODE is 255 until the hook writes it. K1e and K2 do not install the hook."
+            },
+            "candidate": {
+              "source": "literal",
+              "value": 0,
+              "provenance": "T3m decision: leave writes MODE 0"
+            }
+          }
+        },
+        "mirror": {
+          "byRole": {
+            "k1e": {
+              "source": "ref:session:p-up",
+              "field": "mirror"
+            },
+            "candidate": {
+              "source": "ref:K1e:p-menu",
+              "map": "half-to-mirror"
+            }
+          }
+        },
+        "halfBank": {
+          "byRole": {
+            "k1e": {
+              "source": "ref:K1e:p-up",
+              "map": "bank-cell"
+            },
+            "candidate": {
+              "source": "ref:K1e:base",
+              "map": "bank-cell"
+            }
+          }
+        },
+        "sizeRecord": {
+          "byRole": {
+            "k1e": {
+              "source": "ref:session:p-up",
+              "field": "sizeRecord"
+            },
+            "candidate": {
+              "source": "ref:K1e:base",
+              "field": "sizeRecord"
+            }
+          }
+        },
+        "edge": {
+          "byRole": {
+            "k1e": {
+              "source": "ref:session:p-up",
+              "field": "edge"
+            },
+            "candidate": {
+              "source": "ref:session:p-up",
+              "field": "edge"
+            }
+          }
+        },
+        "owner": {
+          "byRole": {
+            "k1e": {
+              "source": "ref:session:p-up",
+              "field": "owner"
+            },
+            "candidate": {
+              "source": "ref:session:p-up",
+              "field": "owner"
+            }
+          }
+        }
+      },
+      "key": "menu",
+      "editor": true,
+      "exit": true,
+      "commit": true,
+      "identityFrom": "ref:K1e:p-menu",
+      "exitSeq": [
+        {
+          "key": "menu",
+          "dir": "down"
+        },
+        {
+          "key": "menu",
+          "dir": "up"
+        }
+      ],
+      "matchExit": "back-shoot"
+    },
+    {
+      "id": "back-shoot",
+      "action": "key",
+      "who": [
+        "k1e",
+        "candidate"
+      ],
+      "pose": 2,
+      "bank": 4,
+      "fields": {
+        "subject": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c brief section 0: 0x1e71[0] is 0 after every key"
+        },
+        "bank": {
+          "source": "literal",
+          "value": 4,
+          "provenance": "T8c Q1: saved index the stock direct screen writes when the link is on"
+        },
+        "flag": {
+          "byRole": {
+            "k1e": {
+              "source": "literal",
+              "value": 255,
+              "provenance": "Image MODE is 255 until the hook writes it. K1e and K2 do not install the hook."
+            },
+            "candidate": {
+              "source": "literal",
+              "value": 0,
+              "provenance": "T3m decision: leave writes MODE 0"
+            }
+          }
+        },
+        "mirror": {
+          "byRole": {
+            "k1e": {
+              "source": "ref:session:p-menu",
+              "field": "mirror"
+            },
+            "candidate": {
+              "source": "ref:K1e:p-menu",
+              "map": "half-to-mirror"
+            }
+          }
+        },
+        "halfBank": {
+          "byRole": {
+            "k1e": {
+              "source": "ref:K1e:p-up",
+              "map": "bank-cell"
+            },
+            "candidate": {
+              "source": "ref:K1e:base",
+              "map": "bank-cell"
+            }
+          }
+        },
+        "sizeRecord": {
+          "byRole": {
+            "k1e": {
+              "source": "ref:session:p-menu",
+              "field": "sizeRecord"
+            },
+            "candidate": {
+              "source": "ref:K1e:base",
+              "field": "sizeRecord"
+            }
+          }
+        },
+        "edge": {
+          "byRole": {
+            "k1e": {
+              "source": "ref:session:p-menu",
+              "field": "edge"
+            },
+            "candidate": {
+              "source": "ref:session:p-menu",
+              "field": "edge"
+            }
+          }
+        },
+        "owner": {
+          "byRole": {
+            "k1e": {
+              "source": "ref:session:p-menu",
+              "field": "owner"
+            },
+            "candidate": {
+              "source": "ref:session:p-menu",
+              "field": "owner"
+            }
+          }
+        }
+      },
+      "key": "menu",
+      "exit": true,
+      "commit": true,
+      "identityFrom": "ref:K1e:back-shoot",
+      "exitSeq": [
+        {
+          "key": "menu",
+          "dir": "down"
+        },
+        {
+          "key": "menu",
+          "dir": "up"
+        }
+      ],
+      "matchExit": "p-menu"
+    },
+    {
+      "id": "ke-p-s1-down",
+      "action": "edge",
+      "who": [
+        "k1e"
+      ],
+      "pose": 2,
+      "bank": 4,
+      "fields": {
+        "subject": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c brief section 0: 0x1e71[0] is 0 after every key"
+        },
+        "bank": {
+          "source": "literal",
+          "value": 4,
+          "provenance": "T8c Q1: saved index the stock direct screen writes when the link is on"
+        },
+        "flag": {
+          "source": "literal",
+          "value": 255,
+          "provenance": "Image MODE is 255 until the hook writes it. K1e and K2 do not install the hook."
+        },
+        "mirror": {
+          "source": "ref:session:back-shoot",
+          "field": "mirror"
+        },
+        "halfBank": {
+          "source": "ref:K1e:p-up",
+          "map": "bank-cell"
+        },
+        "sizeRecord": {
+          "source": "ref:session:back-shoot",
+          "field": "sizeRecord"
+        },
+        "edge": {
+          "source": "seal",
+          "provenance": "Owner-block edge state sealed on this step and hashed with it."
+        },
+        "owner": {
+          "source": "seal",
+          "provenance": "Owner sealed on this step and hashed with it."
+        },
+        "target": {
+          "source": "seal",
+          "provenance": "Ten-byte record written by this S1 press. Hashed as soon as it is read."
+        },
+        "halfTarget": {
+          "source": "seal",
+          "provenance": "Ten-byte record written by this S1 press. Hashed as soon as it is read."
+        }
+      },
+      "key": "s1",
+      "dir": "down",
+      "exitSeq": [
+        {
+          "key": "s1",
+          "dir": "down"
+        }
+      ],
+      "matchExit": "pre-p-s1-down",
+      "sealPress": true,
+      "commit": true,
+      "identityFrom": "ref:K1e:ke-p-s1-down"
+    },
+    {
+      "id": "ke-p-s1-up",
+      "action": "edge",
+      "who": [
+        "k1e"
+      ],
+      "pose": 2,
+      "bank": 4,
+      "fields": {
+        "subject": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c brief section 0: 0x1e71[0] is 0 after every key"
+        },
+        "bank": {
+          "source": "literal",
+          "value": 4,
+          "provenance": "T8c Q1: saved index the stock direct screen writes when the link is on"
+        },
+        "flag": {
+          "source": "literal",
+          "value": 255,
+          "provenance": "Image MODE is 255 until the hook writes it. K1e and K2 do not install the hook."
+        },
+        "mirror": {
+          "source": "ref:session:ke-p-s1-down",
+          "field": "mirror"
+        },
+        "halfBank": {
+          "source": "ref:K1e:p-up",
+          "map": "bank-cell"
+        },
+        "sizeRecord": {
+          "source": "ref:session:ke-p-s1-down",
+          "field": "sizeRecord"
+        },
+        "edge": {
+          "source": "seal",
+          "provenance": "Owner-block edge state sealed on this step and hashed with it."
+        },
+        "owner": {
+          "source": "seal",
+          "provenance": "Owner sealed on this step and hashed with it."
+        }
+      },
+      "key": "s1",
+      "dir": "up",
+      "exitSeq": [
+        {
+          "key": "s1",
+          "dir": "up"
+        }
+      ],
+      "matchExit": "pre-p-s1-up",
+      "commit": true,
+      "identityFrom": "ref:K1e:ke-p-s1-up"
+    },
+    {
+      "id": "pre-p-s1-down",
+      "action": "edge",
+      "who": [
+        "k2",
+        "candidate"
+      ],
+      "pose": 2,
+      "bank": 4,
+      "fields": {
+        "subject": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c brief section 0: 0x1e71[0] is 0 after every key"
+        },
+        "bank": {
+          "source": "literal",
+          "value": 4,
+          "provenance": "T8c Q1: saved index the stock direct screen writes when the link is on"
+        },
+        "flag": {
+          "byRole": {
+            "k2": {
+              "source": "literal",
+              "value": 255,
+              "provenance": "Image MODE is 255 until the hook writes it. K1e and K2 do not install the hook."
+            },
+            "candidate": {
+              "source": "literal",
+              "value": 0,
+              "provenance": "T3m decision: leave writes MODE 0"
+            }
+          }
+        },
+        "mirror": {
+          "byRole": {
+            "k2": {
+              "source": "ref:session:pose-exif6",
+              "field": "mirror"
+            },
+            "candidate": {
+              "source": "ref:K1e:p-menu",
+              "map": "half-to-mirror"
+            }
+          }
+        },
+        "halfBank": {
+          "source": "ref:K1e:base",
+          "map": "bank-cell"
+        },
+        "sizeRecord": {
+          "byRole": {
+            "k2": {
+              "source": "ref:session:pose-exif6",
+              "field": "sizeRecord"
+            },
+            "candidate": {
+              "source": "ref:K1e:base",
+              "field": "sizeRecord"
+            }
+          }
+        },
+        "edge": {
+          "byRole": {
+            "k2": {
+              "source": "seal",
+              "provenance": "Owner-block edge state sealed on this step and hashed with it."
+            },
+            "candidate": {
+              "source": "ref:K2:pre-p-s1-down",
+              "field": "edge"
+            }
+          }
+        },
+        "owner": {
+          "byRole": {
+            "k2": {
+              "source": "seal",
+              "provenance": "Owner sealed on this step and hashed with it."
+            },
+            "candidate": {
+              "source": "ref:K2:pre-p-s1-down",
+              "field": "owner"
+            }
+          }
+        },
+        "target": {
+          "byRole": {
+            "k2": {
+              "source": "seal",
+              "provenance": "Ten-byte record written by this S1 press. Hashed as soon as it is read."
+            },
+            "candidate": {
+              "source": "ref:K2:pre-p-s1-down",
+              "field": "target"
+            }
+          }
+        },
+        "halfTarget": {
+          "byRole": {
+            "k2": {
+              "source": "seal",
+              "provenance": "Ten-byte record written by this S1 press. Hashed as soon as it is read."
+            },
+            "candidate": {
+              "source": "ref:K2:pre-p-s1-down",
+              "field": "halfTarget"
+            }
+          }
+        }
+      },
+      "key": "s1",
+      "dir": "down",
+      "exitSeq": [
+        {
+          "key": "s1",
+          "dir": "down"
+        }
+      ],
+      "matchExit": "pre-l-s1-down",
+      "crossS1": true
+    },
+    {
+      "id": "pre-p-s1-up",
+      "action": "edge",
+      "who": [
+        "k2",
+        "candidate"
+      ],
+      "pose": 2,
+      "bank": 4,
+      "fields": {
+        "subject": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c brief section 0: 0x1e71[0] is 0 after every key"
+        },
+        "bank": {
+          "source": "literal",
+          "value": 4,
+          "provenance": "T8c Q1: saved index the stock direct screen writes when the link is on"
+        },
+        "flag": {
+          "byRole": {
+            "k2": {
+              "source": "literal",
+              "value": 255,
+              "provenance": "Image MODE is 255 until the hook writes it. K1e and K2 do not install the hook."
+            },
+            "candidate": {
+              "source": "literal",
+              "value": 0,
+              "provenance": "T3m decision: leave writes MODE 0"
+            }
+          }
+        },
+        "mirror": {
+          "byRole": {
+            "k2": {
+              "source": "ref:session:pre-p-s1-down",
+              "field": "mirror"
+            },
+            "candidate": {
+              "source": "ref:K1e:p-menu",
+              "map": "half-to-mirror"
+            }
+          }
+        },
+        "halfBank": {
+          "source": "ref:K1e:base",
+          "map": "bank-cell"
+        },
+        "sizeRecord": {
+          "byRole": {
+            "k2": {
+              "source": "ref:session:pre-p-s1-down",
+              "field": "sizeRecord"
+            },
+            "candidate": {
+              "source": "ref:K1e:base",
+              "field": "sizeRecord"
+            }
+          }
+        },
+        "edge": {
+          "byRole": {
+            "k2": {
+              "source": "seal",
+              "provenance": "Owner-block edge state sealed on this step and hashed with it."
+            },
+            "candidate": {
+              "source": "ref:K2:pre-p-s1-up",
+              "field": "edge"
+            }
+          }
+        },
+        "owner": {
+          "byRole": {
+            "k2": {
+              "source": "seal",
+              "provenance": "Owner sealed on this step and hashed with it."
+            },
+            "candidate": {
+              "source": "ref:K2:pre-p-s1-up",
+              "field": "owner"
+            }
+          }
+        }
+      },
+      "key": "s1",
+      "dir": "up",
+      "exitSeq": [
+        {
+          "key": "s1",
+          "dir": "up"
+        }
+      ],
+      "matchExit": "ke-p-s1-up"
+    },
+    {
+      "id": "k2-p-af-down",
+      "action": "edge",
+      "who": [
+        "k2"
+      ],
+      "pose": 2,
+      "bank": 4,
+      "fields": {
+        "subject": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c brief section 0: 0x1e71[0] is 0 after every key"
+        },
+        "bank": {
+          "source": "literal",
+          "value": 4,
+          "provenance": "T8c Q1: saved index the stock direct screen writes when the link is on"
+        },
+        "flag": {
+          "source": "literal",
+          "value": 255,
+          "provenance": "Image MODE is 255 until the hook writes it. K1e and K2 do not install the hook."
+        },
+        "mirror": {
+          "source": "ref:session:pre-p-s1-up",
+          "field": "mirror"
+        },
+        "halfBank": {
+          "source": "ref:K1e:base",
+          "map": "bank-cell"
+        },
+        "sizeRecord": {
+          "source": "ref:session:pre-p-s1-up",
+          "field": "sizeRecord"
+        },
+        "edge": {
+          "source": "literal",
+          "value": {
+            "status": 0,
+            "enabled": 1
+          },
+          "provenance": "T6 exp_size_v1: an owned edge has status 0 and enabled 1"
+        },
+        "owner": {
+          "source": "literal",
+          "value": 2,
+          "provenance": "T8c brief section 2.3: AF-ON press owner is 2"
+        },
+        "target": {
+          "source": "seal",
+          "provenance": "Ten-byte record written by this S1 press. Hashed as soon as it is read."
+        },
+        "halfTarget": {
+          "source": "seal",
+          "provenance": "Ten-byte record written by this S1 press. Hashed as soon as it is read."
+        }
+      },
+      "key": "afon",
+      "dir": "down",
+      "exitSeq": [
+        {
+          "key": "afon",
+          "dir": "down"
+        }
+      ],
+      "matchExit": "k2-l-af-down",
+      "sealPress": true
+    },
+    {
+      "id": "k2-p-af-up",
+      "action": "edge",
+      "who": [
+        "k2"
+      ],
+      "pose": 2,
+      "bank": 4,
+      "fields": {
+        "subject": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c brief section 0: 0x1e71[0] is 0 after every key"
+        },
+        "bank": {
+          "source": "literal",
+          "value": 4,
+          "provenance": "T8c Q1: saved index the stock direct screen writes when the link is on"
+        },
+        "flag": {
+          "source": "literal",
+          "value": 255,
+          "provenance": "Image MODE is 255 until the hook writes it. K1e and K2 do not install the hook."
+        },
+        "mirror": {
+          "source": "ref:session:k2-p-af-down",
+          "field": "mirror"
+        },
+        "halfBank": {
+          "source": "ref:K1e:base",
+          "map": "bank-cell"
+        },
+        "sizeRecord": {
+          "source": "ref:session:k2-p-af-down",
+          "field": "sizeRecord"
+        },
+        "edge": {
+          "source": "literal",
+          "value": {
+            "status": 0,
+            "enabled": 1
+          },
+          "provenance": "T6 exp_size_v1: an owned edge has status 0 and enabled 1"
+        },
+        "owner": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c brief section 2.3: AF-ON release owner is 0"
+        },
+        "target": {
+          "source": "seal",
+          "provenance": "Ten-byte record written by this S1 press. Hashed as soon as it is read."
+        },
+        "halfTarget": {
+          "source": "seal",
+          "provenance": "Ten-byte record written by this S1 press. Hashed as soon as it is read."
+        }
+      },
+      "key": "afon",
+      "dir": "up",
+      "exitSeq": [
+        {
+          "key": "afon",
+          "dir": "up"
+        }
+      ],
+      "matchExit": "k2-l-af-up",
+      "sealPress": true
+    },
+    {
+      "id": "p-af-down",
+      "action": "edge",
+      "who": [
+        "candidate"
+      ],
+      "pose": 2,
+      "bank": 4,
+      "fields": {
+        "subject": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c brief section 0: 0x1e71[0] is 0 after every key"
+        },
+        "bank": {
+          "source": "literal",
+          "value": 4,
+          "provenance": "T8c Q1: saved index the stock direct screen writes when the link is on"
+        },
+        "flag": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T3m decision: leave writes MODE 0"
+        },
+        "mirror": {
+          "source": "ref:K1e:p-menu",
+          "map": "half-to-mirror"
+        },
+        "halfBank": {
+          "source": "ref:K1e:base",
+          "map": "bank-cell"
+        },
+        "sizeRecord": {
+          "source": "ref:K1e:base",
+          "field": "sizeRecord"
+        },
+        "edge": {
+          "source": "literal",
+          "value": {
+            "status": 0,
+            "enabled": 1
+          },
+          "provenance": "T6 exp_size_v1: an owned edge has status 0 and enabled 1"
+        },
+        "owner": {
+          "source": "literal",
+          "value": 2,
+          "provenance": "T8c brief section 2.3: AF-ON press owner is 2"
+        },
+        "target": {
+          "source": "ref:K1e:ke-p-s1-down",
+          "field": "halfTarget",
+          "bankFrom": "p-up"
+        },
+        "readBank": {
+          "source": "literal",
+          "value": 4,
+          "provenance": "T8c Q1 saved index. Dynamic hook read during this press. The static T6 formula is not this value."
+        }
+      },
+      "key": "afon",
+      "dir": "down",
+      "commit": true,
+      "identityFrom": "ref:K1e:ke-p-s1-down",
+      "exitSeq": [
+        {
+          "key": "afon",
+          "dir": "down"
+        }
+      ],
+      "matchExit": "k2-p-af-down",
+      "pressFrom": "ke-p-s1-down",
+      "judgeRead": true
+    },
+    {
+      "id": "p-af-up",
+      "action": "edge",
+      "who": [
+        "candidate"
+      ],
+      "pose": 2,
+      "bank": 4,
+      "fields": {
+        "subject": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c brief section 0: 0x1e71[0] is 0 after every key"
+        },
+        "bank": {
+          "source": "literal",
+          "value": 4,
+          "provenance": "T8c Q1: saved index the stock direct screen writes when the link is on"
+        },
+        "flag": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T3m decision: leave writes MODE 0"
+        },
+        "mirror": {
+          "source": "ref:K1e:p-menu",
+          "map": "half-to-mirror"
+        },
+        "halfBank": {
+          "source": "ref:K1e:base",
+          "map": "bank-cell"
+        },
+        "sizeRecord": {
+          "source": "ref:K1e:base",
+          "field": "sizeRecord"
+        },
+        "edge": {
+          "source": "literal",
+          "value": {
+            "status": 0,
+            "enabled": 1
+          },
+          "provenance": "T6 exp_size_v1: an owned edge has status 0 and enabled 1"
+        },
+        "owner": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c brief section 2.3: AF-ON release owner is 0"
+        },
+        "target": {
+          "source": "ref:session:pre-p-s1-down",
+          "field": "halfTarget"
+        },
+        "halfTarget": {
+          "source": "ref:session:pre-p-s1-down",
+          "field": "halfTarget"
+        }
+      },
+      "key": "afon",
+      "dir": "up",
+      "commit": true,
+      "identityFrom": "ref:K1e:ke-p-s1-up",
+      "exitSeq": [
+        {
+          "key": "afon",
+          "dir": "up"
+        }
+      ],
+      "matchExit": "k2-p-af-up",
+      "releaseFrom": "pre-p-s1-down"
+    },
+    {
+      "id": "pose-land",
+      "action": "pose",
+      "who": [
+        "k2",
+        "candidate"
+      ],
+      "pose": 1,
+      "bank": 0,
+      "fields": {
+        "subject": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c brief section 0: 0x1e71[0] is 0 after every key"
+        },
+        "bank": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c Q1: saved index the stock direct screen writes when the link is on"
+        },
+        "flag": {
+          "byRole": {
+            "k2": {
+              "source": "literal",
+              "value": 255,
+              "provenance": "Image MODE is 255 until the hook writes it. K1e and K2 do not install the hook."
+            },
+            "candidate": {
+              "source": "literal",
+              "value": 0,
+              "provenance": "T3m decision: leave writes MODE 0"
+            }
+          }
+        },
+        "mirror": {
+          "byRole": {
+            "k2": {
+              "source": "ref:session:k2-p-af-up",
+              "field": "mirror"
+            },
+            "candidate": {
+              "source": "ref:K1e:p-menu",
+              "map": "half-to-mirror"
+            }
+          }
+        },
+        "halfBank": {
+          "source": "ref:K1e:base",
+          "map": "bank-cell"
+        },
+        "sizeRecord": {
+          "byRole": {
+            "k2": {
+              "source": "ref:session:k2-p-af-up",
+              "field": "sizeRecord"
+            },
+            "candidate": {
+              "source": "ref:K1e:base",
+              "field": "sizeRecord"
+            }
+          }
+        },
+        "edge": {
+          "byRole": {
+            "k2": {
+              "source": "ref:session:k2-p-af-up",
+              "field": "edge"
+            },
+            "candidate": {
+              "source": "ref:session:p-af-up",
+              "field": "edge"
+            }
+          }
+        },
+        "owner": {
+          "byRole": {
+            "k2": {
+              "source": "ref:session:k2-p-af-up",
+              "field": "owner"
+            },
+            "candidate": {
+              "source": "ref:session:p-af-up",
+              "field": "owner"
+            }
+          }
+        }
+      },
+      "key": "landscape"
+    },
+    {
+      "id": "pre-l-s1-down",
+      "action": "edge",
+      "who": [
+        "k2",
+        "candidate"
+      ],
+      "pose": 1,
+      "bank": 0,
+      "fields": {
+        "subject": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c brief section 0: 0x1e71[0] is 0 after every key"
+        },
+        "bank": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c Q1: saved index the stock direct screen writes when the link is on"
+        },
+        "flag": {
+          "byRole": {
+            "k2": {
+              "source": "literal",
+              "value": 255,
+              "provenance": "Image MODE is 255 until the hook writes it. K1e and K2 do not install the hook."
+            },
+            "candidate": {
+              "source": "literal",
+              "value": 0,
+              "provenance": "T3m decision: leave writes MODE 0"
+            }
+          }
+        },
+        "mirror": {
+          "byRole": {
+            "k2": {
+              "source": "ref:session:pose-land",
+              "field": "mirror"
+            },
+            "candidate": {
+              "source": "ref:K1e:p-menu",
+              "map": "half-to-mirror"
+            }
+          }
+        },
+        "halfBank": {
+          "source": "ref:K1e:base",
+          "map": "bank-cell"
+        },
+        "sizeRecord": {
+          "byRole": {
+            "k2": {
+              "source": "ref:session:pose-land",
+              "field": "sizeRecord"
+            },
+            "candidate": {
+              "source": "ref:K1e:base",
+              "field": "sizeRecord"
+            }
+          }
+        },
+        "edge": {
+          "byRole": {
+            "k2": {
+              "source": "seal",
+              "provenance": "Owner-block edge state sealed on this step and hashed with it."
+            },
+            "candidate": {
+              "source": "ref:K2:pre-l-s1-down",
+              "field": "edge"
+            }
+          }
+        },
+        "owner": {
+          "byRole": {
+            "k2": {
+              "source": "seal",
+              "provenance": "Owner sealed on this step and hashed with it."
+            },
+            "candidate": {
+              "source": "ref:K2:pre-l-s1-down",
+              "field": "owner"
+            }
+          }
+        },
+        "target": {
+          "byRole": {
+            "k2": {
+              "source": "seal",
+              "provenance": "Ten-byte record written by this S1 press. Hashed as soon as it is read."
+            },
+            "candidate": {
+              "source": "ref:K2:pre-l-s1-down",
+              "field": "target"
+            }
+          }
+        },
+        "halfTarget": {
+          "byRole": {
+            "k2": {
+              "source": "seal",
+              "provenance": "Ten-byte record written by this S1 press. Hashed as soon as it is read."
+            },
+            "candidate": {
+              "source": "ref:K2:pre-l-s1-down",
+              "field": "halfTarget"
+            }
+          }
+        }
+      },
+      "key": "s1",
+      "dir": "down",
+      "exitSeq": [
+        {
+          "key": "s1",
+          "dir": "down"
+        }
+      ],
+      "matchExit": "n-s1-down",
+      "crossS1": true
+    },
+    {
+      "id": "pre-l-s1-up",
+      "action": "edge",
+      "who": [
+        "k2",
+        "candidate"
+      ],
+      "pose": 1,
+      "bank": 0,
+      "fields": {
+        "subject": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c brief section 0: 0x1e71[0] is 0 after every key"
+        },
+        "bank": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c Q1: saved index the stock direct screen writes when the link is on"
+        },
+        "flag": {
+          "byRole": {
+            "k2": {
+              "source": "literal",
+              "value": 255,
+              "provenance": "Image MODE is 255 until the hook writes it. K1e and K2 do not install the hook."
+            },
+            "candidate": {
+              "source": "literal",
+              "value": 0,
+              "provenance": "T3m decision: leave writes MODE 0"
+            }
+          }
+        },
+        "mirror": {
+          "byRole": {
+            "k2": {
+              "source": "ref:session:pre-l-s1-down",
+              "field": "mirror"
+            },
+            "candidate": {
+              "source": "ref:K1e:p-menu",
+              "map": "half-to-mirror"
+            }
+          }
+        },
+        "halfBank": {
+          "source": "ref:K1e:base",
+          "map": "bank-cell"
+        },
+        "sizeRecord": {
+          "byRole": {
+            "k2": {
+              "source": "ref:session:pre-l-s1-down",
+              "field": "sizeRecord"
+            },
+            "candidate": {
+              "source": "ref:K1e:base",
+              "field": "sizeRecord"
+            }
+          }
+        },
+        "edge": {
+          "byRole": {
+            "k2": {
+              "source": "seal",
+              "provenance": "Owner-block edge state sealed on this step and hashed with it."
+            },
+            "candidate": {
+              "source": "ref:K2:pre-l-s1-up",
+              "field": "edge"
+            }
+          }
+        },
+        "owner": {
+          "byRole": {
+            "k2": {
+              "source": "seal",
+              "provenance": "Owner sealed on this step and hashed with it."
+            },
+            "candidate": {
+              "source": "ref:K2:pre-l-s1-up",
+              "field": "owner"
+            }
+          }
+        }
+      },
+      "key": "s1",
+      "dir": "up",
+      "exitSeq": [
+        {
+          "key": "s1",
+          "dir": "up"
+        }
+      ],
+      "matchExit": "n-s1-up"
+    },
+    {
+      "id": "k2-l-af-down",
+      "action": "edge",
+      "who": [
+        "k2"
+      ],
+      "pose": 1,
+      "bank": 0,
+      "fields": {
+        "subject": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c brief section 0: 0x1e71[0] is 0 after every key"
+        },
+        "bank": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c Q1: saved index the stock direct screen writes when the link is on"
+        },
+        "flag": {
+          "source": "literal",
+          "value": 255,
+          "provenance": "Image MODE is 255 until the hook writes it. K1e and K2 do not install the hook."
+        },
+        "mirror": {
+          "source": "ref:session:pre-l-s1-up",
+          "field": "mirror"
+        },
+        "halfBank": {
+          "source": "ref:K1e:base",
+          "map": "bank-cell"
+        },
+        "sizeRecord": {
+          "source": "ref:session:pre-l-s1-up",
+          "field": "sizeRecord"
+        },
+        "edge": {
+          "source": "literal",
+          "value": {
+            "status": 0,
+            "enabled": 1
+          },
+          "provenance": "T6 exp_size_v1: an owned edge has status 0 and enabled 1"
+        },
+        "owner": {
+          "source": "literal",
+          "value": 2,
+          "provenance": "T8c brief section 2.3: AF-ON press owner is 2"
+        },
+        "target": {
+          "source": "seal",
+          "provenance": "Ten-byte record written by this S1 press. Hashed as soon as it is read."
+        },
+        "halfTarget": {
+          "source": "seal",
+          "provenance": "Ten-byte record written by this S1 press. Hashed as soon as it is read."
+        }
+      },
+      "key": "afon",
+      "dir": "down",
+      "exitSeq": [
+        {
+          "key": "afon",
+          "dir": "down"
+        }
+      ],
+      "matchExit": "k2-af-down",
+      "sealPress": true
+    },
+    {
+      "id": "k2-l-af-up",
+      "action": "edge",
+      "who": [
+        "k2"
+      ],
+      "pose": 1,
+      "bank": 0,
+      "fields": {
+        "subject": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c brief section 0: 0x1e71[0] is 0 after every key"
+        },
+        "bank": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c Q1: saved index the stock direct screen writes when the link is on"
+        },
+        "flag": {
+          "source": "literal",
+          "value": 255,
+          "provenance": "Image MODE is 255 until the hook writes it. K1e and K2 do not install the hook."
+        },
+        "mirror": {
+          "source": "ref:session:k2-l-af-down",
+          "field": "mirror"
+        },
+        "halfBank": {
+          "source": "ref:K1e:base",
+          "map": "bank-cell"
+        },
+        "sizeRecord": {
+          "source": "ref:session:k2-l-af-down",
+          "field": "sizeRecord"
+        },
+        "edge": {
+          "source": "literal",
+          "value": {
+            "status": 0,
+            "enabled": 1
+          },
+          "provenance": "T6 exp_size_v1: an owned edge has status 0 and enabled 1"
+        },
+        "owner": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c brief section 2.3: AF-ON release owner is 0"
+        },
+        "target": {
+          "source": "seal",
+          "provenance": "Ten-byte record written by this S1 press. Hashed as soon as it is read."
+        },
+        "halfTarget": {
+          "source": "seal",
+          "provenance": "Ten-byte record written by this S1 press. Hashed as soon as it is read."
+        }
+      },
+      "key": "afon",
+      "dir": "up",
+      "exitSeq": [
+        {
+          "key": "afon",
+          "dir": "up"
+        }
+      ],
+      "matchExit": "k2-af-up",
+      "sealPress": true
+    },
+    {
+      "id": "l-af-down",
+      "action": "edge",
+      "who": [
+        "candidate"
+      ],
+      "pose": 1,
+      "bank": 0,
+      "fields": {
+        "subject": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c brief section 0: 0x1e71[0] is 0 after every key"
+        },
+        "bank": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c Q1: saved index the stock direct screen writes when the link is on"
+        },
+        "flag": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T3m decision: leave writes MODE 0"
+        },
+        "mirror": {
+          "source": "ref:K1e:p-menu",
+          "map": "half-to-mirror"
+        },
+        "halfBank": {
+          "source": "ref:K1e:base",
+          "map": "bank-cell"
+        },
+        "sizeRecord": {
+          "source": "ref:K1e:base",
+          "field": "sizeRecord"
+        },
+        "edge": {
+          "source": "literal",
+          "value": {
+            "status": 0,
+            "enabled": 1
+          },
+          "provenance": "T6 exp_size_v1: an owned edge has status 0 and enabled 1"
+        },
+        "owner": {
+          "source": "literal",
+          "value": 2,
+          "provenance": "T8c brief section 2.3: AF-ON press owner is 2"
+        },
+        "target": {
+          "source": "ref:K1e:ke-s1-down",
+          "field": "halfTarget",
+          "bankFrom": "e-ok"
+        },
+        "readBank": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c Q1 saved index. Dynamic hook read during this press. The static T6 formula is not this value."
+        }
+      },
+      "key": "afon",
+      "dir": "down",
+      "commit": true,
+      "identityFrom": "ref:K1e:ke-s1-down",
+      "exitSeq": [
+        {
+          "key": "afon",
+          "dir": "down"
+        }
+      ],
+      "matchExit": "k2-l-af-down",
+      "pressFrom": "ke-s1-down",
+      "judgeRead": true
+    },
+    {
+      "id": "l-af-up",
+      "action": "edge",
+      "who": [
+        "candidate"
+      ],
+      "pose": 1,
+      "bank": 0,
+      "fields": {
+        "subject": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c brief section 0: 0x1e71[0] is 0 after every key"
+        },
+        "bank": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c Q1: saved index the stock direct screen writes when the link is on"
+        },
+        "flag": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T3m decision: leave writes MODE 0"
+        },
+        "mirror": {
+          "source": "ref:K1e:p-menu",
+          "map": "half-to-mirror"
+        },
+        "halfBank": {
+          "source": "ref:K1e:base",
+          "map": "bank-cell"
+        },
+        "sizeRecord": {
+          "source": "ref:K1e:base",
+          "field": "sizeRecord"
+        },
+        "edge": {
+          "source": "literal",
+          "value": {
+            "status": 0,
+            "enabled": 1
+          },
+          "provenance": "T6 exp_size_v1: an owned edge has status 0 and enabled 1"
+        },
+        "owner": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c brief section 2.3: AF-ON release owner is 0"
+        },
+        "target": {
+          "source": "ref:session:pre-l-s1-down",
+          "field": "halfTarget"
+        },
+        "halfTarget": {
+          "source": "ref:session:pre-l-s1-down",
+          "field": "halfTarget"
+        }
+      },
+      "key": "afon",
+      "dir": "up",
+      "commit": true,
+      "identityFrom": "ref:K1e:ke-s1-up",
+      "exitSeq": [
+        {
+          "key": "afon",
+          "dir": "up"
+        }
+      ],
+      "matchExit": "k2-l-af-up",
+      "releaseFrom": "pre-l-s1-down"
+    },
+    {
+      "id": "n-open",
+      "action": "key",
+      "who": [
+        "k2",
+        "candidate"
+      ],
+      "pose": 1,
+      "bank": 0,
+      "fields": {
+        "subject": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c brief section 0: 0x1e71[0] is 0 after every key"
+        },
+        "bank": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c Q1: saved index the stock direct screen writes when the link is on"
+        },
+        "flag": {
+          "byRole": {
+            "k2": {
+              "source": "literal",
+              "value": 255,
+              "provenance": "Image MODE is 255 until the hook writes it. K1e and K2 do not install the hook."
+            },
+            "candidate": {
+              "source": "literal",
+              "value": 0,
+              "provenance": "T3m decision: leave writes MODE 0"
+            }
+          }
+        },
+        "mirror": {
+          "byRole": {
+            "k2": {
+              "source": "ref:session:k2-l-af-up",
+              "field": "mirror"
+            },
+            "candidate": {
+              "source": "ref:K1e:p-menu",
+              "map": "half-to-mirror"
+            }
+          }
+        },
+        "halfBank": {
+          "byRole": {
+            "k2": {
+              "source": "ref:K2:base",
+              "field": "half",
+              "relation": "pos-changed-at-bank"
+            },
+            "candidate": {
+              "source": "ref:K2:n-open",
+              "map": "bank-cell"
+            }
+          }
+        },
+        "sizeRecord": {
+          "byRole": {
+            "k2": {
+              "source": "ref:session:k2-l-af-up",
+              "field": "sizeRecord"
+            },
+            "candidate": {
+              "source": "ref:K1e:base",
+              "field": "sizeRecord"
+            }
+          }
+        },
+        "edge": {
+          "byRole": {
+            "k2": {
+              "source": "ref:session:k2-l-af-up",
+              "field": "edge"
+            },
+            "candidate": {
+              "source": "ref:session:l-af-up",
+              "field": "edge"
+            }
+          }
+        },
+        "owner": {
+          "byRole": {
+            "k2": {
+              "source": "ref:session:k2-l-af-up",
+              "field": "owner"
+            },
+            "candidate": {
+              "source": "ref:session:l-af-up",
+              "field": "owner"
+            }
+          }
+        }
+      },
+      "key": "up"
+    },
+    {
+      "id": "n-up",
+      "action": "key",
+      "who": [
+        "k2",
+        "candidate"
+      ],
+      "pose": 1,
+      "bank": 0,
+      "fields": {
+        "subject": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c brief section 0: 0x1e71[0] is 0 after every key"
+        },
+        "bank": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c Q1: saved index the stock direct screen writes when the link is on"
+        },
+        "flag": {
+          "byRole": {
+            "k2": {
+              "source": "literal",
+              "value": 255,
+              "provenance": "Image MODE is 255 until the hook writes it. K1e and K2 do not install the hook."
+            },
+            "candidate": {
+              "source": "literal",
+              "value": 0,
+              "provenance": "T3m decision: leave writes MODE 0"
+            }
+          }
+        },
+        "mirror": {
+          "byRole": {
+            "k2": {
+              "source": "ref:session:n-open",
+              "field": "mirror"
+            },
+            "candidate": {
+              "source": "ref:K1e:p-menu",
+              "map": "half-to-mirror"
+            }
+          }
+        },
+        "halfBank": {
+          "byRole": {
+            "k2": {
+              "source": "ref:K2:n-open",
+              "field": "half",
+              "relation": "pos-changed-at-bank"
+            },
+            "candidate": {
+              "source": "ref:K2:n-up",
+              "map": "bank-cell"
+            }
+          }
+        },
+        "sizeRecord": {
+          "byRole": {
+            "k2": {
+              "source": "ref:session:n-open",
+              "field": "sizeRecord"
+            },
+            "candidate": {
+              "source": "ref:K1e:base",
+              "field": "sizeRecord"
+            }
+          }
+        },
+        "edge": {
+          "byRole": {
+            "k2": {
+              "source": "ref:session:n-open",
+              "field": "edge"
+            },
+            "candidate": {
+              "source": "ref:session:n-open",
+              "field": "edge"
+            }
+          }
+        },
+        "owner": {
+          "byRole": {
+            "k2": {
+              "source": "ref:session:n-open",
+              "field": "owner"
+            },
+            "candidate": {
+              "source": "ref:session:n-open",
+              "field": "owner"
+            }
+          }
+        }
+      },
+      "key": "up"
+    },
+    {
+      "id": "n-ok",
+      "action": "key",
+      "who": [
+        "k2",
+        "candidate"
+      ],
+      "pose": 1,
+      "bank": 0,
+      "fields": {
+        "subject": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c brief section 0: 0x1e71[0] is 0 after every key"
+        },
+        "bank": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c Q1: saved index the stock direct screen writes when the link is on"
+        },
+        "flag": {
+          "byRole": {
+            "k2": {
+              "source": "literal",
+              "value": 255,
+              "provenance": "Image MODE is 255 until the hook writes it. K1e and K2 do not install the hook."
+            },
+            "candidate": {
+              "source": "literal",
+              "value": 0,
+              "provenance": "T3m decision: leave writes MODE 0"
+            }
+          }
+        },
+        "mirror": {
+          "byRole": {
+            "k2": {
+              "source": "ref:session:n-up",
+              "field": "mirror"
+            },
+            "candidate": {
+              "source": "ref:K1e:p-menu",
+              "map": "half-to-mirror"
+            }
+          }
+        },
+        "halfBank": {
+          "source": "ref:K2:n-up",
+          "map": "bank-cell"
+        },
+        "sizeRecord": {
+          "byRole": {
+            "k2": {
+              "source": "ref:session:n-up",
+              "field": "sizeRecord"
+            },
+            "candidate": {
+              "source": "ref:K1e:base",
+              "field": "sizeRecord"
+            }
+          }
+        },
+        "edge": {
+          "byRole": {
+            "k2": {
+              "source": "ref:session:n-up",
+              "field": "edge"
+            },
+            "candidate": {
+              "source": "ref:session:n-up",
+              "field": "edge"
+            }
+          }
+        },
+        "owner": {
+          "byRole": {
+            "k2": {
+              "source": "ref:session:n-up",
+              "field": "owner"
+            },
+            "candidate": {
+              "source": "ref:session:n-up",
+              "field": "owner"
+            }
+          }
+        }
+      },
+      "key": "ok",
+      "exit": true,
+      "commit": true,
+      "identityFrom": "ref:K1e:e-ok",
+      "exitSeq": [
+        {
+          "key": "ok",
+          "dir": "down"
+        },
+        {
+          "key": "ok",
+          "dir": "up"
+        }
+      ],
+      "matchExit": "e-ok"
+    },
+    {
+      "id": "n-s1-down",
+      "action": "edge",
+      "who": [
+        "k2",
+        "candidate"
+      ],
+      "pose": 1,
+      "bank": 0,
+      "fields": {
+        "subject": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c brief section 0: 0x1e71[0] is 0 after every key"
+        },
+        "bank": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c Q1: saved index the stock direct screen writes when the link is on"
+        },
+        "flag": {
+          "byRole": {
+            "k2": {
+              "source": "literal",
+              "value": 255,
+              "provenance": "Image MODE is 255 until the hook writes it. K1e and K2 do not install the hook."
+            },
+            "candidate": {
+              "source": "literal",
+              "value": 0,
+              "provenance": "T3m decision: leave writes MODE 0"
+            }
+          }
+        },
+        "mirror": {
+          "byRole": {
+            "k2": {
+              "source": "ref:session:n-ok",
+              "field": "mirror"
+            },
+            "candidate": {
+              "source": "ref:K1e:p-menu",
+              "map": "half-to-mirror"
+            }
+          }
+        },
+        "halfBank": {
+          "source": "ref:K2:n-up",
+          "map": "bank-cell"
+        },
+        "sizeRecord": {
+          "byRole": {
+            "k2": {
+              "source": "ref:session:n-ok",
+              "field": "sizeRecord"
+            },
+            "candidate": {
+              "source": "ref:K1e:base",
+              "field": "sizeRecord"
+            }
+          }
+        },
+        "edge": {
+          "byRole": {
+            "k2": {
+              "source": "seal",
+              "provenance": "Owner-block edge state sealed on this step and hashed with it."
+            },
+            "candidate": {
+              "source": "ref:K2:n-s1-down",
+              "field": "edge"
+            }
+          }
+        },
+        "owner": {
+          "byRole": {
+            "k2": {
+              "source": "seal",
+              "provenance": "Owner sealed on this step and hashed with it."
+            },
+            "candidate": {
+              "source": "ref:K2:n-s1-down",
+              "field": "owner"
+            }
+          }
+        },
+        "target": {
+          "byRole": {
+            "k2": {
+              "source": "seal",
+              "provenance": "Ten-byte record written by this S1 press. Hashed as soon as it is read."
+            },
+            "candidate": {
+              "source": "ref:K2:n-s1-down",
+              "field": "target"
+            }
+          }
+        },
+        "halfTarget": {
+          "byRole": {
+            "k2": {
+              "source": "seal",
+              "provenance": "Ten-byte record written by this S1 press. Hashed as soon as it is read."
+            },
+            "candidate": {
+              "source": "ref:K2:n-s1-down",
+              "field": "halfTarget"
+            }
+          }
+        }
+      },
+      "key": "s1",
+      "dir": "down",
+      "exitSeq": [
+        {
+          "key": "s1",
+          "dir": "down"
+        }
+      ],
+      "matchExit": "ke-s1-down",
+      "crossS1": true,
+      "normalHalf": true
+    },
+    {
+      "id": "n-s1-up",
+      "action": "edge",
+      "who": [
+        "k2",
+        "candidate"
+      ],
+      "pose": 1,
+      "bank": 0,
+      "fields": {
+        "subject": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c brief section 0: 0x1e71[0] is 0 after every key"
+        },
+        "bank": {
+          "source": "literal",
+          "value": 0,
+          "provenance": "T8c Q1: saved index the stock direct screen writes when the link is on"
+        },
+        "flag": {
+          "byRole": {
+            "k2": {
+              "source": "literal",
+              "value": 255,
+              "provenance": "Image MODE is 255 until the hook writes it. K1e and K2 do not install the hook."
+            },
+            "candidate": {
+              "source": "literal",
+              "value": 0,
+              "provenance": "T3m decision: leave writes MODE 0"
+            }
+          }
+        },
+        "mirror": {
+          "byRole": {
+            "k2": {
+              "source": "ref:session:n-s1-down",
+              "field": "mirror"
+            },
+            "candidate": {
+              "source": "ref:K1e:p-menu",
+              "map": "half-to-mirror"
+            }
+          }
+        },
+        "halfBank": {
+          "source": "ref:K2:n-up",
+          "map": "bank-cell"
+        },
+        "sizeRecord": {
+          "byRole": {
+            "k2": {
+              "source": "ref:session:n-s1-down",
+              "field": "sizeRecord"
+            },
+            "candidate": {
+              "source": "ref:K1e:base",
+              "field": "sizeRecord"
+            }
+          }
+        },
+        "edge": {
+          "byRole": {
+            "k2": {
+              "source": "seal",
+              "provenance": "Owner-block edge state sealed on this step and hashed with it."
+            },
+            "candidate": {
+              "source": "ref:K2:n-s1-up",
+              "field": "edge"
+            }
+          }
+        },
+        "owner": {
+          "byRole": {
+            "k2": {
+              "source": "seal",
+              "provenance": "Owner sealed on this step and hashed with it."
+            },
+            "candidate": {
+              "source": "ref:K2:n-s1-up",
+              "field": "owner"
+            }
+          }
+        }
+      },
+      "key": "s1",
+      "dir": "up",
+      "exitSeq": [
+        {
+          "key": "s1",
+          "dir": "up"
+        }
+      ],
+      "matchExit": "pre-l-s1-up"
+    }
+  ]
+}

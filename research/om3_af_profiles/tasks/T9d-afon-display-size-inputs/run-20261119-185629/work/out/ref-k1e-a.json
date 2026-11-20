@@ -1,0 +1,45 @@
+{
+  "profile": "A",
+  "role": "K1e",
+  "version": 1,
+  "zone": 2,
+  "position": 529,
+  "idlePeriodMs": 316,
+  "stockLatencyMs": 283.60794,
+  "latencySource": "setter-to-first-frame-change, maximum across the K1e sweep",
+  "boundMs": 599.60794,
+  "criterion": "The producer of 0x610c8b66 is not named. The bound is the measured stock setter latency plus one measured idle period.",
+  "frame": {
+    "marks": [
+      {
+        "x": 356,
+        "y": 265,
+        "w": 19,
+        "h": 21
+      },
+      {
+        "x": 402,
+        "y": 265,
+        "w": 19,
+        "h": 21
+      },
+      {
+        "x": 356,
+        "y": 314,
+        "w": 19,
+        "h": 21
+      },
+      {
+        "x": 402,
+        "y": 314,
+        "w": 19,
+        "h": 21
+      }
+    ],
+    "pixels": 444,
+    "n31": 444,
+    "sha256": "c3d3c00bfd28a2b95aca5997a0d4962bbc8165b4321d59a2122c5be085fc1e25",
+    "file": "work/out/sweep-small.png"
+  },
+  "note": "Small, zone 2, position 529. Four 19 by 21 marks."
+}
