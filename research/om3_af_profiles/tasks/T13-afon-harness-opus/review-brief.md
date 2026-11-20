@@ -23,3 +23,10 @@ both. The acceptance bar is unchanged.
 
 Read-only. Use PowerShell. Do not run Ghidra or OM-Emu. Use the structure of `templates\review.md`; for the verdict
 use ACCEPT-DESIGN, ACCEPT-DESIGN-WITH-CHANGES (list them), or REJECT-DESIGN.
+
+## Round 2
+
+Review `work/design_v2.md` against your previous review (`audit/previous-review.md`). For each of its seven required
+corrections, and for each row you marked Open in its table, report CLOSED / OPEN / INAPPLICABLE with the reason. Then
+the same verdict options. Apply the threat model of design_v2 §0 (mistakes, not malicious code) unless you find it
+inconsistent with a stated requirement; if so, cite the requirement.
