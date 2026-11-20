@@ -51,3 +51,34 @@ The proofs follow in T13 on the frozen harness, with no harness edits allowed th
 
 Running any proof (T13), persistence, Subject Detect On, packaging, hardware. The two T9d mechanism items stay
 unresolved and non-blocking.
+
+## 3. Correction round (Opus, after Sol's review `run-20261120-002500-review`: REJECT)
+
+Your previous work is in `work\`, and Sol's full review is `audit\previous-review.md`. Read it completely. Do not
+start over and do not edit any executed file. Still **zero emulator processes**.
+
+**Confirmed, reuse:** the combined hook, predicates, state and table copies are byte-identical to T11 (accepted
+behaviour unchanged); the 279 declared operation rows reproduce their T11 sources; value comparisons replaced the
+seal/type checks; paired `press()` removed; post-settle identity capture for `candidate-af-up`; watch-toggle tests;
+`argv`+`execArgv`; identity table and seal inventoried through `readListed()`.
+
+**Required (the closed checklist items 1–5, as Sol stated them):**
+1. **Item 1.** Split `setup_v1` so each native mutation (bring-up, lever, each native call) is its own gated operation
+   with its own comparison. Every display operation, setup and seed included, captures real before/after frames (no
+   null-to-null). Scanner: add `ctx.s.key(...)`, `ctx.l.sim.u8(...)` and every other raw input/write form reachable
+   from the runners' objects; prove each with a planted bypass.
+2. **Item 2.** Check the sealed row **before** delivering any commit-class input; a missing row means zero inputs
+   delivered. Test that with a counting fake emulator.
+3. **Item 3.** Inventory every non-module input at read time (T6 overlay read by `lib_valid_t9d.mjs`, every
+   `loadBlock()`/`loadNand()` backing file, references) and compare at exit; install exit handling first, before any
+   fallible initialization.
+4. **Item 4.** Give assertion getters (including the gate's own `0x1e71` read) an explicit category; capture a frame
+   sample inside each native refresh window; test real return-hook completion (hookGetter enabled) and the display
+   runner's recorder integration end to end on a fake emulator.
+5. **Item 5.** Freeze the complete import set of every T13 runner, including computed imports and the `om-emu/`
+   dependencies (derive it by loading the runners under the inventory with a fake emulator, not by literal-import
+   parsing). Narrow `harness.md` to demonstrated guarantees; new manifest and seal.
+
+**Coordinator ruling on OUTSIDE-CHECKLIST:** fix the unbound `gate.mode()` (custom-zone step) and add a test that
+reaches that step on the fake emulator. Also generate operation-ID and identity coverage from the actual operation
+definitions (Sol's optional improvement), since T13 cannot fix it later.

@@ -21,3 +21,8 @@ T13 proof. They do not by themselves decide the verdict; the coordinator rules o
 
 Use PowerShell (Python is not on your PATH). Do not run Ghidra or OM-Emu. Give the verdict in the structure of
 `templates\review.md`.
+
+## Correction round
+
+Also read `brief.md` §3 and your previous review in `audit\previous-review.md`. For each §3 item (1–5 and the
+coordinator ruling) report DONE / NOT DONE / WRONG. Confirm still no OM-Emu, Ghidra or Java process ran.
