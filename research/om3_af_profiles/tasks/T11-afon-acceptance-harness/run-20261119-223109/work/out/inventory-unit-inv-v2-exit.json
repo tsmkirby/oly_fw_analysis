@@ -1,0 +1,80 @@
+{
+  "tag": "unit-inv-v2",
+  "finished": "2026-11-20T04:14:15.162Z",
+  "started": "2026-11-20T04:14:14.662Z",
+  "argv": [
+    "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe",
+    "C:\\Dev\\OM3-tasks\\T11-afon-acceptance-harness\\ws\\work\\harness\\inventory_probe_v2.mjs"
+  ],
+  "env": {
+    "OM_EMU_MODEL": "E147",
+    "OM_EMU_NVRAM": "off"
+  },
+  "imports": [
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/inputs/00_0100_50000020.decoded.bin",
+      "sha256": "5e8d376e9111a44ac0352f26030d7c1b17026d42c45f3600cfa02a0e8c5b7d59",
+      "bytes": 33554368
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/inputs/02_0106_458c0020.decoded.bin",
+      "sha256": "3d9fd4426b45fbe4b715599422af38c6d22392c08543a69f63c28291c5a0b059",
+      "bytes": 143523776
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/ref/tasks/T8-afon-integrated-acceptance/run-20261119-132229/work/out/overlay-combined-t8.csv",
+      "sha256": "3601999e17086a23f29053d90d84ab56676b7f3cb450bd9fa9e3f1e89e98d63e",
+      "bytes": 267706
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/ref/tasks/T9d-afon-display-size-inputs/run-20261119-202459/work/out/ref-k1e-a.json",
+      "sha256": "c6af69e99346738f804d392b0994fee7aecceff790e676e91ac95c09d2a0860c",
+      "bytes": 984
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/ref/tasks/T9d-afon-display-size-inputs/run-20261119-202459/work/out/ref-k1e-b.json",
+      "sha256": "b915b703e6e25935536e884c0ccf41db250b6b3cfc72be25989a17058778f480",
+      "bytes": 976
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/ref/tasks/T9d-afon-display-size-inputs/run-20261119-202459/work/out/ref-k2.json",
+      "sha256": "791de47f0c0546220b8a6b4c9b2c1e3486a2c6a18f058195072a84331892746b",
+      "bytes": 4060
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/harness/inventory_register_v2.mjs",
+      "sha256": "bd7d028e8c5fef4db06e6cd7c31844f7929c73c4ed7e38d84e32af643caf56dd",
+      "bytes": 1522
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/harness/inventory_hook_v2.mjs",
+      "sha256": "b17c83ebdcc4e5cb7e8be2dca92a246c7f547667cffb0cd2d09a0876e3489620",
+      "bytes": 1117
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/harness/inventory_v2.mjs",
+      "sha256": "e154add021032b17d86e617e78b0b9ac7c9dcd026746b5414da688e8addb92b0",
+      "bytes": 3987
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/harness/inventory_probe_v2.mjs",
+      "sha256": "6cc4bea3ca5f3f4f8dfbb48d6e01ea2d8caef74588c1e45e237b8819d8440ce0",
+      "bytes": 92
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/work/harness/compare_v2.mjs",
+      "sha256": "d769d420e0026133a420e9968a532ca90114b6c981bf449e61b10e718d1829f4",
+      "bytes": 4512
+    }
+  ],
+  "extras": [
+    "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/inputs/00_0100_50000020.decoded.bin",
+    "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/inputs/02_0106_458c0020.decoded.bin",
+    "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/ref/tasks/T8-afon-integrated-acceptance/run-20261119-132229/work/out/overlay-combined-t8.csv",
+    "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/ref/tasks/T9d-afon-display-size-inputs/run-20261119-202459/work/out/ref-k1e-a.json",
+    "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/ref/tasks/T9d-afon-display-size-inputs/run-20261119-202459/work/out/ref-k1e-b.json",
+    "C:/Dev/OM3-tasks/T11-afon-acceptance-harness/ws/ref/tasks/T9d-afon-display-size-inputs/run-20261119-202459/work/out/ref-k2.json"
+  ],
+  "problems": [],
+  "ok": true
+}
