@@ -18,3 +18,8 @@
 ## Rules
 
 Read-only. Use PowerShell. Do not run Ghidra or OM-Emu. Give the verdict in the structure of `templates\review.md`.
+
+## Correction round
+
+Also read `brief.md` §4 and your previous review in `audit\previous-review.md`. For each §4 item report DONE / NOT
+DONE / WRONG / BLOCKED (honestly reported), and judge whether the conclusion letter follows.

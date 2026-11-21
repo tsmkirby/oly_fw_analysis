@@ -51,3 +51,28 @@ table, manifest and seal. Hash the image and the Ghidra project inputs before us
 ## 3. Out of scope
 
 Any change, emulator run, persistence, display, hardware.
+
+## 4. Correction round (Opus, after Sol's review `run-20261120-192849-review`: REJECT)
+
+Your previous work is in `work\`, and Sol's full review is `audit\previous-review.md`. Read it completely. Do not
+start over; new versioned files only. Still static only.
+
+**Confirmed, reuse:** all listings match the image; the writer formula (`0x609b3c79`, seven inputs in order, kind-2
+position 526, priority clear, the `+0x22` shadow replacement from `0xa33d4a94..9a`); the S1 and AF-ON handler entry
+points and the owner-2 store; the `0x90a1` caches.
+
+**Required:** a shared writer does not show that both buttons give the same record. Close, or explicitly mark as
+blocked, each of:
+1. **Publication and timing.** Who calls the writer's callers `0x609b3b98`/`0x609b3bbc`, on which events, and whether
+   an S1 down and an AF-ON down each cause a rebuild before the record is consumed (or the consumer reads a record
+   built earlier). Follow vtable and dispatcher calls, not only direct `call` immediates.
+2. **Inputs.** Whether anything on either button's path writes any of the seven input cells, or the shadow source
+   `0xe951[0]` / `0xa33d4a94..9a`, before the rebuild (button-specific values, AF Home, AF-ON-specific substitution).
+3. **S1 owner/dispatch chain** and the **custom-button route** (function `0x0a`, assignment table `0x612f20c8`),
+   including unresolved callees and release-specific effects.
+4. **`0x90a1[1]`.** Correct the `0x609024aa` condition; state precisely what value 0 vs 1 changes, and whether any path
+   from it reaches the record or its inputs. Withdraw the absolute "cannot affect any record byte" unless shown.
+5. **Corrections:** the T7 attribution; `0x609b39f2` → `0x609b39f0`; retain exact commands for every scan.
+6. **Conclusion.** (a) only if every item above is closed with listings; otherwise (c), naming each remaining blocker
+   and the minimal deciding evidence (as Sol stated: paired stock record-publication observations with button/owner,
+   pose, setting, the seven inputs and shadow state identified). No emulator run; no hardware recommendation.

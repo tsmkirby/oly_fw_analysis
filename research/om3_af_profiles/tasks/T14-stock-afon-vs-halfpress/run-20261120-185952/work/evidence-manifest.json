@@ -1,0 +1,269 @@
+{
+  "task": "T14",
+  "brief_sha256": "67545a74aaff23e8d5b0499472a4008478377420071eb1de8696aeff32c126fa",
+  "inputs": [
+    {
+      "path": "inputs/00_0100_50000020.decoded.bin",
+      "sha256": "5e8d376e9111a44ac0352f26030d7c1b17026d42c45f3600cfa02a0e8c5b7d59"
+    },
+    {
+      "path": "inputs/02_0106_458c0020.decoded.bin",
+      "sha256": "3d9fd4426b45fbe4b715599422af38c6d22392c08543a69f63c28291c5a0b059"
+    },
+    {
+      "path": "projects/OM3_main_full.gpr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "projects/OM3_main_full.rep/project.prp",
+      "sha256": "2b1657e17c8f53ab385b7a3c3018f929f06733ea453e21903354efaad979c388"
+    },
+    {
+      "path": "projects/OM3_main_full.rep/idata/00/00000000.prp",
+      "sha256": "905dfb7a097ae8ef33705b46128dd978ce720cba234a4a540f83d9e6c339f42a"
+    },
+    {
+      "path": "projects/OM3_main_full.rep/idata/00/~00000000.db/db.1.gbf",
+      "sha256": "36e77058c128f057bab10c12c8bb7ca963fd30a5164b1fab6c6cd8c27a1e146d"
+    },
+    {
+      "path": "projects/OM3_main_full.rep/idata/00/~00000000.db/db.2.gbf",
+      "sha256": "8bdfd8fa933ab64bf3fd6c7e8152945d8ae2095da72af5745817902bcfbeea4b"
+    }
+  ],
+  "sources": [
+    {
+      "path": "work/scripts/scan_image_t14.py",
+      "sha256": "7c56babc905f3c0fc46635ea5a5b5f3d652cfda85bfe3ffca2d1941fdc891c3a"
+    },
+    {
+      "path": "work/scripts/T14Dump.java",
+      "sha256": "6741018d6103a49bd87f48f3954cb69fbe55bd24d06dc463a732c9fa68f03d6c"
+    },
+    {
+      "path": "work/scripts/seal_t14.py",
+      "sha256": "b485da016b307c93cf4a475efcd1d4fbc77c29f35a87d3d265c628c580cf363c"
+    },
+    {
+      "path": "ref/scripts/OM3Disasm.java",
+      "sha256": "d536a2a2b026a85c4a0cb0ae60b5047f508c548af7a4c4c95a99110dd1cf0e00"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "work/result.md",
+      "sha256": "9a359dde56f3e1f490c4ef16cb21f2b683c410d3aae1b22c4d7bb3f28ebe7dab",
+      "bytes": 14829
+    },
+    {
+      "path": "work/out/call-graph.md",
+      "sha256": "9b9b6c50f65ad173bb58590cb0001cdebcbf5e369c87f899a17ca1fa879b6602",
+      "bytes": 7415
+    },
+    {
+      "path": "work/out/ghidra-side.log",
+      "sha256": "79248c8d5f110dbf8fc5bc1f502eb58dcc8d22152df20a93f02c94f2a5debc41",
+      "bytes": 4741
+    },
+    {
+      "path": "work/out/ghidra-t14.log",
+      "sha256": "a322a7fc0bc630acf86d3690d0997f940c73301396adee464b0f40d1259fb408",
+      "bytes": 6510
+    },
+    {
+      "path": "work/out/ghidra-t14b.log",
+      "sha256": "7990b10fde4beb8fd22a879b46d4319e468a99cf87a46971d7ee49807c2a8b53",
+      "bytes": 6701
+    },
+    {
+      "path": "work/out/ghidra-t14c.log",
+      "sha256": "d075f7a175385b5a9f3669100b59755e28980f1d005d47e68bee9b0003da93d4",
+      "bytes": 6866
+    },
+    {
+      "path": "work/out/ghidra-use-a.log",
+      "sha256": "ff340b8aa313a9236f83a16ce3442df66c3bd3f6792a0335a6f77dbba2b5dabe",
+      "bytes": 4743
+    },
+    {
+      "path": "work/out/listings/accessor-use-a.txt",
+      "sha256": "fc89d7204986e5b815418f8f939cf73d53c499be55761c334dcb2cd564e09ee2",
+      "bytes": 1097
+    },
+    {
+      "path": "work/out/listings/af-init.txt",
+      "sha256": "d52db89e209cb71c9891493470cb2ca0c0318e2a04fc319d34553e31815f2d01",
+      "bytes": 6141
+    },
+    {
+      "path": "work/out/listings/af-release.txt",
+      "sha256": "150faf8081c34de10ff77a735bcd42184b44b80387b54a7586bb7f9ad152335e",
+      "bytes": 2319
+    },
+    {
+      "path": "work/out/listings/af-reset.txt",
+      "sha256": "06e5b19e52832705184ac7b349edbad382a57757198c903fba21c8713d409736",
+      "bytes": 1766
+    },
+    {
+      "path": "work/out/listings/af-start.txt",
+      "sha256": "a14fd9252dde805832c2a8b909e3c07d1db78dc64523231160fe13ab9c684edd",
+      "bytes": 8375
+    },
+    {
+      "path": "work/out/listings/afon-handlers.txt",
+      "sha256": "c0be002a459b2bd691263ca33b8a27077390ee1db7604d8b7a32afa0293e62a1",
+      "bytes": 1642
+    },
+    {
+      "path": "work/out/listings/afon-owner.txt",
+      "sha256": "dfd4055cacdb3ef937f6c36d3119577546c52ced2b35e118c2f15dfb80ee29a3",
+      "bytes": 4572
+    },
+    {
+      "path": "work/out/listings/alt-kind-a.txt",
+      "sha256": "1efc4f4956364766399a3047a0ce9b3a041655dbe33ea0d5626feeae94529c7e",
+      "bytes": 2057
+    },
+    {
+      "path": "work/out/listings/alt-kind-b.txt",
+      "sha256": "b9a3be8877d5fc7ddde9c4674066674896899883c7ce7b9d5aca6bb9be6fb662",
+      "bytes": 1732
+    },
+    {
+      "path": "work/out/listings/alt-position.txt",
+      "sha256": "f1c013aa2d8d97d9b998d5fe27ac6f16ba0398cdd0fc4ad74834bbe1b8dcc74a",
+      "bytes": 1293
+    },
+    {
+      "path": "work/out/listings/builder-pad.txt",
+      "sha256": "c16886d36ad22dcba82fba85f17dbb91ce534cfc065912d30e2175767be18b62",
+      "bytes": 372
+    },
+    {
+      "path": "work/out/listings/cache-entry.txt",
+      "sha256": "07656da64d2eb95797c23171d3a11a4cfff4f4a1df55652ee3bf3d0c66c657d2",
+      "bytes": 759
+    },
+    {
+      "path": "work/out/listings/classifier-head.txt",
+      "sha256": "1848d10ac5c6f4feb74058821be3ad08e005f51333297d929520c00b1a2c5f10",
+      "bytes": 1311
+    },
+    {
+      "path": "work/out/listings/converter.txt",
+      "sha256": "069a376abf9fe866c70494b45d65c28eaf8a06558f75d8a32aa66471bc19392f",
+      "bytes": 5883
+    },
+    {
+      "path": "work/out/listings/dirty-wrappers.txt",
+      "sha256": "c5ad5ec9a66267fd1b990cab9a79e566653eb5ae6876985f84b551d435c5ea64",
+      "bytes": 1055
+    },
+    {
+      "path": "work/out/listings/ghidra-refs.txt",
+      "sha256": "afa2345dff2b7065e593ba79c1067553ce0d57a5dc59fa3b9f8aa856b45fa3f9",
+      "bytes": 1601
+    },
+    {
+      "path": "work/out/listings/handler-9197.txt",
+      "sha256": "be1ce111e668d986c3dc9c1c74a1e029fb88b779deafce524484797fb04dc1fc",
+      "bytes": 1395
+    },
+    {
+      "path": "work/out/listings/pose-refresh.txt",
+      "sha256": "1db944c293fbea84ba1d5e434ba943c649c9c89abdb1ce6554a266bb62f52b0a",
+      "bytes": 2894
+    },
+    {
+      "path": "work/out/listings/priority-cache-b.txt",
+      "sha256": "a42142d77430e95713030c6651a53ee7fea7c1f0d00320d88b65b2199eccd9a5",
+      "bytes": 3154
+    },
+    {
+      "path": "work/out/listings/priority-cache.txt",
+      "sha256": "ea8545670bb0567f1e9b322e0606f7a49ac7a42122a254e51a72a89bbae67221",
+      "bytes": 6364
+    },
+    {
+      "path": "work/out/listings/priority-side.txt",
+      "sha256": "44c36ce9657fea1cdade9c9ecd1a9848bfc710dece17115c05ddfe0026ee502e",
+      "bytes": 1682
+    },
+    {
+      "path": "work/out/listings/priority-use-a.txt",
+      "sha256": "65d1b01bc95960970fd3acbf15f66ad26c156e7cc3b94d5ab91be4706a376dd1",
+      "bytes": 4130
+    },
+    {
+      "path": "work/out/listings/priority-use-b.txt",
+      "sha256": "00056728b905c37dd24b9cf87033c70bedc6ae1f76828c15958909df4732a081",
+      "bytes": 2656
+    },
+    {
+      "path": "work/out/listings/reconcile-builder.txt",
+      "sha256": "a1212c58728199da0e5ffc7e4b4b4b57fc9090dbf5ebd647d67fa98f51455d06",
+      "bytes": 8049
+    },
+    {
+      "path": "work/out/listings/record-copy.txt",
+      "sha256": "1907520ac8209ba9913da85b660a98d8343e60a0041ca8f715d30078b104f0b0",
+      "bytes": 1348
+    },
+    {
+      "path": "work/out/listings/release-common.txt",
+      "sha256": "1581b3582802c9586656892bafab5010aee44865338468becbbbba8fb8a70574",
+      "bytes": 2366
+    },
+    {
+      "path": "work/out/listings/s1-handler.txt",
+      "sha256": "b33c6fedf0f3455f5d323d3c923c9def56b52e41222fc607d3cb560c6cdea3b5",
+      "bytes": 1393
+    },
+    {
+      "path": "work/out/listings/shadow-replace.txt",
+      "sha256": "e127772905bb6b1ac2877da4e2aa94f197fec470db5bf80030532927d53973a0",
+      "bytes": 2515
+    },
+    {
+      "path": "work/out/listings/struct-helpers.txt",
+      "sha256": "6a768f22c87d557876fe31fc2c403ebb0658a314d1b635b876f91a55d30376cb",
+      "bytes": 7397
+    },
+    {
+      "path": "work/out/listings/writer-accessor.txt",
+      "sha256": "9c5403b5e45f4ac2417cdef1fc33b4c34425e019474134f3d62f64f562a153a1",
+      "bytes": 8888
+    },
+    {
+      "path": "work/out/scan-t14.json",
+      "sha256": "99a034fe2d21a8e220ca02fd1dcfc9022b301ac4caf232d6fe4dec0013def4a9",
+      "bytes": 47036
+    },
+    {
+      "path": "work/out/zone-table.md",
+      "sha256": "bda81a9f5888c694b588f031ba489a91dd7c04093d2b4db3d599520788be8c17",
+      "bytes": 2720
+    },
+    {
+      "path": "work/out/seal.json",
+      "sha256": "847ecd1463cae2e5f654c88dcec535b8033b6a3b51f9f5f4fdaa43f6fb7ed4aa",
+      "bytes": 6816
+    }
+  ],
+  "commands": [
+    "python -I work\\scripts\\scan_image_t14.py",
+    "tools\\bin\\run-ghidra.cmd -postScript T14Dump.java -log work\\out\\ghidra-t14.log",
+    "tools\\bin\\run-ghidra.cmd -postScript T14Dump.java -log work\\out\\ghidra-t14b.log",
+    "tools\\bin\\run-ghidra.cmd -postScript T14Dump.java -log work\\out\\ghidra-t14c.log",
+    "tools\\bin\\run-ghidra.cmd -postScript OM3Disasm.java 609025aa 45 work\\out\\listings\\priority-side.txt -log work\\out\\ghidra-side.log",
+    "python -I -c  (caller scans of 0x609024aa, 0x60902452, 0x609025aa, 0x609b3bca, 0x609b34d1, and handler-pointer immediates)",
+    "tools\\bin\\run-ghidra.cmd -postScript OM3Disasm.java 60900240 36 work\\out\\listings\\accessor-use-a.txt -log work\\out\\ghidra-use-a.log",
+    "python -I work\\scripts\\seal_t14.py"
+  ],
+  "tool_versions": {
+    "java": "openjdk 25.0.5 Temurin-25.0.5+8",
+    "ghidra": "12.2 PUBLIC",
+    "python": "3.12.7"
+  }
+}
