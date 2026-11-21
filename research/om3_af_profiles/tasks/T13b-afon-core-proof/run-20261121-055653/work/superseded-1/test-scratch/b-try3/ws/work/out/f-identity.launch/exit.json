@@ -1,0 +1,73 @@
+{
+  "ok": true,
+  "valid": false,
+  "problems": [],
+  "start": "2026-11-21T10:45:20.184Z",
+  "mode": "fake",
+  "plan": "identity",
+  "tag": "f-identity",
+  "identityTag": null,
+  "runtime": {
+    "path": "C:/Dev/OM3-research/tooling/node-v26.12.1-win-x64/node.exe",
+    "version": "v26.12.1",
+    "bytes": 105319752,
+    "sha256": "1c63f1417e2e26d83ca9a9ec1d548524ab1305bc7209d90ebca56257ff0d84ed"
+  },
+  "freezeSha": "fd2d0e8116cad7826ad8c6211c76fe9d2624507bd54540528d83d41435e91bf1",
+  "planSha": "524d065cff1ebd3e268af350d60b048abccbb3631900d5d60064eb43f1545c52",
+  "extensionSha": "9d714a25cab5d395fd87f3d68086397f2c34d5019df4808422e86675fec395e7",
+  "childExit": 0,
+  "inventory": {
+    "count": 58,
+    "chain": "529b9fbf038a51d10c6cc914a79ba43232f79f141b1d1eaba2016a167ace8767"
+  },
+  "outputs": [
+    {
+      "path": "complete.json",
+      "bytes": 10468,
+      "sha256": "769d76c506293e0e6061163b0d1b4394f8c6047e6d27b91991d173e5b7fc0ead"
+    },
+    {
+      "path": "identity.json",
+      "bytes": 2097473,
+      "sha256": "8dcf806b9fbff27d045687ac6a719107a6630e2845afd2ef100dfda896655d4d"
+    },
+    {
+      "path": "identity.seal.json",
+      "bytes": 312,
+      "sha256": "7d83abe2cb67e011e78693a18ccb962c08d6d5adfccfda6a4c52a775b9e3b0e1"
+    },
+    {
+      "path": "inventory.jsonl",
+      "bytes": 12859,
+      "sha256": "f3c418937e05f6d8341961cf0cb61a69c08f928b34edf9cb15bd4fbc9924df1c"
+    },
+    {
+      "path": "log.jsonl",
+      "bytes": 258577,
+      "sha256": "9a1bb0c96033b0aae15ee827f8189e3c0cea3701a55df2e80b082c6ffd3a776e"
+    }
+  ],
+  "completion": {
+    "executed": 324,
+    "expected": 324,
+    "relations": {
+      "evaluated": 1096,
+      "failed": 0
+    },
+    "reproduction": {
+      "evaluated": 0
+    },
+    "pressReference": "k1e-s1-down-halfTarget",
+    "identity": {
+      "sha256": "8dcf806b9fbff27d045687ac6a719107a6630e2845afd2ef100dfda896655d4d",
+      "bytes": 2097473,
+      "file": "identity.json",
+      "planSha": "524d065cff1ebd3e268af350d60b048abccbb3631900d5d60064eb43f1545c52",
+      "freezeSha": "fd2d0e8116cad7826ad8c6211c76fe9d2624507bd54540528d83d41435e91bf1",
+      "mode": "fake"
+    },
+    "recorder": []
+  },
+  "end": "2026-11-21T10:45:20.581Z"
+}

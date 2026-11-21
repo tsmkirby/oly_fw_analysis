@@ -1,0 +1,53 @@
+{
+  "execPath": "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe",
+  "flags": [
+    "--permission",
+    "--allow-fs-read=C:\\Dev\\OM3-tasks\\T13b-afon-core-proof\\ws\\work\\harness\\",
+    "--allow-fs-read=C:\\Dev\\OM3-tasks\\T13b-afon-core-proof\\ws\\om-emu\\",
+    "--allow-fs-read=C:\\Dev\\OM3-tasks\\T13b-afon-core-proof\\ws\\ref\\",
+    "--allow-fs-read=C:\\Dev\\OM3-research\\",
+    "--allow-fs-read=C:\\Dev\\OM3-tasks\\T13b-afon-core-proof\\ws\\work\\out\\freeze-cap-proof.launch\\nonce",
+    "--allow-fs-read=C:\\Dev\\OM3-tasks\\T13b-afon-core-proof\\ws\\work\\out\\freeze-cap-identity\\identity.json",
+    "--allow-fs-read=C:\\Dev\\OM3-tasks\\T13b-afon-core-proof\\ws\\work\\out\\freeze-cap-identity\\identity.seal.json",
+    "--allow-fs-write=C:\\Dev\\OM3-tasks\\T13b-afon-core-proof\\ws\\work\\out\\freeze-cap-proof\\"
+  ],
+  "entry": "C:\\Dev\\OM3-tasks\\T13b-afon-core-proof\\ws\\work\\harness\\run_v5.mjs",
+  "childArgs": [
+    "--plan",
+    "proof",
+    "--tag",
+    "freeze-cap-proof",
+    "--mode",
+    "capture",
+    "--out",
+    "C:\\Dev\\OM3-tasks\\T13b-afon-core-proof\\ws\\work\\out\\freeze-cap-proof",
+    "--nonce",
+    "C:\\Dev\\OM3-tasks\\T13b-afon-core-proof\\ws\\work\\out\\freeze-cap-proof.launch\\nonce",
+    "--freeze-sha",
+    "none",
+    "--plan-sha",
+    "524d065cff1ebd3e268af350d60b048abccbb3631900d5d60064eb43f1545c52",
+    "--execargv-sha",
+    "adee2f733075e966faf5f6ac0404e0c0afb29636224d112032041c0815b591c6",
+    "--sentinel",
+    "C:\\Dev\\OM3-tasks\\T13b-afon-core-proof\\ws\\work\\freeze\\sentinel-not-granted.txt",
+    "--identity-json",
+    "C:\\Dev\\OM3-tasks\\T13b-afon-core-proof\\ws\\work\\out\\freeze-cap-identity\\identity.json",
+    "--identity-seal",
+    "C:\\Dev\\OM3-tasks\\T13b-afon-core-proof\\ws\\work\\out\\freeze-cap-identity\\identity.seal.json",
+    "--mount-from",
+    "C:\\Dev\\OM3-tasks\\T13b-afon-core-proof\\ws\\ref",
+    "--mount-to",
+    "C:\\Dev\\OM3-research"
+  ],
+  "env": {
+    "OM_EMU_MODEL": "E147",
+    "OM_EMU_NVRAM": "off",
+    "SystemRoot": "C:\\WINDOWS",
+    "PATH": "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64"
+  },
+  "cwd": "C:\\Dev\\OM3-tasks\\T13b-afon-core-proof\\ws",
+  "start": "2026-11-21T10:45:41.572Z",
+  "freezeSha": null,
+  "extensionSha": "06771d535c21133d7df1001fc40f34bd2b863bbc603f82200b1b1cdc4c27e791"
+}

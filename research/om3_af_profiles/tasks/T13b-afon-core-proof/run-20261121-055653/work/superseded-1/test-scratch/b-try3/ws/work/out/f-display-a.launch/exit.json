@@ -1,0 +1,56 @@
+{
+  "ok": false,
+  "valid": false,
+  "problems": [
+    "child exit 1",
+    "completion not ok: Error: identity coverage refused before any session: disp-seed-a:seed-a-e0, disp-seed-a:seed-a-e1, disp-seed-a:seed-a-e2, disp-seed-a:seed-a-e3, disp-seed-a:seed-a-e4 (+36)",
+    "completion plan module differs",
+    "completion does not list exactly the plan operations (0/29)",
+    "completion relations",
+    "completion reproduction count",
+    "refresh records for [], plan needs [\"disp-seed-a\"]"
+  ],
+  "start": "2026-11-21T10:45:21.071Z",
+  "mode": "fake",
+  "plan": "display-a",
+  "tag": "f-display-a",
+  "identityTag": "f-identity",
+  "runtime": {
+    "path": "C:/Dev/OM3-research/tooling/node-v26.12.1-win-x64/node.exe",
+    "version": "v26.12.1",
+    "bytes": 105319752,
+    "sha256": "1c63f1417e2e26d83ca9a9ec1d548524ab1305bc7209d90ebca56257ff0d84ed"
+  },
+  "freezeSha": "fd2d0e8116cad7826ad8c6211c76fe9d2624507bd54540528d83d41435e91bf1",
+  "planSha": "524d065cff1ebd3e268af350d60b048abccbb3631900d5d60064eb43f1545c52",
+  "extensionSha": "8d8b81345309df74c474d35cfd16aa05fb776d53486674ddb458268eb5dd7e18",
+  "childExit": 1,
+  "inventory": {
+    "count": 61,
+    "chain": "fd8566ad4e1e97fea62bcb1bf8aa61df08af618750c1caee0c8d90b1d8b517a3"
+  },
+  "outputs": [
+    {
+      "path": "complete.json",
+      "bytes": 515,
+      "sha256": "d46f4b6ca189c6ca90892269ab3e3896cdae67cbbc88ecda73a6bcbc604bcb29"
+    },
+    {
+      "path": "inventory.jsonl",
+      "bytes": 13607,
+      "sha256": "e41a6196baef1dbad964747c287e028ea794021b1d086b8ef003e19d5608f89d"
+    },
+    {
+      "path": "log.jsonl",
+      "bytes": 1395,
+      "sha256": "1ca4815b66004b7cfdd39a623bf7b9d08587511d93a22bd50297df81925b3474"
+    }
+  ],
+  "completion": {
+    "executed": 0,
+    "expected": 29,
+    "identity": null,
+    "recorder": []
+  },
+  "end": "2026-11-21T10:45:21.414Z"
+}

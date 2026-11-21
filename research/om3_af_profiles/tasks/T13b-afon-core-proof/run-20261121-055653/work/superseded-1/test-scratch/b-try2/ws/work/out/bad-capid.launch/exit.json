@@ -1,0 +1,23 @@
+{
+  "ok": false,
+  "valid": false,
+  "problems": [
+    "identity run cap-identity is not ok",
+    "identity mode capture != fake",
+    "identity freeze differs"
+  ],
+  "start": "2026-11-21T10:45:07.545Z",
+  "mode": "fake",
+  "plan": "proof",
+  "tag": "bad-capid",
+  "identityTag": "cap-identity",
+  "runtime": {
+    "path": "C:/Dev/OM3-research/tooling/node-v26.12.1-win-x64/node.exe",
+    "version": "v26.12.1",
+    "bytes": 105319752,
+    "sha256": "1c63f1417e2e26d83ca9a9ec1d548524ab1305bc7209d90ebca56257ff0d84ed"
+  },
+  "freezeSha": "5984895b880cff651725077c79cfaf8af0716fa44924112af0577fec361c2d1e",
+  "planSha": "524d065cff1ebd3e268af350d60b048abccbb3631900d5d60064eb43f1545c52",
+  "end": "2026-11-21T10:45:07.711Z"
+}

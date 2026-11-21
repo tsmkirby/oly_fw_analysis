@@ -1,0 +1,331 @@
+{
+ "version": 1,
+ "task": "T13",
+ "minimal": true,
+ "method": "union of six capture-mode runs (fake adapter, same launcher and child) + every file under work/harness, om-emu/emu, om-emu/unpacked and om-emu/artifacts + the OM-Emu top-level files + real-only inputs with reasons",
+ "captures": {
+  "identity": {
+   "tag": "cap-identity",
+   "reads": 17,
+   "exitSha": "8766b4a965e68900bf4192538ad6dbb3e4502b8b16378be985f55f802d80e161"
+  },
+  "proof": {
+   "tag": "cap-proof",
+   "reads": 19,
+   "exitSha": "f49c24eb49a4e4e0705a6be1b8627668e7892947840b91591fd95c175f217160"
+  }
+ },
+ "pins": {
+  "omEmuRevision": "4e4ec4ef084542a7e30eecce56970c7e09c123c9",
+  "omEmuDiffDigest": "61cd13270e82f9bc5236c36c945783defda4c97a2e99f93b75f11da521877702",
+  "source": "PRIOR: PROJECT-STATE.md pins (Test-Pins.ps1)"
+ },
+ "runtime": {
+  "path": "ref/tooling/node-v26.12.1-win-x64/node.exe",
+  "version": "v26.12.1"
+ },
+ "mounts": [
+  {
+   "logical": "ref",
+   "target": "C:/Dev/OM3-research"
+  }
+ ],
+ "dirs": [
+  "work/harness"
+ ],
+ "files": [
+  {
+   "path": "ref/tasks/T8b-afon-integrated-acceptance-generated/run-20261119-153249/work/scripts/lib_map_c1.mjs",
+   "bytes": 2539,
+   "sha256": "60d5ed07990cf74526380d566409c297877c9e18c2fc8b8a0ffc0fda030200e7",
+   "why": "capture read (identity)"
+  },
+  {
+   "path": "ref/tasks/T9d-afon-display-size-inputs/run-20261119-202459/work/scripts/lib_valid_t9d.mjs",
+   "bytes": 10181,
+   "sha256": "2013f1d2841b7b241567f25ccaa059bc714e1622554e15c12f17752142f3d81b",
+   "why": "capture read (identity)"
+  },
+  {
+   "path": "ref/tooling/node-v26.12.1-win-x64/node.exe",
+   "bytes": 105319752,
+   "sha256": "1c63f1417e2e26d83ca9a9ec1d548524ab1305bc7209d90ebca56257ff0d84ed",
+   "why": "pinned runtime (launcher compares process.execPath and its SHA-256)"
+  },
+  {
+   "path": "work/harness/afon_hooks_v7.mjs",
+   "bytes": 24636,
+   "sha256": "488e6973767a246b24130173edf16fa4082dafb2ce00dcf8622150db8dc1fcd0"
+  },
+  {
+   "path": "work/harness/check_table_v3.mjs",
+   "bytes": 7778,
+   "sha256": "37255a2b42c52c2f4cc99782d0e1cf186e0d9cd84735224f76d0be1b6c3df1d9"
+  },
+  {
+   "path": "work/harness/common_v1.mjs",
+   "bytes": 2685,
+   "sha256": "327df4f05eebaa6142bc508627359a74b1ce320379c1fdad3f1d3466f00cd529"
+  },
+  {
+   "path": "work/harness/exec_v1.mjs",
+   "bytes": 11054,
+   "sha256": "8aed0b0030344e69b6d9b523e12da656683a33354b1eb0f9f1a4b43be2e683b2"
+  },
+  {
+   "path": "work/harness/exec_v2.mjs",
+   "bytes": 12714,
+   "sha256": "222c91178c7311fa4f3540ac5b1a855b3cc4aead460283d671d0197c42532ca6"
+  },
+  {
+   "path": "work/harness/exec_v4.mjs",
+   "bytes": 12826,
+   "sha256": "f80307fdb22274464e9c3a9243022f4b4c30c729c81032209486e44821750f91"
+  },
+  {
+   "path": "work/harness/exitcheck_v1.mjs",
+   "bytes": 4810,
+   "sha256": "3056d02b93b41c43900071649b6ea57e1096688ba3e1485387b95b177e33c5a2"
+  },
+  {
+   "path": "work/harness/exitcheck_v2.mjs",
+   "bytes": 8838,
+   "sha256": "d8c0b3ddb022727b8b9140ec775155444f96f38ad822af8694ec118e0e485c1a"
+  },
+  {
+   "path": "work/harness/exitcheck_v3.mjs",
+   "bytes": 8899,
+   "sha256": "0bc09adee6cf9d573f597ed87f42ea7717c07daedcada9687ee1b19f162ff51f"
+  },
+  {
+   "path": "work/harness/exitcheck_v5.mjs",
+   "bytes": 8910,
+   "sha256": "010c351e9ae145ad719bbf6efcca36166793b9e9240cb46e258b098d9a4780b7"
+  },
+  {
+   "path": "work/harness/expect_v1.mjs",
+   "bytes": 2443,
+   "sha256": "3a85eaef31d9f8e0d040d0c0cdc48fd008bb02d7fa1ddecb8c1a5526ba818f2f"
+  },
+  {
+   "path": "work/harness/fake_v1.mjs",
+   "bytes": 11416,
+   "sha256": "7e00070e3b6ecff1cf733df85467bca972abc31bcb32b3370bebe11c3bae5712"
+  },
+  {
+   "path": "work/harness/fake_v2.mjs",
+   "bytes": 12568,
+   "sha256": "d3b1355e06c30b8083b6a3254b6a11dd9c7b23e548e007d96aaf4d976e64001d"
+  },
+  {
+   "path": "work/harness/fixture_t11_v1.mjs",
+   "bytes": 3272,
+   "sha256": "2058762f6c7c155a152588bdb4b106dab665198bf2e13f8af20e0ccf94c7ea8e"
+  },
+  {
+   "path": "work/harness/fixture_t11_v2.mjs",
+   "bytes": 3272,
+   "sha256": "31acec4f108ab3cc77311238d8ec80afcf471237997e59688a2643758a9a7c14"
+  },
+  {
+   "path": "work/harness/freeze_v1.mjs",
+   "bytes": 8099,
+   "sha256": "2620520114ca7b26b668dfcf4ddf9c9a7013e5f9c7c09ee5f338365adc75e6f4"
+  },
+  {
+   "path": "work/harness/gate_v1.mjs",
+   "bytes": 3942,
+   "sha256": "53a5cbbe65f15e687eaaca5878a7a0ff71aee84842f14e0cc165e4ef859bf0b2"
+  },
+  {
+   "path": "work/harness/gate_v2.mjs",
+   "bytes": 4198,
+   "sha256": "8d9087107005b666298861e4680613e963a7437efa9ef834df3fc53abd88b94a"
+  },
+  {
+   "path": "work/harness/inventory_v1.mjs",
+   "bytes": 8887,
+   "sha256": "d9ce1e41a43c5c8789689bee1c6340a73ef5e328eefcffd930466d1ebaf7c0e8"
+  },
+  {
+   "path": "work/harness/inventory_v2.mjs",
+   "bytes": 14129,
+   "sha256": "e3d751e09d761cf354eff416317743e2aa8658613101b9c231179f518aa23738"
+  },
+  {
+   "path": "work/harness/inventory_v3.mjs",
+   "bytes": 14522,
+   "sha256": "c2fae3fa3e510985b10c21211d71be950dd53e6b7b4794e7afbfb4b851d7fef2"
+  },
+  {
+   "path": "work/harness/launch_v1.mjs",
+   "bytes": 13115,
+   "sha256": "19ba5e49b33ca496ef769253e32ef584213d15e48e36509fb28b2faee67e1d5e"
+  },
+  {
+   "path": "work/harness/launch_v2.mjs",
+   "bytes": 14975,
+   "sha256": "bf5a60938d5866288cccbee424a2fd88a6abbced88166c27d71e435a6093dd00"
+  },
+  {
+   "path": "work/harness/launch_v3.mjs",
+   "bytes": 15650,
+   "sha256": "4c345f0d33a39f0961d69b7d9700ddf4a3a85ab7b2f2cf285f18956693ece0f9"
+  },
+  {
+   "path": "work/harness/launch_v5.mjs",
+   "bytes": 15674,
+   "sha256": "5766a676c99053019bd8edcea08ef3b183ebdf068c661581d93aabc68e4b29a6"
+  },
+  {
+   "path": "work/harness/make_freeze_v1.mjs",
+   "bytes": 7208,
+   "sha256": "81c4ececa3cf4882827b7518c45b16ae9b9a27f8c7ae4c5a9bd3d4a14da8c3fe"
+  },
+  {
+   "path": "work/harness/make_freeze_v2.mjs",
+   "bytes": 7235,
+   "sha256": "f0d32578370ea1873e8d14de6b396f8cbefd4b69ae02a5dc1be17c3ed1482537"
+  },
+  {
+   "path": "work/harness/make_freeze_v3.mjs",
+   "bytes": 7237,
+   "sha256": "04433c20dc7345f0c2cfc0c9768f1c496e075f517d5d34499e0088287417c06f"
+  },
+  {
+   "path": "work/harness/make_freeze_v5.mjs",
+   "bytes": 7377,
+   "sha256": "5a1cdd3d6274c07a267da61afe4abe9d978ffd73ed272e01a27c70473a6ee55b"
+  },
+  {
+   "path": "work/harness/plan_v1.mjs",
+   "bytes": 17780,
+   "sha256": "dd7ec94607f097883ae44e4dcbc6c4c74cca49308bb8b493af7b51b3ff4d9a7e"
+  },
+  {
+   "path": "work/harness/plan_v3.mjs",
+   "bytes": 18290,
+   "sha256": "524d065cff1ebd3e268af350d60b048abccbb3631900d5d60064eb43f1545c52"
+  },
+  {
+   "path": "work/harness/predicates_v3.mjs",
+   "bytes": 1605,
+   "sha256": "c6a11a0d03a8a355beb021cd2578d9be304498695c118250a1464f22de8a046f"
+  },
+  {
+   "path": "work/harness/probe_v1.mjs",
+   "bytes": 3478,
+   "sha256": "5948b03441f343888c54938c7af084ae48e1e75a03df2c495ae70d7c6abdda87"
+  },
+  {
+   "path": "work/harness/probe_v2.mjs",
+   "bytes": 6791,
+   "sha256": "78d865308f856908cede5a18f5f2abf5d4806c8bf3fb30e6a950db546ab71e81"
+  },
+  {
+   "path": "work/harness/probe_v3.mjs",
+   "bytes": 8305,
+   "sha256": "67b53196a930207b3f205af22fc7584e475d4750e7e293216a7cc6e0470637f5"
+  },
+  {
+   "path": "work/harness/real_v1.mjs",
+   "bytes": 10009,
+   "sha256": "13ed4f23a99b596d30b6c6c96e6e0756d56e38cea7db060d8edf4fbf3a320b1c"
+  },
+  {
+   "path": "work/harness/real_v2.mjs",
+   "bytes": 11467,
+   "sha256": "6c47d56883927e00f3c7667ee6fc9f2574fa4b10183187beecc7a9df9409a43d"
+  },
+  {
+   "path": "work/harness/refresh_v4.mjs",
+   "bytes": 4294,
+   "sha256": "01e4714d9f3067f1972e113ffc693bdb8a5dc847800b80604eed827bc1e75f48"
+  },
+  {
+   "path": "work/harness/relations_v1.mjs",
+   "bytes": 17375,
+   "sha256": "b08f64079b7c603e4db3e7c1e68f50ba76c8894cb44e4ebfbd6d7ae11994015f"
+  },
+  {
+   "path": "work/harness/relations_v2.mjs",
+   "bytes": 18074,
+   "sha256": "7c8e5fb9e09821ec8cbccedd181186f93980b3c45099482bb31e924f905c122b"
+  },
+  {
+   "path": "work/harness/run_v1.mjs",
+   "bytes": 7397,
+   "sha256": "320390a6d4e301f2a3c5da665f608e17f14ee68f22d2bd2d9e20250cda0a614f"
+  },
+  {
+   "path": "work/harness/run_v2.mjs",
+   "bytes": 8233,
+   "sha256": "327a76fb79fe8201166a7f5bc786f53c55f828319ec67e7af962819848ff0d5a"
+  },
+  {
+   "path": "work/harness/run_v3.mjs",
+   "bytes": 8252,
+   "sha256": "f288389482705544bdc3405f40829a0d7bdc0040c002d4a6ac3727f791ea3114"
+  },
+  {
+   "path": "work/harness/run_v5.mjs",
+   "bytes": 8276,
+   "sha256": "194be878e456ef7c52d02d3789c37138ca627d16650426b65e1760f9745b3d05"
+  },
+  {
+   "path": "work/harness/seal_v1.mjs",
+   "bytes": 1754,
+   "sha256": "2d51beb9fef3b7c78ced872a4212a56cf990af44c995443caf525f633de66d8e"
+  },
+  {
+   "path": "work/harness/session_v1.diff",
+   "bytes": 8434,
+   "sha256": "d286bc1db5ff74bb9b694f4f76a9900a2f99a78441c2ea0c784d1184a96bbcc8"
+  },
+  {
+   "path": "work/harness/session_v1.mjs",
+   "bytes": 25887,
+   "sha256": "6aaa9e4300bc4f343c9269d6a7b47fc4c48c957030c6975bc487717ed88314dd"
+  },
+  {
+   "path": "work/harness/session_v2.diff",
+   "bytes": 8560,
+   "sha256": "d5762f28d7167bbd400b973734539de0410f4a60b68c362166bf4a4e8f13843b"
+  },
+  {
+   "path": "work/harness/session_v2.mjs",
+   "bytes": 26013,
+   "sha256": "13efef80fcf3bfe1b280d8834ccd7a70a49d63668e4f02864a8b140a6c1a83ca"
+  },
+  {
+   "path": "work/harness/state_v1.mjs",
+   "bytes": 3647,
+   "sha256": "8b5752adcf905e53af86d92e640135e3e9a83ed50bf3743f9e74a6f1c3da0677"
+  },
+  {
+   "path": "work/harness/table_v2.mjs",
+   "bytes": 17566,
+   "sha256": "1dbdfa871ec90c27010d5361c188b7d63db0d24c700ac57c74942dbce1bb5f20"
+  },
+  {
+   "path": "work/harness/test_v1.mjs",
+   "bytes": 36616,
+   "sha256": "8451f439ecaf9918be0b9cedc405d27388d2f548fd251eb61f3813a07733b2e1"
+  },
+  {
+   "path": "work/harness/test_v2.mjs",
+   "bytes": 48020,
+   "sha256": "a6f52be23382c3a57f8d39f777cee5c53ec95f120d0f754b5133b15fa2966afa"
+  },
+  {
+   "path": "work/harness/test_v3.mjs",
+   "bytes": 49212,
+   "sha256": "eb05648b3731c42d660f543d34ab72fce7367917ef8fac22edc79ae65f52b740"
+  },
+  {
+   "path": "work/harness/test_v5.mjs",
+   "bytes": 51073,
+   "sha256": "aadbe8e82fca75c05af984cd7e6a26616cd9550a42e8aab2207b941312f14002"
+  }
+ ]
+}

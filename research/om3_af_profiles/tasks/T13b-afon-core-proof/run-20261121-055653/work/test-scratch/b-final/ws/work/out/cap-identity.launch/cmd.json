@@ -1,0 +1,47 @@
+{
+  "execPath": "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe",
+  "flags": [
+    "--permission",
+    "--allow-fs-read=C:\\Dev\\OM3-tasks\\T13b-afon-core-proof\\ws\\work\\test-scratch\\b-final\\ws\\work\\harness\\",
+    "--allow-fs-read=C:\\Dev\\OM3-tasks\\T13b-afon-core-proof\\ws\\work\\test-scratch\\b-final\\ws\\om-emu\\",
+    "--allow-fs-read=C:\\Dev\\OM3-tasks\\T13b-afon-core-proof\\ws\\work\\test-scratch\\b-final\\ws\\ref\\",
+    "--allow-fs-read=C:\\Dev\\OM3-research\\",
+    "--allow-fs-read=C:\\Dev\\OM3-tasks\\T13b-afon-core-proof\\ws\\work\\test-scratch\\b-final\\ws\\work\\out\\cap-identity.launch\\nonce",
+    "--allow-fs-write=C:\\Dev\\OM3-tasks\\T13b-afon-core-proof\\ws\\work\\test-scratch\\b-final\\ws\\work\\out\\cap-identity\\"
+  ],
+  "entry": "C:\\Dev\\OM3-tasks\\T13b-afon-core-proof\\ws\\work\\test-scratch\\b-final\\ws\\work\\harness\\run_v5.mjs",
+  "childArgs": [
+    "--plan",
+    "identity",
+    "--tag",
+    "cap-identity",
+    "--mode",
+    "capture",
+    "--out",
+    "C:\\Dev\\OM3-tasks\\T13b-afon-core-proof\\ws\\work\\test-scratch\\b-final\\ws\\work\\out\\cap-identity",
+    "--nonce",
+    "C:\\Dev\\OM3-tasks\\T13b-afon-core-proof\\ws\\work\\test-scratch\\b-final\\ws\\work\\out\\cap-identity.launch\\nonce",
+    "--freeze-sha",
+    "none",
+    "--plan-sha",
+    "524d065cff1ebd3e268af350d60b048abccbb3631900d5d60064eb43f1545c52",
+    "--execargv-sha",
+    "4d6ddf47731663cc48574c186a70ea3f5830ed27b637ff620076dc3e64cdf421",
+    "--sentinel",
+    "C:\\Dev\\OM3-tasks\\T13b-afon-core-proof\\ws\\work\\test-scratch\\b-final\\ws\\work\\freeze\\sentinel-not-granted.txt",
+    "--mount-from",
+    "C:\\Dev\\OM3-tasks\\T13b-afon-core-proof\\ws\\work\\test-scratch\\b-final\\ws\\ref",
+    "--mount-to",
+    "C:\\Dev\\OM3-research"
+  ],
+  "env": {
+    "OM_EMU_MODEL": "E147",
+    "OM_EMU_NVRAM": "off",
+    "SystemRoot": "C:\\WINDOWS",
+    "PATH": "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64"
+  },
+  "cwd": "C:\\Dev\\OM3-tasks\\T13b-afon-core-proof\\ws\\work\\test-scratch\\b-final\\ws",
+  "start": "2026-11-21T10:45:36.524Z",
+  "freezeSha": null,
+  "extensionSha": "893369feb25404f1d775310aeff7bae146d3a931682c09305c8780f47e8d2439"
+}

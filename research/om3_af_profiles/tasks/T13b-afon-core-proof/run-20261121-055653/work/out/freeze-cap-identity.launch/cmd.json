@@ -1,0 +1,47 @@
+{
+  "execPath": "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe",
+  "flags": [
+    "--permission",
+    "--allow-fs-read=C:\\Dev\\OM3-tasks\\T13b-afon-core-proof\\ws\\work\\harness\\",
+    "--allow-fs-read=C:\\Dev\\OM3-tasks\\T13b-afon-core-proof\\ws\\om-emu\\",
+    "--allow-fs-read=C:\\Dev\\OM3-tasks\\T13b-afon-core-proof\\ws\\ref\\",
+    "--allow-fs-read=C:\\Dev\\OM3-research\\",
+    "--allow-fs-read=C:\\Dev\\OM3-tasks\\T13b-afon-core-proof\\ws\\work\\out\\freeze-cap-identity.launch\\nonce",
+    "--allow-fs-write=C:\\Dev\\OM3-tasks\\T13b-afon-core-proof\\ws\\work\\out\\freeze-cap-identity\\"
+  ],
+  "entry": "C:\\Dev\\OM3-tasks\\T13b-afon-core-proof\\ws\\work\\harness\\run_v5.mjs",
+  "childArgs": [
+    "--plan",
+    "identity",
+    "--tag",
+    "freeze-cap-identity",
+    "--mode",
+    "capture",
+    "--out",
+    "C:\\Dev\\OM3-tasks\\T13b-afon-core-proof\\ws\\work\\out\\freeze-cap-identity",
+    "--nonce",
+    "C:\\Dev\\OM3-tasks\\T13b-afon-core-proof\\ws\\work\\out\\freeze-cap-identity.launch\\nonce",
+    "--freeze-sha",
+    "none",
+    "--plan-sha",
+    "524d065cff1ebd3e268af350d60b048abccbb3631900d5d60064eb43f1545c52",
+    "--execargv-sha",
+    "e24adee50f06af9fd28370e3ca9a13a20490254b4f7c285c91a0394b59cb166a",
+    "--sentinel",
+    "C:\\Dev\\OM3-tasks\\T13b-afon-core-proof\\ws\\work\\freeze\\sentinel-not-granted.txt",
+    "--mount-from",
+    "C:\\Dev\\OM3-tasks\\T13b-afon-core-proof\\ws\\ref",
+    "--mount-to",
+    "C:\\Dev\\OM3-research"
+  ],
+  "env": {
+    "OM_EMU_MODEL": "E147",
+    "OM_EMU_NVRAM": "off",
+    "SystemRoot": "C:\\WINDOWS",
+    "PATH": "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64"
+  },
+  "cwd": "C:\\Dev\\OM3-tasks\\T13b-afon-core-proof\\ws",
+  "start": "2026-11-21T10:45:41.311Z",
+  "freezeSha": null,
+  "extensionSha": "0aa6b9ca2fc196e3c66ea196c1eda5fa19c21263ba356605a57db87592747bf7"
+}

@@ -1,0 +1,53 @@
+{
+  "execPath": "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe",
+  "flags": [
+    "--permission",
+    "--allow-fs-read=C:\\Dev\\OM3-tasks\\T13b-afon-core-proof\\ws\\work\\test-scratch\\b-try3\\ws\\ref\\tasks\\T8b-afon-integrated-acceptance-generated\\run-20261119-153249\\work\\scripts\\lib_map_c1.mjs",
+    "--allow-fs-read=C:\\Dev\\OM3-research\\tasks\\T8b-afon-integrated-acceptance-generated\\run-20261119-153249\\work\\scripts\\lib_map_c1.mjs",
+    "--allow-fs-read=C:\\Dev\\OM3-tasks\\T13b-afon-core-proof\\ws\\work\\test-scratch\\b-try3\\ws\\ref\\tasks\\T9d-afon-display-size-inputs\\run-20261119-202459\\work\\scripts\\lib_valid_t9d.mjs",
+    "--allow-fs-read=C:\\Dev\\OM3-research\\tasks\\T9d-afon-display-size-inputs\\run-20261119-202459\\work\\scripts\\lib_valid_t9d.mjs",
+    "--allow-fs-read=C:\\Dev\\OM3-tasks\\T13b-afon-core-proof\\ws\\work\\test-scratch\\b-try3\\ws\\ref\\tooling\\node-v26.12.1-win-x64\\node.exe",
+    "--allow-fs-read=C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe",
+    "--allow-fs-read=C:\\Dev\\OM3-tasks\\T13b-afon-core-proof\\ws\\work\\test-scratch\\b-try3\\ws\\work\\harness\\",
+    "--allow-fs-read=C:\\Dev\\OM3-tasks\\T13b-afon-core-proof\\ws\\work\\test-scratch\\b-try3\\ws\\work\\out\\killed.launch\\nonce",
+    "--allow-fs-read=C:\\Dev\\OM3-tasks\\T13b-afon-core-proof\\ws\\work\\test-scratch\\b-try3\\ws\\work\\freeze\\freeze_v1.json",
+    "--allow-fs-write=C:\\Dev\\OM3-tasks\\T13b-afon-core-proof\\ws\\work\\test-scratch\\b-try3\\ws\\work\\out\\killed\\"
+  ],
+  "entry": "C:\\Dev\\OM3-tasks\\T13b-afon-core-proof\\ws\\work\\test-scratch\\b-try3\\ws\\work\\harness\\run_v5.mjs",
+  "childArgs": [
+    "--plan",
+    "identity",
+    "--tag",
+    "killed",
+    "--mode",
+    "fake",
+    "--out",
+    "C:\\Dev\\OM3-tasks\\T13b-afon-core-proof\\ws\\work\\test-scratch\\b-try3\\ws\\work\\out\\killed",
+    "--nonce",
+    "C:\\Dev\\OM3-tasks\\T13b-afon-core-proof\\ws\\work\\test-scratch\\b-try3\\ws\\work\\out\\killed.launch\\nonce",
+    "--freeze-sha",
+    "fd2d0e8116cad7826ad8c6211c76fe9d2624507bd54540528d83d41435e91bf1",
+    "--plan-sha",
+    "524d065cff1ebd3e268af350d60b048abccbb3631900d5d60064eb43f1545c52",
+    "--execargv-sha",
+    "4d0db65c49861c1d1de39e52e867203f7f36712a2076231715b8a18bdf5211eb",
+    "--sentinel",
+    "C:\\Dev\\OM3-tasks\\T13b-afon-core-proof\\ws\\work\\test-scratch\\b-try3\\ws\\work\\freeze\\sentinel-not-granted.txt",
+    "--freeze",
+    "C:\\Dev\\OM3-tasks\\T13b-afon-core-proof\\ws\\work\\test-scratch\\b-try3\\ws\\work\\freeze\\freeze_v1.json",
+    "--mount-from",
+    "C:\\Dev\\OM3-tasks\\T13b-afon-core-proof\\ws\\work\\test-scratch\\b-try3\\ws\\ref",
+    "--mount-to",
+    "C:\\Dev\\OM3-research"
+  ],
+  "env": {
+    "OM_EMU_MODEL": "E147",
+    "OM_EMU_NVRAM": "off",
+    "SystemRoot": "C:\\WINDOWS",
+    "PATH": "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64"
+  },
+  "cwd": "C:\\Dev\\OM3-tasks\\T13b-afon-core-proof\\ws\\work\\test-scratch\\b-try3\\ws",
+  "start": "2026-11-21T10:45:23.518Z",
+  "freezeSha": "fd2d0e8116cad7826ad8c6211c76fe9d2624507bd54540528d83d41435e91bf1",
+  "extensionSha": "994b8346a8097acbf1a6ceef7248ae29f8ebccbc739b86b4e343820fd03fcfbd"
+}

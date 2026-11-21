@@ -1,0 +1,44 @@
+PASS relations on the retained T11 identity-v10 emulator records {"evaluated":80,"relations":532}
+PASS T11 records: a wrong AF-ON press byte fails the named press reference {"failed":["candidate-af-down:target"]}
+PASS correction 1: pose-after-edit compares all live cells with K2 and keeps the candidate mirror on its own source {"relations":7}
+PASS the AF-ON press reference is named in one place
+PASS plan validator accepts the plans and rejects functions, getters, symbols and unknown keys {"identity":324,"commits":110}
+PASS correction 5: bring-up is five operations and focus-arg stays separate, in setup_v2 order
+PASS all plans end to end on the fake through the common implementation (core identity, and identity-all for displays) {"identity":324,"identity-all":432,"proof-core":324,"proof":324,"display-a":29,"display-b":29,"display-k2":28,"display-k1":22}
+PASS identity pass: faults fail on behaviour relations alone {"press":"candidate:candidate-af-down relation target [ref:k1e:ke-s1-down:halfTarget [k1e-s1-down-ha","readBank":"candidate:candidate-af-down relation readBank [literal:0 (T8c Q1 saved index)] {\"got\":3,\"w","poseLeak":"candidate:candidate-pose-exif6 relation poseWatch [installed hook watch record: no live st","writer":"candidate writer calls","subject":"k1e:k1e-init-6071181e relation subject [literal:0 (0x1e71[0])] {\"got\":1,\"want\":0}","zoneWriter":"candidate writer calls"}
+PASS proof: wrong value, changed unexpected field, absent field and identity title each fail {"wrong":"candidate:candidate-af-down target differs from the sealed identity row | relation target ","drift":"disp-seed-a:seed-a-e0 frame differs from the sealed identity row | frame changed where the","absent":"k2:k2-k2-af-down after field edge absent | edge differs from the sealed identity row | edg","title":"k1e:k1e-e-ok-down identity title","link":"k1e:k1e-pose-exif6 relation links [literal:[1,1] (0x1db1, 0x1dc1 read back)] {\"got\":[0,1]}"}
+PASS preservation rule: a field the identity pass preserved must not change
+PASS static missing row: identity coverage refuses before any session (zero deliveries) {"msg":"identity coverage refused before any session: candidate:candidate-af-down, state"}
+PASS dynamic missing row: the gate refuses a commit with zero deliveries; unmarked commit keys are classified
+PASS identity is read after the input and its settle
+PASS correction 6: raw delivery wrappers refuse outside the gate
+PASS deleting an identity-bearing operation removes it from execution and coverage together
+PASS custom zone is reached and judged
+PASS pose instrumentation toggles change no refusal (accepted predicates_v3) {"cases":48}
+PASS recorder: return-hook completion, substitution, categories, orphan, null, unclosed, in-window sampling
+PASS correction 4: tag validation and output containment
+PASS exit checks: missing, truncated, reordered and tampered inventory; missing or short completion
+PASS reused modules are byte-identical to the accepted T12 copies {"afon_hooks_v7.mjs":"488e6973767a","state_v1.mjs":"8b5752adcf90","predicates_v3.mjs":"c6a11a0d03a8","refresh_v4.mjs":"01e4714d9f30","table_v2.mjs":"1dbdfa871ec9","check_table_v3.mjs":"37255a2b42c5"}
+PASS real-path modules load without starting the emulator; delivery names cover the design list
+PASS session_v2.diff is the retained diff of session_v2.mjs against zone_session_k1.mjs {"removed":27,"added":51,"protectedLines":53}
+PASS scratch workspace: copy, junction, minimal freeze through six capture runs {"files":58,"sha256":"002edbb87d20503c"}
+PASS fake runs through the launcher: core identity then proof ok but never valid; display plans refused without a display identity {"identity":324,"proof":324}
+PASS refused: wrong freeze digest writes a failing exit record
+PASS refused: an existing tag; its evidence is preserved
+PASS refused: unlisted file in a frozen directory, changed file, link inside a frozen directory
+PASS refused: missing identity, identity of another mode, capture identity for a fake proof
+PASS refused: runtime not the frozen one
+PASS grants: files inside frozen directories are covered by the directory grant only
+PASS drift at exit: a frozen file changed after verification is reported
+PASS child refuses an unrestricted start, wrong flags, NODE_OPTIONS and a missing nonce {"unrestricted":3,"flags":3,"nodeOptions":3,"nonce":3}
+PASS abnormal child exit writes a failing exit record {"problems":["child exit 1","inventory truncated: no end record","inventory lacks the load of exec_v4.mjs"]}
+PASS code review 2: every fs and fs/promises function on the pinned runtime is classified {"fs":93,"promises":32}
+PASS code review 2: every content, metadata and listing interface records its own target; refused ones are refused {"permitted":47,"refused":19,"entries":73,"evidence":"work/test-scratch/b-final/probe-out"}
+PASS code review 2: launcher runs record the nonce and the freeze as consumed inputs
+PASS code review 1: display roles get no pose path; stock K1 gets no hook; construction makes no native call {"k1e":"100","k2":"100","candidate":"110","zk1e":"100","zcand":"110","disp-seed-a":"011","disp-seed-b":"011","disp-k2":"011","disp-k1":"001"}
+PASS code review 3: refresh records are persisted, listed and complete; incomplete ones are refused {"windows":97,"calls":97,"samples":97}
+PASS code review 4: a redraw after the deadline fails; every sample is within the bound {"late":"disp-seed-a:seed-a-e2 relation frame [ref:T9d:ref-k1e-a] {\"got\":{\"boxe","over":"disp-seed-a:seed-a-e0 relation deadline [display_v5 bound (ref boundMs"}
+PASS code review 5: display plant, hold and seed operations hold the frame again {"msg":"disp-seed-a:seed-a-set-84d1-0 relation frame [preserve] {\"got\":{\"boxes\":[{\"x\":41"}
+PASS code review 6: a redirected work/out is refused before anything is written
+PASS code review v2 correction 2: an existing tag with a redirected _refusals writes nothing through the redirect
+{"tests":43,"passed":43,"failed":0}
