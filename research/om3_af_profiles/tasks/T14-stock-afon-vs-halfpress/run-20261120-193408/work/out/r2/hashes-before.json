@@ -1,0 +1,34 @@
+{
+  "when": "before r2 scan and before r2 Ghidra launch",
+  "image_sha256": "5e8d376e9111a44ac0352f26030d7c1b17026d42c45f3600cfa02a0e8c5b7d59",
+  "image_bytes": 33554368,
+  "resource_sha256": "3d9fd4426b45fbe4b715599422af38c6d22392c08543a69f63c28291c5a0b059",
+  "resource_bytes": 143523776,
+  "project": [
+    {
+      "path": "projects/OM3_main_full.gpr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "projects/OM3_main_full.rep/project.prp",
+      "sha256": "2b1657e17c8f53ab385b7a3c3018f929f06733ea453e21903354efaad979c388",
+      "bytes": 164
+    },
+    {
+      "path": "projects/OM3_main_full.rep/idata/00/00000000.prp",
+      "sha256": "905dfb7a097ae8ef33705b46128dd978ce720cba234a4a540f83d9e6c339f42a",
+      "bytes": 516
+    },
+    {
+      "path": "projects/OM3_main_full.rep/idata/00/~00000000.db/db.1.gbf",
+      "sha256": "36e77058c128f057bab10c12c8bb7ca963fd30a5164b1fab6c6cd8c27a1e146d",
+      "bytes": 365133824
+    },
+    {
+      "path": "projects/OM3_main_full.rep/idata/00/~00000000.db/db.2.gbf",
+      "sha256": "8bdfd8fa933ab64bf3fd6c7e8152945d8ae2095da72af5745817902bcfbeea4b",
+      "bytes": 365133824
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-﻿# OM-3 project state
+# OM-3 project state
 
 Opus (coordinator) maintains this file. It **points to** evidence; it does not restate it.
 If this file and a linked document disagree, the linked evidence wins: correct this file
@@ -8,7 +8,7 @@ Last updated: 2026-11-17 (Phase 1 preparation).
 
 ## 1. Continuation point
 
-- **Now:** T14 alone (owner request): static trace of whether stock AF-ON, with AF Button "Always tracks", writes the same ten-byte target record as stock half-press; if not, the AF-ON reference changes from K1e S1 to stock AF-ON. T13 implementation (design accepted with changes) waits for T14.
+- **Now:** T13 implementation by Opus (design accepted with changes; reference-agnostic, the AF-ON press reference stays K1e S1 but is named so it can be switched). Open owner item: optional stock-camera visual check (AF Button "Always tracks"; Small, custom size, off-centre: does AF-ON draw the same frame as half-press?), since T14 could not decide statically.
 - **Previous step:** escalation resolved by the owner: Opus writes the harness, Grok only runs it, Sol reviews both.
 - **Previous step:** T8d and T9d round 1 (both REJECT).
   - **T8d.** After the same edit, the stock half-press writer records size bytes 3/3 for the zone T6 calls
@@ -279,7 +279,7 @@ The autonomous programme ends at either of these:
 | T12 | Complete and freeze the acceptance harness in pure Node (closed checklist; no emulator) | **Closed: PARTIAL** (two REJECTs; pre-delivery identity refusal, split setup, recorder tests, mode binding accepted; scanner, inventory, freeze and coverage-generation classes â†’ T12b) | [decision](tasks/T12-afon-harness-completion/decision.md) |
 | T12b | Close the harness defect classes by construction: capability passing, fs-level inventory, freeze from execution, one operation-definition module, sealed setup deltas (pure Node) | **Closed: PARTIAL** (two REJECTs; shared operation module and sealed setup deltas accepted; circular fake, unrestored runners â†’ escalation) | [decision](tasks/T12b-afon-harness-by-capability/decision.md) |
 | T13 | Acceptance harness written by Opus (owner decision: escalation option 4); Node permission model, no runner code, one plan module, two-layer expectations; Grok runs only | **Design accepted with changes** (round 2; six corrections to apply in implementation; implementation held for T14) | [tasks/T13-afon-harness-opus](tasks/T13-afon-harness-opus/brief.md) |
-| T14 | Owner request: does stock AF-ON ("Always tracks") write the same target record as stock half-press, byte for byte? Static trace (bare stock does not reach the writer in OM-Emu) | **Correction round** (round 1 REJECT: writer formula confirmed; equality of inputs, shadow state and rebuild timing between the two buttons not shown) | [tasks/T14-stock-afon-vs-halfpress](tasks/T14-stock-afon-vs-halfpress/brief.md) |
+| T14 | Owner request: does stock AF-ON ("Always tracks") write the same target record as stock half-press, byte for byte? Static trace (bare stock does not reach the writer in OM-Emu) | **Accepted with corrections: undecided (c)** (writer formula and 1×1 centre shadow replacement confirmed; reachability from each button, shadow selection and publication timing unresolved; deciding evidence = paired stock publication records) | [decision](tasks/T14-stock-afon-vs-halfpress/decision.md) |
 | â€” | Q7 option (b): new registered settings key (owner wants it researched later) | **Planned**, not started | owner, 19 Nov |
 | â€” | Beyond T3: persistence, display, hook point (Q4), acceptance matrix | Planned by Opus as results arrive | Â§2 |
 | â€” | CPU3 request/loader port | Deferred; regression only | AFON-MENU-RESEARCH Â§9 item 5 |
@@ -493,6 +493,7 @@ ACL or label operation on any tree containing a junction; the scripts check for 
 | 2026-11-20 | T12b closed PARTIAL (`run-20261120-025921-review`: REJECT; restored implementation WRONG: fake delivery copies expected values, frame sample is the reference). Loop rule: written escalation to the owner; recommendation option 3 (narrow the harness bar to defect-hiding checks, run T13 on the T12 correction run's real harness). No task launched pending the owner. | Opus | T12b decision.md; escalation memo |
 | 2026-11-20 | Owner resolved the harness escalation: option 4, Opus writes the harness directly, Grok only runs checks, Sol reviews; the acceptance bar is not relaxed. T13 opened; design under Sol review first (Node permission model for reads and freeze, no runner code, one plan module, sealed full-state reproduction plus cross-role behavioural relations). | Owner / Opus | escalation memo; T13 design.md |
 | 2026-11-20 | T13 design round 1 REJECT-DESIGN, round 2 ACCEPT-DESIGN-WITH-CHANGES (six corrections: pose-case mirror per role, complete early read recording, fake-only bootstrap and per-run input extension, tag containment and completion record, restore focus-arg, extra tests). Owner asked to confirm stock AF-ON equals stock half-press before more proof work; existing data cannot decide it (bare-stock K1 never changes the record; K2 AF-ON 1x1 is the T6 converter, not stock). T14 opened: static trace. | Owner / Opus | T13 reviews; T14 brief |
+| 2026-11-20 | T14 accepted with corrections, conclusion (c): static evidence cannot decide whether stock AF-ON and stock half-press publish the same record (shared writer confirmed; a shadow replacement exists that yields a 1×1 centre record; button reachability, shadow selection and timing unresolved). The K1e S1 reference is not yet confirmed stock-equivalent; T13 will name its reference explicitly. Owner camera check suggested. | Opus | T14 decision.md |
 
 ## 12. Session resumption checklist (Opus)
 

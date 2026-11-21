@@ -1,0 +1,27 @@
+﻿{
+    "task":  "T14-stock-afon-vs-halfpress",
+    "created_utc":  "2026-11-21T00:03:33.3733297Z",
+    "workspace":  "C:\\Dev\\OM3-tasks\\T14-stock-afon-vs-halfpress\\ws",
+    "brief_sha256":  "67545a74aaff23e8d5b0499472a4008478377420071eb1de8696aeff32c126fa",
+    "inputs":  [
+                   {
+                       "path":  "inputs/00_0100_50000020.decoded.bin",
+                       "sha256":  "5e8d376e9111a44ac0352f26030d7c1b17026d42c45f3600cfa02a0e8c5b7d59"
+                   },
+                   {
+                       "path":  "inputs/02_0106_458c0020.decoded.bin",
+                       "sha256":  "3d9fd4426b45fbe4b715599422af38c6d22392c08543a69f63c28291c5a0b059"
+                   }
+               ],
+    "ghidra":  {
+                   "project":  "projects/OM3_main_full",
+                   "files":  10,
+                   "bytes":  730268777,
+                   "launcher":  "tools/ghidra/support/analyzeHeadless.bat",
+                   "settings":  "state/ghidra-user"
+               },
+    "om_emu":  null,
+    "ref":  "C:\\Dev\\OM3-research",
+    "jdk":  "C:\\Dev\\OM3-research\\tooling\\jdk-25.0.5+8",
+    "node":  "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe"
+}
