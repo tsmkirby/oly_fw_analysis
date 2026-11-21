@@ -1,0 +1,73 @@
+{
+  "ok": true,
+  "valid": false,
+  "problems": [],
+  "start": "2026-11-21T03:38:54.578Z",
+  "mode": "fake",
+  "plan": "display-k1",
+  "tag": "fake-display-k1",
+  "identityTag": "fake-identity",
+  "runtime": {
+    "path": "C:/Dev/OM3-research/tooling/node-v26.12.1-win-x64/node.exe",
+    "version": "v26.12.1",
+    "bytes": 105319752,
+    "sha256": "1c63f1417e2e26d83ca9a9ec1d548524ab1305bc7209d90ebca56257ff0d84ed"
+  },
+  "freezeSha": "819876c49fef56ceb996bd03a9d5a589c90d51bae8ce1a2145d1447a520f4e2b",
+  "planSha": "dd7ec94607f097883ae44e4dcbc6c4c74cca49308bb8b493af7b51b3ff4d9a7e",
+  "extensionSha": "aa49575e3ee19ea281f5aa5bb853d81844bd94194d379ef0f194ad45fbb3e99e",
+  "childExit": 0,
+  "inventory": {
+    "count": 57,
+    "chain": "9cc44855f7173bc3c1c8bbe810d86141eea93509b8c0a2d0db203447cc044303"
+  },
+  "outputs": [
+    {
+      "path": "complete.json",
+      "bytes": 1384,
+      "sha256": "e6bf5b4dce6c7411d5fb6fbaa19675e0c0c37b5e1cb9475e4c2b8abad684d64f"
+    },
+    {
+      "path": "inventory.jsonl",
+      "bytes": 11435,
+      "sha256": "9e8c71398558cff2c95d3c664cbd777e1be87f97058f1fbe660a0411e7ec03dc"
+    },
+    {
+      "path": "log.jsonl",
+      "bytes": 37945,
+      "sha256": "083fb7e72f74f100ecdf6be6f04e3b5704c55f904a224ac7964b6f1be663dabf"
+    },
+    {
+      "path": "refresh-disp-k1.jsonl",
+      "bytes": 48904,
+      "sha256": "2f03113c64d1f691e3287589922344468d4c5b1c5a30483e69c610816915cc7d"
+    }
+  ],
+  "completion": {
+    "executed": 22,
+    "expected": 22,
+    "relations": {
+      "evaluated": 143,
+      "failed": 0
+    },
+    "reproduction": {
+      "evaluated": 22
+    },
+    "pressReference": "k1e-s1-down-halfTarget",
+    "identity": null,
+    "recorder": [
+      {
+        "session": "disp-k1",
+        "file": "refresh-disp-k1.jsonl",
+        "bytes": 48904,
+        "sha256": "2f03113c64d1f691e3287589922344468d4c5b1c5a30483e69c610816915cc7d",
+        "windows": 97,
+        "outside": 0,
+        "orphans": 0,
+        "samples": 97,
+        "calls": 97
+      }
+    ]
+  },
+  "end": "2026-11-21T03:38:55.458Z"
+}

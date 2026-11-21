@@ -1,0 +1,55 @@
+{
+  "ok": true,
+  "valid": false,
+  "problems": [],
+  "start": "2026-11-21T03:10:23.169Z",
+  "mode": "fake",
+  "plan": "display-a",
+  "tag": "fake-display-a",
+  "identityTag": "fake-identity",
+  "runtime": {
+    "path": "C:/Dev/OM3-research/tooling/node-v26.12.1-win-x64/node.exe",
+    "version": "v26.12.1",
+    "bytes": 105319752,
+    "sha256": "1c63f1417e2e26d83ca9a9ec1d548524ab1305bc7209d90ebca56257ff0d84ed"
+  },
+  "freezeSha": "8aef677471b5a2c148521fd7654ab780bd3bc638045f1f89627c614da36b189f",
+  "planSha": "dd7ec94607f097883ae44e4dcbc6c4c74cca49308bb8b493af7b51b3ff4d9a7e",
+  "extensionSha": "5bc564aaab16c12ba76cdc2113570e0c29641b64e78eb00ce4177a2f4b8b91ee",
+  "childExit": 0,
+  "inventory": {
+    "count": 42,
+    "chain": "ea99749a5525a880a8321b1d547586cfa78bb8284e5f0641c4c71eb8ffb18ad3"
+  },
+  "completion": {
+    "executed": 29,
+    "expected": 29,
+    "relations": {
+      "evaluated": 181,
+      "failed": 0
+    },
+    "reproduction": {
+      "evaluated": 29
+    },
+    "pressReference": "k1e-s1-down-halfTarget",
+    "identity": null
+  },
+  "outputs": [
+    {
+      "path": "complete.json",
+      "bytes": 1502,
+      "sha256": "80d5e237442f36cc7c97d7a40a9437882155015422b6da18e8af57a5e3b2432d"
+    },
+    {
+      "path": "inventory.jsonl",
+      "bytes": 9312,
+      "sha256": "ea054c53129f8f9a7eab8420d14dedaf417c3bd9fe5e3610f7b07311fa57e095"
+    },
+    {
+      "path": "log.jsonl",
+      "bytes": 45142,
+      "sha256": "f94fa37a362b26c59e4968925bb18ac377f90007ee9a96b60a9cd6fd4672c3ec"
+    }
+  ],
+  "end": "2026-11-21T03:10:24.024Z"
+}

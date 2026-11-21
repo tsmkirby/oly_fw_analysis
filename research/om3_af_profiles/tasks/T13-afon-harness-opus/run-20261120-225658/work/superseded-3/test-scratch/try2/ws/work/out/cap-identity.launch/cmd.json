@@ -1,0 +1,47 @@
+{
+  "execPath": "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe",
+  "flags": [
+    "--permission",
+    "--allow-fs-read=C:\\Dev\\OM3-tasks\\T13-afon-harness-opus\\ws\\work\\test-scratch\\try2\\ws\\work\\harness\\",
+    "--allow-fs-read=C:\\Dev\\OM3-tasks\\T13-afon-harness-opus\\ws\\work\\test-scratch\\try2\\ws\\om-emu\\",
+    "--allow-fs-read=C:\\Dev\\OM3-tasks\\T13-afon-harness-opus\\ws\\work\\test-scratch\\try2\\ws\\ref\\",
+    "--allow-fs-read=C:\\Dev\\OM3-research\\",
+    "--allow-fs-read=C:\\Dev\\OM3-tasks\\T13-afon-harness-opus\\ws\\work\\test-scratch\\try2\\ws\\work\\out\\cap-identity.launch\\nonce",
+    "--allow-fs-write=C:\\Dev\\OM3-tasks\\T13-afon-harness-opus\\ws\\work\\test-scratch\\try2\\ws\\work\\out\\cap-identity\\"
+  ],
+  "entry": "C:\\Dev\\OM3-tasks\\T13-afon-harness-opus\\ws\\work\\test-scratch\\try2\\ws\\work\\harness\\run_v2.mjs",
+  "childArgs": [
+    "--plan",
+    "identity",
+    "--tag",
+    "cap-identity",
+    "--mode",
+    "capture",
+    "--out",
+    "C:\\Dev\\OM3-tasks\\T13-afon-harness-opus\\ws\\work\\test-scratch\\try2\\ws\\work\\out\\cap-identity",
+    "--nonce",
+    "C:\\Dev\\OM3-tasks\\T13-afon-harness-opus\\ws\\work\\test-scratch\\try2\\ws\\work\\out\\cap-identity.launch\\nonce",
+    "--freeze-sha",
+    "none",
+    "--plan-sha",
+    "dd7ec94607f097883ae44e4dcbc6c4c74cca49308bb8b493af7b51b3ff4d9a7e",
+    "--execargv-sha",
+    "70ee44e76914add53a4758ebb990a3e930c4ae3ce0944f6068dee7821590bfb8",
+    "--sentinel",
+    "C:\\Dev\\OM3-tasks\\T13-afon-harness-opus\\ws\\work\\test-scratch\\try2\\ws\\work\\freeze\\sentinel-not-granted.txt",
+    "--mount-from",
+    "C:\\Dev\\OM3-tasks\\T13-afon-harness-opus\\ws\\work\\test-scratch\\try2\\ws\\ref",
+    "--mount-to",
+    "C:\\Dev\\OM3-research"
+  ],
+  "env": {
+    "OM_EMU_MODEL": "E147",
+    "OM_EMU_NVRAM": "off",
+    "SystemRoot": "C:\\WINDOWS",
+    "PATH": "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64"
+  },
+  "cwd": "C:\\Dev\\OM3-tasks\\T13-afon-harness-opus\\ws\\work\\test-scratch\\try2\\ws",
+  "start": "2026-11-21T03:28:00.760Z",
+  "freezeSha": null,
+  "extensionSha": "0a6f0acea19024dfcf68479957d57599718c392fdfe41f7396ffd2aeb91246de"
+}

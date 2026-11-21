@@ -1,0 +1,18 @@
+Error: disp-seed-a NavError: idle slice to 4272753460 ns: stopped at 0xa2100007 (disasm 0x920defe7) fault=5: om-emu: scpu command 0x20041001 pc 0x60070b3e #1 (reg0 0x00000000 e8 0x00000000 ec 0x00000000)
+om-emu: vsc ERROR UNWRITTEN pc 0xa2100400 ch 2 off 0x04e0 value 0x00000000 args 0x0 0x0 0x0
+om-emu: vsc ERROR PAL_UNWRITTEN pc 0xa2100400 ch 2 off 0x4c00 value 0x0007926a args 0x4 0xff 0x0
+om-emu: MN10300 trap reason=5 pc=0xa2100007 address=0xa2100007
+  step idle; GUI state 0x0108 SS_COMMON/ID_ST_CA_REQ_DISP; messages taken []; GESetEvent 0 from []; hook stops 86, top [["get_tid(scoped)", 42], ["OlySmSi(native)", 6], ["OlySmWt(native)", 6], ["memset", 5], ["OlyQeRd(S-DISPQ DISPLAY cmd 16)", 4], ["S-MODACK", 3], ["obs-tsnd", 2], ["obs-tsnd-return-5002c1f8", 2], ["S-HISTEND", 2], ["idle", 2]]; kernel events ["[\"errlog\", \"0x39000903\", \"0x3 0x304 0x304 0x0 0x62460830 0x6047ef05\", \"0x6046eedf (disasm 0x5044debf", "[\"errlog\", \"0x39000903\", \"0x3 0x304 0x304 0x0 0x62460830 0x6047ef05\", \"0x6046eedf (disasm 0x5044debf", "[\"rtos\", \"OlyEvCl\", \"d0=0x100 d1=0x0\", \"0x6020d407 (disasm 0x501ec3e7)\"]", "[\"rtos\", \"OlyEvWt\", \"d0=0x100 d1=0x1 a0=0xa20efe58\", \"0x6020d427 (disasm 0x501ec407)\"]", "[\"rtos\", \"iOlyEvSt\", \"d0=0x100 d1=0x1 a0=0x62f1dcb4\", \"0x6020d2a1 (disasm 0x501ec281)\"]", "[\"print\", \"puts2\", \"damage_info uninitialized!\\n\", \"0x60024d24 (disasm 0x50003d04)\"]"]; tasks {2: "0x5089b8ac WAI", 10: "0x50044861 WAI", 13: "0x508ae684 WAI", 14: "0x508b3770 WAI", 16: "0x500541a0 WAI", 58: "0x50ac6296 WAI", 59: "0x5105fd77 WAI", 85: "0x50156805 WAI", 91: "0x502d0ceb WAI", 92: "0x5011f82d WAI", 93: "0x502ce98f WAI", 105: "0x509be82d WAI", 122: "0x5005806c WAI", 140: "0x501d3ec8 WAI", 147: "0x501e3eca WAI", 160: "0xa2300100 RUN", 161: "0x50db7bf8 WAI", 162: "0x50acc3fd WAI", 163: "0x50ace582 WAI", 164: "0x50acff91 WAI", 165: "0x510a711e WAI", 166: "0x510a711e WAI", 167: "0x510db30f WAI", 168: "0x51179075 WAI"}
+    at PlaySession.idle_slice (file:///C:/Dev/OM3-tasks/T13-afon-harness-opus/ws/om-emu/emu/src/lab/play.mjs:1728:45)
+    at Object.idle (file:///C:/Dev/OM3-tasks/T13-afon-harness-opus/ws/work/harness/session_v2.mjs:382:92)
+    at Object.idle (file:///C:/Dev/OM3-tasks/T13-afon-harness-opus/ws/work/harness/real_v2.mjs:181:23)
+    at Object.perform (file:///C:/Dev/OM3-tasks/T13-afon-harness-opus/ws/work/harness/gate_v2.mjs:70:30)
+    at adapter.runSession.presence.presence (file:///C:/Dev/OM3-tasks/T13-afon-harness-opus/ws/work/harness/exec_v2.mjs:109:30)
+    at async driveSession (file:///C:/Dev/OM3-tasks/T13-afon-harness-opus/ws/work/harness/real_v2.mjs:228:3)
+    at async drive (file:///C:/Dev/OM3-tasks/T13-afon-harness-opus/ws/work/harness/real_v2.mjs:61:11)
+    at async runZone (file:///C:/Dev/OM3-tasks/T13-afon-harness-opus/ws/work/harness/session_v2.mjs:502:5)
+    at async Object.runSession (file:///C:/Dev/OM3-tasks/T13-afon-harness-opus/ws/work/harness/real_v2.mjs:48:22)
+    at async runPlan (file:///C:/Dev/OM3-tasks/T13-afon-harness-opus/ws/work/harness/exec_v2.mjs:96:5)
+    at Object.runSession (file:///C:/Dev/OM3-tasks/T13-afon-harness-opus/ws/work/harness/real_v2.mjs:64:29)
+    at async runPlan (file:///C:/Dev/OM3-tasks/T13-afon-harness-opus/ws/work/harness/exec_v2.mjs:96:5)
+    at async file:///C:/Dev/OM3-tasks/T13-afon-harness-opus/ws/work/harness/run_v3.mjs:133:22

@@ -1,0 +1,145 @@
+{
+  "ok": false,
+  "valid": false,
+  "problems": [
+    "capture mode: fake-only freeze bootstrap, never a valid run"
+  ],
+  "start": "2026-11-21T03:05:41.336Z",
+  "mode": "capture",
+  "plan": "display-k2",
+  "tag": "freeze-cap-display-k2",
+  "identityTag": "freeze-cap-identity",
+  "runtime": {
+    "path": "C:/Dev/OM3-research/tooling/node-v26.12.1-win-x64/node.exe",
+    "version": "v26.12.1",
+    "bytes": 105319752,
+    "sha256": "1c63f1417e2e26d83ca9a9ec1d548524ab1305bc7209d90ebca56257ff0d84ed"
+  },
+  "freezeSha": null,
+  "planSha": "dd7ec94607f097883ae44e4dcbc6c4c74cca49308bb8b493af7b51b3ff4d9a7e",
+  "extensionSha": "a85de27db612695c9522e32dc64e655584a67b71c4d25b16980a2bff26b77d56",
+  "childExit": 0,
+  "inventory": {
+    "count": 42,
+    "chain": "ef3ffc49736544ab99318664ae80d83443ab92b2468a91c6e8474bec31f8e74c"
+  },
+  "reads": [
+    {
+      "path": "C:/Dev/OM3-research/tasks/T8b-afon-integrated-acceptance-generated/run-20261119-153249/work/scripts/lib_map_c1.mjs",
+      "sha256": "60d5ed07990cf74526380d566409c297877c9e18c2fc8b8a0ffc0fda030200e7",
+      "bytes": 2539
+    },
+    {
+      "path": "C:/Dev/OM3-research/tasks/T9d-afon-display-size-inputs/run-20261119-202459/work/scripts/lib_valid_t9d.mjs",
+      "sha256": "2013f1d2841b7b241567f25ccaa059bc714e1622554e15c12f17752142f3d81b",
+      "bytes": 10181
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T13-afon-harness-opus/ws/work/harness/check_table_v3.mjs",
+      "sha256": "37255a2b42c52c2f4cc99782d0e1cf186e0d9cd84735224f76d0be1b6c3df1d9",
+      "bytes": 7778
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T13-afon-harness-opus/ws/work/harness/common_v1.mjs",
+      "sha256": "327df4f05eebaa6142bc508627359a74b1ce320379c1fdad3f1d3466f00cd529",
+      "bytes": 2685
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T13-afon-harness-opus/ws/work/harness/exec_v1.mjs",
+      "sha256": "8aed0b0030344e69b6d9b523e12da656683a33354b1eb0f9f1a4b43be2e683b2",
+      "bytes": 11054
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T13-afon-harness-opus/ws/work/harness/expect_v1.mjs",
+      "sha256": "3a85eaef31d9f8e0d040d0c0cdc48fd008bb02d7fa1ddecb8c1a5526ba818f2f",
+      "bytes": 2443
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T13-afon-harness-opus/ws/work/harness/fake_v1.mjs",
+      "sha256": "7e00070e3b6ecff1cf733df85467bca972abc31bcb32b3370bebe11c3bae5712",
+      "bytes": 11416
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T13-afon-harness-opus/ws/work/harness/gate_v1.mjs",
+      "sha256": "53a5cbbe65f15e687eaaca5878a7a0ff71aee84842f14e0cc165e4ef859bf0b2",
+      "bytes": 3942
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T13-afon-harness-opus/ws/work/harness/inventory_v1.mjs",
+      "sha256": "d9ce1e41a43c5c8789689bee1c6340a73ef5e328eefcffd930466d1ebaf7c0e8",
+      "bytes": 8887
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T13-afon-harness-opus/ws/work/harness/plan_v1.mjs",
+      "sha256": "dd7ec94607f097883ae44e4dcbc6c4c74cca49308bb8b493af7b51b3ff4d9a7e",
+      "bytes": 17780
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T13-afon-harness-opus/ws/work/harness/refresh_v4.mjs",
+      "sha256": "01e4714d9f3067f1972e113ffc693bdb8a5dc847800b80604eed827bc1e75f48",
+      "bytes": 4294
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T13-afon-harness-opus/ws/work/harness/relations_v1.mjs",
+      "sha256": "b08f64079b7c603e4db3e7c1e68f50ba76c8894cb44e4ebfbd6d7ae11994015f",
+      "bytes": 17375
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T13-afon-harness-opus/ws/work/harness/run_v1.mjs",
+      "sha256": "320390a6d4e301f2a3c5da665f608e17f14ee68f22d2bd2d9e20250cda0a614f",
+      "bytes": 7397
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T13-afon-harness-opus/ws/work/harness/seal_v1.mjs",
+      "sha256": "2d51beb9fef3b7c78ced872a4212a56cf990af44c995443caf525f633de66d8e",
+      "bytes": 1754
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T13-afon-harness-opus/ws/work/harness/table_v2.mjs",
+      "sha256": "1dbdfa871ec90c27010d5361c188b7d63db0d24c700ac57c74942dbce1bb5f20",
+      "bytes": 17566
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T13-afon-harness-opus/ws/work/out/freeze-cap-identity/identity.json",
+      "sha256": "5591bcd514c35814abbe00656118158cec3518867bba5f39472b95e24129dd0c",
+      "bytes": 2836008
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T13-afon-harness-opus/ws/work/out/freeze-cap-identity/identity.seal.json",
+      "sha256": "7ad167e8c2ff21bbb33f3c16a6779cb29b8fb0de2907d36a5d26bc0d83c9202a",
+      "bytes": 253
+    }
+  ],
+  "completion": {
+    "executed": 28,
+    "expected": 28,
+    "relations": {
+      "evaluated": 173,
+      "failed": 0
+    },
+    "reproduction": {
+      "evaluated": 28
+    },
+    "pressReference": "k1e-s1-down-halfTarget",
+    "identity": null
+  },
+  "outputs": [
+    {
+      "path": "complete.json",
+      "bytes": 1189,
+      "sha256": "1da2106a81986b68ded9f28ff84b80341ca82cd568e3b9c4539816761bbe2105"
+    },
+    {
+      "path": "inventory.jsonl",
+      "bytes": 9330,
+      "sha256": "2dfde1437b3b3d0f0d8384846365ec523c748b9ae1fa07f2b58ac891490a6692"
+    },
+    {
+      "path": "log.jsonl",
+      "bytes": 43430,
+      "sha256": "04b34b38c97293b76f0e45e25891379bf8fb9a1c31beac2301b4fda012e02fb2"
+    }
+  ],
+  "captureComplete": true,
+  "end": "2026-11-21T03:05:41.550Z"
+}

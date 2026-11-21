@@ -1,0 +1,55 @@
+{
+  "ok": true,
+  "valid": false,
+  "problems": [],
+  "start": "2026-11-21T03:09:14.021Z",
+  "mode": "fake",
+  "plan": "display-k2",
+  "tag": "fake-display-k2",
+  "identityTag": "fake-identity",
+  "runtime": {
+    "path": "C:/Dev/OM3-research/tooling/node-v26.12.1-win-x64/node.exe",
+    "version": "v26.12.1",
+    "bytes": 105319752,
+    "sha256": "1c63f1417e2e26d83ca9a9ec1d548524ab1305bc7209d90ebca56257ff0d84ed"
+  },
+  "freezeSha": "129f1a5c5f8744797e9938b4492c56b0ae468a080c9b01abb8497052e2f7fda2",
+  "planSha": "dd7ec94607f097883ae44e4dcbc6c4c74cca49308bb8b493af7b51b3ff4d9a7e",
+  "extensionSha": "69a29eebf10531dd1331056fade2d1224fd4edc071ed4e3d45002ac8e3d93ab7",
+  "childExit": 0,
+  "inventory": {
+    "count": 42,
+    "chain": "cd602aca2e23923729304329d9ce29134d17577a70c172392bd32e8fb96d3658"
+  },
+  "completion": {
+    "executed": 28,
+    "expected": 28,
+    "relations": {
+      "evaluated": 173,
+      "failed": 0
+    },
+    "reproduction": {
+      "evaluated": 28
+    },
+    "pressReference": "k1e-s1-down-halfTarget",
+    "identity": null
+  },
+  "outputs": [
+    {
+      "path": "complete.json",
+      "bytes": 1248,
+      "sha256": "1a61283eb6be67c451779d6c0dcad9c41e7e7545de336c7f350cf85d35ac5046"
+    },
+    {
+      "path": "inventory.jsonl",
+      "bytes": 9312,
+      "sha256": "e3554ef109096f2ce44073bb002c72878baa977e0e7031431a91e9d8b6952e76"
+    },
+    {
+      "path": "log.jsonl",
+      "bytes": 43489,
+      "sha256": "8dd4e232695820987ee2a1075c29604b00ed81c20aa4a4b66fae428b509a5e90"
+    }
+  ],
+  "end": "2026-11-21T03:09:14.901Z"
+}

@@ -1,0 +1,56 @@
+{
+  "plan": "display-k1",
+  "mode": "fake",
+  "planSha": "dd7ec94607f097883ae44e4dcbc6c4c74cca49308bb8b493af7b51b3ff4d9a7e",
+  "freezeSha": "c97381cd45bb6503907ee2a97f12a3ceb2b4cdbd7c6398f97bddfafb8ec4d290",
+  "pressReference": "k1e-s1-down-halfTarget",
+  "executed": [
+    "disp-k1:disp-k1-init-6071181e",
+    "disp-k1:disp-k1-init-608fe1b0",
+    "disp-k1:disp-k1-init-609df7e4",
+    "disp-k1:disp-k1-take-focus-act",
+    "disp-k1:disp-k1-take-focus-settle",
+    "disp-k1:disp-k1-lever",
+    "disp-k1:disp-k1-focus-arg",
+    "disp-k1:disp-k1-focus-289",
+    "disp-k1:disp-k1-focus-1712",
+    "disp-k1:k1-prepare",
+    "disp-k1:k1-e0",
+    "disp-k1:k1-e1",
+    "disp-k1:k1-e2",
+    "disp-k1:k1-e3",
+    "disp-k1:k1-e4",
+    "disp-k1:k1-e5",
+    "disp-k1:k1-e6",
+    "disp-k1:k1-e7",
+    "disp-k1:k1-e8",
+    "disp-k1:k1-e9",
+    "disp-k1:k1-e10",
+    "disp-k1:k1-e11"
+  ],
+  "expected": 22,
+  "deliveries": 22,
+  "relations": {
+    "evaluated": 143,
+    "failed": 0
+  },
+  "reproduction": {
+    "evaluated": 22
+  },
+  "identity": null,
+  "recorder": [
+    {
+      "session": "disp-k1",
+      "file": "refresh-disp-k1.jsonl",
+      "bytes": 48904,
+      "sha256": "2f03113c64d1f691e3287589922344468d4c5b1c5a30483e69c610816915cc7d",
+      "windows": 97,
+      "outside": 0,
+      "orphans": 0,
+      "samples": 97,
+      "calls": 97
+    }
+  ],
+  "ok": true,
+  "inventoryProblems": []
+}

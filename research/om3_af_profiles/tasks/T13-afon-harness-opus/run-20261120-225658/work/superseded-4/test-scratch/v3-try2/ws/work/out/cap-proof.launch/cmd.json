@@ -1,0 +1,53 @@
+{
+  "execPath": "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe",
+  "flags": [
+    "--permission",
+    "--allow-fs-read=C:\\Dev\\OM3-tasks\\T13-afon-harness-opus\\ws\\work\\test-scratch\\v3-try2\\ws\\work\\harness\\",
+    "--allow-fs-read=C:\\Dev\\OM3-tasks\\T13-afon-harness-opus\\ws\\work\\test-scratch\\v3-try2\\ws\\om-emu\\",
+    "--allow-fs-read=C:\\Dev\\OM3-tasks\\T13-afon-harness-opus\\ws\\work\\test-scratch\\v3-try2\\ws\\ref\\",
+    "--allow-fs-read=C:\\Dev\\OM3-research\\",
+    "--allow-fs-read=C:\\Dev\\OM3-tasks\\T13-afon-harness-opus\\ws\\work\\test-scratch\\v3-try2\\ws\\work\\out\\cap-proof.launch\\nonce",
+    "--allow-fs-read=C:\\Dev\\OM3-tasks\\T13-afon-harness-opus\\ws\\work\\test-scratch\\v3-try2\\ws\\work\\out\\cap-identity\\identity.json",
+    "--allow-fs-read=C:\\Dev\\OM3-tasks\\T13-afon-harness-opus\\ws\\work\\test-scratch\\v3-try2\\ws\\work\\out\\cap-identity\\identity.seal.json",
+    "--allow-fs-write=C:\\Dev\\OM3-tasks\\T13-afon-harness-opus\\ws\\work\\test-scratch\\v3-try2\\ws\\work\\out\\cap-proof\\"
+  ],
+  "entry": "C:\\Dev\\OM3-tasks\\T13-afon-harness-opus\\ws\\work\\test-scratch\\v3-try2\\ws\\work\\harness\\run_v3.mjs",
+  "childArgs": [
+    "--plan",
+    "proof",
+    "--tag",
+    "cap-proof",
+    "--mode",
+    "capture",
+    "--out",
+    "C:\\Dev\\OM3-tasks\\T13-afon-harness-opus\\ws\\work\\test-scratch\\v3-try2\\ws\\work\\out\\cap-proof",
+    "--nonce",
+    "C:\\Dev\\OM3-tasks\\T13-afon-harness-opus\\ws\\work\\test-scratch\\v3-try2\\ws\\work\\out\\cap-proof.launch\\nonce",
+    "--freeze-sha",
+    "none",
+    "--plan-sha",
+    "dd7ec94607f097883ae44e4dcbc6c4c74cca49308bb8b493af7b51b3ff4d9a7e",
+    "--execargv-sha",
+    "9c5a962184875929b1266a04d730a6de59c722bcc1d4cdbde18a6018fa80599a",
+    "--sentinel",
+    "C:\\Dev\\OM3-tasks\\T13-afon-harness-opus\\ws\\work\\test-scratch\\v3-try2\\ws\\work\\freeze\\sentinel-not-granted.txt",
+    "--identity-json",
+    "C:\\Dev\\OM3-tasks\\T13-afon-harness-opus\\ws\\work\\test-scratch\\v3-try2\\ws\\work\\out\\cap-identity\\identity.json",
+    "--identity-seal",
+    "C:\\Dev\\OM3-tasks\\T13-afon-harness-opus\\ws\\work\\test-scratch\\v3-try2\\ws\\work\\out\\cap-identity\\identity.seal.json",
+    "--mount-from",
+    "C:\\Dev\\OM3-tasks\\T13-afon-harness-opus\\ws\\work\\test-scratch\\v3-try2\\ws\\ref",
+    "--mount-to",
+    "C:\\Dev\\OM3-research"
+  ],
+  "env": {
+    "OM_EMU_MODEL": "E147",
+    "OM_EMU_NVRAM": "off",
+    "SystemRoot": "C:\\WINDOWS",
+    "PATH": "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64"
+  },
+  "cwd": "C:\\Dev\\OM3-tasks\\T13-afon-harness-opus\\ws\\work\\test-scratch\\v3-try2\\ws",
+  "start": "2026-11-21T03:38:20.560Z",
+  "freezeSha": null,
+  "extensionSha": "e8edb17a5b775ae9ec17d9393708b222d3ed6b0adc5716e5249f7572e20851d6"
+}

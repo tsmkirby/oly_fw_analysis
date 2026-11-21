@@ -1,0 +1,72 @@
+{
+  "ok": true,
+  "valid": false,
+  "problems": [],
+  "start": "2026-11-21T03:09:10.131Z",
+  "mode": "fake",
+  "plan": "identity",
+  "tag": "fake-identity",
+  "identityTag": null,
+  "runtime": {
+    "path": "C:/Dev/OM3-research/tooling/node-v26.12.1-win-x64/node.exe",
+    "version": "v26.12.1",
+    "bytes": 105319752,
+    "sha256": "1c63f1417e2e26d83ca9a9ec1d548524ab1305bc7209d90ebca56257ff0d84ed"
+  },
+  "freezeSha": "129f1a5c5f8744797e9938b4492c56b0ae468a080c9b01abb8497052e2f7fda2",
+  "planSha": "dd7ec94607f097883ae44e4dcbc6c4c74cca49308bb8b493af7b51b3ff4d9a7e",
+  "extensionSha": "3614fdf980b319ecf1312c622d38dcb97967619ce13130504580030e3cef0e97",
+  "childExit": 0,
+  "inventory": {
+    "count": 39,
+    "chain": "3d5d1c6bfb255d16df9145c679d8dfd017f0ad331f955688fad291d863b8c825"
+  },
+  "completion": {
+    "executed": 432,
+    "expected": 432,
+    "relations": {
+      "evaluated": 1762,
+      "failed": 0
+    },
+    "reproduction": {
+      "evaluated": 0
+    },
+    "pressReference": "k1e-s1-down-halfTarget",
+    "identity": {
+      "sha256": "d0373a407be72430e2620ee61353c5c1cb2f608af66a03447a06b2fad4bcd4e1",
+      "bytes": 2836067,
+      "file": "identity.json",
+      "planSha": "dd7ec94607f097883ae44e4dcbc6c4c74cca49308bb8b493af7b51b3ff4d9a7e",
+      "freezeSha": "129f1a5c5f8744797e9938b4492c56b0ae468a080c9b01abb8497052e2f7fda2",
+      "mode": "fake"
+    }
+  },
+  "outputs": [
+    {
+      "path": "complete.json",
+      "bytes": 13866,
+      "sha256": "a42cff259d5c6d5ec5cf09053a7335fafe0427ec2a8d25216af8925e8aa06ba1"
+    },
+    {
+      "path": "identity.json",
+      "bytes": 2836067,
+      "sha256": "d0373a407be72430e2620ee61353c5c1cb2f608af66a03447a06b2fad4bcd4e1"
+    },
+    {
+      "path": "identity.seal.json",
+      "bytes": 312,
+      "sha256": "787fd853c06f9f2572c62b9603b7cc83102e34860ab19bea8f81de3f9add6d87"
+    },
+    {
+      "path": "inventory.jsonl",
+      "bytes": 8637,
+      "sha256": "2ce3f4403951ad6eeed2e00e0d1fa29505dd3020f9450354920b5cfc89bc21f4"
+    },
+    {
+      "path": "log.jsonl",
+      "bytes": 384647,
+      "sha256": "c8e36b25ea4b3d67c4f2957056fd71783e5287a05d94fe0ff3989e97498f468d"
+    }
+  ],
+  "end": "2026-11-21T03:09:11.092Z"
+}

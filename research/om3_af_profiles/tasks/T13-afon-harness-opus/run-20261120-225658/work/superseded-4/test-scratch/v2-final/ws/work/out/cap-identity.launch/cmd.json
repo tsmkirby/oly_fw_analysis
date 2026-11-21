@@ -1,0 +1,47 @@
+{
+  "execPath": "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe",
+  "flags": [
+    "--permission",
+    "--allow-fs-read=C:\\Dev\\OM3-tasks\\T13-afon-harness-opus\\ws\\work\\test-scratch\\v2-final\\ws\\work\\harness\\",
+    "--allow-fs-read=C:\\Dev\\OM3-tasks\\T13-afon-harness-opus\\ws\\work\\test-scratch\\v2-final\\ws\\om-emu\\",
+    "--allow-fs-read=C:\\Dev\\OM3-tasks\\T13-afon-harness-opus\\ws\\work\\test-scratch\\v2-final\\ws\\ref\\",
+    "--allow-fs-read=C:\\Dev\\OM3-research\\",
+    "--allow-fs-read=C:\\Dev\\OM3-tasks\\T13-afon-harness-opus\\ws\\work\\test-scratch\\v2-final\\ws\\work\\out\\cap-identity.launch\\nonce",
+    "--allow-fs-write=C:\\Dev\\OM3-tasks\\T13-afon-harness-opus\\ws\\work\\test-scratch\\v2-final\\ws\\work\\out\\cap-identity\\"
+  ],
+  "entry": "C:\\Dev\\OM3-tasks\\T13-afon-harness-opus\\ws\\work\\test-scratch\\v2-final\\ws\\work\\harness\\run_v2.mjs",
+  "childArgs": [
+    "--plan",
+    "identity",
+    "--tag",
+    "cap-identity",
+    "--mode",
+    "capture",
+    "--out",
+    "C:\\Dev\\OM3-tasks\\T13-afon-harness-opus\\ws\\work\\test-scratch\\v2-final\\ws\\work\\out\\cap-identity",
+    "--nonce",
+    "C:\\Dev\\OM3-tasks\\T13-afon-harness-opus\\ws\\work\\test-scratch\\v2-final\\ws\\work\\out\\cap-identity.launch\\nonce",
+    "--freeze-sha",
+    "none",
+    "--plan-sha",
+    "dd7ec94607f097883ae44e4dcbc6c4c74cca49308bb8b493af7b51b3ff4d9a7e",
+    "--execargv-sha",
+    "7558ad12aed1d0524bc234f54f24e126d298d3d022843fc5930b5fbffcf4c6af",
+    "--sentinel",
+    "C:\\Dev\\OM3-tasks\\T13-afon-harness-opus\\ws\\work\\test-scratch\\v2-final\\ws\\work\\freeze\\sentinel-not-granted.txt",
+    "--mount-from",
+    "C:\\Dev\\OM3-tasks\\T13-afon-harness-opus\\ws\\work\\test-scratch\\v2-final\\ws\\ref",
+    "--mount-to",
+    "C:\\Dev\\OM3-research"
+  ],
+  "env": {
+    "OM_EMU_MODEL": "E147",
+    "OM_EMU_NVRAM": "off",
+    "SystemRoot": "C:\\WINDOWS",
+    "PATH": "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64"
+  },
+  "cwd": "C:\\Dev\\OM3-tasks\\T13-afon-harness-opus\\ws\\work\\test-scratch\\v2-final\\ws",
+  "start": "2026-11-21T03:29:24.383Z",
+  "freezeSha": null,
+  "extensionSha": "75eac085351fe2d7fa71158ddcb75b6a52716d49b9689f384724580b86136e59"
+}

@@ -1,0 +1,56 @@
+{
+  "ok": true,
+  "valid": false,
+  "problems": [],
+  "start": "2026-11-21T03:38:42.949Z",
+  "mode": "fake",
+  "plan": "proof",
+  "tag": "f-proof",
+  "identityTag": "f-identity",
+  "runtime": {
+    "path": "C:/Dev/OM3-research/tooling/node-v26.12.1-win-x64/node.exe",
+    "version": "v26.12.1",
+    "bytes": 105319752,
+    "sha256": "1c63f1417e2e26d83ca9a9ec1d548524ab1305bc7209d90ebca56257ff0d84ed"
+  },
+  "freezeSha": "c97381cd45bb6503907ee2a97f12a3ceb2b4cdbd7c6398f97bddfafb8ec4d290",
+  "planSha": "dd7ec94607f097883ae44e4dcbc6c4c74cca49308bb8b493af7b51b3ff4d9a7e",
+  "extensionSha": "d1b71ad9014db86976f4d91a69d916694dd069ff0013d011ed233d718772c47f",
+  "childExit": 0,
+  "inventory": {
+    "count": 57,
+    "chain": "d05dc45aa0822c7cc7d7982bc83d4575e646c1f670872be58a9647805539239f"
+  },
+  "outputs": [
+    {
+      "path": "complete.json",
+      "bytes": 10146,
+      "sha256": "6094f2f07a209e4714d4db6f14ea16b64cae5b4060b13f5635802d0d30e1ebab"
+    },
+    {
+      "path": "inventory.jsonl",
+      "bytes": 12887,
+      "sha256": "f4ea6c4922b77136d599a43c2ef4affd1600f88acf500857baaa3487d9e422fb"
+    },
+    {
+      "path": "log.jsonl",
+      "bytes": 366710,
+      "sha256": "befffb32175a9bbf26c8a4796c634aeb73e84562f97191b63c0b045856a33c28"
+    }
+  ],
+  "completion": {
+    "executed": 324,
+    "expected": 324,
+    "relations": {
+      "evaluated": 1096,
+      "failed": 0
+    },
+    "reproduction": {
+      "evaluated": 324
+    },
+    "pressReference": "k1e-s1-down-halfTarget",
+    "identity": null,
+    "recorder": []
+  },
+  "end": "2026-11-21T03:38:43.353Z"
+}

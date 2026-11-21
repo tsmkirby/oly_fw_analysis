@@ -95,3 +95,44 @@ Check: each of your three round-4 required corrections (DONE / NOT DONE / WRONG)
 or inconsistency (including the additional refusal of callback `fs.realpath`); and readiness for the Grok run-only
 stage. Rules as round 3 (do not run `test_v3.mjs`, `launch_v3.mjs`, `make_freeze_v3.mjs` or OM-Emu). Verdict:
 ACCEPT-CODE, ACCEPT-CODE-WITH-CHANGES, or REJECT-CODE.
+
+## Round 6: results of the Grok run-only stage
+
+Grok ran `run-20261120-225658` (run-only brief `brief.md`). One process was started and failed; Grok stopped as the
+brief requires. Under review: `work/result.md` (Grok's run report), `work/evidence-manifest.json`,
+`work/out/t13-identity/` and `work/out/t13-identity.launch/`, and the audit files. The accepted code is v3 (your
+round-5 review, `audit/previous-review.md` is round 4; round 5 is
+`ref\tasks\T13-afon-harness-opus\run-20261120-224009-review\review.md`).
+
+Check:
+1. Did the run follow the brief (one process, no edits, stop rule, report accuracy)? Do the records support Grok's
+   findings, in particular that k1e, k2, candidate, zk1e and zcand completed every operation with zero failing
+   relations and both writer counts passed, before `disp-seed-a` failed during its `lever` setup operation?
+2. **Cause (static, read-only).** The fault is a NavError in the 400 ms idle after the `lever` setup operation of
+   the first display session (`scpu command 0x20041001`, trap at `0xa2100007`). The T8d and zone sessions run the
+   same setup operations and passed. Display sessions differ in: (a) T6 overlay with help/rowLabel off; (b) the
+   refresh recorder (`refresh_v4`, observer on `0x61184dd6` with return hooks) and the combined hook with `onGetter`
+   (return hooks on every passthrough getter site) installed before bring-up; (c) a boundary-frame sample before and
+   after every setup operation (`requireFrame`); (d) no pose path. The real T9d display runs
+   (`ref\tasks\T9d-afon-display-size-inputs\run-20261119-202459\work\scripts\obs_seed_t9d.mjs`, `lib_valid_t9d.mjs`
+   `prepare`) used (a) and (d) but did bring-up and the lever before installing any display hook and without frame
+   sampling. Which differences can plausibly cause this fault, and what is the minimal correction faithful to the
+   runs that actually worked on the emulator?
+3. Anything else in the records that a correction must address.
+
+Rules as round 3 (read-only; no test, launcher, freeze maker or OM-Emu). Verdict: ACCEPT-RUN (the proof stands),
+REJECT-RUN with the required corrections (numbered, minimal), or ESCALATE.
+
+## Round 7: implementation v4 (correction after REJECT-RUN)
+
+Your results review (REJECT-RUN) is `audit/previous-review.md`; your v3 code acceptance is
+`audit/code-review-round3-accept.md`. Under review: `work/result.md` (v4), the new files `plan_v2`, `gate_v3`,
+`exec_v3`, `real_v3`, `fake_v3`, `run_v4`, `exitcheck_v4`, `launch_v4`, `make_freeze_v4`, `test_v4`, and the
+regenerated `work/freeze/freeze_v1.json`, `work/out/`, `work/test-scratch/v4-final/`, `work/evidence-manifest.json`.
+The failed run and v3 records are preserved in `work/superseded-5/`. External freeze digest:
+`4975d34d3d96930a2f570d2988b9a6cea5e32b1e8e51cd74f787a166982c3b0e`.
+
+Check: each of your three required corrections (DONE / NOT DONE / WRONG); whether the passive-frame, assertion-getter
+and return-site handling are sound against the OM-Emu and accepted-hook sources; whether T8d/zone behaviour is
+unchanged; the declared setup-frame coverage change and wait reconciliation; and readiness for a new run-only stage.
+Rules as round 3. Verdict: ACCEPT-CODE, ACCEPT-CODE-WITH-CHANGES, or REJECT-CODE.

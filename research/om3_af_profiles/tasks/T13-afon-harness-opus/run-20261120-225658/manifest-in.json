@@ -1,0 +1,25 @@
+﻿{
+    "task":  "T13-afon-harness-opus",
+    "created_utc":  "2026-11-20T23:45:28.0350634Z",
+    "workspace":  "C:\\Dev\\OM3-tasks\\T13-afon-harness-opus\\ws",
+    "brief_sha256":  "dc4eedbf8393141ddd64675b4944de7b6ee19b6eac7b8d5dc5c9a55cf939d90b",
+    "inputs":  [
+                   {
+                       "path":  "inputs/00_0100_50000020.decoded.bin",
+                       "sha256":  "5e8d376e9111a44ac0352f26030d7c1b17026d42c45f3600cfa02a0e8c5b7d59"
+                   },
+                   {
+                       "path":  "inputs/02_0106_458c0020.decoded.bin",
+                       "sha256":  "3d9fd4426b45fbe4b715599422af38c6d22392c08543a69f63c28291c5a0b059"
+                   }
+               ],
+    "ghidra":  null,
+    "om_emu":  {
+                   "path":  "om-emu",
+                   "head":  "4e4ec4ef084542a7e30eecce56970c7e09c123c9",
+                   "local_diff_sha256":  "61cd13270e82f9bc5236c36c945783defda4c97a2e99f93b75f11da521877702"
+               },
+    "ref":  "C:\\Dev\\OM3-research",
+    "jdk":  "C:\\Dev\\OM3-research\\tooling\\jdk-25.0.5+8",
+    "node":  "C:\\Dev\\OM3-research\\tooling\\node-v26.12.1-win-x64\\node.exe"
+}

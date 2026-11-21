@@ -1,0 +1,41 @@
+{
+  "ok": false,
+  "valid": false,
+  "problems": [
+    "child exit 1",
+    "inventory truncated: no end record",
+    "inventory lacks the load of exec_v2.mjs",
+    "inventory lacks the load of gate_v2.mjs",
+    "inventory lacks the load of relations_v2.mjs",
+    "inventory lacks the load of fake_v2.mjs",
+    "completion record missing"
+  ],
+  "start": "2026-11-21T03:29:30.536Z",
+  "mode": "fake",
+  "plan": "identity",
+  "tag": "killed",
+  "identityTag": null,
+  "runtime": {
+    "path": "C:/Dev/OM3-research/tooling/node-v26.12.1-win-x64/node.exe",
+    "version": "v26.12.1",
+    "bytes": 105319752,
+    "sha256": "1c63f1417e2e26d83ca9a9ec1d548524ab1305bc7209d90ebca56257ff0d84ed"
+  },
+  "freezeSha": "edf10cadd61dc587d05961ad26e64a393d78318e3f31febeba05326a13872b3a",
+  "planSha": "dd7ec94607f097883ae44e4dcbc6c4c74cca49308bb8b493af7b51b3ff4d9a7e",
+  "extensionSha": "62f6ee50ee3462b6fa512338cbf6079820e0239c49a60cc8ac4dd50d5f1a6b25",
+  "childExit": 1,
+  "inventory": {
+    "count": 22,
+    "chain": "c5d3cbeb3dcfbc5a751f9dd702df75bea96680d8eafb179024b10f51867f5035"
+  },
+  "outputs": [
+    {
+      "path": "inventory.jsonl",
+      "bytes": 4910,
+      "sha256": "7c40103ab39985bfbb6a882680bbdc8084dbe41c9da809887a544b091424d3b4"
+    }
+  ],
+  "completion": null,
+  "end": "2026-11-21T03:29:30.842Z"
+}

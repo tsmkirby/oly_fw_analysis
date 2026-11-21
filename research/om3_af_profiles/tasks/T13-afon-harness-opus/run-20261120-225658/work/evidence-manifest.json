@@ -1,0 +1,138 @@
+{
+  "task": "T13-afon-harness-opus",
+  "stage": "run-only",
+  "brief_sha256": "9f9e47156659e2131c93e908422a04e76ea3163145d6187f9f241ee9bddd9684",
+  "freeze_sha256": "819876c49fef56ceb996bd03a9d5a589c90d51bae8ce1a2145d1447a520f4e2b",
+  "inputs": [
+    {
+      "path": "brief.md",
+      "sha256": "9f9e47156659e2131c93e908422a04e76ea3163145d6187f9f241ee9bddd9684",
+      "bytes": 4382
+    }
+  ],
+  "sources": [],
+  "outputs": [
+    {"path": "work/out/t13-identity/candidate-af-down.png", "sha256": "b662691b2da9aae27e0f88a23425ca0fe3a333cdb85e72ac25ab7bd5a0dbf1fb", "bytes": 13281},
+    {"path": "work/out/t13-identity/candidate-af-up.png", "sha256": "116e0f121cfd8cc456aa3de06d610d29644c7593816af7d827e803564c582105", "bytes": 12345},
+    {"path": "work/out/t13-identity/candidate-back-shoot.png", "sha256": "0b352310bea2c0b58dd3f30b6ae0399d05acded95ac3d94404d6329197d58629", "bytes": 15350},
+    {"path": "work/out/t13-identity/candidate-base.png", "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6", "bytes": 13406},
+    {"path": "work/out/t13-identity/candidate-e-ok.png", "sha256": "bf4c0924a4adccaca1727a314e576e9f12956e21da825d246fa5d41f53de3e75", "bytes": 16421},
+    {"path": "work/out/t13-identity/candidate-e-open.png", "sha256": "703c942b0cac9e409760ecc29b77493894c26ff1dd91c2b2474d9761c7d0d263", "bytes": 4986},
+    {"path": "work/out/t13-identity/candidate-e-up.png", "sha256": "79116a608feaa84f3a32a5ab6a73b1af99a4c5f292bb3fda4d32a24a339628d6", "bytes": 4986},
+    {"path": "work/out/t13-identity/candidate-enter-exif6.png", "sha256": "b662691b2da9aae27e0f88a23425ca0fe3a333cdb85e72ac25ab7bd5a0dbf1fb", "bytes": 13281},
+    {"path": "work/out/t13-identity/candidate-enter-land.png", "sha256": "be761c643f200cdcc700e67cb0aa972f0d7d17d46d382635b9e75c98ec16847b", "bytes": 12469},
+    {"path": "work/out/t13-identity/candidate-l-af-down.png", "sha256": "bf4c0924a4adccaca1727a314e576e9f12956e21da825d246fa5d41f53de3e75", "bytes": 16421},
+    {"path": "work/out/t13-identity/candidate-l-af-up.png", "sha256": "be761c643f200cdcc700e67cb0aa972f0d7d17d46d382635b9e75c98ec16847b", "bytes": 12469},
+    {"path": "work/out/t13-identity/candidate-n-ok.png", "sha256": "dfbc31fa183d198e6c96264c11b6bd01a980b511d9608dcf283461ba71e12d11", "bytes": 16430},
+    {"path": "work/out/t13-identity/candidate-n-open.png", "sha256": "703c942b0cac9e409760ecc29b77493894c26ff1dd91c2b2474d9761c7d0d263", "bytes": 4986},
+    {"path": "work/out/t13-identity/candidate-n-s1-down.png", "sha256": "dfbc31fa183d198e6c96264c11b6bd01a980b511d9608dcf283461ba71e12d11", "bytes": 16430},
+    {"path": "work/out/t13-identity/candidate-n-s1-up.png", "sha256": "dfbc31fa183d198e6c96264c11b6bd01a980b511d9608dcf283461ba71e12d11", "bytes": 16430},
+    {"path": "work/out/t13-identity/candidate-n-up.png", "sha256": "79116a608feaa84f3a32a5ab6a73b1af99a4c5f292bb3fda4d32a24a339628d6", "bytes": 4986},
+    {"path": "work/out/t13-identity/candidate-p-af-down.png", "sha256": "4fa68cdfa644bdb0ffadb558b7c0d340cccac12f4ccfa0c80b6ff4f6924adf63", "bytes": 16430},
+    {"path": "work/out/t13-identity/candidate-p-af-up.png", "sha256": "f29e503e88ac6c42974ab698b750d348a2b2e5cd50ed3d1cc5bc46f2cf9bfd69", "bytes": 15478},
+    {"path": "work/out/t13-identity/candidate-p-menu.png", "sha256": "542ed40b758684c43091a6fd9b1f1634cf1e5084f6cfa9a93c3cbeda0cec9715", "bytes": 14163},
+    {"path": "work/out/t13-identity/candidate-p-up.png", "sha256": "703c942b0cac9e409760ecc29b77493894c26ff1dd91c2b2474d9761c7d0d263", "bytes": 4986},
+    {"path": "work/out/t13-identity/candidate-pose-after-edit.png", "sha256": "bf4c0924a4adccaca1727a314e576e9f12956e21da825d246fa5d41f53de3e75", "bytes": 16421},
+    {"path": "work/out/t13-identity/candidate-pose-exif6.png", "sha256": "02c5a7eac3e923b9d19b0ccf13a526e391841fb6cb6d7c05cef51c98c0cf2c73", "bytes": 13281},
+    {"path": "work/out/t13-identity/candidate-pose-land.png", "sha256": "bf4c0924a4adccaca1727a314e576e9f12956e21da825d246fa5d41f53de3e75", "bytes": 16421},
+    {"path": "work/out/t13-identity/candidate-pre-l-s1-down.png", "sha256": "bf4c0924a4adccaca1727a314e576e9f12956e21da825d246fa5d41f53de3e75", "bytes": 16421},
+    {"path": "work/out/t13-identity/candidate-pre-l-s1-up.png", "sha256": "bf4c0924a4adccaca1727a314e576e9f12956e21da825d246fa5d41f53de3e75", "bytes": 16421},
+    {"path": "work/out/t13-identity/candidate-pre-p-s1-down.png", "sha256": "bf4c0924a4adccaca1727a314e576e9f12956e21da825d246fa5d41f53de3e75", "bytes": 16421},
+    {"path": "work/out/t13-identity/candidate-pre-p-s1-up.png", "sha256": "f29e503e88ac6c42974ab698b750d348a2b2e5cd50ed3d1cc5bc46f2cf9bfd69", "bytes": 15478},
+    {"path": "work/out/t13-identity/candidate-pre-s1-down.png", "sha256": "bf4c0924a4adccaca1727a314e576e9f12956e21da825d246fa5d41f53de3e75", "bytes": 16421},
+    {"path": "work/out/t13-identity/candidate-pre-s1-up.png", "sha256": "f29e503e88ac6c42974ab698b750d348a2b2e5cd50ed3d1cc5bc46f2cf9bfd69", "bytes": 15478},
+    {"path": "work/out/t13-identity/complete.json", "sha256": "5cdb19029f0c0b6b8fec13f78846d1a53ff0d40d8305bbff70d5e868ea30a077", "bytes": 3656},
+    {"path": "work/out/t13-identity/inventory.jsonl", "sha256": "a1ee0f05dca1cda0f653a53bc50eb2ad3c4626709e37a939f98a11cb92cb26fb", "bytes": 128572},
+    {"path": "work/out/t13-identity/k1e-back-shoot.png", "sha256": "1a042cd0bddad0778b0359317fd536690386109c85cac2a9c0bf8436d53168b7", "bytes": 15484},
+    {"path": "work/out/t13-identity/k1e-base.png", "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6", "bytes": 13406},
+    {"path": "work/out/t13-identity/k1e-e-ok.png", "sha256": "1f0c631ba86742724541ecde4df7196e336e6dbf50cb2b21b92f24057646848a", "bytes": 15486},
+    {"path": "work/out/t13-identity/k1e-e-open.png", "sha256": "703c942b0cac9e409760ecc29b77493894c26ff1dd91c2b2474d9761c7d0d263", "bytes": 4986},
+    {"path": "work/out/t13-identity/k1e-e-up.png", "sha256": "79116a608feaa84f3a32a5ab6a73b1af99a4c5f292bb3fda4d32a24a339628d6", "bytes": 4986},
+    {"path": "work/out/t13-identity/k1e-ke-p-s1-down.png", "sha256": "e9b51eaafd83b1a9f03c6d8ca797264a5fcbd02133c6718ef0143a47bd90e6e2", "bytes": 13097},
+    {"path": "work/out/t13-identity/k1e-ke-p-s1-up.png", "sha256": "ca966d36f51577ca20746ee301e1faec502358eaf926b49c5d7cee279c1ff801", "bytes": 12469},
+    {"path": "work/out/t13-identity/k1e-ke-s1-down.png", "sha256": "1f0c631ba86742724541ecde4df7196e336e6dbf50cb2b21b92f24057646848a", "bytes": 15486},
+    {"path": "work/out/t13-identity/k1e-ke-s1-up.png", "sha256": "dfbc31fa183d198e6c96264c11b6bd01a980b511d9608dcf283461ba71e12d11", "bytes": 16430},
+    {"path": "work/out/t13-identity/k1e-p-menu.png", "sha256": "542ed40b758684c43091a6fd9b1f1634cf1e5084f6cfa9a93c3cbeda0cec9715", "bytes": 14163},
+    {"path": "work/out/t13-identity/k1e-p-up.png", "sha256": "703c942b0cac9e409760ecc29b77493894c26ff1dd91c2b2474d9761c7d0d263", "bytes": 4986},
+    {"path": "work/out/t13-identity/k1e-pose-exif6.png", "sha256": "bf4c0924a4adccaca1727a314e576e9f12956e21da825d246fa5d41f53de3e75", "bytes": 16421},
+    {"path": "work/out/t13-identity/k2-base.png", "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6", "bytes": 13406},
+    {"path": "work/out/t13-identity/k2-k2-af-down.png", "sha256": "02c5a7eac3e923b9d19b0ccf13a526e391841fb6cb6d7c05cef51c98c0cf2c73", "bytes": 13281},
+    {"path": "work/out/t13-identity/k2-k2-af-up.png", "sha256": "02c5a7eac3e923b9d19b0ccf13a526e391841fb6cb6d7c05cef51c98c0cf2c73", "bytes": 13281},
+    {"path": "work/out/t13-identity/k2-k2-l-af-down.png", "sha256": "be761c643f200cdcc700e67cb0aa972f0d7d17d46d382635b9e75c98ec16847b", "bytes": 12469},
+    {"path": "work/out/t13-identity/k2-k2-l-af-up.png", "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6", "bytes": 13406},
+    {"path": "work/out/t13-identity/k2-k2-p-af-down.png", "sha256": "be761c643f200cdcc700e67cb0aa972f0d7d17d46d382635b9e75c98ec16847b", "bytes": 12469},
+    {"path": "work/out/t13-identity/k2-k2-p-af-up.png", "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6", "bytes": 13406},
+    {"path": "work/out/t13-identity/k2-n-ok.png", "sha256": "1f0c631ba86742724541ecde4df7196e336e6dbf50cb2b21b92f24057646848a", "bytes": 15486},
+    {"path": "work/out/t13-identity/k2-n-open.png", "sha256": "703c942b0cac9e409760ecc29b77493894c26ff1dd91c2b2474d9761c7d0d263", "bytes": 4986},
+    {"path": "work/out/t13-identity/k2-n-s1-down.png", "sha256": "1f0c631ba86742724541ecde4df7196e336e6dbf50cb2b21b92f24057646848a", "bytes": 15486},
+    {"path": "work/out/t13-identity/k2-n-s1-up.png", "sha256": "1f0c631ba86742724541ecde4df7196e336e6dbf50cb2b21b92f24057646848a", "bytes": 15486},
+    {"path": "work/out/t13-identity/k2-n-up.png", "sha256": "79116a608feaa84f3a32a5ab6a73b1af99a4c5f292bb3fda4d32a24a339628d6", "bytes": 4986},
+    {"path": "work/out/t13-identity/k2-pose-after-edit.png", "sha256": "f29e503e88ac6c42974ab698b750d348a2b2e5cd50ed3d1cc5bc46f2cf9bfd69", "bytes": 15478},
+    {"path": "work/out/t13-identity/k2-pose-exif6.png", "sha256": "02c5a7eac3e923b9d19b0ccf13a526e391841fb6cb6d7c05cef51c98c0cf2c73", "bytes": 13281},
+    {"path": "work/out/t13-identity/k2-pose-land.png", "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6", "bytes": 13406},
+    {"path": "work/out/t13-identity/k2-pre-l-s1-down.png", "sha256": "be761c643f200cdcc700e67cb0aa972f0d7d17d46d382635b9e75c98ec16847b", "bytes": 12469},
+    {"path": "work/out/t13-identity/k2-pre-l-s1-up.png", "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6", "bytes": 13406},
+    {"path": "work/out/t13-identity/k2-pre-p-s1-down.png", "sha256": "be761c643f200cdcc700e67cb0aa972f0d7d17d46d382635b9e75c98ec16847b", "bytes": 12469},
+    {"path": "work/out/t13-identity/k2-pre-p-s1-up.png", "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6", "bytes": 13406},
+    {"path": "work/out/t13-identity/k2-pre-s1-down.png", "sha256": "be761c643f200cdcc700e67cb0aa972f0d7d17d46d382635b9e75c98ec16847b", "bytes": 12469},
+    {"path": "work/out/t13-identity/k2-pre-s1-up.png", "sha256": "9f9f70d370fa55efdb72ecc21b80760c393d659be2b64873c1f5c0ac9c0effa6", "bytes": 13406},
+    {"path": "work/out/t13-identity/log.jsonl", "sha256": "c211d680d94e037792d7d90c327d33cce1b3f53a7cbb7c6f2dc31550c13f2893", "bytes": 261605},
+    {"path": "work/out/t13-identity/session-candidate.jsonl", "sha256": "37e8ef727bf7cded11e4f1e525a26b6d80586455dbaad7e74b0050eb32c8d1e3", "bytes": 7533},
+    {"path": "work/out/t13-identity/session-disp-seed-a.jsonl", "sha256": "2fae17d83b983fab491614af72c1243a0bcc7896d3e1af6374dd3dae9e90ca8b", "bytes": 8462},
+    {"path": "work/out/t13-identity/session-k1e.jsonl", "sha256": "a9bb592065d411b5975d4d53dc60095044fed4aa8c03c0c3f8ee2ce2fbc2f908", "bytes": 5477},
+    {"path": "work/out/t13-identity/session-k2.jsonl", "sha256": "ade8e8544697306caa68b624f10a8261f1f606c96f5645516d303384b17ce390", "bytes": 5274},
+    {"path": "work/out/t13-identity/session-zcand.jsonl", "sha256": "090a16e8454aa6c3714a40257a30e0bff2e30c9fc39ff7293c64d549972a715d", "bytes": 7239},
+    {"path": "work/out/t13-identity/session-zk1e.jsonl", "sha256": "2c12c174ebc0377d5ef8e0b2b87de508b311d0ec6955f987ee6fadb775761601", "bytes": 5304},
+    {"path": "work/out/t13-identity.launch/cmd.json", "sha256": "6845919467b66e83d906b4a80489af4a83e22871772774e1b930277b0992153f", "bytes": 5947},
+    {"path": "work/out/t13-identity.launch/exit.json", "sha256": "408230e8f831a18b2d64849cc9873bf3de96c5a07804ea654315783e31ba5ef6", "bytes": 12446},
+    {"path": "work/out/t13-identity.launch/inputs.json", "sha256": "257891fbbc2eddcb4fe7cf313e025d9939db2ab9689071594e4f1163247468f2", "bytes": 551},
+    {"path": "work/out/t13-identity.launch/nonce", "sha256": "aa805ac46222a480a4614e436e1f43727a2a6929eadbe9f5ba71980d84a7b295", "bytes": 65},
+    {"path": "work/out/t13-identity.launch/stderr.txt", "sha256": "68e520c0b4666cd4103ae381fc84cce804081f828625bbc6147aaef3a58ef2ff", "bytes": 3366},
+    {"path": "work/out/t13-identity.launch/stdout.txt", "sha256": "b8460c66f8f1babfc8445ebd6ff94dfebeb4ef1578a5b4e048d5482b989262a2", "bytes": 39459},
+    {"path": "work/result.md", "sha256": "99999fc8b3de36f3bcfe27e59df692b9832e0abaf433cb7c9b5f6261a1033caf", "bytes": 12742}
+  ],
+  "commands": [
+    {
+      "command": "node26 work/harness/launch_v3.mjs identity t13-identity --freeze-sha 819876c49fef56ceb996bd03a9d5a589c90d51bae8ce1a2145d1447a520f4e2b",
+      "started": true,
+      "exit_code": 1,
+      "launcher_duration_ms": 158257,
+      "shell_elapsed_ms": 158681
+    },
+    {
+      "command": "node26 work/harness/launch_v3.mjs proof t13-proof --freeze-sha 819876c49fef56ceb996bd03a9d5a589c90d51bae8ce1a2145d1447a520f4e2b --identity t13-identity",
+      "started": false,
+      "reason": "identity exit code 1 and exit.json ok false"
+    },
+    {
+      "command": "node26 work/harness/launch_v3.mjs display-a t13-display-a --freeze-sha 819876c49fef56ceb996bd03a9d5a589c90d51bae8ce1a2145d1447a520f4e2b --identity t13-identity",
+      "started": false,
+      "reason": "identity exit code 1 and exit.json ok false"
+    },
+    {
+      "command": "node26 work/harness/launch_v3.mjs display-b t13-display-b --freeze-sha 819876c49fef56ceb996bd03a9d5a589c90d51bae8ce1a2145d1447a520f4e2b --identity t13-identity",
+      "started": false,
+      "reason": "identity exit code 1 and exit.json ok false"
+    },
+    {
+      "command": "node26 work/harness/launch_v3.mjs display-k2 t13-display-k2 --freeze-sha 819876c49fef56ceb996bd03a9d5a589c90d51bae8ce1a2145d1447a520f4e2b --identity t13-identity",
+      "started": false,
+      "reason": "identity exit code 1 and exit.json ok false"
+    },
+    {
+      "command": "node26 work/harness/launch_v3.mjs display-k1 t13-display-k1 --freeze-sha 819876c49fef56ceb996bd03a9d5a589c90d51bae8ce1a2145d1447a520f4e2b --identity t13-identity",
+      "started": false,
+      "reason": "identity exit code 1 and exit.json ok false"
+    }
+  ],
+  "tool_versions": {
+    "node": {
+      "version": "v26.12.1",
+      "path": "C:/Dev/OM3-research/tooling/node-v26.12.1-win-x64/node.exe",
+      "bytes": 105319752,
+      "sha256": "1c63f1417e2e26d83ca9a9ec1d548524ab1305bc7209d90ebca56257ff0d84ed",
+      "source": "work/out/t13-identity.launch/exit.json runtime"
+    },
+    "hash": "PowerShell Get-FileHash -Algorithm SHA256"
+  }
+}

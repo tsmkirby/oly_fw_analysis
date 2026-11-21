@@ -1,0 +1,168 @@
+{
+  "ok": false,
+  "valid": false,
+  "problems": [
+    "capture mode: fake-only freeze bootstrap, never a valid run"
+  ],
+  "start": "2026-11-21T03:28:01.356Z",
+  "mode": "capture",
+  "plan": "display-a",
+  "tag": "cap-display-a",
+  "identityTag": "cap-identity",
+  "runtime": {
+    "path": "C:/Dev/OM3-research/tooling/node-v26.12.1-win-x64/node.exe",
+    "version": "v26.12.1",
+    "bytes": 105319752,
+    "sha256": "1c63f1417e2e26d83ca9a9ec1d548524ab1305bc7209d90ebca56257ff0d84ed"
+  },
+  "freezeSha": null,
+  "planSha": "dd7ec94607f097883ae44e4dcbc6c4c74cca49308bb8b493af7b51b3ff4d9a7e",
+  "extensionSha": "11210294c831a034b386ee4ac29dd50060b0cfe6356fa801f3bbbbf05fd997b2",
+  "childExit": 0,
+  "inventory": {
+    "count": 56,
+    "chain": "1aa55cea5353314a050ce6dd6fd2f12c6cd4be2a9a05d010e117b572b5941a61"
+  },
+  "reads": [
+    {
+      "path": "C:/Dev/OM3-research/tasks/T8b-afon-integrated-acceptance-generated/run-20261119-153249/work/scripts/lib_map_c1.mjs",
+      "sha256": "60d5ed07990cf74526380d566409c297877c9e18c2fc8b8a0ffc0fda030200e7",
+      "bytes": 2539
+    },
+    {
+      "path": "C:/Dev/OM3-research/tasks/T9d-afon-display-size-inputs/run-20261119-202459/work/scripts/lib_valid_t9d.mjs",
+      "sha256": "2013f1d2841b7b241567f25ccaa059bc714e1622554e15c12f17752142f3d81b",
+      "bytes": 10181
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T13-afon-harness-opus/ws/work/test-scratch/try2/ws/work/harness/check_table_v3.mjs",
+      "sha256": "37255a2b42c52c2f4cc99782d0e1cf186e0d9cd84735224f76d0be1b6c3df1d9",
+      "bytes": 7778
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T13-afon-harness-opus/ws/work/test-scratch/try2/ws/work/harness/common_v1.mjs",
+      "sha256": "327df4f05eebaa6142bc508627359a74b1ce320379c1fdad3f1d3466f00cd529",
+      "bytes": 2685
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T13-afon-harness-opus/ws/work/test-scratch/try2/ws/work/harness/exec_v2.mjs",
+      "sha256": "222c91178c7311fa4f3540ac5b1a855b3cc4aead460283d671d0197c42532ca6",
+      "bytes": 12714
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T13-afon-harness-opus/ws/work/test-scratch/try2/ws/work/harness/expect_v1.mjs",
+      "sha256": "3a85eaef31d9f8e0d040d0c0cdc48fd008bb02d7fa1ddecb8c1a5526ba818f2f",
+      "bytes": 2443
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T13-afon-harness-opus/ws/work/test-scratch/try2/ws/work/harness/fake_v2.mjs",
+      "sha256": "d3b1355e06c30b8083b6a3254b6a11dd9c7b23e548e007d96aaf4d976e64001d",
+      "bytes": 12568
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T13-afon-harness-opus/ws/work/test-scratch/try2/ws/work/harness/gate_v2.mjs",
+      "sha256": "8d9087107005b666298861e4680613e963a7437efa9ef834df3fc53abd88b94a",
+      "bytes": 4198
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T13-afon-harness-opus/ws/work/test-scratch/try2/ws/work/harness/inventory_v2.mjs",
+      "sha256": "975a5923ca309dc17c961d91dc86d35bf6b030762125b2edca1181cddb074b24",
+      "bytes": 14146
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T13-afon-harness-opus/ws/work/test-scratch/try2/ws/work/harness/plan_v1.mjs",
+      "sha256": "dd7ec94607f097883ae44e4dcbc6c4c74cca49308bb8b493af7b51b3ff4d9a7e",
+      "bytes": 17780
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T13-afon-harness-opus/ws/work/test-scratch/try2/ws/work/harness/refresh_v4.mjs",
+      "sha256": "01e4714d9f3067f1972e113ffc693bdb8a5dc847800b80604eed827bc1e75f48",
+      "bytes": 4294
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T13-afon-harness-opus/ws/work/test-scratch/try2/ws/work/harness/relations_v2.mjs",
+      "sha256": "7c8e5fb9e09821ec8cbccedd181186f93980b3c45099482bb31e924f905c122b",
+      "bytes": 18074
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T13-afon-harness-opus/ws/work/test-scratch/try2/ws/work/harness/run_v2.mjs",
+      "sha256": "327a76fb79fe8201166a7f5bc786f53c55f828319ec67e7af962819848ff0d5a",
+      "bytes": 8233
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T13-afon-harness-opus/ws/work/test-scratch/try2/ws/work/harness/seal_v1.mjs",
+      "sha256": "2d51beb9fef3b7c78ced872a4212a56cf990af44c995443caf525f633de66d8e",
+      "bytes": 1754
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T13-afon-harness-opus/ws/work/test-scratch/try2/ws/work/harness/table_v2.mjs",
+      "sha256": "1dbdfa871ec90c27010d5361c188b7d63db0d24c700ac57c74942dbce1bb5f20",
+      "bytes": 17566
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T13-afon-harness-opus/ws/work/test-scratch/try2/ws/work/out/cap-display-a.launch/nonce",
+      "sha256": "4df2518025e6eace73680b4fe2d45ab7642fcc5fe2796e278344d022a36ee6a7",
+      "bytes": 65
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T13-afon-harness-opus/ws/work/test-scratch/try2/ws/work/out/cap-identity/identity.json",
+      "sha256": "5591bcd514c35814abbe00656118158cec3518867bba5f39472b95e24129dd0c",
+      "bytes": 2836008
+    },
+    {
+      "path": "C:/Dev/OM3-tasks/T13-afon-harness-opus/ws/work/test-scratch/try2/ws/work/out/cap-identity/identity.seal.json",
+      "sha256": "7ad167e8c2ff21bbb33f3c16a6779cb29b8fb0de2907d36a5d26bc0d83c9202a",
+      "bytes": 253
+    }
+  ],
+  "outputs": [
+    {
+      "path": "complete.json",
+      "bytes": 1757,
+      "sha256": "4b161a22da21d6300e6e345dc3ad03c182fd9b663e684b4a08d4c190360fbd91"
+    },
+    {
+      "path": "inventory.jsonl",
+      "bytes": 12467,
+      "sha256": "80c1d442aa7a30feb4cfd527e9350eccfb7a7258453c56adcd9e6c9144be6013"
+    },
+    {
+      "path": "log.jsonl",
+      "bytes": 48459,
+      "sha256": "ee681b8bdd18062d89708d8aa632fe5d2364f790f2e6de7bf78d8a0847d46343"
+    },
+    {
+      "path": "refresh-disp-seed-a.jsonl",
+      "bytes": 47352,
+      "sha256": "00136bdf0b3ba18e8e761a762932ebd9d885afb93070a6b2461a653517523987"
+    }
+  ],
+  "completion": {
+    "executed": 29,
+    "expected": 29,
+    "relations": {
+      "evaluated": 200,
+      "failed": 0
+    },
+    "reproduction": {
+      "evaluated": 29
+    },
+    "pressReference": "k1e-s1-down-halfTarget",
+    "identity": null,
+    "recorder": [
+      {
+        "session": "disp-seed-a",
+        "file": "refresh-disp-seed-a.jsonl",
+        "bytes": 47352,
+        "sha256": "00136bdf0b3ba18e8e761a762932ebd9d885afb93070a6b2461a653517523987",
+        "windows": 97,
+        "outside": 0,
+        "orphans": 0,
+        "samples": 97,
+        "calls": 97
+      }
+    ]
+  },
+  "captureComplete": true,
+  "end": "2026-11-21T03:28:01.565Z"
+}

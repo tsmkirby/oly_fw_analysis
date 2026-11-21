@@ -1,0 +1,138 @@
+{
+  "ok": true,
+  "valid": false,
+  "problems": [],
+  "start": "2026-11-21T03:28:02.416Z",
+  "mode": "fake",
+  "plan": "identity",
+  "tag": "f-identity",
+  "identityTag": null,
+  "runtime": {
+    "path": "C:/Dev/OM3-research/tooling/node-v26.12.1-win-x64/node.exe",
+    "version": "v26.12.1",
+    "bytes": 105319752,
+    "sha256": "1c63f1417e2e26d83ca9a9ec1d548524ab1305bc7209d90ebca56257ff0d84ed"
+  },
+  "freezeSha": "2c35629b83fe9b79b2d056550c0c311574256696a7ae03a84e9fb5b4baaa9476",
+  "planSha": "dd7ec94607f097883ae44e4dcbc6c4c74cca49308bb8b493af7b51b3ff4d9a7e",
+  "extensionSha": "567c04cf81b563dbb18556157e353d580ef45f32c82a2d3eee4f3c4644a085c4",
+  "childExit": 0,
+  "inventory": {
+    "count": 54,
+    "chain": "7366ba5c3feb4c8866ef2b6e933f6077d4abe18ba887ebcdb13555a7b1380aa0"
+  },
+  "outputs": [
+    {
+      "path": "complete.json",
+      "bytes": 15046,
+      "sha256": "689d998ae08609a35140d631d77bb360844773f3aed851c0859944abe4a78a2d"
+    },
+    {
+      "path": "identity.json",
+      "bytes": 2836067,
+      "sha256": "d30bfd05c52db58d35a8f894d1adc0b8d2c45f219369e0a7f7f078d3fe3a4adc"
+    },
+    {
+      "path": "identity.seal.json",
+      "bytes": 312,
+      "sha256": "d1cdfb553ee34062a8243c6446a41c221e7fc472a6b20d90d32df91ce56f368b"
+    },
+    {
+      "path": "inventory.jsonl",
+      "bytes": 11950,
+      "sha256": "a680fe0f75cd7816d2f8c6750c8114c2e790983cddf1b6d3c5278a2ecbb459e2"
+    },
+    {
+      "path": "log.jsonl",
+      "bytes": 402271,
+      "sha256": "a1da404e38ff869c6ce3344004fc09c790ad834cf670fae2c13513d9a5358756"
+    },
+    {
+      "path": "refresh-disp-k1.jsonl",
+      "bytes": 48904,
+      "sha256": "2f03113c64d1f691e3287589922344468d4c5b1c5a30483e69c610816915cc7d"
+    },
+    {
+      "path": "refresh-disp-k2.jsonl",
+      "bytes": 47352,
+      "sha256": "3c5ff1bb362829756a47c8566db25d6a6e780d04423eb193d0538525b16fd48e"
+    },
+    {
+      "path": "refresh-disp-seed-a.jsonl",
+      "bytes": 47352,
+      "sha256": "00136bdf0b3ba18e8e761a762932ebd9d885afb93070a6b2461a653517523987"
+    },
+    {
+      "path": "refresh-disp-seed-b.jsonl",
+      "bytes": 47352,
+      "sha256": "d07821adcc73e75c40e66b739d04814e56252d7dfa3e3f8395aeac4152f2e941"
+    }
+  ],
+  "completion": {
+    "executed": 432,
+    "expected": 432,
+    "relations": {
+      "evaluated": 1830,
+      "failed": 0
+    },
+    "reproduction": {
+      "evaluated": 0
+    },
+    "pressReference": "k1e-s1-down-halfTarget",
+    "identity": {
+      "sha256": "d30bfd05c52db58d35a8f894d1adc0b8d2c45f219369e0a7f7f078d3fe3a4adc",
+      "bytes": 2836067,
+      "file": "identity.json",
+      "planSha": "dd7ec94607f097883ae44e4dcbc6c4c74cca49308bb8b493af7b51b3ff4d9a7e",
+      "freezeSha": "2c35629b83fe9b79b2d056550c0c311574256696a7ae03a84e9fb5b4baaa9476",
+      "mode": "fake"
+    },
+    "recorder": [
+      {
+        "session": "disp-seed-a",
+        "file": "refresh-disp-seed-a.jsonl",
+        "bytes": 47352,
+        "sha256": "00136bdf0b3ba18e8e761a762932ebd9d885afb93070a6b2461a653517523987",
+        "windows": 97,
+        "outside": 0,
+        "orphans": 0,
+        "samples": 97,
+        "calls": 97
+      },
+      {
+        "session": "disp-seed-b",
+        "file": "refresh-disp-seed-b.jsonl",
+        "bytes": 47352,
+        "sha256": "d07821adcc73e75c40e66b739d04814e56252d7dfa3e3f8395aeac4152f2e941",
+        "windows": 97,
+        "outside": 0,
+        "orphans": 0,
+        "samples": 97,
+        "calls": 97
+      },
+      {
+        "session": "disp-k2",
+        "file": "refresh-disp-k2.jsonl",
+        "bytes": 47352,
+        "sha256": "3c5ff1bb362829756a47c8566db25d6a6e780d04423eb193d0538525b16fd48e",
+        "windows": 97,
+        "outside": 0,
+        "orphans": 0,
+        "samples": 97,
+        "calls": 97
+      },
+      {
+        "session": "disp-k1",
+        "file": "refresh-disp-k1.jsonl",
+        "bytes": 48904,
+        "sha256": "2f03113c64d1f691e3287589922344468d4c5b1c5a30483e69c610816915cc7d",
+        "windows": 97,
+        "outside": 0,
+        "orphans": 0,
+        "samples": 97,
+        "calls": 97
+      }
+    ]
+  },
+  "end": "2026-11-21T03:28:02.824Z"
+}

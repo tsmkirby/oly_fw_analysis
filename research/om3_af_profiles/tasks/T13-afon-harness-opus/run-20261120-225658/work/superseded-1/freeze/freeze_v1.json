@@ -1,0 +1,2672 @@
+{
+ "version": 1,
+ "task": "T13",
+ "minimal": false,
+ "method": "union of six capture-mode runs (fake adapter, same launcher and child) + every file under work/harness and om-emu + real-only inputs with reasons",
+ "captures": {
+  "identity": {
+   "tag": "freeze-cap-identity",
+   "reads": 15,
+   "exitSha": "dc5fb790105e1f27bf4194b6b913a38a048fee0b34619c07927ee69b12ad5809"
+  },
+  "proof": {
+   "tag": "freeze-cap-proof",
+   "reads": 17,
+   "exitSha": "f60ec9741f67decf9dfe5b6b0444b417517cd8bb70382402d6f8278892169085"
+  },
+  "display-a": {
+   "tag": "freeze-cap-display-a",
+   "reads": 17,
+   "exitSha": "7635e74081120bd125944ef6bcff6523b2fb005cc528d122afba1f18e8c9f086"
+  },
+  "display-b": {
+   "tag": "freeze-cap-display-b",
+   "reads": 17,
+   "exitSha": "8ab6ca900fddc99b76914f6383fa0ceca62e2d862c3e526bbeca03a6d07b78e2"
+  },
+  "display-k2": {
+   "tag": "freeze-cap-display-k2",
+   "reads": 17,
+   "exitSha": "f9fdb5650c858d383d631fa3d571a66af8399f71fd8a1f7c577c2c6d24e445eb"
+  },
+  "display-k1": {
+   "tag": "freeze-cap-display-k1",
+   "reads": 17,
+   "exitSha": "02680fc834e8c53e47fd3a370df70834e1e4751c2795e81af358bbb5601d13fa"
+  }
+ },
+ "pins": {
+  "omEmuRevision": "4e4ec4ef084542a7e30eecce56970c7e09c123c9",
+  "omEmuDiffDigest": "61cd13270e82f9bc5236c36c945783defda4c97a2e99f93b75f11da521877702",
+  "source": "PRIOR: PROJECT-STATE.md pins (Test-Pins.ps1)"
+ },
+ "runtime": {
+  "path": "ref/tooling/node-v26.12.1-win-x64/node.exe",
+  "version": "v26.12.1"
+ },
+ "mounts": [
+  {
+   "logical": "ref",
+   "target": "C:/Dev/OM3-research"
+  }
+ ],
+ "dirs": [
+  "work/harness",
+  "om-emu"
+ ],
+ "files": [
+  {
+   "path": "inputs/00_0100_50000020.decoded.bin",
+   "bytes": 33554368,
+   "sha256": "5e8d376e9111a44ac0352f26030d7c1b17026d42c45f3600cfa02a0e8c5b7d59",
+   "why": "real-only: decoded main image read by session_v1 (overlay check, helper hashes)"
+  },
+  {
+   "path": "inputs/02_0106_458c0020.decoded.bin",
+   "bytes": 143523776,
+   "sha256": "3d9fd4426b45fbe4b715599422af38c6d22392c08543a69f63c28291c5a0b059",
+   "why": "real-only: decoded resource 0106 hashed by session_v1"
+  },
+  {
+   "path": "om-emu/.git/HEAD",
+   "bytes": 21,
+   "sha256": "28d25bf82af4c0e2b72f50959b2beb859e3e60b9630a5e8c603dad4ddb2b6e80"
+  },
+  {
+   "path": "om-emu/.git/config",
+   "bytes": 337,
+   "sha256": "516a2a062cf4d2d11c3b7c5ab6780df37d12594f5247481c8d313405eeae9091"
+  },
+  {
+   "path": "om-emu/.git/description",
+   "bytes": 73,
+   "sha256": "85ab6c163d43a17ea9cf7788308bca1466f1b0a8d1cc92e26e9bf63da4062aee"
+  },
+  {
+   "path": "om-emu/.git/hooks/applypatch-msg.sample",
+   "bytes": 478,
+   "sha256": "0223497a0b8b033aa58a3a521b8629869386cf7ab0e2f101963d328aa62193f7"
+  },
+  {
+   "path": "om-emu/.git/hooks/commit-msg.sample",
+   "bytes": 896,
+   "sha256": "1f74d5e9292979b573ebd59741d46cb93ff391acdd083d340b94370753d92437"
+  },
+  {
+   "path": "om-emu/.git/hooks/fsmonitor-watchman.sample",
+   "bytes": 4726,
+   "sha256": "e0549964e93897b519bd8e333c037e51fff0f88ba13e086a331592bf801fa1d0"
+  },
+  {
+   "path": "om-emu/.git/hooks/post-update.sample",
+   "bytes": 189,
+   "sha256": "81765af2daef323061dcbc5e61fc16481cb74b3bac9ad8a174b186523586f6c5"
+  },
+  {
+   "path": "om-emu/.git/hooks/pre-applypatch.sample",
+   "bytes": 424,
+   "sha256": "e15c5b469ea3e0a695bea6f2c82bcf8e62821074939ddd85b77e0007ff165475"
+  },
+  {
+   "path": "om-emu/.git/hooks/pre-commit.sample",
+   "bytes": 1649,
+   "sha256": "57185b7b9f05239d7ab52db045f5b89eb31348d7b2177eab214f5eb872e1971b"
+  },
+  {
+   "path": "om-emu/.git/hooks/pre-merge-commit.sample",
+   "bytes": 416,
+   "sha256": "d3825a70337940ebbd0a5c072984e13245920cdf8898bd225c8d27a6dfc9cb53"
+  },
+  {
+   "path": "om-emu/.git/hooks/pre-push.sample",
+   "bytes": 1374,
+   "sha256": "ecce9c7e04d3f5dd9d8ada81753dd1d549a9634b26770042b58dda00217d086a"
+  },
+  {
+   "path": "om-emu/.git/hooks/pre-rebase.sample",
+   "bytes": 4898,
+   "sha256": "4febce867790052338076f4e66cc47efb14879d18097d1d61c8261859eaaa7b3"
+  },
+  {
+   "path": "om-emu/.git/hooks/pre-receive.sample",
+   "bytes": 544,
+   "sha256": "a4c3d2b9c7bb3fd8d1441c31bd4ee71a595d66b44fcf49ddb310252320169989"
+  },
+  {
+   "path": "om-emu/.git/hooks/prepare-commit-msg.sample",
+   "bytes": 1492,
+   "sha256": "e9ddcaa4189fddd25ed97fc8c789eca7b6ca16390b2392ae3276f0c8e1aa4619"
+  },
+  {
+   "path": "om-emu/.git/hooks/push-to-checkout.sample",
+   "bytes": 2783,
+   "sha256": "a53d0741798b287c6dd7afa64aee473f305e65d3f49463bb9d7408ec3b12bf5f"
+  },
+  {
+   "path": "om-emu/.git/hooks/sendemail-validate.sample",
+   "bytes": 2308,
+   "sha256": "44ebfc923dc5466bc009602f0ecf067b9c65459abfe8868ddc49b78e6ced7a92"
+  },
+  {
+   "path": "om-emu/.git/hooks/update.sample",
+   "bytes": 3650,
+   "sha256": "8d5f2fa83e103cf08b57eaa67521df9194f45cbdbcb37da52ad586097a14d106"
+  },
+  {
+   "path": "om-emu/.git/index",
+   "bytes": 41951,
+   "sha256": "5acbb962e4c21089750cc41e825abbeec85c20f9471365f6b6ca08f502c492c5"
+  },
+  {
+   "path": "om-emu/.git/info/exclude",
+   "bytes": 240,
+   "sha256": "6671fe83b7a07c8932ee89164d1f2793b2318058eb8b98dc5c06ee0a5a3b0ec1"
+  },
+  {
+   "path": "om-emu/.git/logs/HEAD",
+   "bytes": 189,
+   "sha256": "c496825ea8e251de31d8d2e6333940676bf3e351804e292c86ab9c944636cbc3"
+  },
+  {
+   "path": "om-emu/.git/logs/refs/heads/main",
+   "bytes": 189,
+   "sha256": "c496825ea8e251de31d8d2e6333940676bf3e351804e292c86ab9c944636cbc3"
+  },
+  {
+   "path": "om-emu/.git/logs/refs/remotes/origin/HEAD",
+   "bytes": 189,
+   "sha256": "c496825ea8e251de31d8d2e6333940676bf3e351804e292c86ab9c944636cbc3"
+  },
+  {
+   "path": "om-emu/.git/objects/pack/pack-991e4dc550aac3843bdd563c1a33a63c20943d41.idx",
+   "bytes": 14820,
+   "sha256": "fe01c10b19c0b67cd8c77ded3cbd6506cae212b76e21dfa41287ac782a27f0eb"
+  },
+  {
+   "path": "om-emu/.git/objects/pack/pack-991e4dc550aac3843bdd563c1a33a63c20943d41.pack",
+   "bytes": 4419442,
+   "sha256": "983946d4834b35e4c5fbb1fcebae6b13d14e62997d6a798967616b2a6e8a402d"
+  },
+  {
+   "path": "om-emu/.git/objects/pack/pack-991e4dc550aac3843bdd563c1a33a63c20943d41.rev",
+   "bytes": 2016,
+   "sha256": "0a5dbe7fa41fc4beb315e35be9b5f5d378f81c40f8a8ee8f24e8aa33a0124fc5"
+  },
+  {
+   "path": "om-emu/.git/packed-refs",
+   "bytes": 112,
+   "sha256": "94a8acb754fd14e199cc4caf0d98a780fe9d0baf5e81408a801dbdf12795b9d9"
+  },
+  {
+   "path": "om-emu/.git/refs/heads/main",
+   "bytes": 41,
+   "sha256": "d973dab7e7b92dccb8f198c56c375ac97760a59cc1cd29e006b559bfe19a4042"
+  },
+  {
+   "path": "om-emu/.git/refs/remotes/origin/HEAD",
+   "bytes": 30,
+   "sha256": "2bb6a24aa0fc6c484100f5d51a29bbad841cd2c755f5d93faa204e5dbb4eb2b4"
+  },
+  {
+   "path": "om-emu/.git/shallow",
+   "bytes": 41,
+   "sha256": "d973dab7e7b92dccb8f198c56c375ac97760a59cc1cd29e006b559bfe19a4042"
+  },
+  {
+   "path": "om-emu/.github/workflows/pages.yml",
+   "bytes": 1567,
+   "sha256": "a7d687f5685959beca3871557bee22aa4050a6d7cc0acaefcb12e8bd32fc506f"
+  },
+  {
+   "path": "om-emu/.gitignore",
+   "bytes": 306,
+   "sha256": "1503d798cc5b6a479d8ba96207b00b69d321c269a92c4e7a6ff6ef4f8150a81b"
+  },
+  {
+   "path": "om-emu/BLOBS.md",
+   "bytes": 3144,
+   "sha256": "5e29e30f29f10f09e9dd766e9f3b2e5b80bd8b318d6a4ecf2960234a22619daa"
+  },
+  {
+   "path": "om-emu/BLOBS.sha256",
+   "bytes": 8216,
+   "sha256": "edf02311ab65ab2c724a059b4b8b8cc49c715290d2a3c7163f82f1aeb6d92265"
+  },
+  {
+   "path": "om-emu/LICENSE",
+   "bytes": 1097,
+   "sha256": "2614a6cb22af42c59151c1cb44b34b07fe532ce14dab0bf6211a8f1efe79b7b1"
+  },
+  {
+   "path": "om-emu/README.md",
+   "bytes": 12316,
+   "sha256": "b1eae1e7a863f0ae7db43ab4b71820443bcb54420d8138bdd0ce9c002f654a95"
+  },
+  {
+   "path": "om-emu/analysis/caduceus-om3/README.md",
+   "bytes": 85509,
+   "sha256": "d832836a42e511c57b519834da1d7152c1ec35a1ccb1d4d28cb04bc5560827e8"
+  },
+  {
+   "path": "om-emu/analysis/feature-gap/README.md",
+   "bytes": 11651,
+   "sha256": "4982d2ded6636d6ddc8a56c2f66da18d2175af1c0139574f78f2ca234051b36b"
+  },
+  {
+   "path": "om-emu/analysis/lens-gates/README.md",
+   "bytes": 18683,
+   "sha256": "9e426d2015f7c18b0a086539660c884e1272c2772cecf7b1cfff5c43b82def12"
+  },
+  {
+   "path": "om-emu/analysis/nd128/E143-provider-patched.dis",
+   "bytes": 707,
+   "sha256": "e008809350f4763cb2d31bd6f2dbb22b09d84d73712d8664f78b62b5c4b9a119"
+  },
+  {
+   "path": "om-emu/analysis/nd128/E143-selector-original.dis",
+   "bytes": 1956,
+   "sha256": "9a46482292ae67b64cb905eba752903cb31ad5fc522238283f125909868e3185"
+  },
+  {
+   "path": "om-emu/analysis/nd128/E143-selector-patched.dis",
+   "bytes": 2134,
+   "sha256": "04b11d1bda918831b0eda3309a5d98ae76a48d78fef6cd01fefaba68f39ac503"
+  },
+  {
+   "path": "om-emu/analysis/nd128/E143-tv-table-select.dis",
+   "bytes": 2783,
+   "sha256": "d122e55028b8c5382c7b53e43d3e8b5606f52daa77df4f3c9a1047190463b84f"
+  },
+  {
+   "path": "om-emu/analysis/nd128/E146-selector-original.dis",
+   "bytes": 2130,
+   "sha256": "9a53c41f4861321e508c5eb46c8d00e74a9a9881dab6f345417071b776f8ca2b"
+  },
+  {
+   "path": "om-emu/analysis/nd128/README.md",
+   "bytes": 7946,
+   "sha256": "cef9d4e43524a67c981a85543570b849d19b6ba62bace6472cf819e70fd7187c"
+  },
+  {
+   "path": "om-emu/analysis/nd128/nd-strings.txt",
+   "bytes": 827,
+   "sha256": "55fb82a826c85cc6f677369cf7ac26173b054b11194fedcc38e60631cf496a76"
+  },
+  {
+   "path": "om-emu/analysis/oly-fw-analysis/README.md",
+   "bytes": 35353,
+   "sha256": "0e56f85dc0376ac1d65859f007122f54ed32fdf31b7b2f5a203df1c299ad5fb9"
+  },
+  {
+   "path": "om-emu/analysis/om-c-firmware/README.md",
+   "bytes": 32050,
+   "sha256": "4bc19eb8ef038222c728f0e598d1fd2caf2128a91a060ce4e00011ae77b6c3f0"
+  },
+  {
+   "path": "om-emu/artifacts/nd128/manifest.json",
+   "bytes": 5302,
+   "sha256": "471d42c847fa35001fb06b8f4dc13a67aad6836531dd7557b804715a8f06f827"
+  },
+  {
+   "path": "om-emu/docs/README.md",
+   "bytes": 5670,
+   "sha256": "4d48c1679ac0ac743cab5ea15d173c7210cc313f55cccbc0f15b04b5843b1561"
+  },
+  {
+   "path": "om-emu/docs/ROADMAP.md",
+   "bytes": 132893,
+   "sha256": "4f60b740c82f417a693915531ad522c93817975b25d07bc6eaa928a2b99211e9"
+  },
+  {
+   "path": "om-emu/docs/a53-spec.md",
+   "bytes": 43583,
+   "sha256": "bfd98610dbcffb21a149688a08496116491534e4001fd729e8eff1a8e4e18133"
+  },
+  {
+   "path": "om-emu/docs/firmware-container.md",
+   "bytes": 10256,
+   "sha256": "d395e35c3fd9f2454361fe90d905c60be80cd0a72f705cf4ab9857a725b9485b"
+  },
+  {
+   "path": "om-emu/docs/hle-gaps.md",
+   "bytes": 891248,
+   "sha256": "1c0b2735f389b1ca88c9f8082a2b0a461f8dfd538e92c99c0bd290d5caa77915"
+  },
+  {
+   "path": "om-emu/docs/img/om3-setup-menu.png",
+   "bytes": 28955,
+   "sha256": "3bd29d119f896d4c7fc75fd70a8db13352b2fee31a14b548428a446d668f0c85"
+  },
+  {
+   "path": "om-emu/docs/mn10300-isa-spec.md",
+   "bytes": 54555,
+   "sha256": "de00f5950cd8056de133e4642090536c23c5dc3e684423c631b4535ddc2efd33"
+  },
+  {
+   "path": "om-emu/docs/model-survey.md",
+   "bytes": 389098,
+   "sha256": "6dd058b755cc07019396a2e33cd147039b32f1ba0a9d8a9bcf848adb18ad2d39"
+  },
+  {
+   "path": "om-emu/docs/om1-cores-spec.md",
+   "bytes": 39631,
+   "sha256": "852b93974b3f2665df188ac51ba0b1d4bc22c4f6c1b8ac3b30b5ed8dc5c179a7"
+  },
+  {
+   "path": "om-emu/docs/om1-imgpro-spec.md",
+   "bytes": 12800,
+   "sha256": "e5075097c8b0fe9f7887fac4b1aa79b5fb2795500241f52e38194cdad77de193"
+  },
+  {
+   "path": "om-emu/docs/om1-input-spec.md",
+   "bytes": 64224,
+   "sha256": "6e40f047d2719ef7fc9fa8e09441f8513439353a862ae9a90d04076d356fce50"
+  },
+  {
+   "path": "om-emu/docs/om1-intc-timer-spec.md",
+   "bytes": 30207,
+   "sha256": "749b0c4fffd5d368e36e8e0141047a336dd15b9120a69511f3fbad1b2442397a"
+  },
+  {
+   "path": "om-emu/docs/om1-kernel-spec.md",
+   "bytes": 25318,
+   "sha256": "2e96e71d1e148c078e9af085464cbc829fc5c4c09fca0fb86f1629942f4ee256"
+  },
+  {
+   "path": "om-emu/docs/om1-menu-spec.md",
+   "bytes": 70387,
+   "sha256": "61909cc5b149f6458477c69c3a7ec3165ce5bc3394e08ffa4b050bd23d9d3323"
+  },
+  {
+   "path": "om-emu/docs/om1-scpu-spec.md",
+   "bytes": 81003,
+   "sha256": "ca253d25b0dd5cfd100e1fd2c514879cbefb8d32dbbe34a26f196a8b20548d8a"
+  },
+  {
+   "path": "om-emu/docs/om1-settings-spec.md",
+   "bytes": 41412,
+   "sha256": "8a6c2de623afc068c1dcf040620b713c3d8a0d43042ed8a830d2b9edf8f11ed3"
+  },
+  {
+   "path": "om-emu/docs/om1-shutter-spec.md",
+   "bytes": 112909,
+   "sha256": "ba0cba03e8187fb87cfbc6caa709e80d44e1323d9b06972358baeb801c28e829"
+  },
+  {
+   "path": "om-emu/docs/om1-subject-spec.md",
+   "bytes": 143406,
+   "sha256": "727440c57d1ee793d5a19eb9f6cc9077036d990d172134565b7d1f8cf546c9ce"
+  },
+  {
+   "path": "om-emu/docs/om1-text-spec.md",
+   "bytes": 33928,
+   "sha256": "211b6122d65dbdfd102fffb4bdab2526472933d2f949d1e5b6070c5cbdca6fcd"
+  },
+  {
+   "path": "om-emu/docs/om1-udf-spec.md",
+   "bytes": 27451,
+   "sha256": "802b506be675f13741b9e9f8f912a8cf3604154c4cf8a59662cd37d6e87d4fd2"
+  },
+  {
+   "path": "om-emu/docs/om1-vsc-spec.md",
+   "bytes": 128105,
+   "sha256": "a750578e58229cbe0a2772a5da562d38e18c4cf218602e74d7df730fc7d70309"
+  },
+  {
+   "path": "om-emu/emu/.gitignore",
+   "bytes": 70,
+   "sha256": "b4ae59dae259b683fb610921204666663fbe2346ec97baacd64b36ef3bd2f792"
+  },
+  {
+   "path": "om-emu/emu/ARCHITECTURE.md",
+   "bytes": 18658,
+   "sha256": "e597ab7d940a270b8f0d8f3b9e329559dad70535b9de19bac5b6c8cf0f364de5"
+  },
+  {
+   "path": "om-emu/emu/FIDELITY-NOTES.md",
+   "bytes": 121963,
+   "sha256": "4f7a74ad66ff1bfd6034dcea54620bfcbd4ed99a5eef5a4b727889d551dd66d8"
+  },
+  {
+   "path": "om-emu/emu/README.md",
+   "bytes": 170520,
+   "sha256": "ea7d80984f8be78d26836d0b87d6364424959c41532cf6af31d863530f373a4b"
+  },
+  {
+   "path": "om-emu/emu/bin/bench.mjs",
+   "bytes": 9738,
+   "sha256": "845601622a353bad0a5b7f1a795f70537859271f631b54592bab73388b3c0f5e"
+  },
+  {
+   "path": "om-emu/emu/bin/browsergate.mjs",
+   "bytes": 20189,
+   "sha256": "a8a1f6b1214808de402465e393bc952cdbf268296d0bcea099992d397c643529"
+  },
+  {
+   "path": "om-emu/emu/bin/card.mjs",
+   "bytes": 10537,
+   "sha256": "d9480e40a4a5d1e58932036f8d50084923a4b467105242f7d8187189e86ad6fc"
+  },
+  {
+   "path": "om-emu/emu/bin/checks.mjs",
+   "bytes": 9682,
+   "sha256": "e8a69474bccca26a84fee0eb4505d4851451b2faeba6a153ab6cc2c045038661"
+  },
+  {
+   "path": "om-emu/emu/bin/checktrace-runs.mjs",
+   "bytes": 373,
+   "sha256": "56b6b069a74c75b5c422a6f45abd4f3a74263da4b37358cdc6e911a339f953d9"
+  },
+  {
+   "path": "om-emu/emu/bin/checktrace.mjs",
+   "bytes": 11179,
+   "sha256": "325bbbcd5b236b79482a8456bbd8e4490755e80d122eb60a2829fd6b39635208"
+  },
+  {
+   "path": "om-emu/emu/bin/debug.mjs",
+   "bytes": 17078,
+   "sha256": "88905af430e0f64b733aaaafc65985a6ed6eb45e0d4a0afd7a63e9e79e07e8e5"
+  },
+  {
+   "path": "om-emu/emu/bin/fetch-fw.mjs",
+   "bytes": 1589,
+   "sha256": "8c6baa228a54d1d06ce84ad51c857d581ef2ae773f7f99cfa7cf67dbdb2b4af9"
+  },
+  {
+   "path": "om-emu/emu/bin/fw-survey.mjs",
+   "bytes": 8035,
+   "sha256": "5e3dc53a702ee37793d10cda00b7eb44c2e3cc021f29941aef99e47c72c41991"
+  },
+  {
+   "path": "om-emu/emu/bin/fwmap.mjs",
+   "bytes": 13566,
+   "sha256": "5cfc60cd70b2a1853966430aacbc65812dbe8b7b6a916529d45d3574da34602f"
+  },
+  {
+   "path": "om-emu/emu/bin/golden.mjs",
+   "bytes": 17569,
+   "sha256": "b5baea9a1b2067f33636cfdf5ad4642d0ccabe4e0dd07016a8c4aa2ebbdfce74"
+  },
+  {
+   "path": "om-emu/emu/bin/m4census.mjs",
+   "bytes": 3194,
+   "sha256": "9e437b2c388ff49f93e812902453eeb82615b8b7d4a254f6ce186a91209480d2"
+  },
+  {
+   "path": "om-emu/emu/bin/m4smoke.mjs",
+   "bytes": 1902,
+   "sha256": "b631466a4f2786f851ae670d2b5a6dd9b5a03667df65627b962ece91a52f2ad2"
+  },
+  {
+   "path": "om-emu/emu/bin/modelcheck.mjs",
+   "bytes": 28997,
+   "sha256": "e2e6d8e382f8e4470919a6ceb40bc96698ae56a4a65f79d43dff7966312fe060"
+  },
+  {
+   "path": "om-emu/emu/bin/nav.mjs",
+   "bytes": 875,
+   "sha256": "16d730e4231ceb0d421f69ee736e150ac6eee6571ed5747c472d6f4247c6a04c"
+  },
+  {
+   "path": "om-emu/emu/bin/play.mjs",
+   "bytes": 1350,
+   "sha256": "8377ba386bbdb05949424e6f615ef947f0fd1a9bf462a40174e9901584400cc0"
+  },
+  {
+   "path": "om-emu/emu/bin/playperf.mjs",
+   "bytes": 5918,
+   "sha256": "67cdab7dd6e295a855c388f25e66662bb09bd7458b8803cadcc6e569aae23a2f"
+  },
+  {
+   "path": "om-emu/emu/bin/port.mjs",
+   "bytes": 26839,
+   "sha256": "0ce99af48e969e1e5dfa46585b8118079cef85959a90ffb650fe9911c93ec798"
+  },
+  {
+   "path": "om-emu/emu/bin/pubaudit.mjs",
+   "bytes": 37933,
+   "sha256": "18d2cea136c61054f6a98887212e1dd7ba4664905418a8ad881df4d1a7f8ad7b"
+  },
+  {
+   "path": "om-emu/emu/bin/run.mjs",
+   "bytes": 21224,
+   "sha256": "0767993181468a47012676c8ccaf45e551806c1c2a4551d1a1fcad265d77eff5"
+  },
+  {
+   "path": "om-emu/emu/bin/scpu.mjs",
+   "bytes": 4658,
+   "sha256": "c0eb025169750bee9827a0d18d86da726fa0cb289d287f49d4da49484829ccee"
+  },
+  {
+   "path": "om-emu/emu/bin/session.mjs",
+   "bytes": 8273,
+   "sha256": "074ceed486f9899ee1eaac54e28363cd641952e2f3ac2daa974a913f4131ba5f"
+  },
+  {
+   "path": "om-emu/emu/bin/site.mjs",
+   "bytes": 8017,
+   "sha256": "cf23840e6b72214d0f96856b2c3a1566ced4002e4576c990e7de906a0f14b223"
+  },
+  {
+   "path": "om-emu/emu/bin/sitegate.mjs",
+   "bytes": 13367,
+   "sha256": "2fad71d4e10c33fa658c33ff18ef652eb505fabe74aa261c25f8cb0a1ecb76a7"
+  },
+  {
+   "path": "om-emu/emu/bin/snapgate.mjs",
+   "bytes": 11822,
+   "sha256": "4ae29990b52b2aefbe40e57d7ff3da73e566efe9c8cc91b62c3603ca573c6c45"
+  },
+  {
+   "path": "om-emu/emu/bin/test-pure.mjs",
+   "bytes": 17045,
+   "sha256": "b1b5a70e5ee0b1693850d46d7658750b64cd3d61e998757f2879b4ffca1d532b"
+  },
+  {
+   "path": "om-emu/emu/bin/test.mjs",
+   "bytes": 76282,
+   "sha256": "df412b1774452834ce96a8590fda1f918f5fb3533a2fbf820e9d3b5fffbb27df"
+  },
+  {
+   "path": "om-emu/emu/bin/ustart.mjs",
+   "bytes": 24696,
+   "sha256": "f07d838142321313bd22e24cb95020e3f4ae2a0488cbef32eab978b837c2b19c"
+  },
+  {
+   "path": "om-emu/emu/bin/webgate.mjs",
+   "bytes": 47198,
+   "sha256": "82dcfb6876a4b96142bdc3bcb79b8278f728c05b925e5c9be406831d991242ff"
+  },
+  {
+   "path": "om-emu/emu/bin/xto.mjs",
+   "bytes": 1352,
+   "sha256": "60e6797fa61cabeaf2c3381fb85a58cd15edf377fce4b0af07f6611157909556"
+  },
+  {
+   "path": "om-emu/emu/bin/xwhere.mjs",
+   "bytes": 1289,
+   "sha256": "80da53ff3cb4ff299ad18d5e9ae6517cf8dd1fdc7e46d18d5ae9233b790c4c36"
+  },
+  {
+   "path": "om-emu/emu/checks/check_display.mjs",
+   "bytes": 74624,
+   "sha256": "a56a3e903b5022727df3b9764a1149e97cbe266dc2e54e3d28e642a094958a89"
+  },
+  {
+   "path": "om-emu/emu/checks/check_irq.mjs",
+   "bytes": 46207,
+   "sha256": "8c2fa4cdce28ed7ae8df6d80d1e86b1bd8ccbad452f5dcb3c240d305bc752639"
+  },
+  {
+   "path": "om-emu/emu/checks/check_isa.mjs",
+   "bytes": 3178,
+   "sha256": "aacd2467349ca7bfbeedb85272c5f2cf615a606f80538b494c550199348501a5"
+  },
+  {
+   "path": "om-emu/emu/checks/check_kernel.mjs",
+   "bytes": 834,
+   "sha256": "0db3e23a22327e93f0da1b23e2ba72f783cdcfec539e877f7b89b4b625f9e526"
+  },
+  {
+   "path": "om-emu/emu/checks/check_level.mjs",
+   "bytes": 18581,
+   "sha256": "bafa04c05a9bf24c04828019960e85780f21193c63792f9b58246301e6d1232d"
+  },
+  {
+   "path": "om-emu/emu/checks/check_liveview.mjs",
+   "bytes": 51455,
+   "sha256": "3ccc9a2e587b680a230d19cc3d0f02d518cb620fce835c7240c7a2bdc5199e2e"
+  },
+  {
+   "path": "om-emu/emu/checks/check_menu.mjs",
+   "bytes": 67715,
+   "sha256": "a3e1b15349c1d011dd48d42ea82997b31f8729dfccc6986c983ea9b5b8eb33bf"
+  },
+  {
+   "path": "om-emu/emu/checks/check_nav.mjs",
+   "bytes": 81363,
+   "sha256": "b0313be1fae0c27d58bf38fc47475f7db9c829bdc7815aec2ff41a11f47239f7"
+  },
+  {
+   "path": "om-emu/emu/checks/check_nd128.mjs",
+   "bytes": 9653,
+   "sha256": "b21d2d0d82f809f93db26ac638674ced501d18f680f5be8971e0d3be48532afe"
+  },
+  {
+   "path": "om-emu/emu/checks/check_osd.mjs",
+   "bytes": 41018,
+   "sha256": "6f58358d61f968d590b6952069b049fe3422d3d47345045582fcbeb2c107a447"
+  },
+  {
+   "path": "om-emu/emu/checks/check_perf.mjs",
+   "bytes": 55941,
+   "sha256": "ff09369b844a38f5210dcc610de09c4e4ad2f949225f0ccb7be31211c172be26"
+  },
+  {
+   "path": "om-emu/emu/checks/check_text.mjs",
+   "bytes": 38661,
+   "sha256": "392b2feb0e26c942d39883b25e6eb443c7099e4915eebdb81dc3f879fea3a259"
+  },
+  {
+   "path": "om-emu/emu/checks/fixtures/check_display_notes.txt",
+   "bytes": 6664,
+   "sha256": "e8fa7e9c76ea99b098f07baf5d1d55e4983daecc03dfe2212d2e5651ab83dcde"
+  },
+  {
+   "path": "om-emu/emu/checks/fixtures/check_liveview_notes.txt",
+   "bytes": 1299,
+   "sha256": "741ad7ee9df9f2f6528bd20351543f0e4caf6b1eaee3d4582823c28b88a4666d"
+  },
+  {
+   "path": "om-emu/emu/checks/fixtures/check_menu_notes.txt",
+   "bytes": 4516,
+   "sha256": "8f752e1620bfbc962d6b32c6a8e4f8071ba0834b669e1df840f40e30ecc96ebd"
+  },
+  {
+   "path": "om-emu/emu/checks/fixtures/check_nav_notes.txt",
+   "bytes": 12484,
+   "sha256": "2940eb82df08e86d838f108b9b5a414e06e81c4d2c8b25070cd306aeeb78a7cf"
+  },
+  {
+   "path": "om-emu/emu/checks/fixtures/check_text_notes.txt",
+   "bytes": 7486,
+   "sha256": "ae19734051ea28a59f57dea39925e719c30e5398f89451cdfb92349394700aa6"
+  },
+  {
+   "path": "om-emu/emu/checks/fixtures/om1-vsc-regs.h",
+   "bytes": 18423,
+   "sha256": "3ca08a621816b7165ab4bd0bbb102fd53e2815d0f0ce9e59f314661f128f6036"
+  },
+  {
+   "path": "om-emu/emu/checks/fixtures/om1-vsc-tables.c",
+   "bytes": 2721,
+   "sha256": "a2f8c0c9fc8e23180ace126483c150a2240a7a72be4b3b59babb7b254edb1a1c"
+  },
+  {
+   "path": "om-emu/emu/checks/fixtures/p7-keys.json",
+   "bytes": 688,
+   "sha256": "0e917b574f827c7f1bd2e0bca6d4e3135a0b6e677a85c1d0636b6564479e0f67"
+  },
+  {
+   "path": "om-emu/emu/checks/fixtures/perf-p10a.json",
+   "bytes": 30937,
+   "sha256": "97a8a35439e883b073694983dd5fe0ab2d8ccf7d089688e72e8b2471e0618577"
+  },
+  {
+   "path": "om-emu/emu/checks/fixtures/perf-p5.json",
+   "bytes": 21845,
+   "sha256": "bb13868ece7ce1b95d8db8324976a0c6cc9dfa2bde0e5e217252ffe2198da27a"
+  },
+  {
+   "path": "om-emu/emu/checks/gen_vsc_regs.mjs",
+   "bytes": 2742,
+   "sha256": "d2a6fe6023050567d602024c69401a34c942c34e3056beab736406f1fdb7096d"
+  },
+  {
+   "path": "om-emu/emu/checks/lib/args.mjs",
+   "bytes": 4766,
+   "sha256": "6c99d21aad6340f2b7c72c5c63f33b7287d04dab798adedc23f1cf705ab92ad8"
+  },
+  {
+   "path": "om-emu/emu/checks/lib/childtrace.mjs",
+   "bytes": 6690,
+   "sha256": "3e6f6cb4f528d463e8cbf4696ff81b67ca17c28cb09aad50ba2ed14e0d4a73f1"
+  },
+  {
+   "path": "om-emu/emu/checks/lib/coverage.mjs",
+   "bytes": 4549,
+   "sha256": "e6e3d409d7766e8d5b55d473523355a7dda4b2a4dba1bda984ca170411109ee7"
+  },
+  {
+   "path": "om-emu/emu/checks/lib/env.mjs",
+   "bytes": 12178,
+   "sha256": "dbbfd2ab839d8ceb784c7df5c12d0d9a17898eba549b84e848a9cfb05b0d609b"
+  },
+  {
+   "path": "om-emu/emu/checks/lib/errors.mjs",
+   "bytes": 1846,
+   "sha256": "4c01fc5ac9167e751e6f9f1f013d61c56600e3af668db8ee305f79718e213c79"
+  },
+  {
+   "path": "om-emu/emu/checks/lib/isa.mjs",
+   "bytes": 8422,
+   "sha256": "886697b60340dfbdf3bf163c3f0d34ebbf73e4e5d687812585be333277c80c36"
+  },
+  {
+   "path": "om-emu/emu/checks/lib/osdcalls.mjs",
+   "bytes": 5583,
+   "sha256": "da62355f69dbce78958a9ab8ce0544fb8f0e6b38dbb3231f8a8067d1a9f7bb4f"
+  },
+  {
+   "path": "om-emu/emu/checks/lib/playhttp.mjs",
+   "bytes": 15028,
+   "sha256": "22fa7b3610cde3bfa6839c9888e3f2ab6882484049d0d520a6e0a34b8067db81"
+  },
+  {
+   "path": "om-emu/emu/checks/lib/png.mjs",
+   "bytes": 5493,
+   "sha256": "77d52d420a15ac8005ab9ac39e1d09d7df2a2650ece690813e511ac03ce6db99"
+  },
+  {
+   "path": "om-emu/emu/checks/lib/pred.mjs",
+   "bytes": 1553,
+   "sha256": "9ca56bf6819e66935718c2e92bb412d2dedc2d706e768f07a1215379201b5ef8"
+  },
+  {
+   "path": "om-emu/emu/checks/lib/procs.mjs",
+   "bytes": 2074,
+   "sha256": "d4b2a62eb8a7c9357f2c9e4cd957c830223dae1b2c06c01d8f44a1d1fb07f5db"
+  },
+  {
+   "path": "om-emu/emu/checks/lib/rcwrap.mjs",
+   "bytes": 1348,
+   "sha256": "ae44bffd8d1ccf35355de7d3922f0796bc1e342eb5c1eb2c7e21bf3b0755adcd"
+  },
+  {
+   "path": "om-emu/emu/checks/lib/refenv.mjs",
+   "bytes": 1083,
+   "sha256": "ca729b3ec8fb434141b61e5fcb74c95ebd18d96bfc7ee7c43057d9cc29e6ad2d"
+  },
+  {
+   "path": "om-emu/emu/checks/lib/resources_scan.mjs",
+   "bytes": 4988,
+   "sha256": "20883e63dfce35124f2b56f591b1fbfab1ee4b7209e7049b4de188009e826967"
+  },
+  {
+   "path": "om-emu/emu/checks/lib/rngtape.mjs",
+   "bytes": 3053,
+   "sha256": "12aac1ab643c48e9245af3bc2b4a79abf90d275f64552838d1d6c8c2733992af"
+  },
+  {
+   "path": "om-emu/emu/checks/lib/tracecmp.mjs",
+   "bytes": 564,
+   "sha256": "afe6bdf5c788b3d57fadbfd0f76be29a4d0ad07d696ff8f9af40951f0431ed20"
+  },
+  {
+   "path": "om-emu/emu/checks/lib/wire.mjs",
+   "bytes": 1543,
+   "sha256": "f072cb3b92477181ebfe4af44a7b2427937a503ca1e46874f02f217df5face82"
+  },
+  {
+   "path": "om-emu/emu/checks/runs.json",
+   "bytes": 9783,
+   "sha256": "30314c4d9867d262360fcec76f73317f4ea3f99ba63372c79516e573885ba708"
+  },
+  {
+   "path": "om-emu/emu/fwmap/E143.labels.json",
+   "bytes": 578820,
+   "sha256": "56d5e4bff9754a748176d4ef4945d61bf7c20bcae4025a908d3547b390d41984"
+  },
+  {
+   "path": "om-emu/emu/fwmap/E143.seeds.json",
+   "bytes": 785,
+   "sha256": "77a050940d6cffc57d171eda3ae916c39c29c0314bfd9de78a19b3a943ee92f6"
+  },
+  {
+   "path": "om-emu/emu/fwmap/cover.mjs",
+   "bytes": 5695,
+   "sha256": "85a0f90cb7951c766edaf8e18f5f6d42a089955ed74fbf3b73737be13aaf54df"
+  },
+  {
+   "path": "om-emu/emu/fwmap/discover.mjs",
+   "bytes": 20276,
+   "sha256": "18c16a409689b0db63d80f3bb2341d9061ecb7da9b6035deee1e89fe5ae67585"
+  },
+  {
+   "path": "om-emu/emu/fwmap/e143.mjs",
+   "bytes": 5756,
+   "sha256": "a3bb177d3448f7984fab8e1c741401553b37535d55bbfc0c87b90063074fd144"
+  },
+  {
+   "path": "om-emu/emu/fwmap/isa.mjs",
+   "bytes": 7921,
+   "sha256": "f6a113a9d55fcd9a87f356b068c8de40810b365462a729d9947b01886ab61015"
+  },
+  {
+   "path": "om-emu/emu/fwmap/labels.mjs",
+   "bytes": 4071,
+   "sha256": "b01dd8208983dc419a9a06580fefd3b199d4be72e1172134559266762330f402"
+  },
+  {
+   "path": "om-emu/emu/fwmap/report.mjs",
+   "bytes": 20092,
+   "sha256": "c37aedb29ecc2e91d2e9c205d48bb8230e98a37cb7d227b4e57eb179fbc455ac"
+  },
+  {
+   "path": "om-emu/emu/fwmap/static.mjs",
+   "bytes": 27438,
+   "sha256": "c3ac8aeeaf8979f6a0597eefc3229597a57383cbe0d109a9a84d9ee053b345bf"
+  },
+  {
+   "path": "om-emu/emu/golden.json",
+   "bytes": 170453,
+   "sha256": "e02e07f01fa45b54dd1d9b5aa7dd6eb8d1f97a455aefa90a537c976998eb4adc"
+  },
+  {
+   "path": "om-emu/emu/host/blobs.mjs",
+   "bytes": 1376,
+   "sha256": "989e40c03f4794871d8441a72d7a27bcb6602f14060971ba2cf4ef96658a0bb2"
+  },
+  {
+   "path": "om-emu/emu/host/card.mjs",
+   "bytes": 4639,
+   "sha256": "d5f839f104d50c21756284a30c4b64c84d8dc4b9a92234ef75a81692b4523d03"
+  },
+  {
+   "path": "om-emu/emu/host/debughost.mjs",
+   "bytes": 2282,
+   "sha256": "cad855ac1ff005070fa3414a62e6925164c113649cbbcd768041a1c9e3d50334"
+  },
+  {
+   "path": "om-emu/emu/host/firmware.mjs",
+   "bytes": 6503,
+   "sha256": "b072eccc233d1391655951cacca717b3da3edc8d2c98ebe9f663f60d557e7c68"
+  },
+  {
+   "path": "om-emu/emu/host/labworker.mjs",
+   "bytes": 6404,
+   "sha256": "ab1a9e2cbd5c2161ed60cd8b71e8aa4a30c3c53851c8afb844044d74d0442fb3"
+  },
+  {
+   "path": "om-emu/emu/host/memprobe.mjs",
+   "bytes": 1446,
+   "sha256": "9c060e12b1d685e2dbdabd0a10b2aff8418ddccb08d6fbc25d1d8e3dc219a781"
+  },
+  {
+   "path": "om-emu/emu/host/modelarg.mjs",
+   "bytes": 3831,
+   "sha256": "bed73c67249904ffcc43ff066d417536e716349bda8f6000d27d20bd980204ae"
+  },
+  {
+   "path": "om-emu/emu/host/navcli.mjs",
+   "bytes": 13330,
+   "sha256": "697b4663d35e6f6a69e7c1e287c66268ffa92e104eae12511e9ece69c2c3c4cb"
+  },
+  {
+   "path": "om-emu/emu/host/nvram.mjs",
+   "bytes": 5126,
+   "sha256": "352f7765f0426706553ab6c3453048ff37c0d3e1fd274ceda18c8a37fd7b2071"
+  },
+  {
+   "path": "om-emu/emu/host/playcli.mjs",
+   "bytes": 21586,
+   "sha256": "0597f664eb44fa6e20366e7c82835cb8889c542c557e26313699be720de8e78f"
+  },
+  {
+   "path": "om-emu/emu/host/portqueue.mjs",
+   "bytes": 2290,
+   "sha256": "5cf7d750ba69a57c6748ab1235ff9d856163d87dc9703799fe5fe7a784a165bf"
+  },
+  {
+   "path": "om-emu/emu/host/proxy.mjs",
+   "bytes": 5847,
+   "sha256": "8b22ea019b3cc83695f7bd3bbdbb4ed961710b0b128cf00ff9feda2070444a57"
+  },
+  {
+   "path": "om-emu/emu/host/server.mjs",
+   "bytes": 8293,
+   "sha256": "fbc033e0ea8a0707c1cb096557cf6de73ad3f32711ef0d1e5dea4fc6f4547caf"
+  },
+  {
+   "path": "om-emu/emu/host/session.mjs",
+   "bytes": 60039,
+   "sha256": "f5707451d1aa663ea5e031295d14f7218187153ce74d01e52fa428ac87cc4f19"
+  },
+  {
+   "path": "om-emu/emu/host/signals.mjs",
+   "bytes": 1187,
+   "sha256": "e066970770c378daa8556c62c621aa860f093f0612785b11adaddc3c20e3db6a"
+  },
+  {
+   "path": "om-emu/emu/host/webdriver.mjs",
+   "bytes": 10928,
+   "sha256": "ff63549c317170fb31ac1478558bba34dbf5597cda4c8ccf3c04b920300f0325"
+  },
+  {
+   "path": "om-emu/emu/index.html",
+   "bytes": 3692,
+   "sha256": "03d7d490d48363592ef3be535890bebc45e88fd5a216db993f62806c17d5ef39"
+  },
+  {
+   "path": "om-emu/emu/package.json",
+   "bytes": 502,
+   "sha256": "5c8dd772c869c279afdf2fcab8f457644a8b903c84587af2a3bfeb3de903e384"
+  },
+  {
+   "path": "om-emu/emu/play.sh",
+   "bytes": 1170,
+   "sha256": "33e8f9b6bce13668184ddad21817aa0c4ffedd4d5e043aa96306912560506f56"
+  },
+  {
+   "path": "om-emu/emu/refs/display.mjs",
+   "bytes": 16623,
+   "sha256": "a3b60c8e87a63ad48ad15264b4d9f105abb3d437ab4d58d873e87d5fa9c0335b"
+  },
+  {
+   "path": "om-emu/emu/refs/errors.mjs",
+   "bytes": 809,
+   "sha256": "fff1f2065bbdb2797f3f998fabeb2a0353b88451bc252e4d3ad74025ab164aca"
+  },
+  {
+   "path": "om-emu/emu/refs/exfat.mjs",
+   "bytes": 20377,
+   "sha256": "1d79a0728570257d47da4ca8c1b4ed4c205d7ed263e58672de5e0ef967377562"
+  },
+  {
+   "path": "om-emu/emu/refs/exif.mjs",
+   "bytes": 3722,
+   "sha256": "267ee261152e465d18d52cd008d1a37c5bb508174ac8111a74463525290598ed"
+  },
+  {
+   "path": "om-emu/emu/refs/fat.mjs",
+   "bytes": 12061,
+   "sha256": "b57b1d92909922a7b027d75595d5325be90e6035d2d9baa1b883767bada1c8e3"
+  },
+  {
+   "path": "om-emu/emu/refs/font.mjs",
+   "bytes": 13138,
+   "sha256": "9cf3714362e1d5eedab3f82a76ca2495fb6b9efdddea24fa0e72015457909b34"
+  },
+  {
+   "path": "om-emu/emu/refs/irq.mjs",
+   "bytes": 4782,
+   "sha256": "c40a0c9ed5b1828e74e97f5b9c9b49246bf7d2344a60be313dd3aa1cde27bff5"
+  },
+  {
+   "path": "om-emu/emu/refs/isafw.mjs",
+   "bytes": 5109,
+   "sha256": "5430352930c95eb1c15059339ce75bb9e422476a3d205dde93d0fdb568c1413d"
+  },
+  {
+   "path": "om-emu/emu/refs/jpeg.mjs",
+   "bytes": 6729,
+   "sha256": "3d1a343732d0f15d5eb86067bec7f824920e10aee784aee68f1863ed8030f26c"
+  },
+  {
+   "path": "om-emu/emu/refs/liveview.mjs",
+   "bytes": 8077,
+   "sha256": "5c4e4e6a632ee548a0a2892380c77c5f759ec3d8287e3498c3a2b1af0cdf3d4b"
+  },
+  {
+   "path": "om-emu/emu/refs/menuref.mjs",
+   "bytes": 31286,
+   "sha256": "260bcb8902a0de594ea597938a5fd961b23385fffab838d960c149d46835b7e8"
+  },
+  {
+   "path": "om-emu/emu/refs/mt19937.mjs",
+   "bytes": 10926,
+   "sha256": "52369a5ab68eb2a611407e4c1335f19d7243514ad3f4affbcaee8e8a83d9f807"
+  },
+  {
+   "path": "om-emu/emu/refs/osdfmt.mjs",
+   "bytes": 8853,
+   "sha256": "de2e39cbb5f920f78cf8aaaafef10d378da93eb9f19313c20d08325fca07c019"
+  },
+  {
+   "path": "om-emu/emu/refs/settings.mjs",
+   "bytes": 14150,
+   "sha256": "37b782d9eef07b1e641229578fee4d3b8e8415a8bd707e4a242eb3b343bb4e55"
+  },
+  {
+   "path": "om-emu/emu/refs/volume.mjs",
+   "bytes": 1214,
+   "sha256": "24a1aa558139c04656a90f682b428d4c4af00c1cade37a1ffc244ae1709c0ef1"
+  },
+  {
+   "path": "om-emu/emu/scenarios/bind.mjs",
+   "bytes": 1979,
+   "sha256": "5809e36b04e3fa0983e85c104070e3639ee85c965f25d0bddc0165533ee5fedc"
+  },
+  {
+   "path": "om-emu/emu/scenarios/calls/a15-open.calls.json",
+   "bytes": 909,
+   "sha256": "43bb32ef6acf73c946a8698fbf794b1f2bef6ad3780ffec98899850c7a5828a1"
+  },
+  {
+   "path": "om-emu/emu/scenarios/calls/b7-gate.calls.json",
+   "bytes": 2398,
+   "sha256": "7d0dcd9f19a51f6f15f1905d6f2b3c53526f49b36618920e3554d9ee6a1d8889"
+  },
+  {
+   "path": "om-emu/emu/scenarios/calls/evf-idle.calls.json",
+   "bytes": 986,
+   "sha256": "64c7c8f620049f50d3b88d98cfb4640428054416351bc7ab66d71fed89a1ef55"
+  },
+  {
+   "path": "om-emu/emu/scenarios/calls/eye-burn.calls.json",
+   "bytes": 1734,
+   "sha256": "e06666ecf59c96fe312290e13637f77738c8fad6f683ed8c06cffbd62c5181a0"
+  },
+  {
+   "path": "om-emu/emu/scenarios/calls/inputs.calls.json",
+   "bytes": 1512,
+   "sha256": "36348b355db1a72e6fc1705bbb5989fde4d95edcc4ad5a4c738ca08408c2d9b5"
+  },
+  {
+   "path": "om-emu/emu/scenarios/calls/keys.calls.json",
+   "bytes": 2973,
+   "sha256": "ad46d08bf2dc7cc7e9f818373f4bf46cc74d5b92a54801b4157fb68642d1877c"
+  },
+  {
+   "path": "om-emu/emu/scenarios/calls/menu-open-any.calls.json",
+   "bytes": 17385,
+   "sha256": "0be077225b72d7463c1830e4fd7fbd09026982fcc36b226f79c312ec2de2e764"
+  },
+  {
+   "path": "om-emu/emu/scenarios/calls/menu-open.calls.json",
+   "bytes": 17357,
+   "sha256": "f2af819bd9cec1c6968e4a3fde8a546691e9a0fa23fe90ffe651cf4603c6be56"
+  },
+  {
+   "path": "om-emu/emu/scenarios/calls/menu-tft.calls.json",
+   "bytes": 1437,
+   "sha256": "e702152466dfc57f0e00a3b8015e98f55a9f4ff319183e85517e0ebeac8ff52c"
+  },
+  {
+   "path": "om-emu/emu/scenarios/calls/nav-a.calls.json",
+   "bytes": 1017,
+   "sha256": "6a26b804b66a8c53bcf824491b9af8006055d07d6aa7e21c16654c33db00540d"
+  },
+  {
+   "path": "om-emu/emu/scenarios/calls/nav-evf.calls.json",
+   "bytes": 1082,
+   "sha256": "60ffd1f01b3cd1b2907f5064c1df7e65bff0be28d4e679c4b6ca6949a549265c"
+  },
+  {
+   "path": "om-emu/emu/scenarios/calls/pace-wall.calls.json",
+   "bytes": 11017,
+   "sha256": "d0610172d5454cf5ac89e7c65fb0a46012d0f8aebd970abf24d5d33c8eda7195"
+  },
+  {
+   "path": "om-emu/emu/scenarios/calls/play-perf.calls.json",
+   "bytes": 22278,
+   "sha256": "84862e4b3362969696db4ef7db8f13fbb0f7694bb4d7a8a966953ba5151ea702"
+  },
+  {
+   "path": "om-emu/emu/scenarios/calls/playback.calls.json",
+   "bytes": 1213,
+   "sha256": "bf7bc7e50ccc50e34839e9af4eb1b7f094319a5bff7ac6bfdae20c7b6f614aea"
+  },
+  {
+   "path": "om-emu/emu/scenarios/calls/power-replay.calls.json",
+   "bytes": 1199,
+   "sha256": "7454654c91851f20b741b422834bbe9613fe8d6ee7a108a43c8322d64dc06cd9"
+  },
+  {
+   "path": "om-emu/emu/scenarios/calls/power.calls.json",
+   "bytes": 1259,
+   "sha256": "febcadc78d5259d77f77c88768958ba1c8c5cf2b74fd22bec90d6847e5ff165f"
+  },
+  {
+   "path": "om-emu/emu/scenarios/calls/queue.calls.json",
+   "bytes": 2062,
+   "sha256": "e2a067eaf7802f2100623f2cfa53455641e3306ca3304f5758d0adf32b5d9537"
+  },
+  {
+   "path": "om-emu/emu/scenarios/calls/scp-edge.calls.json",
+   "bytes": 1020,
+   "sha256": "46ac5519bcbfdfd9c4ee25e0128ff2bcce837b78db26abc9ea1d0458ccb721ab"
+  },
+  {
+   "path": "om-emu/emu/scenarios/calls/scp-replay.calls.json",
+   "bytes": 2086,
+   "sha256": "7dc8fe0a42313d429d2fc4f641553e6487ed17e39fa59482a4380ac17c9ded8e"
+  },
+  {
+   "path": "om-emu/emu/scenarios/calls/scp-timeout.calls.json",
+   "bytes": 2352,
+   "sha256": "635d776068395e7d9a3a1339a0904649f761e0534c019977e6ec68194a4f86e3"
+  },
+  {
+   "path": "om-emu/emu/scenarios/calls/shoot-evf.calls.json",
+   "bytes": 2622,
+   "sha256": "7cfe35ced4fd1b5df3e94fd8949492ae2747f267b357ed61e48edba5350beb41"
+  },
+  {
+   "path": "om-emu/emu/scenarios/calls/shoot-tft.calls.json",
+   "bytes": 2617,
+   "sha256": "4fd7cd1e227eb7271a04e6bc26afcbcade5c40c3f21fdb126e8d252f8b0c7f08"
+  },
+  {
+   "path": "om-emu/emu/scenarios/calls/switch-scp.calls.json",
+   "bytes": 1542,
+   "sha256": "7c7a295dbfe690d918f2ac9b6c15c4d82c8463591c3767a7b6c928e1d2138e37"
+  },
+  {
+   "path": "om-emu/emu/scenarios/calls/switch-shoot.calls.json",
+   "bytes": 1545,
+   "sha256": "2ad9f7456e638095cadb232bd56cfe81b717bf7c316211fe5526949fb23f5962"
+  },
+  {
+   "path": "om-emu/emu/scenarios/calls/tokens-3b.calls.json",
+   "bytes": 1763,
+   "sha256": "298296d23278d33af336b2483f5ea0ff897f529078ae92da1fb2971fbad33b51"
+  },
+  {
+   "path": "om-emu/emu/scenarios/calls/tokens.calls.json",
+   "bytes": 1632,
+   "sha256": "61f3fc257cfc6eedda0f747db92d422f00b7b2ed3110a29320a0fe217f65d5f5"
+  },
+  {
+   "path": "om-emu/emu/scenarios/kernel.mjs",
+   "bytes": 19742,
+   "sha256": "d1741784bd7cef948269c944a3befb4070621503fa19638acaab9771b2c10f28"
+  },
+  {
+   "path": "om-emu/emu/scenarios/osd_replay.mjs",
+   "bytes": 10762,
+   "sha256": "b68ca2f86ac4e1a2f1e407b29c4c5e56ecea96d3481f64de0323dd423fb0f042"
+  },
+  {
+   "path": "om-emu/emu/scenarios/session_replay.mjs",
+   "bytes": 25927,
+   "sha256": "83d2afc6accf98d0cad951803af7f42319ec7858a9c9cc1a018622357c02b133"
+  },
+  {
+   "path": "om-emu/emu/src/core/cores.mjs",
+   "bytes": 14575,
+   "sha256": "c40e61d8cb1c6d5660968bc3780591fe58b070d39346b33aacb1f8253cf3bfa0"
+  },
+  {
+   "path": "om-emu/emu/src/core/cpu.mjs",
+   "bytes": 33769,
+   "sha256": "94f3caf73745b17dceca437299b6c711aee0efe51c9ab7c872d5b1e6c599521e"
+  },
+  {
+   "path": "om-emu/emu/src/core/interp.mjs",
+   "bytes": 40485,
+   "sha256": "660e09091fc99db584104cd8e98d6050fe517e204fa2c747d0aa72e1423f9aa2"
+  },
+  {
+   "path": "om-emu/emu/src/core/m4/boot.mjs",
+   "bytes": 2475,
+   "sha256": "064782160d72244f025941957757c5c0becac5cbc2baf272c93124a4b025c2ab"
+  },
+  {
+   "path": "om-emu/emu/src/core/m4/bus.mjs",
+   "bytes": 5865,
+   "sha256": "7d40173941ce9136e055f5d68a3904d7e13bcb100afe076c99e62c5f04daff2b"
+  },
+  {
+   "path": "om-emu/emu/src/core/m4/census.mjs",
+   "bytes": 7365,
+   "sha256": "53a3309abddfc5f72aaaa701f6ff7b47111af989b4b4bf46e14c0c752692de33"
+  },
+  {
+   "path": "om-emu/emu/src/core/m4/cpu.mjs",
+   "bytes": 38527,
+   "sha256": "64ddeaecf9402af3d04cbf232b99036fd1b87a637300b5ab0db6db4eafb655b8"
+  },
+  {
+   "path": "om-emu/emu/src/core/m4/dcache.mjs",
+   "bytes": 3444,
+   "sha256": "5c1cd23048a7d5c693bc626abbcc1057d29bc4214c96bb9d05d71674ebf472cf"
+  },
+  {
+   "path": "om-emu/emu/src/core/m4/decode.mjs",
+   "bytes": 41153,
+   "sha256": "a5400b0d56fbec796452aa7d93817cb4e97d28604f75048aef9a0d2008b9616d"
+  },
+  {
+   "path": "om-emu/emu/src/core/m4/errors.mjs",
+   "bytes": 894,
+   "sha256": "e4552273413b00095c7536a9e490c3c1b70428a9da88b4ec8087dccc5e0b517b"
+  },
+  {
+   "path": "om-emu/emu/src/core/m4/periph/adc.mjs",
+   "bytes": 5729,
+   "sha256": "d986c043c73a0ffcfcac748224516520cd909f297bca97fca0479c0e18da2ab3"
+  },
+  {
+   "path": "om-emu/emu/src/core/m4/periph/board.mjs",
+   "bytes": 2077,
+   "sha256": "96452848d86624d9c569fdca46fa3ef015ae4c1847f31ae24da561ed54d9d4b6"
+  },
+  {
+   "path": "om-emu/emu/src/core/m4/periph/dma.mjs",
+   "bytes": 6520,
+   "sha256": "0013b012879e42f249776e8d0a91db465d84312f967751994fdcfb78aeef931f"
+  },
+  {
+   "path": "om-emu/emu/src/core/m4/periph/exti.mjs",
+   "bytes": 5980,
+   "sha256": "3ccca80728f6a95d651bee8fbdea6eebff4cf0c839073198e7a39465a2f7f572"
+  },
+  {
+   "path": "om-emu/emu/src/core/m4/periph/flash.mjs",
+   "bytes": 13217,
+   "sha256": "8a1b09f4465f05ed8853a08be72081635257fc9e47e5b475820d0b49cb1b5a85"
+  },
+  {
+   "path": "om-emu/emu/src/core/m4/periph/gpio.mjs",
+   "bytes": 7331,
+   "sha256": "4f2bd672f826e915f4dc628e39d156d7bc05f4ad1291b1121eebc780665025f9"
+  },
+  {
+   "path": "om-emu/emu/src/core/m4/periph/i2c.mjs",
+   "bytes": 15064,
+   "sha256": "db2ed90a75f8f23fa8119eceb74641e1faf0c840f0e5b412297bed3fe27fed42"
+  },
+  {
+   "path": "om-emu/emu/src/core/m4/periph/pwr.mjs",
+   "bytes": 2976,
+   "sha256": "e665b6f771874170fb13346b85389d8969d5106f116ab80c32689c293e32f179"
+  },
+  {
+   "path": "om-emu/emu/src/core/m4/periph/rcc.mjs",
+   "bytes": 9103,
+   "sha256": "28649dbcca9e0006c0c518d23ca488544d48d15f5443dd8d40fb40954745cd70"
+  },
+  {
+   "path": "om-emu/emu/src/core/m4/periph/regs.mjs",
+   "bytes": 2837,
+   "sha256": "a159b2f84183d50cccb9445f435ebb2955bada803f994b7ffb9e2ea29262ee1e"
+  },
+  {
+   "path": "om-emu/emu/src/core/m4/periph/rtc.mjs",
+   "bytes": 12634,
+   "sha256": "3edf5249203b6230e69e423e50953d9611db7a1bf780fc93ad42f2bd71965107"
+  },
+  {
+   "path": "om-emu/emu/src/core/m4/periph/sched.mjs",
+   "bytes": 4354,
+   "sha256": "a683cedc35145ccd001f22c4031f6fd4942e9bfd38d00c0a99db7b3e78923e4c"
+  },
+  {
+   "path": "om-emu/emu/src/core/m4/periph/spi.mjs",
+   "bytes": 5146,
+   "sha256": "388e0f06c7c1c6ce9400efd78e1d3d8f3249a424cdf192f5fd7bb039ce2dba5f"
+  },
+  {
+   "path": "om-emu/emu/src/core/m4/periph/stm32l4.mjs",
+   "bytes": 25042,
+   "sha256": "1beb26e4d57bcfc8996e5b4c0ef04f6d94c3e9e4de4952d056904c6698a9aef5"
+  },
+  {
+   "path": "om-emu/emu/src/core/m4/periph/tim.mjs",
+   "bytes": 19535,
+   "sha256": "a3d74c5c2eb63bc9759899ba528a0c0519bb64b0a101d67b44cee85963f21f72"
+  },
+  {
+   "path": "om-emu/emu/src/core/m4/periph/usart.mjs",
+   "bytes": 10349,
+   "sha256": "5f3ff52bf755043637af356f2516524a13e2ac5d706772d73791eb32508a3396"
+  },
+  {
+   "path": "om-emu/emu/src/core/m4/periph/usb.mjs",
+   "bytes": 2042,
+   "sha256": "e9cd406f7666cc4b85ae2e4fc9c1830a66f62bc60747f443498dcaf65d349c0a"
+  },
+  {
+   "path": "om-emu/emu/src/core/m4/sys.mjs",
+   "bytes": 16370,
+   "sha256": "e97b9371d3e8eea59cea3d87c08b39eca3ae16e35539f8ce4f2ca785cec81a3b"
+  },
+  {
+   "path": "om-emu/emu/src/core/mem.mjs",
+   "bytes": 23219,
+   "sha256": "adfe9bca23723f22b490c99047b6ad32c291f495492c98138d1da3c20ab5a676"
+  },
+  {
+   "path": "om-emu/emu/src/debug/call.mjs",
+   "bytes": 22586,
+   "sha256": "74bffd86020ec1c6f3eca732fd4a41aaa7dcfba2d4670a094449918d84a44186"
+  },
+  {
+   "path": "om-emu/emu/src/debug/debugger.mjs",
+   "bytes": 24393,
+   "sha256": "a24ce644ab922457a843c868076aa21e72007e78086fda75fd88119a79da4705"
+  },
+  {
+   "path": "om-emu/emu/src/debug/live.mjs",
+   "bytes": 28766,
+   "sha256": "c19050fd773dc1f46b9f7c0c3669ada12b1293dab93599206913022c62a87e49"
+  },
+  {
+   "path": "om-emu/emu/src/debug/protocol.mjs",
+   "bytes": 21791,
+   "sha256": "5eff055d29372fb46aecda2c09c6ba94538d7026ad585e15abe06ccbd1f259ea"
+  },
+  {
+   "path": "om-emu/emu/src/debug/regs.mjs",
+   "bytes": 866,
+   "sha256": "2e620e185508bf19008cf97cc33ae188222e7461e0b3f1811bf304fdb7b422d7"
+  },
+  {
+   "path": "om-emu/emu/src/debug/snapshot.mjs",
+   "bytes": 5970,
+   "sha256": "24e51e3811a58d55051caeb7507707cfb51001cb9b5355d27bc20c8c0c98ab54"
+  },
+  {
+   "path": "om-emu/emu/src/debug/trace.mjs",
+   "bytes": 4456,
+   "sha256": "92b3ed83780771c6011d1521ab018dee0fda5f604522acdbdd624a25bdf32bab"
+  },
+  {
+   "path": "om-emu/emu/src/dev/audio.mjs",
+   "bytes": 17201,
+   "sha256": "2a41fcd1bd0152e5b2b54f3cad314a7e77c5741787d761d69df9e023d41ad571"
+  },
+  {
+   "path": "om-emu/emu/src/dev/bus.mjs",
+   "bytes": 8291,
+   "sha256": "e537c4ed7e90f6bc2b4a7fef2a35d856af5ffc5ae446ee9336a87e5b4e6e397f"
+  },
+  {
+   "path": "om-emu/emu/src/dev/camfe.mjs",
+   "bytes": 13697,
+   "sha256": "69a9fde49796f27fac8454565b69c281f670659decb6655fb0ad7c5ef2c3057c"
+  },
+  {
+   "path": "om-emu/emu/src/dev/dml.mjs",
+   "bytes": 8744,
+   "sha256": "cb8761cb0d5531eb4e7ff46fb3c1cba535afcf6719220ca670ec3c94d9b0a890"
+  },
+  {
+   "path": "om-emu/emu/src/dev/dpc.mjs",
+   "bytes": 2629,
+   "sha256": "adf00b0157638de3c7f2885957b4542ef0b8a1bcac8c7649546a0658cfb89f32"
+  },
+  {
+   "path": "om-emu/emu/src/dev/ems1.mjs",
+   "bytes": 11974,
+   "sha256": "68deb7a62e8d6d7d1fb11e49baed979dcf01012e07074ec19bf4e8c39db9d371"
+  },
+  {
+   "path": "om-emu/emu/src/dev/engine.mjs",
+   "bytes": 21611,
+   "sha256": "2164dcaa278792e3b64675e9ee02dcefa0a6c03afbe7d2738d013da0bfa18059"
+  },
+  {
+   "path": "om-emu/emu/src/dev/hdmi.mjs",
+   "bytes": 16254,
+   "sha256": "80497c3a89e39ecd641f4fcc5e67ebb2028893fb3b86edffb91b50b115449e8c"
+  },
+  {
+   "path": "om-emu/emu/src/dev/imgpipe.mjs",
+   "bytes": 25971,
+   "sha256": "924001331674b9e6642c2c9c052fe75a4aff78d8a16f41dd2e2191046ef94daa"
+  },
+  {
+   "path": "om-emu/emu/src/dev/imgpro.mjs",
+   "bytes": 13544,
+   "sha256": "275680322384425d95a05c39178a70091ed8d3ff897ae04ab504004029066664"
+  },
+  {
+   "path": "om-emu/emu/src/dev/intc.mjs",
+   "bytes": 15228,
+   "sha256": "85b6b7d21652ac1a057e19fdc1e214154ac52bceec47a8f4afdac1661788dada"
+  },
+  {
+   "path": "om-emu/emu/src/dev/lensssc.mjs",
+   "bytes": 12839,
+   "sha256": "e96b83c864f901ca1811a447f5f88fb1ff0b9ee87972555fe2678e420fd6a34d"
+  },
+  {
+   "path": "om-emu/emu/src/dev/linkpins.mjs",
+   "bytes": 7211,
+   "sha256": "cbc3e7a5fca33012a2344800016eb8e9f63d723f381dc13deb4ce52e66e3c1d5"
+  },
+  {
+   "path": "om-emu/emu/src/dev/pdt.mjs",
+   "bytes": 9847,
+   "sha256": "9377aa4bfd22964c40c672c44f7eb48c5955e5faa6f98a44525497afecb716c9"
+  },
+  {
+   "path": "om-emu/emu/src/dev/scpu.mjs",
+   "bytes": 9454,
+   "sha256": "69198b7be16fb24d32968553888ee551ba0f6d227688bba434203e5c834fd5cb"
+  },
+  {
+   "path": "om-emu/emu/src/dev/stub.mjs",
+   "bytes": 4079,
+   "sha256": "b87a757f0e57823fc46a89020060cc38a6361d24a0498450bdc3047fb9419a3d"
+  },
+  {
+   "path": "om-emu/emu/src/dev/timer.mjs",
+   "bytes": 10301,
+   "sha256": "b03f10e8d4d622d3fb2fcd6b8b39943c69c98d17241dd4e5026c338fbe0b4739"
+  },
+  {
+   "path": "om-emu/emu/src/dev/vsc.mjs",
+   "bytes": 31927,
+   "sha256": "38de0fa08a4ff6197c60868c6b893d46775908ccf9389f1d1ddcc5f6b6342602"
+  },
+  {
+   "path": "om-emu/emu/src/dev/vsccompose.mjs",
+   "bytes": 33867,
+   "sha256": "ba3da9916f999ca91b4c1b9857c13f95239628be334e58478154e682aa05971c"
+  },
+  {
+   "path": "om-emu/emu/src/dev/vsccompose2.mjs",
+   "bytes": 18331,
+   "sha256": "234572564acef358dd7084d35ca624d62312c42f005ef9c3dcb314fcc1a4d638"
+  },
+  {
+   "path": "om-emu/emu/src/dev/vscregs.mjs",
+   "bytes": 3828,
+   "sha256": "d29e6661e27212b466035b13ca9ceb9f2bcbafe8026328659d65382f0b806265"
+  },
+  {
+   "path": "om-emu/emu/src/fw/board.mjs",
+   "bytes": 39911,
+   "sha256": "6a02f7c74bee6f0b6409c57c3ee78c62e16280794ee55557edb42d2f723d7875"
+  },
+  {
+   "path": "om-emu/emu/src/fw/expand.mjs",
+   "bytes": 3148,
+   "sha256": "e2575f5a4c8ecb79764a31ae01223ab718e7ddc266c00bd88bbf0008dabd1d7d"
+  },
+  {
+   "path": "om-emu/emu/src/fw/facts.mjs",
+   "bytes": 509333,
+   "sha256": "3f938574a7cc589dd227584066e726039009678c4f51fa8175437badfc1c4c17"
+  },
+  {
+   "path": "om-emu/emu/src/fw/image.mjs",
+   "bytes": 2077,
+   "sha256": "657e9a447ea8035f17115708121e1ad8e71c08f8f5ef1aefb107ccf3a73621d8"
+  },
+  {
+   "path": "om-emu/emu/src/fw/knobs.mjs",
+   "bytes": 4272,
+   "sha256": "98a35abb15c33a2717c623443f6c950c759f23818ba9e888320e11401a1f3420"
+  },
+  {
+   "path": "om-emu/emu/src/fw/labfw.mjs",
+   "bytes": 4276,
+   "sha256": "3efbe7112a2917fbf77c3a57b704296bd730676f1921d24c427f40225ecfb083"
+  },
+  {
+   "path": "om-emu/emu/src/fw/model.mjs",
+   "bytes": 4718,
+   "sha256": "f080e7e9c91bf3baa5136c7b8aeb6b0e0c4c8378d89f361a47e87aac4e902a44"
+  },
+  {
+   "path": "om-emu/emu/src/fw/modeldoc.mjs",
+   "bytes": 993,
+   "sha256": "ced05f6fa9657025b603a833177dfa8ea014fe68651d18c0492280e875aa1c07"
+  },
+  {
+   "path": "om-emu/emu/src/fw/models.mjs",
+   "bytes": 125036,
+   "sha256": "115c8349e4f0aadbe56f24638db4e195ca3ba59739c64607eb5b34e4e14db3db"
+  },
+  {
+   "path": "om-emu/emu/src/fw/nand.mjs",
+   "bytes": 20696,
+   "sha256": "1c7751b4db88c7874eb4c86d33185f6279ced1cd2f7bddbae4a2dea37fe3b5dd"
+  },
+  {
+   "path": "om-emu/emu/src/fw/olyfw.mjs",
+   "bytes": 5786,
+   "sha256": "a1c02f4ded0c3624ac017d97eb1ca59e6ca5dd407bcc0854722d7c126c9ef246"
+  },
+  {
+   "path": "om-emu/emu/src/fw/overrides-E122.mjs",
+   "bytes": 4046,
+   "sha256": "6bff3bc7d875f7424165e6737ecd50c4a4ebb8d1dc4dd4d42b9431b5982b0602"
+  },
+  {
+   "path": "om-emu/emu/src/fw/overrides-E144.mjs",
+   "bytes": 25687,
+   "sha256": "cc98ffd4ed9eac44c6a8c58c31010b67c72eef618d09e93cf97e442b3f5bd307"
+  },
+  {
+   "path": "om-emu/emu/src/fw/patch.mjs",
+   "bytes": 19035,
+   "sha256": "bb9434c31fc8e494daa7dd05321bf5835b51aae6bfdbbd981d7151b445375d3b"
+  },
+  {
+   "path": "om-emu/emu/src/fw/place.mjs",
+   "bytes": 26230,
+   "sha256": "680b313190aebe201a88d1034a684bb647872fe668e71acc36a29a135dab9842"
+  },
+  {
+   "path": "om-emu/emu/src/fw/ports.mjs",
+   "bytes": 1076335,
+   "sha256": "6c81c9955e9baba6c165ed3affb69fd5208bb44e6a9dba5dc6094935074ce0b0"
+  },
+  {
+   "path": "om-emu/emu/src/fw/resprefix.mjs",
+   "bytes": 2144,
+   "sha256": "612c87c0dd722ee031685dd5c70bf14e113d094f2e3a66677dfbe4b8c14c6372"
+  },
+  {
+   "path": "om-emu/emu/src/fw/sections.mjs",
+   "bytes": 8601,
+   "sha256": "e8e55f2820a7db8426f0172882a34c90c611a7a6b2d848904cd55739d45d6250"
+  },
+  {
+   "path": "om-emu/emu/src/fw/updater.mjs",
+   "bytes": 3001,
+   "sha256": "4f346db0b57dcd61ebd05697d700e5ed9f5859da3dd65c22a626c661d04a1ebf"
+  },
+  {
+   "path": "om-emu/emu/src/fw/xmap.mjs",
+   "bytes": 12265,
+   "sha256": "98b559ff3c5df19f46416ed84aed3d2583918a29c74e408c62242daf9ca463d3"
+  },
+  {
+   "path": "om-emu/emu/src/lab/a53isc.mjs",
+   "bytes": 15733,
+   "sha256": "99b85dea77ada7411ef8315c2e9f0c7bc456ba7a66463eeb94425e3324f593da"
+  },
+  {
+   "path": "om-emu/emu/src/lab/acc.mjs",
+   "bytes": 15789,
+   "sha256": "48c508462bb4e8cf94b893315d079b9d08248956f06c040be1ed4e3503122062"
+  },
+  {
+   "path": "om-emu/emu/src/lab/audio.mjs",
+   "bytes": 8006,
+   "sha256": "9b1edfc267afe2c915cbecf4d9fc7bc78003f7f19ef799fd4c738ae1d4e2ff4b"
+  },
+  {
+   "path": "om-emu/emu/src/lab/audiohw.mjs",
+   "bytes": 13787,
+   "sha256": "c8b414b7217647d696c67aa84ffd273680d325f0119576aa480416791932d705"
+  },
+  {
+   "path": "om-emu/emu/src/lab/camapp.mjs",
+   "bytes": 232107,
+   "sha256": "363891a90afc7e77e57abd1638e31f0a7badc09b81778e90ac8d42fb640b33f3"
+  },
+  {
+   "path": "om-emu/emu/src/lab/cardfs.mjs",
+   "bytes": 33231,
+   "sha256": "8c863d28eaf3a55c88a0db3339397c00c6184ee55d9d1257b7c82cb2b7b9ca49"
+  },
+  {
+   "path": "om-emu/emu/src/lab/charger.mjs",
+   "bytes": 3046,
+   "sha256": "f0a2426fb249f9f675c0d22d6e49126fd53a88541dbd6637f6a5bbe4e0212982"
+  },
+  {
+   "path": "om-emu/emu/src/lab/cpu2.mjs",
+   "bytes": 24107,
+   "sha256": "9a6877013f48a51f56a94bb1185d827c50b8d427b2db375d0d6a3964f0736666"
+  },
+  {
+   "path": "om-emu/emu/src/lab/display.mjs",
+   "bytes": 91058,
+   "sha256": "7b34ff5b05fef9c7ca1d33fe771e4158387298fd02b28372afd36bf5f0d501bb"
+  },
+  {
+   "path": "om-emu/emu/src/lab/dispq.mjs",
+   "bytes": 2427,
+   "sha256": "4821c3b1eb64f4b25f40ed80bcf2c14aea5b166148efa3dda35b3d978537b4a4"
+  },
+  {
+   "path": "om-emu/emu/src/lab/edid.mjs",
+   "bytes": 2948,
+   "sha256": "416d945d868a7d8c53cc0085179733a25fccb82f88e1d6cbd0fe7add32b4d051"
+  },
+  {
+   "path": "om-emu/emu/src/lab/errors.mjs",
+   "bytes": 1204,
+   "sha256": "2fd7139bceb60f0ad31c428f7ed9f69235af4bc76cda823b1bb9c6dcea45fe10"
+  },
+  {
+   "path": "om-emu/emu/src/lab/hle.mjs",
+   "bytes": 18565,
+   "sha256": "5648a293d1f6ede0eda8e29d4dc9e6f683210a28935b02b4e6c0af2a03da0520"
+  },
+  {
+   "path": "om-emu/emu/src/lab/irq.mjs",
+   "bytes": 10200,
+   "sha256": "8fec8ed6abe08a9b83845eae044fc3fcc43f2e339f95d872489152b4de9c072f"
+  },
+  {
+   "path": "om-emu/emu/src/lab/jpeg.mjs",
+   "bytes": 14285,
+   "sha256": "b54cfe0eb9655371f282fd1e3565b92dfce2500538b805bf0d082de002b97554"
+  },
+  {
+   "path": "om-emu/emu/src/lab/kernel.mjs",
+   "bytes": 22251,
+   "sha256": "6ceee4bf9962892c0d025be0d70a92ccbb53cdb0ef009b5b9e312586302f47f8"
+  },
+  {
+   "path": "om-emu/emu/src/lab/lens.mjs",
+   "bytes": 11978,
+   "sha256": "b92b12d381f3389fa8802f1e9ef3bde4291c45e8cb386619ff6fcf25099a96e5"
+  },
+  {
+   "path": "om-emu/emu/src/lab/lensmcu.mjs",
+   "bytes": 13566,
+   "sha256": "52eb5614952c45f8f648db3cda980019bf9d1fe79334e48bbc3a183a443eabdc"
+  },
+  {
+   "path": "om-emu/emu/src/lab/mdet.mjs",
+   "bytes": 45695,
+   "sha256": "89c61056df82fe1a159e684cdee0810af38d60c986ab0bf33a6e90e1c504bdde"
+  },
+  {
+   "path": "om-emu/emu/src/lab/media.mjs",
+   "bytes": 25418,
+   "sha256": "373ceb78980f1c9a7098d56b573e86b00595392fe4e5a69e7c93af970a6ef248"
+  },
+  {
+   "path": "om-emu/emu/src/lab/menu.mjs",
+   "bytes": 85212,
+   "sha256": "f1fbb65e5a9d30e90ac4eb5565ad6852733d4ae20ff3a3de590d916cf4ec4e94"
+  },
+  {
+   "path": "om-emu/emu/src/lab/menudata.mjs",
+   "bytes": 17067,
+   "sha256": "1cfdf906d143bea38e730040b2f062b3b3d46b35ba361b58dfd5b01db15531da"
+  },
+  {
+   "path": "om-emu/emu/src/lab/menuwalk.mjs",
+   "bytes": 10985,
+   "sha256": "d91eeba2e912d05d4a11081bd5846f53b60cbf1578e0733e3289bac8b47706f1"
+  },
+  {
+   "path": "om-emu/emu/src/lab/nav.mjs",
+   "bytes": 28926,
+   "sha256": "f0062a533f6caf7a37e600364a0d645ffa184deb7892c385b9bba5f58390baef"
+  },
+  {
+   "path": "om-emu/emu/src/lab/nvramdoc.mjs",
+   "bytes": 6245,
+   "sha256": "597148fdec863af46873a53ab5380a553fcda3a82499da2548f527eed28fffba"
+  },
+  {
+   "path": "om-emu/emu/src/lab/osd.mjs",
+   "bytes": 21528,
+   "sha256": "a0887531c74d890dca3a12b26d7aea57009da602ffbb6fff8382f89a119176b8"
+  },
+  {
+   "path": "om-emu/emu/src/lab/osdfmt.mjs",
+   "bytes": 4699,
+   "sha256": "8d5945aeca6a9ec80099c8a3c48ea90580f4c87399e6bcc593f2f0782a263248"
+  },
+  {
+   "path": "om-emu/emu/src/lab/patchaudit.mjs",
+   "bytes": 12584,
+   "sha256": "18b946321244d4473f904314ba558e9f3c92e330f6dd502863974773bf349b74"
+  },
+  {
+   "path": "om-emu/emu/src/lab/play.mjs",
+   "bytes": 184297,
+   "sha256": "ac4221021017ba3facacb5db7b1600f2704291136b72c24fefee3b9f8ed092a8"
+  },
+  {
+   "path": "om-emu/emu/src/lab/playapi.mjs",
+   "bytes": 21570,
+   "sha256": "311b743c3c41a12b9a9a80e4d7cbaaf9525634e8b39a27953070be45ef212a30"
+  },
+  {
+   "path": "om-emu/emu/src/lab/player.mjs",
+   "bytes": 82293,
+   "sha256": "bfd861245f1a3d3b2d19a48966b410e979def2ae7cb62c5dde86e31eb03e1404"
+  },
+  {
+   "path": "om-emu/emu/src/lab/playmod.mjs",
+   "bytes": 14600,
+   "sha256": "56f5802c85ac55f4c5ecbee290384620826c62a1fde6d6bce4b4704aa95bfad8"
+  },
+  {
+   "path": "om-emu/emu/src/lab/playui.mjs",
+   "bytes": 118121,
+   "sha256": "35f7f25880a89c46d6753d5cee7733f40506bbbe82328a34d86563b9b6b4ed57"
+  },
+  {
+   "path": "om-emu/emu/src/lab/power.mjs",
+   "bytes": 17507,
+   "sha256": "ec16f3c8dfbd67a7802e9718ce930e00d2889b0e5dc37fc7e040a255ea92f549"
+  },
+  {
+   "path": "om-emu/emu/src/lab/rec.mjs",
+   "bytes": 62226,
+   "sha256": "830d220debed119b5183391ce0d629de368369609ccbfafef14dd27bdf4643f4"
+  },
+  {
+   "path": "om-emu/emu/src/lab/resnand.mjs",
+   "bytes": 12700,
+   "sha256": "c58d5d251c32f05d247ab8914551202c474e793bcdb2062ce61d2617fbc17462"
+  },
+  {
+   "path": "om-emu/emu/src/lab/resources.mjs",
+   "bytes": 14110,
+   "sha256": "122450c256d8ef188f77a8e323ba92a28a6102f9033b4634e3c77c36dd066002"
+  },
+  {
+   "path": "om-emu/emu/src/lab/rtos.mjs",
+   "bytes": 7071,
+   "sha256": "ea7e06666d37aaa97d06142febdbe853d996f68705bcca35f7ff11b4c6ed4b5d"
+  },
+  {
+   "path": "om-emu/emu/src/lab/scene.mjs",
+   "bytes": 20424,
+   "sha256": "a842e60f803bc8b88113e1484e864235b5e2f9014dabb831210fd5cb9c8e9366"
+  },
+  {
+   "path": "om-emu/emu/src/lab/scpudev.mjs",
+   "bytes": 40483,
+   "sha256": "c93ce9ced00ba5effba9dedf61ac54d3ca437533f2fd8c899273d273ec5dfc6c"
+  },
+  {
+   "path": "om-emu/emu/src/lab/scpulink.mjs",
+   "bytes": 10470,
+   "sha256": "3df7584565d3b873e4cbf8fe0050364efe14ae383a4bff5d2dcc9251946ddb96"
+  },
+  {
+   "path": "om-emu/emu/src/lab/scpum4.mjs",
+   "bytes": 16575,
+   "sha256": "8b7d7fcb1473963f775a2f6742fb2236ef2309ddbaa47d98e7edc41692867514"
+  },
+  {
+   "path": "om-emu/emu/src/lab/sdcard.mjs",
+   "bytes": 15367,
+   "sha256": "4f81b26b7158dff6bedbd7e88e10fe6293a4c6cea643b498ab98ff7041e7828e"
+  },
+  {
+   "path": "om-emu/emu/src/lab/settings_ids.mjs",
+   "bytes": 2242,
+   "sha256": "9c395cbd29b04f7e3a4cc1c34332c6f3c4327b28b9ed45db969e9589758b1f78"
+  },
+  {
+   "path": "om-emu/emu/src/lab/shoe.mjs",
+   "bytes": 10854,
+   "sha256": "d6675b13346890962de1eec8930f763312f7f7d59ccb5b869a0607bf03840e98"
+  },
+  {
+   "path": "om-emu/emu/src/lab/shuttersnd.mjs",
+   "bytes": 5762,
+   "sha256": "f4e81e625dcbaa0807d5ac67dfc246ad791f314c5ae9fd7f44192d12728fbc63"
+  },
+  {
+   "path": "om-emu/emu/src/lab/sim.mjs",
+   "bytes": 16409,
+   "sha256": "aab4081dcfc9fb63ca8e84f7f100f84a0ce6dc91a633595cb05446a5d480e6be"
+  },
+  {
+   "path": "om-emu/emu/src/lab/sio.mjs",
+   "bytes": 9980,
+   "sha256": "f0716ec9f3b3fbcffce75fa186a53f387ab1c336726595bfedc62119b4a9627b"
+  },
+  {
+   "path": "om-emu/emu/src/lab/soundres.mjs",
+   "bytes": 6887,
+   "sha256": "a2c6dd3df56db40e95822cdb973bfe25efad7f049828626964c88886ff6aa8e9"
+  },
+  {
+   "path": "om-emu/emu/src/lab/storage.mjs",
+   "bytes": 50163,
+   "sha256": "f5ea0a36b9c78f0a05a5e0f5e45f53ee5f4d076019fab8ee41c2d9e8c4d37d9c"
+  },
+  {
+   "path": "om-emu/emu/src/lab/subject.mjs",
+   "bytes": 13781,
+   "sha256": "a5bd078b39c2f8594b13f564e5086eb56e8f22bbcdbac115e226e19220b5b317"
+  },
+  {
+   "path": "om-emu/emu/src/lab/take.mjs",
+   "bytes": 65265,
+   "sha256": "8c6dc9cc84ee43a46e22d542f79bb6a5138b9ed686f089b0e17d7c500f66d4ee"
+  },
+  {
+   "path": "om-emu/emu/src/lab/text.mjs",
+   "bytes": 22116,
+   "sha256": "e27b2d3781feab8d9eb3f49b0cc73524a9312913f85a4131358156a9770a1357"
+  },
+  {
+   "path": "om-emu/emu/src/lab/touchpanel.mjs",
+   "bytes": 6610,
+   "sha256": "72f93c8bc053f159ec14a20b4dbcf0fabc189c01f79fde7a06efea160743e9de"
+  },
+  {
+   "path": "om-emu/emu/src/lab/windows.mjs",
+   "bytes": 1265,
+   "sha256": "d18038a30d2f87e3abf6098cd943f35ff4202c6bb3a954d0f7ed1d9c8d28189f"
+  },
+  {
+   "path": "om-emu/emu/src/lab/wm8946.mjs",
+   "bytes": 8976,
+   "sha256": "4ae26e3647e049fc3bc72163aa978ffc36a0966125b8370dab44827cdfee67bd"
+  },
+  {
+   "path": "om-emu/emu/src/machine.mjs",
+   "bytes": 33745,
+   "sha256": "9c10e396d122722a486fa73dedabb0c19ad45033c59c172ec6bcaa37d031cd63"
+  },
+  {
+   "path": "om-emu/emu/src/trace/tracer.mjs",
+   "bytes": 15990,
+   "sha256": "ea2ea178c539460ceb25cc54a0c4c68211c8d6c2d0772dd8b1b50f476449f358"
+  },
+  {
+   "path": "om-emu/emu/src/util/bytes.mjs",
+   "bytes": 6115,
+   "sha256": "86707333d72877e35b374bfd39f3d6af2b716437c73df46929e74b460af985be"
+  },
+  {
+   "path": "om-emu/emu/src/util/equal.mjs",
+   "bytes": 1471,
+   "sha256": "31d47358a57d40bc4d67b9a077a8c05e6c4f1fe7a92de33f8eb538d75ead238e"
+  },
+  {
+   "path": "om-emu/emu/src/util/hex.mjs",
+   "bytes": 489,
+   "sha256": "d48bffb45373a94b8d1c824aa46d7a93665f282ee8a563370d698b1a53237c33"
+  },
+  {
+   "path": "om-emu/emu/src/util/parse.mjs",
+   "bytes": 1807,
+   "sha256": "b0754de377324528b15d6588dbe1d634649cbefd68754bf6b0b114beee3ddfd7"
+  },
+  {
+   "path": "om-emu/emu/src/util/sha256.mjs",
+   "bytes": 4873,
+   "sha256": "a970ca2dd63872f4d6b7a403d189655f60914c8c95fb9f36ddc1b776becfd07d"
+  },
+  {
+   "path": "om-emu/emu/src/util/show.mjs",
+   "bytes": 1724,
+   "sha256": "58a20ae76e473414c3b0a0075eb362f7a1cf4c968b3feef64659f0473515e076"
+  },
+  {
+   "path": "om-emu/emu/src/util/tally.mjs",
+   "bytes": 896,
+   "sha256": "33f495d217ff46a5e2e1bb74a3cb319b2db374e8bd3d37dfef75da9a6864ed26"
+  },
+  {
+   "path": "om-emu/emu/src/util/tracejson.mjs",
+   "bytes": 3871,
+   "sha256": "52a0e82cd086dee77069600061f3d478fbf4ac447c75173dc53e97365f0e4e77"
+  },
+  {
+   "path": "om-emu/emu/test/fakeopfs.mjs",
+   "bytes": 3048,
+   "sha256": "400e654dd6ac2dd0948dc952cfc3e81cd6d8909be15486cadba4d022f698b71c"
+  },
+  {
+   "path": "om-emu/emu/test/fixtures/caduceus-releases.json",
+   "bytes": 38774,
+   "sha256": "c0f5e52fd5c2fcb74c6c19826c13fa28b3507372845ddbdf51e0197f3b15e4dd"
+  },
+  {
+   "path": "om-emu/emu/test/fixtures/isa_vectors.json",
+   "bytes": 1312939,
+   "sha256": "3651b071620176c5351607d556e83d52629e7af8441c248689dc6ddbb34fe93a"
+  },
+  {
+   "path": "om-emu/emu/test/fixtures/m4_vectors.json",
+   "bytes": 648472,
+   "sha256": "502e09d54c5b20bfb63a5c82e00ad1c4de9a76f3d9ef4e7268fb6682f8841a30"
+  },
+  {
+   "path": "om-emu/emu/test/m4cases.mjs",
+   "bytes": 8907,
+   "sha256": "b5fd973356b16117971b64132f3cec8100c639965c508dec4b709f4c8e4e382a"
+  },
+  {
+   "path": "om-emu/emu/test/test_a53isc.mjs",
+   "bytes": 12579,
+   "sha256": "301cf4551e0ffeb9cee5dccf2011c4fc4909ebaee30e7002f242ed1af6fb3e53"
+  },
+  {
+   "path": "om-emu/emu/test/test_acc.mjs",
+   "bytes": 3988,
+   "sha256": "73111d4a5d24319d105bad4e03f43e7b926aeb6936e3bbc26ae842320f1ed644"
+  },
+  {
+   "path": "om-emu/emu/test/test_args.mjs",
+   "bytes": 4528,
+   "sha256": "0aec31d6941e9f1e66786c59e7ad56fea9c7b436ec3180f1988d57808f66fd77"
+  },
+  {
+   "path": "om-emu/emu/test/test_audio.mjs",
+   "bytes": 25683,
+   "sha256": "7d140b7a68c755374a5157905a7b62df48894a56425bf9b6c70f31cfeb338bd1"
+  },
+  {
+   "path": "om-emu/emu/test/test_audiohw.mjs",
+   "bytes": 32825,
+   "sha256": "e7d01d156fd368c3c11437c6ac5cbe3899fd6be9cba5b551c1cc0b1564869cab"
+  },
+  {
+   "path": "om-emu/emu/test/test_bootstage.mjs",
+   "bytes": 11715,
+   "sha256": "eb67aad314ede5b74430bcb160cb2e871cfe4d613a27d670adbc3f366236ab97"
+  },
+  {
+   "path": "om-emu/emu/test/test_c3power.mjs",
+   "bytes": 27430,
+   "sha256": "0053ca6831e0a0c7757ef503693dde62ee327d9243c56ea3e509484c1598fed1"
+  },
+  {
+   "path": "om-emu/emu/test/test_c3take.mjs",
+   "bytes": 8225,
+   "sha256": "28b140e1193936ef4731033f0c33aeabdf4dc95695eb07f5f77b00af63a33e2f"
+  },
+  {
+   "path": "om-emu/emu/test/test_caduceus.mjs",
+   "bytes": 23519,
+   "sha256": "7602365d79a7a1866f0f68cfbdf22425583e17ce5cd07b4cdc41da5cc964c2e2"
+  },
+  {
+   "path": "om-emu/emu/test/test_call.mjs",
+   "bytes": 37546,
+   "sha256": "978dddf3df3cdd3dce07a3de53e60924b4b003a0006cb815a79fe58a0bd8b623"
+  },
+  {
+   "path": "om-emu/emu/test/test_camapp.mjs",
+   "bytes": 93555,
+   "sha256": "cba72c3a2e30fbd4ce38b14b93f4961d97fdc9dcfa95ae9b201ab4189abad4a3"
+  },
+  {
+   "path": "om-emu/emu/test/test_camfe.mjs",
+   "bytes": 7436,
+   "sha256": "119b8491617817f8b17adf81c82d79e8955c0982e9d28cbec9e57fdd8e1e9ba5"
+  },
+  {
+   "path": "om-emu/emu/test/test_cardfs.mjs",
+   "bytes": 39382,
+   "sha256": "3ad66e97e04da0cd8bae0af9a9b6bd26b029bb7ca0933632b93f7be54ddda036"
+  },
+  {
+   "path": "om-emu/emu/test/test_cdial.mjs",
+   "bytes": 14661,
+   "sha256": "f953e725c927919d9b85b5a0fcff55a2094d7066bcdbac78986e4e585b8f5d41"
+  },
+  {
+   "path": "om-emu/emu/test/test_checks.mjs",
+   "bytes": 26322,
+   "sha256": "8210d58391461c210dfaad4eb4355de641a2de71d30cb03fe2143397a737074b"
+  },
+  {
+   "path": "om-emu/emu/test/test_cli.mjs",
+   "bytes": 16669,
+   "sha256": "44b0eec4557e83a30a99fe5337d1b831d100b89c0087219f32e01cea16f70738"
+  },
+  {
+   "path": "om-emu/emu/test/test_core.mjs",
+   "bytes": 9414,
+   "sha256": "f6ee6a5f2cffef42663c410e8973f8cacff293c1949080386ca2f20e3d749b68"
+  },
+  {
+   "path": "om-emu/emu/test/test_cpu2.mjs",
+   "bytes": 21219,
+   "sha256": "f0ce7473691d64085a5cd3be4972439395a089647944dc269a9fb46d3df99ab5"
+  },
+  {
+   "path": "om-emu/emu/test/test_debug.mjs",
+   "bytes": 42114,
+   "sha256": "72b5486d0e300fdfe85ecbfe27b95b976105216d290fbb2a3cb6263f03e29907"
+  },
+  {
+   "path": "om-emu/emu/test/test_dev.mjs",
+   "bytes": 30676,
+   "sha256": "279ce10d109a8bb289ca9a949a023072811c462d8fadfb7441de28b622e754ad"
+  },
+  {
+   "path": "om-emu/emu/test/test_dispq.mjs",
+   "bytes": 12384,
+   "sha256": "6bbb5ba6788025e460ac81bb7ac9f45bb3ff520fdbf0a3cab2553deb88da66ef"
+  },
+  {
+   "path": "om-emu/emu/test/test_ems1.mjs",
+   "bytes": 6199,
+   "sha256": "3874d52a3ee1be9794fef51585760b38ff99a3b66360b87844558505498f61d6"
+  },
+  {
+   "path": "om-emu/emu/test/test_erase.mjs",
+   "bytes": 22733,
+   "sha256": "b01542de58e0a67ea6227663cbf26610b9a7a5335aeff7604822c0531d6a96d1"
+  },
+  {
+   "path": "om-emu/emu/test/test_expcb.mjs",
+   "bytes": 43564,
+   "sha256": "60ec58cce1fceba180a5aac525bb049f66de14ecb6590394bad653fe0cdf784a"
+  },
+  {
+   "path": "om-emu/emu/test/test_expose.mjs",
+   "bytes": 3589,
+   "sha256": "dcf9780f2490874c53659e2c36bfd38ed41cfb7593cf068c250a829e34698266"
+  },
+  {
+   "path": "om-emu/emu/test/test_facts.mjs",
+   "bytes": 143673,
+   "sha256": "8c05d332374baa498a101a97e5bf9331bdac6de23f016d136f97ce7f8df6a63c"
+  },
+  {
+   "path": "om-emu/emu/test/test_fnkeys.mjs",
+   "bytes": 3790,
+   "sha256": "35e5e68599259c6d3b1d83f6f87e1c313613ec9d98c9b82115c77f7387be64f7"
+  },
+  {
+   "path": "om-emu/emu/test/test_fnlever.mjs",
+   "bytes": 18910,
+   "sha256": "f09696f15491fc27957fd5498bdc6a0aed9e3bf9bf57a964449e0652dc8140f4"
+  },
+  {
+   "path": "om-emu/emu/test/test_fwmap.mjs",
+   "bytes": 12211,
+   "sha256": "40ceafa685427e9b8c508fcb4d8a5232d577534388b11fc154f5a3a4b581aca7"
+  },
+  {
+   "path": "om-emu/emu/test/test_hdmi.mjs",
+   "bytes": 21243,
+   "sha256": "3fd44fccd80db6553e65b4010d968aa02d827dcb4535892509b9e8621cd15baa"
+  },
+  {
+   "path": "om-emu/emu/test/test_hist.mjs",
+   "bytes": 29903,
+   "sha256": "4ee85a1113cbb7bd5b7629dcec6a5a25aa3cd863e883e641d5ebde3cc858e2d5"
+  },
+  {
+   "path": "om-emu/emu/test/test_host.mjs",
+   "bytes": 30708,
+   "sha256": "f5e0b2ac4876039d2350b4309b9670ea8c89f32c6d668dfada6f5006c3190df5"
+  },
+  {
+   "path": "om-emu/emu/test/test_imgpipe.mjs",
+   "bytes": 22920,
+   "sha256": "00b9666e7b580138a4291900a2c6c5c103ddd028625d31b2dbe891a05b289b75"
+  },
+  {
+   "path": "om-emu/emu/test/test_imgpro.mjs",
+   "bytes": 9781,
+   "sha256": "fed74e607bb75915e8f58a6d766ce46ddf180a20c4fcf001bb2e00e2a73bfcc7"
+  },
+  {
+   "path": "om-emu/emu/test/test_infra.mjs",
+   "bytes": 10602,
+   "sha256": "429c5ecd50ff43260896f98f2aa0c8cb7799b163aae3c6b262d306c94bb93778"
+  },
+  {
+   "path": "om-emu/emu/test/test_irq.mjs",
+   "bytes": 6368,
+   "sha256": "92ea4b12c08c0e0191c57caae55eab6a451643d473021e0b3d8132c06855bf45"
+  },
+  {
+   "path": "om-emu/emu/test/test_lab.mjs",
+   "bytes": 10967,
+   "sha256": "c4b938e3bfce3fdeac0da0fb214545aae3cad40320ff7f4e6aef3cd8a51eafa4"
+  },
+  {
+   "path": "om-emu/emu/test/test_lens.mjs",
+   "bytes": 19063,
+   "sha256": "e0f3412c842baf065f457003d3f6bbc5b0a007718926451f469b6ce269a8da11"
+  },
+  {
+   "path": "om-emu/emu/test/test_live.mjs",
+   "bytes": 26859,
+   "sha256": "6c028201dc95e6967f775e68cfdfa04ab0798895706c52ff613cffc106631722"
+  },
+  {
+   "path": "om-emu/emu/test/test_lookhooks.mjs",
+   "bytes": 31107,
+   "sha256": "60e143f84d687a91b6f379a0ea0462052a08334de7d01ae144436af675d1517e"
+  },
+  {
+   "path": "om-emu/emu/test/test_looks.mjs",
+   "bytes": 18119,
+   "sha256": "672545765b9ccc08690b577005c5dfc35a21e2b68a62a1eb168fae18f60e599e"
+  },
+  {
+   "path": "om-emu/emu/test/test_m4.mjs",
+   "bytes": 33075,
+   "sha256": "e6a99b6fec82b6b5b6549b4a84809ed3a5a497e9f758cf4de2962e6a30859600"
+  },
+  {
+   "path": "om-emu/emu/test/test_mdet.mjs",
+   "bytes": 44274,
+   "sha256": "05644e01acb3155949d4e6893a504172ab4751152c5ef8e38ec3938a21836252"
+  },
+  {
+   "path": "om-emu/emu/test/test_modpost.mjs",
+   "bytes": 19452,
+   "sha256": "74334926d9b7ee1f72d9980646b72650d8768363f2ebc458eec9887a5626cbd1"
+  },
+  {
+   "path": "om-emu/emu/test/test_nocard.mjs",
+   "bytes": 13825,
+   "sha256": "f99c59036e6c3699b43b5f18789bccb49a3cb6b5935c803f40c71afbf7e2da0d"
+  },
+  {
+   "path": "om-emu/emu/test/test_nvram.mjs",
+   "bytes": 25100,
+   "sha256": "5e414953127026d2e5a1cb32fb3189109efab07165b66bc573e3d4eb187da20d"
+  },
+  {
+   "path": "om-emu/emu/test/test_osdwrap.mjs",
+   "bytes": 12898,
+   "sha256": "9e35459bb8ca6220147132e0c31f1aa1bb9ea5d00c31a895791e9df516a4853a"
+  },
+  {
+   "path": "om-emu/emu/test/test_patch.mjs",
+   "bytes": 63125,
+   "sha256": "35c5af8c6e80b97f27295647b9fd0121607b6a084d48bc487e0a2fd150eaccf9"
+  },
+  {
+   "path": "om-emu/emu/test/test_pdt.mjs",
+   "bytes": 5945,
+   "sha256": "ad7eef4397f134f404eb171d9be5d9fe58920df93b06f20ca2051a65e1b8efbf"
+  },
+  {
+   "path": "om-emu/emu/test/test_playinfo.mjs",
+   "bytes": 14860,
+   "sha256": "e0600df2c988e9fab968377f624a7754db5cb837591b35717c8863b89ec169c7"
+  },
+  {
+   "path": "om-emu/emu/test/test_pubaudit.mjs",
+   "bytes": 12854,
+   "sha256": "ed9be414f7d3533f5390285a34d2b4343f4fb571c3284f49d093c593fd5ca691"
+  },
+  {
+   "path": "om-emu/emu/test/test_pure.mjs",
+   "bytes": 4141,
+   "sha256": "60a7aa6374c9f34da76093547eb2ae9f395747a3980f1fcda81450e27ad79486"
+  },
+  {
+   "path": "om-emu/emu/test/test_regress.mjs",
+   "bytes": 2735,
+   "sha256": "d321a935d409329c10f8e771b2c4b1c7cf730fced5c2503829dd0dc36b9c0ae5"
+  },
+  {
+   "path": "om-emu/emu/test/test_resnand.mjs",
+   "bytes": 28970,
+   "sha256": "230fa627cc3d1f7fdbb76562b782fd192e585c728a428b1828e29eed7d37123c"
+  },
+  {
+   "path": "om-emu/emu/test/test_scene.mjs",
+   "bytes": 7958,
+   "sha256": "a94f8b2c1d4f21bf413466dcc63b2529f16ce841fdad2cd595df47605b2e428b"
+  },
+  {
+   "path": "om-emu/emu/test/test_scpu.mjs",
+   "bytes": 43671,
+   "sha256": "49844902a1b23de615796b700423c23279b1f40327fbbd1c356cfb20d75c4ae4"
+  },
+  {
+   "path": "om-emu/emu/test/test_scpum4.mjs",
+   "bytes": 17328,
+   "sha256": "76b9f1172b935976a98a65b45b36cad11730014a8cd6d69fb6fde19a50cea15a"
+  },
+  {
+   "path": "om-emu/emu/test/test_sections.mjs",
+   "bytes": 25113,
+   "sha256": "3dd642f1bdcc74f2aa1e53a8cfb43a37fc02d25dde1d3d356be947db0ee499c9"
+  },
+  {
+   "path": "om-emu/emu/test/test_session.mjs",
+   "bytes": 34373,
+   "sha256": "f6a4b3b4fb8e9b563b03d740176360c9cdc0f98f6046d1335c33e3eef993f37d"
+  },
+  {
+   "path": "om-emu/emu/test/test_sio.mjs",
+   "bytes": 4180,
+   "sha256": "6196b5db64f944549d0c6748ad735981c0160ffdc06a45a7fabdab478ca157f0"
+  },
+  {
+   "path": "om-emu/emu/test/test_site.mjs",
+   "bytes": 7458,
+   "sha256": "73484cea474c356d2c472811c0780b25c6ff56505102f530c60ad464fcffacd7"
+  },
+  {
+   "path": "om-emu/emu/test/test_smswitch.mjs",
+   "bytes": 10550,
+   "sha256": "43bc3f7885421fa353765ea16aeb3db90bc5218a15a8e6d3afb39c278a6ca4c5"
+  },
+  {
+   "path": "om-emu/emu/test/test_stillsetup.mjs",
+   "bytes": 11573,
+   "sha256": "dbb230e22011a7affa4638ecb6e4f0523d74fcb91054cfe70c95d8a61a58ac96"
+  },
+  {
+   "path": "om-emu/emu/test/test_stm32l4.mjs",
+   "bytes": 46372,
+   "sha256": "068376f20b1e28cb34dcdc40cba9dda15960a3b726a48585ec65a4b3125d6f34"
+  },
+  {
+   "path": "om-emu/emu/test/test_storage.mjs",
+   "bytes": 142701,
+   "sha256": "9d8ddee372087a2867db47f58eb24d1a69bba10ce19f10031d6c1329317be6ff"
+  },
+  {
+   "path": "om-emu/emu/test/test_subject.mjs",
+   "bytes": 28221,
+   "sha256": "d5265a048096ebc888d0d1309af4ba16f000256dd8e63eec413f3f9fc0ed8ce7"
+  },
+  {
+   "path": "om-emu/emu/test/test_take.mjs",
+   "bytes": 13263,
+   "sha256": "c7e32e25e11171d698d8daf59fbd560a2680c8a7342788d8fead949cb13cfc33"
+  },
+  {
+   "path": "om-emu/emu/test/test_take_ready.mjs",
+   "bytes": 37804,
+   "sha256": "dc513b9e25baf837c55cafa9fac64cffb7032c16b4e61c14611b2346416f8fea"
+  },
+  {
+   "path": "om-emu/emu/test/test_take_release.mjs",
+   "bytes": 33432,
+   "sha256": "387a1a5619583a44f0b0798419433accd734022f50d14d25f4a3b404566f5921"
+  },
+  {
+   "path": "om-emu/emu/test/test_tools.mjs",
+   "bytes": 25750,
+   "sha256": "86d996c6c3d320e791b1ce4703fb8815ce8c9470bf7600ce3a2e699b88d37f4f"
+  },
+  {
+   "path": "om-emu/emu/test/test_touch.mjs",
+   "bytes": 14187,
+   "sha256": "f1fdf6108591bbe8b6adcdad801c37c08449f1677c6e54e68fc968e3fc001925"
+  },
+  {
+   "path": "om-emu/emu/test/test_trace.mjs",
+   "bytes": 28393,
+   "sha256": "d64d2493a214d07f587c49129eb1667edc32e8f5bfe369477e8d9439d320a93b"
+  },
+  {
+   "path": "om-emu/emu/test/test_unpack.mjs",
+   "bytes": 10976,
+   "sha256": "2f13086e8f8a88bd1ac4f86d9fbdbe6cdd8925a6537dec76940e8232ab9cdfc3"
+  },
+  {
+   "path": "om-emu/emu/test/test_ustart.mjs",
+   "bytes": 13863,
+   "sha256": "d4a000f791eec5e6082caab0cd21956569366ca28ba35ab27a73c26408fab478"
+  },
+  {
+   "path": "om-emu/emu/test/test_vectors.mjs",
+   "bytes": 3451,
+   "sha256": "35ff0f1a91e4c9766d824fc2b20b8057ba189dfb5b83248f1bb3f9a8d1c4600b"
+  },
+  {
+   "path": "om-emu/emu/test/test_vsc3.mjs",
+   "bytes": 19007,
+   "sha256": "80be0bfa48b2dec2c7880409aa3146cdd5317dab736870c4bfc54d0d9f812d78"
+  },
+  {
+   "path": "om-emu/emu/test/test_web.mjs",
+   "bytes": 74361,
+   "sha256": "e64eb51eb623fbe83bc8d4269b9be2ef550cfec6abb6a0ce23938ad73003d224"
+  },
+  {
+   "path": "om-emu/emu/test/workershim.mjs",
+   "bytes": 1312,
+   "sha256": "66527092c322c75fc367cf61418f220741061f0468a7602aaa31039207b10aa9"
+  },
+  {
+   "path": "om-emu/emu/web/args.mjs",
+   "bytes": 1257,
+   "sha256": "84523037501799deb06eb933810eb8077c09433f9d25b4c5c895c24daa3749fc"
+  },
+  {
+   "path": "om-emu/emu/web/cardfiles.mjs",
+   "bytes": 7304,
+   "sha256": "51ff3867de095b35caff46e43487d00caa8820430847ed8938ceac5987368dd4"
+  },
+  {
+   "path": "om-emu/emu/web/driver.mjs",
+   "bytes": 4777,
+   "sha256": "c7db6825c25675057ba6f7d549e23b1221b206719cd5894bcb62e0c311859637"
+  },
+  {
+   "path": "om-emu/emu/web/frame.mjs",
+   "bytes": 1171,
+   "sha256": "e3a4540b413e9f2e893eec039b1133175affd39f72c6a7ac262f6de69059b444"
+  },
+  {
+   "path": "om-emu/emu/web/gate.html",
+   "bytes": 1497,
+   "sha256": "6e63e087b42b5ce4ecfa15e276775d7654bc62444f780e1f15bc5dab3d441b5e"
+  },
+  {
+   "path": "om-emu/emu/web/index.html",
+   "bytes": 92884,
+   "sha256": "499744de6e3ee4d08d91cfcafe0694663edacf1671d6c0be152512c835197ed4"
+  },
+  {
+   "path": "om-emu/emu/web/nvram.mjs",
+   "bytes": 2023,
+   "sha256": "471dd8ab5c7b07ce056b7c9175e9697c02f5464094feae53e5d96f7cce39b51c"
+  },
+  {
+   "path": "om-emu/emu/web/opfs.mjs",
+   "bytes": 9426,
+   "sha256": "b61c571adc0675e0a8c26b122f6449a664f4aa224f04d16cfeaa780e1164593d"
+  },
+  {
+   "path": "om-emu/emu/web/page.mjs",
+   "bytes": 8628,
+   "sha256": "f2cb3bcedb269b885d755ebdf95334b1fd28d4bd6ca8df6fd9405fd17cdb6323"
+  },
+  {
+   "path": "om-emu/emu/web/play.html",
+   "bytes": 78876,
+   "sha256": "54507f40e25e23d465c1e5e27539b3f79386e99e8ef12a099b74908d22140272"
+  },
+  {
+   "path": "om-emu/emu/web/runner.mjs",
+   "bytes": 5724,
+   "sha256": "2cb6673c312ce5fe5372d17e241823604dd68fbdc11f402364d0f21d48854e7b"
+  },
+  {
+   "path": "om-emu/emu/web/worker.mjs",
+   "bytes": 17120,
+   "sha256": "1e645c80d37d624ba8989771d7fa6ff54f6c4c0cbb620e77f268a8b773eee85b"
+  },
+  {
+   "path": "om-emu/tools/a53-oracle/README.md",
+   "bytes": 18041,
+   "sha256": "92a9b3f86eebc0f056597b48cc25e849e2023bc9a1956e088c0ea4cc2be02a21"
+  },
+  {
+   "path": "om-emu/tools/a53-oracle/build-qemu.sh",
+   "bytes": 1766,
+   "sha256": "89889cbe5768f325be1913f4e6e1fcc2dcd09a015b86f497b995c6a04f995826"
+  },
+  {
+   "path": "om-emu/tools/a53-oracle/dis-daemons.sh",
+   "bytes": 1049,
+   "sha256": "a288d79e65afe80e9b81570fc2374d3ccb202ac290bb5cb4f7d4a9e4667017e3"
+  },
+  {
+   "path": "om-emu/tools/a53-oracle/dmesg.mjs",
+   "bytes": 1368,
+   "sha256": "bb1ae59b9ba9d76e483286ff0b7f8091513fd0ebf9a73c0cb0ed29263405355c"
+  },
+  {
+   "path": "om-emu/tools/a53-oracle/iscpeer.mjs",
+   "bytes": 34736,
+   "sha256": "9e7566cc9e57edb2053747a7a747cabeb4893fbbfac82c554d2420786dbd1ece"
+  },
+  {
+   "path": "om-emu/tools/a53-oracle/iscports.mjs",
+   "bytes": 1093,
+   "sha256": "e67dd3914ec9d515df0ca7fbf527cfb82c31d0b31a811f703eb3feb1b5804044"
+  },
+  {
+   "path": "om-emu/tools/a53-oracle/mon.py",
+   "bytes": 461,
+   "sha256": "1342f790a7186f477b1e78457f627391ca0fde870742433be353d496137e3eea"
+  },
+  {
+   "path": "om-emu/tools/a53-oracle/om-isc-qemu.patch",
+   "bytes": 3332,
+   "sha256": "bf2286749e5e96b2817cd34e9b673e6097e68650df513382cba35fb8f0a155a7"
+  },
+  {
+   "path": "om-emu/tools/a53-oracle/om-isc.c",
+   "bytes": 12931,
+   "sha256": "0800ab316dff5cdf45179c78b738ddf12234a6a0b937aaa70a72cbe079368c13"
+  },
+  {
+   "path": "om-emu/tools/a53-oracle/qdts.mjs",
+   "bytes": 1432,
+   "sha256": "be92a3ec38d1326ea4597bd0e7d700d46f6971be0b5549b9aad515eb8f2cf6cd"
+  },
+  {
+   "path": "om-emu/tools/a53-oracle/qrun.sh",
+   "bytes": 1344,
+   "sha256": "920f8870554a3bfffa63108c3a05d1c124ca68178ed138d38b77832db77bc352"
+  },
+  {
+   "path": "om-emu/tools/a53-oracle/run-isc.sh",
+   "bytes": 2471,
+   "sha256": "7bbe247385418219426bfc2b9f4b5cb5e1651141ed1a7e603eb5e85454870931"
+  },
+  {
+   "path": "om-emu/tools/a53-oracle/uartsh.mjs",
+   "bytes": 1110,
+   "sha256": "efc5e1b6f443675b4edc6d191c9b20c478b9eaa4d1bcc16db2e8455a26127d86"
+  },
+  {
+   "path": "om-emu/tools/m4-oracle/README.md",
+   "bytes": 3956,
+   "sha256": "1e351a401236103bae9f5125f61a03f32a23bc8376bb7d7817e548798a6f7aab"
+  },
+  {
+   "path": "om-emu/tools/m4-oracle/gen.mjs",
+   "bytes": 7189,
+   "sha256": "a89e72f99c68be83603bf2e8da72df9f47fea8344b82c327d481886bb78533e2"
+  },
+  {
+   "path": "om-emu/tools/m4-oracle/objcheck.mjs",
+   "bytes": 4975,
+   "sha256": "78a549402f509535baf12a6590fb8307299428bd57a9eb1a1e9dbb672ba24ad5"
+  },
+  {
+   "path": "om-emu/tools/m4-oracle/oracle.mjs",
+   "bytes": 9901,
+   "sha256": "64ceebba799fa3b2d1bde9185e364bcb1d908a6022aa4f1ae04b45eca9c59fb9"
+  },
+  {
+   "path": "om-emu/tools/m4-oracle/rsp.mjs",
+   "bytes": 5332,
+   "sha256": "0193debc1a37bee132001e8f4783a1eb1c6713c454377cb62402808587d3aa48"
+  },
+  {
+   "path": "om-emu/tools/mn10300dis.sh",
+   "bytes": 482,
+   "sha256": "3b0f409b0a84ec0425264eaa00aefd31b85f65e487145621928213fbb0f70a1d"
+  },
+  {
+   "path": "om-emu/tools/olyfw.py",
+   "bytes": 4189,
+   "sha256": "7ae9d7f53fb19632c4eaf92018e83e9d0a988f31c8eb8bb92fda23881280bec6"
+  },
+  {
+   "path": "om-emu/tools/om1_nd128.py",
+   "bytes": 14175,
+   "sha256": "9b810abe7294aa94e331e718f85f4930105cb2547a96fdc86c24afe0e4faec01"
+  },
+  {
+   "path": "om-emu/tools/omfw_download.sh",
+   "bytes": 1250,
+   "sha256": "95c208b314c31012f43715e4f7bb604662e4701969cab39ea659950402349cb3"
+  },
+  {
+   "path": "om-emu/unpacked/E147/OLY_E_147_1100_0000_0000.BIN.blk00000000.OE.0100.bin",
+   "bytes": 33554368,
+   "sha256": "5e8d376e9111a44ac0352f26030d7c1b17026d42c45f3600cfa02a0e8c5b7d59"
+  },
+  {
+   "path": "om-emu/unpacked/E147/OLY_E_147_1100_0000_0000.BIN.blk02000000.OE.0101.bin",
+   "bytes": 60817344,
+   "sha256": "6d2bef74b4b2fa089f271529482f96505a170b91e79ab9b1a13f3ce8f7918226"
+  },
+  {
+   "path": "ref/analysis/button-af/readiness/t3m-afon-editor-state-leak/scripts/accept_lib_v4.mjs",
+   "bytes": 7417,
+   "sha256": "9bb612f87ef028dafa5885b1b845e892f27694b7fdcd0a48e4fcb67b3806755d",
+   "why": "real-only: titleBand (real_v1)"
+  },
+  {
+   "path": "ref/analysis/button-af/readiness/t6-afon-target-size-position/out/overlay-changed-bytes.csv",
+   "bytes": 267928,
+   "sha256": "99b60124f27a7d3d926108574897d1d50bbb297c7b2ec32b54c7010b04091224",
+   "why": "real-only: T6 overlay (display sessions)"
+  },
+  {
+   "path": "ref/tasks/T3a-afon-zone-row/run-20261118-053855/work/out/overlay-changed-bytes.csv",
+   "bytes": 8107,
+   "sha256": "ff14ccafef13d99eae88c5e742ddb304598c31bb01c1257fe71f922c4b3536d2",
+   "why": "real-only: T3a overlay hashed by session_v1 helper record"
+  },
+  {
+   "path": "ref/tasks/T7-orientation-producer/run-20261119-072701/work/scripts/pose.mjs",
+   "bytes": 5560,
+   "sha256": "09cb38618024a749ba4b15ee3be4e5140257d6c5145347567887196a81665358",
+   "why": "real-only: attachPose (real_v1)"
+  },
+  {
+   "path": "ref/tasks/T8-afon-integrated-acceptance/run-20261119-132229/work/out/overlay-combined-t8.csv",
+   "bytes": 267706,
+   "sha256": "3601999e17086a23f29053d90d84ab56676b7f3cb450bd9fa9e3f1e89e98d63e",
+   "why": "real-only: T8 combined overlay (T8d and zone sessions)"
+  },
+  {
+   "path": "ref/tasks/T8b-afon-integrated-acceptance-generated/run-20261119-153249/work/scripts/lib_map_c1.mjs",
+   "bytes": 2539,
+   "sha256": "60d5ed07990cf74526380d566409c297877c9e18c2fc8b8a0ffc0fda030200e7",
+   "why": "capture read (identity)"
+  },
+  {
+   "path": "ref/tasks/T9d-afon-display-size-inputs/run-20261119-202459/work/out/ref-k1e-a.json",
+   "bytes": 984,
+   "sha256": "c6af69e99346738f804d392b0994fee7aecceff790e676e91ac95c09d2a0860c",
+   "why": "real-only: T9d display reference A (frame, idle period, bound)"
+  },
+  {
+   "path": "ref/tasks/T9d-afon-display-size-inputs/run-20261119-202459/work/out/ref-k1e-b.json",
+   "bytes": 976,
+   "sha256": "b915b703e6e25935536e884c0ccf41db250b6b3cfc72be25989a17058778f480",
+   "why": "real-only: T9d display reference B"
+  },
+  {
+   "path": "ref/tasks/T9d-afon-display-size-inputs/run-20261119-202459/work/out/ref-k2.json",
+   "bytes": 4060,
+   "sha256": "791de47f0c0546220b8a6b4c9b2c1e3486a2c6a18f058195072a84331892746b",
+   "why": "real-only: T9d K2 display reference edges"
+  },
+  {
+   "path": "ref/tasks/T9d-afon-display-size-inputs/run-20261119-202459/work/scripts/lib_valid_t9d.mjs",
+   "bytes": 10181,
+   "sha256": "2013f1d2841b7b241567f25ccaa059bc714e1622554e15c12f17752142f3d81b",
+   "why": "capture read (identity)"
+  },
+  {
+   "path": "ref/tooling/node-v26.12.1-win-x64/node.exe",
+   "bytes": 105319752,
+   "sha256": "1c63f1417e2e26d83ca9a9ec1d548524ab1305bc7209d90ebca56257ff0d84ed",
+   "why": "pinned runtime (launcher compares process.execPath and its SHA-256)"
+  },
+  {
+   "path": "work/harness/afon_hooks_v7.mjs",
+   "bytes": 24636,
+   "sha256": "488e6973767a246b24130173edf16fa4082dafb2ce00dcf8622150db8dc1fcd0"
+  },
+  {
+   "path": "work/harness/check_table_v3.mjs",
+   "bytes": 7778,
+   "sha256": "37255a2b42c52c2f4cc99782d0e1cf186e0d9cd84735224f76d0be1b6c3df1d9"
+  },
+  {
+   "path": "work/harness/common_v1.mjs",
+   "bytes": 2685,
+   "sha256": "327df4f05eebaa6142bc508627359a74b1ce320379c1fdad3f1d3466f00cd529"
+  },
+  {
+   "path": "work/harness/exec_v1.mjs",
+   "bytes": 11054,
+   "sha256": "8aed0b0030344e69b6d9b523e12da656683a33354b1eb0f9f1a4b43be2e683b2"
+  },
+  {
+   "path": "work/harness/exitcheck_v1.mjs",
+   "bytes": 4810,
+   "sha256": "3056d02b93b41c43900071649b6ea57e1096688ba3e1485387b95b177e33c5a2"
+  },
+  {
+   "path": "work/harness/expect_v1.mjs",
+   "bytes": 2443,
+   "sha256": "3a85eaef31d9f8e0d040d0c0cdc48fd008bb02d7fa1ddecb8c1a5526ba818f2f"
+  },
+  {
+   "path": "work/harness/fake_v1.mjs",
+   "bytes": 11416,
+   "sha256": "7e00070e3b6ecff1cf733df85467bca972abc31bcb32b3370bebe11c3bae5712"
+  },
+  {
+   "path": "work/harness/fixture_t11_v1.mjs",
+   "bytes": 3272,
+   "sha256": "2058762f6c7c155a152588bdb4b106dab665198bf2e13f8af20e0ccf94c7ea8e"
+  },
+  {
+   "path": "work/harness/freeze_v1.mjs",
+   "bytes": 7642,
+   "sha256": "d6ed2d0ef527bc55d5ecc031b73f0c8d43b4d61cfea91ec31b63f3cd15c24a29"
+  },
+  {
+   "path": "work/harness/gate_v1.mjs",
+   "bytes": 3942,
+   "sha256": "53a5cbbe65f15e687eaaca5878a7a0ff71aee84842f14e0cc165e4ef859bf0b2"
+  },
+  {
+   "path": "work/harness/inventory_v1.mjs",
+   "bytes": 8887,
+   "sha256": "d9ce1e41a43c5c8789689bee1c6340a73ef5e328eefcffd930466d1ebaf7c0e8"
+  },
+  {
+   "path": "work/harness/launch_v1.mjs",
+   "bytes": 13115,
+   "sha256": "19ba5e49b33ca496ef769253e32ef584213d15e48e36509fb28b2faee67e1d5e"
+  },
+  {
+   "path": "work/harness/make_freeze_v1.mjs",
+   "bytes": 6631,
+   "sha256": "08b9f56e8fcac3eccd42d53970073a8fcf1c5f3878a79de43ce9adb07603d70e"
+  },
+  {
+   "path": "work/harness/plan_v1.mjs",
+   "bytes": 17780,
+   "sha256": "dd7ec94607f097883ae44e4dcbc6c4c74cca49308bb8b493af7b51b3ff4d9a7e"
+  },
+  {
+   "path": "work/harness/predicates_v3.mjs",
+   "bytes": 1605,
+   "sha256": "c6a11a0d03a8a355beb021cd2578d9be304498695c118250a1464f22de8a046f"
+  },
+  {
+   "path": "work/harness/probe_v1.mjs",
+   "bytes": 3478,
+   "sha256": "5948b03441f343888c54938c7af084ae48e1e75a03df2c495ae70d7c6abdda87"
+  },
+  {
+   "path": "work/harness/real_v1.mjs",
+   "bytes": 10009,
+   "sha256": "13ed4f23a99b596d30b6c6c96e6e0756d56e38cea7db060d8edf4fbf3a320b1c"
+  },
+  {
+   "path": "work/harness/refresh_v4.mjs",
+   "bytes": 4294,
+   "sha256": "01e4714d9f3067f1972e113ffc693bdb8a5dc847800b80604eed827bc1e75f48"
+  },
+  {
+   "path": "work/harness/relations_v1.mjs",
+   "bytes": 17375,
+   "sha256": "b08f64079b7c603e4db3e7c1e68f50ba76c8894cb44e4ebfbd6d7ae11994015f"
+  },
+  {
+   "path": "work/harness/run_v1.mjs",
+   "bytes": 7397,
+   "sha256": "320390a6d4e301f2a3c5da665f608e17f14ee68f22d2bd2d9e20250cda0a614f"
+  },
+  {
+   "path": "work/harness/seal_v1.mjs",
+   "bytes": 1754,
+   "sha256": "2d51beb9fef3b7c78ced872a4212a56cf990af44c995443caf525f633de66d8e"
+  },
+  {
+   "path": "work/harness/session_v1.diff",
+   "bytes": 8434,
+   "sha256": "d286bc1db5ff74bb9b694f4f76a9900a2f99a78441c2ea0c784d1184a96bbcc8"
+  },
+  {
+   "path": "work/harness/session_v1.mjs",
+   "bytes": 25887,
+   "sha256": "6aaa9e4300bc4f343c9269d6a7b47fc4c48c957030c6975bc487717ed88314dd"
+  },
+  {
+   "path": "work/harness/state_v1.mjs",
+   "bytes": 3647,
+   "sha256": "8b5752adcf905e53af86d92e640135e3e9a83ed50bf3743f9e74a6f1c3da0677"
+  },
+  {
+   "path": "work/harness/table_v2.mjs",
+   "bytes": 17566,
+   "sha256": "1dbdfa871ec90c27010d5361c188b7d63db0d24c700ac57c74942dbce1bb5f20"
+  },
+  {
+   "path": "work/harness/test_v1.mjs",
+   "bytes": 35943,
+   "sha256": "cb4bf5c965a6928f9c0199fd96f8c7ade4a2bb7e67ca2ade249cad4bf441bc85"
+  }
+ ]
+}

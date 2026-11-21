@@ -1,0 +1,153 @@
+--- ref/analysis/button-af/readiness/t5-afon-button-handoff/scripts/zone_session_k1.mjs
++++ work/harness/session_v2.mjs
+@@ -4,10 +4,14 @@
+ // help 0x61576520). opts.help adds the ten-record help list. opts.rowLabel
+ // restores kind 4 and label 0x0DD2. opts.page28 is the T3c reference construction.
+ // Copied from T3j zone_session_j1.mjs. Edited before its first run. Do not edit after it runs.
++// T13 session_v2.mjs (v2: NVRAM saves keep a copy of their payload): derived from T5 zone_session_k1.mjs. The retained diff (session_v1.diff) is limited to: outputs
++// under opts.outDir (per tag), in-memory NVRAM (no NVRAM file is read or written), bring-up split into five functions,
++// and the overlay CSV written under the tag. Hooks, help records, face hook, 0x120b override and overlay application
++// are unchanged.
+ import assert from 'node:assert/strict';
+ import { createHash } from 'node:crypto';
+ import { closeSync, mkdirSync, openSync, readFileSync, writeFileSync, writeSync } from 'node:fs';
+-import { resolve } from 'node:path';
++import { join, resolve } from 'node:path';
+ import { pathToFileURL, fileURLToPath } from 'node:url';
+ 
+ const UI = 0x3d6f;
+@@ -67,8 +71,8 @@
+ }
+ 
+ export async function runZone(opts) {
+-  const { checkout, outPath, tag, drive } = opts;
+-  assert(checkout && outPath && tag && drive);
++  const { checkout, outPath, tag, drive, outDir } = opts;
++  assert(checkout && outPath && tag && drive && outDir);
+   const candidate = !!opts.candidate;
+   const help = !!opts.help;
+   const rowLabel = !!opts.rowLabel;
+@@ -83,7 +87,7 @@
+   const { MenuWalk } = await use('src/lab/menuwalk.mjs');
+   const { write_png } = await use('checks/lib/png.mjs');
+   const { words_to_rgb } = await use('src/lab/display.mjs');
+-  const { fileNvram } = await use('host/nvram.mjs');
++  const { hostNow } = await use('src/lab/nvramdoc.mjs');
+   const { setExecTrace, S } = await use('src/core/cpu.mjs');
+   const { setForceHelper } = await use('src/core/interp.mjs');
+   const GETTER = A(0x503c49ab);
+@@ -94,7 +98,7 @@
+     const row = { hook: role === 'behaviour' ? 'EMULATOR-ONLY' : 'observe', role, tag, ...x };
+     lines.push(JSON.stringify(row));
+     console.log(JSON.stringify(row));
+-    mkdirSync(resolve('work/out'), { recursive: true });
++    mkdirSync(outDir, { recursive: true });
+     writeFileSync(outPath, lines.join('\n') + '\n');
+   };
+   const helperRels = [
+@@ -211,9 +215,9 @@
+       else patches.push({ offset: off, old: [rec.old], neu: [rec.neu], purpose: rec.purpose });
+       csvRows.push([off.toString(16).padStart(8, '0'), (BASE + off).toString(16), rec.old.toString(16).padStart(2, '0'), rec.neu.toString(16).padStart(2, '0'), rec.purpose].join(','));
+     }
+-    csvName = 'work/out/overlay-' + tag + '.csv';
++    csvName = join(outDir, 'overlay-' + tag + '.csv');
+     writeFileSync(resolve(csvName), csvRows.join('\n') + '\n');
+-    if (opts.canonical) writeFileSync(resolve('work/out/overlay-changed-bytes.csv'), csvRows.join('\n') + '\n');
++    if (opts.canonical) writeFileSync(join(outDir, 'overlay-changed-bytes.csv'), csvRows.join('\n') + '\n');
+     fw = patchedFirmware(patches.map((x, n) => ({
+       block: 'main', offset: x.offset, old: Uint8Array.from(x.old), new: Uint8Array.from(x.neu), source: 'work/scripts/zone_session_i1.mjs', n,
+     })));
+@@ -244,8 +248,17 @@
+     label: 'EMULATOR-ONLY harness override. UIIN_ENTRIES.set installs the 0x120b matrix entry. That code is only in UI_IN variant 1; the lab board reads variant 0.',
+     code: '0x120b',
+   });
+-  const nvramPath = opts.nvramPath ? resolve(opts.nvramPath) : resolve('work/out/nvram-' + tag + '.json');
+-  const nv = fileNvram(nvramPath);
++  // In-memory NVRAM: load() is null (a blank camera, as OM_EMU_NVRAM=off); saves are kept in memory and logged.
++  const nvramSaves = [];
++  const nv = {
++    file: null,
++    doc: () => null,
++    load: () => null,
++    saveScpuMemory(m) { nvramSaves.push({ kind: 'scpuMemory', data: structuredClone(m) }); emit('observe', { step: 'nvram-save', kind: 'scpuMemory' }); },
++    save(name, data) { nvramSaves.push({ kind: 'store', name, data: data ? Uint8Array.from(data) : null }); emit('observe', { step: 'nvram-save', kind: 'store', name, bytes: data ? data.length : 0 }); },
++    saveScpu(words) { nvramSaves.push({ kind: 'scpu', data: structuredClone(words) }); emit('observe', { step: 'nvram-save', kind: 'scpu' }); },
++    now: hostNow,
++  };
+   const pl = new Player(
+     { ...PLAYER_PARSER, no_browser: true, idle: 'off', a15: 'on', out: '<out>', no_wait_on_error: true },
+     { ...fw, nand: loadNand(), createHash: fwHash, wallClock: () => performance.now() / 1000, machine: { coverage: { mark() {}, stub() {} } }, nvram: nv, patch: fw.summary, patchRanges: fw.changed, loaded: 'on' },
+@@ -390,7 +403,7 @@
+       const view = screen();
+       let file = null;
+       if (view.frame) {
+-        file = resolve('work/out/' + tag + '-' + name + '.png');
++        file = join(outDir, tag + '-' + name + '.png');
+         write_png(file, view.frame[0], view.frame[1], words_to_rgb(view.frame[2]));
+       }
+       if (opts.fatalShots !== false && (view.error || !view.frame)) {
+@@ -446,28 +459,39 @@
+     const ownBase = opts.ownBase ?? 0xa031ed00;
+     const readTarget = () => Array.from(l.sim.read(0xa33ca384, 10));
+     const readOwn = () => Array.from(l.sim.read(ownBase, 48));
++    // Bring-up split into five functions; each is one gated operation (T13 design_v2 §3). Same calls, same order.
++    const initCall = (address) => ({ address: hex(address), ret: l.call(native(address), null, null, null, 2000000).d0 >>> 0 });
++    const bringUpSteps = {
++      'init-6071181e': () => initCall(0x6071181e),
++      'init-608fe1b0': () => initCall(0x608fe1b0),
++      'init-609df7e4': () => initCall(0x609df7e4),
++      'take-focus-act': () => {
++        const tid = l.sim.u32(0x60042da0) & 0xffff;
++        const entry = native(0x609df84d);
++        if (l.nk.entry(tid) !== entry) throw new Error('TAKE_FOCUS entry ' + hex(l.nk.entry(tid)));
++        if (l.nk.state(tid) !== 0x10) throw new Error('TAKE_FOCUS state ' + l.nk.state(tid));
++        if (l.sim.read(0xa33f3640, 1)[0] !== 1) throw new Error('TAKE_FOCUS flag');
++        l.lt.allow.add(entry);
++        const act = l.nk.svc('act_tsk', { d0: tid })[0];
++        if (act !== 0) throw new Error('act_tsk ' + act);
++        return { tid };
++      },
++      'take-focus-settle': () => {
++        s.settle('E147 native TAKE_FOCUS start');
++        const tid = l.sim.u32(0x60042da0) & 0xffff;
++        return { tid, state: l.nk.state(tid), queue: l.sim.u32(0x60043230) & 0xffff };
++      },
++    };
+     const bringUp = () => {
+-      const inits = [];
+-      for (const address of [0x6071181e, 0x608fe1b0, 0x609df7e4]) {
+-        const r = l.call(native(address), null, null, null, 2000000);
+-        inits.push({ address: hex(address), ret: r.d0 >>> 0 });
+-      }
+-      const tid = l.sim.u32(0x60042da0) & 0xffff;
+-      const entry = native(0x609df84d);
+-      if (l.nk.entry(tid) !== entry) throw new Error('TAKE_FOCUS entry ' + hex(l.nk.entry(tid)));
+-      if (l.nk.state(tid) !== 0x10) throw new Error('TAKE_FOCUS state ' + l.nk.state(tid));
+-      if (l.sim.read(0xa33f3640, 1)[0] !== 1) throw new Error('TAKE_FOCUS flag');
+-      l.lt.allow.add(entry);
+-      const act = l.nk.svc('act_tsk', { d0: tid })[0];
+-      if (act !== 0) throw new Error('act_tsk ' + act);
+-      s.settle('E147 native TAKE_FOCUS start');
+-      return { tid, state: l.nk.state(tid), queue: l.sim.u32(0x60043230) & 0xffff, inits };
++      const inits = ['init-6071181e', 'init-608fe1b0', 'init-609df7e4'].map((name) => bringUpSteps[name]());
++      bringUpSteps['take-focus-act']();
++      return { ...bringUpSteps['take-focus-settle'](), inits };
+     };
+     const ctx = {
+       candidate, help, rowLabel, page28, page28State, tag,
+       press, idle, key, screen, shot, cells, emit, takeFaces, trace, walk,
+       readByte, word, half, writeU32, writeU16, native, hex, l, s,
+-      PROFILE, PROFILE_CACHED, ZONE_VALUES, ownBase, readTarget, readOwn, bringUp,
++      PROFILE, PROFILE_CACHED, ZONE_VALUES, ownBase, readTarget, readOwn, bringUp, bringUpSteps, nvramSaves, outDir,
+     };
+     emit('behaviour', {
+       step: 'explanation',
+@@ -485,7 +509,7 @@
+     return { ok: false, failed };
+   } finally {
+     if (pl.session) pl.close_session();
+-    mkdirSync(resolve('work/out'), { recursive: true });
++    mkdirSync(outDir, { recursive: true });
+     writeFileSync(outPath, lines.join('\n') + (lines.length ? '\n' : ''));
+   }
+ }

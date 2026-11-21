@@ -1,0 +1,4656 @@
+{
+ "task": "T13-afon-harness-opus",
+ "stage": "implementation v3 (minimal corrections after run-20261120-223058-review)",
+ "brief_sha256": "dc4eedbf8393141ddd64675b4944de7b6ee19b6eac7b8d5dc5c9a55cf939d90b",
+ "design_sha256": "290ebf891590ebee6c984f4a328716bce345a56bddabb0209d04a88c0ada3f45",
+ "freeze_sha256": "819876c49fef56ceb996bd03a9d5a589c90d51bae8ce1a2145d1447a520f4e2b",
+ "result_sha256": "b7d0dfc0b181fd4673b5e2ad1f122404e63b863793c47c0e978669d9418e011c",
+ "testedSourcesMatchFinal": true,
+ "testedSourceMismatches": [],
+ "inputs": [
+  {
+   "path": "inputs/00_0100_50000020.decoded.bin",
+   "sha256": "5e8d376e9111a44ac0352f26030d7c1b17026d42c45f3600cfa02a0e8c5b7d59",
+   "use": "freeze"
+  },
+  {
+   "path": "inputs/02_0106_458c0020.decoded.bin",
+   "sha256": "3d9fd4426b45fbe4b715599422af38c6d22392c08543a69f63c28291c5a0b059",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/BLOBS.md",
+   "sha256": "5e29e30f29f10f09e9dd766e9f3b2e5b80bd8b318d6a4ecf2960234a22619daa",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/BLOBS.sha256",
+   "sha256": "edf02311ab65ab2c724a059b4b8b8cc49c715290d2a3c7163f82f1aeb6d92265",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/LICENSE",
+   "sha256": "2614a6cb22af42c59151c1cb44b34b07fe532ce14dab0bf6211a8f1efe79b7b1",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/README.md",
+   "sha256": "b1eae1e7a863f0ae7db43ab4b71820443bcb54420d8138bdd0ce9c002f654a95",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/artifacts/nd128/manifest.json",
+   "sha256": "471d42c847fa35001fb06b8f4dc13a67aad6836531dd7557b804715a8f06f827",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/.gitignore",
+   "sha256": "b4ae59dae259b683fb610921204666663fbe2346ec97baacd64b36ef3bd2f792",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/ARCHITECTURE.md",
+   "sha256": "e597ab7d940a270b8f0d8f3b9e329559dad70535b9de19bac5b6c8cf0f364de5",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/FIDELITY-NOTES.md",
+   "sha256": "4f7a74ad66ff1bfd6034dcea54620bfcbd4ed99a5eef5a4b727889d551dd66d8",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/README.md",
+   "sha256": "ea7d80984f8be78d26836d0b87d6364424959c41532cf6af31d863530f373a4b",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/bin/bench.mjs",
+   "sha256": "845601622a353bad0a5b7f1a795f70537859271f631b54592bab73388b3c0f5e",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/bin/browsergate.mjs",
+   "sha256": "a8a1f6b1214808de402465e393bc952cdbf268296d0bcea099992d397c643529",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/bin/card.mjs",
+   "sha256": "d9480e40a4a5d1e58932036f8d50084923a4b467105242f7d8187189e86ad6fc",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/bin/checks.mjs",
+   "sha256": "e8a69474bccca26a84fee0eb4505d4851451b2faeba6a153ab6cc2c045038661",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/bin/checktrace-runs.mjs",
+   "sha256": "56b6b069a74c75b5c422a6f45abd4f3a74263da4b37358cdc6e911a339f953d9",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/bin/checktrace.mjs",
+   "sha256": "325bbbcd5b236b79482a8456bbd8e4490755e80d122eb60a2829fd6b39635208",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/bin/debug.mjs",
+   "sha256": "88905af430e0f64b733aaaafc65985a6ed6eb45e0d4a0afd7a63e9e79e07e8e5",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/bin/fetch-fw.mjs",
+   "sha256": "8c6baa228a54d1d06ce84ad51c857d581ef2ae773f7f99cfa7cf67dbdb2b4af9",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/bin/fw-survey.mjs",
+   "sha256": "5e3dc53a702ee37793d10cda00b7eb44c2e3cc021f29941aef99e47c72c41991",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/bin/fwmap.mjs",
+   "sha256": "5cfc60cd70b2a1853966430aacbc65812dbe8b7b6a916529d45d3574da34602f",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/bin/golden.mjs",
+   "sha256": "b5baea9a1b2067f33636cfdf5ad4642d0ccabe4e0dd07016a8c4aa2ebbdfce74",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/bin/m4census.mjs",
+   "sha256": "9e437b2c388ff49f93e812902453eeb82615b8b7d4a254f6ce186a91209480d2",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/bin/m4smoke.mjs",
+   "sha256": "b631466a4f2786f851ae670d2b5a6dd9b5a03667df65627b962ece91a52f2ad2",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/bin/modelcheck.mjs",
+   "sha256": "e2e6d8e382f8e4470919a6ceb40bc96698ae56a4a65f79d43dff7966312fe060",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/bin/nav.mjs",
+   "sha256": "16d730e4231ceb0d421f69ee736e150ac6eee6571ed5747c472d6f4247c6a04c",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/bin/play.mjs",
+   "sha256": "8377ba386bbdb05949424e6f615ef947f0fd1a9bf462a40174e9901584400cc0",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/bin/playperf.mjs",
+   "sha256": "67cdab7dd6e295a855c388f25e66662bb09bd7458b8803cadcc6e569aae23a2f",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/bin/port.mjs",
+   "sha256": "0ce99af48e969e1e5dfa46585b8118079cef85959a90ffb650fe9911c93ec798",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/bin/pubaudit.mjs",
+   "sha256": "18d2cea136c61054f6a98887212e1dd7ba4664905418a8ad881df4d1a7f8ad7b",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/bin/run.mjs",
+   "sha256": "0767993181468a47012676c8ccaf45e551806c1c2a4551d1a1fcad265d77eff5",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/bin/scpu.mjs",
+   "sha256": "c0eb025169750bee9827a0d18d86da726fa0cb289d287f49d4da49484829ccee",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/bin/session.mjs",
+   "sha256": "074ceed486f9899ee1eaac54e28363cd641952e2f3ac2daa974a913f4131ba5f",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/bin/site.mjs",
+   "sha256": "cf23840e6b72214d0f96856b2c3a1566ced4002e4576c990e7de906a0f14b223",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/bin/sitegate.mjs",
+   "sha256": "2fad71d4e10c33fa658c33ff18ef652eb505fabe74aa261c25f8cb0a1ecb76a7",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/bin/snapgate.mjs",
+   "sha256": "4ae29990b52b2aefbe40e57d7ff3da73e566efe9c8cc91b62c3603ca573c6c45",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/bin/test-pure.mjs",
+   "sha256": "b1b5a70e5ee0b1693850d46d7658750b64cd3d61e998757f2879b4ffca1d532b",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/bin/test.mjs",
+   "sha256": "df412b1774452834ce96a8590fda1f918f5fb3533a2fbf820e9d3b5fffbb27df",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/bin/ustart.mjs",
+   "sha256": "f07d838142321313bd22e24cb95020e3f4ae2a0488cbef32eab978b837c2b19c",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/bin/webgate.mjs",
+   "sha256": "82dcfb6876a4b96142bdc3bcb79b8278f728c05b925e5c9be406831d991242ff",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/bin/xto.mjs",
+   "sha256": "60e6797fa61cabeaf2c3381fb85a58cd15edf377fce4b0af07f6611157909556",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/bin/xwhere.mjs",
+   "sha256": "80da53ff3cb4ff299ad18d5e9ae6517cf8dd1fdc7e46d18d5ae9233b790c4c36",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/checks/check_display.mjs",
+   "sha256": "a56a3e903b5022727df3b9764a1149e97cbe266dc2e54e3d28e642a094958a89",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/checks/check_irq.mjs",
+   "sha256": "8c2fa4cdce28ed7ae8df6d80d1e86b1bd8ccbad452f5dcb3c240d305bc752639",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/checks/check_isa.mjs",
+   "sha256": "aacd2467349ca7bfbeedb85272c5f2cf615a606f80538b494c550199348501a5",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/checks/check_kernel.mjs",
+   "sha256": "0db3e23a22327e93f0da1b23e2ba72f783cdcfec539e877f7b89b4b625f9e526",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/checks/check_level.mjs",
+   "sha256": "bafa04c05a9bf24c04828019960e85780f21193c63792f9b58246301e6d1232d",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/checks/check_liveview.mjs",
+   "sha256": "3ccc9a2e587b680a230d19cc3d0f02d518cb620fce835c7240c7a2bdc5199e2e",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/checks/check_menu.mjs",
+   "sha256": "a3e1b15349c1d011dd48d42ea82997b31f8729dfccc6986c983ea9b5b8eb33bf",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/checks/check_nav.mjs",
+   "sha256": "b0313be1fae0c27d58bf38fc47475f7db9c829bdc7815aec2ff41a11f47239f7",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/checks/check_nd128.mjs",
+   "sha256": "b21d2d0d82f809f93db26ac638674ced501d18f680f5be8971e0d3be48532afe",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/checks/check_osd.mjs",
+   "sha256": "6f58358d61f968d590b6952069b049fe3422d3d47345045582fcbeb2c107a447",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/checks/check_perf.mjs",
+   "sha256": "ff09369b844a38f5210dcc610de09c4e4ad2f949225f0ccb7be31211c172be26",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/checks/check_text.mjs",
+   "sha256": "392b2feb0e26c942d39883b25e6eb443c7099e4915eebdb81dc3f879fea3a259",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/checks/fixtures/check_display_notes.txt",
+   "sha256": "e8fa7e9c76ea99b098f07baf5d1d55e4983daecc03dfe2212d2e5651ab83dcde",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/checks/fixtures/check_liveview_notes.txt",
+   "sha256": "741ad7ee9df9f2f6528bd20351543f0e4caf6b1eaee3d4582823c28b88a4666d",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/checks/fixtures/check_menu_notes.txt",
+   "sha256": "8f752e1620bfbc962d6b32c6a8e4f8071ba0834b669e1df840f40e30ecc96ebd",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/checks/fixtures/check_nav_notes.txt",
+   "sha256": "2940eb82df08e86d838f108b9b5a414e06e81c4d2c8b25070cd306aeeb78a7cf",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/checks/fixtures/check_text_notes.txt",
+   "sha256": "ae19734051ea28a59f57dea39925e719c30e5398f89451cdfb92349394700aa6",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/checks/fixtures/om1-vsc-regs.h",
+   "sha256": "3ca08a621816b7165ab4bd0bbb102fd53e2815d0f0ce9e59f314661f128f6036",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/checks/fixtures/om1-vsc-tables.c",
+   "sha256": "a2f8c0c9fc8e23180ace126483c150a2240a7a72be4b3b59babb7b254edb1a1c",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/checks/fixtures/p7-keys.json",
+   "sha256": "0e917b574f827c7f1bd2e0bca6d4e3135a0b6e677a85c1d0636b6564479e0f67",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/checks/fixtures/perf-p10a.json",
+   "sha256": "97a8a35439e883b073694983dd5fe0ab2d8ccf7d089688e72e8b2471e0618577",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/checks/fixtures/perf-p5.json",
+   "sha256": "bb13868ece7ce1b95d8db8324976a0c6cc9dfa2bde0e5e217252ffe2198da27a",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/checks/gen_vsc_regs.mjs",
+   "sha256": "d2a6fe6023050567d602024c69401a34c942c34e3056beab736406f1fdb7096d",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/checks/lib/args.mjs",
+   "sha256": "6c99d21aad6340f2b7c72c5c63f33b7287d04dab798adedc23f1cf705ab92ad8",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/checks/lib/childtrace.mjs",
+   "sha256": "3e6f6cb4f528d463e8cbf4696ff81b67ca17c28cb09aad50ba2ed14e0d4a73f1",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/checks/lib/coverage.mjs",
+   "sha256": "e6e3d409d7766e8d5b55d473523355a7dda4b2a4dba1bda984ca170411109ee7",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/checks/lib/env.mjs",
+   "sha256": "dbbfd2ab839d8ceb784c7df5c12d0d9a17898eba549b84e848a9cfb05b0d609b",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/checks/lib/errors.mjs",
+   "sha256": "4c01fc5ac9167e751e6f9f1f013d61c56600e3af668db8ee305f79718e213c79",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/checks/lib/isa.mjs",
+   "sha256": "886697b60340dfbdf3bf163c3f0d34ebbf73e4e5d687812585be333277c80c36",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/checks/lib/osdcalls.mjs",
+   "sha256": "da62355f69dbce78958a9ab8ce0544fb8f0e6b38dbb3231f8a8067d1a9f7bb4f",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/checks/lib/playhttp.mjs",
+   "sha256": "22fa7b3610cde3bfa6839c9888e3f2ab6882484049d0d520a6e0a34b8067db81",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/checks/lib/png.mjs",
+   "sha256": "77d52d420a15ac8005ab9ac39e1d09d7df2a2650ece690813e511ac03ce6db99",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/checks/lib/pred.mjs",
+   "sha256": "9ca56bf6819e66935718c2e92bb412d2dedc2d706e768f07a1215379201b5ef8",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/checks/lib/procs.mjs",
+   "sha256": "d4b2a62eb8a7c9357f2c9e4cd957c830223dae1b2c06c01d8f44a1d1fb07f5db",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/checks/lib/rcwrap.mjs",
+   "sha256": "ae44bffd8d1ccf35355de7d3922f0796bc1e342eb5c1eb2c7e21bf3b0755adcd",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/checks/lib/refenv.mjs",
+   "sha256": "ca729b3ec8fb434141b61e5fcb74c95ebd18d96bfc7ee7c43057d9cc29e6ad2d",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/checks/lib/resources_scan.mjs",
+   "sha256": "20883e63dfce35124f2b56f591b1fbfab1ee4b7209e7049b4de188009e826967",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/checks/lib/rngtape.mjs",
+   "sha256": "12aac1ab643c48e9245af3bc2b4a79abf90d275f64552838d1d6c8c2733992af",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/checks/lib/tracecmp.mjs",
+   "sha256": "afe6bdf5c788b3d57fadbfd0f76be29a4d0ad07d696ff8f9af40951f0431ed20",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/checks/lib/wire.mjs",
+   "sha256": "f072cb3b92477181ebfe4af44a7b2427937a503ca1e46874f02f217df5face82",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/checks/runs.json",
+   "sha256": "30314c4d9867d262360fcec76f73317f4ea3f99ba63372c79516e573885ba708",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/fwmap/E143.labels.json",
+   "sha256": "56d5e4bff9754a748176d4ef4945d61bf7c20bcae4025a908d3547b390d41984",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/fwmap/E143.seeds.json",
+   "sha256": "77a050940d6cffc57d171eda3ae916c39c29c0314bfd9de78a19b3a943ee92f6",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/fwmap/cover.mjs",
+   "sha256": "85a0f90cb7951c766edaf8e18f5f6d42a089955ed74fbf3b73737be13aaf54df",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/fwmap/discover.mjs",
+   "sha256": "18c16a409689b0db63d80f3bb2341d9061ecb7da9b6035deee1e89fe5ae67585",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/fwmap/e143.mjs",
+   "sha256": "a3bb177d3448f7984fab8e1c741401553b37535d55bbfc0c87b90063074fd144",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/fwmap/isa.mjs",
+   "sha256": "f6a113a9d55fcd9a87f356b068c8de40810b365462a729d9947b01886ab61015",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/fwmap/labels.mjs",
+   "sha256": "b01dd8208983dc419a9a06580fefd3b199d4be72e1172134559266762330f402",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/fwmap/report.mjs",
+   "sha256": "c37aedb29ecc2e91d2e9c205d48bb8230e98a37cb7d227b4e57eb179fbc455ac",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/fwmap/static.mjs",
+   "sha256": "c3ac8aeeaf8979f6a0597eefc3229597a57383cbe0d109a9a84d9ee053b345bf",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/golden.json",
+   "sha256": "e02e07f01fa45b54dd1d9b5aa7dd6eb8d1f97a455aefa90a537c976998eb4adc",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/host/blobs.mjs",
+   "sha256": "989e40c03f4794871d8441a72d7a27bcb6602f14060971ba2cf4ef96658a0bb2",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/host/card.mjs",
+   "sha256": "d5f839f104d50c21756284a30c4b64c84d8dc4b9a92234ef75a81692b4523d03",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/host/debughost.mjs",
+   "sha256": "cad855ac1ff005070fa3414a62e6925164c113649cbbcd768041a1c9e3d50334",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/host/firmware.mjs",
+   "sha256": "b072eccc233d1391655951cacca717b3da3edc8d2c98ebe9f663f60d557e7c68",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/host/labworker.mjs",
+   "sha256": "ab1a9e2cbd5c2161ed60cd8b71e8aa4a30c3c53851c8afb844044d74d0442fb3",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/host/memprobe.mjs",
+   "sha256": "9c060e12b1d685e2dbdabd0a10b2aff8418ddccb08d6fbc25d1d8e3dc219a781",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/host/modelarg.mjs",
+   "sha256": "bed73c67249904ffcc43ff066d417536e716349bda8f6000d27d20bd980204ae",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/host/navcli.mjs",
+   "sha256": "697b4663d35e6f6a69e7c1e287c66268ffa92e104eae12511e9ece69c2c3c4cb",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/host/nvram.mjs",
+   "sha256": "352f7765f0426706553ab6c3453048ff37c0d3e1fd274ceda18c8a37fd7b2071",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/host/playcli.mjs",
+   "sha256": "0597f664eb44fa6e20366e7c82835cb8889c542c557e26313699be720de8e78f",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/host/portqueue.mjs",
+   "sha256": "5cf7d750ba69a57c6748ab1235ff9d856163d87dc9703799fe5fe7a784a165bf",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/host/proxy.mjs",
+   "sha256": "8b22ea019b3cc83695f7bd3bbdbb4ed961710b0b128cf00ff9feda2070444a57",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/host/server.mjs",
+   "sha256": "fbc033e0ea8a0707c1cb096557cf6de73ad3f32711ef0d1e5dea4fc6f4547caf",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/host/session.mjs",
+   "sha256": "f5707451d1aa663ea5e031295d14f7218187153ce74d01e52fa428ac87cc4f19",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/host/signals.mjs",
+   "sha256": "e066970770c378daa8556c62c621aa860f093f0612785b11adaddc3c20e3db6a",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/host/webdriver.mjs",
+   "sha256": "ff63549c317170fb31ac1478558bba34dbf5597cda4c8ccf3c04b920300f0325",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/index.html",
+   "sha256": "03d7d490d48363592ef3be535890bebc45e88fd5a216db993f62806c17d5ef39",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/package.json",
+   "sha256": "5c8dd772c869c279afdf2fcab8f457644a8b903c84587af2a3bfeb3de903e384",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/play.sh",
+   "sha256": "33e8f9b6bce13668184ddad21817aa0c4ffedd4d5e043aa96306912560506f56",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/refs/display.mjs",
+   "sha256": "a3b60c8e87a63ad48ad15264b4d9f105abb3d437ab4d58d873e87d5fa9c0335b",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/refs/errors.mjs",
+   "sha256": "fff1f2065bbdb2797f3f998fabeb2a0353b88451bc252e4d3ad74025ab164aca",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/refs/exfat.mjs",
+   "sha256": "1d79a0728570257d47da4ca8c1b4ed4c205d7ed263e58672de5e0ef967377562",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/refs/exif.mjs",
+   "sha256": "267ee261152e465d18d52cd008d1a37c5bb508174ac8111a74463525290598ed",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/refs/fat.mjs",
+   "sha256": "b57b1d92909922a7b027d75595d5325be90e6035d2d9baa1b883767bada1c8e3",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/refs/font.mjs",
+   "sha256": "9cf3714362e1d5eedab3f82a76ca2495fb6b9efdddea24fa0e72015457909b34",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/refs/irq.mjs",
+   "sha256": "c40a0c9ed5b1828e74e97f5b9c9b49246bf7d2344a60be313dd3aa1cde27bff5",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/refs/isafw.mjs",
+   "sha256": "5430352930c95eb1c15059339ce75bb9e422476a3d205dde93d0fdb568c1413d",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/refs/jpeg.mjs",
+   "sha256": "3d1a343732d0f15d5eb86067bec7f824920e10aee784aee68f1863ed8030f26c",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/refs/liveview.mjs",
+   "sha256": "5c4e4e6a632ee548a0a2892380c77c5f759ec3d8287e3498c3a2b1af0cdf3d4b",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/refs/menuref.mjs",
+   "sha256": "260bcb8902a0de594ea597938a5fd961b23385fffab838d960c149d46835b7e8",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/refs/mt19937.mjs",
+   "sha256": "52369a5ab68eb2a611407e4c1335f19d7243514ad3f4affbcaee8e8a83d9f807",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/refs/osdfmt.mjs",
+   "sha256": "de2e39cbb5f920f78cf8aaaafef10d378da93eb9f19313c20d08325fca07c019",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/refs/settings.mjs",
+   "sha256": "37b782d9eef07b1e641229578fee4d3b8e8415a8bd707e4a242eb3b343bb4e55",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/refs/volume.mjs",
+   "sha256": "24a1aa558139c04656a90f682b428d4c4af00c1cade37a1ffc244ae1709c0ef1",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/scenarios/bind.mjs",
+   "sha256": "5809e36b04e3fa0983e85c104070e3639ee85c965f25d0bddc0165533ee5fedc",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/scenarios/calls/a15-open.calls.json",
+   "sha256": "43bb32ef6acf73c946a8698fbf794b1f2bef6ad3780ffec98899850c7a5828a1",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/scenarios/calls/b7-gate.calls.json",
+   "sha256": "7d0dcd9f19a51f6f15f1905d6f2b3c53526f49b36618920e3554d9ee6a1d8889",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/scenarios/calls/evf-idle.calls.json",
+   "sha256": "64c7c8f620049f50d3b88d98cfb4640428054416351bc7ab66d71fed89a1ef55",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/scenarios/calls/eye-burn.calls.json",
+   "sha256": "e06666ecf59c96fe312290e13637f77738c8fad6f683ed8c06cffbd62c5181a0",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/scenarios/calls/inputs.calls.json",
+   "sha256": "36348b355db1a72e6fc1705bbb5989fde4d95edcc4ad5a4c738ca08408c2d9b5",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/scenarios/calls/keys.calls.json",
+   "sha256": "ad46d08bf2dc7cc7e9f818373f4bf46cc74d5b92a54801b4157fb68642d1877c",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/scenarios/calls/menu-open-any.calls.json",
+   "sha256": "0be077225b72d7463c1830e4fd7fbd09026982fcc36b226f79c312ec2de2e764",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/scenarios/calls/menu-open.calls.json",
+   "sha256": "f2af819bd9cec1c6968e4a3fde8a546691e9a0fa23fe90ffe651cf4603c6be56",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/scenarios/calls/menu-tft.calls.json",
+   "sha256": "e702152466dfc57f0e00a3b8015e98f55a9f4ff319183e85517e0ebeac8ff52c",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/scenarios/calls/nav-a.calls.json",
+   "sha256": "6a26b804b66a8c53bcf824491b9af8006055d07d6aa7e21c16654c33db00540d",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/scenarios/calls/nav-evf.calls.json",
+   "sha256": "60ffd1f01b3cd1b2907f5064c1df7e65bff0be28d4e679c4b6ca6949a549265c",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/scenarios/calls/pace-wall.calls.json",
+   "sha256": "d0610172d5454cf5ac89e7c65fb0a46012d0f8aebd970abf24d5d33c8eda7195",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/scenarios/calls/play-perf.calls.json",
+   "sha256": "84862e4b3362969696db4ef7db8f13fbb0f7694bb4d7a8a966953ba5151ea702",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/scenarios/calls/playback.calls.json",
+   "sha256": "bf7bc7e50ccc50e34839e9af4eb1b7f094319a5bff7ac6bfdae20c7b6f614aea",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/scenarios/calls/power-replay.calls.json",
+   "sha256": "7454654c91851f20b741b422834bbe9613fe8d6ee7a108a43c8322d64dc06cd9",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/scenarios/calls/power.calls.json",
+   "sha256": "febcadc78d5259d77f77c88768958ba1c8c5cf2b74fd22bec90d6847e5ff165f",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/scenarios/calls/queue.calls.json",
+   "sha256": "e2a067eaf7802f2100623f2cfa53455641e3306ca3304f5758d0adf32b5d9537",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/scenarios/calls/scp-edge.calls.json",
+   "sha256": "46ac5519bcbfdfd9c4ee25e0128ff2bcce837b78db26abc9ea1d0458ccb721ab",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/scenarios/calls/scp-replay.calls.json",
+   "sha256": "7dc8fe0a42313d429d2fc4f641553e6487ed17e39fa59482a4380ac17c9ded8e",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/scenarios/calls/scp-timeout.calls.json",
+   "sha256": "635d776068395e7d9a3a1339a0904649f761e0534c019977e6ec68194a4f86e3",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/scenarios/calls/shoot-evf.calls.json",
+   "sha256": "7cfe35ced4fd1b5df3e94fd8949492ae2747f267b357ed61e48edba5350beb41",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/scenarios/calls/shoot-tft.calls.json",
+   "sha256": "4fd7cd1e227eb7271a04e6bc26afcbcade5c40c3f21fdb126e8d252f8b0c7f08",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/scenarios/calls/switch-scp.calls.json",
+   "sha256": "7c7a295dbfe690d918f2ac9b6c15c4d82c8463591c3767a7b6c928e1d2138e37",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/scenarios/calls/switch-shoot.calls.json",
+   "sha256": "2ad9f7456e638095cadb232bd56cfe81b717bf7c316211fe5526949fb23f5962",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/scenarios/calls/tokens-3b.calls.json",
+   "sha256": "298296d23278d33af336b2483f5ea0ff897f529078ae92da1fb2971fbad33b51",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/scenarios/calls/tokens.calls.json",
+   "sha256": "61f3fc257cfc6eedda0f747db92d422f00b7b2ed3110a29320a0fe217f65d5f5",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/scenarios/kernel.mjs",
+   "sha256": "d1741784bd7cef948269c944a3befb4070621503fa19638acaab9771b2c10f28",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/scenarios/osd_replay.mjs",
+   "sha256": "b68ca2f86ac4e1a2f1e407b29c4c5e56ecea96d3481f64de0323dd423fb0f042",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/scenarios/session_replay.mjs",
+   "sha256": "83d2afc6accf98d0cad951803af7f42319ec7858a9c9cc1a018622357c02b133",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/core/cores.mjs",
+   "sha256": "c40e61d8cb1c6d5660968bc3780591fe58b070d39346b33aacb1f8253cf3bfa0",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/core/cpu.mjs",
+   "sha256": "94f3caf73745b17dceca437299b6c711aee0efe51c9ab7c872d5b1e6c599521e",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/core/interp.mjs",
+   "sha256": "660e09091fc99db584104cd8e98d6050fe517e204fa2c747d0aa72e1423f9aa2",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/core/m4/boot.mjs",
+   "sha256": "064782160d72244f025941957757c5c0becac5cbc2baf272c93124a4b025c2ab",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/core/m4/bus.mjs",
+   "sha256": "7d40173941ce9136e055f5d68a3904d7e13bcb100afe076c99e62c5f04daff2b",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/core/m4/census.mjs",
+   "sha256": "53a3309abddfc5f72aaaa701f6ff7b47111af989b4b4bf46e14c0c752692de33",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/core/m4/cpu.mjs",
+   "sha256": "64ddeaecf9402af3d04cbf232b99036fd1b87a637300b5ab0db6db4eafb655b8",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/core/m4/dcache.mjs",
+   "sha256": "5c1cd23048a7d5c693bc626abbcc1057d29bc4214c96bb9d05d71674ebf472cf",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/core/m4/decode.mjs",
+   "sha256": "a5400b0d56fbec796452aa7d93817cb4e97d28604f75048aef9a0d2008b9616d",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/core/m4/errors.mjs",
+   "sha256": "e4552273413b00095c7536a9e490c3c1b70428a9da88b4ec8087dccc5e0b517b",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/core/m4/periph/adc.mjs",
+   "sha256": "d986c043c73a0ffcfcac748224516520cd909f297bca97fca0479c0e18da2ab3",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/core/m4/periph/board.mjs",
+   "sha256": "96452848d86624d9c569fdca46fa3ef015ae4c1847f31ae24da561ed54d9d4b6",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/core/m4/periph/dma.mjs",
+   "sha256": "0013b012879e42f249776e8d0a91db465d84312f967751994fdcfb78aeef931f",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/core/m4/periph/exti.mjs",
+   "sha256": "3ccca80728f6a95d651bee8fbdea6eebff4cf0c839073198e7a39465a2f7f572",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/core/m4/periph/flash.mjs",
+   "sha256": "8a1b09f4465f05ed8853a08be72081635257fc9e47e5b475820d0b49cb1b5a85",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/core/m4/periph/gpio.mjs",
+   "sha256": "4f2bd672f826e915f4dc628e39d156d7bc05f4ad1291b1121eebc780665025f9",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/core/m4/periph/i2c.mjs",
+   "sha256": "db2ed90a75f8f23fa8119eceb74641e1faf0c840f0e5b412297bed3fe27fed42",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/core/m4/periph/pwr.mjs",
+   "sha256": "e665b6f771874170fb13346b85389d8969d5106f116ab80c32689c293e32f179",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/core/m4/periph/rcc.mjs",
+   "sha256": "28649dbcca9e0006c0c518d23ca488544d48d15f5443dd8d40fb40954745cd70",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/core/m4/periph/regs.mjs",
+   "sha256": "a159b2f84183d50cccb9445f435ebb2955bada803f994b7ffb9e2ea29262ee1e",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/core/m4/periph/rtc.mjs",
+   "sha256": "3edf5249203b6230e69e423e50953d9611db7a1bf780fc93ad42f2bd71965107",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/core/m4/periph/sched.mjs",
+   "sha256": "a683cedc35145ccd001f22c4031f6fd4942e9bfd38d00c0a99db7b3e78923e4c",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/core/m4/periph/spi.mjs",
+   "sha256": "388e0f06c7c1c6ce9400efd78e1d3d8f3249a424cdf192f5fd7bb039ce2dba5f",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/core/m4/periph/stm32l4.mjs",
+   "sha256": "1beb26e4d57bcfc8996e5b4c0ef04f6d94c3e9e4de4952d056904c6698a9aef5",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/core/m4/periph/tim.mjs",
+   "sha256": "a3d74c5c2eb63bc9759899ba528a0c0519bb64b0a101d67b44cee85963f21f72",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/core/m4/periph/usart.mjs",
+   "sha256": "5f3ff52bf755043637af356f2516524a13e2ac5d706772d73791eb32508a3396",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/core/m4/periph/usb.mjs",
+   "sha256": "e9cd406f7666cc4b85ae2e4fc9c1830a66f62bc60747f443498dcaf65d349c0a",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/core/m4/sys.mjs",
+   "sha256": "e97b9371d3e8eea59cea3d87c08b39eca3ae16e35539f8ce4f2ca785cec81a3b",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/core/mem.mjs",
+   "sha256": "adfe9bca23723f22b490c99047b6ad32c291f495492c98138d1da3c20ab5a676",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/debug/call.mjs",
+   "sha256": "74bffd86020ec1c6f3eca732fd4a41aaa7dcfba2d4670a094449918d84a44186",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/debug/debugger.mjs",
+   "sha256": "a24ce644ab922457a843c868076aa21e72007e78086fda75fd88119a79da4705",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/debug/live.mjs",
+   "sha256": "c19050fd773dc1f46b9f7c0c3669ada12b1293dab93599206913022c62a87e49",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/debug/protocol.mjs",
+   "sha256": "5eff055d29372fb46aecda2c09c6ba94538d7026ad585e15abe06ccbd1f259ea",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/debug/regs.mjs",
+   "sha256": "2e620e185508bf19008cf97cc33ae188222e7461e0b3f1811bf304fdb7b422d7",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/debug/snapshot.mjs",
+   "sha256": "24e51e3811a58d55051caeb7507707cfb51001cb9b5355d27bc20c8c0c98ab54",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/debug/trace.mjs",
+   "sha256": "92b3ed83780771c6011d1521ab018dee0fda5f604522acdbdd624a25bdf32bab",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/dev/audio.mjs",
+   "sha256": "2a41fcd1bd0152e5b2b54f3cad314a7e77c5741787d761d69df9e023d41ad571",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/dev/bus.mjs",
+   "sha256": "e537c4ed7e90f6bc2b4a7fef2a35d856af5ffc5ae446ee9336a87e5b4e6e397f",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/dev/camfe.mjs",
+   "sha256": "69a9fde49796f27fac8454565b69c281f670659decb6655fb0ad7c5ef2c3057c",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/dev/dml.mjs",
+   "sha256": "cb8761cb0d5531eb4e7ff46fb3c1cba535afcf6719220ca670ec3c94d9b0a890",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/dev/dpc.mjs",
+   "sha256": "adf00b0157638de3c7f2885957b4542ef0b8a1bcac8c7649546a0658cfb89f32",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/dev/ems1.mjs",
+   "sha256": "68deb7a62e8d6d7d1fb11e49baed979dcf01012e07074ec19bf4e8c39db9d371",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/dev/engine.mjs",
+   "sha256": "2164dcaa278792e3b64675e9ee02dcefa0a6c03afbe7d2738d013da0bfa18059",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/dev/hdmi.mjs",
+   "sha256": "80497c3a89e39ecd641f4fcc5e67ebb2028893fb3b86edffb91b50b115449e8c",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/dev/imgpipe.mjs",
+   "sha256": "924001331674b9e6642c2c9c052fe75a4aff78d8a16f41dd2e2191046ef94daa",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/dev/imgpro.mjs",
+   "sha256": "275680322384425d95a05c39178a70091ed8d3ff897ae04ab504004029066664",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/dev/intc.mjs",
+   "sha256": "85b6b7d21652ac1a057e19fdc1e214154ac52bceec47a8f4afdac1661788dada",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/dev/lensssc.mjs",
+   "sha256": "e96b83c864f901ca1811a447f5f88fb1ff0b9ee87972555fe2678e420fd6a34d",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/dev/linkpins.mjs",
+   "sha256": "cbc3e7a5fca33012a2344800016eb8e9f63d723f381dc13deb4ce52e66e3c1d5",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/dev/pdt.mjs",
+   "sha256": "9377aa4bfd22964c40c672c44f7eb48c5955e5faa6f98a44525497afecb716c9",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/dev/scpu.mjs",
+   "sha256": "69198b7be16fb24d32968553888ee551ba0f6d227688bba434203e5c834fd5cb",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/dev/stub.mjs",
+   "sha256": "b87a757f0e57823fc46a89020060cc38a6361d24a0498450bdc3047fb9419a3d",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/dev/timer.mjs",
+   "sha256": "b03f10e8d4d622d3fb2fcd6b8b39943c69c98d17241dd4e5026c338fbe0b4739",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/dev/vsc.mjs",
+   "sha256": "38de0fa08a4ff6197c60868c6b893d46775908ccf9389f1d1ddcc5f6b6342602",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/dev/vsccompose.mjs",
+   "sha256": "ba3da9916f999ca91b4c1b9857c13f95239628be334e58478154e682aa05971c",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/dev/vsccompose2.mjs",
+   "sha256": "234572564acef358dd7084d35ca624d62312c42f005ef9c3dcb314fcc1a4d638",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/dev/vscregs.mjs",
+   "sha256": "d29e6661e27212b466035b13ca9ceb9f2bcbafe8026328659d65382f0b806265",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/fw/board.mjs",
+   "sha256": "6a02f7c74bee6f0b6409c57c3ee78c62e16280794ee55557edb42d2f723d7875",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/fw/expand.mjs",
+   "sha256": "e2575f5a4c8ecb79764a31ae01223ab718e7ddc266c00bd88bbf0008dabd1d7d",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/fw/facts.mjs",
+   "sha256": "3f938574a7cc589dd227584066e726039009678c4f51fa8175437badfc1c4c17",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/fw/image.mjs",
+   "sha256": "657e9a447ea8035f17115708121e1ad8e71c08f8f5ef1aefb107ccf3a73621d8",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/fw/knobs.mjs",
+   "sha256": "98a35abb15c33a2717c623443f6c950c759f23818ba9e888320e11401a1f3420",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/fw/labfw.mjs",
+   "sha256": "3efbe7112a2917fbf77c3a57b704296bd730676f1921d24c427f40225ecfb083",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/fw/model.mjs",
+   "sha256": "f080e7e9c91bf3baa5136c7b8aeb6b0e0c4c8378d89f361a47e87aac4e902a44",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/fw/modeldoc.mjs",
+   "sha256": "ced05f6fa9657025b603a833177dfa8ea014fe68651d18c0492280e875aa1c07",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/fw/models.mjs",
+   "sha256": "115c8349e4f0aadbe56f24638db4e195ca3ba59739c64607eb5b34e4e14db3db",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/fw/nand.mjs",
+   "sha256": "1c7751b4db88c7874eb4c86d33185f6279ced1cd2f7bddbae4a2dea37fe3b5dd",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/fw/olyfw.mjs",
+   "sha256": "a1c02f4ded0c3624ac017d97eb1ca59e6ca5dd407bcc0854722d7c126c9ef246",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/fw/overrides-E122.mjs",
+   "sha256": "6bff3bc7d875f7424165e6737ecd50c4a4ebb8d1dc4dd4d42b9431b5982b0602",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/fw/overrides-E144.mjs",
+   "sha256": "cc98ffd4ed9eac44c6a8c58c31010b67c72eef618d09e93cf97e442b3f5bd307",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/fw/patch.mjs",
+   "sha256": "bb9434c31fc8e494daa7dd05321bf5835b51aae6bfdbbd981d7151b445375d3b",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/fw/place.mjs",
+   "sha256": "680b313190aebe201a88d1034a684bb647872fe668e71acc36a29a135dab9842",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/fw/ports.mjs",
+   "sha256": "6c81c9955e9baba6c165ed3affb69fd5208bb44e6a9dba5dc6094935074ce0b0",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/fw/resprefix.mjs",
+   "sha256": "612c87c0dd722ee031685dd5c70bf14e113d094f2e3a66677dfbe4b8c14c6372",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/fw/sections.mjs",
+   "sha256": "e8e55f2820a7db8426f0172882a34c90c611a7a6b2d848904cd55739d45d6250",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/fw/updater.mjs",
+   "sha256": "4f346db0b57dcd61ebd05697d700e5ed9f5859da3dd65c22a626c661d04a1ebf",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/fw/xmap.mjs",
+   "sha256": "98b559ff3c5df19f46416ed84aed3d2583918a29c74e408c62242daf9ca463d3",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/lab/a53isc.mjs",
+   "sha256": "99b85dea77ada7411ef8315c2e9f0c7bc456ba7a66463eeb94425e3324f593da",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/lab/acc.mjs",
+   "sha256": "48c508462bb4e8cf94b893315d079b9d08248956f06c040be1ed4e3503122062",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/lab/audio.mjs",
+   "sha256": "9b1edfc267afe2c915cbecf4d9fc7bc78003f7f19ef799fd4c738ae1d4e2ff4b",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/lab/audiohw.mjs",
+   "sha256": "c8b414b7217647d696c67aa84ffd273680d325f0119576aa480416791932d705",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/lab/camapp.mjs",
+   "sha256": "363891a90afc7e77e57abd1638e31f0a7badc09b81778e90ac8d42fb640b33f3",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/lab/cardfs.mjs",
+   "sha256": "8c863d28eaf3a55c88a0db3339397c00c6184ee55d9d1257b7c82cb2b7b9ca49",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/lab/charger.mjs",
+   "sha256": "f0a2426fb249f9f675c0d22d6e49126fd53a88541dbd6637f6a5bbe4e0212982",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/lab/cpu2.mjs",
+   "sha256": "9a6877013f48a51f56a94bb1185d827c50b8d427b2db375d0d6a3964f0736666",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/lab/display.mjs",
+   "sha256": "7b34ff5b05fef9c7ca1d33fe771e4158387298fd02b28372afd36bf5f0d501bb",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/lab/dispq.mjs",
+   "sha256": "4821c3b1eb64f4b25f40ed80bcf2c14aea5b166148efa3dda35b3d978537b4a4",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/lab/edid.mjs",
+   "sha256": "416d945d868a7d8c53cc0085179733a25fccb82f88e1d6cbd0fe7add32b4d051",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/lab/errors.mjs",
+   "sha256": "2fd7139bceb60f0ad31c428f7ed9f69235af4bc76cda823b1bb9c6dcea45fe10",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/lab/hle.mjs",
+   "sha256": "5648a293d1f6ede0eda8e29d4dc9e6f683210a28935b02b4e6c0af2a03da0520",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/lab/irq.mjs",
+   "sha256": "8fec8ed6abe08a9b83845eae044fc3fcc43f2e339f95d872489152b4de9c072f",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/lab/jpeg.mjs",
+   "sha256": "b54cfe0eb9655371f282fd1e3565b92dfce2500538b805bf0d082de002b97554",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/lab/kernel.mjs",
+   "sha256": "6ceee4bf9962892c0d025be0d70a92ccbb53cdb0ef009b5b9e312586302f47f8",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/lab/lens.mjs",
+   "sha256": "b92b12d381f3389fa8802f1e9ef3bde4291c45e8cb386619ff6fcf25099a96e5",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/lab/lensmcu.mjs",
+   "sha256": "52eb5614952c45f8f648db3cda980019bf9d1fe79334e48bbc3a183a443eabdc",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/lab/mdet.mjs",
+   "sha256": "89c61056df82fe1a159e684cdee0810af38d60c986ab0bf33a6e90e1c504bdde",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/lab/media.mjs",
+   "sha256": "373ceb78980f1c9a7098d56b573e86b00595392fe4e5a69e7c93af970a6ef248",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/lab/menu.mjs",
+   "sha256": "f1fbb65e5a9d30e90ac4eb5565ad6852733d4ae20ff3a3de590d916cf4ec4e94",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/lab/menudata.mjs",
+   "sha256": "1cfdf906d143bea38e730040b2f062b3b3d46b35ba361b58dfd5b01db15531da",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/lab/menuwalk.mjs",
+   "sha256": "d91eeba2e912d05d4a11081bd5846f53b60cbf1578e0733e3289bac8b47706f1",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/lab/nav.mjs",
+   "sha256": "f0062a533f6caf7a37e600364a0d645ffa184deb7892c385b9bba5f58390baef",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/lab/nvramdoc.mjs",
+   "sha256": "597148fdec863af46873a53ab5380a553fcda3a82499da2548f527eed28fffba",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/lab/osd.mjs",
+   "sha256": "a0887531c74d890dca3a12b26d7aea57009da602ffbb6fff8382f89a119176b8",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/lab/osdfmt.mjs",
+   "sha256": "8d5945aeca6a9ec80099c8a3c48ea90580f4c87399e6bcc593f2f0782a263248",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/lab/patchaudit.mjs",
+   "sha256": "18b946321244d4473f904314ba558e9f3c92e330f6dd502863974773bf349b74",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/lab/play.mjs",
+   "sha256": "ac4221021017ba3facacb5db7b1600f2704291136b72c24fefee3b9f8ed092a8",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/lab/playapi.mjs",
+   "sha256": "311b743c3c41a12b9a9a80e4d7cbaaf9525634e8b39a27953070be45ef212a30",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/lab/player.mjs",
+   "sha256": "bfd861245f1a3d3b2d19a48966b410e979def2ae7cb62c5dde86e31eb03e1404",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/lab/playmod.mjs",
+   "sha256": "56f5802c85ac55f4c5ecbee290384620826c62a1fde6d6bce4b4704aa95bfad8",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/lab/playui.mjs",
+   "sha256": "35f7f25880a89c46d6753d5cee7733f40506bbbe82328a34d86563b9b6b4ed57",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/lab/power.mjs",
+   "sha256": "ec16f3c8dfbd67a7802e9718ce930e00d2889b0e5dc37fc7e040a255ea92f549",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/lab/rec.mjs",
+   "sha256": "830d220debed119b5183391ce0d629de368369609ccbfafef14dd27bdf4643f4",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/lab/resnand.mjs",
+   "sha256": "c58d5d251c32f05d247ab8914551202c474e793bcdb2062ce61d2617fbc17462",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/lab/resources.mjs",
+   "sha256": "122450c256d8ef188f77a8e323ba92a28a6102f9033b4634e3c77c36dd066002",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/lab/rtos.mjs",
+   "sha256": "ea7e06666d37aaa97d06142febdbe853d996f68705bcca35f7ff11b4c6ed4b5d",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/lab/scene.mjs",
+   "sha256": "a842e60f803bc8b88113e1484e864235b5e2f9014dabb831210fd5cb9c8e9366",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/lab/scpudev.mjs",
+   "sha256": "c93ce9ced00ba5effba9dedf61ac54d3ca437533f2fd8c899273d273ec5dfc6c",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/lab/scpulink.mjs",
+   "sha256": "3df7584565d3b873e4cbf8fe0050364efe14ae383a4bff5d2dcc9251946ddb96",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/lab/scpum4.mjs",
+   "sha256": "8b7d7fcb1473963f775a2f6742fb2236ef2309ddbaa47d98e7edc41692867514",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/lab/sdcard.mjs",
+   "sha256": "4f81b26b7158dff6bedbd7e88e10fe6293a4c6cea643b498ab98ff7041e7828e",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/lab/settings_ids.mjs",
+   "sha256": "9c395cbd29b04f7e3a4cc1c34332c6f3c4327b28b9ed45db969e9589758b1f78",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/lab/shoe.mjs",
+   "sha256": "d6675b13346890962de1eec8930f763312f7f7d59ccb5b869a0607bf03840e98",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/lab/shuttersnd.mjs",
+   "sha256": "f4e81e625dcbaa0807d5ac67dfc246ad791f314c5ae9fd7f44192d12728fbc63",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/lab/sim.mjs",
+   "sha256": "aab4081dcfc9fb63ca8e84f7f100f84a0ce6dc91a633595cb05446a5d480e6be",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/lab/sio.mjs",
+   "sha256": "f0716ec9f3b3fbcffce75fa186a53f387ab1c336726595bfedc62119b4a9627b",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/lab/soundres.mjs",
+   "sha256": "a2c6dd3df56db40e95822cdb973bfe25efad7f049828626964c88886ff6aa8e9",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/lab/storage.mjs",
+   "sha256": "f5ea0a36b9c78f0a05a5e0f5e45f53ee5f4d076019fab8ee41c2d9e8c4d37d9c",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/lab/subject.mjs",
+   "sha256": "a5bd078b39c2f8594b13f564e5086eb56e8f22bbcdbac115e226e19220b5b317",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/lab/take.mjs",
+   "sha256": "8c6dc9cc84ee43a46e22d542f79bb6a5138b9ed686f089b0e17d7c500f66d4ee",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/lab/text.mjs",
+   "sha256": "e27b2d3781feab8d9eb3f49b0cc73524a9312913f85a4131358156a9770a1357",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/lab/touchpanel.mjs",
+   "sha256": "72f93c8bc053f159ec14a20b4dbcf0fabc189c01f79fde7a06efea160743e9de",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/lab/windows.mjs",
+   "sha256": "d18038a30d2f87e3abf6098cd943f35ff4202c6bb3a954d0f7ed1d9c8d28189f",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/lab/wm8946.mjs",
+   "sha256": "4ae26e3647e049fc3bc72163aa978ffc36a0966125b8370dab44827cdfee67bd",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/machine.mjs",
+   "sha256": "9c10e396d122722a486fa73dedabb0c19ad45033c59c172ec6bcaa37d031cd63",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/trace/tracer.mjs",
+   "sha256": "ea2ea178c539460ceb25cc54a0c4c68211c8d6c2d0772dd8b1b50f476449f358",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/util/bytes.mjs",
+   "sha256": "86707333d72877e35b374bfd39f3d6af2b716437c73df46929e74b460af985be",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/util/equal.mjs",
+   "sha256": "31d47358a57d40bc4d67b9a077a8c05e6c4f1fe7a92de33f8eb538d75ead238e",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/util/hex.mjs",
+   "sha256": "d48bffb45373a94b8d1c824aa46d7a93665f282ee8a563370d698b1a53237c33",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/util/parse.mjs",
+   "sha256": "b0754de377324528b15d6588dbe1d634649cbefd68754bf6b0b114beee3ddfd7",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/util/sha256.mjs",
+   "sha256": "a970ca2dd63872f4d6b7a403d189655f60914c8c95fb9f36ddc1b776becfd07d",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/util/show.mjs",
+   "sha256": "58a20ae76e473414c3b0a0075eb362f7a1cf4c968b3feef64659f0473515e076",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/util/tally.mjs",
+   "sha256": "33f495d217ff46a5e2e1bb74a3cb319b2db374e8bd3d37dfef75da9a6864ed26",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/src/util/tracejson.mjs",
+   "sha256": "52a0e82cd086dee77069600061f3d478fbf4ac447c75173dc53e97365f0e4e77",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/test/fakeopfs.mjs",
+   "sha256": "400e654dd6ac2dd0948dc952cfc3e81cd6d8909be15486cadba4d022f698b71c",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/test/fixtures/caduceus-releases.json",
+   "sha256": "c0f5e52fd5c2fcb74c6c19826c13fa28b3507372845ddbdf51e0197f3b15e4dd",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/test/fixtures/isa_vectors.json",
+   "sha256": "3651b071620176c5351607d556e83d52629e7af8441c248689dc6ddbb34fe93a",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/test/fixtures/m4_vectors.json",
+   "sha256": "502e09d54c5b20bfb63a5c82e00ad1c4de9a76f3d9ef4e7268fb6682f8841a30",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/test/m4cases.mjs",
+   "sha256": "b5fd973356b16117971b64132f3cec8100c639965c508dec4b709f4c8e4e382a",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/test/test_a53isc.mjs",
+   "sha256": "301cf4551e0ffeb9cee5dccf2011c4fc4909ebaee30e7002f242ed1af6fb3e53",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/test/test_acc.mjs",
+   "sha256": "73111d4a5d24319d105bad4e03f43e7b926aeb6936e3bbc26ae842320f1ed644",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/test/test_args.mjs",
+   "sha256": "0aec31d6941e9f1e66786c59e7ad56fea9c7b436ec3180f1988d57808f66fd77",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/test/test_audio.mjs",
+   "sha256": "7d140b7a68c755374a5157905a7b62df48894a56425bf9b6c70f31cfeb338bd1",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/test/test_audiohw.mjs",
+   "sha256": "e7d01d156fd368c3c11437c6ac5cbe3899fd6be9cba5b551c1cc0b1564869cab",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/test/test_bootstage.mjs",
+   "sha256": "eb67aad314ede5b74430bcb160cb2e871cfe4d613a27d670adbc3f366236ab97",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/test/test_c3power.mjs",
+   "sha256": "0053ca6831e0a0c7757ef503693dde62ee327d9243c56ea3e509484c1598fed1",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/test/test_c3take.mjs",
+   "sha256": "28b140e1193936ef4731033f0c33aeabdf4dc95695eb07f5f77b00af63a33e2f",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/test/test_caduceus.mjs",
+   "sha256": "7602365d79a7a1866f0f68cfbdf22425583e17ce5cd07b4cdc41da5cc964c2e2",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/test/test_call.mjs",
+   "sha256": "978dddf3df3cdd3dce07a3de53e60924b4b003a0006cb815a79fe58a0bd8b623",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/test/test_camapp.mjs",
+   "sha256": "cba72c3a2e30fbd4ce38b14b93f4961d97fdc9dcfa95ae9b201ab4189abad4a3",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/test/test_camfe.mjs",
+   "sha256": "119b8491617817f8b17adf81c82d79e8955c0982e9d28cbec9e57fdd8e1e9ba5",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/test/test_cardfs.mjs",
+   "sha256": "3ad66e97e04da0cd8bae0af9a9b6bd26b029bb7ca0933632b93f7be54ddda036",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/test/test_cdial.mjs",
+   "sha256": "f953e725c927919d9b85b5a0fcff55a2094d7066bcdbac78986e4e585b8f5d41",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/test/test_checks.mjs",
+   "sha256": "8210d58391461c210dfaad4eb4355de641a2de71d30cb03fe2143397a737074b",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/test/test_cli.mjs",
+   "sha256": "44b0eec4557e83a30a99fe5337d1b831d100b89c0087219f32e01cea16f70738",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/test/test_core.mjs",
+   "sha256": "f6ee6a5f2cffef42663c410e8973f8cacff293c1949080386ca2f20e3d749b68",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/test/test_cpu2.mjs",
+   "sha256": "f0ce7473691d64085a5cd3be4972439395a089647944dc269a9fb46d3df99ab5",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/test/test_debug.mjs",
+   "sha256": "72b5486d0e300fdfe85ecbfe27b95b976105216d290fbb2a3cb6263f03e29907",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/test/test_dev.mjs",
+   "sha256": "279ce10d109a8bb289ca9a949a023072811c462d8fadfb7441de28b622e754ad",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/test/test_dispq.mjs",
+   "sha256": "6bbb5ba6788025e460ac81bb7ac9f45bb3ff520fdbf0a3cab2553deb88da66ef",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/test/test_ems1.mjs",
+   "sha256": "3874d52a3ee1be9794fef51585760b38ff99a3b66360b87844558505498f61d6",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/test/test_erase.mjs",
+   "sha256": "b01542de58e0a67ea6227663cbf26610b9a7a5335aeff7604822c0531d6a96d1",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/test/test_expcb.mjs",
+   "sha256": "60ec58cce1fceba180a5aac525bb049f66de14ecb6590394bad653fe0cdf784a",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/test/test_expose.mjs",
+   "sha256": "dcf9780f2490874c53659e2c36bfd38ed41cfb7593cf068c250a829e34698266",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/test/test_facts.mjs",
+   "sha256": "8c05d332374baa498a101a97e5bf9331bdac6de23f016d136f97ce7f8df6a63c",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/test/test_fnkeys.mjs",
+   "sha256": "35e5e68599259c6d3b1d83f6f87e1c313613ec9d98c9b82115c77f7387be64f7",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/test/test_fnlever.mjs",
+   "sha256": "f09696f15491fc27957fd5498bdc6a0aed9e3bf9bf57a964449e0652dc8140f4",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/test/test_fwmap.mjs",
+   "sha256": "40ceafa685427e9b8c508fcb4d8a5232d577534388b11fc154f5a3a4b581aca7",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/test/test_hdmi.mjs",
+   "sha256": "3fd44fccd80db6553e65b4010d968aa02d827dcb4535892509b9e8621cd15baa",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/test/test_hist.mjs",
+   "sha256": "4ee85a1113cbb7bd5b7629dcec6a5a25aa3cd863e883e641d5ebde3cc858e2d5",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/test/test_host.mjs",
+   "sha256": "f5e0b2ac4876039d2350b4309b9670ea8c89f32c6d668dfada6f5006c3190df5",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/test/test_imgpipe.mjs",
+   "sha256": "00b9666e7b580138a4291900a2c6c5c103ddd028625d31b2dbe891a05b289b75",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/test/test_imgpro.mjs",
+   "sha256": "fed74e607bb75915e8f58a6d766ce46ddf180a20c4fcf001bb2e00e2a73bfcc7",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/test/test_infra.mjs",
+   "sha256": "429c5ecd50ff43260896f98f2aa0c8cb7799b163aae3c6b262d306c94bb93778",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/test/test_irq.mjs",
+   "sha256": "92ea4b12c08c0e0191c57caae55eab6a451643d473021e0b3d8132c06855bf45",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/test/test_lab.mjs",
+   "sha256": "c4b938e3bfce3fdeac0da0fb214545aae3cad40320ff7f4e6aef3cd8a51eafa4",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/test/test_lens.mjs",
+   "sha256": "e0f3412c842baf065f457003d3f6bbc5b0a007718926451f469b6ce269a8da11",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/test/test_live.mjs",
+   "sha256": "6c028201dc95e6967f775e68cfdfa04ab0798895706c52ff613cffc106631722",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/test/test_lookhooks.mjs",
+   "sha256": "60e143f84d687a91b6f379a0ea0462052a08334de7d01ae144436af675d1517e",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/test/test_looks.mjs",
+   "sha256": "672545765b9ccc08690b577005c5dfc35a21e2b68a62a1eb168fae18f60e599e",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/test/test_m4.mjs",
+   "sha256": "e6a99b6fec82b6b5b6549b4a84809ed3a5a497e9f758cf4de2962e6a30859600",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/test/test_mdet.mjs",
+   "sha256": "05644e01acb3155949d4e6893a504172ab4751152c5ef8e38ec3938a21836252",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/test/test_modpost.mjs",
+   "sha256": "74334926d9b7ee1f72d9980646b72650d8768363f2ebc458eec9887a5626cbd1",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/test/test_nocard.mjs",
+   "sha256": "f99c59036e6c3699b43b5f18789bccb49a3cb6b5935c803f40c71afbf7e2da0d",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/test/test_nvram.mjs",
+   "sha256": "5e414953127026d2e5a1cb32fb3189109efab07165b66bc573e3d4eb187da20d",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/test/test_osdwrap.mjs",
+   "sha256": "9e35459bb8ca6220147132e0c31f1aa1bb9ea5d00c31a895791e9df516a4853a",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/test/test_patch.mjs",
+   "sha256": "35c5af8c6e80b97f27295647b9fd0121607b6a084d48bc487e0a2fd150eaccf9",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/test/test_pdt.mjs",
+   "sha256": "ad7eef4397f134f404eb171d9be5d9fe58920df93b06f20ca2051a65e1b8efbf",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/test/test_playinfo.mjs",
+   "sha256": "e0600df2c988e9fab968377f624a7754db5cb837591b35717c8863b89ec169c7",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/test/test_pubaudit.mjs",
+   "sha256": "ed9be414f7d3533f5390285a34d2b4343f4fb571c3284f49d093c593fd5ca691",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/test/test_pure.mjs",
+   "sha256": "60a7aa6374c9f34da76093547eb2ae9f395747a3980f1fcda81450e27ad79486",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/test/test_regress.mjs",
+   "sha256": "d321a935d409329c10f8e771b2c4b1c7cf730fced5c2503829dd0dc36b9c0ae5",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/test/test_resnand.mjs",
+   "sha256": "230fa627cc3d1f7fdbb76562b782fd192e585c728a428b1828e29eed7d37123c",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/test/test_scene.mjs",
+   "sha256": "a94f8b2c1d4f21bf413466dcc63b2529f16ce841fdad2cd595df47605b2e428b",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/test/test_scpu.mjs",
+   "sha256": "49844902a1b23de615796b700423c23279b1f40327fbbd1c356cfb20d75c4ae4",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/test/test_scpum4.mjs",
+   "sha256": "76b9f1172b935976a98a65b45b36cad11730014a8cd6d69fb6fde19a50cea15a",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/test/test_sections.mjs",
+   "sha256": "3dd642f1bdcc74f2aa1e53a8cfb43a37fc02d25dde1d3d356be947db0ee499c9",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/test/test_session.mjs",
+   "sha256": "f6a4b3b4fb8e9b563b03d740176360c9cdc0f98f6046d1335c33e3eef993f37d",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/test/test_sio.mjs",
+   "sha256": "6196b5db64f944549d0c6748ad735981c0160ffdc06a45a7fabdab478ca157f0",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/test/test_site.mjs",
+   "sha256": "73484cea474c356d2c472811c0780b25c6ff56505102f530c60ad464fcffacd7",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/test/test_smswitch.mjs",
+   "sha256": "43bc3f7885421fa353765ea16aeb3db90bc5218a15a8e6d3afb39c278a6ca4c5",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/test/test_stillsetup.mjs",
+   "sha256": "dbb230e22011a7affa4638ecb6e4f0523d74fcb91054cfe70c95d8a61a58ac96",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/test/test_stm32l4.mjs",
+   "sha256": "068376f20b1e28cb34dcdc40cba9dda15960a3b726a48585ec65a4b3125d6f34",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/test/test_storage.mjs",
+   "sha256": "9d8ddee372087a2867db47f58eb24d1a69bba10ce19f10031d6c1329317be6ff",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/test/test_subject.mjs",
+   "sha256": "d5265a048096ebc888d0d1309af4ba16f000256dd8e63eec413f3f9fc0ed8ce7",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/test/test_take.mjs",
+   "sha256": "c7e32e25e11171d698d8daf59fbd560a2680c8a7342788d8fead949cb13cfc33",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/test/test_take_ready.mjs",
+   "sha256": "dc513b9e25baf837c55cafa9fac64cffb7032c16b4e61c14611b2346416f8fea",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/test/test_take_release.mjs",
+   "sha256": "387a1a5619583a44f0b0798419433accd734022f50d14d25f4a3b404566f5921",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/test/test_tools.mjs",
+   "sha256": "86d996c6c3d320e791b1ce4703fb8815ce8c9470bf7600ce3a2e699b88d37f4f",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/test/test_touch.mjs",
+   "sha256": "f1fdf6108591bbe8b6adcdad801c37c08449f1677c6e54e68fc968e3fc001925",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/test/test_trace.mjs",
+   "sha256": "d64d2493a214d07f587c49129eb1667edc32e8f5bfe369477e8d9439d320a93b",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/test/test_unpack.mjs",
+   "sha256": "2f13086e8f8a88bd1ac4f86d9fbdbe6cdd8925a6537dec76940e8232ab9cdfc3",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/test/test_ustart.mjs",
+   "sha256": "d4a000f791eec5e6082caab0cd21956569366ca28ba35ab27a73c26408fab478",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/test/test_vectors.mjs",
+   "sha256": "35ff0f1a91e4c9766d824fc2b20b8057ba189dfb5b83248f1bb3f9a8d1c4600b",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/test/test_vsc3.mjs",
+   "sha256": "80be0bfa48b2dec2c7880409aa3146cdd5317dab736870c4bfc54d0d9f812d78",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/test/test_web.mjs",
+   "sha256": "e64eb51eb623fbe83bc8d4269b9be2ef550cfec6abb6a0ce23938ad73003d224",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/test/workershim.mjs",
+   "sha256": "66527092c322c75fc367cf61418f220741061f0468a7602aaa31039207b10aa9",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/web/args.mjs",
+   "sha256": "84523037501799deb06eb933810eb8077c09433f9d25b4c5c895c24daa3749fc",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/web/cardfiles.mjs",
+   "sha256": "51ff3867de095b35caff46e43487d00caa8820430847ed8938ceac5987368dd4",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/web/driver.mjs",
+   "sha256": "c7db6825c25675057ba6f7d549e23b1221b206719cd5894bcb62e0c311859637",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/web/frame.mjs",
+   "sha256": "e3a4540b413e9f2e893eec039b1133175affd39f72c6a7ac262f6de69059b444",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/web/gate.html",
+   "sha256": "6e63e087b42b5ce4ecfa15e276775d7654bc62444f780e1f15bc5dab3d441b5e",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/web/index.html",
+   "sha256": "499744de6e3ee4d08d91cfcafe0694663edacf1671d6c0be152512c835197ed4",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/web/nvram.mjs",
+   "sha256": "471dd8ab5c7b07ce056b7c9175e9697c02f5464094feae53e5d96f7cce39b51c",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/web/opfs.mjs",
+   "sha256": "b61c571adc0675e0a8c26b122f6449a664f4aa224f04d16cfeaa780e1164593d",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/web/page.mjs",
+   "sha256": "f2cb3bcedb269b885d755ebdf95334b1fd28d4bd6ca8df6fd9405fd17cdb6323",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/web/play.html",
+   "sha256": "54507f40e25e23d465c1e5e27539b3f79386e99e8ef12a099b74908d22140272",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/web/runner.mjs",
+   "sha256": "2cb6673c312ce5fe5372d17e241823604dd68fbdc11f402364d0f21d48854e7b",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/emu/web/worker.mjs",
+   "sha256": "1e645c80d37d624ba8989771d7fa6ff54f6c4c0cbb620e77f268a8b773eee85b",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/unpacked/E147/OLY_E_147_1100_0000_0000.BIN.blk00000000.OE.0100.bin",
+   "sha256": "5e8d376e9111a44ac0352f26030d7c1b17026d42c45f3600cfa02a0e8c5b7d59",
+   "use": "freeze"
+  },
+  {
+   "path": "om-emu/unpacked/E147/OLY_E_147_1100_0000_0000.BIN.blk02000000.OE.0101.bin",
+   "sha256": "6d2bef74b4b2fa089f271529482f96505a170b91e79ab9b1a13f3ce8f7918226",
+   "use": "freeze"
+  },
+  {
+   "path": "ref/analysis/button-af/readiness/t3m-afon-editor-state-leak/scripts/accept_lib_v4.mjs",
+   "sha256": "9bb612f87ef028dafa5885b1b845e892f27694b7fdcd0a48e4fcb67b3806755d",
+   "use": "freeze"
+  },
+  {
+   "path": "ref/analysis/button-af/readiness/t6-afon-target-size-position/out/overlay-changed-bytes.csv",
+   "sha256": "99b60124f27a7d3d926108574897d1d50bbb297c7b2ec32b54c7010b04091224",
+   "use": "freeze"
+  },
+  {
+   "path": "ref/tasks/T3a-afon-zone-row/run-20261118-053855/work/out/overlay-changed-bytes.csv",
+   "sha256": "ff14ccafef13d99eae88c5e742ddb304598c31bb01c1257fe71f922c4b3536d2",
+   "use": "freeze"
+  },
+  {
+   "path": "ref/tasks/T7-orientation-producer/run-20261119-072701/work/scripts/pose.mjs",
+   "sha256": "09cb38618024a749ba4b15ee3be4e5140257d6c5145347567887196a81665358",
+   "use": "freeze"
+  },
+  {
+   "path": "ref/tasks/T8-afon-integrated-acceptance/run-20261119-132229/work/out/overlay-combined-t8.csv",
+   "sha256": "3601999e17086a23f29053d90d84ab56676b7f3cb450bd9fa9e3f1e89e98d63e",
+   "use": "freeze"
+  },
+  {
+   "path": "ref/tasks/T8b-afon-integrated-acceptance-generated/run-20261119-153249/work/scripts/lib_map_c1.mjs",
+   "sha256": "60d5ed07990cf74526380d566409c297877c9e18c2fc8b8a0ffc0fda030200e7",
+   "use": "freeze"
+  },
+  {
+   "path": "ref/tasks/T9d-afon-display-size-inputs/run-20261119-202459/work/out/ref-k1e-a.json",
+   "sha256": "c6af69e99346738f804d392b0994fee7aecceff790e676e91ac95c09d2a0860c",
+   "use": "freeze"
+  },
+  {
+   "path": "ref/tasks/T9d-afon-display-size-inputs/run-20261119-202459/work/out/ref-k1e-b.json",
+   "sha256": "b915b703e6e25935536e884c0ccf41db250b6b3cfc72be25989a17058778f480",
+   "use": "freeze"
+  },
+  {
+   "path": "ref/tasks/T9d-afon-display-size-inputs/run-20261119-202459/work/out/ref-k2.json",
+   "sha256": "791de47f0c0546220b8a6b4c9b2c1e3486a2c6a18f058195072a84331892746b",
+   "use": "freeze"
+  },
+  {
+   "path": "ref/tasks/T9d-afon-display-size-inputs/run-20261119-202459/work/scripts/lib_valid_t9d.mjs",
+   "sha256": "2013f1d2841b7b241567f25ccaa059bc714e1622554e15c12f17752142f3d81b",
+   "use": "freeze"
+  },
+  {
+   "path": "ref/tooling/node-v26.12.1-win-x64/node.exe",
+   "sha256": "1c63f1417e2e26d83ca9a9ec1d548524ab1305bc7209d90ebca56257ff0d84ed",
+   "use": "freeze"
+  },
+  {
+   "path": "ref/analysis/button-af/readiness/t11-afon-acceptance-harness/out/identity-t11-v10.jsonl",
+   "sha256": "135e1266baa0e671ff32aa02cfda6d55060f0a0b1c53dc126102a1b1174eaf67",
+   "use": "test fixture or accepted-source comparison (test_v3.mjs)"
+  },
+  {
+   "path": "ref/analysis/button-af/readiness/t11-afon-acceptance-harness/out/identity-t11-v10.json",
+   "sha256": "1865a575c63ee414f387a16d2db586653f6324e967f1a790c87e6a23a48dc24d",
+   "use": "test fixture or accepted-source comparison (test_v3.mjs)"
+  },
+  {
+   "path": "ref/analysis/button-af/readiness/t5-afon-button-handoff/scripts/zone_session_k1.mjs",
+   "sha256": "04cc1c3cc9d24a58e93cc8b1ea01f26f823c168be67d707333ceeb40bf359734",
+   "use": "test fixture or accepted-source comparison (test_v3.mjs)"
+  },
+  {
+   "path": "ref/analysis/button-af/readiness/t12-afon-harness-completion/harness/afon_hooks_v7.mjs",
+   "sha256": "488e6973767a246b24130173edf16fa4082dafb2ce00dcf8622150db8dc1fcd0",
+   "use": "test fixture or accepted-source comparison (test_v3.mjs)"
+  },
+  {
+   "path": "ref/analysis/button-af/readiness/t12-afon-harness-completion/harness/state_v1.mjs",
+   "sha256": "8b5752adcf905e53af86d92e640135e3e9a83ed50bf3743f9e74a6f1c3da0677",
+   "use": "test fixture or accepted-source comparison (test_v3.mjs)"
+  },
+  {
+   "path": "ref/analysis/button-af/readiness/t12-afon-harness-completion/harness/predicates_v3.mjs",
+   "sha256": "c6a11a0d03a8a355beb021cd2578d9be304498695c118250a1464f22de8a046f",
+   "use": "test fixture or accepted-source comparison (test_v3.mjs)"
+  },
+  {
+   "path": "ref/analysis/button-af/readiness/t12-afon-harness-completion/harness/refresh_v4.mjs",
+   "sha256": "01e4714d9f3067f1972e113ffc693bdb8a5dc847800b80604eed827bc1e75f48",
+   "use": "test fixture or accepted-source comparison (test_v3.mjs)"
+  },
+  {
+   "path": "ref/analysis/button-af/readiness/t12-afon-harness-completion/harness/table_v2.mjs",
+   "sha256": "1dbdfa871ec90c27010d5361c188b7d63db0d24c700ac57c74942dbce1bb5f20",
+   "use": "test fixture or accepted-source comparison (test_v3.mjs)"
+  },
+  {
+   "path": "ref/analysis/button-af/readiness/t12-afon-harness-completion/harness/check_table_v3.mjs",
+   "sha256": "37255a2b42c52c2f4cc99782d0e1cf186e0d9cd84735224f76d0be1b6c3df1d9",
+   "use": "test fixture or accepted-source comparison (test_v3.mjs)"
+  }
+ ],
+ "sources": [
+  {
+   "path": "work/harness/afon_hooks_v7.mjs",
+   "sha256": "488e6973767a246b24130173edf16fa4082dafb2ce00dcf8622150db8dc1fcd0",
+   "bytes": 24636
+  },
+  {
+   "path": "work/harness/check_table_v3.mjs",
+   "sha256": "37255a2b42c52c2f4cc99782d0e1cf186e0d9cd84735224f76d0be1b6c3df1d9",
+   "bytes": 7778
+  },
+  {
+   "path": "work/harness/common_v1.mjs",
+   "sha256": "327df4f05eebaa6142bc508627359a74b1ce320379c1fdad3f1d3466f00cd529",
+   "bytes": 2685
+  },
+  {
+   "path": "work/harness/exec_v1.mjs",
+   "sha256": "8aed0b0030344e69b6d9b523e12da656683a33354b1eb0f9f1a4b43be2e683b2",
+   "bytes": 11054
+  },
+  {
+   "path": "work/harness/exec_v2.mjs",
+   "sha256": "222c91178c7311fa4f3540ac5b1a855b3cc4aead460283d671d0197c42532ca6",
+   "bytes": 12714
+  },
+  {
+   "path": "work/harness/exitcheck_v1.mjs",
+   "sha256": "3056d02b93b41c43900071649b6ea57e1096688ba3e1485387b95b177e33c5a2",
+   "bytes": 4810
+  },
+  {
+   "path": "work/harness/exitcheck_v2.mjs",
+   "sha256": "d8c0b3ddb022727b8b9140ec775155444f96f38ad822af8694ec118e0e485c1a",
+   "bytes": 8838
+  },
+  {
+   "path": "work/harness/exitcheck_v3.mjs",
+   "sha256": "0bc09adee6cf9d573f597ed87f42ea7717c07daedcada9687ee1b19f162ff51f",
+   "bytes": 8899
+  },
+  {
+   "path": "work/harness/expect_v1.mjs",
+   "sha256": "3a85eaef31d9f8e0d040d0c0cdc48fd008bb02d7fa1ddecb8c1a5526ba818f2f",
+   "bytes": 2443
+  },
+  {
+   "path": "work/harness/fake_v1.mjs",
+   "sha256": "7e00070e3b6ecff1cf733df85467bca972abc31bcb32b3370bebe11c3bae5712",
+   "bytes": 11416
+  },
+  {
+   "path": "work/harness/fake_v2.mjs",
+   "sha256": "d3b1355e06c30b8083b6a3254b6a11dd9c7b23e548e007d96aaf4d976e64001d",
+   "bytes": 12568
+  },
+  {
+   "path": "work/harness/fixture_t11_v1.mjs",
+   "sha256": "2058762f6c7c155a152588bdb4b106dab665198bf2e13f8af20e0ccf94c7ea8e",
+   "bytes": 3272
+  },
+  {
+   "path": "work/harness/fixture_t11_v2.mjs",
+   "sha256": "31acec4f108ab3cc77311238d8ec80afcf471237997e59688a2643758a9a7c14",
+   "bytes": 3272
+  },
+  {
+   "path": "work/harness/freeze_v1.mjs",
+   "sha256": "2620520114ca7b26b668dfcf4ddf9c9a7013e5f9c7c09ee5f338365adc75e6f4",
+   "bytes": 8099
+  },
+  {
+   "path": "work/harness/gate_v1.mjs",
+   "sha256": "53a5cbbe65f15e687eaaca5878a7a0ff71aee84842f14e0cc165e4ef859bf0b2",
+   "bytes": 3942
+  },
+  {
+   "path": "work/harness/gate_v2.mjs",
+   "sha256": "8d9087107005b666298861e4680613e963a7437efa9ef834df3fc53abd88b94a",
+   "bytes": 4198
+  },
+  {
+   "path": "work/harness/inventory_v1.mjs",
+   "sha256": "d9ce1e41a43c5c8789689bee1c6340a73ef5e328eefcffd930466d1ebaf7c0e8",
+   "bytes": 8887
+  },
+  {
+   "path": "work/harness/inventory_v2.mjs",
+   "sha256": "e3d751e09d761cf354eff416317743e2aa8658613101b9c231179f518aa23738",
+   "bytes": 14129
+  },
+  {
+   "path": "work/harness/inventory_v3.mjs",
+   "sha256": "c2fae3fa3e510985b10c21211d71be950dd53e6b7b4794e7afbfb4b851d7fef2",
+   "bytes": 14522
+  },
+  {
+   "path": "work/harness/launch_v1.mjs",
+   "sha256": "19ba5e49b33ca496ef769253e32ef584213d15e48e36509fb28b2faee67e1d5e",
+   "bytes": 13115
+  },
+  {
+   "path": "work/harness/launch_v2.mjs",
+   "sha256": "bf5a60938d5866288cccbee424a2fd88a6abbced88166c27d71e435a6093dd00",
+   "bytes": 14975
+  },
+  {
+   "path": "work/harness/launch_v3.mjs",
+   "sha256": "4c345f0d33a39f0961d69b7d9700ddf4a3a85ab7b2f2cf285f18956693ece0f9",
+   "bytes": 15650
+  },
+  {
+   "path": "work/harness/make_freeze_v1.mjs",
+   "sha256": "81c4ececa3cf4882827b7518c45b16ae9b9a27f8c7ae4c5a9bd3d4a14da8c3fe",
+   "bytes": 7208
+  },
+  {
+   "path": "work/harness/make_freeze_v2.mjs",
+   "sha256": "f0d32578370ea1873e8d14de6b396f8cbefd4b69ae02a5dc1be17c3ed1482537",
+   "bytes": 7235
+  },
+  {
+   "path": "work/harness/make_freeze_v3.mjs",
+   "sha256": "04433c20dc7345f0c2cfc0c9768f1c496e075f517d5d34499e0088287417c06f",
+   "bytes": 7237
+  },
+  {
+   "path": "work/harness/plan_v1.mjs",
+   "sha256": "dd7ec94607f097883ae44e4dcbc6c4c74cca49308bb8b493af7b51b3ff4d9a7e",
+   "bytes": 17780
+  },
+  {
+   "path": "work/harness/predicates_v3.mjs",
+   "sha256": "c6a11a0d03a8a355beb021cd2578d9be304498695c118250a1464f22de8a046f",
+   "bytes": 1605
+  },
+  {
+   "path": "work/harness/probe_v1.mjs",
+   "sha256": "5948b03441f343888c54938c7af084ae48e1e75a03df2c495ae70d7c6abdda87",
+   "bytes": 3478
+  },
+  {
+   "path": "work/harness/probe_v2.mjs",
+   "sha256": "78d865308f856908cede5a18f5f2abf5d4806c8bf3fb30e6a950db546ab71e81",
+   "bytes": 6791
+  },
+  {
+   "path": "work/harness/probe_v3.mjs",
+   "sha256": "67b53196a930207b3f205af22fc7584e475d4750e7e293216a7cc6e0470637f5",
+   "bytes": 8305
+  },
+  {
+   "path": "work/harness/real_v1.mjs",
+   "sha256": "13ed4f23a99b596d30b6c6c96e6e0756d56e38cea7db060d8edf4fbf3a320b1c",
+   "bytes": 10009
+  },
+  {
+   "path": "work/harness/real_v2.mjs",
+   "sha256": "6c47d56883927e00f3c7667ee6fc9f2574fa4b10183187beecc7a9df9409a43d",
+   "bytes": 11467
+  },
+  {
+   "path": "work/harness/refresh_v4.mjs",
+   "sha256": "01e4714d9f3067f1972e113ffc693bdb8a5dc847800b80604eed827bc1e75f48",
+   "bytes": 4294
+  },
+  {
+   "path": "work/harness/relations_v1.mjs",
+   "sha256": "b08f64079b7c603e4db3e7c1e68f50ba76c8894cb44e4ebfbd6d7ae11994015f",
+   "bytes": 17375
+  },
+  {
+   "path": "work/harness/relations_v2.mjs",
+   "sha256": "7c8e5fb9e09821ec8cbccedd181186f93980b3c45099482bb31e924f905c122b",
+   "bytes": 18074
+  },
+  {
+   "path": "work/harness/run_v1.mjs",
+   "sha256": "320390a6d4e301f2a3c5da665f608e17f14ee68f22d2bd2d9e20250cda0a614f",
+   "bytes": 7397
+  },
+  {
+   "path": "work/harness/run_v2.mjs",
+   "sha256": "327a76fb79fe8201166a7f5bc786f53c55f828319ec67e7af962819848ff0d5a",
+   "bytes": 8233
+  },
+  {
+   "path": "work/harness/run_v3.mjs",
+   "sha256": "f288389482705544bdc3405f40829a0d7bdc0040c002d4a6ac3727f791ea3114",
+   "bytes": 8252
+  },
+  {
+   "path": "work/harness/seal_v1.mjs",
+   "sha256": "2d51beb9fef3b7c78ced872a4212a56cf990af44c995443caf525f633de66d8e",
+   "bytes": 1754
+  },
+  {
+   "path": "work/harness/session_v1.diff",
+   "sha256": "d286bc1db5ff74bb9b694f4f76a9900a2f99a78441c2ea0c784d1184a96bbcc8",
+   "bytes": 8434
+  },
+  {
+   "path": "work/harness/session_v1.mjs",
+   "sha256": "6aaa9e4300bc4f343c9269d6a7b47fc4c48c957030c6975bc487717ed88314dd",
+   "bytes": 25887
+  },
+  {
+   "path": "work/harness/session_v2.diff",
+   "sha256": "d5762f28d7167bbd400b973734539de0410f4a60b68c362166bf4a4e8f13843b",
+   "bytes": 8560
+  },
+  {
+   "path": "work/harness/session_v2.mjs",
+   "sha256": "13efef80fcf3bfe1b280d8834ccd7a70a49d63668e4f02864a8b140a6c1a83ca",
+   "bytes": 26013
+  },
+  {
+   "path": "work/harness/state_v1.mjs",
+   "sha256": "8b5752adcf905e53af86d92e640135e3e9a83ed50bf3743f9e74a6f1c3da0677",
+   "bytes": 3647
+  },
+  {
+   "path": "work/harness/table_v2.mjs",
+   "sha256": "1dbdfa871ec90c27010d5361c188b7d63db0d24c700ac57c74942dbce1bb5f20",
+   "bytes": 17566
+  },
+  {
+   "path": "work/harness/test_v1.mjs",
+   "sha256": "8451f439ecaf9918be0b9cedc405d27388d2f548fd251eb61f3813a07733b2e1",
+   "bytes": 36616
+  },
+  {
+   "path": "work/harness/test_v2.mjs",
+   "sha256": "a6f52be23382c3a57f8d39f777cee5c53ec95f120d0f754b5133b15fa2966afa",
+   "bytes": 48020
+  },
+  {
+   "path": "work/harness/test_v3.mjs",
+   "sha256": "eb05648b3731c42d660f543d34ab72fce7367917ef8fac22edc79ae65f52b740",
+   "bytes": 49212
+  }
+ ],
+ "outputs": [
+  {
+   "path": "work/out/cmd/fake-display-a.cmd.txt",
+   "sha256": "4489706d0c3bef57c0491c77882dbfe89dee8eec1203e7fb627ee846248160e8",
+   "bytes": 169
+  },
+  {
+   "path": "work/out/cmd/fake-display-a.exit.txt",
+   "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+   "bytes": 2
+  },
+  {
+   "path": "work/out/cmd/fake-display-a.stderr.txt",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "bytes": 0
+  },
+  {
+   "path": "work/out/cmd/fake-display-a.stdout.txt",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "bytes": 0
+  },
+  {
+   "path": "work/out/cmd/fake-display-b.cmd.txt",
+   "sha256": "d78c5fd432a3e35e2727900245e6a1a433410f9ded4918970b372e4c2bcd169d",
+   "bytes": 169
+  },
+  {
+   "path": "work/out/cmd/fake-display-b.exit.txt",
+   "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+   "bytes": 2
+  },
+  {
+   "path": "work/out/cmd/fake-display-b.stderr.txt",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "bytes": 0
+  },
+  {
+   "path": "work/out/cmd/fake-display-b.stdout.txt",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "bytes": 0
+  },
+  {
+   "path": "work/out/cmd/fake-display-k1.cmd.txt",
+   "sha256": "1d998ce69094032f9ce3c9866772ace49f43f6fed33f4c508e17bd5424785880",
+   "bytes": 171
+  },
+  {
+   "path": "work/out/cmd/fake-display-k1.exit.txt",
+   "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+   "bytes": 2
+  },
+  {
+   "path": "work/out/cmd/fake-display-k1.stderr.txt",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "bytes": 0
+  },
+  {
+   "path": "work/out/cmd/fake-display-k1.stdout.txt",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "bytes": 0
+  },
+  {
+   "path": "work/out/cmd/fake-display-k2.cmd.txt",
+   "sha256": "e05e0c51df70026ce7197d278e085d0443710eabd68a65d841ce45f34104722c",
+   "bytes": 171
+  },
+  {
+   "path": "work/out/cmd/fake-display-k2.exit.txt",
+   "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+   "bytes": 2
+  },
+  {
+   "path": "work/out/cmd/fake-display-k2.stderr.txt",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "bytes": 0
+  },
+  {
+   "path": "work/out/cmd/fake-display-k2.stdout.txt",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "bytes": 0
+  },
+  {
+   "path": "work/out/cmd/fake-identity.cmd.txt",
+   "sha256": "3a4f2de86f8c585506fbffee0d73cb3f30536baedf42eb2b4f05ed80595f0d49",
+   "bytes": 142
+  },
+  {
+   "path": "work/out/cmd/fake-identity.exit.txt",
+   "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+   "bytes": 2
+  },
+  {
+   "path": "work/out/cmd/fake-identity.stderr.txt",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "bytes": 0
+  },
+  {
+   "path": "work/out/cmd/fake-identity.stdout.txt",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "bytes": 0
+  },
+  {
+   "path": "work/out/cmd/fake-proof.cmd.txt",
+   "sha256": "d69fb6a54fc1494c1a4b4929d53c28abcf6fb58d92cc15ce6eedf05637434ec7",
+   "bytes": 161
+  },
+  {
+   "path": "work/out/cmd/fake-proof.exit.txt",
+   "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+   "bytes": 2
+  },
+  {
+   "path": "work/out/cmd/fake-proof.stderr.txt",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "bytes": 0
+  },
+  {
+   "path": "work/out/cmd/fake-proof.stdout.txt",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "bytes": 0
+  },
+  {
+   "path": "work/out/cmd/make-freeze.cmd.txt",
+   "sha256": "2cb13b476487c4dcacbe7d58ec5725fee0b66239bca567cf7eb0e76e6942b136",
+   "bytes": 50
+  },
+  {
+   "path": "work/out/cmd/make-freeze.exit.txt",
+   "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+   "bytes": 2
+  },
+  {
+   "path": "work/out/cmd/make-freeze.stderr.txt",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "bytes": 0
+  },
+  {
+   "path": "work/out/cmd/make-freeze.stdout.txt",
+   "sha256": "e20dfeae94b8151202e3d941d0a70095c672f21b7d93efeb1fd4b92f07928a03",
+   "bytes": 142
+  },
+  {
+   "path": "work/out/cmd/real-refused-proof.cmd.txt",
+   "sha256": "5523fa4bf6291555fd8e24b5cf705b7046a3980bd5a03754738c04d645047c9e",
+   "bytes": 162
+  },
+  {
+   "path": "work/out/cmd/real-refused-proof.exit.txt",
+   "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+   "bytes": 2
+  },
+  {
+   "path": "work/out/cmd/real-refused-proof.stderr.txt",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "bytes": 0
+  },
+  {
+   "path": "work/out/cmd/real-refused-proof.stdout.txt",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "bytes": 0
+  },
+  {
+   "path": "work/out/cmd/test-results.json",
+   "sha256": "e2655278847ec28ce3b40a6f8712116205f748b31228e583cb39167a27af023b",
+   "bytes": 14909
+  },
+  {
+   "path": "work/out/cmd/test.cmd.txt",
+   "sha256": "4a777e2422a930a0c65adff6a46c31a3435ca0f99cd743a0b98c5dd11ea59212",
+   "bytes": 41
+  },
+  {
+   "path": "work/out/cmd/test.exit.txt",
+   "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+   "bytes": 2
+  },
+  {
+   "path": "work/out/cmd/test.stderr.txt",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "bytes": 0
+  },
+  {
+   "path": "work/out/cmd/test.stdout.txt",
+   "sha256": "94d90ef089082bdae3136ac37f0d8d6a696999be4cc1e508af52b86630486925",
+   "bytes": 5871
+  },
+  {
+   "path": "work/out/fake-display-a/complete.json",
+   "sha256": "694f504e3eb5ee698256946c5ea9b94931c884480c0aa38268cc17afa09fa9ee",
+   "bytes": 1816
+  },
+  {
+   "path": "work/out/fake-display-a/inventory.jsonl",
+   "sha256": "3387bef09ddef2467202af6fd1d8fe8418225705e6022bc1e02bf729d4a75939",
+   "bytes": 11434
+  },
+  {
+   "path": "work/out/fake-display-a/log.jsonl",
+   "sha256": "fc7db6ca2ae772b1b17d2699bff4510d9b60623df4b2cff31fa2a0f1332a8e63",
+   "bytes": 48518
+  },
+  {
+   "path": "work/out/fake-display-a/refresh-disp-seed-a.jsonl",
+   "sha256": "00136bdf0b3ba18e8e761a762932ebd9d885afb93070a6b2461a653517523987",
+   "bytes": 47352
+  },
+  {
+   "path": "work/out/fake-display-a.launch/cmd.json",
+   "sha256": "aaea8e3151f62bd8753df9d8aacda722ee0fb8d29021479a83faf10a8497358c",
+   "bytes": 6422
+  },
+  {
+   "path": "work/out/fake-display-a.launch/exit.json",
+   "sha256": "e538628ec69677de3e53fc3353d816080b70a1d9a2b7b0329316f4a646101bbc",
+   "bytes": 2059
+  },
+  {
+   "path": "work/out/fake-display-a.launch/inputs.json",
+   "sha256": "cc3051bae8cedc96536c35ab7f1df0128bb29f124b3283f5f61f2d47051f7a4e",
+   "bytes": 1145
+  },
+  {
+   "path": "work/out/fake-display-a.launch/nonce",
+   "sha256": "c06df6d4bd446928507e520eefe54199feb32c82079db962448bc9947bac4601",
+   "bytes": 65
+  },
+  {
+   "path": "work/out/fake-display-a.launch/stderr.txt",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "bytes": 0
+  },
+  {
+   "path": "work/out/fake-display-a.launch/stdout.txt",
+   "sha256": "cd768cdf7adfd426a0dc253b50e73972dd26d45dd2c6b2a920f0ef35f35affff",
+   "bytes": 170
+  },
+  {
+   "path": "work/out/fake-display-b/complete.json",
+   "sha256": "c4bcedab9a8f74abbf82f52c5ad574e08c473bb1b086cea83b342a26a06ebe40",
+   "bytes": 1816
+  },
+  {
+   "path": "work/out/fake-display-b/inventory.jsonl",
+   "sha256": "c83c2751e42e93cd21e614e8b6424933c38e1be9ffbcb95cd1155ac9d90533e2",
+   "bytes": 11434
+  },
+  {
+   "path": "work/out/fake-display-b/log.jsonl",
+   "sha256": "59a16925ad4f2fa59061fbe78a70585addd68950de7979aa52dc588666e48b3c",
+   "bytes": 48518
+  },
+  {
+   "path": "work/out/fake-display-b/refresh-disp-seed-b.jsonl",
+   "sha256": "d07821adcc73e75c40e66b739d04814e56252d7dfa3e3f8395aeac4152f2e941",
+   "bytes": 47352
+  },
+  {
+   "path": "work/out/fake-display-b.launch/cmd.json",
+   "sha256": "a230fecaf9a55f1bba3afeb0a42b702e76c7761e546c363ed370417f65de24de",
+   "bytes": 6422
+  },
+  {
+   "path": "work/out/fake-display-b.launch/exit.json",
+   "sha256": "1e3f48ff02e583f74e992d1d2f4b123f0948fb87e1e867f6499293a56c1239f3",
+   "bytes": 2059
+  },
+  {
+   "path": "work/out/fake-display-b.launch/inputs.json",
+   "sha256": "551b0a7fb0a9f50fed0d717eb766fbba84f015639a2123b732a78b053ca96f7c",
+   "bytes": 1145
+  },
+  {
+   "path": "work/out/fake-display-b.launch/nonce",
+   "sha256": "1294cb3c374d0f5014beb6ab2c277587fcdf43cbd146f869b91fdd1c3a476384",
+   "bytes": 65
+  },
+  {
+   "path": "work/out/fake-display-b.launch/stderr.txt",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "bytes": 0
+  },
+  {
+   "path": "work/out/fake-display-b.launch/stdout.txt",
+   "sha256": "235680a17523cd6716d8742f6c0a39453e8671ae9187633db86bedcad87f00ed",
+   "bytes": 170
+  },
+  {
+   "path": "work/out/fake-display-k1/complete.json",
+   "sha256": "e6bf5b4dce6c7411d5fb6fbaa19675e0c0c37b5e1cb9475e4c2b8abad684d64f",
+   "bytes": 1384
+  },
+  {
+   "path": "work/out/fake-display-k1/inventory.jsonl",
+   "sha256": "9e8c71398558cff2c95d3c664cbd777e1be87f97058f1fbe660a0411e7ec03dc",
+   "bytes": 11435
+  },
+  {
+   "path": "work/out/fake-display-k1/log.jsonl",
+   "sha256": "083fb7e72f74f100ecdf6be6f04e3b5704c55f904a224ac7964b6f1be663dabf",
+   "bytes": 37945
+  },
+  {
+   "path": "work/out/fake-display-k1/refresh-disp-k1.jsonl",
+   "sha256": "2f03113c64d1f691e3287589922344468d4c5b1c5a30483e69c610816915cc7d",
+   "bytes": 48904
+  },
+  {
+   "path": "work/out/fake-display-k1.launch/cmd.json",
+   "sha256": "08f8b1d95995f8276fac314b6cd74b68452c57378faa36d743889d185063a624",
+   "bytes": 6428
+  },
+  {
+   "path": "work/out/fake-display-k1.launch/exit.json",
+   "sha256": "96f243086a0ac62c3a36ff4542890be3a6a4a93448c4c3d59a3a3844719f604d",
+   "bytes": 2049
+  },
+  {
+   "path": "work/out/fake-display-k1.launch/inputs.json",
+   "sha256": "aa49575e3ee19ea281f5aa5bb853d81844bd94194d379ef0f194ad45fbb3e99e",
+   "bytes": 1147
+  },
+  {
+   "path": "work/out/fake-display-k1.launch/nonce",
+   "sha256": "c2b04b0de3e94dcf1d3c944e7322967e0c79464b81c92145c0b946f827033805",
+   "bytes": 65
+  },
+  {
+   "path": "work/out/fake-display-k1.launch/stderr.txt",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "bytes": 0
+  },
+  {
+   "path": "work/out/fake-display-k1.launch/stdout.txt",
+   "sha256": "42a14635fb424afd7afc665364812c6a945e2f44aeb529fff7e2e8634121e7ab",
+   "bytes": 168
+  },
+  {
+   "path": "work/out/fake-display-k2/complete.json",
+   "sha256": "bbc7f56eaf1bce8b0269788c15e2cf169000efd53b776d6fafb1c9f530aa54f5",
+   "bytes": 1554
+  },
+  {
+   "path": "work/out/fake-display-k2/inventory.jsonl",
+   "sha256": "d0a590337220369bc2d65767b39b1fdf3d51bdf34d89d427d1134d6d2ef664f4",
+   "bytes": 11435
+  },
+  {
+   "path": "work/out/fake-display-k2/log.jsonl",
+   "sha256": "545e03e7e9e65a8b54114997fb3bd80269d46b355ef62a2517bb33c7c33e91d6",
+   "bytes": 46813
+  },
+  {
+   "path": "work/out/fake-display-k2/refresh-disp-k2.jsonl",
+   "sha256": "3c5ff1bb362829756a47c8566db25d6a6e780d04423eb193d0538525b16fd48e",
+   "bytes": 47352
+  },
+  {
+   "path": "work/out/fake-display-k2.launch/cmd.json",
+   "sha256": "d6f92dc2704e789c1691746a4eda1d7062d81c4efdcd69856662327179d84c6d",
+   "bytes": 6428
+  },
+  {
+   "path": "work/out/fake-display-k2.launch/exit.json",
+   "sha256": "16689255f9a06bd452b3e3c9cc07a34da0ea1e6c6f38ebe90fbaf1ea6a59256e",
+   "bytes": 2049
+  },
+  {
+   "path": "work/out/fake-display-k2.launch/inputs.json",
+   "sha256": "99c736bb3058b2bd1fe44d05f857a2a2c1d61caa2ec5ed3fb53deb44ba692cbf",
+   "bytes": 1147
+  },
+  {
+   "path": "work/out/fake-display-k2.launch/nonce",
+   "sha256": "cce1d4f39676691f3ac0297a90ced303233110996390e994f849889158fc1e64",
+   "bytes": 65
+  },
+  {
+   "path": "work/out/fake-display-k2.launch/stderr.txt",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "bytes": 0
+  },
+  {
+   "path": "work/out/fake-display-k2.launch/stdout.txt",
+   "sha256": "11e8902b06214896f054ffc231968e4526a347fddfd34a57e206c9124d2e1222",
+   "bytes": 169
+  },
+  {
+   "path": "work/out/fake-identity/complete.json",
+   "sha256": "872fa8e3166c62a3fd793232725e86285f6edde39be9dc2f457858ed41965f0c",
+   "bytes": 15046
+  },
+  {
+   "path": "work/out/fake-identity/identity.json",
+   "sha256": "a32752564f46b137b47005311113f548454c19d150fe45498d90eea9c8a7162c",
+   "bytes": 2836067
+  },
+  {
+   "path": "work/out/fake-identity/identity.seal.json",
+   "sha256": "e9c684eadd39772b1ad3b2bfed48e9a6716ba6b4679fe5b52b7d7d612f30929b",
+   "bytes": 312
+  },
+  {
+   "path": "work/out/fake-identity/inventory.jsonl",
+   "sha256": "46f7345fb90dd502fcfc8a21205fc3fedef6d5723e9996208377be0e7ba4ee16",
+   "bytes": 10758
+  },
+  {
+   "path": "work/out/fake-identity/log.jsonl",
+   "sha256": "cf39e85c8c9f35bfdc096e195b4aca7fdfd3a1f12948f27e4675904cea5035f0",
+   "bytes": 402271
+  },
+  {
+   "path": "work/out/fake-identity/refresh-disp-k1.jsonl",
+   "sha256": "2f03113c64d1f691e3287589922344468d4c5b1c5a30483e69c610816915cc7d",
+   "bytes": 48904
+  },
+  {
+   "path": "work/out/fake-identity/refresh-disp-k2.jsonl",
+   "sha256": "3c5ff1bb362829756a47c8566db25d6a6e780d04423eb193d0538525b16fd48e",
+   "bytes": 47352
+  },
+  {
+   "path": "work/out/fake-identity/refresh-disp-seed-a.jsonl",
+   "sha256": "00136bdf0b3ba18e8e761a762932ebd9d885afb93070a6b2461a653517523987",
+   "bytes": 47352
+  },
+  {
+   "path": "work/out/fake-identity/refresh-disp-seed-b.jsonl",
+   "sha256": "d07821adcc73e75c40e66b739d04814e56252d7dfa3e3f8395aeac4152f2e941",
+   "bytes": 47352
+  },
+  {
+   "path": "work/out/fake-identity.launch/cmd.json",
+   "sha256": "696d6ccba066a6d0f94683128278e62b4954685eb2be4f255550293a9afefbb2",
+   "bytes": 5952
+  },
+  {
+   "path": "work/out/fake-identity.launch/exit.json",
+   "sha256": "039004317b3efdcbb24c04cd405bd08374d247700429ff3e2e4329b2dde291ec",
+   "bytes": 4095
+  },
+  {
+   "path": "work/out/fake-identity.launch/inputs.json",
+   "sha256": "c2339cb6d55684ebe591a59698a52a50b5773baa489539da892563ced4633b3c",
+   "bytes": 553
+  },
+  {
+   "path": "work/out/fake-identity.launch/nonce",
+   "sha256": "9a63fd071bea3b9e0ad730481fcca78819fd8b559d92b8a299f77a83ab52e060",
+   "bytes": 65
+  },
+  {
+   "path": "work/out/fake-identity.launch/stderr.txt",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "bytes": 0
+  },
+  {
+   "path": "work/out/fake-identity.launch/stdout.txt",
+   "sha256": "8f1dda323128bf5df28827143c7fa5e1d337be31f003fcc48b55506db41b128f",
+   "bytes": 170
+  },
+  {
+   "path": "work/out/fake-proof/complete.json",
+   "sha256": "357724da0b80e12702839484ac3f2ea2170a5593998fcb3f23415808479a1c35",
+   "bytes": 10146
+  },
+  {
+   "path": "work/out/fake-proof/inventory.jsonl",
+   "sha256": "6c1d7beb885f96ed42ab7ffae34a939030493671fc86f0d528abe25d4e4a371d",
+   "bytes": 11430
+  },
+  {
+   "path": "work/out/fake-proof/log.jsonl",
+   "sha256": "02a73cc3beefe290730d0692a67d09c351d2e76cbc2c2448e1ba012eb6f59af5",
+   "bytes": 366710
+  },
+  {
+   "path": "work/out/fake-proof.launch/cmd.json",
+   "sha256": "d529a4fa824b8399ba5b29e7ea4a4d29f3c6474797b7b4384f0e367a25dcb233",
+   "bytes": 6398
+  },
+  {
+   "path": "work/out/fake-proof.launch/exit.json",
+   "sha256": "3690cd149f7e5cd2c608523af7f59470f55b4623cd009e0736ba327b7f175ee8",
+   "bytes": 1576
+  },
+  {
+   "path": "work/out/fake-proof.launch/inputs.json",
+   "sha256": "1649906194a6cf00692a2ab52f940b6425332a864e309cbb368b4e75f3a1808e",
+   "bytes": 1137
+  },
+  {
+   "path": "work/out/fake-proof.launch/nonce",
+   "sha256": "5175f15b354ca709a77b1e2db623c8a40773a7b1370997f65b77ab7f50eddbe0",
+   "bytes": 65
+  },
+  {
+   "path": "work/out/fake-proof.launch/stderr.txt",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "bytes": 0
+  },
+  {
+   "path": "work/out/fake-proof.launch/stdout.txt",
+   "sha256": "99587e7609c8081332f2d25f58c7d4f645cedcff8c0fca48baa46035ae15215f",
+   "bytes": 170
+  },
+  {
+   "path": "work/out/freeze-cap-display-a/complete.json",
+   "sha256": "4b161a22da21d6300e6e345dc3ad03c182fd9b663e684b4a08d4c190360fbd91",
+   "bytes": 1757
+  },
+  {
+   "path": "work/out/freeze-cap-display-a/inventory.jsonl",
+   "sha256": "62888569d69b77e453783dc167602fc83631411fffb21e2bf4ed0848f10c0242",
+   "bytes": 11247
+  },
+  {
+   "path": "work/out/freeze-cap-display-a/log.jsonl",
+   "sha256": "ee681b8bdd18062d89708d8aa632fe5d2364f790f2e6de7bf78d8a0847d46343",
+   "bytes": 48459
+  },
+  {
+   "path": "work/out/freeze-cap-display-a/refresh-disp-seed-a.jsonl",
+   "sha256": "00136bdf0b3ba18e8e761a762932ebd9d885afb93070a6b2461a653517523987",
+   "bytes": 47352
+  },
+  {
+   "path": "work/out/freeze-cap-display-a.launch/cmd.json",
+   "sha256": "6d5b5b61c4f898303e3b51f66be2cb0b6e4df4abcd94a84af5f7b4d387878110",
+   "bytes": 2369
+  },
+  {
+   "path": "work/out/freeze-cap-display-a.launch/exit.json",
+   "sha256": "30465a311f1980a4627019d9096bb2c7ea9e5eac234eed6cae3639406a79d4b6",
+   "bytes": 5921
+  },
+  {
+   "path": "work/out/freeze-cap-display-a.launch/inputs.json",
+   "sha256": "0e2248a11158835a60fc5d76ed71917b3326ebb5e8ebeb47aa91ccc455ad8fad",
+   "bytes": 913
+  },
+  {
+   "path": "work/out/freeze-cap-display-a.launch/nonce",
+   "sha256": "f6e1375c5e2682462133aa54522ba39759a4e094df1ebcffb1940e80d90f78f8",
+   "bytes": 65
+  },
+  {
+   "path": "work/out/freeze-cap-display-a.launch/stderr.txt",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "bytes": 0
+  },
+  {
+   "path": "work/out/freeze-cap-display-a.launch/stdout.txt",
+   "sha256": "39f26d5c5778acf24cdc3e7b1b5384cf90f587e08dc6fa468b5b7af360a0bb0f",
+   "bytes": 170
+  },
+  {
+   "path": "work/out/freeze-cap-display-b/complete.json",
+   "sha256": "67241c88e952dacff821ab710a47d2ecefb9a053954b21f74bb060ceac64e561",
+   "bytes": 1757
+  },
+  {
+   "path": "work/out/freeze-cap-display-b/inventory.jsonl",
+   "sha256": "dc82c3e5fbb2e7895989cd9536bd8302f5b3d397500989015d5600292a260549",
+   "bytes": 11247
+  },
+  {
+   "path": "work/out/freeze-cap-display-b/log.jsonl",
+   "sha256": "f7608d6825dccaa023b1a028d3b924024b567c4d0a142cac4cb438247e0a3617",
+   "bytes": 48459
+  },
+  {
+   "path": "work/out/freeze-cap-display-b/refresh-disp-seed-b.jsonl",
+   "sha256": "d07821adcc73e75c40e66b739d04814e56252d7dfa3e3f8395aeac4152f2e941",
+   "bytes": 47352
+  },
+  {
+   "path": "work/out/freeze-cap-display-b.launch/cmd.json",
+   "sha256": "f48aef96a45f405f19b43fc120bb6958c7b6139f2837451a84983af9fe68bf6e",
+   "bytes": 2369
+  },
+  {
+   "path": "work/out/freeze-cap-display-b.launch/exit.json",
+   "sha256": "61982a372273728af7cbd308915a481a64ce92da30471add93fccaa0c033e4e7",
+   "bytes": 5921
+  },
+  {
+   "path": "work/out/freeze-cap-display-b.launch/inputs.json",
+   "sha256": "73848f169b96c7b371d7386bc9e5dbfbaf149989a61ee679e4fc8cd150f06d59",
+   "bytes": 913
+  },
+  {
+   "path": "work/out/freeze-cap-display-b.launch/nonce",
+   "sha256": "c41d0f1102ef45df1d3c7a23adfcd577cf9210b40bdcec474325928e4a2fe8f4",
+   "bytes": 65
+  },
+  {
+   "path": "work/out/freeze-cap-display-b.launch/stderr.txt",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "bytes": 0
+  },
+  {
+   "path": "work/out/freeze-cap-display-b.launch/stdout.txt",
+   "sha256": "24c54792dedf4dfdd89d5fc131ea0c69ca104574ba4a5011dd517912dd2fe038",
+   "bytes": 170
+  },
+  {
+   "path": "work/out/freeze-cap-display-k1/complete.json",
+   "sha256": "c5617d76f62837c1910205fc15582e9a25276cebd289c7e59b9ec37d0409c0ef",
+   "bytes": 1325
+  },
+  {
+   "path": "work/out/freeze-cap-display-k1/inventory.jsonl",
+   "sha256": "e18fae1d22c76ab1b5de369907bcecc64b8a396ae92e1f194b210d8917a38a31",
+   "bytes": 11248
+  },
+  {
+   "path": "work/out/freeze-cap-display-k1/log.jsonl",
+   "sha256": "ab5bc4c8df28edd9f4a782ac9c45bb036d41c1f5d19c0c76ae161b14de9634eb",
+   "bytes": 37886
+  },
+  {
+   "path": "work/out/freeze-cap-display-k1/refresh-disp-k1.jsonl",
+   "sha256": "2f03113c64d1f691e3287589922344468d4c5b1c5a30483e69c610816915cc7d",
+   "bytes": 48904
+  },
+  {
+   "path": "work/out/freeze-cap-display-k1.launch/cmd.json",
+   "sha256": "569157671b16150e224162bbe4e22c60088a409e5b20f51c913185074b435a11",
+   "bytes": 2375
+  },
+  {
+   "path": "work/out/freeze-cap-display-k1.launch/exit.json",
+   "sha256": "27783a5d9f3ff807bf139ac22037aca157b0ba90795e04830c18e9cd17906858",
+   "bytes": 5912
+  },
+  {
+   "path": "work/out/freeze-cap-display-k1.launch/inputs.json",
+   "sha256": "9b31fe53a3dbc60f9c9edc28364a0fc6e20ef85cef7b61ec86fe28c0cca9fe30",
+   "bytes": 915
+  },
+  {
+   "path": "work/out/freeze-cap-display-k1.launch/nonce",
+   "sha256": "90b4593576b3f880bb646fa6b95f753df11a1a04b615381241472f526eb2d131",
+   "bytes": 65
+  },
+  {
+   "path": "work/out/freeze-cap-display-k1.launch/stderr.txt",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "bytes": 0
+  },
+  {
+   "path": "work/out/freeze-cap-display-k1.launch/stdout.txt",
+   "sha256": "ad21e011931f13383aeb2d1840dd2e77f4af4bf954511f9d8485ac9ea0f8fee6",
+   "bytes": 170
+  },
+  {
+   "path": "work/out/freeze-cap-display-k2/complete.json",
+   "sha256": "8079c9e713fb30b2d67da772e30f97b4f76c5eac9643acc290f3385225630d0b",
+   "bytes": 1495
+  },
+  {
+   "path": "work/out/freeze-cap-display-k2/inventory.jsonl",
+   "sha256": "80f1a91aa2f3eb82e48e939917fde04b0e32651ee832ae57caad8a695432344e",
+   "bytes": 11248
+  },
+  {
+   "path": "work/out/freeze-cap-display-k2/log.jsonl",
+   "sha256": "c9c2738010f16da780b4761358583edb9146e81e9315aba3525c568bfc05c361",
+   "bytes": 46754
+  },
+  {
+   "path": "work/out/freeze-cap-display-k2/refresh-disp-k2.jsonl",
+   "sha256": "3c5ff1bb362829756a47c8566db25d6a6e780d04423eb193d0538525b16fd48e",
+   "bytes": 47352
+  },
+  {
+   "path": "work/out/freeze-cap-display-k2.launch/cmd.json",
+   "sha256": "d58a5ce8ff11fbf17dbc76703d595ecd7c2698eeff16d9d8ff5100b49dfe0f3c",
+   "bytes": 2375
+  },
+  {
+   "path": "work/out/freeze-cap-display-k2.launch/exit.json",
+   "sha256": "468a3a92a43caae1b34b2298efdf7267d177e9363d5e0d8cd05ebf4af77773be",
+   "bytes": 5912
+  },
+  {
+   "path": "work/out/freeze-cap-display-k2.launch/inputs.json",
+   "sha256": "accef5994299af9a00f3cd71e447e249cd1410acd49f1320f25a9149eaf46894",
+   "bytes": 915
+  },
+  {
+   "path": "work/out/freeze-cap-display-k2.launch/nonce",
+   "sha256": "5d6363aca473176dc35e5f98c88cc18a34c172c4ccbecd69f2b0dc8b608cbbc6",
+   "bytes": 65
+  },
+  {
+   "path": "work/out/freeze-cap-display-k2.launch/stderr.txt",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "bytes": 0
+  },
+  {
+   "path": "work/out/freeze-cap-display-k2.launch/stdout.txt",
+   "sha256": "83f853eacfb0a1b7abdb48b566a111c24f68f355139662d1b87c82ceab124eab",
+   "bytes": 170
+  },
+  {
+   "path": "work/out/freeze-cap-identity/complete.json",
+   "sha256": "ea6b408161dbaa81ee2252f8c2bb97774ff6121ba0fef2c6792a2c51845cb381",
+   "bytes": 14928
+  },
+  {
+   "path": "work/out/freeze-cap-identity/identity.json",
+   "sha256": "5591bcd514c35814abbe00656118158cec3518867bba5f39472b95e24129dd0c",
+   "bytes": 2836008
+  },
+  {
+   "path": "work/out/freeze-cap-identity/identity.seal.json",
+   "sha256": "7ad167e8c2ff21bbb33f3c16a6779cb29b8fb0de2907d36a5d26bc0d83c9202a",
+   "bytes": 253
+  },
+  {
+   "path": "work/out/freeze-cap-identity/inventory.jsonl",
+   "sha256": "2f7c58d08ace90416735aa922ea845891c6b4301a12531f7b9b594887ee3b378",
+   "bytes": 10553
+  },
+  {
+   "path": "work/out/freeze-cap-identity/log.jsonl",
+   "sha256": "a61535620812c96ad5d9ef04fdfc496ded90a16c287a72fc311070bcf1dfdef6",
+   "bytes": 402212
+  },
+  {
+   "path": "work/out/freeze-cap-identity/refresh-disp-k1.jsonl",
+   "sha256": "2f03113c64d1f691e3287589922344468d4c5b1c5a30483e69c610816915cc7d",
+   "bytes": 48904
+  },
+  {
+   "path": "work/out/freeze-cap-identity/refresh-disp-k2.jsonl",
+   "sha256": "3c5ff1bb362829756a47c8566db25d6a6e780d04423eb193d0538525b16fd48e",
+   "bytes": 47352
+  },
+  {
+   "path": "work/out/freeze-cap-identity/refresh-disp-seed-a.jsonl",
+   "sha256": "00136bdf0b3ba18e8e761a762932ebd9d885afb93070a6b2461a653517523987",
+   "bytes": 47352
+  },
+  {
+   "path": "work/out/freeze-cap-identity/refresh-disp-seed-b.jsonl",
+   "sha256": "d07821adcc73e75c40e66b739d04814e56252d7dfa3e3f8395aeac4152f2e941",
+   "bytes": 47352
+  },
+  {
+   "path": "work/out/freeze-cap-identity.launch/cmd.json",
+   "sha256": "43094b5be9362ed03b586f890fe5d2e3521cb22a5089d3615d9326dbba3f18ff",
+   "bytes": 1875
+  },
+  {
+   "path": "work/out/freeze-cap-identity.launch/exit.json",
+   "sha256": "b7c2ffe86d0066b687eeaf2adc8ca5d9c210c6e51b24f7295b322ae5cb9bdf92",
+   "bytes": 7446
+  },
+  {
+   "path": "work/out/freeze-cap-identity.launch/inputs.json",
+   "sha256": "d44cb297cc68db1b5f174e968f3c60938cd837f7b2a15cc851dfb26fab69f37f",
+   "bytes": 297
+  },
+  {
+   "path": "work/out/freeze-cap-identity.launch/nonce",
+   "sha256": "f8a1d8786032db7dbc8688cd2392f61c51a3d436e09b01e911521fb178186503",
+   "bytes": 65
+  },
+  {
+   "path": "work/out/freeze-cap-identity.launch/stderr.txt",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "bytes": 0
+  },
+  {
+   "path": "work/out/freeze-cap-identity.launch/stdout.txt",
+   "sha256": "f4278b64ed28ba9aed4de3684ed0a742ffb13b884b1a3a2d624b2933cd75994e",
+   "bytes": 169
+  },
+  {
+   "path": "work/out/freeze-cap-proof/complete.json",
+   "sha256": "28c34452efe03418eb799bf95ebab3bb9209a647cc7734155a83d9af2e8c78e5",
+   "bytes": 10087
+  },
+  {
+   "path": "work/out/freeze-cap-proof/inventory.jsonl",
+   "sha256": "98829ada8b6ce35858a99f6c53ea41530c13ac5340dc65ec49ac5468a3ae3723",
+   "bytes": 11243
+  },
+  {
+   "path": "work/out/freeze-cap-proof/log.jsonl",
+   "sha256": "270480138eddb99c48218746e8b75265027da46b791ed11c721096858137d1a0",
+   "bytes": 366651
+  },
+  {
+   "path": "work/out/freeze-cap-proof.launch/cmd.json",
+   "sha256": "02b9b8868bc1109de83cbb0a8d6ca72a1628acae1fee02ac6fec0275169434fa",
+   "bytes": 2345
+  },
+  {
+   "path": "work/out/freeze-cap-proof.launch/exit.json",
+   "sha256": "da2110334285d39bd93c2c7f57823f54db286dca911b3c4b01f2d2400ff264f7",
+   "bytes": 5434
+  },
+  {
+   "path": "work/out/freeze-cap-proof.launch/inputs.json",
+   "sha256": "981683b9e5cade46697d744f57691a708df9ad72c4b87f07f71ac5c3c77e0955",
+   "bytes": 905
+  },
+  {
+   "path": "work/out/freeze-cap-proof.launch/nonce",
+   "sha256": "059e0fdffce7030f7b1cbfe625e9ef4291bdf523a5c4e948a81aa47f320092ac",
+   "bytes": 65
+  },
+  {
+   "path": "work/out/freeze-cap-proof.launch/stderr.txt",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "bytes": 0
+  },
+  {
+   "path": "work/out/freeze-cap-proof.launch/stdout.txt",
+   "sha256": "74019d06d7ca295f08fe2d5c6b699870e73e1b099c90b51780ad447754a72a7b",
+   "bytes": 170
+  },
+  {
+   "path": "work/out/real-refused-proof.launch/exit.json",
+   "sha256": "673cba865f29b90238739a9e0e05dd895763fab58fe4c4032e3adda326bb4828",
+   "bytes": 658
+  },
+  {
+   "path": "work/out/real-refused-proof.launch/nonce",
+   "sha256": "61cfe3655003abd6f3acd395d2c20aeaf87c99c05d56416a1c214351d782c435",
+   "bytes": 65
+  },
+  {
+   "path": "work/test-scratch/v3-final/cov-XetETJ/log.jsonl",
+   "sha256": "e45178f21182c10878c2b5614589276d9983978b5fb79353ec21d99b0d87e99a",
+   "bytes": 118
+  },
+  {
+   "path": "work/test-scratch/v3-final/inv-OvM2ld/c.json",
+   "sha256": "e4d2295d02c620dd2f311b50201ad991952c1b29622b2584953c9993c34f4106",
+   "bytes": 141
+  },
+  {
+   "path": "work/test-scratch/v3-final/inv-OvM2ld/inventory.jsonl",
+   "sha256": "9b062483826d37b904b3541e4283351b3c0e827b3887cd43aed077a5faf31ca5",
+   "bytes": 331
+  },
+  {
+   "path": "work/test-scratch/v3-final/probe-denied/b.cjs",
+   "sha256": "73cb3858a687a8494ca3323053016282f3dad39d42cf62ca4e79dda2aac7d9ac",
+   "bytes": 2
+  },
+  {
+   "path": "work/test-scratch/v3-final/probe-denied/b.mjs",
+   "sha256": "73cb3858a687a8494ca3323053016282f3dad39d42cf62ca4e79dda2aac7d9ac",
+   "bytes": 2
+  },
+  {
+   "path": "work/test-scratch/v3-final/probe-denied/b.txt",
+   "sha256": "73cb3858a687a8494ca3323053016282f3dad39d42cf62ca4e79dda2aac7d9ac",
+   "bytes": 2
+  },
+  {
+   "path": "work/test-scratch/v3-final/probe-ok/c01.txt",
+   "sha256": "59e709625682d8e5a571a2b11fa44b54c393869f3a49bb67bea1802fc6937972",
+   "bytes": 10
+  },
+  {
+   "path": "work/test-scratch/v3-final/probe-ok/c02.txt",
+   "sha256": "6f8a19765e9146cdf2bd4e4693bc2ce17705df9daa302dbd2ae5d6e052b51863",
+   "bytes": 10
+  },
+  {
+   "path": "work/test-scratch/v3-final/probe-ok/c03.txt",
+   "sha256": "6457faf377c6bbd79d7890f10dd0606f006b62e77c476cd140125cb34546646d",
+   "bytes": 10
+  },
+  {
+   "path": "work/test-scratch/v3-final/probe-ok/c04.txt",
+   "sha256": "cff96fdd1d3b92f233c8f562dd9729fa12e3f4a48bd534b7a2c89f0881b50a99",
+   "bytes": 10
+  },
+  {
+   "path": "work/test-scratch/v3-final/probe-ok/c05.txt",
+   "sha256": "827fe2568c0e618a4baac42643d95864fa9280a5f69e6cc4ca12e7bbaff416c5",
+   "bytes": 10
+  },
+  {
+   "path": "work/test-scratch/v3-final/probe-ok/c06.txt",
+   "sha256": "c39a16d26d75caae308dff07a3eb38f680eef35c3ca7718e6cb51e4153168894",
+   "bytes": 10
+  },
+  {
+   "path": "work/test-scratch/v3-final/probe-ok/c07.txt",
+   "sha256": "ec321dee0b4349f3c6dacf9519bd3853bb94dd38e000729047dfa4db18f0ea43",
+   "bytes": 10
+  },
+  {
+   "path": "work/test-scratch/v3-final/probe-ok/c08.txt",
+   "sha256": "66e2f1b5b2bc531faaa1b5cefb2a354b5706c4641d523a681b992ecee1a30ac0",
+   "bytes": 10
+  },
+  {
+   "path": "work/test-scratch/v3-final/probe-ok/c09.txt",
+   "sha256": "b74407354304bda82f81c748b3e7b57f2c5658edf2b47e89045095ee9efbc91b",
+   "bytes": 10
+  },
+  {
+   "path": "work/test-scratch/v3-final/probe-ok/c10.cjs",
+   "sha256": "e1165c989f50f15ba1780cbbdceabdd7f8fa5e0ebe9f6b9bccd8e2fa175b65ab",
+   "bytes": 21
+  },
+  {
+   "path": "work/test-scratch/v3-final/probe-ok/c11.mjs",
+   "sha256": "5ab70fdf3b09a6be21b6fa930d98950d9b2ddf1defc5c9b5780459fb101d3747",
+   "bytes": 19
+  },
+  {
+   "path": "work/test-scratch/v3-final/probe-ok/c12.txt",
+   "sha256": "d316a3401a9113e0eef1e72443eab1ae42d97c4569586e86d2a8266470b08317",
+   "bytes": 11
+  },
+  {
+   "path": "work/test-scratch/v3-final/probe-ok/c13.txt",
+   "sha256": "1aff80b8e669270f1774006cb3272677e1e6611839c9968714ce55c1435376cf",
+   "bytes": 11
+  },
+  {
+   "path": "work/test-scratch/v3-final/probe-ok/c14.txt",
+   "sha256": "e1f09c9ebd229cb3ca7677218bda6c4a168ed07f46676e1763e6b10e16164360",
+   "bytes": 11
+  },
+  {
+   "path": "work/test-scratch/v3-final/probe-ok/c15.txt",
+   "sha256": "c0a63eff55fb7945dafa5689a5fe3d41353a7fe1126753f982326902882dc90f",
+   "bytes": 11
+  },
+  {
+   "path": "work/test-scratch/v3-final/probe-ok/c16.txt",
+   "sha256": "b2eec9295387900c60a8477e6468d7fda7a107664d74d411e081b683fd41f179",
+   "bytes": 11
+  },
+  {
+   "path": "work/test-scratch/v3-final/probe-ok/c17.txt",
+   "sha256": "e27f2a54a5b945cce04fa013a90deab5ea71a5f4a98a15878eb50e093f5c60ce",
+   "bytes": 11
+  },
+  {
+   "path": "work/test-scratch/v3-final/probe-ok/c18.txt",
+   "sha256": "43aa311e09bcd8d06d7f9d414a001b3ffb60b5170f5476ed9d5ae6e696979eae",
+   "bytes": 11
+  },
+  {
+   "path": "work/test-scratch/v3-final/probe-ok/c19.txt",
+   "sha256": "f4a1185e288c82b0f58c03c50d31534a758ad2b554dce5669a3bd1981ab090b8",
+   "bytes": 11
+  },
+  {
+   "path": "work/test-scratch/v3-final/probe-ok/d09/x.txt",
+   "sha256": "73cb3858a687a8494ca3323053016282f3dad39d42cf62ca4e79dda2aac7d9ac",
+   "bytes": 2
+  },
+  {
+   "path": "work/test-scratch/v3-final/probe-ok/d10/x.txt",
+   "sha256": "73cb3858a687a8494ca3323053016282f3dad39d42cf62ca4e79dda2aac7d9ac",
+   "bytes": 2
+  },
+  {
+   "path": "work/test-scratch/v3-final/probe-ok/d11/x.txt",
+   "sha256": "73cb3858a687a8494ca3323053016282f3dad39d42cf62ca4e79dda2aac7d9ac",
+   "bytes": 2
+  },
+  {
+   "path": "work/test-scratch/v3-final/probe-ok/d12/x.txt",
+   "sha256": "73cb3858a687a8494ca3323053016282f3dad39d42cf62ca4e79dda2aac7d9ac",
+   "bytes": 2
+  },
+  {
+   "path": "work/test-scratch/v3-final/probe-ok/d13/x.txt",
+   "sha256": "73cb3858a687a8494ca3323053016282f3dad39d42cf62ca4e79dda2aac7d9ac",
+   "bytes": 2
+  },
+  {
+   "path": "work/test-scratch/v3-final/probe-ok/d28/x.txt",
+   "sha256": "73cb3858a687a8494ca3323053016282f3dad39d42cf62ca4e79dda2aac7d9ac",
+   "bytes": 2
+  },
+  {
+   "path": "work/test-scratch/v3-final/probe-ok/m01.txt",
+   "sha256": "01a60e35df88d8b49546cb3f8f4ba4f406870f9b8e1f394c9d48ab73548d748d",
+   "bytes": 2
+  },
+  {
+   "path": "work/test-scratch/v3-final/probe-ok/m02.txt",
+   "sha256": "01a60e35df88d8b49546cb3f8f4ba4f406870f9b8e1f394c9d48ab73548d748d",
+   "bytes": 2
+  },
+  {
+   "path": "work/test-scratch/v3-final/probe-ok/m03.txt",
+   "sha256": "01a60e35df88d8b49546cb3f8f4ba4f406870f9b8e1f394c9d48ab73548d748d",
+   "bytes": 2
+  },
+  {
+   "path": "work/test-scratch/v3-final/probe-ok/m04.txt",
+   "sha256": "01a60e35df88d8b49546cb3f8f4ba4f406870f9b8e1f394c9d48ab73548d748d",
+   "bytes": 2
+  },
+  {
+   "path": "work/test-scratch/v3-final/probe-ok/m05.txt",
+   "sha256": "01a60e35df88d8b49546cb3f8f4ba4f406870f9b8e1f394c9d48ab73548d748d",
+   "bytes": 2
+  },
+  {
+   "path": "work/test-scratch/v3-final/probe-ok/m06.txt",
+   "sha256": "01a60e35df88d8b49546cb3f8f4ba4f406870f9b8e1f394c9d48ab73548d748d",
+   "bytes": 2
+  },
+  {
+   "path": "work/test-scratch/v3-final/probe-ok/m07.txt",
+   "sha256": "01a60e35df88d8b49546cb3f8f4ba4f406870f9b8e1f394c9d48ab73548d748d",
+   "bytes": 2
+  },
+  {
+   "path": "work/test-scratch/v3-final/probe-ok/m08.txt",
+   "sha256": "01a60e35df88d8b49546cb3f8f4ba4f406870f9b8e1f394c9d48ab73548d748d",
+   "bytes": 2
+  },
+  {
+   "path": "work/test-scratch/v3-final/probe-ok/m14.txt",
+   "sha256": "01a60e35df88d8b49546cb3f8f4ba4f406870f9b8e1f394c9d48ab73548d748d",
+   "bytes": 2
+  },
+  {
+   "path": "work/test-scratch/v3-final/probe-ok/m15.txt",
+   "sha256": "01a60e35df88d8b49546cb3f8f4ba4f406870f9b8e1f394c9d48ab73548d748d",
+   "bytes": 2
+  },
+  {
+   "path": "work/test-scratch/v3-final/probe-ok/m16.txt",
+   "sha256": "01a60e35df88d8b49546cb3f8f4ba4f406870f9b8e1f394c9d48ab73548d748d",
+   "bytes": 2
+  },
+  {
+   "path": "work/test-scratch/v3-final/probe-ok/m17.txt",
+   "sha256": "01a60e35df88d8b49546cb3f8f4ba4f406870f9b8e1f394c9d48ab73548d748d",
+   "bytes": 2
+  },
+  {
+   "path": "work/test-scratch/v3-final/probe-ok/m19.txt",
+   "sha256": "01a60e35df88d8b49546cb3f8f4ba4f406870f9b8e1f394c9d48ab73548d748d",
+   "bytes": 2
+  },
+  {
+   "path": "work/test-scratch/v3-final/probe-ok/m22.txt",
+   "sha256": "01a60e35df88d8b49546cb3f8f4ba4f406870f9b8e1f394c9d48ab73548d748d",
+   "bytes": 2
+  },
+  {
+   "path": "work/test-scratch/v3-final/probe-ok/m23.txt",
+   "sha256": "01a60e35df88d8b49546cb3f8f4ba4f406870f9b8e1f394c9d48ab73548d748d",
+   "bytes": 2
+  },
+  {
+   "path": "work/test-scratch/v3-final/probe-ok/m24.txt",
+   "sha256": "01a60e35df88d8b49546cb3f8f4ba4f406870f9b8e1f394c9d48ab73548d748d",
+   "bytes": 2
+  },
+  {
+   "path": "work/test-scratch/v3-final/probe-ok/m25.txt",
+   "sha256": "01a60e35df88d8b49546cb3f8f4ba4f406870f9b8e1f394c9d48ab73548d748d",
+   "bytes": 2
+  },
+  {
+   "path": "work/test-scratch/v3-final/probe-ok/m26.txt",
+   "sha256": "01a60e35df88d8b49546cb3f8f4ba4f406870f9b8e1f394c9d48ab73548d748d",
+   "bytes": 2
+  },
+  {
+   "path": "work/test-scratch/v3-final/probe-ok/m27.txt",
+   "sha256": "01a60e35df88d8b49546cb3f8f4ba4f406870f9b8e1f394c9d48ab73548d748d",
+   "bytes": 2
+  },
+  {
+   "path": "work/test-scratch/v3-final/probe-ok/pre.txt",
+   "sha256": "a1f194e7d5947c9e2c01a51ae5337293c3d39067e89c163d96d3ee295ed66ba9",
+   "bytes": 4
+  },
+  {
+   "path": "work/test-scratch/v3-final/probe-out/copy14.txt",
+   "sha256": "e1f09c9ebd229cb3ca7677218bda6c4a168ed07f46676e1763e6b10e16164360",
+   "bytes": 11
+  },
+  {
+   "path": "work/test-scratch/v3-final/probe-out/copy15.txt",
+   "sha256": "c0a63eff55fb7945dafa5689a5fe3d41353a7fe1126753f982326902882dc90f",
+   "bytes": 11
+  },
+  {
+   "path": "work/test-scratch/v3-final/probe-out/copy16.txt",
+   "sha256": "b2eec9295387900c60a8477e6468d7fda7a107664d74d411e081b683fd41f179",
+   "bytes": 11
+  },
+  {
+   "path": "work/test-scratch/v3-final/probe-out/copy17.txt",
+   "sha256": "e27f2a54a5b945cce04fa013a90deab5ea71a5f4a98a15878eb50e093f5c60ce",
+   "bytes": 11
+  },
+  {
+   "path": "work/test-scratch/v3-final/probe-out/copy18.txt",
+   "sha256": "43aa311e09bcd8d06d7f9d414a001b3ffb60b5170f5476ed9d5ae6e696979eae",
+   "bytes": 11
+  },
+  {
+   "path": "work/test-scratch/v3-final/probe-out/inventory.jsonl",
+   "sha256": "83192d05047fbd23aef7fae18cfa1e156b166045e048196c602b3c4421b4bde9",
+   "bytes": 11700
+  },
+  {
+   "path": "work/test-scratch/v3-final/probe-out/probe.cmd.json",
+   "sha256": "7aa7e2cb02549d71a4f1b80c023565ec4e49ab06c06b8d3be5cae8d60c426cf0",
+   "bytes": 1009
+  },
+  {
+   "path": "work/test-scratch/v3-final/probe-out/probe.stderr.txt",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "bytes": 0
+  },
+  {
+   "path": "work/test-scratch/v3-final/probe-out/probe.stdout.txt",
+   "sha256": "98945a1f62cc1e38ec4b009e986a2139d22bd62ea5f9a0e6342261e3e15686af",
+   "bytes": 2893
+  },
+  {
+   "path": "work/test-scratch/v3-final/pure/display-a/log.jsonl",
+   "sha256": "44634a9383ce30c6e0da679e80f34a0f7345204821a3687d4ec4ea52a90f9921",
+   "bytes": 48405
+  },
+  {
+   "path": "work/test-scratch/v3-final/pure/display-a/refresh-disp-seed-a.jsonl",
+   "sha256": "00136bdf0b3ba18e8e761a762932ebd9d885afb93070a6b2461a653517523987",
+   "bytes": 47352
+  },
+  {
+   "path": "work/test-scratch/v3-final/pure/display-a-frameDrift/log.jsonl",
+   "sha256": "1b668933a0aafec2f738817ba1bb3b31c7c14a29c56af68022878d95df78a9e9",
+   "bytes": 26168
+  },
+  {
+   "path": "work/test-scratch/v3-final/pure/display-a-sampleLate/log.jsonl",
+   "sha256": "757aba380fafe7264af9333b48a5fab3f3772d542374a0e8eaada5261a83cae9",
+   "bytes": 25981
+  },
+  {
+   "path": "work/test-scratch/v3-final/pure/display-b/log.jsonl",
+   "sha256": "2899c74a36b3591c5072cc68e658070ba2e382351374957b5a18e2baf97ad1cb",
+   "bytes": 48405
+  },
+  {
+   "path": "work/test-scratch/v3-final/pure/display-b/refresh-disp-seed-b.jsonl",
+   "sha256": "d07821adcc73e75c40e66b739d04814e56252d7dfa3e3f8395aeac4152f2e941",
+   "bytes": 47352
+  },
+  {
+   "path": "work/test-scratch/v3-final/pure/display-k1/log.jsonl",
+   "sha256": "6108367b592a906199273eff0d9a4d01eacff10b4e10e1cc8445b25bf1070318",
+   "bytes": 37832
+  },
+  {
+   "path": "work/test-scratch/v3-final/pure/display-k1/refresh-disp-k1.jsonl",
+   "sha256": "2f03113c64d1f691e3287589922344468d4c5b1c5a30483e69c610816915cc7d",
+   "bytes": 48904
+  },
+  {
+   "path": "work/test-scratch/v3-final/pure/display-k2/log.jsonl",
+   "sha256": "cb124accff95905d739f98b1a04067f9c5a55f9c4277840904d4fb965451de88",
+   "bytes": 46700
+  },
+  {
+   "path": "work/test-scratch/v3-final/pure/display-k2/refresh-disp-k2.jsonl",
+   "sha256": "3c5ff1bb362829756a47c8566db25d6a6e780d04423eb193d0538525b16fd48e",
+   "bytes": 47352
+  },
+  {
+   "path": "work/test-scratch/v3-final/pure/identity/identity.json",
+   "sha256": "f3ad6a0d404e1b9374798716714429383b1999c659ef6c3d073b93d876f62146",
+   "bytes": 2813922
+  },
+  {
+   "path": "work/test-scratch/v3-final/pure/identity/identity.seal.json",
+   "sha256": "34c858cb6346b206f24f0a240d905ecdea344a1c9ccea6c677b9c3a9000355fc",
+   "bytes": 199
+  },
+  {
+   "path": "work/test-scratch/v3-final/pure/identity/log.jsonl",
+   "sha256": "17ec5ad09dc41187866d64a5e7a1464045b356caa266cd4aecc6f296b8882895",
+   "bytes": 402158
+  },
+  {
+   "path": "work/test-scratch/v3-final/pure/identity/refresh-disp-k1.jsonl",
+   "sha256": "2f03113c64d1f691e3287589922344468d4c5b1c5a30483e69c610816915cc7d",
+   "bytes": 48904
+  },
+  {
+   "path": "work/test-scratch/v3-final/pure/identity/refresh-disp-k2.jsonl",
+   "sha256": "3c5ff1bb362829756a47c8566db25d6a6e780d04423eb193d0538525b16fd48e",
+   "bytes": 47352
+  },
+  {
+   "path": "work/test-scratch/v3-final/pure/identity/refresh-disp-seed-a.jsonl",
+   "sha256": "00136bdf0b3ba18e8e761a762932ebd9d885afb93070a6b2461a653517523987",
+   "bytes": 47352
+  },
+  {
+   "path": "work/test-scratch/v3-final/pure/identity/refresh-disp-seed-b.jsonl",
+   "sha256": "d07821adcc73e75c40e66b739d04814e56252d7dfa3e3f8395aeac4152f2e941",
+   "bytes": 47352
+  },
+  {
+   "path": "work/test-scratch/v3-final/pure/identity-frameOnSet/log.jsonl",
+   "sha256": "1f15b2a463ae14635715d2b6d0fe5551871136f0293c83e02867a4e34c314854",
+   "bytes": 268386
+  },
+  {
+   "path": "work/test-scratch/v3-final/pure/identity-lateRedraw/log.jsonl",
+   "sha256": "c9d3f19406bc113eeb51749e61abcec828e6d7c50bcadb3d09f814788aaffeff",
+   "bytes": 281659
+  },
+  {
+   "path": "work/test-scratch/v3-final/pure/identity-poseLeak/log.jsonl",
+   "sha256": "399f2b64675f19f9b686555fec0cf0f293c041f1707fbca5da3fb6d006cc59a6",
+   "bytes": 85996
+  },
+  {
+   "path": "work/test-scratch/v3-final/pure/identity-pressByte/log.jsonl",
+   "sha256": "5243a463befac2a2cf930f252d589ea0f50142f6497c2ec481e6b23e86f8fb44",
+   "bytes": 83409
+  },
+  {
+   "path": "work/test-scratch/v3-final/pure/identity-readBank/log.jsonl",
+   "sha256": "273c16f59775169672f530149610c3bdfa95a64c4f233e62a243e6bd7f63109b",
+   "bytes": 83343
+  },
+  {
+   "path": "work/test-scratch/v3-final/pure/identity-subject/log.jsonl",
+   "sha256": "50f38b15c53e3f87cefc6d51ff45228f476506fb90ba82dd1922948bbfd94c01",
+   "bytes": 947
+  },
+  {
+   "path": "work/test-scratch/v3-final/pure/identity-writerExtra/log.jsonl",
+   "sha256": "155d5f1fbc436005289f7e722673a35ac085c5ac5e82d161d135dc0d5de42aa2",
+   "bytes": 116464
+  },
+  {
+   "path": "work/test-scratch/v3-final/pure/proof/log.jsonl",
+   "sha256": "4e0cf718fe89041423ed70ae14cf2ae404fd08987ca6b7c7cc4aa368a4c446ae",
+   "bytes": 366597
+  },
+  {
+   "path": "work/test-scratch/v3-final/pure/proof-dropField/log.jsonl",
+   "sha256": "9855a3cd11725c7d820babc6160b458bf34fa3ea239a005b48f6eb296fcc4b3b",
+   "bytes": 55647
+  },
+  {
+   "path": "work/test-scratch/v3-final/pure/proof-loseLink/log.jsonl",
+   "sha256": "fac1a3f09004606a32083b27f936fc4b42ed15007e21d5a20bc32e6d0f76b25c",
+   "bytes": 26251
+  },
+  {
+   "path": "work/test-scratch/v3-final/pure/proof-pressByte/log.jsonl",
+   "sha256": "605a7bdf4e2ec3fa76af6a8121cc9270b2f64acab71ac5bad03e42ec04b93552",
+   "bytes": 113226
+  },
+  {
+   "path": "work/test-scratch/v3-final/pure/proof-title/log.jsonl",
+   "sha256": "c7a1ac22478dbdc054309dd791a05355ba0c0d5dd34dcd694be5bc8ad1568d0a",
+   "bytes": 20355
+  },
+  {
+   "path": "work/test-scratch/v3-final/refresh-ItGzYo/refresh-disp-k1.jsonl",
+   "sha256": "ad3b8c17077197e31902b15b7ce07bcdd7d7cc3ac6d053c059a248b1b99d53cb",
+   "bytes": 48905
+  },
+  {
+   "path": "work/test-scratch/v3-final/refresh-ItGzYo/t.jsonl",
+   "sha256": "c4d6756ff673f50671129d5a5f9acaf8e4f2965bdad769b6a02af5a0df34050c",
+   "bytes": 48829
+  },
+  {
+   "path": "work/test-scratch/v3-final/test-results.json",
+   "sha256": "e2655278847ec28ce3b40a6f8712116205f748b31228e583cb39167a27af023b",
+   "bytes": 14909
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/freeze/freeze_v1.json",
+   "sha256": "c97381cd45bb6503907ee2a97f12a3ceb2b4cdbd7c6398f97bddfafb8ec4d290",
+   "bytes": 9530
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/harness/afon_hooks_v7.mjs",
+   "sha256": "488e6973767a246b24130173edf16fa4082dafb2ce00dcf8622150db8dc1fcd0",
+   "bytes": 24636
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/harness/check_table_v3.mjs",
+   "sha256": "37255a2b42c52c2f4cc99782d0e1cf186e0d9cd84735224f76d0be1b6c3df1d9",
+   "bytes": 7778
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/harness/common_v1.mjs",
+   "sha256": "327df4f05eebaa6142bc508627359a74b1ce320379c1fdad3f1d3466f00cd529",
+   "bytes": 2685
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/harness/exec_v1.mjs",
+   "sha256": "8aed0b0030344e69b6d9b523e12da656683a33354b1eb0f9f1a4b43be2e683b2",
+   "bytes": 11054
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/harness/exec_v2.mjs",
+   "sha256": "222c91178c7311fa4f3540ac5b1a855b3cc4aead460283d671d0197c42532ca6",
+   "bytes": 12714
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/harness/exitcheck_v1.mjs",
+   "sha256": "3056d02b93b41c43900071649b6ea57e1096688ba3e1485387b95b177e33c5a2",
+   "bytes": 4810
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/harness/exitcheck_v2.mjs",
+   "sha256": "d8c0b3ddb022727b8b9140ec775155444f96f38ad822af8694ec118e0e485c1a",
+   "bytes": 8838
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/harness/exitcheck_v3.mjs",
+   "sha256": "0bc09adee6cf9d573f597ed87f42ea7717c07daedcada9687ee1b19f162ff51f",
+   "bytes": 8899
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/harness/expect_v1.mjs",
+   "sha256": "3a85eaef31d9f8e0d040d0c0cdc48fd008bb02d7fa1ddecb8c1a5526ba818f2f",
+   "bytes": 2443
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/harness/fake_v1.mjs",
+   "sha256": "7e00070e3b6ecff1cf733df85467bca972abc31bcb32b3370bebe11c3bae5712",
+   "bytes": 11416
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/harness/fake_v2.mjs",
+   "sha256": "d3b1355e06c30b8083b6a3254b6a11dd9c7b23e548e007d96aaf4d976e64001d",
+   "bytes": 12568
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/harness/fixture_t11_v1.mjs",
+   "sha256": "2058762f6c7c155a152588bdb4b106dab665198bf2e13f8af20e0ccf94c7ea8e",
+   "bytes": 3272
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/harness/fixture_t11_v2.mjs",
+   "sha256": "31acec4f108ab3cc77311238d8ec80afcf471237997e59688a2643758a9a7c14",
+   "bytes": 3272
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/harness/freeze_v1.mjs",
+   "sha256": "2620520114ca7b26b668dfcf4ddf9c9a7013e5f9c7c09ee5f338365adc75e6f4",
+   "bytes": 8099
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/harness/gate_v1.mjs",
+   "sha256": "53a5cbbe65f15e687eaaca5878a7a0ff71aee84842f14e0cc165e4ef859bf0b2",
+   "bytes": 3942
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/harness/gate_v2.mjs",
+   "sha256": "8d9087107005b666298861e4680613e963a7437efa9ef834df3fc53abd88b94a",
+   "bytes": 4198
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/harness/inventory_v1.mjs",
+   "sha256": "d9ce1e41a43c5c8789689bee1c6340a73ef5e328eefcffd930466d1ebaf7c0e8",
+   "bytes": 8887
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/harness/inventory_v2.mjs",
+   "sha256": "e3d751e09d761cf354eff416317743e2aa8658613101b9c231179f518aa23738",
+   "bytes": 14129
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/harness/inventory_v3.mjs",
+   "sha256": "c2fae3fa3e510985b10c21211d71be950dd53e6b7b4794e7afbfb4b851d7fef2",
+   "bytes": 14522
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/harness/launch_v1.mjs",
+   "sha256": "19ba5e49b33ca496ef769253e32ef584213d15e48e36509fb28b2faee67e1d5e",
+   "bytes": 13115
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/harness/launch_v2.mjs",
+   "sha256": "bf5a60938d5866288cccbee424a2fd88a6abbced88166c27d71e435a6093dd00",
+   "bytes": 14975
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/harness/launch_v3.mjs",
+   "sha256": "4c345f0d33a39f0961d69b7d9700ddf4a3a85ab7b2f2cf285f18956693ece0f9",
+   "bytes": 15650
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/harness/make_freeze_v1.mjs",
+   "sha256": "81c4ececa3cf4882827b7518c45b16ae9b9a27f8c7ae4c5a9bd3d4a14da8c3fe",
+   "bytes": 7208
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/harness/make_freeze_v2.mjs",
+   "sha256": "f0d32578370ea1873e8d14de6b396f8cbefd4b69ae02a5dc1be17c3ed1482537",
+   "bytes": 7235
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/harness/make_freeze_v3.mjs",
+   "sha256": "04433c20dc7345f0c2cfc0c9768f1c496e075f517d5d34499e0088287417c06f",
+   "bytes": 7237
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/harness/plan_v1.mjs",
+   "sha256": "dd7ec94607f097883ae44e4dcbc6c4c74cca49308bb8b493af7b51b3ff4d9a7e",
+   "bytes": 17780
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/harness/predicates_v3.mjs",
+   "sha256": "c6a11a0d03a8a355beb021cd2578d9be304498695c118250a1464f22de8a046f",
+   "bytes": 1605
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/harness/probe_v1.mjs",
+   "sha256": "5948b03441f343888c54938c7af084ae48e1e75a03df2c495ae70d7c6abdda87",
+   "bytes": 3478
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/harness/probe_v2.mjs",
+   "sha256": "78d865308f856908cede5a18f5f2abf5d4806c8bf3fb30e6a950db546ab71e81",
+   "bytes": 6791
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/harness/probe_v3.mjs",
+   "sha256": "67b53196a930207b3f205af22fc7584e475d4750e7e293216a7cc6e0470637f5",
+   "bytes": 8305
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/harness/real_v1.mjs",
+   "sha256": "13ed4f23a99b596d30b6c6c96e6e0756d56e38cea7db060d8edf4fbf3a320b1c",
+   "bytes": 10009
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/harness/real_v2.mjs",
+   "sha256": "6c47d56883927e00f3c7667ee6fc9f2574fa4b10183187beecc7a9df9409a43d",
+   "bytes": 11467
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/harness/refresh_v4.mjs",
+   "sha256": "01e4714d9f3067f1972e113ffc693bdb8a5dc847800b80604eed827bc1e75f48",
+   "bytes": 4294
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/harness/relations_v1.mjs",
+   "sha256": "b08f64079b7c603e4db3e7c1e68f50ba76c8894cb44e4ebfbd6d7ae11994015f",
+   "bytes": 17375
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/harness/relations_v2.mjs",
+   "sha256": "7c8e5fb9e09821ec8cbccedd181186f93980b3c45099482bb31e924f905c122b",
+   "bytes": 18074
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/harness/run_v1.mjs",
+   "sha256": "320390a6d4e301f2a3c5da665f608e17f14ee68f22d2bd2d9e20250cda0a614f",
+   "bytes": 7397
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/harness/run_v2.mjs",
+   "sha256": "327a76fb79fe8201166a7f5bc786f53c55f828319ec67e7af962819848ff0d5a",
+   "bytes": 8233
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/harness/run_v3.mjs",
+   "sha256": "f288389482705544bdc3405f40829a0d7bdc0040c002d4a6ac3727f791ea3114",
+   "bytes": 8252
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/harness/seal_v1.mjs",
+   "sha256": "2d51beb9fef3b7c78ced872a4212a56cf990af44c995443caf525f633de66d8e",
+   "bytes": 1754
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/harness/session_v1.diff",
+   "sha256": "d286bc1db5ff74bb9b694f4f76a9900a2f99a78441c2ea0c784d1184a96bbcc8",
+   "bytes": 8434
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/harness/session_v1.mjs",
+   "sha256": "6aaa9e4300bc4f343c9269d6a7b47fc4c48c957030c6975bc487717ed88314dd",
+   "bytes": 25887
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/harness/session_v2.diff",
+   "sha256": "d5762f28d7167bbd400b973734539de0410f4a60b68c362166bf4a4e8f13843b",
+   "bytes": 8560
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/harness/session_v2.mjs",
+   "sha256": "13efef80fcf3bfe1b280d8834ccd7a70a49d63668e4f02864a8b140a6c1a83ca",
+   "bytes": 26013
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/harness/state_v1.mjs",
+   "sha256": "8b5752adcf905e53af86d92e640135e3e9a83ed50bf3743f9e74a6f1c3da0677",
+   "bytes": 3647
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/harness/table_v2.mjs",
+   "sha256": "1dbdfa871ec90c27010d5361c188b7d63db0d24c700ac57c74942dbce1bb5f20",
+   "bytes": 17566
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/harness/test_v1.mjs",
+   "sha256": "8451f439ecaf9918be0b9cedc405d27388d2f548fd251eb61f3813a07733b2e1",
+   "bytes": 36616
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/harness/test_v2.mjs",
+   "sha256": "a6f52be23382c3a57f8d39f777cee5c53ec95f120d0f754b5133b15fa2966afa",
+   "bytes": 48020
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/harness/test_v3.mjs",
+   "sha256": "eb05648b3731c42d660f543d34ab72fce7367917ef8fac22edc79ae65f52b740",
+   "bytes": 49212
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/bad-capid.launch/exit.json",
+   "sha256": "1c7e463a0e28cfb6f4f13cc8bd9d18858d971ffc37e16720f2305bbfc4cb16cf",
+   "bytes": 725
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/bad-capid.launch/nonce",
+   "sha256": "fc853ab52d123df9f2eb0f4e774b56d1ca4c1df3cc0e8bb0701a57f9da26bdaa",
+   "bytes": 65
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/bad-changed.launch/exit.json",
+   "sha256": "dadc3adf59b04148c372ffd74e4ff7a678e695b546ae57b52b5c356b5d7c3b85",
+   "bytes": 639
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/bad-digest.launch/exit.json",
+   "sha256": "749fdead562ae5685c2dbbfa792ab97ff2a894e4e27dd45af275759e737125e5",
+   "bytes": 622
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/bad-link.launch/exit.json",
+   "sha256": "a5f44c88edd287d9add802dbd115f8c5d5626273290e35767db56ab6fd7d942e",
+   "bytes": 586
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/bad-noid.launch/exit.json",
+   "sha256": "664c3b6d5629ecb6863d182bce47b54275b0bc48450b9de1de7c860fd1e5ad8a",
+   "bytes": 644
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/bad-noid.launch/nonce",
+   "sha256": "c852c0e879b0d643913d234b08835119d9bc684de0cc351bea5794e0e27f4051",
+   "bytes": 65
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/bad-realid.launch/exit.json",
+   "sha256": "e6392022c6df0a2376fc3060eca79351747ee3efe2b6bc9e798743bc49268ead",
+   "bytes": 647
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/bad-realid.launch/nonce",
+   "sha256": "13363b57818324b5b84fa5c3dc671bf8ce6db8f3683c32d3607e224705096d4b",
+   "bytes": 65
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/bad-runtime.launch/exit.json",
+   "sha256": "7e379a2bfc82bbb0576623ec55ce0a59b0e39139ee6684df32968930cdca6024",
+   "bytes": 593
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/bad-seal.launch/exit.json",
+   "sha256": "4c914f4875221203fe43a8d459fb598b15779306dff820e8e88c192e62d547eb",
+   "bytes": 675
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/bad-seal.launch/nonce",
+   "sha256": "8089d3d9f09e19e3430ab0ada9af9403b763e79ffe4bea0f9fbfe1e83f512b7b",
+   "bytes": 65
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/bad-unlisted.launch/exit.json",
+   "sha256": "ddf2571fe37b423fdbb4aa1c43d63f11120c959b7eb4404ee032ccb721397569",
+   "bytes": 600
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/cap-display-a/complete.json",
+   "sha256": "4b161a22da21d6300e6e345dc3ad03c182fd9b663e684b4a08d4c190360fbd91",
+   "bytes": 1757
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/cap-display-a/inventory.jsonl",
+   "sha256": "2294f4e302620b4ac16be8954d1d1c6ec627a843c94583deb5445a23d536390b",
+   "bytes": 12659
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/cap-display-a/log.jsonl",
+   "sha256": "ee681b8bdd18062d89708d8aa632fe5d2364f790f2e6de7bf78d8a0847d46343",
+   "bytes": 48459
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/cap-display-a/refresh-disp-seed-a.jsonl",
+   "sha256": "00136bdf0b3ba18e8e761a762932ebd9d885afb93070a6b2461a653517523987",
+   "bytes": 47352
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/cap-display-a.launch/cmd.json",
+   "sha256": "4b1b5852a7ed0991f44b67a9223c5ff22649f0ad61013282f088335c2ef581bd",
+   "bytes": 2816
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/cap-display-a.launch/exit.json",
+   "sha256": "10bbf2f6dd7ff550cddb7f75c87fb1a4231768a2d51543edfee29078296d410f",
+   "bytes": 6366
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/cap-display-a.launch/inputs.json",
+   "sha256": "13a9c5d2ccdd027c13beee3c99afa9e69394eff33ec7c15a4db95b0de16a5543",
+   "bytes": 961
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/cap-display-a.launch/nonce",
+   "sha256": "65bbd66fb267a58ee27df86d6665cef946de5bc2b16c0d158721d0d66d287335",
+   "bytes": 65
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/cap-display-a.launch/stderr.txt",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "bytes": 0
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/cap-display-a.launch/stdout.txt",
+   "sha256": "5778336d6cf243fa6c86415e9f440a708ee89f4dc483df946d88e1af424b07f8",
+   "bytes": 169
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/cap-display-b/complete.json",
+   "sha256": "67241c88e952dacff821ab710a47d2ecefb9a053954b21f74bb060ceac64e561",
+   "bytes": 1757
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/cap-display-b/inventory.jsonl",
+   "sha256": "a0cf716a7cdc235d45e5d6e8a6de5b46e2d6c235d43f6c9856663eab96e3cf01",
+   "bytes": 12659
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/cap-display-b/log.jsonl",
+   "sha256": "f7608d6825dccaa023b1a028d3b924024b567c4d0a142cac4cb438247e0a3617",
+   "bytes": 48459
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/cap-display-b/refresh-disp-seed-b.jsonl",
+   "sha256": "d07821adcc73e75c40e66b739d04814e56252d7dfa3e3f8395aeac4152f2e941",
+   "bytes": 47352
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/cap-display-b.launch/cmd.json",
+   "sha256": "1eb07f20b3e0a18c1e1f79f25becfb644814223d14cb78d50bc2f43ddb4d0858",
+   "bytes": 2816
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/cap-display-b.launch/exit.json",
+   "sha256": "d15d50ce40c07b746a97b87e9ead2dcdc6a58ba611759d146c6b319fd64692e4",
+   "bytes": 6366
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/cap-display-b.launch/inputs.json",
+   "sha256": "b44adaeb992b6bf1ecda1e2625eac3a34a338b849124e77fb04cb2ee477c958d",
+   "bytes": 961
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/cap-display-b.launch/nonce",
+   "sha256": "95f95cf69ef8393bb72e66a849102cd1ed7bef2404872045958db4f5cab3b57b",
+   "bytes": 65
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/cap-display-b.launch/stderr.txt",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "bytes": 0
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/cap-display-b.launch/stdout.txt",
+   "sha256": "5d3713a2c2388218f328739005ee3d444e218bfce1e3432a2f29aab6339ebb56",
+   "bytes": 170
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/cap-display-k1/complete.json",
+   "sha256": "c5617d76f62837c1910205fc15582e9a25276cebd289c7e59b9ec37d0409c0ef",
+   "bytes": 1325
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/cap-display-k1/inventory.jsonl",
+   "sha256": "9d1989ee3188d6854f9e98c2faa7054b955fa3677dc6c03d5c261aa75abf6d78",
+   "bytes": 12660
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/cap-display-k1/log.jsonl",
+   "sha256": "ab5bc4c8df28edd9f4a782ac9c45bb036d41c1f5d19c0c76ae161b14de9634eb",
+   "bytes": 37886
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/cap-display-k1/refresh-disp-k1.jsonl",
+   "sha256": "2f03113c64d1f691e3287589922344468d4c5b1c5a30483e69c610816915cc7d",
+   "bytes": 48904
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/cap-display-k1.launch/cmd.json",
+   "sha256": "0faaa59d00b7386257cccdd3d8d79f369077e21490435be7f3ef7171d69c589f",
+   "bytes": 2822
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/cap-display-k1.launch/exit.json",
+   "sha256": "13f38118dac33cebeb987ee79552b7e758f8d772481d9cbc5c6f2e7692b5789d",
+   "bytes": 6357
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/cap-display-k1.launch/inputs.json",
+   "sha256": "05f6ccccfd3cfff2765554d39501cb2f3b6878cf905508491c0c1f551d54bd9d",
+   "bytes": 963
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/cap-display-k1.launch/nonce",
+   "sha256": "2910067cd23f28f185a5650105d0bf3670632689f2acd90b425649bbff199f47",
+   "bytes": 65
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/cap-display-k1.launch/stderr.txt",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "bytes": 0
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/cap-display-k1.launch/stdout.txt",
+   "sha256": "ed7d2f0d4082fa24024fd3d1e88650d6464e2747548ee814becec5acf57aed04",
+   "bytes": 170
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/cap-display-k2/complete.json",
+   "sha256": "8079c9e713fb30b2d67da772e30f97b4f76c5eac9643acc290f3385225630d0b",
+   "bytes": 1495
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/cap-display-k2/inventory.jsonl",
+   "sha256": "6bfec57158e236df8dac704396a1ac668743e1e71d682c2d6fcfc7c224616e51",
+   "bytes": 12660
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/cap-display-k2/log.jsonl",
+   "sha256": "c9c2738010f16da780b4761358583edb9146e81e9315aba3525c568bfc05c361",
+   "bytes": 46754
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/cap-display-k2/refresh-disp-k2.jsonl",
+   "sha256": "3c5ff1bb362829756a47c8566db25d6a6e780d04423eb193d0538525b16fd48e",
+   "bytes": 47352
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/cap-display-k2.launch/cmd.json",
+   "sha256": "ff6044c86650fdfb36f2af83cf98848a8d2bdca40be2d68a40f6a2908d5c2840",
+   "bytes": 2822
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/cap-display-k2.launch/exit.json",
+   "sha256": "611faeabece27e2e0b76687192ccc51f9c6399dcf4bb9b2ac96e9bc20acd4008",
+   "bytes": 6357
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/cap-display-k2.launch/inputs.json",
+   "sha256": "9b9c39fddf87565aebccdc558fa314c0776d9c6a7fbaf0034083305ebfe76707",
+   "bytes": 963
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/cap-display-k2.launch/nonce",
+   "sha256": "601e5bb780bcd4535361d60e0c9ce80fe420edab5db40f758e7dc4aedad167ef",
+   "bytes": 65
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/cap-display-k2.launch/stderr.txt",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "bytes": 0
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/cap-display-k2.launch/stdout.txt",
+   "sha256": "4e737d672d1c319b40a3a71155cd2156eb388019d63398aff47d2a805d65563b",
+   "bytes": 170
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/cap-identity/complete.json",
+   "sha256": "ea6b408161dbaa81ee2252f8c2bb97774ff6121ba0fef2c6792a2c51845cb381",
+   "bytes": 14928
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/cap-identity/identity.json",
+   "sha256": "5591bcd514c35814abbe00656118158cec3518867bba5f39472b95e24129dd0c",
+   "bytes": 2836008
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/cap-identity/identity.seal.json",
+   "sha256": "7ad167e8c2ff21bbb33f3c16a6779cb29b8fb0de2907d36a5d26bc0d83c9202a",
+   "bytes": 253
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/cap-identity/inventory.jsonl",
+   "sha256": "55e9d1b46f09daac1c598e3cd846370bdc339c34184e6e89ba837c242b862587",
+   "bytes": 11896
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/cap-identity/log.jsonl",
+   "sha256": "a61535620812c96ad5d9ef04fdfc496ded90a16c287a72fc311070bcf1dfdef6",
+   "bytes": 402212
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/cap-identity/refresh-disp-k1.jsonl",
+   "sha256": "2f03113c64d1f691e3287589922344468d4c5b1c5a30483e69c610816915cc7d",
+   "bytes": 48904
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/cap-identity/refresh-disp-k2.jsonl",
+   "sha256": "3c5ff1bb362829756a47c8566db25d6a6e780d04423eb193d0538525b16fd48e",
+   "bytes": 47352
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/cap-identity/refresh-disp-seed-a.jsonl",
+   "sha256": "00136bdf0b3ba18e8e761a762932ebd9d885afb93070a6b2461a653517523987",
+   "bytes": 47352
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/cap-identity/refresh-disp-seed-b.jsonl",
+   "sha256": "d07821adcc73e75c40e66b739d04814e56252d7dfa3e3f8395aeac4152f2e941",
+   "bytes": 47352
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/cap-identity.launch/cmd.json",
+   "sha256": "4de38a69a17a13dbaadb85c02d59856d0259ea2c901696c7f14ae890102eba2a",
+   "bytes": 2214
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/cap-identity.launch/exit.json",
+   "sha256": "d015b1144a75fc1fb9f27345888167e0ee7bca320b93f98b5891430a0faba7d9",
+   "bytes": 7852
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/cap-identity.launch/inputs.json",
+   "sha256": "5bb68eb7fadcae2667ad21d42cddee5142b84b6fdea10646ffa02f1cc7e6c7fd",
+   "bytes": 313
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/cap-identity.launch/nonce",
+   "sha256": "edfcd940ac62dbad1d0ea4fb926e4e3a285f2ac1c8c3854831cadda415a94b10",
+   "bytes": 65
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/cap-identity.launch/stderr.txt",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "bytes": 0
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/cap-identity.launch/stdout.txt",
+   "sha256": "4651f157693aa53a7aff7d38c92f041e98bf3be14a3519ab8ae4b1180464eeff",
+   "bytes": 168
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/cap-proof/complete.json",
+   "sha256": "28c34452efe03418eb799bf95ebab3bb9209a647cc7734155a83d9af2e8c78e5",
+   "bytes": 10087
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/cap-proof/inventory.jsonl",
+   "sha256": "fd33081e72cc78d451a826a48a60d072d09ddd2f1aafa9c5a5f098dc55430b04",
+   "bytes": 12655
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/cap-proof/log.jsonl",
+   "sha256": "270480138eddb99c48218746e8b75265027da46b791ed11c721096858137d1a0",
+   "bytes": 366651
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/cap-proof.launch/cmd.json",
+   "sha256": "1e869ac50f71b9678fa032e4130e0ebcf8c5538bbf4e4a893acc6b8553fc79ad",
+   "bytes": 2792
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/cap-proof.launch/exit.json",
+   "sha256": "3145abddee4a253fa91683aa3b1a190859cecce5f30ea499a7c7313556cfe246",
+   "bytes": 5879
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/cap-proof.launch/inputs.json",
+   "sha256": "ede06edcd061587b76b540302501dc5381e364c70eb211c432d1d2bd19f93d4c",
+   "bytes": 953
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/cap-proof.launch/nonce",
+   "sha256": "ea22286d35f5322b34b7873ae4b29a61a32b4bbfb47b10eefed0768af856d192",
+   "bytes": 65
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/cap-proof.launch/stderr.txt",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "bytes": 0
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/cap-proof.launch/stdout.txt",
+   "sha256": "beb59e062675a2371d81ed71b61299601a6f42577e184b9026bacc3b108faf60",
+   "bytes": 170
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/f-display-a/complete.json",
+   "sha256": "95220d177b151b74c5a87fe7abb0e06fdd38cef87fde51f13821f68a1acaa8eb",
+   "bytes": 1816
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/f-display-a/inventory.jsonl",
+   "sha256": "5a86ffbf06da54c5cddc6c5cba9f141132ddf0e99e5676240424ea736c3bd4cb",
+   "bytes": 12891
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/f-display-a/log.jsonl",
+   "sha256": "b54f86e7d4ab2395689c86ff37e24553dec6b64f9a3c91408f468a005d1092f6",
+   "bytes": 48518
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/f-display-a/refresh-disp-seed-a.jsonl",
+   "sha256": "00136bdf0b3ba18e8e761a762932ebd9d885afb93070a6b2461a653517523987",
+   "bytes": 47352
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/f-display-a.launch/cmd.json",
+   "sha256": "224ca98c1d451de41ba1203901e163a4208cce293ad324a299953627d3481f9e",
+   "bytes": 3842
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/f-display-a.launch/exit.json",
+   "sha256": "e3dcf03616c12a6434621410e2562cdf2c33afbbcb58d917de77992195caf115",
+   "bytes": 2053
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/f-display-a.launch/inputs.json",
+   "sha256": "67174c879368fcf78c220d80aac510102f4332e9073b31ca3a8d781c1b3c315e",
+   "bytes": 1246
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/f-display-a.launch/nonce",
+   "sha256": "2fe7ceead0c6ca0ce9777e97acf808e9fd4341b2a8b8876060f583a3a7cbac3c",
+   "bytes": 65
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/f-display-a.launch/stderr.txt",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "bytes": 0
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/f-display-a.launch/stdout.txt",
+   "sha256": "760276304441dee31247d1d1ddeeb64fdd1921a494521307f66d68279ec7875c",
+   "bytes": 170
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/f-display-b/complete.json",
+   "sha256": "416f6756fbaec2add2e70a341bfa9a3f7cf255946e9e86e6aece9d694f20bf7a",
+   "bytes": 1816
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/f-display-b/inventory.jsonl",
+   "sha256": "45f1ea3cd3a83262aa7e62fa089ef0c877571501ffcae39d23f8ce32c27cf3cf",
+   "bytes": 12891
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/f-display-b/log.jsonl",
+   "sha256": "1774c70ac417dae15aef5dc3995e446c38ae76838891265062ffa88946202fba",
+   "bytes": 48518
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/f-display-b/refresh-disp-seed-b.jsonl",
+   "sha256": "d07821adcc73e75c40e66b739d04814e56252d7dfa3e3f8395aeac4152f2e941",
+   "bytes": 47352
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/f-display-b.launch/cmd.json",
+   "sha256": "7625501c788ea4a6824c4eba3a882f0fe27b97761c50f816be526f2be11eaf87",
+   "bytes": 3842
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/f-display-b.launch/exit.json",
+   "sha256": "d5d19c52e7779d26585cc97e9969aefc92836b2b88a2c38f6e61c89e841b19ff",
+   "bytes": 2053
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/f-display-b.launch/inputs.json",
+   "sha256": "28f1e7dc59cfdfef00e4acb7760ff68ea703ae9ce54c088b4fc976731e165001",
+   "bytes": 1246
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/f-display-b.launch/nonce",
+   "sha256": "dfa9afc45def0ea164bcaddffa02c1bd583d877443485acf8f2e38d6277c123e",
+   "bytes": 65
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/f-display-b.launch/stderr.txt",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "bytes": 0
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/f-display-b.launch/stdout.txt",
+   "sha256": "177d369b6587676b1b370a786325c5a61fbd7319b857be5c786577ea4a0a1a2a",
+   "bytes": 170
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/f-display-k1/complete.json",
+   "sha256": "7c321e1079d72519ec3393ae6d1e4c2a187791a8f21702404d51396ce4abc5fd",
+   "bytes": 1384
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/f-display-k1/inventory.jsonl",
+   "sha256": "9a3e10d065c22dfede59f0f21c1bafa4530e4788f45a7d85382c16ae2f4732d7",
+   "bytes": 12892
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/f-display-k1/log.jsonl",
+   "sha256": "f82d3171c202a1dc26c54ba19f583c47986057ce9fc1812026cfda4421b21152",
+   "bytes": 37945
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/f-display-k1/refresh-disp-k1.jsonl",
+   "sha256": "2f03113c64d1f691e3287589922344468d4c5b1c5a30483e69c610816915cc7d",
+   "bytes": 48904
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/f-display-k1.launch/cmd.json",
+   "sha256": "789eb01a462489e542971c6baa8a7ff8c07d9f5864943a53c44852848ca7a170",
+   "bytes": 3848
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/f-display-k1.launch/exit.json",
+   "sha256": "65fe6dec187311be6fe4e9e0ae410efc77da731ceddae57ae2a62baf8df31800",
+   "bytes": 2043
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/f-display-k1.launch/inputs.json",
+   "sha256": "b5de7ea0d340be5e5c2d699775985c858b1840edf74f7d49ebca170e9b6368e2",
+   "bytes": 1248
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/f-display-k1.launch/nonce",
+   "sha256": "405c62e80917a1b8ecf711bfd364f96162e90f14a684fe501ed0d4edea8ed0c2",
+   "bytes": 65
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/f-display-k1.launch/stderr.txt",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "bytes": 0
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/f-display-k1.launch/stdout.txt",
+   "sha256": "b0ffc0ff3f5690b63a511be6ea8b57da46ced241c6b76f160e0e7f19ef283dcc",
+   "bytes": 170
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/f-display-k2/complete.json",
+   "sha256": "c947be70b55fe9998e90290e9cdb0f6e16c468f2a4f66247e04ed1f43c95a51c",
+   "bytes": 1554
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/f-display-k2/inventory.jsonl",
+   "sha256": "75586ba5819313b7df5ef0ee69422e2f7ff68fb31e365df64a9390cdf3601cff",
+   "bytes": 12892
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/f-display-k2/log.jsonl",
+   "sha256": "0fc6c47ea67a27e28ed7417a0555da448773be9a1e42c3992ae98d6676128376",
+   "bytes": 46813
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/f-display-k2/refresh-disp-k2.jsonl",
+   "sha256": "3c5ff1bb362829756a47c8566db25d6a6e780d04423eb193d0538525b16fd48e",
+   "bytes": 47352
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/f-display-k2.launch/cmd.json",
+   "sha256": "4ffd8e00a904af651132f80f4dc152ddc924948095e617ead315638c657c3609",
+   "bytes": 3848
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/f-display-k2.launch/exit.json",
+   "sha256": "8df8eac7c57215f94e427b9ee8573274b5d3bbd776ceac06e5d2f776942ca454",
+   "bytes": 2043
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/f-display-k2.launch/inputs.json",
+   "sha256": "98f6a4b3d637d277c113be318a7ffb37928e4f00b4b5ea2e68f9831285bae884",
+   "bytes": 1248
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/f-display-k2.launch/nonce",
+   "sha256": "3616df38e25e89f85058ab252f715378bc5bfff0ffa486345d8463d2af4af7cc",
+   "bytes": 65
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/f-display-k2.launch/stderr.txt",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "bytes": 0
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/f-display-k2.launch/stdout.txt",
+   "sha256": "1f9baa67a4522110b28f803fa90436bdb39ea4f90d77c301e8543960da7a6ecc",
+   "bytes": 170
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/f-identity/complete.json",
+   "sha256": "c59022c9668551a08e0f66bab2e29b0b46a760187f0d4f1c39b2e7f725ae957d",
+   "bytes": 15046
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/f-identity/identity.json",
+   "sha256": "72b70c951079df769954d667e373a0fa387a683344645863ea3964fbfd68838c",
+   "bytes": 2836067
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/f-identity/identity.seal.json",
+   "sha256": "22434a88f1b3a8c0830aafa4ce3d82fbc57b5802d5f51c6ce2034f9ed5f57d19",
+   "bytes": 312
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/f-identity/inventory.jsonl",
+   "sha256": "fc6150dc17259cf5a213937d76cbf414367c242a1af5f95159c810c98ff6ca9b",
+   "bytes": 12134
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/f-identity/log.jsonl",
+   "sha256": "4f465e2f6adde1c60e6ffa3a8ff1ba0cfbb4cbd35893631c2bc5136a4ecce9f5",
+   "bytes": 402271
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/f-identity/refresh-disp-k1.jsonl",
+   "sha256": "2f03113c64d1f691e3287589922344468d4c5b1c5a30483e69c610816915cc7d",
+   "bytes": 48904
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/f-identity/refresh-disp-k2.jsonl",
+   "sha256": "3c5ff1bb362829756a47c8566db25d6a6e780d04423eb193d0538525b16fd48e",
+   "bytes": 47352
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/f-identity/refresh-disp-seed-a.jsonl",
+   "sha256": "00136bdf0b3ba18e8e761a762932ebd9d885afb93070a6b2461a653517523987",
+   "bytes": 47352
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/f-identity/refresh-disp-seed-b.jsonl",
+   "sha256": "d07821adcc73e75c40e66b739d04814e56252d7dfa3e3f8395aeac4152f2e941",
+   "bytes": 47352
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/f-identity.launch/cmd.json",
+   "sha256": "c0c8d7fe3bea4980760a7049523c81e4c3be7742f4841cd2030522fae5fe927d",
+   "bytes": 3248
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/f-identity.launch/exit.json",
+   "sha256": "b901f577ef70a0816146627178bdbab8ca1c384255eb826ecc670dd0d4f5654a",
+   "bytes": 4092
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/f-identity.launch/inputs.json",
+   "sha256": "ff35f3eaa66ba30d1a5a5d7e1fc3a6f619504f7b569790e49bb35d7f8520d8d3",
+   "bytes": 606
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/f-identity.launch/nonce",
+   "sha256": "0d9a0be9ad7929c7b83c3b3e2764dcc75e54e84efab003ba74ea56d101dc5ef1",
+   "bytes": 65
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/f-identity.launch/stderr.txt",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "bytes": 0
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/f-identity.launch/stdout.txt",
+   "sha256": "3756156d8ffa26c9f11056e8978617d987704a4dc0c9edcf8c6cf02c69add414",
+   "bytes": 170
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/f-proof/complete.json",
+   "sha256": "6094f2f07a209e4714d4db6f14ea16b64cae5b4060b13f5635802d0d30e1ebab",
+   "bytes": 10146
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/f-proof/inventory.jsonl",
+   "sha256": "f4ea6c4922b77136d599a43c2ef4affd1600f88acf500857baaa3487d9e422fb",
+   "bytes": 12887
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/f-proof/log.jsonl",
+   "sha256": "befffb32175a9bbf26c8a4796c634aeb73e84562f97191b63c0b045856a33c28",
+   "bytes": 366710
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/f-proof.launch/cmd.json",
+   "sha256": "e1fd9848e6b9d0ee941951b568062aaa850f637ec8eb3f0d8b8d97caba90b29f",
+   "bytes": 3818
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/f-proof.launch/exit.json",
+   "sha256": "8918b63752389695fb7e2921fece2400d8bdba1d546d0aded3c1f063a55ad917",
+   "bytes": 1570
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/f-proof.launch/inputs.json",
+   "sha256": "d1b71ad9014db86976f4d91a69d916694dd069ff0013d011ed233d718772c47f",
+   "bytes": 1238
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/f-proof.launch/nonce",
+   "sha256": "90686d7424c9a4c54f7acffbcbd5ec135e36a093cfd785c10eacf6eb9569f57d",
+   "bytes": 65
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/f-proof.launch/stderr.txt",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "bytes": 0
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/f-proof.launch/stdout.txt",
+   "sha256": "16b8b8d39a2500db27d00226fa7a51bcdbdf1d5198af9a40cfe1ebbdc9333373",
+   "bytes": 170
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/killed/inventory.jsonl",
+   "sha256": "47f742169c7400b03fcedad1cd5cd4eb6438bc2618e32e0af177276715f7dc11",
+   "bytes": 6665
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/killed.launch/cmd.json",
+   "sha256": "66b943be61af46f7dd2a86feddceb8320a1d3419c787b47e0f2f5d543cdf2429",
+   "bytes": 3228
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/killed.launch/exit.json",
+   "sha256": "33648aea1049753101168503e3cdbe5bc974bca33e492e43a89aa418fb179e94",
+   "bytes": 1259
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/killed.launch/inputs.json",
+   "sha256": "92834916e4dbe70c8914c5ae669f241c9e394bc6fb8d9ee140be27e124e011cf",
+   "bytes": 598
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/killed.launch/nonce",
+   "sha256": "62e89087fb68ed1ca6e85f686b3d1f74e543153f27947998889f96a864543f38",
+   "bytes": 65
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/killed.launch/stderr.txt",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "bytes": 0
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/killed.launch/stdout.txt",
+   "sha256": "82d10cd0d16a2e4b48e1161cd7418198614fe2f38d201e30028573944617d6ba",
+   "bytes": 170
+  },
+  {
+   "path": "work/test-scratch/v3-final/ws/work/out/_refusals/f-identity-1795232325114.json",
+   "sha256": "8217fd5669e5d7c92de2ea84b54126f20d84c8cfce4d349bc9e9ab88b964d6db",
+   "bytes": 89
+  },
+  {
+   "path": "work/freeze/freeze_v1.json",
+   "sha256": "819876c49fef56ceb996bd03a9d5a589c90d51bae8ce1a2145d1447a520f4e2b",
+   "bytes": 73018
+  },
+  {
+   "path": "work/result-design-r2.md",
+   "sha256": "deb21e15c6ae5c34e5fd983000daf643636a1a627fe228d20a36731a9de1bb55",
+   "bytes": 457
+  }
+ ],
+ "commands": [
+  "node26 work/harness/launch_v3.mjs display-a fake-display-a --freeze-sha 819876c49fef56ceb996bd03a9d5a589c90d51bae8ce1a2145d1447a520f4e2b --fake --identity fake-identity",
+  "node26 work/harness/launch_v3.mjs display-b fake-display-b --freeze-sha 819876c49fef56ceb996bd03a9d5a589c90d51bae8ce1a2145d1447a520f4e2b --fake --identity fake-identity",
+  "node26 work/harness/launch_v3.mjs display-k1 fake-display-k1 --freeze-sha 819876c49fef56ceb996bd03a9d5a589c90d51bae8ce1a2145d1447a520f4e2b --fake --identity fake-identity",
+  "node26 work/harness/launch_v3.mjs display-k2 fake-display-k2 --freeze-sha 819876c49fef56ceb996bd03a9d5a589c90d51bae8ce1a2145d1447a520f4e2b --fake --identity fake-identity",
+  "node26 work/harness/launch_v3.mjs identity fake-identity --freeze-sha 819876c49fef56ceb996bd03a9d5a589c90d51bae8ce1a2145d1447a520f4e2b --fake",
+  "node26 work/harness/launch_v3.mjs proof fake-proof --freeze-sha 819876c49fef56ceb996bd03a9d5a589c90d51bae8ce1a2145d1447a520f4e2b --fake --identity fake-identity",
+  "node26 work/harness/make_freeze_v3.mjs freeze-cap",
+  "node26 work/harness/launch_v3.mjs proof real-refused-proof --freeze-sha 819876c49fef56ceb996bd03a9d5a589c90d51bae8ce1a2145d1447a520f4e2b --identity fake-identity",
+  "node26 work/harness/test_v3.mjs v3-final"
+ ],
+ "tool_versions": {
+  "node": "v26.12.1"
+ },
+ "superseded": [
+  "work/superseded-1",
+  "work/superseded-2",
+  "work/superseded-3",
+  "work/superseded-4"
+ ]
+}

@@ -1,0 +1,62 @@
+{
+  "plan": "display-k2",
+  "mode": "fake",
+  "planSha": "dd7ec94607f097883ae44e4dcbc6c4c74cca49308bb8b493af7b51b3ff4d9a7e",
+  "freezeSha": "edf10cadd61dc587d05961ad26e64a393d78318e3f31febeba05326a13872b3a",
+  "pressReference": "k1e-s1-down-halfTarget",
+  "executed": [
+    "disp-k2:disp-k2-init-6071181e",
+    "disp-k2:disp-k2-init-608fe1b0",
+    "disp-k2:disp-k2-init-609df7e4",
+    "disp-k2:disp-k2-take-focus-act",
+    "disp-k2:disp-k2-take-focus-settle",
+    "disp-k2:disp-k2-lever",
+    "disp-k2:disp-k2-focus-arg",
+    "disp-k2:disp-k2-focus-289",
+    "disp-k2:disp-k2-focus-1712",
+    "disp-k2:k2-set-84d1-0",
+    "disp-k2:k2-set-1dd1-0",
+    "disp-k2:k2-set-1dd1-1",
+    "disp-k2:k2-set-99a1-0",
+    "disp-k2:k2-set-1db1",
+    "disp-k2:k2-set-1dc1",
+    "disp-k2:k2-prepare",
+    "disp-k2:k2-e0",
+    "disp-k2:k2-e1",
+    "disp-k2:k2-e2",
+    "disp-k2:k2-e3",
+    "disp-k2:k2-e4",
+    "disp-k2:k2-e5",
+    "disp-k2:k2-e6",
+    "disp-k2:k2-e7",
+    "disp-k2:k2-e8",
+    "disp-k2:k2-e9",
+    "disp-k2:k2-e10",
+    "disp-k2:k2-e11"
+  ],
+  "expected": 28,
+  "deliveries": 28,
+  "relations": {
+    "evaluated": 191,
+    "failed": 0
+  },
+  "reproduction": {
+    "evaluated": 28
+  },
+  "identity": null,
+  "recorder": [
+    {
+      "session": "disp-k2",
+      "file": "refresh-disp-k2.jsonl",
+      "bytes": 47352,
+      "sha256": "3c5ff1bb362829756a47c8566db25d6a6e780d04423eb193d0538525b16fd48e",
+      "windows": 97,
+      "outside": 0,
+      "orphans": 0,
+      "samples": 97,
+      "calls": 97
+    }
+  ],
+  "ok": true,
+  "inventoryProblems": []
+}

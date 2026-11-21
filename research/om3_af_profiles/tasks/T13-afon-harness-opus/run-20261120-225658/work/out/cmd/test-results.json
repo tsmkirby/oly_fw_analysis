@@ -1,0 +1,420 @@
+{
+  "node": "v26.12.1",
+  "scratch": "work/test-scratch/v3-final",
+  "fingerprints": {
+    "afon_hooks_v7.mjs": "488e6973767a246b24130173edf16fa4082dafb2ce00dcf8622150db8dc1fcd0",
+    "check_table_v3.mjs": "37255a2b42c52c2f4cc99782d0e1cf186e0d9cd84735224f76d0be1b6c3df1d9",
+    "common_v1.mjs": "327df4f05eebaa6142bc508627359a74b1ce320379c1fdad3f1d3466f00cd529",
+    "exec_v1.mjs": "8aed0b0030344e69b6d9b523e12da656683a33354b1eb0f9f1a4b43be2e683b2",
+    "exec_v2.mjs": "222c91178c7311fa4f3540ac5b1a855b3cc4aead460283d671d0197c42532ca6",
+    "exitcheck_v1.mjs": "3056d02b93b41c43900071649b6ea57e1096688ba3e1485387b95b177e33c5a2",
+    "exitcheck_v2.mjs": "d8c0b3ddb022727b8b9140ec775155444f96f38ad822af8694ec118e0e485c1a",
+    "exitcheck_v3.mjs": "0bc09adee6cf9d573f597ed87f42ea7717c07daedcada9687ee1b19f162ff51f",
+    "expect_v1.mjs": "3a85eaef31d9f8e0d040d0c0cdc48fd008bb02d7fa1ddecb8c1a5526ba818f2f",
+    "fake_v1.mjs": "7e00070e3b6ecff1cf733df85467bca972abc31bcb32b3370bebe11c3bae5712",
+    "fake_v2.mjs": "d3b1355e06c30b8083b6a3254b6a11dd9c7b23e548e007d96aaf4d976e64001d",
+    "fixture_t11_v1.mjs": "2058762f6c7c155a152588bdb4b106dab665198bf2e13f8af20e0ccf94c7ea8e",
+    "fixture_t11_v2.mjs": "31acec4f108ab3cc77311238d8ec80afcf471237997e59688a2643758a9a7c14",
+    "freeze_v1.mjs": "2620520114ca7b26b668dfcf4ddf9c9a7013e5f9c7c09ee5f338365adc75e6f4",
+    "gate_v1.mjs": "53a5cbbe65f15e687eaaca5878a7a0ff71aee84842f14e0cc165e4ef859bf0b2",
+    "gate_v2.mjs": "8d9087107005b666298861e4680613e963a7437efa9ef834df3fc53abd88b94a",
+    "inventory_v1.mjs": "d9ce1e41a43c5c8789689bee1c6340a73ef5e328eefcffd930466d1ebaf7c0e8",
+    "inventory_v2.mjs": "e3d751e09d761cf354eff416317743e2aa8658613101b9c231179f518aa23738",
+    "inventory_v3.mjs": "c2fae3fa3e510985b10c21211d71be950dd53e6b7b4794e7afbfb4b851d7fef2",
+    "launch_v1.mjs": "19ba5e49b33ca496ef769253e32ef584213d15e48e36509fb28b2faee67e1d5e",
+    "launch_v2.mjs": "bf5a60938d5866288cccbee424a2fd88a6abbced88166c27d71e435a6093dd00",
+    "launch_v3.mjs": "4c345f0d33a39f0961d69b7d9700ddf4a3a85ab7b2f2cf285f18956693ece0f9",
+    "make_freeze_v1.mjs": "81c4ececa3cf4882827b7518c45b16ae9b9a27f8c7ae4c5a9bd3d4a14da8c3fe",
+    "make_freeze_v2.mjs": "f0d32578370ea1873e8d14de6b396f8cbefd4b69ae02a5dc1be17c3ed1482537",
+    "make_freeze_v3.mjs": "04433c20dc7345f0c2cfc0c9768f1c496e075f517d5d34499e0088287417c06f",
+    "plan_v1.mjs": "dd7ec94607f097883ae44e4dcbc6c4c74cca49308bb8b493af7b51b3ff4d9a7e",
+    "predicates_v3.mjs": "c6a11a0d03a8a355beb021cd2578d9be304498695c118250a1464f22de8a046f",
+    "probe_v1.mjs": "5948b03441f343888c54938c7af084ae48e1e75a03df2c495ae70d7c6abdda87",
+    "probe_v2.mjs": "78d865308f856908cede5a18f5f2abf5d4806c8bf3fb30e6a950db546ab71e81",
+    "probe_v3.mjs": "67b53196a930207b3f205af22fc7584e475d4750e7e293216a7cc6e0470637f5",
+    "real_v1.mjs": "13ed4f23a99b596d30b6c6c96e6e0756d56e38cea7db060d8edf4fbf3a320b1c",
+    "real_v2.mjs": "6c47d56883927e00f3c7667ee6fc9f2574fa4b10183187beecc7a9df9409a43d",
+    "refresh_v4.mjs": "01e4714d9f3067f1972e113ffc693bdb8a5dc847800b80604eed827bc1e75f48",
+    "relations_v1.mjs": "b08f64079b7c603e4db3e7c1e68f50ba76c8894cb44e4ebfbd6d7ae11994015f",
+    "relations_v2.mjs": "7c8e5fb9e09821ec8cbccedd181186f93980b3c45099482bb31e924f905c122b",
+    "run_v1.mjs": "320390a6d4e301f2a3c5da665f608e17f14ee68f22d2bd2d9e20250cda0a614f",
+    "run_v2.mjs": "327a76fb79fe8201166a7f5bc786f53c55f828319ec67e7af962819848ff0d5a",
+    "run_v3.mjs": "f288389482705544bdc3405f40829a0d7bdc0040c002d4a6ac3727f791ea3114",
+    "seal_v1.mjs": "2d51beb9fef3b7c78ced872a4212a56cf990af44c995443caf525f633de66d8e",
+    "session_v1.diff": "d286bc1db5ff74bb9b694f4f76a9900a2f99a78441c2ea0c784d1184a96bbcc8",
+    "session_v1.mjs": "6aaa9e4300bc4f343c9269d6a7b47fc4c48c957030c6975bc487717ed88314dd",
+    "session_v2.diff": "d5762f28d7167bbd400b973734539de0410f4a60b68c362166bf4a4e8f13843b",
+    "session_v2.mjs": "13efef80fcf3bfe1b280d8834ccd7a70a49d63668e4f02864a8b140a6c1a83ca",
+    "state_v1.mjs": "8b5752adcf905e53af86d92e640135e3e9a83ed50bf3743f9e74a6f1c3da0677",
+    "table_v2.mjs": "1dbdfa871ec90c27010d5361c188b7d63db0d24c700ac57c74942dbce1bb5f20",
+    "test_v1.mjs": "8451f439ecaf9918be0b9cedc405d27388d2f548fd251eb61f3813a07733b2e1",
+    "test_v2.mjs": "a6f52be23382c3a57f8d39f777cee5c53ec95f120d0f754b5133b15fa2966afa",
+    "test_v3.mjs": "eb05648b3731c42d660f543d34ab72fce7367917ef8fac22edc79ae65f52b740"
+  },
+  "fixtureInputs": [
+    {
+      "path": "ref/analysis/button-af/readiness/t11-afon-acceptance-harness/out/identity-t11-v10.jsonl",
+      "sha256": "135e1266baa0e671ff32aa02cfda6d55060f0a0b1c53dc126102a1b1174eaf67"
+    },
+    {
+      "path": "ref/analysis/button-af/readiness/t11-afon-acceptance-harness/out/identity-t11-v10.json",
+      "sha256": "1865a575c63ee414f387a16d2db586653f6324e967f1a790c87e6a23a48dc24d"
+    }
+  ],
+  "passed": 43,
+  "failed": 0,
+  "results": [
+    {
+      "name": "relations on the retained T11 identity-v10 emulator records",
+      "pass": true,
+      "ms": 4,
+      "info": {
+        "evaluated": 80,
+        "relations": 532
+      }
+    },
+    {
+      "name": "T11 records: a wrong AF-ON press byte fails the named press reference",
+      "pass": true,
+      "ms": 2,
+      "info": {
+        "failed": [
+          "candidate-af-down:target"
+        ]
+      }
+    },
+    {
+      "name": "correction 1: pose-after-edit compares all live cells with K2 and keeps the candidate mirror on its own source",
+      "pass": true,
+      "ms": 3,
+      "info": {
+        "relations": 7
+      }
+    },
+    {
+      "name": "the AF-ON press reference is named in one place",
+      "pass": true,
+      "ms": 0,
+      "info": null
+    },
+    {
+      "name": "plan validator accepts the plans and rejects functions, getters, symbols and unknown keys",
+      "pass": true,
+      "ms": 19,
+      "info": {
+        "identity": 432,
+        "commits": 158
+      }
+    },
+    {
+      "name": "correction 5: bring-up is five operations and focus-arg stays separate, in setup_v2 order",
+      "pass": true,
+      "ms": 0,
+      "info": null
+    },
+    {
+      "name": "six plans end to end on the fake through the common implementation",
+      "pass": true,
+      "ms": 184,
+      "info": {
+        "identity": 432,
+        "proof": 324,
+        "display-a": 29,
+        "display-b": 29,
+        "display-k2": 28,
+        "display-k1": 22
+      }
+    },
+    {
+      "name": "identity pass: faults fail on behaviour relations alone",
+      "pass": true,
+      "ms": 58,
+      "info": {
+        "press": "candidate:candidate-af-down relation target [ref:k1e:ke-s1-down:halfTarget [k1e-s1-down-ha",
+        "readBank": "candidate:candidate-af-down relation readBank [literal:0 (T8c Q1 saved index)] {\"got\":3,\"w",
+        "poseLeak": "candidate:candidate-pose-exif6 relation poseWatch [installed hook watch record: no live st",
+        "writer": "candidate writer calls",
+        "subject": "k1e:k1e-init-6071181e relation subject [literal:0 (0x1e71[0])] {\"got\":1,\"want\":0}"
+      }
+    },
+    {
+      "name": "proof: wrong value, changed unexpected field, absent field and identity title each fail",
+      "pass": true,
+      "ms": 36,
+      "info": {
+        "wrong": "candidate:candidate-af-down target differs from the sealed identity row | relation target ",
+        "drift": "disp-seed-a:seed-a-e0 frame differs from the sealed identity row | frame changed where the",
+        "absent": "k2:k2-k2-af-down after field edge absent | edge differs from the sealed identity row | edg",
+        "title": "k1e:k1e-e-ok-down identity title",
+        "link": "k1e:k1e-pose-exif6 relation links [literal:[1,1] (0x1db1, 0x1dc1 read back)] {\"got\":[0,1]}"
+      }
+    },
+    {
+      "name": "preservation rule: a field the identity pass preserved must not change",
+      "pass": true,
+      "ms": 0,
+      "info": null
+    },
+    {
+      "name": "static missing row: identity coverage refuses before any session (zero deliveries)",
+      "pass": true,
+      "ms": 23,
+      "info": {
+        "msg": "identity coverage refused before any session: candidate:candidate-af-down, state"
+      }
+    },
+    {
+      "name": "dynamic missing row: the gate refuses a commit with zero deliveries; unmarked commit keys are classified",
+      "pass": true,
+      "ms": 0,
+      "info": null
+    },
+    {
+      "name": "identity is read after the input and its settle",
+      "pass": true,
+      "ms": 0,
+      "info": null
+    },
+    {
+      "name": "correction 6: raw delivery wrappers refuse outside the gate",
+      "pass": true,
+      "ms": 1,
+      "info": null
+    },
+    {
+      "name": "deleting an identity-bearing operation removes it from execution and coverage together",
+      "pass": true,
+      "ms": 0,
+      "info": null
+    },
+    {
+      "name": "custom zone is reached and judged",
+      "pass": true,
+      "ms": 2,
+      "info": null
+    },
+    {
+      "name": "pose instrumentation toggles change no refusal (accepted predicates_v3)",
+      "pass": true,
+      "ms": 0,
+      "info": {
+        "cases": 48
+      }
+    },
+    {
+      "name": "recorder: return-hook completion, substitution, categories, orphan, null, unclosed, in-window sampling",
+      "pass": true,
+      "ms": 0,
+      "info": null
+    },
+    {
+      "name": "correction 4: tag validation and output containment",
+      "pass": true,
+      "ms": 1,
+      "info": null
+    },
+    {
+      "name": "exit checks: missing, truncated, reordered and tampered inventory; missing or short completion",
+      "pass": true,
+      "ms": 4,
+      "info": null
+    },
+    {
+      "name": "reused modules are byte-identical to the accepted T12 copies",
+      "pass": true,
+      "ms": 1,
+      "info": {
+        "afon_hooks_v7.mjs": "488e6973767a",
+        "state_v1.mjs": "8b5752adcf90",
+        "predicates_v3.mjs": "c6a11a0d03a8",
+        "refresh_v4.mjs": "01e4714d9f30",
+        "table_v2.mjs": "1dbdfa871ec9",
+        "check_table_v3.mjs": "37255a2b42c5"
+      }
+    },
+    {
+      "name": "real-path modules load without starting the emulator; delivery names cover the design list",
+      "pass": true,
+      "ms": 3,
+      "info": null
+    },
+    {
+      "name": "session_v2.diff is the retained diff of session_v2.mjs against zone_session_k1.mjs",
+      "pass": true,
+      "ms": 2,
+      "info": {
+        "removed": 27,
+        "added": 51,
+        "protectedLines": 53
+      }
+    },
+    {
+      "name": "scratch workspace: copy, junction, minimal freeze through six capture runs",
+      "pass": true,
+      "ms": 1948,
+      "info": {
+        "files": 51,
+        "sha256": "c97381cd45bb6503"
+      }
+    },
+    {
+      "name": "fake runs through the launcher: identity then five reproductions, ok but never valid",
+      "pass": true,
+      "ms": 2508,
+      "info": {
+        "identity": 432,
+        "proof": 324,
+        "display-a": 29,
+        "display-b": 29,
+        "display-k2": 28,
+        "display-k1": 22
+      }
+    },
+    {
+      "name": "refused: wrong freeze digest writes a failing exit record",
+      "pass": true,
+      "ms": 111,
+      "info": null
+    },
+    {
+      "name": "refused: an existing tag; its evidence is preserved",
+      "pass": true,
+      "ms": 37,
+      "info": null
+    },
+    {
+      "name": "refused: unlisted file in a frozen directory, changed file, link inside a frozen directory",
+      "pass": true,
+      "ms": 597,
+      "info": null
+    },
+    {
+      "name": "refused: missing identity, identity of another mode, capture identity for a fake proof",
+      "pass": true,
+      "ms": 818,
+      "info": null
+    },
+    {
+      "name": "refused: runtime not the frozen one",
+      "pass": true,
+      "ms": 197,
+      "info": null
+    },
+    {
+      "name": "grants: files inside frozen directories are covered by the directory grant only",
+      "pass": true,
+      "ms": 1,
+      "info": null
+    },
+    {
+      "name": "drift at exit: a frozen file changed after verification is reported",
+      "pass": true,
+      "ms": 162,
+      "info": null
+    },
+    {
+      "name": "child refuses an unrestricted start, wrong flags, NODE_OPTIONS and a missing nonce",
+      "pass": true,
+      "ms": 131,
+      "info": {
+        "unrestricted": 3,
+        "flags": 3,
+        "nodeOptions": 3,
+        "nonce": 3
+      }
+    },
+    {
+      "name": "abnormal child exit writes a failing exit record",
+      "pass": true,
+      "ms": 354,
+      "info": {
+        "problems": [
+          "child exit 1",
+          "inventory truncated: no end record",
+          "inventory lacks the load of gate_v2.mjs"
+        ]
+      }
+    },
+    {
+      "name": "code review 2: every fs and fs/promises function on the pinned runtime is classified",
+      "pass": true,
+      "ms": 0,
+      "info": {
+        "fs": 93,
+        "promises": 32
+      }
+    },
+    {
+      "name": "code review 2: every content, metadata and listing interface records its own target; refused ones are refused",
+      "pass": true,
+      "ms": 111,
+      "info": {
+        "permitted": 47,
+        "refused": 19,
+        "entries": 73,
+        "evidence": "work/test-scratch/v3-final/probe-out"
+      }
+    },
+    {
+      "name": "code review 2: launcher runs record the nonce and the freeze as consumed inputs",
+      "pass": true,
+      "ms": 1,
+      "info": null
+    },
+    {
+      "name": "code review 1: display roles get no pose path; stock K1 gets no hook; construction makes no native call",
+      "pass": true,
+      "ms": 0,
+      "info": {
+        "k1e": "100",
+        "k2": "100",
+        "candidate": "110",
+        "zk1e": "100",
+        "zcand": "110",
+        "disp-seed-a": "011",
+        "disp-seed-b": "011",
+        "disp-k2": "011",
+        "disp-k1": "001"
+      }
+    },
+    {
+      "name": "code review 3: refresh records are persisted, listed and complete; incomplete ones are refused",
+      "pass": true,
+      "ms": 10,
+      "info": {
+        "windows": 97,
+        "calls": 97,
+        "samples": 97
+      }
+    },
+    {
+      "name": "code review 4: a redraw after the deadline fails; every sample is within the bound",
+      "pass": true,
+      "ms": 46,
+      "info": {
+        "late": "disp-seed-a:seed-a-e2 relation frame [ref:T9d:ref-k1e-a] {\"got\":{\"boxe",
+        "over": "disp-seed-a:seed-a-e0 relation deadline [display_v5 bound (ref boundMs"
+      }
+    },
+    {
+      "name": "code review 5: display plant, hold and seed operations hold the frame again",
+      "pass": true,
+      "ms": 43,
+      "info": {
+        "msg": "disp-seed-a:seed-a-set-84d1-0 relation frame [preserve] {\"got\":{\"boxes\":[{\"x\":41"
+      }
+    },
+    {
+      "name": "code review 6: a redirected work/out is refused before anything is written",
+      "pass": true,
+      "ms": 51,
+      "info": null
+    },
+    {
+      "name": "code review v2 correction 2: an existing tag with a redirected _refusals writes nothing through the redirect",
+      "pass": true,
+      "ms": 48,
+      "info": null
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+Superseded: freeze aff172f2...3a2b and its runs. The launcher overflowed the Windows command line (spawn ENAMETOOLONG) with per-file grants for 520 files; readGrants now grants frozen directories once. Kept as evidence; not inputs to any later run.

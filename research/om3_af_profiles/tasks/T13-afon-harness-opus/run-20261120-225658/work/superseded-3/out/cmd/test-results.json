@@ -1,0 +1,288 @@
+{
+  "node": "v26.12.1",
+  "passed": 35,
+  "failed": 0,
+  "results": [
+    {
+      "name": "relations on the retained T11 identity-v10 emulator records",
+      "pass": true,
+      "ms": 4,
+      "info": {
+        "evaluated": 80,
+        "relations": 532
+      }
+    },
+    {
+      "name": "T11 records: a wrong AF-ON press byte fails the named press reference",
+      "pass": true,
+      "ms": 3,
+      "info": {
+        "failed": [
+          "candidate-af-down:target"
+        ]
+      }
+    },
+    {
+      "name": "correction 1: pose-after-edit compares all live cells with K2 and keeps the candidate mirror on its own source",
+      "pass": true,
+      "ms": 4,
+      "info": {
+        "relations": 7
+      }
+    },
+    {
+      "name": "the AF-ON press reference is named in one place",
+      "pass": true,
+      "ms": 0,
+      "info": null
+    },
+    {
+      "name": "plan validator accepts the plans and rejects functions, getters, symbols and unknown keys",
+      "pass": true,
+      "ms": 17,
+      "info": {
+        "identity": 432,
+        "commits": 158
+      }
+    },
+    {
+      "name": "correction 5: bring-up is five operations and focus-arg stays separate, in setup_v2 order",
+      "pass": true,
+      "ms": 0,
+      "info": null
+    },
+    {
+      "name": "six plans end to end on the fake through the common implementation",
+      "pass": true,
+      "ms": 181,
+      "info": {
+        "identity": 432,
+        "proof": 324,
+        "display-a": 29,
+        "display-b": 29,
+        "display-k2": 28,
+        "display-k1": 22
+      }
+    },
+    {
+      "name": "identity pass: faults fail on behaviour relations alone",
+      "pass": true,
+      "ms": 61,
+      "info": {
+        "press": "candidate:candidate-af-down relation target [ref:k1e:ke-s1-down:halfTarget [k1e-s1-down-ha",
+        "readBank": "candidate:candidate-af-down relation readBank [literal:0 (T8c Q1 saved index)] {\"got\":3,\"w",
+        "poseLeak": "candidate:candidate-pose-exif6 relation poseWatch [installed hook watch record: no live st",
+        "writer": "candidate writer calls",
+        "subject": "k1e:k1e-init-6071181e relation subject [literal:0 (0x1e71[0])] {\"got\":1,\"want\":0}"
+      }
+    },
+    {
+      "name": "proof: wrong value, changed unexpected field, absent field and identity title each fail",
+      "pass": true,
+      "ms": 43,
+      "info": {
+        "wrong": "candidate:candidate-af-down target differs from the sealed identity row | relation target ",
+        "drift": "disp-seed-a:seed-a-e0 frame differs from the sealed identity row | frame changed where the",
+        "absent": "k2:k2-k2-af-down after field edge absent | edge differs from the sealed identity row | edg",
+        "title": "k1e:k1e-e-ok-down identity title",
+        "link": "k1e:k1e-pose-exif6 relation links [literal:[1,1] (0x1db1, 0x1dc1 read back)] {\"got\":[0,1]}"
+      }
+    },
+    {
+      "name": "preservation rule: a field the identity pass preserved must not change",
+      "pass": true,
+      "ms": 0,
+      "info": null
+    },
+    {
+      "name": "static missing row: identity coverage refuses before any session (zero deliveries)",
+      "pass": true,
+      "ms": 23,
+      "info": {
+        "msg": "identity coverage refused before any session: candidate:candidate-af-down, state"
+      }
+    },
+    {
+      "name": "dynamic missing row: the gate refuses a commit with zero deliveries; unmarked commit keys are classified",
+      "pass": true,
+      "ms": 0,
+      "info": null
+    },
+    {
+      "name": "identity is read after the input and its settle",
+      "pass": true,
+      "ms": 0,
+      "info": null
+    },
+    {
+      "name": "correction 6: raw delivery wrappers refuse outside the gate",
+      "pass": true,
+      "ms": 0,
+      "info": null
+    },
+    {
+      "name": "deleting an identity-bearing operation removes it from execution and coverage together",
+      "pass": true,
+      "ms": 1,
+      "info": null
+    },
+    {
+      "name": "custom zone is reached and judged",
+      "pass": true,
+      "ms": 1,
+      "info": null
+    },
+    {
+      "name": "pose instrumentation toggles change no refusal (accepted predicates_v3)",
+      "pass": true,
+      "ms": 0,
+      "info": {
+        "cases": 48
+      }
+    },
+    {
+      "name": "recorder: return-hook completion, substitution, categories, orphan, null, unclosed, in-window sampling",
+      "pass": true,
+      "ms": 0,
+      "info": null
+    },
+    {
+      "name": "correction 4: tag validation and output containment",
+      "pass": true,
+      "ms": 1,
+      "info": null
+    },
+    {
+      "name": "exit checks: missing, truncated, reordered and tampered inventory; missing or short completion",
+      "pass": true,
+      "ms": 7,
+      "info": null
+    },
+    {
+      "name": "reused modules are byte-identical to the accepted T12 copies",
+      "pass": true,
+      "ms": 1,
+      "info": {
+        "afon_hooks_v7.mjs": "488e6973767a",
+        "state_v1.mjs": "8b5752adcf90",
+        "predicates_v3.mjs": "c6a11a0d03a8",
+        "refresh_v4.mjs": "01e4714d9f30",
+        "table_v2.mjs": "1dbdfa871ec9",
+        "check_table_v3.mjs": "37255a2b42c5"
+      }
+    },
+    {
+      "name": "real-path modules load without starting the emulator; delivery names cover the design list",
+      "pass": true,
+      "ms": 3,
+      "info": null
+    },
+    {
+      "name": "session_v1.diff is the retained diff of session_v1.mjs against zone_session_k1.mjs",
+      "pass": true,
+      "ms": 1,
+      "info": {
+        "removed": 27,
+        "added": 51,
+        "protectedLines": 53
+      }
+    },
+    {
+      "name": "scratch workspace: copy, junction, minimal freeze through six capture runs",
+      "pass": true,
+      "ms": 1773,
+      "info": {
+        "files": 29,
+        "sha256": "7e102912fcf8bf52"
+      }
+    },
+    {
+      "name": "fake runs through the launcher: identity then five reproductions, ok but never valid",
+      "pass": true,
+      "ms": 2439,
+      "info": {
+        "identity": 432,
+        "proof": 324,
+        "display-a": 29,
+        "display-b": 29,
+        "display-k2": 28,
+        "display-k1": 22
+      }
+    },
+    {
+      "name": "refused: wrong freeze digest writes a failing exit record",
+      "pass": true,
+      "ms": 109,
+      "info": null
+    },
+    {
+      "name": "refused: an existing tag; its evidence is preserved",
+      "pass": true,
+      "ms": 36,
+      "info": null
+    },
+    {
+      "name": "refused: unlisted file in a frozen directory, changed file, link inside a frozen directory",
+      "pass": true,
+      "ms": 588,
+      "info": null
+    },
+    {
+      "name": "refused: missing identity, identity of another mode, capture identity for a fake proof",
+      "pass": true,
+      "ms": 815,
+      "info": null
+    },
+    {
+      "name": "refused: runtime not the frozen one",
+      "pass": true,
+      "ms": 188,
+      "info": null
+    },
+    {
+      "name": "grants: files inside frozen directories are covered by the directory grant only",
+      "pass": true,
+      "ms": 0,
+      "info": null
+    },
+    {
+      "name": "drift at exit: a frozen file changed after verification is reported",
+      "pass": true,
+      "ms": 157,
+      "info": null
+    },
+    {
+      "name": "child refuses an unrestricted start, wrong flags, NODE_OPTIONS and a missing nonce",
+      "pass": true,
+      "ms": 131,
+      "info": {
+        "unrestricted": 3,
+        "flags": 3,
+        "nodeOptions": 3,
+        "nonce": 3
+      }
+    },
+    {
+      "name": "abnormal child exit writes a failing exit record",
+      "pass": true,
+      "ms": 364,
+      "info": {
+        "problems": [
+          "child exit 1",
+          "inventory truncated: no end record",
+          "inventory lacks the load of gate_v1.mjs"
+        ]
+      }
+    },
+    {
+      "name": "correction 2: every read and load interface is recorded when permitted and refused when not",
+      "pass": true,
+      "ms": 57,
+      "info": {
+        "permitted": 13,
+        "refused": 8,
+        "entries": 24
+      }
+    }
+  ]
+}
